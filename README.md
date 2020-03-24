@@ -8,7 +8,7 @@ Up-to-date Coronavirus COVID-19 (2019-nCoV) Datasets from [Johns Hopkins Univers
 
 ```R
 # Install COVID19
-install.packages('COVID19')
+devtools::install_github("emanuele-guidotti/COVID19") 
 
 # Load COVID19
 require('COVID19')
