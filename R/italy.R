@@ -1,19 +1,19 @@
 #' Coronavirus COVID-19 Data - Italy
 #'
-#' Download Italian COVID-19 data from the official repository of Dipartimento della Protezione Civile.
+#' Download the Italian COVID-19 dataset from the official repository of Dipartimento della Protezione Civile.
 #'
-#' @param type one of \code{"nation"} (data by country), \code{"region"} (data by region) or \code{"city"} (data by city). Default \code{"nation"}.
+#' @param type one of \code{"country"} (data by country), \code{"region"} (data by region) or \code{"city"} (data by city). Default \code{"country"}.
 #'
 #' @details See \url{https://github.com/pcm-dpc/COVID-19}
 #'
 #' @source \url{https://github.com/pcm-dpc/COVID-19}
 #'
-#' @return data.frame
+#' @return data.frame. See \url{https://github.com/pcm-dpc/COVID-19}
 #'
 #' @examples
 #' \dontrun{
 #'
-#' # data by nation
+#' # data by country
 #' x <- italy()
 #'
 #' # data by region
@@ -28,11 +28,11 @@
 #'
 #' @export
 #'
-italy <- function(type="nation"){
+italy <- function(type="country"){
 
   repo <- "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/"
 
-  if(type=="nation")
+  if(type=="country")
     url <- "dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
   else if(type=="region")
     url <- "dati-regioni/dpc-covid19-ita-regioni.csv"

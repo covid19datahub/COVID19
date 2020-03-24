@@ -7,16 +7,16 @@
 \url{https://github.com/pcm-dpc/COVID-19}
 }
 \usage{
-italy(type = "nation")
+italy(type = "country")
 }
 \arguments{
-\item{type}{one of \code{"nation"} (data by country), \code{"region"} (data by region) or \code{"city"} (data by city). Default \code{"nation"}.}
+\item{type}{one of \code{"country"} (data by country), \code{"region"} (data by region) or \code{"city"} (data by city). Default \code{"country"}.}
 }
 \value{
-data.frame
+data.frame. See \url{https://github.com/pcm-dpc/COVID-19}
 }
 \description{
-Download Italian COVID-19 data from the official repository of Dipartimento della Protezione Civile.
+Download the Italian COVID-19 dataset from the official repository of Dipartimento della Protezione Civile.
 }
 \details{
 See \url{https://github.com/pcm-dpc/COVID-19}
@@ -24,7 +24,7 @@ See \url{https://github.com/pcm-dpc/COVID-19}
 \examples{
 \dontrun{
 
-# data by nation
+# data by country
 x <- italy()
 
 # data by region

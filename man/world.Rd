@@ -10,23 +10,23 @@
 world(date = NULL)
 }
 \arguments{
-\item{date}{date object or string in the format \code{"YYYY-MM-DD"}. If provided, intraday data are downloaded for the given date. Default \code{NULL}.}
+\item{date}{date object or string in the format \code{"YYYY-MM-DD"}. If provided, daily data are downloaded. Default \code{NULL}, historical data.}
 }
 \value{
 data.frame
 \describe{
- \item{Province.State}{province name; US/Canada/Australia/ - city name, state/province name; Others - name of the event (e.g., "Diamond Princess" cruise ship); other countries - blank.}
- \item{Country.Region}{country/region name conforming to WHO.}
+ \item{Province_State}{province name; US/Canada/Australia/ - city name, state/province name; Others - name of the event (e.g., "Diamond Princess" cruise ship); other countries - blank.}
+ \item{Country_Region}{country/region name conforming to WHO.}
  \item{Lat}{latitude}
  \item{Long}{longitude}
  \item{Date}{date}
- \item{Confirmed}{the number of confirmed cases. For Hubei Province: from Feb 13 (GMT +8), we report both clinically diagnosed and lab-confirmed cases. For lab-confirmed cases only (Before Feb 17), please refer to \href{https://github.com/CSSEGISandData/COVID-19/tree/master/who_covid_19_situation_reports}{who_covid_19_situation_reports}. For Italy, diagnosis standard might be changed since Feb 27 to "slow the growth of new case numbers." (\href{https://apnews.com/6c7e40fbec09858a3b4dbd65fe0f14f5}{Source})}
+ \item{Confirmed}{the number of confirmed cases.}
  \item{Deaths}{the number of deaths.}
  \item{Recovered}{the number of recovered cases.}
 }
 }
 \description{
-Download global COVID-19 data from the repository for the 2019 Novel Coronavirus
+Download the global COVID-19 dataset from the repository for the 2019 Novel Coronavirus
 Visual Dashboard operated by the Johns Hopkins University Center for Systems
 Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team
 and the Johns Hopkins University Applied Physics Lab (JHU APL).
@@ -41,29 +41,29 @@ all representations and warranties with respect to the Website, including accura
 fitness for use, and merchantability. Reliance on the Website for medical guidance or
 use of the Website in commerce is strictly prohibited. Data Sources:
 \itemize{
- \item World Health Organization (WHO): \url{https://www.who.int/}
- \item DXY.cn. Pneumonia. 2020. \url{http://3g.dxy.cn/newh5/view/pneumonia}
- \item BNO News: \url{https://bnonews.com/index.php/2020/02/the-latest-coronavirus-cases/}
- \item National Health Commission of the People’s Republic of China (NHC): \url{http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml}
- \item China CDC (CCDC): \url{http://weekly.chinacdc.cn/news/TrackingtheEpidemic.htm}
- \item Hong Kong Department of Health: \url{https://www.chp.gov.hk/en/features/102465.html}
- \item Macau Government: \url{https://www.ssm.gov.mo/portal/}
- \item Taiwan CDC: \url{https://sites.google.com/cdc.gov.tw/2019ncov/taiwan?authuser=0}
- \item US CDC: \url{https://www.cdc.gov/coronavirus/2019-ncov/index.html}
- \item Government of Canada: \url{https://www.canada.ca/en/public-health/services/diseases/coronavirus.html}
- \item Australia Government Department of Health: \url{https://www.health.gov.au/news/coronavirus-update-at-a-glance}
- \item European Centre for Disease Prevention and Control (ECDC): \url{https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases}
- \item Ministry of Health Singapore (MOH): \url{https://www.moh.gov.sg/covid-19}
- \item Italy Ministry of Health: \url{http://www.salute.gov.it/nuovocoronavirus}
+ \item \href{https://www.who.int/}{World Health Organization (WHO)}
+ \item \href{http://3g.dxy.cn/newh5/view/pneumonia}{DXY.cn. Pneumonia. 2020}
+ \item \href{https://bnonews.com/index.php/2020/02/the-latest-coronavirus-cases/}{BNO News}
+ \item \href{http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml}{National Health Commission of the People’s Republic of China (NHC)}
+ \item \href{http://weekly.chinacdc.cn/news/TrackingtheEpidemic.htm}{China CDC (CCDC)}
+ \item \href{https://www.chp.gov.hk/en/features/102465.html}{Hong Kong Department of Health}
+ \item \href{https://www.ssm.gov.mo/portal/}{Macau Government}
+ \item \href{https://sites.google.com/cdc.gov.tw/2019ncov/taiwan?authuser=0}{Taiwan CDC}
+ \item \href{https://www.cdc.gov/coronavirus/2019-ncov/index.html}{US CDC}
+ \item \href{https://www.canada.ca/en/public-health/services/diseases/coronavirus.html}{Government of Canada}
+ \item \href{https://www.health.gov.au/news/coronavirus-update-at-a-glance}{Australia Government Department of Health}
+ \item \href{https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases}{European Centre for Disease Prevention and Control (ECDC)}
+ \item \href{https://www.moh.gov.sg/covid-19}{Ministry of Health Singapore (MOH)}
+ \item \href{http://www.salute.gov.it/nuovocoronavirus}{Italy Ministry of Health}
 }
 }
 \examples{
 \dontrun{
 
-# download historical data
+# historical data
 x <- world()
 
-# download intraday data
+# daily data
 x <- world(Sys.Date()-2)
 
 }

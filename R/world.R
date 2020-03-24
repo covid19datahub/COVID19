@@ -1,11 +1,11 @@
 #' Coronavirus COVID-19 Data - Global
 #'
-#' Download global COVID-19 data from the repository for the 2019 Novel Coronavirus
+#' Download the global COVID-19 dataset from the repository for the 2019 Novel Coronavirus
 #' Visual Dashboard operated by the Johns Hopkins University Center for Systems
 #' Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team
 #' and the Johns Hopkins University Applied Physics Lab (JHU APL).
 #'
-#' @param date date object or string in the format \code{"YYYY-MM-DD"}. If provided, intraday data are downloaded for the given date. Default \code{NULL}.
+#' @param date date object or string in the format \code{"YYYY-MM-DD"}. If provided, daily data are downloaded. Default \code{NULL}, historical data.
 #'
 #' @details
 #' This \href{https://github.com/CSSEGISandData/COVID-19}{GitHub repo} and its contents herein, including all data, mapping, and analysis,
@@ -17,32 +17,32 @@
 #' fitness for use, and merchantability. Reliance on the Website for medical guidance or
 #' use of the Website in commerce is strictly prohibited. Data Sources:
 #' \itemize{
-#'  \item World Health Organization (WHO): \url{https://www.who.int/}
-#'  \item DXY.cn. Pneumonia. 2020. \url{http://3g.dxy.cn/newh5/view/pneumonia}
-#'  \item BNO News: \url{https://bnonews.com/index.php/2020/02/the-latest-coronavirus-cases/}
-#'  \item National Health Commission of the People’s Republic of China (NHC): \url{http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml}
-#'  \item China CDC (CCDC): \url{http://weekly.chinacdc.cn/news/TrackingtheEpidemic.htm}
-#'  \item Hong Kong Department of Health: \url{https://www.chp.gov.hk/en/features/102465.html}
-#'  \item Macau Government: \url{https://www.ssm.gov.mo/portal/}
-#'  \item Taiwan CDC: \url{https://sites.google.com/cdc.gov.tw/2019ncov/taiwan?authuser=0}
-#'  \item US CDC: \url{https://www.cdc.gov/coronavirus/2019-ncov/index.html}
-#'  \item Government of Canada: \url{https://www.canada.ca/en/public-health/services/diseases/coronavirus.html}
-#'  \item Australia Government Department of Health: \url{https://www.health.gov.au/news/coronavirus-update-at-a-glance}
-#'  \item European Centre for Disease Prevention and Control (ECDC): \url{https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases}
-#'  \item Ministry of Health Singapore (MOH): \url{https://www.moh.gov.sg/covid-19}
-#'  \item Italy Ministry of Health: \url{http://www.salute.gov.it/nuovocoronavirus}
+#'  \item \href{https://www.who.int/}{World Health Organization (WHO)}
+#'  \item \href{http://3g.dxy.cn/newh5/view/pneumonia}{DXY.cn. Pneumonia. 2020}
+#'  \item \href{https://bnonews.com/index.php/2020/02/the-latest-coronavirus-cases/}{BNO News}
+#'  \item \href{http://www.nhc.gov.cn/xcs/yqtb/list_gzbd.shtml}{National Health Commission of the People’s Republic of China (NHC)}
+#'  \item \href{http://weekly.chinacdc.cn/news/TrackingtheEpidemic.htm}{China CDC (CCDC)}
+#'  \item \href{https://www.chp.gov.hk/en/features/102465.html}{Hong Kong Department of Health}
+#'  \item \href{https://www.ssm.gov.mo/portal/}{Macau Government}
+#'  \item \href{https://sites.google.com/cdc.gov.tw/2019ncov/taiwan?authuser=0}{Taiwan CDC}
+#'  \item \href{https://www.cdc.gov/coronavirus/2019-ncov/index.html}{US CDC}
+#'  \item \href{https://www.canada.ca/en/public-health/services/diseases/coronavirus.html}{Government of Canada}
+#'  \item \href{https://www.health.gov.au/news/coronavirus-update-at-a-glance}{Australia Government Department of Health}
+#'  \item \href{https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases}{European Centre for Disease Prevention and Control (ECDC)}
+#'  \item \href{https://www.moh.gov.sg/covid-19}{Ministry of Health Singapore (MOH)}
+#'  \item \href{http://www.salute.gov.it/nuovocoronavirus}{Italy Ministry of Health}
 #' }
 #'
 #' @source \url{https://github.com/CSSEGISandData/COVID-19}
 #'
 #' @return data.frame
 #' \describe{
-#'  \item{Province.State}{province name; US/Canada/Australia/ - city name, state/province name; Others - name of the event (e.g., "Diamond Princess" cruise ship); other countries - blank.}
-#'  \item{Country.Region}{country/region name conforming to WHO.}
+#'  \item{Province_State}{province name; US/Canada/Australia/ - city name, state/province name; Others - name of the event (e.g., "Diamond Princess" cruise ship); other countries - blank.}
+#'  \item{Country_Region}{country/region name conforming to WHO.}
 #'  \item{Lat}{latitude}
 #'  \item{Long}{longitude}
 #'  \item{Date}{date}
-#'  \item{Confirmed}{the number of confirmed cases. For Hubei Province: from Feb 13 (GMT +8), we report both clinically diagnosed and lab-confirmed cases. For lab-confirmed cases only (Before Feb 17), please refer to \href{https://github.com/CSSEGISandData/COVID-19/tree/master/who_covid_19_situation_reports}{who_covid_19_situation_reports}. For Italy, diagnosis standard might be changed since Feb 27 to "slow the growth of new case numbers." (\href{https://apnews.com/6c7e40fbec09858a3b4dbd65fe0f14f5}{Source})}
+#'  \item{Confirmed}{the number of confirmed cases.}
 #'  \item{Deaths}{the number of deaths.}
 #'  \item{Recovered}{the number of recovered cases.}
 #' }
@@ -50,10 +50,10 @@
 #' @examples
 #' \dontrun{
 #'
-#' # download historical data
+#' # historical data
 #' x <- world()
 #'
-#' # download intraday data
+#' # daily data
 #' x <- world(Sys.Date()-2)
 #'
 #' }
@@ -64,42 +64,70 @@
 #'
 world <- function(date = NULL){
 
+  # data source
   repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/"
 
+  # clean column names
+  clean_colnames <- function(x){
+
+    colnames(x) <- gsub(pattern = ".", replacement = "_", x = colnames(x), fixed = TRUE)
+    colnames(x) <- gsub(pattern = "^.\\_\\_", replacement = "", x = colnames(x), fixed = FALSE)
+    colnames(x) <- gsub(pattern = "^_", replacement = "", x = colnames(x), fixed = FALSE)
+    colnames(x) <- gsub(pattern = "_$", replacement = "", x = colnames(x), fixed = FALSE)
+
+    cn <- colnames(x)
+    colnames(x)[cn=="Last_Update"] <- "Date"
+    colnames(x)[cn=="Latitude"]    <- "Lat"
+    colnames(x)[cn=="Longitude"]   <- "Long"
+
+    return(x)
+
+  }
+
+  # download data
   if(!is.null(date)){
 
     url <- sprintf("%s/csse_covid_19_daily_reports/%s.csv", repo, format(as.Date(date), "%m-%d-%Y"))
 
-    data             <- read.csv(url)
-    data$Last.Update <- as.POSIXct(data$Last.Update, format = "%Y-%m-%dT%H:%M:%S", tz = 'GMT')
+    data <- read.csv(url)
+    data <- clean_colnames(data)
 
-    cn <- colnames(data)
-    colnames(data)[cn=="Last.Update"] <- "Date"
-    colnames(data)[cn=="Latitude"]    <- "Lat"
-    colnames(data)[cn=="Longitude"]   <- "Long"
+    d <- as.POSIXct(data$Date, format = "%Y-%m-%dT%H:%M:%S", tz = 'GMT')
+    if(all(is.na(d)))
+      d <- as.POSIXct(data$Date, format = "%Y-%m-%d %H:%M:%S", tz = 'GMT')
+    if(all(is.na(d)))
+      d <- as.POSIXct(data$Date, format = "%m/%d/%y %H:%M", tz = 'GMT')
+    if(all(is.na(d)))
+      d <- as.POSIXct(data$Date, format = "%m/%d/%Y %H:%M", tz = 'GMT')
 
-    data <- data[,c("Province.State", "Country.Region", "Lat", "Long", "Date", "Confirmed", "Deaths", "Recovered")]
+    data$Date <- d
 
   } else {
 
     files = c(
-      "Confirmed"        = "time_series_19-covid-Confirmed.csv",
-      "Deaths"           = "time_series_19-covid-Deaths.csv",
-      "Recovered"        = "time_series_19-covid-Recovered.csv",
-      "Confirmed.global" = "time_series_covid19_confirmed_global.csv",
-      "Deaths.global"    = "time_series_covid19_deaths_global.csv"
+      "Confirmed" = "time_series_covid19_confirmed_global.csv",
+      "Deaths"    = "time_series_covid19_deaths_global.csv",
+      "Recovered" = "time_series_covid19_recovered_global.csv",
+      "Confirmed_deprecated" = "time_series_19-covid-Confirmed.csv",
+      "Deaths_deprecated"    = "time_series_19-covid-Deaths.csv",
+      "Recovered_deprecated" = "time_series_19-covid-Recovered.csv"
     )
 
     data <- NULL
     for(i in 1:length(files)){
 
       url    <- sprintf("%s/csse_covid_19_time_series/%s", repo, files[i])
-      x      <- read.csv(url)
-      x      <- reshape2::melt(x, id = c("Province.State", "Country.Region", "Lat", "Long"), value.name = names(files[i]), variable.name = "Date")
-      x$Date <- as.Date(x$Date, format = "X%m.%d.%y")
+      x      <- try(suppressWarnings(read.csv(url)), silent = TRUE)
+
+      if(class(x)=="try-error")
+        next
+
+      x      <- clean_colnames(x)
+      x      <- reshape2::melt(x, id = c("Province_State", "Country_Region", "Lat", "Long"), value.name = names(files[i]), variable.name = "Date")
+      x$Date <- as.Date(x$Date, format = "X%m_%d_%y")
 
       if(!is.null(data))
-        data <- merge(data, x, all = TRUE, by = c("Province.State", "Country.Region", "Lat", "Long", "Date"))
+        data <- merge(data, x, all = TRUE, by = c("Province_State", "Country_Region", "Lat", "Long", "Date"))
       else
         data <- x
 
@@ -107,6 +135,13 @@ world <- function(date = NULL){
 
   }
 
+  # clean NA
+  cn <- colnames(data)
+  for(i in c("Confirmed", "Deaths", "Recovered", "Active", "Confirmed_deprecated", "Deaths_deprecated", "Recovered_deprecated"))
+    if(i %in% cn)
+      data[is.na(data[,i]),i] <- 0
+
+  # return
   return(data)
 
 }
