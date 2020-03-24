@@ -1,0 +1,17 @@
+Package: COVID19
+Type: Package
+Title: Coronavirus COVID-19 (2019-nCoV) Datasets
+Version: 0.0.1
+Authors@R: person(given = "Emanuele", 
+				  family = "Guidotti", 
+				  email = "emanuele.guidotti@unine.ch", 
+				  role = c("aut", "cre"), 
+				  comment = c(ORCID = "0000-0002-8961-6623"))
+Description: Up-to-date Coronavirus COVID-19 (2019-nCoV) Datasets from Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) <https://github.com/CSSEGISandData/COVID-19> and Ministero della Salute, Dipartimento della Protezione Civile, Italia <https://github.com/pcm-dpc/COVID-19>.
+License: GPL-3
+URL: https://github.com/emanuele-guidotti/COVID19
+BugReports: https://github.com/emanuele-guidotti/COVID19/issues
+Encoding: UTF-8
+LazyData: true
+Imports: reshape2
+RoxygenNote: 7.0.2
