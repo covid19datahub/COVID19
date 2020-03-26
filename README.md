@@ -17,13 +17,16 @@ Download up-to-date tidy format datasets of the 2019 Novel Coronavirus COVID-19 
 
 ```R
 # Global data
-w1 <- world()             # Historical data by country/state
-w2 <- world(Sys.Date()-2) # Daily data by country/state
+w1 <- world()               # by country
 
 # Italian data
-i1 <- italy()             # Data by country
-i2 <- italy("region")     # Data by region
-i3 <- italy("city")       # Data by city
+i1 <- italy("country")       # by country 
+i2 <- italy("state")         # by state 
+i3 <- italy("city")          # by city
+
+# Swiss data
+s1 <- switzerland("country") # by country
+s2 <- switzerland("state")   # by state
 ```
 
 ![](https://storage.guidotti.dev/coronavirus/world/confirmed-total.gif)
