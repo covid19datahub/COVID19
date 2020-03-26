@@ -5,7 +5,6 @@
 #' Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team
 #' and the Johns Hopkins University Applied Physics Lab (JHU APL).
 #'
-#' @param date date object or string in the format \code{"YYYY-MM-DD"}. If provided, daily data are downloaded. Default \code{NULL}, historical data.
 #'
 #' @details
 #' This \href{https://github.com/CSSEGISandData/COVID-19}{GitHub repo} and its contents herein, including all data, mapping, and analysis,
@@ -62,7 +61,7 @@
 #'
 #' @export
 #'
-world <- function(date = NULL){
+world <- function(){
 
   # data source
   repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/"
@@ -76,72 +75,45 @@ world <- function(date = NULL){
     colnames(x) <- gsub(pattern = "_$", replacement = "", x = colnames(x), fixed = FALSE)
 
     cn <- colnames(x)
-    colnames(x)[cn=="Last_Update"] <- "Date"
-    colnames(x)[cn=="Latitude"]    <- "Lat"
-    colnames(x)[cn=="Longitude"]   <- "Long"
+    colnames(x)[cn=="Last_Update"]              <- "date"
+    colnames(x)[cn %in% c("Latitude","Lat")]    <- "lat"
+    colnames(x)[cn %in% c("Longitude", "Long")] <- "lng"
+    colnames(x)[cn=="Province_State"]           <- "state"
+    colnames(x)[cn=="Country_Region"]           <- "country"
 
     return(x)
 
   }
 
+  # files
+  files = c(
+    "confirmed" = "time_series_covid19_confirmed_global.csv",
+    "deaths"    = "time_series_covid19_deaths_global.csv",
+    "tests"     = "time_series_covid19_testing_global.csv"
+  )
+
   # download data
-  if(!is.null(date)){
+  data <- NULL
+  for(i in 1:length(files)){
 
-    url <- sprintf("%s/csse_covid_19_daily_reports/%s.csv", repo, format(as.Date(date), "%m-%d-%Y"))
+    url    <- sprintf("%s/csse_covid_19_time_series/%s", repo, files[i])
+    x      <- try(suppressWarnings(read.csv(url)), silent = TRUE)
 
-    data <- read.csv(url)
-    data <- clean_colnames(data)
+    if(class(x)=="try-error")
+      next
 
-    d <- as.POSIXct(data$Date, format = "%Y-%m-%dT%H:%M:%S", tz = 'GMT')
-    if(all(is.na(d)))
-      d <- as.POSIXct(data$Date, format = "%Y-%m-%d %H:%M:%S", tz = 'GMT')
-    if(all(is.na(d)))
-      d <- as.POSIXct(data$Date, format = "%m/%d/%y %H:%M", tz = 'GMT')
-    if(all(is.na(d)))
-      d <- as.POSIXct(data$Date, format = "%m/%d/%Y %H:%M", tz = 'GMT')
+    x      <- clean_colnames(x)
+    x      <- reshape2::melt(x, id = c("state", "country", "lat", "lng"), value.name = names(files[i]), variable.name = "date")
+    x$date <- as.Date(x$date, format = "X%m_%d_%y")
 
-    data$Date <- d
-
-  } else {
-
-    files = c(
-      "Confirmed" = "time_series_covid19_confirmed_global.csv",
-      "Deaths"    = "time_series_covid19_deaths_global.csv",
-      "Recovered" = "time_series_covid19_recovered_global.csv",
-      "Confirmed_deprecated" = "time_series_19-covid-Confirmed.csv",
-      "Deaths_deprecated"    = "time_series_19-covid-Deaths.csv",
-      "Recovered_deprecated" = "time_series_19-covid-Recovered.csv"
-    )
-
-    data <- NULL
-    for(i in 1:length(files)){
-
-      url    <- sprintf("%s/csse_covid_19_time_series/%s", repo, files[i])
-      x      <- try(suppressWarnings(read.csv(url)), silent = TRUE)
-
-      if(class(x)=="try-error")
-        next
-
-      x      <- clean_colnames(x)
-      x      <- reshape2::melt(x, id = c("Province_State", "Country_Region", "Lat", "Long"), value.name = names(files[i]), variable.name = "Date")
-      x$Date <- as.Date(x$Date, format = "X%m_%d_%y")
-
-      if(!is.null(data))
-        data <- merge(data, x, all = TRUE, by = c("Province_State", "Country_Region", "Lat", "Long", "Date"))
-      else
-        data <- x
-
-    }
+    if(!is.null(data))
+      data <- merge(data, x, all = TRUE, by = c("state", "country", "lat", "lng", "date"))
+    else
+      data <- x
 
   }
 
-  # clean NA
-  cn <- colnames(data)
-  for(i in c("Confirmed", "Deaths", "Recovered", "Active", "Confirmed_deprecated", "Deaths_deprecated", "Recovered_deprecated"))
-    if(i %in% cn)
-      data[is.na(data[,i]),i] <- 0
-
   # return
-  return(data)
+  return(clean(data))
 
 }

@@ -7,10 +7,7 @@
 \url{https://github.com/CSSEGISandData/COVID-19}
 }
 \usage{
-world(date = NULL)
-}
-\arguments{
-\item{date}{date object or string in the format \code{"YYYY-MM-DD"}. If provided, daily data are downloaded. Default \code{NULL}, historical data.}
+world()
 }
 \value{
 data.frame

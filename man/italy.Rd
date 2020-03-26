@@ -7,10 +7,10 @@
 \url{https://github.com/pcm-dpc/COVID-19}
 }
 \usage{
-italy(type = "country")
+italy(type = "state")
 }
 \arguments{
-\item{type}{one of \code{"country"} (data by country), \code{"region"} (data by region) or \code{"city"} (data by city). Default \code{"country"}.}
+\item{type}{one of \code{"country"} (data by country), \code{"state"} (data by state) or \code{"city"} (data by city). Default \code{"country"}.}
 }
 \value{
 data.frame. See \url{https://github.com/pcm-dpc/COVID-19}
@@ -27,8 +27,8 @@ See \url{https://github.com/pcm-dpc/COVID-19}
 # data by country
 x <- italy()
 
-# data by region
-x <- italy("region")
+# data by state
+x <- italy("state")
 
 # data by city
 x <- italy("city")

@@ -1,7 +1,7 @@
 Package: COVID19
 Type: Package
 Title: Coronavirus COVID-19 (2019-nCoV) Datasets
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: person(given = "Emanuele", 
 				  family = "Guidotti", 
 				  email = "emanuele.guidotti@unine.ch", 
@@ -13,5 +13,5 @@ URL: https://github.com/emanuele-guidotti/COVID19
 BugReports: https://github.com/emanuele-guidotti/COVID19/issues
 Encoding: UTF-8
 LazyData: true
-Imports: utils, reshape2
+Imports: devtools, utils, reshape2, dplyr, tidyr
 RoxygenNote: 7.0.2
