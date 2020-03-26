@@ -25,3 +25,5 @@ i1 <- italy()             # Data by country
 i2 <- italy("region")     # Data by region
 i3 <- italy("city")       # Data by city
 ```
+
+![](https://storage.guidotti.dev/coronavirus/world/confirmed-total.gif)
