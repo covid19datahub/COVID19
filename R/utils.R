@@ -1,11 +1,21 @@
 .onAttach <- function(libname, pkgname) {
 
-  packageStartupMessage("Checking for updates...")
-  try(devtools::install_github('emanuele-guidotti/COVID19', quiet = FALSE), silent = TRUE)
+  packageStartupMessage("The coronavirus situation is changing fast.\nCheck for package updates typing COVID19()")
 
 }
 
-
+#'
+#'
+#' @export
+#'
+COVID19 <- function(){
+  print("Check for updates...")
+  x <- try(devtools::install_github('emanuele-guidotti/COVID19', quiet = FALSE), silent = TRUE)
+  if(class(x)!='try-error'){
+    detach("package:COVID19", unload=TRUE)
+    library(COVID19)
+  }
+}
 
 #'
 #'
