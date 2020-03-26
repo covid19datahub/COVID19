@@ -7,9 +7,9 @@
   v  <- as.package_version(gsub(pattern = "^Version:\\s*", replacement = "", x = description[id]))
 
   if(v > packageVersion(pkg = "COVID19")){
-    packageStartupMessage(sprintf("New version %s available!\nUpdate the package: type COVID19()", v))
+    packageStartupMessage(sprintf("...new version %s available!\nUpdate the package typing: COVID19()", v))
   } else {
-    packageStartupMessage("Up to date!")
+    packageStartupMessage("...up to date.")
   }
 
 }
@@ -19,7 +19,7 @@
 #' @export
 #'
 COVID19 <- function(){
-  x <- try(devtools::install_github('emanuele-guidotti/COVID19', quiet = TRUE, upgrade = FALSE), silent = TRUE)
+  x <- try(devtools::install_github('emanuele-guidotti/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
   detach("package:COVID19", unload=TRUE)
   library(COVID19)
 }
