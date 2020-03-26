@@ -1,6 +1,16 @@
 .onAttach <- function(libname, pkgname) {
 
-  packageStartupMessage("The coronavirus situation is changing fast.\nCheck for package updates typing COVID19()")
+  packageStartupMessage("The coronavirus situation is changing fast. Check for updates...")
+
+  description <- readLines('https://raw.githubusercontent.com/emanuele-guidotti/COVID19/master/DESCRIPTION')
+  id <- which(startsWith(prefix = "Version:", x = description))
+  v  <- as.package_version(gsub(pattern = "^Version:\\s*", replacement = "", x = description[id]))
+
+  if(v > packageVersion(pkg = "COVID19")){
+    packageStartupMessage(sprintf("New version %s available!\nUpdate the package: type COVID19()", v))
+  } else {
+    packageStartupMessage("Up to date!")
+  }
 
 }
 
@@ -9,12 +19,9 @@
 #' @export
 #'
 COVID19 <- function(){
-  print("Check for updates...")
-  x <- try(devtools::install_github('emanuele-guidotti/COVID19', quiet = FALSE), silent = TRUE)
-  if(class(x)!='try-error'){
-    detach("package:COVID19", unload=TRUE)
-    library(COVID19)
-  }
+  x <- try(devtools::install_github('emanuele-guidotti/COVID19', quiet = TRUE, upgrade = FALSE), silent = TRUE)
+  detach("package:COVID19", unload=TRUE)
+  library(COVID19)
 }
 
 #'
