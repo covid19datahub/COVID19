@@ -102,8 +102,8 @@ clean <- function(x, diamond = FALSE){
     idx     <- which(x$date %in% dp$date)
     x       <- x[-idx,]
     dp[,col[!(col %in% colnames(dp))]] <- NA
-    x <- rbind(x,dp) %>%
-      tidyr::fill(id, country, state, lat, lng)
+    x       <- rbind(x,dp) %>% tidyr::fill(id, country, state, lat, lng)
+    x$pop   <- 3711
   }
   else {
     x <- subset(x, !is.na(date) & ((is.na(lat) & is.na(lng)) | !(lat==0 & lng==0)))
@@ -115,9 +115,9 @@ clean <- function(x, diamond = FALSE){
     dplyr::group_by(id) %>%
     tidyr::fill(confirmed, tests, deaths) %>%
     tidyr::replace_na(list(confirmed = 0, tests = 0, deaths = 0)) %>%
-    dplyr::mutate(confirmed_new = c(confirmed[1], diff(confirmed)),
-                  tests_new     = c(tests[1], diff(tests)),
-                  deaths_new    = c(deaths[1], diff(deaths)))
+    dplyr::mutate(confirmed_new = c(confirmed[1], pmax(0,diff(confirmed))),
+                  tests_new     = c(tests[1], pmax(0,diff(tests))),
+                  deaths_new    = c(deaths[1], pmax(0,diff(deaths))))
 
   # return
   return(x)
