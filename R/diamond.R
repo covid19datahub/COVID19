@@ -1,19 +1,17 @@
-#' Coronavirus COVID-19 Data - Global
+#' Coronavirus COVID-19 Data - Diamond Princess
 #'
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
-#' Global data by state.
-#' The data are downloaded in real-time, processed and merged with demographic indicators (\code{\link{WB}}).
+#' Diamond Princess data.
+#' The data are downloaded in real-time.
 #'
-#' @seealso \code{\link{diamond}}, \code{\link{italy}}, \code{\link{switzerland}}
-#'
-#' @param type one of \code{country} (data by country) or \code{state} (data by state). Default \code{state}, data by state.
+#' @seealso \code{\link{world}}, \code{\link{italy}}, \code{\link{switzerland}}
 #'
 #' @details
 #' Data pulled from the repository for the 2019 Novel Coronavirus
 #' Visual Dashboard operated by the Johns Hopkins University Center for Systems
 #' Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team
 #' and the Johns Hopkins University Applied Physics Lab (JHU APL).
-#' This \href{https://github.com/CSSEGISandData/COVID-19}{repository} and its contents herein, including all data, mapping, and analysis,
+#' The \href{https://github.com/CSSEGISandData/COVID-19}{repository} and its contents herein, including all data, mapping, and analysis,
 #' copyright 2020 Johns Hopkins University, all rights reserved, is provided to the
 #' public strictly for educational and academic research purposes.
 #' The Website relies upon publicly available data from multiple sources,
@@ -63,47 +61,12 @@
 #' }
 #'
 #' @examples
-#' # data by country
-#' x <- world("country")
-#'
-#' # data by state
-#' x <- world("state")
+#' x <- diamond()
 #'
 #' @export
 #'
-world <- function(type = "state"){
+diamond <- function(){
 
-  # check
-  if(!(type %in% c("country","state")))
-    stop("type must be one of 'country', 'state'")
-
-  # download data
-  data <- juhcsse()
-
-  # drop "Taiwan*" and "Holy See"
-  data <- data[!(data$country %in% c("Taiwan*","Holy See")),]
-
-  # type
-  if(type=="country"){
-
-    # bindings
-    country <- date <- confirmed <- deaths <- tests <- NULL
-
-    # aggregate
-    data <- data %>%
-      dplyr::group_by(country, date) %>%
-      dplyr::summarize(lat = mean(deaths, na.rm = TRUE),
-                       lng = mean(deaths, na.rm = TRUE),
-                       confirmed = sum(confirmed, na.rm = TRUE),
-                       deaths = sum(deaths, na.rm = TRUE),
-                       tests = sum(tests, na.rm = TRUE))
-
-  }
-
-  # population info
-  data <- merge(data, COVID19::WB, by.x = "country", by.y = "id", all.x = TRUE)
-
-  # return
-  return(clean(data))
+  return(clean(juhcsse(), diamond = TRUE))
 
 }
