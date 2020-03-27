@@ -2,12 +2,12 @@
 #'
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 #' Diamond Princess data.
-#' The data are downloaded in real-time.
 #'
 #' @seealso \code{\link{world}}, \code{\link{italy}}, \code{\link{switzerland}}
 #'
 #' @details
-#' Data pulled from the repository for the 2019 Novel Coronavirus
+#' Number of tested cases pulled from \href{https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships}{Wikipedia}.
+#' Number of confirmed cases and deaths pulled from the repository for the 2019 Novel Coronavirus
 #' Visual Dashboard operated by the Johns Hopkins University Center for Systems
 #' Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team
 #' and the Johns Hopkins University Applied Physics Lab (JHU APL).

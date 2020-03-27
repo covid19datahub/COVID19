@@ -86,7 +86,7 @@ juhcsse <- function(){
 clean <- function(x, diamond = FALSE){
 
   # bindings
-  country <- date <- lat <- lng <- id <- confirmed <- tests <- deaths <- NULL
+  id <- country <- state <- date <- lat <- lng <- confirmed <- tests <- deaths <- NULL
 
   # create columns if missing
   col <- c('id','date','country','state','city','lat','lng','deaths','confirmed','tests','deaths_new','confirmed_new','tests_new','pop','pop_14','pop_15_64','pop_65','pop_age','pop_density','pop_death_rate')
@@ -95,10 +95,19 @@ clean <- function(x, diamond = FALSE){
 
   # subset
   x <- x[,col]
-  if(diamond)
-    x <- subset(x, !is.na(date) & country=="Diamond Princess")
-  else
+  if(diamond){
+    x       <- subset(x, !is.na(date) & country=="Diamond Princess")
+    dp      <- read.csv(system.file("extdata", "dp.csv", package = "COVID19"))
+    dp$date <- as.Date(dp$date, format = "%Y-%m-%d")
+    idx     <- which(x$date %in% dp$date)
+    x       <- x[-idx,]
+    dp[,col[!(col %in% colnames(dp))]] <- NA
+    x <- rbind(x,dp) %>%
+      tidyr::fill(id, country, state, lat, lng)
+  }
+  else {
     x <- subset(x, !is.na(date) & ((is.na(lat) & is.na(lng)) | !(lat==0 & lng==0)))
+  }
 
   # clean
   x <- x %>%
