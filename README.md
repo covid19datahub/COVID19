@@ -31,7 +31,7 @@ Pre-processed, ready-to-use, tidy format datasets of the 2019 Novel Coronavirus 
 
 ```R
 # Install COVID19
-install.packages("COVID19")
+devtools::install_github("emanuele-guidotti/COVID19")
 
 # Load COVID19
 require("COVID19")
