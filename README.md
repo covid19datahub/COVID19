@@ -72,7 +72,7 @@ geomap(w2,
 
 ## Data Sources
 
-|                      | COVID-19 data                                                | Demographics                                                 |
+|                      | COVID-19                                                     | Demographics                                                 |
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **World**            | [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)](https://github.com/CSSEGISandData/COVID-19) | [World Bank Open Data](https://data.worldbank.org/), [World Factbook by CIA](https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html). |
 | **Italy**            | [Ministero della Salute, Dipartimento della Protezione Civile](https://github.com/pcm-dpc/COVID-19) | [Istituto Nazionale di Statistica](https://www.istat.it/en/population-and-households?data-and-indicators) |
