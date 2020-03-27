@@ -2,7 +2,7 @@
 % Please edit documentation in R/italy.R
 \name{italy}
 \alias{italy}
-\title{Coronavirus COVID-19 Data - Italy}
+\title{Coronavirus COVID-19 data - Italy}
 \usage{
 italy(type = "state")
 }

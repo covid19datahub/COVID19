@@ -5,21 +5,37 @@ NULL
 
 .onAttach <- function(libname, pkgname) {
 
-  if(requireNamespace('COVID19', quietly = TRUE)){
+  if(interactive() & requireNamespace('COVID19', quietly = TRUE)){
 
-    packageStartupMessage("The coronavirus situation is changing fast. Check for updates...")
+    packageStartupMessage("The coronavirus situation is changing fast. Checking for updates...")
 
     description <- readLines('https://raw.githubusercontent.com/emanuele-guidotti/COVID19/master/DESCRIPTION')
     id <- which(startsWith(prefix = "Version:", x = description))
     v  <- as.package_version(gsub(pattern = "^Version:\\s*", replacement = "", x = description[id]))
 
     if(v > utils::packageVersion(pkg = "COVID19")){
-      packageStartupMessage(sprintf("...new version %s available!\nUpdate the package typing: COVID19()", v))
+
+      yn <- utils::askYesNo("Package COVID19: new version available. Update now?")
+      if(!is.na(yn)) if(yn)
+        update()
+
     } else {
+
       packageStartupMessage("...up to date.")
+
     }
 
   }
+
+}
+
+
+
+update <- function(){
+
+  detach("package:COVID19", unload=TRUE)
+  x <- try(devtools::install_github('emanuele-guidotti/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
+  library(COVID19)
 
 }
 
@@ -97,7 +113,7 @@ clean <- function(x, diamond = FALSE){
   x <- x[,col]
   if(diamond){
     x       <- subset(x, !is.na(date) & country=="Diamond Princess")
-    dp      <- read.csv(system.file("extdata", "dp.csv", package = "COVID19"))
+    dp      <- utils::read.csv(system.file("extdata", "dp.csv", package = "COVID19"))
     dp$date <- as.Date(dp$date, format = "%Y-%m-%d")
     idx     <- which(x$date %in% dp$date)
     x       <- x[-idx,]

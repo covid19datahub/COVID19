@@ -3,15 +3,20 @@
 \docType{data}
 \name{WB}
 \alias{WB}
-\title{Demographic Indicators - Global}
-\format{character vector of ids}
+\title{Demographic indicators - Global}
+\format{\code{data.frame}}
 \source{
-https://data.worldbank.org/
+\url{https://data.worldbank.org}, \url{https://www.cia.gov}
 }
 \usage{
 WB
 }
 \description{
-MEDIAN age: https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html
+Tidy format dataset of global demographic indicators from the
+\href{https://data.worldbank.org}{World Bank Open Data} and the
+\href{https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html}{World Factbook by CIA}.
+}
+\seealso{
+\code{\link{IT}}, \code{\link{CH}}
 }
 \keyword{datasets}

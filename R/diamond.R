@@ -1,4 +1,4 @@
-#' Coronavirus COVID-19 Data - Diamond Princess
+#' Coronavirus COVID-19 data - Diamond Princess
 #'
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 #' Diamond Princess data.

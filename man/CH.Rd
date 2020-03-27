@@ -3,18 +3,24 @@
 \docType{data}
 \name{CH}
 \alias{CH}
-\title{Datasets}
-\format{An object of class \code{data.frame} with 27 rows and 11 columns.}
+\title{Demographic indicators - Switzerland}
+\format{\code{data.frame}}
 \source{
-https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html
+\url{https://www.bfs.admin.ch}
 }
 \usage{
 CH
 }
 \description{
-Datasets
+Tidy format dataset of Swiss demographic indicators from the
+\href{https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html}{Swiss Federal Statistical Office}.
 }
 \details{
-population age is 0-19 not 0-14
+The columns \code{pop_14}, \code{pop_15_64} and \code{pop_65} correspond to the fraction of people
+under age 19, between 20 and 64, or over 65. The labels \code{pop_14}, \code{pop_15_64} and \code{pop_65} are kept
+for compatibility with the datasets \code{\link{WB}}, \code{\link{IT}}.
+}
+\seealso{
+\code{\link{WB}}, \code{\link{IT}}
 }
 \keyword{datasets}

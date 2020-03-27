@@ -3,15 +3,19 @@
 \docType{data}
 \name{IT}
 \alias{IT}
-\title{Datasets}
-\format{An object of class \code{data.frame} with 129 rows and 8 columns.}
+\title{Demographic indicators - Italy}
+\format{\code{data.frame}}
 \source{
-https://www.istat.it/en/population-and-households?data-and-indicators
+\url{https://www.istat.it}
 }
 \usage{
 IT
 }
 \description{
-Datasets
+Tidy format dataset of Italian demographic indicators from
+\href{https://www.istat.it/en/population-and-households?data-and-indicators}{Istituto Nazionale di Statistica}.
+}
+\seealso{
+\code{\link{WB}}, \code{\link{CH}}
 }
 \keyword{datasets}

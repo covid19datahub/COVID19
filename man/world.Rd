@@ -2,7 +2,7 @@
 % Please edit documentation in R/world.R
 \name{world}
 \alias{world}
-\title{Coronavirus COVID-19 Data - Global}
+\title{Coronavirus COVID-19 data - Global}
 \usage{
 world(type = "state")
 }

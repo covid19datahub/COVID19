@@ -8,7 +8,7 @@
 #' @param x a grouped \code{tibble}.
 #' @param f a function to apply to each group. It should have at least 2 formal arguments: (1) the group data and (2) the group key.
 #'
-#' @return list of results from calling \code{f} on each group.
+#' @return List of results from calling \code{f} on each group.
 #'
 #' @examples
 #' # plot by country
@@ -16,10 +16,10 @@
 #' f <- function(x, group) {
 #'   plot(x$confirmed~x$date, main = group)
 #' }
-#' group_map(x, f)
+#' gapply(x, f)
 #'
 #' @export
 #'
-group_map <- function(x, f){
+gapply <- function(x, f){
   dplyr::group_map(x, f)
 }

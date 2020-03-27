@@ -1,4 +1,4 @@
-#' Coronavirus COVID-19 Data - Global
+#' Coronavirus COVID-19 data - Global
 #'
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 #' Global data by state.

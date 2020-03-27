@@ -1,4 +1,4 @@
-#' Coronavirus COVID-19 Data - Switzerland
+#' Coronavirus COVID-19 data - Switzerland
 #'
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 #' Swiss data by country or state (cantons).

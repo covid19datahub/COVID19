@@ -2,7 +2,7 @@
 % Please edit documentation in R/diamond.R
 \name{diamond}
 \alias{diamond}
-\title{Coronavirus COVID-19 Data - Diamond Princess}
+\title{Coronavirus COVID-19 data - Diamond Princess}
 \usage{
 diamond()
 }
