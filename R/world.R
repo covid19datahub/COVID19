@@ -87,13 +87,13 @@ world <- function(type = "state"){
   if(type=="country"){
 
     # bindings
-    country <- date <- confirmed <- deaths <- tests <- NULL
+    country <- date <- lat <- lng <- confirmed <- deaths <- tests <- NULL
 
     # aggregate
     data <- data %>%
       dplyr::group_by(country, date) %>%
-      dplyr::summarize(lat = mean(deaths, na.rm = TRUE),
-                       lng = mean(deaths, na.rm = TRUE),
+      dplyr::summarize(lat = mean(lat, na.rm = TRUE),
+                       lng = mean(lng, na.rm = TRUE),
                        confirmed = sum(confirmed, na.rm = TRUE),
                        deaths = sum(deaths, na.rm = TRUE),
                        tests = sum(tests, na.rm = TRUE))
