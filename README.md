@@ -1,4 +1,4 @@
-# Coronavirus COVID-19 (2019-nCoV) Data Acquisition and Visualization
+# Coronavirus COVID-19 (2019-nCoV) Data Acquisition and Visualization in R
 
 ![](https://www.r-pkg.org/badges/version/COVID19) ![](https://www.r-pkg.org/badges/last-release/COVID19) ![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19) 
 
