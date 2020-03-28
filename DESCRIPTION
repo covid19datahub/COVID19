@@ -10,5 +10,5 @@ BugReports: https://github.com/emanuele-guidotti/COVID19/issues
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5.0)
-Imports: devtools, utils, reshape2, dplyr, tidyr, sp, rgdal, maps, ggplot2, gganimate, ggthemes
+Imports: devtools, utils, reshape2, dplyr, tidyr, sp, rgdal, maps, ggplot2, ggthemes, gganimate, gifski
 RoxygenNote: 7.0.2
