@@ -42,8 +42,8 @@ i3 <- italy("city")          # by city
 ```R
 geomap(w2, 
   map = "world", 
-  value = "confirmed_new",
-  legend.title = "Daily Cases",
+  value = "confirmed",
+  legend.title = "Total Cases",
   caption = "Data source: JHU CSSE",
   nframes = 30+(2*length(unique(w2$date))),
   end_pause = 30)
