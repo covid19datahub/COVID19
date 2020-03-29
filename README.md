@@ -5,7 +5,7 @@
 Pre-processed, ready-to-use, tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The latest data are downloaded in real-time, processed and merged with demographic indicators from several trusted sources. The package implements advanced data visualization across the space and time dimensions by means of animated mapping. Besides worldwide data, the package includes granular data for Italy, Switzerland and the Diamond Princess. 
 
 __Daily updated csv datasets__
-https://storage.guidotti.dev/covid19/data/ (updated daily)
+https://storage.guidotti.dev/covid19/data/ 
 
 __Kaggle dataset__
 https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/
