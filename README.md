@@ -51,7 +51,7 @@ geomap(w2,
   end_pause = 30)
 ```
 
-![](https://storage.guidotti.dev/covid19/map/world.gif)
+![](https://storage.guidotti.dev/coronavirus/world/confirmed-new.gif)
 
 ## Data Sources
 
