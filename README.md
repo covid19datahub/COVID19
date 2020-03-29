@@ -2,13 +2,13 @@
 
 ![](https://www.r-pkg.org/badges/version/COVID19) ![](https://www.r-pkg.org/badges/last-release/COVID19) ![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19) 
 
-Pre-processed, ready-to-use, tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The latest data are downloaded in real-time, processed and merged with demographic indicators from several trusted sources. The package implements advanced data visualization across the space and time dimensions by means of animated mapping. Besides worldwide data, the package includes granular data for Italy, Switzerland and the Diamond Princess. 
+The R package aims at uniforming COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis.
 
-__Daily updated csv datasets__
-https://storage.guidotti.dev/covid19/data/ 
+COVID-19 data are pulled and merged with demographic indicators from several trusted sources including Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE); World Bank Open Data; World Factbook by CIA; Ministero della Salute, Dipartimento della Protezione Civile; Istituto Nazionale di Statistica; Swiss Federal Statistical Office.
 
-__Kaggle dataset__
-https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/
+For non R users, the datasets are made available in [csv format](https://storage.guidotti.dev/covid19/data/) (updated daily) or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/) (updated  weekly).
+
+The package implements advanced data visualization across the space and time dimensions by means of animated mapping.
 
 ## Quickstart
 
@@ -51,7 +51,7 @@ geomap(w2,
   end_pause = 30)
 ```
 
-![](https://storage.guidotti.dev/coronavirus/world/confirmed-new.gif)
+![](https://storage.guidotti.dev/covid19/map/world.gif)
 
 ## Data Sources
 
