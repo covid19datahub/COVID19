@@ -41,68 +41,61 @@ update <- function(){
 
 
 
-juhcsse <- function(){
+fill <- function(x){
 
-  # data source
-  repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/"
+  # subset
+  x <- x[!is.na(x$date),]
 
-  # clean column names
-  clean_colnames <- function(x){
+  # full grid
+  date <- seq(min(x$date), max(x$date), by = 1)
+  id   <- unique(x$id)
+  grid <- expand.grid(id = id, date = date)
 
-    colnames(x) <- gsub(pattern = ".", replacement = "_", x = colnames(x), fixed = TRUE)
-    colnames(x) <- gsub(pattern = "^.\\_\\_", replacement = "", x = colnames(x), fixed = FALSE)
-    colnames(x) <- gsub(pattern = "^_", replacement = "", x = colnames(x), fixed = FALSE)
-    colnames(x) <- gsub(pattern = "_$", replacement = "", x = colnames(x), fixed = FALSE)
+  # fill
+  x <- suppressWarnings(dplyr::bind_rows(x, grid))
+  x <- x[!duplicated(x[,c("id","date")]),]
 
-    cn <- colnames(x)
-    colnames(x)[cn=="Last_Update"]              <- "date"
-    colnames(x)[cn %in% c("Latitude","Lat")]    <- "lat"
-    colnames(x)[cn %in% c("Longitude", "Long")] <- "lng"
-    colnames(x)[cn=="Province_State"]           <- "state"
-    colnames(x)[cn=="Country_Region"]           <- "country"
-
-    return(x)
-
-  }
-
-  # files
-  files = c(
-    "confirmed" = "time_series_covid19_confirmed_global.csv",
-    "deaths"    = "time_series_covid19_deaths_global.csv",
-    "tests"     = "time_series_covid19_testing_global.csv"
-  )
-
-  # download data
-  data <- NULL
-  for(i in 1:length(files)){
-
-    url    <- sprintf("%s/csse_covid_19_time_series/%s", repo, files[i])
-    x      <- try(suppressWarnings(utils::read.csv(url)), silent = TRUE)
-
-    if(class(x)=="try-error")
-      next
-
-    x      <- clean_colnames(x)
-    x      <- reshape2::melt(x, id = c("state", "country", "lat", "lng"), value.name = names(files[i]), variable.name = "date")
-    x$date <- as.Date(x$date, format = "X%m_%d_%y")
-
-    if(!is.null(data))
-      data <- merge(data, x, all = TRUE, by = c("state", "country", "lat", "lng", "date"))
-    else
-      data <- x
-
-  }
-
-  return(data)
+  # return
+  return(x)
 
 }
 
 
-
-clean <- function(x, diamond = FALSE){
+#' Process and Clean COVID-19 Raw Data
+#'
+#' Internal function used to clean the raw data. Provides a
+#' unified and curated COVID-19 dataset across different sources.
+#'
+#' @param x COVID-19 \code{data.frame}
+#'
+#' @return Tidy format \code{tibble} (\code{data.frame}) grouped by id, containing the columns:
+#' \describe{
+#'  \item{id}{id in the form "country|state|city".}
+#'  \item{date}{date.}
+#'  \item{country}{administrative area level 1.}
+#'  \item{state}{administrative area level 2.}
+#'  \item{city}{administrative area level 3.}
+#'  \item{lat}{latitude.}
+#'  \item{lng}{longitude.}
+#'  \item{deaths}{the number of deaths.}
+#'  \item{confirmed}{the number of cases.}
+#'  \item{tests}{the number of tests.}
+#'  \item{deaths_new}{daily increase in the number of deaths.}
+#'  \item{confirmed_new}{daily increase in the number of cases.}
+#'  \item{tests_new}{daily increase in the number of tests.}
+#'  \item{pop}{total population.}
+#'  \item{pop_14}{population ages 0-14 (\% of total population). Except Switzerland: ages 0-19.}
+#'  \item{pop_15_64}{population ages 15-64 (\% of total population). Except Switzerland: ages 20-64.}
+#'  \item{pop_65}{population ages 65+ (\% of total population).}
+#'  \item{pop_age}{median age of population.}
+#'  \item{pop_density}{population density per km2.}
+#'  \item{pop_death_rate}{population mortality rate.}
+#' }
+#'
+covid19 <- function(x){
 
   # bindings
-  id <- country <- state <- date <- lat <- lng <- confirmed <- tests <- deaths <- NULL
+  id <- date <- country <- state <- city <- lat <- lng <- confirmed <- tests <- deaths <- NULL
 
   # create columns if missing
   col <- c('id','date','country','state','city','lat','lng','deaths','confirmed','tests','deaths_new','confirmed_new','tests_new','pop','pop_14','pop_15_64','pop_65','pop_age','pop_density','pop_death_rate')
@@ -111,35 +104,34 @@ clean <- function(x, diamond = FALSE){
 
   # subset
   x <- x[,col]
-  if(diamond){
-    x       <- subset(x, !is.na(date) & country=="Diamond Princess")
-    dp      <- utils::read.csv(system.file("extdata", "dp.csv", package = "COVID19"))
-    dp$date <- as.Date(dp$date, format = "%Y-%m-%d")
-    idx     <- which(x$date %in% dp$date)
-    x       <- x[-idx,]
-    dp[,col[!(col %in% colnames(dp))]] <- NA
-    x       <- rbind(x,dp) %>% tidyr::fill(id, country, state, lat, lng)
-    x$pop   <- 3711
-  }
-  else {
-    x <- subset(x, !is.na(date) & ((is.na(lat) & is.na(lng)) | !(lat==0 & lng==0)))
-  }
+
+  # fill
+  x <- fill(x)
 
   # clean
   x <- x %>%
     dplyr::arrange(date) %>%
     dplyr::group_by(id) %>%
-    tidyr::fill(confirmed, tests, deaths) %>%
-    tidyr::replace_na(list(confirmed = 0, tests = 0, deaths = 0)) %>%
+
+    tidyr::fill(.direction = "downup",
+                'country', 'state', 'city',
+                'lat', 'lng',
+                'pop','pop_14','pop_15_64','pop_65',
+                'pop_age','pop_density',
+                'pop_death_rate') %>%
+
+    tidyr::fill(.direction = "down",
+                'confirmed', 'tests', 'deaths') %>%
+
+    tidyr::replace_na(list(confirmed = 0,
+                           tests     = 0,
+                           deaths    = 0)) %>%
+
     dplyr::mutate(confirmed_new = c(confirmed[1], pmax(0,diff(confirmed))),
-                  tests_new     = c(tests[1], pmax(0,diff(tests))),
-                  deaths_new    = c(deaths[1], pmax(0,diff(deaths))))
+                  tests_new     = c(tests[1],     pmax(0,diff(tests))),
+                  deaths_new    = c(deaths[1],    pmax(0,diff(deaths))))
 
   # return
   return(x)
 
 }
-
-
-
-

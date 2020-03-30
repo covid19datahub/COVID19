@@ -23,6 +23,9 @@
 #' @param legend.position the legend position, \code{c(0,0)} corresponds to bottom-left, \code{c(1,1)} to top-right.
 #' @param legend.barheight the height of the colourbar.
 #' @param legend.barwidth the width of the colourbar.
+#' @param fps the framerate of the animation in frames/sec.
+#' @param nframes the number of frames to render. Default two frames per date.
+#' @param end_pause number of times to repeat the last frame in the animation.
 #' @param ... additional arguments passed to \code{\link[gganimate]{animate}}
 #'
 #' @return The return value of the \code{\link[gganimate]{animate}} function.
@@ -33,7 +36,7 @@
 #' # download data
 #' it <- italy()
 #'
-#' # add label
+#' # add column
 #' it$label <- factor(it$confirmed)
 #'
 #' # map
@@ -41,11 +44,9 @@
 #'   map = "italy",
 #'   value = "confirmed",
 #'   label = "label",
-#'   title = "Coronavirus: {closest_state}",
+#'   title = "COVID-19: {closest_state}",
 #'   caption  = "Data source: ...",
-#'   legend.title = "Total cases",
-#'   nframes = 30+(2*length(unique(it$date))),
-#'   end_pause = 30)
+#'   legend.title = "Total cases")
 #' }
 #'
 #' @import ggplot2
@@ -59,28 +60,32 @@ geomap <- function(
   label             = "",
 
   filename          = "",
-  width             = 1920,
-  height            = 1080,
+  width             = 720,
+  height            = 560,
 
-  title             = "Coronavirus: {closest_state}",
-  text.size         = 48,
+  title             = "COVID-19: {closest_state}",
+  text.size         = 24,
 
   caption           = "",
-  caption.size      = 18,
+  caption.size      = 12,
 
   colour            = "#bdbdbd",
   fill              = "#2a2a28",
   background        = "#000f1a",
 
   point.alpha       = 0.95,
-  point.size        = c(1,32),
+  point.size        = c(1,24),
   point.colour      = c("#ffaa00", "#a20f0e"),
 
   legend.title      = "",
   legend.background = "transparent",
   legend.position   = c(0,0),
-  legend.barheight  = 24,
-  legend.barwidth   = 3,
+  legend.barheight  = 8,
+  legend.barwidth   = 1,
+
+  fps               = 10,
+  nframes           = NULL,
+  end_pause         = 30,
 
   ...)
 {
@@ -128,7 +133,16 @@ geomap <- function(
       geom_text(aes_string(label = label, x = "lng", y = "lat", size = value), colour = colour)
   }
 
-  g <- gganimate::animate(g, width = width, height = height, ...)
+  if(is.null(nframes))
+    nframes <- end_pause + (2*length(unique(x$date)))
+
+  g <- gganimate::animate(
+    g,
+    width     = width,
+    height    = height,
+    nframes   = nframes,
+    end_pause = end_pause,
+    fps       = fps, ...)
 
   if(filename!=""){
     gganimate::anim_save(filename = filename, animation = g)

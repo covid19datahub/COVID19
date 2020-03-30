@@ -7,29 +7,7 @@
 diamond()
 }
 \value{
-Tidy format \code{tibble} (\code{data.frame}) grouped by id:
-\describe{
- \item{id}{id in the form "country|state|city".}
- \item{date}{date.}
- \item{country}{administrative area level 1.}
- \item{state}{administrative area level 2.}
- \item{city}{administrative area level 3.}
- \item{lat}{latitude.}
- \item{lng}{longitude.}
- \item{deaths}{the number of deaths.}
- \item{confirmed}{the number of cases.}
- \item{tests}{the number of tests.}
- \item{deaths_new}{daily increase in the number of deaths.}
- \item{confirmed_new}{daily increase in the number of cases.}
- \item{tests_new}{daily increase in the number of tests.}
- \item{pop}{total population.}
- \item{pop_14}{population ages 0-14 (\% of total population).}
- \item{pop_15_64}{population ages 15-64 (\% of total population).}
- \item{pop_65}{population ages 65+ (\% of total population).}
- \item{pop_age}{median age of population.}
- \item{pop_density}{population density per km2.}
- \item{pop_death_rate}{population mortality rate.}
-}
+Return of the internal function \code{\link{covid19}}
 }
 \description{
 Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
@@ -71,5 +49,5 @@ x <- diamond()
 
 }
 \seealso{
-\code{\link{world}}, \code{\link{italy}}, \code{\link{switzerland}}
+\code{\link{world}}, \code{\link{italy}}, \code{\link{switzerland}}, \code{\link{liechtenstein}}
 }

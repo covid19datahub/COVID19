@@ -10,23 +10,26 @@ geomap(
   value = "confirmed",
   label = "",
   filename = "",
-  width = 1920,
-  height = 1080,
-  title = "Coronavirus: {closest_state}",
-  text.size = 48,
+  width = 720,
+  height = 560,
+  title = "COVID-19: {closest_state}",
+  text.size = 24,
   caption = "",
-  caption.size = 18,
+  caption.size = 12,
   colour = "#bdbdbd",
   fill = "#2a2a28",
   background = "#000f1a",
   point.alpha = 0.95,
-  point.size = c(1, 32),
+  point.size = c(1, 24),
   point.colour = c("#ffaa00", "#a20f0e"),
   legend.title = "",
   legend.background = "transparent",
   legend.position = c(0, 0),
-  legend.barheight = 24,
-  legend.barwidth = 3,
+  legend.barheight = 8,
+  legend.barwidth = 1,
+  fps = 10,
+  nframes = NULL,
+  end_pause = 30,
   ...
 )
 }
@@ -73,6 +76,12 @@ geomap(
 
 \item{legend.barwidth}{the width of the colourbar.}
 
+\item{fps}{the framerate of the animation in frames/sec.}
+
+\item{nframes}{the number of frames to render. Default two frames per date.}
+
+\item{end_pause}{number of times to repeat the last frame in the animation.}
+
 \item{...}{additional arguments passed to \code{\link[gganimate]{animate}}}
 }
 \value{
@@ -87,7 +96,7 @@ Visualize data across the space and time dimensions by animated mapping.
 # download data
 it <- italy()
 
-# add label
+# add column
 it$label <- factor(it$confirmed)
 
 # map
@@ -95,11 +104,9 @@ geomap(it,
   map = "italy",
   value = "confirmed",
   label = "label",
-  title = "Coronavirus: {closest_state}",
+  title = "COVID-19: {closest_state}",
   caption  = "Data source: ...",
-  legend.title = "Total cases",
-  nframes = 30+(2*length(unique(it$date))),
-  end_pause = 30)
+  legend.title = "Total cases")
 }
 
 }

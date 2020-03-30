@@ -35,18 +35,19 @@ s2 <- switzerland("state")   # by canton
 i1 <- italy("country")       # by country 
 i2 <- italy("state")         # by region 
 i3 <- italy("city")          # by city
+
+# Liechtenstein
+l1 <- liechtenstein()        # by country 
 ```
 
 ## Data Visualization
 
 ```R
-geomap(w2, 
+geomap(w1, 
   map = "world", 
   value = "confirmed",
-  title = "COVID-19 Spread: {closest_state}"
-  caption = "Data source: JHU CSSE",
-  nframes = 30+(2*length(unique(w2$date))),
-  end_pause = 30)
+  title = "COVID-19 Total Cases: {closest_state}",
+  caption = "Data source: JHU CSSE")
 ```
 
 ![](https://storage.guidotti.dev/covid19/map/world.gif)
@@ -57,6 +58,7 @@ geomap(w2,
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **World**            | [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)](https://github.com/CSSEGISandData/COVID-19) | [World Bank Open Data](https://data.worldbank.org/), [World Factbook by CIA](https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html). |
 | **Italy**            | [Ministero della Salute, Dipartimento della Protezione Civile](https://github.com/pcm-dpc/COVID-19) | [Istituto Nazionale di Statistica](https://www.istat.it/en/population-and-households?data-and-indicators) |
-| **Switzerland**      | [Repository collecting the data published on the cantonal websites](https://github.com/daenuprobst/covid19-cases-switzerland) | [Swiss Federal Statistical Office](https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html) |
+| **Switzerland**      | [Open Government Data by Swiss cantons](https://github.com/openZH/covid_19) | [Swiss Federal Statistical Office](https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html) |
+| **Liechtenstein**    | [Open Government Data by Principality of Liechtenstein](https://github.com/openZH/covid_19) |                                                              |
 | **Diamond Princess** | [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)](https://github.com/CSSEGISandData/COVID-19), [Wikipedia](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships) | [Wikipedia](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships) |
 

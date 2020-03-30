@@ -3,7 +3,7 @@
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 #' Diamond Princess data.
 #'
-#' @seealso \code{\link{world}}, \code{\link{italy}}, \code{\link{switzerland}}
+#' @seealso \code{\link{world}}, \code{\link{italy}}, \code{\link{switzerland}}, \code{\link{liechtenstein}}
 #'
 #' @details
 #' Number of tested cases pulled from \href{https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships}{Wikipedia}.
@@ -36,29 +36,7 @@
 #'  \item \href{http://www.salute.gov.it/nuovocoronavirus}{Italy Ministry of Health}
 #' }
 #'
-#' @return Tidy format \code{tibble} (\code{data.frame}) grouped by id:
-#' \describe{
-#'  \item{id}{id in the form "country|state|city".}
-#'  \item{date}{date.}
-#'  \item{country}{administrative area level 1.}
-#'  \item{state}{administrative area level 2.}
-#'  \item{city}{administrative area level 3.}
-#'  \item{lat}{latitude.}
-#'  \item{lng}{longitude.}
-#'  \item{deaths}{the number of deaths.}
-#'  \item{confirmed}{the number of cases.}
-#'  \item{tests}{the number of tests.}
-#'  \item{deaths_new}{daily increase in the number of deaths.}
-#'  \item{confirmed_new}{daily increase in the number of cases.}
-#'  \item{tests_new}{daily increase in the number of tests.}
-#'  \item{pop}{total population.}
-#'  \item{pop_14}{population ages 0-14 (\% of total population).}
-#'  \item{pop_15_64}{population ages 15-64 (\% of total population).}
-#'  \item{pop_65}{population ages 65+ (\% of total population).}
-#'  \item{pop_age}{median age of population.}
-#'  \item{pop_density}{population density per km2.}
-#'  \item{pop_death_rate}{population mortality rate.}
-#' }
+#' @return Return of the internal function \code{\link{covid19}}
 #'
 #' @examples
 #' x <- diamond()
@@ -67,6 +45,19 @@
 #'
 diamond <- function(){
 
-  return(clean(juhcsse(), diamond = TRUE))
+  # download
+  x <- jhuCSSE()
+
+  # subset
+  x         <- x[x$country=="Diamond Princess",]
+  dp        <- utils::read.csv(system.file("extdata", "dp.csv", package = "COVID19"))
+  dp$date   <- as.Date(dp$date, format = "%Y-%m-%d")
+  idx       <- which(x$date %in% dp$date)
+  x         <- x[-idx,]
+  x         <- dplyr::bind_rows(x,dp) %>% tidyr::fill(country, state)
+  x$pop     <- 3711
+
+  # return
+  return(covid19(x))
 
 }
