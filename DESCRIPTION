@@ -1,7 +1,7 @@
 Package: COVID19
 Type: Package
 Title: Coronavirus COVID-19 (2019-nCoV) Data Acquisition and Visualization
-Version: 0.2.3
+Version: 0.2.3.1
 Authors@R: person(given = "Emanuele", family = "Guidotti", email = "emanuele.guidotti@unine.ch", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8961-6623"))
 Description: Collects unified and curated datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic across several trusted sources. The latest data are downloaded in real-time, processed and merged with demographic indicators. The package implements advanced data visualization across the space and the time dimensions by means of animated mapping. Besides worldwide data, the package includes granular data for Italy, Switzerland and the Diamond Princess.
 License: GPL-3
