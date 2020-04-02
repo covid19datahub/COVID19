@@ -7,6 +7,7 @@
 #'
 #' @param x a grouped \code{tibble}.
 #' @param f a function to apply to each group. It should have at least 2 formal arguments: (1) the group data and (2) the group key.
+#' @param ... additional arguments passed on to \code{f}.
 #'
 #' @return List of results from calling \code{f} on each group.
 #'
@@ -20,6 +21,6 @@
 #'
 #' @export
 #'
-gapply <- function(x, f){
-  dplyr::group_map(x, f)
+gapply <- function(x, f, ...){
+  dplyr::group_map(x, f, ...)
 }

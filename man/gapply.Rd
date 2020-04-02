@@ -4,12 +4,14 @@
 \alias{gapply}
 \title{Apply a function to each group}
 \usage{
-gapply(x, f)
+gapply(x, f, ...)
 }
 \arguments{
 \item{x}{a grouped \code{tibble}.}
 
 \item{f}{a function to apply to each group. It should have at least 2 formal arguments: (1) the group data and (2) the group key.}
+
+\item{...}{additional arguments passed on to \code{f}.}
 }
 \value{
 List of results from calling \code{f} on each group.
