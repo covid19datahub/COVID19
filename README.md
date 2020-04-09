@@ -12,7 +12,7 @@ For non R users, the datasets are made available in [csv format](https://storage
 
 ```R
 # Install COVID19
-devtools::install_github("emanuele-guidotti/COVID19")
+install.packages("COVID19")
 
 # Load COVID19
 require("COVID19")
