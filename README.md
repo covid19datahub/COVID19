@@ -62,3 +62,7 @@ geomap(w1,
 | **Liechtenstein**    | [Open Government Data by Principality of Liechtenstein](https://github.com/openZH/covid_19) |                                                              |
 | **Diamond Princess** | [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)](https://github.com/CSSEGISandData/COVID-19), [Wikipedia](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships) | [Wikipedia](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships) |
 
+## Use Cases
+
+- Monitoring the advancement of the COVID–19 contagion in the regions of Italy ([code](https://github.com/krzbar/COVID19))
+
