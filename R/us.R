@@ -1,10 +1,10 @@
-#' Coronavirus COVID-19 data - Global
+#' Coronavirus COVID-19 data - United States
 #'
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
-#' Global data by state.
-#' The data are downloaded in real-time, processed and merged with demographic indicators (\code{\link{WB}}).
+#' US data by state.
+#' The data are downloaded in real-time.
 #'
-#' @seealso \code{\link{diamond}}, \code{\link{italy}}, \code{\link{switzerland}}, \code{\link{liechtenstein}}
+#' @seealso \code{\link{world}}, \code{\link{diamond}}, \code{\link{italy}}, \code{\link{switzerland}}, \code{\link{liechtenstein}}
 #'
 #' @param type one of \code{country} (data by country) or \code{state} (data by state). Default \code{state}, data by state.
 #'
@@ -42,44 +42,50 @@
 #'
 #' @examples
 #' # data by country
-#' x <- world("country")
+#' x <- us("country")
 #'
 #' # data by state
-#' x <- world("state")
+#' x <- us("state")
 #'
 #' @export
 #'
-world <- function(type = "state"){
+us <- function(type = "state"){
 
   # check
   if(!(type %in% c("country","state")))
     stop("type must be one of 'country', 'state'")
 
   # download data
-  x <- jhuCSSE("global")
+  x <- jhuCSSE("US")
 
-  # drop "Taiwan*" and "Holy See"
-  x <- x[!(x$country %in% c("Taiwan*","Holy See")),]
+  # drop "Grand Princess" and "Diamond Princess"
+  x <- x[!(x$state %in% c("Grand Princess","Diamond Princess")),]
 
-  # type
+  # bindings
+  Combined_Key <- country <- state <- date <- lat <- lng <- confirmed <- deaths <- tests <- pop <- NULL
+
+  # group by
   if(type=="country"){
-
-    # bindings
-    country <- date <- lat <- lng <- confirmed <- deaths <- tests <- NULL
-
-    # aggregate
     x <- x %>%
-      dplyr::group_by(country, date) %>%
-      dplyr::summarize(lat = mean(lat, na.rm = TRUE),
-                       lng = mean(lng, na.rm = TRUE),
-                       confirmed = sum(confirmed, na.rm = TRUE),
-                       deaths = sum(deaths, na.rm = TRUE),
-                       tests = sum(tests, na.rm = TRUE))
-
+      dplyr::group_by(country, date)
+  }
+  if(type=="state"){
+    x <- x %>%
+      dplyr::group_by(Combined_Key, state, country, date)
   }
 
+  # aggregate
+  x <- x %>%
+    dplyr::summarize(lat = mean(lat, na.rm = TRUE),
+                     lng = mean(lng, na.rm = TRUE),
+                     confirmed = sum(confirmed, na.rm = TRUE),
+                     deaths = sum(deaths, na.rm = TRUE),
+                     tests = sum(tests, na.rm = TRUE),
+                     pop = sum(pop, na.rm = TRUE))
+
+
   # population info
-  x <- merge(x, COVID19::WB, by.x = "country", by.y = "id", all.x = TRUE)
+  # x <- merge(x, COVID19::US, by.x = "country", by.y = "id", all.x = TRUE)
 
   # return
   return(covid19(x))

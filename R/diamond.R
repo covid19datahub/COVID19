@@ -46,7 +46,10 @@
 diamond <- function(){
 
   # download
-  x <- jhuCSSE()
+  x <- jhuCSSE("global")
+
+  # bindings
+  country <- state <- NULL
 
   # subset
   x         <- x[x$country=="Diamond Princess",]

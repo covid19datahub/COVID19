@@ -1,4 +1,4 @@
-jhuCSSE <- function(){
+jhuCSSE <- function(type = "global"){
 
   # data source
   repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/"
@@ -17,17 +17,28 @@ jhuCSSE <- function(){
     colnames(x)[cn %in% c("Longitude", "Long")] <- "lng"
     colnames(x)[cn=="Province_State"]           <- "state"
     colnames(x)[cn=="Country_Region"]           <- "country"
+    colnames(x)[cn=="Population"]               <- "pop"
 
     return(x)
 
   }
 
-  # files
-  files = c(
-    "confirmed" = "time_series_covid19_confirmed_global.csv",
-    "deaths"    = "time_series_covid19_deaths_global.csv",
-    "tests"     = "time_series_covid19_testing_global.csv"
-  )
+  # global
+  if(type=="global"){
+    files = c(
+      "confirmed" = "time_series_covid19_confirmed_global.csv",
+      "deaths"    = "time_series_covid19_deaths_global.csv"
+    )
+  }
+
+  # US
+  if(type=="US"){
+    files = c(
+      "confirmed" = "time_series_covid19_confirmed_US.csv",
+      "deaths"    = "time_series_covid19_deaths_US.csv"
+    )
+  }
+
 
   # download data
   data <- NULL
@@ -40,13 +51,23 @@ jhuCSSE <- function(){
       next
 
     x      <- clean_colnames(x)
-    x      <- reshape2::melt(x, id = c("state", "country", "lat", "lng"), value.name = names(files[i]), variable.name = "date")
+    cn     <- colnames(x)
+    id     <- c("Combined_Key", "state", "country", "lat", "lng", "pop")
+    id     <- id[id %in% cn]
+    cn     <- (cn %in% id) | !is.na(as.Date(cn, format = "X%m_%d_%y"))
+
+    x      <- reshape2::melt(x[,cn], id = id, value.name = names(files[i]), variable.name = "date")
     x$date <- as.Date(x$date, format = "X%m_%d_%y")
 
-    if(!is.null(data))
-      data <- merge(data, x, all = TRUE, by = c("state", "country", "lat", "lng", "date"))
-    else
+    if(!is.null(data)){
+      if(type=="global")
+        data <- merge(data, x, all = TRUE, by = c("state", "country", "date"), suffixes = c("",".y"))
+      if(type=="US")
+        data <- merge(data, x, all = TRUE, by = c("Combined_Key", "date"), suffixes = c("",".y"))
+    }
+    else {
       data <- x
+    }
 
   }
 
