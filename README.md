@@ -24,13 +24,13 @@ __R users__: find _real-time_ data sources and write R function(s) to import the
 
 1. Find data sources for real-time data such as number of cases, deaths, tests, hospitalized and new variables of this kind. See the data coverage table below to avoid working on something that is already available.
 2. Write an R function to import the data, just like [this](https://github.com/emanuele-guidotti/COVID19/blob/master/R/openZH.R).
-3. Submit your function to [this](https://github.com/emanuele-guidotti/COVID19/tree/r) repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
+3. Submit your function to this repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
 
 __non-R users__: find _historical_ data sources and put them into csv files.
 
 1. Find data sources for historical data such as demographics, population density, age, air quality and new variables of this kind. See the data coverage table below to avoid working on something that is already available.
-2. Create or improve a csv file, just like [this](https://github.com/emanuele-guidotti/COVID19/tree/csv).
-3. Submit your csv file to [this](https://github.com/emanuele-guidotti/COVID19/tree/csv) repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
+2. Create or improve a csv file, just like [this](https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db).
+3. Submit your csv file to this repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
 
 ## R Package COVID19
 
