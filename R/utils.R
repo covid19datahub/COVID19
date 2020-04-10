@@ -67,6 +67,7 @@ fill <- function(x){
 #' unified and curated COVID-19 dataset across different sources.
 #'
 #' @param x COVID-19 \code{data.frame}
+#' @param raw logical. Skip data cleaning? Default \code{FALSE}.
 #'
 #' @return Tidy format \code{tibble} (\code{data.frame}) grouped by id, containing the columns:
 #' \describe{
@@ -92,7 +93,7 @@ fill <- function(x){
 #'  \item{pop_death_rate}{population mortality rate.}
 #' }
 #'
-covid19 <- function(x){
+covid19 <- function(x, raw = FALSE){
 
   # bindings
   id <- date <- country <- state <- city <- lat <- lng <- confirmed <- tests <- deaths <- NULL
@@ -108,28 +109,35 @@ covid19 <- function(x){
   # fill
   x <- fill(x)
 
-  # clean
+  # sort and group
   x <- x %>%
     dplyr::arrange(date) %>%
-    dplyr::group_by(id) %>%
+    dplyr::group_by(id)
 
-    tidyr::fill(.direction = "downup",
-                'country', 'state', 'city',
-                'lat', 'lng',
-                'pop','pop_14','pop_15_64','pop_65',
-                'pop_age','pop_density',
-                'pop_death_rate') %>%
+  # clean
+  if(!raw){
 
-    tidyr::fill(.direction = "down",
-                'confirmed', 'tests', 'deaths') %>%
+    x <- x %>%
 
-    tidyr::replace_na(list(confirmed = 0,
-                           tests     = 0,
-                           deaths    = 0)) %>%
+      tidyr::fill(.direction = "downup",
+                  'country', 'state', 'city',
+                  'lat', 'lng',
+                  'pop','pop_14','pop_15_64','pop_65',
+                  'pop_age','pop_density',
+                  'pop_death_rate') %>%
 
-    dplyr::mutate(confirmed_new = c(confirmed[1], pmax(0,diff(confirmed))),
-                  tests_new     = c(tests[1],     pmax(0,diff(tests))),
-                  deaths_new    = c(deaths[1],    pmax(0,diff(deaths))))
+      tidyr::fill(.direction = "down",
+                  'confirmed', 'tests', 'deaths') %>%
+
+      tidyr::replace_na(list(confirmed = 0,
+                             tests     = 0,
+                             deaths    = 0)) %>%
+
+      dplyr::mutate(confirmed_new = c(confirmed[1], pmax(0,diff(confirmed))),
+                    tests_new     = c(tests[1],     pmax(0,diff(tests))),
+                    deaths_new    = c(deaths[1],    pmax(0,diff(deaths))))
+
+  }
 
   # return
   return(x)

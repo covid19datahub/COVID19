@@ -4,7 +4,10 @@
 \alias{diamond}
 \title{Coronavirus COVID-19 data - Diamond Princess}
 \usage{
-diamond()
+diamond(raw = FALSE)
+}
+\arguments{
+\item{raw}{logical. Skip data cleaning? Default \code{FALSE}}
 }
 \value{
 Return of the internal function \code{\link{covid19}}

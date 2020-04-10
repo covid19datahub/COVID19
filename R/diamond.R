@@ -5,6 +5,8 @@
 #'
 #' @seealso \code{\link{world}}, \code{\link{italy}}, \code{\link{switzerland}}, \code{\link{liechtenstein}}
 #'
+#' @param raw logical. Skip data cleaning? Default \code{FALSE}
+#'
 #' @details
 #' Number of tested cases pulled from \href{https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships}{Wikipedia}.
 #' Number of confirmed cases and deaths pulled from the repository for the 2019 Novel Coronavirus
@@ -43,7 +45,7 @@
 #'
 #' @export
 #'
-diamond <- function(){
+diamond <- function(raw = FALSE){
 
   # download
   x <- jhuCSSE("global")
@@ -61,6 +63,6 @@ diamond <- function(){
   x$pop     <- 3711
 
   # return
-  return(covid19(x))
+  return(covid19(x, raw = raw))
 
 }

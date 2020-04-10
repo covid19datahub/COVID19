@@ -7,6 +7,7 @@
 #' @seealso \code{\link{world}}, \code{\link{diamond}}, \code{\link{switzerland}}, \code{\link{liechtenstein}}
 #'
 #' @param type one of \code{country} (data by country), \code{state} (data by region) or \code{city} (data by city). Default \code{state}, data by region.
+#' @param raw logical. Skip data cleaning? Default \code{FALSE}.
 #'
 #' @details
 #' Data pulled from the \href{https://github.com/pcm-dpc/COVID-19}{repository} for the
@@ -26,7 +27,7 @@
 #'
 #' @export
 #'
-italy <- function(type = "state"){
+italy <- function(type = "state", raw = FALSE){
 
   # check
   if(!(type %in% c("country","state","city")))
@@ -72,6 +73,6 @@ italy <- function(type = "state"){
   x <- merge(x, COVID19::IT, by.x = type, by.y = "id", all.x = TRUE)
 
   # return
-  return(covid19(x))
+  return(covid19(x, raw = raw))
 
 }

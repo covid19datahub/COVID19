@@ -7,6 +7,7 @@
 #' @seealso \code{\link{world}}, \code{\link{diamond}}, \code{\link{italy}}, \code{\link{liechtenstein}}
 #'
 #' @param type one of \code{country} (data by country) or \code{state} (data by canton). Default \code{state}, data by canton.
+#' @param raw logical. Skip data cleaning? Default \code{FALSE}.
 #'
 #' @details
 #' Data pulled from \href{https://github.com/openZH/covid_19}{Open Government Data} which are communicated
@@ -23,7 +24,7 @@
 #'
 #' @export
 #'
-switzerland <- function(type = "state"){
+switzerland <- function(type = "state", raw = FALSE){
 
   # bindings
   country <- date <- confirmed <- deaths <- tests <- recovered <- hosp <- hosp_icu <- hosp_vent <- NULL
@@ -54,7 +55,7 @@ switzerland <- function(type = "state"){
   x <- merge(x, COVID19::CH, by.x = "code", by.y = "id", all.x = TRUE)
 
   # return
-  return(covid19(x))
+  return(covid19(x, raw = raw))
 
 }
 

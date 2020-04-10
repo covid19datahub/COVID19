@@ -4,10 +4,12 @@
 \alias{italy}
 \title{Coronavirus COVID-19 data - Italy}
 \usage{
-italy(type = "state")
+italy(type = "state", raw = FALSE)
 }
 \arguments{
 \item{type}{one of \code{country} (data by country), \code{state} (data by region) or \code{city} (data by city). Default \code{state}, data by region.}
+
+\item{raw}{logical. Skip data cleaning? Default \code{FALSE}.}
 }
 \value{
 Return of the internal function \code{\link{covid19}}

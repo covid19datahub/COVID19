@@ -4,10 +4,12 @@
 \alias{covid19}
 \title{Process and Clean COVID-19 Raw Data}
 \usage{
-covid19(x)
+covid19(x, raw = FALSE)
 }
 \arguments{
 \item{x}{COVID-19 \code{data.frame}}
+
+\item{raw}{logical. Skip data cleaning? Default \code{FALSE}.}
 }
 \value{
 Tidy format \code{tibble} (\code{data.frame}) grouped by id, containing the columns:

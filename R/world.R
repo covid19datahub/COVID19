@@ -7,6 +7,7 @@
 #' @seealso \code{\link{diamond}}, \code{\link{italy}}, \code{\link{switzerland}}, \code{\link{liechtenstein}}
 #'
 #' @param type one of \code{country} (data by country) or \code{state} (data by state). Default \code{state}, data by state.
+#' @param raw logical. Skip data cleaning? Default \code{FALSE}.
 #'
 #' @details
 #' Data pulled from the repository for the 2019 Novel Coronavirus
@@ -49,7 +50,7 @@
 #'
 #' @export
 #'
-world <- function(type = "state"){
+world <- function(type = "state", raw = FALSE){
 
   # check
   if(!(type %in% c("country","state")))
@@ -82,6 +83,6 @@ world <- function(type = "state"){
   x <- merge(x, COVID19::WB, by.x = "country", by.y = "id", all.x = TRUE)
 
   # return
-  return(covid19(x))
+  return(covid19(x, raw = raw))
 
 }

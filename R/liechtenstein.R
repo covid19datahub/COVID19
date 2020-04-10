@@ -6,6 +6,8 @@
 #'
 #' @seealso \code{\link{world}}, \code{\link{diamond}}, \code{\link{italy}}, \code{\link{switzerland}}
 #'
+#' @param raw logical. Skip data cleaning? Default \code{FALSE}.
+#'
 #' @details
 #' Data pulled from \href{https://github.com/openZH/covid_19}{Open Government Data} which are communicated by official
 #' Principality of Liechtenstein's sources.
@@ -17,7 +19,7 @@
 #'
 #' @export
 #'
-liechtenstein <- function(){
+liechtenstein <- function(raw = FALSE){
 
   # bindings
   country <- NULL
@@ -30,7 +32,7 @@ liechtenstein <- function(){
   # x <- merge(x, COVID19::CH, by.x = "code", by.y = "id", all.x = TRUE)
 
   # return
-  return(covid19(x))
+  return(covid19(x, raw = raw))
 
 }
 
