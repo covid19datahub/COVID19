@@ -2,7 +2,7 @@
 % Please edit documentation in R/italy.R
 \name{italy}
 \alias{italy}
-\title{Coronavirus COVID-19 data - Italy}
+\title{Italy}
 \usage{
 italy(type = "state", raw = FALSE)
 }
@@ -12,16 +12,14 @@ italy(type = "state", raw = FALSE)
 \item{raw}{logical. Skip data cleaning? Default \code{FALSE}.}
 }
 \value{
-Return of the internal function \code{\link{covid19}}
+Grouped \code{tibble} (\code{data.frame}). \href{https://github.com/emanuele-guidotti/COVID19}{More info}
 }
 \description{
 Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 Italian data by country, state (regions) or city.
-The data are downloaded in real-time, processed and merged with demographic indicators (\code{\link{IT}}).
 }
 \details{
-Data pulled from the \href{https://github.com/pcm-dpc/COVID-19}{repository} for the
-2019 Novel Coronavirus by Ministero della Salute, \href{http://www.protezionecivile.it/}{Dipartimento della Protezione Civile, Italia}.
+See \href{https://github.com/emanuele-guidotti/COVID19}{data sources}
 }
 \examples{
 # data by country
@@ -33,7 +31,4 @@ x <- italy("state")
 # data by city
 x <- italy("city")
 
-}
-\seealso{
-\code{\link{world}}, \code{\link{diamond}}, \code{\link{switzerland}}, \code{\link{liechtenstein}}
 }

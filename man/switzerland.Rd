@@ -2,7 +2,7 @@
 % Please edit documentation in R/switzerland.R
 \name{switzerland}
 \alias{switzerland}
-\title{Coronavirus COVID-19 data - Switzerland}
+\title{Switzerland}
 \usage{
 switzerland(type = "state", raw = FALSE)
 }
@@ -12,16 +12,14 @@ switzerland(type = "state", raw = FALSE)
 \item{raw}{logical. Skip data cleaning? Default \code{FALSE}.}
 }
 \value{
-Return of the internal function \code{\link{covid19}}
+Grouped \code{tibble} (\code{data.frame}). \href{https://github.com/emanuele-guidotti/COVID19}{More info}
 }
 \description{
 Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 Swiss data by country or state (cantons).
-The data are downloaded in real-time, processed and merged with demographic indicators (\code{\link{CH}}).
 }
 \details{
-Data pulled from \href{https://github.com/openZH/covid_19}{Open Government Data} which are communicated
-by official Swiss canton's sources.
+See \href{https://github.com/emanuele-guidotti/COVID19}{data sources}
 }
 \examples{
 # data by country
@@ -30,7 +28,4 @@ x <- switzerland("country")
 # data by canton
 x <- switzerland("state")
 
-}
-\seealso{
-\code{\link{world}}, \code{\link{diamond}}, \code{\link{italy}}, \code{\link{liechtenstein}}
 }

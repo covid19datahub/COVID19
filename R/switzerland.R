@@ -1,19 +1,15 @@
-#' Coronavirus COVID-19 data - Switzerland
+#' Switzerland
 #'
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 #' Swiss data by country or state (cantons).
-#' The data are downloaded in real-time, processed and merged with demographic indicators (\code{\link{CH}}).
-#'
-#' @seealso \code{\link{world}}, \code{\link{diamond}}, \code{\link{italy}}, \code{\link{liechtenstein}}
 #'
 #' @param type one of \code{country} (data by country) or \code{state} (data by canton). Default \code{state}, data by canton.
 #' @param raw logical. Skip data cleaning? Default \code{FALSE}.
 #'
 #' @details
-#' Data pulled from \href{https://github.com/openZH/covid_19}{Open Government Data} which are communicated
-#' by official Swiss canton's sources.
+#' See \href{https://github.com/emanuele-guidotti/COVID19}{data sources}
 #'
-#' @return Return of the internal function \code{\link{covid19}}
+#' @return Grouped \code{tibble} (\code{data.frame}). \href{https://github.com/emanuele-guidotti/COVID19}{More info}
 #'
 #' @examples
 #' # data by country
@@ -51,8 +47,8 @@ switzerland <- function(type = "state", raw = FALSE){
                        hosp_vent = sum(hosp_vent, na.rm = TRUE))
   }
 
-  # population info
-  x <- merge(x, COVID19::CH, by.x = "code", by.y = "id", all.x = TRUE)
+  # merge
+  x <- merge(x, db("ch"), by.x = "code", by.y = "id", all.x = TRUE)
 
   # return
   return(covid19(x, raw = raw))

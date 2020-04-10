@@ -41,6 +41,12 @@ update <- function(){
 
 
 
+db <- function(id){
+  utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"))
+}
+
+
+
 fill <- function(x){
 
   # subset
@@ -61,38 +67,7 @@ fill <- function(x){
 }
 
 
-#' Process and Clean COVID-19 Raw Data
-#'
-#' Internal function used to clean the raw data. Provides a
-#' unified and curated COVID-19 dataset across different sources.
-#'
-#' @param x COVID-19 \code{data.frame}
-#' @param raw logical. Skip data cleaning? Default \code{FALSE}.
-#'
-#' @return Tidy format \code{tibble} (\code{data.frame}) grouped by id, containing the columns:
-#' \describe{
-#'  \item{id}{id in the form "country|state|city".}
-#'  \item{date}{date.}
-#'  \item{country}{administrative area level 1.}
-#'  \item{state}{administrative area level 2.}
-#'  \item{city}{administrative area level 3.}
-#'  \item{lat}{latitude.}
-#'  \item{lng}{longitude.}
-#'  \item{deaths}{the number of deaths.}
-#'  \item{confirmed}{the number of cases.}
-#'  \item{tests}{the number of tests.}
-#'  \item{deaths_new}{daily increase in the number of deaths.}
-#'  \item{confirmed_new}{daily increase in the number of cases.}
-#'  \item{tests_new}{daily increase in the number of tests.}
-#'  \item{pop}{total population.}
-#'  \item{pop_14}{population ages 0-14 (\% of total population). Except Switzerland: ages 0-19.}
-#'  \item{pop_15_64}{population ages 15-64 (\% of total population). Except Switzerland: ages 20-64.}
-#'  \item{pop_65}{population ages 65+ (\% of total population).}
-#'  \item{pop_age}{median age of population.}
-#'  \item{pop_density}{population density per km2.}
-#'  \item{pop_death_rate}{population mortality rate.}
-#' }
-#'
+
 covid19 <- function(x, raw = FALSE){
 
   # bindings
@@ -132,6 +107,11 @@ covid19 <- function(x, raw = FALSE){
     dplyr::mutate(confirmed_new = c(confirmed[1], pmax(0,diff(confirmed))),
                   tests_new     = c(tests[1],     pmax(0,diff(tests))),
                   deaths_new    = c(deaths[1],    pmax(0,diff(deaths))))
+
+  # convert
+  x$date <- as.Date(x$date)
+  for(i in c('id','country','state','city'))
+    x[[i]] <- as.character(x[[i]])
 
   # return
   return(x)
