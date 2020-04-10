@@ -68,10 +68,6 @@ geomap(w1,
 | **Liechtenstein**    | [Open Government Data by Principality of Liechtenstein](https://github.com/openZH/covid_19) | [Open Government Data by Principality of Liechtenstein](https://github.com/openZH/covid_19) | [Open Government Data by Principality of Liechtenstein](https://github.com/openZH/covid_19) |                                                              |                                                              |                                                              |                                                              |                                                              |                                                              |                                                              |
 | **Diamond Princess** | [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)](https://github.com/CSSEGISandData/COVID-19), [Wikipedia](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships) | [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)](https://github.com/CSSEGISandData/COVID-19), [Wikipedia](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships) | [Wikipedia](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships) | [Wikipedia](https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_cruise_ships) |  |  |  |  |  |  |
 
-_* Switzerland: ages 0-19_
-
-_** Switzerland: ages 20-64_
-
 ## Data Coverage
 
 |                                                              | deaths                                                       | confirmed                                                    | tests                                                        | pop                                                          | pop_14                                                       | pop_15_64                                                    | pop_65                                                       | pop_age                                                      | pop_density                                                  | pop_death_rate                                               |
@@ -99,3 +95,10 @@ _** Switzerland: ages 20-64_
 
 - Monitoring the advancement of the COVID–19 contagion in the regions of Italy ([code](https://github.com/krzbar/COVID19))
 
+
+
+____________
+
+_* Switzerland: ages 0-19_
+
+_** Switzerland: ages 20-64_
