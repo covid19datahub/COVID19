@@ -4,9 +4,37 @@
 
 The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and contribute by extending the number of supporting data sources as a joint effort against COVID-19.
 
-The data are available via the [R package COVID19](https://cran.r-project.org/package=COVID19) or in csv format (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
+The data are available to the end-user via the [R package COVID19](https://cran.r-project.org/package=COVID19) or in csv format (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
+
+## About
+
+#### Goal
+
+Provide the research community with a unified data hub by collecting worldwide fine-grained data merged with demographics, air pollution, and other exogenous variables helpful for a better understanding of COVID-19.
+
+#### How 
+
+The data are collected with the [R package COVID19](https://cran.r-project.org/package=COVID19) (this repository). For R users, the COVID19 package is the recommended way to interact with the dataset. For non R users, the data are provided in csv format and regularly updated (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
+
+#### Join the mission
+
+Whether or not you are an R user... take part in the data collection! Your contribution will be gratefully acknowledged. 
+
+__R users__: find _real-time_ data sources and write R function(s) to import the data.
+
+1. Find data sources for real-time data such as number of cases, deaths, tests, hospitalized and new variables of this kind. See the data coverage table below to avoid working on something that is already available.
+2. Write an R function to import the data, just like [this](https://github.com/emanuele-guidotti/COVID19/blob/master/R/openZH.R).
+3. Submit your function to [this](https://github.com/emanuele-guidotti/COVID19/tree/r) repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
+
+__non-R users__: find _historical_ data sources and put them into csv files.
+
+1. Find data sources for historical data such as demographics, population density, age, air quality and new variables of this kind. See the data coverage table below to avoid working on something that is already available.
+2. Create or improve a csv file, just like [this](https://github.com/emanuele-guidotti/COVID19/tree/csv).
+3. Submit your csv file to [this](https://github.com/emanuele-guidotti/COVID19/tree/csv) repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
 
 ## R Package COVID19
+
+Simple, yet effective R package to acquire tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The data are downloaded in real-time, cleaned and matched with demographic indicators and additional variables.
 
 __Quickstart__
 
@@ -44,7 +72,9 @@ s2 <- switzerland("state")   # data by canton
 l1 <- liechtenstein()        # data by country
 ```
 
-## Data Coverage
+## Data Hub (csv)
+
+Daily updated datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic in csv format. The following table shows the data coverage for each variable in each file. 
 
 |                                                              | deaths                                                       | confirmed                                                    | tests                                                        | pop                                                          | pop_14                                                       | pop_15_64                                                    | pop_65                                                       | pop_age                                                      | pop_density                                                  | pop_death_rate                                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -73,6 +103,8 @@ _** Switzerland: ages 20-64_
 
 ## Data Sources
 
+The following sources are gratefully acknowledged for making the data available to the public.
+
 |                      | deaths                                                       | confirmed                                                    | tests                                                        | pop                                                          | pop_14                                                       | pop_15_64                                                    | pop_65                                                       | pop_age                                                      | pop_density                                                  | pop_death_rate                                               |
 | -------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 |                      | number of COVID19 deaths                                     | number of COVID19 confirmed cases                            | number of COVID19 tests                                      | total population                                             | population ages 0-14 (% of total population)*                | population ages 15-64 (% of total population)**              | population ages 65+ (% of total population)                  | median age of population                                     | population density per km<sup>2</sup>                        | population mortality rate                                    |
@@ -88,6 +120,8 @@ _* Switzerland: ages 0-19_
 _** Switzerland: ages 20-64_
 
 ## Acknowledgements
+
+The following people have contributed to the data collection as a joint effort against COVID-19.
 
 |                                                              | deaths                              | confirmed                           | tests                               | pop                                 | pop_14                                        | pop_15_64                                       | pop_65                                      | pop_age                             | pop_density                           | pop_death_rate                      |
 | ------------------------------------------------------------ | ----------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- | --------------------------------------------- | ----------------------------------------------- | ------------------------------------------- | ----------------------------------- | ------------------------------------- | ----------------------------------- |
