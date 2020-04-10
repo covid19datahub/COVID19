@@ -55,7 +55,7 @@ diamond <- function(raw = FALSE){
 
   # subset
   x         <- x[x$country=="Diamond Princess",]
-  dp        <- utils::read.csv(system.file("extdata", "dp.csv", package = "COVID19"))
+  dp        <- utils::read.csv(system.file("extdata", "db", "dp.csv", package = "COVID19"))
   dp$date   <- as.Date(dp$date, format = "%Y-%m-%d")
   idx       <- which(x$date %in% dp$date)
   x         <- x[-idx,]
