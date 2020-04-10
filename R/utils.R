@@ -109,35 +109,29 @@ covid19 <- function(x, raw = FALSE){
   # fill
   x <- fill(x)
 
-  # sort and group
+  # clean
   x <- x %>%
     dplyr::arrange(date) %>%
-    dplyr::group_by(id)
+    dplyr::group_by(id)  %>%
+    tidyr::fill(.direction = "downup",
+                'country', 'state', 'city',
+                'lat', 'lng',
+                'pop','pop_14','pop_15_64','pop_65',
+                'pop_age','pop_density',
+                'pop_death_rate')
 
-  # clean
-  if(!raw){
-
+  if(!raw)
     x <- x %>%
-
-      tidyr::fill(.direction = "downup",
-                  'country', 'state', 'city',
-                  'lat', 'lng',
-                  'pop','pop_14','pop_15_64','pop_65',
-                  'pop_age','pop_density',
-                  'pop_death_rate') %>%
-
       tidyr::fill(.direction = "down",
                   'confirmed', 'tests', 'deaths') %>%
-
       tidyr::replace_na(list(confirmed = 0,
                              tests     = 0,
-                             deaths    = 0)) %>%
+                             deaths    = 0))
 
-      dplyr::mutate(confirmed_new = c(confirmed[1], pmax(0,diff(confirmed))),
-                    tests_new     = c(tests[1],     pmax(0,diff(tests))),
-                    deaths_new    = c(deaths[1],    pmax(0,diff(deaths))))
-
-  }
+  x <- x %>%
+    dplyr::mutate(confirmed_new = c(confirmed[1], pmax(0,diff(confirmed))),
+                  tests_new     = c(tests[1],     pmax(0,diff(tests))),
+                  deaths_new    = c(deaths[1],    pmax(0,diff(deaths))))
 
   # return
   return(x)
