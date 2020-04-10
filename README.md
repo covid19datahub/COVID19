@@ -8,25 +8,29 @@ The data are available to the end-user via the [R package COVID19](https://cran.
 
 ## About
 
-#### Goal
+### Goal
 
 Provide the research community with a unified data hub by collecting worldwide fine-grained data merged with demographics, air pollution, and other exogenous variables helpful for a better understanding of COVID-19.
 
-#### How 
+### How 
 
 The data are collected with the [R package COVID19](https://cran.r-project.org/package=COVID19) (this repository). For R users, the COVID19 package is the recommended way to interact with the dataset. For non R users, the data are provided in csv format and regularly updated (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
 
-#### Join the mission
+### Join the mission
 
 Whether or not you are an R user... take part in the data collection! Your contribution will be gratefully acknowledged. 
 
-__R users__: find _real-time_ data sources and write R function(s) to import the data.
+#### R users 
+
+Find _real-time_ data sources and write R function(s) to import the data.
 
 1. Find data sources for real-time data such as number of cases, deaths, tests, hospitalized and new variables of this kind. See the data coverage table below to avoid working on something that is already available.
 2. Write an R function to import the data, just like [this](https://github.com/emanuele-guidotti/COVID19/blob/master/R/openZH.R).
 3. Submit your function to this repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
 
-__non-R users__: find _historical_ data sources and put them into csv files.
+#### non-R users
+
+Find _historical_ data sources and put them into csv files.
 
 1. Find data sources for historical data such as demographics, population density, age, air quality and new variables of this kind. See the data coverage table below to avoid working on something that is already available.
 2. Create or improve a csv file, just like [this](https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db).
@@ -36,7 +40,7 @@ __non-R users__: find _historical_ data sources and put them into csv files.
 
 Simple, yet effective R package to acquire tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The data are downloaded in real-time, cleaned and matched with demographic indicators and additional variables.
 
-__Quickstart__
+### Quickstart
 
 ```R
 # Install COVID19
@@ -45,7 +49,7 @@ install.packages("COVID19")
 # Load COVID19
 require("COVID19")
 ```
-__Data Acquisition__
+### Data Acquisition
 
 ```R
 # Diamond Princess 
