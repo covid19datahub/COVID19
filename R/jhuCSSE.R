@@ -56,7 +56,7 @@ jhuCSSE <- function(type){
     id     <- id[id %in% cn]
     cn     <- (cn %in% id) | !is.na(as.Date(cn, format = "X%m_%d_%y"))
 
-    x      <- reshape2::melt(x[,cn], id = id, value.name = names(files[i]), variable.name = "date")
+    x      <- x[,cn] %>% tidyr::pivot_longer(cols = -id, values_to = names(files[i]), names_to = "date")
     x$date <- as.Date(x$date, format = "X%m_%d_%y")
 
     if(!is.null(data)){
