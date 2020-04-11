@@ -34,7 +34,7 @@ NULL
 update <- function(){
 
   detach("package:COVID19", unload=TRUE)
-  x <- try(devtools::install_github('emanuele-guidotti/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
+  x <- try(remotes::install_github('emanuele-guidotti/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
   library(COVID19)
 
 }
