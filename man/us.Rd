@@ -22,10 +22,11 @@ US data by country or state.
 See \href{https://github.com/emanuele-guidotti/COVID19}{data sources}
 }
 \examples{
+\dontrun{
 # data by country
 x <- us("country")
 
 # data by state
 x <- us("state")
-
+}
 }

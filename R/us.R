@@ -12,12 +12,13 @@
 #' @return Grouped \code{tibble} (\code{data.frame}). \href{https://github.com/emanuele-guidotti/COVID19}{More info}
 #'
 #' @examples
+#' \dontrun{
 #' # data by country
 #' x <- us("country")
 #'
 #' # data by state
 #' x <- us("state")
-#'
+#' }
 #' @export
 #'
 us <- function(type = "state", raw = FALSE){
