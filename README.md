@@ -76,7 +76,7 @@ s2 <- switzerland("state")   # data by canton
 l1 <- liechtenstein()        # data by country
 ```
 
-## Data Hub (csv)
+## CSV Data Files
 
 Daily updated datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic in csv format. The following table shows the data coverage for each variable in each file. 
 
