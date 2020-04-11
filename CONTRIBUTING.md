@@ -20,6 +20,6 @@ __If you are new to GitHub, follow 3 simple steps to collaborate on the project:
 ## Contributing Guidelines for non-R users
 
 - Find data sources for **historical data** such as demographics, population density, age, air quality and other **slow-changing variables**. See the [data coverage table](https://github.com/emanuele-guidotti/COVID19#csv-data-files) to avoid working on something that is already available.
-- Improve the csv file(s) available [here](https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db) by filling-in the missing values or extending the file with additional variables.
+- Improve the csv file(s) available [here](https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db) by filling-in the missing values or extending the file(s) with additional variables.
 - Clearly state where the data come from (data source + year) in your pull request. 
 
