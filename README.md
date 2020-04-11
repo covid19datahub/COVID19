@@ -2,7 +2,7 @@
 
 ![](https://www.r-pkg.org/badges/version/COVID19) ![](https://www.r-pkg.org/badges/last-release/COVID19) ![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19) 
 
-The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and contribute by extending the number of supporting data sources as a joint effort against COVID-19.
+The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and [contribute](https://github.com/emanuele-guidotti/COVID19/blob/master/CONTRIBUTING.md) by extending the number of supporting data sources as a joint effort against COVID-19.
 
 The data are available to the end-user via the [R package COVID19](https://cran.r-project.org/package=COVID19) or in csv format (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
 
@@ -18,23 +18,7 @@ The data are collected with the [R package COVID19](https://cran.r-project.org/p
 
 ### Join the mission
 
-Whether or not you are an R user... take part in the data collection! Your contribution will be gratefully acknowledged. 
-
-#### R users 
-
-Find _real-time_ data sources and write R function(s) to import the data.
-
-1. Find data sources for real-time data such as number of cases, deaths, tests, hospitalized and new variables of this kind. See the data coverage table below to avoid working on something that is already available.
-2. Write an R function to import the data, just like [this](https://github.com/emanuele-guidotti/COVID19/blob/master/R/openZH.R).
-3. Submit your function to this repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
-
-#### non-R users
-
-Find _historical_ data sources and put them into csv files.
-
-1. Find data sources for historical data such as demographics, population density, age, air quality and new variables of this kind. See the data coverage table below to avoid working on something that is already available.
-2. Create or improve a csv file, just like [this](https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db).
-3. Submit your csv file to this repository by creating a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) 
+Whether or not you are an R user... take part in the data collection! Your contribution will be gratefully acknowledged. See [how to contribute](https://github.com/emanuele-guidotti/COVID19/blob/master/CONTRIBUTING.md).
 
 ## R Package COVID19
 
@@ -78,7 +62,7 @@ l1 <- liechtenstein()        # data by country
 
 ## CSV Data Files
 
-Daily updated datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic in csv format. The following table shows the data coverage for each variable in each file. 
+CSV datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The files are generated with the [R package COVID19](https://cran.r-project.org/package=COVID19) and updated daily. The following table shows the data coverage for each variable in each file. 
 
 |                                                              | deaths                                                       | confirmed                                                    | tests                                                        | pop                                                          | pop_14                                                       | pop_15_64                                                    | pop_65                                                       | pop_age                                                      | pop_density                                                  | pop_death_rate                                               |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
