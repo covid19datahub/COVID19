@@ -9,5 +9,5 @@ URL: https://github.com/emanuele-guidotti/COVID19
 BugReports: https://github.com/emanuele-guidotti/COVID19/issues
 Encoding: UTF-8
 LazyData: true
-Imports: devtools, utils, reshape2, dplyr, tidyr
+Imports: remotes, utils, reshape2, dplyr, tidyr
 RoxygenNote: 7.0.2
