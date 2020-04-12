@@ -7,7 +7,7 @@
 us(type = "state", raw = FALSE)
 }
 \arguments{
-\item{type}{one of \code{country} (data by country) or \code{state} (data by state). Default \code{state}, data by state.}
+\item{type}{one of \code{country} (data by country), \code{state} (data by state), \code{city} (data by city). Default \code{state}, data by state.}
 
 \item{raw}{logical. Skip data cleaning? Default \code{FALSE}.}
 }
@@ -28,5 +28,8 @@ x <- us("country")
 
 # data by state
 x <- us("state")
+
+#' # data by city
+x <- us("city")
 }
 }

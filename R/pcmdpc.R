@@ -22,7 +22,7 @@ pcmdpc <- function(type){
 
   # formatting
   data$date      <- data$data
-  data$country   <- factor("Italy")
+  data$country   <- "Italy"
   data$state     <- data$denominazione_regione
   data$city      <- data$denominazione_provincia
   data$lat       <- data$lat

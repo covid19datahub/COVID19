@@ -32,10 +32,10 @@ italy <- function(type = "state", raw = FALSE){
   # download
   x <- pcmdpc(type)
 
-  # merge
-  x <- merge(x, db("it"), by.x = type, by.y = "id", all.x = TRUE)
+  # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db
+  x$id <- x[[type]]
 
   # return
-  return(covid19(x, raw = raw))
+  return(covid19(x, id = "it", type = type, raw = raw))
 
 }

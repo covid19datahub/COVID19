@@ -1,12 +1,19 @@
-covid19 <- function(x, raw = FALSE){
+covid19 <- function(x, id = "", type = "", raw = FALSE){
 
   # bindings
-  id <- date <- country <- state <- city <- lat <- lng <- confirmed <- tests <- deaths <- NULL
+  date <- confirmed <- tests <- deaths <- NULL
+
+  # merge
+  if(id!="")
+    x <- merge(x, db(id = id, type = type), by = "id", all.x = TRUE, suffixes = c('.drop',''))
 
   # create columns if missing
-  col <- c('id','date','country','state','city','lat','lng','deaths','confirmed','tests','deaths_new','confirmed_new','tests_new','pop','pop_14','pop_15_64','pop_65','pop_age','pop_density','pop_death_rate')
+  col <- c('id','date',vars())
   x[,col[!(col %in% colnames(x))]] <- NA
-  x$id <- paste(x$country, x$state, x$city, sep = "|")
+
+  # check
+  if(any(duplicated(x[,c('id','date')])))
+    stop("the pair ('id','date') must be unique")
 
   # subset
   x <- x[,col]
@@ -16,19 +23,13 @@ covid19 <- function(x, raw = FALSE){
 
   # clean
   x <- x %>%
-    dplyr::arrange(date) %>%
+    dplyr::arrange(id, date) %>%
     dplyr::group_by(id)  %>%
-    tidyr::fill(.direction = "downup",
-                'country', 'state', 'city',
-                'lat', 'lng',
-                'pop','pop_14','pop_15_64','pop_65',
-                'pop_age','pop_density',
-                'pop_death_rate')
+    tidyr::fill(vars("slow"), .direction = "downup")
 
   if(!raw)
     x <- x %>%
-    tidyr::fill(.direction = "down",
-                'confirmed', 'tests', 'deaths') %>%
+    tidyr::fill(vars("fast"), .direction = "down") %>%
     tidyr::replace_na(list(confirmed = 0,
                            tests     = 0,
                            deaths    = 0))

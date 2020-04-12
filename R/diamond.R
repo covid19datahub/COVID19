@@ -31,6 +31,7 @@ diamond <- function(raw = FALSE){
   x         <- x[-idx,]
   x         <- dplyr::bind_rows(x,dp) %>% tidyr::fill(country, state)
   x$pop     <- 3711
+  x$id      <- "DP"
 
   # return
   return(covid19(x, raw = raw))

@@ -41,9 +41,47 @@ update <- function(){
 
 
 
-db <- function(id){
+db <- function(id, type = NULL){
+
+  if(!is.null(type)){
+    map <- c('country' = 1, 'state' = 2, 'city' = 3)
+    id  <- paste0(id,"-",map[type])
+  }
+
   utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"))
+
 }
+
+
+
+csv <- function(x, id = "", type = ""){
+
+  # bindings
+  . <- NULL
+
+  x <- x[,c("id",vars("slow"))]
+  x <- x[!duplicated(x),]
+
+  if(id!="" & type!="")
+    x <- merge(x, db(id = id, type = type), by = 'id', all = TRUE, suffixes = c('.x',''))
+
+  col <- c('id',vars("slow"))
+  x   <- x[,col] %>%
+    dplyr::arrange(-rowSums(is.na(.)), .$id)
+
+  if(type=="country"){
+    x$state <- NULL
+    x$city  <- NULL
+  }
+
+  if(type=="state"){
+    x$city  <- NULL
+  }
+
+  return(x)
+
+}
+
 
 
 
@@ -67,3 +105,61 @@ fill <- function(x){
 }
 
 
+
+vars <- function(type = "all"){
+
+  fast <- c('deaths','confirmed','tests')
+
+  slow <- c('country','state','city','lat','lng',
+            'pop','pop_14','pop_15_64','pop_65',
+            'pop_age','pop_density','pop_death_rate')
+
+  all  <- unique(c(
+            'country','state','city',
+            'deaths','deaths_new',
+            'confirmed','confirmed_new',
+            'tests','tests_new',
+            fast,
+            slow))
+
+  if(type=="slow")
+    return(slow)
+
+  if(type=="fast")
+    return(fast)
+
+  return(all)
+
+}
+
+
+#' Internal function - Check
+#'
+#' Identify which variables are missing for a given country/state/city.
+#'
+#' @param x \code{data.frame}
+#'
+#' @return \code{data.frame} of \code{logical}.
+#' Rows: country/state/city.
+#' Columns: Variables.
+#' \code{TRUE}: ok.
+#' \code{FALSE}: missing values.
+#'
+#' @examples
+#' \dontrun{
+#' x <- world(raw = TRUE)
+#' y <- COVID19:::check(x)
+#' View(y)
+#' }
+#'
+#' @keywords internal
+#'
+check <- function(x){
+
+  ok <- dplyr::group_map(x, function(x, g) apply(x, 2, function(x) any(!is.na(x))))
+  ok <- t(sapply(ok, function(x) x))
+  rownames(ok) <- dplyr::group_keys(x)$id
+
+  return(ok)
+
+}

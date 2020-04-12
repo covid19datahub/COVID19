@@ -29,30 +29,34 @@ world <- function(type = "state", raw = FALSE){
   # download
   x <- jhuCSSE("global")
 
-  # drop "Taiwan*" and "Holy See"
-  x <- x[!(x$country %in% c("Taiwan*","Holy See")),]
+  # clean
+  x <- x[!(x$country %in% c("Taiwan*","Holy See","Diamond Princess")),]
 
-  # type
+  # aggregate
   if(type=="country"){
 
     # bindings
-    country <- date <- lat <- lng <- confirmed <- deaths <- tests <- NULL
+    country <- date <- confirmed <- deaths <- tests <- NULL
 
     # aggregate
     x <- x %>%
       dplyr::group_by(country, date) %>%
-      dplyr::summarize(lat = mean(lat, na.rm = TRUE),
-                       lng = mean(lng, na.rm = TRUE),
-                       confirmed = sum(confirmed, na.rm = TRUE),
-                       deaths = sum(deaths, na.rm = TRUE),
-                       tests = sum(tests, na.rm = TRUE))
+      dplyr::summarize(confirmed = sum(confirmed, na.rm = TRUE),
+                       deaths    = sum(deaths, na.rm = TRUE),
+                       tests     = sum(tests, na.rm = TRUE))
 
   }
 
-  # merge
-  x <- merge(x, db("wb"), by.x = "country", by.y = "id", all.x = TRUE)
+  # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db
+  if(type=="state"){
+    x$id <- paste(x$state, x$country, sep = ", ")
+    x$id <- gsub(x$id, pattern = "^, ", replacement = "")
+  }
+  if(type=="country"){
+    x$id <- x$country
+  }
 
   # return
-  return(covid19(x, raw = raw))
+  return(covid19(x, id = "wb", type = type, raw = raw))
 
 }

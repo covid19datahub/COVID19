@@ -1,8 +1,5 @@
 openZH <- function(){
 
-  # bindings
-  code <- NULL
-
   # data source
   repo <- "https://raw.githubusercontent.com/openZH/covid_19/master/"
 
@@ -24,10 +21,7 @@ openZH <- function(){
   data$hosp      <- data$ncumul_hosp   # current, not cumulative numbers: https://github.com/openZH/covid_19
   data$hosp_icu  <- data$ncumul_ICU    # current, not cumulative numbers: https://github.com/openZH/covid_19
   data$hosp_vent <- data$ncumul_vent   # current, not cumulative numbers: https://github.com/openZH/covid_19
-
-  # country
-  data <- data %>%
-    dplyr::mutate(country = ifelse(code=="FL", "Liechtenstein", "Switzerland"))
+  data$country   <- ifelse(data$abbreviation_canton_and_fl=="FL", "Liechtenstein", "Switzerland")
 
   # return
   return(data)

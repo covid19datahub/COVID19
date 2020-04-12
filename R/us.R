@@ -3,7 +3,7 @@
 #' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
 #' US data by country or state.
 #'
-#' @param type one of \code{country} (data by country) or \code{state} (data by state). Default \code{state}, data by state.
+#' @param type one of \code{country} (data by country), \code{state} (data by state), \code{city} (data by city). Default \code{state}, data by state.
 #' @param raw logical. Skip data cleaning? Default \code{FALSE}.
 #'
 #' @details
@@ -18,23 +18,26 @@
 #'
 #' # data by state
 #' x <- us("state")
+#'
+#' #' # data by city
+#' x <- us("city")
 #' }
 #' @export
 #'
 us <- function(type = "state", raw = FALSE){
 
   # check
-  if(!(type %in% c("country","state")))
-    stop("type must be one of 'country', 'state'")
+  if(!(type %in% c("country","state","city")))
+    stop("type must be one of 'country', 'state', 'city'")
 
   # download
   x <- jhuCSSE("US")
 
-  # drop "Grand Princess" and "Diamond Princess"
+  # clean
   x <- x[!(x$state %in% c("Grand Princess","Diamond Princess")),]
 
   # bindings
-  Combined_Key <- country <- state <- date <- lat <- lng <- confirmed <- deaths <- tests <- pop <- NULL
+  country <- state <- date <- confirmed <- deaths <- tests <- NULL
 
   # group by
   if(type=="country"){
@@ -43,20 +46,26 @@ us <- function(type = "state", raw = FALSE){
   }
   if(type=="state"){
     x <- x %>%
-      dplyr::group_by(Combined_Key, state, country, date)
+      dplyr::group_by(country, state, date)
   }
 
   # aggregate
-  x <- x %>%
-    dplyr::summarize(lat = mean(lat, na.rm = TRUE),
-                     lng = mean(lng, na.rm = TRUE),
-                     confirmed = sum(confirmed, na.rm = TRUE),
-                     deaths = sum(deaths, na.rm = TRUE),
-                     tests = sum(tests, na.rm = TRUE),
-                     pop = sum(pop, na.rm = TRUE))
+  if(type %in% c("country","state")){
 
+    x <- x %>%
+      dplyr::summarize(confirmed = sum(confirmed, na.rm = TRUE),
+                       deaths = sum(deaths, na.rm = TRUE),
+                       tests = sum(tests, na.rm = TRUE))
+
+  }
+
+  # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db
+  if(type=="city")
+    x$id <- paste(x$city, x$state, x$country, sep = ", ")
+  else
+    x$id <- x[[type]]
 
   # return
-  return(covid19(x, raw = raw))
+  return(covid19(x, id = "us", type = type, raw = raw))
 
 }

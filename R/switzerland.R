@@ -22,12 +22,12 @@
 #'
 switzerland <- function(type = "state", raw = FALSE){
 
-  # bindings
-  country <- date <- confirmed <- deaths <- tests <- recovered <- hosp <- hosp_icu <- hosp_vent <- NULL
-
   # check
   if(!(type %in% c("country","state")))
     stop("type must be one of 'country', 'state'")
+
+  # bindings
+  country <- date <- confirmed <- deaths <- tests <- recovered <- hosp <- hosp_icu <- hosp_vent <- NULL
 
   # download
   x <- openZH() %>%
@@ -37,8 +37,7 @@ switzerland <- function(type = "state", raw = FALSE){
   if(type=="country"){
     x <- x %>%
       dplyr::group_by(country, date) %>%
-      dplyr::summarize(code      = "CH",
-                       confirmed = sum(confirmed, na.rm = TRUE),
+      dplyr::summarize(confirmed = sum(confirmed, na.rm = TRUE),
                        deaths    = sum(deaths, na.rm = TRUE),
                        tests     = sum(tests, na.rm = TRUE),
                        recovered = sum(recovered, na.rm = TRUE),
@@ -47,11 +46,14 @@ switzerland <- function(type = "state", raw = FALSE){
                        hosp_vent = sum(hosp_vent, na.rm = TRUE))
   }
 
-  # merge
-  x <- merge(x, db("ch"), by.x = "code", by.y = "id", all.x = TRUE)
+  # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db
+  if(type=="country")
+    x$id <- "CH"
+  else
+    x$id <- x$code
 
   # return
-  return(covid19(x, raw = raw))
+  return(covid19(x, id = "ch", type = type, raw = raw))
 
 }
 
