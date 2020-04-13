@@ -1,42 +1,40 @@
-pcmdpc <- function(type){
+pcmdpc <- function(file, cache){
 
   # source
   repo <- "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/"
 
-  if(type=="country")
+  if(file=="nazione")
     url <- "dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
-  else if(type=="state")
+  else if(file=="regioni")
     url <- "dati-regioni/dpc-covid19-ita-regioni.csv"
-  else if(type=="city")
+  else if(file=="province")
     url <- "dati-province/dpc-covid19-ita-province.csv"
+  else
+    stop("file not supported")
 
   # download
   url <- sprintf("%s/%s", repo, url)
-  data   <- utils::read.csv(url)
+  x   <- read.csv(url, cache = cache)
 
-  # dates
-  d <- as.Date(data$data, format = "%Y-%m-%d %H:%M:%S")
+  # date
+  d <- as.Date(x$data, format = "%Y-%m-%d %H:%M:%S")
   if(all(is.na(d)))
-    d <- as.Date(data$data, format = "%Y-%m-%dT%H:%M:%S")
-  data$data <- d
+    d <- as.Date(x$data, format = "%Y-%m-%dT%H:%M:%S")
+  x$date <- d
 
   # formatting
-  data$date      <- data$data
-  data$country   <- "Italy"
-  data$state     <- data$denominazione_regione
-  data$city      <- data$denominazione_provincia
-  data$lat       <- data$lat
-  data$lng       <- data$long
-  data$tests     <- data$tamponi
-  data$confirmed <- data$totale_casi
-  data$deaths    <- data$deceduti
-
-  # filter latlng
-  data <- data[!is.na(data$date),]
-  if(!is.null(data$lat) & !is.null(data$lng))
-    data <- data[data$lat!=0 | data$lng!=0,]
+  x$state        <- x$denominazione_regione
+  x$city         <- x$denominazione_provincia
+  x$lat          <- x$lat
+  x$lng          <- x$long
+  x$tests        <- x$tamponi
+  x$confirmed    <- x$totale_casi
+  x$deaths       <- x$deceduti
+  x$recovered    <- x$dimessi_guariti
+  x$hosp         <- x$totale_ospedalizzati
+  x$icu          <- x$terapia_intensiva
 
   # return
-  return(data)
+  return(x)
 
 }

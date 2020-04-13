@@ -1,62 +1,47 @@
-#' World
-#'
-#' Tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic.
-#' Global data by country or state.
-#'
-#' @param type one of \code{country} (data by country) or \code{state} (data by state). Default \code{state}, data by state.
-#' @param raw logical. Skip data cleaning? Default \code{FALSE}.
-#'
-#' @details
-#' See \href{https://github.com/emanuele-guidotti/COVID19}{data sources}
-#'
-#' @return Grouped \code{tibble} (\code{data.frame}). \href{https://github.com/emanuele-guidotti/COVID19}{More info}
-#'
-#' @examples
-#' # data by country
-#' x <- world("country")
-#'
-#' # data by state
-#' x <- world("state")
-#'
-#' @export
-#'
-world <- function(type = "state", raw = FALSE){
+WORLD <- function(level, cache){
 
-  # check
-  if(!(type %in% c("country","state")))
-    stop("type must be one of 'country', 'state'")
+  # fallback
+  if(level>2)
+    return(NULL)
 
   # download
-  x <- jhuCSSE("global")
+  x <- jhuCSSE("global", cache = cache)
 
   # clean
-  x <- x[!(x$country %in% c("Taiwan*","Holy See","Diamond Princess")),]
+  map <- c(
+    'Burma'               = 'Myanmar',
+    'Cabo Verde'          = 'Cape Verde',
+    'Congo (Brazzaville)' = 'Congo',
+    'Congo (Kinshasa)'    = 'Congo, the Democratic Republic of the',
+    'Czechia'             = 'Czech Republic',
+    'Eswatini'            = 'Swaziland',
+    'North Macedonia'     = 'Macedonia',
+    'Taiwan*'             = 'Taiwan',
+    'US'                  = 'United States',
+    'West Bank and Gaza'  = 'Palestine'
+  )
 
-  # aggregate
-  if(type=="country"){
+  x$country <- as.character(x$country)
+  x$country <- mapvalues(x$country, map)
 
-    # bindings
-    country <- date <- confirmed <- deaths <- tests <- NULL
+  idx <- which(x$state=="Grand Princess")
+  x$country[idx] <- "Grand Princess"
+  x$state[idx]   <- ""
 
-    # aggregate
-    x <- x %>%
-      dplyr::group_by(country, date) %>%
-      dplyr::summarize(confirmed = sum(confirmed, na.rm = TRUE),
-                       deaths    = sum(deaths, na.rm = TRUE),
-                       tests     = sum(tests, na.rm = TRUE))
+  if(level==2)
+    x <- x[x$lat!=0 & x$lng!=0 & x$state!="",]
 
-  }
+  # ISO code: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/ISO.csv
+  iso    <- db("ISO")
+  isomap <- iso$iso_alpha_3
+  names(isomap) <- iso$country
+  x$iso_alpha_3 <- mapvalues(x$country, isomap)
 
-  # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db
-  if(type=="state"){
-    x$id <- paste(x$state, x$country, sep = ", ")
-    x$id <- gsub(x$id, pattern = "^, ", replacement = "")
-  }
-  if(type=="country"){
-    x$id <- x$country
-  }
+  # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/
+  if(level==2)
+    x$id <- x$state
 
   # return
-  return(covid19(x, id = "wb", type = type, raw = raw))
+  return(x)
 
 }

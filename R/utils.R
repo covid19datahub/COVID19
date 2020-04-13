@@ -48,34 +48,62 @@ db <- function(id, type = NULL){
     id  <- paste0(id,"-",map[type])
   }
 
-  utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"))
+  utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"), na.strings = "", stringsAsFactors = FALSE)
 
 }
 
 
 
-csv <- function(x, id = "", type = ""){
 
-  # bindings
-  . <- NULL
+fix <- function(id){
 
-  x <- x[,c("id",vars("slow"))]
-  x <- x[!duplicated(x),]
+  x <- try(suppressWarnings(utils::read.csv(system.file("extdata", "fix", paste0(id,".csv"), package = "COVID19"), na.strings = "", stringsAsFactors = FALSE)), silent = TRUE)
+  if(class(x)=="try-error")
+    return(NULL)
 
-  if(id!="" & type!="")
-    x <- merge(x, db(id = id, type = type), by = 'id', all = TRUE, suffixes = c('.x',''))
+  return(x)
 
-  col <- c('id',vars("slow"))
-  x   <- x[,col] %>%
-    dplyr::arrange(-rowSums(is.na(.)), .$id)
+}
 
-  if(type=="country"){
-    x$state <- NULL
-    x$city  <- NULL
+
+
+csv <- function(ISO = NULL, x = NULL, save = FALSE){
+
+  cn <- vars("slow")
+  cn <- cn[!(cn %in% c('iso_alpha_3','iso_alpha_2','iso_numeric','country'))]
+
+  if(!is.null(x)){
+    x <- x[,cn]
+    x <- x[!duplicated(x),]
   }
 
-  if(type=="state"){
-    x$city  <- NULL
+  if(!is.null(ISO))
+    x <- dplyr::bind_rows(db(ISO), x)
+
+  x <- x[!duplicated(x),]
+  x[,cn[!(cn %in% colnames(x))]] <- NA
+  x <- dplyr::arrange(x, -rowSums(is.na(x)), x$state, x$city)
+
+  if(save & !is.null(ISO))
+    utils::write.csv(x, paste0(ISO,".csv"), row.names = FALSE, na = "")
+
+  return(x)
+
+}
+
+
+
+mapvalues <- function(x, map){
+
+  from <- names(map)
+  to   <- map
+
+  for(i in 1:length(map)){
+
+    idx <- which(x==from[i])
+    if(length(idx)>0)
+      x[idx] <- to[i]
+
   }
 
   return(x)
@@ -84,22 +112,29 @@ csv <- function(x, id = "", type = ""){
 
 
 
+drop <- function(x){
 
-fill <- function(x){
+  idx <- which(endsWith(colnames(x), '.drop'))
+  if(length(idx)>0)
+    x <- x[,-idx]
 
-  # subset
-  x <- x[!is.na(x$date),]
+  return(x)
 
-  # full grid
-  date <- seq(min(x$date), max(x$date), by = 1)
-  id   <- unique(x$id)
-  grid <- expand.grid(id = id, date = date)
+}
 
-  # fill
-  x <- suppressWarnings(dplyr::bind_rows(x, grid))
-  x <- x[!duplicated(x[,c("id","date")]),]
 
-  # return
+read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, ...){
+
+  cachefile <- file.path(tempdir(), make.names(sprintf("%s-%s",Sys.Date(), file)))
+
+  if(cache & file.exists(cachefile))
+    x <- utils::read.csv(cachefile, na.strings = na.strings, stringsAsFactors = stringsAsFactors, ...)
+  else
+    x <- utils::read.csv(file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, ...)
+
+  if(cache)
+    utils::write.csv(x, cachefile, na = na.strings)
+
   return(x)
 
 }
@@ -108,17 +143,18 @@ fill <- function(x){
 
 vars <- function(type = "all"){
 
-  fast <- c('deaths','confirmed','tests')
+  fast <- c('deaths','confirmed','tests','recovered',
+            'icu','hosp','vent')
 
-  slow <- c('country','state','city','lat','lng',
+  slow <- c('country','state','city',
+            'iso_alpha_2','iso_alpha_3','iso_numeric',
+            'lat','lng',
             'pop','pop_14','pop_15_64','pop_65',
             'pop_age','pop_density','pop_death_rate')
 
   all  <- unique(c(
             'country','state','city',
-            'deaths','deaths_new',
-            'confirmed','confirmed_new',
-            'tests','tests_new',
+            'deaths','confirmed','tests',
             fast,
             slow))
 
@@ -132,34 +168,3 @@ vars <- function(type = "all"){
 
 }
 
-
-#' Internal function - Check
-#'
-#' Identify which variables are missing for a given country/state/city.
-#'
-#' @param x \code{data.frame}
-#'
-#' @return \code{data.frame} of \code{logical}.
-#' Rows: country/state/city.
-#' Columns: Variables.
-#' \code{TRUE}: ok.
-#' \code{FALSE}: missing values.
-#'
-#' @examples
-#' \dontrun{
-#' x <- world(raw = TRUE)
-#' y <- COVID19:::check(x)
-#' View(y)
-#' }
-#'
-#' @keywords internal
-#'
-check <- function(x){
-
-  ok <- dplyr::group_map(x, function(x, g) apply(x, 2, function(x) any(!is.na(x))))
-  ok <- t(sapply(ok, function(x) x))
-  rownames(ok) <- dplyr::group_keys(x)$id
-
-  return(ok)
-
-}

@@ -1,63 +1,68 @@
-jhuCSSE <- function(type){
+jhuCSSE <- function(file, cache, id = NULL){
 
-  # data source
+  # source
   repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/"
 
-  # global
-  if(type=="global")
-    files = c(
+  if(file=="global")
+    urls = c(
+      "recovered" = "time_series_covid19_recovered_global.csv",
       "confirmed" = "time_series_covid19_confirmed_global.csv",
       "deaths"    = "time_series_covid19_deaths_global.csv"
     )
 
-  # US
-  if(type=="US")
-    files = c(
+  if(file=="US")
+    urls = c(
       "confirmed" = "time_series_covid19_confirmed_US.csv",
       "deaths"    = "time_series_covid19_deaths_US.csv"
     )
 
+  for(i in 1:length(urls)){
 
-  # download data
-  data <- NULL
-  for(i in 1:length(files)){
+    # download
+    url <- sprintf("%s/csse_covid_19_time_series/%s", repo, urls[i])
+    xx  <- read.csv(url, cache = cache)
 
-    url    <- sprintf("%s/csse_covid_19_time_series/%s", repo, files[i])
-    x      <- try(suppressWarnings(utils::read.csv(url)), silent = TRUE)
-
-    if(class(x)=="try-error")
+    if(class(xx)=="try-error")
       next
 
-    colnames(x) <- gsub(pattern = "_", replacement = ".", x = colnames(x), fixed = TRUE)
-    colnames(x) <- gsub(pattern = "^.\\_\\_", replacement = "", x = colnames(x), fixed = FALSE)
-    colnames(x) <- gsub(pattern = "^_", replacement = "", x = colnames(x), fixed = FALSE)
-    colnames(x) <- gsub(pattern = "_$", replacement = "", x = colnames(x), fixed = FALSE)
+    # formatting
+    colnames(xx) <- gsub(pattern = "_", replacement = ".", x = colnames(xx), fixed = TRUE)
+    colnames(xx) <- gsub(pattern = "^.\\_\\_", replacement = "", x = colnames(xx), fixed = FALSE)
+    colnames(xx) <- gsub(pattern = "^_", replacement = "", x = colnames(xx), fixed = FALSE)
+    colnames(xx) <- gsub(pattern = "_$", replacement = "", x = colnames(xx), fixed = FALSE)
 
-    x$country <- x$Country.Region
-    x$state   <- x$Province.State
-    x$lat     <- x$Lat
-    x$lng     <- x$Long
-    x$pop     <- x$Population
+    xx$country <- xx$Country.Region
+    xx$state   <- xx$Province.State
+    xx$lat     <- xx$Lat
+    xx$lng     <- xx$Long
 
-    if(type=="US")
-      x$city <- sapply(strsplit(as.character(x$Combined.Key), split = ',\\s*'), function(x) x[1])
+    if(file=="US") {
+      xx$country <- xx$iso3
+      xx$city <- sapply(strsplit(as.character(xx$Combined.Key), split = ',\\s*'), function(x) x[1])
+    }
 
-    cn <- colnames(x)
-    by <- c('country','state','city','lat','lng','pop')
+    cn <- colnames(xx)
+    by <- c('country','state','city','lat','lng')
     by <- by[by %in% cn]
     cn <- (cn %in% by) | !is.na(as.Date(cn, format = "X%m.%d.%y"))
 
-    x      <- x[,cn] %>% tidyr::pivot_longer(cols = -by, values_to = names(files[i]), names_to = "date")
-    x$date <- as.Date(x$date, format = "X%m.%d.%y")
+    # date
+    xx      <- xx[,cn] %>% tidyr::pivot_longer(cols = -by, values_to = names(urls[i]), names_to = "date")
+    xx$date <- as.Date(xx$date, format = "X%m.%d.%y")
 
-    if(!is.null(data))
-        data <- merge(data, x, all = TRUE, by = c(by[by %in% colnames(data)], "date"), suffixes = c("",".drop"))
+    # filter
+    if(!is.null(id))
+      xx <- xx[xx$country==id,,drop=FALSE]
+
+    # merge
+    if(i==1)
+      x <- xx
     else
-      data <- x
-
+      x <- drop(merge(x, xx, all = TRUE, by = c(by[by %in% colnames(x)], "date"), suffixes = c("",".drop")))
 
   }
 
-  return(data)
+  # return
+  return(x)
 
 }

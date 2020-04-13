@@ -1,0 +1,13 @@
+"id","state","city","lat","lng","pop","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate"
+"Alberta","Alberta",,53.9333,-116.5765,,,,,,,
+"British Columbia","British Columbia",,49.2827,-123.1207,,,,,,,
+"Manitoba","Manitoba",,53.7609,-98.8139,,,,,,,
+"New Brunswick","New Brunswick",,46.5653,-66.4619,,,,,,,
+"Newfoundland and Labrador","Newfoundland and Labrador",,53.1355,-57.6604,,,,,,,
+"Northwest Territories","Northwest Territories",,64.8255,-124.8457,,,,,,,
+"Nova Scotia","Nova Scotia",,44.682,-63.7443,,,,,,,
+"Ontario","Ontario",,51.2538,-85.3232,,,,,,,
+"Prince Edward Island","Prince Edward Island",,46.5107,-63.4168,,,,,,,
+"Quebec","Quebec",,52.9399,-73.5491,,,,,,,
+"Saskatchewan","Saskatchewan",,52.9399,-106.4509,,,,,,,
+"Yukon","Yukon",,64.2823,-135,,,,,,,
