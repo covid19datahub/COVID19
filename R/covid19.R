@@ -73,31 +73,28 @@ covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
   if(any(is.na(x$date)))
     stop("column 'date' contains NA values")
 
-  # fill dates
-  x$date <- as.Date(x$date)
-  dates <- seq(min(x$date), max(x$date), by = 1)
-  x <- x %>%
-
-    dplyr::group_by(iso_alpha_3, id) %>%
-
-    dplyr::group_map(keep = TRUE, function(x, ...){
-
-      miss <- dates[!(dates %in% x$date)]
-
-      if(length(miss)>0)
-        x <- x %>%
-          dplyr::bind_rows(data.frame(date = miss)) %>%
-          tidyr::fill(iso_alpha_3, id, .direction = "downup")
-
-      return(x)
-
-    }) %>%
-
-    dplyr::bind_rows()
-
   # clean
+  x$date <- as.Date(x$date)
+  dates  <- seq(min(x$date), max(x$date), by = 1)
   if(!raw)
     x <- x %>%
+
+      dplyr::group_by(iso_alpha_3, id) %>%
+
+      dplyr::group_map(keep = TRUE, function(x, ...){
+
+        miss <- dates[!(dates %in% x$date)]
+
+        if(length(miss)>0)
+          x <- x %>%
+            dplyr::bind_rows(data.frame(date = miss)) %>%
+            tidyr::fill(iso_alpha_3, id, .direction = "downup")
+
+        return(x)
+
+      }) %>%
+
+      dplyr::bind_rows() %>%
 
       dplyr::group_by(iso_alpha_3, id) %>%
 
