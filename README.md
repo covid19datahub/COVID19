@@ -140,3 +140,6 @@ _** Switzerland: ages 20-64_
 
 - Monitoring the advancement of the COVID–19 contagion in the regions of Italy ([code](https://github.com/krzbar/COVID19))
 
+## Citation
+
+Emanuele Guidotti, “_Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets._” Kaggle, doi: 10.34740/KAGGLE/DS/574488.
