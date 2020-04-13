@@ -1,0 +1,9 @@
+bibentry(
+	bibtype="Misc",
+	title="Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets", 
+	url="https://www.kaggle.com/ds/574488", 
+	DOI="10.34740/KAGGLE/DS/574488", 
+	publisher="Kaggle", 
+	author="Emanuele Guidotti",
+	textVersion="Emanuele Guidotti, “Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets.” Kaggle, doi: 10.34740/KAGGLE/DS/574488."
+)
