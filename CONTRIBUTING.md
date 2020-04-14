@@ -14,8 +14,8 @@ __If you are new to GitHub, follow 3 simple steps to collaborate on the project:
 ## Contributing guidelines for R users
 
 - Find data sources for **real-time data** such as number of cases, deaths, tests, hospitalized and other **fast-changing variables**. See the [data coverage table](https://github.com/emanuele-guidotti/COVID19#data-coverage) to avoid working on something that is already available.
-- Write R functions to import the data. Get started [here](https://github.com/emanuele-guidotti/COVID19/blob/master/R/datasource.R).
-- Write R functions to export the data to the end-user. Get started [here](https://github.com/emanuele-guidotti/COVID19/blob/master/R/ISO.R).
+- Write R functions to extend the package with new data sources. Get started [here](https://github.com/emanuele-guidotti/COVID19/blob/master/R/datasource.R).
+- Write R functions to extend the package with new countries. Get started [here](https://github.com/emanuele-guidotti/COVID19/blob/master/R/ISO.R).
 
 ## Contributing guidelines for non-R users
 
