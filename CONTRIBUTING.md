@@ -13,13 +13,13 @@ __If you are new to GitHub, follow 3 simple steps to collaborate on the project:
 
 ## Contributing guidelines for R users
 
-- Find data sources for **real-time data** such as number of cases, deaths, tests, hospitalized and other **fast-changing variables**. See the [data coverage table](https://github.com/emanuele-guidotti/COVID19#csv-data-files) to avoid working on something that is already available.
-- Write R function(s) to import the latest data, just like [this](https://github.com/emanuele-guidotti/COVID19/blob/master/R/openZH.R). The return of the function must be a `data.frame` containing the columns `date`, `country`, `state`, `city`, `lat`, `lng` and the variables  documented [here](https://github.com/emanuele-guidotti/COVID19#csv-data-files). Additional variables can be included and some columns may be missing. Do not clean the data. The internal function [`covid19()`](<https://github.com/emanuele-guidotti/COVID19/blob/master/R/covid19.R>) takes care of it.
-- Write R function(s) to export the data to the end-user, just like [this](https://github.com/emanuele-guidotti/COVID19/blob/master/R/switzerland.R). The function should be named with the name of the country, include the argument `raw = FALSE` and end with a call to `covid19()`.
+- Find data sources for **real-time data** such as number of cases, deaths, tests, hospitalized and other **fast-changing variables**. See the [data coverage table](https://github.com/emanuele-guidotti/COVID19#dataset) to avoid working on something that is already available.
+- Write R functions to import the data. Get started [here](https://github.com/emanuele-guidotti/COVID19/blob/master/R/datasource.R).
+- Write R functions to export the data to the end-user. Get started [here](https://github.com/emanuele-guidotti/COVID19/blob/master/R/ISO.R).
 
 ## Contributing guidelines for non-R users
 
-- Find data sources for **historical data** such as demographics, population density, age, air quality and other **slow-changing variables**. See the [data coverage table](https://github.com/emanuele-guidotti/COVID19#csv-data-files) to avoid working on something that is already available.
-- Improve the csv file(s) available [here](https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db) by filling-in the missing values or extending the file(s) with additional variables.
+- Find data sources for **historical data** such as demographics, population density, age, air quality and other **slow-changing variables**. See the [data coverage table](https://github.com/emanuele-guidotti/COVID19#dataset) to avoid working on something that is already available.
+- Improve the csv files available [here](https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db) by (programmatically or manually) filling-in the missing values or extending the files with additional variables.
 - Clearly state where the data come from (data source + year) in your pull request. 
 

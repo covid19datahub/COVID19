@@ -33,7 +33,7 @@ datasource <- function(cache, ...){
 
 
   #' Include additional columns, including but not limited to:
-  #' https://github.com/emanuele-guidotti/COVID19#csv-data-files
+  #' https://github.com/emanuele-guidotti/COVID19#dataset
   #'
   #' your code here...
   #'
