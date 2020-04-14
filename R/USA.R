@@ -5,9 +5,9 @@ USA <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE("US", cache = cache, id = "USA")
+  x <- jhuCSSE(file = "US", cache = cache, id = "USA")
 
-  # clean
+  # filter
   x <- x[!(x$state %in% c("Grand Princess","Diamond Princess")),]
 
   # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/USA.csv

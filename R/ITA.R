@@ -6,9 +6,9 @@ ITA <- function(level, cache){
 
   # download
   file <- c('nazione','regioni','province')
-  x    <- pcmdpc(file[level], cache = cache)
+  x    <- pcmdpc(file = file[level], cache = cache)
 
-  # clean
+  # filter
   if(!is.null(x$lat) & !is.null(x$lng))
     x <- x[x$lat!=0 | x$lng!=0,]
 

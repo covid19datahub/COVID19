@@ -1,4 +1,4 @@
-jhuCSSE <- function(file, cache, id = NULL){
+jhuCSSE <- function(cache, file, id = NULL){
 
   # source
   repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/"
@@ -59,6 +59,31 @@ jhuCSSE <- function(file, cache, id = NULL){
       x <- xx
     else
       x <- drop(merge(x, xx, all = TRUE, by = c(by[by %in% colnames(x)], "date"), suffixes = c("",".drop")))
+
+  }
+
+  # clean
+  if(file=="global"){
+
+    map <- c(
+      'Burma'               = 'Myanmar',
+      'Cabo Verde'          = 'Cape Verde',
+      'Congo (Brazzaville)' = 'Congo',
+      'Congo (Kinshasa)'    = 'Congo, the Democratic Republic of the',
+      'Czechia'             = 'Czech Republic',
+      'Eswatini'            = 'Swaziland',
+      'North Macedonia'     = 'Macedonia',
+      'Taiwan*'             = 'Taiwan',
+      'US'                  = 'United States',
+      'West Bank and Gaza'  = 'Palestine'
+    )
+
+    x$country <- as.character(x$country)
+    x$country <- mapvalues(x$country, map)
+
+    idx <- which(x$state=="Grand Princess")
+    x$country[idx] <- "Grand Princess"
+    x$state[idx]   <- ""
 
   }
 

@@ -1,4 +1,4 @@
-pcmdpc <- function(file, cache){
+pcmdpc <- function(cache, file){
 
   # source
   repo <- "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/"

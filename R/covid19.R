@@ -1,9 +1,57 @@
+#'
+#' Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets
+#'
+#' Unified tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic across several sources.
+#' The data are downloaded in real-time, cleaned and matched with exogenous variables.
+#'
+#' @param ISO vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is uniquely identified by one of its \href{https://github.com/emanuele-guidotti/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes}
+#' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
+#' @param raw logical. Skip data cleaning? Default \code{FALSE}. See details.
+#' @param cache logical. Memory caching? Significantly improves performance on successive calls. Default \code{TRUE}.
+#'
+#' @details \href{https://github.com/emanuele-guidotti/COVID19}{Collection methodology and details}
+#'
+#' @return \href{https://github.com/emanuele-guidotti/COVID19#csv-data-files}{Grouped \code{tibble} (\code{data.frame})}
+#'
+#' @examples
+#' \dontrun{
+#'
+#' # Worldwide data by country
+#' covid19()
+#'
+#' # Worldwide data by state
+#' covid19(level = 2)
+#'
+#' # US data by state
+#' covid19("USA", level = 2)
+#'
+#' # Swiss data by state (cantons)
+#' covid19("CHE", level = 2)
+#'
+#' # Italian data by state (regions)
+#' covid19("ITA", level = 2)
+#'
+#' # Italian and US data by city
+#' covid19(c("ITA","USA"), level = 3)
+#' }
+#'
+#' @source \href{https://github.com/emanuele-guidotti/COVID19#data-sources}{Data sources}
+#'
 #' @export
+#'
 covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
 
   # fallback
-  if(level<1)
-    return(NULL)
+  if(!(level %in% 1:3))
+    stop("valid options for 'level' are:
+         1: country-level data
+         2: state-level data
+         3: city-level data")
+
+  # cache
+  cachekey <- make.names(sprintf("covid19_%s_%s_%s",paste0(ISO, collapse = "."), level, raw))
+  if(cache & exists(cachekey, envir = cachedata))
+    return(get(cachekey, envir = cachedata))
 
   # bindings
   iso_alpha_3 <- id <- date <- country <- state <- city <- confirmed <- tests <- deaths <- recovered <- hosp <- icu <- vent <- NULL
@@ -25,9 +73,9 @@ covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
   # download
   for(fun in ISO){
 
-    y <- try(do.call(fun, args = list(level = level, cache = cache)), silent = TRUE)
+    y <- cachecall(fun, level = level, cache = cache)
 
-    if(!("try-error" %in% class(y)) & !is.null(y))
+    if(!is.null(y))
       x <- y %>%
         dplyr::mutate(iso_alpha_3 = fun) %>%
         dplyr::bind_rows(x)
@@ -35,7 +83,7 @@ covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
   }
 
   if(length(ISO)!=length(unique(x$iso_alpha_3)))
-    if(!is.null(w <- WORLD(level = level, cache = cache)))
+    if(!is.null(w <- cachecall("WORLD", level = level, cache = cache)))
       x <- w %>%
         dplyr::filter(!(iso_alpha_3 %in% x$iso_alpha_3) & iso_alpha_3 %in% ISO) %>%
         dplyr::bind_rows(x)
@@ -147,6 +195,10 @@ covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
   # final check
   if(any(duplicated(x[,c('date','country','state','city')])))
     stop("the tuple ('date','country','state','city') must be unique")
+
+  # cache
+  if(cache)
+    assign(cachekey, x, envir = cachedata)
 
   # return
   return(x)

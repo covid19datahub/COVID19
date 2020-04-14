@@ -5,7 +5,7 @@ GUM <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE("US", cache = cache, id = "GUM")
+  x <- jhuCSSE(file = "US", cache = cache, id = "GUM")
 
   # return
   return(x)

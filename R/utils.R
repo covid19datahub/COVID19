@@ -123,17 +123,34 @@ drop <- function(x){
 }
 
 
-read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, ...){
+cachecall <- function(fun, ...){
 
-  cachefile <- file.path(tempdir(), make.names(sprintf("%s-%s",Sys.Date(), file)))
+  args  <- list(...)
+  cache <- ifelse(is.null(args$cache), TRUE, args$cache)
+  key   <- make.names(sprintf("%s_%s",paste(deparse(fun), collapse = ''),paste(names(args),args,sep = ".",collapse = "..")))
 
-  if(cache & file.exists(cachefile))
-    x <- utils::read.csv(cachefile, na.strings = na.strings, stringsAsFactors = stringsAsFactors, ...)
+  if(cache & exists(key, envir = cachedata))
+    return(get(key, envir = cachedata))
   else
-    x <- utils::read.csv(file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, ...)
+    x <- try(do.call(fun, args = args), silent = TRUE)
+
+  if(class(x)=="try-error")
+    x <- NULL
 
   if(cache)
-    utils::write.csv(x, cachefile, na = na.strings)
+    assign(key, x, envir = cachedata)
+
+  return(x)
+
+}
+
+
+read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, ...){
+
+  if(cache)
+    x <- cachecall(utils::read.csv, file = file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, ...)
+  else
+    x <- utils::read.csv(file = file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, ...)
 
   return(x)
 

@@ -5,7 +5,7 @@ VIR <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE("US", cache = cache, id = "VIR")
+  x <- jhuCSSE(file = "US", cache = cache, id = "VIR")
 
   # return
   return(x)
