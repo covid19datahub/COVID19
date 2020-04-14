@@ -11,7 +11,7 @@
 #'
 #' @details \href{https://github.com/emanuele-guidotti/COVID19}{Collection methodology and details}
 #'
-#' @return \href{https://github.com/emanuele-guidotti/COVID19#csv-data-files}{Grouped \code{tibble} (\code{data.frame})}
+#' @return \href{https://github.com/emanuele-guidotti/COVID19#dataset}{Grouped \code{tibble} (\code{data.frame})}
 #'
 #' @examples
 #' \dontrun{
