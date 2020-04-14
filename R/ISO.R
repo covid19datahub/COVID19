@@ -1,6 +1,7 @@
 ISO <- function(level, cache){
   #'
-  #' THIS IS A TEMPLATE TO SUPPORT ADDITIONAL COUNTRIES
+  #' NEW COUNTRY TEMPLATE
+  #' This is a template to extend this package with a new country
   #'
   #' Copy this template in a new file
   #' Rename the file with the ISO code of the country
@@ -15,7 +16,9 @@ ISO <- function(level, cache){
   #' The function must return a data.frame
   #'
   #' Examples:
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/
+  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/ITA.R
+  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/CHE.R
+  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/USA.R
   #'
   #' @keywords internal
   #'
@@ -39,6 +42,7 @@ ISO <- function(level, cache){
 
   #' Create the column 'id'.
   #' generate a unique ID for each row
+  #' needed only if level>1
   #'
   #' your code here...
   #'

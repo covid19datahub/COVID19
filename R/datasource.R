@@ -1,6 +1,7 @@
 datasource <- function(cache, ...){
   #'
-  #' THIS IS A TEMPLATE TO SUPPORT ADDITIONAL DATA SOURCES
+  #' NEW DATA SOURCE TEMPLATE
+  #' This is a template to extend this package with a new data source
   #'
   #' Copy this template in a new file
   #' Rename the file with the name of the data source
