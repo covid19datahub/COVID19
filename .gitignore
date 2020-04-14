@@ -40,3 +40,7 @@ LICENSE
 
 # R Environment Variables
 .Renviron
+
+# Additional files
+/man/datasource.Rd
+/man/ISO.Rd
