@@ -157,23 +157,41 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, ...
 }
 
 
+id <- function(..., esc = TRUE){
+
+  args <- list(...)
+
+  x <- NULL
+  for(i in args){
+
+    i[is.na(i)] <- ""
+
+    if(esc)
+      i <- gsub(",", "", i)
+
+    if(is.null(x))
+      x <- i
+    else
+      x <- gsub(", $", "", paste(x, i, sep = ', '))
+
+  }
+
+  return(x)
+
+}
+
 
 vars <- function(type = "all"){
 
   fast <- c('deaths','confirmed','tests','recovered',
-            'icu','hosp','vent')
+            'hosp','icu','vent')
 
   slow <- c('country','state','city',
-            'iso_alpha_2','iso_alpha_3','iso_numeric',
             'lat','lng',
             'pop','pop_14','pop_15_64','pop_65',
             'pop_age','pop_density','pop_death_rate')
 
-  all  <- unique(c(
-            'country','state','city',
-            'deaths','confirmed','tests',
-            fast,
-            slow))
+  all  <- unique(c('id','date', fast, slow))
 
   if(type=="slow")
     return(slow)

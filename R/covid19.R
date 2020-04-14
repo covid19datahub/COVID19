@@ -182,15 +182,18 @@ covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
 
       dplyr::bind_rows()
 
+  # unique id
+  x$id <- id(x$iso_alpha_3, x$id, esc = FALSE)
+
   # subset
-  col <- c('date',vars())
+  col <- vars()
   x[,col[!(col %in% colnames(x))]] <- NA
   x <- x[,col]
 
   # group and order
   x <- x %>%
-    dplyr::group_by(country, state, city) %>%
-    dplyr::arrange(country, state, city, date)
+    dplyr::group_by(id) %>%
+    dplyr::arrange(id, date)
 
   # final check
   if(any(duplicated(x[,c('date','country','state','city')])))

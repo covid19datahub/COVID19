@@ -12,9 +12,9 @@ USA <- function(level, cache){
 
   # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/USA.csv
   if(level==2)
-    x$id <- x$state
+    x$id <- id(x$state)
   if(level==3)
-    x$id <- paste(x$state, x$city, sep = ", ")
+    x$id <- id(x$state, x$city)
 
   # return
   return(x)

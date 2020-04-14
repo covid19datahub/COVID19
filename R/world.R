@@ -19,7 +19,7 @@ WORLD <- function(level, cache){
 
   # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/
   if(level==2)
-    x$id <- x$state
+    x$id <- id(x$state)
 
   # return
   return(x)
