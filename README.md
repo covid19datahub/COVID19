@@ -180,7 +180,8 @@ The following people have contributed to the data collection as a joint effort a
 
 ## Use Cases
 
-- Monitoring the advancement of the COVID–19 contagion in the regions of Italy ([code](https://github.com/krzbar/COVID19))
+- [Monitoring the advancement of the COVID–19 contagion in the regions of Italy](https://github.com/krzbar/COVID19)
+- [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
 
 ## Citation
 
