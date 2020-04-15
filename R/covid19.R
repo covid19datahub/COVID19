@@ -7,7 +7,7 @@
 #' @param ISO vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is identified by one of its \href{https://github.com/emanuele-guidotti/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes}
 #' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
 #' @param start the start date of the period of interest.
-#' @param end the end date of the period of interest. Skip yesterday by default, as some observation may be incomplete.
+#' @param end the end date of the period of interest. Skip yesterday by default, as some observation may be not complete yet.
 #' @param raw logical. Skip data cleaning? Default \code{FALSE}. See details.
 #' @param cache logical. Memory caching? Significantly improves performance on successive calls. Default \code{TRUE}.
 #'

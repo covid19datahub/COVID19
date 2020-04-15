@@ -23,7 +23,7 @@ covid19(
 
 \item{start}{the start date of the period of interest.}
 
-\item{end}{the end date of the period of interest. Skip yesterday by default, as some observation may be incomplete.}
+\item{end}{the end date of the period of interest. Skip yesterday by default, as some observation may be not complete yet.}
 
 \item{raw}{logical. Skip data cleaning? Default \code{FALSE}. See details.}
 
