@@ -6,6 +6,8 @@
 #'
 #' @param ISO vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is identified by one of its \href{https://github.com/emanuele-guidotti/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes}
 #' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
+#' @param start the start date of the period of interest.
+#' @param end the end date of the period of interest. Skip yesterday by default, as some observation may be incomplete.
 #' @param raw logical. Skip data cleaning? Default \code{FALSE}. See details.
 #' @param cache logical. Memory caching? Significantly improves performance on successive calls. Default \code{TRUE}.
 #'
@@ -39,7 +41,12 @@
 #'
 #' @export
 #'
-covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
+covid19 <- function(ISO   = NULL,
+                    level = 1,
+                    start = "2019-01-01",
+                    end   = Sys.Date()-2,
+                    raw   = FALSE,
+                    cache = TRUE){
 
   # fallback
   if(!(level %in% 1:3))
@@ -51,7 +58,7 @@ covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
   # cache
   cachekey <- make.names(sprintf("covid19_%s_%s_%s",paste0(ISO, collapse = "."), level, raw))
   if(cache & exists(cachekey, envir = cachedata))
-    return(get(cachekey, envir = cachedata))
+    return(get(cachekey, envir = cachedata) %>% dplyr::filter(date >= start & date <= end))
 
   # bindings
   iso_alpha_3 <- id <- date <- country <- state <- city <- confirmed <- tests <- deaths <- recovered <- hosp <- icu <- vent <- NULL
@@ -204,6 +211,6 @@ covid19 <- function(ISO = NULL, level = 1, raw = FALSE, cache = TRUE){
     assign(cachekey, x, envir = cachedata)
 
   # return
-  return(x)
+  return(x %>% dplyr::filter(date >= start & date <= end))
 
 }

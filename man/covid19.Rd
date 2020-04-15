@@ -7,12 +7,23 @@
 \href{https://github.com/emanuele-guidotti/COVID19#data-sources}{Data sources}
 }
 \usage{
-covid19(ISO = NULL, level = 1, raw = FALSE, cache = TRUE)
+covid19(
+  ISO = NULL,
+  level = 1,
+  start = "2019-01-01",
+  end = Sys.Date() - 2,
+  raw = FALSE,
+  cache = TRUE
+)
 }
 \arguments{
 \item{ISO}{vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is identified by one of its \href{https://github.com/emanuele-guidotti/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes}}
 
 \item{level}{integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.}
+
+\item{start}{the start date of the period of interest.}
+
+\item{end}{the end date of the period of interest. Skip yesterday by default, as some observation may be incomplete.}
 
 \item{raw}{logical. Skip data cleaning? Default \code{FALSE}. See details.}
 
