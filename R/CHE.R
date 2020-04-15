@@ -8,8 +8,7 @@ CHE <- function(level, cache){
   x <- openZH(cache = cache, id = "CH")
 
   # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/CHE.csv
-  if(level==2)
-    x$id <- id(x$code)
+  x$id <- id(x$code)
 
   # return
   return(x)

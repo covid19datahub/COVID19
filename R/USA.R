@@ -11,7 +11,7 @@ USA <- function(level, cache){
   x <- x[!(x$state %in% c("Grand Princess","Diamond Princess")),]
 
   # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/USA.csv
-  if(level==2)
+  if(level<=2)
     x$id <- id(x$state)
   if(level==3)
     x$id <- id(x$state, x$city)

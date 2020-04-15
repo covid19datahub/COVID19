@@ -42,7 +42,6 @@ ISO <- function(level, cache){
 
   #' Create the column 'id'.
   #' generate a unique ID for each row
-  #' needed only if level>1
   #'
   #' your code here...
   #'

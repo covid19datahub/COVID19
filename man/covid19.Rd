@@ -11,7 +11,7 @@ covid19(
   ISO = NULL,
   level = 1,
   start = "2019-01-01",
-  end = Sys.Date() - 2,
+  end = Sys.Date(),
   raw = FALSE,
   cache = TRUE
 )
@@ -23,7 +23,7 @@ covid19(
 
 \item{start}{the start date of the period of interest.}
 
-\item{end}{the end date of the period of interest. Skip yesterday by default, as some observation may be not complete yet.}
+\item{end}{the end date of the period of interest.}
 
 \item{raw}{logical. Skip data cleaning? Default \code{FALSE}. See details.}
 
