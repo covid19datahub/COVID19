@@ -184,7 +184,8 @@ id <- function(..., esc = TRUE){
 vars <- function(type = "all"){
 
   fast <- c('deaths','confirmed','tests','recovered',
-            'hosp','icu','vent')
+            'hosp','icu','vent',
+            'driving', 'walking', 'transit')
 
   slow <- c('country','state','city',
             'lat','lng',

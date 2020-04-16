@@ -12,6 +12,7 @@ covid19(
   level = 1,
   start = "2019-01-01",
   end = Sys.Date(),
+  vintage = FALSE,
   raw = FALSE,
   cache = TRUE
 )
@@ -24,6 +25,8 @@ covid19(
 \item{start}{the start date of the period of interest.}
 
 \item{end}{the end date of the period of interest.}
+
+\item{vintage}{logical. Retrieve the snapshot of the dataset at the \code{end} date instead of using the latest version? Default \code{FALSE}.}
 
 \item{raw}{logical. Skip data cleaning? Default \code{FALSE}. See details.}
 
