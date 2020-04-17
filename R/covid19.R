@@ -85,9 +85,9 @@ covid19 <- function(ISO     = NULL,
     if(end < "2020-04-14")
       stop("vintage data not available before 2020-04-14")
 
-    file <- sprintf("https://storage.guidotti.dev/covid19/data-%s-%s.csv", level, format(as.Date(end),"%Y%m%d"))
+    file <- sprintf("https://storage.guidotti.dev/covid19/%sdata-%s-%s.csv", ifelse(raw, 'raw', ''), level, format(as.Date(end),"%Y%m%d"))
 
-    x <- try(suppressWarnings(read.csv(file, cache = cache)), silent = TRUE)
+    x <- try(suppressWarnings(read.csv(file, cache = cache, colClasses = c("date" = "Date"))), silent = TRUE)
 
     if(class(x)=="try-error" | is.null(x))
       stop(sprintf("vintage data not available on %s", end))
@@ -129,32 +129,11 @@ covid19 <- function(ISO     = NULL,
     x[,key[!(key %in% colnames(x))]] <- NA
     x <- x[,key]
 
-    # fix
-    x$date <- as.character(x$date)
-    x <- x %>%
-
-      dplyr::group_by(iso_alpha_3) %>%
-
-      dplyr::group_map(keep = TRUE, function(x, iso){
-
-        if(!is.null(y <- fix(iso[[1]]))){
-          x <- x %>% dplyr::bind_rows(y)
-          x <- x[!duplicated(x[,c('date','id')], fromLast = TRUE),]
-          x <- tidyr::fill(x, iso_alpha_3, .direction = "downup")
-        }
-
-        return(x)
-
-      }) %>%
-
-      dplyr::bind_rows()
-
     # check dates
     if(any(is.na(x$date)))
       stop("column 'date' contains NA values")
 
     # clean
-    x$date <- as.Date(x$date)
     dates  <- seq(min(x$date), max(x$date), by = 1)
     if(!raw)
       x <- x %>%
@@ -229,16 +208,16 @@ covid19 <- function(ISO     = NULL,
     x[,col[!(col %in% colnames(x))]] <- NA
     x <- x[,col]
 
-    # group and order
-    x <- x %>%
-      dplyr::group_by(id) %>%
-      dplyr::arrange(id, date)
-
-    # final check
-    if(any(duplicated(x[,c('date','country','state','city')])))
-      warning("the tuple ('date','country','state','city') is not unique")
-
   }
+
+  # group and order
+  x <- x %>%
+    dplyr::group_by(id) %>%
+    dplyr::arrange(id, date)
+
+  # warning
+  if(any(duplicated(x[,c('date','country','state','city')])))
+    warning("the tuple ('date','country','state','city') is not unique")
 
   # cache
   if(cache)

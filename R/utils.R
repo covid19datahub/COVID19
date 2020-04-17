@@ -181,6 +181,23 @@ id <- function(..., esc = TRUE){
 }
 
 
+test <- function(ISO = NULL, level, end, raw){
+
+  x <- covid19(ISO = ISO, level = level, end = end, raw = raw)
+  y <- covid19(ISO = ISO, level = level, end = end, raw = raw, vintage = TRUE)
+
+  id <- intersect(x$id, y$id)
+  dd <- intersect(x$date, y$date)
+  cn <- intersect(colnames(x), colnames(y))
+
+  x <- x[which((x$id %in% id) & (x$date %in% dd)), cn]
+  y <- y[which((y$id %in% id) & (y$date %in% dd)), cn]
+
+  return(mean(x==y, na.rm = TRUE))
+
+}
+
+
 vars <- function(type = "all"){
 
   fast <- c('deaths','confirmed','tests','recovered',

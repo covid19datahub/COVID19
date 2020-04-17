@@ -8,8 +8,10 @@ WORLD <- function(level, cache){
   x <- jhuCSSE(file = "global", cache = cache)
 
   # filter
+  x <- x[-which(x$state=="Grand Princess"),]
+  x <- x[x$lat!=0 & x$lng!=0,]
   if(level==2)
-    x <- x[x$lat!=0 & x$lng!=0 & x$state!="",]
+    x <- x[-which(x$state==""),]
 
   map <- c(
     'Burma'               = 'Myanmar',
@@ -26,10 +28,6 @@ WORLD <- function(level, cache){
 
   x$country <- as.character(x$country)
   x$country <- mapvalues(x$country, map)
-
-  idx <- which(x$state=="Grand Princess")
-  x$country[idx] <- "Grand Princess"
-  x$state[idx]   <- ""
 
   # mobility data
   a <- apple(cache = cache)

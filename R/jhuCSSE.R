@@ -1,5 +1,18 @@
 jhuCSSE <- function(cache, file, id = NULL){
 
+  # cache
+  cachekey <- make.names(sprintf("jhuCSSE_%s", file))
+  if(cache & exists(cachekey, envir = cachedata)){
+
+    x <- get(cachekey, envir = cachedata)
+
+    if(!is.null(id))
+      x <- x[x$country==id,]
+
+    return(x)
+
+  }
+
   # source
   repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/"
 
@@ -50,10 +63,6 @@ jhuCSSE <- function(cache, file, id = NULL){
     xx      <- xx[,cn] %>% tidyr::pivot_longer(cols = -by, values_to = names(urls[i]), names_to = "date")
     xx$date <- as.Date(xx$date, format = "X%m.%d.%y")
 
-    # filter
-    if(!is.null(id))
-      xx <- xx[xx$country==id,,drop=FALSE]
-
     # merge
     if(i==1)
       x <- xx
@@ -61,6 +70,14 @@ jhuCSSE <- function(cache, file, id = NULL){
       x <- drop(merge(x, xx, all = TRUE, by = c(by[by %in% colnames(x)], "date"), suffixes = c("",".drop")))
 
   }
+
+  # cache
+  if(cache)
+    assign(cachekey, x, envir = cachedata)
+
+  # filter
+  if(!is.null(id))
+    x <- x[x$country==id,]
 
   # return
   return(x)

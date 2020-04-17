@@ -1,7 +1,7 @@
 Package: COVID19
 Type: Package
 Title: Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets
-Version: 0.4.3
+Version: 0.4.4
 Authors@R: person(given = "Emanuele", family = "Guidotti", email = "emanuele.guidotti@unine.ch", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8961-6623"))
 Description: Unified tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic across several sources. The data are downloaded in real-time, cleaned and matched with exogenous variables.
 License: GPL-3
@@ -12,3 +12,5 @@ LazyData: true
 Depends: R (>= 2.10)
 Imports: remotes, utils, dplyr, tidyr
 RoxygenNote: 7.0.2
+Suggests: 
+    testthat (>= 2.1.0)
