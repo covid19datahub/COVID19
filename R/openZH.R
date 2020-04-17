@@ -9,7 +9,10 @@ openZH <- function(cache, id = NULL){
   x   <- read.csv(url, cache = cache)
 
   # date
-  x$date <- as.Date(x$date, format = "%Y-%m-%d")
+  d <- as.Date(x$date, format = "%Y-%m-%d")
+  if(any(na <- is.na(d)))
+    d[na] <- as.Date(x$date[na], format = "%d.%m.%Y")
+  x$date <- d
 
   # formatting
   x$code      <- x$abbreviation_canton_and_fl

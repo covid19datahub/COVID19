@@ -11,7 +11,7 @@ WORLD <- function(level, cache){
   x <- x[-which(x$state=="Grand Princess"),]
   x <- x[x$lat!=0 & x$lng!=0,]
   if(level==2)
-    x <- x[-which(x$state==""),]
+    x <- x[!is.na(x$state),]
 
   map <- c(
     'Burma'               = 'Myanmar',

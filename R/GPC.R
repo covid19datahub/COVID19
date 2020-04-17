@@ -10,7 +10,7 @@ GPC <- function(level, cache){
   # clean
   x <- x[which(x$state=="Grand Princess"),]
   x$country <- "Grand Princess"
-  x$state   <- ""
+  x$state   <- NA
 
   # return
   return(x)
