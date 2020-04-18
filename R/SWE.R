@@ -1,29 +1,21 @@
 SWE <- function(level, cache){
+  # Author: Martin Benes
   
   # fallback
   if(level>2)
     return(NULL)
   
   # download
-  x <- oppnadata(cache)
+  x <- oppnadata(cache = cache, level = level)
   
-  # filter
-  if(level == 1) {
-    x <- x[is.na(x$state),] # selection - only country
-    x <- subset(x, select=-state) # projection - remove 'state' attribute
-  }
-  if(level == 2) {
-    x <- x[!is.na(x$state),] # selection - only regions
-  }
-  
+  # id
   if(level==1)
     x$id <- "SWE"
   if(level==2)
-    x$id <- x$state #id(x$state) # TODO: add
+    x$id <- id(x$state) 
   
   # return
   return(x)
   
 }
 
-#SWE(2,NA)
