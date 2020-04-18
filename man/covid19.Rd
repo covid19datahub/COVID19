@@ -4,7 +4,7 @@
 \alias{covid19}
 \title{Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets}
 \source{
-\href{https://github.com/emanuele-guidotti/COVID19#data-sources}{Data sources}
+\href{https://github.com/covid19datahub/COVID19#data-sources}{Data sources}
 }
 \usage{
 covid19(
@@ -18,7 +18,7 @@ covid19(
 )
 }
 \arguments{
-\item{ISO}{vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is identified by one of its \href{https://github.com/emanuele-guidotti/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes}}
+\item{ISO}{vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is identified by one of its \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes}}
 
 \item{level}{integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.}
 
@@ -33,14 +33,14 @@ covid19(
 \item{cache}{logical. Memory caching? Significantly improves performance on successive calls. Default \code{TRUE}.}
 }
 \value{
-\href{https://github.com/emanuele-guidotti/COVID19#dataset}{Grouped \code{tibble} (\code{data.frame})}
+\href{https://github.com/covid19datahub/COVID19#dataset}{Grouped \code{tibble} (\code{data.frame})}
 }
 \description{
 Unified tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic across several sources.
 The data are downloaded in real-time, cleaned and matched with exogenous variables.
 }
 \details{
-\href{https://github.com/emanuele-guidotti/COVID19}{Collection methodology and details}
+\href{https://github.com/covid19datahub/COVID19}{Collection methodology and details}
 }
 \examples{
 \dontrun{

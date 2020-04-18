@@ -12,7 +12,7 @@ ITA <- function(level, cache){
   if(!is.null(x$lat) & !is.null(x$lng))
     x <- x[x$lat!=0 | x$lng!=0,]
 
-  # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/ITA.csv
+  # id: see https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db/ITA.csv
   if(level==1)
     x$id <- "ITA"
   if(level==2)

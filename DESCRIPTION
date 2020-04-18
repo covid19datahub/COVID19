@@ -1,15 +1,15 @@
 Package: COVID19
 Type: Package
 Title: Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets
-Version: 0.4.4.3
+Version: 0.4.4.4
 Authors@R: c(
     person(given = "Emanuele", family = "Guidotti", email = "emanuele.guidotti@unine.ch", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8961-6623")),
     person(given = "David", family = "Ardia", role = c("ctb"), comment = c(ORCID = "0000-0003-2823-782X"))
   )
 Description: Unified tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic across several sources. The data are downloaded in real-time, cleaned and matched with exogenous variables.
 License: GPL-3
-URL: https://github.com/emanuele-guidotti/COVID19
-BugReports: https://github.com/emanuele-guidotti/COVID19/issues
+URL: https://github.com/covid19datahub/COVID19
+BugReports: https://github.com/covid19datahub/COVID19/issues
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 2.10)

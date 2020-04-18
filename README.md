@@ -1,8 +1,10 @@
+<a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/logo.svg" align="right" height="128"/></a>
+
 # Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets
 
 ![](https://www.r-pkg.org/badges/version/COVID19) ![](https://www.r-pkg.org/badges/last-release/COVID19) ![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19) 
 
-The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and [contribute](https://github.com/emanuele-guidotti/COVID19/blob/master/CONTRIBUTING.md) by extending the number of supporting data sources as a joint effort against COVID-19.
+The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and [contribute](https://github.com/covid19datahub/COVID19/blob/master/CONTRIBUTING.md) by extending the number of supporting data sources as a joint effort against COVID-19.
 
 The data are available to the end-user via the [R package COVID19](https://cran.r-project.org/package=COVID19) or in csv format (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
 
@@ -18,7 +20,7 @@ The data are collected with the [R package COVID19](https://cran.r-project.org/p
 
 ### Join the mission
 
-Whether or not you are an R user... take part in the data collection! Your contribution will be gratefully acknowledged. See [how to contribute](https://github.com/emanuele-guidotti/COVID19/blob/master/CONTRIBUTING.md).
+Whether or not you are an R user... take part in the data collection! Your contribution will be gratefully acknowledged. See [how to contribute](https://github.com/covid19datahub/COVID19/blob/master/CONTRIBUTING.md).
 
 ## R Package COVID19
 
@@ -43,7 +45,7 @@ covid19(ISO = NULL, level = 1, start = "2019-01-01", end = Sys.Date(), vintage =
 
 | Argument    | Description                                                  |
 | ----------- | ------------------------------------------------------------ |
-| ```ISO```   | vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is identified by one of its [ISO codes](https://github.com/emanuele-guidotti/COVID19/blob/master/inst/extdata/db/ISO.csv) |
+| ```ISO```   | vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is identified by one of its [ISO codes](https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv) |
 | ```level``` | integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data. |
 | `start`     | the start date of the period of interest.                    |
 | `end`       | the end date of the period of interest.                      |
@@ -133,7 +135,7 @@ __Raw data__
 
 ## Data coverage 
 
-Help improve the data coverage and **add new countries and variables**. See [how to contribute](https://github.com/emanuele-guidotti/COVID19/blob/master/CONTRIBUTING.md).
+Help improve the data coverage and **add new countries and variables**. See [how to contribute](https://github.com/covid19datahub/COVID19/blob/master/CONTRIBUTING.md).
 
 |                 |                            deaths                            |                          confirmed                           |                            tests                             |                          recovered                           |                             hosp                             |                             icu                              |                             vent                             |                           driving                            |                           walking                            |                           transit                            |                             lat                              |                             lng                              |                             pop                              |                            pop_14                            |                          pop_15_64                           |                            pop_65                            |                           pop_age                            |                         pop_density                          |                        pop_death_rate                        |
 | --------------- | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |

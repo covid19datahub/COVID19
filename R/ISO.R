@@ -8,17 +8,17 @@ ISO <- function(level, cache){
   #' Rename this function with the ISO code of the country
   #'
   #' You can find ISO codes here:
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/inst/extdata/db/ISO.csv
+  #' https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv
   #'
   #' The function must include the arguments 'level' and 'cache'. See:
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/covid19.R
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/covid19.R
   #' The function cannot include additional arguments
   #' The function must return a data.frame
   #'
   #' Examples:
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/ITA.R
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/CHE.R
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/USA.R
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/ITA.R
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/CHE.R
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/USA.R
   #'
   #' @keywords internal
   #'
@@ -27,7 +27,7 @@ ISO <- function(level, cache){
   #' Get the data
   #' use one or more data sources from this package
   #' if you want to support a new data source get started here:
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/
   #'
   #' your code here...
   #'

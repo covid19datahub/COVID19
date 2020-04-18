@@ -39,7 +39,7 @@ WORLD <- function(level, cache){
   names(isomap) <- iso$country
   x$iso_alpha_3 <- mapvalues(x$country, isomap)
 
-  # id: see https://github.com/emanuele-guidotti/COVID19/tree/master/inst/extdata/db/
+  # id: see https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db/
   x$id <- id(x$state)
 
   # return

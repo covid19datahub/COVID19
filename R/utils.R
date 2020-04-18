@@ -9,7 +9,7 @@ NULL
 
     packageStartupMessage("The coronavirus situation is changing fast. Checking for updates...")
 
-    description <- try(readLines('https://raw.githubusercontent.com/emanuele-guidotti/COVID19/master/DESCRIPTION'), silent = TRUE)
+    description <- try(readLines('https://raw.githubusercontent.com/covid19datahub/COVID19/master/DESCRIPTION'), silent = TRUE)
     if(class(description)=="try-error")
       return()
       
@@ -37,7 +37,7 @@ NULL
 update <- function(){
 
   detach("package:COVID19", unload=TRUE)
-  x <- try(remotes::install_github('emanuele-guidotti/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
+  x <- try(remotes::install_github('covid19datahub/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
   library(COVID19)
 
 }

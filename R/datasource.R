@@ -8,14 +8,14 @@ datasource <- function(cache, ...){
   #' Rename this function with the name of the data source
   #'
   #' The function must include the argument 'cache'. See:
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/covid19.R
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/covid19.R
   #' The function can include additional arguments
   #' The function must return a data.frame
   #'
   #' Examples:
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/openZH.R
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/pcmdpc.R
-  #' https://github.com/emanuele-guidotti/COVID19/blob/master/R/jhuCSSE.R
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/openZH.R
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/pcmdpc.R
+  #' https://github.com/covid19datahub/COVID19/blob/master/R/jhuCSSE.R
   #'
   #' @keywords internal
   #'
@@ -34,7 +34,7 @@ datasource <- function(cache, ...){
 
 
   #' Include additional columns, including but not limited to:
-  #' https://github.com/emanuele-guidotti/COVID19#dataset
+  #' https://github.com/covid19datahub/COVID19#dataset
   #'
   #' your code here...
   #'
