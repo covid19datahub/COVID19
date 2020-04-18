@@ -85,7 +85,7 @@ covid19 <- function(ISO     = NULL,
     if(end < "2020-04-14")
       stop("vintage data not available before 2020-04-14")
 
-    file <- sprintf("https://storage.guidotti.dev/covid19/%sdata-%s-%s.csv", ifelse(raw, 'raw', ''), level, format(as.Date(end),"%Y%m%d"))
+    file <- sprintf("https://storage.covid19datahub.io/%sdata-%s-%s.csv", ifelse(raw, 'raw', ''), level, format(as.Date(end),"%Y%m%d"))
 
     x <- try(suppressWarnings(read.csv(file, cache = cache, colClasses = c("date" = "Date"))), silent = TRUE)
 

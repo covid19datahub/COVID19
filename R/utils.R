@@ -9,7 +9,10 @@ NULL
 
     packageStartupMessage("The coronavirus situation is changing fast. Checking for updates...")
 
-    description <- readLines('https://raw.githubusercontent.com/emanuele-guidotti/COVID19/master/DESCRIPTION')
+    description <- try(readLines('https://raw.githubusercontent.com/emanuele-guidotti/COVID19/master/DESCRIPTION'), silent = TRUE)
+    if(class(description)=="try-error")
+      return()
+      
     id <- which(startsWith(prefix = "Version:", x = description))
     v  <- as.package_version(gsub(pattern = "^Version:\\s*", replacement = "", x = description[id]))
 
