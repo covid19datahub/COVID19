@@ -6,7 +6,7 @@ oppnadata <- function(cache, level){
   url <- "https://free.entryscape.com/store/360/resource/15"
   
   # number of cases, deaths, icu - whole Sweden
-  x <- read.csv(url, encoding="UTF-8", cache = cache)
+  x <- read.csv(url, cache = cache)
   
   # switch level
   if(level==1){

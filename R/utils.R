@@ -51,7 +51,7 @@ db <- function(id, type = NULL){
     id  <- paste0(id,"-",map[type])
   }
 
-  utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"), na.strings = "", stringsAsFactors = FALSE)
+  utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"), na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8")
 
 }
 
@@ -76,6 +76,7 @@ csv <- function(ISO = NULL, x = NULL, save = FALSE){
   cn <- cn[!(cn %in% c('iso_alpha_3','iso_alpha_2','iso_numeric','country'))]
 
   if(!is.null(x)){
+    x[,cn[!(cn %in% colnames(x))]] <- NA
     x <- x[,cn]
     x <- x[!duplicated(x),]
   }
@@ -88,7 +89,7 @@ csv <- function(ISO = NULL, x = NULL, save = FALSE){
   x <- dplyr::arrange(x, -rowSums(is.na(x)), x$state, x$city)
 
   if(save & !is.null(ISO))
-    utils::write.csv(x, paste0(ISO,".csv"), row.names = FALSE, na = "")
+    utils::write.csv(x, paste0(ISO,".csv"), row.names = FALSE, na = "", fileEncoding = "UTF-8")
 
   return(x)
 
@@ -137,7 +138,7 @@ cachecall <- function(fun, ...){
   else
     x <- try(do.call(fun, args = args), silent = TRUE)
 
-  if(class(x)=="try-error")
+  if("try-error" %in% class(x))
     x <- NULL
 
   if(cache)
@@ -148,12 +149,12 @@ cachecall <- function(fun, ...){
 }
 
 
-read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, ...){
+read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8", ...){
 
   if(cache)
-    x <- cachecall(utils::read.csv, file = file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, ...)
+    x <- cachecall(utils::read.csv, file = file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, encoding = encoding, ...)
   else
-    x <- utils::read.csv(file = file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, ...)
+    x <- utils::read.csv(file = file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, encoding = encoding, ...)
 
   return(x)
 

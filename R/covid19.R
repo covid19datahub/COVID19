@@ -89,7 +89,7 @@ covid19 <- function(ISO     = NULL,
 
     x <- try(suppressWarnings(read.csv(file, cache = cache, colClasses = c("date" = "Date"))), silent = TRUE)
 
-    if(class(x)=="try-error" | is.null(x))
+    if("try-error" %in% class(x) | is.null(x))
       stop(sprintf("vintage data not available on %s", end))
 
     if(length(ISO)>0)
