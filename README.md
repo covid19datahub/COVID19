@@ -227,3 +227,5 @@ Guidotti, E., Ardia, D., (2020).
 _COVID19 Data Hub_       
 Working paper   
 [https://doi.org/XXX](https://doi.org/XXX)  
+
+_Note_: We are currently working on improving the way we reference the various data sources for their proper citation.
