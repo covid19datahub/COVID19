@@ -3,6 +3,7 @@
 #'
 #' Unified tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic across several sources.
 #' The data are downloaded in real-time, cleaned and matched with exogenous variables.
+#' Vintage databases are also supported.
 #'
 #' @param ISO vector of ISO codes to retrieve (alpha-2, alpha-3 or numeric). Each country is identified by one of its \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes}
 #' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
@@ -39,6 +40,22 @@
 #' }
 #'
 #' @source \href{https://github.com/covid19datahub/COVID19#data-sources}{Data sources}
+#'
+#' @references 
+#' Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.
+#'
+#' @note 
+#' We have invested a lot of time and effort in creating \href{https://covid19datahub.io}{COVID-19 Data Hub}. We expect you to agree to the following rules when using it:
+#' 
+#' \itemize{
+#' \item cite Guidotti and Ardia (2020) in working papers and published papers that use \href{https://covid19datahub.io}{COVID-19 Data Hub}
+#' \item place the URL \url{https://covid19datahub.io} in a footnote to help others find \href{https://covid19datahub.io}{COVID-19 Data Hub}
+#' \item you assume full risk for the use of \href{https://covid19datahub.io}{COVID-19 Data Hub}
+#' }
+#' 
+#' The \href{https://covid19datahub.io}{COVID-19 Data Hub} (R package COVID19, GitHub repo, cloud storage), and its contents herein, including all data, mapping, and analyses, are provided to the public strictly for educational and academic research purposes. The \href{https://covid19datahub.io}{COVID-19 Data Hub} relies upon publicly available data from multiple sources. We are currently in the process of reconciling the providers with proper reference to their open-source data. Please inform us if you see any issues with the data licenses.
+#' 
+#' We try our best to guarantee the data quality and consistency and the continuous filling of the \href{https://covid19datahub.io}{COVID-19 Data Hub}. However, it is free software and comes with ABSOLUTELY NO WARRANTY. We hereby disclaim any and all representations and warranties with respect to the \href{https://covid19datahub.io}{COVID-19 Data Hub}, including accuracy, fitness for use, and merchantability. Reliance on the \href{https://covid19datahub.io}{COVID-19 Data Hub} for medical guidance or use of the \href{https://covid19datahub.io}{COVID-19 Data Hub} in commerce is strictly prohibited.
 #'
 #' @export
 #'
@@ -121,8 +138,14 @@ covid19 <- function(ISO     = NULL,
           dplyr::bind_rows(x)
 
     # fallback
-    if(nrow(x)==0)
+    if(nrow(x)==0){
+      warning("
+      Sorry, the data are not available. 
+      Help us extending the number of supporting data sources as a joint effort against COVID-19.
+      Jump on the mission: https://covid19datahub.io")
       return(NULL)
+    }
+      
 
     # subset
     key <- c('iso_alpha_3','id','date',vars('fast'))

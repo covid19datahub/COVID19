@@ -46,15 +46,15 @@ oppnadata <- function(cache, level){
     
   }
     
-  #' TODO: other datasets available
-  #'   * confirmed by age: https://oppnadata.se/datamangd/#esc_entry=1425&esc_context=525
-  #'   * confirmed by region: https://oppnadata.se/datamangd/#esc_entry=1426&esc_context=525
-  #'   * confirmed by gender: https://oppnadata.se/datamangd/#esc_entry=1427&esc_context=525
+  # TODO: other datasets available
+  #   * confirmed by age: https://oppnadata.se/datamangd/#esc_entry=1425&esc_context=525
+  #   * confirmed by region: https://oppnadata.se/datamangd/#esc_entry=1426&esc_context=525
+  #   * confirmed by gender: https://oppnadata.se/datamangd/#esc_entry=1427&esc_context=525
   
   # date
   x$date <- as.Date(x$date, format = "%Y-%m-%d")
   
-  #' return
+  # return
   return(x)
 }
 

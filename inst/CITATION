@@ -1,9 +1,9 @@
 bibentry(
-	bibtype="Misc",
-	title="Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets", 
-	url="https://www.kaggle.com/ds/574488", 
-	DOI="10.34740/KAGGLE/DS/574488", 
-	publisher="Kaggle", 
-	author="Emanuele Guidotti",
-	textVersion="Emanuele Guidotti, “Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets.” Kaggle, doi: 10.34740/KAGGLE/DS/574488."
+	bibtype="Unpublished",
+	note="unpublished",
+	title="COVID-19 Data Hub", 
+	url="https://covid19datahub.io", 
+	DOI="10.13140/RG.2.2.11649.81763", 
+	author=as.person("Emanuele Guidotti [aut], David Ardia [aut]"),
+	textVersion='Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.'
 )

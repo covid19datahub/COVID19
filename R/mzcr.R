@@ -1,4 +1,4 @@
-mzcr <- function(cache, ...){
+mzcr <- function(cache){
   # Author: Martin Benes
   
   # mzcr - Ministery of Health of Czech Republic
@@ -19,7 +19,7 @@ mzcr <- function(cache, ...){
   x$tests     <- x$testy_celkem
   x$confirmed <- x$pocet_celkem
   
-  #' return
+  # return
   return(x)
   
 }
