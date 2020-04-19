@@ -20,7 +20,11 @@ The data are collected with the [R package COVID19](https://cran.r-project.org/p
 
 ### Join the mission
 
-Whether or not you are an R user... take part in the data collection! Your contribution will be gratefully acknowledged. See [how to contribute](https://github.com/covid19datahub/COVID19/blob/master/CONTRIBUTING.md).
+Whether or not you are an R user... take part in the data collection!
+
+- Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-dld2grt2-vmso7HkI8yFabW5R_mAZJw) to get help
+- See [how to contribute](https://github.com/covid19datahub/COVID19/blob/master/CONTRIBUTING.md) to get started
+- Submit your pull request and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw)
 
 ## R Package COVID19
 
@@ -214,8 +218,11 @@ The following people have contributed to the data collection as a joint effort a
 
 ## Terms of Use and Disclaimer
 
-By using [COVID19 Data Hub](https://covid19datahub.io/) you agree to the following rules: (i) You must 
-cite [Guidotti and Ardia (2020)](https://doi.org/10.13140/RG.2.2.11649.81763) in working papers and published papers that use [COVID19 Data Hub](https://covid19datahub.io/), (ii) you must place the URL [https://covid19datahub.io/](https://covid19datahub.io/) in a footnote to help others find [COVID19 Data Hub](https://covid19datahub.io/), and (iii) you assume all risk for the use of [COVID19 Data Hub](https://covid19datahub.io/).
+We have invested a lot of time and effort in creating [COVID19 Data Hub](https://covid19datahub.io/). We expect you to agree to the following rules when using it: 
+
+1. cite [Guidotti and Ardia (2020)](https://doi.org/10.13140/RG.2.2.11649.81763) in working papers and published papers that use [COVID19 Data Hub](https://covid19datahub.io/)
+2. place the URL [https://covid19datahub.io](https://covid19datahub.io) in a footnote to help others find [COVID19 Data Hub](https://covid19datahub.io/) 
+3. you assume full risk for the use of [COVID19 Data Hub](https://covid19datahub.io/).
 
 The [COVID19 Data Hub](https://covid19datahub.io/) (R package COVID19, GitHub repo, cloud storage), and its contents herein, including all data, mapping, and analyses, are provided to the public strictly for educational and academic research purposes. The [COVID19 Data Hub](https://covid19datahub.io/) relies upon publicly available data from multiple sources. We are currently in the process of reconciling the providers with proper reference to their open-source data. Please inform us if you see any issues with the data licenses.
 
