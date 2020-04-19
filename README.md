@@ -214,10 +214,10 @@ The following people have contributed to the data collection as a joint effort a
 
 ## Terms of Use and Disclaimer
 
-The [COVID19 Data Hub](https://covid19datahub.io/) (R package COVID19, GitHub repo, and cloud storage account), and its contents herein, including all data, mapping, and analyses, are provided to the public strictly for educational and academic research purposes. The [COVID19 Data Hub](https://covid19datahub.io/) relies upon publicly available data from multiple sources. We are currently in the process of reconciling the providers with proper reference to their open-source data. Please inform us if you see any issues with the data licenses.
+The [COVID19 Data Hub](https://covid19datahub.io/) (R package COVID19, GitHub repo, cloud storage), and its contents herein, including all data, mapping, and analyses, are provided to the public strictly for educational and academic research purposes. The [COVID19 Data Hub](https://covid19datahub.io/) relies upon publicly available data from multiple sources. We are currently in the process of reconciling the providers with proper reference to their open-source data. Please inform us if you see any issues with the data licenses.
 
-We try our best to guarantee the data quality and consistency and the continuous filling of the [COVID19 Data Hub](https://covid19datahub.io/). However, it is free software and comes with ABSOLUTELY NO WARRANTY. We hereby disclaim any and all representations and warranties with respect to the [COVID19 Data Hub](https://covid19datahub.io/), including accuracy, fitness for use, and merchantability. Reliance on the COVD19 Data Hub for medical guidance or use of the [COVID19 Data Hub](https://covid19datahub.io/) in commerce is strictly prohibited.
+We try our best to guarantee the data quality and consistency and the continuous filling of the [COVID19 Data Hub](https://covid19datahub.io/). However, it is free software and comes with ABSOLUTELY NO WARRANTY. We hereby disclaim any and all representations and warranties with respect to the [COVID19 Data Hub](https://covid19datahub.io/), including accuracy, fitness for use, and merchantability. Reliance on the [COVID19 Data Hub](https://covid19datahub.io/) for medical guidance or use of the [COVID19 Data Hub](https://covid19datahub.io/) in commerce is strictly prohibited.
 
 ## Citation
 
-Emanuele Guidotti, “_Coronavirus COVID-19 (2019-nCoV) Epidemic Datasets._” Kaggle, doi: 10.34740/KAGGLE/DS/574488.
+Coming soon...
