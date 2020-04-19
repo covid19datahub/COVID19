@@ -215,7 +215,7 @@ The following people have contributed to the data collection as a joint effort a
 ## Terms of Use and Disclaimer
 
 By using [COVID19 Data Hub](https://covid19datahub.io/) you agree to the following rules: (i) You must 
-cite [Guidotti and Ardia (2020)](https://doi.org/xxx) in working papers and published papers that use [COVID19 Data Hub](https://covid19datahub.io/), (ii) you must place the URL [https://covid19datahub.io/](https://covid19datahub.io/) in a footnote to help others find [COVID19 Data Hub](https://covid19datahub.io/), and (iii) you assume all risk for the use of [COVID19 Data Hub](https://covid19datahub.io/).
+cite [Guidotti and Ardia (2020)](https://doi.org/10.13140/RG.2.2.11649.81763) in working papers and published papers that use [COVID19 Data Hub](https://covid19datahub.io/), (ii) you must place the URL [https://covid19datahub.io/](https://covid19datahub.io/) in a footnote to help others find [COVID19 Data Hub](https://covid19datahub.io/), and (iii) you assume all risk for the use of [COVID19 Data Hub](https://covid19datahub.io/).
 
 The [COVID19 Data Hub](https://covid19datahub.io/) (R package COVID19, GitHub repo, cloud storage), and its contents herein, including all data, mapping, and analyses, are provided to the public strictly for educational and academic research purposes. The [COVID19 Data Hub](https://covid19datahub.io/) relies upon publicly available data from multiple sources. We are currently in the process of reconciling the providers with proper reference to their open-source data. Please inform us if you see any issues with the data licenses.
 
