@@ -22,8 +22,8 @@ The data are collected with the [R package COVID19](https://cran.r-project.org/p
 
 Whether or not you are an R user... take part in the data collection!
 
-- Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-dld2grt2-vmso7HkI8yFabW5R_mAZJw) to get help
 - See [how to contribute](https://github.com/covid19datahub/COVID19/blob/master/CONTRIBUTING.md) to get started
+- Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-dld2grt2-vmso7HkI8yFabW5R_mAZJw) to get help
 - Submit your pull request and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw)
 
 ## R Package COVID19
