@@ -80,5 +80,5 @@ covid19(c("ITA","USA"), level = 3)
 
 }
 \references{
-Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.
+Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: \doi{10.13140/RG.2.2.11649.81763}.
 }
