@@ -42,7 +42,7 @@
 #' @source \href{https://github.com/covid19datahub/COVID19#data-sources}{Data sources}
 #'
 #' @references 
-#' Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: \doi{10.13140/RG.2.2.11649.81763}.
+#' Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, \doi{10.13140/RG.2.2.11649.81763}.
 #'
 #' @note 
 #' We have invested a lot of time and effort in creating \href{https://covid19datahub.io}{COVID-19 Data Hub}. We expect you to agree to the following rules when using it:
