@@ -8,6 +8,11 @@ The repository aims at unifying COVID-19 datasets across different sources in or
 
 The data are available to the end-user via the [R package COVID19](https://cran.r-project.org/package=COVID19) or in csv format (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
 
+## Open position: R developer
+
+We are seeking for a two-week to one-month, part/full-time R developer
+https://storage.covid19datahub.io/job.pdf?R
+
 ## About
 
 ### Goal
