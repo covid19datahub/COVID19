@@ -1,10 +1,11 @@
 ---
 title: "COVID-19 Data Hub"
 author: "E. Guidotti, D. Ardia"
-date: "19/4/2020"
+date: "21/4/2020 (first version 19/4/2020)"
 output: rmarkdown::html_vignette
+fontsize: 11pt
 vignette: >
-  %\VignetteIndexEntry{Put the title of your vignette here}
+  %\VignetteIndexEntry{COVID-19 Data Hub}
   %\VignetteEngine{knitr::rmarkdown}
   \usepackage[utf8]{inputenc}
 ---
