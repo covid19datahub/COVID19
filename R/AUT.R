@@ -8,14 +8,12 @@ AUT <- function(level, cache){
   # download
   x <- bmsgpk(cache = cache)
   
-  
   # id
   if(level==1)
-    x$id <- x$country
+    x$id <- "AUT"
   
   # return
   return(x)
   
 }
 
-AUT(1,F)
