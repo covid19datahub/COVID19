@@ -1,6 +1,11 @@
 bmsgpk <- function(cache){
   # author: Martin Benes
   
+  # cache
+  cachekey <- "bmsgpk"
+  if(cache & exists(cachekey, envir = cachedata))
+    return(get(cachekey, envir = cachedata))
+  
   # Download
   # https://www.data.gv.at/katalog/dataset/osterreichische-statistische-daten-zu-covid-19/resource/7ad666c7-663d-45dc-ae66-f61385c9eeba
   # Federal Ministery of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
@@ -32,8 +37,8 @@ bmsgpk <- function(cache){
       "confirmed" = "Epikurve.csv", 
       "deaths"    = "TodesfaelleTimeline.csv",
       "recovered" = "GenesenTimeline.csv", 
-      "icu"       = "IBAuslastung.csv",
-      "hosp"      = "NBAuslastung.csv")
+      "icu_pct"   = "IBAuslastung.csv",
+      "hosp_pct"  = "NBAuslastung.csv")
   
   x <- NULL
   for(i in 1:length(files)){
@@ -55,6 +60,10 @@ bmsgpk <- function(cache){
   # turn confirmed to cumulative
   x$confirmed <- cumsum(x$confirmed)
 
+  # cache
+  if(cache)
+    assign(cachekey, x, envir = cachedata)
+  
   return(x)
   
 }
