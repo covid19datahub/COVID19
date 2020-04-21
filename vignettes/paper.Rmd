@@ -19,7 +19,7 @@ The objective of the [COVID-19 Data Hub](https://covid19datahub.io/) project is 
 
 ## R Package COVID19
 
-Simple, yet effective R package to acquire tidy format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The data are downloaded in real-time, cleaned, and matched with exogenous variables. Vintage databases are also supported.
+COVID19 is a simple yet effective R package designed to collect tidy-format datasets of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. Raw data are retrieved in real-time, cleaned, and matched with exogenous variables. Vintage databases are also supported.
 
 ## Acknowledgements
 
