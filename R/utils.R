@@ -203,6 +203,27 @@ test <- function(ISO = NULL, level, end, raw){
 }
 
 
+check <- function(x){
+  
+  x %>% 
+    dplyr::group_by(id) %>% 
+    dplyr::group_map(function(x, g){
+      
+      for(i in vars('fast')){
+        
+        plot(x[[i]]~x$date, main = paste(g[[1]], i, sep = ' - '), ylab = '', xlab = '')
+        rl <- readline("Press enter: next plot \nType 's': next group \nType 'q': abort")
+        
+        if(rl=='s') break
+        if(rl=='q') stop("aborted")
+        
+      }
+      
+    })
+  
+}
+
+
 vars <- function(type = "all"){
 
   fast <- c('deaths','confirmed','tests','recovered',

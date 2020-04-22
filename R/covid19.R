@@ -207,7 +207,11 @@ covid19 <- function(ISO     = NULL,
                        transit   = mean(transit))
 
     # merge top level slow var
-    x <- merge(x, db("ISO"), by = "iso_alpha_3", all.x = TRUE, suffixes = c('.drop',''))
+    y <- db("ISO")
+    if(level>1)
+      y <- y[,c("iso_alpha_3","country")]
+    
+    x <- merge(x, y, by = "iso_alpha_3", all.x = TRUE, suffixes = c('.drop',''))
 
     # merge slow var
     if(level>1)
@@ -216,9 +220,13 @@ covid19 <- function(ISO     = NULL,
         dplyr::group_by(iso_alpha_3) %>%
 
         dplyr::group_map(keep = TRUE, function(x, iso){
-
-          drop(merge(x, db(iso[[1]]), by = "id", all.x = TRUE, suffixes = c('.drop','')))
-
+          
+          y <- try(db(iso[[1]]), silent = TRUE)
+          if(class(y)!="try-error")
+            x <- drop(merge(x, y, by = "id", all.x = TRUE, suffixes = c('.drop','')))
+          
+          return(x)
+          
         }) %>%
 
         dplyr::bind_rows()
