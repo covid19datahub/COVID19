@@ -44,15 +44,16 @@ update <- function(){
 
 
 
-db <- function(id, type = NULL){
+db <- function(id){
 
-  if(!is.null(type)){
-    map <- c('country' = 1, 'state' = 2, 'city' = 3)
-    id  <- paste0(id,"-",map[type])
-  }
-
-  utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"), na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8")
-
+  suppressWarnings(
+    utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"), 
+                    na.strings = "", 
+                    stringsAsFactors = FALSE, 
+                    encoding = "UTF-8", 
+                    colClasses = c("id" = "character"))
+  )
+  
 }
 
 

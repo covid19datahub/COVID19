@@ -30,8 +30,8 @@ WORLD <- function(level, cache){
   x$country <- mapvalues(x$country, map)
 
   # mobility data
-  a <- apple(cache = cache)
-  x <- merge(x, a, by.x = c('date','country'), by.y = c('date','region'), all.x = TRUE)
+  # a <- apple(cache = cache)
+  # x <- merge(x, a, by.x = c('date','country'), by.y = c('date','region'), all.x = TRUE)
 
   # ISO code
   iso    <- db("ISO")
