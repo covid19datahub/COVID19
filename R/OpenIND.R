@@ -1,46 +1,56 @@
+OpenIND <- function(cache, level){
+  # Author: Rijin Baby
+  
+  if(level==1){
 
-OpenIND <- function(cache,file){
+    # reading source data
+    # https://www.covid19india.org/
+    url <- "https://api.covid19india.org/csv/latest/case_time_series.csv"
+    x   <- read.csv(url, cache = cache)
+    
+    # date
+    Sys.setlocale("LC_TIME", "C")
+    x$date <- as.Date(x$Date, format = "%d %B")
+    
+    # formatting
+    x <- x[,c("date","Total.Deceased","Total.Confirmed","Total.Recovered")] 
+    colnames(x) <- c("date","deaths","confirmed","recovered")
+        
+  }
+  if(level==2){
+
+    # reading source data
+    # https://www.covid19india.org/
+    url <- "https://api.covid19india.org/csv/latest/state_wise_daily.csv"
+    x   <- read.csv(url, cache = cache)
+    
+    # drop total
+    x <- x[,-3]
+    
+    # date
+    x$Date <- as.Date(x$Date, format = "%d-%b-%y")
+    colnames(x)[1] <- "date"
+    
+    # cumulative 
+    x <- x %>% 
+      dplyr::group_by(Status) %>%
+      dplyr::group_map(keep = TRUE, function(x,g) c(x[,1:2], cumsum(x[,-(1:2)]))) %>%
+      dplyr::bind_rows()
+    
+    # formatting
+    x <- x %>% 
+      tidyr::pivot_longer(-(1:2), names_to = "state", values_to = "value") %>%
+      tidyr::pivot_wider(names_from = "Status")
+    
+    colnames(x) <- mapvalues(colnames(x), c(
+      'Confirmed' = 'confirmed',
+      'Deceased'  = 'deaths',
+      'Recovered' = 'recovered'
+    ))
+    
+  }
   
-  # reading source data
-  ts_data <- read.csv("https://api.covid19india.org/csv/latest/case_time_series.csv")
+  # return
+  return(x)
   
-  #formatting
-  ts_data$Date <- as.character(ts_data$Date)
-  ts_data$Date <- paste(ts_data$Date,"2020")
-  ts_data$Date <- lubridate::parse_date_time2(ts_data$Date, orders = "dmY")
-  ts_data$Date <- as.Date(ts_data$Date)
-  
-  #final dataframe
-  ts_data <-ts_data[,c("Date","Daily.Deceased","Daily.Confirmed","Daily.Recovered")] 
-  colnames(ts_data) <- c("date","deaths","confirmed","recovered")
-  
-  # state data
-  state_data <- read.csv("https://api.covid19india.org/csv/latest/state_wise_daily.csv")
-  
-  #formatting
-  state_data <- reshape2::melt(state_data,id=c("Date","Status"))
-  state_data <- reshape2::dcast(state_data, Date + variable ~ Status)
-  state_data$date <- as.character(state_data$Date)
-  state_data$date <- gsub("-"," ",state_data$date)
-  state_data$date <- lubridate::parse_date_time2(state_data$date, orders = "dmy")
-  state_data$date <- as.Date(state_data$date);state_data$Date <-NULL
-  state_data$variable <- as.character(state_data$variable)
-  state_data <- state_data[-which(state_data$variable=="TT"),]
-  colnames(state_data)[which(colnames(state_data)=="variable")] <- "state"
-  
-  #final dataset
-  ind_final <- merge(ts_data,state_data,by="date",all = T)
-  ind_final$Confirmed <- ifelse(is.na(ind_final$Confirmed),ind_final$confirmed,ind_final$Confirmed)
-  ind_final$Deceased <- ifelse(is.na(ind_final$Deceased),ind_final$deaths,ind_final$Deceased)
-  ind_final$Recovered <- ifelse(is.na(ind_final$Recovered),ind_final$recovered,ind_final$Recovered)
-  ind_final$deaths <- NULL;ind_final$recovered <- NULL;ind_final$confirmed <- NULL
-  colnames(ind_final) <- c("date","state","confirmed","deaths","recovered")
-  
-  #return
-  if(file=="nation")
-    return(ts_data)
-  if(file=="state")
-    return(ind_final)
-  else
-    stop("file not supported")
 }

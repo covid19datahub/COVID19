@@ -1,14 +1,14 @@
-
 IND <- function(level, cache){
+  # Author: Rijin Baby
   
   # fallback
   if(level>2)
     return(NULL)
   
   # download
-  file <- c('nation','state')
-  x <- OpenIND(file = file[level], cache = cache)
+  x <- OpenIND(cache = cache, level = level)
   
+  # id
   if(level==1)
     x$id <- "IND"
   if(level==2)
