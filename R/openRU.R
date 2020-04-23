@@ -24,16 +24,17 @@ openRU <- function(cache){
   #reshaping
   
   cnames <- (colnames(confirmed))
-  cnames <- cnames[cnames != c("state", "country", "lat", "lng")]
+  const_names <- c("state", "country", "lat", "lng")
+  var_names <- cnames[cnames != const_names]
   
-  confirmed_ru <- reshape(data=confirmed, 
-                          idvar=c("state","country", "lat", "lng"),
-                          varying = cnames,
+  confirmed_ru <- reshape(data = confirmed, 
+                          idvar = const_names,
+                          varying = var_names,
                           v.names = "confirmed",
                           timevar = "date",
-                          times = cnames,
+                          times = var_names,
                           direction ="long")
-  
+
   row.names(confirmed_ru)<-NULL
   
   #date
