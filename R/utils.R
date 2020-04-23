@@ -45,7 +45,6 @@ update <- function(){
 
 
 db <- function(id){
-
   suppressWarnings(
     utils::read.csv(system.file("extdata", "db", paste0(id,".csv"), package = "COVID19"), 
                     na.strings = "", 
@@ -133,7 +132,7 @@ cachecall <- function(fun, ...){
   args  <- list(...)
   cache <- ifelse(is.null(args$cache), TRUE, args$cache)
   key   <- make.names(sprintf("%s_%s",paste(deparse(fun), collapse = ''),paste(names(args),args,sep = ".",collapse = "..")))
-
+  
   if(cache & exists(key, envir = cachedata))
     return(get(key, envir = cachedata))
   else
@@ -157,6 +156,30 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
   else
     x <- utils::read.csv(file = file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, encoding = encoding, ...)
 
+  return(x)
+
+}
+
+read_excel_from_url <- function(path, ...) {
+  tmp <- tempfile()
+  download.file(path, destfile=tmp, mode="wb")
+  x <- readxl::read_excel(path=tmp, ...)
+  return(x)
+}
+
+read_excel <- function(path, cache, ...) {
+  # is url (readxl::read_excel supports only http, https, ftp)
+  if(stringr::str_detect(path, "^(http:\\/\\/)|(https:\\/\\/)|(ftp:\\/\\/)")) 
+    reader <- read_excel_from_url
+  # local file
+  else
+    reader <- readxl::read_excel
+  
+  if(cache)
+    x <- cachecall(reader, path=path, ...)
+  else
+    x <- reader(path=path, ...)
+  
   return(x)
 
 }
