@@ -24,10 +24,7 @@ openRU <- function(cache){
   #reshaping
   
   cnames <- (colnames(confirmed))
-  cnames <- cnames[cnames != "state"]
-  cnames <- cnames[cnames != "country"]
-  cnames <- cnames[cnames != "lat"]
-  cnames <- cnames[cnames != "lng"]
+  cnames <- cnames[cnames != c("state", "country", "lat", "lng")]
   
   confirmed_ru <- reshape(data=confirmed, 
                           idvar=c("state","country", "lat", "lng"),
