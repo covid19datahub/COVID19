@@ -17,6 +17,25 @@ __If you are new to GitHub, follow 3 simple steps to collaborate on the project:
 2. Write R functions to import data from new data sources. Get started [here](https://github.com/covid19datahub/COVID19/blob/master/R/datasource.R).
 3. Write R functions to export the data to the end user. Get started [here](https://github.com/covid19datahub/COVID19/blob/master/R/ISO.R).
 
+### TODO data sources
+Here will be added data sources, that are to be integrated by countries.
+
+* Phillipines
+  * 
+| Country        | URL                                                                      | Format | Comment                                          |
+| -------------- | ------------------------------------------------------------------------ |:------:| ------------------------------------------------ |
+| Phillipines    | https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP | xlsx   | Found this drive as link to data from gov.ph.    |
+|                | https://www.doh.gov.ph/covid19tracker                                    |        |                                                  |
+| Australia      | https://data.gov.au/search?q=covid                                       | csv    |                                                  |
+| New Zealand    | https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation | xlsx |           |
+| Indonesia      | https://www.covid19.go.id/situasi-virus-corona/                          | ?      | inspect (search "statistik" in devtools:network) |       
+| Malaysia       | https://ukkdosm.github.io/covid-19                                       | ?      | inspect ("batchedDataV2")                        |
+| Netherlands    | https://www.rivm.nl/coronavirus-covid-19/grafieken                       | csv    |                                                  |
+
+
+
+
+
 ## Contributing guidelines for non-R users
 
 1. Find data sources for **historical data** such as demographics, population density, age, air quality and other **slow-changing variables**. See the [data coverage table](https://storage.covid19datahub.io/coverage.html) to avoid working on something that is already available.
