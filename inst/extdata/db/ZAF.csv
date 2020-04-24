@@ -1,0 +1,10 @@
+id,state,city,lat,lng,pop,pop_14,pop_15_64,pop_65,pop_age,pop_density,pop_death_rate
+EC,Eastern Cape,Bhisho,-32.853333,27.436111,6996976,,,,,,
+FS,Free State,Bloemfontein,-29.116111,26.214167,2834714,,,,,,
+GP,Gauteng,Johannesburg,-26.206111,28.04,13399724,,,,,,
+KZN,KwaZulu-Natal,Pietermaritzburg,-29.601389,30.382222,11065240,,,,,,
+LP,Limpopo,Polokwane,-23.9125,29.455833,5799090,,,,,,
+MP,Mpumalanga,Mbombela,-25.4375,30.971944,4335964,,,,,,
+NC,Northern Cape,Kimberley,-28.736111,24.768889,3748435,,,,,,
+NW,North West,Mahikeng,-25.834167,25.611667,1193780,,,,,,
+WC,Western Cape,Cape Town,-33.924167,18.418611,6279730,,,,,,
