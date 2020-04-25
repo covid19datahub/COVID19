@@ -10,7 +10,7 @@ BEL <- function(level, cache){
   
   # id
   if(level==1)
-    x$id <- "BEL"
+    x$id <- id(x$country)
   if(level==2)
     x$id <- id(x$state)
   if(level==3)
