@@ -9,18 +9,17 @@ sciensano <- function(cache, level){
   stringsAsFactorsDefault <- default.stringsAsFactors()
   options(stringsAsFactors = FALSE)
   
-  # source: Sciensano, the Belgian institute for health
-  
+  # source: Sciensano, the Belgian institute for health, https://epistat.wiv-isp.be/covid/
   repo <- "https://epistat.sciensano.be/Data/"
   
-  # Confirmed cases, hosp and icu are given on a PROVINCE level. 
-  # PROVINCE level is chosen to be the state levle.
-  # Deaths is given by region only. The 3 Belgium regions will be aggregated to country level.
+  # Confirmed cases, hosp and icu are given on a Province level. 
+  # Province => state levle.
+  # Deaths by region only => aggregated to country level.
   # Confirmed cases, hosp, icu and deaths will be exported for level < 3.
-  #
-  # Confirmed cases are, in a separate file, also given by municipality (city). 
-  # This file is used in level = 3.
-  # The quality of the municipality data, however, seems at the time of writing inferior to the quality of the level < 3 data.
+  
+  # Confirmed cases are, in a separate file, also given by municipality (city), 
+  # the quality of the municipality data, however, seems at the time of writing inferior to the quality of the level < 3 data,
+  # hence, not implemented.
   
   x <- NULL
   
@@ -49,7 +48,6 @@ sciensano <- function(cache, level){
         x <- merge(x, xx, all = TRUE)
       }
     }
-    
     names(x) <- c("date", "state", "confirmed", "hosp", "icu")
     
     x <- x %>%
@@ -102,44 +100,7 @@ sciensano <- function(cache, level){
       x <- merge(x,xx)
     }
   } 
-  # end of level < 3
   
-  if(level == 3){
-    
-    urls_city     = c(
-      "confirmed" = "COVID19BE_CASES_MUNI.csv"
-    )
-    
-    # download and format city level data
-
-    for(i in 1:(length(urls_city))){
-      # (loop at the time of writing not necessary, placeholder for potential future datasets)
-      
-      url <- sprintf("%s%s", repo, urls_city[i]) 
-      x <- utils::read.csv(url, encoding = "UTF-16")
-      x <- x[, c("DATE", "TX_DESCR_FR", "CASES")]
-      colnames(x) <- c("date", "city", "confirmed")
-      
-
-    }
-    # removing NA cities and dates
-    x <- x[x$city!="NA",]
-    x <- x[!is.na(x$date),]
-    
-    # Set newly daily confirmed <- 2 if "<5"
-    
-    x[x=="<5"] <- "2"
-    x$confirmed <- as.numeric(x$confirmed)
-    
-    x <- x %>%
-      dplyr::group_by(city) %>%
-      dplyr::arrange(date)
-    
-    # set NAs to zero and cumsum
-    x$confirmed[is.na(x$confirmed)] <- 0
-    x <- x %>% dplyr::mutate(confirmed = cumsum(confirmed))
-  }
-
   # cache
   if(cache)
     assign(cachekey, x, envir = cachedata)
@@ -148,7 +109,7 @@ sciensano <- function(cache, level){
   options(stringsAsFactors = stringsAsFactorsDefault)
   
   x$date <- as.Date(x$date, format="%Y-%m-%d")
-  x$country   <- "BEL"
+  x$country   <- "Belgium"
   return(x)
   
 }
