@@ -13,13 +13,13 @@ __If you are new to GitHub, follow 3 simple steps to collaborate on the project:
 
 ## Contributing guidelines for R users
 
-- Find data sources for **real-time data** such as number of cases, deaths, tests, hospitalized and other **fast-changing variables**. See the [data coverage table](https://github.com/covid19datahub/COVID19#data-coverage) to avoid working on something that is already available.
-- Write R functions to extend the package with new data sources. Get started [here](https://github.com/covid19datahub/COVID19/blob/master/R/datasource.R).
-- Write R functions to extend the package with new countries. Get started [here](https://github.com/covid19datahub/COVID19/blob/master/R/ISO.R).
+1. Find data sources for **real-time data** such as number of cases, deaths, tests, hospitalized and other **fast-changing variables**. See the [data coverage table](https://storage.covid19datahub.io/coverage.html) to avoid working on something that is already available.
+2. Write R functions to import data from new data sources. Get started [here](https://github.com/covid19datahub/COVID19/blob/master/R/datasource.R).
+3. Write R functions to export the data to the end user. Get started [here](https://github.com/covid19datahub/COVID19/blob/master/R/ISO.R).
 
 ## Contributing guidelines for non-R users
 
-- Find data sources for **historical data** such as demographics, population density, age, air quality and other **slow-changing variables**. See the [data coverage table](https://github.com/covid19datahub/COVID19#data-coverage) to avoid working on something that is already available.
-- Improve the csv files available [here](https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db) by (programmatically or manually) filling-in the missing values or extending the files with additional variables.
-- Clearly state where the data come from (data source + year) in your pull request. 
+1. Find data sources for **historical data** such as demographics, population density, age, air quality and other **slow-changing variables**. See the [data coverage table](https://storage.covid19datahub.io/coverage.html) to avoid working on something that is already available.
+2. Improve the csv files available [here](https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db) by (programmatically or manually) filling-in the missing values or extending the files with additional variables.
+3. Clearly state where the data come from (data source + year) in your pull request. 
 

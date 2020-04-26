@@ -6,7 +6,7 @@
 
 The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and [contribute](https://github.com/covid19datahub/COVID19/blob/master/CONTRIBUTING.md) by extending the number of supporting data sources as a joint effort against COVID-19.
 
-The data are available to the end-user via the [R package COVID19](https://cran.r-project.org/package=COVID19) or in csv format (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
+The data are available to the end-user via the [R package COVID19](https://cran.r-project.org/package=COVID19) or in csv format (see [below](https://github.com/covid19datahub/COVID19#csv-data-files) or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
 
 ## About
 
@@ -16,7 +16,7 @@ Provide the research community with a unified data hub by collecting worldwide f
 
 ### How 
 
-The data are collected with the [R package COVID19](https://cran.r-project.org/package=COVID19). For R users, the COVID19 package is the recommended way to interact with the dataset. For non R users, the data are provided in csv format and regularly updated (see below or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
+The data are collected with the [R package COVID19](https://cran.r-project.org/package=COVID19). For R users, the COVID19 package is the recommended way to interact with the dataset. For non R users, the data are provided in csv format and regularly updated (see [below](https://github.com/covid19datahub/COVID19#csv-data-files) or on [Kaggle](https://www.kaggle.com/eguidotti/coronavirus-covid19-2019ncov-epidemic-datasets/)).
 
 ### Join the mission
 

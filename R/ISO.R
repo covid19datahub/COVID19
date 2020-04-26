@@ -15,6 +15,10 @@ ISO <- function(level, cache){
   # The function cannot include additional arguments
   # The function must return a data.frame
   #
+  # When implemented, test the function by running:
+  #  covid19("ISO", level = 1) 
+  # where "ISO" is the name of this function and level = 1,2,3.
+  #
   # Examples:
   # https://github.com/covid19datahub/COVID19/blob/master/R/ITA.R
   # https://github.com/covid19datahub/COVID19/blob/master/R/CHE.R
