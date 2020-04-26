@@ -6,42 +6,24 @@ openRU <- function(cache){
   
   # download
   url <- sprintf("%s/%s", repo, url)
-  confirmed  <- read.csv(url, cache = cache)
+  x   <- read.csv(url, cache = cache)
   
   #formatting
+  x$country <- x$Country_Region
+  x$state   <- x$Province_State
+  x$lat     <- x$Lat
+  x$lng     <- x$Long_
   
-  confirmed <- subset(confirmed, select = -c(UID,iso2,iso3,code3, FIPS,Admin2,Combined_Key))
+  # reshaping
+  cn <- colnames(x)
+  by <- c('country','state','lat','lng','Combined_Key')
+  cn <- (cn %in% by) | !is.na(as.Date(cn, format = "X%m.%d.%y"))
   
-  names(confirmed)[names(confirmed) == "Province_State"] <- "state"
-  names(confirmed)[names(confirmed) == "Country_Region"] <- "country"
-  names(confirmed)[names(confirmed) == "Lat"] <- "lat"
-  names(confirmed)[names(confirmed) == "Long_"] <- "lng"
-  
-  #filtering
-  
-  confirmed <-confirmed[, colSums(confirmed != 0) > 0]
-  
-  #reshaping
-  
-  cnames <- (colnames(confirmed))
-  const_names <- c("state", "country", "lat", "lng")
-  var_names <- cnames[cnames != const_names]
-  
-  confirmed_ru <- reshape(data = confirmed, 
-                          idvar = const_names,
-                          varying = var_names,
-                          v.names = "confirmed",
-                          timevar = "date",
-                          times = var_names,
-                          direction ="long")
-
-  row.names(confirmed_ru)<-NULL
-  
-  #date
-  
-  confirmed_ru$date <- as.Date(confirmed_ru$date, format = "X%m.%d.%y")
+  # date
+  x      <- x[,cn] %>% tidyr::pivot_longer(cols = -by, values_to = "confirmed", names_to = "date")
+  x$date <- as.Date(x$date, format = "X%m.%d.%y")
   
   # return
-  return(confirmed_ru)
+  return(x)
   
 }
