@@ -229,8 +229,7 @@ check <- function(x){
 vars <- function(type = "all"){
 
   fast <- c('deaths','confirmed','tests','recovered',
-            'hosp','icu','vent',
-            'driving', 'walking', 'transit')
+            'hosp','icu','vent')
 
   slow <- c('country','state','city',
             'lat','lng',

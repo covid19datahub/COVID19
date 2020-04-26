@@ -201,10 +201,7 @@ covid19 <- function(ISO     = NULL,
                        recovered = sum(recovered),
                        hosp      = sum(hosp),
                        icu       = sum(icu),
-                       vent      = sum(vent),
-                       driving   = mean(driving),
-                       walking   = mean(walking),
-                       transit   = mean(transit))
+                       vent      = sum(vent))
 
     # merge top level slow var
     y <- db("ISO")

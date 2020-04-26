@@ -1,4 +1,4 @@
-OpenIND <- function(cache, level){
+openIND <- function(cache, level){
   # Author: Rijin Baby
   
   if(level==1){
