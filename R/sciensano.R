@@ -100,16 +100,15 @@ sciensano <- function(cache, level){
       x <- merge(x,xx)
     }
   } 
+  x$date <- as.Date(x$date, format="%Y-%m-%d")
+  x$country   <- "Belgium"
   
-  # cache
+  # reset default
+  options(stringsAsFactors = stringsAsFactorsDefault)
+  
+  # cache and return
   if(cache)
     assign(cachekey, x, envir = cachedata)
   
-  # reset default and return
-  options(stringsAsFactors = stringsAsFactorsDefault)
-  
-  x$date <- as.Date(x$date, format="%Y-%m-%d")
-  x$country   <- "Belgium"
   return(x)
-  
 }
