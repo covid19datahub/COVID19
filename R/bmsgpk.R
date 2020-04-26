@@ -11,7 +11,7 @@ bmsgpk <- function(cache){
   # Federal Ministery of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
   url  <- "https://info.gesundheitsministerium.at/data/data.zip"
   temp <- tempfile()
-  download.file(url, temp, quiet = TRUE)
+  utils::download.file(url, temp, quiet = TRUE)
   
   # avaliable information
   zipped_filenames <- utils::unzip(temp, list=T)[,1]

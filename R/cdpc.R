@@ -49,6 +49,8 @@ cdpc <- function(cache, level){
     )) 
     x$confirmed <- as.integer(x$confirmed)
     
+    # bindings
+    region_id <- confirmed <- NULL
     # replace counts per region with cumulative sums
     x <- x %>% 
       dplyr::group_by(region_id) %>%

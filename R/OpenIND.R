@@ -31,6 +31,8 @@ OpenIND <- function(cache, level){
     x$Date <- as.Date(x$Date, format = "%d-%b-%y")
     colnames(x)[1] <- "date"
     
+    # bindings
+    Status <- NULL
     # cumulative 
     x <- x %>% 
       dplyr::group_by(Status) %>%

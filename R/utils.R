@@ -205,13 +205,15 @@ test <- function(ISO = NULL, level, end, raw){
 
 check <- function(x){
   
+  id <- NULL
+  
   x %>% 
     dplyr::group_by(id) %>% 
     dplyr::group_map(function(x, g){
       
       for(i in vars('fast')){
         
-        plot(x[[i]]~x$date, main = paste(g[[1]], i, sep = ' - '), ylab = '', xlab = '')
+        graphics::plot(x[[i]]~x$date, main = paste(g[[1]], i, sep = ' - '), ylab = '', xlab = '')
         rl <- readline("Press enter: next plot \nType 's': next group \nType 'q': abort")
         
         if(rl=='s') break
