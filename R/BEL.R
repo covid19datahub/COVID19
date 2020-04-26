@@ -2,7 +2,7 @@ BEL <- function(level, cache){
   # author: Elsa Burren
   
   # fallback
-  if(level > 3)
+  if(level > 2)
     return(NULL)
   
   # download
@@ -13,9 +13,7 @@ BEL <- function(level, cache){
     x$id <- id(x$country)
   if(level==2)
     x$id <- id(x$state)
-  if(level==3)
-    x$id <- id(x$city)
-  
+
   # return
   return(x)
   
