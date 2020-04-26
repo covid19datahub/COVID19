@@ -31,7 +31,7 @@ sciensano <- function(cache, level){
     )
     
     to_aggregate = c("CASES", "TOTAL_IN", "TOTAL_IN_ICU", "DEATHS")
-    # ------------------------------------------------------------------------------
+
     # download and format state (=PROVINCE) level data
     x <- NULL
     for(i in 1:(length(urls_state))){ 
