@@ -5,13 +5,7 @@ WORLD <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "global", cache = cache)
-
-  # filter
-  x <- x[-which(x$state=="Grand Princess"),]
-  x <- x[x$lat!=0 & x$lng!=0,]
-  if(level==2)
-    x <- x[!is.na(x$state),]
+  x <- jhuCSSE(file = "global", cache = cache, level = level)
 
   map <- c(
     'Burma'               = 'Myanmar',
@@ -39,8 +33,18 @@ WORLD <- function(level, cache){
   names(isomap) <- iso$country
   x$iso_alpha_3 <- mapvalues(x$country, isomap)
 
-  # id: see https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db/
-  x$id <- id(x$state)
+  # level
+  if(level==1){
+    
+    o <- owid(cache = cache)  
+    x <- drop(merge(x, o, by = c('date','iso_alpha_3'), all = TRUE, suffixes = c('','.drop')))
+    
+  }
+  if(level==2){
+    
+    x$id <- id(x$state)    
+    
+  }
 
   # return
   return(x)

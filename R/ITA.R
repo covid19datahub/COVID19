@@ -5,16 +5,9 @@ ITA <- function(level, cache){
     return(NULL)
 
   # download
-  file <- c('nazione','regioni','province')
-  x    <- pcmdpc(file = file[level], cache = cache)
+  x <- pcmdpc(cache = cache, level = level)
 
-  # filter
-  if(!is.null(x$lat) & !is.null(x$lng))
-    x <- x[x$lat!=0 | x$lng!=0,]
-
-  # id: see https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db/ITA.csv
-  if(level==1)
-    x$id <- "ITA"
+  # id
   if(level==2)
     x$id <- id(x$state)
   if(level==3)

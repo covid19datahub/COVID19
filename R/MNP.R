@@ -5,7 +5,7 @@ MNP <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "US", cache = cache, id = "MNP")
+  x <- jhuCSSE(file = "US", cache = cache, level = level, id = "MNP")
 
   # return
   return(x)

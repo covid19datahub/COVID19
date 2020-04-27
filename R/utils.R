@@ -69,7 +69,16 @@ fix <- function(id){
 
 }
 
+src <- function(file = "_src"){
 
+  id <- NULL
+  
+  x <- db("_src") %>%
+    dplyr::arrange(iso)
+  
+  utils::write.csv(x, paste0(file,".csv"), row.names = FALSE, na = "", fileEncoding = "UTF-8")
+  
+}
 
 csv <- function(ISO = NULL, x = NULL, save = FALSE){
 
@@ -191,12 +200,17 @@ test <- function(ISO = NULL, level, end, raw){
   x <- covid19(ISO = ISO, level = level, end = end, raw = raw)
   y <- covid19(ISO = ISO, level = level, end = end, raw = raw, vintage = TRUE)
 
-  id <- intersect(x$id, y$id)
-  dd <- intersect(x$date, y$date)
+  x <- as.data.frame(x)
+  y <- as.data.frame(y)
+  
+  rownames(x) <- paste(x$id,x$date)
+  rownames(y) <- paste(y$id,y$date)
+  
+  rn <- intersect(rownames(x), rownames(x))
   cn <- intersect(colnames(x), colnames(y))
 
-  x <- x[which((x$id %in% id) & (x$date %in% dd)), cn]
-  y <- y[which((y$id %in% id) & (y$date %in% dd)), cn]
+  x <- x[rn, cn]
+  y <- y[rn, cn]
 
   return(mean(x==y, na.rm = TRUE))
 

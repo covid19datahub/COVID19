@@ -70,9 +70,9 @@ covid19 <- function(ISO     = NULL,
   # fallback
   if(!(level %in% 1:3))
     stop("valid options for 'level' are:
-         1: country-level data
-         2: state-level data
-         3: city-level data")
+         1: admin area level 1
+         2: admin area level 2
+         3: admin area level 3")
 
   # cache
   cachekey <- make.names(sprintf("covid19_%s_%s_%s_%s",paste0(ISO, collapse = "."), level, ifelse(vintage, end, 0), raw))
@@ -93,6 +93,7 @@ covid19 <- function(ISO     = NULL,
   ISO <- toupper(ISO)
   ISO <- sapply(ISO, function(i) iso$iso_alpha_3[which(iso$iso_alpha_2==i | iso$iso_alpha_3==i | iso$iso_numeric==i)])
   ISO <- as.character(unique(ISO))
+  
   if(length(ISO)==0)
     return(NULL)
 
@@ -119,30 +120,37 @@ covid19 <- function(ISO     = NULL,
   }
   else {
 
-    # download
+    # download 
+    w <- cachecall("WORLD", level = level, cache = cache)
+    
     for(fun in ISO){
 
       y <- cachecall(fun, level = level, cache = cache)
 
-      if(!is.null(y))
+      if(!is.null(y)){
+        
+        if(level==1)
+          y <- drop(merge(y, w[w$iso_alpha_3==fun,], by = 'date', all = TRUE, suffixes = c('','.drop')))
+        
         x <- y %>%
           dplyr::mutate(iso_alpha_3 = fun) %>%
           dplyr::bind_rows(x)
-
+        
+      }
+      
     }
 
-    if(length(ISO)!=length(unique(x$iso_alpha_3)))
-      if(!is.null(w <- cachecall("WORLD", level = level, cache = cache)))
-        x <- w %>%
-          dplyr::filter(!(iso_alpha_3 %in% x$iso_alpha_3) & iso_alpha_3 %in% ISO) %>%
-          dplyr::bind_rows(x)
+    if(!is.null(w))
+      x <- w %>%
+        dplyr::filter(!(iso_alpha_3 %in% x$iso_alpha_3) & iso_alpha_3 %in% ISO) %>%
+        dplyr::bind_rows(x)
 
     # fallback
     if(nrow(x)==0){
       warning("
       Sorry, the data are not available. 
       Help us extending the number of supporting data sources as a joint effort against COVID-19.
-      Jump on the mission: https://covid19datahub.io")
+      Join the mission: https://covid19datahub.io")
       return(NULL)
     }
       
@@ -191,24 +199,44 @@ covid19 <- function(ISO     = NULL,
       x$id <- NA
 
     # aggregate
-    x <- x %>%
-
+    idx <- x %>%
+      
       dplyr::group_by(iso_alpha_3, id, date) %>%
-
-      dplyr::summarize(confirmed = sum(confirmed),
-                       deaths    = sum(deaths),
-                       tests     = sum(tests),
-                       recovered = sum(recovered),
-                       hosp      = sum(hosp),
-                       icu       = sum(icu),
-                       vent      = sum(vent))
+      
+      dplyr::group_map(function(x,g){
+        
+        if(nrow(x)>1) return(g[[1]])
+      
+      }) %>%
+      
+      unlist() %>% 
+      
+      unique()
+    
+    if(length(idx)>0){
+      
+      warning(sprintf("%s: data obtained by aggregating lower level data.", paste(idx, collapse = ", ")))
+      
+      x <- x %>%
+        
+        dplyr::group_by(iso_alpha_3, id, date) %>%
+        
+        dplyr::summarize(confirmed = sum(confirmed),
+                         deaths    = sum(deaths),
+                         tests     = sum(tests),
+                         recovered = sum(recovered),
+                         hosp      = sum(hosp),
+                         icu       = sum(icu),
+                         vent      = sum(vent)) 
+      
+    }
 
     # merge top level slow var
     y <- db("ISO")
     if(level>1)
       y <- y[,c("iso_alpha_3","country")]
     
-    x <- merge(x, y, by = "iso_alpha_3", all.x = TRUE, suffixes = c('.drop',''))
+    x <- drop(merge(x, y, by = "iso_alpha_3", all.x = TRUE, suffixes = c('.drop','')))
 
     # merge slow var
     if(level>1)

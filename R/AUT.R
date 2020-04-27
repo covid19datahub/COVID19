@@ -8,10 +8,6 @@ AUT <- function(level, cache){
   # download
   x <- bmsgpk(cache = cache)
   
-  # id
-  if(level==1)
-    x$id <- "AUT"
-  
   # return
   return(x)
   

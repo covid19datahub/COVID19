@@ -5,12 +5,7 @@ GPC <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "global", cache = cache)
-
-  # clean
-  x <- x[which(x$state=="Grand Princess"),]
-  x$country <- "Grand Princess"
-  x$state   <- NA
+  x <- jhuCSSE(file = "global", cache = cache, level = level, id = "Grand Princess")
 
   # return
   return(x)

@@ -42,7 +42,7 @@ covid19cite <- function(x, style = "citation", bibtex = FALSE, verbose = TRUE){
     
     cit <- utils::citation("COVID19")
     for(i in 1:length(y))
-      cit <- c(cit, y[[i]])
+      cit <- c(y[[i]], cit)
      
     if(verbose) 
       print(cit, style = style, bibtex = bibtex)

@@ -4,14 +4,22 @@ RUS <- function(level, cache){
   if(level>2)
     return(NULL)
   
-  # download
-  x <- openRU(cache = cache)
-  
-  # id
-  if(level==1)
-    x$id <- "RUS"
-  if(level==2)
+  # level
+  if(level==1){
+   
+    # fallback to worldwide data
+    x <- NULL
+     
+  }
+  if(level==2){
+
+    # download
+    x <- openRU(cache = cache)
+    
+    # id
     x$id <- x$state
+    
+  }
   
   # return
   return(x)

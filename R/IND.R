@@ -6,14 +6,12 @@ IND <- function(level, cache){
     return(NULL)
   
   # download
-  x <- openIND(cache = cache, level = level)
-  
-  # id
-  if(level==1)
-    x$id <- "IND"
+  x <- openIND(cache = cache, level = level) 
+
+  # id  
   if(level==2)
     x$id <- id(x$state)
-  
+
   # return
   return(x)
   

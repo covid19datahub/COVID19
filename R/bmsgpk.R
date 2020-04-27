@@ -35,7 +35,7 @@ bmsgpk <- function(cache){
   # load data
   files <- c(
       "confirmed" = "Epikurve.csv", 
-      "deaths"    = "TodesfaelleTimeline.csv",
+      # "deaths"    = "TodesfaelleTimeline.csv",
       "recovered" = "GenesenTimeline.csv", 
       "icu_pct"   = "IBAuslastung.csv",
       "hosp_pct"  = "NBAuslastung.csv")

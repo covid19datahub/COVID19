@@ -5,7 +5,7 @@ ASM <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "US", cache = cache, id = "ASM")
+  x <- jhuCSSE(file = "US", cache = cache, level = level, id = "ASM")
 
   # return
   return(x)
