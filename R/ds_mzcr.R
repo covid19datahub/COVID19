@@ -13,6 +13,10 @@ mzcr <- function(cache){
   url       <- sprintf("%s/nakaza.csv", mzcr.covid.api)
   confirmed <- read.csv(url, cache = cache)
   
+  # people confirmed (by regions)
+  url    <- sprintf("%s/osoby.csv", mzcr.covid.api)
+  people <- read.csv(url, cache = cache)
+  
   # formatting
   x <- merge(tests, confirmed)
   x$date      <- as.Date(x[,1])
