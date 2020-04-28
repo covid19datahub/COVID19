@@ -8,10 +8,6 @@ SVN <- function(level, cache){
   # download
   x <- ministrstvoZaZdravje(cache = cache, level = level)
     
-  # id
-  if(level==1)
-    x$id <- "SVN"
-    
   # return
   return(x)
     

@@ -7,25 +7,26 @@ ministrstvoZaZdravje <- function(cache, level){
   # download
   x <- read_excel(url, cache=cache)$`Covid-19 podatki`
   
-  # format
+  # formatting
   if(level==1){
     
     colnames(x) <- mapvalues(colnames(x), c(
       'Date'                                         = 'date',
       'Tested (all)'                                 = 'tests',
       'Positive (all)'                               = 'confirmed',
-      'All hospitalized on certain day'              = 'hospitalized',
+      'All hospitalized on certain day'              = 'hosp',
       'All persons in intensive care on certain day' = 'icu',
       'Discharged'                                   = 'recovered',
       'Deaths (all)'                                 = 'deaths'
     ))
     
-    #x$date         <- as.Date(x$date, format="%Y.%m.%d.")
+    # cumulative
     x$recovered <- cumsum(x$recovered)
     
+    # date
+    x$date <- as.Date(x$date, format="%Y-%m-%d")
+    
   }
-  
-  x$country <- 'SVN'
   
   return(x)
   
