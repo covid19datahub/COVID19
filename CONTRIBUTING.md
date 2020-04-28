@@ -34,6 +34,23 @@ Here will be added data sources, that are to be integrated by countries.
 
 
 
+### TODO data sources
+Here will be added data sources, that are to be integrated by countries.
+
+| Country        | URL                                                                      | Format | Comment                                          |
+| -------------- | ------------------------------------------------------------------------ |:------:| ------------------------------------------------ |
+| Phillipines    | https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP | xlsx   | Found this drive as link to data from gov.ph.    |
+|                | https://www.doh.gov.ph/covid19tracker                                    | ?      |                                                  |
+| Australia      | https://data.gov.au/search?q=covid                                       | csv    |                                                  |
+| New Zealand    | https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation | xlsx |           |
+| Indonesia      | https://www.covid19.go.id/situasi-virus-corona/                          | ?      | inspect (search "statistik" in devtools:network) |       
+| Malaysia       | https://ukkdosm.github.io/covid-19                                       | ?      | inspect ("batchedDataV2")                        |
+| Netherlands    | https://www.rivm.nl/coronavirus-covid-19/grafieken                       | csv    |                                                  |
+
+
+
+
+
 ## Contributing guidelines for non-R users
 
 1. Find data sources for **historical data** such as demographics, population density, age, air quality and other **slow-changing variables**. See the [data coverage table](https://storage.covid19datahub.io/coverage.html) to avoid working on something that is already available.
