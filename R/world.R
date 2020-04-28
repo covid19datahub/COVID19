@@ -1,4 +1,4 @@
-WORLD <- function(level, cache){
+world <- function(level, cache){
 
   # fallback
   if(level>2)

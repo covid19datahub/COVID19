@@ -4,7 +4,7 @@ datasource <- function(cache, ...){
   # This is a template to extend this package with a new data source
   #
   # Copy this template in a new file
-  # Rename the file with the name of the data source
+  # Rename the file with the name of the data source (ds_datasource.R)
   # Rename this function with the name of the data source
   #
   # The function must include the argument 'cache'. See:
@@ -13,9 +13,7 @@ datasource <- function(cache, ...){
   # The function must return a data.frame
   #
   # Examples:
-  # https://github.com/covid19datahub/COVID19/blob/master/R/openZH.R
-  # https://github.com/covid19datahub/COVID19/blob/master/R/pcmdpc.R
-  # https://github.com/covid19datahub/COVID19/blob/master/R/jhuCSSE.R
+  # https://github.com/covid19datahub/COVID19/blob/master/R/ (ds_*)
   #
   # @keywords internal
   #

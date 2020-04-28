@@ -121,7 +121,7 @@ covid19 <- function(ISO     = NULL,
   else {
 
     # download 
-    w <- cachecall("WORLD", level = level, cache = cache)
+    w <- cachecall("world", level = level, cache = cache)
     
     for(fun in ISO){
 
