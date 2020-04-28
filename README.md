@@ -59,10 +59,7 @@ covid19(ISO = NULL, level = 1, start = "2019-01-01", end = Sys.Date(), vintage =
 
 ### Details
 
-The raw data are cleaned by filling missing dates with `NA` values. This ensures that all countries share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0` for the following variables:
-
-- `deaths`, `confirmed`, `tests`, `recovered`, `icu`, `hosp`, `vent`
-- `driving`, `walking`, `transit`
+The raw data are cleaned by filling missing dates with `NA` values. This ensures that all countries share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`.
 
 If no data is available at a granularity level (country/state) but is available at a lower level (state/city), the higher level data are obtained by aggregating the lower level data.
 
@@ -90,29 +87,39 @@ covid19(c("ITA","USA"), level = 3)
 
 ## Dataset
 
-| Variable         | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| `id`             | location identifier.                                         |
-| `date`           | observation time.                                            |
-| `deaths`         | cumulative number of  deaths.                                |
-| `confirmed`      | cumulative number of  confirmed cases.                       |
-| `tests`          | cumulative number of  tests.                                 |
-| `recovered`      | cumulative number of patients released from hospitals or reported recovered. |
-| `hosp`           | number of hospitalized patients on date.                     |
-| `icu`            | number of hospitalized patients in ICUs on date.             |
-| `vent`           | number of patients requiring invasive ventilation on date.   |
-| `country`        | administrative area of top level.                            |
-| `state`          | administrative area of a lower level, usually states, regions or cantons. |
-| `city`           | administrative are of a lower level, usually cities or municipalities. |
-| `lat`            | latitude.                                                    |
-| `lng`            | longitude.                                                   |
-| `pop`            | total population.                                            |
-| `pop_14`         | population ages 0-14 (% of total population)<sup>*</sup>.    |
-| `pop_15_64`      | population ages 15-64 (% of total population).<sup>**</sup>  |
-| `pop_65`         | population ages 65+ (% of total population).                 |
-| `pop_age`        | median age of population.                                    |
-| `pop_density`    | population density per km<sup>2</sup>.                       |
-| `pop_death_rate` | population mortality rate.                                   |
+| Variable                              | Description                                                  |
+| ------------------------------------- | ------------------------------------------------------------ |
+| `id`                                  | location identifier.                                         |
+| `date`                                | observation time.                                            |
+| `deaths`                              | cumulative number of  deaths.                                |
+| `confirmed`                           | cumulative number of  confirmed cases.                       |
+| `tests`                               | cumulative number of  tests.                                 |
+| `recovered`                           | cumulative number of patients released from hospitals or reported recovered. |
+| `hosp`                                | number of hospitalized patients on date.                     |
+| `icu`                                 | number of hospitalized patients in ICUs on date.             |
+| `vent`                                | number of patients requiring invasive ventilation on date.   |
+| `school_closing`                      | 0: No measures - 1: Recommend closing - 2: Require closing (only some levels or categories, eg just high school, or just public schools - 3: Require closing all levels. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `workplace_closing`                   | 0: No measures - 1: Recommend closing (or work from home) - 2: require closing for some sectors or categories of workers - 3: require closing (or work from home) all-but-essential workplaces (eg grocery stores, doctors). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `cancel_events`                       | 0: No measures - 1: Recommend cancelling - 2: Require cancelling. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `transport_closing`                   | 0: No measures - 1: Recommend closing (or significantly reduce volume/route/means of transport available) - 2: Require closing (or prohibit most citizens from using it). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `information_campaigns`               | 0: No COVID-19 public information campaign - 1: public officials urging caution about COVID-19 - 2: coordinated public information campaign (e.g. across traditional and social media). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `internal_movement_restrictions`      | 0: No measures - 1: Recommend closing (or significantly reduce volume/route/means of transport) - 2: Require closing (or prohibit most people from using it). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `international_movement_restrictions` | 0: No measures - 1: Screening - 2: Quarantine arrivals from high-risk regions - 3: Ban on high-risk regions - 4: Total border closure. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `testing_framework`                   | 0: No testing policy - 1: Only those who both (a) have symptoms AND (b) meet specific criteria (eg key workers, admitted to hospital, came into contact with a known case, returned from overseas) - 2: testing of anyone showing COVID-19 symptoms - 3: open public testing (eg  "drive through" testing available to asymptomatic people). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `contact_tracing`                     | 0: No contact tracing - 1: Limited contact tracing, not done for all cases - 2: Comprehensive contact tracing, done for all cases. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `stringency_index`                    | stringency of governmental responses. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `country`                             | administrative area of top level.                            |
+| `state`                               | administrative area of a lower level, usually states, regions or cantons. |
+| `city`                                | administrative are of a lower level, usually cities or municipalities. |
+| `lat`                                 | latitude.                                                    |
+| `lng`                                 | longitude.                                                   |
+| `pop`                                 | total population.                                            |
+| `pop_14`                              | population ages 0-14 (% of total population)<sup>*</sup>.    |
+| `pop_15_64`                           | population ages 15-64 (% of total population).<sup>**</sup>  |
+| `pop_65`                              | population ages 65+ (% of total population).                 |
+| `pop_age`                             | median age of population.                                    |
+| `pop_density`                         | population density per km<sup>2</sup>.                       |
+| `pop_death_rate`                      | population mortality rate.                                   |
 
 <sup>*</sup> _Switzerland: ages 0-19_
 

@@ -153,8 +153,11 @@ covid19 <- function(ISO     = NULL,
       Join the mission: https://covid19datahub.io")
       return(NULL)
     }
-      
-
+        
+    # stringency measures
+    o <- oxcgrt(cache = cache)
+    x <- drop(merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE, suffixes = c('','.drop')))
+    
     # subset
     key <- c('iso_alpha_3','id','date',vars('fast'))
     x[,key[!(key %in% colnames(x))]] <- NA
@@ -217,6 +220,9 @@ covid19 <- function(ISO     = NULL,
       
       warning(sprintf("%s: data obtained by aggregating lower level data.", paste(idx, collapse = ", ")))
       
+      # bindings
+      school_closing <- workplace_closing <- cancel_events <- transport_closing <- information_campaigns <- internal_movement_restrictions <- international_movement_restrictions <- testing_framework <- contact_tracing <- stringency_index <- NULL
+      
       x <- x %>%
         
         dplyr::group_by(iso_alpha_3, id, date) %>%
@@ -227,7 +233,20 @@ covid19 <- function(ISO     = NULL,
                          recovered = sum(recovered),
                          hosp      = sum(hosp),
                          icu       = sum(icu),
-                         vent      = sum(vent)) 
+                         vent      = sum(vent),
+                         
+                         school_closing        = max(school_closing),
+                         workplace_closing     = max(workplace_closing),
+                         cancel_events         = max(cancel_events),
+                         transport_closing     = max(transport_closing),
+                         information_campaigns = max(information_campaigns),
+                         
+                         internal_movement_restrictions      = max(internal_movement_restrictions),
+                         international_movement_restrictions = max(international_movement_restrictions),
+                         
+                         testing_framework     = max(testing_framework),
+                         contact_tracing       = max(contact_tracing),
+                         stringency_index      = max(stringency_index)) 
       
     }
 

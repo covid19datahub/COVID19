@@ -28,16 +28,24 @@ covid19cite <- function(x, style = "citation", bibtex = FALSE, verbose = TRUE){
     
     dplyr::bind_rows()
   
-    x <- x[!duplicated(x),]
-    y <- x[,c('title','url','year')]
-    y <- y[!duplicated(y),]
+    y <- x[!duplicated(x[,c('title','url')]),]
     y <- apply(y, 1, function(y){
+      
+      # textVersion <- y['textVersion'] 
+      # if(is.na(textVersion))
+      #   textVersion <- NULL
+      
       utils::bibentry(
-        bibtype ="Misc",
-        title   = y['title'], 
-        url     = y['url'],
-        year    = y['year']
+        bibtype     = ifelse(is.na(y['bibtype']), "Misc", y['bibtype']),
+        note        = y['note'],
+        title       = y['title'], 
+        url         = y['url'],
+        year        = y['year'], 
+        author      = y['author'],
+        institution = y['institution'] 
+        # textVersion = textVersion
       )  
+      
     })
     
     cit <- utils::citation("COVID19")

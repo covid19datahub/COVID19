@@ -243,7 +243,17 @@ check <- function(x){
 vars <- function(type = "all"){
 
   fast <- c('deaths','confirmed','tests','recovered',
-            'hosp','icu','vent')
+            'hosp','icu','vent',
+            'school_closing',
+            'workplace_closing',
+            'cancel_events',
+            'transport_closing',
+            'information_campaigns',
+            'internal_movement_restrictions',
+            'international_movement_restrictions',
+            'testing_framework',
+            'contact_tracing',
+            'stringency_index')
 
   slow <- c('country','state','city',
             'lat','lng',

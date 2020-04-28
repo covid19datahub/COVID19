@@ -1,150 +1,160 @@
-"iso","level","var","url","title","year"
-"ASM",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"ASM",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"AUT",1,"deaths","https://info.gesundheitsministerium.at/","Open Government Data",2020
-"AUT",1,"confirmed","https://info.gesundheitsministerium.at/","Open Government Data",2020
-"AUT",1,"tests","https://info.gesundheitsministerium.at/","Open Government Data",2020
-"AUT",1,"recovered","https://info.gesundheitsministerium.at/","Open Government Data",2020
-"AUT",1,"hosp","https://info.gesundheitsministerium.at/","Open Government Data",2020
-"AUT",1,"icu","https://info.gesundheitsministerium.at/","Open Government Data",2020
-"AUT",1,"vent","https://info.gesundheitsministerium.at/","Open Government Data",2020
-"AUT",2,"lat","https://de.wikipedia.org/wiki/Mittelpunkt_%C3%96sterreichs","Wikipedia",2020
-"AUT",2,"lng","https://de.wikipedia.org/wiki/Mittelpunkt_%C3%96sterreichs","Wikipedia",2020
-"AUT",2,"pop","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011
-"AUT",2,"pop_14","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011
-"AUT",2,"pop_15_64","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011
-"AUT",2,"pop_65","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011
-"AUT",2,"pop_age","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011
-"AUT",2,"pop_density","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011
-"AUT",2,"pop_death_rate","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011
-"CAN",2,"pop","https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901","Canada's National Statistical Agency",2020
-"CHE",1,"lat","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",1,"lng","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",1,"pop","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",1,"pop_14","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",1,"pop_15_64","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",1,"pop_65","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",1,"pop_age","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",1,"pop_density","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",1,"pop_death_rate","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"deaths","https://github.com/openZH/covid_19","Open Government Data",2020
-"CHE",2,"confirmed","https://github.com/openZH/covid_19","Open Government Data",2020
-"CHE",2,"tests","https://github.com/openZH/covid_19","Open Government Data",2020
-"CHE",2,"recovered","https://github.com/openZH/covid_19","Open Government Data",2020
-"CHE",2,"hosp","https://github.com/openZH/covid_19","Open Government Data",2020
-"CHE",2,"icu","https://github.com/openZH/covid_19","Open Government Data",2020
-"CHE",2,"vent","https://github.com/openZH/covid_19","Open Government Data",2020
-"CHE",2,"lat","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"lng","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"pop","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"pop_14","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"pop_15_64","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"pop_65","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"pop_age","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"pop_density","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CHE",2,"pop_death_rate","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018
-"CZE",1,"confirmed","https://onemocneni-aktualne.mzcr.cz/","Ministery of Health of Czech Republic",2020
-"CZE",1,"tests","https://onemocneni-aktualne.mzcr.cz/","Ministery of Health of Czech Republic",2020
-"DPC",1,"tests","https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_Diamond_Princess","Wikipedia",2011
-"DPC",1,"pop","https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_Diamond_Princess","Wikipedia",2011
-"GUM",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"GUM",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"IND",1,"deaths","https://www.covid19india.org/","COVID19-India API",2020
-"IND",1,"confirmed","https://www.covid19india.org/","COVID19-India API",2020
-"IND",1,"recovered","https://www.covid19india.org/","COVID19-India API",2020
-"IND",1,"tests","https://github.com/owid/covid-19-data","Our World in Data",2020
-"IND",2,"deaths","https://www.covid19india.org/","COVID19-India API",2020
-"IND",2,"confirmed","https://www.covid19india.org/","COVID19-India API",2020
-"IND",2,"recovered","https://www.covid19india.org/","COVID19-India API",2020
-"IND",2,"lat","https://www.covid19india.org/","COVID19-India API",2020
-"IND",2,"lng","https://www.covid19india.org/","COVID19-India API",2020
-"ISO",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"ISO",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"ISO",1,"tests","https://github.com/owid/covid-19-data","Our World in Data",2020
-"ISO",1,"recovered","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"ISO",1,"lat","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"ISO",1,"lng","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"ISO",1,"pop","https://data.worldbank.org/indicator/SP.POP.TOTL","World Bank Open Data",2018
-"ISO",1,"pop_14","https://data.worldbank.org/indicator/SP.POP.0014.TO.ZS","World Bank Open Data",2018
-"ISO",1,"pop_15_64","https://data.worldbank.org/indicator/SP.POP.1564.TO.ZS","World Bank Open Data",2018
-"ISO",1,"pop_65","https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS","World Bank Open Data",2018
-"ISO",1,"pop_age","https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html","World Factbook by CIA",2018
-"ISO",1,"pop_density","https://data.worldbank.org/indicator/EN.POP.DNST","World Bank Open Data",2018
-"ISO",1,"pop_death_rate","https://data.worldbank.org/indicator/SP.DYN.CDRT.IN","World Bank Open Data",2018
-"ITA",1,"deaths","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",1,"confirmed","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",1,"tests","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",1,"recovered","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",1,"hosp","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",1,"icu","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",1,"vent","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",2,"deaths","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",2,"confirmed","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",2,"tests","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",2,"recovered","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",2,"hosp","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",2,"icu","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",2,"vent","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",2,"lat","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",2,"lng","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",2,"pop","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",2,"pop_14","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",2,"pop_15_64","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",2,"pop_65","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",2,"pop_age","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",2,"pop_density","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",2,"pop_death_rate","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"deaths","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",3,"confirmed","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",3,"tests","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",3,"recovered","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",3,"hosp","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",3,"icu","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",3,"vent","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020
-"ITA",3,"lat","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"lng","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"pop","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"pop_14","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"pop_15_64","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"pop_65","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"pop_age","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"pop_density","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"ITA",3,"pop_death_rate","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018
-"LIE",1,"deaths","https://github.com/openZH/covid_19","Open Government Data",2020
-"LIE",1,"confirmed","https://github.com/openZH/covid_19","Open Government Data",2020
-"LIE",1,"tests","https://github.com/openZH/covid_19","Open Government Data",2020
-"LIE",1,"recovered","https://github.com/openZH/covid_19","Open Government Data",2020
-"LIE",1,"hosp","https://github.com/openZH/covid_19","Open Government Data",2020
-"LIE",1,"icu","https://github.com/openZH/covid_19","Open Government Data",2020
-"LIE",1,"vent","https://github.com/openZH/covid_19","Open Government Data",2020
-"LVA",1,"deaths","https://data.gov.lv/dati/dataset","Open Government Data",2020
-"LVA",1,"confirmed","https://data.gov.lv/dati/dataset","Open Government Data",2020
-"LVA",1,"tests","https://data.gov.lv/dati/dataset","Open Government Data",2020
-"LVA",2,"confirmed","https://data.gov.lv/dati/dataset","Open Government Data",2020
-"MNP",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"MNP",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"MSZ",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"MSZ",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"PRI",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"PRI",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"RUS",1,"lat","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020
-"RUS",1,"lng","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020
-"RUS",2,"confirmed","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020
-"RUS",2,"lat","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020
-"RUS",2,"lng","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020
-"SWE",1,"deaths","https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525","Public Health Agency, Sweden",2020
-"SWE",1,"confirmed","https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525","Public Health Agency, Sweden",2020
-"SWE",1,"icu","https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525","Public Health Agency, Sweden",2020
-"SWE",2,"confirmed","https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525","Public Health Agency, Sweden",2020
-"USA",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",1,"lat","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",1,"lng","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",1,"pop","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",2,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",2,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",2,"lat","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",2,"lng","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"USA",2,"pop","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"VIR",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
-"VIR",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020
+"iso","level","var","url","title","year","bibtype","author","institution","note","textVersion"
+"ASM",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"ASM",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"AUT",1,"deaths","https://info.gesundheitsministerium.at/","Open Government Data",2020,,,,,
+"AUT",1,"confirmed","https://info.gesundheitsministerium.at/","Open Government Data",2020,,,,,
+"AUT",1,"tests","https://info.gesundheitsministerium.at/","Open Government Data",2020,,,,,
+"AUT",1,"recovered","https://info.gesundheitsministerium.at/","Open Government Data",2020,,,,,
+"AUT",1,"hosp","https://info.gesundheitsministerium.at/","Open Government Data",2020,,,,,
+"AUT",1,"icu","https://info.gesundheitsministerium.at/","Open Government Data",2020,,,,,
+"AUT",1,"vent","https://info.gesundheitsministerium.at/","Open Government Data",2020,,,,,
+"AUT",2,"lat","https://de.wikipedia.org/wiki/Mittelpunkt_%C3%96sterreichs","Wikipedia",2020,,,,,
+"AUT",2,"lng","https://de.wikipedia.org/wiki/Mittelpunkt_%C3%96sterreichs","Wikipedia",2020,,,,,
+"AUT",2,"pop","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011,,,,,
+"AUT",2,"pop_14","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011,,,,,
+"AUT",2,"pop_15_64","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011,,,,,
+"AUT",2,"pop_65","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011,,,,,
+"AUT",2,"pop_age","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011,,,,,
+"AUT",2,"pop_density","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011,,,,,
+"AUT",2,"pop_death_rate","https://de.wikipedia.org/wiki/Geographie_%C3%96sterreichs#Bundesl%C3%A4nder","Wikipedia",2011,,,,,
+"CAN",2,"pop","https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901","Canada's National Statistical Agency",2020,,,,,
+"CHE",1,"lat","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",1,"lng","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",1,"pop","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",1,"pop_14","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",1,"pop_15_64","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",1,"pop_65","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",1,"pop_age","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",1,"pop_density","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",1,"pop_death_rate","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"deaths","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"CHE",2,"confirmed","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"CHE",2,"tests","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"CHE",2,"recovered","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"CHE",2,"hosp","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"CHE",2,"icu","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"CHE",2,"vent","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"CHE",2,"lat","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"lng","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"pop","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"pop_14","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"pop_15_64","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"pop_65","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"pop_age","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"pop_density","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CHE",2,"pop_death_rate","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office",2018,,,,,
+"CZE",1,"confirmed","https://onemocneni-aktualne.mzcr.cz/","Ministery of Health of Czech Republic",2020,,,,,
+"CZE",1,"tests","https://onemocneni-aktualne.mzcr.cz/","Ministery of Health of Czech Republic",2020,,,,,
+"DPC",1,"tests","https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_Diamond_Princess","Wikipedia",2011,,,,,
+"DPC",1,"pop","https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_on_Diamond_Princess","Wikipedia",2011,,,,,
+"GUM",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"GUM",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"IND",1,"deaths","https://www.covid19india.org/","COVID19-India API",2020,,,,,
+"IND",1,"confirmed","https://www.covid19india.org/","COVID19-India API",2020,,,,,
+"IND",1,"recovered","https://www.covid19india.org/","COVID19-India API",2020,,,,,
+"IND",1,"tests","https://github.com/owid/covid-19-data","Our World in Data",2020,,,,,
+"IND",2,"deaths","https://www.covid19india.org/","COVID19-India API",2020,,,,,
+"IND",2,"confirmed","https://www.covid19india.org/","COVID19-India API",2020,,,,,
+"IND",2,"recovered","https://www.covid19india.org/","COVID19-India API",2020,,,,,
+"IND",2,"lat","https://www.covid19india.org/","COVID19-India API",2020,,,,,
+"IND",2,"lng","https://www.covid19india.org/","COVID19-India API",2020,,,,,
+"ISO",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"ISO",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"ISO",1,"tests","https://github.com/owid/covid-19-data","Our World in Data",2020,,,,,
+"ISO",1,"recovered","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"ISO",1,"lat","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"ISO",1,"lng","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"ISO",1,"school_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"workplace_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"cancel_events","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"transport_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"information_campaigns","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"internal_movement_restrictions","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"international_movement_restrictions","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"testing_framework","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"contact_tracing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"stringency_index","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+"ISO",1,"pop","https://data.worldbank.org/indicator/SP.POP.TOTL","World Bank Open Data",2018,,,,,
+"ISO",1,"pop_14","https://data.worldbank.org/indicator/SP.POP.0014.TO.ZS","World Bank Open Data",2018,,,,,
+"ISO",1,"pop_15_64","https://data.worldbank.org/indicator/SP.POP.1564.TO.ZS","World Bank Open Data",2018,,,,,
+"ISO",1,"pop_65","https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS","World Bank Open Data",2018,,,,,
+"ISO",1,"pop_age","https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html","World Factbook by CIA",2018,,,,,
+"ISO",1,"pop_density","https://data.worldbank.org/indicator/EN.POP.DNST","World Bank Open Data",2018,,,,,
+"ISO",1,"pop_death_rate","https://data.worldbank.org/indicator/SP.DYN.CDRT.IN","World Bank Open Data",2018,,,,,
+"ITA",1,"deaths","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",1,"confirmed","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",1,"tests","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",1,"recovered","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",1,"hosp","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",1,"icu","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",1,"vent","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",2,"deaths","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",2,"confirmed","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",2,"tests","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",2,"recovered","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",2,"hosp","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",2,"icu","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",2,"vent","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",2,"lat","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",2,"lng","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",2,"pop","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",2,"pop_14","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",2,"pop_15_64","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",2,"pop_65","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",2,"pop_age","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",2,"pop_density","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",2,"pop_death_rate","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"deaths","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",3,"confirmed","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",3,"tests","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",3,"recovered","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",3,"hosp","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",3,"icu","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",3,"vent","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
+"ITA",3,"lat","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"lng","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"pop","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"pop_14","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"pop_15_64","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"pop_65","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"pop_age","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"pop_density","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"ITA",3,"pop_death_rate","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica",2018,,,,,
+"LIE",1,"deaths","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"LIE",1,"confirmed","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"LIE",1,"tests","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"LIE",1,"recovered","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"LIE",1,"hosp","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"LIE",1,"icu","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"LIE",1,"vent","https://github.com/openZH/covid_19","Open Government Data",2020,,,,,
+"LVA",1,"deaths","https://data.gov.lv/dati/dataset","Open Government Data",2020,,,,,
+"LVA",1,"confirmed","https://data.gov.lv/dati/dataset","Open Government Data",2020,,,,,
+"LVA",1,"tests","https://data.gov.lv/dati/dataset","Open Government Data",2020,,,,,
+"LVA",2,"confirmed","https://data.gov.lv/dati/dataset","Open Government Data",2020,,,,,
+"MNP",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"MNP",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"MSZ",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"MSZ",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"PRI",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"PRI",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"RUS",1,"lat","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020,,,,,
+"RUS",1,"lng","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020,,,,,
+"RUS",2,"confirmed","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020,,,,,
+"RUS",2,"lat","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020,,,,,
+"RUS",2,"lng","https://github.com/grwlf/COVID-19_plus_Russia","COVID-19_plus_Russia GitHub repository",2020,,,,,
+"SWE",1,"deaths","https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525","Public Health Agency, Sweden",2020,,,,,
+"SWE",1,"confirmed","https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525","Public Health Agency, Sweden",2020,,,,,
+"SWE",1,"icu","https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525","Public Health Agency, Sweden",2020,,,,,
+"SWE",2,"confirmed","https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525","Public Health Agency, Sweden",2020,,,,,
+"USA",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",1,"lat","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",1,"lng","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",1,"pop","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",2,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",2,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",2,"lat","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",2,"lng","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"USA",2,"pop","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"VIR",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"VIR",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
