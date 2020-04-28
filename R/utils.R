@@ -71,7 +71,7 @@ fix <- function(id){
 
 src <- function(file = "_src"){
 
-  id <- NULL
+  iso <- NULL
   
   x <- db("_src") %>%
     dplyr::arrange(iso)
@@ -173,7 +173,7 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
 read_excel_from_url <- function(path, sheet, ...) {
   
   tmp <- tempfile()
-  download.file(path, destfile = tmp, mode = "wb", quiet = TRUE)
+  utils::download.file(path, destfile = tmp, mode = "wb", quiet = TRUE)
   
   # sheet not given - all sheets
   if(is.na(sheet)) {
@@ -195,10 +195,10 @@ read_excel_from_url <- function(path, sheet, ...) {
   
 }
 
-read_excel <- function(path, cache, sheet=NA, ...) {
+read_excel <- function(path, cache, sheet = NA, ...) {
   
   # is url (readxl::read_excel supports only http, https, ftp)
-  if(stringr::str_detect(path, "^(http:\\/\\/)|(https:\\/\\/)|(ftp:\\/\\/)")) 
+  if(grepl(x = path, pattern = "^(http:\\/\\/)|(https:\\/\\/)|(ftp:\\/\\/)")) 
     reader <- read_excel_from_url
   # local file
   else
