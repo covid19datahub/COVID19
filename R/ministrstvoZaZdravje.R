@@ -5,7 +5,7 @@ ministrstvoZaZdravje <- function(cache, level){
   url <- 'https://www.gov.si/assets/vlada/Koronavirus-podatki/en/EN_Covid-19-all-data.xlsx'
   
   # download
-  x <- read_excel(url, cache=cache)
+  x <- read_excel(url, cache=cache)$`Covid-19 podatki`
   
   # format
   if(level==1){
