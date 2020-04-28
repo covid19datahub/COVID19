@@ -170,6 +170,37 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
 
 }
 
+read_excel_from_url <- function(path, sheet, ...) {
+  tmp <- tempfile()
+  download.file(path, destfile=tmp, mode="wb")
+  # sheet not given - all sheets
+  if(is.na(sheet)) {
+    sheets <- readxl::excel_sheets(path=tmp)
+    x <- lapply(sheets, function(X) readxl::read_excel(path=tmp, sheet = X))
+    names(x) <- sheets
+    # sheet given
+  } else {
+    x <- readxl::read_excel(path=tmp, sheet=sheet, ...)
+  }
+  return(x)
+}
+
+read_excel <- function(path, cache, sheet=NA, ...) {
+  # is url (readxl::read_excel supports only http, https, ftp)
+  if(stringr::str_detect(path, "^(http:\\/\\/)|(https:\\/\\/)|(ftp:\\/\\/)")) 
+    reader <- read_excel_from_url
+  # local file
+  else
+    reader <- readxl::read_excel
+  
+  if(cache)
+    x <- cachecall(reader, path=path, sheet=sheet, ...)
+  else
+    x <- reader(path=path, sheet=sheet, ...)
+  
+  return(x)
+  
+}
 
 id <- function(..., esc = TRUE){
 
