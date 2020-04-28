@@ -10,6 +10,8 @@ bmsgpk <- function(cache){
   # https://www.data.gv.at/katalog/dataset/osterreichische-statistische-daten-zu-covid-19/resource/7ad666c7-663d-45dc-ae66-f61385c9eeba
   # Federal Ministery of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
   url  <- "https://info.gesundheitsministerium.at/data/data.zip"
+  url.deaths <- 'https://info.gesundheitsministerium.at/data/TodesfaelleTimeline.csv'
+  
   temp <- tempfile()
   utils::download.file(url, temp, quiet = TRUE)
   
@@ -39,23 +41,28 @@ bmsgpk <- function(cache){
       "recovered" = "GenesenTimeline.csv", 
       "icu_pct"   = "IBAuslastung.csv",
       "hosp_pct"  = "NBAuslastung.csv")
-  
-  x <- NULL
+  deaths <- utils::read.csv(url.deaths, sep=";")
+  # deaths (not in zip)
+  x <- deaths[,1:2]
+  colnames(x) <- c('date', 'deaths') 
+  #x <- NULL
   for(i in 1:length(files)){
     
     xx <- utils::read.csv(unz(temp, files[i]), sep=";") 
     xx <- xx[,1:2]
     colnames(xx) <- c('date', names(files[i])) 
     
-    if(is.null(x))
-      x <- xx
-    else 
-      x <- merge(x, xx)
-    
+    #if(is.null(x))
+    #  x <- xx
+    #else 
+    x <- merge(x, xx, all = T)
   }
 
   # date
   x$date <- as.Date(x$date, format="%d.%m.%Y")
+  x %>%
+    dplyr::arrange(date) ->
+  x
   
   # turn confirmed to cumulative
   x$confirmed <- cumsum(x$confirmed)
