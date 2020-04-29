@@ -8,6 +8,10 @@ ZAF <- function(level, cache){
   # download
   x <- covid19za(level = level, cache = cache)
   
+  # id 
+  if(level==2)
+    x$id <- id(x$code)
+  
   # return
   return(x)
   
