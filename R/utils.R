@@ -109,7 +109,8 @@ csv <- function(ISO = NULL, x = NULL, save = FALSE){
 
 mapvalues <- function(x, map){
 
-  from <- names(map)
+  x    <- tolower(x)
+  from <- tolower(names(map))
   to   <- map
 
   for(i in 1:length(map)){
@@ -146,11 +147,8 @@ cachecall <- function(fun, ...){
   if(cache & exists(key, envir = cachedata))
     return(get(key, envir = cachedata))
   else
-    x <- try(do.call(fun, args = args), silent = TRUE)
-
-  if("try-error" %in% class(x))
-    x <- NULL
-
+    x <- do.call(fun, args = args)
+  
   if(cache)
     assign(key, x, envir = cachedata)
 
@@ -282,6 +280,16 @@ check <- function(x){
 }
 
 
+subset <- function(x, map){
+
+  if(!is.null(names(map)))
+    colnames(x) <- mapvalues(colnames(x), map)
+  
+  return(x[,map])
+    
+}
+
+
 vars <- function(type = "all"){
 
   fast <- c('deaths','confirmed','tests','recovered',
@@ -289,11 +297,13 @@ vars <- function(type = "all"){
             'school_closing',
             'workplace_closing',
             'cancel_events',
+            'gatherings_restrictions',
             'transport_closing',
-            'information_campaigns',
+            'stay_home_restrictions',
             'internal_movement_restrictions',
             'international_movement_restrictions',
-            'testing_framework',
+            'information_campaigns',
+            'testing_policy',
             'contact_tracing',
             'stringency_index')
 

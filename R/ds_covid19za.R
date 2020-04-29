@@ -6,17 +6,16 @@ covid19za <- function(cache, level){
   
   if(level==1){
     
+    # download
     url <- "https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_provincial_cumulative_timeline_confirmed.csv"
-    x   <- read.csv(url, cache = cache)
-    
-    y <- x[,c('date','total')]
+    x1  <- read.csv(url, cache = cache)
     
     url <- "https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_timeline_testing.csv"
-    x   <- read.csv(url, cache = cache)    
+    x2   <- read.csv(url, cache = cache)    
     
-    x <- merge(x, y, by = "date", all = TRUE)
-    
-    colnames(x) <- mapvalues(colnames(x), c(
+    # formatting
+    x <- merge(x1, x2, by = "date", all = TRUE)
+    x <- subset(x, c(
       'date'             = 'date',
       'cumulative_tests' = 'tests',
       'recovered'        = 'recovered',
@@ -30,12 +29,14 @@ covid19za <- function(cache, level){
   }
   if(level==2){
     
+    # download
     url <- "https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_provincial_cumulative_timeline_confirmed.csv"
     x   <- read.csv(url, cache = cache)
     
-    code <- c("EC","FS","GP","KZN","LP","MP","NC","NW","WC")
-    x <- x[,c('date',code)]
+    # subset
+    x <- subset(x, c("date","EC","FS","GP","KZN","LP","MP","NC","NW","WC"))
     
+    # pivot
     by <- "date"
     x  <- x %>% 
       tidyr::pivot_longer(cols = -by, values_to = "confirmed", names_to = "code")

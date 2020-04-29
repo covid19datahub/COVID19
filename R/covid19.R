@@ -121,23 +121,24 @@ covid19 <- function(ISO     = NULL,
   else {
 
     # download 
-    w <- cachecall("world", level = level, cache = cache)
+    w <- try(cachecall("world", level = level, cache = cache))
+    if("try-error" %in% class(w))
+      w <- NULL
     
-    for(fun in ISO){
+    for(fun in ISO) if(exists(fun)) {
 
-      y <- cachecall(fun, level = level, cache = cache)
-
-      if(!is.null(y)){
-        
-        if(level==1)
-          y <- drop(merge(y, w[w$iso_alpha_3==fun,], by = 'date', all = TRUE, suffixes = c('','.drop')))
-        
-        x <- y %>%
-          dplyr::mutate(iso_alpha_3 = fun) %>%
-          dplyr::bind_rows(x)
-        
-      }
+      y <- try(cachecall(fun, level = level, cache = cache))
       
+      if(is.null(y) | ("try-error" %in% class(y)))
+        next
+
+      if(level==1 & !is.null(w))
+        y <- drop(merge(y, w[w$iso_alpha_3==fun,], by = 'date', all = TRUE, suffixes = c('','.drop')))
+      
+      x <- y %>%
+        dplyr::mutate(iso_alpha_3 = fun) %>%
+        dplyr::bind_rows(x)
+        
     }
 
     if(!is.null(w))
@@ -155,8 +156,9 @@ covid19 <- function(ISO     = NULL,
     }
         
     # stringency measures
-    # o <- oxcgrt(cache = cache)
-    # x <- drop(merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE, suffixes = c('','.drop')))
+    # o <- try(cachecall('oxcgrt', cache = cache))
+    # if(!("try-error" %in% class(o)))
+    #   x <- drop(merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE, suffixes = c('','.drop')))
     
     # subset
     key <- c('iso_alpha_3','id','date',vars('fast'))
@@ -216,12 +218,10 @@ covid19 <- function(ISO     = NULL,
       
       unique()
     
+    # @todo stop here on error
     if(length(idx)>0){
       
       warning(sprintf("%s: data obtained by aggregating lower level data.", paste(idx, collapse = ", ")))
-      
-      # bindings
-      school_closing <- workplace_closing <- cancel_events <- transport_closing <- information_campaigns <- internal_movement_restrictions <- international_movement_restrictions <- testing_framework <- contact_tracing <- stringency_index <- NULL
       
       x <- x %>%
         
@@ -233,20 +233,7 @@ covid19 <- function(ISO     = NULL,
                          recovered = sum(recovered),
                          hosp      = sum(hosp),
                          icu       = sum(icu),
-                         vent      = sum(vent),
-                         
-                         school_closing        = max(school_closing),
-                         workplace_closing     = max(workplace_closing),
-                         cancel_events         = max(cancel_events),
-                         transport_closing     = max(transport_closing),
-                         information_campaigns = max(information_campaigns),
-                         
-                         internal_movement_restrictions      = max(internal_movement_restrictions),
-                         international_movement_restrictions = max(international_movement_restrictions),
-                         
-                         testing_framework     = max(testing_framework),
-                         contact_tracing       = max(contact_tracing),
-                         stringency_index      = max(stringency_index)) 
+                         vent      = sum(vent)) 
       
     }
 
