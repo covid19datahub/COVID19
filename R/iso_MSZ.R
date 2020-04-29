@@ -5,7 +5,7 @@ MSZ <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "global", cache = cache, id = "MS Zaandam")
+  x <- jhuCSSE(file = "global", cache = cache, level = level, id = "MS Zaandam")
 
   # return
   return(x)

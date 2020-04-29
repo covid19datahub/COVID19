@@ -1,4 +1,4 @@
-AUT <- function(level, cache){
+CZE <- function(level, cache){
   # Author: Martin Benes
   
   # fallback
@@ -6,11 +6,7 @@ AUT <- function(level, cache){
     return(NULL)
   
   # download
-  x <- bmsgpk(cache = cache)
-  
-  # id
-  if(level==1)
-    x$id <- "AUT"
+  x <- mzcr(cache = cache)
   
   # return
   return(x)

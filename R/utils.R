@@ -69,7 +69,16 @@ fix <- function(id){
 
 }
 
+src <- function(file = "_src"){
 
+  iso <- NULL
+  
+  x <- db("_src") %>%
+    dplyr::arrange(iso)
+  
+  utils::write.csv(x, paste0(file,".csv"), row.names = FALSE, na = "", fileEncoding = "UTF-8")
+  
+}
 
 csv <- function(ISO = NULL, x = NULL, save = FALSE){
 
@@ -161,6 +170,48 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
 
 }
 
+read_excel_from_url <- function(path, sheet, ...) {
+  
+  tmp <- tempfile()
+  utils::download.file(path, destfile = tmp, mode = "wb", quiet = TRUE)
+  
+  # sheet not given - all sheets
+  if(is.na(sheet)) {
+    
+    sheets <- readxl::excel_sheets(path = tmp)
+    
+    x <- lapply(sheets, function(X) readxl::read_excel(path = tmp, sheet = X))
+    names(x) <- sheets
+    
+  } 
+  # sheet given
+  else {
+    
+    x <- readxl::read_excel(path = tmp, sheet = sheet, ...)
+    
+  }
+  
+  return(x)
+  
+}
+
+read_excel <- function(path, cache, sheet = NA, ...) {
+  
+  # is url (readxl::read_excel supports only http, https, ftp)
+  if(grepl(x = path, pattern = "^(http:\\/\\/)|(https:\\/\\/)|(ftp:\\/\\/)")) 
+    reader <- read_excel_from_url
+  # local file
+  else
+    reader <- readxl::read_excel
+  
+  if(cache)
+    x <- cachecall(reader, path = path, sheet = sheet, ...)
+  else
+    x <- reader(path = path, sheet = sheet, ...)
+  
+  return(x)
+  
+}
 
 id <- function(..., esc = TRUE){
 
@@ -191,12 +242,17 @@ test <- function(ISO = NULL, level, end, raw){
   x <- covid19(ISO = ISO, level = level, end = end, raw = raw)
   y <- covid19(ISO = ISO, level = level, end = end, raw = raw, vintage = TRUE)
 
-  id <- intersect(x$id, y$id)
-  dd <- intersect(x$date, y$date)
+  x <- as.data.frame(x)
+  y <- as.data.frame(y)
+  
+  rownames(x) <- paste(x$id,x$date)
+  rownames(y) <- paste(y$id,y$date)
+  
+  rn <- intersect(rownames(x), rownames(x))
   cn <- intersect(colnames(x), colnames(y))
 
-  x <- x[which((x$id %in% id) & (x$date %in% dd)), cn]
-  y <- y[which((y$id %in% id) & (y$date %in% dd)), cn]
+  x <- x[rn, cn]
+  y <- y[rn, cn]
 
   return(mean(x==y, na.rm = TRUE))
 
@@ -229,7 +285,17 @@ check <- function(x){
 vars <- function(type = "all"){
 
   fast <- c('deaths','confirmed','tests','recovered',
-            'hosp','icu','vent')
+            'hosp','icu','vent',
+            'school_closing',
+            'workplace_closing',
+            'cancel_events',
+            'transport_closing',
+            'information_campaigns',
+            'internal_movement_restrictions',
+            'international_movement_restrictions',
+            'testing_framework',
+            'contact_tracing',
+            'stringency_index')
 
   slow <- c('country','state','city',
             'lat','lng',

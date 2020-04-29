@@ -1,7 +1,8 @@
 bibentry(
 	bibtype="Unpublished",
-	note="unpublished",
+	note="Working Paper",
 	title="COVID-19 Data Hub", 
+	year=2020,
 	url="https://covid19datahub.io", 
 	DOI="10.13140/RG.2.2.11649.81763", 
 	author=as.person("Emanuele Guidotti [aut], David Ardia [aut]"),

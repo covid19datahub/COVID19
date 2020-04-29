@@ -5,7 +5,7 @@ PRI <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "US", cache = cache, id = "PRI")
+  x <- jhuCSSE(file = "US", cache = cache, level = level, id = "PRI")
 
   # return
   return(x)

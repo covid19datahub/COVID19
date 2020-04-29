@@ -1,19 +1,15 @@
-pcmdpc <- function(cache, file){
+pcmdpc <- function(cache, level){
 
   # source
   repo <- "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/"
-
-  if(file=="nazione")
-    url <- "dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
-  else if(file=="regioni")
-    url <- "dati-regioni/dpc-covid19-ita-regioni.csv"
-  else if(file=="province")
-    url <- "dati-province/dpc-covid19-ita-province.csv"
-  else
-    stop("file not supported")
+  urls <- c(
+    "dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv",
+    "dati-regioni/dpc-covid19-ita-regioni.csv",
+    "dati-province/dpc-covid19-ita-province.csv"
+  )
 
   # download
-  url <- sprintf("%s/%s", repo, url)
+  url <- sprintf("%s/%s", repo, urls[level])
   x   <- read.csv(url, cache = cache)
 
   # date
@@ -34,6 +30,10 @@ pcmdpc <- function(cache, file){
   x$hosp         <- x$totale_ospedalizzati
   x$icu          <- x$terapia_intensiva
 
+  # filter
+  if(!is.null(x$lat) & !is.null(x$lng))
+    x <- x[x$lat!=0 | x$lng!=0,]
+  
   # return
   return(x)
 

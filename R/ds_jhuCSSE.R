@@ -1,7 +1,7 @@
-jhuCSSE <- function(cache, file, id = NULL){
+jhuCSSE <- function(cache, file, level = 1, id = NULL){
 
   # cache
-  cachekey <- make.names(sprintf("jhuCSSE_%s", file))
+  cachekey <- make.names(sprintf("jhuCSSE_%s_%s", file, level))
   if(cache & exists(cachekey, envir = cachedata)){
 
     x <- get(cachekey, envir = cachedata)
@@ -46,31 +46,52 @@ jhuCSSE <- function(cache, file, id = NULL){
 
     xx$country <- xx$Country.Region
     xx$state   <- xx$Province.State
-    xx$lat     <- xx$Lat
-    xx$lng     <- xx$Long
 
     if(file=="US") {
+      
       xx$country <- xx$iso3
-      xx$city <- sapply(strsplit(as.character(xx$Combined.Key), split = ',\\s*'), function(x) x[1])
+      xx$city    <- xx$Admin2
+      
+      xx <- xx[(!is.na(xx$city) & !is.na(xx$FIPS) & !is.na(xx$UID)) | xx$country!="USA",]
+      if(level==3)
+        xx <- xx[-which(xx$city=="Unassigned"),]
+      
+    }
+    if(file=="global"){
+      
+      idx <- which(xx$state=="Grand Princess")
+      xx$country[idx] <- "Grand Princess"
+      xx$state[idx]   <- NA
+      
+      idx <- which(xx$state %in% c("Recovered","Diamond Princess"))
+      if(length(idx))
+        xx  <- xx[-idx,]
+      
+      if(level==1)
+        xx <- xx[is.na(xx$state),]
+      if(level==2)
+        xx <- xx[!is.na(xx$state),]
+      
     }
 
+    # pivot
+    by <- c('country','state','city')
     cn <- colnames(xx)
-    by <- c('country','state','city','lat','lng')
     by <- by[by %in% cn]
     cn <- (cn %in% by) | !is.na(as.Date(cn, format = "X%m.%d.%y"))
-
+    xx <- xx[,cn] %>% tidyr::pivot_longer(cols = -by, values_to = names(urls[i]), names_to = "date")
+    
     # date
-    xx      <- xx[,cn] %>% tidyr::pivot_longer(cols = -by, values_to = names(urls[i]), names_to = "date")
     xx$date <- as.Date(xx$date, format = "X%m.%d.%y")
 
     # merge
     if(i==1)
       x <- xx
     else
-      x <- drop(merge(x, xx, all = TRUE, by = c(by[by %in% colnames(x)], "date"), suffixes = c("",".drop")))
+      x <- drop(merge(x, xx, all = TRUE, by = c(by, "date"), suffixes = c("",".drop")))
 
   }
-
+  
   # cache
   if(cache)
     assign(cachekey, x, envir = cachedata)
