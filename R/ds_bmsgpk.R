@@ -34,8 +34,8 @@ bmsgpk <- function(cache){
    
   # load data
   files <- c(
-      "confirmed" = "Epikurve.csv", 
-      # "deaths"    = "TodesfaelleTimeline.csv",
+      "confirmed" = "Epikurve.csv",
+      "deaths"    = "TodesfaelleTimeline.csv",
       "recovered" = "GenesenTimeline.csv", 
       "icu_pct"   = "IBAuslastung.csv",
       "hosp_pct"  = "NBAuslastung.csv")
@@ -50,16 +50,17 @@ bmsgpk <- function(cache){
     if(is.null(x))
       x <- xx
     else 
-      x <- merge(x, xx)
+      x <- merge(x, xx, all = TRUE)
     
   }
 
   # date
   x$date <- as.Date(x$date, format="%d.%m.%Y")
   
-  # turn confirmed to cumulative
+  # sort and cumulate
+  x <- x %>% dplyr::arrange_at('date')
   x$confirmed <- cumsum(x$confirmed)
-
+  
   # cache
   if(cache)
     assign(cachekey, x, envir = cachedata)

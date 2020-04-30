@@ -20,7 +20,9 @@ covid19cite <- function(x, style = "citation", bibtex = FALSE, verbose = TRUE){
       var <- var[!(var %in% s$var)]
       if(level==1 & length(var)>0)
         s <- s %>% 
-          dplyr::bind_rows(merge(src, data.frame(iso = "ISO", level = 1, var = var)))
+          dplyr::bind_rows(merge(src, data.frame(iso = NA, level = 1, var = var)))
+      
+      s$iso[is.na(s$iso)] <- iso
       
       return(s)
       
@@ -28,7 +30,7 @@ covid19cite <- function(x, style = "citation", bibtex = FALSE, verbose = TRUE){
     
     dplyr::bind_rows()
   
-    y <- x[!duplicated(x[,c('title','url')]),]
+    y <- x[!duplicated(x[,c('url')]),]
     y <- apply(y, 1, function(y){
       
       # textVersion <- y['textVersion'] 
