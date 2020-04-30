@@ -122,13 +122,13 @@ csv <- function(ISO = NULL, x = NULL, save = FALSE){
 
 mapvalues <- function(x, map){
 
-  x    <- tolower(x)
-  from <- tolower(names(map))
-  to   <- map
+  value <- tolower(x)
+  from  <- tolower(names(map))
+  to    <- map
 
   for(i in 1:length(map)){
 
-    idx <- which(x==from[i])
+    idx <- which(value==from[i])
     if(length(idx)>0)
       x[idx] <- to[i]
 
