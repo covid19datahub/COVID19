@@ -8,13 +8,17 @@ openIND <- function(cache, level){
     url <- "https://api.covid19india.org/csv/latest/case_time_series.csv"
     x   <- read.csv(url, cache = cache)
     
+    # formatting
+    x <- subset(x, c(
+      "Date"            = "date",
+      "Total.Deceased"  = "deaths",
+      "Total.Confirmed" = "confirmed",
+      "Total.Recovered" = "recovered"
+    ))
+    
     # date
     Sys.setlocale("LC_TIME", "C")
-    x$date <- as.Date(x$Date, format = "%d %B")
-    
-    # formatting
-    x <- x[,c("date","Total.Deceased","Total.Confirmed","Total.Recovered")] 
-    colnames(x) <- c("date","deaths","confirmed","recovered")
+    x$date <- as.Date(x$date, format = "%d %B")
         
   }
   if(level==2){
@@ -25,7 +29,7 @@ openIND <- function(cache, level){
     x   <- read.csv(url, cache = cache)
     
     # drop total
-    x <- x[,-3]
+    x <- x[,colnames(x)!="TT"]
     
     # date
     x$Date <- as.Date(x$Date, format = "%d-%b-%y")
@@ -44,7 +48,9 @@ openIND <- function(cache, level){
       tidyr::pivot_longer(-(1:2), names_to = "state", values_to = "value") %>%
       tidyr::pivot_wider(names_from = "Status")
     
-    colnames(x) <- mapvalues(colnames(x), c(
+    x <- subset(x, c(
+      'date',
+      'state',
       'Confirmed' = 'confirmed',
       'Deceased'  = 'deaths',
       'Recovered' = 'recovered'

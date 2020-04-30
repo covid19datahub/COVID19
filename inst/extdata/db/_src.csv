@@ -58,29 +58,6 @@
 "IND",2,"recovered","https://www.covid19india.org/","COVID19-India API",2020,,,,,
 "IND",2,"lat","https://www.covid19india.org/","COVID19-India API",2020,,,,,
 "IND",2,"lng","https://www.covid19india.org/","COVID19-India API",2020,,,,,
-"ISO",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
-"ISO",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
-"ISO",1,"tests","https://github.com/owid/covid-19-data","Our World in Data",2020,,,,,
-"ISO",1,"recovered","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
-"ISO",1,"lat","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
-"ISO",1,"lng","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
-"ISO",1,"school_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"workplace_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"cancel_events","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"transport_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"information_campaigns","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"internal_movement_restrictions","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"international_movement_restrictions","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"testing_framework","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"contact_tracing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"stringency_index","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
-"ISO",1,"pop","https://data.worldbank.org/indicator/SP.POP.TOTL","World Bank Open Data",2018,,,,,
-"ISO",1,"pop_14","https://data.worldbank.org/indicator/SP.POP.0014.TO.ZS","World Bank Open Data",2018,,,,,
-"ISO",1,"pop_15_64","https://data.worldbank.org/indicator/SP.POP.1564.TO.ZS","World Bank Open Data",2018,,,,,
-"ISO",1,"pop_65","https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS","World Bank Open Data",2018,,,,,
-"ISO",1,"pop_age","https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html","World Factbook by CIA",2018,,,,,
-"ISO",1,"pop_density","https://data.worldbank.org/indicator/EN.POP.DNST","World Bank Open Data",2018,,,,,
-"ISO",1,"pop_death_rate","https://data.worldbank.org/indicator/SP.DYN.CDRT.IN","World Bank Open Data",2018,,,,,
 "ITA",1,"deaths","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
 "ITA",1,"confirmed","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
 "ITA",1,"tests","https://github.com/pcm-dpc/COVID-19","Ministero della Salute",2020,,,,,
@@ -164,3 +141,37 @@
 "USA",2,"pop","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
 "VIR",1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
 "VIR",1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+"ZAF",1,"deaths","https://github.com/dsfsi/covid19za","Data Science for Social Impact research group, University of Pretoria",2020,,,,,
+"ZAF",1,"confirmed","https://github.com/dsfsi/covid19za","Data Science for Social Impact research group, University of Pretoria",2020,,,,,
+"ZAF",1,"tests","https://github.com/dsfsi/covid19za","Data Science for Social Impact research group, University of Pretoria",2020,,,,,
+"ZAF",1,"recovered","https://github.com/dsfsi/covid19za","Data Science for Social Impact research group, University of Pretoria",2020,,,,,
+"ZAF",1,"hosp","https://github.com/dsfsi/covid19za","Data Science for Social Impact research group, University of Pretoria",2020,,,,,
+"ZAF",1,"icu","https://github.com/dsfsi/covid19za","Data Science for Social Impact research group, University of Pretoria",2020,,,,,
+"ZAF",1,"vent","https://github.com/dsfsi/covid19za","Data Science for Social Impact research group, University of Pretoria",2020,,,,,
+"ZAF",2,"confirmed","https://github.com/dsfsi/covid19za","Data Science for Social Impact research group, University of Pretoria",2020,,,,,
+"ZAF",2,"pop","https://en.wikipedia.org/wiki/South_Africa#Administrative_divisions","Wikipedia",2018,,,,,
+"ZAF",2,"lat","https://en.wikipedia.org/wiki/List_of_South_African_provincial_capitals","Wikipedia",2019,,,,,
+"ZAF",2,"lng","https://en.wikipedia.org/wiki/List_of_South_African_provincial_capitals","Wikipedia",2019,,,,,
+,1,"deaths","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+,1,"confirmed","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+,1,"tests","https://github.com/owid/covid-19-data","Our World in Data",2020,,,,,
+,1,"recovered","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+,1,"lat","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+,1,"lng","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering",2020,,,,,
+,1,"school_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"workplace_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"cancel_events","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"transport_closing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"information_campaigns","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"internal_movement_restrictions","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"international_movement_restrictions","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"testing_framework","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"contact_tracing","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"stringency_index","www.bsg.ox.ac.uk/covidtracker","Oxford COVID-19 Government Response Tracker",2020,,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, Beatriz Kira","Blavatnik School of Government",,"Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government."
+,1,"pop","https://data.worldbank.org/indicator/SP.POP.TOTL","World Bank Open Data",2018,,,,,
+,1,"pop_14","https://data.worldbank.org/indicator/SP.POP.0014.TO.ZS","World Bank Open Data",2018,,,,,
+,1,"pop_15_64","https://data.worldbank.org/indicator/SP.POP.1564.TO.ZS","World Bank Open Data",2018,,,,,
+,1,"pop_65","https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS","World Bank Open Data",2018,,,,,
+,1,"pop_age","https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html","World Factbook by CIA",2018,,,,,
+,1,"pop_density","https://data.worldbank.org/indicator/EN.POP.DNST","World Bank Open Data",2018,,,,,
+,1,"pop_death_rate","https://data.worldbank.org/indicator/SP.DYN.CDRT.IN","World Bank Open Data",2018,,,,,

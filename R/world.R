@@ -37,7 +37,7 @@ world <- function(level, cache){
   if(level==1){
     
     o <- owid(cache = cache)  
-    x <- drop(merge(x, o, by = c('date','iso_alpha_3'), all = TRUE, suffixes = c('','.drop')))
+    x <- merge(x, o, by = c('date','iso_alpha_3'), all = TRUE)
     
   }
   if(level==2){

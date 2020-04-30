@@ -1,26 +1,27 @@
 oxcgrt <- function(cache){
   
   # download
-  url <- "https://ocgptweb.azurewebsites.net/CSVDownload/?type=Compressed"
+  url <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
   x   <- read.csv(url, cache = cache)
   
   # formatting
-  colnames(x) <- mapvalues(colnames(x), c(
+  x <- subset(x, c(
     "Date"                                    = "date",
     "CountryCode"                             = "iso_alpha_3",
-    "S1_School.closing"                       = "school_closing",
-    "S2_Workplace.closing"                    = "workplace_closing",
-    "S3_Cancel.public.events"                 = "cancel_events",
-    "S4_Close.public.transport"               = "transport_closing",
-    "S5_Public.information.campaigns"         = "information_campaigns",
-    "S6_Restrictions.on.internal.movement"    = "internal_movement_restrictions",
-    "S7_International.travel.controls"        = "international_movement_restrictions",
-    "S8_Fiscal.measures"                      = "fiscal_measures",
-    "S9_Monetary.measures"                    = "monetary_measures",
-    "S10_Emergency.investment.in.health.care" = "investment_healthcare",
-    "S11_Investment.in.Vaccines"              = "investment_vaccines",
-    "S12_Testing.framework"                   = "testing_framework",
-    "S13_Contact.tracing"                     = "contact_tracing",
+    
+    "C1_School.closing"                       = "school_closing",
+    "C2_Workplace.closing"                    = "workplace_closing",
+    "C3_Cancel.public.events"                 = "cancel_events",
+    "C4_Restrictions.on.gatherings"           = "gatherings_restrictions",
+    "C5_Close.public.transport"               = "transport_closing",
+    "C6_Stay.at.home.requirements"            = "stay_home_restrictions",
+    "C7_Restrictions.on.internal.movement"    = "internal_movement_restrictions",
+    "C8_International.travel.controls"        = "international_movement_restrictions",
+    
+    "H1_Public.information.campaigns"         = "information_campaigns",
+    "H2_Testing.policy"                       = "testing_policy",
+    "H3_Contact.tracing"                      = "contact_tracing",
+    
     "StringencyIndexForDisplay"               = "stringency_index"
   ))
   

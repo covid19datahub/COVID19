@@ -13,7 +13,7 @@ cdpc <- function(cache, level){
   # format
   if(level==1){
     
-    colnames(x) <- mapvalues(colnames(x), c(
+    x <- subset(x, c(
       'Datums'                                      = 'date',
       'TestuSkaits'                                 = 'tests',
       'ApstiprinataCOVID19InfekcijaSkaits'          = 'confirmed',
@@ -30,7 +30,8 @@ cdpc <- function(cache, level){
   }
   if(level==2){
     
-    colnames(x) <- mapvalues(colnames(x), c(
+    x <- subset(x, c(
+      'region_id',
       'Datums'                                      = 'date',
       'AdministrativiTeritorialasVienibasNosaukums' = 'region',
       'ATVK'                                        = 'region_id',

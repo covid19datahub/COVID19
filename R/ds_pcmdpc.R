@@ -18,21 +18,23 @@ pcmdpc <- function(cache, level){
     d <- as.Date(x$data, format = "%Y-%m-%dT%H:%M:%S")
   x$date <- d
 
-  # formatting
-  x$state        <- x$denominazione_regione
-  x$city         <- x$denominazione_provincia
-  x$lat          <- x$lat
-  x$lng          <- x$long
-  x$tests        <- x$tamponi
-  x$confirmed    <- x$totale_casi
-  x$deaths       <- x$deceduti
-  x$recovered    <- x$dimessi_guariti
-  x$hosp         <- x$totale_ospedalizzati
-  x$icu          <- x$terapia_intensiva
-
   # filter
-  if(!is.null(x$lat) & !is.null(x$lng))
-    x <- x[x$lat!=0 | x$lng!=0,]
+  if(!is.null(x$lat) & !is.null(x$long))
+    x <- x[x$lat!=0 | x$long!=0,]
+  
+  # formatting
+  x <- subset(x, c(
+    'date',
+    'denominazione_regione'   = 'state', 
+    'sigla_provincia'         = 'city',
+    'tamponi'                 = 'tests', 
+    'totale_casi'             = 'confirmed', 
+    'deceduti'                = 'deaths',        
+    'dimessi_guariti'         = 'recovered',     
+    'totale_ospedalizzati'    = 'hosp',
+    'terapia_intensiva'       = 'icu' 
+  ))
+
   
   # return
   return(x)

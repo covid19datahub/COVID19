@@ -88,7 +88,7 @@ jhuCSSE <- function(cache, file, level = 1, id = NULL){
     if(i==1)
       x <- xx
     else
-      x <- drop(merge(x, xx, all = TRUE, by = c(by, "date"), suffixes = c("",".drop")))
+      x <- merge(x, xx, all = TRUE, by = c(by, "date"))
 
   }
   

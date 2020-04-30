@@ -9,17 +9,14 @@ owid <- function(cache, id = NULL){
     x <- x[x$iso_code %in% id,]
   
   # formatting
-  map <- c(
-    'date'         = 'date',
+  x <- subset(x, c(
+    'date',
     'iso_code'     = 'iso_alpha_3',
     'location'     = 'country',
     'total_cases'  = 'confirmed',
     'total_deaths' = 'deaths',
     'total_tests'  = 'tests'
-  )
-  
-  colnames(x) <- mapvalues(colnames(x), map)
-  x <- x[,map]
+  ))
   
   # date
   x$date <- as.Date(x$date)

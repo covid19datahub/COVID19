@@ -10,7 +10,7 @@ ministrstvoZaZdravje <- function(cache, level){
   # formatting
   if(level==1){
     
-    colnames(x) <- mapvalues(colnames(x), c(
+    x <- subset(x, c(
       'Date'                                         = 'date',
       'Tested (all)'                                 = 'tests',
       'Positive (all)'                               = 'confirmed',
