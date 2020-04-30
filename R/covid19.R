@@ -155,8 +155,8 @@ covid19 <- function(ISO     = NULL,
     }
         
     # stringency measures
-    o <- oxcgrt(cache = cache)
-    x <- drop(merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE, suffixes = c('','.drop')))
+    #o <- oxcgrt(cache = cache)
+    #x <- drop(merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE, suffixes = c('','.drop')))
     
     # subset
     key <- c('iso_alpha_3','id','date',vars('fast'))
