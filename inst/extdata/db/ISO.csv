@@ -1,4 +1,4 @@
-vcountry,iso_alpha_2,iso_alpha_3,iso_numeric,lat,lng,pop,pop_fe_perc,pop_14,pop_15_64,pop_65,pop_age,pop_density,pop_death_rate,Year_x,smoking_fe_perc_2016,smoking_ma_perc_2016
+country,iso_alpha_2,iso_alpha_3,iso_numeric,lat,lng,pop,pop_fe_perc,pop_14,pop_15_64,pop_65,pop_age,pop_density,pop_death_rate,Year_x,smoking_fe_perc_2016,smoking_ma_perc_2016
 Grand Princess,,GPC,,,,,,,,,,,,,,
 MS Zaandam,,MSZ,,,,,,,,,,,,,,
 Diamond Princess,,DPC,,,,3711,,,,,,,,,,
