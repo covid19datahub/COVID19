@@ -125,15 +125,15 @@ covid19 <- function(ISO     = NULL,
     if("try-error" %in% class(w))
       w <- NULL
     
-    for(fun in ISO) if(exists(fun)) {
-
+    for(fun in ISO) if(exists(fun, envir = asNamespace("COVID19"), mode = "function", inherits = FALSE)) {
+      
       y <- try(cachecall(fun, level = level, cache = cache))
       
       if(is.null(y) | ("try-error" %in% class(y)))
         next
 
       if(level==1 & !is.null(w))
-        y <- drop(merge(y, w[w$iso_alpha_3==fun,], by = 'date', all = TRUE, suffixes = c('','.drop')))
+        y <- merge(y, w[w$iso_alpha_3==fun,], by = 'date', all = TRUE)
       
       x <- y %>%
         dplyr::mutate(iso_alpha_3 = fun) %>%
@@ -156,9 +156,9 @@ covid19 <- function(ISO     = NULL,
     }
         
     # stringency measures
-    # o <- try(cachecall('oxcgrt', cache = cache))
-    # if(!("try-error" %in% class(o)))
-    #   x <- drop(merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE, suffixes = c('','.drop')))
+    o <- try(cachecall('oxcgrt', cache = cache))
+    if(!("try-error" %in% class(o)))
+      x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
     
     # subset
     key <- c('iso_alpha_3','id','date',vars('fast'))
@@ -242,7 +242,7 @@ covid19 <- function(ISO     = NULL,
     if(level>1)
       y <- y[,c("iso_alpha_3","country")]
     
-    x <- drop(merge(x, y, by = "iso_alpha_3", all.x = TRUE, suffixes = c('.drop','')))
+    x <- merge(x, y, by = "iso_alpha_3", all.x = TRUE)
 
     # merge slow var
     if(level>1)
@@ -254,7 +254,7 @@ covid19 <- function(ISO     = NULL,
           
           y <- try(db(iso[[1]]), silent = TRUE)
           if(class(y)!="try-error")
-            x <- drop(merge(x, y, by = "id", all.x = TRUE, suffixes = c('.drop','')))
+            x <- merge(x, y, by = "id", all.x = TRUE)
           
           return(x)
           

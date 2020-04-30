@@ -8,14 +8,11 @@ oppnadata <- function(cache, level){
   # number of cases, deaths, icu - whole Sweden
   x <- read.csv(url, cache = cache)
   
-  # switch level
+  # level
   if(level==1){
     
-    # subset
-    x <- x[,c(2,25,27,28)]
-    
     # formatting
-    colnames(x) <- mapvalues(colnames(x), c(
+    x <- subset(x, c(
       'Kumulativa_fall'            = 'confirmed',
       'Kumulativa_avlidna'         = 'deaths',
       'Kumulativa_intensivvardade' = 'icu',

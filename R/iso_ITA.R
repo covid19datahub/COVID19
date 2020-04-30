@@ -11,7 +11,7 @@ ITA <- function(level, cache){
   if(level==2)
     x$id <- id(x$state)
   if(level==3)
-    x$id <- id(x$sigla_provincia)
+    x$id <- id(x$city)
 
   # return
   return(x)

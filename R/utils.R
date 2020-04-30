@@ -69,14 +69,27 @@ fix <- function(id){
 
 }
 
-src <- function(file = "_src"){
+src <- function(...){
 
-  iso <- NULL
+  new <- data.frame(list(...), stringsAsFactors = FALSE)
   
-  x <- db("_src") %>%
-    dplyr::arrange(iso)
+  req <- c("iso","level","var","url","title","year")
+  req <- req[!(req %in% names(new))]
+  if(length(req)>0)
+    stop(sprintf("The following arguments are required: %s", paste(req, collapse = ", ")))
   
-  utils::write.csv(x, paste0(file,".csv"), row.names = FALSE, na = "", fileEncoding = "UTF-8")
+  x <- try(suppressWarnings(utils::read.csv("_src.csv", na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8")), silent = TRUE)
+  if(class(x)=="try-error")
+    x <- db("_src")
+  
+  iso <- level <- NULL
+  x   <- x %>%
+    dplyr::bind_rows(new) %>%
+    dplyr::arrange(iso,level)
+  
+  x <- x[!duplicated(x[,c("iso","level","var")], fromLast = TRUE), ]
+    
+  utils::write.csv(x, paste0("_src.csv"), row.names = FALSE, na = "", fileEncoding = "UTF-8")
   
 }
 
@@ -127,8 +140,9 @@ mapvalues <- function(x, map){
 
 
 
-drop <- function(x){
+merge <- function(...){
 
+  x   <- base::merge(..., suffixes = c('','.drop'))
   idx <- which(endsWith(colnames(x), '.drop'))
   if(length(idx)>0)
     x <- x[,-idx]
@@ -235,23 +249,26 @@ id <- function(..., esc = TRUE){
 }
 
 
-test <- function(ISO = NULL, level, end, raw){
-
-  x <- covid19(ISO = ISO, level = level, end = end, raw = raw)
-  y <- covid19(ISO = ISO, level = level, end = end, raw = raw, vintage = TRUE)
+test <- function(x, y){
 
   x <- as.data.frame(x)
   y <- as.data.frame(y)
   
-  rownames(x) <- paste(x$id,x$date)
-  rownames(y) <- paste(y$id,y$date)
+  x <- x[,colSums(x!=0, na.rm = TRUE)!=0]
+  y <- y[,colSums(y!=0, na.rm = TRUE)!=0]
   
-  rn <- intersect(rownames(x), rownames(x))
+  rownames(x) <- paste(x$id, x$date)
+  rownames(y) <- paste(y$id, y$date)
+  
+  rn <- intersect(rownames(x), rownames(y))
   cn <- intersect(colnames(x), colnames(y))
 
   x <- x[rn, cn]
   y <- y[rn, cn]
 
+  if(nrow(x)==0)
+    return(1)
+  
   return(mean(x==y, na.rm = TRUE))
 
 }
@@ -284,8 +301,8 @@ subset <- function(x, map){
 
   if(!is.null(names(map)))
     colnames(x) <- mapvalues(colnames(x), map)
-  
-  return(x[,map])
+
+  return(x[,intersect(map, colnames(x))])
     
 }
 

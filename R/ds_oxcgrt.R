@@ -5,7 +5,7 @@ oxcgrt <- function(cache){
   x   <- read.csv(url, cache = cache)
   
   # formatting
-  colnames(x) <- mapvalues(colnames(x), c(
+  x <- subset(x, c(
     "Date"                                    = "date",
     "CountryCode"                             = "iso_alpha_3",
     
