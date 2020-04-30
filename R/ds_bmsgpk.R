@@ -1,15 +1,12 @@
 bmsgpk <- function(cache){
   # author: Martin Benes
   
-  # cache
-  cachekey <- "bmsgpk"
-  if(cache & exists(cachekey, envir = cachedata))
-    return(get(cachekey, envir = cachedata))
-  
   # Download
   # https://www.data.gv.at/katalog/dataset/osterreichische-statistische-daten-zu-covid-19/resource/7ad666c7-663d-45dc-ae66-f61385c9eeba
   # Federal Ministery of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
   url  <- "https://info.gesundheitsministerium.at/data/data.zip"
+  url.deaths <- 'https://info.gesundheitsministerium.at/data/TodesfaelleTimeline.csv'
+  
   temp <- tempfile()
   utils::download.file(url, temp, quiet = TRUE)
   
@@ -39,32 +36,29 @@ bmsgpk <- function(cache){
       "recovered" = "GenesenTimeline.csv", 
       "icu_pct"   = "IBAuslastung.csv",
       "hosp_pct"  = "NBAuslastung.csv")
+
+  # deaths (removed from zip)
+  deaths <- utils::read.csv(url.deaths, sep=";")
+  x <- deaths[,1:2]
+  colnames(x) <- c('date', 'deaths') 
   
-  x <- NULL
   for(i in 1:length(files)){
-    
+    # file by file
     xx <- utils::read.csv(unz(temp, files[i]), sep=";") 
     xx <- xx[,1:2]
     colnames(xx) <- c('date', names(files[i])) 
     
-    if(is.null(x))
-      x <- xx
-    else 
-      x <- merge(x, xx)
-    
+    x <- merge(x, xx, all = T)
   }
 
   # date
   x$date <- as.Date(x$date, format="%d.%m.%Y")
+  x <- x %>%
+    dplyr::arrange(date)
   
   # turn confirmed to cumulative
   x$confirmed <- cumsum(x$confirmed)
 
-  # cache
-  if(cache)
-    assign(cachekey, x, envir = cachedata)
-  
   return(x)
-  
 }
 
