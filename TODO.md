@@ -4,7 +4,6 @@ Here will be added data sources that are to be integrated. Let us know what you 
 
 | Country        | URL                                                                      | Who                       | Comment                                          |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ |
-| US | <https://covidtracking.com/data> | coreteam |  |
 | Phillipines    | https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP |  | Found this drive as link to data from gov.ph.    |
 |                | https://www.doh.gov.ph/covid19tracker                                    |                                                  |                                                  |
 | Australia      | https://data.gov.au/search?q=covid                                       |                                                  |                                                  |
