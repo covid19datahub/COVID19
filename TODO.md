@@ -11,3 +11,5 @@ Here will be added data sources that are to be integrated. Let us know what you 
 | Indonesia      | https://www.covid19.go.id/situasi-virus-corona/                          |  | inspect (search "statistik" in devtools:network) |
 | Malaysia       | https://ukkdosm.github.io/covid-19                                       |                         | inspect ("batchedDataV2")                        |
 | Netherlands    | https://www.rivm.nl/coronavirus-covid-19/grafieken                       |                                                  |                                                  |
+| Brasil         | https://covid.saude.gov.br/                                              |  Paolo Montemurro                                                |                                                  |
+| Russia         |  https://xn--80aesfpebagmfblc0a.xn--p1ai/information/                                           |                                             |                                                  |
