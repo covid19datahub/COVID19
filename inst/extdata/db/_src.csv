@@ -181,3 +181,4 @@
 ,1,"health_exp","https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS","World Bank Open Data",2017,,,,,
 ,1,"health_exp_oop","https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS","World Bank Open Data",2017,,,,,
 ,1,"hosp_beds","https://data.worldbank.org/indicator/SH.MED.BEDS.ZS","World Bank Open Data",2010-2016,,,,,
+,1,"pop_female","https://data.worldbank.org/indicator/SP.POP.TOTL.FE.ZS","World Bank Open Data",2018,,,,,

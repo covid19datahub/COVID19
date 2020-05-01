@@ -28,16 +28,20 @@ world <- function(level, cache){
   # x <- merge(x, a, by.x = c('date','country'), by.y = c('date','region'), all.x = TRUE)
 
   # ISO code
-  iso    <- db("ISO")
-  isomap <- iso$iso_alpha_3
-  names(isomap) <- iso$country
-  x$iso_alpha_3 <- mapvalues(x$country, isomap)
+  iso <- db("ISO")
+  iso <- iso[,c('country','iso_alpha_3','mkt_index')]
+  x   <- merge(x, iso, by = 'country')
 
   # level
   if(level==1){
     
+    # tests
     o <- owid(cache = cache)  
-    x <- merge(x, o, by = c('date','iso_alpha_3'), all = TRUE)
+    x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
+    
+    # mkt index
+    y <- yahoo(cache = cache, symb = x$mkt_index)
+    x <- merge(x, y, all.x = TRUE)
     
   }
   if(level==2){

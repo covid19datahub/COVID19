@@ -1,6 +1,5 @@
 test_that("vintage", {
 
-  eq  <- 0.98
   end <- Sys.Date()-3
   
   t <- NULL
@@ -16,14 +15,15 @@ test_that("vintage", {
       dplyr::group_by(group) %>%
       
       dplyr::group_map(keep = TRUE, function(x, id){
-        
+       
         t <- test(x, y)
-        print(sprintf("%s: %s", id[[1]], t))
         
-        if(t<eq) 
-          warning(sprintf("%s: %s (lev %s - raw %s)", id[[1]], t, level, raw))
+        if(class(t)=='character'){
+          warning(paste(id[[1]], paste(t, collapse = "\n   "), sep = "\n   "))
+          return(FALSE)
+        }
         
-        return(t)
+        return(TRUE)
         
       })
     
@@ -31,6 +31,6 @@ test_that("vintage", {
   
   }
   
-  expect_equal(all(t>eq), TRUE)
+  expect_equal(all(t), TRUE)
 
 })

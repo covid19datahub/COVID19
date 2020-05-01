@@ -254,23 +254,30 @@ test <- function(x, y){
   x <- as.data.frame(x)
   y <- as.data.frame(y)
   
-  x <- x[,colSums(x!=0, na.rm = TRUE)!=0]
-  y <- y[,colSums(y!=0, na.rm = TRUE)!=0]
-  
   rownames(x) <- paste(x$id, x$date)
   rownames(y) <- paste(y$id, y$date)
   
   rn <- intersect(rownames(x), rownames(y))
+  
+  x <- x[rn, , drop = FALSE]
+  y <- y[rn, , drop = FALSE]
+  
+  if(nrow(x)==0 | nrow(y)==0)
+    return(TRUE)
+  
+  x <- x[,colSums(x!=0, na.rm = TRUE)!=0, drop = FALSE]
+  y <- y[,colSums(y!=0, na.rm = TRUE)!=0, drop = FALSE]
+  
   cn <- intersect(colnames(x), colnames(y))
 
-  x <- x[rn, cn]
-  y <- y[rn, cn]
-
-  if(nrow(x)==0)
-    return(1)
+  x <- x[, cn, drop = FALSE]
+  y <- y[, cn, drop = FALSE]
   
-  return(mean(x==y, na.rm = TRUE))
+  if(nrow(x)==0 | nrow(y)==0)
+    return(TRUE)
 
+  return(all.equal(x,y))
+  
 }
 
 
@@ -322,12 +329,16 @@ vars <- function(type = "all"){
             'information_campaigns',
             'testing_policy',
             'contact_tracing',
-            'stringency_index')
+            'stringency_index',
+            'mkt_close','mkt_volume')
 
   slow <- c('country','state','city',
             'lat','lng',
-            'pop','pop_14','pop_15_64','pop_65',
-            'pop_age','pop_density','pop_death_rate')
+            'pop','pop_female','pop_14','pop_15_64','pop_65',
+            'pop_age','pop_density','pop_death_rate',
+            'hosp_beds',
+            'smoking_male','smoking_female',
+            'gdp','health_exp','health_exp_oop')
 
   all  <- unique(c('id','date', fast, slow))
 
