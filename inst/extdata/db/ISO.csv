@@ -1,4 +1,4 @@
-"iso_alpha_3","country","iso_alpha_2","iso_numeric","lat","lng","pop","pop_female","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate","gdp","hosp_beds","health_expend","outofpocket_expend","smoking_female","smoking_male"
+"iso_alpha_3","country","iso_alpha_2","iso_numeric","lat","lng","pop","pop_female","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate","gdp","hosp_beds","health_exp","health_exp_oop","smoking_female","smoking_male"
 "ABW","Aruba","AW",533,,,105845,52.53103566,,,,,,,,,,,,
 "AFG","Afghanistan","AF",4,33,65,37172386,48.6358467,0.430901755,0.543248975,0.025849269,19.5,56.93776001,0.006575,19362969582.3643,0.5,11.7771938443184,75.482577085495,,
 "AGO","Angola","AO",24,-11.2027,17.8739,30809762,50.53046293,0.468089247,0.509747016,0.022163736,15.9,24.71305206,0.008432,105750987618.63,,2.79150027781725,34.1210126876831,,
