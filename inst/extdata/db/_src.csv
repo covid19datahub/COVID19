@@ -175,3 +175,4 @@
 ,1,"pop_age","https://www.cia.gov/library/publications/resources/the-world-factbook/fields/343rank.html","World Factbook by CIA",2018,,,,,
 ,1,"pop_density","https://data.worldbank.org/indicator/EN.POP.DNST","World Bank Open Data",2018,,,,,
 ,1,"pop_death_rate","https://data.worldbank.org/indicator/SP.DYN.CDRT.IN","World Bank Open Data",2018,,,,,
+,1,"gdp","https://data.worldbank.org/indicator/NY.GDP.MKTP.CD","World Bank Open Data",2018,,,,,
