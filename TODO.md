@@ -5,6 +5,7 @@ Here will be added data sources that are to be integrated. Let us know what you 
 | Country        | URL                                                                      | Who                       | Level                                     |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ |
 | Brasil         | https://covid.saude.gov.br/                                              |  Paolo Montemurro                                                | Easy |
+| Canada | <https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html> |  | Easy |
 | France | <https://github.com/opencovid19-fr/data> | | Easy |
 | Colombia | <https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr> | | Intermediate |
 | Mexico | https://www.gob.mx/salud/documentos/datos-abiertos-152127?idiom=es | | Intermediate |
