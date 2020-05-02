@@ -6,6 +6,7 @@ Here will be added data sources that are to be integrated. Let us know what you 
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ |
 | Brasil         | https://covid.saude.gov.br/                                              |  Paolo Montemurro                                                | Easy |
 | France | <https://github.com/opencovid19-fr/data> | | Easy |
+| Colombia | <https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr> | | Intermediate |
 | Mexico | https://www.gob.mx/salud/documentos/datos-abiertos-152127?idiom=es | | Intermediate |
 | Russia         |  https://xn--80aesfpebagmfblc0a.xn--p1ai/information/                                           |                                             | Unknown |
 | Phillipines    | https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP (origin: https://www.doh.gov.ph/covid19tracker) |  | Advanced |
