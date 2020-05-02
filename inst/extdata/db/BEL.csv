@@ -1,4 +1,4 @@
 "id","state","city","lat","lng","pop","pop_female","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate"
-"Brussels","Brussels",,,,1208542,622399,,,,,,
-"Flanders","Flanders",,,,6589069,3327480,,,,,,
-"Wallonia","Wallonia",,,,3633795,1871404,,,,,,
+"Brussels","The Brussels-Capital Region",,50.5,4.21,1208542,622399,19.65856379‬,67.21239311,13.1108393,,7055,
+"Flemish","The Flemish Region",,50.5,4.21,6589069,3327480,16.2844857,63.49944127,20.2037343,,483,
+"Wallonia","The Walloon Region",,50.5,4.75,3633795,1871404,17.1314837,64.3044530,18.5515418,,216,
