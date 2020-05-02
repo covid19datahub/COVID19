@@ -21,8 +21,8 @@ infobase_canada <- function(cache,level){
   x  <- x[x$id!="Repatriated travellers",]
   x$recovered[x$recovered=="N/A"] <- NA
   x$recovered <- as.integer(x$recovered)
-  
-  # === filtering === #
+
+    # === filtering === #
   if(level==1){x <- x[x$level==1,]}
   if(level==2){x <- x[x$level==2,]}
   
