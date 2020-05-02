@@ -93,31 +93,28 @@ src <- function(...){
   
 }
 
-csv <- function(ISO = NULL, x = NULL, save = FALSE){
-
-  cn <- vars("slow")
-  cn <- cn[!(cn %in% c('iso_alpha_3','iso_alpha_2','iso_numeric','country'))]
-
-  if(!is.null(x)){
-    x[,cn[!(cn %in% colnames(x))]] <- NA
-    x <- x[,cn]
-    x <- x[!duplicated(x),]
-  }
-
+csv <- function(x, ISO = NULL){
+  
+  if(is.null(x$id))
+    stop("x must contain the column 'id'")
+  
+  cn <- c('id','state','city','lat','lng','pop','pop_14','pop_15_64','pop_65','pop_age','pop_density','pop_death_rate')  
+  
+  x[,cn[!(cn %in% colnames(x))]] <- NA
+  x <- x[,cn]
+  x <- x[!duplicated(x),]
+  
   if(!is.null(ISO))
     x <- dplyr::bind_rows(db(ISO), x)
-
+  
   x <- x[!duplicated(x),]
-  x[,cn[!(cn %in% colnames(x))]] <- NA
   x <- dplyr::arrange(x, -rowSums(is.na(x)), x$state, x$city)
-
-  if(save & !is.null(ISO))
-    utils::write.csv(x, paste0(ISO,".csv"), row.names = FALSE, na = "", fileEncoding = "UTF-8")
-
+  
+  utils::write.csv(x, "XXX.csv", row.names = FALSE, na = "", fileEncoding = "UTF-8")
+  
   return(x)
-
+  
 }
-
 
 
 mapvalues <- function(x, map){
