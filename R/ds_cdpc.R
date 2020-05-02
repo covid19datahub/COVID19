@@ -45,9 +45,8 @@ cdpc <- function(cache, level){
     x <- x[which(x$region_id != 'Nav'),]
     
     # replace range
-    x$confirmed <- mapvalues(x$confirmed, c(
-      "no 1 lidz 5" = 3
-    )) 
+    idx <- grepl("^no 1", x = x$confirmed)
+    x$confirmed[idx] <- 3 
     x$confirmed <- as.integer(x$confirmed)
     
     # bindings
