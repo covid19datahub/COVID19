@@ -14,7 +14,7 @@ USA <- function(level, cache){
   if(level==2){
 
     # download
-    x <- covidtracking(cache = cache, level = level) #Modified 30 04 Paolo
+    x <- covidtracking(cache = cache, level = level) 
     
     # id
     x$id <- id(x$state)

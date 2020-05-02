@@ -1,29 +1,36 @@
 infobase_canada <- function(cache,level){
-  # Paolo Montemurro 02/05/2020 - montep@usi.ch
+  # Author: Paolo Montemurro 02/05/2020 - montep@usi.ch
   
   # === source === #
   url  <- "https://health-infobase.canada.ca/src/data/covidLive/covid19.csv"
   
   # === download === #
-  x   <- read.csv(url, cache=cache)
+  x   <- read.csv(url, cache = cache, na.strings = c("","N/A"))
   
   # === formatting === #
+  x <- subset(x, c(
+    "date",
+    "prname"     = "name",
+    "pruid"      = "uid",
+    "numdeaths"  = "deaths",
+    "numconf"    = "confirmed",
+    "numtested"  = "tests",
+    "numrecover" = "recovered"
+  ))
+
   x$date <- as.Date(x$date, format = "%d-%m-%Y")
-  x <- x[,c("prname","date","numdeaths","numconf","numtested","numrecover")]
-  colnames(x) <- c("id","date","deaths","confirmed","tests","recovered")
   
   # === cleaning === #
-  # creating levels
-  x$level <- 2
-  x$level[x$id=="Canada"] <- 1
   
   # deleting non territories
-  x <- x[x$id!="Repatriated travellers",] 
+  x <- x[x$name!="Repatriated travellers",] 
   
-  # === filtering === #
-  if(level==1){x <- subset(x, level==1)}
-  if(level==2){x <- subset(x, level==2)}
-  
+  # creating levels
+  if(level==1)
+    x <- x[x$name=="Canada",]   
+  if(level==2)
+    x <- x[x$name!="Canada",]  
+
   # return
   return(x)
   
