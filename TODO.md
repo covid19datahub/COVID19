@@ -2,14 +2,15 @@
 
 Here will be added data sources that are to be integrated. Let us know what you are working on. Drop us a message on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-dld2grt2-vmso7HkI8yFabW5R_mAZJw).
 
-| Country        | URL                                                                      | Who                       | Comment                                          |
+| Country        | URL                                                                      | Who                       | Level                                     |
 | -------------- | ------------------------------------------------------------------------ | ------------------------------------------------ | ------------------------------------------------ |
-| Phillipines    | https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP |  | Found this drive as link to data from gov.ph.    |
-|                | https://www.doh.gov.ph/covid19tracker                                    |                                                  |                                                  |
-| Australia      | https://data.gov.au/search?q=covid                                       |                                                  |                                                  |
-| New Zealand    | https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation |           |           |
-| Indonesia      | https://www.covid19.go.id/situasi-virus-corona/                          |  | inspect (search "statistik" in devtools:network) |
-| Malaysia       | https://ukkdosm.github.io/covid-19                                       |                         | inspect ("batchedDataV2")                        |
-| Netherlands    | https://www.rivm.nl/coronavirus-covid-19/grafieken                       |                                                  |                                                  |
-| Brasil         | https://covid.saude.gov.br/                                              |  Paolo Montemurro                                                |                                                  |
-| Russia         |  https://xn--80aesfpebagmfblc0a.xn--p1ai/information/                                           |                                             |                                                  |
+| Brasil         | https://covid.saude.gov.br/                                              |  Paolo Montemurro                                                | Easy |
+| France | <https://github.com/opencovid19-fr/data> | | Easy |
+| Mexico | https://www.gob.mx/salud/documentos/datos-abiertos-152127?idiom=es | | Intermediate |
+| Russia         |  https://xn--80aesfpebagmfblc0a.xn--p1ai/information/                                           |                                             | Unknown |
+| Phillipines    | https://drive.google.com/drive/folders/10VkiUA8x7TS2jkibhSZK1gmWxFM-EoZP (origin: https://www.doh.gov.ph/covid19tracker) |  | Advanced |
+| Australia      | https://data.gov.au/search?q=covid                                       |                                                  | Advanced |
+| New Zealand    | https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation |           | Advanced |
+| Indonesia      | https://www.covid19.go.id/situasi-virus-corona/                          |  | Advanced |
+| Malaysia       | https://ukkdosm.github.io/covid-19                                       |                         | Advanced                |
+| Netherlands    | https://www.rivm.nl/coronavirus-covid-19/grafieken                       |                                                  | Advanced |
