@@ -1,4 +1,4 @@
-"id","state","city","lat","lng","pop","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate"
-"Brussels","Brussels",,,,,,,,,,
-"Flanders","Flanders",,,,,,,,,,
-"Wallonia","Wallonia",,,,,,,,,,
+"id","state","city","lat","lng","pop","pop_female","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate"
+"Brussels","Brussels",,,,1208542,622399,,,,,,
+"Flanders","Flanders",,,,6589069,3327480,,,,,,
+"Wallonia","Wallonia",,,,3633795,1871404,,,,,,
