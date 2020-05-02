@@ -85,6 +85,15 @@ covid19("ITA", level = 2)
 covid19(c("ITA","USA"), level = 3)
 ```
 
+### Cite the Data Sources
+
+```r
+# Cite the data sources 
+x   <- covid19()
+cit <- covid19cite(x)
+View(cit)
+```
+
 ## Dataset
 
 | Variable                              | Description                                                  |
