@@ -1,4 +1,4 @@
-infobase_canada <- function(cache,level){
+canada_data <- function(cache, level){
   # Paolo Montemurro 02/05/2020 - montep@usi.ch
   
   # === source === #
@@ -21,12 +21,13 @@ infobase_canada <- function(cache,level){
   x  <- x[x$id!="Repatriated travellers",]
   x$recovered[x$recovered=="N/A"] <- NA
   x$recovered <- as.integer(x$recovered)
-
-    # === filtering === #
+  
+  # === filtering === #
   if(level==1){x <- x[x$level==1,]}
   if(level==2){x <- x[x$level==2,]}
   
   # return
   return(x)
   
+
 }

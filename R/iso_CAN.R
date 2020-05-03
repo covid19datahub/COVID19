@@ -6,7 +6,7 @@ CAN <- function(level, cache){
     return(NULL)
   
   # download
-  x <- infobase_canada(cache = cache, level = level)
+  x <- canada_data(cache = cache, level = level)
   
   # id
   if(level==2)
@@ -14,5 +14,5 @@ CAN <- function(level, cache){
   
   # return
   return(x)
-  
+
 }
