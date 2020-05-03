@@ -14,7 +14,7 @@ USA <- function(level, cache){
   if(level==2){
 
     # download
-    x <- jhuCSSE(file = "US", cache = cache, level = level, id = "USA")
+    x <- covidtracking(cache = cache, level = level) 
     
     # id
     x$id <- id(x$state)
