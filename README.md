@@ -133,7 +133,7 @@ View(cit)
 | `pop_65`                              | Population ages 65+ (% of total population).                 |
 | `pop_age`                             | Median age of population.                                    |
 | `pop_density`                         | Population density per km<sup>2</sup>.                       |
-| `pop_death_rate`                      | Population mortality rate.                                   |
+| `pop_death_rate`                      | Population mortality rate (per 1,000 people).                |
 | `hosp_beds`                           | Hospital beds (per 1,000 people).                            |
 | `smoking_male`                        | Smoking prevalence, males (% of adults).                     |
 | `smoking_female`                      | Smoking prevalence, females (% of adults).                   |
