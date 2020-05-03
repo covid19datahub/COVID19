@@ -40,14 +40,19 @@ mzcr <- function(level, cache){
     x <- people %>%
       dplyr::group_by(date,state) %>%
       dplyr::summarize(
-        confirmed             = n(),
+        confirmed_current     = n(),
         female_ratio          = sum(!is.na(pohlavi)            & pohlavi == "Z")          / length(pohlavi),
         male_ratio            = sum(!is.na(pohlavi)            & pohlavi == "M")          / length(pohlavi),
         infected_abroad_ratio = sum(!is.na(nakaza_v_zahranici) & nakaza_v_zahranici == 1) / length(nakaza_v_zahranici),
         age_14_ratio          = sum(!is.na(vek)                & vek <= 14)               / length(vek),
         age_15_64_ratio       = sum(!is.na(vek)                & vek >= 15 & vek <= 64)   / length(vek),
-        age_65_ratio          = sum(!is.na(vek)                & vek >= 65)               / length(vek)
+        age_65_ratio          = sum(!is.na(vek)                & vek >= 65)               / length(vek),
       )
+    # cumulative
+    x %>%
+      group_by(state) %>%
+      mutate(confirmed = cumsum(confirmed_current)) ->
+    y
   }
   
   # return
