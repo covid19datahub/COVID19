@@ -52,7 +52,7 @@ mzcr <- function(level, cache){
     x %>%
       group_by(state) %>%
       mutate(confirmed = cumsum(confirmed_current)) ->
-    y
+    x
   }
   
   # return
