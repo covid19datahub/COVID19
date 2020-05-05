@@ -85,6 +85,15 @@ covid19("ITA", level = 2)
 covid19(c("ITA","USA"), level = 3)
 ```
 
+### Cite the Data Sources
+
+```r
+# Cite the data sources 
+x   <- covid19()
+cit <- covid19cite(x)
+View(cit)
+```
+
 ## Dataset
 
 | Variable                              | Description                                                  |
@@ -172,8 +181,9 @@ The following people have contributed to the data collection as a joint effort a
 
 ## Use Cases
 
-Using the COVID-19 Data Hub? Open a pull request and let us know about your project!
+Using the COVID-19 Data Hub? Open an [issue](https://github.com/covid19datahub/COVID19/issues) and let us know about your project!
 
+- [BI COVID 3.0](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
 - [Monitoring the advancement of the COVID–19 contagion in the regions of Italy](https://github.com/krzbar/COVID19)
 - [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
 
@@ -187,7 +197,7 @@ We have invested a lot of time and effort in creating [COVID-19 Data Hub](https:
 
 The [COVID-19 Data Hub](https://covid19datahub.io/) (R package COVID19, GitHub repo, cloud storage), and its contents herein, including all data, mapping, and analyses, are provided to the public strictly for educational and academic research purposes. The [COVID-19 Data Hub](https://covid19datahub.io/) relies upon publicly available data from multiple sources. We are currently in the process of reconciling the providers with proper reference to their open-source data. Please inform us if you see any issues with the data licenses.
 
-We try our best to guarantee the data quality and consistency and the continuous filling of the [COVID-19 Data Hub](https://covid19datahub.io/). However, it is free software and comes with ABSOLUTELY NO WARRANTY. We hereby disclaim any and all representations and warranties with respect to the [COVID-19 Data Hub](https://covid19datahub.io/), including accuracy, fitness for use, and merchantability. Reliance on the [COVID-19 Data Hub](https://covid19datahub.io/) for medical guidance or use of the [COVID-19 Data Hub](https://covid19datahub.io/) in commerce is strictly prohibited.
+We try our best to guarantee the data quality and consistency and the continuous filling of the [COVID-19 Data Hub](https://covid19datahub.io/). However, it is free software and comes with ABSOLUTELY NO WARRANTY. We hereby disclaim any and all representations and warranties with respect to the [COVID-19 Data Hub](https://covid19datahub.io/), including accuracy, fitness for use, and merchantability. Reliance on the [COVID-19 Data Hub](https://covid19datahub.io/) for medical guidance or use of the [COVID-19 Data Hub](https://covid19datahub.io/) in commerce is strictly prohibited. 
 
 ## Reference
 

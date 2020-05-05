@@ -199,43 +199,46 @@ covid19 <- function(ISO     = NULL,
 
         tidyr::replace_na(as.list(sapply(vars("fast"), function(x) 0)))
 
-    # group by country
-    if(level==1)
-      x$id <- NA
-
-    # aggregate
-    idx <- x %>%
-      
-      dplyr::group_by(iso_alpha_3, id, date) %>%
-      
-      dplyr::group_map(function(x,g){
-        
-        if(nrow(x)>1) return(g[[1]])
-      
-      }) %>%
-      
-      unlist() %>% 
-      
-      unique()
+    if(any(duplicated(x[,c("iso_alpha_3", "id", "date")])))
+      stop("duplicated id on the same date")
     
-    # @todo stop here on error
-    if(length(idx)>0){
-      
-      warning(sprintf("%s: data obtained by aggregating lower level data.", paste(idx, collapse = ", ")))
-      
-      x <- x %>%
-        
-        dplyr::group_by(iso_alpha_3, id, date) %>%
-        
-        dplyr::summarize(confirmed = sum(confirmed),
-                         deaths    = sum(deaths),
-                         tests     = sum(tests),
-                         recovered = sum(recovered),
-                         hosp      = sum(hosp),
-                         icu       = sum(icu),
-                         vent      = sum(vent)) 
-      
-    }
+    # # group by country
+    # if(level==1)
+    #   x$id <- NA
+    # 
+    # # aggregate
+    # idx <- x %>%
+    #   
+    #   dplyr::group_by(iso_alpha_3, id, date) %>%
+    #   
+    #   dplyr::group_map(function(x,g){
+    #     
+    #     if(nrow(x)>1) return(g[[1]])
+    #   
+    #   }) %>%
+    #   
+    #   unlist() %>% 
+    #   
+    #   unique()
+    # 
+    # # @todo stop here on error
+    # if(length(idx)>0){
+    #   
+    #   warning(sprintf("%s: data obtained by aggregating lower level data.", paste(idx, collapse = ", ")))
+    #   
+    #   x <- x %>%
+    #     
+    #     dplyr::group_by(iso_alpha_3, id, date) %>%
+    #     
+    #     dplyr::summarize(confirmed = sum(confirmed),
+    #                      deaths    = sum(deaths),
+    #                      tests     = sum(tests),
+    #                      recovered = sum(recovered),
+    #                      hosp      = sum(hosp),
+    #                      icu       = sum(icu),
+    #                      vent      = sum(vent)) 
+    #   
+    # }
 
     # merge top level slow var
     y <- db("ISO")
