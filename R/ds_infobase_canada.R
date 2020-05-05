@@ -8,7 +8,7 @@ infobase_canada <- function(cache,level){
   x   <- read.csv(url, cache = cache, na.strings = c("","N/A"))
   
   # === formatting === #
-  x <- subset(x, c(
+  x <- reduce(x, c(
     "date",
     "prname"     = "name",
     "pruid"      = "uid",

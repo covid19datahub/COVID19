@@ -301,7 +301,7 @@ check <- function(x){
 }
 
 
-subset <- function(x, map){
+reduce <- function(x, map){
 
   if(!is.null(names(map)))
     colnames(x) <- mapvalues(colnames(x), map)

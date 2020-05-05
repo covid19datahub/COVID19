@@ -16,7 +16,7 @@ govuk <- function(cache,level){
   
   # format 
   x$date <- as.Date(x$Specimen.date)
-  x <- subset(x, c(
+  x <- reduce(x, c(
     'date',
     'Area.name'                      = 'name',       
     'Area.code'                      = 'code',

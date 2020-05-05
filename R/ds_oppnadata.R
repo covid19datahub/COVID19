@@ -12,7 +12,7 @@ oppnadata <- function(cache, level){
   if(level==1){
     
     # formatting
-    x <- subset(x, c(
+    x <- reduce(x, c(
       'Kumulativa_fall'            = 'confirmed',
       'Kumulativa_avlidna'         = 'deaths',
       'Kumulativa_intensivvardade' = 'icu',
@@ -22,7 +22,7 @@ oppnadata <- function(cache, level){
   }
   if(level==2){
     
-    # subset
+    # reduce
     x <- x[,c(28,3:23)] 
     colnames(x) <- mapvalues(colnames(x), c(
       'Statistikdatum' = 'date'

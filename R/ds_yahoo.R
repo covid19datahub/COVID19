@@ -28,8 +28,8 @@ yahoo <- function(cache, symb){
     
   dplyr::bind_rows(.id = "mkt_index")
   
-  # subset
-  x <- subset(x, c(
+  # reduce
+  x <- reduce(x, c(
     "mkt_index",
     'Date'   = 'date', 
     'Close'  = 'mkt_close', 

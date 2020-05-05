@@ -23,7 +23,7 @@ pcmdpc <- function(cache, level){
     x <- x[x$lat!=0 | x$long!=0,]
   
   # formatting
-  x <- subset(x, c(
+  x <- reduce(x, c(
     'date',
     'denominazione_regione'   = 'state', 
     'sigla_provincia'         = 'city',

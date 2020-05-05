@@ -84,7 +84,7 @@ covid19 <- function(ISO     = NULL,
 
   # data
   x <- data.frame()
-
+  
   # ISO code
   iso <- db("ISO")
   if(is.null(ISO))
@@ -160,7 +160,7 @@ covid19 <- function(ISO     = NULL,
     if(!("try-error" %in% class(o)))
       x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
     
-    # subset
+    # reduce
     key <- c('iso_alpha_3','id','date',vars('fast'))
     x[,key[!(key %in% colnames(x))]] <- NA
     x <- x[,key]
@@ -268,7 +268,7 @@ covid19 <- function(ISO     = NULL,
     # unique id
     x$id <- id(x$iso_alpha_3, x$id, esc = FALSE)
 
-    # subset
+    # reduce
     col <- vars()
     x[,col[!(col %in% colnames(x))]] <- NA
     x <- x[,col]
