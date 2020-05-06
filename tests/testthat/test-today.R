@@ -1,12 +1,10 @@
 test_that("vintage", {
 
-  end <- Sys.Date()-3
-  
   t <- NULL
   for(level in 1:3) for(raw in c(TRUE, FALSE)){
   
-    x <- covid19(level = level, end = end, raw = raw, vintage = FALSE)
-    y <- covid19(level = level, end = end, raw = raw, vintage = TRUE)
+    x <- covid19(level = level, raw = raw, vintage = FALSE)
+    y <- covid19(level = level, raw = raw, vintage = TRUE)
     
     x$group <- sapply(strsplit(x$id, ", "), function(x) x[[1]])
     

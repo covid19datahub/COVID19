@@ -100,13 +100,27 @@ covid19 <- function(ISO     = NULL,
   # vintage
   if(vintage){
 
-    if(end < "2020-04-14")
-      stop("vintage data not available before 2020-04-14")
-
-    file <- sprintf("https://storage.covid19datahub.io/%sdata-%s-%s.csv", ifelse(raw, 'raw', ''), level, format(as.Date(end),"%Y%m%d"))
-
-    x <- try(suppressWarnings(read.csv(file, cache = cache, colClasses = c("date" = "Date"))), silent = TRUE)
-
+    if(end == Sys.Date()){
+      
+      url  <- "https://storage.covid19datahub.io"
+      name <- sprintf("%sdata-%s", ifelse(raw, 'raw', ''), level)
+      zip  <- sprintf("%s/%s.zip", url, name) 
+      file <- sprintf("%s.csv", name) 
+      
+      x <- try(suppressWarnings(read.zip(zip, file, cache = cache, colClasses = c("date" = "Date"))[[1]]), silent = TRUE)
+      
+    }
+    else {
+      
+      if(end < "2020-04-14")
+        stop("vintage data not available before 2020-04-14")
+    
+      file <- sprintf("https://storage.covid19datahub.io/%sdata-%s-%s.csv", ifelse(raw, 'raw', ''), level, format(as.Date(end),"%Y%m%d"))
+      
+      x <- try(suppressWarnings(read.csv(file, cache = cache, colClasses = c("date" = "Date"))), silent = TRUE)
+      
+    }
+    
     if("try-error" %in% class(x) | is.null(x))
       stop(sprintf("vintage data not available on %s", end))
 

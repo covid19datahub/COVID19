@@ -179,6 +179,36 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
 
 }
 
+read.zip <- function(zip, files, cache, ...){
+
+  read.zip <- function(zip, files, ...){
+    
+    temp <- tempfile()
+    utils::download.file(zip, temp, quiet = TRUE)  
+    
+    lapply(files, function(file){
+      
+      if(grepl("\\.csv$", file))
+        x <- read.csv(unz(temp, file), cache = FALSE, ...)
+      
+      if(grepl("\\.xlsx?$", file))
+        x <- readxl::read_excel(unz(temp, file), ...)
+      
+      return(x)
+      
+    })
+    
+  }
+  
+  if(cache)
+    x <- cachecall(read.zip, zip = zip, files = files, ...)
+  else 
+    x <- read.zip(zip = zip, files = files, ...)
+    
+  return(x)
+  
+}
+
 read_excel_from_url <- function(path, sheet, ...) {
   
   tmp <- tempfile()
