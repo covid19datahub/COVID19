@@ -84,7 +84,7 @@ covid19 <- function(ISO     = NULL,
 
   # data
   x <- data.frame()
-
+  
   # ISO code
   iso <- db("ISO")
   if(is.null(ISO))
@@ -100,13 +100,27 @@ covid19 <- function(ISO     = NULL,
   # vintage
   if(vintage){
 
-    if(end < "2020-04-14")
-      stop("vintage data not available before 2020-04-14")
-
-    file <- sprintf("https://storage.covid19datahub.io/%sdata-%s-%s.csv", ifelse(raw, 'raw', ''), level, format(as.Date(end),"%Y%m%d"))
-
-    x <- try(suppressWarnings(read.csv(file, cache = cache, colClasses = c("date" = "Date"))), silent = TRUE)
-
+    if(end == Sys.Date()){
+      
+      url  <- "https://storage.covid19datahub.io"
+      name <- sprintf("%sdata-%s", ifelse(raw, 'raw', ''), level)
+      zip  <- sprintf("%s/%s.zip", url, name) 
+      file <- sprintf("%s.csv", name) 
+      
+      x <- try(suppressWarnings(read.zip(zip, file, cache = cache, colClasses = c("date" = "Date"))[[1]]), silent = TRUE)
+      
+    }
+    else {
+      
+      if(end < "2020-04-14")
+        stop("vintage data not available before 2020-04-14")
+    
+      file <- sprintf("https://storage.covid19datahub.io/%sdata-%s-%s.csv", ifelse(raw, 'raw', ''), level, format(as.Date(end),"%Y%m%d"))
+      
+      x <- try(suppressWarnings(read.csv(file, cache = cache, colClasses = c("date" = "Date"))), silent = TRUE)
+      
+    }
+    
     if("try-error" %in% class(x) | is.null(x))
       stop(sprintf("vintage data not available on %s", end))
 
@@ -160,7 +174,7 @@ covid19 <- function(ISO     = NULL,
     if(!("try-error" %in% class(o)))
       x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
     
-    # subset
+    # reduce
     key <- c('iso_alpha_3','id','date',vars('fast'))
     x[,key[!(key %in% colnames(x))]] <- NA
     x <- x[,key]
@@ -268,7 +282,7 @@ covid19 <- function(ISO     = NULL,
     # unique id
     x$id <- id(x$iso_alpha_3, x$id, esc = FALSE)
 
-    # subset
+    # reduce
     col <- vars()
     x[,col[!(col %in% colnames(x))]] <- NA
     x <- x[,col]

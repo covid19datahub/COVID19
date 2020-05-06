@@ -9,7 +9,7 @@ owid <- function(cache, id = NULL){
     x <- x[x$iso_code %in% id,]
   
   # formatting
-  x <- subset(x, c(
+  x <- reduce(x, c(
     'date',
     'iso_code'     = 'iso_alpha_3',
     'location'     = 'country',

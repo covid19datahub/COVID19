@@ -9,7 +9,7 @@ openIND <- function(cache, level){
     x   <- read.csv(url, cache = cache)
     
     # formatting
-    x <- subset(x, c(
+    x <- reduce(x, c(
       "Date"            = "date",
       "Total.Deceased"  = "deaths",
       "Total.Confirmed" = "confirmed",
@@ -32,6 +32,7 @@ openIND <- function(cache, level){
     x <- x[,colnames(x)!="TT"]
     
     # date
+    Sys.setlocale("LC_TIME", "C")
     x$Date <- as.Date(x$Date, format = "%d-%b-%y")
     colnames(x)[1] <- "date"
     
@@ -48,7 +49,7 @@ openIND <- function(cache, level){
       tidyr::pivot_longer(-(1:2), names_to = "state", values_to = "value") %>%
       tidyr::pivot_wider(names_from = "Status")
     
-    x <- subset(x, c(
+    x <- reduce(x, c(
       'date',
       'state',
       'Confirmed' = 'confirmed',

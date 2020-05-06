@@ -15,7 +15,7 @@ openZH <- function(cache, id = NULL){
   x$date <- d
 
   # formatting
-  x <- subset(x, c(
+  x <- reduce(x, c(
     'date',
     'abbreviation_canton_and_fl' = 'code',
     'ncumul_conf'                = 'confirmed',

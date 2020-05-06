@@ -8,7 +8,7 @@ covidtracking <- function(cache,level){
   x   <- read.csv(url, cache = cache)
   
   # format 
-  x <- subset(x, c(
+  x <- reduce(x, c(
     'date',
     'state',
     'fips',

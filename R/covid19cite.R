@@ -41,11 +41,12 @@ covid19cite <- function(x, bibtex = FALSE, verbose = TRUE){
       s <- merge(src, data.frame(iso = iso, level = level, var = var))
       
       var <- var[!(var %in% s$var)]
-      if(level==1 & length(var)>0)
+      if(length(var)>0)
         s <- s %>% 
-          dplyr::bind_rows(merge(src, data.frame(iso = NA, level = 1, var = var)))
+          dplyr::bind_rows(merge(src, data.frame(iso = NA, level = NA, var = var)))
       
       s$iso[is.na(s$iso)] <- iso
+      s$level[is.na(s$level)] <- level
       
       return(s)
       
@@ -53,6 +54,7 @@ covid19cite <- function(x, bibtex = FALSE, verbose = TRUE){
     
     dplyr::bind_rows()
   
+    x <- x[!duplicated(x),]
     y <- x[!duplicated(x[,c('title')]),]
     y <- apply(y, 1, function(y){
       

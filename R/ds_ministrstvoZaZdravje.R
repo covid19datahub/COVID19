@@ -10,7 +10,7 @@ ministrstvoZaZdravje <- function(cache, level){
   # formatting
   if(level==1){
     
-    x <- subset(x, c(
+    x <- reduce(x, c(
       'Date'                                         = 'date',
       'Tested (all)'                                 = 'tests',
       'Positive (all)'                               = 'confirmed',

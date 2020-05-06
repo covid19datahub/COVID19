@@ -13,7 +13,7 @@ cdpc <- function(cache, level){
   # format
   if(level==1){
     
-    x <- subset(x, c(
+    x <- reduce(x, c(
       'Datums'                                      = 'date',
       'TestuSkaits'                                 = 'tests',
       'ApstiprinataCOVID19InfekcijaSkaits'          = 'confirmed',
@@ -30,7 +30,7 @@ cdpc <- function(cache, level){
   }
   if(level==2){
     
-    x <- subset(x, c(
+    x <- reduce(x, c(
       'region_id',
       'Datums'                                      = 'date',
       'AdministrativiTeritorialasVienibasNosaukums' = 'region',

@@ -5,7 +5,7 @@ oxcgrt <- function(cache){
   x   <- read.csv(url, cache = cache)
   
   # formatting
-  x <- subset(x, c(
+  x <- reduce(x, c(
     "Date"                                    = "date",
     "CountryCode"                             = "iso_alpha_3",
     
