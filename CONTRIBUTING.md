@@ -11,11 +11,25 @@ __If you are new to GitHub, follow 3 simple steps to collaborate on the project:
    3. work on the local copy on your computer and save changes by [creating a commit](https://help.github.com/en/desktop/contributing-to-projects/committing-and-reviewing-changes-to-your-project)
 3. Once you are ready to propose your changes to the public, [create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) 
 
-## Contributing guidelines  for Everyone
+## Contributing guidelines for Everyone
 
-1. Find data sources for **historical data** such as demographics, population density, age, air quality and other **slow-changing variables**. See the [data coverage table](https://storage.covid19datahub.io/coverage.html) to avoid working on something that is already available.
-2. Improve the csv files available [here](https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db) by (programmatically or manually) filling-in the missing values or extending the files with additional variables.
-3. Clearly state where the data come from (data source + year) in your pull request. 
+To contribute to our project it is not necessary to know a programming language!
+### How can I be helpful?
+We are always looking for new sources of information on historical data such as demographics, population density, age, air quality and other slow-changing variables. See the [data coverage table](https://storage.covid19datahub.io/coverage.html) to avoid working on something that is already available.
+
+### What sources are accepted?
+The quality of the sources is one of our pillars. We always try to refer to government, university, federal sites or qualified information portals (such as Wikipedia) to ensure data quality.
+
+### Which files should I work on?
+[Here](https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db) you will find the csv files to work on. The level of detail is expressed as follows:
+- *[ISO.csv](https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv)* file is the one that deals with listing all the countries and collecting information at level 1 of granularity.
+- The files relating to each country are used to specify other information at the finer granularity level (level 2 and level 3).
+- *[_src.csv](https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/_src.csv)* file is used to store sources.
+
+You can improve the csv files available by (programmatically or manually) filling-in the missing values or extending the files with additional variables. 
+[Here](https://github.com/covid19datahub/COVID19#dataset) you can find the list of variables we are currently working on.
+
+**Don't forget to clearly state where the data come from (data source + year) in your pull request, we will take care of inserting it in the src file**
 
 ## Contributing guidelines for R users
 
