@@ -28,6 +28,9 @@ openIND <- function(cache, level){
     url <- "https://api.covid19india.org/csv/latest/state_wise_daily.csv"
     x   <- read.csv(url, cache = cache)
     
+    # remove NA from state == 'MP'
+    x[is.na(x)] = 0
+    
     # drop total
     x <- x[,colnames(x)!="TT"]
     
