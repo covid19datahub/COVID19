@@ -1,13 +1,12 @@
 
-HTI <- function(level, cache){
-
+COL <- function(cache, level){
+  
   #author: Federico Lo Giudice
-
-    # fallback
+  
+  
+  # fallback
   if(level>3)
     return(NULL)
-  
-  
   
   # level
   if(level==1){
@@ -17,12 +16,12 @@ HTI <- function(level, cache){
     
   }
   
+  x <- msps(cache = cache, level = level)
   
-  x <- hdx(cache = cache, level = level)
-  
+
   
   # return
-    return(x)
+  return(x)
   
 }
 
