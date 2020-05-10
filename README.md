@@ -29,7 +29,7 @@ library("COVID19dev")
 
   `+` `-`: North and West
 
-  `-` `- `: South and West
+  `-` `-`: South and West
 
   `-` `+`: South and East
 
