@@ -13,11 +13,11 @@ The repository aims at unifying COVID-19 datasets across different sources in or
 remotes::install_github("covid19datahub/COVID19dev")
 
 # Load COVID19
-require("COVID19dev")
+library("COVID19dev")
 ```
 ## Implement a new data source
 
-- Get inspired by the `ds_*` files [here](<https://github.com/covid19datahub/COVID19dev/tree/master/R>).
+- Get inspired by the `ds_*` files [here](<https://github.com/covid19datahub/COVID19dev/tree/master/R>) and the [package documentation](https://storage.covid19datahub.io/doc/COVID19.pdf).
 - Create a new `ds_*` file named with the domain of the data source (lowercase and replace `.` with `_`). The function should return a `data.frame` with the columns `date` (date object), `tests` (cumulative number of tests), `confirmed` (cumulative number of confirmed cases), `deaths` (cumulative number of deaths), `recovered` (cumulative number of recovered), `hosp` (hospitalized on date), `vent` (requiring ventilation on date), `icu` (intensive therapy on date). Only the column `date` is strictly required, additional columns may be included as well.
 - Open a [new issue](<https://github.com/covid19datahub/COVID19dev/issues>) and submit your function (attach the R file). Thanks!
 
@@ -36,10 +36,6 @@ require("COVID19dev")
 - Do not create additional `csv` files (they must be generated with the `add_iso` function when a new ISO becomes available).
 
 - Open a [new issue](<https://github.com/covid19datahub/COVID19dev/issues>) and submit your csv (attach the file). Thanks!
-
-## Documentation
-
-<https://storage.covid19datahub.io/doc/COVID19.pdf>
 
 ## Reference
 
