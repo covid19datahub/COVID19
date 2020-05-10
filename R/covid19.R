@@ -102,9 +102,10 @@ covid19 <- function(country = NULL,
       zip  <- sprintf("%s/%s.zip", url, name) 
       file <- sprintf("%s.csv", name) 
       
-      x <- try(read.zip(zip, file, cache = cache)[[1]], silent = TRUE)
+      x   <- try(read.zip(zip, file, cache = cache)[[1]], silent = TRUE)
+      src <- try(read.csv(sprintf("%s/src.csv", url), cache = cache), silent = TRUE)
       
-      if("try-error" %in% class(x) | is.null(x))
+      if("try-error" %in% c(class(x),class(src)) | is.null(x) | is.null(src))
         stop(sprintf("vintage data not available today", end))
       
     }
@@ -263,6 +264,9 @@ covid19 <- function(country = NULL,
         }) %>%
 
         dplyr::bind_rows()
+    
+    # data source
+    src <- extdata("src.csv")
 
   }
   
@@ -289,7 +293,7 @@ covid19 <- function(country = NULL,
     warning("the tuple ('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3') is not unique")
 
   # src
-  attr(x, "src") <- try(cite(x, verbose = verbose))
+  attr(x, "src") <- try(cite(x, src, verbose = verbose))
   
   # cache
   if(cache)

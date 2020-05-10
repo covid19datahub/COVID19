@@ -142,9 +142,7 @@ vars <- function(type = NULL){
   
 }
 
-cite <- function(x, verbose){
-  
-  src <- extdata("src.csv")
+cite <- function(x, src, verbose){
   
   x <- x %>% 
     
