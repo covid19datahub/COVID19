@@ -10,7 +10,7 @@ The repository aims at unifying COVID-19 datasets across different sources in or
 
 ```R
 # Install COVID19
-remotes::install_github("covid19datahub.io/COVID19dev")
+remotes::install_github("covid19datahub/COVID19dev")
 
 # Load COVID19
 require("COVID19dev")
