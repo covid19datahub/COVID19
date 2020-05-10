@@ -84,44 +84,61 @@ id <- function(x, iso, ds, level){
   
 }
 
-vars <- function(type = "all"){
+vars <- function(type = NULL){
   
-  cases    <- c('tests','confirmed','recovered','deaths','hosp','vent','icu')
+  cases <- c(
+    'numeric' = 'tests',
+    'numeric' = 'confirmed',
+    'numeric' = 'recovered',
+    'numeric' = 'deaths',
+    'numeric' = 'hosp',
+    'numeric' = 'vent',
+    'numeric' = 'icu'
+  )
   
-  measures <- c('school_closing',
-                'workplace_closing',
-                'cancel_events',
-                'gatherings_restrictions',
-                'transport_closing',
-                'stay_home_restrictions',
-                'internal_movement_restrictions',
-                'international_movement_restrictions',
-                'information_campaigns',
-                'testing_policy',
-                'contact_tracing',
-                'stringency_index')
+  measures <- c(
+    'integer' = 'school_closing',
+    'integer' = 'workplace_closing',
+    'integer' = 'cancel_events',
+    'integer' = 'gatherings_restrictions',
+    'integer' = 'transport_closing',
+    'integer' = 'stay_home_restrictions',
+    'integer' = 'internal_movement_restrictions',
+    'integer' = 'international_movement_restrictions',
+    'integer' = 'information_campaigns',
+    'integer' = 'testing_policy',
+    'integer' = 'contact_tracing',
+    'numeric' = 'stringency_index'
+  )
   
   fast <- c(cases, measures)
   
-  slow <- c('iso_alpha_3','iso_alpha_2','iso_numeric',
-            'currency',
-            'administrative_area_level',
-            'administrative_area_level_1',
-            'administrative_area_level_2',
-            'administrative_area_level_3',
-            'latitude',
-            'longitude',
-            'population')
+  slow <- c(
+    'character' = 'iso_alpha_3',
+    'character' = 'iso_alpha_2',
+    'integer'   = 'iso_numeric',
+    'character' = 'currency',
+    'character' = 'administrative_area_level',
+    'character' = 'administrative_area_level_1',
+    'character' = 'administrative_area_level_2',
+    'character' = 'administrative_area_level_3',
+    'numeric'   = 'latitude',
+    'numeric'   = 'longitude',
+    'numeric'   = 'population'
+  )
   
-  all  <- unique(c('id','date',cases,'population',measures,slow))
-  
+  if(is.null(type))
+    return(unname(unique(c('id','date',cases,'population',measures,slow))))
+    
   if(type=="slow")
-    return(slow)
-  
+    return(unname(slow))
+    
   if(type=="fast")
-    return(fast)
-  
-  return(all)
+    return(unname(fast))
+    
+  all <- c(fast, slow)
+  all <- all[which(names(all)==type)]
+  return(unname(all))
   
 }
 
@@ -451,9 +468,9 @@ merge <- function(...){
 #' @param row.names either a logical value indicating whether the row names of x are to be written along with x, or a character vector of row names to be written.
 #' @param na the string to use for missing values in the data.
 #' @param fileEncoding character string: if non-empty declares the encoding to be used on a file (not a connection) so the character data can be re-encoded as they are written. 
-#' @param ... arguments passed to \code{\link[utils]{write.csv}}
+#' @param ... arguments passed to \code{\link[utils:write.table]{write.csv}}
 #' 
-#' @return return value of \code{\link[utils]{write.csv}}
+#' @return return value of \code{\link[utils:write.table]{write.csv}}
 #' 
 #' @export
 write.csv <- function(x, file, row.names = FALSE, na = "", fileEncoding = "UTF-8", ...){
@@ -471,9 +488,9 @@ write.csv <- function(x, file, row.names = FALSE, na = "", fileEncoding = "UTF-8
 #' @param na.strings a character vector of strings which are to be interpreted as \code{NA} values. Blank fields are also considered to be missing values in logical, integer, numeric and complex fields. Note that the test happens after white space is stripped from the input, so \code{na.strings} values may need their own white space stripped in advance.
 #' @param stringsAsFactors logical: should character vectors be converted to factors?
 #' @param encoding encoding to be assumed for input strings. It is used to mark character strings as known to be in Latin-1 or UTF-8: it is not used to re-encode the input, but allows R to handle encoded strings in their native encoding. 
-#' @param ... arguments passed to \code{\link[utils]{read.csv}}
+#' @param ... arguments passed to \code{\link[utils:write.table]{read.csv}}
 #' 
-#' @return return value of \code{\link[utils]{read.csv}}
+#' @return return value of \code{\link[utils:write.table]{read.csv}}
 #' 
 #' @export
 read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8", ...){
@@ -494,7 +511,7 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
 #' @param path Path to the xls/xlsx file.
 #' @param cache logical. Memory caching?
 #' @param sheet Sheet to read. Either a string (the name of a sheet), or an integer (the position of the sheet). Ignored if the sheet is specified via range. If neither argument specifies the sheet, defaults to all sheets.
-#' @param ... arguments passed to \code{\link[readxl]{read_excel }}
+#' @param ... arguments passed to \code{\link[readxl]{read_excel}}
 #' 
 #' @return list of \code{data.frame}
 #' 
@@ -581,12 +598,11 @@ read.zip <- function(zip, files, cache, ...){
     utils::download.file(zip, temp, quiet = TRUE)  
     
     lapply(files, function(file){
-      
-      if(grepl("\\.csv$", file))
-        x <- read.csv(unz(temp, file), cache = FALSE, ...)
-      
+    
       if(grepl("\\.xlsx?$", file))
         x <- readxl::read_excel(unz(temp, file), ...)
+      else
+        x <- read.csv(unz(temp, file), cache = FALSE, ...)
       
       return(x)
       

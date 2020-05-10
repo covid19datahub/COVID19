@@ -253,13 +253,20 @@ covid19 <- function(country = NULL,
 
         dplyr::bind_rows()
 
-    # subset
-    col <- vars()
-    x[,col[!(col %in% colnames(x))]] <- NA
-    x <- x[,col]
-
   }
-
+  
+  # subset
+  cn <- colnames(x)
+  cn <- unique(c(vars(), cn[grepl("^key\\_", cn)]))
+  x[,cn[!(cn %in% colnames(x))]] <- NA
+  x <- x[,cn]
+  
+  # type conversion
+  x <- x %>% 
+    dplyr::mutate_at(vars('integer'), as.integer) %>%
+    dplyr::mutate_at(vars('numeric'), as.numeric) %>%
+    dplyr::mutate_at(vars('character'), as.character)
+  
   # group and order
   x <- x %>%
     dplyr::group_by(id) %>%

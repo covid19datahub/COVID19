@@ -17,10 +17,10 @@ write.csv(x, file, row.names = FALSE, na = "", fileEncoding = "UTF-8", ...)
 
 \item{fileEncoding}{character string: if non-empty declares the encoding to be used on a file (not a connection) so the character data can be re-encoded as they are written.}
 
-\item{...}{arguments passed to \code{\link[utils]{write.csv}}}
+\item{...}{arguments passed to \code{\link[utils:write.table]{write.csv}}}
 }
 \value{
-return value of \code{\link[utils]{write.csv}}
+return value of \code{\link[utils:write.table]{write.csv}}
 }
 \description{
 Write csv in UTF-8.

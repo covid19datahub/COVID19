@@ -13,7 +13,7 @@ read.excel(path, cache, sheet = NA, ...)
 
 \item{sheet}{Sheet to read. Either a string (the name of a sheet), or an integer (the position of the sheet). Ignored if the sheet is specified via range. If neither argument specifies the sheet, defaults to all sheets.}
 
-\item{...}{arguments passed to \code{\link[readxl]{read_excel }}}
+\item{...}{arguments passed to \code{\link[readxl]{read_excel}}}
 }
 \value{
 list of \code{data.frame}
