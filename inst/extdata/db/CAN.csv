@@ -1,13 +1,14 @@
-"id","state","city","lat","lng","pop","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate"
-"Alberta","Alberta",,53.9333,-116.5765,4413146,,,,,,
-"British Columbia","British Columbia",,49.2827,-123.1207,5110917,,,,,,
-"Manitoba","Manitoba",,53.7609,-98.8139,1377517,,,,,,
-"New Brunswick","New Brunswick",,46.5653,-66.4619,779993,,,,,,
-"Newfoundland and Labrador","Newfoundland and Labrador",,53.1355,-57.6604,521365,,,,,,
-"Northwest Territories","Northwest Territories",,64.8255,-124.8457,44904,,,,,,
-"Nova Scotia","Nova Scotia",,44.682,-63.7443,977457,,,,,,
-"Ontario","Ontario",,51.2538,-85.3232,14711827,,,,,,
-"Prince Edward Island","Prince Edward Island",,46.5107,-63.4168,158158,,,,,,
-"Quebec","Quebec",,52.9399,-73.5491,8537674,,,,,,
-"Saskatchewan","Saskatchewan",,52.9399,-106.4509,1181666,,,,,,
-"Yukon","Yukon",,64.2823,-135,41078,,,,,,
+"id","id_canada_ca","id_jhucsse_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
+"e61d6191","Alberta","Alberta",2,"Alberta",,53.9333,-116.5765,4413146
+"c229681f","British Columbia","British Columbia",2,"British Columbia",,49.2827,-123.1207,5110917
+"2a9fd65a","Manitoba","Manitoba",2,"Manitoba",,53.7609,-98.8139,1377517
+"d177e539","New Brunswick","New Brunswick",2,"New Brunswick",,46.5653,-66.4619,779993
+"d07806cb","Newfoundland and Labrador","Newfoundland and Labrador",2,"Newfoundland and Labrador",,53.1355,-57.6604,521365
+"eef40c88","Northwest Territories","Northwest Territories",2,"Northwest Territories",,64.8255,-124.8457,44904
+"b91ff4d1","Nova Scotia","Nova Scotia",2,"Nova Scotia",,44.682,-63.7443,977457
+"83fc0fa9","Ontario","Ontario",2,"Ontario",,51.2538,-85.3232,14711827
+"015d95fc","Prince Edward Island","Prince Edward Island",2,"Prince Edward Island",,46.5107,-63.4168,158158
+"a7ce33b9","Quebec","Quebec",2,"Quebec",,52.9399,-73.5491,8537674
+"e4c07903","Saskatchewan","Saskatchewan",2,"Saskatchewan",,52.9399,-106.4509,1181666
+"38791b01","Yukon","Yukon",2,"Yukon",,64.2823,-135,41078
+"7fc88543","Nunavut",,2,"Nunavut",70.2998,-83.1076,38780,

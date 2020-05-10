@@ -1,4 +1,4 @@
-openZH <- function(cache, id = NULL){
+openzh_git <- function(cache, id = NULL){
 
   # source
   repo <- "https://raw.githubusercontent.com/openZH/covid_19/master/"
@@ -15,7 +15,7 @@ openZH <- function(cache, id = NULL){
   x$date <- d
 
   # formatting
-  x <- reduce(x, c(
+  x <- map_data(x, c(
     'date',
     'abbreviation_canton_and_fl' = 'code',
     'ncumul_conf'                = 'confirmed',

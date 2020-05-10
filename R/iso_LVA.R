@@ -6,11 +6,11 @@ LVA <- function(level, cache){
     return(NULL)
   
   # download
-  x <- cdpc(cache = cache, level = level)
+  x <- gov_lv(cache = cache, level = level)
 
   # id  
   if(level==2)
-    x$id <- x$region_id
+    x$id <- id(x$region_id, iso = "LVA", ds = "gov_lv", level = level)
   
   # return
   return(x)

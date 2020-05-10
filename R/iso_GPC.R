@@ -5,7 +5,7 @@ GPC <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "global", cache = cache, level = level, id = "Grand Princess")
+  x <- jhucsse_git(file = "global", cache = cache, level = level, country = "Grand Princess")
 
   # return
   return(x)

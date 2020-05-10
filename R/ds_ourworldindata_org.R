@@ -1,4 +1,4 @@
-owid <- function(cache, id = NULL){
+ourworldindata_org <- function(cache, id = NULL){
   
   url <- "https://covid.ourworldindata.org/data/owid-covid-data.csv"
   x   <- read.csv(url, cache = cache)
@@ -9,7 +9,7 @@ owid <- function(cache, id = NULL){
     x <- x[x$iso_code %in% id,]
   
   # formatting
-  x <- reduce(x, c(
+  x <- map_data(x, c(
     'date',
     'iso_code'     = 'iso_alpha_3',
     'location'     = 'country',

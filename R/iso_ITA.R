@@ -5,13 +5,13 @@ ITA <- function(level, cache){
     return(NULL)
 
   # download
-  x <- pcmdpc(cache = cache, level = level)
+  x <- pcmdpc_git(cache = cache, level = level)
 
   # id
   if(level==2)
-    x$id <- id(x$state)
+    x$id <- id(x$state, iso = "ITA", ds = "pcmdpc_git", level = level)
   if(level==3)
-    x$id <- id(x$city)
+    x$id <- id(x$city, iso = "ITA", ds = "pcmdpc_git", level = level)
 
   # return
   return(x)

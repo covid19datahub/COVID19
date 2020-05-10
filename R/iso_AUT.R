@@ -6,7 +6,7 @@ AUT <- function(level, cache){
     return(NULL)
   
   # download
-  x <- bmsgpk(cache = cache)
+  x <- gv_at(cache = cache)
   
   # return
   return(x)

@@ -1,11 +1,11 @@
-sciensano <- function(cache, level){
+sciensano_be <- function(cache, level){
 
   # bindings
   date <- CASES <- TOTAL_IN <- TOTAL_IN_ICU <- TOTAL_IN_RESP <- DEATHS <- TESTS <- REGION <- NULL
   
   # download
   url <- "https://epistat.sciensano.be/Data/COVID19BE.xlsx"
-  x   <- read_excel(url, cache = cache)  
+  x   <- read.excel(url, cache = cache)  
   
   # date
   x <- lapply(x, function(x){

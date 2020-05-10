@@ -14,19 +14,19 @@ USA <- function(level, cache){
   if(level==2){
 
     # download
-    x <- covidtracking(cache = cache, level = level) 
+    x <- covidtracking_com(cache = cache, level = level) 
     
     # id
-    x$id <- id(x$state)
+    x$id <- id(x$state, iso = "USA", ds = "covidtracking_com", level = level)
     
   }
   if(level==3){
     
     # download
-    x <- jhuCSSE(file = "US", cache = cache, level = level, id = "USA")
+    x <- jhucsse_git(file = "US", cache = cache, level = level, country = "USA")
     
     # id
-    x$id <- id(x$state, x$city)
+    x$id <- id(x$id, iso = "USA", ds = "jhucsse_git", level = level)
     
   }
     

@@ -5,14 +5,10 @@ DPC <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "global", cache = cache, level = level, id = "Diamond Princess")
+  x <- jhucsse_git(file = "global", cache = cache, level = level, country = "Diamond Princess")
 
   # wikipedia data
-  x$date <- as.character(x$date)
-  x <- x %>% dplyr::bind_rows(fix('DPC'))
-  x <- x[!duplicated(x$date, fromLast = TRUE),]
-  x <- tidyr::fill(x, "country", .direction = "downup")
-  x$date <- as.Date(x$date)
+  x <- fix(x, iso = "DPC")
 
   # return
   return(x)

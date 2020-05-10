@@ -14,10 +14,10 @@ CHE <- function(level, cache){
   if(level==2){
     
     # download
-    x <- openZH(cache = cache, id = "CH")
+    x <- openzh_git(cache = cache, id = "CH")
     
     # id
-    x$id <- id(x$code)
+    x$id <- id(x$code, iso = "CHE", ds = "openzh_git", level = level)
     
   }
 

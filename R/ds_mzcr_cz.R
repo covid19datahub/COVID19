@@ -1,4 +1,4 @@
-mzcr <- function(level, cache){
+mzcr_cz <- function(level, cache){
   # Author: Martin Benes
   
   # mzcr - Ministery of Health of Czech Republic
@@ -18,8 +18,8 @@ mzcr <- function(level, cache){
     tests$date     <- as.Date(tests[,1])
     confirmed$date <- as.Date(confirmed[,1]) 
     # select columns
-    tests     <- reduce(tests, c("date", "testy_celkem" = "tests"))
-    confirmed <- reduce(confirmed, c("date", "pocet_celkem" = "confirmed")) 
+    tests     <- map_data(tests, c("date", "testy_celkem" = "tests"))
+    confirmed <- map_data(confirmed, c("date", "pocet_celkem" = "confirmed")) 
     
     # formatting
     x <- merge(tests, confirmed, by = "date", all = TRUE)
@@ -32,7 +32,7 @@ mzcr <- function(level, cache){
     
     # regional
     x$date  <- as.Date(x[,1])
-    x <- reduce(x, c(
+    x <- map_data(x, c(
       "date",
       "kraj" = "state"
     ))

@@ -1,16 +1,16 @@
-ministrstvoZaZdravje <- function(cache, level){
+gov_si <- function(cache, level){
   # author: Martin Benes
   
   # source: Ministery of Health, Slovenia
   url <- 'https://www.gov.si/assets/vlada/Koronavirus-podatki/en/EN_Covid-19-all-data.xlsx'
   
   # download
-  x <- read_excel(url, cache=cache)$`Covid-19 podatki`
+  x <- read.excel(url, cache=cache)$`Covid-19 podatki`
   
   # formatting
   if(level==1){
     
-    x <- reduce(x, c(
+    x <- map_data(x, c(
       'Date'                                         = 'date',
       'Tested (all)'                                 = 'tests',
       'Positive (all)'                               = 'confirmed',

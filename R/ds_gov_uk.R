@@ -1,4 +1,4 @@
-govuk <- function(cache,level){
+gov_uk <- function(cache,level){
 
   # source
   url  <- "https://coronavirus.data.gov.uk/downloads/csv/coronavirus-cases_latest.csv"
@@ -16,7 +16,7 @@ govuk <- function(cache,level){
   
   # format 
   x$date <- as.Date(x$Specimen.date)
-  x <- reduce(x, c(
+  x <- map_data(x, c(
     'date',
     'Area.name'                      = 'name',       
     'Area.code'                      = 'code',

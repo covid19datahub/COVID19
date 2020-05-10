@@ -6,7 +6,7 @@ SVN <- function(level, cache){
     return(NULL)
     
   # download
-  x <- ministrstvoZaZdravje(cache = cache, level = level)
+  x <- gov_si(cache = cache, level = level)
     
   # return
   return(x)

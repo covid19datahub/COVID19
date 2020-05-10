@@ -5,7 +5,7 @@ LIE <- function(level, cache){
     return(NULL)
 
   # download
-  x <- openZH(cache = cache, id = "FL")
+  x <- openzh_git(cache = cache, id = "FL")
 
   # return
   return(x)

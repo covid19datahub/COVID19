@@ -5,7 +5,7 @@ PRI <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhuCSSE(file = "US", cache = cache, level = level, id = "PRI")
+  x <- jhucsse_git(file = "US", cache = cache, level = level, country = "PRI")
 
   # return
   return(x)

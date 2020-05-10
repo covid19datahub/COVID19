@@ -1,11 +1,11 @@
-oxcgrt <- function(cache){
+oxcgrt_git <- function(cache){
   
   # download
   url <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
   x   <- read.csv(url, cache = cache)
   
   # formatting
-  x <- reduce(x, c(
+  x <- map_data(x, c(
     "Date"                                    = "date",
     "CountryCode"                             = "iso_alpha_3",
     

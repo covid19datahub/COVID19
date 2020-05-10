@@ -1,4 +1,4 @@
-pcmdpc <- function(cache, level){
+pcmdpc_git <- function(cache, level){
 
   # source
   repo <- "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/"
@@ -23,7 +23,7 @@ pcmdpc <- function(cache, level){
     x <- x[x$lat!=0 | x$long!=0,]
   
   # formatting
-  x <- reduce(x, c(
+  x <- map_data(x, c(
     'date',
     'denominazione_regione'   = 'state', 
     'sigla_provincia'         = 'city',

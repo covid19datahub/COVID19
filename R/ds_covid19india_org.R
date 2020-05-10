@@ -1,4 +1,4 @@
-openIND <- function(cache, level){
+covid19india_org <- function(cache, level){
   # Author: Rijin Baby
   
   if(level==1){
@@ -9,7 +9,7 @@ openIND <- function(cache, level){
     x   <- read.csv(url, cache = cache)
     
     # formatting
-    x <- reduce(x, c(
+    x <- map_data(x, c(
       "Date"            = "date",
       "Total.Deceased"  = "deaths",
       "Total.Confirmed" = "confirmed",
@@ -49,7 +49,7 @@ openIND <- function(cache, level){
       tidyr::pivot_longer(-(1:2), names_to = "state", values_to = "value") %>%
       tidyr::pivot_wider(names_from = "Status")
     
-    x <- reduce(x, c(
+    x <- map_data(x, c(
       'date',
       'state',
       'Confirmed' = 'confirmed',

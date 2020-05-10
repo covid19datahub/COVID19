@@ -1,4 +1,4 @@
-cdpc <- function(cache, level){
+gov_lv <- function(cache, level){
   # author: Martin Benes
   
   # source: Centre for Disease Prevention and Control (CDPC), Latvia
@@ -13,24 +13,23 @@ cdpc <- function(cache, level){
   # format
   if(level==1){
     
-    x <- reduce(x, c(
+    x <- map_data(x, c(
       'Datums'                                      = 'date',
       'TestuSkaits'                                 = 'tests',
       'ApstiprinataCOVID19InfekcijaSkaits'          = 'confirmed',
-      'IzarstetoPacientuSkaits'                     = 'hospitalized',
+      'IzarstetoPacientuSkaits'                     = 'hosp',
       'MirusoPersonuSkaits'                         = 'deaths'
     ))
 
     x$date         <- as.Date(x$date, format="%Y.%m.%d.")
     x$confirmed    <- cumsum(x$confirmed)
     x$tests        <- cumsum(x$tests)
-    x$hospitalized <- cumsum(x$hospitalized)
     x$deaths       <- cumsum(x$deaths)
     
   }
   if(level==2){
     
-    x <- reduce(x, c(
+    x <- map_data(x, c(
       'region_id',
       'Datums'                                      = 'date',
       'AdministrativiTeritorialasVienibasNosaukums' = 'region',
@@ -46,17 +45,10 @@ cdpc <- function(cache, level){
     
     # replace range
     idx <- grepl("^no 1", x = x$confirmed)
-    x$confirmed[idx] <- 3 
+    x$confirmed[idx] <- 1 
     x$confirmed <- as.integer(x$confirmed)
+    x$region_id <- as.integer(x$region_id)
     
-    # bindings
-    region_id <- confirmed <- NULL
-    # replace counts per region with cumulative sums
-    x <- x %>% 
-      dplyr::group_by(region_id) %>%
-      dplyr::arrange(date) %>%
-      dplyr::mutate(confirmed = cumsum(confirmed))
-
   }
   
   return(x)

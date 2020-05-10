@@ -14,10 +14,10 @@ RUS <- function(level, cache){
   if(level==2){
 
     # download
-    x <- openRU(cache = cache)
+    x <- covid19russia_git(cache = cache)
     
     # id
-    x$id <- x$state
+    x$id <- id(x$state, iso = "RUS", ds = "covid19russia_git", level = level)
     
   }
   

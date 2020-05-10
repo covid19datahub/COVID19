@@ -1,4 +1,4 @@
-infobase_canada <- function(cache,level){
+canada_ca <- function(cache,level){
   # Author: Paolo Montemurro 02/05/2020 - montep@usi.ch
   
   # === source === #
@@ -8,7 +8,7 @@ infobase_canada <- function(cache,level){
   x   <- read.csv(url, cache = cache, na.strings = c("","N/A"))
   
   # === formatting === #
-  x <- reduce(x, c(
+  x <- map_data(x, c(
     "date",
     "prname"     = "name",
     "pruid"      = "uid",

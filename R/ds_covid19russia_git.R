@@ -1,4 +1,4 @@
-openRU <- function(cache){
+covid19russia_git <- function(cache){
   
   # source
   repo <- "https://raw.githubusercontent.com/grwlf/COVID-19_plus_Russia/master/csse_covid_19_data/csse_covid_19_time_series/"

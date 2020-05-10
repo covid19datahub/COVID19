@@ -1,4 +1,4 @@
-"id","state","city","lat","lng","pop","pop_female","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate"
-"Brussels","The Brussels-Capital Region",,50.5,4.21,1208542,0.5149998,0.196663081357652,0.672222240529304,0.131114678113044,,7055,
-"Flanders","The Flemish Region",,50.5,4.21,6589069,0.505,0.162895031637899,0.635060009212576,0.202044959149526,,483,
-"Wallonia","The Walloon Region",,50.5,4.75,3633795,0.5149998,0.171366451942499,0.643111259948693,0.185522288108808,,216,
+"id","id_sciensano_be","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
+"1bb2de77","Brussels",2,"The Brussels-Capital Region",,50.5,4.21,1208542
+"b1a17459","Flanders",2,"The Flemish Region",,50.5,4.21,6589069
+"27e2b6a0","Wallonia",2,"The Walloon Region",,50.5,4.75,3633795

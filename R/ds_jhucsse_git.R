@@ -1,4 +1,4 @@
-jhuCSSE <- function(cache, file, level = 1, id = NULL){
+jhucsse_git <- function(cache, file, level = 1, country = NULL){
 
   # cache
   cachekey <- make.names(sprintf("jhuCSSE_%s_%s", file, level))
@@ -6,8 +6,8 @@ jhuCSSE <- function(cache, file, level = 1, id = NULL){
 
     x <- get(cachekey, envir = cachedata)
 
-    if(!is.null(id))
-      x <- x[x$country==id,]
+    if(!is.null(country))
+      x <- x[which(x$country==country),]
 
     return(x)
 
@@ -18,9 +18,9 @@ jhuCSSE <- function(cache, file, level = 1, id = NULL){
 
   if(file=="global")
     urls = c(
-      "recovered" = "time_series_covid19_recovered_global.csv",
       "confirmed" = "time_series_covid19_confirmed_global.csv",
-      "deaths"    = "time_series_covid19_deaths_global.csv"
+      "deaths"    = "time_series_covid19_deaths_global.csv",
+      "recovered" = "time_series_covid19_recovered_global.csv"
     )
 
   if(file=="US")
@@ -38,27 +38,41 @@ jhuCSSE <- function(cache, file, level = 1, id = NULL){
     if(class(xx)=="try-error")
       next
 
+    # NA
+    xx <- dplyr::na_if(xx,  0)
+    xx <- dplyr::na_if(xx, -1)
+    
     # formatting
-    colnames(xx) <- gsub(pattern = "_", replacement = ".", x = colnames(xx), fixed = TRUE)
-    colnames(xx) <- gsub(pattern = "^.\\_\\_", replacement = "", x = colnames(xx), fixed = FALSE)
-    colnames(xx) <- gsub(pattern = "^_", replacement = "", x = colnames(xx), fixed = FALSE)
-    colnames(xx) <- gsub(pattern = "_$", replacement = "", x = colnames(xx), fixed = FALSE)
-
-    xx$country <- xx$Country.Region
-    xx$state   <- xx$Province.State
+    colnames(xx) <- gsub(pattern = "\\_$", replacement = "", x = colnames(xx))
+    colnames(xx) <- gsub(pattern = "\\_", replacement = ".", x = colnames(xx))
+    colnames(xx) <- gsub(pattern = "^.\\_\\_", replacement = "", x = colnames(xx))
+    colnames(xx) <- gsub(pattern = "^_", replacement = "", x = colnames(xx))
 
     if(file=="US") {
       
-      xx$country <- xx$iso3
-      xx$city    <- xx$Admin2
+      colnames(xx) <- map_values(colnames(xx), c(
+        'UID'            = 'id',
+        'FIPS'           = 'fips',
+        'iso3'           = 'country',
+        'Province.State' = 'state',
+        'Admin2'         = 'city',
+        'Lat'            = 'lat',
+        'Long'           = 'lng',
+        'Population'     = 'pop'))
       
-      xx <- xx[(!is.na(xx$city) & !is.na(xx$FIPS) & !is.na(xx$UID)) | xx$country!="USA",]
+      xx <- xx[(!is.na(xx$city) & !is.na(xx$fips) & !is.na(xx$id)) | xx$country!="USA",]
       if(level==3)
         xx <- xx[-which(xx$city=="Unassigned"),]
       
     }
     if(file=="global"){
       
+      colnames(xx) <- map_values(colnames(xx), c(
+        'Country.Region' = 'country',
+        'Province.State' = 'state',
+        'Lat'            = 'lat',
+        'Long'           = 'lng'))
+
       idx <- which(xx$state=="Grand Princess")
       xx$country[idx] <- "Grand Princess"
       xx$state[idx]   <- NA
@@ -67,15 +81,19 @@ jhuCSSE <- function(cache, file, level = 1, id = NULL){
       if(length(idx))
         xx  <- xx[-idx,]
       
-      if(level==1)
+      if(level==1){
         xx <- xx[is.na(xx$state),]
-      if(level==2)
+        xx$id <- xx$country
+      }
+      if(level==2){
         xx <- xx[!is.na(xx$state),]
-      
+        xx$id <- paste(xx$country, xx$state, sep = ", ")
+      }
+        
     }
 
     # pivot
-    by <- c('country','state','city')
+    by <- c('id','country','state','city','lat','lng','fips','pop')
     cn <- colnames(xx)
     by <- by[by %in% cn]
     cn <- (cn %in% by) | !is.na(as.Date(cn, format = "X%m.%d.%y"))
@@ -88,7 +106,7 @@ jhuCSSE <- function(cache, file, level = 1, id = NULL){
     if(i==1)
       x <- xx
     else
-      x <- merge(x, xx, all = TRUE, by = c(by, "date"))
+      x <- merge(x, xx, all = TRUE, by = c('id','date'))
 
   }
   
@@ -97,8 +115,8 @@ jhuCSSE <- function(cache, file, level = 1, id = NULL){
     assign(cachekey, x, envir = cachedata)
 
   # filter
-  if(!is.null(id))
-    x <- x[x$country==id,]
+  if(!is.null(country))
+    x <- x[which(x$country==country),]
 
   # return
   return(x)

@@ -6,11 +6,11 @@ CZE <- function(level, cache){
     return(NULL)
   
   # download
-  x <- mzcr(level = level, cache = cache)
+  x <- mzcr_cz(level = level, cache = cache)
   
   # id
   if(level == 2)
-    x$id <- x$state
+    x$id <- id(x$state, iso = "CZE", ds = "mzcr_cz", level = level)
   
   # return
   return(x)

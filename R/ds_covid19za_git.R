@@ -1,4 +1,4 @@
-covid19za <- function(cache, level){
+covid19za_git <- function(cache, level){
   # Author: Martin Benes
   
   #  Source: Data Science for Social Impact research group, University of Pretoria (Dr. Vukosi Marivate)
@@ -15,7 +15,7 @@ covid19za <- function(cache, level){
     
     # formatting
     x <- merge(x1, x2, by = "date", all = TRUE)
-    x <- reduce(x, c(
+    x <- map_data(x, c(
       'date'             = 'date',
       'cumulative_tests' = 'tests',
       'recovered'        = 'recovered',
@@ -33,8 +33,8 @@ covid19za <- function(cache, level){
     url <- "https://raw.githubusercontent.com/dsfsi/covid19za/master/data/covid19za_provincial_cumulative_timeline_confirmed.csv"
     x   <- read.csv(url, cache = cache)
     
-    # reduce
-    x <- reduce(x, c("date","EC","FS","GP","KZN","LP","MP","NC","NW","WC"))
+    # map_data
+    x <- map_data(x, c("date","EC","FS","GP","KZN","LP","MP","NC","NW","WC"))
     
     # pivot
     by <- "date"

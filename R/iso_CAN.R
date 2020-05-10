@@ -6,11 +6,11 @@ CAN <- function(level, cache){
     return(NULL)
   
   # download
-  x <- infobase_canada(cache = cache, level = level)
+  x <- canada_ca(cache = cache, level = level)
   
   # id
   if(level==2)
-    x$id <- id(x$name)
+    x$id <- id(x$name, iso = "CAN", ds = "canada_ca", level = level)
   
   # return
   return(x)

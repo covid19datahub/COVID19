@@ -6,11 +6,11 @@ IND <- function(level, cache){
     return(NULL)
   
   # download
-  x <- openIND(cache = cache, level = level) 
+  x <- covid19india_org(cache = cache, level = level) 
 
   # id  
   if(level==2)
-    x$id <- id(x$state)
+    x$id <- id(x$state, iso = "IND", ds = "covid19india_org", level = level)
 
   # return
   return(x)

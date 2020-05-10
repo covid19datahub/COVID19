@@ -1,4 +1,4 @@
-oppnadata <- function(cache, level){
+oppnadata_se <- function(cache, level){
   # Author: Martin Benes
 
   #  Source: Public Health Agency, Sweden
@@ -12,7 +12,7 @@ oppnadata <- function(cache, level){
   if(level==1){
     
     # formatting
-    x <- reduce(x, c(
+    x <- map_data(x, c(
       'Kumulativa_fall'            = 'confirmed',
       'Kumulativa_avlidna'         = 'deaths',
       'Kumulativa_intensivvardade' = 'icu',
@@ -22,9 +22,9 @@ oppnadata <- function(cache, level){
   }
   if(level==2){
     
-    # reduce
+    # map_data
     x <- x[,c(28,3:23)] 
-    colnames(x) <- mapvalues(colnames(x), c(
+    colnames(x) <- map_values(colnames(x), c(
       'Statistikdatum' = 'date'
     ))
     
