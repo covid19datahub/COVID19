@@ -15,10 +15,13 @@ test_that("today", {
         t <- is_equal(x, y)
         
         if(class(t)=='character'){
-          warning(paste(iso[[1]], paste(t, collapse = "\n   "), sep = "\n   "))
+          
+          print(paste(iso[[1]], paste(t, collapse = "\n   "), sep = "\n   "))
+          
           return(FALSE)
+          
         }
-        
+          
         return(TRUE)
         
       })
@@ -27,6 +30,6 @@ test_that("today", {
   
   }
   
-  expect_equal(all(t), TRUE)
+  expect_equal(t, rep(TRUE, length(t)))
 
 })

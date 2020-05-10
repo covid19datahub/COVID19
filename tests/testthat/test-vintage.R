@@ -1,6 +1,6 @@
 test_that("vintage", {
   
-  t   <- NULL
+  t <- NULL
   end <- Sys.Date()-3
   for(level in 1:3) for(raw in c(TRUE, FALSE)){
     
@@ -16,8 +16,11 @@ test_that("vintage", {
         t <- is_equal(x, y)
         
         if(class(t)=='character'){
-          warning(paste(iso[[1]], paste(t, collapse = "\n   "), sep = "\n   "))
+          
+          print(paste(iso[[1]], paste(t, collapse = "\n   "), sep = "\n   "))
+          
           return(FALSE)
+          
         }
         
         return(TRUE)
@@ -28,6 +31,6 @@ test_that("vintage", {
     
   }
   
-  expect_equal(all(t), TRUE)
+  expect_equal(t, rep(TRUE, length(t)))
   
 })

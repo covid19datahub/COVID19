@@ -92,15 +92,20 @@ covid19 <- function(country = NULL,
 
   # vintage
   if(vintage){
-
+    
+    url  <- "https://storage.covid19datahub.io"
+    name <- sprintf("%sdata-%s", ifelse(raw, 'raw', ''), level)
+    
+    # download
     if(end == Sys.Date()){
       
-      url  <- "https://storage.covid19datahub.io"
-      name <- sprintf("%sdata-%s", ifelse(raw, 'raw', ''), level)
       zip  <- sprintf("%s/%s.zip", url, name) 
       file <- sprintf("%s.csv", name) 
       
-      x <- try(suppressWarnings(read.zip(zip, file, cache = cache, colClasses = c("date" = "Date"))[[1]]), silent = TRUE)
+      x <- try(read.zip(zip, file, cache = cache)[[1]], silent = TRUE)
+      
+      if("try-error" %in% class(x) | is.null(x))
+        stop(sprintf("vintage data not available today", end))
       
     }
     else {
@@ -108,19 +113,25 @@ covid19 <- function(country = NULL,
       if(end < "2020-04-14")
         stop("vintage data not available before 2020-04-14")
     
-      file <- sprintf("https://storage.covid19datahub.io/%sdata-%s-%s.csv", ifelse(raw, 'raw', ''), level, format(as.Date(end),"%Y%m%d"))
+      zip          <- sprintf("%s/%s.zip", url, end)
+      files        <- c(paste0("data-",1:3,".csv"), paste0("rawdata-",1:3,".csv"), "src.csv")
+      names(files) <- gsub("\\.csv$", "", files)
       
-      x <- try(suppressWarnings(read.csv(file, cache = cache, colClasses = c("date" = "Date"))), silent = TRUE)
+      x <- try(read.zip(zip, files, cache = cache), silent = TRUE)
+    
+      if("try-error" %in% class(x) | is.null(x))
+        stop(sprintf("vintage data not available on %s", end))
+      
+      src <- x[["src"]]
+      x   <- x[[name]]
       
     }
     
-    if("try-error" %in% class(x) | is.null(x))
-      stop(sprintf("vintage data not available on %s", end))
-
+    # filter
     if(length(ISO)>0)
-      x <- x %>%
-        dplyr::filter(sapply(strsplit(x$id,", "), function(x) x[[1]]) %in% ISO)
+      x <- dplyr::filter(x, iso_alpha_3 %in% ISO)
 
+    # check
     if(nrow(x)==0)
       return(NULL)
 
@@ -263,6 +274,7 @@ covid19 <- function(country = NULL,
   
   # type conversion
   x <- x %>% 
+    dplyr::mutate_at('date', as.Date) %>%
     dplyr::mutate_at(vars('integer'), as.integer) %>%
     dplyr::mutate_at(vars('numeric'), as.numeric) %>%
     dplyr::mutate_at(vars('character'), as.character)
