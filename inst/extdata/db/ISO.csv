@@ -2,52 +2,52 @@
 "GPC","Grand Princess",1,"Grand Princess","GPC",,,,,,
 "MSZ","MS Zaandam",1,"MS Zaandam","MSZ",,,,,,
 "DPC","Diamond Princess",1,"Diamond Princess","DPC",,,,,,3711
-"AIA","Anguilla",1,"Anguilla","AIA","AI",660,,18.220556,-63.068611,18090
+"AIA","Anguilla",1,"Anguilla","AIA","AI",660,,18.2500,-63.166,18090
 "ALA","Aland Islands",1,"Aland Islands","ALA","AX",248,,60.116667,19.9,29884
 "ANT","Netherlands Antilles",1,"Netherlands Antilles","ANT","AN",530,,12.226079,-69.0600891,304759
-"ATA","Antarctica",1,"Antarctica","ATA","AQ",10,,90,0,
+"ATA","Antarctica",1,"Antarctica","ATA","AQ",10,,-90,0,
 "ATF","French Southern Territories",1,"French Southern Territories","ATF","TF",260,,,,
-"BLM","Saint Barthélemy",1,"Saint Barthélemy","BLM","BL",652,,17.9,-62.85,7122
-"BVT","Bouvet Island",1,"Bouvet Island","BVT","BV",74,,-54.26,3.24,
-"CCK","Cocos (Keeling) Islands",1,"Cocos (Keeling) Islands","CCK","CC",166,,-12.3,96.5,596
-"COK","Cook Islands",1,"Cook Islands","COK","CK",184,,-21.14,-159.46,8574
-"CXR","Christmas Island",1,"Christmas Island","CXR","CX",162,,,,
-"FLK","Falkland Islands (Malvinas)",1,"Falkland Islands (Malvinas)","FLK","FK",238,,,,
-"GGY","Guernsey",1,"Guernsey","GGY","GG",831,,,,
-"GLP","Guadeloupe",1,"Guadeloupe","GLP","GP",312,,,,
-"GUF","French Guiana",1,"French Guiana","GUF","GF",254,,,,
-"HMD","Heard Island and McDonald Islands",1,"Heard Island and McDonald Islands","HMD","HM",334,,,,
-"IOT","British Indian Ocean Territory",1,"British Indian Ocean Territory","IOT","IO",86,,,,
-"JEY","Jersey",1,"Jersey","JEY","JE",832,,,,
-"MSR","Montserrat",1,"Montserrat","MSR","MS",500,,,,
-"MTQ","Martinique",1,"Martinique","MTQ","MQ",474,,,,
-"MYT","Mayotte",1,"Mayotte","MYT","YT",175,,,,
-"NFK","Norfolk Island",1,"Norfolk Island","NFK","NF",574,,,,
-"NIU","Niue",1,"Niue","NIU","NU",570,,,,
-"PCN","Pitcairn",1,"Pitcairn","PCN","PN",612,,,,
-"REU","Réunion",1,"Réunion","REU","RE",638,,,,
-"SGS","South Georgia and the South Sandwich Islands",1,"South Georgia and the South Sandwich Islands","SGS","GS",239,,,,
+"BLM","Saint Barthélemy",1,"Saint Barthélemy","BLM","BL",652,,18.50000,-63.416666,7122
+"BVT","Bouvet Island",1,"Bouvet Island","BVT","BV",74,,-54.4333333,3.4000,
+"CCK","Cocos (Keeling) Islands",1,"Cocos (Keeling) Islands","CCK","CC",166,,-12.5000000,96.833333,596
+"COK","Cook Islands",1,"Cook Islands","COK","CK",184,,-21.2333333,-159.7666667,8574
+"CXR","Christmas Island",1,"Christmas Island","CXR","CX",162,,-10.5000000,105.6666667,2205
+"FLK","Falkland Islands (Malvinas)",1,"Falkland Islands (Malvinas)","FLK","FK",238,,-51.7500000,-59.0000,3198
+"GGY","Guernsey",1,"Guernsey","GGY","GG",831,,49.4666,-2.5833,67052
+"GLP","Guadeloupe",1,"Guadeloupe","GLP","GP",312,,16.9959717,-62.0676422,395700
+"GUF","French Guiana",1,"French Guiana","GUF","GF",254,,4,-53,290691
+"HMD","Heard Island and McDonald Islands",1,"Heard Island and McDonald Islands","HMD","HM",334,,-53.1, 73.516667,
+"IOT","British Indian Ocean Territory",1,"British Indian Ocean Territory","IOT","IO",86,,-6.000,71.50,
+"JEY","Jersey",1,"Jersey","JEY","JE",832,,49.25,-2.166,101073
+"MSR","Montserrat",1,"Montserrat","MSR","MS",500,,16.75,-62.2,5373
+"MTQ","Martinique",1,"Martinique","MTQ","MQ",474,,14.666667,-61,376480
+"MYT","Mayotte",1,"Mayotte","MYT","YT",175,,-12.77889,45.23151,256518
+"NFK","Norfolk Island",1,"Norfolk Island","NFK","NF",574,,-29.0333,167.950,1748
+"NIU","Niue",1,"Niue","NIU","NU",570,,-19.033,-169.866,2000
+"PCN","Pitcairn",1,"Pitcairn","PCN","PN",612,,-25.0666667,-130.10,50
+"REU","Réunion",1,"Réunion","REU","RE",638,,-21.114444,55.5325,859959
+"SGS","South Georgia and the South Sandwich Islands",1,"South Georgia and the South Sandwich Islands","SGS","GS",239,,-54.5000,-37.00,
 "SHN","Saint Helena, Ascension and Tristan da Cunha",1,"Saint Helena, Ascension and Tristan da Cunha","SHN","SH",654,,,,
-"SJM","Svalbard and Jan Mayen",1,"Svalbard and Jan Mayen","SJM","SJ",744,,,,
-"SPM","Saint Pierre and Miquelon",1,"Saint Pierre and Miquelon","SPM","PM",666,,,,
-"TKL","Tokelau",1,"Tokelau","TKL","TK",772,,,,
+"SJM","Svalbard and Jan Mayen",1,"Svalbard and Jan Mayen","SJM","SJ",744,,78.0000000,20.000,2926
+"SPM","Saint Pierre and Miquelon",1,"Saint Pierre and Miquelon","SPM","PM",666,,46.8333333,-056.333,5347
+"TKL","Tokelau",1,"Tokelau","TKL","TK",772,,-9.0,-172.0,1647
 "UMI","United States Minor Outlying Islands",1,"United States Minor Outlying Islands","UMI","UM",581,,,,
-"VAT","Holy See",1,"Holy See","VAT","VA",336,,,,
-"WLF","Wallis and Futuna",1,"Wallis and Futuna","WLF","WF",876,,,,
-"BMU","Bermuda",1,"Bermuda","BMU","BM",60,,,,63973
-"CYM","Cayman Islands",1,"Cayman Islands","CYM","KY",136,,,,64174
-"FRO","Faroe Islands",1,"Faroe Islands","FRO","FO",234,,,,48497
-"GIB","Gibraltar",1,"Gibraltar","GIB","GI",292,,,,33718
+"VAT","Holy See",1,"Holy See","VAT","VA",336,,41.90,12.45,1000
+"WLF","Wallis and Futuna",1,"Wallis and Futuna","WLF","WF",876,,-13.3,-176.2,15854
+"BMU","Bermuda",1,"Bermuda","BMU","BM",60,,32.333,-64.75,63973
+"CYM","Cayman Islands",1,"Cayman Islands","CYM","KY",136,,19.5,-80.50,64174
+"FRO","Faroe Islands",1,"Faroe Islands","FRO","FO",234,,62,-7.00,48497
+"GIB","Gibraltar",1,"Gibraltar","GIB","GI",292,,36.1333,-5.35,33718
 "GRL","Greenland",1,"Greenland","GRL","GL",304,,,,56025
-"IMN","Isle of Man",1,"Isle of Man","IMN","IM",833,,,,84077
-"MAF","Saint Martin (French part)",1,"Saint Martin (French part)","MAF","MF",663,,,,37264
-"RKS","Kosovo",1,"Kosovo","RKS","XK",,,42.602636,20.902977,
-"TWN","Taiwan*",1,"Taiwan","TWN","TW",158,,,,
+"IMN","Isle of Man",1,"Isle of Man","IMN","IM",833,,54.25,-4.5,84077
+"MAF","Saint Martin (French part)",1,"Saint Martin (French part)","MAF","MF",663,,18.0833,-63.95,37264
+"RKS","Kosovo",1,"Kosovo","RKS","XK",,,42.602636,20.902977,1932774
+"TWN","Taiwan*",1,"Taiwan","TWN","TW",158,,23.5,121.00,23603049
 "VGB","Virgin Islands, British",1,"Virgin Islands, British","VGB","VG",92,,,,29802
-"ABW","Aruba",1,"Aruba","ABW","AW",533,,,,105845
-"ASM","American Samoa",1,"American Samoa","ASM","AS",16,,,,55465
-"ESH","Western Sahara",1,"Western Sahara","ESH","EH",732,,24.2155,-12.8858,
-"MNP","Northern Mariana Islands",1,"Northern Mariana Islands","MNP","MP",580,,,,56882
+"ABW","Aruba",1,"Aruba","ABW","AW",533,,12.50,-69.96,105845
+"ASM","American Samoa",1,"American Samoa","ASM","AS",16,,-14.333,-170.00,55465
+"ESH","Western Sahara",1,"Western Sahara","ESH","EH",732,,24.2155,-12.8858,652271
+"MNP","Northern Mariana Islands",1,"Northern Mariana Islands","MNP","MP",580,,15.20,145.750,56882
 "NCL","New Caledonia",1,"New Caledonia","NCL","NC",540,,,,284060
 "PYF","French Polynesia",1,"French Polynesia","PYF","PF",258,,,,277679
 "TCA","Turks and Caicos Islands",1,"Turks and Caicos Islands","TCA","TC",796,,,,37665
