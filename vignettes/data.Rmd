@@ -87,9 +87,4 @@ tab   <- paste0(tab, collapse = "\n")
 | ----------------------------------------------- | --------------------------- | ----------------------- | --- |
 `r tab`
 
-```{r, include=FALSE}
-fileName <- 'terms.md'
-terms <- readChar(fileName, file.info(fileName)$size)
-```
-
-`r terms`
+`r readr::read_file('terms.md')`

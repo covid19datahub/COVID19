@@ -8,9 +8,10 @@ home:
   description: Unified datasets for a better understanding of COVID-19.
 navbar:
   structure:
-    left:  [home, data, r, python, articles, reference]
+    left:  [home, data, r, python, reference]
     right: [github]
   components:
+    articles: ~
     reference: 
       text: "Developers"
       href: reference/index.html

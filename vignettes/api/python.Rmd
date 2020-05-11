@@ -20,9 +20,4 @@ knitr::opts_chunk$set(
 # todo...
 ```
 
-```{r, include=FALSE}
-fileName <- '../terms.md'
-terms <- readChar(fileName, file.info(fileName)$size)
-```
-
-`r terms`
+`r readr::read_file('../terms.md')`

@@ -13,7 +13,7 @@ BugReports: https://github.com/covid19datahub/COVID19dev/issues
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5.0), utils, dplyr, tidyr (>= 1.0.0)
-Imports: remotes, digest, readxl
+Imports: remotes, digest, readxl, readr
 RoxygenNote: 7.1.0
 Suggests: testthat (>= 2.1.0), knitr, rmarkdown
 VignetteBuilder: knitr
