@@ -1,11 +1,13 @@
 ---
-title: "Saint Kitts and Nevis"
+title: 'Saint Kitts and Nevis'
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Saint Kitts and Nevis}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+<img src="https://www.countryflags.io/KN/flat/64.png" align="right">
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(

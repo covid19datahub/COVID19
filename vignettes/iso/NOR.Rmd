@@ -1,11 +1,13 @@
 ---
-title: "Norway"
+title: 'Norway'
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Norway}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+<img src="https://www.countryflags.io/NO/flat/64.png" align="right">
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(

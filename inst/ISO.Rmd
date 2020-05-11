@@ -1,11 +1,13 @@
 ---
-title: "{country}"
+title: '{country}'
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{{country}}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+{flag}
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(

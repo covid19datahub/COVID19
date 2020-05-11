@@ -1,11 +1,13 @@
 ---
-title: "Northern Mariana Islands"
+title: 'Northern Mariana Islands'
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Northern Mariana Islands}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+<img src="https://www.countryflags.io/MP/flat/64.png" align="right">
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(

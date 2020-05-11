@@ -1,11 +1,13 @@
 ---
-title: "Central African Republic"
+title: 'Central African Republic'
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Central African Republic}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+<img src="https://www.countryflags.io/CF/flat/64.png" align="right">
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(

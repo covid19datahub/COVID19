@@ -1,11 +1,13 @@
 ---
-title: "Holy See"
+title: 'Holy See'
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Holy See}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+<img src="https://www.countryflags.io/VA/flat/64.png" align="right">
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
