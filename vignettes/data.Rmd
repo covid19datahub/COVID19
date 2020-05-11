@@ -7,13 +7,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
 The raw data are cleaned by filling missing dates with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`.
 
 The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities). See the [full documentation](/articles/doc/data.html)

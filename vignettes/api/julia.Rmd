@@ -7,13 +7,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
 [Julia](https://julialang.org/) is a dynamic high-level programming language for scientific computing focused on high performance.
 
 ## Import Data from the Hub
