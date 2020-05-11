@@ -1,0 +1,37 @@
+---
+title: "Julia"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Julia}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+[Julia](https://julialang.org/) is a dynamic high-level programming language for scientific computing focused on high performance.
+
+## Import Data from the Hub
+
+For parsing csv Julia [CSV](https://juliadata.github.io/CSV.jl/stable/) is used. Install it by typing into Julia console
+
+```julia
+using Pkg
+Pkg.add("CSV")
+```
+
+Once installed, fetch the data with
+
+```julia
+using CSV
+# download
+url = "https://storage.covid19datahub.io/data-1.csv"
+data = CSV.read(download(url))
+```
+
+`r readr::read_file('../terms.md')`
