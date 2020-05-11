@@ -1,13 +1,13 @@
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '43 * * * *'
+    - cron:  '58 * * * *'
 
 name: pkgdown
 
 jobs:
   pkgdown:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
