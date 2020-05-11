@@ -1,0 +1,36 @@
+ds_opencovid_fr <- function(level=1, cache=cache){
+  
+  # Montemurro Paolo 11 05 2020
+  
+  # Libraries
+  library(dplyr) #You can import different libraries!
+  
+  # Download data
+  url <- "https://raw.githubusercontent.com/opencovid19-fr/data/master/dist/chiffres-cles.csv"
+  x   <- read.csv(url, cache=cache) #To test it, remove cache from here.
+  
+  # Formatting columns
+  x$date       <- as.Date(x$date)
+  x$tests      <- x$depistes
+  x$confirmed  <- x$cas_confirmes
+  x$deaths     <- x$deces
+  x$recovered  <- x$gueris
+  x$hosp       <- x$hospitalises 
+  x$icu        <- x$reanimation  
+  
+  x <- x[c("date","tests","confirmed","deaths","recovered","hosp","icu","granularite","maille_code","maille_nom")] #Not needed, but cleaner
+  
+  # Keeping only relevant level
+  if(level==1){x<- x[x$granularite=="pays",]}
+  if(level==2){x<- x[(x$granularite=="region" | x$granularite=="collectivite-outremer") ,]}
+  if(level==3){x<- x[x$granularite=="departement",]}
+  
+  # Cleaning
+  x <- x %>% distinct(date,maille_code, .keep_all = TRUE) #Keep the first observation, more reliable
+  
+  # Done!
+  return(x)
+  
+  # Don't forget to check your data!!!
+  
+}
