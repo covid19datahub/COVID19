@@ -1,5 +1,5 @@
 ---
-title: 'Northern Mariana Islands'
+title: "Northern Mariana Islands"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Northern Mariana Islands}

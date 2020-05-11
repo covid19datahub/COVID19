@@ -1,5 +1,5 @@
 ---
-title: 'Tajikistan'
+title: "Tajikistan"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Tajikistan}

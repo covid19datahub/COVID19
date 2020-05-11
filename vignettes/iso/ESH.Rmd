@@ -1,5 +1,5 @@
 ---
-title: 'Western Sahara'
+title: "Western Sahara"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Western Sahara}
