@@ -16,8 +16,36 @@ knitr::opts_chunk$set(
 
 ## Import Data from the Hub
 
-```py
-# todo...
+Python csv parser `csv.reader()` does not seem to parse the csv well,
+since it cannot work with the quotation marks around strings.
+
+However `pandas.read_csv()` is doing much better job. To make a successful
+call, you also have to specify `User-Agent` header, see [here](https://datascience.stackexchange.com/questions/49751/read-csv-file-directly-from-url-how-to-fix-a-403-forbidden-error).
+
+Install `pandas` and `requests` by typing into terminal
+
+```bash
+pip install pandas requests
+```
+
+Once installed, fetching the data is as simple as
+
+```python
+# standard library
+from io import StringIO
+# nonstandard - download separately
+import pandas as pd # Pandas
+import requests # HTTP Request library
+
+# download
+url = "https://storage.covid19datahub.io/data-1.csv"
+response = requests.get(url, headers = {"User-Agent": "Mozilla/5.0"})
+
+# make response iterable string
+data = StringIO(response.text)
+
+# load into pandas
+df = pd.read_csv(data)
 ```
 
 `r readr::read_file('../terms.md')`
