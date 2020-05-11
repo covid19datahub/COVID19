@@ -49,16 +49,13 @@ openIND <- function(cache, level){
     
     # formatting
     x <- x %>% 
-      tidyr::pivot_longer(-(1:2), names_to = "state", values_to = "value") %>%
-      tidyr::pivot_wider(names_from = "Status")
-    
-    x <- reduce(x, c(
-      'date',
-      'state',
-      'Confirmed' = 'confirmed',
-      'Deceased'  = 'deaths',
-      'Recovered' = 'recovered'
-    ))
+      tidyr::pivot_longer(-c(date,Status), names_to = "state", values_to = "value") %>%
+      tidyr::pivot_wider(names_from = "Status") %>%
+      dplyr::mutate(
+        confirmed = Confirmed,
+        deaths    = Deceased,
+        recovered = Recovered
+      )
     
   }
   
