@@ -114,7 +114,26 @@
 <div id="import-data-from-the-hub" class="section level2">
 <h2 class="hasAnchor">
 <a href="#import-data-from-the-hub" class="anchor"></a>Import Data from the Hub</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># todo...</span></span></code></pre></div>
+<p>Python csv parser <code>csv.reader()</code> does not seem to parse the csv well, since it cannot work with the quotation marks around strings.</p>
+<p>However <code>pandas.read_csv()</code> is doing much better job. To make a successful call, you also have to specify <code>User-Agent</code> header, see <a href="https://datascience.stackexchange.com/questions/49751/read-csv-file-directly-from-url-how-to-fix-a-403-forbidden-error">here</a>.</p>
+<p>Install <code>pandas</code> and <code>requests</code> by typing into terminal:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">pip</span> install pandas requests</span></code></pre></div>
+<p>Once installed, fetch the data:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># standard library</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="im">from</span> io <span class="im">import</span> StringIO</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="co"># nonstandard - download separately</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="im">import</span> pandas <span class="im">as</span> pd <span class="co"># Pandas</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="im">import</span> requests <span class="co"># HTTP Request library</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="co"># download</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>url <span class="op">=</span> <span class="st">"https://storage.covid19datahub.io/data-1.csv"</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a>response <span class="op">=</span> requests.get(url, headers <span class="op">=</span> {<span class="st">"User-Agent"</span>: <span class="st">"Mozilla/5.0"</span>})</span>
+<span id="cb2-10"><a href="#cb2-10"></a></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="co"># make response iterable string</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>data <span class="op">=</span> StringIO(response.text)</span>
+<span id="cb2-13"><a href="#cb2-13"></a></span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="co"># load into pandas</span></span>
+<span id="cb2-15"><a href="#cb2-15"></a>df <span class="op">=</span> pd.read_csv(data)</span></code></pre></div>
 </div>
 <div id="terms-of-use" class="section level2">
 <h2 class="hasAnchor">
