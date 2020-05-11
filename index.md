@@ -8,383 +8,383 @@ The goal of the project is to provide the research community with a __unified da
 
 **You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-dld2grt2-vmso7HkI8yFabW5R_mAZJw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19dev/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
-<a href="/iso/AFG.html">
+<a href="/articles/iso/AFG.html">
   <img src="https://www.countryflags.io/AF/flat/64.png" style="display:inline-block">
-</a><a href="/iso/AGO.html">
+</a><a href="/articles/iso/AGO.html">
   <img src="https://www.countryflags.io/AO/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ALB.html">
+</a><a href="/articles/iso/ALB.html">
   <img src="https://www.countryflags.io/AL/flat/64.png" style="display:inline-block">
-</a><a href="/iso/AND.html">
+</a><a href="/articles/iso/AND.html">
   <img src="https://www.countryflags.io/AD/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ARE.html">
+</a><a href="/articles/iso/ARE.html">
   <img src="https://www.countryflags.io/AE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ARG.html">
+</a><a href="/articles/iso/ARG.html">
   <img src="https://www.countryflags.io/AR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ARM.html">
+</a><a href="/articles/iso/ARM.html">
   <img src="https://www.countryflags.io/AM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ASM.html">
+</a><a href="/articles/iso/ASM.html">
   <img src="https://www.countryflags.io/AS/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ATG.html">
+</a><a href="/articles/iso/ATG.html">
   <img src="https://www.countryflags.io/AG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/AUT.html">
+</a><a href="/articles/iso/AUT.html">
   <img src="https://www.countryflags.io/AT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/AZE.html">
+</a><a href="/articles/iso/AZE.html">
   <img src="https://www.countryflags.io/AZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BDI.html">
+</a><a href="/articles/iso/BDI.html">
   <img src="https://www.countryflags.io/BI/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BEL.html">
+</a><a href="/articles/iso/BEL.html">
   <img src="https://www.countryflags.io/BE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BEN.html">
+</a><a href="/articles/iso/BEN.html">
   <img src="https://www.countryflags.io/BJ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BFA.html">
+</a><a href="/articles/iso/BFA.html">
   <img src="https://www.countryflags.io/BF/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BGD.html">
+</a><a href="/articles/iso/BGD.html">
   <img src="https://www.countryflags.io/BD/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BGR.html">
+</a><a href="/articles/iso/BGR.html">
   <img src="https://www.countryflags.io/BG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BHR.html">
+</a><a href="/articles/iso/BHR.html">
   <img src="https://www.countryflags.io/BH/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BHS.html">
+</a><a href="/articles/iso/BHS.html">
   <img src="https://www.countryflags.io/BS/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BIH.html">
+</a><a href="/articles/iso/BIH.html">
   <img src="https://www.countryflags.io/BA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BLR.html">
+</a><a href="/articles/iso/BLR.html">
   <img src="https://www.countryflags.io/BY/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BLZ.html">
+</a><a href="/articles/iso/BLZ.html">
   <img src="https://www.countryflags.io/BZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BMU.html">
+</a><a href="/articles/iso/BMU.html">
   <img src="https://www.countryflags.io/BM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BOL.html">
+</a><a href="/articles/iso/BOL.html">
   <img src="https://www.countryflags.io/BO/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BRA.html">
+</a><a href="/articles/iso/BRA.html">
   <img src="https://www.countryflags.io/BR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BRB.html">
+</a><a href="/articles/iso/BRB.html">
   <img src="https://www.countryflags.io/BB/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BRN.html">
+</a><a href="/articles/iso/BRN.html">
   <img src="https://www.countryflags.io/BN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BTN.html">
+</a><a href="/articles/iso/BTN.html">
   <img src="https://www.countryflags.io/BT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/BWA.html">
+</a><a href="/articles/iso/BWA.html">
   <img src="https://www.countryflags.io/BW/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CAF.html">
+</a><a href="/articles/iso/CAF.html">
   <img src="https://www.countryflags.io/CF/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CAN.html">
+</a><a href="/articles/iso/CAN.html">
   <img src="https://www.countryflags.io/CA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CHE.html">
+</a><a href="/articles/iso/CHE.html">
   <img src="https://www.countryflags.io/CH/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CHL.html">
+</a><a href="/articles/iso/CHL.html">
   <img src="https://www.countryflags.io/CL/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CIV.html">
+</a><a href="/articles/iso/CIV.html">
   <img src="https://www.countryflags.io/CI/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CMR.html">
+</a><a href="/articles/iso/CMR.html">
   <img src="https://www.countryflags.io/CM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/COD.html">
+</a><a href="/articles/iso/COD.html">
   <img src="https://www.countryflags.io/CD/flat/64.png" style="display:inline-block">
-</a><a href="/iso/COG.html">
+</a><a href="/articles/iso/COG.html">
   <img src="https://www.countryflags.io/CG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/COL.html">
+</a><a href="/articles/iso/COL.html">
   <img src="https://www.countryflags.io/CO/flat/64.png" style="display:inline-block">
-</a><a href="/iso/COM.html">
+</a><a href="/articles/iso/COM.html">
   <img src="https://www.countryflags.io/KM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CPV.html">
+</a><a href="/articles/iso/CPV.html">
   <img src="https://www.countryflags.io/CV/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CRI.html">
+</a><a href="/articles/iso/CRI.html">
   <img src="https://www.countryflags.io/CR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CUB.html">
+</a><a href="/articles/iso/CUB.html">
   <img src="https://www.countryflags.io/CU/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CYP.html">
+</a><a href="/articles/iso/CYP.html">
   <img src="https://www.countryflags.io/CY/flat/64.png" style="display:inline-block">
-</a><a href="/iso/CZE.html">
+</a><a href="/articles/iso/CZE.html">
   <img src="https://www.countryflags.io/CZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/DEU.html">
+</a><a href="/articles/iso/DEU.html">
   <img src="https://www.countryflags.io/DE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/DJI.html">
+</a><a href="/articles/iso/DJI.html">
   <img src="https://www.countryflags.io/DJ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/DMA.html">
+</a><a href="/articles/iso/DMA.html">
   <img src="https://www.countryflags.io/DM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/DNK.html">
+</a><a href="/articles/iso/DNK.html">
   <img src="https://www.countryflags.io/DK/flat/64.png" style="display:inline-block">
-</a><a href="/iso/DOM.html">
+</a><a href="/articles/iso/DOM.html">
   <img src="https://www.countryflags.io/DO/flat/64.png" style="display:inline-block">
-</a><a href="/iso/DZA.html">
+</a><a href="/articles/iso/DZA.html">
   <img src="https://www.countryflags.io/DZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ECU.html">
+</a><a href="/articles/iso/ECU.html">
   <img src="https://www.countryflags.io/EC/flat/64.png" style="display:inline-block">
-</a><a href="/iso/EGY.html">
+</a><a href="/articles/iso/EGY.html">
   <img src="https://www.countryflags.io/EG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ERI.html">
+</a><a href="/articles/iso/ERI.html">
   <img src="https://www.countryflags.io/ER/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ESH.html">
+</a><a href="/articles/iso/ESH.html">
   <img src="https://www.countryflags.io/EH/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ESP.html">
+</a><a href="/articles/iso/ESP.html">
   <img src="https://www.countryflags.io/ES/flat/64.png" style="display:inline-block">
-</a><a href="/iso/EST.html">
+</a><a href="/articles/iso/EST.html">
   <img src="https://www.countryflags.io/EE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ETH.html">
+</a><a href="/articles/iso/ETH.html">
   <img src="https://www.countryflags.io/ET/flat/64.png" style="display:inline-block">
-</a><a href="/iso/FIN.html">
+</a><a href="/articles/iso/FIN.html">
   <img src="https://www.countryflags.io/FI/flat/64.png" style="display:inline-block">
-</a><a href="/iso/FJI.html">
+</a><a href="/articles/iso/FJI.html">
   <img src="https://www.countryflags.io/FJ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/FRA.html">
+</a><a href="/articles/iso/FRA.html">
   <img src="https://www.countryflags.io/FR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GAB.html">
+</a><a href="/articles/iso/GAB.html">
   <img src="https://www.countryflags.io/GA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GBR.html">
+</a><a href="/articles/iso/GBR.html">
   <img src="https://www.countryflags.io/GB/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GEO.html">
+</a><a href="/articles/iso/GEO.html">
   <img src="https://www.countryflags.io/GE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GHA.html">
+</a><a href="/articles/iso/GHA.html">
   <img src="https://www.countryflags.io/GH/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GIN.html">
+</a><a href="/articles/iso/GIN.html">
   <img src="https://www.countryflags.io/GN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GMB.html">
+</a><a href="/articles/iso/GMB.html">
   <img src="https://www.countryflags.io/GM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GNB.html">
+</a><a href="/articles/iso/GNB.html">
   <img src="https://www.countryflags.io/GW/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GNQ.html">
+</a><a href="/articles/iso/GNQ.html">
   <img src="https://www.countryflags.io/GQ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GRC.html">
+</a><a href="/articles/iso/GRC.html">
   <img src="https://www.countryflags.io/GR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GRD.html">
+</a><a href="/articles/iso/GRD.html">
   <img src="https://www.countryflags.io/GD/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GTM.html">
+</a><a href="/articles/iso/GTM.html">
   <img src="https://www.countryflags.io/GT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GUM.html">
+</a><a href="/articles/iso/GUM.html">
   <img src="https://www.countryflags.io/GU/flat/64.png" style="display:inline-block">
-</a><a href="/iso/GUY.html">
+</a><a href="/articles/iso/GUY.html">
   <img src="https://www.countryflags.io/GY/flat/64.png" style="display:inline-block">
-</a><a href="/iso/HND.html">
+</a><a href="/articles/iso/HND.html">
   <img src="https://www.countryflags.io/HN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/HRV.html">
+</a><a href="/articles/iso/HRV.html">
   <img src="https://www.countryflags.io/HR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/HTI.html">
+</a><a href="/articles/iso/HTI.html">
   <img src="https://www.countryflags.io/HT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/HUN.html">
+</a><a href="/articles/iso/HUN.html">
   <img src="https://www.countryflags.io/HU/flat/64.png" style="display:inline-block">
-</a><a href="/iso/IDN.html">
+</a><a href="/articles/iso/IDN.html">
   <img src="https://www.countryflags.io/ID/flat/64.png" style="display:inline-block">
-</a><a href="/iso/IND.html">
+</a><a href="/articles/iso/IND.html">
   <img src="https://www.countryflags.io/IN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/IRL.html">
+</a><a href="/articles/iso/IRL.html">
   <img src="https://www.countryflags.io/IE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/IRN.html">
+</a><a href="/articles/iso/IRN.html">
   <img src="https://www.countryflags.io/IR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/IRQ.html">
+</a><a href="/articles/iso/IRQ.html">
   <img src="https://www.countryflags.io/IQ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ISL.html">
+</a><a href="/articles/iso/ISL.html">
   <img src="https://www.countryflags.io/IS/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ISR.html">
+</a><a href="/articles/iso/ISR.html">
   <img src="https://www.countryflags.io/IL/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ITA.html">
+</a><a href="/articles/iso/ITA.html">
   <img src="https://www.countryflags.io/IT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/JAM.html">
+</a><a href="/articles/iso/JAM.html">
   <img src="https://www.countryflags.io/JM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/JOR.html">
+</a><a href="/articles/iso/JOR.html">
   <img src="https://www.countryflags.io/JO/flat/64.png" style="display:inline-block">
-</a><a href="/iso/JPN.html">
+</a><a href="/articles/iso/JPN.html">
   <img src="https://www.countryflags.io/JP/flat/64.png" style="display:inline-block">
-</a><a href="/iso/KAZ.html">
+</a><a href="/articles/iso/KAZ.html">
   <img src="https://www.countryflags.io/KZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/KEN.html">
+</a><a href="/articles/iso/KEN.html">
   <img src="https://www.countryflags.io/KE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/KGZ.html">
+</a><a href="/articles/iso/KGZ.html">
   <img src="https://www.countryflags.io/KG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/KHM.html">
+</a><a href="/articles/iso/KHM.html">
   <img src="https://www.countryflags.io/KH/flat/64.png" style="display:inline-block">
-</a><a href="/iso/KNA.html">
+</a><a href="/articles/iso/KNA.html">
   <img src="https://www.countryflags.io/KN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/KOR.html">
+</a><a href="/articles/iso/KOR.html">
   <img src="https://www.countryflags.io/KR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/KWT.html">
+</a><a href="/articles/iso/KWT.html">
   <img src="https://www.countryflags.io/KW/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LAO.html">
+</a><a href="/articles/iso/LAO.html">
   <img src="https://www.countryflags.io/LA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LBN.html">
+</a><a href="/articles/iso/LBN.html">
   <img src="https://www.countryflags.io/LB/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LBR.html">
+</a><a href="/articles/iso/LBR.html">
   <img src="https://www.countryflags.io/LR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LBY.html">
+</a><a href="/articles/iso/LBY.html">
   <img src="https://www.countryflags.io/LY/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LCA.html">
+</a><a href="/articles/iso/LCA.html">
   <img src="https://www.countryflags.io/LC/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LIE.html">
+</a><a href="/articles/iso/LIE.html">
   <img src="https://www.countryflags.io/LI/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LKA.html">
+</a><a href="/articles/iso/LKA.html">
   <img src="https://www.countryflags.io/LK/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LTU.html">
+</a><a href="/articles/iso/LTU.html">
   <img src="https://www.countryflags.io/LT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LUX.html">
+</a><a href="/articles/iso/LUX.html">
   <img src="https://www.countryflags.io/LU/flat/64.png" style="display:inline-block">
-</a><a href="/iso/LVA.html">
+</a><a href="/articles/iso/LVA.html">
   <img src="https://www.countryflags.io/LV/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MAR.html">
+</a><a href="/articles/iso/MAR.html">
   <img src="https://www.countryflags.io/MA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MCO.html">
+</a><a href="/articles/iso/MCO.html">
   <img src="https://www.countryflags.io/MC/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MDA.html">
+</a><a href="/articles/iso/MDA.html">
   <img src="https://www.countryflags.io/MD/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MDG.html">
+</a><a href="/articles/iso/MDG.html">
   <img src="https://www.countryflags.io/MG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MDV.html">
+</a><a href="/articles/iso/MDV.html">
   <img src="https://www.countryflags.io/MV/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MEX.html">
+</a><a href="/articles/iso/MEX.html">
   <img src="https://www.countryflags.io/MX/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MKD.html">
+</a><a href="/articles/iso/MKD.html">
   <img src="https://www.countryflags.io/MK/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MLI.html">
+</a><a href="/articles/iso/MLI.html">
   <img src="https://www.countryflags.io/ML/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MLT.html">
+</a><a href="/articles/iso/MLT.html">
   <img src="https://www.countryflags.io/MT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MMR.html">
+</a><a href="/articles/iso/MMR.html">
   <img src="https://www.countryflags.io/MM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MNE.html">
+</a><a href="/articles/iso/MNE.html">
   <img src="https://www.countryflags.io/ME/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MNG.html">
+</a><a href="/articles/iso/MNG.html">
   <img src="https://www.countryflags.io/MN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MNP.html">
+</a><a href="/articles/iso/MNP.html">
   <img src="https://www.countryflags.io/MP/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MOZ.html">
+</a><a href="/articles/iso/MOZ.html">
   <img src="https://www.countryflags.io/MZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MRT.html">
+</a><a href="/articles/iso/MRT.html">
   <img src="https://www.countryflags.io/MR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MUS.html">
+</a><a href="/articles/iso/MUS.html">
   <img src="https://www.countryflags.io/MU/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MWI.html">
+</a><a href="/articles/iso/MWI.html">
   <img src="https://www.countryflags.io/MW/flat/64.png" style="display:inline-block">
-</a><a href="/iso/MYS.html">
+</a><a href="/articles/iso/MYS.html">
   <img src="https://www.countryflags.io/MY/flat/64.png" style="display:inline-block">
-</a><a href="/iso/NAM.html">
+</a><a href="/articles/iso/NAM.html">
   <img src="https://www.countryflags.io/NA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/NER.html">
+</a><a href="/articles/iso/NER.html">
   <img src="https://www.countryflags.io/NE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/NGA.html">
+</a><a href="/articles/iso/NGA.html">
   <img src="https://www.countryflags.io/NG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/NIC.html">
+</a><a href="/articles/iso/NIC.html">
   <img src="https://www.countryflags.io/NI/flat/64.png" style="display:inline-block">
-</a><a href="/iso/NLD.html">
+</a><a href="/articles/iso/NLD.html">
   <img src="https://www.countryflags.io/NL/flat/64.png" style="display:inline-block">
-</a><a href="/iso/NOR.html">
+</a><a href="/articles/iso/NOR.html">
   <img src="https://www.countryflags.io/NO/flat/64.png" style="display:inline-block">
-</a><a href="/iso/NPL.html">
+</a><a href="/articles/iso/NPL.html">
   <img src="https://www.countryflags.io/NP/flat/64.png" style="display:inline-block">
-</a><a href="/iso/NZL.html">
+</a><a href="/articles/iso/NZL.html">
   <img src="https://www.countryflags.io/NZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/OMN.html">
+</a><a href="/articles/iso/OMN.html">
   <img src="https://www.countryflags.io/OM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PAK.html">
+</a><a href="/articles/iso/PAK.html">
   <img src="https://www.countryflags.io/PK/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PAN.html">
+</a><a href="/articles/iso/PAN.html">
   <img src="https://www.countryflags.io/PA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PER.html">
+</a><a href="/articles/iso/PER.html">
   <img src="https://www.countryflags.io/PE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PHL.html">
+</a><a href="/articles/iso/PHL.html">
   <img src="https://www.countryflags.io/PH/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PNG.html">
+</a><a href="/articles/iso/PNG.html">
   <img src="https://www.countryflags.io/PG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/POL.html">
+</a><a href="/articles/iso/POL.html">
   <img src="https://www.countryflags.io/PL/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PRI.html">
+</a><a href="/articles/iso/PRI.html">
   <img src="https://www.countryflags.io/PR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PRT.html">
+</a><a href="/articles/iso/PRT.html">
   <img src="https://www.countryflags.io/PT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PRY.html">
+</a><a href="/articles/iso/PRY.html">
   <img src="https://www.countryflags.io/PY/flat/64.png" style="display:inline-block">
-</a><a href="/iso/PSE.html">
+</a><a href="/articles/iso/PSE.html">
   <img src="https://www.countryflags.io/PS/flat/64.png" style="display:inline-block">
-</a><a href="/iso/QAT.html">
+</a><a href="/articles/iso/QAT.html">
   <img src="https://www.countryflags.io/QA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/RKS.html">
+</a><a href="/articles/iso/RKS.html">
   <img src="https://www.countryflags.io/XK/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ROU.html">
+</a><a href="/articles/iso/ROU.html">
   <img src="https://www.countryflags.io/RO/flat/64.png" style="display:inline-block">
-</a><a href="/iso/RUS.html">
+</a><a href="/articles/iso/RUS.html">
   <img src="https://www.countryflags.io/RU/flat/64.png" style="display:inline-block">
-</a><a href="/iso/RWA.html">
+</a><a href="/articles/iso/RWA.html">
   <img src="https://www.countryflags.io/RW/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SAU.html">
+</a><a href="/articles/iso/SAU.html">
   <img src="https://www.countryflags.io/SA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SDN.html">
+</a><a href="/articles/iso/SDN.html">
   <img src="https://www.countryflags.io/SD/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SEN.html">
+</a><a href="/articles/iso/SEN.html">
   <img src="https://www.countryflags.io/SN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SGP.html">
+</a><a href="/articles/iso/SGP.html">
   <img src="https://www.countryflags.io/SG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SLE.html">
+</a><a href="/articles/iso/SLE.html">
   <img src="https://www.countryflags.io/SL/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SLV.html">
+</a><a href="/articles/iso/SLV.html">
   <img src="https://www.countryflags.io/SV/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SMR.html">
+</a><a href="/articles/iso/SMR.html">
   <img src="https://www.countryflags.io/SM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SOM.html">
+</a><a href="/articles/iso/SOM.html">
   <img src="https://www.countryflags.io/SO/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SRB.html">
+</a><a href="/articles/iso/SRB.html">
   <img src="https://www.countryflags.io/RS/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SSD.html">
+</a><a href="/articles/iso/SSD.html">
   <img src="https://www.countryflags.io/SS/flat/64.png" style="display:inline-block">
-</a><a href="/iso/STP.html">
+</a><a href="/articles/iso/STP.html">
   <img src="https://www.countryflags.io/ST/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SUR.html">
+</a><a href="/articles/iso/SUR.html">
   <img src="https://www.countryflags.io/SR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SVK.html">
+</a><a href="/articles/iso/SVK.html">
   <img src="https://www.countryflags.io/SK/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SVN.html">
+</a><a href="/articles/iso/SVN.html">
   <img src="https://www.countryflags.io/SI/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SWE.html">
+</a><a href="/articles/iso/SWE.html">
   <img src="https://www.countryflags.io/SE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SWZ.html">
+</a><a href="/articles/iso/SWZ.html">
   <img src="https://www.countryflags.io/SZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SYC.html">
+</a><a href="/articles/iso/SYC.html">
   <img src="https://www.countryflags.io/SC/flat/64.png" style="display:inline-block">
-</a><a href="/iso/SYR.html">
+</a><a href="/articles/iso/SYR.html">
   <img src="https://www.countryflags.io/SY/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TCD.html">
+</a><a href="/articles/iso/TCD.html">
   <img src="https://www.countryflags.io/TD/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TGO.html">
+</a><a href="/articles/iso/TGO.html">
   <img src="https://www.countryflags.io/TG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/THA.html">
+</a><a href="/articles/iso/THA.html">
   <img src="https://www.countryflags.io/TH/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TJK.html">
+</a><a href="/articles/iso/TJK.html">
   <img src="https://www.countryflags.io/TJ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TLS.html">
+</a><a href="/articles/iso/TLS.html">
   <img src="https://www.countryflags.io/TL/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TTO.html">
+</a><a href="/articles/iso/TTO.html">
   <img src="https://www.countryflags.io/TT/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TUN.html">
+</a><a href="/articles/iso/TUN.html">
   <img src="https://www.countryflags.io/TN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TUR.html">
+</a><a href="/articles/iso/TUR.html">
   <img src="https://www.countryflags.io/TR/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TWN.html">
+</a><a href="/articles/iso/TWN.html">
   <img src="https://www.countryflags.io/TW/flat/64.png" style="display:inline-block">
-</a><a href="/iso/TZA.html">
+</a><a href="/articles/iso/TZA.html">
   <img src="https://www.countryflags.io/TZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/UGA.html">
+</a><a href="/articles/iso/UGA.html">
   <img src="https://www.countryflags.io/UG/flat/64.png" style="display:inline-block">
-</a><a href="/iso/UKR.html">
+</a><a href="/articles/iso/UKR.html">
   <img src="https://www.countryflags.io/UA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/URY.html">
+</a><a href="/articles/iso/URY.html">
   <img src="https://www.countryflags.io/UY/flat/64.png" style="display:inline-block">
-</a><a href="/iso/USA.html">
+</a><a href="/articles/iso/USA.html">
   <img src="https://www.countryflags.io/US/flat/64.png" style="display:inline-block">
-</a><a href="/iso/UZB.html">
+</a><a href="/articles/iso/UZB.html">
   <img src="https://www.countryflags.io/UZ/flat/64.png" style="display:inline-block">
-</a><a href="/iso/VAT.html">
+</a><a href="/articles/iso/VAT.html">
   <img src="https://www.countryflags.io/VA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/VCT.html">
+</a><a href="/articles/iso/VCT.html">
   <img src="https://www.countryflags.io/VC/flat/64.png" style="display:inline-block">
-</a><a href="/iso/VEN.html">
+</a><a href="/articles/iso/VEN.html">
   <img src="https://www.countryflags.io/VE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/VIR.html">
+</a><a href="/articles/iso/VIR.html">
   <img src="https://www.countryflags.io/VI/flat/64.png" style="display:inline-block">
-</a><a href="/iso/VNM.html">
+</a><a href="/articles/iso/VNM.html">
   <img src="https://www.countryflags.io/VN/flat/64.png" style="display:inline-block">
-</a><a href="/iso/YEM.html">
+</a><a href="/articles/iso/YEM.html">
   <img src="https://www.countryflags.io/YE/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ZAF.html">
+</a><a href="/articles/iso/ZAF.html">
   <img src="https://www.countryflags.io/ZA/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ZMB.html">
+</a><a href="/articles/iso/ZMB.html">
   <img src="https://www.countryflags.io/ZM/flat/64.png" style="display:inline-block">
-</a><a href="/iso/ZWE.html">
+</a><a href="/articles/iso/ZWE.html">
   <img src="https://www.countryflags.io/ZW/flat/64.png" style="display:inline-block">
 </a>
 
