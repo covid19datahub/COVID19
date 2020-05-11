@@ -1,0 +1,28 @@
+---
+title: "Python"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Python}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Import Data from the Hub
+
+```py
+# todo...
+```
+
+```{r, include=FALSE}
+fileName <- '../terms.md'
+terms <- readChar(fileName, file.info(fileName)$size)
+```
+
+`r terms`

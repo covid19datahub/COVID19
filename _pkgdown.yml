@@ -1,0 +1,26 @@
+url: https://covid19datahub.io
+title: COVID-19 Data Hub
+template:
+  params:
+    ganalytics: UA-163902432-1
+home:
+  title: "Home"
+  description: Unified datasets for a better understanding of COVID-19.
+navbar:
+  structure:
+    left:  [home, data, r, python, articles, reference]
+    right: [github]
+  components:
+    reference: 
+      text: "Developers"
+      href: reference/index.html
+    data:
+      text: "Data"
+      href: articles/data.html
+    r:
+      text: "R"
+      href: articles/api/r.html
+    python:
+      text: "Python"
+      href: articles/api/python.html
+      

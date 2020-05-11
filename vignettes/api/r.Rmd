@@ -1,0 +1,29 @@
+---
+title: "R"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{R}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Import Data from the Hub
+
+```r
+file <- "https://storage.covid19datahub.io/data-1.csv"
+x <- read.csv(file, na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8")
+```
+
+```{r, include=FALSE}
+fileName <- '../terms.md'
+terms <- readChar(fileName, file.info(fileName)$size)
+```
+
+`r terms`
