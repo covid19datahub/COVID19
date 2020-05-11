@@ -22,13 +22,13 @@ since it cannot work with the quotation marks around strings.
 However `pandas.read_csv()` is doing much better job. To make a successful
 call, you also have to specify `User-Agent` header, see [here](https://datascience.stackexchange.com/questions/49751/read-csv-file-directly-from-url-how-to-fix-a-403-forbidden-error).
 
-Install `pandas` and `requests` by typing into terminal
+Install `pandas` and `requests` by typing into terminal:
 
 ```bash
 pip install pandas requests
 ```
 
-Once installed, fetching the data is as simple as
+Once installed, fetch the data:
 
 ```python
 # standard library
