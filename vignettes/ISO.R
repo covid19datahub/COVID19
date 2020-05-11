@@ -3,7 +3,8 @@ require(COVID19dev)
 fileName <- 'inst/ISO.Rmd'
 template <- readr::read_file(fileName)
 
-x <- covid19(vintage = TRUE) %>% distinct(iso_alpha_3, administrative_area_level_1, .keep_all = TRUE)
+x <- covid19(vintage = TRUE) %>% 
+  distinct(iso_alpha_3, administrative_area_level_1, .keep_all = TRUE)
 
 invisible(apply(x, 1, function(x){
   
