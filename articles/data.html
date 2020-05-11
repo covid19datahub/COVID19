@@ -65,8 +65,20 @@
 <li>
   <a href="../articles/api/python.html">Python</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    References
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
 <li>
-  <a href="../reference/index.html">Developers</a>
+      <a href="../reference/index.html">Functions</a>
+    </li>
+    <li>
+      <a href="../articles/doc/data.html">Datasets</a>
+    </li>
+  </ul>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -100,143 +112,7 @@
     
     
 <p>The raw data are cleaned by filling missing dates with <code>NA</code> values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, <code>NA</code> values are replaced with the previous non-<code>NA</code> value or <code>0</code>.</p>
-<p>The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities).</p>
-<table class="table">
-<colgroup>
-<col width="44%">
-<col width="55%">
-</colgroup>
-<thead><tr class="header">
-<th>Variable</th>
-<th>Description</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td><code>id</code></td>
-<td>Unique identifier.</td>
-</tr>
-<tr class="even">
-<td><code>date</code></td>
-<td>Observation date.</td>
-</tr>
-<tr class="odd">
-<td><code>deaths</code></td>
-<td>Cumulative number of deaths.</td>
-</tr>
-<tr class="even">
-<td><code>confirmed</code></td>
-<td>Cumulative number of confirmed cases.</td>
-</tr>
-<tr class="odd">
-<td><code>tests</code></td>
-<td>Cumulative number of tests.</td>
-</tr>
-<tr class="even">
-<td><code>recovered</code></td>
-<td>Cumulative number of patients released from hospitals or reported recovered.</td>
-</tr>
-<tr class="odd">
-<td><code>hosp</code></td>
-<td>Number of hospitalized patients on date.</td>
-</tr>
-<tr class="even">
-<td><code>icu</code></td>
-<td>Number of hospitalized patients in ICUs on date.</td>
-</tr>
-<tr class="odd">
-<td><code>vent</code></td>
-<td>Number of patients requiring invasive ventilation on date.</td>
-</tr>
-<tr class="even">
-<td><code>population</code></td>
-<td>Total population.</td>
-</tr>
-<tr class="odd">
-<td><code>school_closing</code></td>
-<td>0: No measures - 1: Recommend closing - 2: Require closing (only some levels or categories, eg just high school, or just public schools - 3: Require closing all levels. <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="even">
-<td><code>workplace_closing</code></td>
-<td>0: No measures - 1: Recommend closing (or work from home) - 2: require closing for some sectors or categories of workers - 3: require closing (or work from home) all-but-essential workplaces (eg grocery stores, doctors). <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="odd">
-<td><code>cancel_events</code></td>
-<td>0: No measures - 1: Recommend cancelling - 2: Require cancelling. <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="even">
-<td><code>gatherings_restrictions</code></td>
-<td>0: No restrictions - 1: Restrictions on very large gatherings (the limit is above 1000 people) - 2: Restrictions on gatherings between 100-1000 people - 3: Restrictions on gatherings between 10-100 people - 4: Restrictions on gatherings of less than 10 people. <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="odd">
-<td><code>transport_closing</code></td>
-<td>0: No measures - 1: Recommend closing (or significantly reduce volume/route/means of transport available) - 2: Require closing (or prohibit most citizens from using it). <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="even">
-<td><code>stay_home_restrictions</code></td>
-<td>0: No measures - 1: recommend not leaving house - 2: require not leaving house with exceptions for daily exercise, grocery shopping, and “essential” trips - 3: Require not leaving house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.). <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="odd">
-<td><code>internal_movement_restrictions</code></td>
-<td>0: No measures - 1: Recommend closing (or significantly reduce volume/route/means of transport) - 2: Require closing (or prohibit most people from using it). <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="even">
-<td><code>international_movement_restrictions</code></td>
-<td>0: No measures - 1: Screening - 2: Quarantine arrivals from high-risk regions - 3: Ban on high-risk regions - 4: Total border closure. <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="odd">
-<td><code>information_campaigns</code></td>
-<td>0: No COVID-19 public information campaign - 1: public officials urging caution about COVID-19 - 2: coordinated public information campaign (e.g. across traditional and social media). <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="even">
-<td><code>testing_policy</code></td>
-<td>0: No testing policy - 1: Only those who both (a) have symptoms AND (b) meet specific criteria (eg key workers, admitted to hospital, came into contact with a known case, returned from overseas) - 2: testing of anyone showing COVID-19 symptoms - 3: open public testing (eg “drive through” testing available to asymptomatic people). <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="odd">
-<td><code>contact_tracing</code></td>
-<td>0: No contact tracing - 1: Limited contact tracing, not done for all cases - 2: Comprehensive contact tracing, done for all cases. <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="even">
-<td><code>stringency_index</code></td>
-<td>Stringency of governmental responses. <a href="https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf">More details</a>
-</td>
-</tr>
-<tr class="odd">
-<td><code>administrative_area_level</code></td>
-<td>Administrative area level.</td>
-</tr>
-<tr class="even">
-<td><code>administrative_area_level_1</code></td>
-<td>Administrative area of top level.</td>
-</tr>
-<tr class="odd">
-<td><code>administrative_area_level_2</code></td>
-<td>Administrative area of a lower level, usually states, regions or cantons.</td>
-</tr>
-<tr class="even">
-<td><code>administrative_area_level_3</code></td>
-<td>Administrative are of a lower level, usually cities or municipalities.</td>
-</tr>
-<tr class="odd">
-<td><code>latitude</code></td>
-<td>Latitude.</td>
-</tr>
-<tr class="even">
-<td><code>longitude</code></td>
-<td>Longitude.</td>
-</tr>
-</tbody>
-</table>
+<p>The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities). See the <a href="/articles/doc/data.html">full documentation</a></p>
 <div id="latest-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#latest-data" class="anchor"></a>Latest Data</h2>
@@ -546,7 +422,7 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Emanuele Guidotti.</p>
+  <p>Developed by <a href="https://guidotti.dev">Emanuele Guidotti</a>.</p>
 </div>
 
 <div class="pkgdown">
