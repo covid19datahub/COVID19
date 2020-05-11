@@ -19,8 +19,9 @@ knitr::opts_chunk$set(
 Python csv parser `csv.reader()` does not seem to parse the csv well,
 since it cannot work with the quotation marks around strings.
 
-However `pandas.read_csv()` is doing much better job. To make a successful
-call, you also have to specify `User-Agent` header, see [here](https://datascience.stackexchange.com/questions/49751/read-csv-file-directly-from-url-how-to-fix-a-403-forbidden-error).
+However `read_csv()` from [pandas](https://pandas.pydata.org/) is processing it fine.
+
+To make a successful call, you also have to specify `User-Agent` header, see [here](https://datascience.stackexchange.com/questions/49751/read-csv-file-directly-from-url-how-to-fix-a-403-forbidden-error), the request is hence sent separately using [requests](https://requests.readthedocs.io/en/master/) library.
 
 Install `pandas` and `requests` by typing into terminal:
 
