@@ -3,7 +3,7 @@ on:
   schedule:
     
     # * is a special character in YAML so you have to quote this string
-    - cron:  '15 * * * *'
+    - cron:  '46 * * * *'
 
 name: pkgdown
 
@@ -16,19 +16,21 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     
-    with:
-      repo-token: ${{ secrets.GITHUB_TOKEN }}
-    
     steps:
+    
+      - name: Credentials
+        run: |
+            git config --global user.email "emanuele.guidotti@unine.ch"
+            git config --global user.name "Emanuele Guidotti"
       
       - uses: actions/checkout@v2
       
-      - name: Install libcurl
-        run: sudo apt-get install libcurl4-openssl-dev
-
       - uses: r-lib/actions/setup-r@master
 
       - uses: r-lib/actions/setup-pandoc@master
+      
+      - name: Install libcurl
+        run: sudo apt-get install libcurl4-openssl-dev
 
       - name: Query dependencies
         run: |
