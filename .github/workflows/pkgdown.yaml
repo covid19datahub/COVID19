@@ -1,7 +1,7 @@
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '29 * * * *'
+    - cron:  '43 * * * *'
 
 name: pkgdown
 
@@ -12,13 +12,13 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Install libcurl
+        run: apt-get install libcurl4-openssl-dev
 
       - uses: r-lib/actions/setup-r@master
 
       - uses: r-lib/actions/setup-pandoc@master
-
-      - name: Install libcurl
-        run: apt-get install libcurl4-openssl-dev
 
       - name: Query dependencies
         run: |
@@ -35,10 +35,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          install.packages("remotes")
           install.packages("DT")
+          install.packages("remotes")
+          install.packages("pkgdown")
           remotes::install_deps(dependencies = TRUE)
-          remotes::install_dev("pkgdown")
         shell: Rscript {0}
 
       - name: Install package
