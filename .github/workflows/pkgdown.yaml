@@ -1,7 +1,7 @@
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '49 * * * *'
+    - cron:  '56 * * * *'
 
 name: pkgdown
 
