@@ -1,14 +1,19 @@
 url: https://covid19datahub.io
+
 title: COVID-19 Data Hub
+
 template:
   params:
     ganalytics: UA-163902432-1
+    
 authors:
   Emanuele Guidotti:
     href: https://guidotti.dev
+    
 home:
   title: "Home"
-    description: Unified datasets for a better understanding of COVID-19.
+  description: Unified datasets for a better understanding of COVID-19.
+  
 navbar:
   structure:
     left:  [home, data, r, python, reference]
@@ -31,3 +36,4 @@ navbar:
     python:
       text: "Python"
       href: articles/api/python.html
+      
