@@ -1,7 +1,7 @@
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '58 * * * *'
+    - cron:  '29 * * * *'
 
 name: pkgdown
 
@@ -17,6 +17,9 @@ jobs:
 
       - uses: r-lib/actions/setup-pandoc@master
 
+      - name: Install libcurl
+        run: apt-get install libcurl4-openssl-dev
+
       - name: Query dependencies
         run: |
           install.packages('remotes')
@@ -27,8 +30,8 @@ jobs:
         uses: actions/cache@v1
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: macOS-r-4.0-1-${{ hashFiles('.github/depends.Rds') }}
-          restore-keys: macOS-r-4.0-1-
+          key: ubuntu-r-4.0-1-${{ hashFiles('.github/depends.Rds') }}
+          restore-keys: ubuntu-r-4.0-1-
 
       - name: Install dependencies
         run: |
