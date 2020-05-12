@@ -6,7 +6,7 @@ _Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Ca
 
 The goal of the project is to provide the research community with a __unified data hub__ by collecting worldwide fine-grained case data merged with demographics, air pollution, and other exogenous variables helpful for a better understanding of COVID-19.
 
-**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-dld2grt2-vmso7HkI8yFabW5R_mAZJw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19dev/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
+**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19dev/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
 <a href="/articles/iso/AFG.html">
   <img src="https://www.countryflags.io/AF/flat/64.png" style="display:inline-block">
