@@ -7,7 +7,7 @@
 add_source(...)
 }
 \arguments{
-\item{...}{named arguments corresponding to the columns of the \href{https://github.com/covid19datahub/COVID19dev/tree/master/inst/extdata/src.csv}{src.csv} file.}
+\item{...}{named arguments corresponding to the columns of the \href{https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/src.csv}{src.csv} file.}
 }
 \value{
 \code{data.frame}.

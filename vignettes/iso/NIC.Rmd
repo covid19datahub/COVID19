@@ -10,7 +10,7 @@ vignette: >
 <img src="https://www.countryflags.io/NI/flat/64.png" align="right">
 
 ```{r, include = FALSE}
-require(COVID19dev)
+require(COVID19)
 require(DT)
 ```
 

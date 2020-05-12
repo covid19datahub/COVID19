@@ -6,7 +6,7 @@ _Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Ca
 
 The goal of the project is to provide the research community with a __unified data hub__ by collecting worldwide fine-grained case data merged with demographics, air pollution, and other exogenous variables helpful for a better understanding of COVID-19.
 
-**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19dev/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
+**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
 <a href="/articles/iso/AFG.html">
   <img src="https://www.countryflags.io/AF/flat/64.png" style="display:inline-block">
@@ -390,7 +390,7 @@ The goal of the project is to provide the research community with a __unified da
 
 ## Authors
 
-The project was initiated via the [R package COVID19](https://CRAN.R-project.org/package=COVID19) developed by [Emanuele Guidotti](https://guidotti.dev/) (University of Neuchâtel), leveraged by [David Ardia](https://ardiad.github.io/website/) (HEC Montréal) via the funding by [IVADO](https://ivado.ca/en/), and enhanced and maintained by a growing [open source community](https://github.com/covid19datahub/COVID19dev/graphs/contributors).
+The project was initiated via the [R package COVID19](https://CRAN.R-project.org/package=COVID19) developed by [Emanuele Guidotti](https://guidotti.dev/) (University of Neuchâtel), leveraged by [David Ardia](https://ardiad.github.io/website/) (HEC Montréal) via the funding by [IVADO](https://ivado.ca/en/), and enhanced and maintained by a growing [open source community](https://github.com/covid19datahub/COVID19/graphs/contributors).
 
 Logo courtesy of [Gary Sandoz](http://www.garysandoz.ch/index.html) and [Talk-to-Me](https://www.talk-to-me.ch/).
 

@@ -3,20 +3,20 @@ NULL
 
 .onAttach <- function(libname, pkgname) {
 
-  if(interactive() & requireNamespace('COVID19dev', quietly = TRUE)){
+  if(interactive() & requireNamespace('COVID19', quietly = TRUE)){
 
     packageStartupMessage("The coronavirus situation is changing fast. Checking for updates...")
 
-    description <- try(readLines('https://raw.githubusercontent.com/covid19datahub/COVID19dev/master/DESCRIPTION'), silent = TRUE)
+    description <- try(readLines('https://raw.githubusercontent.com/covid19datahub/COVID19/master/DESCRIPTION'), silent = TRUE)
     if(class(description)=="try-error")
       return()
       
     id <- which(startsWith(prefix = "Version:", x = description))
     v  <- as.package_version(gsub(pattern = "^Version:\\s*", replacement = "", x = description[id]))
 
-    if(v > utils::packageVersion(pkg = "COVID19dev")){
+    if(v > utils::packageVersion(pkg = "COVID19")){
 
-      yn <- utils::askYesNo("Package COVID19dev: new version available. Update now?")
+      yn <- utils::askYesNo("Package COVID19: new version available. Update now?")
       if(!is.na(yn)) if(yn)
         update()
 
@@ -28,13 +28,29 @@ NULL
 
   }
 
+  packageStartupMessage(
+    '
+    ================================================================\n
+    
+    IMPORTANT NOTICE: 
+    This is the development version of the COVID-19 Data Hub
+    
+    Download the stable release from:
+    remotes::install_github("covid19datahub/R")
+    
+    It will be soon updated on CRAN
+    
+    ================================================================\n
+    '
+  )
+  
 }
 
 update <- function(){
 
-  detach("package:COVID19dev", unload=TRUE)
-  x <- try(remotes::install_github('covid19datahub/COVID19dev', quiet = FALSE, upgrade = FALSE), silent = TRUE)
-  library(COVID19dev)
+  detach("package:COVID19", unload=TRUE)
+  x <- try(remotes::install_github('covid19datahub/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
+  library(COVID19)
 
 }
 
@@ -199,7 +215,7 @@ cite <- function(x, src, verbose){
       
     })
     
-    cit <- utils::citation("COVID19dev")
+    cit <- utils::citation("COVID19")
     for(i in 1:length(y))
       cit <- c(y[[i]], cit)
     
@@ -209,6 +225,37 @@ cite <- function(x, src, verbose){
   }
   
   return(x)
+  
+}
+
+is_equal <- function(x, y){
+  
+  x <- as.data.frame(x)
+  y <- as.data.frame(y)
+  
+  rownames(x) <- paste(x$id, x$date)
+  rownames(y) <- paste(y$id, y$date)
+  
+  rn <- intersect(rownames(x), rownames(y))
+  
+  x <- x[rn, , drop = FALSE]
+  y <- y[rn, , drop = FALSE]
+  
+  if(nrow(x)==0 | nrow(y)==0)
+    return(TRUE)
+  
+  x <- x[,colSums(x!=0, na.rm = TRUE)!=0, drop = FALSE]
+  y <- y[,colSums(y!=0, na.rm = TRUE)!=0, drop = FALSE]
+  
+  cn <- intersect(colnames(x), colnames(y))
+  
+  x <- x[, cn, drop = FALSE]
+  y <- y[, cn, drop = FALSE]
+  
+  if(nrow(x)==0 | nrow(y)==0)
+    return(TRUE)
+  
+  return(all.equal(x,y))
   
 }
 
@@ -230,7 +277,7 @@ cite <- function(x, src, verbose){
 #' @export
 extdata <- function(...){
   
-  file <- system.file("extdata", ..., package = "COVID19dev")
+  file <- system.file("extdata", ..., package = "COVID19")
   if(!file.exists(file))
     return(NULL)
   
@@ -242,7 +289,7 @@ extdata <- function(...){
 #' 
 #' Add data source to the file inst/extdata/src.csv
 #' 
-#' @param ... named arguments corresponding to the columns of the \href{https://github.com/covid19datahub/COVID19dev/tree/master/inst/extdata/src.csv}{src.csv} file.
+#' @param ... named arguments corresponding to the columns of the \href{https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/src.csv}{src.csv} file.
 #' 
 #' @return \code{data.frame}.
 #' 
@@ -304,7 +351,7 @@ add_source <- function(...){
 #' \dontrun{
 #' 
 #' # download data
-#' x <- COVID19dev:::jhucsse_git(file = "US", cache = TRUE, level = 3, country = "USA")
+#' x <- COVID19:::jhucsse_git(file = "US", cache = TRUE, level = 3, country = "USA")
 #' 
 #' # add iso
 #' csv <- add_iso(x, iso = "USA", ds = "jhucsse_git", level = 3, map = c(

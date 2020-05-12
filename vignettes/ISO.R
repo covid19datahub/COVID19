@@ -1,4 +1,4 @@
-require(COVID19dev)
+require(COVID19)
 
 fileName <- 'inst/ISO.Rmd'
 template <- readr::read_file(fileName)

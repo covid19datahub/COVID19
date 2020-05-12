@@ -10,20 +10,20 @@ The repository aims at unifying COVID-19 datasets across different sources in or
 
 ```R
 # Install COVID19
-remotes::install_github("covid19datahub/COVID19dev")
+remotes::install_github("covid19datahub/COVID19")
 
 # Load COVID19
-library("COVID19dev")
+library("COVID19")
 ```
 ## Implement a new data source
 
-- Get inspired by the `ds_*` files [here](<https://github.com/covid19datahub/COVID19dev/tree/master/R>) and the [package documentation](https://storage.covid19datahub.io/doc/COVID19.pdf).
+- Get inspired by the `ds_*` files [here](<https://github.com/covid19datahub/COVID19/tree/master/R>) and the [package documentation](https://storage.covid19datahub.io/doc/COVID19.pdf).
 - Create a new `ds_*` file named with the domain of the data source (lowercase and replace `.` with `_`). The function should return a `data.frame` with the columns `date` (date object), `tests` (cumulative number of tests), `confirmed` (cumulative number of confirmed cases), `deaths` (cumulative number of deaths), `recovered` (cumulative number of recovered), `hosp` (hospitalized on date), `vent` (requiring ventilation on date), `icu` (intensive therapy on date). Only the column `date` is strictly required, additional columns may be included as well.
-- Open a [new issue](<https://github.com/covid19datahub/COVID19dev/issues>) and submit your function (attach the R file). Thanks!
+- Open a [new issue](<https://github.com/covid19datahub/COVID19/issues>) and submit your function (attach the R file). Thanks!
 
 ## Fill the csv files
 
-- Fill the csv files [here](https://github.com/covid19datahub/COVID19dev/tree/master/inst/extdata/db). Do not fill `administrative_area_level_3` if `administrative_area_level` is less than `3`. Use signed `latitude` `longitude`:
+- Fill the csv files [here](https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db). Do not fill `administrative_area_level_3` if `administrative_area_level` is less than `3`. Use signed `latitude` `longitude`:
 
   `+` `+`: North and East
 
@@ -35,7 +35,7 @@ library("COVID19dev")
 
 - Do not create additional `csv` files (they must be generated with the `add_iso` function when a new ISO becomes available).
 
-- Open a [new issue](<https://github.com/covid19datahub/COVID19dev/issues>) and submit your csv (attach the file). Thanks!
+- Open a [new issue](<https://github.com/covid19datahub/COVID19/issues>) and submit your csv (attach the file). Thanks!
 
 ## Reference
 
