@@ -2,6 +2,8 @@ pandoc: 2.7.3
 pkgdown: 1.5.1
 pkgdown_sha: ~
 articles:
+  julia: api/julia.html
+  node: api/node.html
   python: api/python.html
   r: api/r.html
   data: data.html
@@ -198,7 +200,7 @@ articles:
   ZAF: iso/ZAF.html
   ZMB: iso/ZMB.html
   ZWE: iso/ZWE.html
-last_built: 2020-05-11T18:34Z
+last_built: 2020-05-12T00:29Z
 urls:
   reference: https://covid19datahub.io/reference
   article: https://covid19datahub.io/articles

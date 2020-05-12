@@ -65,6 +65,12 @@
 <li>
   <a href="../../articles/api/python.html">Python</a>
 </li>
+<li>
+  <a href="../../articles/api/node.html">Node.js</a>
+</li>
+<li>
+  <a href="../../articles/api/julia.html">Julia</a>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     References
@@ -115,7 +121,8 @@
 <h2 class="hasAnchor">
 <a href="#import-data-from-the-hub" class="anchor"></a>Import Data from the Hub</h2>
 <p>Python csv parser <code>csv.reader()</code> does not seem to parse the csv well, since it cannot work with the quotation marks around strings.</p>
-<p>However <code>pandas.read_csv()</code> is doing much better job. To make a successful call, you also have to specify <code>User-Agent</code> header, see <a href="https://datascience.stackexchange.com/questions/49751/read-csv-file-directly-from-url-how-to-fix-a-403-forbidden-error">here</a>.</p>
+<p>However <code>read_csv()</code> from <a href="https://pandas.pydata.org/">pandas</a> is processing it fine.</p>
+<p>To make a successful call, you also have to specify <code>User-Agent</code> header, see <a href="https://datascience.stackexchange.com/questions/49751/read-csv-file-directly-from-url-how-to-fix-a-403-forbidden-error">here</a>, the request is hence sent separately using <a href="https://requests.readthedocs.io/en/master/">requests</a> library.</p>
 <p>Install <code>pandas</code> and <code>requests</code> by typing into terminal:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">pip</span> install pandas requests</span></code></pre></div>
 <p>Once installed, fetch the data:</p>

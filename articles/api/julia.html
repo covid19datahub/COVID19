@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hungary • COVID-19 Data Hub</title>
+<title>Julia • COVID-19 Data Hub</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../../apple-touch-icon.png">
@@ -17,7 +17,7 @@
 <script src="../../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../../pkgdown.css" rel="stylesheet">
-<script src="../../pkgdown.js"></script><meta property="og:title" content="Hungary">
+<script src="../../pkgdown.js"></script><meta property="og:title" content="Julia">
 <meta property="og:description" content="COVID19dev">
 <meta property="og:image" content="https://covid19datahub.io/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -104,39 +104,32 @@
 
       
 
-      </header><script src="HUN_files/htmlwidgets-1.5.1/htmlwidgets.js"></script><script src="HUN_files/jquery-1.12.4/jquery.min.js"></script><link href="HUN_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-<script src="HUN_files/datatables-binding-0.13/datatables.js"></script><link href="HUN_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="HUN_files/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet">
-<script src="HUN_files/dt-core-1.10.20/js/jquery.dataTables.min.js"></script><link href="HUN_files/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
-<script src="HUN_files/nouislider-7.0.10/jquery.nouislider.min.js"></script><link href="HUN_files/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
-<script src="HUN_files/selectize-0.12.0/selectize.min.js"></script><link href="HUN_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet">
-<script src="HUN_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Hungary</h1>
+      <h1 data-toc-skip>Julia</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/covid19datahub/COVID19dev/blob/master/vignettes/iso/HUN.Rmd"><code>vignettes/iso/HUN.Rmd</code></a></small>
-      <div class="hidden name"><code>HUN.Rmd</code></div>
+      <small class="dont-index">Source: <a href="https://github.com/covid19datahub/COVID19dev/blob/master/vignettes/api/julia.Rmd"><code>vignettes/api/julia.Rmd</code></a></small>
+      <div class="hidden name"><code>julia.Rmd</code></div>
 
     </div>
 
     
     
-<p><img src="https://www.countryflags.io/HU/flat/64.png" align="right"></p>
-<p>Data COVID-19 Hungary: <code>tests</code> (cumulative number of tests), <code>confirmed</code> (cumulative number of confirmed cases), <code>deaths</code> (cumulative number of deaths), <code>recovered</code> (cumulative number of recovered), <code>hosp</code> (hospitalized on date), <code>vent</code> (requiring ventilation on date), <code>icu</code> (intensive therapy on date). See the <a href="/articles/data.html">full dataset</a>.</p>
-<div id="htmlwidget-168d9d9f8e33d4b96866" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-168d9d9f8e33d4b96866">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["2020-05-11"],["Hungary"],[108257],[3263],[413],[933],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>date<\/th>\n      <th>administrative_area_level_1<\/th>\n      <th>tests<\/th>\n      <th>confirmed<\/th>\n      <th>deaths<\/th>\n      <th>recovered<\/th>\n      <th>hosp<\/th>\n      <th>vent<\/th>\n      <th>icu<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"autoWidth":false,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8]}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script><p>Data Sources: <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins Center for Systems Science and Engineering</a>, <a href="https://github.com/owid/covid-19-data">Our World in Data</a></p>
-<!--
-
-## Data Log
-
-We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. The following table helps to keep track of the issues with the COVID-19 data by [Johns Hopkins Center for Systems Science and Engineering](https://github.com/CSSEGISandData/COVID-19), [Our World in Data](https://github.com/owid/covid-19-data). See the [full log](/articles/data.html).
-
-<div id="htmlwidget-f75b889a722f5473d433" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f75b889a722f5473d433">{"x":null,"evals":[],"jsHooks":[]}</script>
-
--->
+<p><a href="https://julialang.org/">Julia</a> is a dynamic high-level programming language for scientific computing focused on high performance.</p>
+<div id="import-data-from-the-hub" class="section level2">
+<h2 class="hasAnchor">
+<a href="#import-data-from-the-hub" class="anchor"></a>Import Data from the Hub</h2>
+<p>For parsing csv Julia <a href="https://juliadata.github.io/CSV.jl/stable/">CSV</a> is used. Install it by typing into Julia console</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb1-1"><a href="#cb1-1"></a>using Pkg</span>
+<span id="cb1-2"><a href="#cb1-2"></a>Pkg.add(<span class="st">"CSV"</span>)</span></code></pre></div>
+<p>Once installed, fetch the data with</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode julia"><code class="sourceCode julia"><span id="cb2-1"><a href="#cb2-1"></a>using CSV</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co"># download</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>url = <span class="st">"https://storage.covid19datahub.io/data-1.csv"</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>data = CSV.read(download(url))</span></code></pre></div>
+</div>
 <div id="terms-of-use" class="section level2">
 <h2 class="hasAnchor">
 <a href="#terms-of-use" class="anchor"></a>Terms of Use</h2>
