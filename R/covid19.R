@@ -243,7 +243,7 @@ covid19 <- function(country = NULL,
     # merge top level data
     y <- extdata("db","ISO.csv")
     if(level>1)
-      y <- y[,c("iso_alpha_3","administrative_area_level_1","currency")]
+      y <- y[,c("iso_alpha_3","iso_alpha_2","iso_numeric","currency","administrative_area_level_1")]
     
     x <- merge(x, y, by = "iso_alpha_3", all.x = TRUE)
 
