@@ -24,16 +24,71 @@ Create a new `ds_*` file, named with the domain of the data source, that does th
 
 - **Download** the data and store it in a variable called  `x`
 
-- **Rename** the columns according to our format: `id, date, tests, confirmed, deaths, recovered, hosp, vent, icu` . 
+  ```R
+  repo <- "https://raw.githubusercontent.com/opencovid19-fr"
+  url  <- "/data/master/dist/chiffres-cles.csv"
+  x    <- read.csv(paste0(repo,url), cache = cache) 
+  ```
+
+- **Rename** the columns according to our [format](https://covid19datahub.io/articles/doc/data.html): 
+
+- `date` (date object)
+
+  - `tests` (cumulative number of tests)
+  - `confirmed` (cumulative number of confirmed cases)
+  - `deaths` (cumulative number of deaths)
+  - `recovered` (cumulative number of recovered)
+  - `hosp` (hospitalized on date)
+  - `vent` (requiring ventilation on date)
+  - `icu` (intensive therapy on date). 
+
   Remember that only the column `date` is required, all the others could be dropped if the data is missing
 
+  ```R
+  x <- map_data(x, c(
+    'date',
+    'depistes'      = 'tests',
+    'cas_confirmes' = 'confirmed',
+    'deces'         = 'deaths',
+    'gueris'        = 'recovered',
+    'hospitalises'  = 'hosp',
+    'reanimation'   = 'icu',
+    'granularite',
+    'maille_code',
+    'maille_nom'
+  ))
+  ```
+
 - **Format** the data correctly. Most importantly, `date` should be of the format date.
+
+  ``` 
+  x$date <- as.Date(x$date)
+  ```
+
 - **Clean** your data! This could include operation such as:
+
   - Imposing NAs on values different than NA and numeric
   - Dropping non-useful columns
   - Fixing encoding issues
   - ...
+
+  ```R
+  x <- x %>% 
+    distinct(date, maille_code, .keep_all = TRUE)
+  ```
+
+  
+
 - **Filter** your data, based on the function input `level`*(Required only if your data contains more than one level)*
+
+  ```R
+  if(level==1)
+    x<- x[x$granularite=="pays",]  
+  if(level==2)
+    x<- x[x$granularite %in% c("region", "collectivite-outremer"),]
+  if(level==3)
+    x<- x[x$granularite=="departement",]
+  ```
 
 - **Return** the result
 
@@ -51,25 +106,3 @@ In order to test if your function is working, try answering the following questi
 - Is the data coherent with the original source?
 - Is the data coherent with other sources? *(fast trick, google COVID19 + iso)*
 - Is the function working properly with all the possible levels?
-
-
-
-### Create a pull request
-
-Once you created the function and passed the tests, you're ready for the pull request!
-
-- **Fork** the repository
-- **Propose** a new file in the R folder. 
-- **Call** the file with the name of your function. Don't forget the .R extension!
-- **Summarize** in the description what is your file doing. *(Es: France level 1,2,3 data from official source)*
-- **Ask** for the pull request! You'll receive a comment in a short period of time.
-
-
-
-If you followed the instructions up to here, your request will most likely be accepted right away. However, there could be some comments by the admins:
-
-In that case:
-
-- **Download** the changed file. You can find it inside your pull request
-- **Modify** what the administrator asked you
-- **Create** the pull request again
