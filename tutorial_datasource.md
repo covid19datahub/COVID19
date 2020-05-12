@@ -39,6 +39,8 @@ Create a new `ds_*` file, named with the domain of the data source, that does th
 
 Remember that your function must have the parameter `cache` as a first element, and the others (`level`, ...) could be in random order.
 
+The utilities that you can find [here](https://covid19datahub.io/reference/) could be very useful!
+
 
 
 ### Test the function and the data
@@ -71,4 +73,3 @@ In that case:
 - **Download** the changed file. You can find it inside your pull request
 - **Modify** what the administrator asked you
 - **Create** the pull request again
-
