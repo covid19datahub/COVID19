@@ -1,4 +1,4 @@
-ds_opencovid_fr <- function(cache, level = 1){
+opencovid_fr <- function(cache, level = 1){
   # Montemurro Paolo 11 05 2020
   
   # Download data
