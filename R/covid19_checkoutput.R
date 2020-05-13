@@ -6,7 +6,6 @@ check <- function(c, message) {
 }
 
 checkoutput <- function(x) {
-  
   # id missing -> add foo id
   if(! "id" %in% colnames(x))
     x$id <- "id"
@@ -105,8 +104,6 @@ checkoutput <- function(x) {
         d_hosp_anyneg      = all(hosp == 0)|any(diff(hosp) < 0, na.rm = T),
         d_vent_anyneg      = all(vent == 0)|any(diff(vent) < 0, na.rm = T),
         d_icu_anyneg       = all( icu == 0)|any(diff(icu) < 0, na.rm = T) )
-    print(y$confirmed)
-    return(T)
     
     # deaths not descending
     status <- status | check(y$d_deaths_nonneg,
