@@ -30,6 +30,7 @@ x   <- read.zip(url, cache = TRUE, sep = ";", files = c(
 "confirmed" = "Epikurve.csv",
 "deaths"    = "TodesfaelleTimeline.csv",
 "recovered" = "GenesenTimeline.csv"))
+
 }
 
 }

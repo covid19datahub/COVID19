@@ -26,6 +26,7 @@ Read xls and xlsx files.
 
 url <- "https://epistat.sciensano.be/Data/COVID19BE.xlsx"
 x   <- read.excel(url, cache = TRUE)  
+
 }
 
 }

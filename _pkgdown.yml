@@ -1,0 +1,51 @@
+--- 
+authors: 
+  ? "Emanuele Guidotti"
+  : 
+    href: "https://guidotti.dev"
+home: 
+  description: "Unified datasets for a better understanding of COVID-19."
+  title: "COVID-19 Data Hub"
+navbar: 
+  components: 
+    articles: ~
+    data: 
+      href: articles/data.html
+      text: Data
+    python: 
+      href: articles/api/python.html
+      text: Python
+    r: 
+      href: articles/api/r.html
+      text: R
+    node:
+      href: articles/api/node.html
+      text: Node.js
+    julia:
+      href: articles/api/julia.html
+      text: Julia
+    reference: 
+      menu: 
+        - 
+          href: reference/index.html
+          text: Functions
+        - 
+          href: articles/doc/data.html
+          text: Datasets
+      text: References
+  structure: 
+    left: 
+      - home
+      - data
+      - r
+      - python
+      - node
+      - julia
+      - reference
+    right: 
+      - github
+template: 
+  params: 
+    ganalytics: UA-163902432-1
+title: "COVID-19 Data Hub"
+url: "https://covid19datahub.io"

@@ -3,20 +3,20 @@ NULL
 
 .onAttach <- function(libname, pkgname) {
 
-  if(interactive() & requireNamespace('COVID19dev', quietly = TRUE)){
+  if(interactive() & requireNamespace('COVID19', quietly = TRUE)){
 
     packageStartupMessage("The coronavirus situation is changing fast. Checking for updates...")
 
-    description <- try(readLines('https://raw.githubusercontent.com/covid19datahub/COVID19dev/master/DESCRIPTION'), silent = TRUE)
+    description <- try(readLines('https://raw.githubusercontent.com/covid19datahub/COVID19/master/DESCRIPTION'), silent = TRUE)
     if(class(description)=="try-error")
       return()
       
     id <- which(startsWith(prefix = "Version:", x = description))
     v  <- as.package_version(gsub(pattern = "^Version:\\s*", replacement = "", x = description[id]))
 
-    if(v > utils::packageVersion(pkg = "COVID19dev")){
+    if(v > utils::packageVersion(pkg = "COVID19")){
 
-      yn <- utils::askYesNo("Package COVID19dev: new version available. Update now?")
+      yn <- utils::askYesNo("Package COVID19: new version available. Update now?")
       if(!is.na(yn)) if(yn)
         update()
 
@@ -28,13 +28,29 @@ NULL
 
   }
 
+  packageStartupMessage(
+    '
+    ================================================================\n
+    
+    IMPORTANT NOTICE: 
+    This is the development version of the COVID-19 Data Hub
+    
+    Download the stable release from:
+    remotes::install_github("covid19datahub/R")
+    
+    It will be soon updated on CRAN
+    
+    ================================================================\n
+    '
+  )
+  
 }
 
 update <- function(){
 
-  detach("package:COVID19dev", unload=TRUE)
-  x <- try(remotes::install_github('covid19datahub/COVID19dev', quiet = FALSE, upgrade = FALSE), silent = TRUE)
-  library(COVID19dev)
+  detach("package:COVID19", unload=TRUE)
+  x <- try(remotes::install_github('covid19datahub/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
+  library(COVID19)
 
 }
 
@@ -199,7 +215,7 @@ cite <- function(x, src, verbose){
       
     })
     
-    cit <- utils::citation("COVID19dev")
+    cit <- utils::citation("COVID19")
     for(i in 1:length(y))
       cit <- c(y[[i]], cit)
     
@@ -209,6 +225,37 @@ cite <- function(x, src, verbose){
   }
   
   return(x)
+  
+}
+
+is_equal <- function(x, y){
+  
+  x <- as.data.frame(x)
+  y <- as.data.frame(y)
+  
+  rownames(x) <- paste(x$id, x$date)
+  rownames(y) <- paste(y$id, y$date)
+  
+  rn <- intersect(rownames(x), rownames(y))
+  
+  x <- x[rn, , drop = FALSE]
+  y <- y[rn, , drop = FALSE]
+  
+  if(nrow(x)==0 | nrow(y)==0)
+    return(TRUE)
+  
+  x <- x[,colSums(x!=0, na.rm = TRUE)!=0, drop = FALSE]
+  y <- y[,colSums(y!=0, na.rm = TRUE)!=0, drop = FALSE]
+  
+  cn <- intersect(colnames(x), colnames(y))
+  
+  x <- x[, cn, drop = FALSE]
+  y <- y[, cn, drop = FALSE]
+  
+  if(nrow(x)==0 | nrow(y)==0)
+    return(TRUE)
+  
+  return(all.equal(x,y))
   
 }
 
@@ -225,12 +272,13 @@ cite <- function(x, src, verbose){
 #' 
 #' # read file inst/extdata/db/ISO.csv
 #' x <- extdata("db","ISO.csv")
+#' 
 #' }
 #' 
 #' @export
 extdata <- function(...){
   
-  file <- system.file("extdata", ..., package = "COVID19dev")
+  file <- system.file("extdata", ..., package = "COVID19")
   if(!file.exists(file))
     return(NULL)
   
@@ -242,24 +290,25 @@ extdata <- function(...){
 #' 
 #' Add data source to the file inst/extdata/src.csv
 #' 
-#' @param ... named arguments corresponding to the columns of the \href{https://github.com/covid19datahub/COVID19dev/tree/master/inst/extdata/src.csv}{src.csv} file.
+#' @param ... named arguments corresponding to the columns of the \href{https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/src.csv}{src.csv} file.
 #' 
 #' @return \code{data.frame}.
 #' 
 #' @examples 
 #' \dontrun{
 #' 
-#'  x <- add_source(
+#'  x <- add_src(
 #'   iso_alpha_3 = "USA", 
 #'   administrative_area_level = 1, 
 #'   data_type = "confirmed", 
 #'   url = "https://example.com", 
 #'   title = "New Data Source", 
 #'   year = 2020)
+#'   
 #' }
 #' 
 #' @export
-add_source <- function(...){
+add_src <- function(...){
 
   new <- data.frame(list(...), stringsAsFactors = FALSE)
   
@@ -274,8 +323,10 @@ add_source <- function(...){
   else
     x <- extdata(file)
   
-  iso <- level <- NULL
-  x   <- new %>%
+  iso    <- level <- NULL
+  x$year <- as.character(x$year)
+  
+  x <- new %>%
     dplyr::bind_rows(x) %>%
     dplyr::distinct(iso_alpha_3, administrative_area_level, data_type, url, .keep_all = TRUE) %>%
     dplyr::arrange(iso_alpha_3, administrative_area_level) 
@@ -296,7 +347,7 @@ add_source <- function(...){
 #' @param iso ISO code (3 letters).
 #' @param ds name of the data source function generating \code{x}.
 #' @param map named vector mapping the columns of \code{x} to the columns of the XXX.csv file.
-#' @param append logical. Append the data to the XXX.csv file if it already exists? Defaul \code{FALSE}, overwrite.
+#' @param append logical. Append the data to the XXX.csv file if it already exists? Default \code{TRUE}.
 #' 
 #' @return \code{data.frame}
 #' 
@@ -304,7 +355,7 @@ add_source <- function(...){
 #' \dontrun{
 #' 
 #' # download data
-#' x <- COVID19dev:::jhucsse_git(file = "US", cache = TRUE, level = 3, country = "USA")
+#' x <- COVID19:::jhucsse_git(file = "US", cache = TRUE, level = 3, country = "USA")
 #' 
 #' # add iso
 #' csv <- add_iso(x, iso = "USA", ds = "jhucsse_git", level = 3, map = c(
@@ -315,10 +366,11 @@ add_source <- function(...){
 #'  "lat"   = "latitude",
 #'  "lng"   = "longitude",
 #'  "fips"  = "key_numeric"))
+#'  
 #' }
 #' 
 #' @export
-add_iso <- function(x, iso, ds, level, map = c("id"), append = FALSE){
+add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
   
   if(!level %in% 2:3)
     stop("level must be 2 or 3")
@@ -337,8 +389,17 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = FALSE){
   x$administrative_area_level      <- level
   
   file <- sprintf("%s.csv", iso)
-  if(append)
-    x <- dplyr::bind_rows(extdata("db", file), x)
+  
+  if(append){
+    
+    if(file.exists(file))
+      y <- read.csv(file, cache = FALSE)
+    else
+      y <- extdata("db", file)
+    
+    x <- dplyr::bind_rows(y, x)
+    
+  }
   
   cn  <- colnames(x)
   key <- unique(c("id", cn[grepl("^id\\_", cn)], key, cn[grepl("^key\\_", cn)]))
@@ -368,6 +429,7 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = FALSE){
 #' map_values(x, map = c(
 #' 'red' = 'yellow', 
 #' 'blue' = 'orange'))
+#' 
 #' }
 #' 
 #' @export
@@ -407,6 +469,7 @@ map_values <- function(x, map){
 #' 'cyl' = 'Cylinders',
 #' 'hp'  = 'Gross horsepower'
 #' ))
+#' 
 #' }
 #' 
 #' @export
@@ -518,6 +581,7 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
 #' 
 #' url <- "https://epistat.sciensano.be/Data/COVID19BE.xlsx"
 #' x   <- read.excel(url, cache = TRUE)  
+#' 
 #' }
 #' 
 #' @export
@@ -585,6 +649,7 @@ read.excel <- function(path, cache, sheet = NA, ...) {
 #' "confirmed" = "Epikurve.csv",
 #' "deaths"    = "TodesfaelleTimeline.csv",
 #' "recovered" = "GenesenTimeline.csv"))
+#' 
 #' }
 #' 
 #' @export
@@ -631,13 +696,14 @@ read.zip <- function(zip, files, cache, ...){
 #' 
 #' x <- covid19(level = 2)
 #' e <- err_log(x)
+#' 
 #' }
 #' 
 #' @export
 err_log <- function(x){
   
   err <- list()
-  key <- c("date","administrative_area_level_1","administrative_area_level_2","administrative_area_level_3","tests","confirmed","deaths","recovered","hosp","vent","icu")
+  key <- c("date","iso_alpha_3","administrative_area_level_1","administrative_area_level_2","administrative_area_level_3","tests","confirmed","deaths","recovered","hosp","vent","icu")
   
   idx <- which(x$deaths > x$confirmed & x$confirmed != 0) 
   if(length(idx))
@@ -677,19 +743,19 @@ err_log <- function(x){
   
   idx <- which(x$deaths.err) 
   if(length(idx))
-    err$`Cumulative number of deaths smaller than previous value` <- x[idx,key]
+    err$`Cumulative number of deaths smaller than previous day` <- x[idx,key]
   
   idx <- which(x$confirmed.err) 
   if(length(idx))
-    err$`Cumulative number of confirmed cases smaller than previous value` <- x[idx,key]
+    err$`Cumulative number of confirmed cases smaller than previous day` <- x[idx,key]
   
   idx <- which(x$tests.err) 
   if(length(idx))
-    err$`Cumulative number of tests smaller than previous value` <- x[idx,key]
+    err$`Cumulative number of tests smaller than previous day` <- x[idx,key]
   
   idx <- which(x$recovered.err) 
   if(length(idx))
-    err$`Cumulative number of recovered smaller than previous value` <- x[idx,key]
+    err$`Cumulative number of recovered smaller than previous day` <- x[idx,key]
   
   err <- dplyr::bind_rows(err, .id = "error")  
   
@@ -697,3 +763,151 @@ err_log <- function(x){
   
 }
 
+#' Check Data Source Format
+#' 
+#' Checks if the output of a data source function is correctly formatted. 
+#' The function checks the FORMAT, NOT the DATA.
+#' Before submission, the data should be double checked by comparing with external data sources (e.g. Google search).
+#' 
+#' @param x output of a data source function.
+#' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
+#' 
+#' @return logical. 
+#' 
+#' @examples 
+#' \dontrun{
+#' 
+#' # check format of the 'pcmdpc_git' data source
+#' x <- COVID19:::pcmdpc_git(cache = FALSE, level = 1)
+#' ds_check_format(x, level = 1)
+#' 
+#' }
+#' 
+#' @export
+ds_check_format <- function(x, level) {
+  
+  check <- function(c, message) {
+    if(!(c <- all(c))) 
+      warning(message)
+    return(c)
+  }
+  
+  status <- TRUE
+  ci     <- 0.95
+  cols   <- colnames(x)
+  
+  # fallback
+  if(!any(vars("fast") %in% cols))
+    stop("no valid column detected. Please rename the columns according to the documentation available at https://covid19datahub.io/articles/doc/data.html")
+  
+  # id missing 
+  if(!("id" %in% cols)){
+    if(level>1)
+      stop("column 'id' missing. Please add the id for each location (required for level > 1)")
+    else 
+      x$id <- "id"
+  }
+  
+  # date missing 
+  if(!("date" %in% cols))
+    stop("column 'date' missing. Please add the date for each observation")
+  
+  # check date column is date
+  status <- status & check(inherits(x$date, c("Date")),
+                           "column date of wrong type")
+  
+  # deaths <= confirmed
+  if("confirmed" %in% cols & "deaths" %in% cols)
+    status <- status & check(ci < mean(x$deaths <= x$confirmed | x$confirmed == 0, na.rm = T),
+                             "deaths > confirmed")
+  # confirmed <= tests
+  if("confirmed" %in% cols & "tests" %in% cols) 
+    status <- status & check(ci < mean(x$confirmed <= x$tests | x$tests == 0, na.rm = T),
+                             "confirmed > tests")
+  # recovered <= confirmed
+  if("recovered" %in% cols & "confirmed" %in% cols)
+    status <- status & check(ci < mean(x$recovered <= x$confirmed | x$confirmed == 0, na.rm = T),
+                             "recovered > confirmed")
+  # hosp <= confirmed
+  if("hosp" %in% cols & "confirmed" %in% cols)
+    status <- status & check(ci < mean(x$hosp <= x$confirmed | x$confirmed == 0, na.rm = T),
+                             "hosp > confirmed")
+  # icu <= hosp
+  if("icu" %in% cols & "hosp" %in% cols)
+    status <- status & check(ci < mean(x$icu <= x$hosp | x$hosp == 0, na.rm = T),
+                             "icu > hosp")
+  # vent <= confirmed
+  if("vent" %in% cols & "confirmed" %in% cols)
+    status <- status & check(ci < mean(x$vent <= x$confirmed | x$confirmed == 0, na.rm = T),
+                             "vent > confirmed")
+  
+  # TODO: checks with output
+  # ...
+
+  # check ascending
+  y <- x %>%
+    
+    dplyr::mutate(
+      deaths    = if("deaths" %in% cols) deaths else 0,
+      confirmed = if("confirmed" %in% cols) confirmed else 0,
+      tests     = if("tests" %in% cols) tests else 0,
+      recovered = if("recovered" %in% cols) recovered else 0,
+      hosp      = if("hosp" %in% cols) hosp else 0,
+      vent      = if("vent" %in% cols) vent else 0,
+      icu       = if("icu" %in% cols) icu else 0 ) %>%
+    
+    dplyr::group_by_at('id') %>%
+    dplyr::arrange_at('date') %>%
+    
+    # detect negative derivation
+    dplyr::summarise(
+      d_deaths_nonneg    = ci < mean(diff(deaths) >= 0, na.rm = T),
+      d_confirmed_nonneg = ci < mean(diff(confirmed) >= 0, na.rm = T),
+      d_tests_nonneg     = ci < mean(diff(tests) >= 0, na.rm = T),
+      d_recovered_nonneg = ci < mean(diff(recovered) >= 0, na.rm = T),
+      d_hosp_anyneg      = ci < mean(hosp == 0)|any(diff(hosp) < 0, na.rm = T),
+      d_vent_anyneg      = ci < mean(vent == 0)|any(diff(vent) < 0, na.rm = T),
+      d_icu_anyneg       = ci < mean( icu == 0)|any(diff(icu) < 0, na.rm = T) )
+  
+  # deaths not descending
+  status <- status & check(y$d_deaths_nonneg,
+                           "are you sure 'deaths' are cumulative counts?")
+  # confirmed not descending
+  status <- status & check(y$d_confirmed_nonneg,
+                           "are you sure 'confirmed' are cumulative counts?")
+  # tests not descending
+  status <- status & check(y$d_tests_nonneg,
+                           "are you sure 'tests' are cumulative counts?")
+  # recovered not descending
+  status <- status & check(y$d_recovered_nonneg,
+                           "are you sure 'recovered' are cumulative counts?")
+  # hosp not cumulative (any descending)
+  status <- status & check(y$d_hosp_anyneg,
+                           "are you sure 'hosp' are NOT cumulative counts?")
+  # vent not cumulative (any descending)
+  status <- status & check(y$d_vent_anyneg,
+                           "are you sure 'vent' are NOT cumulative counts?")
+  # icu not cumulative (any descending)
+  status <- status & check(y$d_icu_anyneg,
+                           "are you sure 'icu' are NOT cumulative counts?")
+  # TODO: checks with output first derivation
+  # ...
+  
+  # success
+  if(status)
+    message(
+    "
+     ====================================================================
+     The format is correct!
+     
+     However, this function does checks the FORMAT, NOT the DATA.
+     Plese double check the data via a quick Google search.
+     
+     When ready, submit your work. We look forward to it!
+     https://github.com/covid19datahub/COVID19/wiki/Create-a-pull-request
+     ====================================================================
+    ")
+  
+  # return
+  return(status)
+}

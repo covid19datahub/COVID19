@@ -1,4 +1,4 @@
-Package: COVID19dev
+Package: COVID19
 Type: Package
 Title: COVID-19 Data Hub
 Version: 2.0.0
@@ -9,11 +9,11 @@ Authors@R: c(
 Description: Unified datasets for a better understanding of COVID-19.
 License: GPL-3
 URL: https://covid19datahub.io
-BugReports: https://github.com/covid19datahub/COVID19dev/issues
+BugReports: https://github.com/covid19datahub/COVID19/issues
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5.0), utils, dplyr, tidyr (>= 1.0.0)
-Imports: remotes, digest, readxl
+Imports: remotes, digest, readxl, readr
 RoxygenNote: 7.1.0
 Suggests: testthat (>= 2.1.0), knitr, rmarkdown
 VignetteBuilder: knitr

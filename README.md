@@ -4,26 +4,26 @@
 
 ![](https://www.r-pkg.org/badges/version/COVID19) ![](https://www.r-pkg.org/badges/last-release/COVID19) ![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19) [![](https://img.shields.io/badge/doi-10.13140/RG.2.2.11649.81763-orange.svg)](https://doi.org/10.13140/RG.2.2.11649.81763)
 
-The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-dld2grt2-vmso7HkI8yFabW5R_mAZJw) to get help, contribute and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw). 
+The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw). 
 
 ## Quickstart
 
 ```R
 # Install COVID19
-remotes::install_github("covid19datahub/COVID19dev")
+remotes::install_github("covid19datahub/COVID19")
 
 # Load COVID19
-library("COVID19dev")
+library("COVID19")
 ```
 ## Implement a new data source
 
-- Get inspired by the `ds_*` files [here](<https://github.com/covid19datahub/COVID19dev/tree/master/R>) and the [package documentation](https://storage.covid19datahub.io/doc/COVID19.pdf).
+- Get inspired by the `ds_*` files [here](<https://github.com/covid19datahub/COVID19/tree/master/R>) and the [package documentation](https://storage.covid19datahub.io/doc/COVID19.pdf).
 - Create a new `ds_*` file named with the domain of the data source (lowercase and replace `.` with `_`). The function should return a `data.frame` with the columns `date` (date object), `tests` (cumulative number of tests), `confirmed` (cumulative number of confirmed cases), `deaths` (cumulative number of deaths), `recovered` (cumulative number of recovered), `hosp` (hospitalized on date), `vent` (requiring ventilation on date), `icu` (intensive therapy on date). Only the column `date` is strictly required, additional columns may be included as well.
-- Open a [new issue](<https://github.com/covid19datahub/COVID19dev/issues>) and submit your function (attach the R file). Thanks!
+- Open a [new issue](<https://github.com/covid19datahub/COVID19/issues>) and submit your function (attach the R file). Thanks!
 
 ## Fill the csv files
 
-- Fill the csv files [here](https://github.com/covid19datahub/COVID19dev/tree/master/inst/extdata/db). Do not fill `administrative_area_level_3` if `administrative_area_level` is less than `3`. Use signed `latitude` `longitude`:
+- Fill the csv files [here](https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db). Do not fill `administrative_area_level_3` if `administrative_area_level` is less than `3`. Use signed `latitude` `longitude`:
 
   `+` `+`: North and East
 
@@ -35,7 +35,16 @@ library("COVID19dev")
 
 - Do not create additional `csv` files (they must be generated with the `add_iso` function when a new ISO becomes available).
 
-- Open a [new issue](<https://github.com/covid19datahub/COVID19dev/issues>) and submit your csv (attach the file). Thanks!
+- Open a [new issue](<https://github.com/covid19datahub/COVID19/issues>) and submit your csv (attach the file). Thanks!
+
+## Use Cases
+
+Using the COVID-19 Data Hub? Open an [issue](https://github.com/covid19datahub/COVID19/issues) and let us know about your project!
+
+- [Brazilian COVID-19 Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
+- [Monitoring the advancement of the COVID–19 contagion in the regions of Italy](https://github.com/krzbar/COVID19)
+- [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
+
 
 ## Reference
 

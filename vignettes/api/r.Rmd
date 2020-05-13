@@ -1,0 +1,50 @@
+---
+title: "R"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{R}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Quickstart
+
+```R
+# install the package
+remotes::install_github("covid19datahub/R")
+
+# load the package
+require(COVID19)
+```
+
+## Download the data
+
+See the full documentation by typing `?covid19`
+
+```r
+# Worldwide data by country
+x <- covid19()
+
+# Worldwide data by state
+x <- covid19(level = 2)
+
+# Specific country data by city
+x <- covid19(c("Italy","US"), level = 3)
+```
+
+## Merge with World Bank Open Data
+
+```R
+# Merge with World Bank data
+wb <- c("gdp" = "NY.GDP.MKTP.CD", "hosp_beds" = "SH.MED.BEDS.ZS")
+x  <- covid19(wb = wb)
+```
+
+## List the data sources
+
+```R
+# Data sources
+s <- attr(x, "src")
+```
+
+`r readr::read_file('../terms.md')`

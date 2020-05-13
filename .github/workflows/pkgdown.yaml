@@ -1,0 +1,61 @@
+on:
+  
+  schedule:
+    
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 */4 * * *'
+
+name: pkgdown
+
+jobs:
+  
+  pkgdown:
+    
+    runs-on: ubuntu-latest
+    
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    
+    steps:
+    
+      - name: Credentials
+        run: |
+            git config --global user.email "emanuele.guidotti@unine.ch"
+            git config --global user.name "Emanuele Guidotti"
+      
+      - uses: actions/checkout@v2
+      
+      - uses: r-lib/actions/setup-r@master
+
+      - uses: r-lib/actions/setup-pandoc@master
+      
+      - name: Install libcurl
+        run: sudo apt-get install libcurl4-openssl-dev
+
+      - name: Query dependencies
+        run: |
+          install.packages('remotes')
+          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
+        shell: Rscript {0}
+
+      - name: Cache R packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ubuntu-r-4.0-1-${{ hashFiles('.github/depends.Rds') }}
+          restore-keys: ubuntu-r-4.0-1-
+
+      - name: Install dependencies
+        run: |
+          install.packages("DT")
+          install.packages("remotes")
+          install.packages("pkgdown")
+          remotes::install_deps(dependencies = TRUE)
+        shell: Rscript {0}
+
+      - name: Install package
+        run: R CMD INSTALL .
+
+      - name: Deploy package
+        run: pkgdown::deploy_to_branch(new_process = FALSE)
+        shell: Rscript {0}

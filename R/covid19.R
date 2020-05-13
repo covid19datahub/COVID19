@@ -40,15 +40,15 @@
 #' Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, \doi{10.13140/RG.2.2.11649.81763}.
 #'
 #' @note 
-#' We have invested a lot of time and effort in creating the \href{https://covid19datahub.io}{COVID-19 Data Hub}. We expect you to agree to the following rules when using it:
+#' We have invested a lot of time and effort in creating \href{https://covid19datahub.io}{COVID-19 Data Hub}. We expect you to agree to the following rules when using it:
 #' 
 #' \itemize{
 #' \item cite \href{https://doi.org/10.13140/RG.2.2.11649.81763}{Guidotti and Ardia (2020)} in working papers and published papers.
 #' \item place the URL \url{https://covid19datahub.io} in a footnote to help others find the Data Hub.
-#' \item you assume full risk for the use of the \href{https://covid19datahub.io}{COVID-19 Data Hub}. 
+#' \item you assume full risk for the use of \href{https://covid19datahub.io}{COVID-19 Data Hub}. 
 #' We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. 
 #' However, it is free software and comes with ABSOLUTELY NO WARRANTY. 
-#' Reliance on the \href{https://covid19datahub.io}{COVID-19 Data Hub} for medical guidance or use of the \href{https://covid19datahub.io}{COVID-19 Data Hub} in commerce is strictly prohibited.
+#' Reliance on \href{https://covid19datahub.io}{COVID-19 Data Hub} for medical guidance or use of \href{https://covid19datahub.io}{COVID-19 Data Hub} in commerce is strictly prohibited.
 #' }
 #' 
 #' @export
@@ -146,7 +146,7 @@ covid19 <- function(country = NULL,
       w <- NULL
     
     # ISO
-    for(fun in ISO) if(exists(fun, envir = asNamespace("COVID19dev"), mode = "function", inherits = FALSE)) {
+    for(fun in ISO) if(exists(fun, envir = asNamespace("COVID19"), mode = "function", inherits = FALSE)) {
       
       # try 
       y <- try(cachecall(fun, level = level, cache = cache))
@@ -243,7 +243,7 @@ covid19 <- function(country = NULL,
     # merge top level data
     y <- extdata("db","ISO.csv")
     if(level>1)
-      y <- y[,c("iso_alpha_3","administrative_area_level_1","currency")]
+      y <- y[,c("iso_alpha_3","iso_alpha_2","iso_numeric","currency","administrative_area_level_1")]
     
     x <- merge(x, y, by = "iso_alpha_3", all.x = TRUE)
 

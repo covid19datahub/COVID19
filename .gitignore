@@ -42,7 +42,7 @@ LICENSE
 .Renviron
 
 # Additional files
-/man/datasource.Rd
-/man/ISO.Rd
-doc
-Meta
+/doc
+/Meta
+/docs
+inst/doc

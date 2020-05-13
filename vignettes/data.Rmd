@@ -1,0 +1,50 @@
+---
+title: "Data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The raw data are cleaned by filling missing dates with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`.
+
+The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities). See the [full documentation](/articles/doc/data.html)
+
+## Latest Data
+
+| URL                              | Description                                                  | Granularity | Format |
+| ----------------------------------------------- | ----------------------- | --------------------------- | --- |
+| https://storage.covid19datahub.io/data-1.csv | Clean data | Administrative area level 1 | CSV |
+| https://storage.covid19datahub.io/data-2.csv | Clean data | Administrative area level 2 | CSV |
+| https://storage.covid19datahub.io/data-3.csv | Clean data | Administrative area level 3 | CSV |
+| https://storage.covid19datahub.io/data-1.zip | Clean data | Administrative area level 1 | ZIP |
+| https://storage.covid19datahub.io/data-2.zip | Clean data | Administrative area level 2 | ZIP |
+| https://storage.covid19datahub.io/data-3.zip | Clean data | Administrative area level 3 | ZIP |
+| https://storage.covid19datahub.io/rawdata-1.csv | Raw data | Administrative area level 1 | CSV |
+| https://storage.covid19datahub.io/rawdata-2.csv | Raw data | Administrative area level 2 | CSV |
+| https://storage.covid19datahub.io/rawdata-3.csv | Raw data | Administrative area level 3 | CSV |
+| https://storage.covid19datahub.io/rawdata-1.zip | Raw data | Administrative area level 1 | ZIP |
+| https://storage.covid19datahub.io/rawdata-2.zip | Raw data | Administrative area level 2 | ZIP |
+| https://storage.covid19datahub.io/rawdata-3.zip | Raw data | Administrative area level 3 | ZIP |
+| https://storage.covid19datahub.io/data.log | Clean data - Log file | All levels | CSV |
+| https://storage.covid19datahub.io/rawdata.log | Raw data - Log file | All levels | CSV |
+| https://storage.covid19datahub.io/src.csv | Data sources | All levels | CSV |
+
+
+## Vintage Data
+
+```{r, include=FALSE}
+start <- as.Date("2020-04-14")
+end   <- Sys.Date()-2
+dates <- seq(end, start, by = -1)
+tab   <- sprintf("| https://storage.covid19datahub.io/%s.zip | Dataset snapshot (vintage) | %s | ZIP |", dates, dates)
+tab   <- paste0(tab, collapse = "\n")
+```
+
+
+| URL                              | Description                                                  | Date | Format |
+| ----------------------------------------------- | --------------------------- | ----------------------- | --- |
+`r tab`
+
+`r readr::read_file('terms.md')`

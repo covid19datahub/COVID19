@@ -20,6 +20,7 @@ Error log of the \code{\link{covid19}} output.
 
 x <- covid19(level = 2)
 e <- err_log(x)
+
 }
 
 }
