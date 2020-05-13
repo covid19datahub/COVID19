@@ -9,6 +9,8 @@ We have invested a lot of time and effort in creating [COVID-19 Data Hub](https:
 - you assume full risk for the use of [COVID-19 Data Hub](https://covid19datahub.io/). We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. However, it is free software and comes with ABSOLUTELY NO WARRANTY. Reliance on [COVID-19 Data Hub](https://covid19datahub.io/) for medical guidance or use of [COVID-19 Data Hub](https://covid19datahub.io/) in commerce is strictly prohibited.
 
 
+## Comments
+
 <div class="utterances"></div>
 <script src="https://utteranc.es/client.js"
         repo="covid19datahub/COVID19"
