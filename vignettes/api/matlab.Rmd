@@ -1,0 +1,29 @@
+---
+title: "Matlab"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Matlab}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Import Data from the Hub
+
+In Matlab, you can fetch the data simply by
+
+
+```matlab
+% download
+data = urlread("https://storage.covid19datahub.io/data-1.csv");
+
+% save to tempfile
+csv_file_name = tempname;
+tmp_file = fopen(csv_file_name, 'w');
+fwrite(tmp_file, data);
+fclose(tmp_file);
+
+% parse csv from file
+data = readtable(csv_file_name);
+```
+
+`r readr::read_file('../terms.md')`
