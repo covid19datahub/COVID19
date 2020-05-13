@@ -1,6 +1,6 @@
 require(COVID19)
 
-fileName <- 'inst/ISO.Rmd'
+fileName <- 'pkgdown/iso.Rmd'
 template <- readr::read_file(fileName)
 
 x <- covid19(vintage = TRUE) %>% 

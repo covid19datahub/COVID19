@@ -24,6 +24,12 @@ navbar:
     julia:
       href: articles/api/julia.html
       text: Julia
+    matlab:
+      href: articles/api/matlab.html
+      text: MATLAB
+    scala:
+      href: articles/api/scala.html
+      text: Scala
     reference: 
       menu: 
         - 
@@ -39,8 +45,10 @@ navbar:
       - data
       - r
       - python
-      - node
+      - matlab
       - julia
+      - node
+      - scala
       - reference
     right: 
       - github

@@ -27,4 +27,4 @@ url = "https://storage.covid19datahub.io/data-1.csv"
 data = CSV.read(download(url))
 ```
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

@@ -47,4 +47,4 @@ x  <- covid19(wb = wb)
 s <- attr(x, "src")
 ```
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

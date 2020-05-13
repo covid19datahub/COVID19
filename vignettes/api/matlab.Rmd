@@ -26,4 +26,4 @@ fclose(tmp_file);
 data = readtable(csv_file_name);
 ```
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

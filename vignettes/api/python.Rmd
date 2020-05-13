@@ -42,4 +42,4 @@ data = StringIO(response.text)
 df = pd.read_csv(data)
 ```
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`
