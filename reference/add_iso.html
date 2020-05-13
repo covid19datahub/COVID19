@@ -90,7 +90,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.1</span>
       </span>
     </div>
 
@@ -162,7 +162,7 @@
     <p>Add new country in the inst/extdata/db/ folder</p>
     </div>
 
-    <pre class="usage"><span class='fu'>add_iso</span>(<span class='no'>x</span>, <span class='no'>iso</span>, <span class='no'>ds</span>, <span class='no'>level</span>, <span class='kw'>map</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"id"</span>), <span class='kw'>append</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+    <pre class="usage"><span class='fu'>add_iso</span>(<span class='no'>x</span>, <span class='no'>iso</span>, <span class='no'>ds</span>, <span class='no'>level</span>, <span class='kw'>map</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"id"</span>), <span class='kw'>append</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -185,7 +185,7 @@
     </tr>
     <tr>
       <th>append</th>
-      <td><p>logical. Append the data to the XXX.csv file if it already exists? Defaul <code>FALSE</code>, overwrite.</p></td>
+      <td><p>logical. Append the data to the XXX.csv file if it already exists? Default <code>TRUE</code>.</p></td>
     </tr>
     </table>
 
@@ -208,6 +208,7 @@
  <span class='st'>"lat"</span>   <span class='kw'>=</span> <span class='st'>"latitude"</span>,
  <span class='st'>"lng"</span>   <span class='kw'>=</span> <span class='st'>"longitude"</span>,
  <span class='st'>"fips"</span>  <span class='kw'>=</span> <span class='st'>"key_numeric"</span>))
+
 }</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

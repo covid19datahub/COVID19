@@ -7,10 +7,16 @@
     <loc>https://covid19datahub.io/reference/add_iso.html</loc>
   </url>
   <url>
-    <loc>https://covid19datahub.io/reference/add_source.html</loc>
+    <loc>https://covid19datahub.io/reference/add_src.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/covid19.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/cumsum.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/ds_check_format.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/err_log.html</loc>
