@@ -3,6 +3,7 @@
 export(add_iso)
 export(add_src)
 export(covid19)
+export(cumsum)
 export(ds_check_format)
 export(err_log)
 export(extdata)
