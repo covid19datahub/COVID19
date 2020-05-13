@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jordan • COVID-19 Data Hub</title>
+<title>Scala • COVID-19 Data Hub</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../../apple-touch-icon.png">
@@ -17,7 +17,7 @@
 <script src="../../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../../pkgdown.css" rel="stylesheet">
-<script src="../../pkgdown.js"></script><meta property="og:title" content="Jordan">
+<script src="../../pkgdown.js"></script><meta property="og:title" content="Scala">
 <meta property="og:description" content="COVID19">
 <meta property="og:image" content="https://covid19datahub.io/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -104,39 +104,61 @@
 
       
 
-      </header><script src="JOR_files/htmlwidgets-1.5.1/htmlwidgets.js"></script><script src="JOR_files/jquery-1.12.4/jquery.min.js"></script><link href="JOR_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-<script src="JOR_files/datatables-binding-0.13/datatables.js"></script><link href="JOR_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="JOR_files/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet">
-<script src="JOR_files/dt-core-1.10.20/js/jquery.dataTables.min.js"></script><link href="JOR_files/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
-<script src="JOR_files/nouislider-7.0.10/jquery.nouislider.min.js"></script><link href="JOR_files/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
-<script src="JOR_files/selectize-0.12.0/selectize.min.js"></script><link href="JOR_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet">
-<script src="JOR_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Jordan</h1>
+      <h1 data-toc-skip>Scala</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/covid19datahub/COVID19/blob/master/vignettes/iso/JOR.Rmd"><code>vignettes/iso/JOR.Rmd</code></a></small>
-      <div class="hidden name"><code>JOR.Rmd</code></div>
+      <small class="dont-index">Source: <a href="https://github.com/covid19datahub/COVID19/blob/master/vignettes/api/scala.Rmd"><code>vignettes/api/scala.Rmd</code></a></small>
+      <div class="hidden name"><code>scala.Rmd</code></div>
 
     </div>
 
     
     
-<p><img src="https://www.countryflags.io/JO/flat/64.png" align="right"></p>
-<p>Data COVID-19 Jordan: <code>tests</code> (cumulative number of tests), <code>confirmed</code> (cumulative number of confirmed cases), <code>deaths</code> (cumulative number of deaths), <code>recovered</code> (cumulative number of recovered), <code>hosp</code> (hospitalized on date), <code>vent</code> (requiring ventilation on date), <code>icu</code> (intensive therapy on date). See the <a href="/articles/data.html">full dataset</a>.</p>
-<div id="htmlwidget-9d6d64df588f4659003a" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9d6d64df588f4659003a">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["2020-05-12"],["Jordan"],[null],[562],[9],[390],[null],[null],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>date<\/th>\n      <th>administrative_area_level_1<\/th>\n      <th>tests<\/th>\n      <th>confirmed<\/th>\n      <th>deaths<\/th>\n      <th>recovered<\/th>\n      <th>hosp<\/th>\n      <th>vent<\/th>\n      <th>icu<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":5,"scrollX":true,"autoWidth":false,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8]}],"order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script><p>Data Sources: <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins Center for Systems Science and Engineering</a></p>
-<!--
-
-## Data Log
-
-We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. The following table helps to keep track of the issues with the COVID-19 data by [Johns Hopkins Center for Systems Science and Engineering](https://github.com/CSSEGISandData/COVID-19). See the [full log](/articles/data.html).
-
-<div id="htmlwidget-e3895350b36f427f9bcf" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e3895350b36f427f9bcf">{"x":null,"evals":[],"jsHooks":[]}</script>
-
--->
+<div id="import-data-from-the-hub" class="section level2">
+<h2 class="hasAnchor">
+<a href="#import-data-from-the-hub" class="anchor"></a>Import Data from the Hub</h2>
+<p>For Scala you can use following singleton object <code>Fetcher</code>. It uses components <code>java.net.URL</code> from Java Platform SE and <code>scala.io.Source</code> from Scala Standard Library.</p>
+<p>The same problem as in Python example occurs here, header <code>User-Agent</code> needs to be present, see <a href="https://stackoverflow.com/questions/13670692/403-forbidden-with-java-but-not-web-browser">similar issue in Java</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode scala"><code class="sourceCode scala"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">// file: covid19datahub.scala</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">object</span> COVID19Datahub {</span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="co">// method to fetch data</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="kw">def</span> <span class="fu">fetch</span>(): (List[Array[String]],Array[String]) = {</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    <span class="co">// download</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>    <span class="kw">val</span> url  = <span class="kw">new</span> java.<span class="fu">net</span>.<span class="fu">URL</span>(<span class="st">"https://storage.covid19datahub.io/data-1.csv"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="kw">val</span> conn = url.<span class="fu">openConnection</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>    conn.<span class="fu">setRequestProperty</span>(<span class="st">"User-Agent"</span>,<span class="st">"Mozilla/5.0"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10"></a>    </span>
+<span id="cb1-11"><a href="#cb1-11"></a>    <span class="co">// parse</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>    <span class="kw">val</span> text  = scala.<span class="fu">io</span>.<span class="fu">Source</span>.<span class="fu">fromInputStream</span>(conn.<span class="fu">getInputStream</span>).<span class="fu">getLines</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>    <span class="kw">val</span> lines = text.<span class="fu">map</span>(line =&gt; line.<span class="fu">split</span>(<span class="st">","</span>).<span class="fu">map</span>(_.<span class="fu">trim</span>)).<span class="fu">toList</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>    </span>
+<span id="cb1-15"><a href="#cb1-15"></a>    <span class="co">// split header and data</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>    <span class="kw">val</span> header = lines.<span class="fu">head</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a>    <span class="kw">val</span> data   = lines.<span class="fu">slice</span>(<span class="dv">1</span>,lines.<span class="fu">size</span>)</span>
+<span id="cb1-18"><a href="#cb1-18"></a>    </span>
+<span id="cb1-19"><a href="#cb1-19"></a>    <span class="co">// return</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>    (data,header)</span>
+<span id="cb1-21"><a href="#cb1-21"></a>  }</span>
+<span id="cb1-22"><a href="#cb1-22"></a>}</span></code></pre></div>
+<p>The object can be used in following way</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode scala"><code class="sourceCode scala"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">// file: main.scala</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">import</span> covid19datahub.<span class="fu">COVID19Datahub</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">object</span> MainObject {</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="kw">def</span> <span class="fu">main</span>(args: Array[String]): Unit = {</span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="kw">val</span> (data,header) = COVID19Datahub.<span class="fu">fetch</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>    </span>
+<span id="cb2-9"><a href="#cb2-9"></a>    <span class="co">// prints first and last element</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>    <span class="co">//data(0).foreach(println)</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>    <span class="co">//data(data.length-1).foreach(println)</span></span>
+<span id="cb2-12"><a href="#cb2-12"></a>  }</span>
+<span id="cb2-13"><a href="#cb2-13"></a>}</span></code></pre></div>
+</div>
 <div id="terms-of-use" class="section level2">
 <h2 class="hasAnchor">
 <a href="#terms-of-use" class="anchor"></a>Terms of Use</h2>

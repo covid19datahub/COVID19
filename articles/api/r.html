@@ -117,11 +117,40 @@
 
     
     
-<div id="import-data-from-the-hub" class="section level2">
+<div id="quickstart" class="section level2">
 <h2 class="hasAnchor">
-<a href="#import-data-from-the-hub" class="anchor"></a>Import Data from the Hub</h2>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="no">file</span> <span class="kw">&lt;-</span> <span class="st">"https://storage.covid19datahub.io/data-1.csv"</span>
-<span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/read.csv.html">read.csv</a></span>(<span class="no">file</span>, <span class="kw">na.strings</span> <span class="kw">=</span> <span class="st">""</span>, <span class="kw">stringsAsFactors</span> <span class="kw">=</span> <span class="fl">FALSE</span>, <span class="kw">encoding</span> <span class="kw">=</span> <span class="st">"UTF-8"</span>)</pre></body></html></div>
+<a href="#quickstart" class="anchor"></a>Quickstart</h2>
+<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co"># install the package</span>
+<span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"covid19datahub/R"</span>)
+
+<span class="co"># load the package</span>
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="no">COVID19</span>)</pre></body></html></div>
+</div>
+<div id="download-the-data" class="section level2">
+<h2 class="hasAnchor">
+<a href="#download-the-data" class="anchor"></a>Download the data</h2>
+<p>See the full documentation by typing <code><a href="../../reference/covid19.html">?covid19</a></code></p>
+<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="co"># Worldwide data by country</span>
+<span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>()
+
+<span class="co"># Worldwide data by state</span>
+<span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">level</span> <span class="kw">=</span> <span class="fl">2</span>)
+
+<span class="co"># Specific country data by city</span>
+<span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Italy"</span>,<span class="st">"US"</span>), <span class="kw">level</span> <span class="kw">=</span> <span class="fl">3</span>)</pre></body></html></div>
+</div>
+<div id="merge-with-world-bank-open-data" class="section level2">
+<h2 class="hasAnchor">
+<a href="#merge-with-world-bank-open-data" class="anchor"></a>Merge with World Bank Open Data</h2>
+<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="co"># Merge with World Bank data</span>
+<span class="no">wb</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"gdp"</span> <span class="kw">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="kw">=</span> <span class="st">"SH.MED.BEDS.ZS"</span>)
+<span class="no">x</span>  <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">wb</span> <span class="kw">=</span> <span class="no">wb</span>)</pre></body></html></div>
+</div>
+<div id="list-the-data-sources" class="section level2">
+<h2 class="hasAnchor">
+<a href="#list-the-data-sources" class="anchor"></a>List the data sources</h2>
+<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="co"># Data sources</span>
+<span class="no">s</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/attr.html">attr</a></span>(<span class="no">x</span>, <span class="st">"src"</span>)</pre></body></html></div>
 </div>
 <div id="terms-of-use" class="section level2">
 <h2 class="hasAnchor">
@@ -132,6 +161,11 @@
 <li><p>place the URL <a href="https://covid19datahub.io" class="uri">https://covid19datahub.io</a> in a footnote to help others find the Data Hub.</p></li>
 <li><p>you assume full risk for the use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>. We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. However, it is free software and comes with ABSOLUTELY NO WARRANTY. Reliance on <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> for medical guidance or use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> in commerce is strictly prohibited.</p></li>
 </ul>
+<div class="utterances">
+
+</div>
+<script src="https://utteranc.es/client.js" repo="covid19datahub/COVID19" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+</script>
 </div>
   </div>
 
