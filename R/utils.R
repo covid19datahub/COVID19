@@ -296,7 +296,7 @@ extdata <- function(...){
 #' @examples 
 #' \dontrun{
 #' 
-#'  x <- add_source(
+#'  x <- add_src(
 #'   iso_alpha_3 = "USA", 
 #'   administrative_area_level = 1, 
 #'   data_type = "confirmed", 
@@ -306,7 +306,7 @@ extdata <- function(...){
 #' }
 #' 
 #' @export
-add_source <- function(...){
+add_src <- function(...){
 
   new <- data.frame(list(...), stringsAsFactors = FALSE)
   
@@ -321,8 +321,10 @@ add_source <- function(...){
   else
     x <- extdata(file)
   
-  iso <- level <- NULL
-  x   <- new %>%
+  iso    <- level <- NULL
+  x$year <- as.character(x$year)
+  
+  x <- new %>%
     dplyr::bind_rows(x) %>%
     dplyr::distinct(iso_alpha_3, administrative_area_level, data_type, url, .keep_all = TRUE) %>%
     dplyr::arrange(iso_alpha_3, administrative_area_level) 
@@ -343,7 +345,7 @@ add_source <- function(...){
 #' @param iso ISO code (3 letters).
 #' @param ds name of the data source function generating \code{x}.
 #' @param map named vector mapping the columns of \code{x} to the columns of the XXX.csv file.
-#' @param append logical. Append the data to the XXX.csv file if it already exists? Defaul \code{FALSE}, overwrite.
+#' @param append logical. Append the data to the XXX.csv file if it already exists? Default \code{TRUE}.
 #' 
 #' @return \code{data.frame}
 #' 
@@ -365,7 +367,7 @@ add_source <- function(...){
 #' }
 #' 
 #' @export
-add_iso <- function(x, iso, ds, level, map = c("id"), append = FALSE){
+add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
   
   if(!level %in% 2:3)
     stop("level must be 2 or 3")
@@ -384,8 +386,17 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = FALSE){
   x$administrative_area_level      <- level
   
   file <- sprintf("%s.csv", iso)
-  if(append)
-    x <- dplyr::bind_rows(extdata("db", file), x)
+  
+  if(append){
+    
+    if(file.exists(file))
+      y <- read.csv(file, cache = FALSE)
+    else
+      y <- extdata("db", file)
+    
+    x <- dplyr::bind_rows(y, x)
+    
+  }
   
   cn  <- colnames(x)
   key <- unique(c("id", cn[grepl("^id\\_", cn)], key, cn[grepl("^key\\_", cn)]))
@@ -684,7 +695,7 @@ read.zip <- function(zip, files, cache, ...){
 err_log <- function(x){
   
   err <- list()
-  key <- c("date","administrative_area_level_1","administrative_area_level_2","administrative_area_level_3","tests","confirmed","deaths","recovered","hosp","vent","icu")
+  key <- c("date","iso_alpha_3","administrative_area_level_1","administrative_area_level_2","administrative_area_level_3","tests","confirmed","deaths","recovered","hosp","vent","icu")
   
   idx <- which(x$deaths > x$confirmed & x$confirmed != 0) 
   if(length(idx))
@@ -724,19 +735,19 @@ err_log <- function(x){
   
   idx <- which(x$deaths.err) 
   if(length(idx))
-    err$`Cumulative number of deaths smaller than previous value` <- x[idx,key]
+    err$`Cumulative number of deaths smaller than previous day` <- x[idx,key]
   
   idx <- which(x$confirmed.err) 
   if(length(idx))
-    err$`Cumulative number of confirmed cases smaller than previous value` <- x[idx,key]
+    err$`Cumulative number of confirmed cases smaller than previous day` <- x[idx,key]
   
   idx <- which(x$tests.err) 
   if(length(idx))
-    err$`Cumulative number of tests smaller than previous value` <- x[idx,key]
+    err$`Cumulative number of tests smaller than previous day` <- x[idx,key]
   
   idx <- which(x$recovered.err) 
   if(length(idx))
-    err$`Cumulative number of recovered smaller than previous value` <- x[idx,key]
+    err$`Cumulative number of recovered smaller than previous day` <- x[idx,key]
   
   err <- dplyr::bind_rows(err, .id = "error")  
   
