@@ -259,6 +259,16 @@ is_equal <- function(x, y){
   
 }
 
+csv_check_data <- function(iso){
+  
+  iso <- toupper(iso)
+  x   <- read.csv(sprintf("https://raw.githubusercontent.com/covid19datahub/COVID19/master/inst/extdata/db/%s.csv", iso), cache = FALSE)
+  y   <- extdata("db",sprintf("%s.csv",iso))
+  
+  return(is_equal(x, y))
+  
+}
+
 #' External Data
 #' 
 #' Read files in the inst/extdata/ folder.
