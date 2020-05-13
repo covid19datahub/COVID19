@@ -26,6 +26,7 @@ map_data(x, c(
 'cyl' = 'Cylinders',
 'hp'  = 'Gross horsepower'
 ))
+
 }
 
 }

@@ -47,15 +47,15 @@ This ensures that all locations share the same grid of dates and no single day i
 Then, \code{NA} values are replaced with the previous non-\code{NA} value or \code{0}.
 }
 \note{
-We have invested a lot of time and effort in creating the \href{https://covid19datahub.io}{COVID-19 Data Hub}. We expect you to agree to the following rules when using it:
+We have invested a lot of time and effort in creating \href{https://covid19datahub.io}{COVID-19 Data Hub}. We expect you to agree to the following rules when using it:
 
 \itemize{
 \item cite \href{https://doi.org/10.13140/RG.2.2.11649.81763}{Guidotti and Ardia (2020)} in working papers and published papers.
 \item place the URL \url{https://covid19datahub.io} in a footnote to help others find the Data Hub.
-\item you assume full risk for the use of the \href{https://covid19datahub.io}{COVID-19 Data Hub}. 
+\item you assume full risk for the use of \href{https://covid19datahub.io}{COVID-19 Data Hub}. 
 We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. 
 However, it is free software and comes with ABSOLUTELY NO WARRANTY. 
-Reliance on the \href{https://covid19datahub.io}{COVID-19 Data Hub} for medical guidance or use of the \href{https://covid19datahub.io}{COVID-19 Data Hub} in commerce is strictly prohibited.
+Reliance on \href{https://covid19datahub.io}{COVID-19 Data Hub} for medical guidance or use of \href{https://covid19datahub.io}{COVID-19 Data Hub} in commerce is strictly prohibited.
 }
 }
 \examples{

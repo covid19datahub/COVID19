@@ -25,6 +25,7 @@ x <- c('red','green','red','blue')
 map_values(x, map = c(
 'red' = 'yellow', 
 'blue' = 'orange'))
+
 }
 
 }
