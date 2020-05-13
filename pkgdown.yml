@@ -3,6 +3,7 @@ pkgdown: 1.5.1
 pkgdown_sha: ~
 articles:
   julia: api/julia.html
+  matlab: api/matlab.html
   node: api/node.html
   python: api/python.html
   r: api/r.html
@@ -201,7 +202,7 @@ articles:
   ZAF: iso/ZAF.html
   ZMB: iso/ZMB.html
   ZWE: iso/ZWE.html
-last_built: 2020-05-13T08:25Z
+last_built: 2020-05-13T12:21Z
 urls:
   reference: https://covid19datahub.io/reference
   article: https://covid19datahub.io/articles
