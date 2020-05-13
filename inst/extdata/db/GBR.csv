@@ -1,14 +1,14 @@
 "id","id_jhucsse_git","id_gov_uk","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key"
-"bfc9c60a","Anguilla",,2,"Anguilla",,18.2206,-63.0686,,
-"0a3b5fa5","Bermuda",,2,"Bermuda",,32.3078,-64.7505,,
-"0023de7a","British Virgin Islands",,2,"British Virgin Islands",,18.4207,-64.64,,
-"c1c88c78","Cayman Islands",,2,"Cayman Islands",,19.3133,-81.2546,,
+"bfc9c60a","Anguilla",,2,"Anguilla",,18.2206,-63.0686,18090,
+"0a3b5fa5","Bermuda",,2,"Bermuda",,32.3078,-64.7505,63973,
+"0023de7a","British Virgin Islands",,2,"British Virgin Islands",,18.4207,-64.64,29802,
+"c1c88c78","Cayman Islands",,2,"Cayman Islands",,19.3133,-81.2546,64174,
 "16dbec58","Channel Islands",,2,"Channel Islands",,49.3723,-2.3644,,
-"288f106c","Falkland Islands (Malvinas)",,2,"Falkland Islands (Malvinas)",,-51.7963,-59.5236,,
-"770662fe","Gibraltar",,2,"Gibraltar",,36.1408,-5.3536,,
-"fc9cad6b","Isle of Man",,2,"Isle of Man",,54.2361,-4.5481,,
-"0f57ee60","Montserrat",,2,"Montserrat",,16.7425,-62.1874,,
-"51b6c44c","Turks and Caicos Islands",,2,"Turks and Caicos Islands",,21.694,-71.7979,,
+"288f106c","Falkland Islands (Malvinas)",,2,"Falkland Islands (Malvinas)",,-51.7963,-59.5236,3198,
+"770662fe","Gibraltar",,2,"Gibraltar",,36.1408,-5.3536,33718,
+"fc9cad6b","Isle of Man",,2,"Isle of Man",,54.2361,-4.5481,84077,
+"0f57ee60","Montserrat",,2,"Montserrat",,16.7425,-62.1874,5373,
+"51b6c44c","Turks and Caicos Islands",,2,"Turks and Caicos Islands",,21.694,-71.7979,37665,
 "71521b16",,"E12000004",2,"East Midlands",,,,,"E12000004"
 "9f5c7a3a",,"E12000006",2,"East of England",,,,,"E12000006"
 "e85b4aac",,"E12000007",2,"London",,,,,"E12000007"
