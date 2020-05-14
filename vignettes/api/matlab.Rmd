@@ -2,7 +2,7 @@
 title: "MATLAB"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Matlab}
+  %\VignetteIndexEntry{MATLAB}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
