@@ -12,7 +12,7 @@ hxlstandard_org <- function(cache){
   # formatting 
   x <- map_data(x, c(
     'Date'              = 'date',
-    'Département'       = 'id',
+    'Département'       = 'state',
     'Cumulative.cases'  = 'confirmed',
     'Cumulative.Deaths' = 'deaths'
   ))
@@ -21,8 +21,8 @@ hxlstandard_org <- function(cache){
   x$date <- as.Date(x$date, format="%d-%m-%Y")
   
   # integers
-  x$confirmed <- as.integer(x$confirmed)
-  x$deaths    <- as.integer(x$deaths)
+  x$confirmed <- as.numeric(x$confirmed)
+  x$deaths    <- as.numeric(x$deaths)
   
   # return
   return(x)

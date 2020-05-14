@@ -6,11 +6,11 @@ HTI <- function(level, cache){
     return(NULL)
   
   # get data
-  x <- hxlstandard_org(level = level)
+  x <- hxlstandard_org(cache = cache)
   
   # level
-  if(level == 2)
-    x$id <- id(x, iso = "HTI", ds = "hxlstandard_org", level = level)
+  if(level==2)
+    x$id <- id(x$state, iso = "HTI", ds = "hxlstandard_org", level = level)
   
   # return
   return(x)

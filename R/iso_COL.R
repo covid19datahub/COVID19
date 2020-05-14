@@ -6,13 +6,13 @@ COL <- function(cache, level){
     return(NULL)
   
   # get data
-  x <- msps(cache = cache, level = level)
+  x <- gov_co(cache = cache, level = level)
   
   # id
   if(level == 2)
-    x$id <- x$state
+    x$id <- id(x$state, iso = "COL", ds = "gov_co", level = level)
   if(level == 3)
-    x$id <- x$city
+    x$id <- id(x$city_code, iso = "COL", ds = "gov_co", level = level)
 
   # return
   return(x)
