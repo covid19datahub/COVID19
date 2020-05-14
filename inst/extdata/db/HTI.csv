@@ -1,11 +1,11 @@
-"id","state","city","lat","lng","pop","pop_14","pop_15_64","pop_65","pop_age","pop_density","pop_death_rate"
-Artibonite,Artibonite,,,,1727524,,,,,,
-Centre,Centre,,,,746236,,,,,,
-"Grand Anse","Grand Anse",,,,468301,,,,,,
-Nippes,Nippes,,,,342525,,,,,,
-Nord,Nord,,,,1067177,,,,,,
-Nord-Est,Nord-Est,,,,393967,,,,,,
-Nord-Ouest,Nord-Ouest,,,,728807,,,,,,
-Ouest,Ouest,,,,4029705,,,,,,
-Sud-Est,Sud-Est,,,,774976,,,,,,
-Sud,Sud,,,,632601,,,,,,
+"id","id_hxlstandard_org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
+"64d7e6b4","Ouest",2,"Ouest",,,,4029705
+"e750c912","Artibonite",2,"Artibonite",,,,1727524
+"8cf3514c","Nord-Est",2,"Nord-Est",,,,393967
+"a1196d69","Nord",2,"Nord",,,,1067177
+"0a23ea88","Sud-Est",2,"Sud-Est",,,,774976
+"be9ae627","Nippes",2,"Nippes",,,,342525
+"816ca14f","Centre",2,"Centre",,,,746236
+"0a4420f3","Sud",2,"Sud",,,,632601
+"7850578c","Nord-Ouest",2,"Nord-Ouest",,,,728807
+"a517ab3b","Grand Anse",2,"Grand Anse",,,,468301
