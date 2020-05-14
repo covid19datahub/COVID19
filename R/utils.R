@@ -259,6 +259,53 @@ is_equal <- function(x, y){
   
 }
 
+csv_check_data <- function(iso){
+  
+  iso <- toupper(iso)
+  x   <- read.csv(sprintf("https://raw.githubusercontent.com/covid19datahub/COVID19/master/inst/extdata/db/%s.csv", iso), cache = FALSE)
+  y   <- extdata("db",sprintf("%s.csv",iso))
+  
+  return(is_equal(x, y))
+  
+}
+
+#' Cumulative Sums
+#' 
+#' Returns a numeric object whose elements are the cumulative sums of the elements of the argument.
+#' 
+#' @param x a numeric object.
+#' @param na.rm logical. Should missing values be removed? Default \code{FALSE}.
+#' 
+#' @details 
+#' If \code{na.rm=TRUE}, then \code{NA} are treated as \code{0} when computing the cumulative sum.
+#' 
+#' @examples 
+#' \dontrun{
+#' 
+#' x <- mtcars[1:5,]
+#' x[2,] <- NA
+#' 
+#' cumsum(x)
+#' cumsum(x, na.rm = TRUE)
+#' 
+#' }
+#' 
+#' @export
+cumsum <- function(x, na.rm = FALSE){
+  
+  if(!na.rm)
+    return(base::cumsum(x))
+  
+  miss <- is.na(x)
+  x[miss] <- 0
+  
+  x <- base::cumsum(x)
+  x[miss] <- NA
+  
+  return(x)
+  
+}
+
 #' External Data
 #' 
 #' Read files in the inst/extdata/ folder.

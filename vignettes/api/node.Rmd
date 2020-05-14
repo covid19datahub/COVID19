@@ -42,4 +42,4 @@ dataPromise.then((results) => {
 })
 ```
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

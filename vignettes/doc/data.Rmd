@@ -60,4 +60,4 @@ Download the data from the [data hub](/articles/data.html)
 | `latitude`                                 | Latitude.                                                    |
 | `longitude`                                 | Longitude.                                                   |
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

@@ -1,15 +1,15 @@
 ---
-title: "Matlab"
+title: "MATLAB"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Matlab}
+  %\VignetteIndexEntry{MATLAB}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
 ## Import Data from the Hub
 
-In Matlab, you can fetch the data simply by
+In MATLAB, you can fetch the data simply by
 
 
 ```matlab
@@ -26,4 +26,4 @@ fclose(tmp_file);
 data = readtable(csv_file_name);
 ```
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

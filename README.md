@@ -1,10 +1,14 @@
-<a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/logo.svg" align="right" height="128"/></a>
+
+
+<a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/img/logo.svg" align="right" height="128"/></a>
 
 # COVID-19 Data Hub
 
 ![](https://www.r-pkg.org/badges/version/COVID19) ![](https://www.r-pkg.org/badges/last-release/COVID19) ![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19) [![](https://img.shields.io/badge/doi-10.13140/RG.2.2.11649.81763-orange.svg)](https://doi.org/10.13140/RG.2.2.11649.81763)
 
-The repository aims at unifying COVID-19 datasets across different sources in order to simplify the data acquisition process and the subsequent analysis. __You are welcome to join__ and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw). 
+The repository aims at developing a __unified data hub__ by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19. 
+
+**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
 ## Quickstart
 
@@ -15,27 +19,11 @@ remotes::install_github("covid19datahub/COVID19")
 # Load COVID19
 library("COVID19")
 ```
-## Implement a new data source
+## Add a new data source
 
-- Get inspired by the `ds_*` files [here](<https://github.com/covid19datahub/COVID19/tree/master/R>) and the [package documentation](https://storage.covid19datahub.io/doc/COVID19.pdf).
-- Create a new `ds_*` file named with the domain of the data source (lowercase and replace `.` with `_`). The function should return a `data.frame` with the columns `date` (date object), `tests` (cumulative number of tests), `confirmed` (cumulative number of confirmed cases), `deaths` (cumulative number of deaths), `recovered` (cumulative number of recovered), `hosp` (hospitalized on date), `vent` (requiring ventilation on date), `icu` (intensive therapy on date). Only the column `date` is strictly required, additional columns may be included as well.
-- Open a [new issue](<https://github.com/covid19datahub/COVID19/issues>) and submit your function (attach the R file). Thanks!
-
-## Fill the csv files
-
-- Fill the csv files [here](https://github.com/covid19datahub/COVID19/tree/master/inst/extdata/db). Do not fill `administrative_area_level_3` if `administrative_area_level` is less than `3`. Use signed `latitude` `longitude`:
-
-  `+` `+`: North and East
-
-  `+` `-`: North and West
-
-  `-` `-`: South and West
-
-  `-` `+`: South and East
-
-- Do not create additional `csv` files (they must be generated with the `add_iso` function when a new ISO becomes available).
-
-- Open a [new issue](<https://github.com/covid19datahub/COVID19/issues>) and submit your csv (attach the file). Thanks!
+- Get started with [this tutorial](<https://github.com/covid19datahub/COVID19/wiki/Add-a-new-data-source>)
+- Submit your work with a [pull request](<https://github.com/covid19datahub/COVID19/wiki/Create-a-pull-request>)
+- Earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw) 😃
 
 ## Use Cases
 
@@ -52,3 +40,13 @@ Guidotti, E., Ardia, D., (2020).
 _COVID-19 Data Hub_       
 Working paper   
 [https://doi.org/10.13140/RG.2.2.11649.81763](https://doi.org/10.13140/RG.2.2.11649.81763)  
+
+## Supported by 
+
+<div style="height:96px">
+<img height="96" src="man/figures/ivado.png" alt="IVADO" style="margin-right:8px"/>
+<img height="96" src="man/figures/hec-montreal.jpg" alt="HEC Montréal" style="display:inline-block;margin-right:8px" />
+<img height="96" src="man/figures/hackzurich.jpeg" alt="Hack Zurich" style="display:inline-block;margin-right:8px" />
+<img height="96" src="man/figures/unimi.jpg" alt="Università degli Studi di Milano" style="display:inline-block;margin-right:8px" />
+</div>
+

@@ -27,7 +27,9 @@ s3 <- attr(x3, "src")
 
 src <- bind_rows(s1,s2,s3)
 x   <- bind_rows(x1,x2,x3)
-err <- err_log(x)
+
+err <- read.csv("https://storage.covid19datahub.io/rawdata.log", cache = FALSE) %>%
+  dplyr::filter(iso_alpha_3=="UGA")
 
 x <- x %>% group_by(id) %>% filter(row_number()==n()) %>% ungroup() %>% select_at(cn) %>% na_if(0) 
 if(is.null(x3)){
@@ -65,4 +67,4 @@ DT::datatable(err, rownames = FALSE, filter = 'top', options = list(
 
 `r if(!length(err)) "-->"`
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`
