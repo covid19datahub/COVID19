@@ -1,5 +1,5 @@
 ---
-title: "Matlab"
+title: "MATLAB"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Matlab}
@@ -9,7 +9,7 @@ vignette: >
 
 ## Import Data from the Hub
 
-In Matlab, you can fetch the data simply by
+In MATLAB, you can fetch the data simply by
 
 
 ```matlab
