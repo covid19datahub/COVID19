@@ -3,21 +3,21 @@
 "0a3b5fa5","Bermuda",,2,"Bermuda",,32.3078,-64.7505,63973,
 "0023de7a","British Virgin Islands",,2,"British Virgin Islands",,18.4207,-64.64,29802,
 "c1c88c78","Cayman Islands",,2,"Cayman Islands",,19.3133,-81.2546,64174,
-"16dbec58","Channel Islands",,2,"Channel Islands",,49.3723,-2.3644,,
+"16dbec58","Channel Islands",,2,"Channel Islands",,49.3723,-2.3644,170499,
 "288f106c","Falkland Islands (Malvinas)",,2,"Falkland Islands (Malvinas)",,-51.7963,-59.5236,3198,
 "770662fe","Gibraltar",,2,"Gibraltar",,36.1408,-5.3536,33718,
 "fc9cad6b","Isle of Man",,2,"Isle of Man",,54.2361,-4.5481,84077,
 "0f57ee60","Montserrat",,2,"Montserrat",,16.7425,-62.1874,5373,
 "51b6c44c","Turks and Caicos Islands",,2,"Turks and Caicos Islands",,21.694,-71.7979,37665,
-"71521b16",,"E12000004",2,"East Midlands",,,,,"E12000004"
-"9f5c7a3a",,"E12000006",2,"East of England",,,,,"E12000006"
-"e85b4aac",,"E12000007",2,"London",,,,,"E12000007"
-"0138ef99",,"E12000001",2,"North East",,,,,"E12000001"
-"9831be23",,"E12000002",2,"North West",,,,,"E12000002"
-"78e4573d",,"E12000008",2,"South East",,,,,"E12000008"
-"0fe367ab",,"E12000009",2,"South West",,,,,"E12000009"
-"06552b80",,"E12000005",2,"West Midlands",,,,,"E12000005"
-"ef368eb5",,"E12000003",2,"Yorkshire and The Humber",,,,,"E12000003"
+"71521b16",,"E12000004",2,"East Midlands",,52.98,-0.75,4804149,"E12000004"
+"9f5c7a3a",,"E12000006",2,"East of England",,52.24,0.41,6201214,"E12000006"
+"e85b4aac",,"E12000007",2,"London",,51.507222,-0.1275,8908081,"E12000007"
+"0138ef99",,"E12000001",2,"North East",,55,-1.8667,2657909,"E12000001"
+"9831be23",,"E12000002",2,"North West",,54.0167,-2.6333,7292093,"E12000002"
+"78e4573d",,"E12000008",2,"South East",,51.3167,-0.5,9133625,"E12000008"
+"0fe367ab",,"E12000009",2,"South West",,50.96,-3.22,5599735,"E12000009"
+"06552b80",,"E12000005",2,"West Midlands",,52.47,-2.29,5900757,"E12000005"
+"ef368eb5",,"E12000003",2,"Yorkshire and The Humber",,53.566667,-1.2,5479615,"E12000003"
 "569cea47",,"E09000002",3,,"Barking and Dagenham",,,,"E09000002"
 "219bdad1",,"E09000003",3,,"Barnet",,,,"E09000003"
 "ee9d14ab",,"E08000016",3,,"Barnsley",,,,"E08000016"
