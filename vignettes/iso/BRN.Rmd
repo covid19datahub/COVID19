@@ -67,4 +67,4 @@ DT::datatable(err, rownames = FALSE, filter = 'top', options = list(
 
 `r if(!length(err)) "-->"`
 
-`r readr::read_file('../terms.md')`
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`
