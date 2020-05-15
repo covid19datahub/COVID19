@@ -21,7 +21,7 @@ library("COVID19")
 ```
 ## Add a new data source
 
-- Get started with [this tutorial](<https://github.com/covid19datahub/COVID19/wiki/Add-a-new-data-source>)
+- Get started with [this tutorial](<https://github.com/covid19datahub/COVID19/wiki/Add-a-new-data-source>) and/or join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help
 - Submit your work with a [pull request](<https://github.com/covid19datahub/COVID19/wiki/Create-a-pull-request>)
 - Earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw) 😃
 
