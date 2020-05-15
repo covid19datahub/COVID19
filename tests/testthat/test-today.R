@@ -1,6 +1,7 @@
 test_that("today", {
 
-  t <- NULL
+  t  <- NULL
+  cn <- c("id","date",vars("fast"))
   for(level in 1:3) for(raw in c(TRUE, FALSE)){
   
     x <- covid19(level = level, raw = raw, vintage = FALSE, verbose = FALSE)
@@ -12,7 +13,7 @@ test_that("today", {
       
       dplyr::group_map(keep = TRUE, function(x, iso){
        
-        t <- is_equal(x, y)
+        t <- is_equal(x[,cn], y[,cn])
         
         if(class(t)=='character'){
           

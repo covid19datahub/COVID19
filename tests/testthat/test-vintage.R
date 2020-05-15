@@ -1,6 +1,7 @@
 test_that("vintage", {
   
-  t <- NULL
+  t   <- NULL
+  cn  <- c("id","date",vars("fast"))
   end <- Sys.Date()-3
   for(level in 1:3) for(raw in c(TRUE, FALSE)){
     
@@ -13,7 +14,7 @@ test_that("vintage", {
       
       dplyr::group_map(keep = TRUE, function(x, iso){
         
-        t <- is_equal(x, y)
+        t <- is_equal(x[,cn], y[,cn])
         
         if(class(t)=='character'){
           
