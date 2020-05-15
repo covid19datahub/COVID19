@@ -359,10 +359,12 @@ add_src <- function(...){
 
   new <- data.frame(list(...), stringsAsFactors = FALSE)
   
-  req <- c("iso_alpha_3","administrative_area_level","data_type","url","title","year")
-  req <- req[!(req %in% names(new))]
-  if(length(req)>0)
-    stop(sprintf("The following arguments are required: %s", paste(req, collapse = ", ")))
+  if(nrow(new)>0){
+    req <- c("iso_alpha_3","administrative_area_level","data_type","url","title","year")
+    req <- req[!(req %in% names(new))]
+    if(length(req)>0)
+      stop(sprintf("The following arguments are required: %s", paste(req, collapse = ", ")))
+  }
   
   file <- "src.csv"
   if(file.exists(file))
@@ -370,11 +372,10 @@ add_src <- function(...){
   else
     x <- extdata(file)
   
-  iso    <- level <- NULL
   x$year <- as.character(x$year)
   
-  x <- new %>%
-    dplyr::bind_rows(x) %>%
+  x <- x %>%
+    dplyr::bind_rows(new) %>%
     dplyr::distinct(iso_alpha_3, administrative_area_level, data_type, url, .keep_all = TRUE) %>%
     dplyr::arrange(iso_alpha_3, administrative_area_level) 
     
