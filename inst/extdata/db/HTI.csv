@@ -1,11 +1,11 @@
 "id","id_hxlstandard_org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"64d7e6b4","Ouest",2,"Ouest",,,,4029705
-"e750c912","Artibonite",2,"Artibonite",,,,1727524
-"8cf3514c","Nord-Est",2,"Nord-Est",,,,393967
-"a1196d69","Nord",2,"Nord",,,,1067177
-"0a23ea88","Sud-Est",2,"Sud-Est",,,,774976
-"be9ae627","Nippes",2,"Nippes",,,,342525
-"816ca14f","Centre",2,"Centre",,,,746236
-"0a4420f3","Sud",2,"Sud",,,,632601
-"7850578c","Nord-Ouest",2,"Nord-Ouest",,,,728807
-"a517ab3b","Grand Anse",2,"Grand Anse",,,,468301
+"64d7e6b4","Ouest",2,"Ouest",,18.539167,-72.335,4029705
+"e750c912","Artibonite",2,"Artibonite",,19.45,-72.683333,1727524
+"8cf3514c","Nord-Est",2,"Nord-Est",,19.667778,-71.839722,393967
+"a1196d69","Nord",2,"Nord",,19.757778,-72.204167,1067177
+"0a23ea88","Sud-Est",2,"Sud-Est",,18.234167,-72.534722,632601
+"be9ae627","Nippes",2,"Nippes",,18.45,-73.1,342525
+"816ca14f","Centre",2,"Centre",,19.15,-72.016667,746236
+"0a4420f3","Sud",2,"Sud",,18.2,-73.75,774976
+"7850578c","Nord-Ouest",2,"Nord-Ouest",,19.95,-72.8333,728807
+"a517ab3b","Grand Anse",2,"Grand Anse",,18.65,-74.116667,468301
