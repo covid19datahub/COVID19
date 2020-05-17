@@ -1,25 +1,47 @@
-
-
 <a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/img/logo.svg" align="right" height="128"/></a>
 
 # COVID-19 Data Hub
 
 ![](https://www.r-pkg.org/badges/version/COVID19) ![](https://www.r-pkg.org/badges/last-release/COVID19) ![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19) [![](https://img.shields.io/badge/doi-10.13140/RG.2.2.11649.81763-orange.svg)](https://doi.org/10.13140/RG.2.2.11649.81763)
 
-The repository aims at developing a __unified data hub__ by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19. 
+The repository aims at developing a __unified data hub__ by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.  Available in:
+
+<div style="text-align:center">
+<a href="https://github.com/covid19datahub/R" target="_blank">R</a>
+-
+<a href="https://github.com/covid19datahub/Python" target="_blank">Python</a>
+-
+<a href="https://github.com/covid19datahub/MATLAB" target="_blank">MATLAB</a>
+-
+<a href="https://github.com/covid19datahub/Scala" target="_blank">Scala</a>
+-
+<a href="https://github.com/covid19datahub/Julia" target="_blank">Julia</a>
+-
+<a href="https://github.com/covid19datahub/Node.js" target="_blank">Node.js</a>
+-
+<a href="https://github.com/covid19datahub/Excel" target="_blank">Excel</a>
+</div>
+
+## Data Sources
+
+- [Johns Hopkins Center for Systems Science and Engineering](https://github.com/CSSEGISandData/COVID-19)
+- [Oxford COVID-19 Government Response Tracker](www.bsg.ox.ac.uk/covidtracker)
+- [Public Health Agency, Sweden](https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525)
+- [Ministery of Health, Slovenia](https://www.gov.si/en/topics/coronavirus-disease-covid-19/)
+- [Open Government Data, Latvia](https://data.gov.lv/dati/dataset)
+- [Ministero della Salute, Italia](https://github.com/pcm-dpc/COVID-19)
+- [Open Government Data, United Kingdom](https://coronavirus.data.gov.uk)
+- [Ministery of Health of Czech Republic](https://onemocneni-aktualne.mzcr.cz/)
+- [Ministerio de Salud y Protección Social de Colombia](https://www.datos.gov.co)
+- [Open Government Data, Switzerland](https://github.com/openZH/covid_19)
+- [Public Health Infobase, Government of Canada](https://health-infobase.canada.ca)
+- [Epistat, Belgian Infectious Diseases](https://epistat.sciensano.be)
+- [Open Government Data, Austria](https://info.gesundheitsministerium.at/)
+- See the [full list](<https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv>)
+
+## Add a new data source
 
 **You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
-
-## Quickstart
-
-```R
-# Install COVID19
-remotes::install_github("covid19datahub/COVID19")
-
-# Load COVID19
-library("COVID19")
-```
-## Add a new data source
 
 - Get started with [this tutorial](<https://github.com/covid19datahub/COVID19/wiki/Add-a-new-data-source>) and/or join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help
 - Submit your work with a [pull request](<https://github.com/covid19datahub/COVID19/wiki/Create-a-pull-request>)
