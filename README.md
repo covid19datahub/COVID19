@@ -29,6 +29,7 @@ library("COVID19")
 
 Using the COVID-19 Data Hub? Open an [issue](https://github.com/covid19datahub/COVID19/issues) and let us know about your project!
 
+- [Specialist Unit for Open Government Data Canton of Zurich](<https://github.com/openZH/covid_19/issues/723>)
 - [Brazilian COVID-19 Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
 - [Monitoring the advancement of the COVID–19 contagion in the regions of Italy](https://github.com/krzbar/COVID19)
 - [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
