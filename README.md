@@ -6,21 +6,21 @@
 
 The repository aims at developing a __unified data hub__ by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.  Available in:
 
-<div style="text-align:center">
+<p align="center">
 <a href="https://github.com/covid19datahub/R" target="_blank">R</a>
--
+|
 <a href="https://github.com/covid19datahub/Python" target="_blank">Python</a>
--
+|
 <a href="https://github.com/covid19datahub/MATLAB" target="_blank">MATLAB</a>
--
+|
 <a href="https://github.com/covid19datahub/Scala" target="_blank">Scala</a>
--
+|
 <a href="https://github.com/covid19datahub/Julia" target="_blank">Julia</a>
--
+|
 <a href="https://github.com/covid19datahub/Node.js" target="_blank">Node.js</a>
--
+|
 <a href="https://github.com/covid19datahub/Excel" target="_blank">Excel</a>
-</div>
+</p>
 
 ## Data Sources
 
