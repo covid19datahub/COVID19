@@ -1,252 +1,252 @@
-"id","id_jhucsse_git","administrative_area_level","administrative_area_level_1","iso_alpha_3","iso_alpha_2","iso_numeric","currency","latitude","longitude","population"
-"GPC","Grand Princess",1,"Grand Princess","GPC",,,,,,
-"MSZ","MS Zaandam",1,"MS Zaandam","MSZ",,,,,,
-"DPC","Diamond Princess",1,"Diamond Princess","DPC",,,,,,3711
-"AIA","Anguilla",1,"Anguilla","AIA","AI",660,,18.2500,-063.1666667,18090
-"ALA","Aland Islands",1,"Aland Islands","ALA","AX",248,,60.116667,19.9,29884
-"ANT","Netherlands Antilles",1,"Netherlands Antilles","ANT","AN",530,,12.226079,-69.0600891,304759
-"ATA","Antarctica",1,"Antarctica","ATA","AQ",10,,-90,0,
-"ATF","French Southern Territories",1,"French Southern Territories","ATF","TF",260,,,,
-"BLM","Saint Barthélemy",1,"Saint Barthélemy","BLM","BL",652,,18.50000,-63.416666,7122
-"BVT","Bouvet Island",1,"Bouvet Island","BVT","BV",74,,-54.4333333,3.4000,
-"CCK","Cocos (Keeling) Islands",1,"Cocos (Keeling) Islands","CCK","CC",166,,-12.5000000,96.833333,596
-"COK","Cook Islands",1,"Cook Islands","COK","CK",184,,-21.2333333,-159.7666667,8574
-"CXR","Christmas Island",1,"Christmas Island","CXR","CX",162,,-10.5000000,105.6666667,2205
-"FLK","Falkland Islands (Malvinas)",1,"Falkland Islands (Malvinas)","FLK","FK",238,,-51.7500000,-59.0000,3198
-"GGY","Guernsey",1,"Guernsey","GGY","GG",831,,49.4666667,-2.5833333,67052
-"GLP","Guadeloupe",1,"Guadeloupe","GLP","GP",312,,16.9959717,-62.0676422,395700
-"GUF","French Guiana",1,"French Guiana","GUF","GF",254,,4.0000000,-53.0000000,290691
-"HMD","Heard Island and McDonald Islands",1,"Heard Island and McDonald Islands","HMD","HM",334,,-53.1, 73.516667,
-"IOT","British Indian Ocean Territory",1,"British Indian Ocean Territory","IOT","IO",86,,-6.000,71.50,
-"JEY","Jersey",1,"Jersey","JEY","JE",832,,49.25,-2.1666666,101073
-"MSR","Montserrat",1,"Montserrat","MSR","MS",500,,16.75,-62.2,5373
-"MTQ","Martinique",1,"Martinique","MTQ","MQ",474,,14.666667,-61,376480
-"MYT","Mayotte",1,"Mayotte","MYT","YT",175,,-12.77889,45.23151,256518
-"NFK","Norfolk Island",1,"Norfolk Island","NFK","NF",574,,-29.0333,167.950,1748
-"NIU","Niue",1,"Niue","NIU","NU",570,,-19.0333333,-169.866666,2000
-"PCN","Pitcairn",1,"Pitcairn","PCN","PN",612,,-25.0666667,-130.10,50
-"REU","Réunion",1,"Réunion","REU","RE",638,,-21.114444,55.5325,859959
-"SGS","South Georgia and the South Sandwich Islands",1,"South Georgia and the South Sandwich Islands","SGS","GS",239,,-54.5000,-37.00,
-"SHN","Saint Helena, Ascension and Tristan da Cunha",1,"Saint Helena, Ascension and Tristan da Cunha","SHN","SH",654,,,,
-"SJM","Svalbard and Jan Mayen",1,"Svalbard and Jan Mayen","SJM","SJ",744,,78.0000000,20.000,2926
-"SPM","Saint Pierre and Miquelon",1,"Saint Pierre and Miquelon","SPM","PM",666,,46.8333333,-056.333333,5347
-"TKL","Tokelau",1,"Tokelau","TKL","TK",772,,-9.0,-172.0,1647
-"UMI","United States Minor Outlying Islands",1,"United States Minor Outlying Islands","UMI","UM",581,,,,
-"VAT","Holy See",1,"Holy See","VAT","VA",336,,41.90,12.45,1000
-"WLF","Wallis and Futuna",1,"Wallis and Futuna","WLF","WF",876,,-13.3,-176.2,15854
-"BMU","Bermuda",1,"Bermuda","BMU","BM",60,,32.3333333,-64.75,63973
-"CYM","Cayman Islands",1,"Cayman Islands","CYM","KY",136,,19.5,-80.50,64174
-"FRO","Faroe Islands",1,"Faroe Islands","FRO","FO",234,,62,-7.00,48497
-"GIB","Gibraltar",1,"Gibraltar","GIB","GI",292,,36.1333333,-5.35,33718
-"GRL","Greenland",1,"Greenland","GRL","GL",304,,,,56025
-"IMN","Isle of Man",1,"Isle of Man","IMN","IM",833,,54.25,-4.5,84077
-"MAF","Saint Martin (French part)",1,"Saint Martin (French part)","MAF","MF",663,,18.0833333,-63.95,37264
-"RKS","Kosovo",1,"Kosovo","RKS","XK",,,42.602636,20.902977,1932774
-"TWN","Taiwan*",1,"Taiwan","TWN","TW",158,,23.5,121.00,23603049
-"VGB","Virgin Islands, British",1,"Virgin Islands, British","VGB","VG",92,,,,29802
-"ABW","Aruba",1,"Aruba","ABW","AW",533,,12.50,-69.96,105845
-"ASM","American Samoa",1,"American Samoa","ASM","AS",16,,-14.333333,-170.00,55465
-"ESH","Western Sahara",1,"Western Sahara","ESH","EH",732,,24.2155,-12.8858,652271
-"MNP","Northern Mariana Islands",1,"Northern Mariana Islands","MNP","MP",580,,15.20,145.750,56882
-"NCL","New Caledonia",1,"New Caledonia","NCL","NC",540,,-21.5,165.5,284060
-"PYF","French Polynesia",1,"French Polynesia","PYF","PF",258,,-15.00,-140.00,277679
-"TCA","Turks and Caicos Islands",1,"Turks and Caicos Islands","TCA","TC",796,,21.75,-71.5833,37665
-"VIR","Virgin Islands, U.S.",1,"Virgin Islands, U.S.","VIR","VI",850,,18.333333,-64.833333,106977
-"GUM","Guam",1,"Guam","GUM","GU",316,,13.46666,144.783333,165768
-"HKG","Hong Kong",1,"Hong Kong","HKG","HK",344,,22.25,114.166666,7451000
-"MAC","Macao",1,"Macao","MAC","MO",446,,22.166666,113.55,631636
-"PRI","Puerto Rico",1,"Puerto Rico","PRI","PR",630,,18.25,-66.50,3195153
-"PRK","Korea, Democratic People's Republic of",1,"Korea, Democratic People's Republic of","PRK","KP",408,,40.00,127.00,25549819
-"PSE","West Bank and Gaza",1,"Palestine","PSE","PS",275,,,,4569087
-"SYR","Syria",1,"Syria","SYR","SY",760,,35.00,38.000,16906283
-"LBY","Libya",1,"Libya","LBY","LY",434,,25.00,17.000,6678567
-"TUV","Tuvalu",1,"Tuvalu","TUV","TV",798,,-8.00,178.00,11508
-"CIV","Cote d'Ivoire",1,"Cote d'Ivoire","CIV","CI",384,,8.00,-5.00,25069229
-"COD","Congo (Kinshasa)",1,"Congo, the Democratic Republic of the","COD","CD",180,,0.00,25.00,84068091
-"FSM","Micronesia, Federated States of",1,"Micronesia, Federated States of","FSM","FM",583,,6.9166666,158.25,112640
-"MHL","Marshall Islands",1,"Marshall Islands","MHL","MH",584,,9.00,168.00,58413
-"VEN","Venezuela",1,"Venezuela","VEN","VE",862,,8.00,-66.00,28870195
-"BOL","Bolivia",1,"Bolivia","BOL","BO",68,,-17.00,-65.00,11353142
-"MKD","North Macedonia",1,"Macedonia","MKD","MK",807,,41.833,22.000,2082958
-"SLB","Solomon Islands",1,"Solomon Islands","SLB","SB",90,,-08.00,159.000,652858
-"SSD","South Sudan",1,"South Sudan","SSD","SS",728,,6.877,31.307,10975920
-"TJK","Tajikistan",1,"Tajikistan","TJK","TJ",762,,39.00,71.00,9100837
-"TKM","Turkmenistan",1,"Turkmenistan","TKM","TM",795,,40.00,60.00,5850908
-"COG","Congo (Brazzaville)",1,"Congo","COG","CG",178,,-1.000,15.000,5244363
-"IRN","Iran",1,"Iran","IRN","IR",364,,32.000,53.00,81800269
-"LSO","Lesotho",1,"Lesotho","LSO","LS",426,,-29.50,28.50,2108132
-"NRU","Nauru",1,"Nauru","NRU","NR",520,,-00.533,166.916666,12704
-"PLW","Palau",1,"Palau","PLW","PW",585,,7.5000,134.50,17907
-"VUT","Vanuatu",1,"Vanuatu","VUT","VU",548,,-16.000,167.0000,292680
-"WSM","Samoa",1,"Samoa","WSM","WS",882,,-13.5833333,-172.3333333,196130
-"BDI","Burundi",1,"Burundi","BDI","BI",108,,-3.3731,29.9189,11175378
-"BRN","Brunei",1,"Brunei","BRN","BN",96,,4.50,114.6666667,428962
-"COM","Comoros",1,"Comoros","COM","KM",174,,-12.1666667,44.2500000,832322
-"CPV","Cabo Verde",1,"Cape Verde","CPV","CV",132,,16.0000000,-24.0000000,543767
-"KIR","Kiribati",1,"Kiribati","KIR","KI",296,,01.4166667,173.000000,115847
-"LAO","Laos",1,"Laos","LAO","LA",418,,18.0000000,105.0000000,7061507
-"MDA","Moldova",1,"Moldova","MDA","MD",498,,47.0000000,29.000000,2706049
-"STP","Sao Tome and Principe",1,"Sao Tome and Principe","STP","ST",678,,0.18636,6.613081,211028
-"SWZ","Eswatini",1,"Swaziland","SWZ","SZ",748,,-26.500,31.5000000,1136191
-"TON","Tonga",1,"Tonga","TON","TO",776,,-20.0000000,-175.0000000,103197
-"TZA","Tanzania",1,"Tanzania","TZA","TZ",834,,-06.000000,35.0000000,56318348
-"VNM","Vietnam",1,"Vietnam","VNM","VN",704,,16.1666667,107.8333333,95540395
-"YEM","Yemen",1,"Yemen","YEM","YE",887,,15.552727,48.516388,28498687
-"CZE","Czechia",1,"Czech Republic","CZE","CZ",203,,49.8037633,15.4749126,10629928
-"KOR","Korea, South",1,"Korea, South","KOR","KR",410,,37.0000000,127.5000000,51606633
-"LIE","Liechtenstein",1,"Liechtenstein","LIE","LI",438,,47.14,9.55,37910
-"RUS","Russia",1,"Russia","RUS","RU",643,,60.0000000,100.0000000,144478050
-"SLE","Sierra Leone",1,"Sierra Leone","SLE","SL",694,,8.460555,-11.779889,7650154
-"USA","US",1,"United States","USA","US",840,,38.0000000,-97.0000000,326687501
-"BWA","Botswana",1,"Botswana","BWA","BW",72,,-22.3285,24.6849,2254126
-"MMR","Burma",1,"Myanmar","MMR","MM",104,,21.9162,95.956,53708395
-"MWI","Malawi",1,"Malawi","MWI","MW",454,,-13.254308,34.301525,18143315
-"SMR","San Marino",1,"San Marino","SMR","SM",674,,43.9424,12.4578,33785
-"SOM","Somalia",1,"Somalia","SOM","SO",706,,5.1521,46.1996,15008154
-"AGO","Angola",1,"Angola","AGO","AO",24,,-11.2027,17.8739,30809762
-"DMA","Dominica",1,"Dominica","DMA","DM",212,,15.415,-61.371,71625
-"ERI","Eritrea",1,"Eritrea","ERI","ER",232,,15.1794,39.7823,
-"GNB","Guinea-Bissau",1,"Guinea-Bissau","GNB","GW",624,,11.8037,-15.1804,1874309
-"KNA","Saint Kitts and Nevis",1,"Saint Kitts and Nevis","KNA","KN",659,,17.357822,-62.782998,52441
-"MCO","Monaco",1,"Monaco","MCO","MC",492,,43.7333,7.4167,38682
-"MRT","Mauritania",1,"Mauritania","MRT","MR",478,,21.0079,10.9408,4403319
-"TCD","Chad",1,"Chad","TCD","TD",148,,15.4542,18.7322,15477751
-"AFG","Afghanistan",1,"Afghanistan","AFG","AF",4,,33,65,37172386
-"ALB","Albania",1,"Albania","ALB","AL",8,,41.1533,20.1683,2866376
-"AND","Andorra",1,"Andorra","AND","AD",20,,42.5063,1.5218,77006
-"ATG","Antigua and Barbuda",1,"Antigua and Barbuda","ATG","AG",28,,17.0608,-61.7964,96286
-"BLZ","Belize",1,"Belize","BLZ","BZ",84,,13.1939,-59.5432,383071
-"BTN","Bhutan",1,"Bhutan","BTN","BT",64,,27.5142,90.4336,754394
-"CAF","Central African Republic",1,"Central African Republic","CAF","CF",140,,6.6111,20.9394,4666377
-"CMR","Cameroon",1,"Cameroon","CMR","CM",120,,3.848,11.5021,25216237
-"GAB","Gabon",1,"Gabon","GAB","GA",266,,-0.8037,11.6094,2119275
-"GIN","Guinea",1,"Guinea","GIN","GN",324,,9.9456,-9.6966,12414318
-"GNQ","Equatorial Guinea",1,"Equatorial Guinea","GNQ","GQ",226,,1.5,10,1308974
-"GRD","Grenada",1,"Grenada","GRD","GD",308,,12.1165,-61.679,111454
-"GTM","Guatemala",1,"Guatemala","GTM","GT",320,,15.7835,-90.2308,17247807
-"GUY","Guyana",1,"Guyana","GUY","GY",328,,5,-58.75,779004
-"IRQ","Iraq",1,"Iraq","IRQ","IQ",368,,33,44,38433600
-"JOR","Jordan",1,"Jordan","JOR","JO",400,,31.24,36.51,9956011
-"LCA","Saint Lucia",1,"Saint Lucia","LCA","LC",662,,13.9094,-60.9789,181889
-"MDG","Madagascar",1,"Madagascar","MDG","MG",450,,-18.7669,46.8691,26262368
-"MNE","Montenegro",1,"Montenegro","MNE","ME",499,,42.5,19.3,622227
-"NIC","Nicaragua",1,"Nicaragua","NIC","NI",558,,12.8654,-85.2072,6465513
-"SDN","Sudan",1,"Sudan","SDN","SD",736,,12.8628,30.2176,41801533
-"TTO","Trinidad and Tobago",1,"Trinidad and Tobago","TTO","TT",780,,10.6918,-61.2225,1389858
-"VCT","Saint Vincent and the Grenadines",1,"Saint Vincent and the Grenadines","VCT","VC",670,,12.9843,-61.2872,110210
-"HND","Honduras",1,"Honduras","HND","HN",340,,15.2,-86.2419,9587522
-"MDV","Maldives",1,"Maldives","MDV","MV",462,,3.2028,73.2207,515696
-"NAM","Namibia",1,"Namibia","NAM","NA",516,,-22.9576,18.4904,2448255
-"NGA","Nigeria",1,"Nigeria","NGA","NG",566,,9.082,8.6753,195874740
-"PER","Peru",1,"Peru","PER","PE",604,,-9.19,-75.0152,31989256
-"PNG","Papua New Guinea",1,"Papua New Guinea","PNG","PG",598,,-6.315,143.9555,8606316
-"RWA","Rwanda",1,"Rwanda","RWA","RW",646,,-1.9403,29.8739,12301939
-"SEN","Senegal",1,"Senegal","SEN","SN",686,,14.4974,-14.4524,15854360
-"ARE","United Arab Emirates",1,"United Arab Emirates","ARE","AE",784,,24,54,9630959
-"ARM","Armenia",1,"Armenia","ARM","AM",51,,40.0691,45.0382,2951776
-"AZE","Azerbaijan",1,"Azerbaijan","AZE","AZ",31,,40.1431,47.5769,9939800
-"BEN","Benin",1,"Benin","BEN","BJ",204,,9.3077,2.3158,11485048
-"BFA","Burkina Faso",1,"Burkina Faso","BFA","BF",854,,12.2383,-1.5616,19751535
-"BGD","Bangladesh",1,"Bangladesh","BGD","BD",50,,23.685,90.3563,161356039
-"BHR","Bahrain",1,"Bahrain","BHR","BH",48,,26.0275,50.55,1569439
-"BHS","Bahamas",1,"Bahamas","BHS","BS",44,,25.0343,-77.3963,385640
-"BIH","Bosnia and Herzegovina",1,"Bosnia and Herzegovina","BIH","BA",70,,43.9159,17.6791,3323929
-"BLR","Belarus",1,"Belarus","BLR","BY",112,,53.7098,27.9534,9483499
-"BRB","Barbados",1,"Barbados","BRB","BB",52,,13.1939,-59.5432,286641
-"CHL","Chile",1,"Chile","CHL","CL",152,,-35.6751,-71.543,18729160
-"COL","Colombia",1,"Colombia","COL","CO",170,,4.5709,-74.2973,49648685
-"CRI","Costa Rica",1,"Costa Rica","CRI","CR",188,,9.7489,-83.7534,4999441
-"CUB","Cuba",1,"Cuba","CUB","CU",192,,22,-80,11338138
-"DJI","Djibouti",1,"Djibouti","DJI","DJ",262,,11.8251,42.5903,958920
-"DOM","Dominican Republic",1,"Dominican Republic","DOM","DO",214,,18.7357,-70.1627,10627165
-"DZA","Algeria",1,"Algeria","DZA","DZ",12,,28.0339,1.6596,42228429
-"ECU","Ecuador",1,"Ecuador","ECU","EC",218,,-1.8312,-78.1834,17084357
-"EGY","Egypt",1,"Egypt","EGY","EG",818,,26,30,98423595
-"ETH","Ethiopia",1,"Ethiopia","ETH","ET",231,,9.145,40.4897,109224559
-"FJI","Fiji",1,"Fiji","FJI","FJ",242,,-17.7134,178.065,883483
-"GEO","Georgia",1,"Georgia","GEO","GE",268,,42.3154,43.3569,3726549
-"GHA","Ghana",1,"Ghana","GHA","GH",288,,7.9465,-1.0232,29767108
-"GMB","Gambia",1,"Gambia","GMB","GM",270,,13.4432,-15.3101,2280102
-"HTI","Haiti",1,"Haiti","HTI","HT",332,,18.9712,-72.2852,11123176
-"ISL","Iceland",1,"Iceland","ISL","IS",352,,64.9631,-19.0208,352721
-"JAM","Jamaica",1,"Jamaica","JAM","JM",388,,18.1096,-77.2975,2934855
-"KAZ","Kazakhstan",1,"Kazakhstan","KAZ","KZ",398,,48.0196,66.9237,18272430
-"KEN","Kenya",1,"Kenya","KEN","KE",404,,-0.0236,37.9062,51393010
-"KGZ","Kyrgyzstan",1,"Kyrgyzstan","KGZ","KG",417,,41.2044,74.7661,6322800
-"KHM","Cambodia",1,"Cambodia","KHM","KH",116,,11.55,104.9167,16249798
-"KWT","Kuwait",1,"Kuwait","KWT","KW",414,,29.5,47.75,4137309
-"LBN","Lebanon",1,"Lebanon","LBN","LB",422,,33.8547,35.8623,6848925
-"LBR","Liberia",1,"Liberia","LBR","LR",430,,6.4281,-9.4295,4818977
-"LKA","Sri Lanka",1,"Sri Lanka","LKA","LK",144,,7,81,21670000
-"LVA","Latvia",1,"Latvia","LVA","LV",428,,56.8796,24.6032,1927174
-"MAR","Morocco",1,"Morocco","MAR","MA",504,,31.7917,-7.0926,36029138
-"MLI","Mali",1,"Mali","MLI","ML",466,,17.570692,-3.996166,19077690
-"MNG","Mongolia",1,"Mongolia","MNG","MN",496,,46.8625,103.8467,3170208
-"MOZ","Mozambique",1,"Mozambique","MOZ","MZ",508,,-18.665695,35.529562,29495962
-"MUS","Mauritius",1,"Mauritius","MUS","MU",480,,-20.2,57.5,1265303
-"NER","Niger",1,"Niger","NER","NE",562,,17.6078,8.0817,22442948
-"NLD","Netherlands",1,"Netherlands","NLD","NL",528,,21.40834,-53.00556,17231624
-"NPL","Nepal",1,"Nepal","NPL","NP",524,,28.1667,84.25,28087871
-"OMN","Oman",1,"Oman","OMN","OM",512,,21,57,4829483
-"PAK","Pakistan",1,"Pakistan","PAK","PK",586,,30.3753,69.3451,212215030
-"PAN","Panama",1,"Panama","PAN","PA",591,,8.538,-80.7821,4176873
-"PRY","Paraguay",1,"Paraguay","PRY","PY",600,,-23.4425,-58.4438,6956071
-"QAT","Qatar",1,"Qatar","QAT","QA",634,,25.3548,51.1839,2781677
-"SLV","El Salvador",1,"El Salvador","SLV","SV",222,,13.7942,-88.8965,6420744
-"SRB","Serbia",1,"Serbia","SRB","RS",688,,44.0165,21.0059,6982604
-"SUR","Suriname",1,"Suriname","SUR","SR",740,,3.9193,-56.0278,575991
-"SYC","Seychelles",1,"Seychelles","SYC","SC",690,,-4.6796,55.492,96762
-"TGO","Togo",1,"Togo","TGO","TG",768,,8.6195,0.8248,7889094
-"TLS","Timor-Leste",1,"Timor-Leste","TLS","TL",626,,-8.874217,125.727539,1267972
-"TUN","Tunisia",1,"Tunisia","TUN","TN",788,,34,9,11565204
-"UGA","Uganda",1,"Uganda","UGA","UG",800,,1,32,42723139
-"UKR","Ukraine",1,"Ukraine","UKR","UA",804,,48.3794,31.1656,44622516
-"URY","Uruguay",1,"Uruguay","URY","UY",858,,-32.5228,-55.7658,3449299
-"UZB","Uzbekistan",1,"Uzbekistan","UZB","UZ",860,,41.3775,64.5853,32955400
-"ZAF","South Africa",1,"South Africa","ZAF","ZA",710,,-30.5595,22.9375,57779622
-"ZMB","Zambia",1,"Zambia","ZMB","ZM",894,,-15.4167,28.2833,17351822
-"ZWE","Zimbabwe",1,"Zimbabwe","ZWE","ZW",716,,-20,30,14439018
-"ARG","Argentina",1,"Argentina","ARG","AR",32,,-38.4161,-63.6167,44494502
-"AUS","Australia",1,"Australia","AUS","AU",36,,-31.9961875,141.2327875,24982688
-"AUT","Austria",1,"Austria","AUT","AT",40,,47.5162,14.5501,8840521
-"BEL","Belgium",1,"Belgium","BEL","BE",56,,50.8333,4,11433256
-"BGR","Bulgaria",1,"Bulgaria","BGR","BG",100,,42.7339,25.4858,7025037
-"BRA","Brazil",1,"Brazil","BRA","BR",76,,-14.235,-51.9253,209469333
-"CAN","Canada",1,"Canada","CAN","CA",124,,44.78404667,-82.50859333,37057765
-"CHE","Switzerland",1,"Switzerland","CHE","CH",756,,46.8182,8.2275,8513227
-"CHN","China",1,"China","CHN","CN",156,,32.82838485,111.6490818,1392730000
-"CYP","Cyprus",1,"Cyprus","CYP","CY",196,,35.1264,33.4299,1189265
-"DEU","Germany",1,"Germany","DEU","DE",276,,51,9,82905782
-"DNK","Denmark",1,"Denmark","DNK","DK",208,,63.2878,-13.3381,5793636
-"ESP","Spain",1,"Spain","ESP","ES",724,,40,-4,46796540
-"EST","Estonia",1,"Estonia","EST","EE",233,,58.5953,25.0136,1321977
-"FIN","Finland",1,"Finland","FIN","FI",246,,64,26,5515525
-"FRA","France",1,"France","FRA","FR",250,,8.305672727,5.429018182,66977107
-"GBR","United Kingdom",1,"United Kingdom","GBR","GB",826,,24.54817273,-43.90224545,66460344
-"GRC","Greece",1,"Greece","GRC","GR",300,,39.0742,21.8243,10731726
-"HRV","Croatia",1,"Croatia","HRV","HR",191,,45.1,15.2,4087843
-"HUN","Hungary",1,"Hungary","HUN","HU",348,,47.1625,19.5033,9775564
-"IDN","Indonesia",1,"Indonesia","IDN","ID",360,,-0.7893,113.9213,267663435
-"IND","India",1,"India","IND","IN",356,,21,78,1352617328
-"IRL","Ireland",1,"Ireland","IRL","IE",372,,53.1424,-7.6921,4867309
-"ISR","Israel",1,"Israel","ISR","IL",376,,31,35,8882800
-"ITA","Italy",1,"Italy","ITA","IT",380,,43,12,60421760
-"JPN","Japan",1,"Japan","JPN","JP",392,,36,138,126529100
-"LTU","Lithuania",1,"Lithuania","LTU","LT",440,,55.1694,23.8813,2801543
-"LUX","Luxembourg",1,"Luxembourg","LUX","LU",442,,49.8153,6.1296,607950
-"MEX","Mexico",1,"Mexico","MEX","MX",484,,23.6345,-102.5528,126190788
-"MLT","Malta",1,"Malta","MLT","MT",470,,35.9375,14.3754,484630
-"MYS","Malaysia",1,"Malaysia","MYS","MY",458,,2.5,112.5,31528585
-"NOR","Norway",1,"Norway","NOR","NO",578,,60.472,8.4689,5311916
-"NZL","New Zealand",1,"New Zealand","NZL","NZ",554,,-40.9006,174.886,4841000
-"PHL","Philippines",1,"Philippines","PHL","PH",608,,13,122,106651922
-"POL","Poland",1,"Poland","POL","PL",616,,51.9194,19.1451,37974750
-"PRT","Portugal",1,"Portugal","PRT","PT",620,,39.3999,-8.2245,10283822
-"ROU","Romania",1,"Romania","ROU","RO",642,,45.9432,24.9668,19466145
-"SAU","Saudi Arabia",1,"Saudi Arabia","SAU","SA",682,,24,45,33699947
-"SGP","Singapore",1,"Singapore","SGP","SG",702,,1.2833,103.8333,5638676
-"SVK","Slovakia",1,"Slovakia","SVK","SK",703,,48.669,19.699,5446771
-"SVN","Slovenia",1,"Slovenia","SVN","SI",705,,46.1512,14.9955,2073894
-"SWE","Sweden",1,"Sweden","SWE","SE",752,,63,16,10175214
-"THA","Thailand",1,"Thailand","THA","TH",764,,15,101,69428524
-"TUR","Turkey",1,"Turkey","TUR","TR",792,,38.9637,35.2433,82319724
+"id","id_jhucsse_git","administrative_area_level","administrative_area_level_1","iso_alpha_3","iso_alpha_2","iso_numeric","currency","latitude","longitude","population","key_apple_mobility","key_google_mobility"
+"GPC","Grand Princess",1,"Grand Princess","GPC",,,,,,,,
+"MSZ","MS Zaandam",1,"MS Zaandam","MSZ",,,,,,,,
+"DPC","Diamond Princess",1,"Diamond Princess","DPC",,,,,,3711,,
+"AIA","Anguilla",1,"Anguilla","AIA","AI",660,,18.25,-63.1666667,18090,,"AI"
+"ALA","Aland Islands",1,"Aland Islands","ALA","AX",248,,60.116667,19.9,29884,,"AX"
+"ANT","Netherlands Antilles",1,"Netherlands Antilles","ANT","AN",530,,12.226079,-69.0600891,304759,,"AN"
+"ATA","Antarctica",1,"Antarctica","ATA","AQ",10,,-90,0,,,"AQ"
+"ATF","French Southern Territories",1,"French Southern Territories","ATF","TF",260,,,,,,"TF"
+"BLM","Saint Barthélemy",1,"Saint Barthélemy","BLM","BL",652,,18.5,-63.416666,7122,,"BL"
+"BVT","Bouvet Island",1,"Bouvet Island","BVT","BV",74,,-54.4333333,3.4,,,"BV"
+"CCK","Cocos (Keeling) Islands",1,"Cocos (Keeling) Islands","CCK","CC",166,,-12.5,96.833333,596,,"CC"
+"COK","Cook Islands",1,"Cook Islands","COK","CK",184,,-21.2333333,-159.7666667,8574,,"CK"
+"CXR","Christmas Island",1,"Christmas Island","CXR","CX",162,,-10.5,105.6666667,2205,,"CX"
+"FLK","Falkland Islands (Malvinas)",1,"Falkland Islands (Malvinas)","FLK","FK",238,,-51.75,-59,3198,,"FK"
+"GGY","Guernsey",1,"Guernsey","GGY","GG",831,,49.4666667,-2.5833333,67052,,"GG"
+"GLP","Guadeloupe",1,"Guadeloupe","GLP","GP",312,,16.9959717,-62.0676422,395700,,"GP"
+"GUF","French Guiana",1,"French Guiana","GUF","GF",254,,4,-53,290691,,"GF"
+"HMD","Heard Island and McDonald Islands",1,"Heard Island and McDonald Islands","HMD","HM",334,,-53.1,73.516667,,,"HM"
+"IOT","British Indian Ocean Territory",1,"British Indian Ocean Territory","IOT","IO",86,,-6,71.5,,,"IO"
+"JEY","Jersey",1,"Jersey","JEY","JE",832,,49.25,-2.1666666,101073,,"JE"
+"MSR","Montserrat",1,"Montserrat","MSR","MS",500,,16.75,-62.2,5373,,"MS"
+"MTQ","Martinique",1,"Martinique","MTQ","MQ",474,,14.666667,-61,376480,,"MQ"
+"MYT","Mayotte",1,"Mayotte","MYT","YT",175,,-12.77889,45.23151,256518,,"YT"
+"NFK","Norfolk Island",1,"Norfolk Island","NFK","NF",574,,-29.0333,167.95,1748,,"NF"
+"NIU","Niue",1,"Niue","NIU","NU",570,,-19.0333333,-169.866666,2000,,"NU"
+"PCN","Pitcairn",1,"Pitcairn","PCN","PN",612,,-25.0666667,-130.1,50,,"PN"
+"REU","Réunion",1,"Réunion","REU","RE",638,,-21.114444,55.5325,859959,,"RE"
+"SGS","South Georgia and the South Sandwich Islands",1,"South Georgia and the South Sandwich Islands","SGS","GS",239,,-54.5,-37,,,"GS"
+"SHN","Saint Helena, Ascension and Tristan da Cunha",1,"Saint Helena, Ascension and Tristan da Cunha","SHN","SH",654,,,,,,"SH"
+"SJM","Svalbard and Jan Mayen",1,"Svalbard and Jan Mayen","SJM","SJ",744,,78,20,2926,,"SJ"
+"SPM","Saint Pierre and Miquelon",1,"Saint Pierre and Miquelon","SPM","PM",666,,46.8333333,-56.333333,5347,,"PM"
+"TKL","Tokelau",1,"Tokelau","TKL","TK",772,,-9,-172,1647,,"TK"
+"UMI","United States Minor Outlying Islands",1,"United States Minor Outlying Islands","UMI","UM",581,,,,,,"UM"
+"VAT","Holy See",1,"Holy See","VAT","VA",336,,41.9,12.45,1000,,"VA"
+"WLF","Wallis and Futuna",1,"Wallis and Futuna","WLF","WF",876,,-13.3,-176.2,15854,,"WF"
+"BMU","Bermuda",1,"Bermuda","BMU","BM",60,,32.3333333,-64.75,63973,,"BM"
+"CYM","Cayman Islands",1,"Cayman Islands","CYM","KY",136,,19.5,-80.5,64174,,"KY"
+"FRO","Faroe Islands",1,"Faroe Islands","FRO","FO",234,,62,-7,48497,,"FO"
+"GIB","Gibraltar",1,"Gibraltar","GIB","GI",292,,36.1333333,-5.35,33718,,"GI"
+"GRL","Greenland",1,"Greenland","GRL","GL",304,,,,56025,,"GL"
+"IMN","Isle of Man",1,"Isle of Man","IMN","IM",833,,54.25,-4.5,84077,"Isle of Man","IM"
+"MAF","Saint Martin (French part)",1,"Saint Martin (French part)","MAF","MF",663,,18.0833333,-63.95,37264,,"MF"
+"RKS","Kosovo",1,"Kosovo","RKS","XK",,,42.602636,20.902977,1932774,,"XK"
+"TWN","Taiwan*",1,"Taiwan","TWN","TW",158,,23.5,121,23603049,"Taiwan","TW"
+"VGB","Virgin Islands, British",1,"Virgin Islands, British","VGB","VG",92,,,,29802,,"VG"
+"ABW","Aruba",1,"Aruba","ABW","AW",533,,12.5,-69.96,105845,,"AW"
+"ASM","American Samoa",1,"American Samoa","ASM","AS",16,,-14.333333,-170,55465,,"AS"
+"ESH","Western Sahara",1,"Western Sahara","ESH","EH",732,,24.2155,-12.8858,652271,,"EH"
+"MNP","Northern Mariana Islands",1,"Northern Mariana Islands","MNP","MP",580,,15.2,145.75,56882,,"MP"
+"NCL","New Caledonia",1,"New Caledonia","NCL","NC",540,,-21.5,165.5,284060,,"NC"
+"PYF","French Polynesia",1,"French Polynesia","PYF","PF",258,,-15,-140,277679,,"PF"
+"TCA","Turks and Caicos Islands",1,"Turks and Caicos Islands","TCA","TC",796,,21.75,-71.5833,37665,,"TC"
+"VIR","Virgin Islands, U.S.",1,"Virgin Islands, U.S.","VIR","VI",850,,18.333333,-64.833333,106977,,"VI"
+"GUM","Guam",1,"Guam","GUM","GU",316,,13.46666,144.783333,165768,"Guam","GU"
+"HKG","Hong Kong",1,"Hong Kong","HKG","HK",344,,22.25,114.166666,7451000,"Hong Kong","HK"
+"MAC","Macao",1,"Macao","MAC","MO",446,,22.166666,113.55,631636,"Macao","MO"
+"PRI","Puerto Rico",1,"Puerto Rico","PRI","PR",630,,18.25,-66.5,3195153,"Puerto Rico","PR"
+"PRK","Korea, Democratic People's Republic of",1,"Korea, Democratic People's Republic of","PRK","KP",408,,40,127,25549819,,"KP"
+"PSE","West Bank and Gaza",1,"Palestine","PSE","PS",275,,,,4569087,,"PS"
+"SYR","Syria",1,"Syria","SYR","SY",760,,35,38,16906283,,"SY"
+"LBY","Libya",1,"Libya","LBY","LY",434,,25,17,6678567,,"LY"
+"TUV","Tuvalu",1,"Tuvalu","TUV","TV",798,,-8,178,11508,,"TV"
+"CIV","Cote d'Ivoire",1,"Cote d'Ivoire","CIV","CI",384,,8,-5,25069229,,"CI"
+"COD","Congo (Kinshasa)",1,"Congo, the Democratic Republic of the","COD","CD",180,,0,25,84068091,,"CD"
+"FSM","Micronesia, Federated States of",1,"Micronesia, Federated States of","FSM","FM",583,,6.9166666,158.25,112640,,"FM"
+"MHL","Marshall Islands",1,"Marshall Islands","MHL","MH",584,,9,168,58413,,"MH"
+"VEN","Venezuela",1,"Venezuela","VEN","VE",862,,8,-66,28870195,,"VE"
+"BOL","Bolivia",1,"Bolivia","BOL","BO",68,,-17,-65,11353142,,"BO"
+"MKD","North Macedonia",1,"Macedonia","MKD","MK",807,,41.833,22,2082958,,"MK"
+"SLB","Solomon Islands",1,"Solomon Islands","SLB","SB",90,,-8,159,652858,,"SB"
+"SSD","South Sudan",1,"South Sudan","SSD","SS",728,,6.877,31.307,10975920,,"SS"
+"TJK","Tajikistan",1,"Tajikistan","TJK","TJ",762,,39,71,9100837,,"TJ"
+"TKM","Turkmenistan",1,"Turkmenistan","TKM","TM",795,,40,60,5850908,,"TM"
+"COG","Congo (Brazzaville)",1,"Congo","COG","CG",178,,-1,15,5244363,,"CG"
+"IRN","Iran",1,"Iran","IRN","IR",364,,32,53,81800269,,"IR"
+"LSO","Lesotho",1,"Lesotho","LSO","LS",426,,-29.5,28.5,2108132,,"LS"
+"NRU","Nauru",1,"Nauru","NRU","NR",520,,-0.533,166.916666,12704,,"NR"
+"PLW","Palau",1,"Palau","PLW","PW",585,,7.5,134.5,17907,,"PW"
+"VUT","Vanuatu",1,"Vanuatu","VUT","VU",548,,-16,167,292680,,"VU"
+"WSM","Samoa",1,"Samoa","WSM","WS",882,,-13.5833333,-172.3333333,196130,,"WS"
+"BDI","Burundi",1,"Burundi","BDI","BI",108,,-3.3731,29.9189,11175378,,"BI"
+"BRN","Brunei",1,"Brunei","BRN","BN",96,,4.5,114.6666667,428962,,"BN"
+"COM","Comoros",1,"Comoros","COM","KM",174,,-12.1666667,44.25,832322,,"KM"
+"CPV","Cabo Verde",1,"Cape Verde","CPV","CV",132,,16,-24,543767,,"CV"
+"KIR","Kiribati",1,"Kiribati","KIR","KI",296,,1.4166667,173,115847,,"KI"
+"LAO","Laos",1,"Laos","LAO","LA",418,,18,105,7061507,,"LA"
+"MDA","Moldova",1,"Moldova","MDA","MD",498,,47,29,2706049,,"MD"
+"STP","Sao Tome and Principe",1,"Sao Tome and Principe","STP","ST",678,,0.18636,6.613081,211028,,"ST"
+"SWZ","Eswatini",1,"Swaziland","SWZ","SZ",748,,-26.5,31.5,1136191,,"SZ"
+"TON","Tonga",1,"Tonga","TON","TO",776,,-20,-175,103197,,"TO"
+"TZA","Tanzania",1,"Tanzania","TZA","TZ",834,,-6,35,56318348,,"TZ"
+"VNM","Vietnam",1,"Vietnam","VNM","VN",704,,16.1666667,107.8333333,95540395,"Vietnam","VN"
+"YEM","Yemen",1,"Yemen","YEM","YE",887,,15.552727,48.516388,28498687,,"YE"
+"CZE","Czechia",1,"Czech Republic","CZE","CZ",203,,49.8037633,15.4749126,10629928,"Czech Republic","CZ"
+"KOR","Korea, South",1,"Korea, South","KOR","KR",410,,37,127.5,51606633,,"KR"
+"LIE","Liechtenstein",1,"Liechtenstein","LIE","LI",438,,47.14,9.55,37910,,"LI"
+"RUS","Russia",1,"Russia","RUS","RU",643,,60,100,144478050,"Russia","RU"
+"SLE","Sierra Leone",1,"Sierra Leone","SLE","SL",694,,8.460555,-11.779889,7650154,,"SL"
+"USA","US",1,"United States","USA","US",840,,38,-97,326687501,"United States","US"
+"BWA","Botswana",1,"Botswana","BWA","BW",72,,-22.3285,24.6849,2254126,,"BW"
+"MMR","Burma",1,"Myanmar","MMR","MM",104,,21.9162,95.956,53708395,,"MM"
+"MWI","Malawi",1,"Malawi","MWI","MW",454,,-13.254308,34.301525,18143315,,"MW"
+"SMR","San Marino",1,"San Marino","SMR","SM",674,,43.9424,12.4578,33785,,"SM"
+"SOM","Somalia",1,"Somalia","SOM","SO",706,,5.1521,46.1996,15008154,,"SO"
+"AGO","Angola",1,"Angola","AGO","AO",24,,-11.2027,17.8739,30809762,,"AO"
+"DMA","Dominica",1,"Dominica","DMA","DM",212,,15.415,-61.371,71625,,"DM"
+"ERI","Eritrea",1,"Eritrea","ERI","ER",232,,15.1794,39.7823,,,"ER"
+"GNB","Guinea-Bissau",1,"Guinea-Bissau","GNB","GW",624,,11.8037,-15.1804,1874309,,"GW"
+"KNA","Saint Kitts and Nevis",1,"Saint Kitts and Nevis","KNA","KN",659,,17.357822,-62.782998,52441,,"KN"
+"MCO","Monaco",1,"Monaco","MCO","MC",492,,43.7333,7.4167,38682,,"MC"
+"MRT","Mauritania",1,"Mauritania","MRT","MR",478,,21.0079,10.9408,4403319,,"MR"
+"TCD","Chad",1,"Chad","TCD","TD",148,,15.4542,18.7322,15477751,,"TD"
+"AFG","Afghanistan",1,"Afghanistan","AFG","AF",4,,33,65,37172386,,"AF"
+"ALB","Albania",1,"Albania","ALB","AL",8,,41.1533,20.1683,2866376,"Albania","AL"
+"AND","Andorra",1,"Andorra","AND","AD",20,,42.5063,1.5218,77006,,"AD"
+"ATG","Antigua and Barbuda",1,"Antigua and Barbuda","ATG","AG",28,,17.0608,-61.7964,96286,,"AG"
+"BLZ","Belize",1,"Belize","BLZ","BZ",84,,13.1939,-59.5432,383071,,"BZ"
+"BTN","Bhutan",1,"Bhutan","BTN","BT",64,,27.5142,90.4336,754394,,"BT"
+"CAF","Central African Republic",1,"Central African Republic","CAF","CF",140,,6.6111,20.9394,4666377,,"CF"
+"CMR","Cameroon",1,"Cameroon","CMR","CM",120,,3.848,11.5021,25216237,,"CM"
+"GAB","Gabon",1,"Gabon","GAB","GA",266,,-0.8037,11.6094,2119275,,"GA"
+"GIN","Guinea",1,"Guinea","GIN","GN",324,,9.9456,-9.6966,12414318,,"GN"
+"GNQ","Equatorial Guinea",1,"Equatorial Guinea","GNQ","GQ",226,,1.5,10,1308974,,"GQ"
+"GRD","Grenada",1,"Grenada","GRD","GD",308,,12.1165,-61.679,111454,,"GD"
+"GTM","Guatemala",1,"Guatemala","GTM","GT",320,,15.7835,-90.2308,17247807,,"GT"
+"GUY","Guyana",1,"Guyana","GUY","GY",328,,5,-58.75,779004,,"GY"
+"IRQ","Iraq",1,"Iraq","IRQ","IQ",368,,33,44,38433600,,"IQ"
+"JOR","Jordan",1,"Jordan","JOR","JO",400,,31.24,36.51,9956011,,"JO"
+"LCA","Saint Lucia",1,"Saint Lucia","LCA","LC",662,,13.9094,-60.9789,181889,,"LC"
+"MDG","Madagascar",1,"Madagascar","MDG","MG",450,,-18.7669,46.8691,26262368,,"MG"
+"MNE","Montenegro",1,"Montenegro","MNE","ME",499,,42.5,19.3,622227,,"ME"
+"NIC","Nicaragua",1,"Nicaragua","NIC","NI",558,,12.8654,-85.2072,6465513,,"NI"
+"SDN","Sudan",1,"Sudan","SDN","SD",736,,12.8628,30.2176,41801533,,"SD"
+"TTO","Trinidad and Tobago",1,"Trinidad and Tobago","TTO","TT",780,,10.6918,-61.2225,1389858,,"TT"
+"VCT","Saint Vincent and the Grenadines",1,"Saint Vincent and the Grenadines","VCT","VC",670,,12.9843,-61.2872,110210,,"VC"
+"HND","Honduras",1,"Honduras","HND","HN",340,,15.2,-86.2419,9587522,,"HN"
+"MDV","Maldives",1,"Maldives","MDV","MV",462,,3.2028,73.2207,515696,,"MV"
+"NAM","Namibia",1,"Namibia","NAM","NA",516,,-22.9576,18.4904,2448255,,"NA"
+"NGA","Nigeria",1,"Nigeria","NGA","NG",566,,9.082,8.6753,195874740,,"NG"
+"PER","Peru",1,"Peru","PER","PE",604,,-9.19,-75.0152,31989256,,"PE"
+"PNG","Papua New Guinea",1,"Papua New Guinea","PNG","PG",598,,-6.315,143.9555,8606316,,"PG"
+"RWA","Rwanda",1,"Rwanda","RWA","RW",646,,-1.9403,29.8739,12301939,,"RW"
+"SEN","Senegal",1,"Senegal","SEN","SN",686,,14.4974,-14.4524,15854360,,"SN"
+"ARE","United Arab Emirates",1,"United Arab Emirates","ARE","AE",784,,24,54,9630959,"United Arab Emirates","AE"
+"ARM","Armenia",1,"Armenia","ARM","AM",51,,40.0691,45.0382,2951776,,"AM"
+"AZE","Azerbaijan",1,"Azerbaijan","AZE","AZ",31,,40.1431,47.5769,9939800,,"AZ"
+"BEN","Benin",1,"Benin","BEN","BJ",204,,9.3077,2.3158,11485048,,"BJ"
+"BFA","Burkina Faso",1,"Burkina Faso","BFA","BF",854,,12.2383,-1.5616,19751535,,"BF"
+"BGD","Bangladesh",1,"Bangladesh","BGD","BD",50,,23.685,90.3563,161356039,,"BD"
+"BHR","Bahrain",1,"Bahrain","BHR","BH",48,,26.0275,50.55,1569439,,"BH"
+"BHS","Bahamas",1,"Bahamas","BHS","BS",44,,25.0343,-77.3963,385640,,"BS"
+"BIH","Bosnia and Herzegovina",1,"Bosnia and Herzegovina","BIH","BA",70,,43.9159,17.6791,3323929,,"BA"
+"BLR","Belarus",1,"Belarus","BLR","BY",112,,53.7098,27.9534,9483499,,"BY"
+"BRB","Barbados",1,"Barbados","BRB","BB",52,,13.1939,-59.5432,286641,,"BB"
+"CHL","Chile",1,"Chile","CHL","CL",152,,-35.6751,-71.543,18729160,"Chile","CL"
+"COL","Colombia",1,"Colombia","COL","CO",170,,4.5709,-74.2973,49648685,"Colombia","CO"
+"CRI","Costa Rica",1,"Costa Rica","CRI","CR",188,,9.7489,-83.7534,4999441,,"CR"
+"CUB","Cuba",1,"Cuba","CUB","CU",192,,22,-80,11338138,,"CU"
+"DJI","Djibouti",1,"Djibouti","DJI","DJ",262,,11.8251,42.5903,958920,,"DJ"
+"DOM","Dominican Republic",1,"Dominican Republic","DOM","DO",214,,18.7357,-70.1627,10627165,,"DO"
+"DZA","Algeria",1,"Algeria","DZA","DZ",12,,28.0339,1.6596,42228429,,"DZ"
+"ECU","Ecuador",1,"Ecuador","ECU","EC",218,,-1.8312,-78.1834,17084357,,"EC"
+"EGY","Egypt",1,"Egypt","EGY","EG",818,,26,30,98423595,"Egypt","EG"
+"ETH","Ethiopia",1,"Ethiopia","ETH","ET",231,,9.145,40.4897,109224559,,"ET"
+"FJI","Fiji",1,"Fiji","FJI","FJ",242,,-17.7134,178.065,883483,,"FJ"
+"GEO","Georgia",1,"Georgia","GEO","GE",268,,42.3154,43.3569,3726549,"Georgia","GE"
+"GHA","Ghana",1,"Ghana","GHA","GH",288,,7.9465,-1.0232,29767108,,"GH"
+"GMB","Gambia",1,"Gambia","GMB","GM",270,,13.4432,-15.3101,2280102,,"GM"
+"HTI","Haiti",1,"Haiti","HTI","HT",332,,18.9712,-72.2852,11123176,,"HT"
+"ISL","Iceland",1,"Iceland","ISL","IS",352,,64.9631,-19.0208,352721,"Iceland","IS"
+"JAM","Jamaica",1,"Jamaica","JAM","JM",388,,18.1096,-77.2975,2934855,,"JM"
+"KAZ","Kazakhstan",1,"Kazakhstan","KAZ","KZ",398,,48.0196,66.9237,18272430,,"KZ"
+"KEN","Kenya",1,"Kenya","KEN","KE",404,,-0.0236,37.9062,51393010,,"KE"
+"KGZ","Kyrgyzstan",1,"Kyrgyzstan","KGZ","KG",417,,41.2044,74.7661,6322800,,"KG"
+"KHM","Cambodia",1,"Cambodia","KHM","KH",116,,11.55,104.9167,16249798,"Cambodia","KH"
+"KWT","Kuwait",1,"Kuwait","KWT","KW",414,,29.5,47.75,4137309,,"KW"
+"LBN","Lebanon",1,"Lebanon","LBN","LB",422,,33.8547,35.8623,6848925,,"LB"
+"LBR","Liberia",1,"Liberia","LBR","LR",430,,6.4281,-9.4295,4818977,,"LR"
+"LKA","Sri Lanka",1,"Sri Lanka","LKA","LK",144,,7,81,21670000,,"LK"
+"LVA","Latvia",1,"Latvia","LVA","LV",428,,56.8796,24.6032,1927174,"Latvia","LV"
+"MAR","Morocco",1,"Morocco","MAR","MA",504,,31.7917,-7.0926,36029138,"Morocco","MA"
+"MLI","Mali",1,"Mali","MLI","ML",466,,17.570692,-3.996166,19077690,,"ML"
+"MNG","Mongolia",1,"Mongolia","MNG","MN",496,,46.8625,103.8467,3170208,,"MN"
+"MOZ","Mozambique",1,"Mozambique","MOZ","MZ",508,,-18.665695,35.529562,29495962,,"MZ"
+"MUS","Mauritius",1,"Mauritius","MUS","MU",480,,-20.2,57.5,1265303,,"MU"
+"NER","Niger",1,"Niger","NER","NE",562,,17.6078,8.0817,22442948,,"NE"
+"NLD","Netherlands",1,"Netherlands","NLD","NL",528,,21.40834,-53.00556,17231624,"Netherlands","NL"
+"NPL","Nepal",1,"Nepal","NPL","NP",524,,28.1667,84.25,28087871,,"NP"
+"OMN","Oman",1,"Oman","OMN","OM",512,,21,57,4829483,,"OM"
+"PAK","Pakistan",1,"Pakistan","PAK","PK",586,,30.3753,69.3451,212215030,,"PK"
+"PAN","Panama",1,"Panama","PAN","PA",591,,8.538,-80.7821,4176873,,"PA"
+"PRY","Paraguay",1,"Paraguay","PRY","PY",600,,-23.4425,-58.4438,6956071,,"PY"
+"QAT","Qatar",1,"Qatar","QAT","QA",634,,25.3548,51.1839,2781677,,"QA"
+"SLV","El Salvador",1,"El Salvador","SLV","SV",222,,13.7942,-88.8965,6420744,,"SV"
+"SRB","Serbia",1,"Serbia","SRB","RS",688,,44.0165,21.0059,6982604,"Serbia","RS"
+"SUR","Suriname",1,"Suriname","SUR","SR",740,,3.9193,-56.0278,575991,,"SR"
+"SYC","Seychelles",1,"Seychelles","SYC","SC",690,,-4.6796,55.492,96762,,"SC"
+"TGO","Togo",1,"Togo","TGO","TG",768,,8.6195,0.8248,7889094,,"TG"
+"TLS","Timor-Leste",1,"Timor-Leste","TLS","TL",626,,-8.874217,125.727539,1267972,,"TL"
+"TUN","Tunisia",1,"Tunisia","TUN","TN",788,,34,9,11565204,,"TN"
+"UGA","Uganda",1,"Uganda","UGA","UG",800,,1,32,42723139,,"UG"
+"UKR","Ukraine",1,"Ukraine","UKR","UA",804,,48.3794,31.1656,44622516,"Ukraine","UA"
+"URY","Uruguay",1,"Uruguay","URY","UY",858,,-32.5228,-55.7658,3449299,"Uruguay","UY"
+"UZB","Uzbekistan",1,"Uzbekistan","UZB","UZ",860,,41.3775,64.5853,32955400,,"UZ"
+"ZAF","South Africa",1,"South Africa","ZAF","ZA",710,,-30.5595,22.9375,57779622,"South Africa","ZA"
+"ZMB","Zambia",1,"Zambia","ZMB","ZM",894,,-15.4167,28.2833,17351822,,"ZM"
+"ZWE","Zimbabwe",1,"Zimbabwe","ZWE","ZW",716,,-20,30,14439018,,"ZW"
+"ARG","Argentina",1,"Argentina","ARG","AR",32,,-38.4161,-63.6167,44494502,"Argentina","AR"
+"AUS","Australia",1,"Australia","AUS","AU",36,,-31.9961875,141.2327875,24982688,"Australia","AU"
+"AUT","Austria",1,"Austria","AUT","AT",40,,47.5162,14.5501,8840521,"Austria","AT"
+"BEL","Belgium",1,"Belgium","BEL","BE",56,,50.8333,4,11433256,"Belgium","BE"
+"BGR","Bulgaria",1,"Bulgaria","BGR","BG",100,,42.7339,25.4858,7025037,"Bulgaria","BG"
+"BRA","Brazil",1,"Brazil","BRA","BR",76,,-14.235,-51.9253,209469333,"Brazil","BR"
+"CAN","Canada",1,"Canada","CAN","CA",124,,44.78404667,-82.50859333,37057765,"Canada","CA"
+"CHE","Switzerland",1,"Switzerland","CHE","CH",756,,46.8182,8.2275,8513227,"Switzerland","CH"
+"CHN","China",1,"China","CHN","CN",156,,32.82838485,111.6490818,1392730000,,"CN"
+"CYP","Cyprus",1,"Cyprus","CYP","CY",196,,35.1264,33.4299,1189265,,"CY"
+"DEU","Germany",1,"Germany","DEU","DE",276,,51,9,82905782,"Germany","DE"
+"DNK","Denmark",1,"Denmark","DNK","DK",208,,63.2878,-13.3381,5793636,"Denmark","DK"
+"ESP","Spain",1,"Spain","ESP","ES",724,,40,-4,46796540,"Spain","ES"
+"EST","Estonia",1,"Estonia","EST","EE",233,,58.5953,25.0136,1321977,"Estonia","EE"
+"FIN","Finland",1,"Finland","FIN","FI",246,,64,26,5515525,"Finland","FI"
+"FRA","France",1,"France","FRA","FR",250,,8.305672727,5.429018182,66977107,"France","FR"
+"GBR","United Kingdom",1,"United Kingdom","GBR","GB",826,,24.54817273,-43.90224545,66460344,,"GB"
+"GRC","Greece",1,"Greece","GRC","GR",300,,39.0742,21.8243,10731726,"Greece","GR"
+"HRV","Croatia",1,"Croatia","HRV","HR",191,,45.1,15.2,4087843,"Croatia","HR"
+"HUN","Hungary",1,"Hungary","HUN","HU",348,,47.1625,19.5033,9775564,"Hungary","HU"
+"IDN","Indonesia",1,"Indonesia","IDN","ID",360,,-0.7893,113.9213,267663435,"Indonesia","ID"
+"IND","India",1,"India","IND","IN",356,,21,78,1352617328,"India","IN"
+"IRL","Ireland",1,"Ireland","IRL","IE",372,,53.1424,-7.6921,4867309,"Ireland","IE"
+"ISR","Israel",1,"Israel","ISR","IL",376,,31,35,8882800,"Israel","IL"
+"ITA","Italy",1,"Italy","ITA","IT",380,,43,12,60421760,"Italy","IT"
+"JPN","Japan",1,"Japan","JPN","JP",392,,36,138,126529100,"Japan","JP"
+"LTU","Lithuania",1,"Lithuania","LTU","LT",440,,55.1694,23.8813,2801543,"Lithuania","LT"
+"LUX","Luxembourg",1,"Luxembourg","LUX","LU",442,,49.8153,6.1296,607950,"Luxembourg","LU"
+"MEX","Mexico",1,"Mexico","MEX","MX",484,,23.6345,-102.5528,126190788,"Mexico","MX"
+"MLT","Malta",1,"Malta","MLT","MT",470,,35.9375,14.3754,484630,,"MT"
+"MYS","Malaysia",1,"Malaysia","MYS","MY",458,,2.5,112.5,31528585,"Malaysia","MY"
+"NOR","Norway",1,"Norway","NOR","NO",578,,60.472,8.4689,5311916,"Norway","NO"
+"NZL","New Zealand",1,"New Zealand","NZL","NZ",554,,-40.9006,174.886,4841000,"New Zealand","NZ"
+"PHL","Philippines",1,"Philippines","PHL","PH",608,,13,122,106651922,"Philippines","PH"
+"POL","Poland",1,"Poland","POL","PL",616,,51.9194,19.1451,37974750,"Poland","PL"
+"PRT","Portugal",1,"Portugal","PRT","PT",620,,39.3999,-8.2245,10283822,"Portugal","PT"
+"ROU","Romania",1,"Romania","ROU","RO",642,,45.9432,24.9668,19466145,"Romania","RO"
+"SAU","Saudi Arabia",1,"Saudi Arabia","SAU","SA",682,,24,45,33699947,"Saudi Arabia","SA"
+"SGP","Singapore",1,"Singapore","SGP","SG",702,,1.2833,103.8333,5638676,"Singapore","SG"
+"SVK","Slovakia",1,"Slovakia","SVK","SK",703,,48.669,19.699,5446771,"Slovakia","SK"
+"SVN","Slovenia",1,"Slovenia","SVN","SI",705,,46.1512,14.9955,2073894,"Slovenia","SI"
+"SWE","Sweden",1,"Sweden","SWE","SE",752,,63,16,10175214,"Sweden","SE"
+"THA","Thailand",1,"Thailand","THA","TH",764,,15,101,69428524,"Thailand","TH"
+"TUR","Turkey",1,"Turkey","TUR","TR",792,,38.9637,35.2433,82319724,"Turkey","TR"
