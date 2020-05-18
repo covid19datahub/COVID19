@@ -1,4 +1,5 @@
 [![](https://www.r-pkg.org/badges/version/COVID19)](https://cran.r-project.org/package=COVID19) [![](https://www.r-pkg.org/badges/last-release/COVID19)](https://cran.r-project.org/package=COVID19) [![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19)](https://cran.r-project.org/package=COVID19) [![](https://img.shields.io/badge/doi-10.13140/RG.2.2.11649.81763-orange.svg)](https://doi.org/10.13140/RG.2.2.11649.81763)
+[![eRum2020::CovidR](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300)](https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html)
 
 # COVID-19 Data Hub <img src="man/figures/logo.png" width="200" align="right" />
 
