@@ -4,7 +4,7 @@
 
 ![](https://www.r-pkg.org/badges/version/COVID19) ![](https://www.r-pkg.org/badges/last-release/COVID19) ![](https://cranlogs.r-pkg.org/badges/grand-total/COVID19) [![](https://img.shields.io/badge/doi-10.13140/RG.2.2.11649.81763-orange.svg)](https://doi.org/10.13140/RG.2.2.11649.81763)
 
-The repository aims at developing a __unified data hub__ by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.  Available in:
+The repository aims at developing a [unified data hub](https://covid19datahub.io/articles/doc/data.html) by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.  Available in:
 
 <p align="center">
 <a href="https://covid19datahub.io/articles/api/r.html" target="_blank">R</a>
@@ -41,7 +41,7 @@ The repository aims at developing a __unified data hub__ by collecting worldwide
 
 ## Add a new data source
 
-**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
+**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
 - Get started with [this tutorial](<https://github.com/covid19datahub/COVID19/wiki/Add-a-new-data-source>) and/or join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help
 - Submit your work with a [pull request](<https://github.com/covid19datahub/COVID19/wiki/Create-a-pull-request>)
