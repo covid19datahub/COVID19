@@ -2,6 +2,7 @@ pandoc: 2.7.3
 pkgdown: 1.5.1
 pkgdown_sha: ~
 articles:
+  excel: api/excel.html
   julia: api/julia.html
   matlab: api/matlab.html
   node: api/node.html
@@ -114,6 +115,7 @@ articles:
   LCA: iso/LCA.html
   LIE: iso/LIE.html
   LKA: iso/LKA.html
+  LSO: iso/LSO.html
   LTU: iso/LTU.html
   LUX: iso/LUX.html
   LVA: iso/LVA.html
@@ -202,7 +204,7 @@ articles:
   ZAF: iso/ZAF.html
   ZMB: iso/ZMB.html
   ZWE: iso/ZWE.html
-last_built: 2020-05-17T20:19Z
+last_built: 2020-05-18T04:21Z
 urls:
   reference: https://covid19datahub.io/reference
   article: https://covid19datahub.io/articles

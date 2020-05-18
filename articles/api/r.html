@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../../bootstrap-toc.css">
 <script src="../../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
@@ -56,8 +56,35 @@
      
   </a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Data
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
 <li>
-  <a href="../../articles/data.html">Data</a>
+      <a href="../../articles/data.html">Dataset</a>
+    </li>
+    <li>
+      <a href="../../articles/doc/data.html">Documentation</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Developers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="https://github.com/covid19datahub/COVID19/">GitHub</a>
+    </li>
+    <li>
+      <a href="../../reference/index.html">Functions</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="../../articles/api/r.html">R</a>
@@ -77,20 +104,8 @@
 <li>
   <a href="../../articles/api/scala.html">Scala</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    References
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../../reference/index.html">Functions</a>
-    </li>
-    <li>
-      <a href="../../articles/doc/data.html">Datasets</a>
-    </li>
-  </ul>
+  <a href="../../articles/api/excel.html">Excel</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -123,6 +138,7 @@
 
     
     
+<p><a href="https://github.com/covid19datahub/R" class="uri">https://github.com/covid19datahub/R</a></p>
 <div id="quickstart" class="section level2">
 <h2 class="hasAnchor">
 <a href="#quickstart" class="anchor"></a>Quickstart</h2>
@@ -130,7 +146,7 @@
 <span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"covid19datahub/R"</span>)
 
 <span class="co"># load the package</span>
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="no">COVID19</span>)</pre></body></html></div>
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st">"COVID19"</span>)</pre></body></html></div>
 </div>
 <div id="download-the-data" class="section level2">
 <h2 class="hasAnchor">
@@ -148,14 +164,31 @@
 <div id="merge-with-world-bank-open-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#merge-with-world-bank-open-data" class="anchor"></a>Merge with World Bank Open Data</h2>
+<p>The dataset can be extended with <a href="https://data.worldbank.org/">World Bank Open Data</a> via the argument <code>wb</code>, a character vector of indicator codes. The codes can be found by inspecting the corresponding URL. For example, the code of the GDP indicator available at <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" class="uri">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a> is <code>NY.GDP.MKTP.CD</code>.</p>
 <div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="co"># Merge with World Bank data</span>
 <span class="no">wb</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"gdp"</span> <span class="kw">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="kw">=</span> <span class="st">"SH.MED.BEDS.ZS"</span>)
 <span class="no">x</span>  <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">wb</span> <span class="kw">=</span> <span class="no">wb</span>)</pre></body></html></div>
 </div>
+<div id="merge-with-google-mobility-reports" class="section level2">
+<h2 class="hasAnchor">
+<a href="#merge-with-google-mobility-reports" class="anchor"></a>Merge with Google Mobility Reports</h2>
+<p>The dataset can be extended with <a href="https://www.google.com/covid19/mobility/">Google Mobility Reports</a> via the argument <code>gmr</code>, the url to the Google CSV file. At the time of writing, the CSV is available at:</p>
+<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="no">gmr</span> <span class="kw">&lt;-</span> <span class="st">"https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv"</span>
+<span class="no">x</span>   <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">gmr</span> <span class="kw">=</span> <span class="no">gmr</span>)</pre></body></html></div>
+</div>
+<div id="merge-with-apple-mobility-reports" class="section level2">
+<h2 class="hasAnchor">
+<a href="#merge-with-apple-mobility-reports" class="anchor"></a>Merge with Apple Mobility Reports</h2>
+<p>The dataset can be extended with <a href="https://www.apple.com/covid19/mobility">Apple Mobility Reports</a> via the argument <code>amr</code>, the url to the Apple CSV file. At the time of writing, the CSV is available at:</p>
+<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">amr</span> <span class="kw">&lt;-</span> <span class="st">"https://covid19-static.cdn-apple.com/covid19-mobility-data/"</span>
+<span class="no">amr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="no">amr</span>, <span class="st">"2008HotfixDev28/v2/en-us/applemobilitytrends-2020-05-15.csv"</span>)
+<span class="no">x</span>   <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">amr</span> <span class="kw">=</span> <span class="no">amr</span>)</pre></body></html></div>
+</div>
 <div id="list-the-data-sources" class="section level2">
 <h2 class="hasAnchor">
 <a href="#list-the-data-sources" class="anchor"></a>List the data sources</h2>
-<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="co"># Data sources</span>
+<p>Data sources are stored in the <code>src</code> attribute.</p>
+<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="co"># Data sources</span>
 <span class="no">s</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/attr.html">attr</a></span>(<span class="no">x</span>, <span class="st">"src"</span>)</pre></body></html></div>
 </div>
 <div id="terms-of-use" class="section level2">

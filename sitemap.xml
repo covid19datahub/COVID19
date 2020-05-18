@@ -46,6 +46,9 @@
     <loc>https://covid19datahub.io/reference/write.csv.html</loc>
   </url>
   <url>
+    <loc>https://covid19datahub.io/articles/api/excel.html</loc>
+  </url>
+  <url>
     <loc>https://covid19datahub.io/articles/api/julia.html</loc>
   </url>
   <url>
@@ -380,6 +383,9 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/articles/iso/LKA.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/articles/iso/LSO.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/articles/iso/LTU.html</loc>
