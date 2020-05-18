@@ -6,7 +6,7 @@
 \usage{
 read.csv(
   file,
-  cache,
+  cache = FALSE,
   na.strings = "",
   stringsAsFactors = FALSE,
   encoding = "UTF-8",
@@ -16,7 +16,7 @@ read.csv(
 \arguments{
 \item{file}{the name of the file which the data are to be read from. Each row of the table appears as one line of the file. If it does not contain an absolute path, the file name is relative to the current working directory, getwd(). Tilde-expansion is performed where supported. This can be a compressed file.}
 
-\item{cache}{logical. Memory caching?}
+\item{cache}{logical. Memory caching? Default \code{FALSE}.}
 
 \item{na.strings}{a character vector of strings which are to be interpreted as \code{NA} values. Blank fields are also considered to be missing values in logical, integer, numeric and complex fields. Note that the test happens after white space is stripped from the input, so \code{na.strings} values may need their own white space stripped in advance.}
 

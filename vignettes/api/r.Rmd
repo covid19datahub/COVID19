@@ -7,13 +7,15 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-https://github.com/covid19datahub/R
+__GitHub__: https://github.com/covid19datahub/R
+
+__CRAN__: https://cloud.r-project.org/package=COVID19
 
 ## Quickstart
 
 ```R
 # install the package
-remotes::install_github("covid19datahub/R")
+install.packages("COVID19")
 
 # load the package
 library("COVID19")

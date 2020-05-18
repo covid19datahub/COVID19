@@ -4,14 +4,14 @@
 \alias{read.zip}
 \title{Data Input (zip)}
 \usage{
-read.zip(zip, files, cache, ...)
+read.zip(zip, files, cache = FALSE, ...)
 }
 \arguments{
 \item{zip}{path (url) to the zip folder.}
 
 \item{files}{vector of filenames to read inside the zip folder.}
 
-\item{cache}{logical. Memory caching?}
+\item{cache}{logical. Memory caching? Default \code{FALSE}.}
 
 \item{...}{arguments passed to \code{\link{read.csv}} or \code{\link{read.excel}}.}
 }

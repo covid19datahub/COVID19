@@ -7,7 +7,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-https://github.com/covid19datahub/MATLAB
+__GitHub__: https://github.com/covid19datahub/MATLAB
 
 ## Import Data from the Hub
 

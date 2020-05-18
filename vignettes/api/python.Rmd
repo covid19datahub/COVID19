@@ -7,9 +7,9 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-<a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/logo.svg" align="right" height="128"/></a>
+__GitHub__: https://github.com/covid19datahub/Python
 
-In Python use package [covid19dh](https://pypi.org/project/covid19dh/), fetching *COVID-19 Data Hub* data into Python.
+__PyPI__: https://pypi.org/project/covid19dh/
 
 ## Setup and usage
 

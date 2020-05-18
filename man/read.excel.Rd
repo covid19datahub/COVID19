@@ -4,12 +4,12 @@
 \alias{read.excel}
 \title{Data Input (excel)}
 \usage{
-read.excel(path, cache, sheet = NA, ...)
+read.excel(path, cache = FALSE, sheet = NA, ...)
 }
 \arguments{
 \item{path}{Path to the xls/xlsx file.}
 
-\item{cache}{logical. Memory caching?}
+\item{cache}{logical. Memory caching? Default \code{FALSE}.}
 
 \item{sheet}{Sheet to read. Either a string (the name of a sheet), or an integer (the position of the sheet). Ignored if the sheet is specified via range. If neither argument specifies the sheet, defaults to all sheets.}
 

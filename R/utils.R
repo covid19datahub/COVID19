@@ -596,7 +596,7 @@ write.csv <- function(x, file, row.names = FALSE, na = "", fileEncoding = "UTF-8
 #' Reads a file in table format and creates a data frame from it, with cases corresponding to lines and variables to fields in the file.
 #' 
 #' @param file the name of the file which the data are to be read from. Each row of the table appears as one line of the file. If it does not contain an absolute path, the file name is relative to the current working directory, getwd(). Tilde-expansion is performed where supported. This can be a compressed file.
-#' @param cache logical. Memory caching?
+#' @param cache logical. Memory caching? Default \code{FALSE}.
 #' @param na.strings a character vector of strings which are to be interpreted as \code{NA} values. Blank fields are also considered to be missing values in logical, integer, numeric and complex fields. Note that the test happens after white space is stripped from the input, so \code{na.strings} values may need their own white space stripped in advance.
 #' @param stringsAsFactors logical: should character vectors be converted to factors?
 #' @param encoding encoding to be assumed for input strings. It is used to mark character strings as known to be in Latin-1 or UTF-8: it is not used to re-encode the input, but allows R to handle encoded strings in their native encoding. 
@@ -605,7 +605,7 @@ write.csv <- function(x, file, row.names = FALSE, na = "", fileEncoding = "UTF-8
 #' @return return value of \code{\link[utils:write.table]{read.csv}}
 #' 
 #' @export
-read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8", ...){
+read.csv <- function(file, cache = FALSE, na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8", ...){
 
   if(cache)
     x <- cachecall(utils::read.csv, file = file, na.strings = na.strings, stringsAsFactors = stringsAsFactors, encoding = encoding, ...)
@@ -621,7 +621,7 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
 #' Read xls and xlsx files.
 #' 
 #' @param path Path to the xls/xlsx file.
-#' @param cache logical. Memory caching?
+#' @param cache logical. Memory caching? Default \code{FALSE}.
 #' @param sheet Sheet to read. Either a string (the name of a sheet), or an integer (the position of the sheet). Ignored if the sheet is specified via range. If neither argument specifies the sheet, defaults to all sheets.
 #' @param ... arguments passed to \code{\link[readxl]{read_excel}}
 #' 
@@ -636,7 +636,7 @@ read.csv <- function(file, cache, na.strings = "", stringsAsFactors = FALSE, enc
 #' }
 #' 
 #' @export
-read.excel <- function(path, cache, sheet = NA, ...) {
+read.excel <- function(path, cache = FALSE, sheet = NA, ...) {
   
   # read excel from url
   read_excel <- function(path, sheet, ...) {
@@ -686,7 +686,7 @@ read.excel <- function(path, cache, sheet = NA, ...) {
 #' 
 #' @param zip path (url) to the zip folder.
 #' @param files vector of filenames to read inside the zip folder.
-#' @param cache logical. Memory caching?
+#' @param cache logical. Memory caching? Default \code{FALSE}.
 #' @param ... arguments passed to \code{\link{read.csv}} or \code{\link{read.excel}}.
 #' 
 #' @return list of \code{data.frames}
@@ -704,7 +704,7 @@ read.excel <- function(path, cache, sheet = NA, ...) {
 #' }
 #' 
 #' @export
-read.zip <- function(zip, files, cache, ...){
+read.zip <- function(zip, files, cache = FALSE, ...){
   
   read.zip <- function(zip, files, ...){
     
