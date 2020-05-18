@@ -1,8 +1,8 @@
 ---
-title: "Dataset"
+title: "Dataset Documentation"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Dataset}
+  %\VignetteIndexEntry{Dataset Documentation}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -53,11 +53,23 @@ Download the data from the [data hub](/articles/data.html)
 
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
+| `latitude`                                 | Latitude.                                                    |
+| `longitude`                                 | Longitude.                                                   |
 | `administrative_area_level`                             | Administrative area level.                            |
 | `administrative_area_level_1`                             | Administrative area of top level.                            |
 | `administrative_area_level_2`                               | Administrative area of a lower level, usually states, regions or cantons. |
 | `administrative_area_level_3`                                | Administrative are of a lower level, usually cities or municipalities. |
-| `latitude`                                 | Latitude.                                                    |
-| `longitude`                                 | Longitude.                                                   |
+
+## External Keys
+
+The following keys allow to extend the dataset with external data.
+
+| Variable                              | Description                                                  |
+| ----------------------------------------------- | ----------------------------------------------------------- |
+| `key`                                  | Identifier used in governmental data.                                         |
+| `key_alpha_2`                                | Two-letter code used in governmental data.                                         |
+| `key_numeric`                                | Numeric code used in governmental data.                                            |
+| `key_google_mobility`                                | Identifier used in [Google Mobility Reports](https://www.google.com/covid19/mobility/).                                            |
+| `key_apple_mobility`                                |  Identifier used in [Apple Mobility Reports](https://www.apple.com/covid19/mobility).                                             |
 
 `r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

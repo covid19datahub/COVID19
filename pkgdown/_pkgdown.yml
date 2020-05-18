@@ -9,8 +9,15 @@ home:
 navbar: 
   components: 
     articles: ~
+    reference: ~
     data: 
-      href: articles/data.html
+      menu: 
+        - 
+          href: articles/data.html
+          text: Dataset
+        - 
+          href: articles/doc/data.html
+          text: Documentation
       text: Data
     python: 
       href: articles/api/python.html
@@ -30,30 +37,35 @@ navbar:
     scala:
       href: articles/api/scala.html
       text: Scala
-    reference: 
+    excel:
+      href: articles/api/excel.html
+      text: Excel
+    developers: 
       menu: 
+        - 
+          href: https://github.com/covid19datahub/COVID19/
+          text: GitHub
         - 
           href: reference/index.html
           text: Functions
-        - 
-          href: articles/doc/data.html
-          text: Datasets
-      text: References
+      text: Developers
   structure: 
     left: 
       - home
       - data
+      - developers
       - r
       - python
       - matlab
       - julia
       - node
       - scala
-      - reference
+      - excel
     right: 
       - github
 template: 
   params: 
     ganalytics: UA-163902432-1
+    bootswatch: cosmo
 title: "COVID-19 Data Hub"
 url: "https://covid19datahub.io"

@@ -2,11 +2,9 @@
 
 # COVID-19 Data Hub <img src="man/figures/logo.png" width="200" align="right" />
 
-> Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Canada.
+Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Canada.
 
-The goal of COVID-19 Data Hub is to provide the research community with a __unified data hub__ by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.
-
-**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, contribute on [GitHub](https://github.com/covid19datahub/COVID19/) and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
+> The goal of COVID-19 Data Hub is to provide the research community with a [unified data hub](https://covid19datahub.io/articles/data.html) by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.
 
 <a href="/articles/iso/AFG.html">
   <img src="https://www.countryflags.io/AF/flat/64.png" style="display:inline-block">
@@ -387,6 +385,10 @@ The goal of COVID-19 Data Hub is to provide the research community with a __unif
 </a><a href="/articles/iso/ZWE.html">
   <img src="https://www.countryflags.io/ZW/flat/64.png" style="display:inline-block">
 </a>
+
+## Join the Mission
+
+You are welcome to join and extend the number of supporting data sources as a joint effort against COVID-19. Contribute on [GitHub](https://github.com/covid19datahub/COVID19/), join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
 ## Authors
 

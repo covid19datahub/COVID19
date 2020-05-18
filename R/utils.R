@@ -197,7 +197,10 @@ cite <- function(x, src, verbose){
   
   if(verbose){
     
-    y <- x %>% dplyr::distinct(title, url, .keep_all = TRUE)
+    y <- x %>% 
+      dplyr::mutate(url = gsub("(http://|https://|www\\.)([^/]+)(.*)", "\\1\\2", url)) %>%
+      dplyr::distinct_at(c('title', 'url'), .keep_all = TRUE)
+
     y <- apply(y, 1, function(y){
       
       textVersion <- y['textVersion']
