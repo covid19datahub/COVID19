@@ -1,4 +1,4 @@
-<a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/img/logo.svg" align="right" height="128"/></a>
+<a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/logo.svg" align="right" height="128"/></a>
 
 # COVID-19 Data Hub
 
