@@ -138,31 +138,63 @@
 
     
     
-<p><a href="https://github.com/covid19datahub/Python" class="uri">https://github.com/covid19datahub/Python</a></p>
-<div id="import-data-from-the-hub" class="section level2">
+<p><a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/logo.svg" align="right" height="128"></a></p>
+<p>In Python use package <a href="https://pypi.org/project/covid19dh/">covid19dh</a>, fetching <em>COVID-19 Data Hub</em> data into Python.</p>
+<div id="setup-and-usage" class="section level2">
 <h2 class="hasAnchor">
-<a href="#import-data-from-the-hub" class="anchor"></a>Import Data from the Hub</h2>
-<p>Python csv parser <code>csv.reader()</code> does not seem to parse the csv well, since it cannot work with the quotation marks around strings.</p>
-<p>However <code>read_csv()</code> from <a href="https://pandas.pydata.org/">pandas</a> is processing it fine.</p>
-<p>To make a successful call, you also have to specify <code>User-Agent</code> header, see <a href="https://datascience.stackexchange.com/questions/49751/read-csv-file-directly-from-url-how-to-fix-a-403-forbidden-error">here</a>, the request is hence sent separately using <a href="https://requests.readthedocs.io/en/master/">requests</a> library.</p>
-<p>Install <code>pandas</code> and <code>requests</code> by typing into terminal:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">pip</span> install pandas requests</span></code></pre></div>
-<p>Once installed, fetch the data:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># standard library</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="im">from</span> io <span class="im">import</span> StringIO</span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co"># nonstandard - download separately</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="im">import</span> pandas <span class="im">as</span> pd <span class="co"># Pandas</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="im">import</span> requests <span class="co"># HTTP Request library</span></span>
-<span id="cb2-6"><a href="#cb2-6"></a></span>
-<span id="cb2-7"><a href="#cb2-7"></a><span class="co"># download</span></span>
-<span id="cb2-8"><a href="#cb2-8"></a>url <span class="op">=</span> <span class="st">"https://storage.covid19datahub.io/data-1.csv"</span></span>
-<span id="cb2-9"><a href="#cb2-9"></a>response <span class="op">=</span> requests.get(url, headers <span class="op">=</span> {<span class="st">"User-Agent"</span>: <span class="st">"Mozilla/5.0"</span>})</span>
-<span id="cb2-10"><a href="#cb2-10"></a></span>
-<span id="cb2-11"><a href="#cb2-11"></a><span class="co"># make response iterable string</span></span>
-<span id="cb2-12"><a href="#cb2-12"></a>data <span class="op">=</span> StringIO(response.text)</span>
-<span id="cb2-13"><a href="#cb2-13"></a></span>
-<span id="cb2-14"><a href="#cb2-14"></a><span class="co"># load into pandas</span></span>
-<span id="cb2-15"><a href="#cb2-15"></a>df <span class="op">=</span> pd.read_csv(data)</span></code></pre></div>
+<a href="#setup-and-usage" class="anchor"></a>Setup and usage</h2>
+<p>Install with</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>pip install covid19dh</span></code></pre></div>
+<p>Importing main <code><a href="../../reference/covid19.html">covid19()</a></code> function with</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>x <span class="op">=</span> covid19(<span class="st">"ITA"</span>) <span class="co"># load data</span></span></code></pre></div>
+<p>Package is regularly updated. Update with</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">pip</span> install --upgrade covid19dh</span></code></pre></div>
+</div>
+<div id="parametrization" class="section level2">
+<h2 class="hasAnchor">
+<a href="#parametrization" class="anchor"></a>Parametrization</h2>
+<div id="country" class="section level3">
+<h3 class="hasAnchor">
+<a href="#country" class="anchor"></a>Country</h3>
+<p>Country specifies an administrative region, that the data are fetched from. This is connected with source data comes from. It can be given as ISO3, ISO2, numeric ISO or country name (case-insensitively).</p>
+<p>Fetching data from a particular country is done with</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>x <span class="op">=</span> covid19(<span class="st">"ESP"</span>)</span></code></pre></div>
+<p>List of ISO codes can be found <a href="https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv">here</a>.</p>
+<p>Filter can also specify multiple countries at the same time</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>x <span class="op">=</span> covid19([<span class="st">"ESP"</span>,<span class="st">"PT"</span>,<span class="st">"andorra"</span>,<span class="dv">250</span>])</span></code></pre></div>
+<p>Country can be omitted, then whole world data is used.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>x <span class="op">=</span> covid19()</span></code></pre></div>
+</div>
+<div id="date-filter" class="section level3">
+<h3 class="hasAnchor">
+<a href="#date-filter" class="anchor"></a>Date filter</h3>
+<p>Date can be specified with <code>datetime.datetime</code>, <code>datetime.date</code> or as a <code>str</code> in format <code>YYYY-mm-dd</code>.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a>x <span class="op">=</span> covid19(<span class="st">"SWE"</span>, start <span class="op">=</span> datetime(<span class="dv">2020</span>,<span class="dv">4</span>,<span class="dv">1</span>), end <span class="op">=</span> <span class="st">"2020-05-01"</span>)</span></code></pre></div>
+</div>
+<div id="level" class="section level3">
+<h3 class="hasAnchor">
+<a href="#level" class="anchor"></a>Level</h3>
+<p>Levels work the same way as in all the other our data fetchers.</p>
+<ol style="list-style-type: decimal">
+<li>Country level</li>
+<li>State, region or canton level</li>
+<li>City or municipality level</li>
+</ol>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="im">from</span> datetime <span class="im">import</span> date</span>
+<span id="cb8-2"><a href="#cb8-2"></a></span>
+<span id="cb8-3"><a href="#cb8-3"></a>x <span class="op">=</span> covid19(<span class="st">"USA"</span>, level <span class="op">=</span> <span class="dv">2</span>, start <span class="op">=</span> date(<span class="dv">2020</span>,<span class="dv">5</span>,<span class="dv">1</span>))</span></code></pre></div>
+</div>
+<div id="cache" class="section level3">
+<h3 class="hasAnchor">
+<a href="#cache" class="anchor"></a>Cache</h3>
+<p>Library keeps downloaded data in simple way during runtime. By default, using the cached data is enabled.</p>
+<p>Caching can be disabled (e.g. for long running programs) by</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>x <span class="op">=</span> covid19(<span class="st">"FRA"</span>, cache<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+</div>
 </div>
 <div id="terms-of-use" class="section level2">
 <h2 class="hasAnchor">
