@@ -1,38 +1,38 @@
 "id","id_gov_co","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric"
-"475b73d2","Bogotá D.C.",2,"Bogotá",,,,,11
-"7d68ecf4","Antioquia",2,"Antioquia",,,,,5
-"581f58ea","Valle del Cauca",2,"Valle del Cauca",,,,,76
-"4499619e","Cartagena D.T. y C.",2,"Cartagena de Indias",,,,,13
-"3b8455d4","Huila",2,"Huila",,,,,41
-"6d092705","Caldas",2,"Caldas",,,,,17
-"725a0634","Meta",2,"Meta",,,,,50
-"a524c5a4","Risaralda",2,"Risaralda",,,,,66
-"580019e5","Cundinamarca",2,"Cundinamarca",,,,,25
-"b5bc1dbe","Norte de Santander",2,"Norte de Santander",,,,,54
-"d83d7857","Santander",2,"Santander",,,,,68
-"dcab017a","Barranquilla D.E.",2,"Barranquilla",,,,,8
-"ca1ff43c","Quindío",2,"Quindio",,,,,63
-"9b3e0650","Tolima",2,"Tolima",,,,,73
-"018be2d6","Cauca",2,"Cauca",,,,,19
-"743b99dc","Santa Marta D.T. y C.",2,"Santa Marta",,,,,47
-"00cd1936","Archipiélago de San Andrés Providencia y Santa Catalina",2,"Archipiélago de San Andrés Providencia y Santa Catalina",,,,,88
-"0c16339f","Casanare",2,"Casanare",,,,,85
-"3cec2a6f","Cesar",2,"Cesar",,,,,20
-"65396842","Nariño",2,"Nariño",,,,,52
-"350675b6","Atlántico",2,"Atlántico",,,,,8
-"925ad31b","Boyacá",2,"Boyacá",,,,,15
-"fe468e2d","Bolívar",2,"Bolívar",,,,,13
-"cb099399","Córdoba",2,"Córdoba",,,,,23
-"f20f8d57","Sucre",2,"Sucre",,,,,70
-"e6f09c55","Magdalena",2,"Magdalena",,,,,47
-"0469cd13","La Guajira",2,"La Guajira",,,,,44
-"bf767096","Buenaventura D.E.",2,"Buenaventura",,,,,76
-"d0c8e5b2","Chocó",2,"Chocó",,,,,27
-"718a569d","Caquetá",2,"Caquetá",,,,,18
-"f6668f0e","Amazonas",2,"Amazonas",,,,,91
-"f442234b","Putumayo",2,"Putumayo",,,,,86
-"2980690c","Arauca",2,"Arauca",,,,,81
-"3823baf8","Vaupés",2,"Vaupés",,,,,97
+"475b73d2","Bogotá D.C.",2,"Bogotá",,4.711111,-74.072222,74130000,11
+"7d68ecf4","Antioquia",2,"Antioquia",,6.216667,-75.566667,6407102,5
+"581f58ea","Valle del Cauca",2,"Valle del Cauca",,3.416667,-76.516667,4475886,76
+"4499619e","Cartagena D.T. y C.",2,"Cartagena de Indias",,10.4,-75.5,1028736,13
+"3b8455d4","Huila",2,"Huila",,-14.25, 14.833333,2497422,41
+"6d092705","Caldas",2,"Caldas",,5.1,-75.55,998225,17
+"725a0634","Meta",2,"Meta",,4.15,-73.633333,1039722,50
+"a524c5a4","Risaralda",2,"Risaralda",,4.816667,-75.7,943401,66
+"580019e5","Cundinamarca",2,"Cundinamarca",,4.6,-74.083333,2919060,25
+"b5bc1dbe","Norte de Santander",2,"Norte de Santander",,7.9,-72.5,1491689,54
+"d83d7857","Santander",2,"Santander",,7.133333,-73,2184837,68
+"dcab017a","Barranquilla D.E.",2,"Barranquilla",,10.963889,-74.796389,2370753,8
+"ca1ff43c","Quindío",2,"Quindio",,4.533333,-75.7,539904,63
+"9b3e0650","Tolima",2,"Tolima",,4.433333,-75.233333,1330187,73
+"018be2d6","Cauca",2,"Cauca",,2.45,-76.616667,1464488,19
+"743b99dc","Santa Marta D.T. y C.",2,"Santa Marta",,11.241944,-74.205278,499192,47
+"00cd1936","Archipiélago de San Andrés Providencia y Santa Catalina",2,"Archipiélago de San Andrés Providencia y Santa Catalina",,12.55,-81.716667,61280,88
+"0c16339f","Casanare",2,"Casanare",,5.35,-72.41,420504,85
+"3cec2a6f","Cesar",2,"Cesar",,10.483333,-73.25,1200574,20
+"65396842","Nariño",2,"Nariño",,1.166667,-77.266667,1630592,52
+"350675b6","Atlántico",2,"Atlántico",,10.983333,-74.783333,2535517,8
+"925ad31b","Boyacá",2,"Boyacá",,5.533333,-73.366667,1217376,15
+"fe468e2d","Bolívar",2,"Bolívar",,10.4,-75.5,2070110,13
+"cb099399","Córdoba",2,"Córdoba",,8.75,-75.883333,1784783,23
+"f20f8d57","Sucre",2,"Sucre",,9.3,-75.4,904863,70
+"e6f09c55","Magdalena",2,"Magdalena",,11.241944,-74.205278,1341746,47
+"0469cd13","La Guajira",2,"La Guajira",,11.55,-72.9,880560,44
+"bf767096","Buenaventura D.E.",2,"Buenaventura",,3.877222,-77.026667,432385,76
+"d0c8e5b2","Chocó",2,"Chocó",,5.7,-76.666667,534826,27
+"718a569d","Caquetá",2,"Caquetá",,1.616667,-75.6,401849,18
+"f6668f0e","Amazonas",2,"Amazonas",,4.2,-69.916667,76589,91
+"f442234b","Putumayo",2,"Putumayo",,1.15,-76.616667,348182,86
+"2980690c","Arauca",2,"Arauca",,7.083333,-70.75,262174,81
+"3823baf8","Vaupés",2,"Vaupés",,1.2,-70.166667,40797,97
 "c5384e93","11001",3,"Bogotá d C.","Bogotá",,,,11001
 "cf76d8fc","76111",3,"Valle del Cauca","Guadalajara de Buga",,,,76111
 "49d8b9e9","5001",3,"Antioquia","Medellín",,,,5001
