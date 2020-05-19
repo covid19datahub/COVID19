@@ -1,350 +1,354 @@
-"id","id_gov_co","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric"
-"475b73d2","Bogotá D.C.",2,"Bogotá",,4.711111,-74.072222,74130000,11
-"7d68ecf4","Antioquia",2,"Antioquia",,6.216667,-75.566667,6407102,5
-"581f58ea","Valle del Cauca",2,"Valle del Cauca",,3.416667,-76.516667,4475886,76
-"4499619e","Cartagena D.T. y C.",2,"Cartagena de Indias",,10.4,-75.5,1028736,13
-"3b8455d4","Huila",2,"Huila",,-14.25, 14.833333,2497422,41
-"6d092705","Caldas",2,"Caldas",,5.1,-75.55,998225,17
-"725a0634","Meta",2,"Meta",,4.15,-73.633333,1039722,50
-"a524c5a4","Risaralda",2,"Risaralda",,4.816667,-75.7,943401,66
-"580019e5","Cundinamarca",2,"Cundinamarca",,4.6,-74.083333,2919060,25
-"b5bc1dbe","Norte de Santander",2,"Norte de Santander",,7.9,-72.5,1491689,54
-"d83d7857","Santander",2,"Santander",,7.133333,-73,2184837,68
-"dcab017a","Barranquilla D.E.",2,"Barranquilla",,10.963889,-74.796389,2370753,8
-"ca1ff43c","Quindío",2,"Quindio",,4.533333,-75.7,539904,63
-"9b3e0650","Tolima",2,"Tolima",,4.433333,-75.233333,1330187,73
-"018be2d6","Cauca",2,"Cauca",,2.45,-76.616667,1464488,19
-"743b99dc","Santa Marta D.T. y C.",2,"Santa Marta",,11.241944,-74.205278,499192,47
-"00cd1936","Archipiélago de San Andrés Providencia y Santa Catalina",2,"Archipiélago de San Andrés Providencia y Santa Catalina",,12.55,-81.716667,61280,88
-"0c16339f","Casanare",2,"Casanare",,5.35,-72.41,420504,85
-"3cec2a6f","Cesar",2,"Cesar",,10.483333,-73.25,1200574,20
-"65396842","Nariño",2,"Nariño",,1.166667,-77.266667,1630592,52
-"350675b6","Atlántico",2,"Atlántico",,10.983333,-74.783333,2535517,8
-"925ad31b","Boyacá",2,"Boyacá",,5.533333,-73.366667,1217376,15
-"fe468e2d","Bolívar",2,"Bolívar",,10.4,-75.5,2070110,13
-"cb099399","Córdoba",2,"Córdoba",,8.75,-75.883333,1784783,23
-"f20f8d57","Sucre",2,"Sucre",,9.3,-75.4,904863,70
-"e6f09c55","Magdalena",2,"Magdalena",,11.241944,-74.205278,1341746,47
-"0469cd13","La Guajira",2,"La Guajira",,11.55,-72.9,880560,44
-"bf767096","Buenaventura D.E.",2,"Buenaventura",,3.877222,-77.026667,432385,76
-"d0c8e5b2","Chocó",2,"Chocó",,5.7,-76.666667,534826,27
-"718a569d","Caquetá",2,"Caquetá",,1.616667,-75.6,401849,18
-"f6668f0e","Amazonas",2,"Amazonas",,4.2,-69.916667,76589,91
-"f442234b","Putumayo",2,"Putumayo",,1.15,-76.616667,348182,86
-"2980690c","Arauca",2,"Arauca",,7.083333,-70.75,262174,81
-"3823baf8","Vaupés",2,"Vaupés",,1.2,-70.166667,40797,97
-"c5384e93","11001",3,"Bogotá d C.","Bogotá",,,,11001
-"cf76d8fc","76111",3,"Valle del Cauca","Guadalajara de Buga",,,,76111
-"49d8b9e9","5001",3,"Antioquia","Medellín",,,,5001
-"6f318618","13001",3,"Bolívar","Cartagena de Indias",,,,13001
-"6ac390a0","5360",3,"Antioquia","Itagüí",,,,5360
-"0dd8c1e3","41001",3,"Huila","Neiva",,,,41001
-"d7af838a","76001",3,"Valle del Cauca","Cali",,,,76001
-"e053114f","17001",3,"Caldas","Manizales",,,,17001
-"94551375","76520",3,"Valle del Cauca","Palmira",,,,76520
-"88048f36","50001",3,"Meta","Villavicencio",,,,50001
-"d34b665c","66170",3,"Risaralda","Dosquebradas",,,,66170
-"53233003","5615",3,"Antioquia","Rionegro",,,,5615
-"0a10dd09","68001",3,"Santander","Bucaramanga",,,,68001
-"07661861","54001",3,"Norte de Santander","Cúcuta",,,,54001
-"50349a25","25769",3,"Cundinamarca","Subachoque",,,,25769
-"bbb26134","8001",3,"Atlántico","Barranquilla",,,,8001
-"d8b10a03","68276",3,"Santander","Floridablanca",,,,68276
-"05a8b55b","25754",3,"Cundinamarca","Soacha",,,,25754
-"dd115a08","63001",3,"Quindio","Armenia",,,,63001
-"a06a3e02","25126",3,"Cundinamarca","Cajicá",,,,25126
-"e07173b8","73001",3,"Tolima","Ibagué",,,,73001
-"eacfaa3a","66001",3,"Risaralda","Pereira",,,,66001
-"008c667c","19001",3,"Cauca","Popayán",,,,19001
-"48627305","17877",3,"Caldas","Viterbo",,,,17877
-"21ba34ce","25035",3,"Cundinamarca","Anapoima",,,,25035
-"44149bfd","25175",3,"Cundinamarca","Chía",,,,25175
-"82625fa2","5266",3,"Antioquia","Envigado",,,,5266
-"f440bd2e","5380",3,"Antioquia","La Estrella",,,,5380
-"56d9689d","25430",3,"Cundinamarca","Madrid",,,,25430
-"28b39e3f","47001",3,"Magdalena","Santa Marta",,,,47001
-"f8dd8b45","5088",3,"Antioquia","Bello",,,,5088
-"5b62898c","76147",3,"Valle del Cauca","Cartago",,,,76147
-"2b598e55","5318",3,"Antioquia","Guarne",,,,5318
-"365e2b91","54874",3,"Norte de Santander","Villa del Rosario",,,,54874
-"80f9536a","63130",3,"Quindio","Calarcá",,,,63130
-"deba1930","17174",3,"Caldas","Chinchiná",,,,17174
-"79a86532","5321",3,"Antioquia","Guatapé",,,,5321
-"5dcb1588","17380",3,"Caldas","La Dorada",,,,17380
-"b5206368","88001",3,"Archipiélago de San Andrés Providencia y Santa Catalina","San Andrés",,,,88001
-"3a245326","20001",3,"Cesar","Valledupar",,,,20001
-"474abbb5","85001",3,"Casanare","Yopal",,,,85001
-"917738c1","76892",3,"Valle del Cauca","Yumbo",,,,76892
-"2ad9b8f4","5045",3,"Antioquia","Apartadó",,,,5045
-"670fb2b4","25214",3,"Cundinamarca","Cota",,,,25214
-"fc243192","25513",3,"Cundinamarca","Pacho",,,,25513
-"a436606e","5607",3,"Antioquia","Retiro",,,,5607
-"66789698","5631",3,"Antioquia","Sabaneta",,,,5631
-"92560814","76828",3,"Valle del Cauca","Trujillo",,,,76828
-"4f0fb71c","17873",3,"Caldas","Villamaría",,,,17873
-"7a3f1e9c","76126",3,"Valle del Cauca","Calima",,,,76126
-"58c368d1","25286",3,"Cundinamarca","Funza",,,,25286
-"a8bbfca5","25290",3,"Cundinamarca","Fusagasugá",,,,25290
-"c3589802","52356",3,"Nariño","Ipiales",,,,52356
-"a99e2ebf","25377",3,"Cundinamarca","La Calera",,,,25377
-"a7a11bc0","76400",3,"Valle del Cauca","La Unión",,,,76400
-"070274a4","54405",3,"Norte de Santander","Los Patios",,,,54405
-"abbcfc23","25473",3,"Cundinamarca","Mosquera",,,,25473
-"494f9505","41524",3,"Huila","Palermo",,,,41524
-"eb645969","76670",3,"Valle del Cauca","San Pedro",,,,76670
-"82fb757e","76834",3,"Valle del Cauca","Tuluá",,,,76834
-"4bc5a072","25875",3,"Cundinamarca","Villeta",,,,25875
-"de5b9337","76250",3,"Valle del Cauca","El Dovio",,,,76250
-"f2ef1300","5284",3,"Antioquia","Frontino",,,,5284
-"186abadd","15686",3,"Boyacá","Santana",,,,15686
-"ba563b50","8758",3,"Atlántico","Soledad",,,,8758
-"4a5ad9c4","15001",3,"Boyacá","Tunja",,,,15001
-"1c365434","8573",3,"Atlántico","Puerto Colombia",,,,8573
-"f39166d8","25817",3,"Cundinamarca","Tocancipá",,,,25817
-"f1e81386","5467",3,"Antioquia","Montebello",,,,5467
-"e25e5485","63470",3,"Quindio","Montenegro",,,,63470
-"a871b350","54498",3,"Norte de Santander","Ocaña",,,,54498
-"220d47bd","52001",3,"Nariño","Pasto",,,,52001
-"b9d2ef3e","8558",3,"Atlántico","Polonuevo",,,,8558
-"0d41176a","23660",3,"Córdoba","Sahagún",,,,23660
-"1be8daf0","5686",3,"Antioquia","Santa Rosa de Osos",,,,5686
-"d46b11c0","13836",3,"Bolívar","Turbaco",,,,13836
-"a2a60547","25873",3,"Cundinamarca","Villapinzón",,,,25873
-"8b4f23e7","13052",3,"Bolívar","Arjona",,,,13052
-"9abb04d4","5376",3,"Antioquia","La Ceja",,,,5376
-"2891fcc8","23001",3,"Córdoba","Montería",,,,23001
-"3b962bb9","15500",3,"Boyacá","Oicatá",,,,15500
-"a92b60a4","5652",3,"Antioquia","San Francisco",,,,5652
-"f2c4dc56","70001",3,"Sucre","Sincelejo",,,,70001
-"ef73f632","47189",3,"Magdalena","Ciénaga",,,,47189
-"0c1ef970","25758",3,"Cundinamarca","Sopó",,,,25758
-"92d44fe3","54553",3,"Norte de Santander","Puerto Santander",,,,54553
-"3a0631d1","44001",3,"La Guajira","Riohacha",,,,44001
-"005e81df","52835",3,"Nariño","San Andrés de Tumaco",,,,52835
-"ac1f1923","19698",3,"Cauca","Santander de Quilichao",,,,19698
-"c3362c9e","15816",3,"Boyacá","Togüí",,,,15816
-"dcf0c1d7","25899",3,"Cundinamarca","Zipaquirá",,,,25899
-"7a16bbe0","63190",3,"Quindio","Circasia",,,,63190
-"fadc5464","52227",3,"Nariño","Cumbal",,,,52227
-"08dd491b","63272",3,"Quindio","Filandia",,,,63272
-"babdd32f","76845",3,"Valle del Cauca","Ulloa",,,,76845
-"1d3685f1","17042",3,"Caldas","Anserma",,,,17042
-"74f7396e","5129",3,"Antioquia","Caldas",,,,5129
-"ef5194c5","23189",3,"Córdoba","Ciénaga de Oro",,,,23189
-"88129b71","5237",3,"Antioquia","Donmatías",,,,5237
-"c4e1432b","25181",3,"Cundinamarca","Choachí",,,,25181
-"d7ac86ea","25799",3,"Cundinamarca","Tenjo",,,,25799
-"70bbcda2","5197",3,"Antioquia","Cocorná",,,,5197
-"16601a95","50006",3,"Meta","Acacías",,,,50006
-"d8b6618f","76109",3,"Valle del Cauca","Buenaventura",,,,76109
-"b52eb436","76318",3,"Valle del Cauca","Guacarí",,,,76318
-"98bc1f2e","47980",3,"Magdalena","Zona Bananera",,,,47980
-"c2c95701","68081",3,"Santander","Barrancabermeja",,,,68081
-"c624299a","25662",3,"Cundinamarca","San Juan de Rioseco",,,,25662
-"1b29528e","5038",3,"Antioquia","Angostura",,,,5038
-"75cde8b3","19300",3,"Cauca","Guachené",,,,19300
-"62e645ea","76036",3,"Valle del Cauca","Andalucía",,,,76036
-"ca4e0d7c","5212",3,"Antioquia","Copacabana",,,,5212
-"f7909bb0","8296",3,"Atlántico","Galapa",,,,8296
-"4b8da870","76306",3,"Valle del Cauca","Ginebra",,,,76306
-"f3d96eda","76364",3,"Valle del Cauca","Jamundí",,,,76364
-"da18f2d4","63401",3,"Quindio","La Tebaida",,,,63401
-"7d9ffefc","19455",3,"Cauca","Miranda",,,,19455
-"9c2434cf","8560",3,"Atlántico","Ponedera",,,,8560
-"bf920d3a","66682",3,"Risaralda","Santa Rosa de Cabal",,,,66682
-"708b5397","8685",3,"Atlántico","Santo Tomás",,,,8685
-"e70bccac","15798",3,"Boyacá","Tenza",,,,15798
-"ad173ce1","68190",3,"Santander","Cimitarra",,,,68190
-"e0f7ac52","68207",3,"Santander","Concepción",,,,68207
-"4f959204","52210",3,"Nariño","Contadero",,,,52210
-"e4aaa13c","52233",3,"Nariño","Cumbitara",,,,52233
-"3579e3d7","68229",3,"Santander","Curití",,,,68229
-"cc73b8f4","73268",3,"Tolima","Espinal",,,,73268
-"56ff58ce","25269",3,"Cundinamarca","Facatativá",,,,25269
-"96c73ed1","15299",3,"Boyacá","Garagoa",,,,15299
-"ff52ca9f","52399",3,"Nariño","La Unión",,,,52399
-"01718b9c","15696",3,"Boyacá","Santa Sofía",,,,15696
-"defd72ec","25772",3,"Cundinamarca","Suesca",,,,25772
-"2178b9d0","76113",3,"Valle del Cauca","Bugalagrande",,,,76113
-"351b8170","20750",3,"Cesar","San Diego",,,,20750
-"db019e31","15757",3,"Boyacá","Socha",,,,15757
-"e7fc92f1","19807",3,"Cauca","Timbío",,,,19807
-"898b5684","25843",3,"Cundinamarca","Villa de San Diego de Ubaté",,,,25843
-"facd918e","41013",3,"Huila","Agrado",,,,41013
-"8a478ae8","76130",3,"Valle del Cauca","Candelaria",,,,76130
-"e60060c3","23162",3,"Córdoba","Cereté",,,,23162
-"4506eeb2","27",3,"27","Chocó",,,,27
-"797947ec","25200",3,"Cundinamarca","Cogua",,,,25200
-"c99b2a44","76248",3,"Valle del Cauca","El Cerrito",,,,76248
-"75f4db27","5697",3,"Antioquia","El Santuario",,,,5697
-"91faea19","41306",3,"Huila","Gigante",,,,41306
-"7664f74d","41551",3,"Huila","Pitalito",,,,41551
-"3cb9b336","15759",3,"Boyacá","Sogamoso",,,,15759
-"cfe10845","23807",3,"Córdoba","Tierralta",,,,23807
-"8d2f4f57","8078",3,"Atlántico","Baranoa",,,,8078
-"9c07053a","76275",3,"Valle del Cauca","Florida",,,,76275
-"7f7959ed","76890",3,"Valle del Cauca","Yotoco",,,,76890
-"7c3203cd","41359",3,"Huila","Isnos",,,,41359
-"7998fb07","8433",3,"Atlántico","Malambo",,,,8433
-"8dcf9652","73449",3,"Tolima","Melgar",,,,73449
-"1c62a6c4","5665",3,"Antioquia","San Pedro de Urabá",,,,5665
-"48364b4c","47245",3,"Magdalena","El Banco",,,,47245
-"2e8da8be","13620",3,"Bolívar","San Cristóbal",,,,13620
-"eaa8356e","41807",3,"Huila","Timaná",,,,41807
-"129f1ea5","5034",3,"Antioquia","Andes",,,,5034
-"b8300119","18001",3,"Caquetá","Florencia",,,,18001
-"501ae450","13074",3,"Bolívar","Barranco de Loba",,,,13074
-"57d8ea5a","20614",3,"Cesar","Río de Oro",,,,20614
-"072de3f2","20770",3,"Cesar","San Martín",,,,20770
-"bc8b57dd","5313",3,"Antioquia","Granada",,,,5313
-"9ac13270","66400",3,"Risaralda","La Virginia",,,,66400
-"f5480552","91001",3,"Amazonas","Leticia",,,,91001
-"a708537c","19573",3,"Cauca","Puerto Tejada",,,,19573
-"12ed6627","50606",3,"Meta","Restrepo",,,,50606
-"af84ce8a","5756",3,"Antioquia","Sonsón",,,,5756
-"7eeffd62","52838",3,"Nariño","Túquerres",,,,52838
-"93bc5440","41006",3,"Huila","Acevedo",,,,41006
-"15f2dabc","5030",3,"Antioquia","Amagá",,,,5030
-"a6421660","41298",3,"Huila","Garzón",,,,41298
-"6bd48aed","41518",3,"Huila","Paicol",,,,41518
-"26d3a273","41668",3,"Huila","San Agustín",,,,41668
-"813dfd86","76869",3,"Valle del Cauca","Vijes",,,,76869
-"8aa76501","41016",3,"Huila","Aipe",,,,41016
-"c755b9f5","15047",3,"Boyacá","Aquitania",,,,15047
-"ab088f9e","25",3,"25","Cundinamarca",,,,25
-"7d9819bd","13140",3,"Bolívar","Calamar",,,,13140
-"7d576102","50313",3,"Meta","Granada",,,,50313
-"929ed19e","76020",3,"Valle del Cauca","Alcalá",,,,76020
-"dfe0c060","23417",3,"Córdoba","Lorica",,,,23417
-"0842a71c","5079",3,"Antioquia","Barbosa",,,,5079
-"95e60e04","15223",3,"Boyacá","Cubará",,,,15223
-"4a8d4f59","25320",3,"Cundinamarca","Guaduas",,,,25320
-"81d47fd3","68547",3,"Santander","Piedecuesta",,,,68547
-"e478baca","8634",3,"Atlántico","Sabanagrande",,,,8634
-"4d6b118e","13683",3,"Bolívar","Santa Rosa",,,,13683
-"1bde4003","25740",3,"Cundinamarca","Sibaté",,,,25740
-"1b79c436","20060",3,"Cesar","Bosconia",,,,20060
-"63d505de","52224",3,"Nariño","Cuaspúd",,,,52224
-"6d9e36d9","19845",3,"Cauca","Villa rica",,,,19845
-"233f6267","20011",3,"Cesar","Aguachica",,,,20011
-"cd31034b","20013",3,"Cesar","Agustín Codazzi",,,,20013
-"0c9f4d16","20621",3,"Cesar","La Paz",,,,20621
-"163efa85","47570",3,"Magdalena","Puebloviejo",,,,47570
-"e01bd3f4","19256",3,"Cauca","El Tambo",,,,19256
-"f5f77492","73319",3,"Tolima","Guamo",,,,73319
-"09f20f88","8436",3,"Atlántico","Manatí",,,,8436
-"781dcc00","76622",3,"Valle del Cauca","Roldanillo",,,,76622
-"4c441bcd","54820",3,"Norte de Santander","Toledo",,,,54820
-"04daac99","52083",3,"Nariño","Belén",,,,52083
-"059b1246","52560",3,"Nariño","Potosí",,,,52560
-"aa5e18a0","50683",3,"Meta","San Juan de Arama",,,,50683
-"1646a60b","44035",3,"La Guajira","Albania",,,,44035
-"fc2b98f5","19142",3,"Cauca","Caloto",,,,19142
-"1108650b","76233",3,"Valle del Cauca","Dagua",,,,76233
-"40385150","41396",3,"Huila","La Plata",,,,41396
-"6125fa58","44430",3,"La Guajira","Maicao",,,,44430
-"4ebeab08","85250",3,"Casanare","Paz de Ariporo",,,,85250
-"b4dff5d1","15646",3,"Boyacá","Samacá",,,,15646
-"2b8d9bc1","17662",3,"Caldas","Samaná",,,,17662
-"34fb89b0","44650",3,"La Guajira","San Juan del Cesar",,,,44650
-"48e993f7","41020",3,"Huila","Algeciras",,,,41020
-"60b5e030","15131",3,"Boyacá","Caldas",,,,15131
-"9abdb097","15176",3,"Boyacá","Chiquinquirá",,,,15176
-"63a1c91f","17616",3,"Caldas","Risaralda",,,,17616
-"edcef6e1","8638",3,"Atlántico","Sabanalarga",,,,8638
-"974481dd","52036",3,"Nariño","Ancuyá",,,,52036
-"8e547717","23090",3,"Córdoba","Canalete",,,,23090
-"1b2fe6cd","15238",3,"Boyacá","Duitama",,,,15238
-"d0336d90","52317",3,"Nariño","Guachucal",,,,52317
-"e89273ec","52381",3,"Nariño","La Florida",,,,52381
-"a430d42d","15407",3,"Boyacá","Villa de Leyva",,,,15407
-"e968794d","54003",3,"Norte de Santander","Ábrego",,,,54003
-"33ffd4cd","54125",3,"Norte de Santander","Cácota",,,,54125
-"0d7b1772","20178",3,"Cesar","Chiriguaná",,,,20178
-"4a2acb6c","20400",3,"Cesar","La Jagua de Ibirico",,,,20400
-"fe5128d6","52427",3,"Nariño","Magüí",,,,52427
-"1a3f2d2d","17442",3,"Caldas","Marmato",,,,17442
-"f35c8818","17444",3,"Caldas","Marquetalia",,,,17444
-"f848f1cb","8520",3,"Atlántico","Palmar de Varela",,,,8520
-"6769480e","54810",3,"Norte de Santander","Tibú",,,,54810
-"3aa5e740","25178",3,"Cundinamarca","Chipaque",,,,25178
-"9218323c","44098",3,"La Guajira","Distracción",,,,44098
-"33d33cc7","13838",3,"Bolívar","Turbaná",,,,13838
-"68091fa6","15835",3,"Boyacá","Turmequé",,,,15835
-"955dba7a","13442",3,"Bolívar","María la Baja",,,,13442
-"31f5c6c3","17495",3,"Caldas","Norcasia",,,,17495
-"1bf7d937","19548",3,"Cauca","Piendamó",,,,19548
-"4d466a9b","76606",3,"Valle del Cauca","Restrepo",,,,76606
-"f7134f58","8675",3,"Atlántico","Santa Lucía",,,,8675
-"55aaae7e","5148",3,"Antioquia","El Carmen de Viboral",,,,5148
-"3c1fde20","52411",3,"Nariño","Linares",,,,52411
-"e0e8322b","91540",3,"Amazonas","Puerto Nariño",,,,91540
-"de1cce07","8141",3,"Atlántico","Candelaria",,,,8141
-"4fe4698f","25279",3,"Cundinamarca","Fómeque",,,,25279
-"cbeebfcd","15516",3,"Boyacá","Paipa",,,,15516
-"60e8f3b1","25845",3,"Cundinamarca","Une",,,,25845
-"950afd6f","70418",3,"Sucre","Los Palmitos",,,,70418
-"34124d91","13430",3,"Bolívar","Magangué",,,,13430
-"e7a66631","23466",3,"Córdoba","Montelíbano",,,,23466
-"82d711b9","25743",3,"Cundinamarca","Silvania",,,,25743
-"d24b4bcc","68872",3,"Santander","Villanueva",,,,68872
-"d8d1082a","25295",3,"Cundinamarca","Gachancipá",,,,25295
-"8dafa833","17614",3,"Caldas","Riosucio",,,,17614
-"7818fb4a","44279",3,"La Guajira","Fonseca",,,,44279
-"15d25eac","15469",3,"Boyacá","Moniquirá",,,,15469
-"e51d6224","41503",3,"Huila","Oporapa",,,,41503
-"616a536f","54518",3,"Norte de Santander","Pamplona",,,,54518
-"f27b215b","86573",3,"Putumayo","Puerto Leguízamo",,,,86573
-"a6a09907","73624",3,"Tolima","Rovira",,,,73624
-"eedf5801","5190",3,"Antioquia","Cisneros",,,,5190
-"5e87ee9d","63212",3,"Quindio","Córdoba",,,,63212
-"f28dcb86","15480",3,"Boyacá","Muzo",,,,15480
-"2f80ba36","50573",3,"Meta","Puerto López",,,,50573
-"711b7f13","15693",3,"Boyacá","Santa Rosa de Viterbo",,,,15693
-"c06d204b","13873",3,"Bolívar","Villanueva",,,,13873
-"17464122","17013",3,"Caldas","Aguadas",,,,17013
-"c8282ce2","81001",3,"Arauca","Arauca",,,,81001
-"52b86b89","54261",3,"Norte de Santander","El Zulia",,,,54261
-"1dc4a036","5361",3,"Antioquia","Ituango",,,,5361
-"d0235a8e","97001",3,"Vaupés","Mitú",,,,97001
-"9ca0810f","73555",3,"Tolima","Planadas",,,,73555
-"693087cb","76563",3,"Valle del Cauca","Pradera",,,,76563
-"95dbf28a","88564",3,"Archipiélago de San Andrés Providencia y Santa Catalina","Providencia",,,,88564
-"1c754077","86571",3,"Putumayo","Puerto Guzmán",,,,86571
-"4efd89a7","47745",3,"Magdalena","Sitionuevo",,,,47745
-"3d9530d8","15808",3,"Boyacá","Tinjacá",,,,15808
-"9038802e","41206",3,"Huila","Colombia",,,,41206
-"0b829ba7","15224",3,"Boyacá","Cucaita",,,,15224
-"402ca954","5250",3,"Antioquia","El Bagre",,,,5250
-"04b15573","47268",3,"Magdalena","El Retén",,,,47268
-"37494144","15455",3,"Boyacá","Miraflores",,,,15455
-"a14952ff","50568",3,"Meta","Puerto Gaitán",,,,50568
-"7a72d725","63594",3,"Quindio","Quimbaya",,,,63594
-"215b8825","8606",3,"Atlántico","Repelón",,,,8606
-"2e0682f5","18753",3,"Caquetá","San Vicente del Caguán",,,,18753
-"05d39689","15879",3,"Boyacá","Viracachá",,,,15879
-"v89vv9v4","52473",3,"Mosquera","Cundinamarca",,,,52473
-"vhi9sdv0","25307",3,"Girardot","Cundinamarca",,,,25307
-"0be6vm0a","13673",3,"Santa Catalina","Bolívar",,,,13673
-"bbca0b56","47053",3,,"Aracataca",,,,
-"9cc3ba0e","44090",3,,"Dibulla",,,,
-"9a3278fd","47288",3,,"Fundación",,,,
-"7cb2c992","86568",3,,"Puerto Asís",,,,
-"28082a41","41660",3,,"Saladoblanco",,,,
-"d2612169","73678",3,,"San Luis",,,,
-"4cc3a1c9","19824",3,,"Totoró",,,,
-"85851ea7","5837",3,,"Turbo",,,,
-"be3ea9ad","41132",3,,"Campoalegre",,,,
-"4507d314","5154",3,,"Caucasia",,,,
-"39b4f925","15204",3,,"Cómbita",,,,
-"22798b7c","17433",3,,"Manzanares",,,,
-"3357491a","50680",3,,"San Carlos de Guaroa",,,,
-"9e30cc25","15776",3,,"Sutamarchán",,,,
-"c701fb80","25785",3,,"Tabio",,,,
-"2a5589ab","15810",3,,"Tipacoque",,,,
-"6d7f7667","25245",3,,"El Colegio",,,,25245
-"6f520d9c","19110",3,,"Buenos Aires",,,,19110
-"2f23e06a","25260",3,,"El Rosal",,,,25260
-"6fbc1810","8372",3,,"Juan de Acosta",,,,8372
-"5802e0af","25438",3,,"Medina",,,,25438
-"bbf63964","25488",3,,"Nilo",,,,25488
+"id","id_gov_co","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric","key_google_mobility"
+"475b73d2","Bogotá D.C.",2,"Bogotá",,4.711111,-74.072222,74130000,11,
+"7d68ecf4","Antioquia",2,"Antioquia",,6.216667,-75.566667,6407102,5,"Antioquia"
+"581f58ea","Valle del Cauca",2,"Valle del Cauca",,3.416667,-76.516667,4475886,76,"Valle del Cauca"
+"4499619e","Cartagena D.T. y C.",2,"Cartagena de Indias",,10.4,-75.5,1028736,13,
+"3b8455d4","Huila",2,"Huila",,-14.25,14.833333,2497422,41,"Huila"
+"6d092705","Caldas",2,"Caldas",,5.1,-75.55,998225,17,"Caldas"
+"725a0634","Meta",2,"Meta",,4.15,-73.633333,1039722,50,"Meta"
+"a524c5a4","Risaralda",2,"Risaralda",,4.816667,-75.7,943401,66,"Risaralda"
+"580019e5","Cundinamarca",2,"Cundinamarca",,4.6,-74.083333,2919060,25,"Cundinamarca"
+"b5bc1dbe","Norte de Santander",2,"Norte de Santander",,7.9,-72.5,1491689,54,
+"d83d7857","Santander",2,"Santander",,7.133333,-73,2184837,68,"Santander"
+"dcab017a","Barranquilla D.E.",2,"Barranquilla",,10.963889,-74.796389,2370753,8,
+"ca1ff43c","Quindío",2,"Quindio",,4.533333,-75.7,539904,63,"Quindio"
+"9b3e0650","Tolima",2,"Tolima",,4.433333,-75.233333,1330187,73,"Tolima"
+"018be2d6","Cauca",2,"Cauca",,2.45,-76.616667,1464488,19,"Cauca"
+"743b99dc","Santa Marta D.T. y C.",2,"Santa Marta",,11.241944,-74.205278,499192,47,
+"00cd1936","Archipiélago de San Andrés Providencia y Santa Catalina",2,"Archipiélago de San Andrés Providencia y Santa Catalina",,12.55,-81.716667,61280,88,
+"0c16339f","Casanare",2,"Casanare",,5.35,-72.41,420504,85,"Casanare"
+"3cec2a6f","Cesar",2,"Cesar",,10.483333,-73.25,1200574,20,"Cesar"
+"65396842","Nariño",2,"Nariño",,1.166667,-77.266667,1630592,52,
+"350675b6","Atlántico",2,"Atlántico",,10.983333,-74.783333,2535517,8,
+"925ad31b","Boyacá",2,"Boyacá",,5.533333,-73.366667,1217376,15,
+"fe468e2d","Bolívar",2,"Bolívar",,10.4,-75.5,2070110,13,
+"cb099399","Córdoba",2,"Córdoba",,8.75,-75.883333,1784783,23,
+"f20f8d57","Sucre",2,"Sucre",,9.3,-75.4,904863,70,"Sucre"
+"e6f09c55","Magdalena",2,"Magdalena",,11.241944,-74.205278,1341746,47,"Magdalena"
+"0469cd13","La Guajira",2,"La Guajira",,11.55,-72.9,880560,44,"La Guajira"
+"bf767096","Buenaventura D.E.",2,"Buenaventura",,3.877222,-77.026667,432385,76,
+"d0c8e5b2","Chocó",2,"Chocó",,5.7,-76.666667,534826,27,
+"718a569d","Caquetá",2,"Caquetá",,1.616667,-75.6,401849,18,
+"f6668f0e","Amazonas",2,"Amazonas",,4.2,-69.916667,76589,91,"Amazonas"
+"f442234b","Putumayo",2,"Putumayo",,1.15,-76.616667,348182,86,"Putumayo"
+"2980690c","Arauca",2,"Arauca",,7.083333,-70.75,262174,81,"Arauca"
+"3823baf8","Vaupés",2,"Vaupés",,1.2,-70.166667,40797,97,
+"c5384e93","11001",3,"Bogotá d C.","Bogotá",,,,11001,
+"cf76d8fc","76111",3,"Valle del Cauca","Guadalajara de Buga",,,,76111,
+"49d8b9e9","5001",3,"Antioquia","Medellín",,,,5001,
+"6f318618","13001",3,"Bolívar","Cartagena de Indias",,,,13001,
+"6ac390a0","5360",3,"Antioquia","Itagüí",,,,5360,
+"0dd8c1e3","41001",3,"Huila","Neiva",,,,41001,
+"d7af838a","76001",3,"Valle del Cauca","Cali",,,,76001,
+"e053114f","17001",3,"Caldas","Manizales",,,,17001,
+"94551375","76520",3,"Valle del Cauca","Palmira",,,,76520,
+"88048f36","50001",3,"Meta","Villavicencio",,,,50001,
+"d34b665c","66170",3,"Risaralda","Dosquebradas",,,,66170,
+"53233003","5615",3,"Antioquia","Rionegro",,,,5615,
+"0a10dd09","68001",3,"Santander","Bucaramanga",,,,68001,
+"07661861","54001",3,"Norte de Santander","Cúcuta",,,,54001,
+"50349a25","25769",3,"Cundinamarca","Subachoque",,,,25769,
+"bbb26134","8001",3,"Atlántico","Barranquilla",,,,8001,
+"d8b10a03","68276",3,"Santander","Floridablanca",,,,68276,
+"05a8b55b","25754",3,"Cundinamarca","Soacha",,,,25754,
+"dd115a08","63001",3,"Quindio","Armenia",,,,63001,
+"a06a3e02","25126",3,"Cundinamarca","Cajicá",,,,25126,
+"e07173b8","73001",3,"Tolima","Ibagué",,,,73001,
+"eacfaa3a","66001",3,"Risaralda","Pereira",,,,66001,
+"008c667c","19001",3,"Cauca","Popayán",,,,19001,
+"48627305","17877",3,"Caldas","Viterbo",,,,17877,
+"21ba34ce","25035",3,"Cundinamarca","Anapoima",,,,25035,
+"44149bfd","25175",3,"Cundinamarca","Chía",,,,25175,
+"82625fa2","5266",3,"Antioquia","Envigado",,,,5266,
+"f440bd2e","5380",3,"Antioquia","La Estrella",,,,5380,
+"56d9689d","25430",3,"Cundinamarca","Madrid",,,,25430,
+"28b39e3f","47001",3,"Magdalena","Santa Marta",,,,47001,
+"f8dd8b45","5088",3,"Antioquia","Bello",,,,5088,
+"5b62898c","76147",3,"Valle del Cauca","Cartago",,,,76147,
+"2b598e55","5318",3,"Antioquia","Guarne",,,,5318,
+"365e2b91","54874",3,"Norte de Santander","Villa del Rosario",,,,54874,
+"80f9536a","63130",3,"Quindio","Calarcá",,,,63130,
+"deba1930","17174",3,"Caldas","Chinchiná",,,,17174,
+"79a86532","5321",3,"Antioquia","Guatapé",,,,5321,
+"5dcb1588","17380",3,"Caldas","La Dorada",,,,17380,
+"b5206368","88001",3,"Archipiélago de San Andrés Providencia y Santa Catalina","San Andrés",,,,88001,
+"3a245326","20001",3,"Cesar","Valledupar",,,,20001,
+"474abbb5","85001",3,"Casanare","Yopal",,,,85001,
+"917738c1","76892",3,"Valle del Cauca","Yumbo",,,,76892,
+"2ad9b8f4","5045",3,"Antioquia","Apartadó",,,,5045,
+"670fb2b4","25214",3,"Cundinamarca","Cota",,,,25214,
+"fc243192","25513",3,"Cundinamarca","Pacho",,,,25513,
+"a436606e","5607",3,"Antioquia","Retiro",,,,5607,
+"66789698","5631",3,"Antioquia","Sabaneta",,,,5631,
+"92560814","76828",3,"Valle del Cauca","Trujillo",,,,76828,
+"4f0fb71c","17873",3,"Caldas","Villamaría",,,,17873,
+"7a3f1e9c","76126",3,"Valle del Cauca","Calima",,,,76126,
+"58c368d1","25286",3,"Cundinamarca","Funza",,,,25286,
+"a8bbfca5","25290",3,"Cundinamarca","Fusagasugá",,,,25290,
+"c3589802","52356",3,"Nariño","Ipiales",,,,52356,
+"a99e2ebf","25377",3,"Cundinamarca","La Calera",,,,25377,
+"a7a11bc0","76400",3,"Valle del Cauca","La Unión",,,,76400,
+"070274a4","54405",3,"Norte de Santander","Los Patios",,,,54405,
+"abbcfc23","25473",3,"Cundinamarca","Mosquera",,,,25473,
+"494f9505","41524",3,"Huila","Palermo",,,,41524,
+"eb645969","76670",3,"Valle del Cauca","San Pedro",,,,76670,
+"82fb757e","76834",3,"Valle del Cauca","Tuluá",,,,76834,
+"4bc5a072","25875",3,"Cundinamarca","Villeta",,,,25875,
+"de5b9337","76250",3,"Valle del Cauca","El Dovio",,,,76250,
+"f2ef1300","5284",3,"Antioquia","Frontino",,,,5284,
+"186abadd","15686",3,"Boyacá","Santana",,,,15686,
+"ba563b50","8758",3,"Atlántico","Soledad",,,,8758,
+"4a5ad9c4","15001",3,"Boyacá","Tunja",,,,15001,
+"1c365434","8573",3,"Atlántico","Puerto Colombia",,,,8573,
+"f39166d8","25817",3,"Cundinamarca","Tocancipá",,,,25817,
+"f1e81386","5467",3,"Antioquia","Montebello",,,,5467,
+"e25e5485","63470",3,"Quindio","Montenegro",,,,63470,
+"a871b350","54498",3,"Norte de Santander","Ocaña",,,,54498,
+"220d47bd","52001",3,"Nariño","Pasto",,,,52001,
+"b9d2ef3e","8558",3,"Atlántico","Polonuevo",,,,8558,
+"0d41176a","23660",3,"Córdoba","Sahagún",,,,23660,
+"1be8daf0","5686",3,"Antioquia","Santa Rosa de Osos",,,,5686,
+"d46b11c0","13836",3,"Bolívar","Turbaco",,,,13836,
+"a2a60547","25873",3,"Cundinamarca","Villapinzón",,,,25873,
+"8b4f23e7","13052",3,"Bolívar","Arjona",,,,13052,
+"9abb04d4","5376",3,"Antioquia","La Ceja",,,,5376,
+"2891fcc8","23001",3,"Córdoba","Montería",,,,23001,
+"3b962bb9","15500",3,"Boyacá","Oicatá",,,,15500,
+"a92b60a4","5652",3,"Antioquia","San Francisco",,,,5652,
+"f2c4dc56","70001",3,"Sucre","Sincelejo",,,,70001,
+"ef73f632","47189",3,"Magdalena","Ciénaga",,,,47189,
+"0c1ef970","25758",3,"Cundinamarca","Sopó",,,,25758,
+"92d44fe3","54553",3,"Norte de Santander","Puerto Santander",,,,54553,
+"3a0631d1","44001",3,"La Guajira","Riohacha",,,,44001,
+"005e81df","52835",3,"Nariño","San Andrés de Tumaco",,,,52835,
+"ac1f1923","19698",3,"Cauca","Santander de Quilichao",,,,19698,
+"c3362c9e","15816",3,"Boyacá","Togüí",,,,15816,
+"dcf0c1d7","25899",3,"Cundinamarca","Zipaquirá",,,,25899,
+"7a16bbe0","63190",3,"Quindio","Circasia",,,,63190,
+"fadc5464","52227",3,"Nariño","Cumbal",,,,52227,
+"08dd491b","63272",3,"Quindio","Filandia",,,,63272,
+"babdd32f","76845",3,"Valle del Cauca","Ulloa",,,,76845,
+"1d3685f1","17042",3,"Caldas","Anserma",,,,17042,
+"74f7396e","5129",3,"Antioquia","Caldas",,,,5129,
+"ef5194c5","23189",3,"Córdoba","Ciénaga de Oro",,,,23189,
+"88129b71","5237",3,"Antioquia","Donmatías",,,,5237,
+"c4e1432b","25181",3,"Cundinamarca","Choachí",,,,25181,
+"d7ac86ea","25799",3,"Cundinamarca","Tenjo",,,,25799,
+"70bbcda2","5197",3,"Antioquia","Cocorná",,,,5197,
+"16601a95","50006",3,"Meta","Acacías",,,,50006,
+"d8b6618f","76109",3,"Valle del Cauca","Buenaventura",,,,76109,
+"b52eb436","76318",3,"Valle del Cauca","Guacarí",,,,76318,
+"98bc1f2e","47980",3,"Magdalena","Zona Bananera",,,,47980,
+"c2c95701","68081",3,"Santander","Barrancabermeja",,,,68081,
+"c624299a","25662",3,"Cundinamarca","San Juan de Rioseco",,,,25662,
+"1b29528e","5038",3,"Antioquia","Angostura",,,,5038,
+"75cde8b3","19300",3,"Cauca","Guachené",,,,19300,
+"62e645ea","76036",3,"Valle del Cauca","Andalucía",,,,76036,
+"ca4e0d7c","5212",3,"Antioquia","Copacabana",,,,5212,
+"f7909bb0","8296",3,"Atlántico","Galapa",,,,8296,
+"4b8da870","76306",3,"Valle del Cauca","Ginebra",,,,76306,
+"f3d96eda","76364",3,"Valle del Cauca","Jamundí",,,,76364,
+"da18f2d4","63401",3,"Quindio","La Tebaida",,,,63401,
+"7d9ffefc","19455",3,"Cauca","Miranda",,,,19455,
+"9c2434cf","8560",3,"Atlántico","Ponedera",,,,8560,
+"bf920d3a","66682",3,"Risaralda","Santa Rosa de Cabal",,,,66682,
+"708b5397","8685",3,"Atlántico","Santo Tomás",,,,8685,
+"e70bccac","15798",3,"Boyacá","Tenza",,,,15798,
+"ad173ce1","68190",3,"Santander","Cimitarra",,,,68190,
+"e0f7ac52","68207",3,"Santander","Concepción",,,,68207,
+"4f959204","52210",3,"Nariño","Contadero",,,,52210,
+"e4aaa13c","52233",3,"Nariño","Cumbitara",,,,52233,
+"3579e3d7","68229",3,"Santander","Curití",,,,68229,
+"cc73b8f4","73268",3,"Tolima","Espinal",,,,73268,
+"56ff58ce","25269",3,"Cundinamarca","Facatativá",,,,25269,
+"96c73ed1","15299",3,"Boyacá","Garagoa",,,,15299,
+"ff52ca9f","52399",3,"Nariño","La Unión",,,,52399,
+"01718b9c","15696",3,"Boyacá","Santa Sofía",,,,15696,
+"defd72ec","25772",3,"Cundinamarca","Suesca",,,,25772,
+"2178b9d0","76113",3,"Valle del Cauca","Bugalagrande",,,,76113,
+"351b8170","20750",3,"Cesar","San Diego",,,,20750,
+"db019e31","15757",3,"Boyacá","Socha",,,,15757,
+"e7fc92f1","19807",3,"Cauca","Timbío",,,,19807,
+"898b5684","25843",3,"Cundinamarca","Villa de San Diego de Ubaté",,,,25843,
+"facd918e","41013",3,"Huila","Agrado",,,,41013,
+"8a478ae8","76130",3,"Valle del Cauca","Candelaria",,,,76130,
+"e60060c3","23162",3,"Córdoba","Cereté",,,,23162,
+"4506eeb2","27",3,"27","Chocó",,,,27,
+"797947ec","25200",3,"Cundinamarca","Cogua",,,,25200,
+"c99b2a44","76248",3,"Valle del Cauca","El Cerrito",,,,76248,
+"75f4db27","5697",3,"Antioquia","El Santuario",,,,5697,
+"91faea19","41306",3,"Huila","Gigante",,,,41306,
+"7664f74d","41551",3,"Huila","Pitalito",,,,41551,
+"3cb9b336","15759",3,"Boyacá","Sogamoso",,,,15759,
+"cfe10845","23807",3,"Córdoba","Tierralta",,,,23807,
+"8d2f4f57","8078",3,"Atlántico","Baranoa",,,,8078,
+"9c07053a","76275",3,"Valle del Cauca","Florida",,,,76275,
+"7f7959ed","76890",3,"Valle del Cauca","Yotoco",,,,76890,
+"7c3203cd","41359",3,"Huila","Isnos",,,,41359,
+"7998fb07","8433",3,"Atlántico","Malambo",,,,8433,
+"8dcf9652","73449",3,"Tolima","Melgar",,,,73449,
+"1c62a6c4","5665",3,"Antioquia","San Pedro de Urabá",,,,5665,
+"48364b4c","47245",3,"Magdalena","El Banco",,,,47245,
+"2e8da8be","13620",3,"Bolívar","San Cristóbal",,,,13620,
+"eaa8356e","41807",3,"Huila","Timaná",,,,41807,
+"129f1ea5","5034",3,"Antioquia","Andes",,,,5034,
+"b8300119","18001",3,"Caquetá","Florencia",,,,18001,
+"501ae450","13074",3,"Bolívar","Barranco de Loba",,,,13074,
+"57d8ea5a","20614",3,"Cesar","Río de Oro",,,,20614,
+"072de3f2","20770",3,"Cesar","San Martín",,,,20770,
+"bc8b57dd","5313",3,"Antioquia","Granada",,,,5313,
+"9ac13270","66400",3,"Risaralda","La Virginia",,,,66400,
+"f5480552","91001",3,"Amazonas","Leticia",,,,91001,
+"a708537c","19573",3,"Cauca","Puerto Tejada",,,,19573,
+"12ed6627","50606",3,"Meta","Restrepo",,,,50606,
+"af84ce8a","5756",3,"Antioquia","Sonsón",,,,5756,
+"7eeffd62","52838",3,"Nariño","Túquerres",,,,52838,
+"93bc5440","41006",3,"Huila","Acevedo",,,,41006,
+"15f2dabc","5030",3,"Antioquia","Amagá",,,,5030,
+"a6421660","41298",3,"Huila","Garzón",,,,41298,
+"6bd48aed","41518",3,"Huila","Paicol",,,,41518,
+"26d3a273","41668",3,"Huila","San Agustín",,,,41668,
+"813dfd86","76869",3,"Valle del Cauca","Vijes",,,,76869,
+"8aa76501","41016",3,"Huila","Aipe",,,,41016,
+"c755b9f5","15047",3,"Boyacá","Aquitania",,,,15047,
+"ab088f9e","25",3,"25","Cundinamarca",,,,25,
+"7d9819bd","13140",3,"Bolívar","Calamar",,,,13140,
+"7d576102","50313",3,"Meta","Granada",,,,50313,
+"929ed19e","76020",3,"Valle del Cauca","Alcalá",,,,76020,
+"dfe0c060","23417",3,"Córdoba","Lorica",,,,23417,
+"0842a71c","5079",3,"Antioquia","Barbosa",,,,5079,
+"95e60e04","15223",3,"Boyacá","Cubará",,,,15223,
+"4a8d4f59","25320",3,"Cundinamarca","Guaduas",,,,25320,
+"81d47fd3","68547",3,"Santander","Piedecuesta",,,,68547,
+"e478baca","8634",3,"Atlántico","Sabanagrande",,,,8634,
+"4d6b118e","13683",3,"Bolívar","Santa Rosa",,,,13683,
+"1bde4003","25740",3,"Cundinamarca","Sibaté",,,,25740,
+"1b79c436","20060",3,"Cesar","Bosconia",,,,20060,
+"63d505de","52224",3,"Nariño","Cuaspúd",,,,52224,
+"6d9e36d9","19845",3,"Cauca","Villa rica",,,,19845,
+"233f6267","20011",3,"Cesar","Aguachica",,,,20011,
+"cd31034b","20013",3,"Cesar","Agustín Codazzi",,,,20013,
+"0c9f4d16","20621",3,"Cesar","La Paz",,,,20621,
+"163efa85","47570",3,"Magdalena","Puebloviejo",,,,47570,
+"e01bd3f4","19256",3,"Cauca","El Tambo",,,,19256,
+"f5f77492","73319",3,"Tolima","Guamo",,,,73319,
+"09f20f88","8436",3,"Atlántico","Manatí",,,,8436,
+"781dcc00","76622",3,"Valle del Cauca","Roldanillo",,,,76622,
+"4c441bcd","54820",3,"Norte de Santander","Toledo",,,,54820,
+"04daac99","52083",3,"Nariño","Belén",,,,52083,
+"059b1246","52560",3,"Nariño","Potosí",,,,52560,
+"aa5e18a0","50683",3,"Meta","San Juan de Arama",,,,50683,
+"1646a60b","44035",3,"La Guajira","Albania",,,,44035,
+"fc2b98f5","19142",3,"Cauca","Caloto",,,,19142,
+"1108650b","76233",3,"Valle del Cauca","Dagua",,,,76233,
+"40385150","41396",3,"Huila","La Plata",,,,41396,
+"6125fa58","44430",3,"La Guajira","Maicao",,,,44430,
+"4ebeab08","85250",3,"Casanare","Paz de Ariporo",,,,85250,
+"b4dff5d1","15646",3,"Boyacá","Samacá",,,,15646,
+"2b8d9bc1","17662",3,"Caldas","Samaná",,,,17662,
+"34fb89b0","44650",3,"La Guajira","San Juan del Cesar",,,,44650,
+"48e993f7","41020",3,"Huila","Algeciras",,,,41020,
+"60b5e030","15131",3,"Boyacá","Caldas",,,,15131,
+"9abdb097","15176",3,"Boyacá","Chiquinquirá",,,,15176,
+"63a1c91f","17616",3,"Caldas","Risaralda",,,,17616,
+"edcef6e1","8638",3,"Atlántico","Sabanalarga",,,,8638,
+"974481dd","52036",3,"Nariño","Ancuyá",,,,52036,
+"8e547717","23090",3,"Córdoba","Canalete",,,,23090,
+"1b2fe6cd","15238",3,"Boyacá","Duitama",,,,15238,
+"d0336d90","52317",3,"Nariño","Guachucal",,,,52317,
+"e89273ec","52381",3,"Nariño","La Florida",,,,52381,
+"a430d42d","15407",3,"Boyacá","Villa de Leyva",,,,15407,
+"e968794d","54003",3,"Norte de Santander","Ábrego",,,,54003,
+"33ffd4cd","54125",3,"Norte de Santander","Cácota",,,,54125,
+"0d7b1772","20178",3,"Cesar","Chiriguaná",,,,20178,
+"4a2acb6c","20400",3,"Cesar","La Jagua de Ibirico",,,,20400,
+"fe5128d6","52427",3,"Nariño","Magüí",,,,52427,
+"1a3f2d2d","17442",3,"Caldas","Marmato",,,,17442,
+"f35c8818","17444",3,"Caldas","Marquetalia",,,,17444,
+"f848f1cb","8520",3,"Atlántico","Palmar de Varela",,,,8520,
+"6769480e","54810",3,"Norte de Santander","Tibú",,,,54810,
+"3aa5e740","25178",3,"Cundinamarca","Chipaque",,,,25178,
+"9218323c","44098",3,"La Guajira","Distracción",,,,44098,
+"33d33cc7","13838",3,"Bolívar","Turbaná",,,,13838,
+"68091fa6","15835",3,"Boyacá","Turmequé",,,,15835,
+"955dba7a","13442",3,"Bolívar","María la Baja",,,,13442,
+"31f5c6c3","17495",3,"Caldas","Norcasia",,,,17495,
+"1bf7d937","19548",3,"Cauca","Piendamó",,,,19548,
+"4d466a9b","76606",3,"Valle del Cauca","Restrepo",,,,76606,
+"f7134f58","8675",3,"Atlántico","Santa Lucía",,,,8675,
+"55aaae7e","5148",3,"Antioquia","El Carmen de Viboral",,,,5148,
+"3c1fde20","52411",3,"Nariño","Linares",,,,52411,
+"e0e8322b","91540",3,"Amazonas","Puerto Nariño",,,,91540,
+"de1cce07","8141",3,"Atlántico","Candelaria",,,,8141,
+"4fe4698f","25279",3,"Cundinamarca","Fómeque",,,,25279,
+"cbeebfcd","15516",3,"Boyacá","Paipa",,,,15516,
+"60e8f3b1","25845",3,"Cundinamarca","Une",,,,25845,
+"950afd6f","70418",3,"Sucre","Los Palmitos",,,,70418,
+"34124d91","13430",3,"Bolívar","Magangué",,,,13430,
+"e7a66631","23466",3,"Córdoba","Montelíbano",,,,23466,
+"82d711b9","25743",3,"Cundinamarca","Silvania",,,,25743,
+"d24b4bcc","68872",3,"Santander","Villanueva",,,,68872,
+"d8d1082a","25295",3,"Cundinamarca","Gachancipá",,,,25295,
+"8dafa833","17614",3,"Caldas","Riosucio",,,,17614,
+"7818fb4a","44279",3,"La Guajira","Fonseca",,,,44279,
+"15d25eac","15469",3,"Boyacá","Moniquirá",,,,15469,
+"e51d6224","41503",3,"Huila","Oporapa",,,,41503,
+"616a536f","54518",3,"Norte de Santander","Pamplona",,,,54518,
+"f27b215b","86573",3,"Putumayo","Puerto Leguízamo",,,,86573,
+"a6a09907","73624",3,"Tolima","Rovira",,,,73624,
+"eedf5801","5190",3,"Antioquia","Cisneros",,,,5190,
+"5e87ee9d","63212",3,"Quindio","Córdoba",,,,63212,
+"f28dcb86","15480",3,"Boyacá","Muzo",,,,15480,
+"2f80ba36","50573",3,"Meta","Puerto López",,,,50573,
+"711b7f13","15693",3,"Boyacá","Santa Rosa de Viterbo",,,,15693,
+"c06d204b","13873",3,"Bolívar","Villanueva",,,,13873,
+"17464122","17013",3,"Caldas","Aguadas",,,,17013,
+"c8282ce2","81001",3,"Arauca","Arauca",,,,81001,
+"52b86b89","54261",3,"Norte de Santander","El Zulia",,,,54261,
+"1dc4a036","5361",3,"Antioquia","Ituango",,,,5361,
+"d0235a8e","97001",3,"Vaupés","Mitú",,,,97001,
+"9ca0810f","73555",3,"Tolima","Planadas",,,,73555,
+"693087cb","76563",3,"Valle del Cauca","Pradera",,,,76563,
+"95dbf28a","88564",3,"Archipiélago de San Andrés Providencia y Santa Catalina","Providencia",,,,88564,
+"1c754077","86571",3,"Putumayo","Puerto Guzmán",,,,86571,
+"4efd89a7","47745",3,"Magdalena","Sitionuevo",,,,47745,
+"3d9530d8","15808",3,"Boyacá","Tinjacá",,,,15808,
+"9038802e","41206",3,"Huila","Colombia",,,,41206,
+"0b829ba7","15224",3,"Boyacá","Cucaita",,,,15224,
+"402ca954","5250",3,"Antioquia","El Bagre",,,,5250,
+"04b15573","47268",3,"Magdalena","El Retén",,,,47268,
+"37494144","15455",3,"Boyacá","Miraflores",,,,15455,
+"a14952ff","50568",3,"Meta","Puerto Gaitán",,,,50568,
+"7a72d725","63594",3,"Quindio","Quimbaya",,,,63594,
+"215b8825","8606",3,"Atlántico","Repelón",,,,8606,
+"2e0682f5","18753",3,"Caquetá","San Vicente del Caguán",,,,18753,
+"05d39689","15879",3,"Boyacá","Viracachá",,,,15879,
+"v89vv9v4","52473",3,"Mosquera","Cundinamarca",,,,52473,
+"vhi9sdv0","25307",3,"Girardot","Cundinamarca",,,,25307,
+"0be6vm0a","13673",3,"Santa Catalina","Bolívar",,,,13673,
+"bbca0b56","47053",3,,"Aracataca",,,,,
+"9cc3ba0e","44090",3,,"Dibulla",,,,,
+"9a3278fd","47288",3,,"Fundación",,,,,
+"7cb2c992","86568",3,,"Puerto Asís",,,,,
+"28082a41","41660",3,,"Saladoblanco",,,,,
+"d2612169","73678",3,,"San Luis",,,,,
+"4cc3a1c9","19824",3,,"Totoró",,,,,
+"85851ea7","5837",3,,"Turbo",,,,,
+"be3ea9ad","41132",3,,"Campoalegre",,,,,
+"4507d314","5154",3,,"Caucasia",,,,,
+"39b4f925","15204",3,,"Cómbita",,,,,
+"22798b7c","17433",3,,"Manzanares",,,,,
+"3357491a","50680",3,,"San Carlos de Guaroa",,,,,
+"9e30cc25","15776",3,,"Sutamarchán",,,,,
+"c701fb80","25785",3,,"Tabio",,,,,
+"2a5589ab","15810",3,,"Tipacoque",,,,,
+"6d7f7667","25245",3,,"El Colegio",,,,25245,
+"6f520d9c","19110",3,,"Buenos Aires",,,,19110,
+"2f23e06a","25260",3,,"El Rosal",,,,25260,
+"6fbc1810","8372",3,,"Juan de Acosta",,,,8372,
+"5802e0af","25438",3,,"Medina",,,,25438,
+"bbf63964","25488",3,,"Nilo",,,,25488,
+"868e723b","52390",3,,"La Tola",,,,52390,
+"16d6d787","52378",3,,"La Cruz",,,,52378,
+"abd9f508","73275",3,,"Flandes",,,,73275,
+"7545fbd0","68755",3,,"Socorro",,,,68755,
