@@ -152,6 +152,9 @@ vars <- function(type = NULL){
   if(type=="fast")
     return(unname(fast))
     
+  if(type=="test")
+    return(unname(unique(c('id','date',cases,slow))))
+  
   all <- c(fast, slow)
   all <- all[which(names(all)==type)]
   return(unname(all))

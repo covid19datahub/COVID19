@@ -1,7 +1,7 @@
 test_that("today", {
 
   t  <- NULL
-  cn <- c("id","date",vars("fast"))
+  cn  <- vars("test")
   for(level in 1:3) for(raw in c(TRUE, FALSE)){
   
     x <- covid19(level = level, raw = raw, vintage = FALSE, verbose = FALSE)

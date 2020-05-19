@@ -1,7 +1,7 @@
 test_that("vintage", {
   
   t   <- NULL
-  cn  <- c("id","date",vars("fast"))
+  cn  <- vars("test")
   end <- Sys.Date()-3
   for(level in 1:3) for(raw in c(TRUE, FALSE)){
     
