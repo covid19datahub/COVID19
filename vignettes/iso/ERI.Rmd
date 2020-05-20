@@ -52,7 +52,7 @@ DT::datatable(x, rownames = FALSE, filter = 'top', options = list(
 
 Data Sources: `r src`
 
-`r if(!length(err)) "<!--"`
+`r if(!nrow(err)) "<!--"`
 
 ## Data Log
 
@@ -65,6 +65,6 @@ DT::datatable(err, rownames = FALSE, filter = 'top', options = list(
 ))
 ```
 
-`r if(!length(err)) "-->"`
+`r if(!nrow(err)) "-->"`
 
 `r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

@@ -393,7 +393,7 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 ## Join the Mission
 
-You are welcome to join and extend the number of supporting data sources as a joint effort against COVID-19. Contribute on [GitHub](https://github.com/covid19datahub/COVID19/), join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
+You are welcome to join and extend the number of supporting data sources as a joint effort against COVID-19. Contribute on [GitHub](https://github.com/covid19datahub/COVID19/), join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) or [Telegram](https://t.me/joinchat/DqPASkjXwMUkgujx5tPFBQ) to get help, and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
 ## Authors
 

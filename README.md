@@ -41,9 +41,9 @@ The repository aims at developing a [unified data hub](https://covid19datahub.io
 
 ## Add a new data source
 
-**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, add a new data source and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
+**You are welcome to join** and extend the number of supporting data sources as a joint effort against COVID-19. Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) or [Telegram](https://t.me/joinchat/DqPASkjXwMUkgujx5tPFBQ) to get help, add a new data source and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
-- Get started with [this tutorial](<https://github.com/covid19datahub/COVID19/wiki/Add-a-new-data-source>) and/or join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help
+- Get started with [this tutorial](<https://github.com/covid19datahub/COVID19/wiki/Add-a-new-data-source>) and join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) or [Telegram](https://t.me/joinchat/DqPASkjXwMUkgujx5tPFBQ) to get help
 - Submit your work with a [pull request](<https://github.com/covid19datahub/COVID19/wiki/Create-a-pull-request>)
 - Earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw) 😃
 
