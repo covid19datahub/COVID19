@@ -44,7 +44,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.0.3</span>
       </span>
     </div>
 
@@ -142,6 +142,7 @@
 <div id="import-data-from-the-hub" class="section level2">
 <h2 class="hasAnchor">
 <a href="#import-data-from-the-hub" class="anchor"></a>Import Data from the Hub</h2>
+<p>Download the data from the <a href="/articles/data.html">here</a>.</p>
 <p>For Scala you can use following singleton object <code>Fetcher</code>. It uses components <code>java.net.URL</code> from Java Platform SE and <code>scala.io.Source</code> from Scala Standard Library.</p>
 <p>The same problem as in Python example occurs here, header <code>User-Agent</code> needs to be present, see <a href="https://stackoverflow.com/questions/13670692/403-forbidden-with-java-but-not-web-browser">similar issue in Java</a>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode scala"><code class="sourceCode scala"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">// file: covid19datahub.scala</span></span>
