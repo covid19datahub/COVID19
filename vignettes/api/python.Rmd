@@ -96,5 +96,38 @@ Caching can be disabled (e.g. for long running programs) by
 x = covid19("FRA", cache=False)
 ```
 
+### Citations
+
+Dataset [citations](https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv) are printed by default on `stdout`.
+
+``` python
+from covid19dh import covid19
+x = covid19("CZE") 
+```
+
+```
+Czech Statistical Office (2018), https://www.czso.cz/csu/czso/demograficka-rocenka-kraju-2009-az-2018
+
+Johns Hopkins Center for Systems Science and Engineering (2020), https://github.com/CSSEGISandData/COVID-19
+
+Ministery of Health of Czech Republic (2020), https://onemocneni-aktualne.mzcr.cz/
+
+Our World in Data (2020), https://github.com/owid/covid-19-data
+
+Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government.
+
+World Bank Open Data (2018), https://data.worldbank.org/indicator/SP.POP.TOTL
+
+Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.
+```
+
+This feature can be turned off by setting `verbose` to `False`.
+
+``` python
+from covid19dh import covid19
+x = covid19("CZE", verbose = False) 
+```
+
+
 
 `r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`
