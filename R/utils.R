@@ -35,10 +35,8 @@ NULL
     IMPORTANT NOTICE: 
     This is the development version of the COVID-19 Data Hub
     
-    Download the stable release from:
-    remotes::install_github("covid19datahub/R")
-    
-    It will be soon updated on CRAN
+    Download the stable release from CRAN:
+    install.packages("COVID19")
     
     ================================================================\n
     '

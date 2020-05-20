@@ -11,6 +11,8 @@ __GitHub__: https://github.com/covid19datahub/node
 
 ## Import Data from the Hub
 
+Download the data from the [here](/articles/data.html).
+
 Libraries [axios](https://www.npmjs.com/package/axios) (for online data fetching) and [csv-parse](https://www.npmjs.com/package/csv-parse) (for csv parsing). Install them by
 
 ```bash
