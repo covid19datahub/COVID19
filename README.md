@@ -56,6 +56,12 @@ Using the COVID-19 Data Hub? Open an [issue](https://github.com/covid19datahub/C
 - [Are official confirmed cases and fatalities counts good enough to study the COVID–19 pandemic dynamics? A critical assessment through the case of Italy](https://arxiv.org/pdf/2005.07271.pdf)
 - [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
 
+## In the News
+
+- [Institute for Data Valorization, Canada](<https://ivado.ca/en/covid-19/#phares>)
+- [Data Science and Economics, University of Milano](<https://dse.cdl.unimi.it/en/avviso/notice-detail/covid-data-analysis>)
+- [Top 50 R resources on Novel COVID-19 Coronavirus](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
+
 
 ## Reference
 

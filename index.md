@@ -395,6 +395,21 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 You are welcome to join and extend the number of supporting data sources as a joint effort against COVID-19. Contribute on [GitHub](https://github.com/covid19datahub/COVID19/), join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) or [Telegram](https://t.me/joinchat/DqPASkjXwMUkgujx5tPFBQ) to get help, and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
+## Use Cases
+
+Using the COVID-19 Data Hub? Open a [GitHub issue](https://github.com/covid19datahub/COVID19/issues) and let us know about your project!
+
+- [Specialist Unit for Open Government Data Canton of Zurich](<https://github.com/openZH/covid_19/issues/723>)
+- [Brazilian COVID-19 Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
+- [Are official confirmed cases and fatalities counts good enough to study the COVID–19 pandemic dynamics? A critical assessment through the case of Italy](https://arxiv.org/pdf/2005.07271.pdf)
+- [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
+
+## In the News
+
+- [Institute for Data Valorization, Canada](<https://ivado.ca/en/covid-19/#phares>)
+- [Data Science and Economics, University of Milano](<https://dse.cdl.unimi.it/en/avviso/notice-detail/covid-data-analysis>)
+- [Top 50 R resources on Novel COVID-19 Coronavirus](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
+
 ## Authors
 
 The project was initiated via the [R package COVID19](https://CRAN.R-project.org/package=COVID19) developed by [Emanuele Guidotti](https://guidotti.dev/) (University of Neuchâtel), leveraged by [David Ardia](https://ardiad.github.io/website/) (HEC Montréal) via the funding by [IVADO](https://ivado.ca/en/), and enhanced and maintained by a growing [open source community](https://github.com/covid19datahub/COVID19/graphs/contributors).
