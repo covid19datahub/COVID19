@@ -1,15 +1,15 @@
 "id","id_mzcr_cz","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key","key_google_mobility"
-"674bb426","CZ031",2,"Jihoceský kraj",,49.083333,14.666667,642133,"CZ031",
-"6a56b4ec","CZ064",2,"Jihomoravský kraj",,49.1,16.6,1187667,"CZ064",
-"280a22e1","CZ041",2,"Karlovarský kraj",,50.2,12.7,294896,"CZ041",
-"a818421a","CZ052",2,"Královehradecký kraj",,50.4,15.8,551021,"CZ052",
-"311113a0","CZ051",2,"Liberecký kraj",,50.7,15,442356,"CZ051",
-"f3b85d7b","CZ080",2,"Moravskoslezský kraj",,49.8,18,1203299,"CZ080",
-"03277122","CZ071",2,"Olomoucký kraj",,49.716667,17.1,632492,"CZ071",
-"df1f728c","CZ053",2,"Pardubický kraj",,49.9,16.2,520316,"CZ053",
-"fe42e59c","CZ032",2,"Plzenský kraj",,49.7,13.2,584672,"CZ032",
-"227ae632","CZ010",2,"Hlavní mesto Praha",,50.083333,14.416667,1308632,"CZ010",
-"0957b5f1","CZ020",2,"Stredoceský kraj",,49.966667,14.5,1369332,"CZ020",
-"b103735b","CZ042",2,"Ústecký kraj",,50.5,13.85,820789,"CZ042",
-"f432214f","CZ063",2,"kraj Vysocina",,49.4,15.7,509274,"CZ063",
-"9a2e2098","CZ072",2,"Zlínský kraj",,49.2,17.7,582921,"CZ072",
+"674bb426","CZ031",2,"Jihoceský kraj",,49.083333,14.666667,642133,"CZ031","South Bohemian Region"
+"6a56b4ec","CZ064",2,"Jihomoravský kraj",,49.1,16.6,1187667,"CZ064","Moravian-Silesian Region"
+"280a22e1","CZ041",2,"Karlovarský kraj",,50.2,12.7,294896,"CZ041","Karlovy Vary Region"
+"a818421a","CZ052",2,"Královehradecký kraj",,50.4,15.8,551021,"CZ052",Hradec Králové Region"
+"311113a0","CZ051",2,"Liberecký kraj",,50.7,15,442356,"CZ051","Liberec Region"
+"f3b85d7b","CZ080",2,"Moravskoslezský kraj",,49.8,18,1203299,"CZ080","Moravian-Silesian Region"
+"03277122","CZ071",2,"Olomoucký kraj",,49.716667,17.1,632492,"CZ071","Olomouc Region"
+"df1f728c","CZ053",2,"Pardubický kraj",,49.9,16.2,520316,"CZ053","Pardubice Region"
+"fe42e59c","CZ032",2,"Plzenský kraj",,49.7,13.2,584672,"CZ032","Plzeň Region"
+"227ae632","CZ010",2,"Hlavní mesto Praha",,50.083333,14.416667,1308632,"CZ010","Prague"
+"0957b5f1","CZ020",2,"Stredoceský kraj",,49.966667,14.5,1369332,"CZ020","Central Bohemian Region"
+"b103735b","CZ042",2,"Ústecký kraj",,50.5,13.85,820789,"CZ042","Ústí nad Labem Region"
+"f432214f","CZ063",2,"kraj Vysocina",,49.4,15.7,509274,"CZ063","Vysocina Region"
+"9a2e2098","CZ072",2,"Zlínský kraj",,49.2,17.7,582921,"CZ072","Zlin Region"

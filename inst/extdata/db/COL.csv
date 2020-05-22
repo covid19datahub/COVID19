@@ -1,5 +1,5 @@
 "id","id_gov_co","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric","key_google_mobility"
-"475b73d2","Bogotá D.C.",2,"Bogotá",,4.711111,-74.072222,74130000,11,
+"475b73d2","Bogotá D.C.",2,"Bogotá",,4.711111,-74.072222,74130000,11,"Bogota"
 "7d68ecf4","Antioquia",2,"Antioquia",,6.216667,-75.566667,6407102,5,"Antioquia"
 "581f58ea","Valle del Cauca",2,"Valle del Cauca",,3.416667,-76.516667,4475886,76,"Valle del Cauca"
 "4499619e","Cartagena D.T. y C.",2,"Cartagena de Indias",,10.4,-75.5,1028736,13,
@@ -8,27 +8,27 @@
 "725a0634","Meta",2,"Meta",,4.15,-73.633333,1039722,50,"Meta"
 "a524c5a4","Risaralda",2,"Risaralda",,4.816667,-75.7,943401,66,"Risaralda"
 "580019e5","Cundinamarca",2,"Cundinamarca",,4.6,-74.083333,2919060,25,"Cundinamarca"
-"b5bc1dbe","Norte de Santander",2,"Norte de Santander",,7.9,-72.5,1491689,54,
+"b5bc1dbe","Norte de Santander",2,"Norte de Santander",,7.9,-72.5,1491689,54,"North Santander"
 "d83d7857","Santander",2,"Santander",,7.133333,-73,2184837,68,"Santander"
 "dcab017a","Barranquilla D.E.",2,"Barranquilla",,10.963889,-74.796389,2370753,8,
 "ca1ff43c","Quindío",2,"Quindio",,4.533333,-75.7,539904,63,"Quindio"
 "9b3e0650","Tolima",2,"Tolima",,4.433333,-75.233333,1330187,73,"Tolima"
 "018be2d6","Cauca",2,"Cauca",,2.45,-76.616667,1464488,19,"Cauca"
 "743b99dc","Santa Marta D.T. y C.",2,"Santa Marta",,11.241944,-74.205278,499192,47,
-"00cd1936","Archipiélago de San Andrés Providencia y Santa Catalina",2,"Archipiélago de San Andrés Providencia y Santa Catalina",,12.55,-81.716667,61280,88,
+"00cd1936","Archipiélago de San Andrés Providencia y Santa Catalina",2,"Archipiélago de San Andrés Providencia y Santa Catalina",,12.55,-81.716667,61280,88,"San Andres and Providencia"
 "0c16339f","Casanare",2,"Casanare",,5.35,-72.41,420504,85,"Casanare"
 "3cec2a6f","Cesar",2,"Cesar",,10.483333,-73.25,1200574,20,"Cesar"
-"65396842","Nariño",2,"Nariño",,1.166667,-77.266667,1630592,52,
-"350675b6","Atlántico",2,"Atlántico",,10.983333,-74.783333,2535517,8,
-"925ad31b","Boyacá",2,"Boyacá",,5.533333,-73.366667,1217376,15,
-"fe468e2d","Bolívar",2,"Bolívar",,10.4,-75.5,2070110,13,
-"cb099399","Córdoba",2,"Córdoba",,8.75,-75.883333,1784783,23,
+"65396842","Nariño",2,"Nariño",,1.166667,-77.266667,1630592,52,"Narino"
+"350675b6","Atlántico",2,"Atlántico",,10.983333,-74.783333,2535517,8,"Atlantico"
+"925ad31b","Boyacá",2,"Boyacá",,5.533333,-73.366667,1217376,15,"Boyaca"
+"fe468e2d","Bolívar",2,"Bolívar",,10.4,-75.5,2070110,13,"Bolivar"
+"cb099399","Córdoba",2,"Córdoba",,8.75,-75.883333,1784783,23,"Cordoba"
 "f20f8d57","Sucre",2,"Sucre",,9.3,-75.4,904863,70,"Sucre"
 "e6f09c55","Magdalena",2,"Magdalena",,11.241944,-74.205278,1341746,47,"Magdalena"
 "0469cd13","La Guajira",2,"La Guajira",,11.55,-72.9,880560,44,"La Guajira"
 "bf767096","Buenaventura D.E.",2,"Buenaventura",,3.877222,-77.026667,432385,76,
-"d0c8e5b2","Chocó",2,"Chocó",,5.7,-76.666667,534826,27,
-"718a569d","Caquetá",2,"Caquetá",,1.616667,-75.6,401849,18,
+"d0c8e5b2","Chocó",2,"Chocó",,5.7,-76.666667,534826,27,"Choco"
+"718a569d","Caquetá",2,"Caquetá",,1.616667,-75.6,401849,18,"Caqueta"
 "f6668f0e","Amazonas",2,"Amazonas",,4.2,-69.916667,76589,91,"Amazonas"
 "f442234b","Putumayo",2,"Putumayo",,1.15,-76.616667,348182,86,"Putumayo"
 "2980690c","Arauca",2,"Arauca",,7.083333,-70.75,262174,81,"Arauca"
