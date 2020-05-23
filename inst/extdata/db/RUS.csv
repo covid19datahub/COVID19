@@ -1,4 +1,4 @@
-"id","id_covid19russia_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_google_mobility"
+"id","id_covid19russia_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_apple_mobility"
 "4f65c8a9","Altay republic",2,"Altay republic",,50.73624,87.015454,206168,
 "2919569f","Altayskiy kray",2,"Altayskiy kray",,52.129671,82.530013,2419755,
 "30a0884d","Amursk oblast",2,"Amursk oblast",,53.413341,127.728064,830103,
@@ -29,7 +29,7 @@
 "98a9622d","Leningradskaya oblast",2,"Leningradskaya oblast",,60,32,1716868,
 "6630a561","Lipetsk oblast",2,"Lipetsk oblast",,52.60311,39.57076,1173513,
 "841d05f0","Magadan oblast",2,"Magadan oblast",,62.575815,154.036835,156996,
-"ee61ca91","Moscow",2,"Moscow",,55.75222,37.61556,12692466,
+"ee61ca91","Moscow",2,"Moscow",,55.75222,37.61556,12692466,"Moscow"
 "07181abd","Moscow oblast",2,"Moscow oblast",,55.81363,36.71631,70950000,
 "ff47d266","Murmansk oblast",2,"Murmansk oblast",,68.97917,33.09251,795409,
 "34ceecea","Nenetskiy autonomous oblast",2,"Nenetskiy autonomous oblast",,67.714212,54.365062,42090,
