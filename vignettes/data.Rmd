@@ -13,23 +13,23 @@ The data are available at different levels of granularity: admin area level 1 (a
 
 ## Latest Data
 
-| URL                              | Description                                                  | Granularity | Format |
-| ----------------------------------------------- | ----------------------- | --------------------------- | --- |
-| https://storage.covid19datahub.io/data-1.csv | Clean data | Administrative area level 1 | CSV |
-| https://storage.covid19datahub.io/data-2.csv | Clean data | Administrative area level 2 | CSV |
-| https://storage.covid19datahub.io/data-3.csv | Clean data | Administrative area level 3 | CSV |
-| https://storage.covid19datahub.io/data-1.zip | Clean data | Administrative area level 1 | ZIP |
-| https://storage.covid19datahub.io/data-2.zip | Clean data | Administrative area level 2 | ZIP |
-| https://storage.covid19datahub.io/data-3.zip | Clean data | Administrative area level 3 | ZIP |
-| https://storage.covid19datahub.io/rawdata-1.csv | Raw data | Administrative area level 1 | CSV |
-| https://storage.covid19datahub.io/rawdata-2.csv | Raw data | Administrative area level 2 | CSV |
-| https://storage.covid19datahub.io/rawdata-3.csv | Raw data | Administrative area level 3 | CSV |
-| https://storage.covid19datahub.io/rawdata-1.zip | Raw data | Administrative area level 1 | ZIP |
-| https://storage.covid19datahub.io/rawdata-2.zip | Raw data | Administrative area level 2 | ZIP |
-| https://storage.covid19datahub.io/rawdata-3.zip | Raw data | Administrative area level 3 | ZIP |
-| https://storage.covid19datahub.io/data.log | Clean data - Log file | All levels | CSV |
-| https://storage.covid19datahub.io/rawdata.log | Raw data - Log file | All levels | CSV |
-| https://storage.covid19datahub.io/src.csv | Data sources | All levels | CSV |
+| URL                              | Description                                                  | Granularity | Format | Downloads |
+| ----------------------------------------------- | ----------------------- | --------------------------- | --- | ---------- |
+| https://storage.covid19datahub.io/data-1.csv | Clean data | Administrative area level 1 | CSV | ![](https://storage.covid19datahub.io/downloads/data-1.csv.svg) | 
+| https://storage.covid19datahub.io/data-2.csv | Clean data | Administrative area level 2 | CSV | ![](https://storage.covid19datahub.io/downloads/data-2.csv.svg) |
+| https://storage.covid19datahub.io/data-3.csv | Clean data | Administrative area level 3 | CSV | ![](https://storage.covid19datahub.io/downloads/data-3.csv.svg) |
+| https://storage.covid19datahub.io/data-1.zip | Clean data | Administrative area level 1 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-1.zip.svg) |
+| https://storage.covid19datahub.io/data-2.zip | Clean data | Administrative area level 2 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-2.zip.svg) |
+| https://storage.covid19datahub.io/data-3.zip | Clean data | Administrative area level 3 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-3.zip.svg) |
+| https://storage.covid19datahub.io/rawdata-1.csv | Raw data | Administrative area level 1 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-1.csv.svg) |
+| https://storage.covid19datahub.io/rawdata-2.csv | Raw data | Administrative area level 2 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-2.csv.svg) |
+| https://storage.covid19datahub.io/rawdata-3.csv | Raw data | Administrative area level 3 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-3.csv.svg) |
+| https://storage.covid19datahub.io/rawdata-1.zip | Raw data | Administrative area level 1 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-1.zip.svg) |
+| https://storage.covid19datahub.io/rawdata-2.zip | Raw data | Administrative area level 2 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-2.zip.svg) |
+| https://storage.covid19datahub.io/rawdata-3.zip | Raw data | Administrative area level 3 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-3.zip.svg) |
+| https://storage.covid19datahub.io/data.log | Clean data - Log file | All levels | CSV | ![](https://storage.covid19datahub.io/downloads/data.log.svg) |
+| https://storage.covid19datahub.io/rawdata.log | Raw data - Log file | All levels | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata.log.svg) |
+| https://storage.covid19datahub.io/src.csv | Data sources | All levels | CSV | ![](https://storage.covid19datahub.io/downloads/src.csv.svg) |
 
 
 ## Vintage Data
@@ -38,13 +38,13 @@ The data are available at different levels of granularity: admin area level 1 (a
 start <- as.Date("2020-04-14")
 end   <- Sys.Date()-2
 dates <- seq(end, start, by = -1)
-tab   <- sprintf("| https://storage.covid19datahub.io/%s.zip | Dataset snapshot (vintage) | %s | ZIP |", dates, dates)
+tab   <- sprintf("| https://storage.covid19datahub.io/%s.zip | Dataset snapshot (vintage) | %s | ZIP | ![](https://storage.covid19datahub.io/downloads/%s.zip.svg) |", dates, dates, dates)
 tab   <- paste0(tab, collapse = "\n")
 ```
 
 
-| URL                              | Description                                                  | Date | Format |
-| ----------------------------------------------- | --------------------------- | ----------------------- | --- |
+| URL                              | Description                                                  | Date | Format | Downloads |
+| ----------------------------------------------- | --------------------------- | ----------------------- | --- | ---------- |
 `r tab`
 
 `r gsub("^# ", "## ", readr::read_file('../LICENSE.md'))`
