@@ -28,8 +28,8 @@ covid19india_org <- function(cache, level){
     url <- "https://api.covid19india.org/csv/latest/state_wise_daily.csv"
     x   <- read.csv(url, cache = cache)
     
-    # drop total
-    x <- x[,colnames(x)!="TT"]
+    # drop total and unassigned
+    x <- x[,!(colnames(x) %in% c("TT","UN"))]
     
     # date
     Sys.setlocale("LC_TIME", "C")
