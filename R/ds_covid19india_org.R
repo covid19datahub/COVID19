@@ -16,6 +16,9 @@ covid19india_org <- function(cache, level){
       "Total.Recovered" = "recovered"
     ))
     
+    # clean date
+    x <- x[!is.na(x$date),]
+    
     # date
     Sys.setlocale("LC_TIME", "C")
     x$date <- as.Date(x$date, format = "%d %B")
@@ -30,6 +33,9 @@ covid19india_org <- function(cache, level){
     
     # drop total and unassigned
     x <- x[,!(colnames(x) %in% c("TT","UN"))]
+    
+    # clean date
+    x <- x[!is.na(x$date),]
     
     # date
     Sys.setlocale("LC_TIME", "C")
