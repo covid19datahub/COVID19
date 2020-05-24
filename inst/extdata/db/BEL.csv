@@ -1,4 +1,4 @@
 "id","id_sciensano_be","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_google_mobility","key_apple_mobility"
 "1bb2de77","Brussels",2,"The Brussels-Capital Region",,50.85,4.35,1208542,"Brussels","Brussels"
-"b1a17459","Flanders",2,"The Flemish Region",,50.85,4.35,6589069,"Flanders"
-"27e2b6a0","Wallonia",2,"The Walloon Region",,50.5,4.75,3633795,"Wallonia"
+"b1a17459","Flanders",2,"The Flemish Region",,50.85,4.35,6589069,"Flanders",
+"27e2b6a0","Wallonia",2,"The Walloon Region",,50.5,4.75,3633795,"Wallonia",
