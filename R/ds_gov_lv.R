@@ -8,7 +8,7 @@ gov_lv <- function(cache, level){
     url <- 'https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/resource/492931dd-0012-46d7-b415-76fe0ec7c216/download/covid_19_pa_adm_terit.csv'
   
   # download
-  x <- read.csv(url, sep = ";", cache = cache, fileEncoding = "UTF-8-BOM")
+  x <- read.csv(url, sep = ";", cache = cache, encoding = "Latin-1")
   
   # format
   if(level==1){
