@@ -1,0 +1,77 @@
+---
+title: 'COVID-19 Data Hub'
+tags:
+  - R
+  - COVID-19
+authors:
+  - name: Emanuele Guidotti
+    orcid: 0000-0002-8961-6623
+    affiliation: "1"
+  - name: David Ardia
+    orcid: 0000-0003-2823-782X
+    affiliation: "2"
+affiliations:
+ - name: University of Neuchâtel, Switzerland
+   index: 1
+ - name: HEC Montréal, Canada
+   index: 2
+citation_author: Guidotti and Ardia
+date: 27 May 2020
+year: 2020
+output: rticles::joss_article
+csl: apa.csl
+journal: JOSS
+bibliography: bibliography.bib
+---
+
+\
+
+
+\begin{center}\includegraphics[width=96pt]{logo} \end{center}
+
+# Summary
+
+In December 2019 the first cases of pneumonia of unknown etiology were reported in Wuhan city, People’s Republic of China.^[World Health Organization, Novel Coronavirus (2019-nCoV) SITUATION REPORT 1 - 21 JANUARY 2020] Since the outbreak of the disease, officially called COVID–19 by World Health Organization (WHO), a multitude of papers have appeared. 
+
+By one estimate, the COVID-19 literature published in January-May 2019 has reached more than 23,000 papers and is doubling every 20 days—among the biggest explosions of scientific literature ever.^[https://doi.org/10.1126/science.abc7839]
+
+In response to the COVID-19 pandemic, the White House and a coalition of leading research groups have prepared the COVID-19 Open Research Dataset [@wang2020cord], a resource of over 134,000 scholarly articles about COVID-19, SARS-CoV-2, and related coronaviruses.
+
+The Center for Systems Science and Engineering at the Whiting School of Engineering, with technical support from ESRI and the Johns Hopkins University Applied Physics Laboratory, is maintaining an interactive web-based dashboard to track COVID-19 in real time [@dong2020interactive]. All data collected and displayed are made freely available through a GitHub repository. ^[https://github.com/CSSEGISandData/COVID-19]
+
+A team of over one hundred Oxford University students and staff from every part of the world is collecting information on several different common policy responses governments have taken. The data are aggregated in The Oxford COVID-19 Government Response Tracker [@hale2020oxford].
+
+Google and Apple released mobility reports ^[https://www.google.com/covid19/mobility/] ^[https://www.apple.com/covid19/mobility/] to help public health officials. Governments all over the world are releasing COVID-19 data to track the outbreak as it unfolds.
+
+Yet, to our knowledge, there is no application that collects COVID-19 worldwide fine-grained data, includes demographics, environmental factors, or other exogenous variables, and harmonizes the amount of heterogeneous data that have become available. The goal of [COVID-19 Data Hub](https://covid19datahub.io) is to provide the research community with a **unified** dataset helpful for a better understanding of COVID-19.
+
+
+## Data collection
+
+We implemented an extendable R package [@r] designed to aggregate the data from several sources. Hosted on GitHub ^[https://github.com/covid19datahub/COVID19/], the package allows contributors to collaborate on the implementation of additional data sources.
+
+The data are hourly crunched by a dedicated server exploiting the package. The data are harmonized in csv format and made available on a cloud storage, in order to be easily accessible from R, Python, MATLAB, Excel... and any other software.
+
+Out-of-the-box packages are available for seamless integration with the Data Hub. Namely, the [COVID19](https://cran.r-project.org/package=COVID19)  R package available on CRAN and the [covid19dh](https://pypi.org/project/covid19dh/) ^[we acknowledge the efforts of Martin Beneš for providing the package] Python package available on PyPI. According to the terms of use, World Bank, Google, and Apple data cannot be stored on external servers, but the packages provide functionalities to download such data from the original repositories and extend the dataset in real-time. The packages use an internal memory caching system so that the data are never downloaded twice. This is especially suited for interactive frameworks, such as Shiny [@shiny].
+
+We do our best to guarantee the data quality and consistency: a) all sources are properly documented, along with their citation b) we generate error logs to spot misalignments in the official data and inform authorities c) we rely on the open-source community: the bigger the community, the faster possible bugs will be notified and fixed. Vintage data, daily snapshots of the data, are provided so to ensure research reproducibility. Still, this is free software and comes with absolutely no warranty.
+
+At the time of writing, the dataset includes:
+
+- standard **COVID-19 variables**: total population, cumulative number of cases, tests, deaths, recovered, daily number of hospitalized, 
+patients requiring ventilation and intensive therapy.
+- **policy measures** by Oxford COVID-19 Government Response Tracker [@hale2020oxford]
+- **geographic information** suited for data visualization and for interfacing with external databases (e.g. weather information, geo-located tweets, etc.).
+- **external identifiers** allowing to extend the dataset with World Bank Open Data, Google mobility reports, and Apple mobility reports. Governmental identifiers are provided to further extend the dataset with local, fine-grained statistics. 
+
+The data are available at different levels of granularity: 1) administrative area of top-level, usually countries 2) states, regions, cantons 3) cities, municipalities. Refer to the [dataset documentation](https://covid19datahub.io/articles/doc/data.html) for more details and to the introductory video available at [COVID-19 Data Hub](https://covid19datahub.io) for an overview of the project.
+
+# Acknowledgements
+
+We are grateful to the Institute for Data Valorization [IVADO](https://ivado.ca/en/) and [HEC Montréal](https://www.hec.ca/) for sponsoring the development of the data hub. We also acknowledge the efforts of all the [volunteers](https://github.com/covid19datahub/COVID19/graphs/contributors) taking part in the data collection as a joint effort against COVID-19.
+
+# Terms of use
+
+You assume full risk for the use of [COVID-19 Data Hub](https://covid19datahub.io). We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. However, it is free software and comes with ABSOLUTELY NO WARRANTY. Reliance on [COVID-19 Data Hub](https://covid19datahub.io) for medical guidance or use of [COVID-19 Data Hub](https://covid19datahub.io) in commerce is strictly prohibited. **License**: [GPL-3](https://www.r-project.org/Licenses/GPL-3).
+
+# References
