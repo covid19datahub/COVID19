@@ -16,12 +16,12 @@ affiliations:
  - name: HEC Montréal, Canada
    index: 2
 citation_author: Guidotti and Ardia
-date: 27 May 2020
+date: 28 May 2020
 year: 2020
 output: rticles::joss_article
 csl: apa.csl
 journal: JOSS
-bibliography: bibliography.bib
+bibliography: paper.bib
 ---
 
 \
