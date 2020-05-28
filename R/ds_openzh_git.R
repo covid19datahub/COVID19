@@ -30,9 +30,9 @@ openzh_git <- function(cache, id = NULL){
   # filter
   if(!is.null(id)){
     if(id=="FL")
-      x <- x[x$code=="FL",]
+      x <- x[which(x$code=="FL"),]
     if(id=="CH")
-      x <- x[x$code!="FL",]
+      x <- x[which(x$code!="FL"),]
   }
 
   # return
