@@ -16,10 +16,10 @@ covid19india_org <- function(cache, level){
       "Total.Recovered" = "recovered"
     ))
     
-    # clean date
+    # filter date
     x <- x[!is.na(x$date),]
     
-    # date
+    # convert date
     Sys.setlocale("LC_TIME", "C")
     x$date <- as.Date(x$date, format = "%d %B")
         
@@ -34,16 +34,14 @@ covid19india_org <- function(cache, level){
     # drop total and unassigned
     x <- x[,!(colnames(x) %in% c("TT","UN"))]
     
-    # clean date
+    # filter date
+    colnames(x)[1] <- "date"
     x <- x[!is.na(x$date),]
     
-    # date
+    # convert date
     Sys.setlocale("LC_TIME", "C")
-    x$Date <- as.Date(x$Date, format = "%d-%b-%y")
-    colnames(x)[1] <- "date"
+    x$date <- as.Date(x$date, format = "%d-%b-%y")
     
-    # bindings
-    Status <- NULL
     # cumulative 
     x <- x %>% 
       dplyr::group_by(Status) %>%

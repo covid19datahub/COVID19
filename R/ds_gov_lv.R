@@ -8,13 +8,16 @@ gov_lv <- function(cache, level){
     url <- 'https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/resource/492931dd-0012-46d7-b415-76fe0ec7c216/download/covid_19_pa_adm_terit.csv'
   
   # download
-  x <- read.csv(url, sep = ";", cache = cache, encoding = "Latin-1")
+  x <- read.csv(url, sep = ";", cache = cache, encoding = "UTF-8")
+  
+  # date
+  colnames(x)[1] <- "date"
   
   # format
   if(level==1){
     
     x <- map_data(x, c(
-      'Datums'                                      = 'date',
+      'date',
       'TestuSkaits'                                 = 'tests',
       'ApstiprinataCOVID19InfekcijaSkaits'          = 'confirmed',
       'IzarstetoPacientuSkaits'                     = 'hosp',
@@ -30,8 +33,8 @@ gov_lv <- function(cache, level){
   if(level==2){
     
     x <- map_data(x, c(
+      'date',
       'region_id',
-      'Datums'                                      = 'date',
       'AdministrativiTeritorialasVienibasNosaukums' = 'region',
       'ATVK'                                        = 'region_id',
       'ApstiprinataCOVID19infekcija'                = 'confirmed'

@@ -17,6 +17,10 @@ gov_co <- function(cache, level){
     'ciudad_de_ubicaci_n' = 'city',
     'departamento'        = 'state'
   ))
+  
+  # date 
+  for(d in c("date_confirmed","date_deaths","date_recovered"))
+    x[[d]] <- as.Date(x[[d]], format = "%Y-%m-%d")
 
   # group key
   if(level == 1) 
@@ -47,9 +51,6 @@ gov_co <- function(cache, level){
   # merge
   x <- merge(confirmed, deaths, all = TRUE)
   x <- merge(x, recovered, all = TRUE)
-  
-  # date 
-  x$date <- as.Date(x$date, format = "%Y-%m-%d")
   
   # cumsum
   x <- x %>%

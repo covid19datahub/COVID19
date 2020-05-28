@@ -180,6 +180,9 @@ covid19 <- function(country = NULL,
         dplyr::filter(!(iso_alpha_3 %in% x$iso_alpha_3) & iso_alpha_3 %in% ISO) %>%
         dplyr::bind_rows(x)
 
+    # filter
+    x <- x[!is.na(x$id),]
+    
     # check
     if(nrow(x)==0){
       warning("

@@ -91,9 +91,11 @@ id <- function(x, iso, ds, level){
   
   x   <- map_values(x, map)
   idx <- which(!(x %in% map))
-  if(length(idx))
+  if(length(idx)){
     warning(sprintf("missing id: %s", paste0(unique(x[idx]), collapse = ", ")))
-  
+    x[idx] <- NA
+  }
+    
   return(x)
   
 }
