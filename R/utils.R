@@ -165,9 +165,9 @@ cite <- function(x, src, verbose){
   
   x <- x %>% 
     
-    dplyr::group_by(iso_alpha_3) %>%
+    dplyr::group_by_at('iso_alpha_3') %>%
     
-    dplyr::group_map(.keep = TRUE, function(x, iso){
+    dplyr::group_map(function(x, iso){
       
       iso   <- iso[[1]]
       level <- unique(x$administrative_area_level)
@@ -178,17 +178,12 @@ cite <- function(x, src, verbose){
       s     <- src[which(src$data_type %in% var & src$iso_alpha_3==iso & src$administrative_area_level==level),]
       var   <- var[!(var %in% s$data_type)]
       
-      if(length(var)>0){
-        
+      if(length(var)>0)
         s <- s %>% 
-          dplyr::bind_rows(src[which(src$data_type %in% var & is.na(src$iso_alpha_3) & is.na(src$administrative_area_level)),])
-        
-        if(nrow(s)){
-          s$iso_alpha_3 <- iso
-          s$administrative_area_level <- level  
-        }
-        
-      }
+        dplyr::bind_rows(src[which(src$data_type %in% var & is.na(src$iso_alpha_3) & is.na(src$administrative_area_level)),])
+      
+      s$iso_alpha_3 <- iso
+      s$administrative_area_level <- level  
       
       return(s)
       
@@ -203,7 +198,7 @@ cite <- function(x, src, verbose){
     y <- x %>% 
       dplyr::mutate(url = gsub("(http://|https://|www\\.)([^/]+)(.*)", "\\1\\2", url)) %>%
       dplyr::distinct_at(c('title', 'url'), .keep_all = TRUE)
-
+    
     y <- apply(y, 1, function(y){
       
       textVersion <- y['textVersion']
