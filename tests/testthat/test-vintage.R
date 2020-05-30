@@ -12,7 +12,7 @@ test_that("vintage", {
       
       dplyr::group_by(iso_alpha_3) %>%
       
-      dplyr::group_map(keep = TRUE, function(x, iso){
+      dplyr::group_map(.keep = TRUE, function(x, iso){
         
         t <- is_equal(x[,cn], y[,cn])
         

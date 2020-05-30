@@ -46,7 +46,7 @@ covid19india_org <- function(cache, level){
     x <- x %>% 
       dplyr::group_by(Status) %>%
       dplyr::arrange(date) %>%
-      dplyr::group_map(keep = TRUE, function(x,g) {
+      dplyr::group_map(.keep = TRUE, function(x,g) {
         c(x[,1:2], cumsum(x[,-(1:2)], na.rm = TRUE))
       }) %>%
       dplyr::bind_rows()

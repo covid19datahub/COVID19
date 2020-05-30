@@ -1,7 +1,7 @@
 Package: COVID19
 Type: Package
 Title: COVID-19 Data Hub
-Version: 2.0.7
+Version: 2.1.0
 Authors@R: c(
     person(given = "Emanuele", family = "Guidotti", email = "emanuele.guidotti@unine.ch", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8961-6623")),
     person(given = "David", family = "Ardia", role = c("ctb"), comment = c(ORCID = "0000-0003-2823-782X"))
@@ -12,7 +12,7 @@ URL: https://covid19datahub.io
 BugReports: https://github.com/covid19datahub/COVID19/issues
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 3.5.0), utils, dplyr, tidyr (>= 1.0.0)
+Depends: R (>= 3.5.0), utils, dplyr (>= 1.0.0), tidyr (>= 1.0.0)
 Imports: remotes, digest, readxl, readr
 RoxygenNote: 7.1.0
 Suggests: testthat (>= 2.1.0), knitr, rmarkdown

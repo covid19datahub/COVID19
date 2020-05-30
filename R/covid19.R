@@ -71,8 +71,10 @@ covid19 <- function(country = NULL,
 
   # cache
   cachekey <- make.names(sprintf("covid19_%s_%s_%s_%s",paste0(country, collapse = "."), level, ifelse(vintage, end, 0), raw))
-  if(cache & exists(cachekey, envir = cachedata))
-    return(get(cachekey, envir = cachedata) %>% dplyr::filter(date >= start & date <= end))
+  if(cache & exists(cachekey, envir = cachedata)){
+    x <- get(cachekey, envir = cachedata)    
+    return(x[x$date >= start & x$date <= end,])
+  }
 
   # data
   x <- data.frame()
@@ -217,7 +219,7 @@ covid19 <- function(country = NULL,
 
         dplyr::group_by(id) %>%
 
-        dplyr::group_map(keep = TRUE, function(x, ...){
+        dplyr::group_map(.keep = TRUE, function(x, ...){
 
           miss <- dates[!(dates %in% x$date)]
           if(length(miss)>0)
@@ -256,7 +258,7 @@ covid19 <- function(country = NULL,
 
         dplyr::group_by(iso_alpha_3) %>%
 
-        dplyr::group_map(keep = TRUE, function(x, iso){
+        dplyr::group_map(.keep = TRUE, function(x, iso){
           
           y <- extdata("db", sprintf("%s.csv",iso[[1]]))
           if(!is.null(y))
@@ -303,6 +305,6 @@ covid19 <- function(country = NULL,
     assign(cachekey, x, envir = cachedata)
 
   # return
-  return(x %>% dplyr::filter(date >= start & date <= end))
+  return(x[x$date >= start & x$date <= end,])
 
 }

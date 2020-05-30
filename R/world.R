@@ -28,7 +28,7 @@ world <- function(level, cache){
       
       dplyr::group_by_at('iso_alpha_3') %>%
       
-      dplyr::group_map(keep = TRUE, function(x, iso){
+      dplyr::group_map(.keep = TRUE, function(x, iso){
         
         x$id <- id(x$state, iso = iso[[1]], ds = "jhucsse_git", level = level)
         
