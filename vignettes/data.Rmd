@@ -9,7 +9,11 @@ vignette: >
 
 The raw data are cleaned by filling missing dates with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`.
 
-The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities). See the [full documentation](/articles/doc/data.html)
+The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities). 
+
+**Policies** for admin areas level 2 and 3 **are inherited** from national-level policies by [Oxford Covid-19 Government Response Tracker](https://github.com/OxCGRT/covid-policy-tracker). 
+
+See the [full documentation](/articles/doc/data.html)
 
 ## Latest Data
 
