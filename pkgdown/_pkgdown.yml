@@ -14,7 +14,7 @@ navbar:
       menu: 
         - 
           href: articles/data.html
-          text: Dataset
+          text: Download
         - 
           href: articles/doc/data.html
           text: Documentation
