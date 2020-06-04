@@ -2,7 +2,7 @@
 
 We have invested a lot of time and effort in creating [COVID-19 Data Hub](https://covid19datahub.io/), please: 
 
-- cite [Guidotti and Ardia (2020)](https://doi.org/10.13140/RG.2.2.11649.81763) in working papers and published papers that use it.
+- cite [Guidotti and Ardia (2020)](https://www.researchgate.net/publication/340771808_COVID-19_Data_Hub) in working papers and published papers that use it.
 
 - place the URL https://covid19datahub.io in a footnote to help others find [COVID-19 Data Hub](https://covid19datahub.io/).
 

@@ -2,7 +2,7 @@
 
 # COVID-19 Data Hub
 
-[![](https://storage.covid19datahub.io/downloads/total.svg)](https://covid19datahub.io/articles/data.html) [![](https://img.shields.io/badge/doi-10.13140/RG.2.2.11649.81763-orange.svg)](https://doi.org/10.13140/RG.2.2.11649.81763) [![eRum2020::CovidR](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300)](https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html)
+[![](https://storage.covid19datahub.io/downloads/total.svg)](https://covid19datahub.io/articles/data.html) [![](https://img.shields.io/badge/doi-10.13140/RG.2.2.11649.81763-orange.svg)](https://www.researchgate.net/publication/340771808_COVID-19_Data_Hub) [![eRum2020::CovidR](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300)](https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html)
 
 The repository aims at developing a [unified data hub](https://covid19datahub.io/articles/doc/data.html) by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.  Available in:
 
@@ -70,7 +70,7 @@ Using the COVID-19 Data Hub? Open an [issue](https://github.com/covid19datahub/C
 Guidotti, E., Ardia, D., (2020).      
 _COVID-19 Data Hub_       
 Working paper   
-[https://doi.org/10.13140/RG.2.2.11649.81763](https://doi.org/10.13140/RG.2.2.11649.81763)  
+[https://www.researchgate.net/publication/340771808_COVID-19_Data_Hub](https://www.researchgate.net/publication/340771808_COVID-19_Data_Hub)  
 
 ## Supported by 
 
