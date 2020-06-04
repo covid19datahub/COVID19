@@ -9,7 +9,7 @@ covid19turkey <- function(level, cache){
   
   # formatting
   x <- map_data(x, c( 
-    'date',         
+    'date',              
     'totalTests'         = 'tests',
     'totalCases'         = 'confirmed',
     'totalDeaths'        = 'deaths',
@@ -20,10 +20,7 @@ covid19turkey <- function(level, cache){
   
   # filter date
   x <- x[!is.na(x$date),]
-  
-  # convert date
-  Sys.setlocale("LC_TIME", "C")
-  x$date <- as.Date(x$date, format = "%d %B")
+  #x$date <- as.Date(x$date, format = "%d/%m/%Y")
   
   return(x)
 }
