@@ -4,10 +4,6 @@ GBR <- function(level, cache){
   if(level>3)
     return(NULL)
   
-  # fallback to worldwide data
-  if(level==1)
-    return(NULL)
-  
   # download
   x <- gov_uk(cache = cache, level = level)
   
