@@ -26,7 +26,9 @@ pcmdpc_git <- function(cache, level){
   x <- map_data(x, c(
     'date',
     'denominazione_regione'   = 'state', 
+    'codice_regione'          = 'state_code',
     'sigla_provincia'         = 'city',
+    'codice_provincia'        = 'city_code',
     'tamponi'                 = 'tests', 
     'totale_casi'             = 'confirmed', 
     'deceduti'                = 'deaths',        

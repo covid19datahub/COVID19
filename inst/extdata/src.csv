@@ -245,7 +245,7 @@
 "ITA",2,"latitude","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica, Italia","2018",,,,
 "ITA",2,"longitude","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica, Italia","2018",,,,
 "ITA",2,"population","https://www.istat.it/en/population-and-households?data-and-indicators","Istituto Nazionale di Statistica, Italia","2018",,,,
-"ITA",3,"deaths","https://github.com/pcm-dpc/COVID-19","Ministero della Salute, Italia","2020",,,,
+"ITA",3,"deaths","https://github.com/CEEDS-DEMM/COVID-Pro-Dataset","Centre of Excellence in Economics and Data Science, University of Milano","2020",,,,
 "ITA",3,"confirmed","https://github.com/pcm-dpc/COVID-19","Ministero della Salute, Italia","2020",,,,
 "ITA",3,"tests","https://github.com/pcm-dpc/COVID-19","Ministero della Salute, Italia","2020",,,,
 "ITA",3,"recovered","https://github.com/pcm-dpc/COVID-19","Ministero della Salute, Italia","2020",,,,
