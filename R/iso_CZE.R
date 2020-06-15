@@ -1,8 +1,8 @@
-CZE <- function(level, cache){
+CZE <- function(level, cache) {
   # Author: Martin Benes
   
   # fallback
-  if(level > 2)
+  if(level > 3)
     return(NULL)
   
   # download
@@ -11,6 +11,8 @@ CZE <- function(level, cache){
   # id
   if(level == 2)
     x$id <- id(x$state, iso = "CZE", ds = "mzcr_cz", level = level)
+  if(level == 3)
+    x$id <- id(x$city, iso = "CZE", ds = "mzcr_cz", level = level)
   
   # return
   return(x)
