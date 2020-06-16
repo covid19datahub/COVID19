@@ -1,0 +1,26 @@
+---
+title: "Contributors"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Contributors}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The following people are gratefully acknowledged for taking part in the data collection as a joint effort against COVID-19. Names are in alphabetical order, to view individual contributions click [here](https://github.com/covid19datahub/COVID19/graphs/contributors).
+
+- [Baby Rijin](https://github.com/rijinbaby)
+- [Benes Martin](https://github.com/martinbenes1996)
+- [Bolton Matt](https://github.com/M3IT)
+- [Burren Elsa](https://github.com/elsaburren)
+- [Caggese Simone](https://github.com/sim55649)
+- [Huang Xiangyun](https://github.com/XiangyunHuang)
+- [Kelley Dan](https://github.com/dankelley)
+- [Khatiwada Angelina](https://github.com/angelinakhatiwada)
+- [Lo Giudice Federico](https://github.com/FedericoLG)
+- [Montemurro Paolo](https://github.com/montemurroPaolo)
+- [Pengatkundil Muhammed](https://github.com/muhammedseehan-commits)
+
+__Want to contribute?__ Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) and get started on [GitHub](articles/contributors.html)
+
+`r gsub("^# ", "## ", readr::read_file('../LICENSE.md'))`

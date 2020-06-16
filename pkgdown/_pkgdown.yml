@@ -47,8 +47,11 @@ navbar:
           text: GitHub
         - 
           href: reference/index.html
-          text: Functions
-      text: Developers
+          text: Documentation
+        - 
+          href: articles/contributors.html
+          text: Acknowledgments
+      text: Contributors
   structure: 
     left: 
       - home

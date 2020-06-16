@@ -1,0 +1,70 @@
+---
+title: "Australia"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Australia}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+<img src="https://www.countryflags.io/AU/flat/64.png" align="right">
+
+```{r, include = FALSE}
+require(COVID19)
+require(DT)
+```
+
+```{r, include=FALSE}
+cn <- c("date","administrative_area_level_1","administrative_area_level_2","administrative_area_level_3","tests","confirmed","deaths","recovered","hosp","vent","icu")
+
+x1 <- covid19("AUS", level = 1, verbose = FALSE, vintage = TRUE)
+x2 <- covid19("AUS", level = 2, verbose = FALSE, vintage = TRUE)
+x3 <- covid19("AUS", level = 3, verbose = FALSE, vintage = TRUE)
+
+s1 <- attr(x1, "src")
+s2 <- attr(x2, "src")
+s3 <- attr(x3, "src")
+
+src <- bind_rows(s1,s2,s3)
+x   <- bind_rows(x1,x2,x3)
+
+err <- read.csv("https://storage.covid19datahub.io/rawdata.log", cache = FALSE) %>%
+  dplyr::filter(iso_alpha_3=="AUS")
+
+x <- x %>% group_by(id) %>% filter(row_number()==n()) %>% ungroup() %>% select_at(cn) %>% na_if(0) 
+if(is.null(x3)){
+  x$administrative_area_level_3 <- NULL
+  if(is.null(x2))
+    x$administrative_area_level_2 <- NULL
+} 
+
+src <- src %>% filter(data_type %in% colnames(x)) %>% distinct(title, .keep_all = TRUE)
+src <- paste(sprintf("[%s](%s)", src$title, src$url), collapse = ", ")
+```
+
+Data COVID-19 Australia: `tests` (cumulative number of tests), `confirmed` (cumulative number of confirmed cases), `deaths` (cumulative number of deaths), `recovered` (cumulative number of recovered), `hosp` (hospitalized on date), `vent` (requiring ventilation on date), `icu` (intensive therapy on date). See the [full dataset](/articles/data.html).
+
+```{r, echo=FALSE}
+DT::datatable(x, rownames = FALSE, filter = 'top', options = list(
+  pageLength = 5, scrollX = TRUE, autoWidth = FALSE
+))
+```
+
+Data Sources: `r src`
+
+`r if(!nrow(err)) "<!--"`
+
+## Data Log
+
+We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. The following table helps to keep track of the issues with the COVID-19 data by `r src`. See the [full log](/articles/data.html).
+
+```{r, echo=FALSE}
+DT::datatable(err, rownames = FALSE, filter = 'top', options = list(
+  pageLength = 5, scrollX = TRUE, autoWidth = TRUE,
+  columnDefs = list(list(width = '300px', targets = c(0)))
+))
+```
+
+`r if(!nrow(err)) "-->"`
+
+`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

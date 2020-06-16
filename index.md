@@ -393,7 +393,7 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 ## Join the Mission
 
-You are welcome to join and extend the number of supporting data sources as a joint effort against COVID-19. Contribute on [GitHub](https://github.com/covid19datahub/COVID19/), join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) or [Telegram](https://t.me/joinchat/DqPASkjXwMUkgujx5tPFBQ) to get help, and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
+You are welcome to join and extend the number of supporting data sources as a joint effort against COVID-19. Contribute on [GitHub](https://github.com/covid19datahub/COVID19/), join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
 ## Use Cases
 
@@ -415,7 +415,7 @@ Using the COVID-19 Data Hub? Open a [GitHub issue](https://github.com/covid19dat
 
 ## Authors
 
-The project was initiated via the [R package COVID19](https://CRAN.R-project.org/package=COVID19) developed by [Emanuele Guidotti](https://guidotti.dev/) (University of Neuchâtel), leveraged by [David Ardia](https://ardiad.github.io/website/) (HEC Montréal) via the funding by [IVADO](https://ivado.ca/en/), and enhanced and maintained by a growing [open source community](https://github.com/covid19datahub/COVID19/graphs/contributors).
+The project was initiated via the [R package COVID19](https://CRAN.R-project.org/package=COVID19) developed by [Emanuele Guidotti](https://guidotti.dev/) (University of Neuchâtel), leveraged by [David Ardia](https://ardiad.github.io/website/) (HEC Montréal) via the funding by [IVADO](https://ivado.ca/en/), and enhanced and maintained by a growing [open source community](/articles/contributors.html).
 
 Logo courtesy of [Gary Sandoz](http://www.garysandoz.ch/index.html) and [Talk-to-Me](https://www.talk-to-me.ch/).
 
