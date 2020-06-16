@@ -14,6 +14,7 @@ gov_co <- function(cache, level){
     'fecha_de_muerte'     = 'date_deaths',
     'fecha_recuperado'    = 'date_recovered',
     'codigo_divipola'     = 'city_code',
+    'c_digo_divipola'     = 'city_code',
     'ciudad_de_ubicaci_n' = 'city',
     'departamento'        = 'state'
   ))
