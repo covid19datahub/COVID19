@@ -1,4 +1,4 @@
-covid19_AU <- function(level, cache) {
+covid19au_git <- function(level, cache) {
     # Author: Matt Bolton (github.com/M3IT)
     # Date:   2020-06-13
     
