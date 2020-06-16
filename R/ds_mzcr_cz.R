@@ -25,28 +25,34 @@ mzcr_cz <- function(level, cache){
     x <- merge(tests, confirmed, by = "date", all = TRUE)
 
   }
-  if(level == 2) {
-    # people confirmed (by regions)
-    url <- sprintf("%s/osoby.csv", mzcr.covid.api)
-    x   <- read.csv(url, cache = cache)
+  # levels 2,3
+  if(level >= 2) {
+    # people confirmed/deaths/recovered (by districts)
+    url    <- 'https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/kraj-okres-nakazeni-vyleceni-umrti.csv'
+    x      <- read.csv(url, cache = cache)
+    x$date <- as.Date(x[,1])
     
-    # regional
-    x$date  <- as.Date(x[,1])
     x <- map_data(x, c(
       "date",
-      "kraj" = "state"
+      "kraj_nuts_kod" = "state",
+      "okres_lau_kod" = "district",
+      "kumulativni_pocet_nakazenych" = "confirmed",
+      "kumulativni_pocet_vylecenych" = "recovered",
+      "kumulativni_pocet_umrti"      = "deaths"
     ))
-
-    # bindings
-    date <- state <- NULL
-    
-    # cumulative
+  }
+  
+  if(level == 2) {
     x <- x %>%
-      dplyr::group_by(date, state) %>%
-      dplyr::summarise(confirmed = dplyr::n()) %>%
-      dplyr::arrange(date) %>%
-      dplyr::group_by(state) %>%
-      dplyr::mutate(confirmed = cumsum(confirmed)) 
+      dplyr::group_by(date,state) %>%
+      dplyr::summarise(
+        confirmed = sum(confirmed),
+        recovered = sum(recovered),
+        deaths    = sum(deaths))
+  }
+  
+  if(level == 3) {
+   # nothing to do 
   }
   
   # return
