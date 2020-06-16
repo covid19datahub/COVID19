@@ -6,7 +6,7 @@ TUR <- function(level, cache){
     return(NULL)
   
   # download
-  x <- covid19turkey(level = level, cache = cache) 
+  x <- covid19turkey_git(level = level, cache = cache) 
   
   # return
   return(x)

@@ -1,4 +1,4 @@
-covid19turkey <- function(level, cache){
+covid19turkey_git <- function(level, cache){
   # Author: Muhammed Seehan Pengatkundil
   
   # download
