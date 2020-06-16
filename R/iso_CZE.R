@@ -12,7 +12,7 @@ CZE <- function(level, cache) {
   if(level == 2)
     x$id <- id(x$state, iso = "CZE", ds = "mzcr_cz", level = level)
   if(level == 3)
-    x$id <- id(x$city, iso = "CZE", ds = "mzcr_cz", level = level)
+    x$id <- id(x$district, iso = "CZE", ds = "mzcr_cz", level = level)
   
   # return
   return(x)
