@@ -1,4 +1,5 @@
 covid19turkey <- function(level, cache){
+  # Author: Muhammed Seehan Pengatkundil
   
   # download
   url <- "https://raw.githubusercontent.com/ozanerturk/covid19-turkey-api/master/dataset/timeline.csv"
