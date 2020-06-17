@@ -29,6 +29,8 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
   <img src="https://www.countryflags.io/AS/flat/64.png" style="display:inline-block">
 </a><a href="/articles/iso/ATG.html">
   <img src="https://www.countryflags.io/AG/flat/64.png" style="display:inline-block">
+</a><a href="/articles/iso/AUS.html">
+  <img src="https://www.countryflags.io/AU/flat/64.png" style="display:inline-block">
 </a><a href="/articles/iso/AUT.html">
   <img src="https://www.countryflags.io/AT/flat/64.png" style="display:inline-block">
 </a><a href="/articles/iso/AZE.html">
