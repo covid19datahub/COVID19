@@ -1,0 +1,19 @@
+---
+title: "Use Cases"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Use Cases}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+We are creating a collection of projects using COVID-19 Data Hub. This is a very new page created on 20th June 2020. Don't hesitate to comment below and let us know about your project. We are happy to showcase your work here. Some projects using COVID-19 Data Hub:
+
+- [Are official confirmed cases and fatalities counts good enough to study the COVID–19 pandemic dynamics? A critical assessment through the case of Italy](https://arxiv.org/pdf/2005.07271.pdf)
+- [Brazilian COVID-19 Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
+- [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
+
+__Using COVID-19 Data Hub?__ Open a [GitHub issue](https://github.com/covid19datahub/COVID19/issues) or comment below to let us know about your project. We are happy to showcase your work here.
+
+
+`r gsub("^# ", "## ", readr::read_file('../LICENSE.md'))`

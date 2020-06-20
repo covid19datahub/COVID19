@@ -18,6 +18,9 @@ navbar:
         - 
           href: articles/doc/data.html
           text: Documentation
+        -
+          href: articles/usage.html
+          text: Use Cases
       text: Data
     python: 
       href: articles/api/python.html

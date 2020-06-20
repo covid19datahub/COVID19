@@ -37,7 +37,7 @@ The repository aims at developing a [unified data hub](https://covid19datahub.io
 - [Public Health Infobase, Government of Canada](https://health-infobase.canada.ca)
 - [Epistat, Belgian Infectious Diseases](https://epistat.sciensano.be)
 - [Open Government Data, Austria](https://info.gesundheitsministerium.at/)
-- See the [full list](<https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv>)
+- And many others. See the [full list](<https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv>)
 
 ## Add a new data source
 
@@ -49,21 +49,7 @@ The repository aims at developing a [unified data hub](https://covid19datahub.io
 
 ## Use Cases
 
-Using the COVID-19 Data Hub? Open an [issue](https://github.com/covid19datahub/COVID19/issues) and let us know about your project!
-
-- [Specialist Unit for Open Government Data Canton of Zurich](<https://github.com/openZH/covid_19/issues/723>)
-- [Brazilian COVID-19 Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
-- [Are official confirmed cases and fatalities counts good enough to study the COVID–19 pandemic dynamics? A critical assessment through the case of Italy](https://arxiv.org/pdf/2005.07271.pdf)
-- [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
-
-## In the News
-
-- [Institute for Data Valorization, Canada](<https://ivado.ca/en/covid-19/#phares>)
-- [Winner of the eRum2020 CovidR contest](<https://milano-r.github.io/erum2020-covidr-contest/index.html>)
-- [Data Science and Economics, University of Milano](<https://dse.cdl.unimi.it/en/avviso/notice-detail/covid-data-analysis>)
-- [More Select COVID-19 Resources](https://rviews.rstudio.com/2020/06/03/more-select-covid-19-resources/)
-- [Top 50 R resources on Novel COVID-19 Coronavirus](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
-- [March 2020: "Top 40" New CRAN Packages](<https://rviews.rstudio.com/2020/04/27/march-2020-top-40-new-cran-packages/>)
+__Using COVID-19 Data Hub?__ We are creating a collection of projects using COVID-19 Data Hub. Don't hesitate to open an [issue](https://github.com/covid19datahub/COVID19/issues) and let us know about your project. We are happy to showcase your work [here](https://covid19datahub.io/articles/usage.html). 
 
 
 ## Reference

@@ -393,19 +393,6 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
   <img src="https://www.countryflags.io/ZW/flat/64.png" style="display:inline-block">
 </a>
 
-## Join the Mission
-
-You are welcome to join and extend the number of supporting data sources as a joint effort against COVID-19. Contribute on [GitHub](https://github.com/covid19datahub/COVID19/), join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
-
-## Use Cases
-
-Using the COVID-19 Data Hub? Open a [GitHub issue](https://github.com/covid19datahub/COVID19/issues) and let us know about your project!
-
-- [Specialist Unit for Open Government Data Canton of Zurich](<https://github.com/openZH/covid_19/issues/723>)
-- [Brazilian COVID-19 Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
-- [Are official confirmed cases and fatalities counts good enough to study the COVID–19 pandemic dynamics? A critical assessment through the case of Italy](https://arxiv.org/pdf/2005.07271.pdf)
-- [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
-
 ## In the News
 
 - [Institute for Data Valorization, Canada](<https://ivado.ca/en/covid-19/#phares>)
@@ -414,6 +401,10 @@ Using the COVID-19 Data Hub? Open a [GitHub issue](https://github.com/covid19dat
 - [More Select COVID-19 Resources](https://rviews.rstudio.com/2020/06/03/more-select-covid-19-resources/)
 - [Top 50 R resources on Novel COVID-19 Coronavirus](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
 - [March 2020: "Top 40" New CRAN Packages](<https://rviews.rstudio.com/2020/04/27/march-2020-top-40-new-cran-packages/>)
+
+## Join the Mission
+
+__You are welcome to join__ and extend the number of supporting data sources as a joint effort against COVID-19. Contribute on [GitHub](https://github.com/covid19datahub/COVID19/), join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) to get help, and earn a [badge](https://eu.badgr.com/public/badges/MC89IAjTTLGs3geP3xHjRw).
 
 ## Authors
 
