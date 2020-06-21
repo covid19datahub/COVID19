@@ -61,9 +61,11 @@ jhucsse_git <- function(cache, file, level = 1, country = NULL){
         'Population'     = 'pop'))
       
       xx <- xx[(!is.na(xx$city) & !is.na(xx$fips) & !is.na(xx$id)) | xx$country!="USA",]
-      if(level==3)
+      if(level==3){
         xx <- xx[-which(xx$city=="Unassigned"),]
-      
+        xx <- xx[!grepl("^Out of ", xx$city),]
+      }
+        
     }
     if(file=="global"){
       

@@ -13,7 +13,9 @@ The data are available at different levels of granularity: admin area level 1 (a
 
 **Policies** for admin areas level 2 and 3 **are inherited** from national-level policies by [Oxford Covid-19 Government Response Tracker](https://github.com/OxCGRT/covid-policy-tracker). 
 
-See the [full documentation](/articles/doc/data.html)
+**Update 21-06-2020**. US data level 3 (counties): change data provider from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19) to [New York Times](https://github.com/nytimes/covid-19-data). Only minor counties not provided by [New York Times](https://github.com/nytimes/covid-19-data) are still from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19).
+
+See the [full documentation](/articles/doc/data.html) and [changelog](/news/index.html).
 
 ## Latest Data
 

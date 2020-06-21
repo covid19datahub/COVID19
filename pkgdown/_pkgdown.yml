@@ -4,12 +4,13 @@ authors:
   : 
     href: "https://guidotti.dev"
 home: 
-  description: "Unified datasets for a better understanding of COVID-19."
+  description: "Unified dataset for a better understanding of COVID-19."
   title: "COVID-19 Data Hub"
 navbar: 
   components: 
     articles: ~
     reference: ~
+    news: ~
     data: 
       menu: 
         - 
@@ -21,6 +22,9 @@ navbar:
         -
           href: articles/usage.html
           text: Use Cases
+        - 
+          href: news/index.html
+          text: Changelog
       text: Data
     python: 
       href: articles/api/python.html
