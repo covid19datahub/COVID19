@@ -277,7 +277,7 @@ covid19 <- function(country = NULL,
   
   # subset
   cn <- colnames(x)
-  cn <- unique(c(vars(), cn[grepl("^key\\_", cn)]))
+  cn <- unique(c(vars(), "key", cn[grepl("^key\\_", cn)]))
   x[,cn[!(cn %in% colnames(x))]] <- NA
   x <- x[,cn]
   
