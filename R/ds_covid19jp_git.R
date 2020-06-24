@@ -18,6 +18,3 @@ covid19jp_git <- function(level) {
   # return
   return(x)
 }
-
-level_1 <- covid19jp_git(1)
-level_2 <- covid19au_git(2)
