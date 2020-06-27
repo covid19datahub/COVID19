@@ -15,7 +15,7 @@ covid19jp_git <- function(cache, level, id = NULL) {
   # Note: levels 1 & 2 available only
   x <- x[x$administrative_area_level == level,]
   if(!is.null(id))
-    x <- x[x$administrative_area_level_2 == id,]
+    x <- x[which(x$administrative_area_level_2 == id),]
   else if(level==1)
     x <- x[is.na(x$administrative_area_level_2),]
     
