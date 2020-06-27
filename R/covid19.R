@@ -275,6 +275,10 @@ covid19 <- function(country = NULL,
 
   }
   
+  # severe
+  idx <- which(is.na(x$severe) | x$severe==0)
+  x$severe[idx] <- x$icu[idx] + x$vent[idx]
+  
   # subset
   cn <- colnames(x)
   cn <- unique(c(vars(), "key", cn[grepl("^key\\_", cn)]))

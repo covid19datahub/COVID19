@@ -109,7 +109,8 @@ vars <- function(type = NULL){
     'numeric' = 'deaths',
     'numeric' = 'hosp',
     'numeric' = 'vent',
-    'numeric' = 'icu'
+    'numeric' = 'icu',
+    'numeric' = 'severe'
   )
   
   measures <- c(
@@ -451,7 +452,7 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
   }
   
   cn  <- colnames(x)
-  key <- unique(c("id", cn[grepl("^id\\_", cn)], key, cn[grepl("^key\\_", cn)]))
+  key <- unique(c("id", cn[grepl("^id\\_", cn)], key, "key", cn[grepl("^key\\_", cn)]))
   x   <- x[,key]
   
   write.csv(x, file)
