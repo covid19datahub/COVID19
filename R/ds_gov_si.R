@@ -20,6 +20,9 @@ gov_si <- function(cache, level){
       'Deaths (all)'                                 = 'deaths'
     ))
     
+    # clean deaths
+    x$deaths <- as.numeric(gsub("\\*$", "", x$deaths))
+    
     # cumulative
     x$recovered <- cumsum(x$recovered)
     
