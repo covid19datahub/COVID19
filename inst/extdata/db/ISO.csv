@@ -1,6 +1,6 @@
 "id","id_jhucsse_git","administrative_area_level","administrative_area_level_1","iso_alpha_3","iso_alpha_2","iso_numeric","currency","latitude","longitude","population","key_apple_mobility","key_google_mobility"
-"GPC","Grand Princess",1,"Grand Princess","GPC",,,,,,,,
-"MSZ","MS Zaandam",1,"MS Zaandam","MSZ",,,,,,,,
+"GPC","Grand Princess",1,"Grand Princess","GPC",,,,,,3533,,
+"MSZ","MS Zaandam",1,"MS Zaandam","MSZ",,,,,,1829,,
 "DPC","Diamond Princess",1,"Diamond Princess","DPC",,,,,,3711,,
 "AIA","Anguilla",1,"Anguilla","AIA","AI",660,"XCD",18.25,-63.1666667,18090,,"AI"
 "ALA","Aland Islands",1,"Aland Islands","ALA","AX",248,"AX",60.116667,19.9,29884,,"AX"
@@ -105,7 +105,7 @@
 "SOM","Somalia",1,"Somalia","SOM","SO",706,"SOS",5.1521,46.1996,15008154,,"SO"
 "AGO","Angola",1,"Angola","AGO","AO",24,"AOA",-11.2027,17.8739,30809762,,"AO"
 "DMA","Dominica",1,"Dominica","DMA","DM",212,"XCD",15.415,-61.371,71625,,"DM"
-"ERI","Eritrea",1,"Eritrea","ERI","ER",232,"ERN",15.1794,39.7823,,,"ER"
+"ERI","Eritrea",1,"Eritrea","ERI","ER",232,"ERN",15.1794,39.7823,5750433,,"ER"
 "GNB","Guinea-Bissau",1,"Guinea-Bissau","GNB","GW",624,"XOF",11.8037,-15.1804,1874309,,"GW"
 "KNA","Saint Kitts and Nevis",1,"Saint Kitts and Nevis","KNA","KN",659,"XCD",17.357822,-62.782998,52441,,"KN"
 "MCO","Monaco",1,"Monaco","MCO","MC",492,"EUR",43.7333,7.4167,38682,,"MC"
