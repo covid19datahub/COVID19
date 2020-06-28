@@ -60,7 +60,7 @@ jhucsse_git <- function(cache, file, level = 1, country = NULL){
         'Long'           = 'lng',
         'Population'     = 'pop'))
       
-      xx <- xx[(!is.na(xx$city) & !is.na(xx$fips) & !is.na(xx$id)) | xx$country!="USA",]
+      xx <- xx[which( (!is.na(xx$city) & !is.na(xx$fips) & !is.na(xx$id)) | xx$country!="USA" ),]
       if(level==3){
         xx <- xx[-which(xx$city=="Unassigned"),]
         xx <- xx[!grepl("^Out of ", xx$city),]

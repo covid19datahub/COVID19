@@ -20,7 +20,7 @@ pcmdpc_git <- function(cache, level){
 
   # filter
   if(!is.null(x$lat) & !is.null(x$long))
-    x <- x[x$lat!=0 | x$long!=0,]
+    x <- x[which(x$lat!=0 | x$long!=0),]
   
   # formatting
   x <- map_data(x, c(

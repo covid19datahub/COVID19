@@ -24,7 +24,8 @@ nytimes_git <- function(cache, level){
     x <- x[x$city!="Unknown",]
     x$fips[x$city=="New York City"] <- 36061
     x$fips[x$city=="Kansas City"]   <- 90000
-
+    x$fips[x$city=="Joplin"]        <- 90001
+    
   }
   
   # date

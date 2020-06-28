@@ -20,6 +20,7 @@ The following people are gratefully acknowledged for taking part in the data col
 - [Lo Giudice Federico](https://github.com/FedericoLG)
 - [Montemurro Paolo](https://github.com/montemurroPaolo)
 - [Pengatkundil Muhammed](https://github.com/muhammedseehan-commits)
+- [Yuan Zhou](https://github.com/yuanzhouIR)
 
 __Want to contribute?__ Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) and get started on [GitHub](articles/contributors.html)
 
