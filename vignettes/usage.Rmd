@@ -7,9 +7,10 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-We are creating a collection of projects using COVID-19 Data Hub. This is a very new page created on 20th June 2020. Don't hesitate to comment below and let us know about your project. We are happy to showcase your work here. Some projects using COVID-19 Data Hub:
+We are creating a collection of projects using COVID-19 Data Hub. This is a very new page created on 20th June 2020. Don't hesitate to comment below and let us know about your project. We are happy to showcase your work here. Featured projects using COVID-19 Data Hub:
 
-- [Are official confirmed cases and fatalities counts good enough to study the COVID–19 pandemic dynamics? A critical assessment through the case of Italy](https://arxiv.org/pdf/2005.07271.pdf)
+- [Are official confirmed cases and fatalities counts good enough to study the COVID–19 pandemic dynamics? A critical assessment through the case of Italy](https://rdcu.be/b5g5V)
+- [Mirai Solutions Dashboard](https://mirai-solutions.ch/gallery/covid19/)
 - [Brazilian COVID-19 Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
 - [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
 
