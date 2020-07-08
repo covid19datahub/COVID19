@@ -408,7 +408,7 @@ __You are welcome to join__ and extend the number of supporting data sources as 
 
 ## Authors
 
-The project was initiated via the [R package COVID19](https://CRAN.R-project.org/package=COVID19) developed by [Emanuele Guidotti](https://guidotti.dev/) (University of Neuchâtel), leveraged by [David Ardia](https://ardiad.github.io/website/) (HEC Montréal) via the funding by [IVADO](https://ivado.ca/en/), and enhanced and maintained by a growing [open source community](/articles/contributors.html).
+The project was initiated via the [R package COVID19](https://CRAN.R-project.org/package=COVID19) developed by [Emanuele Guidotti](https://guidotti.dev/) (University of Neuchâtel), leveraged by [David Ardia](https://ardiad.github.io/) (HEC Montréal) via the funding by [IVADO](https://ivado.ca/en/), and enhanced and maintained by a growing [open source community](/articles/contributors.html).
 
 Logo courtesy of [Gary Sandoz](http://www.garysandoz.ch/index.html) and [Talk-to-Me](https://www.talk-to-me.ch/).
 
