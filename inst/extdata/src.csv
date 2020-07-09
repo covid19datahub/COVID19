@@ -100,6 +100,8 @@
 "CHE",2,"latitude","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office","2018",,,,
 "CHE",2,"longitude","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office","2018",,,,
 "CHE",2,"population","https://www.bfs.admin.ch/bfs/en/home/statistics/regional-statistics/regional-portraits-key-figures/cantons/data-explanations.html","Swiss Federal Statistical Office","2018",,,,
+"CHN",1,"confirmed","https://covid19.who.int","World Health Organization","2020",,,,
+"CHN",1,"deaths","https://covid19.who.int","World Health Organization","2020",,,,
 "CHN",2,"population","http://data.stats.gov.cn/english/easyquery.htm?cn=E0103","National Bureau of Statistics of China NBS","2018",,,,
 "CHN",2,"population","https://www.cia.gov/library/publications/the-world-factbook/geos/hk.html","CIA - Central Intelligence Agency","2020",,,,
 "CHN",2,"population","https://www.cia.gov/library/publications/the-world-factbook/geos/mc.html","CIA - Central Intelligence Agency","2020",,,,
