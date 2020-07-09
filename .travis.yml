@@ -1,0 +1,16 @@
+language: r
+sudo: required
+cache: packages
+
+r:
+  - devel
+  - release
+
+os:
+  - linux
+  
+script:
+  - |
+    R CMD build .
+    travis_wait 180 R CMD check --no-build-vignettes --no-manual COVID19*tar.gz
+  

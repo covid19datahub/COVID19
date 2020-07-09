@@ -31,6 +31,8 @@ bibliography: paper.bib
 
 # Summary
 
+The goal of [COVID-19 Data Hub](https://covid19datahub.io) is to provide the research community with a **unified** dataset helpful for a better understanding of COVID-19.
+
 In December 2019 the first cases of pneumonia of unknown etiology were reported in Wuhan city, People’s Republic of China.^[World Health Organization, Novel Coronavirus (2019-nCoV) SITUATION REPORT 1 - 21 JANUARY 2020] Since the outbreak of the disease, officially called COVID–19 by World Health Organization (WHO), a multitude of papers have appeared. 
 
 By one estimate, the COVID-19 literature published in January-May 2019 has reached more than 23,000 papers and is doubling every 20 days—among the biggest explosions of scientific literature ever.^[https://doi.org/10.1126/science.abc7839]
@@ -43,14 +45,14 @@ A team of over one hundred Oxford University students and staff from every part 
 
 Google and Apple released mobility reports ^[https://www.google.com/covid19/mobility/] ^[https://www.apple.com/covid19/mobility/] to help public health officials. Governments all over the world are releasing COVID-19 data to track the outbreak as it unfolds.
 
-Yet, to our knowledge, there is no application that collects COVID-19 worldwide fine-grained data, includes demographics, environmental factors, or other exogenous variables, and harmonizes the amount of heterogeneous data that have become available. The goal of [COVID-19 Data Hub](https://covid19datahub.io) is to provide the research community with a **unified** dataset helpful for a better understanding of COVID-19.
+Yet, to our knowledge, there is no application that collects COVID-19 worldwide fine-grained data, includes demographics, environmental factors, or other exogenous variables, and harmonizes the amount of heterogeneous data that have become available. 
 
 
 ## Data collection
 
 We implemented an extendable R package [@r] designed to aggregate the data from several sources. Hosted on GitHub ^[https://github.com/covid19datahub/COVID19/], the package allows contributors to collaborate on the implementation of additional data sources.
 
-The data are hourly crunched by a dedicated server exploiting the package. The data are harmonized in csv format and made available on a cloud storage, in order to be easily accessible from R, Python, MATLAB, Excel... and any other software.
+The data are hourly crunched by a dedicated server exploiting the package. The data are harmonized in csv format and made available on a cloud storage, in order to be easily accessible from R, Python, MATLAB, Excel and any other software.
 
 Out-of-the-box packages are available for seamless integration with the Data Hub. Namely, the [COVID19](https://cran.r-project.org/package=COVID19)  R package available on CRAN and the [covid19dh](https://pypi.org/project/covid19dh/) ^[we acknowledge the efforts of Martin Beneš for providing the package] Python package available on PyPI. According to the terms of use, World Bank, Google, and Apple data cannot be stored on external servers, but the packages provide functionalities to download such data from the original repositories and extend the dataset in real-time. The packages use an internal memory caching system so that the data are never downloaded twice. This is especially suited for interactive frameworks, such as Shiny [@shiny].
 

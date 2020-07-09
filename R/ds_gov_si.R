@@ -26,8 +26,14 @@ gov_si <- function(cache, level){
     # cumulative
     x$recovered <- cumsum(x$recovered)
     
-    # date
-    x$date <- as.Date(x$date, format="%Y-%m-%d")
+    # format date
+    d <- as.Date(x$date, format="%Y-%m-%d")
+    if(all(is.na(d)))
+      d <- as.Date(suppressWarnings(as.numeric(x$date)), origin = "1899-12-30")   
+    
+    # date and clean
+    x$date <- d
+    x <- x[!is.na(d),]
     
   }
   
