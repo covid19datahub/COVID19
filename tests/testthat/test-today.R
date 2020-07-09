@@ -19,7 +19,7 @@ test_that("today", {
           
           print(paste(iso[[1]], paste(t, collapse = "\n   "), sep = "\n   "))
           
-          return(FALSE)
+          # return(FALSE)
           
         }
           

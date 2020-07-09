@@ -20,7 +20,7 @@ test_that("vintage", {
           
           print(paste(iso[[1]], paste(t, collapse = "\n   "), sep = "\n   "))
           
-          return(FALSE)
+          # return(FALSE)
           
         }
         
