@@ -52,21 +52,21 @@ Yet, to our knowledge, there is no application that collects COVID-19 worldwide 
 
 We implemented an extendable R package [@r] designed to aggregate the data from several sources. Hosted on GitHub ^[https://github.com/covid19datahub/COVID19/], the package allows contributors to collaborate on the implementation of additional data sources.
 
-The data are hourly crunched by a dedicated server exploiting the package. The data are harmonized in csv format and made available on a cloud storage, in order to be easily accessible from R, Python, MATLAB, Excel and any other software.
+The data are hourly crunched by a dedicated server exploiting the package. The data are harmonized in csv format and made available on a cloud storage, in order to be easily accessible from R, Python, MATLAB, Excel, and any other software.
 
 Out-of-the-box packages are available for seamless integration with the Data Hub. Namely, the [COVID19](https://cran.r-project.org/package=COVID19)  R package available on CRAN and the [covid19dh](https://pypi.org/project/covid19dh/) ^[we acknowledge the efforts of Martin Beneš for providing the package] Python package available on PyPI. According to the terms of use, World Bank, Google, and Apple data cannot be stored on external servers, but the packages provide functionalities to download such data from the original repositories and extend the dataset in real-time. The packages use an internal memory caching system so that the data are never downloaded twice. This is especially suited for interactive frameworks, such as Shiny [@shiny].
 
-We do our best to guarantee the data quality and consistency: a) all sources are properly documented, along with their citation b) we generate error logs to spot misalignments in the official data and inform authorities c) we rely on the open-source community: the bigger the community, the faster possible bugs will be notified and fixed. Vintage data, daily snapshots of the data, are provided so to ensure research reproducibility. Still, this is free software and comes with absolutely no warranty.
+We do our best to guarantee the data quality and consistency: a) all sources are properly documented, along with their citation; b) we generate error logs to spot misalignments in the official data and inform authorities; c) we rely on the open-source community: the bigger the community, the faster possible bugs will be notified and fixed. Vintage data, daily snapshots of the data, are provided so to ensure research reproducibility. Still, this is free software and comes with absolutely no warranty.
 
 At the time of writing, the dataset includes:
 
 - standard **COVID-19 variables**: total population, cumulative number of cases, tests, deaths, recovered, daily number of hospitalized, 
 patients requiring ventilation and intensive therapy.
 - **policy measures** by Oxford COVID-19 Government Response Tracker [@hale2020oxford]
-- **geographic information** suited for data visualization and for interfacing with external databases (e.g. weather information, geo-located tweets, etc.).
+- **geographic information** suited for data visualization and for interfacing with external databases (e.g. weather information, geo-located tweets).
 - **external identifiers** allowing to extend the dataset with World Bank Open Data, Google mobility reports, and Apple mobility reports. Governmental identifiers are provided to further extend the dataset with local, fine-grained statistics. 
 
-The data are available at different levels of granularity: 1) administrative area of top-level, usually countries 2) states, regions, cantons 3) cities, municipalities. Refer to the [dataset documentation](https://covid19datahub.io/articles/doc/data.html) for more details and to the introductory video available at [COVID-19 Data Hub](https://covid19datahub.io) for an overview of the project.
+The data are available at different levels of granularity: 1) administrative area of top-level, usually countries; 2) states, regions, cantons; 3) cities, municipalities. Refer to the [dataset documentation](https://covid19datahub.io/articles/doc/data.html) for more details and to the introductory video available at [COVID-19 Data Hub](https://covid19datahub.io) for an overview of the project.
 
 # Acknowledgements
 
