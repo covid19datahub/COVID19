@@ -1,10 +1,12 @@
 bibentry(
-	bibtype="Unpublished",
-	note="Working Paper",
+	bibtype="Article",
 	title="COVID-19 Data Hub", 
 	year=2020,
-	url="https://covid19datahub.io", 
-	DOI="10.13140/RG.2.2.11649.81763", 
+	DOI="10.21105/joss.02376", 
 	author=as.person("Emanuele Guidotti [aut], David Ardia [aut]"),
-	textVersion='Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.'
+        journal="Journal of Open Source Software",
+        volume="5",
+        number="51",
+        pages="2376",
+	textVersion='Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: 10.21105/joss.02376.'
 )
