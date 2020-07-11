@@ -34,7 +34,7 @@
 #' s <- attr(x, "src")
 #' }
 #'
-#' @source \url{https://storage.covid19datahub.io/src.csv}
+#' @source \url{https://covid19datahub.io}
 #'
 #' @references 
 #' Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, \doi{10.21105/joss.02376}.
@@ -43,7 +43,7 @@
 #' We have invested a lot of time and effort in creating \href{https://covid19datahub.io}{COVID-19 Data Hub}, please:
 #' 
 #' \itemize{
-#' \item cite \href{https://doi.org/10.21105/joss.02376}{Guidotti and Ardia (2020)} in working papers, published papers, websites, dashboards, softwares, packages, data hubs that use it.
+#' \item cite \href{https://doi.org/10.21105/joss.02376}{Guidotti and Ardia (2020)} when using \href{https://covid19datahub.io}{COVID-19 Data Hub}.
 #' \item place the URL \url{https://covid19datahub.io} in a footnote to help others find \href{https://covid19datahub.io}{COVID-19 Data Hub}.
 #' \item you assume full risk for the use of \href{https://covid19datahub.io}{COVID-19 Data Hub}. 
 #' We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. 
