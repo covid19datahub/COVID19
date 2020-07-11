@@ -176,8 +176,7 @@
 <h2 class="hasAnchor">
 <a href="#merge-with-world-bank-open-data" class="anchor"></a>Merge with World Bank Open Data</h2>
 <p>The dataset can be extended with <a href="https://data.worldbank.org/">World Bank Open Data</a> via the argument <code>wb</code>, a character vector of indicator codes. The codes can be found by inspecting the corresponding URL. For example, the code of the GDP indicator available at <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" class="uri">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a> is <code>NY.GDP.MKTP.CD</code>.</p>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="co"># Merge with World Bank data</span>
-<span class="no">wb</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"gdp"</span> <span class="kw">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="kw">=</span> <span class="st">"SH.MED.BEDS.ZS"</span>)
+<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="no">wb</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"gdp"</span> <span class="kw">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="kw">=</span> <span class="st">"SH.MED.BEDS.ZS"</span>)
 <span class="no">x</span>  <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">wb</span> <span class="kw">=</span> <span class="no">wb</span>)</pre></body></html></div>
 </div>
 <div id="merge-with-google-mobility-reports" class="section level2">
@@ -192,15 +191,15 @@
 <a href="#merge-with-apple-mobility-reports" class="anchor"></a>Merge with Apple Mobility Reports</h2>
 <p>The dataset can be extended with <a href="https://www.apple.com/covid19/mobility">Apple Mobility Reports</a> via the argument <code>amr</code>, the url to the Apple CSV file. At the time of writing, the CSV is available at:</p>
 <div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">amr</span> <span class="kw">&lt;-</span> <span class="st">"https://covid19-static.cdn-apple.com/covid19-mobility-data/"</span>
-<span class="no">amr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="no">amr</span>, <span class="st">"2008HotfixDev28/v2/en-us/applemobilitytrends-2020-05-15.csv"</span>)
+<span class="no">amr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="no">amr</span>, <span class="st">"2012HotfixDev8/v3/en-us/applemobilitytrends-2020-07-09.csv"</span>)
 <span class="no">x</span>   <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">amr</span> <span class="kw">=</span> <span class="no">amr</span>)</pre></body></html></div>
 </div>
-<div id="list-the-data-sources" class="section level2">
+<div id="data-sources" class="section level2">
 <h2 class="hasAnchor">
-<a href="#list-the-data-sources" class="anchor"></a>List the data sources</h2>
+<a href="#data-sources" class="anchor"></a>Data sources</h2>
 <p>Data sources are stored in the <code>src</code> attribute.</p>
-<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="co"># Data sources</span>
-<span class="no">s</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/attr.html">attr</a></span>(<span class="no">x</span>, <span class="st">"src"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="no">s</span> <span class="kw">&lt;-</span> <span class="fu">covid19cite</span>(<span class="no">x</span>)
+<span class="fu"><a href="https://rdrr.io/r/utils/View.html">View</a></span>(<span class="no">S</span>)</pre></body></html></div>
 </div>
 <div id="terms-of-use" class="section level2">
 <h2 class="hasAnchor">
