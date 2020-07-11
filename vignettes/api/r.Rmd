@@ -43,7 +43,6 @@ x <- covid19(c("Italy","US"), level = 3)
 The dataset can be extended with [World Bank Open Data](https://data.worldbank.org/) via the argument `wb`, a character vector of indicator codes. The codes can be found by inspecting the corresponding URL. For example, the code of the GDP indicator available at https://data.worldbank.org/indicator/NY.GDP.MKTP.CD is `NY.GDP.MKTP.CD`. 
 
 ```R
-# Merge with World Bank data
 wb <- c("gdp" = "NY.GDP.MKTP.CD", "hosp_beds" = "SH.MED.BEDS.ZS")
 x  <- covid19(wb = wb)
 ```
@@ -63,17 +62,17 @@ The dataset can be extended with [Apple Mobility Reports](https://www.apple.com/
 
 ```R
 amr <- "https://covid19-static.cdn-apple.com/covid19-mobility-data/"
-amr <- paste0(amr, "2008HotfixDev28/v2/en-us/applemobilitytrends-2020-05-15.csv")
+amr <- paste0(amr, "2012HotfixDev8/v3/en-us/applemobilitytrends-2020-07-09.csv")
 x   <- covid19(amr = amr)
 ```
 
-## List the data sources
+## Data sources
 
 Data sources are stored in the `src` attribute.
 
 ```R
-# Data sources
-s <- attr(x, "src")
+s <- covid19cite(x)
+View(S)
 ```
 
 `r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`
