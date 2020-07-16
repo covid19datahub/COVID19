@@ -1,0 +1,26 @@
+"id","id_covid19peru_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
+"e39c6ae1","PE-ARE",2,"Arequipa",,,,1382730
+"5b8d9d19","PE-CUS",2,"Cusco",,,,1205527
+"4a6f629c","PE-HUC",2,"Huanuco",,,,721047
+"b93bdc50","PE-ICA",2,"Ica",,,,850765
+"4ca9ba1a","PE-LIM",2,"Lima",,,,9485405
+"ec889289","PE-ANC",2,"Ancash",,,,1083519
+"f82b47b9","PE-CAL",2,"Callao",,,,994494
+"f3770084","PE-LAL",2,"La Libertad",,,,1778080
+"84703012","PE-LAM",2,"Lambayeque",,,,1197260
+"4af97858","PE-PIU",2,"Piura",,,,1856809
+"97fb1069","PE-LOR",2,"Loreto",,,,883510
+"811916c4","PE-MDD",2,"Madre de Dios",,,,141070
+"375aca4f","PE-JUN",2,"Junin",,,,1246038
+"930ad45f","PE-SAM",2,"San Martin",,,,813381
+"b8eb158f","PE-TUM",2,"Tumbes",,,,224863
+"1148e28c","PE-CAJ",2,"Cajamarca",,,,1341012
+"6b435765","PE-PAS",2,"Pasco",,,,254065
+"07057733","PE-AYA",2,"Ayacucho",,,,616176
+"71fdefdd","PE-TAC",2,"Tacna",,,,329332
+"27b28677","PE-HUV",2,"Huancavelica",,,,347639
+"cc1d1807","PE-APU",2,"Apurimac",,,,405759
+"0f302be4","PE-MOQ",2,"Moquegua",,,,174863
+"26ebece9","PE-PUN",2,"Puno",,,,1172697
+"29aba066","PE-AMA",2,"Amazonas",,,,379384
+"ac078644","PE-UCA",2,"Ucayali",,,,496459
