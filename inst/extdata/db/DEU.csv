@@ -1,0 +1,429 @@
+"id","id_gov_de","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric"
+"27ab265e",9,2,"Bayern",,,,,9
+"c77ecf40",3,2,"Niedersachsen",,,,,3
+"2e1d6a75",5,2,"Nordrhein-Westfalen",,,,,5
+"50ac16c8",8,2,"Baden-Württemberg",,,,,8
+"b079ffd6",2,2,"Hamburg",,,,,2
+"b7143bcf",6,2,"Hessen",,,,,6
+"c0130b59",7,2,"Rheinland-Pfalz",,,,,7
+"2970ae6c",1,2,"Schleswig-Holstein",,,,,1
+"5cbe5d89",12,2,"Brandenburg",,,,,12
+"591a5ae3",4,2,"Bremen",,,,,4
+"b5ddf8bc",14,2,"Sachsen",,,,,14
+"c5b70c33",11,2,"Berlin",,,,,11
+"2bb96d1f",13,2,"Mecklenburg-Vorpommern",,,,,13
+"5bd39990",16,2,"Thüringen",,,,,16
+"b2b03ca5",10,2,"Saarland",,,,,10
+"c2dac82a",15,2,"Sachsen-Anhalt",,,,,15
+"b0b19fdd",9181,3,"Bayern","LK Landsberg a.Lech",,,,9181
+"c96d2779",9188,3,"Bayern","LK Starnberg",,,,9188
+"39f20b20",9179,3,"Bayern","LK Fürstenfeldbruck",,,,9179
+"b73be3e9",9162,3,"Bayern","SK München",,,,9162
+"be6a17ef",9189,3,"Bayern","LK Traunstein",,,,9189
+"c0db6b52",9184,3,"Bayern","LK München",,,,9184
+"111e375a",3401,3,"Niedersachsen","SK Delmenhorst",,,,3401
+"4ef53bb6",9178,3,"Bayern","LK Freising",,,,9178
+"2f4c8b5b",5315,3,"Nordrhein-Westfalen","SK Köln",,,,5315
+"7356763b",8436,3,"Baden-Württemberg","LK Ravensburg",,,,8436
+"30ace6c4",8117,3,"Baden-Württemberg","LK Göppingen",,,,8117
+"416014b9",8416,3,"Baden-Württemberg","LK Tübingen",,,,8416
+"dd265386",8315,3,"Baden-Württemberg","LK Breisgau-Hochschwarzwald",,,,8315
+"f60b0045",8325,3,"Baden-Württemberg","LK Rottweil",,,,8325
+"da4b979f",8311,3,"Baden-Württemberg","SK Freiburg i.Breisgau",,,,8311
+"097cd852",5370,3,"Nordrhein-Westfalen","LK Heinsberg",,,,5370
+"dea287e8",8115,3,"Baden-Württemberg","LK Böblingen",,,,8115
+"a013fb55",8118,3,"Baden-Württemberg","LK Ludwigsburg",,,,8118
+"b0324b35",9562,3,"Bayern","SK Erlangen",,,,9562
+"f34416c0",8425,3,"Baden-Württemberg","LK Alb-Donau-Kreis",,,,8425
+"f58fd42b",8125,3,"Baden-Württemberg","LK Heilbronn",,,,8125
+"759db4d0",8136,3,"Baden-Württemberg","LK Ostalbkreis",,,,8136
+"6ec03bc8",8226,3,"Baden-Württemberg","LK Rhein-Neckar-Kreis",,,,8226
+"d9acc875",2000,3,"Hamburg","SK Hamburg",,,,2000
+"0c2ffe9c",6531,3,"Hessen","LK Gießen",,,,6531
+"f3fe0de9",5962,3,"Nordrhein-Westfalen","LK Märkischer Kreis",,,,5962
+"fa809848",5166,3,"Nordrhein-Westfalen","LK Viersen",,,,5166
+"0af80c3c",5170,3,"Nordrhein-Westfalen","LK Wesel",,,,5170
+"584bbbcd",5314,3,"Nordrhein-Westfalen","SK Bonn",,,,5314
+"b5c10e8f",5116,3,"Nordrhein-Westfalen","SK Mönchengladbach",,,,5116
+"6a7dd94f",5334,3,"Nordrhein-Westfalen","StadtRegion Aachen",,,,5334
+"1b21d673",7312,3,"Rheinland-Pfalz","SK Kaiserslautern",,,,7312
+"9d43c01d",1060,3,"Schleswig-Holstein","LK Segeberg",,,,1060
+"dac75a95",9777,3,"Bayern","LK Ostallgäu",,,,9777
+"59d23ae8",9187,3,"Bayern","LK Rosenheim",,,,9187
+"52103621",1003,3,"Schleswig-Holstein","SK Lübeck",,,,1003
+"f2e21032",8121,3,"Baden-Württemberg","SK Heilbronn",,,,8121
+"2e56de96",9565,3,"Bayern","SK Schwabach",,,,9565
+"d4a8c4ad",12065,3,"Brandenburg","LK Oberhavel",,,,12065
+"92db967e",4011,3,"Bremen","SK Bremen",,,,4011
+"e3e3f587",6433,3,"Hessen","LK Groß-Gerau",,,,6433
+"9526af26",6532,3,"Hessen","LK Lahn-Dill-Kreis",,,,6532
+"71ff8eec",3241,3,"Niedersachsen","Region Hannover",,,,3241
+"359132e2",5358,3,"Nordrhein-Westfalen","LK Düren",,,,5358
+"b2acca96",5112,3,"Nordrhein-Westfalen","SK Duisburg",,,,5112
+"2bc1f7e9",5515,3,"Nordrhein-Westfalen","SK Münster",,,,5515
+"3667242f",8417,3,"Baden-Württemberg","LK Zollernalbkreis",,,,8417
+"69adffd1",8222,3,"Baden-Württemberg","SK Mannheim",,,,8222
+"3044470b",9175,3,"Bayern","LK Ebersberg",,,,9175
+"5951ee00",9564,3,"Bayern","SK Nürnberg",,,,9564
+"7d876024",6434,3,"Hessen","LK Hochtaunuskreis",,,,6434
+"a6d2a793",6412,3,"Hessen","SK Frankfurt am Main",,,,6412
+"f02f8420",3352,3,"Niedersachsen","LK Cuxhaven",,,,3352
+"38aa027b",5554,3,"Nordrhein-Westfalen","LK Borken",,,,5554
+"fded5c51",5162,3,"Nordrhein-Westfalen","LK Rhein-Kreis Neuss",,,,5162
+"07a75060",5378,3,"Nordrhein-Westfalen","LK Rheinisch-Bergischer Kreis",,,,5378
+"ef935e7a",14628,3,"Sachsen","LK Sächsische Schweiz-Osterzgebirge",,,,14628
+"2f67c264",1053,3,"Schleswig-Holstein","LK Herzogtum Lauenburg",,,,1053
+"734da131",1062,3,"Schleswig-Holstein","LK Stormarn",,,,1062
+"47abd652",8116,3,"Baden-Württemberg","LK Esslingen",,,,8116
+"dce439b1",8215,3,"Baden-Württemberg","LK Karlsruhe",,,,8215
+"761960be",8336,3,"Baden-Württemberg","LK Lörrach",,,,8336
+"f7c96a72",8225,3,"Baden-Württemberg","LK Neckar-Odenwald-Kreis",,,,8225
+"d714cbc3",8119,3,"Baden-Württemberg","LK Rems-Murr-Kreis",,,,8119
+"f429d2d9",8421,3,"Baden-Württemberg","SK Ulm",,,,8421
+"3202f952",9275,3,"Bayern","LK Passau",,,,9275
+"f936090b",11010,3,"Berlin","SK Berlin Marzahn-Hellersdorf",,,,11010
+"972a08dc",11001,3,"Berlin","SK Berlin Mitte",,,,11001
+"eef6b078",11008,3,"Berlin","SK Berlin Neukölln",,,,11008
+"7e49ade9",11007,3,"Berlin","SK Berlin Tempelhof-Schöneberg",,,,11007
+"0ded94ab",6431,3,"Hessen","LK Bergstraße",,,,6431
+"0a8050b2",6435,3,"Hessen","LK Main-Kinzig-Kreis",,,,6435
+"750f9289",13075,3,"Mecklenburg-Vorpommern","LK Vorpommern-Greifswald",,,,13075
+"6c69c31f",3451,3,"Niedersachsen","LK Ammerland",,,,3451
+"804570af",3357,3,"Niedersachsen","LK Rotenburg (Wümme)",,,,3357
+"0e111c4b",5374,3,"Nordrhein-Westfalen","LK Oberbergischer Kreis",,,,5374
+"60eaa5b1",5382,3,"Nordrhein-Westfalen","LK Rhein-Sieg-Kreis",,,,5382
+"5f0d36eb",1056,3,"Schleswig-Holstein","LK Pinneberg",,,,1056
+"42d162bb",16075,3,"Thüringen","LK Saale-Orla-Kreis",,,,16075
+"ea5f2781",8435,3,"Baden-Württemberg","LK Bodenseekreis",,,,8435
+"442f023c",8316,3,"Baden-Württemberg","LK Emmendingen",,,,8316
+"8b3ea896",8128,3,"Baden-Württemberg","LK Main-Tauber-Kreis",,,,8128
+"332832aa",8317,3,"Baden-Württemberg","LK Ortenaukreis",,,,8317
+"045146ad",8437,3,"Baden-Württemberg","LK Sigmaringen",,,,8437
+"f0a4ae6b",8221,3,"Baden-Württemberg","SK Heidelberg",,,,8221
+"d9cf43f1",8111,3,"Baden-Württemberg","SK Stuttgart",,,,8111
+"33a4ffa0",9771,3,"Bayern","LK Aichach-Friedberg",,,,9771
+"ada406c6",9372,3,"Bayern","LK Cham",,,,9372
+"ae44be6d",9576,3,"Bayern","LK Roth",,,,9576
+"0e235966",11002,3,"Berlin","SK Berlin Friedrichshain-Kreuzberg",,,,11002
+"792469f0",11003,3,"Berlin","SK Berlin Pankow",,,,11003
+"72625690",13071,3,"Mecklenburg-Vorpommern","LK Mecklenburgische Seenplatte",,,,13071
+"9c6c37bc",13073,3,"Mecklenburg-Vorpommern","LK Vorpommern-Rügen",,,,13073
+"f20d56bc",3456,3,"Niedersachsen","LK Grafschaft Bentheim",,,,3456
+"850a662a",3457,3,"Niedersachsen","LK Leer",,,,3457
+"ff105676",3403,3,"Niedersachsen","SK Oldenburg",,,,3403
+"311c4e50",5558,3,"Nordrhein-Westfalen","LK Coesfeld",,,,5558
+"fe0de4fa",5766,3,"Nordrhein-Westfalen","LK Lippe",,,,5766
+"25b6ca94",5911,3,"Nordrhein-Westfalen","SK Bochum",,,,5911
+"2ba59b2c",5111,3,"Nordrhein-Westfalen","SK Düsseldorf",,,,5111
+"2917b4f1",7332,3,"Rheinland-Pfalz","LK Bad Dürkheim",,,,7332
+"c07411c4",7334,3,"Rheinland-Pfalz","LK Germersheim",,,,7334
+"81ac53a7",7111,3,"Rheinland-Pfalz","SK Koblenz",,,,7111
+"854543d0",7315,3,"Rheinland-Pfalz","SK Mainz",,,,7315
+"eed25b33",8235,3,"Baden-Württemberg","LK Calw",,,,8235
+"6c868591",8126,3,"Baden-Württemberg","LK Hohenlohekreis",,,,8126
+"ab6fc42d",9672,3,"Bayern","LK Bad Kissingen",,,,9672
+"a9297a74",9572,3,"Bayern","LK Erlangen-Höchstadt",,,,9572
+"29b8ce67",9182,3,"Bayern","LK Miesbach",,,,9182
+"34c93bb9",9775,3,"Bayern","LK Neu-Ulm",,,,9775
+"c33bd3f9",9780,3,"Bayern","LK Oberallgäu",,,,9780
+"dead9e0a",9190,3,"Bayern","LK Weilheim-Schongau",,,,9190
+"c573c5fa",9663,3,"Bayern","SK Würzburg",,,,9663
+"17386827",11012,3,"Berlin","SK Berlin Reinickendorf",,,,11012
+"3dcb6198",12063,3,"Brandenburg","LK Havelland",,,,12063
+"03361c99",6439,3,"Hessen","LK Rheingau-Taunus-Kreis",,,,6439
+"0b423a85",6535,3,"Hessen","LK Vogelsbergkreis",,,,6535
+"090484dc",6635,3,"Hessen","LK Waldeck-Frankenberg",,,,6635
+"6926d59a",3351,3,"Niedersachsen","LK Celle",,,,3351
+"62b24b2d",3459,3,"Niedersachsen","LK Osnabrück",,,,3459
+"67fd5da8",3359,3,"Niedersachsen","LK Stade",,,,3359
+"17d5f5b1",3101,3,"Niedersachsen","SK Braunschweig",,,,3101
+"f9044c26",5366,3,"Nordrhein-Westfalen","LK Euskirchen",,,,5366
+"fe69883f",5362,3,"Nordrhein-Westfalen","LK Rhein-Erft-Kreis",,,,5362
+"0a30d5b6",5978,3,"Nordrhein-Westfalen","LK Unna",,,,5978
+"cbb8abb8",5913,3,"Nordrhein-Westfalen","SK Dortmund",,,,5913
+"c2a252dc",5513,3,"Nordrhein-Westfalen","SK Gelsenkirchen",,,,5513
+"c169a348",1051,3,"Schleswig-Holstein","LK Dithmarschen",,,,1051
+"6a4d477a",8426,3,"Baden-Württemberg","LK Biberach",,,,8426
+"ef103104",8335,3,"Baden-Württemberg","LK Konstanz",,,,8335
+"4280ac12",8212,3,"Baden-Württemberg","SK Karlsruhe",,,,8212
+"3cbd1da5",9679,3,"Bayern","LK Würzburg",,,,9679
+"2abfcee1",9761,3,"Bayern","SK Augsburg",,,,9761
+"2e32b253",9161,3,"Bayern","SK Ingolstadt",,,,9161
+"c4b1afcd",9763,3,"Bayern","SK Kempten",,,,9763
+"e740fc53",11004,3,"Berlin","SK Berlin Charlottenburg-Wilmersdorf",,,,11004
+"e06721e9",6633,3,"Hessen","LK Kassel",,,,6633
+"8728b4b6",3353,3,"Niedersachsen","LK Harburg",,,,3353
+"32989a3e",5758,3,"Nordrhein-Westfalen","LK Herford",,,,5758
+"3615e68c",5158,3,"Nordrhein-Westfalen","LK Mettmann",,,,5158
+"0e75708e",5770,3,"Nordrhein-Westfalen","LK Minden-Lübbecke",,,,5770
+"2f28e79e",5711,3,"Nordrhein-Westfalen","SK Bielefeld",,,,5711
+"912222c7",14625,3,"Sachsen","LK Bautzen",,,,14625
+"52aebe06",14713,3,"Sachsen","SK Leipzig",,,,14713
+"77db0a89",8236,3,"Baden-Württemberg","LK Enzkreis",,,,8236
+"00dc3a1f",8237,3,"Baden-Württemberg","LK Freudenstadt",,,,8237
+"45ed680b",8216,3,"Baden-Württemberg","LK Rastatt",,,,8216
+"6f0251ff",8326,3,"Baden-Württemberg","LK Schwarzwald-Baar-Kreis",,,,8326
+"db89fda8",8211,3,"Baden-Württemberg","SK Baden-Baden",,,,8211
+"de2e4ae2",9573,3,"Bayern","LK Fürth",,,,9573
+"33c09365",9375,3,"Bayern","LK Regensburg",,,,9375
+"58938437",9464,3,"Bayern","SK Hof",,,,9464
+"c03cd37f",9163,3,"Bayern","SK Rosenheim",,,,9163
+"74312c0f",6438,3,"Hessen","LK Offenbach",,,,6438
+"188e4b22",3254,3,"Niedersachsen","LK Hildesheim",,,,3254
+"1673f343",3405,3,"Niedersachsen","SK Wilhelmshaven",,,,3405
+"31b0fb1f",5954,3,"Nordrhein-Westfalen","LK Ennepe-Ruhr-Kreis",,,,5954
+"fd893094",5566,3,"Nordrhein-Westfalen","LK Steinfurt",,,,5566
+"0df1a4e0",5570,3,"Nordrhein-Westfalen","LK Warendorf",,,,5570
+"c5abfa00",5113,3,"Nordrhein-Westfalen","SK Essen",,,,5113
+"28d5dec6",7232,3,"Rheinland-Pfalz","LK Bitburg-Prüm",,,,7232
+"246be4a7",14612,3,"Sachsen","SK Dresden",,,,14612
+"778ac420",16051,3,"Thüringen","SK Erfurt",,,,16051
+"d8694503",8415,3,"Baden-Württemberg","LK Reutlingen",,,,8415
+"18056169",8327,3,"Baden-Württemberg","LK Tuttlingen",,,,8327
+"2ed50a7e",9186,3,"Bayern","LK Pfaffenhofen a.d.Ilm",,,,9186
+"aac9c2df",9376,3,"Bayern","LK Schwandorf",,,,9376
+"2b7da4d6",9661,3,"Bayern","SK Aschaffenburg",,,,9661
+"c7357ba3",9563,3,"Bayern","SK Fürth",,,,9563
+"9047ccc5",11005,3,"Berlin","SK Berlin Spandau",,,,11005
+"cade31f5",12071,3,"Brandenburg","LK Spree-Neiße",,,,12071
+"53d7604f",12072,3,"Brandenburg","LK Teltow-Fläming",,,,12072
+"eb6b072a",13072,3,"Mecklenburg-Vorpommern","LK Rostock",,,,13072
+"6b040706",3455,3,"Niedersachsen","LK Friesland",,,,3455
+"d2f3fb07",10042,3,"Saarland","LK Merzig-Wadern",,,,10042
+"1b81b507",8127,3,"Baden-Württemberg","LK Schwäbisch Hall",,,,8127
+"4743779d",9174,3,"Bayern","LK Dachau",,,,9174
+"3bb4b579",9279,3,"Bayern","LK Dingolfing-Landau",,,,9279
+"3d7f7792",9779,3,"Bayern","LK Donau-Ries",,,,9779
+"de4a2627",9177,3,"Bayern","LK Erding",,,,9177
+"c7b6af4b",9180,3,"Bayern","LK Garmisch-Partenkirchen",,,,9180
+"db615c67",9273,3,"Bayern","LK Kelheim",,,,9273
+"4505c9c4",9274,3,"Bayern","LK Landshut",,,,9274
+"adc06a03",9776,3,"Bayern","LK Lindau",,,,9776
+"db0530a2",9677,3,"Bayern","LK Main-Spessart",,,,9677
+"374defd7",9575,3,"Bayern","LK Neustadt a.d.Aisch-Bad Windsheim",,,,9575
+"dc0c987e",9277,3,"Bayern","LK Rottal-Inn",,,,9277
+"4cb385ef",9278,3,"Bayern","LK Straubing-Bogen",,,,9278
+"8e31399d",11011,3,"Berlin","SK Berlin Lichtenberg",,,,11011
+"094e9d7f",11006,3,"Berlin","SK Berlin Steglitz-Zehlendorf",,,,11006
+"4acc510e",12062,3,"Brandenburg","LK Elbe-Elster",,,,12062
+"4da19517",12066,3,"Brandenburg","LK Oberspreewald-Lausitz",,,,12066
+"0bd2c7c4",4012,3,"Bremen","SK Bremerhaven",,,,4012
+"0e6940c5",6631,3,"Hessen","LK Fulda",,,,6631
+"7c450a13",6534,3,"Hessen","LK Marburg-Biedenkopf",,,,6534
+"d1d59705",6413,3,"Hessen","SK Offenbach",,,,6413
+"4fb102a6",6414,3,"Hessen","SK Wiesbaden",,,,6414
+"1c033790",3454,3,"Niedersachsen","LK Emsland",,,,3454
+"15b57bbb",3458,3,"Niedersachsen","LK Oldenburg",,,,3458
+"6174c3d5",3404,3,"Niedersachsen","SK Osnabrück",,,,3404
+"b5a5624a",5512,3,"Nordrhein-Westfalen","SK Bottrop",,,,5512
+"55dc3e1b",5914,3,"Nordrhein-Westfalen","SK Hagen",,,,5914
+"5af99410",7137,3,"Rheinland-Pfalz","LK Mayen-Koblenz",,,,7137
+"ca468981",7138,3,"Rheinland-Pfalz","LK Neuwied",,,,7138
+"a5f4cb91",10043,3,"Saarland","LK Neunkirchen",,,,10043
+"4c976ea4",10045,3,"Saarland","LK Saar-Pfalz-Kreis",,,,10045
+"3b905e32",10044,3,"Saarland","LK Saarlouis",,,,10044
+"4bfaaabd",10041,3,"Saarland","LK Stadtverband Saarbrücken",,,,10041
+"082b737d",14626,3,"Sachsen","LK Görlitz",,,,14626
+"995604db",14729,3,"Sachsen","LK Leipzig",,,,14729
+"280a067d",1057,3,"Schleswig-Holstein","LK Plön",,,,1057
+"011e5028",8337,3,"Baden-Württemberg","LK Waldshut",,,,8337
+"e9bf9f2a",8231,3,"Baden-Württemberg","SK Pforzheim",,,,8231
+"34ad577c",9371,3,"Bayern","LK Amberg-Sulzbach",,,,9371
+"a8eb1043",9472,3,"Bayern","LK Bayreuth",,,,9472
+"4188b576",9474,3,"Bayern","LK Forchheim",,,,9474
+"350b518e",9675,3,"Bayern","LK Kitzingen",,,,9675
+"daa33650",9373,3,"Bayern","LK Neumarkt i.d.OPf.",,,,9373
+"ddcef249",9377,3,"Bayern","LK Tirschenreuth",,,,9377
+"b57d5db0",9262,3,"Bayern","SK Passau",,,,9262
+"c3b80711",9363,3,"Bayern","SK Weiden i.d.OPf.",,,,9363
+"99f180ee",11009,3,"Berlin","SK Berlin Treptow-Köpenick",,,,11009
+"a4c23022",12060,3,"Brandenburg","LK Barnim",,,,12060
+"a3aff43b",12064,3,"Brandenburg","LK Märkisch-Oderland",,,,12064
+"3aa6a581",12067,3,"Brandenburg","LK Oder-Spree",,,,12067
+"93890108",6436,3,"Hessen","LK Main-Taunus-Kreis",,,,6436
+"d32da17b",13003,3,"Mecklenburg-Vorpommern","SK Rostock",,,,13003
+"f56092a5",3452,3,"Niedersachsen","LK Aurich",,,,3452
+"68e4bfad",3251,3,"Niedersachsen","LK Diepholz",,,,3251
+"f1edee17",3252,3,"Niedersachsen","LK Hameln-Pyrmont",,,,3252
+"f7424039",3356,3,"Niedersachsen","LK Osterholz",,,,3356
+"420b8659",3361,3,"Niedersachsen","LK Verden",,,,3361
+"3806b734",5958,3,"Nordrhein-Westfalen","LK Hochsauerlandkreis",,,,5958
+"3fa3aaa7",5154,3,"Nordrhein-Westfalen","LK Kleve",,,,5154
+"0918b497",5774,3,"Nordrhein-Westfalen","LK Paderborn",,,,5774
+"fae4f48d",5562,3,"Nordrhein-Westfalen","LK Recklinghausen",,,,5562
+"04eb5d84",5970,3,"Nordrhein-Westfalen","LK Siegen-Wittgenstein",,,,5970
+"0386999d",5974,3,"Nordrhein-Westfalen","LK Soest",,,,5974
+"5bcf6fa3",5114,3,"Nordrhein-Westfalen","SK Krefeld",,,,5114
+"b645dae1",5316,3,"Nordrhein-Westfalen","SK Leverkusen",,,,5316
+"778ff879",5120,3,"Nordrhein-Westfalen","SK Remscheid",,,,5120
+"99819955",5122,3,"Nordrhein-Westfalen","SK Solingen",,,,5122
+"5d945009",7133,3,"Rheinland-Pfalz","LK Bad Kreuznach",,,,7133
+"b1dc8f7c",7231,3,"Rheinland-Pfalz","LK Bernkastel-Wittlich",,,,7231
+"8bdc9774",7140,3,"Rheinland-Pfalz","LK Rhein-Hunsrück-Kreis",,,,7140
+"5fd2ee50",7233,3,"Rheinland-Pfalz","LK Vulkaneifel",,,,7233
+"12d5c6ce",7143,3,"Rheinland-Pfalz","LK Westerwaldkreis",,,,7143
+"822887c9",7311,3,"Rheinland-Pfalz","SK Frankenthal",,,,7311
+"7f2c43eb",14627,3,"Sachsen","LK Meißen",,,,14627
+"bf240b44",14511,3,"Sachsen","SK Chemnitz",,,,14511
+"a0fbe10c",15084,3,"Sachsen-Anhalt","LK Burgenlandkreis",,,,15084
+"a94dad27",15088,3,"Sachsen-Anhalt","LK Saalekreis",,,,15088
+"de4a9db1",15089,3,"Sachsen-Anhalt","LK Salzlandkreis",,,,15089
+"8141ce31",15002,3,"Sachsen-Anhalt","SK Halle",,,,15002
+"f646fea7",15003,3,"Sachsen-Anhalt","SK Magdeburg",,,,15003
+"c6046751",1055,3,"Schleswig-Holstein","LK Ostholstein",,,,1055
+"251706b7",1002,3,"Schleswig-Holstein","SK Kiel",,,,1002
+"32bb9634",16070,3,"Thüringen","LK Ilm-Kreis",,,,16070
+"5bca53fa",16065,3,"Thüringen","LK Kyffhäuserkreis",,,,16065
+"35d6522d",16074,3,"Thüringen","LK Saale-Holzland-Kreis",,,,16074
+"e9ee5183",16056,3,"Thüringen","SK Eisenach",,,,16056
+"70e70039",16055,3,"Thüringen","SK Weimar",,,,16055
+"32669597",9671,3,"Bayern","LK Aschaffenburg",,,,9671
+"aaadae1a",9772,3,"Bayern","LK Augsburg",,,,9772
+"d927e23e",9173,3,"Bayern","LK Bad Tölz-Wolfratshausen",,,,9173
+"31e241f9",9471,3,"Bayern","LK Bamberg",,,,9471
+"356f3d4b",9271,3,"Bayern","LK Deggendorf",,,,9271
+"420c6118",9674,3,"Bayern","LK Haßberge",,,,9674
+"368f85e0",9475,3,"Bayern","LK Hof",,,,9475
+"4bba2d33",9678,3,"Bayern","LK Schweinfurt",,,,9678
+"4a784704",9778,3,"Bayern","LK Unterallgäu",,,,9778
+"d9438efb",9577,3,"Bayern","LK Weißenburg-Gunzenhausen",,,,9577
+"b3b69f5b",9762,3,"Bayern","SK Kaufbeuren",,,,9762
+"b4bf3787",9362,3,"Bayern","SK Regensburg",,,,9362
+"c27a6d26",9263,3,"Bayern","SK Straubing",,,,9263
+"61e102cd",12052,3,"Brandenburg","SK Cottbus",,,,12052
+"35ab32fa",6440,3,"Hessen","LK Wetteraukreis",,,,6440
+"3c5f2247",6611,3,"Hessen","SK Kassel",,,,6611
+"4d4934d8",13004,3,"Mecklenburg-Vorpommern","SK Schwerin",,,,13004
+"8267a233",3453,3,"Niedersachsen","LK Cloppenburg",,,,3453
+"6aa201f4",3151,3,"Niedersachsen","LK Gifhorn",,,,3151
+"6f897bb4",3255,3,"Niedersachsen","LK Holzminden",,,,3255
+"6e4b1183",3355,3,"Niedersachsen","LK Lüneburg",,,,3355
+"f6802a0e",3256,3,"Niedersachsen","LK Nienburg (Weser)",,,,3256
+"6dcfc5ed",3155,3,"Niedersachsen","LK Northeim",,,,3155
+"350cb6cf",3360,3,"Niedersachsen","LK Uelzen",,,,3360
+"3043a04a",3460,3,"Niedersachsen","LK Vechta",,,,3460
+"de4dc166",3462,3,"Niedersachsen","LK Wittmund",,,,3462
+"881766e0",3402,3,"Niedersachsen","SK Emden",,,,3402
+"8edca40b",3102,3,"Niedersachsen","SK Salzgitter",,,,3102
+"3b2ed615",5754,3,"Nordrhein-Westfalen","LK Gütersloh",,,,5754
+"f493c9f0",5966,3,"Nordrhein-Westfalen","LK Olpe",,,,5966
+"bbd25f37",5916,3,"Nordrhein-Westfalen","SK Herne",,,,5916
+"c2c63e19",5117,3,"Nordrhein-Westfalen","SK Mülheim a.d.Ruhr",,,,5117
+"257e131e",5119,3,"Nordrhein-Westfalen","SK Oberhausen",,,,5119
+"70e23c60",5124,3,"Nordrhein-Westfalen","SK Wuppertal",,,,5124
+"b7732152",7335,3,"Rheinland-Pfalz","LK Kaiserslautern",,,,7335
+"bec56d79",7339,3,"Rheinland-Pfalz","LK Mainz-Bingen",,,,7339
+"fcdba7e2",7141,3,"Rheinland-Pfalz","LK Rhein-Lahn-Kreis",,,,7141
+"f2427346",7314,3,"Rheinland-Pfalz","SK Ludwigshafen",,,,7314
+"1c4c126a",7316,3,"Rheinland-Pfalz","SK Neustadt a.d.Weinstraße",,,,7316
+"49984439",15082,3,"Sachsen-Anhalt","LK Anhalt-Bitterfeld",,,,15082
+"3e9f74af",15083,3,"Sachsen-Anhalt","LK Börde",,,,15083
+"39f2b0b6",15087,3,"Sachsen-Anhalt","LK Mansfeld-Südharz",,,,15087
+"b8b51bec",1058,3,"Schleswig-Holstein","LK Rendsburg-Eckernförde",,,,1058
+"cfb22b7a",1059,3,"Schleswig-Holstein","LK Schleswig-Flensburg",,,,1059
+"ee83959a",16052,3,"Thüringen","SK Gera",,,,16052
+"ec94e56a",8135,3,"Baden-Württemberg","LK Heidenheim",,,,8135
+"ae20d2a8",9172,3,"Bayern","LK Berchtesgadener Land",,,,9172
+"a94d16b1",9176,3,"Bayern","LK Eichstätt",,,,9176
+"ac666cf1",9272,3,"Bayern","LK Freyung-Grafenau",,,,9272
+"43ce0b2f",9774,3,"Bayern","LK Günzburg",,,,9774
+"d881e4cc",9477,3,"Bayern","LK Kulmbach",,,,9477
+"ac020034",9676,3,"Bayern","LK Miltenberg",,,,9676
+"404adf41",9574,3,"Bayern","LK Nürnberger Land",,,,9574
+"ab0ba8e8",9276,3,"Bayern","LK Regen",,,,9276
+"dc68f4bb",9673,3,"Bayern","LK Rhön-Grabfeld",,,,9673
+"28f970b8",9461,3,"Bayern","SK Bamberg",,,,9461
+"2c740c0a",9261,3,"Bayern","SK Landshut",,,,9261
+"d3c500b4",12061,3,"Brandenburg","LK Dahme-Spreewald",,,,12061
+"dd1e8886",12069,3,"Brandenburg","LK Potsdam-Mittelmark",,,,12069
+"94e4c511",6432,3,"Hessen","LK Darmstadt-Dieburg",,,,6432
+"9760117f",6632,3,"Hessen","LK Hersfeld-Rotenburg",,,,6632
+"7e03b44a",6634,3,"Hessen","LK Schwalm-Eder-Kreis",,,,6634
+"647989c6",3159,3,"Niedersachsen","LK Göttingen",,,,3159
+"81871a98",3257,3,"Niedersachsen","LK Schaumburg",,,,3257
+"22db0e8d",5915,3,"Nordrhein-Westfalen","SK Hamm",,,,5915
+"b39a3125",7131,3,"Rheinland-Pfalz","LK Ahrweiler",,,,7131
+"2a93609f",7132,3,"Rheinland-Pfalz","LK Altenkirchen",,,,7132
+"b01ee54b",7331,3,"Rheinland-Pfalz","LK Alzey-Worms",,,,7331
+"b4f7f53c",7135,3,"Rheinland-Pfalz","LK Cochem-Zell",,,,7135
+"5e108467",7333,3,"Rheinland-Pfalz","LK Donnersbergkreis",,,,7333
+"2e7a70e8",7336,3,"Rheinland-Pfalz","LK Kusel",,,,7336
+"c9c25def",7338,3,"Rheinland-Pfalz","LK Rhein-Pfalz-Kreis",,,,7338
+"597d407e",7337,3,"Rheinland-Pfalz","LK Südliche Weinstraße",,,,7337
+"83eaedfe",7211,3,"Rheinland-Pfalz","SK Trier",,,,7211
+"d59e3f1e",10046,3,"Saarland","LK Sankt Wendel",,,,10046
+"f9918d3e",14730,3,"Sachsen","LK Nordsachsen",,,,14730
+"e463ac08",14524,3,"Sachsen","LK Zwickau",,,,14524
+"d0911583",15081,3,"Sachsen-Anhalt","LK Altmarkkreis Salzwedel",,,,15081
+"d7fcd19a",15085,3,"Sachsen-Anhalt","LK Harz",,,,15085
+"c98a24c2",15091,3,"Sachsen-Anhalt","LK Wittenberg",,,,15091
+"b10357c7",1054,3,"Schleswig-Holstein","LK Nordfriesland",,,,1054
+"abb2c78e",16073,3,"Thüringen","LK Saalfeld-Rudolstadt",,,,16073
+"c2c30240",16066,3,"Thüringen","LK Schmalkalden-Meiningen",,,,16066
+"af86d45a",9476,3,"Bayern","LK Kronach",,,,9476
+"483ef95d",9478,3,"Bayern","LK Lichtenfels",,,,9478
+"44c7a3f3",9374,3,"Bayern","LK Neustadt a.d.Waldnaab",,,,9374
+"2db6663d",9361,3,"Bayern","SK Amberg",,,,9361
+"5ad53a6e",9764,3,"Bayern","SK Memmingen",,,,9764
+"e2219fb0",6533,3,"Hessen","LK Limburg-Weilburg",,,,6533
+"3fdbf629",6411,3,"Hessen","SK Darmstadt",,,,6411
+"ec06c333",13076,3,"Mecklenburg-Vorpommern","LK Ludwigslust-Parchim",,,,13076
+"84ac60d8",3153,3,"Niedersachsen","LK Goslar",,,,3153
+"10fa6d3e",3358,3,"Niedersachsen","LK Heidekreis",,,,3358
+"1ac8f57b",3154,3,"Niedersachsen","LK Helmstedt",,,,3154
+"83c1a4c1",3157,3,"Niedersachsen","LK Peine",,,,3157
+"f9db949d",3103,3,"Niedersachsen","SK Wolfsburg",,,,3103
+"fbf43f6d",7318,3,"Rheinland-Pfalz","SK Speyer",,,,7318
+"94095887",14521,3,"Sachsen","LK Erzgebirgskreis",,,,14521
+"0d00093d",14522,3,"Sachsen","LK Mittelsachsen",,,,14522
+"4ef58020",15086,3,"Sachsen-Anhalt","LK Jerichower Land",,,,15086
+"ea44f08b",1061,3,"Schleswig-Holstein","LK Steinburg",,,,1061
+"acdf0397",16077,3,"Thüringen","LK Altenburger Land",,,,16077
+"5ca797e3",16061,3,"Thüringen","LK Eichsfeld",,,,16061
+"c5aec659",16062,3,"Thüringen","LK Nordhausen",,,,16062
+"07e030af",16054,3,"Thüringen","SK Suhl",,,,16054
+"dfec20d5",9473,3,"Bayern","LK Coburg",,,,9473
+"b7dc5bc4",9185,3,"Bayern","LK Neuburg-Schrobenhausen",,,,9185
+"e48e319e",6437,3,"Hessen","LK Odenwaldkreis",,,,6437
+"f96020e3",5762,3,"Nordrhein-Westfalen","LK Höxter",,,,5762
+"b6b14b65",7235,3,"Rheinland-Pfalz","LK Trier-Saarburg",,,,7235
+"6c26e6e5",7313,3,"Rheinland-Pfalz","SK Landau i.d.Pfalz",,,,7313
+"8cf30ffb",7319,3,"Rheinland-Pfalz","SK Worms",,,,7319
+"bc1e570d",1001,3,"Schleswig-Holstein","SK Flensburg",,,,1001
+"b5c432d6",16067,3,"Thüringen","LK Gotha",,,,16067
+"dbd83301",16076,3,"Thüringen","LK Greiz",,,,16076
+"b2a9f6cf",16063,3,"Thüringen","LK Wartburgkreis",,,,16063
+"9984a50c",16053,3,"Thüringen","SK Jena",,,,16053
+"30202bce",9571,3,"Bayern","LK Ansbach",,,,9571
+"3f39c9cb",9479,3,"Bayern","LK Wunsiedel i.Fichtelgebirge",,,,9479
+"293b1a8f",9561,3,"Bayern","SK Ansbach",,,,9561
+"f8e85377",12051,3,"Brandenburg","SK Brandenburg a.d.Havel",,,,12051
+"7a0739ab",14523,3,"Sachsen","LK Vogtlandkreis",,,,14523
+"c6f71194",9463,3,"Bayern","SK Coburg",,,,9463
+"900dd566",6636,3,"Hessen","LK Werra-Meißner-Kreis",,,,6636
+"0208a21f",13074,3,"Mecklenburg-Vorpommern","LK Nordwestmecklenburg",,,,13074
+"c3f0c5aa",7134,3,"Rheinland-Pfalz","LK Birkenfeld",,,,7134
+"8858431a",7340,3,"Rheinland-Pfalz","LK Südwestpfalz",,,,7340
+"be8d1454",15090,3,"Sachsen-Anhalt","LK Stendal",,,,15090
+"18489f8b",15001,3,"Sachsen-Anhalt","SK Dessau-Roßlau",,,,15001
+"cc74a382",1004,3,"Schleswig-Holstein","SK Neumünster",,,,1004
+"2ccd636c",16064,3,"Thüringen","LK Unstrut-Hainich-Kreis",,,,16064
+"45bca6a2",16071,3,"Thüringen","LK Weimarer Land",,,,16071
+"37298312",9171,3,"Bayern","LK Altötting",,,,9171
+"5ebffef1",9183,3,"Bayern","LK Mühldorf a.Inn",,,,9183
+"b274f56c",9662,3,"Bayern","SK Schweinfurt",,,,9662
+"bdd90163",12070,3,"Brandenburg","LK Prignitz",,,,12070
+"24d050d9",12073,3,"Brandenburg","LK Uckermark",,,,12073
+"16e6325b",12053,3,"Brandenburg","SK Frankfurt (Oder)",,,,12053
+"8882a7f8",12054,3,"Brandenburg","SK Potsdam",,,,12054
+"137eb950",3158,3,"Niedersachsen","LK Wolfenbüttel",,,,3158
+"ddaa9e8c",9773,3,"Bayern","LK Dillingen a.d.Donau",,,,9773
+"b1f02102",9462,3,"Bayern","SK Bayreuth",,,,9462
+"aa19b810",12068,3,"Brandenburg","LK Ostprignitz-Ruppin",,,,12068
+"474490dc",3461,3,"Niedersachsen","LK Wesermarsch",,,,3461
+"194c2115",3354,3,"Niedersachsen","LK Lüchow-Dannenberg",,,,3354
+"6b4b22fc",7317,3,"Rheinland-Pfalz","SK Pirmasens",,,,7317
+"257b2f47",16068,3,"Thüringen","LK Sömmerda",,,,16068
+"de02e49c",7320,3,"Rheinland-Pfalz","SK Zweibrücken",,,,7320
+"527c1fd1",16069,3,"Thüringen","LK Hildburghausen",,,,16069
+"dcb5f718",16072,3,"Thüringen","LK Sonneberg",,,,16072
