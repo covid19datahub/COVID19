@@ -1,5 +1,8 @@
 --- 
 authors: 
+  ? "David Ardia"
+  : 
+    href: "https://ardiad.github.io"
   ? "Emanuele Guidotti"
   : 
     href: "https://guidotti.dev"

@@ -39,11 +39,13 @@ covid19peru_git <- function(level, cache) {
             "fecha"                = "date",
             "hospitalizados"       = "hosp",
             "ventilacion_mecanica" = "vent"
-            # "uci"                  = "icu"
         ))
         
         # convert date
         hosp$date <- as.Date(hosp$date)
+        
+        # add icu
+        hosp$icu <- hosp$vent
         
         # merge
         x <- merge(x, hosp, by = "date", all = TRUE)
