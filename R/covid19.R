@@ -276,8 +276,8 @@ covid19 <- function(country = NULL,
   }
   
   # severe
-  idx <- which(is.na(x$severe) | x$severe==0)
-  x$severe[idx] <- x$icu[idx] + x$vent[idx]
+  # idx <- which(is.na(x$severe) | x$severe==0)
+  # x$severe[idx] <- x$icu[idx] + x$vent[idx]
   
   # subset
   cn <- colnames(x)

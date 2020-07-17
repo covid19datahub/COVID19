@@ -1,3 +1,9 @@
+# COVID19 2.2.0 (2020-07-17)
+
+## Major changes
+
+* drop `severe` cases (equivalent to `icu`)
+
 # COVID19 2.0.0 (2020-06-21)
 
 ## Major changes

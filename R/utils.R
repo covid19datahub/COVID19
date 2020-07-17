@@ -109,8 +109,8 @@ vars <- function(type = NULL){
     'numeric' = 'deaths',
     'numeric' = 'hosp',
     'numeric' = 'vent',
-    'numeric' = 'icu',
-    'numeric' = 'severe'
+    'numeric' = 'icu'
+    # 'numeric' = 'severe'
   )
   
   measures <- c(

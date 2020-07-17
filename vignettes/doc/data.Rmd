@@ -28,7 +28,6 @@ Download the data [here](/articles/data.html)
 | `hosp`                                | Number of hospitalized patients on date.                     |
 | `icu`                                 | Number of hospitalized patients in ICUs on date.             |
 | `vent`                                | Number of patients requiring invasive ventilation on date.   |
-| `severe`                                | Number of severe cases on date. Sum of `icu` and `vent`.   |
 | `population`                                 | Total population.                                            |
 
 
