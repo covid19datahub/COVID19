@@ -1,4 +1,4 @@
-covidtracking_com <- function(cache,level){
+covidtracking_com <- function(cache){
 # Author: Montemurro Paolo
   
   # source

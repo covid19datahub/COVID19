@@ -1,4 +1,4 @@
-nytimes_git <- function(cache, level){
+nytimes_git <- function(cache, level, fips = NULL){
 
   # source
   repo <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/" 
@@ -30,6 +30,10 @@ nytimes_git <- function(cache, level){
   
   # date
   x$date <- as.Date(x$date, format = "%Y-%m-%d")
+  
+  # filter
+  if(!is.null(fips))
+    x <- x[which(x$fips==fips),]
   
   # return
   return(x) 

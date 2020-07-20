@@ -14,7 +14,7 @@ USA <- function(level, cache){
   if(level==2){
 
     # download
-    x <- covidtracking_com(cache = cache, level = level) 
+    x <- covidtracking_com(cache = cache) 
     
     # id
     x$id <- id(x$state, iso = "USA", ds = "covidtracking_com", level = level)
