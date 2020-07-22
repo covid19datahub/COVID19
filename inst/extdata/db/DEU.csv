@@ -1,0 +1,429 @@
+"id","id_gov_de","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric"
+"27ab265e",9,2,"Bayern",,48.7904,11.4979,,9
+"c77ecf40",3,2,"Niedersachsen",,52.6367,9.8451,,3
+"2e1d6a75",5,2,"Nordrhein-Westfalen",,51.4332,7.6616,,5
+"50ac16c8",8,2,"Baden-Württemberg",,48.6616,9.3501,,8
+"b079ffd6",2,2,"Hamburg",,53.5511,9.9937,,2
+"b7143bcf",6,2,"Hessen",,50.6521,9.1624,,6
+"c0130b59",7,2,"Rheinland-Pfalz",,50.1183,7.309,,7
+"2970ae6c",1,2,"Schleswig-Holstein",,54.2194,9.6961,,1
+"5cbe5d89",12,2,"Brandenburg",,52.4125,12.5316,,12
+"591a5ae3",4,2,"Bremen",,53.0793,8.8017,,4
+"b5ddf8bc",14,2,"Sachsen",,51.1045,0.2017,,14
+"c5b70c33",11,2,"Berlin",,52.52,13.405,,11
+"2bb96d1f",13,2,"Mecklenburg-Vorpommern",,53.6127,12.4296,,13
+"5bd39990",16,2,"Thüringen",,51.011,10.8453,,16
+"b2b03ca5",10,2,"Saarland",,49.3964,7.023,,10
+"c2dac82a",15,2,"Sachsen-Anhalt",,51.9503,11.6923,,15
+"b0b19fdd",9181,3,"Bayern","LK Landsberg a.Lech",48.0244353759,10.9487346774,,9181
+"c96d2779",9188,3,"Bayern","LK Starnberg",48.0060469771,11.2817326717,,9188
+"39f20b20",9179,3,"Bayern","LK Fürstenfeldbruck",48.1877932949,11.2010776242,,9179
+"b73be3e9",9162,3,"Bayern","SK München",48.1532131611,11.5472441841,,9162
+"be6a17ef",9189,3,"Bayern","LK Traunstein",47.8945427587,12.5795750694,,9189
+"c0db6b52",9184,3,"Bayern","LK München",48.0744744023,11.6313680405,,9184
+"111e375a",3401,3,"Niedersachsen","SK Delmenhorst",53.0494043992,8.64568293102,,3401
+"4ef53bb6",9178,3,"Bayern","LK Freising",48.4473569802,11.7406716932,,9178
+"2f4c8b5b",5315,3,"Nordrhein-Westfalen","SK Köln",50.9456668791,6.97321855167,,5315
+"7356763b",8436,3,"Baden-Württemberg","LK Ravensburg",47.8250441153,9.77989455833,,8436
+"30ace6c4",8117,3,"Baden-Württemberg","LK Göppingen",48.6631483606,9.71750497706,,8117
+"416014b9",8416,3,"Baden-Württemberg","LK Tübingen",48.481737902,8.98763400076,,8416
+"dd265386",8315,3,"Baden-Württemberg","LK Breisgau-Hochschwarzwald",47.9249093559,7.92494089685,,8315
+"f60b0045",8325,3,"Baden-Württemberg","LK Rottweil",48.254220293,8.53235133177,,8325
+"da4b979f",8311,3,"Baden-Württemberg","SK Freiburg i.Breisgau",47.9925229956,7.81807596197,,8311
+"097cd852",5370,3,"Nordrhein-Westfalen","LK Heinsberg",51.0493489074,6.16411292416,,5370
+"dea287e8",8115,3,"Baden-Württemberg","LK Böblingen",48.6782256288,8.9427773012,,8115
+"a013fb55",8118,3,"Baden-Württemberg","LK Ludwigsburg",48.940602979,9.12434425665,,8118
+"b0324b35",9562,3,"Bayern","SK Erlangen",49.5823292133,10.9781449629,,9562
+"f34416c0",8425,3,"Baden-Württemberg","LK Alb-Donau-Kreis",48.4017114301,9.82744714375,,8425
+"f58fd42b",8125,3,"Baden-Württemberg","LK Heilbronn",49.177198517,9.19077872323,,8125
+"759db4d0",8136,3,"Baden-Württemberg","LK Ostalbkreis",48.877525969,10.0901573582,,8136
+"6ec03bc8",8226,3,"Baden-Württemberg","LK Rhein-Neckar-Kreis",49.3684849338,8.76708442595,,8226
+"d9acc875",2000,3,"Hamburg","SK Hamburg",53.5463773461,10.0207944156,,2000
+"0c2ffe9c",6531,3,"Hessen","LK Gießen",50.5702779049,8.80751371735,,6531
+"f3fe0de9",5962,3,"Nordrhein-Westfalen","LK Märkischer Kreis",51.2626114418,7.71300809906,,5962
+"fa809848",5166,3,"Nordrhein-Westfalen","LK Viersen",51.2828202383,6.32612051327,,5166
+"0af80c3c",5170,3,"Nordrhein-Westfalen","LK Wesel",51.6270425398,6.61836262868,,5170
+"584bbbcd",5314,3,"Nordrhein-Westfalen","SK Bonn",50.7057346173,7.10983940994,,5314
+"b5c10e8f",5116,3,"Nordrhein-Westfalen","SK Mönchengladbach",51.1671935981,6.41197447381,,5116
+"6a7dd94f",5334,3,"Nordrhein-Westfalen","StadtRegion Aachen",50.7275046127,6.21672721805,,5334
+"1b21d673",7312,3,"Rheinland-Pfalz","SK Kaiserslautern",49.4328526023,7.76067474783,,7312
+"9d43c01d",1060,3,"Schleswig-Holstein","LK Segeberg",53.9199857446,10.1409147199,,1060
+"dac75a95",9777,3,"Bayern","LK Ostallgäu",47.769959059,10.6397316342,,9777
+"59d23ae8",9187,3,"Bayern","LK Rosenheim",47.8783797472,12.162753976,,9187
+"52103621",1003,3,"Schleswig-Holstein","SK Lübeck",53.8723167338,10.7272831058,,1003
+"f2e21032",8121,3,"Baden-Württemberg","SK Heilbronn",49.1527195922,9.18234690067,,8121
+"2e56de96",9565,3,"Bayern","SK Schwabach",49.3356205083,11.0235125889,,9565
+"d4a8c4ad",12065,3,"Brandenburg","LK Oberhavel",52.9068326453,13.2053022184,,12065
+"92db967e",4011,3,"Bremen","SK Bremen",53.1195434664,8.78049374679,,4011
+"e3e3f587",6433,3,"Hessen","LK Groß-Gerau",49.9045086093,8.47025247743,,6433
+"9526af26",6532,3,"Hessen","LK Lahn-Dill-Kreis",50.6482687297,8.36532824,,6532
+"71ff8eec",3241,3,"Niedersachsen","Region Hannover",52.4219370696,9.71979904802,,3241
+"359132e2",5358,3,"Nordrhein-Westfalen","LK Düren",50.8178950546,6.44556160998,,5358
+"b2acca96",5112,3,"Nordrhein-Westfalen","SK Duisburg",51.439615769,6.73469184999,,5112
+"2bc1f7e9",5515,3,"Nordrhein-Westfalen","SK Münster",51.954316786,7.62364679497,,5515
+"3667242f",8417,3,"Baden-Württemberg","LK Zollernalbkreis",48.2672389069,8.93742839835,,8417
+"69adffd1",8222,3,"Baden-Württemberg","SK Mannheim",49.4994190357,8.50032443773,,8222
+"3044470b",9175,3,"Bayern","LK Ebersberg",48.0761776106,11.9131721198,,9175
+"5951ee00",9564,3,"Bayern","SK Nürnberg",49.4362114486,11.0827553426,,9564
+"7d876024",6434,3,"Hessen","LK Hochtaunuskreis",50.2816152547,8.50464605826,,6434
+"a6d2a793",6412,3,"Hessen","SK Frankfurt am Main",50.117968104,8.64419039448,,6412
+"f02f8420",3352,3,"Niedersachsen","LK Cuxhaven",53.6165865049,8.81238237187,,3352
+"38aa027b",5554,3,"Nordrhein-Westfalen","LK Borken",51.9613198354,6.89961561244,,5554
+"fded5c51",5162,3,"Nordrhein-Westfalen","LK Rhein-Kreis Neuss",51.1435712356,6.64932316692,,5162
+"07a75060",5378,3,"Nordrhein-Westfalen","LK Rheinisch-Bergischer Kreis",51.0230044262,7.19484653806,,5378
+"ef935e7a",14628,3,"Sachsen","LK Sächsische Schweiz-Osterzgebirge",50.9167179421,13.8734340504,,14628
+"2f67c264",1053,3,"Schleswig-Holstein","LK Herzogtum Lauenburg",53.5890024203,10.6018592215,,1053
+"734da131",1062,3,"Schleswig-Holstein","LK Stormarn",53.7208005726,10.3316398811,,1062
+"47abd652",8116,3,"Baden-Württemberg","LK Esslingen",48.6480216763,9.36916572775,,8116
+"dce439b1",8215,3,"Baden-Württemberg","LK Karlsruhe",49.0818849258,8.56279664203,,8215
+"761960be",8336,3,"Baden-Württemberg","LK Lörrach",47.703504023,7.77402882816,,8336
+"f7c96a72",8225,3,"Baden-Württemberg","LK Neckar-Odenwald-Kreis",49.4666097739,9.28011000163,,8225
+"d714cbc3",8119,3,"Baden-Württemberg","LK Rems-Murr-Kreis",48.899008131,9.50121295556,,8119
+"f429d2d9",8421,3,"Baden-Württemberg","SK Ulm",48.3908327419,9.9500211353,,8421
+"3202f952",9275,3,"Bayern","LK Passau",48.5586304532,13.3666035859,,9275
+"f936090b",11010,3,"Berlin","SK Berlin Marzahn-Hellersdorf",,,,11010
+"972a08dc",11001,3,"Berlin","SK Berlin Mitte",,,,11001
+"eef6b078",11008,3,"Berlin","SK Berlin Neukölln",,,,11008
+"7e49ade9",11007,3,"Berlin","SK Berlin Tempelhof-Schöneberg",,,,11007
+"0ded94ab",6431,3,"Hessen","LK Bergstraße",49.6177012221,8.66011611597,,6431
+"0a8050b2",6435,3,"Hessen","LK Main-Kinzig-Kreis",50.2438645181,9.28622299151,,6435
+"750f9289",13075,3,"Mecklenburg-Vorpommern","LK Vorpommern-Greifswald",53.7895111552,13.780696363,,13075
+"6c69c31f",3451,3,"Niedersachsen","LK Ammerland",53.2184881736,8.01326226621,,3451
+"804570af",3357,3,"Niedersachsen","LK Rotenburg (Wümme)",53.2507583937,9.30658483814,,3357
+"0e111c4b",5374,3,"Nordrhein-Westfalen","LK Oberbergischer Kreis",51.0127091971,7.51662881723,,5374
+"60eaa5b1",5382,3,"Nordrhein-Westfalen","LK Rhein-Sieg-Kreis",50.7606389137,7.23457302819,,5382
+"5f0d36eb",1056,3,"Schleswig-Holstein","LK Pinneberg",53.7180840651,9.73686669973,,1056
+"42d162bb",16075,3,"Thüringen","LK Saale-Orla-Kreis",50.5808480206,11.7105737336,,16075
+"ea5f2781",8435,3,"Baden-Württemberg","LK Bodenseekreis",47.7334602866,9.40077001359,,8435
+"442f023c",8316,3,"Baden-Württemberg","LK Emmendingen",48.1485120637,7.89755038202,,8316
+"8b3ea896",8128,3,"Baden-Württemberg","LK Main-Tauber-Kreis",49.5607007055,9.72508840096,,8128
+"332832aa",8317,3,"Baden-Württemberg","LK Ortenaukreis",48.4209719355,8.01621990932,,8317
+"045146ad",8437,3,"Baden-Württemberg","LK Sigmaringen",48.0391514971,9.24100350319,,8437
+"f0a4ae6b",8221,3,"Baden-Württemberg","SK Heidelberg",49.4055152955,8.69417184974,,8221
+"d9cf43f1",8111,3,"Baden-Württemberg","SK Stuttgart",48.7745339639,9.17206798796,,8111
+"33a4ffa0",9771,3,"Bayern","LK Aichach-Friedberg",48.4275701484,11.0527555565,,9771
+"ada406c6",9372,3,"Bayern","LK Cham",49.2370651553,12.6954795471,,9372
+"ae44be6d",9576,3,"Bayern","LK Roth",49.2029170864,11.1235654086,,9576
+"0e235966",11002,3,"Berlin","SK Berlin Friedrichshain-Kreuzberg",,,,11002
+"792469f0",11003,3,"Berlin","SK Berlin Pankow",,,,11003
+"72625690",13071,3,"Mecklenburg-Vorpommern","LK Mecklenburgische Seenplatte",53.5436927516,13.0024606209,,13071
+"9c6c37bc",13073,3,"Mecklenburg-Vorpommern","LK Vorpommern-Rügen",54.2842029523,12.9915254157,,13073
+"f20d56bc",3456,3,"Niedersachsen","LK Grafschaft Bentheim",52.4760534093,7.01985676166,,3456
+"850a662a",3457,3,"Niedersachsen","LK Leer",53.2435417357,7.46976164078,,3457
+"ff105676",3403,3,"Niedersachsen","SK Oldenburg",53.1445781697,8.22435903936,,3403
+"311c4e50",5558,3,"Nordrhein-Westfalen","LK Coesfeld",51.8668510417,7.36601223345,,5558
+"fe0de4fa",5766,3,"Nordrhein-Westfalen","LK Lippe",51.9814226536,8.95083727251,,5766
+"25b6ca94",5911,3,"Nordrhein-Westfalen","SK Bochum",51.469927372,7.22493523189,,5911
+"2ba59b2c",5111,3,"Nordrhein-Westfalen","SK Düsseldorf",51.235456959,6.81020262394,,5111
+"2917b4f1",7332,3,"Rheinland-Pfalz","LK Bad Dürkheim",49.4530205976,8.11030493729,,7332
+"c07411c4",7334,3,"Rheinland-Pfalz","LK Germersheim",49.1159081733,8.2461937699,,7334
+"81ac53a7",7111,3,"Rheinland-Pfalz","SK Koblenz",50.348516061,7.5795510239,,7111
+"854543d0",7315,3,"Rheinland-Pfalz","SK Mainz",49.9741865223,8.24149708463,,7315
+"eed25b33",8235,3,"Baden-Württemberg","LK Calw",48.6789990614,8.6357698286,,8235
+"6c868591",8126,3,"Baden-Württemberg","LK Hohenlohekreis",49.2715461389,9.61413578119,,8126
+"ab6fc42d",9672,3,"Bayern","LK Bad Kissingen",50.2225139424,9.96470110779,,9672
+"a9297a74",9572,3,"Bayern","LK Erlangen-Höchstadt",49.6400408309,10.9148933012,,9572
+"29b8ce67",9182,3,"Bayern","LK Miesbach",47.7416453347,11.8089897365,,9182
+"34c93bb9",9775,3,"Bayern","LK Neu-Ulm",48.2982265453,10.1411558091,,9775
+"c33bd3f9",9780,3,"Bayern","LK Oberallgäu",47.572707564,10.2586229074,,9780
+"dead9e0a",9190,3,"Bayern","LK Weilheim-Schongau",47.7875370323,11.0483364745,,9190
+"c573c5fa",9663,3,"Bayern","SK Würzburg",49.7846554247,9.94089602932,,9663
+"17386827",11012,3,"Berlin","SK Berlin Reinickendorf",,,,11012
+"3dcb6198",12063,3,"Brandenburg","LK Havelland",52.6208208123,12.6283469145,,12063
+"03361c99",6439,3,"Hessen","LK Rheingau-Taunus-Kreis",50.1419717211,8.08113471294,,6439
+"0b423a85",6535,3,"Hessen","LK Vogelsbergkreis",50.6381193653,9.27137950882,,6535
+"090484dc",6635,3,"Hessen","LK Waldeck-Frankenberg",51.1906875733,8.88888422026,,6635
+"6926d59a",3351,3,"Niedersachsen","LK Celle",52.7133432321,10.1035661643,,3351
+"62b24b2d",3459,3,"Niedersachsen","LK Osnabrück",52.3816139244,8.04515734225,,3459
+"67fd5da8",3359,3,"Niedersachsen","LK Stade",53.578976226,9.41807038986,,3359
+"17d5f5b1",3101,3,"Niedersachsen","SK Braunschweig",52.275221093,10.5241080552,,3101
+"f9044c26",5366,3,"Nordrhein-Westfalen","LK Euskirchen",50.5364731669,6.6441519123,,5366
+"fe69883f",5362,3,"Nordrhein-Westfalen","LK Rhein-Erft-Kreis",50.9049330282,6.71649101914,,5362
+"0a30d5b6",5978,3,"Nordrhein-Westfalen","LK Unna",51.5785745363,7.63644458507,,5978
+"cbb8abb8",5913,3,"Nordrhein-Westfalen","SK Dortmund",51.5160775711,7.47490090518,,5913
+"c2a252dc",5513,3,"Nordrhein-Westfalen","SK Gelsenkirchen",51.5539564213,7.07124023772,,5513
+"c169a348",1051,3,"Schleswig-Holstein","LK Dithmarschen",54.1329109614,9.10781447873,,1051
+"6a4d477a",8426,3,"Baden-Württemberg","LK Biberach",48.1075826288,9.77425436647,,8426
+"ef103104",8335,3,"Baden-Württemberg","LK Konstanz",47.7932127909,8.9157630123,,8335
+"4280ac12",8212,3,"Baden-Württemberg","SK Karlsruhe",49.0113339856,8.41266976981,,8212
+"3cbd1da5",9679,3,"Bayern","LK Würzburg",49.737626672,9.92736341488,,9679
+"2abfcee1",9761,3,"Bayern","SK Augsburg",48.3455708649,10.885505361,,9761
+"2e32b253",9161,3,"Bayern","SK Ingolstadt",48.7550927761,11.3950069326,,9161
+"c4b1afcd",9763,3,"Bayern","SK Kempten",47.7381842508,10.3081184931,,9763
+"e740fc53",11004,3,"Berlin","SK Berlin Charlottenburg-Wilmersdorf",,,,11004
+"e06721e9",6633,3,"Hessen","LK Kassel",51.4012961379,9.4070389164,,6633
+"8728b4b6",3353,3,"Niedersachsen","LK Harburg",53.3157734164,9.96273884793,,3353
+"32989a3e",5758,3,"Nordrhein-Westfalen","LK Herford",52.1675778068,8.64393163854,,5758
+"3615e68c",5158,3,"Nordrhein-Westfalen","LK Mettmann",51.2571043543,6.96906518309,,5158
+"0e75708e",5770,3,"Nordrhein-Westfalen","LK Minden-Lübbecke",52.3524754985,8.73934839311,,5770
+"2f28e79e",5711,3,"Nordrhein-Westfalen","SK Bielefeld",52.0109486234,8.54074389731,,5711
+"912222c7",14625,3,"Sachsen","LK Bautzen",51.2689135848,14.2310085239,,14625
+"52aebe06",14713,3,"Sachsen","SK Leipzig",51.3422385995,12.3747717597,,14713
+"77db0a89",8236,3,"Baden-Württemberg","LK Enzkreis",48.9144669267,8.73708120338,,8236
+"00dc3a1f",8237,3,"Baden-Württemberg","LK Freudenstadt",48.4744061685,8.4653129709,,8237
+"45ed680b",8216,3,"Baden-Württemberg","LK Rastatt",48.7618192531,8.24124756893,,8216
+"6f0251ff",8326,3,"Baden-Württemberg","LK Schwarzwald-Baar-Kreis",48.0191197382,8.41096435345,,8326
+"db89fda8",8211,3,"Baden-Württemberg","SK Baden-Baden",48.748527439,8.23176220313,,8211
+"de2e4ae2",9573,3,"Bayern","LK Fürth",49.4466905187,10.8496864939,,9573
+"33c09365",9375,3,"Bayern","LK Regensburg",49.0213433263,12.1211612289,,9375
+"58938437",9464,3,"Bayern","SK Hof",50.3107956285,11.8972631725,,9464
+"c03cd37f",9163,3,"Bayern","SK Rosenheim",47.8443777181,12.1087247511,,9163
+"74312c0f",6438,3,"Hessen","LK Offenbach",50.0216774635,8.81143914637,,6438
+"188e4b22",3254,3,"Niedersachsen","LK Hildesheim",52.0902189983,9.94348097201,,3254
+"1673f343",3405,3,"Niedersachsen","SK Wilhelmshaven",53.5659448147,8.08620462896,,3405
+"31b0fb1f",5954,3,"Nordrhein-Westfalen","LK Ennepe-Ruhr-Kreis",51.3468447914,7.32402933363,,5954
+"fd893094",5566,3,"Nordrhein-Westfalen","LK Steinfurt",52.2115366779,7.57944671253,,5566
+"0df1a4e0",5570,3,"Nordrhein-Westfalen","LK Warendorf",51.8702227935,7.95829493253,,5570
+"c5abfa00",5113,3,"Nordrhein-Westfalen","SK Essen",51.433832766,7.01715391614,,5113
+"28d5dec6",7232,3,"Rheinland-Pfalz","LK Bitburg-Prüm",50.0621597731,6.41012996519,,7232
+"246be4a7",14612,3,"Sachsen","SK Dresden",51.0664442924,13.7834490742,,14612
+"778ac420",16051,3,"Thüringen","SK Erfurt",50.9832526908,11.0202248069,,16051
+"d8694503",8415,3,"Baden-Württemberg","LK Reutlingen",48.4064763532,9.36572629856,,8415
+"18056169",8327,3,"Baden-Württemberg","LK Tuttlingen",48.01120044,8.7941361763,,8327
+"2ed50a7e",9186,3,"Bayern","LK Pfaffenhofen a.d.Ilm",48.5962751771,11.5242827055,,9186
+"aac9c2df",9376,3,"Bayern","LK Schwandorf",49.3680333605,12.2530847621,,9376
+"2b7da4d6",9661,3,"Bayern","SK Aschaffenburg",49.9638560444,9.14581192433,,9661
+"c7357ba3",9563,3,"Bayern","SK Fürth",49.4914188335,10.9654822077,,9563
+"9047ccc5",11005,3,"Berlin","SK Berlin Spandau",,,,11005
+"cade31f5",12071,3,"Brandenburg","LK Spree-Neiße",51.7585932354,14.4331285714,,12071
+"53d7604f",12072,3,"Brandenburg","LK Teltow-Fläming",52.073184313,13.276018196,,12072
+"eb6b072a",13072,3,"Mecklenburg-Vorpommern","LK Rostock",53.91204551,12.220833831,,13072
+"6b040706",3455,3,"Niedersachsen","LK Friesland",53.510362974,7.98324746163,,3455
+"d2f3fb07",10042,3,"Saarland","LK Merzig-Wadern",49.4957645611,6.68048479703,,10042
+"1b81b507",8127,3,"Baden-Württemberg","LK Schwäbisch Hall",49.1444689707,9.90893216762,,8127
+"4743779d",9174,3,"Bayern","LK Dachau",48.3345482595,11.3571128101,,9174
+"3bb4b579",9279,3,"Bayern","LK Dingolfing-Landau",48.641164618,12.6104771899,,9279
+"3d7f7792",9779,3,"Bayern","LK Donau-Ries",48.8069320352,10.7123441979,,9779
+"de4a2627",9177,3,"Bayern","LK Erding",48.3003970808,12.0006246986,,9177
+"c7b6af4b",9180,3,"Bayern","LK Garmisch-Partenkirchen",47.5563489806,11.1296286125,,9180
+"db615c67",9273,3,"Bayern","LK Kelheim",48.8249414287,11.857554442,,9273
+"4505c9c4",9274,3,"Bayern","LK Landshut",48.5577554134,12.1953924179,,9274
+"adc06a03",9776,3,"Bayern","LK Lindau",47.6051649499,9.88286136549,,9776
+"db0530a2",9677,3,"Bayern","LK Main-Spessart",49.9935822339,9.66268166277,,9677
+"374defd7",9575,3,"Bayern","LK Neustadt a.d.Aisch-Bad Windsheim",49.5694835927,10.4652916664,,9575
+"dc0c987e",9277,3,"Bayern","LK Rottal-Inn",48.4245198693,12.8673504326,,9277
+"4cb385ef",9278,3,"Bayern","LK Straubing-Bogen",48.89970504,12.5824039909,,9278
+"8e31399d",11011,3,"Berlin","SK Berlin Lichtenberg",,,,11011
+"094e9d7f",11006,3,"Berlin","SK Berlin Steglitz-Zehlendorf",,,,11006
+"4acc510e",12062,3,"Brandenburg","LK Elbe-Elster",51.6122710164,13.459588917,,12062
+"4da19517",12066,3,"Brandenburg","LK Oberspreewald-Lausitz",51.6163005208,13.9436173031,,12066
+"0bd2c7c4",4012,3,"Bremen","SK Bremerhaven",53.5381662933,8.58850522385,,4012
+"0e6940c5",6631,3,"Hessen","LK Fulda",50.5638809858,9.75913916517,,6631
+"7c450a13",6534,3,"Hessen","LK Marburg-Biedenkopf",50.8368638341,8.73804376785,,6534
+"d1d59705",6413,3,"Hessen","SK Offenbach",50.091078767,8.78096226536,,6413
+"4fb102a6",6414,3,"Hessen","SK Wiesbaden",50.0791566662,8.26036646911,,6414
+"1c033790",3454,3,"Niedersachsen","LK Emsland",52.7382970162,7.40268865164,,3454
+"15b57bbb",3458,3,"Niedersachsen","LK Oldenburg",52.9880769073,8.38939656642,,3458
+"6174c3d5",3404,3,"Niedersachsen","SK Osnabrück",52.2776798178,8.04703290985,,3404
+"b5a5624a",5512,3,"Nordrhein-Westfalen","SK Bottrop",51.5716938262,6.9201161778,,5512
+"55dc3e1b",5914,3,"Nordrhein-Westfalen","SK Hagen",51.348045073,7.49755553757,,5914
+"5af99410",7137,3,"Rheinland-Pfalz","LK Mayen-Koblenz",50.3316078654,7.33216943214,,7137
+"ca468981",7138,3,"Rheinland-Pfalz","LK Neuwied",50.5577005458,7.46900064967,,7138
+"a5f4cb91",10043,3,"Saarland","LK Neunkirchen",49.3757016517,7.11720320683,,10043
+"4c976ea4",10045,3,"Saarland","LK Saar-Pfalz-Kreis",49.2486993859,7.24222124863,,10045
+"3b905e32",10044,3,"Saarland","LK Saarlouis",49.3553415477,6.77554333939,,10044
+"4bfaaabd",10041,3,"Saarland","LK Stadtverband Saarbrücken",49.2513823946,6.95729652837,,10041
+"082b737d",14626,3,"Sachsen","LK Görlitz",51.2256177492,14.750796811,,14626
+"995604db",14729,3,"Sachsen","LK Leipzig",51.2214366733,12.5994908653,,14729
+"280a067d",1057,3,"Schleswig-Holstein","LK Plön",54.2433885939,10.3636951573,,1057
+"011e5028",8337,3,"Baden-Württemberg","LK Waldshut",47.6971334745,8.21889239137,,8337
+"e9bf9f2a",8231,3,"Baden-Württemberg","SK Pforzheim",48.8764005469,8.71277909336,,8231
+"34ad577c",9371,3,"Bayern","LK Amberg-Sulzbach",49.4867511317,11.8009532083,,9371
+"a8eb1043",9472,3,"Bayern","LK Bayreuth",49.8837610883,11.5551557567,,9472
+"4188b576",9474,3,"Bayern","LK Forchheim",49.7209968812,11.1731319634,,9474
+"350b518e",9675,3,"Bayern","LK Kitzingen",49.7532253896,10.2560624461,,9675
+"daa33650",9373,3,"Bayern","LK Neumarkt i.d.OPf.",49.2159614099,11.5665579197,,9373
+"ddcef249",9377,3,"Bayern","LK Tirschenreuth",49.8993890086,12.2003418405,,9377
+"b57d5db0",9262,3,"Bayern","SK Passau",48.5820983986,13.4150504225,,9262
+"c3b80711",9363,3,"Bayern","SK Weiden i.d.OPf.",49.6692496128,12.1545339322,,9363
+"99f180ee",11009,3,"Berlin","SK Berlin Treptow-Köpenick",,,,11009
+"a4c23022",12060,3,"Brandenburg","LK Barnim",52.8232279789,13.7037311303,,12060
+"a3aff43b",12064,3,"Brandenburg","LK Märkisch-Oderland",52.6067238051,14.1464643331,,12064
+"3aa6a581",12067,3,"Brandenburg","LK Oder-Spree",52.244008511,14.2190594331,,12067
+"93890108",6436,3,"Hessen","LK Main-Taunus-Kreis",50.1025789147,8.43457121479,,6436
+"d32da17b",13003,3,"Mecklenburg-Vorpommern","SK Rostock",54.1463883937,12.1417471216,,13003
+"f56092a5",3452,3,"Niedersachsen","LK Aurich",53.4964307678,7.36808958075,,3452
+"68e4bfad",3251,3,"Niedersachsen","LK Diepholz",52.7284857794,8.70179913631,,3251
+"f1edee17",3252,3,"Niedersachsen","LK Hameln-Pyrmont",52.0951381895,9.38989545155,,3252
+"f7424039",3356,3,"Niedersachsen","LK Osterholz",53.2510067251,8.80808093198,,3356
+"420b8659",3361,3,"Niedersachsen","LK Verden",52.973235647,9.17546449952,,3361
+"3806b734",5958,3,"Nordrhein-Westfalen","LK Hochsauerlandkreis",51.3068253808,8.38507986661,,5958
+"3fa3aaa7",5154,3,"Nordrhein-Westfalen","LK Kleve",51.6523631313,6.25880908496,,5154
+"0918b497",5774,3,"Nordrhein-Westfalen","LK Paderborn",51.6641754561,8.7196350334,,5774
+"fae4f48d",5562,3,"Nordrhein-Westfalen","LK Recklinghausen",51.6724839158,7.15924893893,,5562
+"04eb5d84",5970,3,"Nordrhein-Westfalen","LK Siegen-Wittgenstein",50.9377386445,8.19517026923,,5970
+"0386999d",5974,3,"Nordrhein-Westfalen","LK Soest",51.5644104976,8.21743743758,,5974
+"5bcf6fa3",5114,3,"Nordrhein-Westfalen","SK Krefeld",51.3452191428,6.57966800647,,5114
+"b645dae1",5316,3,"Nordrhein-Westfalen","SK Leverkusen",51.0530662603,7.01547411084,,5316
+"778ff879",5120,3,"Nordrhein-Westfalen","SK Remscheid",51.1826933037,7.22411565185,,5120
+"99819955",5122,3,"Nordrhein-Westfalen","SK Solingen",51.1624551579,7.06606973298,,5122
+"5d945009",7133,3,"Rheinland-Pfalz","LK Bad Kreuznach",49.8248204055,7.68666499174,,7133
+"b1dc8f7c",7231,3,"Rheinland-Pfalz","LK Bernkastel-Wittlich",49.924645182,6.96721862193,,7231
+"8bdc9774",7140,3,"Rheinland-Pfalz","LK Rhein-Hunsrück-Kreis",50.0442098205,7.50009971248,,7140
+"5fd2ee50",7233,3,"Rheinland-Pfalz","LK Vulkaneifel",50.2383358519,6.74865373201,,7233
+"12d5c6ce",7143,3,"Rheinland-Pfalz","LK Westerwaldkreis",50.5523493705,7.86568137201,,7143
+"822887c9",7311,3,"Rheinland-Pfalz","SK Frankenthal",49.5330640295,8.35688379873,,7311
+"7f2c43eb",14627,3,"Sachsen","LK Meißen",51.239397748,13.4829006825,,14627
+"bf240b44",14511,3,"Sachsen","SK Chemnitz",50.8263036941,12.9118299015,,14511
+"a0fbe10c",15084,3,"Sachsen-Anhalt","LK Burgenlandkreis",51.1472256333,11.8834224288,,15084
+"a94dad27",15088,3,"Sachsen-Anhalt","LK Saalekreis",51.4256710773,11.865474038,,15088
+"de4a9db1",15089,3,"Sachsen-Anhalt","LK Salzlandkreis",51.8518591913,11.6427256195,,15089
+"8141ce31",15002,3,"Sachsen-Anhalt","SK Halle",51.4798019096,11.9684968347,,15002
+"f646fea7",15003,3,"Sachsen-Anhalt","SK Magdeburg",52.1165976423,11.6414820231,,15003
+"c6046751",1055,3,"Schleswig-Holstein","LK Ostholstein",54.1896490274,10.8194270205,,1055
+"251706b7",1002,3,"Schleswig-Holstein","SK Kiel",54.3248406926,10.1322443646,,1002
+"32bb9634",16070,3,"Thüringen","LK Ilm-Kreis",50.7379337622,10.9663574908,,16070
+"5bca53fa",16065,3,"Thüringen","LK Kyffhäuserkreis",51.3247630758,10.9848331992,,16065
+"35d6522d",16074,3,"Thüringen","LK Saale-Holzland-Kreis",50.904172137,11.7315307817,,16074
+"e9ee5183",16056,3,"Thüringen","SK Eisenach",50.9896760625,10.3001023192,,16056
+"70e70039",16055,3,"Thüringen","SK Weimar",50.9783471684,11.3178722759,,16055
+"32669597",9671,3,"Bayern","LK Aschaffenburg",50.0080931044,9.23803745665,,9671
+"aaadae1a",9772,3,"Bayern","LK Augsburg",48.3542871832,10.7320845344,,9772
+"d927e23e",9173,3,"Bayern","LK Bad Tölz-Wolfratshausen",47.7274771535,11.4831153973,,9173
+"31e241f9",9471,3,"Bayern","LK Bamberg",49.893428617,10.8836637829,,9471
+"356f3d4b",9271,3,"Bayern","LK Deggendorf",48.7787021164,13.0007258015,,9271
+"420c6118",9674,3,"Bayern","LK Haßberge",50.0628789327,10.6069788351,,9674
+"368f85e0",9475,3,"Bayern","LK Hof",50.2732120456,11.8191928507,,9475
+"4bba2d33",9678,3,"Bayern","LK Schweinfurt",50.016881784,10.2599503138,,9678
+"4a784704",9778,3,"Bayern","LK Unterallgäu",48.0398130352,10.3892327572,,9778
+"d9438efb",9577,3,"Bayern","LK Weißenburg-Gunzenhausen",49.0326858351,10.8936591358,,9577
+"b3b69f5b",9762,3,"Bayern","SK Kaufbeuren",47.8799285987,10.6160967463,,9762
+"b4bf3787",9362,3,"Bayern","SK Regensburg",49.0130808954,12.1137308794,,9362
+"c27a6d26",9263,3,"Bayern","SK Straubing",48.8807544792,12.5734748714,,9263
+"61e102cd",12052,3,"Brandenburg","SK Cottbus",51.7726930018,14.3662188537,,12052
+"35ab32fa",6440,3,"Hessen","LK Wetteraukreis",50.3547764783,8.90765705912,,6440
+"3c5f2247",6611,3,"Hessen","SK Kassel",51.3114548137,9.46020305009,,6611
+"4d4934d8",13004,3,"Mecklenburg-Vorpommern","SK Schwerin",53.6215100516,11.4165299501,,13004
+"8267a233",3453,3,"Niedersachsen","LK Cloppenburg",52.9110290194,7.90471393786,,3453
+"6aa201f4",3151,3,"Niedersachsen","LK Gifhorn",52.5802562309,10.6041704601,,3151
+"6f897bb4",3255,3,"Niedersachsen","LK Holzminden",51.8806325752,9.55140269027,,3255
+"6e4b1183",3355,3,"Niedersachsen","LK Lüneburg",53.232575345,10.5732569229,,3355
+"f6802a0e",3256,3,"Niedersachsen","LK Nienburg (Weser)",52.6092228116,9.1143129274,,3256
+"6dcfc5ed",3155,3,"Niedersachsen","LK Northeim",51.7425873324,9.84800893097,,3155
+"350cb6cf",3360,3,"Niedersachsen","LK Uelzen",52.9836349419,10.5475810531,,3360
+"3043a04a",3460,3,"Niedersachsen","LK Vechta",52.6602901512,8.22305794318,,3460
+"de4dc166",3462,3,"Niedersachsen","LK Wittmund",53.5734137385,7.7061235505,,3462
+"881766e0",3402,3,"Niedersachsen","SK Emden",53.3606790665,7.18158411476,,3402
+"8edca40b",3102,3,"Niedersachsen","SK Salzgitter",52.124474442,10.3707262339,,3102
+"3b2ed615",5754,3,"Nordrhein-Westfalen","LK Gütersloh",51.9317089342,8.35138605299,,5754
+"f493c9f0",5966,3,"Nordrhein-Westfalen","LK Olpe",51.0861595881,7.97647726624,,5966
+"bbd25f37",5916,3,"Nordrhein-Westfalen","SK Herne",51.5375332354,7.20855761523,,5916
+"c2c63e19",5117,3,"Nordrhein-Westfalen","SK Mülheim a.d.Ruhr",51.4137814936,6.878461621,,5117
+"257e131e",5119,3,"Nordrhein-Westfalen","SK Oberhausen",51.5131313527,6.84712049817,,5119
+"70e23c60",5124,3,"Nordrhein-Westfalen","SK Wuppertal",51.2506036112,7.16893008228,,5124
+"b7732152",7335,3,"Rheinland-Pfalz","LK Kaiserslautern",49.446222318,7.6849815727,,7335
+"bec56d79",7339,3,"Rheinland-Pfalz","LK Mainz-Bingen",49.9220138826,8.07964875059,,7339
+"fcdba7e2",7141,3,"Rheinland-Pfalz","LK Rhein-Lahn-Kreis",50.2632817442,7.84270993642,,7141
+"f2427346",7314,3,"Rheinland-Pfalz","SK Ludwigshafen",49.4820876658,8.39684453576,,7314
+"1c4c126a",7316,3,"Rheinland-Pfalz","SK Neustadt a.d.Weinstraße",49.3418758196,8.15228785937,,7316
+"49984439",15082,3,"Sachsen-Anhalt","LK Anhalt-Bitterfeld",51.7954450255,12.1432020671,,15082
+"3e9f74af",15083,3,"Sachsen-Anhalt","LK Börde",52.2207122989,11.3478384337,,15083
+"39f2b0b6",15087,3,"Sachsen-Anhalt","LK Mansfeld-Südharz",51.5356901778,11.3563584729,,15087
+"b8b51bec",1058,3,"Schleswig-Holstein","LK Rendsburg-Eckernförde",54.2896157359,9.78174206802,,1058
+"cfb22b7a",1059,3,"Schleswig-Holstein","LK Schleswig-Flensburg",54.6190195643,9.48870921465,,1059
+"ee83959a",16052,3,"Thüringen","SK Gera",50.8940170773,12.0826961871,,16052
+"ec94e56a",8135,3,"Baden-Württemberg","LK Heidenheim",48.6622814605,10.182150425,,8135
+"ae20d2a8",9172,3,"Bayern","LK Berchtesgadener Land",47.6984724021,12.9018660877,,9172
+"a94d16b1",9176,3,"Bayern","LK Eichstätt",48.8980875603,11.3703873291,,9176
+"ac666cf1",9272,3,"Bayern","LK Freyung-Grafenau",48.8268581711,13.513210064,,9272
+"43ce0b2f",9774,3,"Bayern","LK Günzburg",48.3528138472,10.3811312115,,9774
+"d881e4cc",9477,3,"Bayern","LK Kulmbach",50.1026420807,11.4822991401,,9477
+"ac020034",9676,3,"Bayern","LK Miltenberg",49.7572905887,9.23471658769,,9676
+"404adf41",9574,3,"Bayern","LK Nürnberger Land",49.4919039379,11.3694064626,,9574
+"ab0ba8e8",9276,3,"Bayern","LK Regen",49.0228144148,13.0997637882,,9276
+"dc68f4bb",9673,3,"Bayern","LK Rhön-Grabfeld",50.3713127519,10.2549075725,,9673
+"28f970b8",9461,3,"Bayern","SK Bamberg",49.8872221328,10.8989362521,,9461
+"2c740c0a",9261,3,"Bayern","SK Landshut",48.5446699826,12.1593416454,,9261
+"d3c500b4",12061,3,"Brandenburg","LK Dahme-Spreewald",52.0423069298,13.8199407798,,12061
+"dd1e8886",12069,3,"Brandenburg","LK Potsdam-Mittelmark",52.246294705,12.6891435021,,12069
+"94e4c511",6432,3,"Hessen","LK Darmstadt-Dieburg",49.8555038512,8.79546987935,,6432
+"9760117f",6632,3,"Hessen","LK Hersfeld-Rotenburg",50.90618961,9.7529324059,,6632
+"7e03b44a",6634,3,"Hessen","LK Schwalm-Eder-Kreis",51.0237758195,9.3736523386,,6634
+"647989c6",3159,3,"Niedersachsen","LK Göttingen",,,,3159
+"81871a98",3257,3,"Niedersachsen","LK Schaumburg",52.2927923256,9.20656190484,,3257
+"22db0e8d",5915,3,"Nordrhein-Westfalen","SK Hamm",51.6651743978,7.82358619294,,5915
+"b39a3125",7131,3,"Rheinland-Pfalz","LK Ahrweiler",50.4675853221,7.04497643896,,7131
+"2a93609f",7132,3,"Rheinland-Pfalz","LK Altenkirchen",50.750747657,7.74412525976,,7132
+"b01ee54b",7331,3,"Rheinland-Pfalz","LK Alzey-Worms",49.759441395,8.15718502019,,7331
+"b4f7f53c",7135,3,"Rheinland-Pfalz","LK Cochem-Zell",50.1328800059,7.17431996528,,7135
+"5e108467",7333,3,"Rheinland-Pfalz","LK Donnersbergkreis",49.631983052,7.9150113274,,7333
+"2e7a70e8",7336,3,"Rheinland-Pfalz","LK Kusel",49.5498108558,7.47132028218,,7336
+"c9c25def",7338,3,"Rheinland-Pfalz","LK Rhein-Pfalz-Kreis",49.416649982,8.36068108599,,7338
+"597d407e",7337,3,"Rheinland-Pfalz","LK Südliche Weinstraße",49.1903823441,8.04807600445,,7337
+"83eaedfe",7211,3,"Rheinland-Pfalz","SK Trier",49.762938832,6.65505102152,,7211
+"d59e3f1e",10046,3,"Saarland","LK Sankt Wendel",49.5195731082,7.1004332453,,10046
+"f9918d3e",14730,3,"Sachsen","LK Nordsachsen",51.4728650798,12.7793967591,,14730
+"e463ac08",14524,3,"Sachsen","LK Zwickau",50.750774796,12.5258055075,,14524
+"d0911583",15081,3,"Sachsen-Anhalt","LK Altmarkkreis Salzwedel",52.6800481605,11.2270452746,,15081
+"d7fcd19a",15085,3,"Sachsen-Anhalt","LK Harz",51.8212958888,10.9585438222,,15085
+"c98a24c2",15091,3,"Sachsen-Anhalt","LK Wittenberg",51.8201400674,12.7015882396,,15091
+"b10357c7",1054,3,"Schleswig-Holstein","LK Nordfriesland",54.6095639996,8.88688779292,,1054
+"abb2c78e",16073,3,"Thüringen","LK Saalfeld-Rudolstadt",50.637797959,11.3091162493,,16073
+"c2c30240",16066,3,"Thüringen","LK Schmalkalden-Meiningen",50.6307076864,10.4050434075,,16066
+"af86d45a",9476,3,"Bayern","LK Kronach",50.3279632281,11.3720466405,,9476
+"483ef95d",9478,3,"Bayern","LK Lichtenfels",50.1093305037,11.1169215721,,9478
+"44c7a3f3",9374,3,"Bayern","LK Neustadt a.d.Waldnaab",49.6865828841,12.0982574415,,9374
+"2db6663d",9361,3,"Bayern","SK Amberg",49.4509277374,11.8453726034,,9361
+"5ad53a6e",9764,3,"Bayern","SK Memmingen",47.9787874869,10.1630276762,,9764
+"e2219fb0",6533,3,"Hessen","LK Limburg-Weilburg",50.4274703547,8.19943723806,,6533
+"3fdbf629",6411,3,"Hessen","SK Darmstadt",49.88144614,8.66468155462,,6411
+"ec06c333",13076,3,"Mecklenburg-Vorpommern","LK Ludwigslust-Parchim",53.4500470376,11.5341416118,,13076
+"84ac60d8",3153,3,"Niedersachsen","LK Goslar",51.8746771574,10.400392667,,3153
+"10fa6d3e",3358,3,"Niedersachsen","LK Heidekreis",52.9283300914,9.76941135878,,3358
+"1ac8f57b",3154,3,"Niedersachsen","LK Helmstedt",52.2607443342,10.8888387183,,3154
+"83c1a4c1",3157,3,"Niedersachsen","LK Peine",52.3041913284,10.2552878088,,3157
+"f9db949d",3103,3,"Niedersachsen","SK Wolfsburg",52.4107473932,10.7848707661,,3103
+"fbf43f6d",7318,3,"Rheinland-Pfalz","SK Speyer",49.3297181375,8.43501974938,,7318
+"94095887",14521,3,"Sachsen","LK Erzgebirgskreis",50.6088984202,12.9450724745,,14521
+"0d00093d",14522,3,"Sachsen","LK Mittelsachsen",50.9558166403,13.1375068135,,14522
+"4ef58020",15086,3,"Sachsen-Anhalt","LK Jerichower Land",52.2607898277,12.0265188373,,15086
+"ea44f08b",1061,3,"Schleswig-Holstein","LK Steinburg",53.9289451889,9.51938189615,,1061
+"acdf0397",16077,3,"Thüringen","LK Altenburger Land",50.9564246614,12.3991313423,,16077
+"5ca797e3",16061,3,"Thüringen","LK Eichsfeld",51.3836491981,10.2534853921,,16061
+"c5aec659",16062,3,"Thüringen","LK Nordhausen",51.5022779756,10.7309067397,,16062
+"07e030af",16054,3,"Thüringen","SK Suhl",50.611602852,10.6881775642,,16054
+"dfec20d5",9473,3,"Bayern","LK Coburg",50.267889506,10.9423260473,,9473
+"b7dc5bc4",9185,3,"Bayern","LK Neuburg-Schrobenhausen",48.6644203317,11.197210668,,9185
+"e48e319e",6437,3,"Hessen","LK Odenwaldkreis",49.6715861652,8.97952523934,,6437
+"f96020e3",5762,3,"Nordrhein-Westfalen","LK Höxter",51.6849407394,9.17809149846,,5762
+"b6b14b65",7235,3,"Rheinland-Pfalz","LK Trier-Saarburg",49.6964711338,6.69519559648,,7235
+"6c26e6e5",7313,3,"Rheinland-Pfalz","SK Landau i.d.Pfalz",49.2244938821,8.05060075998,,7313
+"8cf30ffb",7319,3,"Rheinland-Pfalz","SK Worms",49.6494455343,8.32452863106,,7319
+"bc1e570d",1001,3,"Schleswig-Holstein","SK Flensburg",54.7849933768,9.43852835486,,1001
+"b5c432d6",16067,3,"Thüringen","LK Gotha",50.9106605802,10.6937627152,,16067
+"dbd83301",16076,3,"Thüringen","LK Greiz",50.7484595538,12.0740705739,,16076
+"b2a9f6cf",16063,3,"Thüringen","LK Wartburgkreis",50.8858017017,10.2107039491,,16063
+"9984a50c",16053,3,"Thüringen","SK Jena",50.9242638034,11.5870112529,,16053
+"30202bce",9571,3,"Bayern","LK Ansbach",49.2481645834,10.4681333941,,9571
+"3f39c9cb",9479,3,"Bayern","LK Wunsiedel i.Fichtelgebirge",50.0901405328,12.0418721069,,9479
+"293b1a8f",9561,3,"Bayern","SK Ansbach",49.2921846581,10.56366943,,9561
+"f8e85377",12051,3,"Brandenburg","SK Brandenburg a.d.Havel",52.4027150878,12.5193337833,,12051
+"7a0739ab",14523,3,"Sachsen","LK Vogtlandkreis",50.4567929391,12.2349996186,,14523
+"c6f71194",9463,3,"Bayern","SK Coburg",50.2639516155,10.9644386599,,9463
+"900dd566",6636,3,"Hessen","LK Werra-Meißner-Kreis",51.190756376,9.92890620729,,6636
+"0208a21f",13074,3,"Mecklenburg-Vorpommern","LK Nordwestmecklenburg",53.8215122283,11.2521094692,,13074
+"c3f0c5aa",7134,3,"Rheinland-Pfalz","LK Birkenfeld",49.7125403895,7.27765459793,,7134
+"8858431a",7340,3,"Rheinland-Pfalz","LK Südwestpfalz",49.2082747366,7.65886718981,,7340
+"be8d1454",15090,3,"Sachsen-Anhalt","LK Stendal",52.6967781735,11.8395343529,,15090
+"18489f8b",15001,3,"Sachsen-Anhalt","SK Dessau-Roßlau",51.8537380889,12.2310559599,,15001
+"cc74a382",1004,3,"Schleswig-Holstein","SK Neumünster",54.0811244365,9.98448195474,,1004
+"2ccd636c",16064,3,"Thüringen","LK Unstrut-Hainich-Kreis",51.185238708,10.551795561,,16064
+"45bca6a2",16071,3,"Thüringen","LK Weimarer Land",50.9715719951,11.3735532667,,16071
+"37298312",9171,3,"Bayern","LK Altötting",48.2098044272,12.7052826752,,9171
+"5ebffef1",9183,3,"Bayern","LK Mühldorf a.Inn",48.2393145242,12.3818280217,,9183
+"b274f56c",9662,3,"Bayern","SK Schweinfurt",50.0470080022,10.2208919522,,9662
+"bdd90163",12070,3,"Brandenburg","LK Prignitz",53.1093267277,11.9618269267,,12070
+"24d050d9",12073,3,"Brandenburg","LK Uckermark",53.2059030724,13.8612986206,,12073
+"16e6325b",12053,3,"Brandenburg","SK Frankfurt (Oder)",52.3247630784,14.4903487489,,12053
+"8882a7f8",12054,3,"Brandenburg","SK Potsdam",52.4261784936,13.0285491746,,12054
+"137eb950",3158,3,"Niedersachsen","LK Wolfenbüttel",52.1269975166,10.583953795,,3158
+"ddaa9e8c",9773,3,"Bayern","LK Dillingen a.d.Donau",48.5964037974,10.527764168,,9773
+"b1f02102",9462,3,"Bayern","SK Bayreuth",49.9377427404,11.5846727854,,9462
+"aa19b810",12068,3,"Brandenburg","LK Ostprignitz-Ruppin",52.9914230426,12.6359589515,,12068
+"474490dc",3461,3,"Niedersachsen","LK Wesermarsch",53.357641762,8.38864623114,,3461
+"194c2115",3354,3,"Niedersachsen","LK Lüchow-Dannenberg",53.0198717176,11.1229198942,,3354
+"6b4b22fc",7317,3,"Rheinland-Pfalz","SK Pirmasens",49.1971270853,7.59436316477,,7317
+"257b2f47",16068,3,"Thüringen","LK Sömmerda",51.1578080643,11.1547511823,,16068
+"de02e49c",7320,3,"Rheinland-Pfalz","SK Zweibrücken",49.2481606938,7.36539388964,,7320
+"527c1fd1",16069,3,"Thüringen","LK Hildburghausen",50.4340027482,10.7340904102,,16069
+"dcb5f718",16072,3,"Thüringen","LK Sonneberg",50.4146305494,11.1329526551,,16072
