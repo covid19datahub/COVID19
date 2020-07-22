@@ -425,16 +425,18 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
   if(!level %in% 2:3)
     stop("level must be 2 or 3")
   
+  id_ds <- sprintf("id_%s", ds)
+  key   <- c('id',id_ds,'administrative_area_level','administrative_area_level_2','administrative_area_level_3','latitude','longitude','population')
+  map   <- c(map, key[!(key %in% map)])
+  
   x <- map_data(x, map)
   x <- x[!duplicated(x),,drop=FALSE]
   if(!("id" %in% colnames(x)))
-    stop("specify the 'id' column using the 'map' argument, eg. map = c('id' = 'column')")
+    stop("specify the 'id' column using the 'map' argument, eg. map = c('column' = 'id')")
   
-  id_ds      <- sprintf("id_%s", ds)
   x[[id_ds]] <- x$id 
   x$id       <- sapply(x$id, FUN = function(x) digest::digest(c(iso, x), algo = 'crc32'))
   
-  key <- c('id',id_ds,'administrative_area_level','administrative_area_level_2','administrative_area_level_3','latitude','longitude','population')
   x[,key[!(key %in% colnames(x))]] <- NA
   x$administrative_area_level      <- level
   

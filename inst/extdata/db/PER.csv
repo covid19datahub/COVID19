@@ -1,26 +1,26 @@
-"id","id_covid19peru_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"e39c6ae1","PE-ARE",2,"Arequipa",,,,1382730
-"5b8d9d19","PE-CUS",2,"Cusco",,,,1205527
-"4a6f629c","PE-HUC",2,"Huanuco",,,,721047
-"b93bdc50","PE-ICA",2,"Ica",,,,850765
-"4ca9ba1a","PE-LIM",2,"Lima",,,,9485405
-"ec889289","PE-ANC",2,"Ancash",,,,1083519
-"f82b47b9","PE-CAL",2,"Callao",,,,994494
-"f3770084","PE-LAL",2,"La Libertad",,,,1778080
-"84703012","PE-LAM",2,"Lambayeque",,,,1197260
-"4af97858","PE-PIU",2,"Piura",,,,1856809
-"97fb1069","PE-LOR",2,"Loreto",,,,883510
-"811916c4","PE-MDD",2,"Madre de Dios",,,,141070
-"375aca4f","PE-JUN",2,"Junin",,,,1246038
-"930ad45f","PE-SAM",2,"San Martin",,,,813381
-"b8eb158f","PE-TUM",2,"Tumbes",,,,224863
-"1148e28c","PE-CAJ",2,"Cajamarca",,,,1341012
-"6b435765","PE-PAS",2,"Pasco",,,,254065
-"07057733","PE-AYA",2,"Ayacucho",,,,616176
-"71fdefdd","PE-TAC",2,"Tacna",,,,329332
-"27b28677","PE-HUV",2,"Huancavelica",,,,347639
-"cc1d1807","PE-APU",2,"Apurimac",,,,405759
-"0f302be4","PE-MOQ",2,"Moquegua",,,,174863
-"26ebece9","PE-PUN",2,"Puno",,,,1172697
-"29aba066","PE-AMA",2,"Amazonas",,,,379384
-"ac078644","PE-UCA",2,"Ucayali",,,,496459
+"id","id_covid19peru_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric"
+"e39c6ae1","PE-ARE",2,"Arequipa",,-16.3933,-71.5289,1553291,40000
+"5b8d9d19","PE-CUS",2,"Cusco",,-13.5192,-71.9767,1456231,80000
+"4a6f629c","PE-HUC",2,"Huanuco",,-9.93,-76.2397,861293,100000
+"b93bdc50","PE-ICA",2,"Ica",,-14.0636,-75.7292,932965,110000
+"4ca9ba1a","PE-LIM",2,"Lima",,-12.0453,-77.0308,11245182,150000
+"ec889289","PE-ANC",2,"Ancash",,-9.5297,-77.5292,1247193,20000
+"f82b47b9","PE-CAL",2,"Callao",,-12.0631,-77.1469,1146773,70000
+"f3770084","PE-LAL",2,"La Libertad",,-8.1,-79.0306,2049071,130000
+"84703012","PE-LAM",2,"Lambayeque",,-6.7669,-79.8506,1390570,140000
+"4af97858","PE-PIU",2,"Piura",,-5.1525,-80.6578,2068288,200000
+"97fb1069","PE-LOR",2,"Loreto",,-3.7481,-73.2442,1156517,160000
+"811916c4","PE-MDD",2,"Madre de Dios",,-12.5936,-69.1767,175969,170000
+"375aca4f","PE-JUN",2,"Junin",,-12.0708,-75.2089,1405124,120000
+"930ad45f","PE-SAM",2,"San Martin",,-6.0347,-76.9742,957992,220000
+"b8eb158f","PE-TUM",2,"Tumbes",,-3.5711,-80.4592,247778,240000
+"1148e28c","PE-CAJ",2,"Cajamarca",,-7.1547,-78.5108,1600862,60000
+"6b435765","PE-PAS",2,"Pasco",,-10.6825,-76.2569,291509,190000
+"07057733","PE-AYA",2,"Ayacucho",,-13.1603,-74.2253,688137,50000
+"71fdefdd","PE-TAC",2,"Tacna",,-18.0019,-70.2519,379129,230000
+"27b28677","PE-HUV",2,"Huancavelica",,-12.7869,-74.9714,434592,90000
+"cc1d1807","PE-APU",2,"Apurimac",,-13.6289,-72.8861,456233,30000
+"0f302be4","PE-MOQ",2,"Moquegua",,-17.1942,-70.9333,197367,180000
+"26ebece9","PE-PUN",2,"Puno",,-15.8403,-70.0281,1279979,210000
+"29aba066","PE-AMA",2,"Amazonas",,-6.2294,-77.8728,472870,10000
+"ac078644","PE-UCA",2,"Ucayali",,-8.3681,-74.5433,624257,250000

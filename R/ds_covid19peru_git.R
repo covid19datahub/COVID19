@@ -2,7 +2,7 @@ covid19peru_git <- function(level, cache) {
     
     # repo
     repo <- "https://raw.githubusercontent.com/jmcastagnetto/covid-19-peru-data"
-    url  <- "/main/datos/covid-19-peru-data-con-ubigeos.csv"
+    url  <- "/main/datos/covid-19-peru-data-augmented.csv"
 
     # download
     x <- read.csv(paste0(repo,url), cache = cache, na.strings = c("NA",""))
@@ -15,9 +15,11 @@ covid19peru_git <- function(level, cache) {
         "deaths",
         "recovered",
         "iso_3166_2_code" = "key",
-        "cod_dep_inei"    = "key_numeric",
+        "ubigeo"          = "key_numeric",
         "total_tests"     = "tests",
-        "pob_2017"        = "population"
+        "pop2019"         = "population",
+        "lat"             = "latitude",
+        "lon"             = "longitude"
     ))
     
     # convert date
