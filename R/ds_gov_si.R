@@ -11,20 +11,16 @@ gov_si <- function(cache, level){
   if(level==1){
     
     x <- map_data(x, c(
-      'Date'                                         = 'date',
-      'Tested (all)'                                 = 'tests',
-      'Positive (all)'                               = 'confirmed',
-      'All hospitalized on certain day'              = 'hosp',
-      'All persons in intensive care on certain day' = 'icu',
-      'Discharged'                                   = 'recovered',
-      'Deaths (all)'                                 = 'deaths'
+      'Dátum'                                = 'date',
+      'Mintavételek száma (összesen)'        = 'tests',
+      'pozitív esetek száma (összesen)'      = 'confirmed',
+      'hospitalizált'                        = 'hosp',
+      'intenzív ellátásra szoruló'           = 'icu',
+      'elhunytak száma összesen'             = 'deaths'
     ))
     
     # clean deaths
     x$deaths <- as.numeric(gsub("\\*$", "", x$deaths))
-    
-    # cumulative
-    x$recovered <- cumsum(x$recovered)
     
     # format date
     d <- as.Date(x$date, format="%Y-%m-%d")

@@ -7,9 +7,10 @@ covid19au_git <- function(level, cache) {
 
     # Read data
     repo <- "https://raw.githubusercontent.com/M3IT/COVID-19_Data"
-    url  <- "/master/Data/COVID_AU_cumulative.csv"
+    url  <- "/master/Data/COVID_Data_Hub.csv"
 
     x    <- read.csv(paste0(repo,url), cache = cache)
+    colnames(x) <- gsub("COVID_Data_Hub.", "", colnames(x), fixed = TRUE)
 
     # Minimal additional code as data already formatted as required
     x$date <- as.Date(x$date)

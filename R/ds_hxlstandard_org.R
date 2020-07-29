@@ -17,6 +17,9 @@ hxlstandard_org <- function(cache){
     'Cumulative.Deaths' = 'deaths'
   ))
   
+  # fix 
+  x$state <- map_values(x$state, c("GrandAnse" = "Grand Anse"))
+  
   # date
   x$date <- as.Date(x$date, format="%d-%m-%Y")
   

@@ -20,6 +20,9 @@ covid19turkey_git <- function(level, cache){
   x <- x[!is.na(x$date),]
   x$date <- as.Date(x$date, format = "%d/%m/%Y")
   
+  # fix icu
+  x$icu <- as.numeric(x$icu)
+  
   return(x)
 }
 
