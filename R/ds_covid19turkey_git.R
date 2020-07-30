@@ -3,7 +3,7 @@ covid19turkey_git <- function(level, cache){
   
   # download
   url <- "https://raw.githubusercontent.com/ozanerturk/covid19-turkey-api/master/dataset/timeline.csv"
-  x   <- read.csv(url, cache = cache) 
+  x   <- read.csv(url, cache = cache, na.strings = c("", "-")) 
   
   # formatting
   x <- map_data(x, c(
@@ -20,9 +20,7 @@ covid19turkey_git <- function(level, cache){
   x <- x[!is.na(x$date),]
   x$date <- as.Date(x$date, format = "%d/%m/%Y")
   
-  # fix icu
-  x$icu <- as.numeric(x$icu)
-  
+  # return
   return(x)
 }
 
