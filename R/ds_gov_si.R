@@ -10,13 +10,21 @@ gov_si <- function(cache, level){
   # formatting
   if(level==1){
     
+    # x <- map_data(x, c(
+    #   'Dátum'                                = 'date',
+    #   'Mintavételek száma (összesen)'        = 'tests',
+    #   'pozitív esetek száma (összesen)'      = 'confirmed',
+    #   'hospitalizált'                        = 'hosp',
+    #   'intenzív ellátásra szoruló'           = 'icu',
+    #   'elhunytak száma összesen'             = 'deaths'
+    # ))
     x <- map_data(x, c(
-      'Dátum'                                = 'date',
-      'Mintavételek száma (összesen)'        = 'tests',
-      'pozitív esetek száma (összesen)'      = 'confirmed',
-      'hospitalizált'                        = 'hosp',
-      'intenzív ellátásra szoruló'           = 'icu',
-      'elhunytak száma összesen'             = 'deaths'
+      'Date'                                         = 'date',
+      'Tested (all)'                                 = 'tests',
+      'Positive (all)'                               = 'confirmed',
+      'All hospitalized on certain day'              = 'hosp',
+      'All persons in intensive care on certain day' = 'icu',
+      'Deaths (all)'                                 = 'deaths'
     ))
     
     # clean deaths
