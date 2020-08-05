@@ -7,6 +7,12 @@ test_that("today", {
     x <- covid19(level = level, raw = raw, vintage = FALSE, verbose = FALSE)
     y <- covid19(level = level, raw = raw, vintage = TRUE, verbose = FALSE)
     
+    end <- max(x$date)
+    if(end<Sys.Date()-1){
+      cat("Data out of date")
+      return(FALSE)
+    }
+    
     l <- x %>% 
       
       dplyr::group_by(iso_alpha_3) %>%
