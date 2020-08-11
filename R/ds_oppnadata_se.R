@@ -13,10 +13,10 @@ oppnadata_se <- function(cache, level){
     
     # formatting
     x <- map_data(x, c(
-      'Kumulativa_fall'            = 'confirmed',
-      'Kumulativa_avlidna'         = 'deaths',
-      'Kumulativa_intensivvardade' = 'icu',
-      'Statistikdatum'             = 'date'
+      'Kumulativa_fall'       = 'confirmed',
+      'Kumulativa_avlidna'    = 'deaths',
+      'Antal_intensivvardade' = 'icu',
+      'Statistikdatum'        = 'date'
     ))
     
   }
@@ -50,6 +50,7 @@ oppnadata_se <- function(cache, level){
   
   # date
   x$date <- as.Date(x$date, format = "%Y-%m-%d")
+  x <- x[!is.na(x$date),]
   
   # return
   return(x)
