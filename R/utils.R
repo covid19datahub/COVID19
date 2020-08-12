@@ -110,7 +110,6 @@ vars <- function(type = NULL){
     'numeric' = 'hosp',
     'numeric' = 'vent',
     'numeric' = 'icu'
-    # 'numeric' = 'severe'
   )
   
   measures <- c(
@@ -398,6 +397,7 @@ add_src <- function(...){
 #' @param ds name of the data source function generating \code{x}.
 #' @param map named vector mapping the columns of \code{x} to the columns of the XXX.csv file.
 #' @param append logical. Append the data to the XXX.csv file if it already exists? Default \code{TRUE}.
+#' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
 #' 
 #' @return \code{data.frame}
 #' 
@@ -836,37 +836,61 @@ err_log <- function(x){
 #' }
 #' 
 #' @export
-ds_check_format <- function(x, level) {
+ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {
   
   check <- function(c, message) {
-    if(!(c <- all(c))) 
+    c <- mean(c, na.rm = TRUE)
+    c <- c > ci
+    if(verbose & !c) 
       warning(message)
     return(c)
   }
   
-  status <- TRUE
-  ci     <- 0.95
-  cols   <- colnames(x)
-  
   # fallback
-  if(!any(vars("fast") %in% cols))
-    stop("no valid column detected. Please rename the columns according to the documentation available at https://covid19datahub.io/articles/doc/data.html")
+  if(!any(vars("fast") %in% colnames(x))){
+    warning("no valid column detected. Please rename the columns according to the documentation available at https://covid19datahub.io/articles/doc/data.html")
+    return(FALSE)
+  }
+  
+  # subset
+  x      <- x[, apply(x, 2, function(x) any(!is.na(x))), drop=FALSE]
+  cols   <- colnames(x)
+  status <- TRUE
   
   # id missing 
   if(!("id" %in% cols)){
-    if(level>1)
-      stop("column 'id' missing. Please add the id for each location (required for level > 1)")
-    else 
+    if(level>1){
+      warning("column 'id' missing. Please add the id for each location (required for level > 1)")
+      return(FALSE)
+    }
+    else{ 
       x$id <- "id"
+    }
   }
   
   # date missing 
-  if(!("date" %in% cols))
-    stop("column 'date' missing. Please add the date for each observation")
+  if(!("date" %in% cols)){
+    warning("column 'date' missing. Please add the date for each observation")
+    return(FALSE)
+  }
   
+  # NA dates
+  if(any(is.na(x$date))){
+    warning("column date contains NA values")
+    return(FALSE)
+  }
+    
   # check date column is date
   status <- status & check(inherits(x$date, c("Date")),
                            "column date of wrong type")
+  
+  # check data types
+  for(col in intersect(cols, c('tests','confirmed','recovered','deaths','hosp','vent','icu'))){
+    if(!is.numeric(x[[col]])){
+      warning(sprintf("%s not of class numeric", col))
+      return(FALSE)
+    }
+  }
   
   # deaths <= confirmed
   if("confirmed" %in% cols & "deaths" %in% cols)
@@ -892,6 +916,10 @@ ds_check_format <- function(x, level) {
   if("vent" %in% cols & "confirmed" %in% cols)
     status <- status & check(ci < mean(x$vent <= x$confirmed | x$confirmed == 0, na.rm = T),
                              "vent > confirmed")
+  # vent <= icu
+  if("vent" %in% cols & "icu" %in% cols)
+    status <- status & check(ci < mean(x$vent <= x$icu | x$icu == 0, na.rm = T),
+                             "vent > icu")
   
   # TODO: checks with output
   # ...
@@ -913,13 +941,13 @@ ds_check_format <- function(x, level) {
     
     # detect negative derivation
     dplyr::summarise(
-      d_deaths_nonneg    = ci < mean(diff(deaths) >= 0, na.rm = T),
-      d_confirmed_nonneg = ci < mean(diff(confirmed) >= 0, na.rm = T),
-      d_tests_nonneg     = ci < mean(diff(tests) >= 0, na.rm = T),
-      d_recovered_nonneg = ci < mean(diff(recovered) >= 0, na.rm = T),
-      d_hosp_anyneg      = ci < mean(hosp == 0)|any(diff(hosp) < 0, na.rm = T),
-      d_vent_anyneg      = ci < mean(vent == 0)|any(diff(vent) < 0, na.rm = T),
-      d_icu_anyneg       = ci < mean( icu == 0)|any(diff(icu) < 0, na.rm = T) )
+      d_deaths_nonneg    = ci < mean(diff(deaths) >= 0,      na.rm = T),
+      d_confirmed_nonneg = ci < mean(diff(confirmed) >= 0,   na.rm = T),
+      d_tests_nonneg     = ci < mean(diff(tests) >= 0,       na.rm = T),
+      d_recovered_nonneg = ci < mean(diff(recovered) >= 0,   na.rm = T),
+      d_hosp_anyneg      = ci < mean(hosp == 0, na.rm = T) | any(diff(hosp) < 0, na.rm = T),
+      d_vent_anyneg      = ci < mean(vent == 0, na.rm = T) | any(diff(vent) < 0, na.rm = T),
+      d_icu_anyneg       = ci < mean( icu == 0, na.rm = T) | any(diff(icu) < 0,  na.rm = T) )
   
   # deaths not descending
   status <- status & check(y$d_deaths_nonneg,
@@ -942,11 +970,9 @@ ds_check_format <- function(x, level) {
   # icu not cumulative (any descending)
   status <- status & check(y$d_icu_anyneg,
                            "are you sure 'icu' are NOT cumulative counts?")
-  # TODO: checks with output first derivation
-  # ...
   
   # success
-  if(status)
+  if(verbose & status)
     message(
     "
      ====================================================================

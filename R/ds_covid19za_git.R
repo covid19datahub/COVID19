@@ -19,9 +19,9 @@ covid19za_git <- function(cache, level){
       'date'             = 'date',
       'cumulative_tests' = 'tests',
       'recovered'        = 'recovered',
-      'hospitalisation'  = 'hosp',
-      'critical_icu'     = 'icu',
-      'ventilation'      = 'vent',
+      # 'hospitalisation'  = 'hosp',
+      # 'critical_icu'     = 'icu',
+      # 'ventilation'      = 'vent',
       'deaths'           = 'deaths',
       'total'            = 'confirmed'
     )) 

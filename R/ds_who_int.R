@@ -5,6 +5,7 @@ who_int <- function(cache, iso_alpha_2 = NULL){
 
   # download
   x   <- read.csv(url, cache = cache)
+  colnames(x)[1] <- "Date_reported"
   
   # formatting
   x <- map_data(x, c(

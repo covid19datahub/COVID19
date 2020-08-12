@@ -13,6 +13,8 @@ add_iso(x, iso, ds, level, map = c("id"), append = TRUE)
 
 \item{ds}{name of the data source function generating \code{x}.}
 
+\item{level}{integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.}
+
 \item{map}{named vector mapping the columns of \code{x} to the columns of the XXX.csv file.}
 
 \item{append}{logical. Append the data to the XXX.csv file if it already exists? Default \code{TRUE}.}

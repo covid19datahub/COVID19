@@ -4,7 +4,7 @@
 \alias{ds_check_format}
 \title{Check Data Source Format}
 \usage{
-ds_check_format(x, level)
+ds_check_format(x, level, ci = 0.95, verbose = TRUE)
 }
 \arguments{
 \item{x}{output of a data source function.}

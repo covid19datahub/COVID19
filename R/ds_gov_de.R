@@ -21,6 +21,7 @@ gov_de <- function(cache, level){
   ))
   
   # convert date type
+  x <- x[!is.na(x$date),]
   x$date <- as.Date(x$date, format = "%Y/%m/%d")
   
   # group key

@@ -15,7 +15,8 @@ covid19(
   raw = FALSE,
   vintage = FALSE,
   verbose = TRUE,
-  cache = TRUE
+  cache = TRUE,
+  debug = FALSE
 )
 }
 \arguments{
@@ -34,6 +35,8 @@ covid19(
 \item{verbose}{logical. Print data sources? Default \code{TRUE}.}
 
 \item{cache}{logical. Memory caching? Significantly improves performance on successive calls. Default \code{TRUE}.}
+
+\item{debug}{logical. Warnings and stop on failure? Default \code{FALSE}.}
 }
 \value{
 Grouped \code{tibble} (\code{data.frame})

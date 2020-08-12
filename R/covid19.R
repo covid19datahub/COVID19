@@ -10,6 +10,7 @@
 #' @param raw logical. Skip data cleaning? Default \code{FALSE}. See details.
 #' @param cache logical. Memory caching? Significantly improves performance on successive calls. Default \code{TRUE}.
 #' @param verbose logical. Print data sources? Default \code{TRUE}.
+#' @param debug logical. Warnings and stop on failure? Default \code{FALSE}.
 #'
 #' @details 
 #' The raw data are cleaned by filling missing dates with \code{NA} values. 
@@ -60,7 +61,8 @@ covid19 <- function(country = NULL,
                     raw     = FALSE,
                     vintage = FALSE,
                     verbose = TRUE,
-                    cache   = TRUE){
+                    cache   = TRUE,
+                    debug   = FALSE){
 
   # fallback
   if(!(level %in% 1:3))
@@ -144,8 +146,17 @@ covid19 <- function(country = NULL,
 
     # world
     w <- try(cachecall("world", level = level, cache = cache))
-    if("try-error" %in% class(w))
+    if("try-error" %in% class(w)){
+      if(debug) stop("WORLD: try-error")
       w <- NULL
+    }
+      
+    if(!is.null(w)){
+      if(!ds_check_format(w, level = level, ci = 0.5, verbose = FALSE)){
+        if(debug) stop("WORLD: check failed")
+        w <- NULL
+      }
+    }
     
     # ISO
     for(fun in ISO) if(exists(fun, envir = asNamespace("COVID19"), mode = "function", inherits = FALSE)) {
@@ -153,9 +164,21 @@ covid19 <- function(country = NULL,
       # try 
       y <- try(cachecall(fun, level = level, cache = cache))
       
-      # skip on failure
-      if(is.null(y) | ("try-error" %in% class(y)))
+      # skip on NULL
+      if(is.null(y))
         next
+      
+      # check try-error
+      if("try-error" %in% class(y)){
+        if(debug) stop(sprintf("%s: try-error", fun))
+        next
+      }
+      
+      # check format
+      if(!ds_check_format(y, level = level, ci = 0.5, verbose = FALSE)){
+        if(debug) stop(sprintf("%s: check failed", fun))
+        next
+      }
 
       # top level
       if(level==1){
@@ -198,6 +221,8 @@ covid19 <- function(country = NULL,
     o <- try(cachecall('oxcgrt_git', cache = cache))
     if(!("try-error" %in% class(o)))
       x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
+    else 
+      if(debug) stop("OxCGRT: try-error")
     
     # subset
     key <- c('iso_alpha_3','id','date',vars('fast'))
@@ -274,10 +299,6 @@ covid19 <- function(country = NULL,
     src <- extdata("src.csv")
 
   }
-  
-  # severe
-  # idx <- which(is.na(x$severe) | x$severe==0)
-  # x$severe[idx] <- x$icu[idx] + x$vent[idx]
   
   # subset
   cn <- colnames(x)

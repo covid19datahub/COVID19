@@ -7,7 +7,7 @@ hxlstandard_org <- function(cache){
   
   # download
   url <- "https://proxy.hxlstandard.org/data/738954/download/haiti-covid-19-subnational-data.csv"
-  x   <- read.csv(url, cache=cache, encoding = "UTF-8")[-1,]
+  x   <- read.csv(url, cache = cache, encoding = "UTF-8")[-1,]
   
   # formatting 
   x <- map_data(x, c(
@@ -24,8 +24,8 @@ hxlstandard_org <- function(cache){
   x$date <- as.Date(x$date, format="%d-%m-%Y")
   
   # integers
-  x$confirmed <- as.numeric(x$confirmed)
-  x$deaths    <- as.numeric(x$deaths)
+  x$confirmed <- as.numeric(gsub(",", "", x$confirmed))
+  x$deaths    <- as.numeric(gsub(",", "", x$deaths))
   
   # return
   return(x)
