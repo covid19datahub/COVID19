@@ -5,7 +5,7 @@ GBR <- function(level, cache){
     return(NULL)
   
   # download
-  x <- gov_uk(cache = cache, level = level)
+  x <- gov_uk(level = level)
   
   # level
   if(level==2){

@@ -1,3 +1,9 @@
+# COVID19 2.2.0 (2020-08-17)
+
+## Minor changes
+
+* **UK data** (all levels). Change the access to https://coronavirus.data.gov.uk from the [legacy CSV downloads](https://coronavirus.data.gov.uk/about-data) to the new [API](https://coronavirus.data.gov.uk/developers-guide).
+
 # COVID19 2.2.0 (2020-07-17)
 
 ## Major changes

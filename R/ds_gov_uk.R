@@ -1,40 +1,97 @@
-gov_uk <- function(cache,level){
-
-  # source
-  url.cases  <- "https://coronavirus.data.gov.uk/downloads/csv/coronavirus-cases_latest.csv"
-  url.death  <- "https://coronavirus.data.gov.uk/downloads/csv/coronavirus-deaths_latest.csv"
+gov_uk <- function(level){
   
-  # download
-  x <- readr::read_csv(url.cases, col_types = readr::cols())
-  y <- readr::read_csv(url.death, col_types = readr::cols())
-  
-  # merge
-  x <- merge(x, y, by.x = c("Area code","Specimen date"), by.y = c("Area code", "Reporting date"), all = TRUE)
-  
-  # format 
-  x <- map_data(x, c(
-    'Specimen date'                  = 'date',
-    'Area name'                      = 'name',  
-    'Area type'                      = 'type',
-    'Area code'                      = 'code',
-    'Cumulative lab-confirmed cases' = 'confirmed',
-    'Cumulative deaths'              = 'deaths'
-  ))
+  # Extracts paginated data by requesting all of the pages
+  # and combining the results.
+  #
+  # @param filters    API filters. See the API documentations for 
+  #                   additional information.
+  #                   
+  # @param structure  Structure parameter. See the API documentations 
+  #                   for additional information.
+  #                   
+  # @return list      Comprehensive list of dictionaries containing all 
+  #                   the data for the given ``filter`` and ``structure`.`
+  get_paginated_data <- function (filters, structure) {
+    
+    endpoint     <- "https://api.coronavirus.data.gov.uk/v1/data"
+    results      <- list()
+    current_page <- 1
+    
+    repeat {
+      
+      httr::GET(
+        url   = endpoint,
+        query = list(
+          filters   = paste(filters, collapse = ";"),
+          structure = jsonlite::toJSON(structure, auto_unbox = TRUE),
+          page      = current_page
+        )
+      ) -> response
+      
+      # Handle errors:
+      if ( response$status_code >= 400 ) {
+        err_msg = httr::http_status(response)
+        stop(err_msg)
+      } else if ( response$status_code == 204 ) {
+        break
+      }
+      
+      # Convert response from binary to JSON:
+      json_text <- httr::content(response, "text")
+      dt        <- jsonlite::fromJSON(json_text)
+      results   <- rbind(results, dt$data)
+      
+      if ( is.null( dt$pagination$`next` ) ){
+        break
+      }
+      
+      current_page <- current_page + 1
+      
+    }
+    
+    return(results)
+    
+  }
   
   # level
-  if(level==1)
-    x <- x[x$type=="UK",]
-  if(level==2)
-    x <- x[x$type %in% c("nation","region"),]
-  if(level==3)
-    x <- x[x$type=="utla",]
+  area_type <- switch (level,
+    c("overview"),
+    c("nation","region"),
+    c("ltla")
+  )
+  
+  # download
+  x <- NULL
+  for(a in area_type){
+    
+    # Create filters:
+    filters <- c(
+      sprintf("areaType=%s", a)
+    )
+    
+    # Create structure
+    structure <- list(
+      "date"      = "date",
+      "type"      = "areaType",
+      "name"      = "areaName",
+      "code"      = "areaCode",
+      "confirmed" = ifelse(a %in% c("overview", "nation"), "cumCasesByPublishDate", "cumCasesBySpecimenDate"),
+      "tests"     = "cumTestsByPublishDate",
+      "vent"      = "covidOccupiedMVBeds",
+      "hosp"      = "hospitalCases",
+      "deaths"    = "cumDeaths28DaysByPublishDate"
+    )
+    
+    x <- dplyr::bind_rows(x, get_paginated_data(filters, structure))
+    
+  }
   
   # date
   x$date <- as.Date(x$date)
   
   # return
   return(x) 
-
+  
 }
 
 
