@@ -11,23 +11,34 @@ opencovid_fr <- function(cache, level = 1){
     'depistes'      = 'tests',
     'cas_confirmes' = 'confirmed',
     'deces'         = 'deaths',
+    'deces_ehpad'   = 'deaths_elderly',
     'gueris'        = 'recovered',
     'hospitalises'  = 'hosp',
     'reanimation'   = 'icu',
     'source_type'   = 'source',
-    'deces_ehpad',
     'granularite',
     'maille_code',
     'maille_nom'
   ))
 
+  # Fix multiple dates per id
+  x <- x %>% 
+    group_by_at(c('date', 'maille_code', 'source', 'granularite', 'maille_nom')) %>%
+    summarize(tests          = sum(tests),
+              confirmed      = sum(confirmed),
+              deaths         = sum(deaths),
+              recovered      = sum(recovered),
+              hosp           = sum(hosp),
+              icu            = sum(icu),
+              deaths_elderly = sum(deaths_elderly))
+  
   # Switch by level
   if(level==1){
     
     x <- x[x$granularite=="pays" & x$source=="ministere-sante",]  
     
     # Deaths + Deaths in elderly homes
-    x$deaths <- x$deaths + x$deces_ehpad 
+    x$deaths <- x$deaths + x$deaths_elderly 
     
   }
   if(level==2){
@@ -48,7 +59,7 @@ opencovid_fr <- function(cache, level = 1){
     x  <- merge(x1, x2, by = c("date", "maille_code"), all = TRUE)
     
   }
-    
+  
   # Date
   x$date <- as.Date(x$date)
   
