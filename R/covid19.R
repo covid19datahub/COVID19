@@ -184,9 +184,15 @@ covid19 <- function(country = NULL,
       if(level==1){
         
         # merge fallback
-        if(!is.null(w)) if(length(idx <- which(w$iso_alpha_3==fun)))
-          y <- merge(y, w[idx,], by = 'date', all = TRUE)
-        
+        if(!is.null(w)) {
+          idx <- which(w$iso_alpha_3==fun)
+          if(length(idx)){
+            jdx <- which(!(colnames(w) %in% setdiff(colnames(y), "date")))
+            if(length(jdx))
+              y <- merge(y, w[idx,jdx], by = 'date', all = TRUE)
+          }
+        }
+          
         # iso as id
         y$id <- fun
 

@@ -6,8 +6,6 @@ opencovid_fr <- function(cache, level = 1){
   x   <- read.csv(url, cache = cache) 
   
   # Formatting columns
-  x$deces <- x$deces + x$deces_ehpad #Deaths + Deaths in elderly homes
-  
   x <- map_data(x, c(
     'date',
     'depistes'      = 'tests',
@@ -16,23 +14,41 @@ opencovid_fr <- function(cache, level = 1){
     'gueris'        = 'recovered',
     'hospitalises'  = 'hosp',
     'reanimation'   = 'icu',
+    'source_type'   = 'source',
+    'deces_ehpad',
     'granularite',
     'maille_code',
     'maille_nom'
   ))
 
   # Switch by level
-  if(level==1)
-    x<- x[x$granularite=="pays",]  
-  if(level==2)
-    x<- x[x$granularite %in% c("region", "collectivite-outremer"),]
-  if(level==3)
-    x<- x[x$granularite=="departement",]
-  
-  # Cleaning
-  x <- x %>% 
-    distinct(date, maille_code, .keep_all = TRUE) # Keep only one observation by date
-  
+  if(level==1){
+    
+    x <- x[x$granularite=="pays" & x$source=="ministere-sante",]  
+    
+    # Deaths + Deaths in elderly homes
+    x$deaths <- x$deaths + x$deces_ehpad 
+    
+  }
+  if(level==2){
+    
+    x  <- x[x$granularite %in% c("region", "collectivite-outremer"),]
+    
+    x1 <- x[x$source=="opencovid19-fr",]
+    x2 <- x[x$source=="agences-regionales-sante",]
+    x  <- merge(x1, x2, by = c("date", "maille_code"), all = TRUE)
+    
+  }
+  if(level==3){
+    
+    x <- x[x$granularite=="departement",]
+    
+    x1 <- x[x$source=="agences-regionales-sante",]
+    x2 <- x[x$source=="sante-publique-france-data",]
+    x  <- merge(x1, x2, by = c("date", "maille_code"), all = TRUE)
+    
+  }
+    
   # Date
   x$date <- as.Date(x$date)
   
