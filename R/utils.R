@@ -941,13 +941,13 @@ ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {
     
     # detect negative derivation
     dplyr::summarise(
-      d_deaths_nonneg    = ci < mean(diff(deaths) >= 0,      na.rm = T),
-      d_confirmed_nonneg = ci < mean(diff(confirmed) >= 0,   na.rm = T),
-      d_tests_nonneg     = ci < mean(diff(tests) >= 0,       na.rm = T),
-      d_recovered_nonneg = ci < mean(diff(recovered) >= 0,   na.rm = T),
-      d_hosp_anyneg      = ci < mean(hosp == 0, na.rm = T) | any(diff(hosp) < 0, na.rm = T),
-      d_vent_anyneg      = ci < mean(vent == 0, na.rm = T) | any(diff(vent) < 0, na.rm = T),
-      d_icu_anyneg       = ci < mean( icu == 0, na.rm = T) | any(diff(icu) < 0,  na.rm = T) )
+      d_deaths_nonneg    = ci < mean(diff(deaths)    >= 0, na.rm = T),
+      d_confirmed_nonneg = ci < mean(diff(confirmed) >= 0, na.rm = T),
+      d_tests_nonneg     = ci < mean(diff(tests)     >= 0, na.rm = T),
+      d_recovered_nonneg = ci < mean(diff(recovered) >= 0, na.rm = T),
+      d_hosp_anyneg      = all(hosp==0, na.rm = T) | 30 > sum(!is.na(hosp), na.rm = T) | any(diff(hosp) < 0, na.rm = T),
+      d_vent_anyneg      = all(vent==0, na.rm = T) | 30 > sum(!is.na(vent), na.rm = T) | any(diff(vent) < 0, na.rm = T),
+      d_icu_anyneg       = all(icu==0, na.rm = T)  | 30 > sum(!is.na(icu) , na.rm = T) | any(diff(icu)  < 0, na.rm = T) )
   
   # deaths not descending
   status <- status & check(y$d_deaths_nonneg,
