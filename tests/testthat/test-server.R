@@ -1,9 +1,9 @@
 test_that("server", {
 
-  url <- "https://storage.covid19datahub.io/data-1.csv"
+  url <- "https://storage.covid19datahub.io/rawdata-1.csv"
   x   <- read.csv(url)
   
-  expect_equal(max(x$date) >= (Sys.Date()-1), TRUE)
+  expect_equal(max(x$date) == Sys.Date(), TRUE)
   
 })
 
