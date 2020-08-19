@@ -13,7 +13,11 @@ We are creating a collection of projects using COVID-19 Data Hub. This is a very
 - [CovsirPhy: Python package for COVID-19 analysis with SIR-derived ODE models](https://github.com/lisphilar/covid19-sir)
 - [Mirai Solutions Dashboard](https://mirai-solutions.ch/gallery/covid19/)
 - [Brazilian COVID-19 Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWExN2JlMzQtNTBiOC00ODU5LWIxY2QtODQwZTNhMjQzNGJmIiwidCI6ImMzN2IzN2EzLWU5ZTItNDJmOS1iYzY3LTRiOWI3MzhlMWRmMCJ9)
+- [Prof. Malouche Dashboard](https://malouche.github.io/covid19data/)
+- [Coronawhy database](https://www.coronawhy.org/)
 - [Covid19 Incidence History](http://emit.phys.ocean.dal.ca/~kelley/covid19/)
+
+See also the [featured publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) using COVID-19 Data Hub.
 
 __Using COVID-19 Data Hub?__ Open a [GitHub issue](https://github.com/covid19datahub/COVID19/issues) or comment below to let us know about your project. We are happy to showcase your work here.
 
