@@ -28,13 +28,14 @@ gov_uk <- function(level){
             filters   = paste(filters, collapse = ";"),
             structure = jsonlite::toJSON(structure, auto_unbox = TRUE),
             page      = current_page
-          )
+          ),
+          httr::timeout(30)
         ) -> response
         
         # Handle errors:
         if ( response$status_code >= 400 ) {
           i <- i+1
-          if(i<10)
+          if(i<5)
             Sys.sleep(i+runif(1))
           else
             stop(httr::http_status(response))
