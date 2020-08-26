@@ -7,13 +7,13 @@
 #' @param start the start date of the period of interest.
 #' @param end the end date of the period of interest.
 #' @param vintage logical. Retrieve the snapshot of the dataset that was generated at the \code{end} date instead of using the latest version. Default \code{FALSE}.
-#' @param raw logical. Skip data cleaning? Default \code{FALSE}. See details.
+#' @param raw logical. Skip data cleaning? Default \code{TRUE}. See details.
 #' @param cache logical. Memory caching? Significantly improves performance on successive calls. Default \code{TRUE}.
 #' @param verbose logical. Print data sources? Default \code{TRUE}.
 #' @param debug logical. Warnings and stop on failure? Default \code{FALSE}.
 #'
 #' @details 
-#' The raw data are cleaned by filling missing dates with \code{NA} values. 
+#' If \code{raw=FALSE}, the raw data are cleaned by filling missing dates with \code{NA} values. 
 #' This ensures that all locations share the same grid of dates and no single day is skipped. 
 #' Then, \code{NA} values are replaced with the previous non-\code{NA} value or \code{0}.
 #'
@@ -58,7 +58,7 @@ covid19 <- function(country = NULL,
                     level   = 1,
                     start   = "2019-01-01",
                     end     = Sys.Date(),
-                    raw     = FALSE,
+                    raw     = TRUE,
                     vintage = FALSE,
                     verbose = TRUE,
                     cache   = TRUE,

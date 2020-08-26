@@ -62,7 +62,7 @@ The dataset can be extended with [Apple Mobility Reports](https://www.apple.com/
 
 ```R
 amr <- "https://covid19-static.cdn-apple.com/covid19-mobility-data/"
-amr <- paste0(amr, "2012HotfixDev8/v3/en-us/applemobilitytrends-2020-07-09.csv")
+amr <- paste0(amr, "2015HotfixDev10/v3/en-us/applemobilitytrends-2020-08-24.csv")
 x   <- covid19(amr = amr)
 ```
 

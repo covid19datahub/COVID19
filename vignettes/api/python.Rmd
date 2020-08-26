@@ -15,18 +15,17 @@ __PyPI__: https://pypi.org/project/covid19dh/
 
 ## Setup and usage
 
-Install with
+Install from [pip](https://pypi.org/project/covid19dh/) with
 
 ```python
 pip install covid19dh
 ```
 
-Importing main `covid19()` function with 
+Importing the main function `covid19()`   
 
 ```python
 from covid19dh import covid19
-
-x = covid19("ITA") # load data
+x, src = covid19() 
 ```
 
 Package is regularly updated. Update with
@@ -35,48 +34,56 @@ Package is regularly updated. Update with
 pip install --upgrade covid19dh
 ```
 
+## Return values
+
+The function `covid19()` returns 2 pandas dataframes:
+* the data and
+* references to the data sources.
+
 ## Parametrization
 
 ### Country
 
-Country specifies an administrative region, that the data are fetched from.
-This is connected with source data comes from. It can be given as
-ISO3, ISO2, numeric ISO or country name (case-insensitively). 
+List of country names (case-insensitive) or ISO codes (alpha-2, alpha-3 or numeric). The list of ISO codes can be found [here](https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv).
 
-Fetching data from a particular country is done with
+Fetching data from a particular country:
 
 ```python
-x = covid19("ESP")
+x, src = covid19("USA") # Unites States
 ```
 
-List of ISO codes can be found [here](https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv).
-
-Filter can also specify multiple countries at the same time
+Specify multiple countries at the same time:
 
 ```python
-x = covid19(["ESP","PT","andorra",250])
+x, src = covid19(["ESP","PT","andorra",250])
 ```
 
-Country can be omitted, then whole world data is used.
+If `country` is omitted, the whole dataset is returned:
 
 ```python
-x = covid19()
+x, src = covid19()
+```
+
+### Raw data
+
+Logical. Skip data cleaning? Default `True`. If `raw=False`, the raw data are cleaned by filling missing dates with `NaN` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NaN` values are replaced with the previous non-`NaN` value or `0`.  
+
+```python
+x, src = covid19(raw = False)
 ```
 
 ### Date filter
 
-Date can be specified with `datetime.datetime`, `datetime.date`
-or as a `str` in format `YYYY-mm-dd`.
+Date can be specified with `datetime.datetime`, `datetime.date` or as a `str` in format `YYYY-mm-dd`.
 
 ```python
 from datetime import datetime
-
-x = covid19("SWE", start = datetime(2020,4,1), end = "2020-05-01")
+x, src = covid19("SWE", start = datetime(2020,4,1), end = "2020-05-01")
 ```
 
 ### Level
 
-Levels work the same way as in all the other our data fetchers.
+Integer. Granularity level of the data:
 
 1. Country level
 2. State, region or canton level
@@ -84,51 +91,52 @@ Levels work the same way as in all the other our data fetchers.
 
 ```python
 from datetime import date
-
-x = covid19("USA", level = 2, start = date(2020,5,1))
+x, src = covid19("USA", level = 2, start = date(2020,5,1))
 ```
 
 ### Cache
 
-Library keeps downloaded data in simple way during runtime. By default, using the cached data is enabled.
+Logical. Memory caching? Significantly improves performance on successive calls. By default, using the cached data is enabled.
 
-Caching can be disabled (e.g. for long running programs) by
+Caching can be disabled (e.g. for long running programs) by:
 
 ```python
-x = covid19("FRA", cache=False)
+x, src = covid19("FRA", cache = False)
+```
+
+### Vintage
+
+Logical. Retrieve the snapshot of the dataset that was generated at the `end` date instead of using the latest version. Default `False`.
+
+To fetch e.g. US data that were accessible on *22th April 2020* type
+
+```python
+x, src = covid19("US", end = "2020-04-22", vintage = True)
+```
+
+The vintage data are collected at the end of the day, but published with approximately 48 hour delay,
+once the day is completed in all the timezones.
+
+Hence if `vintage = True`, but `end` is not set, warning is raised and `None` is returned.
+
+```python
+x, src = covid19("USA", vintage = True) # too early to get today's vintage
+```
+
+```
+UserWarning: vintage data not available yet
 ```
 
 ### Citations
 
-Dataset [citations](https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv) are printed by default on `stdout`.
+The data sources are returned as second value.
 
-``` python
+```python
 from covid19dh import covid19
-x = covid19("CZE") 
+x, src = covid19("USA")
+print(src)
 ```
 
-```
-Czech Statistical Office (2018), https://www.czso.cz/csu/czso/demograficka-rocenka-kraju-2009-az-2018
-
-Johns Hopkins Center for Systems Science and Engineering (2020), https://github.com/CSSEGISandData/COVID-19
-
-Ministery of Health of Czech Republic (2020), https://onemocneni-aktualne.mzcr.cz/
-
-Our World in Data (2020), https://github.com/owid/covid-19-data
-
-Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government.
-
-World Bank Open Data (2018), https://data.worldbank.org/indicator/SP.POP.TOTL
-
-Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.
-```
-
-This feature can be turned off by setting `verbose` to `False`.
-
-``` python
-from covid19dh import covid19
-x = covid19("CZE", verbose = False) 
-```
 
 
 

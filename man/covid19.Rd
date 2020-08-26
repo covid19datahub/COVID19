@@ -12,7 +12,7 @@ covid19(
   level = 1,
   start = "2019-01-01",
   end = Sys.Date(),
-  raw = FALSE,
+  raw = TRUE,
   vintage = FALSE,
   verbose = TRUE,
   cache = TRUE,
@@ -28,7 +28,7 @@ covid19(
 
 \item{end}{the end date of the period of interest.}
 
-\item{raw}{logical. Skip data cleaning? Default \code{FALSE}. See details.}
+\item{raw}{logical. Skip data cleaning? Default \code{TRUE}. See details.}
 
 \item{vintage}{logical. Retrieve the snapshot of the dataset that was generated at the \code{end} date instead of using the latest version. Default \code{FALSE}.}
 
@@ -45,7 +45,7 @@ Grouped \code{tibble} (\code{data.frame})
 Unified datasets for a better understanding of COVID-19.
 }
 \details{
-The raw data are cleaned by filling missing dates with \code{NA} values. 
+If \code{raw=FALSE}, the raw data are cleaned by filling missing dates with \code{NA} values. 
 This ensures that all locations share the same grid of dates and no single day is skipped. 
 Then, \code{NA} values are replaced with the previous non-\code{NA} value or \code{0}.
 }
