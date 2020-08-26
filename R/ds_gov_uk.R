@@ -33,8 +33,8 @@ gov_uk <- function(level){
         
         # Handle errors:
         if ( response$status_code >= 400 ) {
-          i <- 2*i
-          if(i<60)
+          i <- i+1
+          if(i<10)
             Sys.sleep(i+runif(1))
           else
             stop(httr::http_status(response))
