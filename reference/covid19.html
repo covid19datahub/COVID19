@@ -90,7 +90,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
       </span>
     </div>
 
@@ -197,7 +197,7 @@
   <span class='kw'>level</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>start</span> <span class='kw'>=</span> <span class='st'>"2019-01-01"</span>,
   <span class='kw'>end</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.Date</a></span>(),
-  <span class='kw'>raw</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>raw</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
   <span class='kw'>vintage</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
   <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
   <span class='kw'>cache</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
@@ -225,7 +225,7 @@
     </tr>
     <tr>
       <th>raw</th>
-      <td><p>logical. Skip data cleaning? Default <code>FALSE</code>. See details.</p></td>
+      <td><p>logical. Skip data cleaning? Default <code>TRUE</code>. See details.</p></td>
     </tr>
     <tr>
       <th>vintage</th>
@@ -253,7 +253,7 @@
     <p>Grouped <code>tibble</code> (<code>data.frame</code>)</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>The raw data are cleaned by filling missing dates with <code>NA</code> values. 
+    <p>If <code>raw=FALSE</code>, the raw data are cleaned by filling missing dates with <code>NA</code> values. 
 This ensures that all locations share the same grid of dates and no single day is skipped. 
 Then, <code>NA</code> values are replaced with the previous non-<code>NA</code> value or <code>0</code>.</p>
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>

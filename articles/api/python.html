@@ -44,7 +44,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
       </span>
     </div>
 
@@ -153,14 +153,18 @@
 <div id="setup-and-usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#setup-and-usage" class="anchor"></a>Setup and usage</h2>
-<p>Install with</p>
+<p>Install from <a href="https://pypi.org/project/covid19dh/">pip</a> with</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>pip install covid19dh</span></code></pre></div>
-<p>Importing main <code><a href="../../reference/covid19.html">covid19()</a></code> function with</p>
+<p>Importing the main function <code><a href="../../reference/covid19.html">covid19()</a></code></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a>x <span class="op">=</span> covid19(<span class="st">"ITA"</span>) <span class="co"># load data</span></span></code></pre></div>
+<span id="cb2-2"><a href="#cb2-2"></a>x, src <span class="op">=</span> covid19() </span></code></pre></div>
 <p>Package is regularly updated. Update with</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a><span class="ex">pip</span> install --upgrade covid19dh</span></code></pre></div>
+</div>
+<div id="return-values" class="section level2">
+<h2 class="hasAnchor">
+<a href="#return-values" class="anchor"></a>Return values</h2>
+<p>The function <code><a href="../../reference/covid19.html">covid19()</a></code> returns 2 pandas dataframes: * the data and * references to the data sources.</p>
 </div>
 <div id="parametrization" class="section level2">
 <h2 class="hasAnchor">
@@ -168,65 +172,64 @@
 <div id="country" class="section level3">
 <h3 class="hasAnchor">
 <a href="#country" class="anchor"></a>Country</h3>
-<p>Country specifies an administrative region, that the data are fetched from. This is connected with source data comes from. It can be given as ISO3, ISO2, numeric ISO or country name (case-insensitively).</p>
-<p>Fetching data from a particular country is done with</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>x <span class="op">=</span> covid19(<span class="st">"ESP"</span>)</span></code></pre></div>
-<p>List of ISO codes can be found <a href="https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv">here</a>.</p>
-<p>Filter can also specify multiple countries at the same time</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>x <span class="op">=</span> covid19([<span class="st">"ESP"</span>,<span class="st">"PT"</span>,<span class="st">"andorra"</span>,<span class="dv">250</span>])</span></code></pre></div>
-<p>Country can be omitted, then whole world data is used.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>x <span class="op">=</span> covid19()</span></code></pre></div>
+<p>List of country names (case-insensitive) or ISO codes (alpha-2, alpha-3 or numeric). The list of ISO codes can be found <a href="https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv">here</a>.</p>
+<p>Fetching data from a particular country:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>) <span class="co"># Unites States</span></span></code></pre></div>
+<p>Specify multiple countries at the same time:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>x, src <span class="op">=</span> covid19([<span class="st">"ESP"</span>,<span class="st">"PT"</span>,<span class="st">"andorra"</span>,<span class="dv">250</span>])</span></code></pre></div>
+<p>If <code>country</code> is omitted, the whole dataset is returned:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>x, src <span class="op">=</span> covid19()</span></code></pre></div>
+</div>
+<div id="raw-data" class="section level3">
+<h3 class="hasAnchor">
+<a href="#raw-data" class="anchor"></a>Raw data</h3>
+<p>Logical. Skip data cleaning? Default <code>True</code>. If <code>raw=False</code>, the raw data are cleaned by filling missing dates with <code>NaN</code> values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, <code>NaN</code> values are replaced with the previous non-<code>NaN</code> value or <code>0</code>.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>x, src <span class="op">=</span> covid19(raw <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
 </div>
 <div id="date-filter" class="section level3">
 <h3 class="hasAnchor">
 <a href="#date-filter" class="anchor"></a>Date filter</h3>
 <p>Date can be specified with <code>datetime.datetime</code>, <code>datetime.date</code> or as a <code>str</code> in format <code>YYYY-mm-dd</code>.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
-<span id="cb7-2"><a href="#cb7-2"></a></span>
-<span id="cb7-3"><a href="#cb7-3"></a>x <span class="op">=</span> covid19(<span class="st">"SWE"</span>, start <span class="op">=</span> datetime(<span class="dv">2020</span>,<span class="dv">4</span>,<span class="dv">1</span>), end <span class="op">=</span> <span class="st">"2020-05-01"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb8-2"><a href="#cb8-2"></a>x, src <span class="op">=</span> covid19(<span class="st">"SWE"</span>, start <span class="op">=</span> datetime(<span class="dv">2020</span>,<span class="dv">4</span>,<span class="dv">1</span>), end <span class="op">=</span> <span class="st">"2020-05-01"</span>)</span></code></pre></div>
 </div>
 <div id="level" class="section level3">
 <h3 class="hasAnchor">
 <a href="#level" class="anchor"></a>Level</h3>
-<p>Levels work the same way as in all the other our data fetchers.</p>
+<p>Integer. Granularity level of the data:</p>
 <ol style="list-style-type: decimal">
 <li>Country level</li>
 <li>State, region or canton level</li>
 <li>City or municipality level</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="im">from</span> datetime <span class="im">import</span> date</span>
-<span id="cb8-2"><a href="#cb8-2"></a></span>
-<span id="cb8-3"><a href="#cb8-3"></a>x <span class="op">=</span> covid19(<span class="st">"USA"</span>, level <span class="op">=</span> <span class="dv">2</span>, start <span class="op">=</span> date(<span class="dv">2020</span>,<span class="dv">5</span>,<span class="dv">1</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="im">from</span> datetime <span class="im">import</span> date</span>
+<span id="cb9-2"><a href="#cb9-2"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>, level <span class="op">=</span> <span class="dv">2</span>, start <span class="op">=</span> date(<span class="dv">2020</span>,<span class="dv">5</span>,<span class="dv">1</span>))</span></code></pre></div>
 </div>
 <div id="cache" class="section level3">
 <h3 class="hasAnchor">
 <a href="#cache" class="anchor"></a>Cache</h3>
-<p>Library keeps downloaded data in simple way during runtime. By default, using the cached data is enabled.</p>
-<p>Caching can be disabled (e.g. for long running programs) by</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>x <span class="op">=</span> covid19(<span class="st">"FRA"</span>, cache<span class="op">=</span><span class="va">False</span>)</span></code></pre></div>
+<p>Logical. Memory caching? Significantly improves performance on successive calls. By default, using the cached data is enabled.</p>
+<p>Caching can be disabled (e.g. for long running programs) by:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"FRA"</span>, cache <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+</div>
+<div id="vintage" class="section level3">
+<h3 class="hasAnchor">
+<a href="#vintage" class="anchor"></a>Vintage</h3>
+<p>Logical. Retrieve the snapshot of the dataset that was generated at the <code>end</code> date instead of using the latest version. Default <code>False</code>.</p>
+<p>To fetch e.g. US data that were accessible on <em>22th April 2020</em> type</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"US"</span>, end <span class="op">=</span> <span class="st">"2020-04-22"</span>, vintage <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+<p>The vintage data are collected at the end of the day, but published with approximately 48 hour delay, once the day is completed in all the timezones.</p>
+<p>Hence if <code>vintage = True</code>, but <code>end</code> is not set, warning is raised and <code>None</code> is returned.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>, vintage <span class="op">=</span> <span class="va">True</span>) <span class="co"># too early to get today's vintage</span></span></code></pre></div>
+<pre><code>UserWarning: vintage data not available yet</code></pre>
 </div>
 <div id="citations" class="section level3">
 <h3 class="hasAnchor">
 <a href="#citations" class="anchor"></a>Citations</h3>
-<p>Dataset <a href="https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv">citations</a> are printed by default on <code>stdout</code>.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
-<span id="cb10-2"><a href="#cb10-2"></a>x <span class="op">=</span> covid19(<span class="st">"CZE"</span>) </span></code></pre></div>
-<pre><code>Czech Statistical Office (2018), https://www.czso.cz/csu/czso/demograficka-rocenka-kraju-2009-az-2018
-
-Johns Hopkins Center for Systems Science and Engineering (2020), https://github.com/CSSEGISandData/COVID-19
-
-Ministery of Health of Czech Republic (2020), https://onemocneni-aktualne.mzcr.cz/
-
-Our World in Data (2020), https://github.com/owid/covid-19-data
-
-Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government.
-
-World Bank Open Data (2018), https://data.worldbank.org/indicator/SP.POP.TOTL
-
-Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.</code></pre>
-<p>This feature can be turned off by setting <code>verbose</code> to <code>False</code>.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
-<span id="cb12-2"><a href="#cb12-2"></a>x <span class="op">=</span> covid19(<span class="st">"CZE"</span>, verbose <span class="op">=</span> <span class="va">False</span>) </span></code></pre></div>
+<p>The data sources are returned as second value.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
+<span id="cb14-2"><a href="#cb14-2"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>)</span>
+<span id="cb14-3"><a href="#cb14-3"></a><span class="bu">print</span>(src)</span></code></pre></div>
 </div>
 </div>
 <div id="terms-of-use" class="section level2">

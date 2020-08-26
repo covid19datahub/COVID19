@@ -44,7 +44,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
       </span>
     </div>
 
@@ -191,7 +191,7 @@
 <a href="#merge-with-apple-mobility-reports" class="anchor"></a>Merge with Apple Mobility Reports</h2>
 <p>The dataset can be extended with <a href="https://www.apple.com/covid19/mobility">Apple Mobility Reports</a> via the argument <code>amr</code>, the url to the Apple CSV file. At the time of writing, the CSV is available at:</p>
 <div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">amr</span> <span class="kw">&lt;-</span> <span class="st">"https://covid19-static.cdn-apple.com/covid19-mobility-data/"</span>
-<span class="no">amr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="no">amr</span>, <span class="st">"2012HotfixDev8/v3/en-us/applemobilitytrends-2020-07-09.csv"</span>)
+<span class="no">amr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="no">amr</span>, <span class="st">"2015HotfixDev10/v3/en-us/applemobilitytrends-2020-08-24.csv"</span>)
 <span class="no">x</span>   <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">amr</span> <span class="kw">=</span> <span class="no">amr</span>)</pre></body></html></div>
 </div>
 <div id="data-sources" class="section level2">

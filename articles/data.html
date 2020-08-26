@@ -44,7 +44,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
       </span>
     </div>
 
@@ -147,8 +147,8 @@
 
     
     
-<p>The raw data are cleaned by filling missing dates with <code>NA</code> values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, <code>NA</code> values are replaced with the previous non-<code>NA</code> value or <code>0</code>.</p>
 <p>The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities).</p>
+<p><strong>Pre-processed data</strong> are obtained by filling missing dates in the raw data with <code>NA</code> values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, <code>NA</code> values are replaced with the previous non-<code>NA</code> value or <code>0</code>.</p>
 <p><strong>Policies</strong> for admin areas level 2 and 3 <strong>are inherited</strong> from national-level policies by <a href="https://github.com/OxCGRT/covid-policy-tracker">Oxford Covid-19 Government Response Tracker</a>.</p>
 <p><strong>Update 21-06-2020</strong>. US data level 3 (counties): change data provider from <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE</a> to <a href="https://github.com/nytimes/covid-19-data">New York Times</a>. Only minor counties not provided by <a href="https://github.com/nytimes/covid-19-data">New York Times</a> are still from <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE</a>.</p>
 <p>See the <a href="/articles/doc/data.html">full documentation</a> and <a href="/news/index.html">changelog</a>.</p>
@@ -173,42 +173,42 @@
 <tbody>
 <tr class="odd">
 <td><a href="https://storage.covid19datahub.io/data-1.csv" class="uri">https://storage.covid19datahub.io/data-1.csv</a></td>
-<td>Clean data</td>
+<td>Pre-processed data</td>
 <td>Administrative area level 1</td>
 <td>CSV</td>
 <td><img src="https://storage.covid19datahub.io/downloads/data-1.csv.svg"></td>
 </tr>
 <tr class="even">
 <td><a href="https://storage.covid19datahub.io/data-2.csv" class="uri">https://storage.covid19datahub.io/data-2.csv</a></td>
-<td>Clean data</td>
+<td>Pre-processed data</td>
 <td>Administrative area level 2</td>
 <td>CSV</td>
 <td><img src="https://storage.covid19datahub.io/downloads/data-2.csv.svg"></td>
 </tr>
 <tr class="odd">
 <td><a href="https://storage.covid19datahub.io/data-3.csv" class="uri">https://storage.covid19datahub.io/data-3.csv</a></td>
-<td>Clean data</td>
+<td>Pre-processed data</td>
 <td>Administrative area level 3</td>
 <td>CSV</td>
 <td><img src="https://storage.covid19datahub.io/downloads/data-3.csv.svg"></td>
 </tr>
 <tr class="even">
 <td><a href="https://storage.covid19datahub.io/data-1.zip" class="uri">https://storage.covid19datahub.io/data-1.zip</a></td>
-<td>Clean data</td>
+<td>Pre-processed data</td>
 <td>Administrative area level 1</td>
 <td>ZIP</td>
 <td><img src="https://storage.covid19datahub.io/downloads/data-1.zip.svg"></td>
 </tr>
 <tr class="odd">
 <td><a href="https://storage.covid19datahub.io/data-2.zip" class="uri">https://storage.covid19datahub.io/data-2.zip</a></td>
-<td>Clean data</td>
+<td>Pre-processed data</td>
 <td>Administrative area level 2</td>
 <td>ZIP</td>
 <td><img src="https://storage.covid19datahub.io/downloads/data-2.zip.svg"></td>
 </tr>
 <tr class="even">
 <td><a href="https://storage.covid19datahub.io/data-3.zip" class="uri">https://storage.covid19datahub.io/data-3.zip</a></td>
-<td>Clean data</td>
+<td>Pre-processed data</td>
 <td>Administrative area level 3</td>
 <td>ZIP</td>
 <td><img src="https://storage.covid19datahub.io/downloads/data-3.zip.svg"></td>
@@ -257,7 +257,7 @@
 </tr>
 <tr class="odd">
 <td><a href="https://storage.covid19datahub.io/data.log" class="uri">https://storage.covid19datahub.io/data.log</a></td>
-<td>Clean data - Log file</td>
+<td>Pre-processed data - Log file</td>
 <td>All levels</td>
 <td>CSV</td>
 <td><img src="https://storage.covid19datahub.io/downloads/data.log.svg"></td>
