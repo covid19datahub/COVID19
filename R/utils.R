@@ -945,9 +945,9 @@ ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {
       d_confirmed_nonneg = ci < mean(diff(confirmed) >= 0, na.rm = T),
       d_tests_nonneg     = ci < mean(diff(tests)     >= 0, na.rm = T),
       d_recovered_nonneg = ci < mean(diff(recovered) >= 0, na.rm = T),
-      d_hosp_anyneg      = all(hosp==0, na.rm = T) | 30 > sum(!is.na(hosp), na.rm = T) | any(diff(hosp) < 0, na.rm = T),
-      d_vent_anyneg      = all(vent==0, na.rm = T) | 30 > sum(!is.na(vent), na.rm = T) | any(diff(vent) < 0, na.rm = T),
-      d_icu_anyneg       = all(icu==0, na.rm = T)  | 30 > sum(!is.na(icu) , na.rm = T) | any(diff(icu)  < 0, na.rm = T) )
+      d_hosp_anyneg      = all(hosp==0, na.rm = T) | any(diff(hosp) < 0, na.rm = T),
+      d_vent_anyneg      = all(vent==0, na.rm = T) | any(diff(vent) < 0, na.rm = T),
+      d_icu_anyneg       = all(icu==0, na.rm = T)  | any(diff(icu)  < 0, na.rm = T) )
   
   # deaths not descending
   status <- status & check(y$d_deaths_nonneg,
@@ -961,15 +961,15 @@ ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {
   # recovered not descending
   status <- status & check(y$d_recovered_nonneg,
                            "are you sure 'recovered' are cumulative counts?")
-  # hosp not cumulative (any descending)
-  status <- status & check(y$d_hosp_anyneg,
-                           "are you sure 'hosp' are NOT cumulative counts?")
-  # vent not cumulative (any descending)
-  status <- status & check(y$d_vent_anyneg,
-                           "are you sure 'vent' are NOT cumulative counts?")
-  # icu not cumulative (any descending)
-  status <- status & check(y$d_icu_anyneg,
-                           "are you sure 'icu' are NOT cumulative counts?")
+  # # hosp not cumulative (any descending)
+  # status <- status & check(y$d_hosp_anyneg,
+  #                          "are you sure 'hosp' are NOT cumulative counts?")
+  # # vent not cumulative (any descending)
+  # status <- status & check(y$d_vent_anyneg,
+  #                          "are you sure 'vent' are NOT cumulative counts?")
+  # # icu not cumulative (any descending)
+  # status <- status & check(y$d_icu_anyneg,
+  #                          "are you sure 'icu' are NOT cumulative counts?")
   
   # success
   if(verbose & status)

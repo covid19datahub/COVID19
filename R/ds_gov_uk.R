@@ -19,20 +19,31 @@ gov_uk <- function(level){
     
     repeat {
       
-      httr::GET(
-        url   = endpoint,
-        query = list(
-          filters   = paste(filters, collapse = ";"),
-          structure = jsonlite::toJSON(structure, auto_unbox = TRUE),
-          page      = current_page
-        )
-      ) -> response
+      i <- 1
+      repeat{
+        
+        httr::GET(
+          url   = endpoint,
+          query = list(
+            filters   = paste(filters, collapse = ";"),
+            structure = jsonlite::toJSON(structure, auto_unbox = TRUE),
+            page      = current_page
+          )
+        ) -> response
+        
+        # Handle errors:
+        if ( response$status_code >= 400 ) {
+          i <- 2*i
+          if(i<60)
+            Sys.sleep(i+runif(1))
+          else
+            stop(httr::http_status(response))
+        } else break
+        
+      }
       
       # Handle errors:
-      if ( response$status_code >= 400 ) {
-        err_msg = httr::http_status(response)
-        stop(err_msg)
-      } else if ( response$status_code == 204 ) {
+      if ( response$status_code == 204 ) {
         break
       }
       

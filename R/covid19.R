@@ -152,7 +152,7 @@ covid19 <- function(country = NULL,
     }
       
     if(!is.null(w)){
-      if(!ds_check_format(w, level = level, ci = 0.5, verbose = FALSE)){
+      if(!ds_check_format(w, level = level, ci = 0.9, verbose = FALSE)){
         if(debug) stop("WORLD: check failed")
         w <- NULL
       }
@@ -175,7 +175,7 @@ covid19 <- function(country = NULL,
       }
       
       # check format
-      if(!ds_check_format(y, level = level, ci = 0.5, verbose = FALSE)){
+      if(!ds_check_format(y, level = level, ci = 0.9, verbose = FALSE)){
         if(debug) stop(sprintf("%s: check failed", fun))
         next
       }
