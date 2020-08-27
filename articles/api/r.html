@@ -183,7 +183,7 @@
 <a href="#vintage" class="anchor"></a>Vintage</h2>
 <p>Logical. Retrieve the snapshot of the dataset that was generated at the <code>end</code> date instead of using the latest version. Default <code>FALSE</code>.</p>
 <p>To fetch e.g. US data that were accessible on <em>22th April 2020</em> type</p>
-<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="st">"US"</span>, <span class="kw">end</span> <span class="kw">=</span> <span class="st">"2020-04-22"</span>, <span class="kw">vintage</span> <span class="kw">=</span> <span class="fl">TRUE</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="st">"USA"</span>, <span class="kw">end</span> <span class="kw">=</span> <span class="st">"2020-04-22"</span>, <span class="kw">vintage</span> <span class="kw">=</span> <span class="fl">TRUE</span>)</pre></body></html></div>
 <p>The vintage data are collected at the end of the day, but published with approximately 48 hour delay, once the day is completed in all the timezones.</p>
 </div>
 <div id="merge-with-world-bank-open-data" class="section level2">
