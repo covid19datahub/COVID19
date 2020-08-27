@@ -38,6 +38,27 @@ x <- covid19(level = 2)
 x <- covid19(c("Italy","US"), level = 3)
 ```
 
+## Raw data
+
+Logical. Skip data cleaning? Default `True`. If `raw=False`, the raw data are cleaned by filling missing dates with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`.  
+
+```r
+x <- covid19(raw = FALSE)
+```
+
+## Vintage
+
+Logical. Retrieve the snapshot of the dataset that was generated at the `end` date instead of using the latest version. Default `FALSE`.
+
+To fetch e.g. US data that were accessible on *22th April 2020* type
+
+```r
+x <- covid19("US", end = "2020-04-22", vintage = TRUE)
+```
+
+The vintage data are collected at the end of the day, but published with approximately 48 hour delay, once the day is completed in all the timezones.
+
+
 ## Merge with World Bank Open Data
 
 The dataset can be extended with [World Bank Open Data](https://data.worldbank.org/) via the argument `wb`, a character vector of indicator codes. The codes can be found by inspecting the corresponding URL. For example, the code of the GDP indicator available at https://data.worldbank.org/indicator/NY.GDP.MKTP.CD is `NY.GDP.MKTP.CD`. 
@@ -72,7 +93,7 @@ Data sources are stored in the `src` attribute.
 
 ```R
 s <- covid19cite(x)
-View(S)
+View(s)
 ```
 
 `r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

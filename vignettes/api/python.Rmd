@@ -17,13 +17,13 @@ __PyPI__: https://pypi.org/project/covid19dh/
 
 Install from [pip](https://pypi.org/project/covid19dh/) with
 
-```python
+```py
 pip install covid19dh
 ```
 
 Importing the main function `covid19()`   
 
-```python
+```py
 from covid19dh import covid19
 x, src = covid19() 
 ```
@@ -48,19 +48,19 @@ List of country names (case-insensitive) or ISO codes (alpha-2, alpha-3 or numer
 
 Fetching data from a particular country:
 
-```python
+```py
 x, src = covid19("USA") # Unites States
 ```
 
 Specify multiple countries at the same time:
 
-```python
+```py
 x, src = covid19(["ESP","PT","andorra",250])
 ```
 
 If `country` is omitted, the whole dataset is returned:
 
-```python
+```py
 x, src = covid19()
 ```
 
@@ -68,7 +68,7 @@ x, src = covid19()
 
 Logical. Skip data cleaning? Default `True`. If `raw=False`, the raw data are cleaned by filling missing dates with `NaN` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NaN` values are replaced with the previous non-`NaN` value or `0`.  
 
-```python
+```py
 x, src = covid19(raw = False)
 ```
 
@@ -76,7 +76,7 @@ x, src = covid19(raw = False)
 
 Date can be specified with `datetime.datetime`, `datetime.date` or as a `str` in format `YYYY-mm-dd`.
 
-```python
+```py
 from datetime import datetime
 x, src = covid19("SWE", start = datetime(2020,4,1), end = "2020-05-01")
 ```
@@ -89,7 +89,7 @@ Integer. Granularity level of the data:
 2. State, region or canton level
 3. City or municipality level
 
-```python
+```py
 from datetime import date
 x, src = covid19("USA", level = 2, start = date(2020,5,1))
 ```
@@ -100,7 +100,7 @@ Logical. Memory caching? Significantly improves performance on successive calls.
 
 Caching can be disabled (e.g. for long running programs) by:
 
-```python
+```py
 x, src = covid19("FRA", cache = False)
 ```
 
@@ -110,16 +110,15 @@ Logical. Retrieve the snapshot of the dataset that was generated at the `end` da
 
 To fetch e.g. US data that were accessible on *22th April 2020* type
 
-```python
+```py
 x, src = covid19("US", end = "2020-04-22", vintage = True)
 ```
 
-The vintage data are collected at the end of the day, but published with approximately 48 hour delay,
-once the day is completed in all the timezones.
+The vintage data are collected at the end of the day, but published with approximately 48 hour delay, once the day is completed in all the timezones.
 
 Hence if `vintage = True`, but `end` is not set, warning is raised and `None` is returned.
 
-```python
+```py
 x, src = covid19("USA", vintage = True) # too early to get today's vintage
 ```
 
@@ -131,7 +130,7 @@ UserWarning: vintage data not available yet
 
 The data sources are returned as second value.
 
-```python
+```py
 from covid19dh import covid19
 x, src = covid19("USA")
 print(src)
