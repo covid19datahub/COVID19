@@ -53,7 +53,7 @@ Logical. Retrieve the snapshot of the dataset that was generated at the `end` da
 To fetch e.g. US data that were accessible on *22th April 2020* type
 
 ```r
-x <- covid19("US", end = "2020-04-22", vintage = TRUE)
+x <- covid19("USA", end = "2020-04-22", vintage = TRUE)
 ```
 
 The vintage data are collected at the end of the day, but published with approximately 48 hour delay, once the day is completed in all the timezones.
