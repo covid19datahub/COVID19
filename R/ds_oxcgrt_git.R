@@ -4,6 +4,9 @@ oxcgrt_git <- function(cache){
   url <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
   x   <- read.csv(url, cache = cache)
   
+  # TODO filter by level...
+  x <- x[is.na(x$RegionCode),]
+  
   # formatting
   x <- map_data(x, c(
     "Date"                                    = "date",
