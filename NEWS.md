@@ -1,3 +1,9 @@
+# COVID19 2.3.0 (2020-08-28)
+
+## Minor changes
+
+* **R and Python** packages now return raw data by default.
+
 # COVID19 2.2.0 (2020-08-17)
 
 ## Minor changes
