@@ -10,12 +10,10 @@ POL <- function(level, cache) {
   
   # id
   if(level == 2)
-    x$id <- x$state
-    #x$id <- id(x$state, iso = "POL", ds = "covid19poland_git", level = level)
+    x$id <- id(x$state, iso = "POL", ds = "covid19poland_git", level = level)
   if(level == 3)
-    x$id <- x$district
-    #x$id <- id(x$district, iso = "POL", ds = "covid19poland_git", level = level)
-  
+    x$id <- id(x$district, iso = "POL", ds = "covid19poland_git", level = level)
+
   # return
   return(x)
   
