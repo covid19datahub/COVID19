@@ -11,30 +11,39 @@ covid19poland_git <- function(level, cache){
   
   # format
   x$date <- as.Date(x$date)
-  
-  # group
   x <- x <- map_data(x, c(
     "date"  = "date",
     "NUTS2" = "state",
     "NUTS3" = "district"
   ))
+  x <- x %>% dplyr::arrange(date)
   
-  if(level == 1)
+  # group
+  if(level == 1) {
     x <- x %>%
-      dplyr::count(date, name="deaths")
-  if(level == 2)
+      dplyr::group_by(date) %>%
+      dplyr::tally(name = "deaths") %>%
+      dplyr::mutate(deaths = cumsum(deaths))
+  }
+  if(level == 2) {
     x <- x %>%
       tidyr::drop_na(state) %>%
-      dplyr::count(date,state, name="deaths")
-  if(level == 3)
+      dplyr::group_by(date, state) %>%
+      dplyr::tally(name = "deaths") %>%
+      dplyr::group_by(state) %>%
+      dplyr::arrange(date) %>%
+      dplyr::mutate(deaths = cumsum(deaths))
+  }
+  if(level == 3) {
     x <- x %>%
       tidyr::drop_na(state, district) %>%
-      dplyr::count(date,state,district, name="deaths")
-    
+      dplyr::group_by(date, state, district) %>%
+      dplyr::tally(name = "deaths") %>%
+      dplyr::group_by(state, district) %>%
+      dplyr::arrange(date) %>%
+      dplyr::mutate(deaths = cumsum(deaths))
+  }
 
   # return
   return(x)
-  
 }
-
-covid19poland_git(3,F)
