@@ -253,6 +253,8 @@
 "HKG",1,"longitude","https://www.cia.gov/library/publications/the-world-factbook/geos/hk.html","CIA - Central Intelligence Agency","2020",,,,
 "HMD",1,"latitude","https://www.cia.gov/library/publications/the-world-factbook/geos/hm.html","CIA - Central Intelligence Agency","2020",,,,
 "HMD",1,"longitude","https://www.cia.gov/library/publications/the-world-factbook/geos/hm.html","CIA - Central Intelligence Agency","2020",,,,
+"HRV",2,"confirmed","https://data.gov.hr/dataset/koronavirus/resource/08fab529-ebba-46c7-be79-05782ddb02ef","Ministry of Health of Croatia","2020",,,,
+"HRV",2,"deaths","https://data.gov.hr/dataset/koronavirus/resource/08fab529-ebba-46c7-be79-05782ddb02ef","Ministry of Health of Croatia","2020",,,,
 "HTI",2,"deaths","https://proxy.hxlstandard.org/data/738954","Ministry of Public Health and Population of Haiti","2020",,,,
 "HTI",2,"confirmed","https://proxy.hxlstandard.org/data/738954","Ministry of Public Health and Population of Haiti","2020",,,,
 "HTI",2,"population","https://en.wikipedia.org/wiki/Departments_of_Haiti","Wikipedia","2015",,,,
