@@ -1,3 +1,12 @@
+# COVID19 2.3.0 (2020-09-05)
+
+## Data Update
+
+* Added data for:
+	
+	- Poland: level 2 and 3 (`deaths`)
+	- Croatia: level 2 (`confirmed`, `deaths`)
+	
 # COVID19 2.3.0 (2020-08-28)
 
 ## Minor changes
