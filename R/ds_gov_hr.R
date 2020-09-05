@@ -18,6 +18,11 @@ gov_hr <- function(level, cache) {
     "broj_aktivni"   = "active",
     "Zupanija"       = "region"
   ))
+  
+  # sanitize
+  x$region <- trimws(x$region)
+  
+  # date
   x$date <- as.Date(x$date, "%Y-%m-%d %H:%M")
   
   # return

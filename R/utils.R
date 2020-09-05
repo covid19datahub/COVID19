@@ -83,13 +83,11 @@ fix <- function(x, iso){
 
 id <- function(x, iso, ds, level){
   
-  x <- trimws(iconv(x, "UTF-8"))
-  
   db <- extdata("db",sprintf("%s.csv",iso))
   db <- db[which(db$administrative_area_level==level),]
   
   map        <- db$id
-  names(map) <- trimws(iconv(db[[sprintf("id_%s",ds)]], "UTF-8"))
+  names(map) <- db[[sprintf("id_%s",ds)]]
   
   x   <- map_values(x, map)
   idx <- which(!(x %in% map))
