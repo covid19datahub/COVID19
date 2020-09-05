@@ -2,7 +2,7 @@ POL <- function(level, cache) {
   # Author: Martin Benes
   
   # fallback
-  if(level > 3)
+  if(level==1 | level>3)
     return(NULL)
   
   # download

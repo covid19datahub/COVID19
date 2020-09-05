@@ -1,73 +1,73 @@
-"id","id_covid19poland_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"30a32e9f","PL51",2,"Dolnośląskie",,,,
-"850d50d2","PL81",2,"Lubelskie",,,,
-"1c040168","PL82",2,"Podkarpackie",,,,
-"29b81fde","PL41",2,"Wielkopolskie",,,,
-"051f3029","PL92",2,"Mazowiecki regionalny",,,,
-"e6ebe9e2","PL22",2,"Ślaskie",,,,
-"9b9c1da7","PL72",2,"Świętokrzyskie",,,,
-"b0b14e64","PL42",2,"Zachodniopomorskie",,,,
-"9c166193","PL91",2,"Warszawski stołeczny",,,,
-"7fe2b858","PL21",2,"Małopolskie",,,,
-"02954c1d","PL71",2,"Łódzkie",,,,
-"a9aa7f25","PL52",2,"Opolskie",,,,
-"1b8e7d5c","PL61",2,"Kujawsko-pomorskie",,,,
-"82872ce6","PL62",2,"Warmińsko-mazurskie",,,,
-"f567a45d","PL84",2,"Podlaskie",,,,
-"f5801c70","PL63",2,"Pomorskie",,,,
-"c7b67ef2","PL43",2,"Lubuskie",,,,
-"586ae566","PL514",3,"Dolnośląskie","Miasto Wrocław",,,
-"50b27635","PL814",3,"Lubelskie","Lubelski",,,
-"e5fbb055","PL823",3,"Podkarpackie","Rzeszowski",,,
-"c163b4dc","PL517",3,"Dolnośląskie","Wałbrzyski",,,
-"2eafbfc7","PL415",3,"Wielkopolskie","Miasto Poznań",,,
-"0a37bb4e","PL921",3,"Mazowiecki regionalny","Radomski",,,
-"b86944bf","PL22C",3,"Śląskie","Tyski",,,
-"010f90b6","PL225",3,"Śląskie","Bielski",,,
-"27b546a3","PL815",3,"Lubelskie","Puławski",,,
-"2f6dd5f0","PL515",3,"Dolnośląskie","Jeleniogórski",,,
-"00a99644","PL721",3,"Świętokrzyskie","Kielecki",,,
-"9c8bbdbe","PL426",3,"Zachodniopomorskie","Koszaliński",,,
-"211ae88d","PL911",3,"Warszawski stołeczny","Miasto Warszawa",,,
-"5d25f3e3","PL214",3,"Małopolskie","Krakowski",,,
-"ef01f19a","PL227",3,"Śląskie","Rybnicki",,,
-"7fbeec0b","PL228",3,"Śląskie","Bytomski",,,
-"b9d1d300","PL812",3,"Lubelskie","Chełmsko-zamojski",,,
-"b28d943d","PL712",3,"Łódzkie","Łódzki",,,
-"c3416640","PL213",3,"Małopolskie","Miasto Kraków",,,
-"5493bfc8","PL218",3,"Małopolskie","Nowosądecki",,,
-"b7a6ee7d","PL416",3,"Wielkopolskie","Kaliski",,,
-"7347b6a5","PL524",3,"Opolskie","Opolski",,,
-"56672593","PL22A",3,"Śląskie","Katowicki",,,
-"b4223a13","PL616",3,"Kujawsko-pomorskie","Grudziądzki",,,
-"2b84c587","PL711",3,"Łódzkie","Miasto Łódź",,,
-"7608a020","PL224",3,"Śląskie","Częstochowski",,,
-"016bfc73","PL621",3,"Warmińsko-mazurskie","Elbląski",,,
-"92fc80c3","PL822",3,"Podkarpackie","Przemyski",,,
-"c4a62745","PL842",3,"Podlaskie","Łomżyński",,,
-"b664844a","PL516",3,"Dolnośląskie","Legnicko-głogowski",,,
-"cf1489a1","PL913",3,"Warszawski stołeczny","Warszawski zachodni",,,
-"c58aa4ab","PL713",3,"Łódzkie","Piotrkowski",,,
-"c448ce9c","PL613",3,"Kujawsko-pomorskie","Bydgosko-toruński",,,
-"0d5a7f57","PL925",3,"Mazowiecki regionalny","Siedlecki",,,
-"7b9f25f6","PL824",3,"Podkarpackie","Tarnobrzeski",,,
-"51dca94d","PL518",3,"Dolnośląskie","Wrocławski",,,
-"f67eac1e","PL633",3,"Pomorskie","Trójmiejski",,,
-"94532eed","PL926",3,"Mazowiecki regionalny","Żyrardowski",,,
-"ed232306","PL523",3,"Opolskie","Nyski",,,
-"7285dc92","PL424",3,"Zachodniopomorskie","Miasto Szczecin",,,
-"08b9dc9d","PL229",3,"Śląskie","Gliwicki",,,
-"e439da62","PL923",3,"Mazowiecki regionalny","Płocki",,,
-"cf6e7429","PL22B",3,"Śląskie","Sosnowiecki",,,
-"59a88f51","PL414",3,"Wielkopolskie","Koniński",,,
-"82fd48e6","PL432",3,"Lubuskie","Zielonogórski",,,
-"5daf76ff","PL841",3,"Lubelskie","Białostocki",,,
-"5bee3108","PL714",3,"Łódzkie","Sieradzki",,,
-"20d882ba","PL811",3,"Lubelskie","Bialski",,,
-"501ec37a","PL418",3,"Wielkopolskie","Poznański",,,
-"b3a117d3","PL843",3,"Podlaskie","Suwalski",,,
-"1bf4195c","PL431",3,"Lubuskie","Gorzowski",,,
-"c42ca259","PL217",3,"Małopolskie","Tarnowski",,,
-"23948f5e","PL219",3,"Małopolskie","Nowotarski",,,
-"29c27bde","PL411",3,"Wielkopolskie","Pilski",,,
-"7a5d4fc1","PL924",3,"Mazowiecki regionalny","Ostrołęcki",,,
+"id","id_covid19poland_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key"
+"30a32e9f","PL51",2,"Dolnoslaskie",,,,,"PL51"
+"850d50d2","PL81",2,"Lubelskie",,,,,"PL81"
+"1c040168","PL82",2,"Podkarpackie",,,,,"PL82"
+"29b81fde","PL41",2,"Wielkopolskie",,,,,"PL41"
+"051f3029","PL92",2,"Mazowiecki regionalny",,,,,"PL92"
+"e6ebe9e2","PL22",2,"Slaskie",,,,,"PL22"
+"9b9c1da7","PL72",2,"Swietokrzyskie",,,,,"PL72"
+"b0b14e64","PL42",2,"Zachodniopomorskie",,,,,"PL42"
+"9c166193","PL91",2,"Warszawski stoleczny",,,,,"PL91"
+"7fe2b858","PL21",2,"Malopolskie",,,,,"PL21"
+"02954c1d","PL71",2,"Lódzkie",,,,,"PL71"
+"a9aa7f25","PL52",2,"Opolskie",,,,,"PL52"
+"1b8e7d5c","PL61",2,"Kujawsko-pomorskie",,,,,"PL61"
+"82872ce6","PL62",2,"Warminsko-mazurskie",,,,,"PL62"
+"f567a45d","PL84",2,"Podlaskie",,,,,"PL84"
+"f5801c70","PL63",2,"Pomorskie",,,,,"PL63"
+"c7b67ef2","PL43",2,"Lubuskie",,,,,"PL43"
+"586ae566","PL514",3,"Dolnoslaskie","Miasto Wroclaw",,,,"PL514"
+"50b27635","PL814",3,"Lubelskie","Lubelski",,,,"PL814"
+"e5fbb055","PL823",3,"Podkarpackie","Rzeszowski",,,,"PL823"
+"c163b4dc","PL517",3,"Dolnoslaskie","Walbrzyski",,,,"PL517"
+"2eafbfc7","PL415",3,"Wielkopolskie","Miasto Poznan",,,,"PL415"
+"0a37bb4e","PL921",3,"Mazowiecki regionalny","Radomski",,,,"PL921"
+"b86944bf","PL22C",3,"Slaskie","Tyski",,,,"PL22C"
+"010f90b6","PL225",3,"Slaskie","Bielski",,,,"PL225"
+"27b546a3","PL815",3,"Lubelskie","Pulawski",,,,"PL815"
+"2f6dd5f0","PL515",3,"Dolnoslaskie","Jeleniogórski",,,,"PL515"
+"00a99644","PL721",3,"Swietokrzyskie","Kielecki",,,,"PL721"
+"9c8bbdbe","PL426",3,"Zachodniopomorskie","Koszalinski",,,,"PL426"
+"211ae88d","PL911",3,"Warszawski stoleczny","Miasto Warszawa",,,,"PL911"
+"5d25f3e3","PL214",3,"Malopolskie","Krakowski",,,,"PL214"
+"ef01f19a","PL227",3,"Slaskie","Rybnicki",,,,"PL227"
+"7fbeec0b","PL228",3,"Slaskie","Bytomski",,,,"PL228"
+"b9d1d300","PL812",3,"Lubelskie","Chelmsko-zamojski",,,,"PL812"
+"b28d943d","PL712",3,"Lódzkie","Lódzki",,,,"PL712"
+"c3416640","PL213",3,"Malopolskie","Miasto Kraków",,,,"PL213"
+"5493bfc8","PL218",3,"Malopolskie","Nowosadecki",,,,"PL218"
+"b7a6ee7d","PL416",3,"Wielkopolskie","Kaliski",,,,"PL416"
+"7347b6a5","PL524",3,"Opolskie","Opolski",,,,"PL524"
+"56672593","PL22A",3,"Slaskie","Katowicki",,,,"PL22A"
+"b4223a13","PL616",3,"Kujawsko-pomorskie","Grudziadzki",,,,"PL616"
+"2b84c587","PL711",3,"Lódzkie","Miasto Lódz",,,,"PL711"
+"7608a020","PL224",3,"Slaskie","Czestochowski",,,,"PL224"
+"016bfc73","PL621",3,"Warminsko-mazurskie","Elblaski",,,,"PL621"
+"92fc80c3","PL822",3,"Podkarpackie","Przemyski",,,,"PL822"
+"c4a62745","PL842",3,"Podlaskie","Lomzynski",,,,"PL842"
+"b664844a","PL516",3,"Dolnoslaskie","Legnicko-glogowski",,,,"PL516"
+"cf1489a1","PL913",3,"Warszawski stoleczny","Warszawski zachodni",,,,"PL913"
+"c58aa4ab","PL713",3,"Lódzkie","Piotrkowski",,,,"PL713"
+"c448ce9c","PL613",3,"Kujawsko-pomorskie","Bydgosko-torunski",,,,"PL613"
+"0d5a7f57","PL925",3,"Mazowiecki regionalny","Siedlecki",,,,"PL925"
+"7b9f25f6","PL824",3,"Podkarpackie","Tarnobrzeski",,,,"PL824"
+"51dca94d","PL518",3,"Dolnoslaskie","Wroclawski",,,,"PL518"
+"f67eac1e","PL633",3,"Pomorskie","Trójmiejski",,,,"PL633"
+"94532eed","PL926",3,"Mazowiecki regionalny","Zyrardowski",,,,"PL926"
+"ed232306","PL523",3,"Opolskie","Nyski",,,,"PL523"
+"7285dc92","PL424",3,"Zachodniopomorskie","Miasto Szczecin",,,,"PL424"
+"08b9dc9d","PL229",3,"Slaskie","Gliwicki",,,,"PL229"
+"e439da62","PL923",3,"Mazowiecki regionalny","Plocki",,,,"PL923"
+"cf6e7429","PL22B",3,"Slaskie","Sosnowiecki",,,,"PL22B"
+"59a88f51","PL414",3,"Wielkopolskie","Koninski",,,,"PL414"
+"82fd48e6","PL432",3,"Lubuskie","Zielonogórski",,,,"PL432"
+"5daf76ff","PL841",3,"Lubelskie","Bialostocki",,,,"PL841"
+"5bee3108","PL714",3,"Lódzkie","Sieradzki",,,,"PL714"
+"20d882ba","PL811",3,"Lubelskie","Bialski",,,,"PL811"
+"501ec37a","PL418",3,"Wielkopolskie","Poznanski",,,,"PL418"
+"b3a117d3","PL843",3,"Podlaskie","Suwalski",,,,"PL843"
+"1bf4195c","PL431",3,"Lubuskie","Gorzowski",,,,"PL431"
+"c42ca259","PL217",3,"Malopolskie","Tarnowski",,,,"PL217"
+"23948f5e","PL219",3,"Malopolskie","Nowotarski",,,,"PL219"
+"29c27bde","PL411",3,"Wielkopolskie","Pilski",,,,"PL411"
+"7a5d4fc1","PL924",3,"Mazowiecki regionalny","Ostrolecki",,,,"PL924"

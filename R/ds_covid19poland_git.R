@@ -3,7 +3,6 @@ covid19poland_git <- function(level, cache){
   # source
   repo    <- "https://raw.githubusercontent.com/martinbenes1996/covid19poland/master/data/"
   url     <- "data.csv"
-  last30d <- "last30d.csv"
   
   # download
   url <- sprintf("%s/%s", repo, url)
