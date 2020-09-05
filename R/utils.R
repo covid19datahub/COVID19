@@ -527,10 +527,18 @@ map_values <- function(x, map){
 #' @export
 map_data <- function(x, map){
   
-  if(!is.null(names(map)))
-    colnames(x) <- map_values(colnames(x), map)
+  cn <- names(map)
+  if(is.null(cn))
+    cn <- map
   
-  return(x[, intersect(map, colnames(x)), drop = FALSE])
+  idx <- which(cn=="")
+  if(length(idx))
+    cn[idx] <- unname(map)[idx]
+  
+  x <- x[,intersect(cn, colnames(x)), drop = FALSE]
+  colnames(x) <- map_values(colnames(x), map)
+  
+  return(x)
   
 }
 
