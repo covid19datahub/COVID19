@@ -15,7 +15,7 @@ nytimes_git <- function(cache, level, fips = NULL){
     'fips',
     'county' = 'city',
     'cases'  = 'confirmed',
-    'death'  = 'deaths'
+    'deaths' = 'deaths'
   ))
 
   # clean
