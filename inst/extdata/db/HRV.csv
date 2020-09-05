@@ -1,22 +1,22 @@
-"id","id_gov_hr","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"c354d4f8","HR047",2,"Bjelovarsko-bilogorska",,,,
-"7a3200f1","HR04A",2,"Brodsko-posavska",,,,
-"8c15423f","HR037",2,"Dubrovačko-neretvanska",,,,
-"2a3771cd","HR041",2,"Grad Zagreb",,,,
-"fb1272a9","HR036",2,"Istarska",,,,
-"0a58f47e","HR04D",2,"Karlovačka",,,,
-"2d5ab5d4","HR045",2,"Koprivničko-križevačka",,,,
-"c43910e1","HR043",2,"Krapinsko-zagorska županija",,,,
-"fc7fb6b0","HR032",2,"Ličko-senjska",,,,
-"b453e46e","HR046",2,"Međimurska",,,,
-"e33b514b","HR04B",2,"Osječko-baranjska",,,,
-"24ecf9ff","HR049",2,"Požeško-slavonska",,,,
-"6576e70a","HR031",2,"Primorsko-goranska",,,,
-"151c1385","HR034",2,"Šibensko-kninska",,,,
-"7d5fc4e8","HR04E",2,"Sisačko-moslavačka",,,,
-"621b2313","HR035",2,"Splitsko-dalmatinska",,,,
-"5a5d8542","HR044",2,"Varaždinska",,,,
-"53ebc969","HR048",2,"Virovitičko-podravska",,,,
-"943c61dd","HR04C",2,"Vukovarsko-srijemska",,,,
-"8b788626","HR033",2,"Zadarska",,,,
-"b33e2077","HR042",2,"Zagrebačka",,,,
+"id","id_gov_hr","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key"
+"c354d4f8","Bjelovarsko-bilogorska",2,"Bjelovarsko-bilogorska",,,,,"HR047"
+"7a3200f1","Brodsko-posavska",2,"Brodsko-posavska",,,,,"HR04A"
+"8c15423f","Dubrovacko-neretvanska",2,"Dubrovacko-neretvanska",,,,,"HR037"
+"2a3771cd","Grad Zagreb",2,"Grad Zagreb",,,,,"HR041"
+"fb1272a9","Istarska",2,"Istarska",,,,,"HR036"
+"0a58f47e","Karlovacka",2,"Karlovacka",,,,,"HR04D"
+"2d5ab5d4","Koprivnicko-križevacka",2,"Koprivnicko-križevacka",,,,,"HR045"
+"c43910e1","Krapinsko-zagorska županija",2,"Krapinsko-zagorska županija",,,,,"HR043"
+"fc7fb6b0","Licko-senjska",2,"Licko-senjska",,,,,"HR032"
+"b453e46e","Medimurska",2,"Medimurska",,,,,"HR046"
+"e33b514b","Osjecko-baranjska",2,"Osjecko-baranjska",,,,,"HR04B"
+"24ecf9ff","Požeško-slavonska",2,"Požeško-slavonska",,,,,"HR049"
+"6576e70a","Primorsko-goranska",2,"Primorsko-goranska",,,,,"HR031"
+"151c1385","Šibensko-kninska",2,"Šibensko-kninska",,,,,"HR034"
+"7d5fc4e8","Sisacko-moslavacka",2,"Sisacko-moslavacka",,,,,"HR04E"
+"621b2313","Splitsko-dalmatinska",2,"Splitsko-dalmatinska",,,,,"HR035"
+"5a5d8542","Varaždinska",2,"Varaždinska",,,,,"HR044"
+"53ebc969","Viroviticko-podravska",2,"Viroviticko-podravska",,,,,"HR048"
+"943c61dd","Vukovarsko-srijemska",2,"Vukovarsko-srijemska",,,,,"HR04C"
+"8b788626","Zadarska",2,"Zadarska",,,,,"HR033"
+"b33e2077","Zagrebacka",2,"Zagrebacka",,,,,"HR042"

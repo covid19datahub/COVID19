@@ -2,7 +2,7 @@ HRV <- function(level, cache) {
   # Author: Martin Benes
   
   # fallback
-  if(level > 2)
+  if(level!=2)
     return(NULL)
   
   # download
@@ -10,10 +10,11 @@ HRV <- function(level, cache) {
   
   # id
   if(level == 2) {
-    x$id <- id(x$nuts, iso = "HRV", ds = "gov_hr", level = level)
     
-    
+    x$id <- COVID19:::id(trimws(iconv(x$region, "UTF-8")), iso = "HRV", ds = "gov_hr", level = level)
+  
   }
+  
   # return
   return(x)
   
