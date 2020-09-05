@@ -11,7 +11,7 @@ HRV <- function(level, cache) {
   # id
   if(level == 2) {
     
-    x$id <- COVID19:::id(trimws(iconv(x$region, "UTF-8")), iso = "HRV", ds = "gov_hr", level = level)
+    x$id <- id(x$region, iso = "HRV", ds = "gov_hr", level = level)
   
   }
   
