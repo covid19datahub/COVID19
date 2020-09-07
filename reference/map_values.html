@@ -192,7 +192,7 @@
     <p>Map values of a vector.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>map_values</span>(<span class='no'>x</span>, <span class='no'>map</span>)</pre>
+    <pre class="usage"><span class='fu'>map_values</span>(<span class='kw'>x</span>, <span class='kw'>map</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -212,15 +212,17 @@
     <p><code>vector</code>.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+    <pre class="examples"><div class='input'><span class='co'>if</span> (<span class='fl'>FALSE</span>) {
 
-<span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>'red'</span>,<span class='st'>'green'</span>,<span class='st'>'red'</span>,<span class='st'>'blue'</span>)
+<span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>'red'</span>,<span class='st'>'green'</span>,<span class='st'>'red'</span>,<span class='st'>'blue'</span>)
 
-<span class='fu'>map_values</span>(<span class='no'>x</span>, <span class='kw'>map</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(
-<span class='st'>'red'</span> <span class='kw'>=</span> <span class='st'>'yellow'</span>,
-<span class='st'>'blue'</span> <span class='kw'>=</span> <span class='st'>'orange'</span>))
+<span class='fu'>map_values</span>(<span class='kw'>x</span>, map = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(
+<span class='st'>'red'</span> = <span class='st'>'yellow'</span>, 
+<span class='st'>'blue'</span> = <span class='st'>'orange'</span>))
 
-}</div></pre>
+}
+
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -236,7 +238,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

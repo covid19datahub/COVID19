@@ -192,7 +192,7 @@
     <p>Add new country in the inst/extdata/db/ folder</p>
     </div>
 
-    <pre class="usage"><span class='fu'>add_iso</span>(<span class='no'>x</span>, <span class='no'>iso</span>, <span class='no'>ds</span>, <span class='no'>level</span>, <span class='kw'>map</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"id"</span>), <span class='kw'>append</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>add_iso</span>(<span class='kw'>x</span>, <span class='kw'>iso</span>, <span class='kw'>ds</span>, <span class='kw'>level</span>, map = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"id"</span>), append = <span class='fl'>TRUE</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -228,22 +228,24 @@
     <p><code>data.frame</code></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+    <pre class="examples"><div class='input'><span class='co'>if</span> (<span class='fl'>FALSE</span>) {
 
 <span class='co'># download data</span>
-<span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>COVID19</span><span class='kw ns'>:::</span><span class='fu'>jhucsse_git</span>(<span class='kw'>file</span> <span class='kw'>=</span> <span class='st'>"US"</span>, <span class='kw'>cache</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>level</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>country</span> <span class='kw'>=</span> <span class='st'>"USA"</span>)
+<span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='kw'>COVID19</span>:::<span class='fu'>jhucsse_git</span>(file = <span class='st'>"US"</span>, cache = <span class='fl'>TRUE</span>, level = <span class='fl'>3</span>, country = <span class='st'>"USA"</span>)
 
 <span class='co'># add iso</span>
-<span class='no'>csv</span> <span class='kw'>&lt;-</span> <span class='fu'>add_iso</span>(<span class='no'>x</span>, <span class='kw'>iso</span> <span class='kw'>=</span> <span class='st'>"USA"</span>, <span class='kw'>ds</span> <span class='kw'>=</span> <span class='st'>"jhucsse_git"</span>, <span class='kw'>level</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>map</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(
- <span class='st'>"id"</span>    <span class='kw'>=</span> <span class='st'>"id"</span>,
- <span class='st'>"state"</span> <span class='kw'>=</span> <span class='st'>"administrative_area_level_2"</span>,
- <span class='st'>"city"</span>  <span class='kw'>=</span> <span class='st'>"administrative_area_level_3"</span>,
- <span class='st'>"pop"</span>   <span class='kw'>=</span> <span class='st'>"population"</span>,
- <span class='st'>"lat"</span>   <span class='kw'>=</span> <span class='st'>"latitude"</span>,
- <span class='st'>"lng"</span>   <span class='kw'>=</span> <span class='st'>"longitude"</span>,
- <span class='st'>"fips"</span>  <span class='kw'>=</span> <span class='st'>"key_numeric"</span>))
+<span class='kw'>csv</span> <span class='op'>&lt;-</span> <span class='fu'>add_iso</span>(<span class='kw'>x</span>, iso = <span class='st'>"USA"</span>, ds = <span class='st'>"jhucsse_git"</span>, level = <span class='fl'>3</span>, map = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(
+ <span class='st'>"id"</span>    = <span class='st'>"id"</span>, 
+ <span class='st'>"state"</span> = <span class='st'>"administrative_area_level_2"</span>, 
+ <span class='st'>"city"</span>  = <span class='st'>"administrative_area_level_3"</span>,
+ <span class='st'>"pop"</span>   = <span class='st'>"population"</span>,
+ <span class='st'>"lat"</span>   = <span class='st'>"latitude"</span>,
+ <span class='st'>"lng"</span>   = <span class='st'>"longitude"</span>,
+ <span class='st'>"fips"</span>  = <span class='st'>"key_numeric"</span>))
+ 
+}
 
-}</div></pre>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -259,7 +261,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

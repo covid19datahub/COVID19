@@ -192,7 +192,7 @@
     <p>Reads files from a zip folder.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>read.zip</span>(<span class='no'>zip</span>, <span class='no'>files</span>, <span class='kw'>cache</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>read.zip</span>(<span class='kw'>zip</span>, <span class='kw'>files</span>, cache = <span class='fl'>FALSE</span>, <span class='kw'>...</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -220,16 +220,18 @@
     <p>list of <code>data.frames</code></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+    <pre class="examples"><div class='input'><span class='co'>if</span> (<span class='fl'>FALSE</span>) {
 
-<span class='no'>url</span> <span class='kw'>&lt;-</span> <span class='st'>"https://info.gesundheitsministerium.at/data/data.zip"</span>
+<span class='kw'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://info.gesundheitsministerium.at/data/data.zip"</span>
 
-<span class='no'>x</span>   <span class='kw'>&lt;-</span> <span class='fu'>read.zip</span>(<span class='no'>url</span>, <span class='kw'>cache</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>sep</span> <span class='kw'>=</span> <span class='st'>";"</span>, <span class='kw'>files</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(
-<span class='st'>"confirmed"</span> <span class='kw'>=</span> <span class='st'>"Epikurve.csv"</span>,
-<span class='st'>"deaths"</span>    <span class='kw'>=</span> <span class='st'>"TodesfaelleTimeline.csv"</span>,
-<span class='st'>"recovered"</span> <span class='kw'>=</span> <span class='st'>"GenesenTimeline.csv"</span>))
+<span class='kw'>x</span>   <span class='op'>&lt;-</span> <span class='fu'>read.zip</span>(<span class='kw'>url</span>, cache = <span class='fl'>TRUE</span>, sep = <span class='st'>";"</span>, files = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(
+<span class='st'>"confirmed"</span> = <span class='st'>"Epikurve.csv"</span>,
+<span class='st'>"deaths"</span>    = <span class='st'>"TodesfaelleTimeline.csv"</span>,
+<span class='st'>"recovered"</span> = <span class='st'>"GenesenTimeline.csv"</span>))
 
-}</div></pre>
+}
+
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -245,7 +247,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

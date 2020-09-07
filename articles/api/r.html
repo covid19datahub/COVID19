@@ -153,67 +153,83 @@
 <div id="quickstart" class="section level2">
 <h2 class="hasAnchor">
 <a href="#quickstart" class="anchor"></a>Quickstart</h2>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co"># install the package</span>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="co"># install the package</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"COVID19"</span>)
 
 <span class="co"># load the package</span>
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st">"COVID19"</span>)</pre></body></html></div>
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st"><a href="https://covid19datahub.io">"COVID19"</a></span>)
+</pre></div>
 </div>
 <div id="download-the-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#download-the-data" class="anchor"></a>Download the data</h2>
 <p>See the full documentation by typing <code><a href="../../reference/covid19.html">?covid19</a></code></p>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="co"># Worldwide data by country</span>
-<span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>()
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="co"># Worldwide data by country</span>
+<span class="kw">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>()
 
 <span class="co"># Worldwide data by state</span>
-<span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">level</span> <span class="kw">=</span> <span class="fl">2</span>)
+<span class="kw">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(level = <span class="fl">2</span>)
 
 <span class="co"># Specific country data by city</span>
-<span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Italy"</span>,<span class="st">"US"</span>), <span class="kw">level</span> <span class="kw">=</span> <span class="fl">3</span>)</pre></body></html></div>
+<span class="kw">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"Italy"</span>,<span class="st">"US"</span>), level = <span class="fl">3</span>)
+</pre></div>
 </div>
 <div id="raw-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#raw-data" class="anchor"></a>Raw data</h2>
 <p>Logical. Skip data cleaning? Default <code>True</code>. If <code>raw=False</code>, the raw data are cleaned by filling missing dates with <code>NA</code> values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, <code>NA</code> values are replaced with the previous non-<code>NA</code> value or <code>0</code>.</p>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">raw</span> <span class="kw">=</span> <span class="fl">FALSE</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="kw">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(raw = <span class="fl">FALSE</span>)
+</pre></div>
 </div>
 <div id="vintage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#vintage" class="anchor"></a>Vintage</h2>
 <p>Logical. Retrieve the snapshot of the dataset that was generated at the <code>end</code> date instead of using the latest version. Default <code>FALSE</code>.</p>
 <p>To fetch e.g. US data that were accessible on <em>22th April 2020</em> type</p>
-<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="st">"USA"</span>, <span class="kw">end</span> <span class="kw">=</span> <span class="st">"2020-04-22"</span>, <span class="kw">vintage</span> <span class="kw">=</span> <span class="fl">TRUE</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb4"><pre class="downlit">
+<span class="kw">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="st">"USA"</span>, end = <span class="st">"2020-04-22"</span>, vintage = <span class="fl">TRUE</span>)
+</pre></div>
 <p>The vintage data are collected at the end of the day, but published with approximately 48 hour delay, once the day is completed in all the timezones.</p>
 </div>
 <div id="merge-with-world-bank-open-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#merge-with-world-bank-open-data" class="anchor"></a>Merge with World Bank Open Data</h2>
 <p>The dataset can be extended with <a href="https://data.worldbank.org/">World Bank Open Data</a> via the argument <code>wb</code>, a character vector of indicator codes. The codes can be found by inspecting the corresponding URL. For example, the code of the GDP indicator available at <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" class="uri">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a> is <code>NY.GDP.MKTP.CD</code>.</p>
-<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">wb</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"gdp"</span> <span class="kw">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="kw">=</span> <span class="st">"SH.MED.BEDS.ZS"</span>)
-<span class="no">x</span>  <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">wb</span> <span class="kw">=</span> <span class="no">wb</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb5"><pre class="downlit">
+<span class="kw">wb</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"gdp"</span> = <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> = <span class="st">"SH.MED.BEDS.ZS"</span>)
+<span class="kw">x</span>  <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(wb = <span class="kw">wb</span>)
+</pre></div>
 </div>
 <div id="merge-with-google-mobility-reports" class="section level2">
 <h2 class="hasAnchor">
 <a href="#merge-with-google-mobility-reports" class="anchor"></a>Merge with Google Mobility Reports</h2>
 <p>The dataset can be extended with <a href="https://www.google.com/covid19/mobility/">Google Mobility Reports</a> via the argument <code>gmr</code>, the url to the Google CSV file. At the time of writing, the CSV is available at:</p>
-<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="no">gmr</span> <span class="kw">&lt;-</span> <span class="st">"https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv"</span>
-<span class="no">x</span>   <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">gmr</span> <span class="kw">=</span> <span class="no">gmr</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb6"><pre class="downlit">
+<span class="kw">gmr</span> <span class="op">&lt;-</span> <span class="st">"https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv"</span>
+<span class="kw">x</span>   <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(gmr = <span class="kw">gmr</span>)
+</pre></div>
 </div>
 <div id="merge-with-apple-mobility-reports" class="section level2">
 <h2 class="hasAnchor">
 <a href="#merge-with-apple-mobility-reports" class="anchor"></a>Merge with Apple Mobility Reports</h2>
 <p>The dataset can be extended with <a href="https://www.apple.com/covid19/mobility">Apple Mobility Reports</a> via the argument <code>amr</code>, the url to the Apple CSV file. At the time of writing, the CSV is available at:</p>
-<div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="no">amr</span> <span class="kw">&lt;-</span> <span class="st">"https://covid19-static.cdn-apple.com/covid19-mobility-data/"</span>
-<span class="no">amr</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="no">amr</span>, <span class="st">"2015HotfixDev10/v3/en-us/applemobilitytrends-2020-08-24.csv"</span>)
-<span class="no">x</span>   <span class="kw">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(<span class="kw">amr</span> <span class="kw">=</span> <span class="no">amr</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb7"><pre class="downlit">
+<span class="kw">amr</span> <span class="op">&lt;-</span> <span class="st">"https://covid19-static.cdn-apple.com/covid19-mobility-data/"</span>
+<span class="kw">amr</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste0</a></span>(<span class="kw">amr</span>, <span class="st">"2015HotfixDev10/v3/en-us/applemobilitytrends-2020-08-24.csv"</span>)
+<span class="kw">x</span>   <span class="op">&lt;-</span> <span class="fu"><a href="../../reference/covid19.html">covid19</a></span>(amr = <span class="kw">amr</span>)
+</pre></div>
 </div>
 <div id="data-sources" class="section level2">
 <h2 class="hasAnchor">
 <a href="#data-sources" class="anchor"></a>Data sources</h2>
 <p>Data sources are stored in the <code>src</code> attribute.</p>
-<div class="sourceCode" id="cb8"><html><body><pre class="r"><span class="no">s</span> <span class="kw">&lt;-</span> <span class="fu">covid19cite</span>(<span class="no">x</span>)
-<span class="fu"><a href="https://rdrr.io/r/utils/View.html">View</a></span>(<span class="no">s</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb8"><pre class="downlit">
+<span class="kw">s</span> <span class="op">&lt;-</span> <span class="fu">covid19cite</span>(<span class="kw">x</span>)
+<span class="fu"><a href="https://rdrr.io/r/utils/View.html">View</a></span>(<span class="kw">s</span>)
+</pre></div>
 </div>
 <div id="terms-of-use" class="section level2">
 <h2 class="hasAnchor">
@@ -252,7 +268,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>

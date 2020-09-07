@@ -196,7 +196,7 @@ The function checks the FORMAT, NOT the DATA.
 Before submission, the data should be double checked by comparing with external data sources (e.g. Google search).</p>
     </div>
 
-    <pre class="usage"><span class='fu'>ds_check_format</span>(<span class='no'>x</span>, <span class='no'>level</span>, <span class='kw'>ci</span> <span class='kw'>=</span> <span class='fl'>0.95</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>ds_check_format</span>(<span class='kw'>x</span>, <span class='kw'>level</span>, ci = <span class='fl'>0.95</span>, verbose = <span class='fl'>TRUE</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -216,13 +216,15 @@ Before submission, the data should be double checked by comparing with external 
     <p>logical.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
+    <pre class="examples"><div class='input'><span class='co'>if</span> (<span class='fl'>FALSE</span>) {
 
 <span class='co'># check format of the 'pcmdpc_git' data source</span>
-<span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='kw pkg'>COVID19</span><span class='kw ns'>:::</span><span class='fu'>pcmdpc_git</span>(<span class='kw'>cache</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>level</span> <span class='kw'>=</span> <span class='fl'>1</span>)
-<span class='fu'>ds_check_format</span>(<span class='no'>x</span>, <span class='kw'>level</span> <span class='kw'>=</span> <span class='fl'>1</span>)
+<span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='kw'>COVID19</span>:::<span class='fu'>pcmdpc_git</span>(cache = <span class='fl'>FALSE</span>, level = <span class='fl'>1</span>)
+<span class='fu'>ds_check_format</span>(<span class='kw'>x</span>, level = <span class='fl'>1</span>)
 
-}</div></pre>
+}
+
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -238,7 +240,7 @@ Before submission, the data should be double checked by comparing with external 
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>
