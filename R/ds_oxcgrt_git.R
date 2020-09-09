@@ -1,14 +1,11 @@
-oxcgrt_git <- function(cache){
+oxcgrt_git <- function(level, cache){
   
   # download
   url <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
   x   <- read.csv(url, cache = cache)
   
-  # TODO filter by level...
-  #x <- x[is.na(x$RegionCode),]
-  
   # formatting
-  xx <- map_data(x, c(
+  x <- map_data(x, c(
     "Date"                                    = "date",
     "CountryCode"                             = "iso_alpha_3",
     "RegionCode"                              = "region_code",
@@ -37,9 +34,6 @@ oxcgrt_git <- function(cache){
     "StringencyIndexForDisplay"               = "stringency_index"
   ))
   
-  #xx$school_closing <- 1
-  #xx$school_closing_flag <- 0
-  
   # operations with restrictions
   #check_restrict_country <- function(col,flag) (col != 0) & !is.na(flag) & (flag == 1)
   check_restrict_region  <- function(col,flag) (col != 0) & !is.na(flag) & (flag == 0)
@@ -58,7 +52,7 @@ oxcgrt_git <- function(cache){
     col  <- rlang::sym(col)
     flag <- rlang::sym(flag)
     # change data based on flags
-    xx <- xx %>%
+    x <- x %>%
       dplyr::group_by(iso_alpha_3) %>%
       dplyr::mutate(
         # set column to NA for all country records if flag is set to regional
@@ -67,11 +61,32 @@ oxcgrt_git <- function(cache){
   }
   
   # date
-  xx$date <- as.Date(as.character(xx$date), format = "%Y%m%d")
+  x$date <- as.Date(as.character(x$date), format = "%Y%m%d")
   
-  #View(xx[which(!is.na(xx$region_code)),])
+  # only country level
+  if(level == 1) {
+    x <- x %>%
+      dplyr::filter(is.na(region_code))
+    x$id_oxcgrt_git <- x$iso_alpha_3
+    
+  # only region level
+  } else {
+    x <- x %>%
+      dplyr::filter(!is.na(region_code))
+    x$id_oxcgrt_git <- x$region_code
+  }
   
-  # add IDs to csv file
+  # make id
+  sapply(unique(x$iso_alpha_3), function(iso) {
+    x.iso <- which(x$iso_alpha_3 == iso)
+    tryCatch({
+      defaultW <- getOption("warn") 
+      options(warn = -1) 
+      x[x.iso,"id"] <- id(x[x.iso,"id_oxcgrt_git"], iso = x[x.iso,"iso_alpha_3"], ds = "oxcgrt_git", level = level)
+      options(warn = defaultW)
+    })
+    
+  })
   
   # return
   return(x)
