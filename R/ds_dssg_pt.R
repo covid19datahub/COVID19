@@ -55,10 +55,10 @@ dssg_pt <- function(level, cache) {
       tidyr::pivot_longer(!date, names_to = "region", names_prefix = "confirmed_", values_to = "confirmed")
     xx <- x[,c("date",regions.deaths)] %>%
       tidyr::pivot_longer(!date, names_to = "region", names_prefix = "deaths_", values_to = "deaths") %>%
-      dplyr::right_join(xx, by = c("date","region"))
+      dplyr::full_join(xx, by = c("date","region"))
     xx <- x[,c("date",regions.recovered)] %>%
       tidyr::pivot_longer(!date, names_to = "region", names_prefix = "recovered_", values_to = "recovered") %>%
-      dplyr::right_join(xx, by = c("date","region"))
+      dplyr::full_join(xx, by = c("date","region"))
   }
   
   # date
