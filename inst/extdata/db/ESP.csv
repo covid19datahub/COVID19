@@ -1,72 +1,72 @@
-"id","id_mscbs_es","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"65d624b3","AN",2,"Andalucía",,,,
-"71d778fc","AR",2,"Aragón",,,,
-"06d0486a","AS",2,"Principado de Asturias",,,,
-"5e560a1a","CB",2,"Cantabria",,,,
-"c0329fb9","CE",2,"Ceuta",,,,
-"b9ee271d","CL",2,"Castilla y León",,,,
-"cee9178b","CM",2,"Castilla-La Mancha",,,,
-"57e04631","CN",2,"Canarias",,,,
-"aa82bf4b","CT",2,"Cataluña",,,,
-"f56e54e6","EX",2,"Extremadura",,,,
-"a3339ea4","GA",2,"Galicia",,,,
-"a4b9e290","IB",2,"Islas Baleares",,,,
-"b7d21702","MC",2,"Región de Murcia",,,,
-"29b682a1","MD",2,"Comunidad de Madrid",,,,
-"276d0a93","ML",2,"Melilla",,,,
-"9cff44c1","NC",2,"Comunidad Foral de Navarra",,,,
-"25639ff5","PV",2,"País Vasco",,,,
-"9a5df082","RI",2,"La Rioja",,,,
-"1ee4dc98","VC",2,"Comunidad Valenciana",,,,
-"42ba56f3","A",3,"Comunidad Valenciana","Alicante",,,
-"6c606898","AB",3,"Castilla-La Mancha","Albacete",,,
-"8bd8459f","AL",3,"Andalucía","Almería",,,
-"76babce5","AV",3,"Castilla y León","Ávila",,,
-"dbb30749","B",3,"Cataluña","Barcelona",,,
-"de446ae1","BA",3,"Extremadura","Badajoz",,,
-"d09fe2d3","BI",3,"País Vasco","Vizcaya",,,
-"c49ebe9c","BU",3,"Castilla y León","Burgos",,,
-"acb437df","C",3,"Galicia","La Coruña",,,
-"c75f5ba0","CA",3,"Andalucía","Cádiz",,,
-"29513a8c","CC",3,"Extremadura","Cáceres",,,
-"6713d049","CE3",3,"Ceuta","Ceuta",,,
-"20e776a7","CO",3,"Andalucía","Córdoba",,,
-"43e11a7e","CR",3,"Castilla-La Mancha","Ciudad Real",,,
-"34e62ae8","CS",3,"Comunidad Valenciana","Castellón",,,
-"dd858fdd","CU",3,"Castilla-La Mancha","Cuenca",,,
-"4d3dff88","GC",3,"Canarias","Las Palmas",,,
-"ade81696","GI",3,"Cataluña","Gerona",,,
-"278ddf7a","GR",3,"Andalucía","Granada",,,
-"b9e94ad9","GU",3,"Castilla-La Mancha","Guadalajara",,,
-"3b66ee57","H",3,"Andalucía","Huelva",,,
-"3e715616","HU",3,"Aragón","Huesca",,,
-"d5688f7b","J",3,"Andalucía","Jaén",,,
-"3c0b2a4e","L",3,"Cataluña","Lérida",,,
-"47aa8376","LE",3,"Castilla y León","León",,,
-"a77f6a68","LO",3,"La Rioja","La Rioja",,,
-"5a1d9312","LU",3,"Galicia","Lugo",,,
-"4b0c1ad8","M",3,"Comunidad de Madrid","Madrid",,,
-"59dc762e","MA",3,"Andalucía","Málaga",,,
-"5eb1b237","ME",3,"Melilla","Melilla",,,
-"4306a253","MU",3,"Región de Murcia","Murcia",,,
-"72f125ed","NA",3,"Comunidad Foral de Navarra","Navarra",,,
-"a5027bf4","O",3,"Principado de Asturias","Asturias",,,
-"ef545572","OR",3,"Galicia","Orense",,,
-"280a7601","P",3,"Castilla y León","Palencia",,,
-"af065619","PM",3,"Islas Baleares","Baleares",,,
-"41083735","PO",3,"Galicia","Pontevedra",,,
-"b10327bb","S",3,"Cantabria","Cantabria",,,
-"8d9d49f1","SA",3,"Castilla y León","Salamanca",,,
-"8af08de8","SE",3,"Andalucía","Sevilla",,,
-"64feecc4","SG",3,"Castilla y León","Segovia",,,
-"6a2564f6","SO",3,"Castilla y León","Soria",,,
-"7e2438b9","SS",3,"País Vasco","Guipúzcoa",,,
-"2f67b218","T",3,"Cataluña","Tarragona",,,
-"c5b11b2f","TE",3,"Aragón","Teruel",,,
-"5cb84a95","TF",3,"Canarias","Santa Cruz de Tenerife",,,
-"2564f231","TO",3,"Castilla-La Mancha","Toledo",,,
-"c169d334","V",3,"Comunidad Valenciana","Valencia",,,
-"f0eabdb4","VA",3,"Castilla y León","Valladolid",,,
-"fe313586","VI",3,"País Vasco","Álava",,,
-"c8df9f1f","Z",3,"Aragón","Zaragoza",,,
-"5c5ff2b8","ZA",3,"Castilla y León","Zamora",,,
+"id","id_mscbs_es","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key"
+"65d624b3","AN",2,"Andalucía",,,,,"AN"
+"71d778fc","AR",2,"Aragón",,,,,"AR"
+"06d0486a","AS",2,"Principado de Asturias",,,,,"AS"
+"5e560a1a","CB",2,"Cantabria",,,,,"CB"
+"c0329fb9","CE",2,"Ceuta",,,,,"CE"
+"b9ee271d","CL",2,"Castilla y León",,,,,"CL"
+"cee9178b","CM",2,"Castilla-La Mancha",,,,,"CM"
+"57e04631","CN",2,"Canarias",,,,,"CN"
+"aa82bf4b","CT",2,"Cataluña",,,,,"CT"
+"f56e54e6","EX",2,"Extremadura",,,,,"EX"
+"a3339ea4","GA",2,"Galicia",,,,,"GA"
+"a4b9e290","IB",2,"Islas Baleares",,,,,"IB"
+"b7d21702","MC",2,"Región de Murcia",,,,,"MC"
+"29b682a1","MD",2,"Comunidad de Madrid",,,,,"MD"
+"276d0a93","ML",2,"Melilla",,,,,"ML"
+"9cff44c1","NC",2,"Comunidad Foral de Navarra",,,,,"NC"
+"25639ff5","PV",2,"País Vasco",,,,,"PV"
+"9a5df082","RI",2,"La Rioja",,,,,"RI"
+"1ee4dc98","VC",2,"Comunidad Valenciana",,,,,"VC"
+"42ba56f3","A",3,"Comunidad Valenciana","Alicante",,,,"A"
+"6c606898","AB",3,"Castilla-La Mancha","Albacete",,,,"AB"
+"8bd8459f","AL",3,"Andalucía","Almería",,,,"AL"
+"76babce5","AV",3,"Castilla y León","Ávila",,,,"AV"
+"dbb30749","B",3,"Cataluña","Barcelona",,,,"B"
+"de446ae1","BA",3,"Extremadura","Badajoz",,,,"BA"
+"d09fe2d3","BI",3,"País Vasco","Vizcaya",,,,"BI"
+"c49ebe9c","BU",3,"Castilla y León","Burgos",,,,"BU"
+"acb437df","C",3,"Galicia","La Coruña",,,,"C"
+"c75f5ba0","CA",3,"Andalucía","Cádiz",,,,"CA"
+"29513a8c","CC",3,"Extremadura","Cáceres",,,,"CC"
+"6713d049","CE",3,"Ceuta","Ceuta",,,,"CE"
+"20e776a7","CO",3,"Andalucía","Córdoba",,,,"CO"
+"43e11a7e","CR",3,"Castilla-La Mancha","Ciudad Real",,,,"CR"
+"34e62ae8","CS",3,"Comunidad Valenciana","Castellón",,,,"CS"
+"dd858fdd","CU",3,"Castilla-La Mancha","Cuenca",,,,"CU"
+"4d3dff88","GC",3,"Canarias","Las Palmas",,,,"GC"
+"ade81696","GI",3,"Cataluña","Gerona",,,,"GI"
+"278ddf7a","GR",3,"Andalucía","Granada",,,,"GR"
+"b9e94ad9","GU",3,"Castilla-La Mancha","Guadalajara",,,,"GU"
+"3b66ee57","H",3,"Andalucía","Huelva",,,,"H"
+"3e715616","HU",3,"Aragón","Huesca",,,,"HU"
+"d5688f7b","J",3,"Andalucía","Jaén",,,,"J"
+"3c0b2a4e","L",3,"Cataluña","Lérida",,,,"L"
+"47aa8376","LE",3,"Castilla y León","León",,,,"LE"
+"a77f6a68","LO",3,"La Rioja","La Rioja",,,,"LO"
+"5a1d9312","LU",3,"Galicia","Lugo",,,,"LU"
+"4b0c1ad8","M",3,"Comunidad de Madrid","Madrid",,,,"M"
+"59dc762e","MA",3,"Andalucía","Málaga",,,,"MA"
+"5eb1b237","ME",3,"Melilla","Melilla",,,,"ME"
+"4306a253","MU",3,"Región de Murcia","Murcia",,,,"MU"
+"72f125ed","NA",3,"Comunidad Foral de Navarra","Navarra",,,,"NA"
+"a5027bf4","O",3,"Principado de Asturias","Asturias",,,,"O"
+"ef545572","OR",3,"Galicia","Orense",,,,"OR"
+"280a7601","P",3,"Castilla y León","Palencia",,,,"P"
+"af065619","PM",3,"Islas Baleares","Baleares",,,,"PM"
+"41083735","PO",3,"Galicia","Pontevedra",,,,"PO"
+"b10327bb","S",3,"Cantabria","Cantabria",,,,"S"
+"8d9d49f1","SA",3,"Castilla y León","Salamanca",,,,"SA"
+"8af08de8","SE",3,"Andalucía","Sevilla",,,,"SE"
+"64feecc4","SG",3,"Castilla y León","Segovia",,,,"SG"
+"6a2564f6","SO",3,"Castilla y León","Soria",,,,"SO"
+"7e2438b9","SS",3,"País Vasco","Guipúzcoa",,,,"SS"
+"2f67b218","T",3,"Cataluña","Tarragona",,,,"T"
+"c5b11b2f","TE",3,"Aragón","Teruel",,,,"TE"
+"5cb84a95","TF",3,"Canarias","Santa Cruz de Tenerife",,,,"TF"
+"2564f231","TO",3,"Castilla-La Mancha","Toledo",,,,"TO"
+"c169d334","V",3,"Comunidad Valenciana","Valencia",,,,"V"
+"f0eabdb4","VA",3,"Castilla y León","Valladolid",,,,"VA"
+"fe313586","VI",3,"País Vasco","Álava",,,,"VI"
+"c8df9f1f","Z",3,"Aragón","Zaragoza",,,,"Z"
+"5c5ff2b8","ZA",3,"Castilla y León","Zamora",,,,"ZA"
