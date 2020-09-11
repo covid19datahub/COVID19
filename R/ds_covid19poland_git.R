@@ -18,7 +18,7 @@ covid19poland_git <- function(level, cache){
     "NUTS2" = "state",
     "NUTS3" = "district"
   ))
-  x <- x %>% dplyr::arrange(date)
+  
   # format test
   x.test$date <- as.Date(x.test$date)
   x.test <- map_data(x.test, c(
@@ -27,9 +27,7 @@ covid19poland_git <- function(level, cache){
     "tests"  = "tests"
   ))
   x.test <- x.test %>%
-    dplyr::filter(!is.na(state)) %>%
-    dplyr::arrange(date, state)
-    
+    dplyr::filter(!is.na(state)) 
   
   # group
   if(level == 1) {
@@ -45,11 +43,8 @@ covid19poland_git <- function(level, cache){
       dplyr::tally(name = "deaths") %>%
       dplyr::group_by(state) %>%
       dplyr::arrange(date) %>%
-      dplyr::mutate(deaths = cumsum(deaths))
-    
-    x <- x %>%
-      dplyr::full_join(x.test, by=c("date","state")) %>%
-      dplyr::arrange(date, state)
+      dplyr::mutate(deaths = cumsum(deaths)) %>%
+      dplyr::full_join(x.test, by=c("date","state")) 
   }
   if(level == 3) {
     x <- x %>%
