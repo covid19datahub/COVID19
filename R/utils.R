@@ -862,7 +862,7 @@ ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {
   }
   
   # subset
-  x      <- x[!is.na(x$id), apply(x[!is.na(x$id),], 2, function(x) any(!is.na(x))), drop=FALSE]
+  x      <- x[, apply(x, 2, function(x) any(!is.na(x))), drop=FALSE]
   cols   <- colnames(x)
   status <- TRUE
   
