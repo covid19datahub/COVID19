@@ -1,8 +1,8 @@
-"id","id_dssg_pt","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"79b620d3","PT11",2,"Norte",,,,
-"7edbe4ca","PT15",2,"Algarve",,,,
-"e7d2b570","PT16",2,"Centro",,,,
-"90d585e6","PT17",2,"Lisboa",,,,
-"006a9877","PT18",2,"Alentejo",,,,
-"259c4386","PT20",2,"Açores",,,,
-"3c8772c7","PT30",2,"Madeira",,,,
+"id","id_dssg_pt","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key"
+"79b620d3","PT11",2,"Norte",,,,,"PT11"
+"7edbe4ca","PT15",2,"Algarve",,,,,"PT15"
+"e7d2b570","PT16",2,"Centro",,,,,"PT16"
+"90d585e6","PT17",2,"Lisboa",,,,,"PT17"
+"006a9877","PT18",2,"Alentejo",,,,,"PT18"
+"259c4386","PT20",2,"Açores",,,,,"PT20"
+"3c8772c7","PT30",2,"Madeira",,,,,"PT30"

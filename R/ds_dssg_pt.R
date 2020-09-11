@@ -13,7 +13,7 @@ dssg_pt <- function(level, cache) {
     "confirmados_novos"       = "confirmed_daily",
     "recuperados"             = "recovered",
     "obitos"                  = "deaths",
-    "internados"              = "hospitalized",
+    "internados"              = "hosp",
     "internados_uci"          = "icu",
     # regions
     "confirmados_arsnorte"    = "confirmed_PT11", # confirmed
@@ -40,7 +40,7 @@ dssg_pt <- function(level, cache) {
   ))
   
   if(level == 1) {
-    xx <- x[,c("date","confirmed","recovered","deaths","hospitalized","icu")]
+    xx <- x[,c("date","confirmed","recovered","deaths","hosp","icu")]
   }
   if(level == 2) {
     
