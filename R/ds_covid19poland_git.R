@@ -1,21 +1,33 @@
 covid19poland_git <- function(level, cache){
   
   # source
-  repo    <- "https://raw.githubusercontent.com/martinbenes1996/covid19poland/master/data/"
-  url     <- "data.csv"
+  repo     <- "https://raw.githubusercontent.com/martinbenes1996/covid19poland/master/data/"
+  url      <- "data.csv"
+  test.url <- "tests.csv"
   
   # download
-  url <- sprintf("%s/%s", repo, url)
-  x   <- read.csv(url, cache = cache)
+  url      <- sprintf("%s/%s", repo, url)
+  test.url <- sprintf("%s/%s", repo, test.url)
+  x        <- read.csv(url, cache = cache)
+  x.test   <- read.csv(test.url, cache = cache)
   
   # format
   x$date <- as.Date(x$date)
-  x <- x <- map_data(x, c(
+  x <- map_data(x, c(
     "date"  = "date",
     "NUTS2" = "state",
     "NUTS3" = "district"
   ))
-  x <- x %>% dplyr::arrange(date)
+  
+  # format test
+  x.test$date <- as.Date(x.test$date)
+  x.test <- map_data(x.test, c(
+    "date"   = "date",
+    "region" = "state",
+    "tests"  = "tests"
+  ))
+  x.test <- x.test %>%
+    dplyr::filter(!is.na(state)) 
   
   # group
   if(level == 1) {
@@ -31,7 +43,8 @@ covid19poland_git <- function(level, cache){
       dplyr::tally(name = "deaths") %>%
       dplyr::group_by(state) %>%
       dplyr::arrange(date) %>%
-      dplyr::mutate(deaths = cumsum(deaths))
+      dplyr::mutate(deaths = cumsum(deaths)) %>%
+      dplyr::full_join(x.test, by=c("date","state")) 
   }
   if(level == 3) {
     x <- x %>%
