@@ -11,15 +11,16 @@ mscbs_es <- function(level, cache) {
     x <- map_data(x, c(
       "fecha"     = "date",
       "ccaa_iso"  = "state",
-      "num_casos" = "confirmed")) %>%
+      "num_casos" = "confirmed")) 
+    
+    # cumulate
+    x <- x %>%
       dplyr::group_by(state) %>%
       dplyr::arrange(date) %>%
       dplyr::mutate(confirmed = cumsum(confirmed))
     
     # date
     x$date <- as.Date(x$date, "%Y-%m-%d")
-    x      <- x %>%
-      dplyr::arrange(date, state)
     
   }
   if(level == 3) {
@@ -32,16 +33,19 @@ mscbs_es <- function(level, cache) {
     x <- map_data(x, c(
       "fecha"         = "date",
       "provincia_iso" = "district",
-      "num_casos"     = "confirmed")) %>%
+      "num_casos"     = "confirmed")) 
+    
+    # cumulate
+    x <- x %>%
       dplyr::group_by(district) %>%
       dplyr::arrange(date) %>%
       dplyr::mutate(confirmed = cumsum(confirmed))
-    x[which(x$district == "CE"),"district"] <- "CE3"
+    
+    # fix
+    # x[which(x$district == "CE"),"district"] <- "CE3"
     
     # date
     x$date <- as.Date(x$date, "%Y-%m-%d")
-    x      <- x %>%
-      dplyr::arrange(date, district)
     
   }
   
