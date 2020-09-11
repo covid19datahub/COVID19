@@ -12,7 +12,7 @@ covid19poland_git <- function(level, cache){
   x.test   <- read.csv(test.url, cache = cache)
   
   # format
-  x$date      <- as.Date(x$date)
+  x$date <- as.Date(x$date)
   x <- map_data(x, c(
     "date"  = "date",
     "NUTS2" = "state",
