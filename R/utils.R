@@ -861,13 +861,8 @@ ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {
     return(FALSE)
   }
   
-  # subset
-  x      <- x[, apply(x, 2, function(x) any(!is.na(x))), drop=FALSE]
-  cols   <- colnames(x)
-  status <- TRUE
-  
   # id missing 
-  if(!("id" %in% cols)){
+  if(!("id" %in% colnames(x))){
     if(level>1){
       warning("column 'id' missing. Please add the id for each location (required for level > 1)")
       return(FALSE)
@@ -876,6 +871,12 @@ ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {
       x$id <- "id"
     }
   }
+  
+  # subset
+  x      <- x[!is.na(x$id),]
+  x      <- x[, apply(x, 2, function(x) any(!is.na(x))), drop=FALSE]
+  cols   <- colnames(x)
+  status <- TRUE
   
   # date missing 
   if(!("date" %in% cols)){
