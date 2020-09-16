@@ -1,10 +1,10 @@
 IRL <- function(level, cache) {
   
   # fallback
-  if(level != 2) return(NULL)
+  if(level > 2) return(NULL)
   
   # download
-  x <- gov_ie(cache = cache)
+  x <- gov_ie(level = level, cache = cache)
   
   # id
   x$id <- id(x$county, iso = "IRL", ds = "gov_ie", level = level)
