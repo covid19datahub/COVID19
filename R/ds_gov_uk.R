@@ -98,6 +98,10 @@ gov_uk <- function(level){
     
   }
   
+  # clean
+  if(level==3)
+    x <- x[!duplicated(x[,c("date","code")]),]
+  
   # date
   x$date <- as.Date(x$date)
   
