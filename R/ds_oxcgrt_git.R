@@ -83,19 +83,19 @@ oxcgrt_git <- function(level, cache){
   }
   
   # make id
-  sapply(unique(x$iso_alpha_3), function(iso) {
-    x.iso <- which(x$iso_alpha_3 == iso)
-    print(iso)
-    tryCatch({
-      defaultW <- getOption("warn") 
-      options(warn = -1)
-      isoid <- id(x[x.iso,"id_oxcgrt_git"], iso = x[x.iso,"iso_alpha_3"], ds = "oxcgrt_git", level = level)
-      print(isoid)
-      #x[x.iso,"id"] <- 
-      options(warn = defaultW)
-    })
+  if(level > 1)
+    sapply(unique(x$iso_alpha_3), function(iso) {
+      x.iso <- which(x$iso_alpha_3 == iso)
+      print(tail(x[x.iso,]))
+      x[x.iso,"id"] <- id(x[x.iso,"id_oxcgrt_git"], iso = x[x.iso,"iso_alpha_3"], ds = "oxcgrt_git", level = level)
+      
+      #tryCatch({
+      #  defaultW <- getOption("warn") 
+      #  options(warn = -1)
+      #  options(warn = defaultW)
+      #})
     
-  })
+    })
   
   # return
   return(x)

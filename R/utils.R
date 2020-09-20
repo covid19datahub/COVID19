@@ -84,6 +84,8 @@ fix <- function(x, iso){
 id <- function(x, iso, ds, level){
   
   db <- extdata("db",sprintf("%s.csv",iso))
+  if(is.null(db))
+    return(NULL)
   db <- db[which(db$administrative_area_level==level),]
   
   map        <- db$id
