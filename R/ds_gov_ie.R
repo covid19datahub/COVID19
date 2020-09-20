@@ -46,7 +46,7 @@ gov_ie <- function(level, cache) {
     x <- x %>% 
       merge(x.icu, by = "date", all = TRUE) %>%
       merge(x.hosp, by = "date", all = TRUE) %>%
-      merge(x.test, by = "date", all = TRUE) 
+      merge(x.tests, by = "date", all = TRUE) 
     
   }
   if(level == 2) {
