@@ -1,69 +1,69 @@
-"id","id_sotho_tha","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key"
-"c0b92f05",1,2,"Bangkok",,,,,"1"
-"ffeb947c",19,2,"Nakhon Pathom",,,,,"19"
-"aa77bb02",24,2,"Nonthaburi",,,,,"24"
-"b4014e5a",30,2,"Prachuap Khiri Khan",,,,,"30"
-"154eb9b1",42,2,"Phuket",,,,,"42"
-"815ae8c1",14,2,"Chiang Mai",,,,,"14"
-"59b07ebf",2,2,"Krabi",,,,,"2"
-"c976ba1f",60,2,"Samut Prakan",,,,,"60"
-"ce62a737",9,2,"Chonburi",,,,,"9"
-"43141e37",22,2,"Nakhon Si Thammarat",,,,,"22"
-"57122fbc",67,2,"Suphan Buri",,,,,"67"
-"d4c6c7bf",29,2,"Pathum Thani",,,,,"29"
-"dd708b94",25,2,"Narathiwat",,,,,"25"
-"fb40d89d",40,2,"Phetchabun",,,,,"40"
-"65244d3e",47,2,"Yala",,,,,"47"
-"20151f2a",66,2,"Sukhothai",,,,,"66"
-"5a0f2f76",32,2,"Pattani",,,,,"32"
-"c7ad322d",68,2,"Surat Thani",,,,,"68"
-"b0d3db8a",4,2,"Kalasin",,,,,"4"
-"5eddbaa6",6,2,"Khon Kaen",,,,,"6"
-"da1d4f8d",21,2,"Nakhon Ratchasima",,,,,"21"
-"f59b50af",48,2,"Roi Et",,,,,"48"
-"5d62eb6f",36,2,"Phatthalung",,,,,"36"
-"e25be9dc",50,2,"Rayong",,,,,"50"
-"ce1b7e06",64,2,"Saraburi",,,,,"64"
-"4e091efd",77,2,"Ubon Ratchathani",,,,,"77"
-"88eca4ea",18,2,"Nakhon Nayok",,,,,"18"
-"ec8061ee",58,2,"Songkhla",,,,,"58"
-"2eb74e29",3,2,"Kanchanaburi",,,,,"3"
-"b96597a1",8,2,"Chachoengsao",,,,,"8"
-"1f3e7d62",13,2,"Chiang Rai",,,,,"13"
-"a3c1f729",28,2,"Buriram",,,,,"28"
-"c3067ecc",31,2,"Prachinburi",,,,,"31"
-"0c5588f0",52,2,"Lopburi",,,,,"52"
-"0b384ce9",56,2,"Sisaket",,,,,"56"
-"2778db33",62,2,"Samut Sakhon",,,,,"62"
-"b0aa02bb",69,2,"Surin",,,,,"69"
-"8c47e80b",41,2,"Phrae",,,,,"41"
-"955cd94a",51,2,"Ratchaburi",,,,,"51"
-"92311d53",55,2,"Loei",,,,,"55"
-"507feba5",63,2,"Sa Kaeo",,,,,"63"
-"a76abbc8",71,2,"Nong Bua Lamphu",,,,,"71"
-"d7004f47",74,2,"Udon Thani",,,,,"74"
-"29da8a30",7,2,"Chanthaburi",,,,,"7"
-"12237da8",46,2,"Yasothon",,,,,"46"
-"1853b97b",17,2,"Tak",,,,,"17"
-"62498927",43,2,"Maha Sarakham",,,,,"43"
-"f65dd857",15,2,"Trang",,,,,"15"
-"cdddf6fe",39,2,"Phetchaburi",,,,,"39"
-"390e2e6b",76,2,"Uthai Thani",,,,,"76"
-"34132ea1",23,2,"Nakhon Sawan",,,,,"23"
-"badac668",38,2,"Phitsanulok",,,,,"38"
-"fc2d1c84",44,2,"Mukdahan",,,,,"44"
-"4964dae4",73,2,"Amnat Charoen",,,,,"73"
-"f1301c4e",11,2,"Chaiyaphum",,,,,"11"
-"8b2a2c12",45,2,"Mae Hong Son",,,,,"45"
-"d06d8b5e",70,2,"Nong Khai",,,,,"70"
-"b36c8a43",34,2,"Phayao",,,,,"34"
-"ad1a7f1b",20,2,"Nakhon Phanom",,,,,"20"
-"e5362dc5",54,2,"Lamphun",,,,,"54"
-"a0077fd1",75,2,"Uttaradit",,,,,"75"
-"68394df4",12,2,"Chumphon",,,,,"12"
-"be718a89",61,2,"Samut Songkhram",,,,,"61"
-"2d081fe0",33,2,"Phra Nakhon Si Ayutthaya",,,,,"33"
-"7b52b866",53,2,"Lampang",,,,,"53"
-"7c3f7c7f",57,2,"Sakon Nakhon",,,,,"57"
-"9b875178",59,2,"Satun",,,,,"59"
-"c46bbad5",35,2,"Phang Nga",,,,,"35"
+"id","id_sotho_tha","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric"
+"c0b92f05","1",2,"Bangkok",,,,,1
+"ffeb947c","19",2,"Nakhon Pathom",,,,,19
+"aa77bb02","24",2,"Nonthaburi",,,,,24
+"b4014e5a","30",2,"Prachuap Khiri Khan",,,,,30
+"154eb9b1","42",2,"Phuket",,,,,42
+"815ae8c1","14",2,"Chiang Mai",,,,,14
+"59b07ebf","2",2,"Krabi",,,,,2
+"c976ba1f","60",2,"Samut Prakan",,,,,60
+"ce62a737","9",2,"Chonburi",,,,,9
+"43141e37","22",2,"Nakhon Si Thammarat",,,,,22
+"57122fbc","67",2,"Suphan Buri",,,,,67
+"d4c6c7bf","29",2,"Pathum Thani",,,,,29
+"dd708b94","25",2,"Narathiwat",,,,,25
+"fb40d89d","40",2,"Phetchabun",,,,,40
+"65244d3e","47",2,"Yala",,,,,47
+"20151f2a","66",2,"Sukhothai",,,,,66
+"5a0f2f76","32",2,"Pattani",,,,,32
+"c7ad322d","68",2,"Surat Thani",,,,,68
+"b0d3db8a","4",2,"Kalasin",,,,,4
+"5eddbaa6","6",2,"Khon Kaen",,,,,6
+"da1d4f8d","21",2,"Nakhon Ratchasima",,,,,21
+"f59b50af","48",2,"Roi Et",,,,,48
+"5d62eb6f","36",2,"Phatthalung",,,,,36
+"e25be9dc","50",2,"Rayong",,,,,50
+"ce1b7e06","64",2,"Saraburi",,,,,64
+"4e091efd","77",2,"Ubon Ratchathani",,,,,77
+"88eca4ea","18",2,"Nakhon Nayok",,,,,18
+"ec8061ee","58",2,"Songkhla",,,,,58
+"2eb74e29","3",2,"Kanchanaburi",,,,,3
+"b96597a1","8",2,"Chachoengsao",,,,,8
+"1f3e7d62","13",2,"Chiang Rai",,,,,13
+"a3c1f729","28",2,"Buriram",,,,,28
+"c3067ecc","31",2,"Prachinburi",,,,,31
+"0c5588f0","52",2,"Lopburi",,,,,52
+"0b384ce9","56",2,"Sisaket",,,,,56
+"2778db33","62",2,"Samut Sakhon",,,,,62
+"b0aa02bb","69",2,"Surin",,,,,69
+"8c47e80b","41",2,"Phrae",,,,,41
+"955cd94a","51",2,"Ratchaburi",,,,,51
+"92311d53","55",2,"Loei",,,,,55
+"507feba5","63",2,"Sa Kaeo",,,,,63
+"a76abbc8","71",2,"Nong Bua Lamphu",,,,,71
+"d7004f47","74",2,"Udon Thani",,,,,74
+"29da8a30","7",2,"Chanthaburi",,,,,7
+"12237da8","46",2,"Yasothon",,,,,46
+"1853b97b","17",2,"Tak",,,,,17
+"62498927","43",2,"Maha Sarakham",,,,,43
+"f65dd857","15",2,"Trang",,,,,15
+"cdddf6fe","39",2,"Phetchaburi",,,,,39
+"390e2e6b","76",2,"Uthai Thani",,,,,76
+"34132ea1","23",2,"Nakhon Sawan",,,,,23
+"badac668","38",2,"Phitsanulok",,,,,38
+"fc2d1c84","44",2,"Mukdahan",,,,,44
+"4964dae4","73",2,"Amnat Charoen",,,,,73
+"f1301c4e","11",2,"Chaiyaphum",,,,,11
+"8b2a2c12","45",2,"Mae Hong Son",,,,,45
+"d06d8b5e","70",2,"Nong Khai",,,,,70
+"b36c8a43","34",2,"Phayao",,,,,34
+"ad1a7f1b","20",2,"Nakhon Phanom",,,,,20
+"e5362dc5","54",2,"Lamphun",,,,,54
+"a0077fd1","75",2,"Uttaradit",,,,,75
+"68394df4","12",2,"Chumphon",,,,,12
+"be718a89","61",2,"Samut Songkhram",,,,,61
+"2d081fe0","33",2,"Phra Nakhon Si Ayutthaya",,,,,33
+"7b52b866","53",2,"Lampang",,,,,53
+"7c3f7c7f","57",2,"Sakon Nakhon",,,,,57
+"9b875178","59",2,"Satun",,,,,59
+"c46bbad5","35",2,"Phang Nga",,,,,35
