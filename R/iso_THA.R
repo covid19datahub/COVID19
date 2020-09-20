@@ -5,7 +5,7 @@ THA <- function(level, cache) {
   if(level > 2) return(NULL)
   
   # download
-  x <- sotho_tha(level, cache)
+  x <- sotho_tha(level = level, cache = cache)
   
   # id
   if(level == 2)
