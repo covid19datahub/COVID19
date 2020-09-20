@@ -4,7 +4,7 @@ CHL <- function(level, cache) {
   if(level == 1 | level > 3) return(NULL)
   
   # download
-  x <- covid19chile_git(level, cache)
+  x <- covid19chile_git(level = level, cache = cache)
   
   # id
   if(level == 2)
