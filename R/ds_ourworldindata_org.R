@@ -20,7 +20,15 @@ ourworldindata_org <- function(cache, id = NULL){
   
   # date
   x$date <- as.Date(x$date)
-    
+  
+  # fix duplicates. Yes, it may happen -_-'
+  idx <- which(duplicated(x[,c("date","iso_alpha_3")]))
+  if(length(idx)){
+    warning(sprintf("ourworldindata duplicated rows for %s", 
+                    paste(unique(x$iso_alpha_3[idx]), collapse = ", ")))
+    x <- x[-idx,]  
+  }
+  
   # return
   return(x)
     

@@ -225,8 +225,11 @@ covid19 <- function(country = NULL,
         
     # stringency measures
     o <- try(cachecall('oxcgrt_git', cache = cache))
-    if(!("try-error" %in% class(o)))
-      x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
+    if(!("try-error" %in% class(o))){
+      xo <- try(merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE), silent = !debug)
+      if(!("try-error" %in% class(xo))) 
+        x <- xo
+    }
     else 
       if(debug) stop("OxCGRT: try-error")
     
