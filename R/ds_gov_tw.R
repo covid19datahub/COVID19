@@ -14,19 +14,27 @@ gov_tw <- function(level, cache) {
   
   # cumulative counts by date and county
   if(level==1){
+    
     x <- x %>% 
       dplyr::group_by_at("date") %>%
       dplyr::summarise(confirmed = sum(confirmed)) %>%
       dplyr::arrange_at("date") %>%
       dplyr::mutate(confirmed = cumsum(confirmed))
+    
   }
   if(level==2){
+    
+    miss <- which(x$county=="空值")
+    if(length(miss)) 
+      x <- x[-miss,]
+    
     x <- x %>% 
       dplyr::group_by_at(c("date","county")) %>%
       dplyr::summarise(confirmed = sum(confirmed)) %>%
       dplyr::group_by_at("county") %>%
       dplyr::arrange_at("date") %>%
       dplyr::mutate(confirmed = cumsum(confirmed))
+    
   }
     
   # return
