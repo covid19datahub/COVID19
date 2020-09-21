@@ -8,7 +8,7 @@ CHL <- function(level, cache) {
   
   # id
   if(level == 2)
-    x$id <- id(x$region, iso = "CHL", ds = "covid19chile_git", level = level)
+    x$id <- id(paste("region", x$region, sep="_"), iso = "CHL", ds = "covid19chile_git", level = level)
   if(level == 3)
     x$id <- id(x$commune, iso = "CHL", ds = "covid19chile_git", level = level)
   

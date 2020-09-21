@@ -1,20 +1,20 @@
 "id","id_covid19chile_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_alpha_2"
-"82317133","AI",2,"Aysén",,,,,"AI"
-"1c55e490","AN",2,"Antofagasta",,,,,"AN"
-"e65ad9f3","AP",2,"Arica y Parinacota",,,,,"AP"
-"0854b8df","AR",2,"Araucanía",,,,,"AR"
-"e1371dea","AT",2,"Atacama",,,,,"AT"
-"a91c22f0","BI",2,"Biobío",,,,,"BI"
-"5964b684","CO",2,"Coquimbo",,,,,"CO"
-"379f0f7e","LI",2,"O'Higgins",,,,,"LI"
-"47f5fbf1","LL",2,"Los Lagos",,,,,"LL"
-"bdfac692","LR",2,"Los Ríos",,,,,"LR"
-"205fb60d","MA",2,"Magallanes",,,,,"MA"
-"5eeecab0","ML",2,"Maule",,,,,"ML"
-"927bb474","NB",2,"Ñuble",,,,,"NB"
-"e4b3f4b8","RM",2,"Santiago",,,,,"RM"
-"bb5f1f15","TA",2,"Tarapacá",,,,,"TA"
-"7ad00cdf","VS",2,"Valparaíso",,,,,"VS"
+"55f151b6","region_Arica y Parinacota",2,"Arica y Parinacota",,,,252110,
+"acec4542","region_Tarapacá",2,"Tarapacá",,,,382773,
+"0485ae4b","region_Antofagasta",2,"Antofagasta",,,,691854,
+"403f4f40","region_Atacama",2,"Atacama",,,,314709,
+"f2e8a8d6","region_Coquimbo",2,"Coquimbo",,,,836096,
+"8b05573b","region_Valparaíso",2,"Valparaíso",,,,1960170,
+"d4275ea3","region_Metropolitana",2,"Metropolitana",,,,8125072,
+"3f3a7b7b","region_O Higgins",2,"O'Higgins",,,,991063,
+"ad9ddb95","region_Maule",2,"Maule",,,,1131939,
+"9611695b","region_Ñuble",2,"Ñuble",,,,511551,
+"5b6312dd","region_Biobío",2,"Biobío",,,,1663696,
+"f8251e37","region_Araucanía",2,"Araucanía",,,,1014343,
+"ade28ee8","region_Los Ríos",2,"Los Ríos",,,,405835,
+"f4c66071","region_Los Lagos",2,"Los Lagos",,,,891440,
+"c1038d32","region_Aysén",2,"Aysén",,,,107297,
+"292a4e2b","region_Magallanes",2,"Magallanes",,,,252110,
 "f95e0d7f","Aisén",3,"Aysén","Aisén",,,,
 "99be9afd","Aysén",3,"Aysén","Aysén",,,,
 "35c52434","Chile Chico",3,"Aysén","Chile Chico",,,,
