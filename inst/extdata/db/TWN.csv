@@ -1,10 +1,10 @@
-"id","id_gov_tw","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"ae932284","彰化縣",2,,,,,
-"3a255e0b","南投縣",2,,,,,
-"9e4100f7","台中市",2,,,,,
-"c453c314","新北市",2,,,,,
-"85ee410f","桃園市",2,,,,,
-"a34afc61","台南市",2,,,,,
-"9e2ad5d1","台北市",2,,,,,
-"ba974906","新竹市",2,,,,,
-"36262917","基隆市",2,,,,,
+id,id_gov_tw,administrative_area_level,administrative_area_level_2,administrative_area_level_3,latitude,longitude,population
+ae932284,???,2,Changhua,,24.0717,120.5624,1287100
+3a255e0b,???,2,Nantou,,23.961,120.9719,505200
+9e4100f7,???,2,Taichung,,24.1477,120.6736,2767200
+c453c314,???,2,New Taipei,,25.017,121.4628,3979200
+85ee410f,???,2,Taoyuan,,24.9554,121.23,2147800
+a34afc61,???,2,Tainan,,22.9997,120.227,1886000
+9e2ad5d1,???,2,Taipei,,25.033,121.5654,2695700
+ba974906,???,2,Hsinchu,,24.8138,120.9675,437300
+36262917,???,2,Keelung,,25.1276,121.7392,372100
