@@ -85,10 +85,10 @@ covid19chile_git <- function(level, cache) {
         "region"                        = "region",
         "Casos acumulados"              = "confirmed",
         "Fallecidos totales"            = "deaths",
-        "Casos confirmados recuperados" = "recovered")) %>%
-      dplyr::group_by(region) %>%
-      dplyr::arrange(as.Date(date,"%Y-%m-%d")) %>%
-      tidyr::fill(deaths, .direction = "up")
+        "Casos confirmados recuperados" = "recovered")) #%>%
+      #dplyr::group_by(region) %>%
+      #dplyr::arrange(as.Date(date,"%Y-%m-%d")) %>%
+      #tidyr::fill(deaths, .direction = "up")
     
     # join with tests
     x <- x %>%
@@ -110,8 +110,7 @@ covid19chile_git <- function(level, cache) {
     x.deaths <- read.csv(url.deaths, cache = cache)
     
     # to transform data
-    transform.date.columns <- function(x, value) 
-      x %>%
+    transform.date.columns <- function(x, value) x %>%
         dplyr::rename(region = Region, commune = Comuna, population = Poblacion) %>%
         # longer dates
         dplyr::select(-c(Codigo.region, Codigo.comuna)) %>%
@@ -121,15 +120,18 @@ covid19chile_git <- function(level, cache) {
         dplyr::mutate(date = gsub("\\.", "-", date))
     
     # transform date columns
-    x        <- transform.date.columns(x, "confirmed")
+    x        <- transform.date.columns(x %>% dplyr::select(-c(Tasa)), "confirmed")
     x.deaths <- transform.date.columns(x.deaths, "deaths")
 
     # join
     x <- x %>%
-      dplyr::full_join(x.deaths, by = c("date","region","commune","population"))
+      dplyr::full_join(x.deaths, by = c("date","region","commune","population")) %>%
+      dplyr::filter(!grepl("Desconocido", commune)) %>%
+      dplyr::filter(commune != "Total") 
     
     # sanitize
     x$commune <- trimws(x$commune)
+    
   }
   
   # date
