@@ -4,6 +4,15 @@
 
 * Added data for:
 	
+	- Chile: level 1, 2, and 3 (`confirmed`, `tests`, `deaths`, `recovered`, `hosp`, `icu`, `population`)
+	- Taiwan: level 1 and 2 (`confirmed`, `latitude`, `longitude`, `population`)
+	
+# COVID19 2.3.0 (2020-09-20)
+
+## Data Update
+
+* Added data for:
+	
 	- Thailand: level 1 and 2 (`confirmed`, `deaths`, `recovered`, `hosp`)
 	- Ireland: level 1 and 2 (`tests`, `confirmed`, `deaths`, `hosp`, `icu`)
 	
