@@ -28,10 +28,8 @@ rivm_nl <- function(level, cache) {
       "Municipality_name"  = "municipality",
       "Province"           = "province",
       "Total_reported"     = "confirmed",
-      "Hospital_admission" = "hosp", # cumulative
-      "Deceased"           = "deaths"
-    ))
-    x3 <- x3 %>%
+      #"Hospital_admission" = "hosp", # cumulative, ds_check_format fails
+      "Deceased"           = "deaths")) %>%
       dplyr::mutate(
         date         = as.Date(date, "%Y-%m-%d %H:%M:%S"),
         municipality = trimws(municipality))
@@ -46,6 +44,7 @@ rivm_nl <- function(level, cache) {
       dplyr::group_by(date) %>%
       dplyr::tally(name = "confirmed") %>%
       # cumsum
+      dplyr::arrange(date) %>%
       dplyr::mutate(confirmed = cumsum(confirmed))
     
     # deaths
@@ -56,6 +55,7 @@ rivm_nl <- function(level, cache) {
       dplyr::tally(name = "deaths") %>%
       # cumsum
       dplyr::rename(date = death_date) %>%
+      dplyr::arrange(date) %>%
       dplyr::mutate(deaths = cumsum(deaths))
     
     # join and fill
@@ -73,6 +73,8 @@ rivm_nl <- function(level, cache) {
       dplyr::group_by(date, province) %>%
       dplyr::tally(name = "confirmed") %>%
       # cumsum
+      dplyr::group_by(province) %>%
+      dplyr::arrange(date) %>%
       dplyr::mutate(confirmed = cumsum(confirmed))
     
     # deaths
@@ -84,18 +86,22 @@ rivm_nl <- function(level, cache) {
       # cumsum
       dplyr::rename(date = death_date) %>%
       dplyr::group_by(province) %>%
+      dplyr::arrange(date) %>%
       dplyr::mutate(deaths = cumsum(deaths))
     
-    x.hosp <- x3 %>%
-      dplyr::group_by(date, province) %>%
-      dplyr::summarise(hosp = sum(hosp), .groups = "drop")
+    #x.hosp <- x3 %>%
+      #dplyr::group_by(date, province) %>%
+      #dplyr::summarise(hosp = sum(hosp), .groups = "drop")
     
     # join and fill
     x <- x.confirmed %>%
       dplyr::full_join(x.deaths, by = c("date","province")) %>%
-      dplyr::full_join(x.hosp, by = c("date","province")) %>%
+      #dplyr::full_join(x.hosp, by = c("date","province")) %>%
       dplyr::group_by(province) %>%
-      tidyr::fill(confirmed, deaths, .direction = "down")
+      dplyr::arrange(date) %>%
+      tidyr::fill(confirmed, deaths, .direction = "down") %>%
+      # filter NA region
+      dplyr::filter(!is.na(province))
       
   }
   
