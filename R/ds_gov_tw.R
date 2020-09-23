@@ -13,16 +13,32 @@ gov_tw <- function(level, cache) {
   x$date <- as.Date(x$date, "%Y/%m/%d")
   
   # cumulative counts by date and county
-  if(level==1){
+  if(level == 1) {
+    
+    # download tests
+    # Description: https://data.gov.tw/dataset/120451
+    url.tests <- "https://od.cdc.gov.tw/eic/covid19/covid19_tw_specimen.csv"
+    x.tests   <- read.csv(url.tests, cache = cache, encoding = "UTF-8")
+    
+    # parse
+    colnames(x.tests) <- c("date", "notification", "home quarantine", "monitoring", "total")
+    x.tests <- x.tests %>%
+      dplyr::mutate(date  = as.Date(date, "%Y/%m/%d")) %>%
+      dplyr::arrange(date) %>%
+      dplyr::mutate(tests = cumsum(total)) %>%
+      dplyr::select(date, tests) %>%
+      dplyr::filter(!is.na(tests))
     
     x <- x %>% 
       dplyr::group_by_at("date") %>%
       dplyr::summarise(confirmed = sum(confirmed)) %>%
       dplyr::arrange_at("date") %>%
-      dplyr::mutate(confirmed = cumsum(confirmed))
+      dplyr::mutate(confirmed = cumsum(confirmed)) %>%
+      # add tests
+      dplyr::full_join(x.tests, by = "date")
     
   }
-  if(level==2){
+  if(level == 2) {
     
     miss <- which(x$county=="空值")
     if(length(miss)) 
