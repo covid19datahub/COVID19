@@ -192,7 +192,7 @@
     <p>Add new country in the inst/extdata/db/ folder</p>
     </div>
 
-    <pre class="usage"><span class='fu'>add_iso</span>(<span class='kw'>x</span>, <span class='kw'>iso</span>, <span class='kw'>ds</span>, <span class='kw'>level</span>, map = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"id"</span>), append = <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>add_iso</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>iso</span>, <span class='va'>ds</span>, <span class='va'>level</span>, map <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"id"</span><span class='op'>)</span>, append <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -228,22 +228,22 @@
     <p><code>data.frame</code></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>if</span> (<span class='fl'>FALSE</span>) {
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
 
 <span class='co'># download data</span>
-<span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='kw'>COVID19</span>:::<span class='fu'>jhucsse_git</span>(file = <span class='st'>"US"</span>, cache = <span class='fl'>TRUE</span>, level = <span class='fl'>3</span>, country = <span class='st'>"USA"</span>)
+<span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'>COVID19</span><span class='fu'>:::</span><span class='fu'>jhucsse_git</span><span class='op'>(</span>file <span class='op'>=</span> <span class='st'>"US"</span>, cache <span class='op'>=</span> <span class='cn'>TRUE</span>, level <span class='op'>=</span> <span class='fl'>3</span>, country <span class='op'>=</span> <span class='st'>"USA"</span><span class='op'>)</span>
 
 <span class='co'># add iso</span>
-<span class='kw'>csv</span> <span class='op'>&lt;-</span> <span class='fu'>add_iso</span>(<span class='kw'>x</span>, iso = <span class='st'>"USA"</span>, ds = <span class='st'>"jhucsse_git"</span>, level = <span class='fl'>3</span>, map = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(
- <span class='st'>"id"</span>    = <span class='st'>"id"</span>, 
- <span class='st'>"state"</span> = <span class='st'>"administrative_area_level_2"</span>, 
- <span class='st'>"city"</span>  = <span class='st'>"administrative_area_level_3"</span>,
- <span class='st'>"pop"</span>   = <span class='st'>"population"</span>,
- <span class='st'>"lat"</span>   = <span class='st'>"latitude"</span>,
- <span class='st'>"lng"</span>   = <span class='st'>"longitude"</span>,
- <span class='st'>"fips"</span>  = <span class='st'>"key_numeric"</span>))
+<span class='va'>csv</span> <span class='op'>&lt;-</span> <span class='fu'>add_iso</span><span class='op'>(</span><span class='va'>x</span>, iso <span class='op'>=</span> <span class='st'>"USA"</span>, ds <span class='op'>=</span> <span class='st'>"jhucsse_git"</span>, level <span class='op'>=</span> <span class='fl'>3</span>, map <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span>
+ <span class='st'>"id"</span>    <span class='op'>=</span> <span class='st'>"id"</span>, 
+ <span class='st'>"state"</span> <span class='op'>=</span> <span class='st'>"administrative_area_level_2"</span>, 
+ <span class='st'>"city"</span>  <span class='op'>=</span> <span class='st'>"administrative_area_level_3"</span>,
+ <span class='st'>"pop"</span>   <span class='op'>=</span> <span class='st'>"population"</span>,
+ <span class='st'>"lat"</span>   <span class='op'>=</span> <span class='st'>"latitude"</span>,
+ <span class='st'>"lng"</span>   <span class='op'>=</span> <span class='st'>"longitude"</span>,
+ <span class='st'>"fips"</span>  <span class='op'>=</span> <span class='st'>"key_numeric"</span><span class='op'>)</span><span class='op'>)</span>
  
-}
+<span class='op'>}</span>
 
 </div></pre>
   </div>

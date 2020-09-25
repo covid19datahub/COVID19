@@ -192,7 +192,7 @@
     <p>Read xls and xlsx files.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>read.excel</span>(<span class='kw'>path</span>, cache = <span class='fl'>FALSE</span>, sheet = <span class='fl'>NA</span>, <span class='kw'>...</span>)</pre>
+    <pre class="usage"><span class='fu'>read.excel</span><span class='op'>(</span><span class='va'>path</span>, cache <span class='op'>=</span> <span class='cn'>FALSE</span>, sheet <span class='op'>=</span> <span class='cn'>NA</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -220,12 +220,12 @@
     <p>list of <code>data.frame</code></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>if</span> (<span class='fl'>FALSE</span>) {
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
 
-<span class='kw'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://epistat.sciensano.be/Data/COVID19BE.xlsx"</span>
-<span class='kw'>x</span>   <span class='op'>&lt;-</span> <span class='fu'>read.excel</span>(<span class='kw'>url</span>, cache = <span class='fl'>TRUE</span>)  
+<span class='va'>url</span> <span class='op'>&lt;-</span> <span class='st'>"https://epistat.sciensano.be/Data/COVID19BE.xlsx"</span>
+<span class='va'>x</span>   <span class='op'>&lt;-</span> <span class='fu'>read.excel</span><span class='op'>(</span><span class='va'>url</span>, cache <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span>  
 
-}
+<span class='op'>}</span>
 
 </div></pre>
   </div>

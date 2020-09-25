@@ -196,7 +196,7 @@ The function checks the FORMAT, NOT the DATA.
 Before submission, the data should be double checked by comparing with external data sources (e.g. Google search).</p>
     </div>
 
-    <pre class="usage"><span class='fu'>ds_check_format</span>(<span class='kw'>x</span>, <span class='kw'>level</span>, ci = <span class='fl'>0.95</span>, verbose = <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'>ds_check_format</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>level</span>, ci <span class='op'>=</span> <span class='fl'>0.95</span>, verbose <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -216,13 +216,13 @@ Before submission, the data should be double checked by comparing with external 
     <p>logical.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'>if</span> (<span class='fl'>FALSE</span>) {
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
 
 <span class='co'># check format of the 'pcmdpc_git' data source</span>
-<span class='kw'>x</span> <span class='op'>&lt;-</span> <span class='kw'>COVID19</span>:::<span class='fu'>pcmdpc_git</span>(cache = <span class='fl'>FALSE</span>, level = <span class='fl'>1</span>)
-<span class='fu'>ds_check_format</span>(<span class='kw'>x</span>, level = <span class='fl'>1</span>)
+<span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'>COVID19</span><span class='fu'>:::</span><span class='fu'>pcmdpc_git</span><span class='op'>(</span>cache <span class='op'>=</span> <span class='cn'>FALSE</span>, level <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>
+<span class='fu'>ds_check_format</span><span class='op'>(</span><span class='va'>x</span>, level <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>
 
-}
+<span class='op'>}</span>
 
 </div></pre>
   </div>
