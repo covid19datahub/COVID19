@@ -31,75 +31,75 @@ oxcgrt_git <- function(level, cache){
     "H2_Testing.policy"                       = "testing_policy",
     "H3_Contact.tracing"                      = "contact_tracing",
     
-    "StringencyIndexForDisplay"               = "stringency_index"
-  ))
+    "StringencyIndexForDisplay"               = "stringency_index"))
+  # columns
+  cols <- c("school_closing","cancel_events","internal_movement_restrictions",
+            "workplace_closing","gatherings_restrictions","transport_closing",
+            "stay_home_restrictions")
 
   # date
   x$date <- as.Date(as.character(x$date), format = "%Y%m%d")
   
-  # operations with restrictions
-  check_restrict_country <- function(col,flag) (col != 0) & !is.na(flag) & (flag == 1)
-  #check_restrict_region  <- function(col,flag) (col != 0) & !is.na(flag) & (flag == 0)
-  check_country_restrict_country <- function(region,col,flag) is.na(region) & check_restrict_country(col,flag)
-  #check_country_restrict_region  <- function(region,col,flag) is.na(region) & check_restrict_region(col,flag)
-  #check_country_restrict_unknown <- function(region,col,flag) is.na(region) & (col != 0) & is.na(flag)
-  #check_region_restrict_country  <- function(region,col,flag) !is.na(region) & check_restrict_country(col,flag)
-  #check_region_restrict_region   <- function(region,col,flag) !is.na(region) & check_restrict_region(col,flag)
-  #check_region_restrict_unknown  <- function(region,col,flag) !is.na(region) & (col != 0) & is.na(flag)
-  
-  # loop columns
-  for(col in c("school_closing","workplace_closing","cancel_events","gatherings_restrictions","transport_closing",
-               "stay_home_restrictions","internal_movement_restrictions")) {
-    flag <- paste(col, "flag", sep = "_")
-
-    # country data - keep without checking the flag
-    
-    # on country flag = 1 propagate country policies to regions
-    x.country.restrict1 <- x %>%
-      dplyr::filter(is.na(region_code) & (UQ(rlang::sym(flag)) == 1) ) %>%
-      dplyr::mutate(date, iso_alpha_3, col = UQ(rlang::sym(col)), flag = UQ(rlang::sym(flag))) %>%
-      dplyr::select(date, iso_alpha_3, col, flag)
-    x.regions <- x %>%
-      dplyr::filter(!is.na(region_code)) %>%
-      dplyr::left_join(x.country.restrict1, by = c("date","iso_alpha_3")) %>%
-      dplyr::mutate(
-        UQ(rlang::sym(col)) := ifelse(!is.na(col), col, UQ(rlang::sym(col))),
-        UQ(rlang::sym(flag)) := ifelse(!is.na(flag), flag, UQ(rlang::sym(flag)))
-      )
-    
-  }
-  
-  # only country level
+  # country level
   if(level == 1) {
-    x <- x %>%
+    
+    # only country data
+    Rs <- x %>%
       dplyr::filter(is.na(region_code))
-    x$id_oxcgrt_git <- x$iso_alpha_3
     
-    # only region level
-  } else {
-    x <- x %>%
-      dplyr::filter(!is.na(region_code))
-    x$id_oxcgrt_git <- x$region_code
-  }
-  
-  # make id
-  if(level > 1)
-    sapply(unique(x$iso_alpha_3), function(iso) {
-      x.iso <- which(x$iso_alpha_3 == iso)
-      print(tail(x[x.iso,]))
-      x[x.iso,"id"] <- id(x[x.iso,"id_oxcgrt_git"], iso = x[x.iso,"iso_alpha_3"], ds = "oxcgrt_git", level = level)
+    # loop columns
+    for(col in cols) {
+      flag <- paste(col, "flag", sep = "_")
       
-      #tryCatch({
-      #  defaultW <- getOption("warn") 
-      #  options(warn = -1)
-      #  options(warn = defaultW)
-      #})
+      # flag only regionally
+      Rs[,col] = ifelse(!is.na(Rs[,flag]) & (Rs[,flag] == 0), NA, Rs[,col])
+    }
     
-    })
+  }
+  # regional level
+  else {
+    
+    Rs  <- NULL
+    
+    # loop columns
+    for(col in cols) {
+      flag <- paste(col, "flag", sep = "_")
+      
+      # propagate country policies to regions
+      r <- x %>%
+        # country records
+        dplyr::filter(is.na(region_code) &
+                      !is.na(UQ(rlang::sym(flag))) &
+                      (UQ(rlang::sym(flag)) == 1)) %>%
+        dplyr::select(date, iso_alpha_3, region_code, UQ(rlang::sym(col)))
+      
+      # regional restrictions
+      rr <- x %>%
+        # regional records
+        dplyr::filter(!is.na(region_code) &
+                      !is.na(UQ(rlang::sym(flag))) &
+                      (UQ(rlang::sym(flag)) == 0)) %>%
+        dplyr::select(date, iso_alpha_3, region_code, UQ(rlang::sym(col)))
+      
+      # join restrictions
+      r <- rbind(r, rr)
+      print(r)
+      # TODO: what if both is on (invalid option)
+      
+      # append
+      if(is.null(Rs)) Rs <- r
+      else Rs <- Rs %>%
+        dplyr::full_join(r, by = c("date", "iso_alpha_3", "region_code"))
+      
+      # region code
+      Rs <- Rs %>% dplyr::rename(id_oxcgrt_git = region_code)
+    }
+    
+  }
   
   # return
-  return(x)
+  return(Rs)
   
 }
 
-# oxf <- oxcgrt_git(1,F)
+oxf <- oxcgrt_git(2,F)

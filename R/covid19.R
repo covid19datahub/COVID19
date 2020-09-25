@@ -223,12 +223,23 @@ covid19 <- function(country = NULL,
       return(NULL)
     }
         
+    # ===
     # stringency measures
     o <- try(cachecall('oxcgrt_git', level = level, cache = cache))
-    if(!("try-error" %in% class(o)))
-      x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
+    if(!("try-error" %in% class(o))) {
+      if(level == 1)
+        x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
+      else {
+        key <- c('id_oxcgrt_git')
+        x[,key[!(key %in% colnames(x))]] <- NA
+        x <- merge(x, o, by = c('date','iso_alpha_3','id_oxcgrt_git'), all.x = TRUE)
+      }
+        print("Not implemented!")
+    }
+      
     else 
       if(debug) stop("OxCGRT: try-error")
+    # ===
     
     # subset
     key <- c('iso_alpha_3','id','date',vars('fast'))
