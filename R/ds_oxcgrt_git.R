@@ -59,7 +59,7 @@ oxcgrt_git <- function(level, cache){
   # regional level
   else {
     
-    Rs  <- NULL
+    Rs <- NULL
     
     # loop columns
     for(col in cols) {
@@ -82,24 +82,31 @@ oxcgrt_git <- function(level, cache){
         dplyr::select(date, iso_alpha_3, region_code, UQ(rlang::sym(col)))
       
       # join restrictions
-      r <- rbind(r, rr)
-      print(r)
+      rrr <- rbind(r, rr)
       # TODO: what if both is on (invalid option)
       
       # append
-      if(is.null(Rs)) Rs <- r
+      if(is.null(Rs)) Rs <- rrr
       else Rs <- Rs %>%
-        dplyr::full_join(r, by = c("date", "iso_alpha_3", "region_code"))
+        dplyr::full_join(rrr, by = c("date", "iso_alpha_3", "region_code"))
       
-      # region code
-      Rs <- Rs %>% dplyr::rename(id_oxcgrt_git = region_code)
     }
+
+    # add global restrictions (always for whole country)
+    x.global <- x %>%
+      dplyr::filter(is.na(region_code)) %>%
+      dplyr::select(date, iso_alpha_3,
+                    information_campaigns, testing_policy, contact_tracing,
+                    international_movement_restrictions)
+    Rs <- Rs %>%
+      dplyr::full_join(x.global, by = c("date", "iso_alpha_3"))
     
   }
+  
+  # region code
+  Rs <- Rs %>% dplyr::rename(id_oxcgrt_git = region_code)
   
   # return
   return(Rs)
   
 }
-
-oxf <- oxcgrt_git(2,F)

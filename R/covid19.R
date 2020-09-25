@@ -230,11 +230,14 @@ covid19 <- function(country = NULL,
       if(level == 1)
         x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
       else {
-        key <- c('id_oxcgrt_git')
-        x[,key[!(key %in% colnames(x))]] <- NA
-        x <- merge(x, o, by = c('date','iso_alpha_3','id_oxcgrt_git'), all.x = TRUE)
+        # general restrictions to all
+        o.general <- o %>%
+          dplyr::filter(is.na(id_oxcgrt_git))
+        x <- x %>%
+          dplyr::left_join(o.general, by = c('date','iso_alpha_3'))
+        # region specific restrictions
+        # done after merging with CSVs (lower)
       }
-        print("Not implemented!")
     }
       
     else 
@@ -295,7 +298,8 @@ covid19 <- function(country = NULL,
     x <- merge(x, y, by = "iso_alpha_3", all.x = TRUE)
 
     # merge lower level data
-    if(level>1)
+    if(level>1) {
+      
       x <- x %>%
 
         dplyr::group_by(iso_alpha_3) %>%
@@ -304,7 +308,7 @@ covid19 <- function(country = NULL,
           
           y <- extdata("db", sprintf("%s.csv",iso[[1]]))
           if(!is.null(y))
-            x <- merge(x, y[,!grepl("^id\\_", colnames(y))], by = "id", all.x = TRUE)
+            x <- merge(x, y, by = "id", all.x = TRUE)
           
           return(x)
           
@@ -312,6 +316,58 @@ covid19 <- function(country = NULL,
 
         dplyr::bind_rows()
     
+      # add id for region specific restrictions (if missing)
+      if(!('id_oxcgrt_git' %in% colnames(x))) x$id_oxcgrt_git <- NA
+      
+      # region specific restrictions
+      o.regional <- o %>%
+        dplyr::filter(!is.na(id_oxcgrt_git)) %>%
+        
+        dplyr::group_by(iso_alpha_3) %>%
+        
+        dplyr::group_map(.keep = TRUE, function(x, iso){
+          
+          y <- extdata("db", sprintf("%s.csv",iso[[1]]))
+          if(!is.null(y)) 
+            x <- merge(x, y, by = "id_oxcgrt_git", all.x = TRUE)
+          
+          ids      <- setdiff(colnames(x), "id_oxcgrt_git")
+          drop.ids <- which(!grepl("id_", ids))
+          
+          x <- x[, c(ids[drop.ids], "id_oxcgrt_git")]
+          
+          return(x)
+          
+        }) %>%
+        
+        dplyr::bind_rows()
+      
+      # rows that are kept same
+      x.keep <- x %>%
+        dplyr::anti_join(o.regional, by = c("date","id_oxcgrt_git"))
+      
+      # match rows
+      x <- merge(o.regional, x, by = c("date","id_oxcgrt_git"), all.x = TRUE)
+      #x <- x %>%
+        # replace original columns with the new ones
+        #dplyr::full_join(o.regional, by = c("date","id_oxcgrt_git"), suffix = c(".x","")) %>%
+        # drop the original columns
+        #dplyr::select(-matches('^.*\\.x$')) %>%
+        # add not changed rows
+        #dplyr::bind_rows(x.keep)
+      
+      # replacements of regions
+      #x.regional <- x %>%
+      #  dplyr::mutate(idx.x = 1:nrow(.)) %>%
+      #  dplyr::inner_join(o.regional, by = c("date","id_oxcgrt_git")) %>%
+      #  dplyr::select(date, id_oxcgrt_git, idx.x, idx.o)
+      # replace regions
+      #x <- x
+      #  dplyr::
+      
+      x <- x[,!grepl("^id\\_", colnames(x))]
+      
+    }
     # data source
     src <- extdata("src.csv")
 
