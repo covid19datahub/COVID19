@@ -34,8 +34,8 @@ mzcr_cz <- function(level, cache){
     
     x <- map_data(x, c(
       "date",
-      "kraj_nuts_kod" = "state",
-      "okres_lau_kod" = "district",
+      "kraj_nuts_kod" = "district",
+      "okres_lau_kod" = "state",
       "kumulativni_pocet_nakazenych" = "confirmed",
       "kumulativni_pocet_vylecenych" = "recovered",
       "kumulativni_pocet_umrti"      = "deaths"
