@@ -8,7 +8,7 @@ CHE <- function(level, cache){
   if(level==1){
   
     # fallback to worldwide data
-    x <- NULL
+    x <- bag_ch(cache = cache)
     
   }
   if(level==2){

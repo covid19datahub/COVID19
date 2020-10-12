@@ -1,3 +1,9 @@
+# COVID19 2.3.0 (2020-10-12)
+
+## Data Update
+
+* **Swiss data** level 1. Change data provider from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19) to [Federal Office of Public Health FOPH](https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international.html). Affected variables: `confirmed`, `deaths`, `hosp`.
+	
 # COVID19 2.3.0 (2020-09-20)
 
 ## Data Update
