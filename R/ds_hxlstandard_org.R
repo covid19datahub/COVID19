@@ -21,7 +21,9 @@ hxlstandard_org <- function(cache){
   x$state <- map_values(x$state, c("GrandAnse" = "Grand Anse"))
   
   # clean
-  x <- x[-which(x$state=="Grand Total"),]
+  idx <- which(x$state=="Grand Total")
+  if(length(idx))
+    x <- x[-idx,]
   
   # date
   x$date <- as.Date(x$date, format="%d-%m-%Y")
