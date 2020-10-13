@@ -8,10 +8,10 @@ bag_ch <- function(cache){
   
   # format
   x <- map_data(x, c(
-    "Data"                                   = "date",
-    "Numero di casi, cumulato"               = "confirmed",
-    "Numero di decessi, cumulati"            = "deaths",
-    "Numero di casi ospedalizzati, cumulati" = "hosp"
+    "Data"                         = "date",
+    "Numero di casi, cumulato"     = "confirmed",
+    "Numero di decessi, cumulati"  = "deaths",
+    "Numero di casi ospedalizzati" = "hosp"
   ))
   
   # date
