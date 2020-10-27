@@ -1,3 +1,9 @@
+# COVID19 2.3.0 (2020-10-27)
+
+## Data Update
+
+* **Netherlands data** all levels. Change data provider from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19) to [National Institute for Public Health and the Environment of Netherlands](https://data.rivm.nl/covid-19/). Affected variables: `confirmed`, `deaths`, `hosp`.
+
 # COVID19 2.3.0 (2020-10-12)
 
 ## Data Update

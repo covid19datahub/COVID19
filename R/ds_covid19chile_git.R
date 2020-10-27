@@ -5,13 +5,11 @@ covid19chile_git <- function(level, cache) {
     # url
     url           <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto5/TotalesNacionales_T.csv"
     url.hosp      <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto24/CamasHospital_Diario_T.csv"
-    url.recovered <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto46/activos_vs_recuperados.csv"
     url.test      <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto17/PCREstablecimiento_std.csv"
     
     # download
     x           <- read.csv(url, cache = cache)
     x.hosp      <- read.csv(url.hosp, cache = cache)
-    x.recovered <- read.csv(url.recovered, cache = cache)
     x.test      <- read.csv(url.test, cache = cache)
     
     # parse
@@ -21,18 +19,15 @@ covid19chile_git <- function(level, cache) {
       "Fallecidos"               = "deaths",
       "Casos.activos"            = "active"))
     
+    # recovered
+    x$recovered <- x$confirmed - x$deaths - x$active
+    
     # parse hosp
     x.hosp$hosp <- x.hosp$Basica + x.hosp$Media + x.hosp$UTI + x.hosp$UCI
     x.hosp <- map_data(x.hosp, c(
       "Tipo.de.cama" = "date",
       "hosp"         = "hosp",
       "UCI"          = "icu"
-    ))
-    
-    # parse recovered
-    x.recovered <- map_data(x.recovered, c(
-      "fecha_primeros_sintomas" = "date",
-      "recuperados"             = "recovered"
     ))
     
     # parse test
@@ -45,7 +40,6 @@ covid19chile_git <- function(level, cache) {
     # merge
     x <- x %>%
       merge(x.hosp, by = "date", all = TRUE) %>%
-      merge(x.recovered, by = "date", all = TRUE) %>%
       merge(x.test, by = "date", all = TRUE)
     
     # date
