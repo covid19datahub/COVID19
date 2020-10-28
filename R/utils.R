@@ -311,7 +311,7 @@ csv_check_data <- function(iso){
 #' }
 #' 
 #' @export
-cumsum <- function(x, na.rm = FALSE){
+cumsum <- function(x, na.rm = TRUE){
   
   if(!na.rm)
     return(base::cumsum(x))

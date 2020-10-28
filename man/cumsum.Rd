@@ -4,7 +4,7 @@
 \alias{cumsum}
 \title{Cumulative Sums}
 \usage{
-cumsum(x, na.rm = FALSE)
+cumsum(x, na.rm = TRUE)
 }
 \arguments{
 \item{x}{a numeric object.}
