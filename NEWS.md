@@ -1,3 +1,9 @@
+# COVID19 2.3.0 (2020-10-28)
+
+## Data Update
+
+* **Policy measures**. Added support for level 2 policies by [Oxford Covid-19 Government Response Tracker](https://github.com/OxCGRT/covid-policy-tracker). Enhanced policy inheritance by using [OxCGRT flags](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md) to distinguish policies that are "targeted" to a specific geographical region (flag=0) or "general" policies that are applied across the whole country (flag=1). Only "general" policies are propagated to levels 2 and 3.
+
 # COVID19 2.3.0 (2020-10-27)
 
 ## Data Update

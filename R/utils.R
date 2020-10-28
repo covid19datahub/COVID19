@@ -100,6 +100,25 @@ id <- function(x, iso, ds, level){
   
 }
 
+# convert global id in oxcgrt_id
+get_oxcgrt_id <- function(id, iso){
+  
+  db <- extdata("db",sprintf("%s.csv",iso))
+  
+  map <- db$id_oxcgrt_git
+  if(is.null(map))
+    return(rep(iso, length(id)))
+
+  names(map) <- db$id
+  id <- map_values(id, map)
+  idx <- which(!(id %in% map) | is.na(id))
+  if(length(idx))
+    id[idx] <- iso
+  
+  return(id)
+  
+}
+
 vars <- function(type = NULL){
   
   cases <- c(

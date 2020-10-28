@@ -224,14 +224,32 @@ covid19 <- function(country = NULL,
     }
         
     # stringency measures
-    o <- try(cachecall('oxcgrt_git', cache = cache))
+    o <- try(cachecall('oxcgrt_git', level = level, cache = cache))
     if(!("try-error" %in% class(o))){
-      xo <- try(merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE), silent = !debug)
+      
+      # add oxcgrt_id
+      if(level==1)
+        x$oxcgrt_id <- x$iso_alpha_3
+      else
+        x <- x %>%
+          dplyr::group_by(iso_alpha_3) %>%
+          dplyr::group_map(.keep = TRUE, function(x, ...){
+            x$oxcgrt_id <- get_oxcgrt_id(x$id, iso = unique(x$iso_alpha_3))   
+            return(x)
+          }) %>%
+          dplyr::bind_rows()
+
+      # merge
+      xo <- try(merge(x, o, by = c('date','oxcgrt_id'), all.x = TRUE), silent = !debug)
       if(!("try-error" %in% class(xo))) 
         x <- xo
+      
     }
-    else 
+    else{
+      
       if(debug) stop("OxCGRT: try-error")
+      
+    } 
     
     # subset
     key <- c('iso_alpha_3','id','date',vars('fast'))
