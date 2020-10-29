@@ -1,8 +1,8 @@
 ---
-title: "Macedonia"
+title: "North Macedonia"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Macedonia}
+  %\VignetteIndexEntry{North Macedonia}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -42,7 +42,7 @@ src <- src %>% filter(data_type %in% colnames(x)) %>% distinct(title, .keep_all 
 src <- paste(sprintf("[%s](%s)", src$title, src$url), collapse = ", ")
 ```
 
-Data COVID-19 Macedonia: `tests` (cumulative number of tests), `confirmed` (cumulative number of confirmed cases), `deaths` (cumulative number of deaths), `recovered` (cumulative number of recovered), `hosp` (hospitalized on date), `vent` (requiring ventilation on date), `icu` (intensive therapy on date). See the [full dataset](/articles/data.html).
+Data COVID-19 North Macedonia: `tests` (cumulative number of tests), `confirmed` (cumulative number of confirmed cases), `deaths` (cumulative number of deaths), `recovered` (cumulative number of recovered), `hosp` (hospitalized on date), `vent` (requiring ventilation on date), `icu` (intensive therapy on date). See the [full dataset](/articles/data.html).
 
 ```{r, echo=FALSE}
 DT::datatable(x, rownames = FALSE, filter = 'top', options = list(
