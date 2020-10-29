@@ -81,22 +81,30 @@ gov_uk <- function(level){
       sprintf("areaType=%s", a)
     )
     
-    # Create structure
+    # Create structure. It seems that numbers are not allowed in renaming!
     structure <- list(
-      "date"      = "date",
-      "type"      = "areaType",
-      "name"      = "areaName",
-      "code"      = "areaCode",
-      "confirmed" = ifelse(a %in% c("overview", "nation"), "cumCasesByPublishDate", "cumCasesBySpecimenDate"),
-      "tests"     = "cumTestsByPublishDate",
-      "vent"      = "covidOccupiedMVBeds",
-      "hosp"      = "hospitalCases",
-      "deaths"    = "cumDeaths28DaysByPublishDate"
+      "date"       = "date",
+      "type"       = "areaType",
+      "name"       = "areaName",
+      "code"       = "areaCode",
+      "confirmed"  = ifelse(a %in% c("overview", "nation"), "cumCasesByPublishDate", "cumCasesBySpecimenDate"),
+      "tests"      = "cumTestsByPublishDate",
+      "testsOne"   = "cumPillarOneTestsByPublishDate",
+      "testsTwo"   = "cumPillarTwoTestsByPublishDate",
+      "testsThree" = "cumPillarThreeTestsByPublishDate",
+      "testsFour"  = "cumPillarFourTestsByPublishDate",
+      "vent"       = "covidOccupiedMVBeds",
+      "hosp"       = "hospitalCases",
+      "deaths"     = "cumDeaths28DaysByPublishDate"
     )
     
     x <- dplyr::bind_rows(x, get_paginated_data(filters, structure))
     
   }
+  
+  # fix tests
+  if(level==2)
+    x$tests <- x$testsOne + x$testsTwo + x$testsThree 
   
   # clean
   x <- x[!duplicated(x[,c("date","code")]),]
