@@ -42,10 +42,12 @@ articles:
   iso/BRN: BRN.html
   iso/BTN: BTN.html
   iso/BWA: BWA.html
+  iso/CAC: CAC.html
   iso/CAF: CAF.html
   iso/CAN: CAN.html
   iso/CHE: CHE.html
   iso/CHL: CHL.html
+  iso/CHN: CHN.html
   iso/CIV: CIV.html
   iso/CMR: CMR.html
   iso/COD: COD.html
@@ -127,6 +129,7 @@ articles:
   iso/MDG: MDG.html
   iso/MDV: MDV.html
   iso/MEX: MEX.html
+  iso/MHL: MHL.html
   iso/MKD: MKD.html
   iso/MLI: MLI.html
   iso/MLT: MLT.html
@@ -168,6 +171,7 @@ articles:
   iso/SDN: SDN.html
   iso/SEN: SEN.html
   iso/SGP: SGP.html
+  iso/SLB: SLB.html
   iso/SLE: SLE.html
   iso/SLV: SLV.html
   iso/SMR: SMR.html
@@ -207,7 +211,7 @@ articles:
   iso/ZMB: ZMB.html
   iso/ZWE: ZWE.html
   usage: usage.html
-last_built: 2020-10-29T16:43Z
+last_built: 2020-10-29T20:22Z
 urls:
   reference: https://covid19datahub.io/reference
   article: https://covid19datahub.io/articles
