@@ -174,6 +174,9 @@ covid19 <- function(country = NULL,
         next
       }
       
+      # clean
+      y <- y[,intersect(colnames(y), c('iso_alpha_3','id','date',vars('fast')))]
+      
       # check format
       if(!ds_check_format(y, level = level, ci = 0.85, verbose = FALSE)){
         if(debug) stop(sprintf("%s: check failed", fun))
