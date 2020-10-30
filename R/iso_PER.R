@@ -1,8 +1,5 @@
 PER <- function(level, cache){
   
-  # the source is temporarily failing
-  return(NULL)
-  
   # fallback
   if(level>2)
     return(NULL)
