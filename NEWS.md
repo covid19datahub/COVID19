@@ -1,3 +1,9 @@
+# COVID19 2.3.0 (2020-10-30)
+
+## Data Update
+
+* **Austria data**. Added support for level 2 from the [federal health agency AGES](https://covid19-dashboard.ages.at/dashboard.html)
+
 # COVID19 2.3.0 (2020-10-28)
 
 ## Data Update
