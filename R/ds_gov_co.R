@@ -5,46 +5,54 @@ gov_co <- function(cache, level){
   # Source: Ministerio de Salud y Protecci?n Social de Colombia
   
   # download
-  url <- 'https://www.datos.gov.co/resource/gt2j-8ykr.csv?$limit=500000'
+  url <- 'https://www.datos.gov.co/resource/gt2j-8ykr.csv?$limit=9999999999'
   x   <- read.csv(url, encoding="UTF-8", cache = cache)
   
   # formatting
   x <- map_data(x, c(
-    'fecha_diagnostico'   = 'date_confirmed',
-    'fecha_de_muerte'     = 'date_deaths',
-    'fecha_recuperado'    = 'date_recovered',
-    'codigo_divipola'     = 'city_code',
-    'c_digo_divipola'     = 'city_code',
-    'ciudad_de_ubicaci_n' = 'city',
-    'departamento'        = 'state'
+    'fecha_diagnostico'    = 'date_confirmed',
+    'fecha_muerte'         = 'date_deaths',
+    'fecha_recuperado'     = 'date_recovered',
+    'departamento'         = 'state_code',
+    'ciudad_municipio'     = 'city_code',
+    'departamento_nom'     = 'state',
+    'ciudad_municipio_nom' = 'city'
   ))
+  
+  # fix
+  idx <- which(x$state_code==94 & x$state=="CESAR")
+  if(length(idx))
+    x <- x[-idx,]
   
   # date 
   for(d in c("date_confirmed","date_deaths","date_recovered"))
-    x[[d]] <- as.Date(x[[d]], format = "%Y-%m-%d")
+    x[[d]] <- as.Date(x[[d]], format = "%d/%m/%Y")
 
   # group key
   if(level == 1) 
     by <- NULL
   if(level == 2) 
-    by <- 'state'
+    by <- 'state_code'
   if(level == 3) 
-    by <- c('city','city_code')
+    by <- c('state_code','city_code')
   
   # group to confirmed
   confirmed <- x %>%
+    dplyr::filter(!is.na(date_confirmed)) %>%
     dplyr::group_by_at(c('date_confirmed',by)) %>%
     dplyr::summarise(confirmed = n()) %>%
     dplyr::mutate(date = date_confirmed)
   
   # group to deaths
   deaths <- x %>%
+    dplyr::filter(!is.na(date_deaths)) %>%
     dplyr::group_by_at(c('date_deaths',by)) %>%
     dplyr::summarise(deaths = n()) %>%
     dplyr::mutate(date = date_deaths)
   
   # group to recovered
   recovered <- x %>%
+    dplyr::filter(!is.na(date_recovered)) %>%
     dplyr::group_by_at(c('date_recovered',by)) %>%
     dplyr::summarise(recovered = n()) %>%
     dplyr::mutate(date = date_recovered)

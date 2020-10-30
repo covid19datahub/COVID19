@@ -10,7 +10,7 @@ COL <- function(cache, level){
   
   # id
   if(level == 2)
-    x$id <- id(x$state, iso = "COL", ds = "gov_co", level = level)
+    x$id <- id(x$state_code, iso = "COL", ds = "gov_co", level = level)
   if(level == 3)
     x$id <- id(x$city_code, iso = "COL", ds = "gov_co", level = level)
 
