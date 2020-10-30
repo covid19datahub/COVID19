@@ -34,7 +34,6 @@ gov_lv <- function(cache, level){
     
     x <- map_data(x, c(
       'date',
-      'region_id',
       'AdministrativiTeritorialasVienibasNosaukums' = 'region',
       'ATVK'                                        = 'region_id',
       'ApstiprinataCOVID19infekcija'                = 'confirmed'
@@ -51,6 +50,13 @@ gov_lv <- function(cache, level){
     x$confirmed[idx] <- 1 
     x$confirmed <- as.integer(x$confirmed)
     x$region_id <- as.integer(x$region_id)
+   
+    # fix
+    idx <- which(duplicated(x[,c("date","region_id")]))
+    if(length(idx)){
+      x <- x[-idx,]
+      warning("Duplicated dates in LVA lev2")
+    }
     
   }
   

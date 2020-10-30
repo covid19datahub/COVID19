@@ -2,7 +2,7 @@
 
 ## Data Update
 
-* **Austria data**. Added support for level 2 from the [federal health agency AGES](https://covid19-dashboard.ages.at/dashboard.html)
+* **Austria data**. Added support for level 2 and 3 from the [Federal Ministry of Social Affairs, Health, Care and Consumer Protection](https://covid19-dashboard.ages.at/dashboard.html)
 
 # COVID19 2.3.0 (2020-10-28)
 
