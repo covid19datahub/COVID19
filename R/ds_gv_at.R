@@ -1,28 +1,14 @@
 gv_at <- function(cache, level){
   # author: Martin Benes
   
-  # Download
-  # https://www.data.gv.at/katalog/dataset/osterreichische-statistische-daten-zu-covid-19/resource/7ad666c7-663d-45dc-ae66-f61385c9eeba
-  # Federal Ministery of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
+  # Source: Federal Ministery of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
+  # See also: https://github.com/covid19datahub/COVID19/issues/128
   url  <- "https://info.gesundheitsministerium.at/data/data.zip"
   
   data <- read.zip(url, cache = cache, sep = ";", files = c(
-    "cases"     = "CovidFaelle_Timeline.csv",
-    "hosp"      = "CovidFallzahlen.csv",
-    "deaths"    = "TodesfaelleTimeline.csv",
-    "recovered" = "GenesenTimeline.csv"))
-  
-  x.cases <- data$cases
-  colnames(x.cases)[1] <- "date"
-  x.cases$date <- as.Date(x.cases$date, format = "%d.%m.%Y")
-  x.cases <- map_data(x.cases, c(
-    "date"             = "date",
-    "Bundesland"       = "state",
-    "BundeslandID"     = "state_id",
-    "AnzEinwohner"     = "population",
-    "AnzahlFaelleSum"  = "confirmed",
-    "AnzahlGeheiltSum" = "recovered"
-  ))
+    "hosp"   = "CovidFallzahlen.csv",
+    "cases"  = "CovidFaelle_Timeline.csv",
+    "cases3" = "CovidFaelle_Timeline_GKZ.csv"))
   
   x.hosp <- data$hosp
   colnames(x.hosp)[1] <- "date"
@@ -36,30 +22,41 @@ gv_at <- function(cache, level){
     "FZICU"        = "icu"
   )) 
   
-  x.deaths <- data$deaths[,1:2]
-  colnames(x.deaths) <- c("date", "deaths")
-  x.deaths$date <- as.Date(x.deaths$date, format = "%d.%m.%Y")
+  x.cases <- data$cases
+  colnames(x.cases)[1] <- "date"
+  x.cases$date <- as.Date(x.cases$date, format = "%d.%m.%Y")
+  x.cases <- map_data(x.cases, c(
+    "date"             = "date",
+    "Bundesland"       = "state",
+    "BundeslandID"     = "state_id",
+    "AnzEinwohner"     = "population",
+    "AnzahlFaelleSum"  = "confirmed",
+    "AnzahlGeheiltSum" = "recovered",
+    "AnzahlTotSum"     = 'deaths'
+  ))
   
-  x.recovered <- data$recovered[,1:2]
-  colnames(x.recovered) <- c("date", "recovered")
-  x.recovered$date <- as.Date(x.recovered$date, format = "%d.%m.%Y")
+  x.cases3 <- data$cases3
+  colnames(x.cases3)[1] <- "date"
+  x.cases3$date <- as.Date(x.cases3$date, format = "%d.%m.%Y")
+  x.cases3 <- map_data(x.cases3, c(
+    "date"             = "date",
+    "Bezirk"           = "city",
+    "GKZ"              = "city_id",
+    "AnzEinwohner"     = "population",
+    "AnzahlFaelleSum"  = "confirmed",
+    "AnzahlGeheiltSum" = "recovered",
+    "AnzahlTotSum"     = 'deaths'
+  ))
   
   if(level==1){
     
     # national level data
     x.cases <- x.cases[which(x.cases$state_id==10),]
     x.hosp <- x.hosp[which(x.hosp$state_id==10),]
-    
-    # drop duplicated recovered
-    x.cases$recovered <- NULL
-    
+
     # merge
-    by <- c("date")
-    x <- x.cases %>% 
-      dplyr::full_join(x.hosp, by = by) %>%
-      dplyr::full_join(x.deaths, by = by) %>%
-      dplyr::full_join(x.recovered, by = by) 
-    
+    x <- dplyr::full_join(x.cases, x.hosp, by = "date") 
+      
   }
   
   if(level == 2){
@@ -70,6 +67,13 @@ gv_at <- function(cache, level){
     
     # merge
     x <- dplyr::full_join(x.cases, x.hosp, by = c("date","state_id"))
+    
+  }
+  
+  if(level == 3){
+    
+    # nothing to do
+    x <- x.cases3
     
   }
   
