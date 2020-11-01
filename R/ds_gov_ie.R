@@ -57,13 +57,20 @@ gov_ie <- function(level, cache) {
     
     # parse
     x <- map_data(x, c(
+      "ORIGID"                  = "county_id",
       "CountyName"              = "county",
+      "PopulationCensus16"      = "population",
+      "Lat"                     = "latitude",
+      "Long"                    = "longitude",
       "TimeStamp"               = "date",
       "ConfirmedCovidCases"     = "confirmed",
       "ConfirmedCovidDeaths"    = "deaths", 
       "ConfirmedCovidRecovered" = "recovered"
     ))
     x$date <- as.Date(x$date, "%Y/%m/%d")
+    
+    # fix
+    x <- x[!duplicated(x),]
     
   }
   

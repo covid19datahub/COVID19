@@ -8,7 +8,7 @@ IRL <- function(level, cache) {
   
   # id
   if(level == 2)
-    x$id <- id(x$county, iso = "IRL", ds = "gov_ie", level = level)
+    x$id <- id(x$county_id, iso = "IRL", ds = "gov_ie", level = level)
   
   # return
   return(x)
