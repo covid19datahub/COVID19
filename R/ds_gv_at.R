@@ -3,14 +3,11 @@ gv_at <- function(cache, level){
   
   # Source: Federal Ministery of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
   # See also: https://github.com/covid19datahub/COVID19/issues/128
-  url  <- "https://info.gesundheitsministerium.at/data/data.zip"
+  url.hosp <- "https://covid19-dashboard.ages.at/data/CovidFallzahlen.csv"
+  url.cases <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline.csv"
+  url.cases3 <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline_GKZ.csv"
   
-  data <- read.zip(url, cache = cache, sep = ";", files = c(
-    "hosp"   = "CovidFallzahlen.csv",
-    "cases"  = "CovidFaelle_Timeline.csv",
-    "cases3" = "CovidFaelle_Timeline_GKZ.csv"))
-  
-  x.hosp <- data$hosp
+  x.hosp <- read.csv(url.hosp, cache = cache, sep = ";")
   colnames(x.hosp)[1] <- "date"
   x.hosp$date <- as.Date(x.hosp$date, format = "%d.%m.%Y")
   x.hosp <- map_data(x.hosp, c(
@@ -22,7 +19,7 @@ gv_at <- function(cache, level){
     "FZICU"        = "icu"
   )) 
   
-  x.cases <- data$cases
+  x.cases <- read.csv(url.cases, cache = cache, sep = ";")
   colnames(x.cases)[1] <- "date"
   x.cases$date <- as.Date(x.cases$date, format = "%d.%m.%Y")
   x.cases <- map_data(x.cases, c(
@@ -35,7 +32,7 @@ gv_at <- function(cache, level){
     "AnzahlTotSum"     = 'deaths'
   ))
   
-  x.cases3 <- data$cases3
+  x.cases3 <- read.csv(url.cases3, cache = cache, sep = ";")
   colnames(x.cases3)[1] <- "date"
   x.cases3$date <- as.Date(x.cases3$date, format = "%d.%m.%Y")
   x.cases3 <- map_data(x.cases3, c(
