@@ -60,7 +60,12 @@ opencovid_fr <- function(cache, level = 1){
     
   }
   
-  # Date
+  # fix date
+  idx <- which(grepl("_", x$date, fixed = TRUE))
+  if(length(idx)>0)
+    x <- x[-idx,]
+  
+  # convert date
   x$date <- as.Date(x$date)
   
   # Done!
