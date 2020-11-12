@@ -18,6 +18,9 @@ covid19au_git <- function(level, cache) {
     # Note: levels 1 & 2 available only
     x <- x[x$administrative_area_level == level,]
 
+    # Fix
+    x <- x[!duplicated(x[,c("date","id")]),]
+    
     # return
     return(x)
 }
