@@ -50,8 +50,7 @@ The repository aims at developing a [unified dataset](https://covid19datahub.io/
 
 ## Use Cases
 
-__Using COVID-19 Data Hub?__ We are creating a collection of projects using COVID-19 Data Hub. Don't hesitate to open an [issue](https://github.com/covid19datahub/COVID19/issues) and let us know about your project. We are happy to showcase your work [here](https://covid19datahub.io/articles/usage.html). 
-
+See the [projects](https://covid19datahub.io/articles/usage.html) and [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use COVID-19 Data Hub.
 
 ## Reference
 

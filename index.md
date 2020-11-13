@@ -405,7 +405,7 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 - [Top 50 R resources on Novel COVID-19 Coronavirus](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
 - [March 2020: "Top 40" New CRAN Packages](<https://rviews.rstudio.com/2020/04/27/march-2020-top-40-new-cran-packages/>)
 
-__See also__ the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use the COVID-19 Data Hub.
+__See also__ the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use COVID-19 Data Hub.
 
 ## Join the Mission
 
