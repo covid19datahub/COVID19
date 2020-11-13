@@ -21,7 +21,6 @@ See also the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cit
 
 COVID-19 Data Hub press releases:
 
-- [HEC Montréal](https://www.hec.ca/en/research/take-a-closer-look/index.html)
 - [HEC Montréal](https://www.hec.ca/en/research/take-a-closer-look/reliable-unified-data.html) 
 - [Statistical Society of Canada](https://ssc.ca/en/publications/ssc-liaison/vol-34-3-june-2020/news-hec-montreal)
 - [Quartier L!bre](https://quartierlibre.ca/regrouper-les-donnees-mondiales-sur-la-covid-19/)
