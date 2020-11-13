@@ -395,6 +395,9 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 ## In the News
 
+- [HEC Montréal](https://www.hec.ca/en/research/take-a-closer-look/reliable-unified-data.html) 
+- [Statistical Society of Canada](https://ssc.ca/en/publications/ssc-liaison/vol-34-3-june-2020/news-hec-montreal)
+- [Quartier L!bre](https://quartierlibre.ca/regrouper-les-donnees-mondiales-sur-la-covid-19/)
 - [Institute for Data Valorization, Canada](<https://ivado.ca/en/covid-19/#phares>)
 - [Winner of the eRum2020 CovidR contest](<https://milano-r.github.io/erum2020-covidr-contest/index.html>)
 - [Data Science and Economics, University of Milano](<https://dse.cdl.unimi.it/en/avviso/notice-detail/covid-data-analysis>)
@@ -402,7 +405,7 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 - [Top 50 R resources on Novel COVID-19 Coronavirus](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
 - [March 2020: "Top 40" New CRAN Packages](<https://rviews.rstudio.com/2020/04/27/march-2020-top-40-new-cran-packages/>)
 
-See also the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use the COVID-19 Data Hub.
+__See also__ the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use the COVID-19 Data Hub.
 
 ## Join the Mission
 
