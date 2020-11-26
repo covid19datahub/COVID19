@@ -2,7 +2,7 @@ canada_ca <- function(cache,level){
   # Author: Paolo Montemurro 02/05/2020 - montep@usi.ch
   
   # === source === #
-  url  <- "https://health-infobase.canada.ca/src/data/covidLive/covid19.csv"
+  url  <- "http://health-infobase.canada.ca/src/data/covidLive/covid19.csv"
   
   # === download === #
   x   <- read.csv(url, cache = cache, na.strings = c("","N/A"))
