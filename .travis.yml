@@ -9,6 +9,9 @@ r:
 os:
   - linux
   
+env:
+  - _R_CHECK_TESTS_NLINES_=0
+  
 script:
   - |
     R CMD build .
