@@ -5,15 +5,15 @@ gov_br_es <- function(level, cache) {
   # disease spread in all 78 state counties.
   # https://coronavirus.es.gov.br/painel-covid-19-es
   
+  # temporarily increase timeout for large file download
+  timeout <- options(timeout = 300)
+  on.exit(options(timeout), add = TRUE)
+  
   # url 
   url <- "https://bi.static.es.gov.br/covid19/MICRODADOS.csv"
   
   # download
-  filename <- tempfile()
-  download.file(url, destfile = filename, quiet = TRUE)
-  
-  # read
-  x <- read.csv(filename, cache = cache, sep = ";", na.strings = "")
+  x <- read.csv(url, cache = cache, sep = ";", na.strings = "")
   
   # level
   if(level==2)
