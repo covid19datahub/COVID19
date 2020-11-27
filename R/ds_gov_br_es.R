@@ -6,7 +6,7 @@ gov_br_es <- function(level, cache) {
   # https://coronavirus.es.gov.br/painel-covid-19-es
   
   # temporarily increase timeout for large file download
-  timeout <- options(timeout = 300)
+  timeout <- options(timeout = 600)
   on.exit(options(timeout), add = TRUE)
   
   # url 
