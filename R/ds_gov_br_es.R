@@ -9,7 +9,11 @@ gov_br_es <- function(level, cache) {
   url <- "https://bi.static.es.gov.br/covid19/MICRODADOS.csv"
   
   # download
-  x <- read.csv(url, cache = cache, sep = ";", na.strings = "")
+  filename <- tempfile()
+  download.file(url, destfile = filename, quiet = TRUE)
+  
+  # read
+  x <- read.csv(filename, cache = cache, sep = ";", na.strings = "")
   
   # level
   if(level==2)
