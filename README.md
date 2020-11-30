@@ -22,6 +22,7 @@ The repository aims at developing a [unified dataset](https://covid19datahub.io/
 |
 <a href="https://covid19datahub.io/articles/api/excel.html" target="_blank">Excel</a>
 </p>
+
 The data are updated on an hourly basis. [Read more](https://covid19datahub.io/articles/data.html)
 
 ## Data Sources
