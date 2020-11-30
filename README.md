@@ -5,7 +5,7 @@
 [![](https://storage.covid19datahub.io/downloads/total.svg)](https://covid19datahub.io/articles/data.html) [![DOI](https://joss.theoj.org/papers/10.21105/joss.02376/status.svg)](https://doi.org/10.21105/joss.02376) [![eRum2020::CovidR](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300)](https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html) [![Build Status](https://travis-ci.org/covid19datahub/COVID19.svg?branch=master)](https://travis-ci.org/covid19datahub/COVID19)
 
 
-The repository aims at developing a [unified dataset](https://covid19datahub.io/articles/doc/data.html) by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.  Available in:
+The repository aims at developing a [unified dataset](https://covid19datahub.io/articles/data.html) by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.  Available in:
 
 <p align="center">
 <a href="https://covid19datahub.io/articles/api/r.html" target="_blank">R</a>
@@ -22,6 +22,7 @@ The repository aims at developing a [unified dataset](https://covid19datahub.io/
 |
 <a href="https://covid19datahub.io/articles/api/excel.html" target="_blank">Excel</a>
 </p>
+The data are updated on an hourly basis. [Read more](https://covid19datahub.io/articles/data.html)
 
 ## Data Sources
 
