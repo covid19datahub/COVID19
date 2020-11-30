@@ -1,3 +1,9 @@
+# COVID19 2.3.0 (2020-11-30)
+
+## Data Update
+
+* **Colombia data**. Fixed `deaths` and `confirmed` according to https://coronaviruscolombia.gov.co Added `tests` for level 1 and 2
+
 # COVID19 2.3.0 (2020-10-30)
 
 ## Data Update
