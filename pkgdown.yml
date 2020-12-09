@@ -69,7 +69,6 @@ articles:
   iso/ECU: ECU.html
   iso/EGY: EGY.html
   iso/ERI: ERI.html
-  iso/ESH: ESH.html
   iso/ESP: ESP.html
   iso/EST: EST.html
   iso/ETH: ETH.html
@@ -206,12 +205,14 @@ articles:
   iso/VEN: VEN.html
   iso/VIR: VIR.html
   iso/VNM: VNM.html
+  iso/VUT: VUT.html
+  iso/WSM: WSM.html
   iso/YEM: YEM.html
   iso/ZAF: ZAF.html
   iso/ZMB: ZMB.html
   iso/ZWE: ZWE.html
   usage: usage.html
-last_built: 2020-12-08T20:30Z
+last_built: 2020-12-09T12:36Z
 urls:
   reference: https://covid19datahub.io/reference
   article: https://covid19datahub.io/articles

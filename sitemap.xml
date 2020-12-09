@@ -247,9 +247,6 @@
     <loc>https://covid19datahub.io/articles/iso/ERI.html</loc>
   </url>
   <url>
-    <loc>https://covid19datahub.io/articles/iso/ESH.html</loc>
-  </url>
-  <url>
     <loc>https://covid19datahub.io/articles/iso/ESP.html</loc>
   </url>
   <url>
@@ -656,6 +653,12 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/articles/iso/VNM.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/articles/iso/VUT.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/articles/iso/WSM.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/articles/iso/YEM.html</loc>
