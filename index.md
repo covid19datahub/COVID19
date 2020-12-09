@@ -397,6 +397,7 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 ## In the News
 
+- [University of Neuchâtel](https://www.unine.ch/unine/home/pour-les-medias/communiques-de-presse/les-donnees-de-la-covid-19-sur-u.html)
 - [HEC Montréal](https://www.hec.ca/en/research/take-a-closer-look/reliable-unified-data.html) 
 - [Statistical Society of Canada](https://ssc.ca/en/publications/ssc-liaison/vol-34-3-june-2020/news-hec-montreal)
 - [Quartier L!bre](https://quartierlibre.ca/regrouper-les-donnees-mondiales-sur-la-covid-19/)
