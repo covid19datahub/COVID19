@@ -1,3 +1,9 @@
+# COVID19 2.3.0 (2020-12-12)
+
+## Data Update
+
+* **US policies** for admin areas level 3 (counties) are now inherited from the policies available for admin areas level 2 (states) instead of level 1 (nation). 
+
 # COVID19 2.3.0 (2020-11-30)
 
 ## Data Update

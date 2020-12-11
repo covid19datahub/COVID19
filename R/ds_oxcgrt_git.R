@@ -90,10 +90,8 @@ oxcgrt_git <- function(level, cache){
     }
     
     # merge regional data
-    if(level==2){
-      x <- rbind(x, r)
-    }
-    
+    x <- rbind(x, r)
+
   }
 
   # return
