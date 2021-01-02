@@ -11,11 +11,14 @@ ourworldindata_org <- function(cache, id = NULL){
   # formatting
   x <- map_data(x, c(
     'date',
-    'iso_code'     = 'iso_alpha_3',
-    'location'     = 'country',
-    'total_cases'  = 'confirmed',
-    'total_deaths' = 'deaths',
-    'total_tests'  = 'tests'
+    'iso_code'           = 'iso_alpha_3',
+    'location'           = 'country',
+    'total_cases'        = 'confirmed',
+    'total_deaths'       = 'deaths',
+    'total_tests'        = 'tests',
+    'total_vaccinations' = 'vaccines',
+    'icu_patients'       = 'icu',
+    'hosp_patients'      = 'hosp'
   ))
   
   # date

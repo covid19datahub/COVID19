@@ -71,6 +71,7 @@ get_oxcgrt_id <- function(id, iso){
 vars <- function(type = NULL){
   
   cases <- c(
+    'numeric' = 'vaccines',
     'numeric' = 'tests',
     'numeric' = 'confirmed',
     'numeric' = 'recovered',

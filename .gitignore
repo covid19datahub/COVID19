@@ -46,3 +46,4 @@ LICENSE
 /Meta
 /docs
 inst/doc
+*.log

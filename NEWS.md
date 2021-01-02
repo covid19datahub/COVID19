@@ -1,3 +1,9 @@
+# COVID19 2.3.0 (2021-01-02)
+
+## Data Update
+
+* Added number of people who have been **vaccinated** for level 1. Data pulled from [Our World in Data](https://ourworldindata.org/covid-vaccinations).
+
 # COVID19 2.3.0 (2020-12-12)
 
 ## Data Update

@@ -24,6 +24,7 @@ Download the data [here](/articles/data.html)
 | `deaths`                              | Cumulative number of  deaths.                                |
 | `confirmed`                           | Cumulative number of  confirmed cases.                       |
 | `tests`                               | Cumulative number of  tests.                                 |
+| `vaccines`                               | Cumulative number of  people who have been vaccinated.                                |
 | `recovered`                           | Cumulative number of patients released from hospitals or reported recovered. |
 | `hosp`                                | Number of hospitalized patients on date.                     |
 | `icu`                                 | Number of hospitalized patients in ICUs on date.             |

@@ -9,7 +9,7 @@ covid19turkey_git <- function(level, cache){
   x <- map_data(x, c(
     'date'               = 'date',
     'totalTests'         = 'tests',
-    'totalCases'         = 'confirmed',
+    'totalPatients'      = 'confirmed',
     'totalDeaths'        = 'deaths',
     'totalRecovered'     = 'recovered',
     'totalIntensiveCare' = 'icu',
