@@ -5,22 +5,14 @@ gov_si <- function(cache, level){
   url <- 'https://www.gov.si/assets/vlada/Koronavirus-podatki/en/EN_Covid-19-all-data.xlsx'
   
   # download
-  x <- read.excel(url, cache=cache)$`Covid-19 podatki`
+  x <- read.excel(url, cache=cache)[[1]]
   
   # formatting
   if(level==1){
     
-    # x <- map_data(x, c(
-    #   'Dátum'                                = 'date',
-    #   'Mintavételek száma (összesen)'        = 'tests',
-    #   'pozitív esetek száma (összesen)'      = 'confirmed',
-    #   'hospitalizált'                        = 'hosp',
-    #   'intenzív ellátásra szoruló'           = 'icu',
-    #   'elhunytak száma összesen'             = 'deaths'
-    # ))
     x <- map_data(x, c(
       'Date'                                         = 'date',
-      'Tested (all)'                                 = 'tests',
+      'Tested (all, PCR + HAGT)'                     = 'tests',
       'Positive (all)'                               = 'confirmed',
       'All hospitalized on certain day'              = 'hosp',
       'All persons in intensive care on certain day' = 'icu',

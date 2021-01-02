@@ -1,57 +1,6 @@
 #' @importFrom dplyr %>%
 NULL
 
-# .onAttach <- function(libname, pkgname) {
-# 
-#   if(interactive() & requireNamespace('COVID19', quietly = TRUE)){
-# 
-#     packageStartupMessage("The coronavirus situation is changing fast. Checking for updates...")
-# 
-#     description <- try(readLines('https://raw.githubusercontent.com/covid19datahub/COVID19/master/DESCRIPTION'), silent = TRUE)
-#     if(class(description)=="try-error")
-#       return()
-#       
-#     id <- which(startsWith(prefix = "Version:", x = description))
-#     v  <- as.package_version(gsub(pattern = "^Version:\\s*", replacement = "", x = description[id]))
-# 
-#     if(v > utils::packageVersion(pkg = "COVID19")){
-# 
-#       yn <- utils::askYesNo("Package COVID19: new version available. Update now?")
-#       if(!is.na(yn)) if(yn)
-#         update()
-# 
-#     } else {
-# 
-#       packageStartupMessage("...up to date.")
-# 
-#     }
-# 
-#   }
-# 
-#   packageStartupMessage(
-#     '
-#     ================================================================\n
-#     
-#     IMPORTANT NOTICE: 
-#     This is the development version of the COVID-19 Data Hub
-#     
-#     Download the stable release from CRAN:
-#     install.packages("COVID19")
-#     
-#     ================================================================\n
-#     '
-#   )
-#   
-# }
-# 
-# update <- function(){
-# 
-#   detach("package:COVID19", unload=TRUE)
-#   x <- try(remotes::install_github('covid19datahub/COVID19', quiet = FALSE, upgrade = FALSE), silent = TRUE)
-#   library(COVID19)
-# 
-# }
-
 cachecall <- function(fun, ...){
   
   args  <- list(...)
@@ -286,6 +235,25 @@ csv_check_data <- function(iso){
   y   <- extdata("db",sprintf("%s.csv",iso))
   
   return(is_equal(x, y))
+  
+}
+
+covid19fill <- function(x, iso, level, cache, what = NULL){
+  
+  y <- covid19(country = iso, level = level, end = min(x$date), vintage = TRUE, raw = TRUE, cache = cache, verbose = FALSE) 
+  
+  key <- c("id","date")
+  if(level==1)
+    key <- c("date")
+  
+  if(is.null(what))
+    what <- setdiff(colnames(x), key)
+  
+  y <- y[,(c(key, what))] 
+  y <- dplyr::bind_rows(y, x)
+  y <- y[!duplicated(y[,key], fromLast = TRUE),]  
+  
+  return(y)
   
 }
 
