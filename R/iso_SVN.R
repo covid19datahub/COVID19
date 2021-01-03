@@ -9,8 +9,8 @@ SVN <- function(level, cache){
   x <- gov_si(cache = cache, level = level)
   
   # fill old data
-  if(level==1)
-    x <- covid19fill(x = x, iso = "SVN", level = level, cache = cache)
+  # if(level==1)
+  #   x <- covid19fill(x = x, iso = "SVN", level = level, cache = cache)
     
   # return
   return(x)

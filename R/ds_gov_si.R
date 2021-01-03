@@ -12,7 +12,7 @@ gov_si <- function(cache, level){
     
     x <- map_data(x, c(
       'Date'                                         = 'date',
-      'Tested (all, PCR + HAGT)'                     = 'tests',
+      'Tested (all)'                                 = 'tests',
       'Positive (all)'                               = 'confirmed',
       'All hospitalized on certain day'              = 'hosp',
       'All persons in intensive care on certain day' = 'icu',
