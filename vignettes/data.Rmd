@@ -13,7 +13,7 @@ The data are available at different levels of granularity: admin area level 1 (a
 
 **Policies** for admin areas level 2 and 3 **are inherited** from national-level policies by [Oxford Covid-19 Government Response Tracker](https://github.com/OxCGRT/covid-policy-tracker) using [flags](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md). National-level policies applied across the whole country (flag=1) are propagated to levels 2 and 3. **Subnational policies** for level 2 are available for the countries listed in the [Subnational Data section](https://github.com/OxCGRT/covid-policy-tracker#subnational-data). Since 2020-12-12, **US policies** for admin areas level 3 (counties) are inherited from the policies available for admin areas level 2 (states).
 
-The datasets include World **vaccines** data by country starting from 2021-01-02. 
+The datasets include the number of people who have been **vaccinated** by country starting from 2021-01-02. 
 
 The **datasets** are updated on an hourly basis. The workflow takes around one hour to process the data worldwide and the release takes place only when all the datasets are ready. This means there is usually between 1h and 2h lag with respect to the data provider. 
 
