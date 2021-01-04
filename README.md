@@ -25,6 +25,22 @@ The repository aims at developing a [unified dataset](https://covid19datahub.io/
 
 The data are updated on an hourly basis. [Read more](https://covid19datahub.io/articles/data.html)
 
+## Historical Data
+
+The dataset includes the time series of vaccines, tests, cases, deaths, recovered, hospitalizations, intensive therapy, policy measures and more. See the [full dataset documentation](https://covid19datahub.io/articles/doc/data.html).
+
+## Administrative Areas
+
+The data are available at different levels of granularity:
+
+- admin area level 1: administrative area of top level, usually countries.
+- admin area level 2: usually states, regions, cantons.
+- admin area level 3: usually cities, municipalities.
+
+## Direct Download
+
+The latest and vintage CSV data files are available [here](https://covid19datahub.io/articles/data.html).
+
 ## Data Sources
 
 - [Johns Hopkins Center for Systems Science and Engineering](https://github.com/CSSEGISandData/COVID-19)
@@ -54,12 +70,26 @@ The data are updated on an hourly basis. [Read more](https://covid19datahub.io/a
 
 See the [projects](https://covid19datahub.io/articles/usage.html) and [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use COVID-19 Data Hub.
 
-## Reference
+## Cite as
 
-Guidotti, E., Ardia, D., (2020).      
-COVID-19 Data Hub       
-_Journal of Open Source Software_, **5**(51):2376   
-[https://doi.org/10.21105/joss.02376](https://doi.org/10.21105/joss.02376)  
+We have invested a lot of time and effort in creating [COVID-19 Data Hub](https://covid19datahub.io), please agree to the [Terms of Use](https://covid19datahub.io/LICENSE.html) and cite the following reference when using it:
+
+*Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: [10.21105/joss.02376](https://doi.org/10.21105/joss.02376).*
+
+A BibTeX entry for LaTeX users is:
+
+```latex
+@Article{,
+    title = {COVID-19 Data Hub},
+    year = {2020},
+    doi = {10.21105/joss.02376},
+    author = {Emanuele Guidotti and David Ardia},
+    journal = {Journal of Open Source Software},
+    volume = {5},
+    number = {51},
+    pages = {2376}
+}
+```
 
 ## Supported by 
 
