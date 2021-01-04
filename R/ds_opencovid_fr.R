@@ -5,6 +5,11 @@ opencovid_fr <- function(cache, level = 1){
   url <- "https://raw.githubusercontent.com/opencovid19-fr/data/master/dist/chiffres-cles.csv"
   x   <- read.csv(url, cache = cache) 
   
+  # drop wrong observation
+  idx <- which(x$date=="2020-01-01" & x$granularite=="pays")
+  if(length(x))
+    x <- x[-idx,]
+  
   # Formatting columns
   x <- map_data(x, c(
     'date',
