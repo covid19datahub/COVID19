@@ -15,6 +15,7 @@ The following people are gratefully acknowledged for taking part in the data col
 - [Burren Elsa](https://github.com/elsaburren)
 - [Caggese Simone](https://github.com/sim55649)
 - [Castagnetto Jesus M.](https://github.com/jmcastagnetto)
+- [Guilherme Viana](https://github.com/guilhermegfv)
 - [Huang Xiangyun](https://github.com/XiangyunHuang)
 - [Jonekeat](https://github.com/jonekeat)
 - [Kelley Dan](https://github.com/dankelley)

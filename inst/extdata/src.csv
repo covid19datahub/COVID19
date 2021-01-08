@@ -78,6 +78,8 @@
 "BRA",3,"tests","https://coronavirus.es.gov.br/painel-covid-19-es","State Government of Espírito Santo, Brazil","2020",,,,
 "BRA",3,"deaths","https://coronavirus.es.gov.br/painel-covid-19-es","State Government of Espírito Santo, Brazil","2020",,,,
 "BRA",3,"recovered","https://coronavirus.es.gov.br/painel-covid-19-es","State Government of Espírito Santo, Brazil","2020",,,,
+"BRA",3,"latitude","https://github.com/kelvins/Municipios-Brasileiros","Municípios Brasileiros","2019",,,,
+"BRA",3,"longitude","https://github.com/kelvins/Municipios-Brasileiros","Municípios Brasileiros","2019",,,,
 "BRA",3,"population","https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Esp%C3%ADrito_Santo_por_popula%C3%A7%C3%A3o","Wikipedia","2019",,,,
 "BRN",1,"longitude","https://www.cia.gov/library/publications/the-world-factbook/geos/bx.html","CIA - Central Intelligence Agency","2020",,,,
 "BRN",1,"latitude","https://www.cia.gov/library/publications/the-world-factbook/geos/bx.html","CIA - Central Intelligence Agency","2020",,,,
