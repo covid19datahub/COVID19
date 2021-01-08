@@ -6,7 +6,7 @@ opencovid_fr <- function(cache, level = 1){
   x   <- read.csv(url, cache = cache) 
   
   # drop wrong observation
-  idx <- which(x$date=="2020-01-01" & x$granularite=="pays")
+  idx <- which(x$date<"2020-01-24" & x$granularite=="pays")
   if(length(x))
     x <- x[-idx,]
   
