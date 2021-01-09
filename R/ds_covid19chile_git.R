@@ -45,6 +45,9 @@ covid19chile_git <- function(level, cache) {
     # date
     x$date <- as.Date(x$date, "%Y-%m-%d")
     
+    # drop duplicates
+    x <- x[!duplicated(x$date),]
+    
   }
   
   if(level == 2) {
