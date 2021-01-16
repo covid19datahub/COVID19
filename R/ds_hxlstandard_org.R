@@ -7,12 +7,13 @@ hxlstandard_org <- function(cache){
   
   # download
   url <- "https://proxy.hxlstandard.org/data/738954/download/haiti-covid-19-subnational-data.csv"
-  x   <- read.csv(url, cache = cache, encoding = "UTF-8")[-1,]
+  x   <- read.csv(url, cache = cache)[-1,]
   
   # formatting 
+  colnames(x)[2] <- "state"
   x <- map_data(x, c(
+    'state'             = 'state',
     'Date'              = 'date',
-    'Département'       = 'state',
     'Cumulative.cases'  = 'confirmed',
     'Cumulative.Deaths' = 'deaths'
   ))
