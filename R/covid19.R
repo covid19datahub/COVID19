@@ -71,6 +71,9 @@ covid19 <- function(country = NULL,
          2: admin area level 2
          3: admin area level 3")
 
+  # set locale
+  Sys.setlocale("LC_ALL", "C")
+  
   # cache
   cachekey <- make.names(sprintf("covid19_%s_%s_%s_%s",paste0(country, collapse = "."), level, ifelse(vintage, end, 0), raw))
   if(cache & exists(cachekey, envir = cachedata)){
