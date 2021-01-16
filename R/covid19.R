@@ -352,8 +352,9 @@ covid19 <- function(country = NULL,
     dplyr::arrange(id, date)
 
   # check
-  if(any(duplicated(x[,c('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3')])))
-    warning("the tuple ('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3') is not unique")
+  idx <- which(duplicated(x[,c('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3')]))
+  if(length(idx))
+    warning(sprintf("the tuple ('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3') is not unique: %s", paste(unique(x$id[idx]), collapse = ", ")))
 
   # src
   attr(x, "src") <- try(cite(x, src, verbose = verbose))
