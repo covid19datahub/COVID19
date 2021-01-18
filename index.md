@@ -420,6 +420,7 @@ Logo courtesy of [Gary Sandoz](http://www.garysandoz.ch/index.html) and [Talk-to
 
 ## Supported by
 
+<img height="96" src="man/figures/RConsortium.png" alt="R Consortium" style="margin-right:8px"/>
 <img height="96" src="man/figures/ivado.png" alt="IVADO" style="margin-right:8px"/>
 <img height="96" src="man/figures/hec-montreal.jpg" alt="HEC Montréal" style="display:inline-block;margin-right:8px" />
 <img height="96" src="man/figures/hackzurich.jpeg" alt="Hack Zurich" style="display:inline-block;margin-right:8px" />
