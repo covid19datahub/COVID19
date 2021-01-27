@@ -37,6 +37,9 @@ pcmdpc_git <- function(cache, level){
     'terapia_intensiva'       = 'icu' 
   ))
 
+  # remove duplicates
+  if(level==1)
+    x <- x[!duplicated(x$date),]
   
   # return
   return(x)
