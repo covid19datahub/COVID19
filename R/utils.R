@@ -882,6 +882,12 @@ ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {
   status <- status & check(inherits(x$date, c("Date")),
                            "column date of wrong type")
   
+  # check duplicated dates
+  if(length(idx <- which(duplicated(x[,c("id", "date")])))){
+    warning(sprintf("multiple dates per id: %s", paste0(unique(x$id[idx]), collapse = ", ")))
+    return(FALSE)
+  }
+  
   # check data types
   for(col in intersect(cols, c('tests','confirmed','recovered','deaths','hosp','vent','icu'))){
     if(!is.numeric(x[[col]])){
