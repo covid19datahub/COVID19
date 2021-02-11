@@ -395,16 +395,18 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 ## In the News
 
-- [University of Neuchâtel](https://www.unine.ch/unine/home/pour-les-medias/communiques-de-presse/les-donnees-de-la-covid-19-sur-u.html)
-- [HEC Montréal](https://www.hec.ca/en/research/take-a-closer-look/reliable-unified-data.html) 
-- [Statistical Society of Canada](https://ssc.ca/en/publications/ssc-liaison/vol-34-3-june-2020/news-hec-montreal)
-- [Quartier L!bre](https://quartierlibre.ca/regrouper-les-donnees-mondiales-sur-la-covid-19/)
-- [Institute for Data Valorization, Canada](<https://ivado.ca/en/covid-19/#phares>)
-- [Winner of the eRum2020 CovidR contest](<https://milano-r.github.io/erum2020-covidr-contest/index.html>)
-- [Data Science and Economics, University of Milano](<https://dse.cdl.unimi.it/en/avviso/notice-detail/covid-data-analysis>)
-- [More Select COVID-19 Resources](https://rviews.rstudio.com/2020/06/03/more-select-covid-19-resources/)
-- [Top 50 R resources on Novel COVID-19 Coronavirus](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
-- [March 2020: "Top 40" New CRAN Packages](<https://rviews.rstudio.com/2020/04/27/march-2020-top-40-new-cran-packages/>)
+- [CScience, 02/2021](http://www.cscience.ca/2021/02/10/exploiter-les-donnees-pour-enrayer-la-pandemie/)
+- [R Consortium, 02/2021](https://www.r-consortium.org/blog/2021/02/09/covid-19-data-hub)
+- [University of Neuchâtel, 12/2020](https://www.unine.ch/unine/home/pour-les-medias/communiques-de-presse/les-donnees-de-la-covid-19-sur-u.html)
+- [Quartier L!bre, 11/2020](https://quartierlibre.ca/regrouper-les-donnees-mondiales-sur-la-covid-19/)
+- [HEC Montréal, 09/2020](https://www.hec.ca/en/research/take-a-closer-look/reliable-unified-data.html) 
+- [Statistical Society of Canada, 06/2020](https://ssc.ca/en/publications/ssc-liaison/vol-34-3-june-2020/news-hec-montreal)
+- [Institute for Data Valorization, 06/2020](<https://ivado.ca/en/covid-19/#phares>)
+- [Winner of the eRum2020 CovidR contest, 06/2020](<https://milano-r.github.io/erum2020-covidr-contest/index.html>)
+- [Data Science and Economics, University of Milano, 06/2020](<https://dse.cdl.unimi.it/en/avviso/notice-detail/covid-data-analysis>)
+- [More Select COVID-19 Resources, 06/2020](https://rviews.rstudio.com/2020/06/03/more-select-covid-19-resources/)
+- [Top 50 R resources on Novel COVID-19 Coronavirus, 03/2020](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
+- ["Top 40" New CRAN Packages, 03/2020](<https://rviews.rstudio.com/2020/04/27/march-2020-top-40-new-cran-packages/>)
 
 __See also__ the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use COVID-19 Data Hub.
 
