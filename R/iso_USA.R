@@ -13,11 +13,16 @@ USA <- function(level, cache){
   }
   if(level==2){
 
-    # download
+    # cases 
     x <- covidtracking_com(cache = cache) 
-    
-    # id
     x$id <- id(x$state, iso = "USA", ds = "covidtracking_com", level = level)
+    
+    # tests
+    y <- owidus_git(cache = cache)
+    y$id <- id(y$state, iso = "USA", ds = "owidus_git", level = level)
+    
+    # merge
+    x <- merge(x, y, by = c("date", "id"), all.x = TRUE)
     
   }
   if(level==3){

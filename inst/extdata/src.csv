@@ -587,6 +587,7 @@
 "USA",2,"latitude","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering","2020",,,,
 "USA",2,"longitude","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering","2020",,,,
 "USA",2,"population","https://github.com/CSSEGISandData/COVID-19","Johns Hopkins Center for Systems Science and Engineering","2020",,,,
+"USA",2,"vaccines","https://ourworldindata.org/us-states-vaccinations","Our World in Data","2021",,,,
 "USA",2,"confirmed","https://covidtracking.com","The COVID Tracking Project","2020",,,,
 "USA",2,"deaths","https://covidtracking.com","The COVID Tracking Project","2020",,,,
 "USA",2,"tests","https://covidtracking.com","The COVID Tracking Project","2020",,,,
