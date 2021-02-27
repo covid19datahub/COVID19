@@ -333,6 +333,9 @@ covid19 <- function(country = NULL,
 
   }
   
+  # clean environment
+  rm(list=setdiff(ls(), c("x", "start", "end")))
+  
   # subset
   cn <- colnames(x)
   cn <- unique(c(vars(), "key", cn[grepl("^key\\_", cn)]))
@@ -356,14 +359,19 @@ covid19 <- function(country = NULL,
   if(length(idx))
     warning(sprintf("the tuple ('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3') is not unique: %s", paste(unique(x$id[idx]), collapse = ", ")))
 
-  # src
-  attr(x, "src") <- try(cite(x, src, verbose = verbose))
+  # src: not needed any longer
+  # attr(x, "src") <- try(cite(x, src, verbose = verbose))
   
   # cache
   if(cache)
     assign(cachekey, x, envir = cachedata)
 
+  # subset  
+  idx <- which(x$date < start | x$date > end)
+  if(length(idx))
+    x <- x[-idx,]
+  
   # return
-  return(x[x$date >= start & x$date <= end,])
+  x
 
 }
