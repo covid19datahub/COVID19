@@ -334,7 +334,7 @@ covid19 <- function(country = NULL,
   }
   
   # clean environment
-  rm(list=setdiff(ls(), c("x", "start", "end")))
+  rm(list=setdiff(ls(), c("x", "start", "end", "cache", "cachekey")))
   
   # subset
   cn <- colnames(x)
