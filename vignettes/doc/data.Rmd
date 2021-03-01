@@ -24,7 +24,7 @@ Download the data [here](/articles/data.html)
 | `deaths`                              | Cumulative number of  deaths.                                |
 | `confirmed`                           | Cumulative number of  confirmed cases.                       |
 | `tests`                               | Cumulative number of  tests.                                 |
-| `vaccines`                               | Cumulative number of  people who have been vaccinated.                                |
+| `vaccines`                               | Cumulative number of doses administered. This is counted as a single dose, and may not equal the total number of people vaccinated, depending on the specific dose regime (e.g. people receive multiple doses). If a person receives one dose of the vaccine, this metric goes up by 1. If they receive a second dose, it goes up by 1 again.                                |
 | `recovered`                           | Cumulative number of patients released from hospitals or reported recovered. |
 | `hosp`                                | Number of hospitalized patients on date.                     |
 | `icu`                                 | Number of hospitalized patients in ICUs on date.             |
