@@ -13,16 +13,28 @@ USA <- function(level, cache){
   }
   if(level==2){
 
-    # cases 
-    x <- covidtracking_com(cache = cache) 
-    x$id <- id(x$state, iso = "USA", ds = "covidtracking_com", level = level)
+    # tests, hospitalized and icu
+    h <- healthdata_gov(level = level, cache = cache)
+    h$id <- id(h$state, iso = "USA", ds = "healthdata_gov", level = level)
     
-    # tests
-    y <- owidus_git(cache = cache)
-    y$id <- id(y$state, iso = "USA", ds = "owidus_git", level = level)
+    # confirmed and deaths 
+    n <- nytimes_git(cache = cache, level = level)
+    n$id <- id(n$fips, iso = "USA", ds = "nytimes_git", level = level)
+    
+    # recovered and vent
+    r <- covidtracking_com(cache = cache) 
+    r$id <- id(r$state, iso = "USA", ds = "covidtracking_com", level = level)
+    
+    # vaccines
+    v <- owidus_git(cache = cache)
+    v$id <- id(v$state, iso = "USA", ds = "owidus_git", level = level)
     
     # merge
-    x <- merge(x, y, by = c("date", "id"), all.x = TRUE)
+    key <- c("date", "id")
+    x <- n[,c(key, "confirmed", "deaths")] %>%
+      dplyr::full_join(h[,c(key, "tests", "hosp", "icu")], by = key) %>%
+      dplyr::full_join(v[,c(key, "vaccines")], by = key) %>%
+      dplyr::full_join(r[,c(key, "recovered", "vent")], by = key)
     
   }
   if(level==3){
@@ -35,7 +47,7 @@ USA <- function(level, cache){
     y <- nytimes_git(cache = cache, level = level)
     y$id <- id(y$fips, iso = "USA", ds = "nytimes_git", level = level)
     
-    # combine
+    # append
     x <- x[!(x$fips %in% y$fips),]
     x <- bind_rows(x, y)
     

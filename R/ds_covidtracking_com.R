@@ -14,7 +14,7 @@ covidtracking_com <- function(cache){
     'fips',
     'positive'              = 'confirmed',
     'death'                 = 'deaths',
-    'posNeg'                = 'tests',
+    'totalTestResults'      = 'tests',
     'recovered'             = 'recovered',
     'hospitalizedCurrently' = 'hosp',
     'inIcuCurrently'        = 'icu',
