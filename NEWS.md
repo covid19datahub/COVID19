@@ -1,3 +1,18 @@
+# COVID19 2.3.0 (2021-03-01)
+
+## Breaking Changes
+
+- Due to the incresing size of the data files, we will stop to provide the [pre-processed data](https://covid19datahub.io/articles/data.html) on 01 April 2021, so to improve the update and storage of the raw data. Please switch to the raw data if you are still using the pre-processed files.
+
+# COVID19 2.3.0 (2021-02-01)
+
+## Data Update
+
+- State-level data for US have changed data provider(s) due to the shutdown of the [COVID Tracking Project](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7). Tests are now from the [Department of Health & Human Services](https://healthdata.gov/dataset/covid-19-diagnostic-laboratory-testing-pcr-testing-time-series). Hospitalized and ICU are now from [Department of Health & Human Services](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state). Confirmed cases and fatalities are now from [The New York Times](https://github.com/nytimes/covid-19-data). Data at national and county level have not been affected.
+
+- Added data for Brazil (levels 2 and 3) from [this awesome repository](https://github.com/wcota/covid19br/) and vaccines from the [Ministry of Health of Brazil](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao) 
+
+
 # COVID19 2.3.0 (2021-01-02)
 
 ## Data Update

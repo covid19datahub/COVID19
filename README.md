@@ -25,6 +25,14 @@ The repository aims at developing a [unified dataset](https://covid19datahub.io/
 
 The data are updated on an hourly basis. [Read more](https://covid19datahub.io/articles/data.html)
 
+
+## Breaking Changes
+- Due to the incresing size of the data files, we will stop to provide the [pre-processed data](https://covid19datahub.io/articles/data.html) on 01 April 2021, so to improve the update and storage of the raw data. Please switch to the raw data if you are still using the pre-processed files.
+
+- 02 March 2021: State-level data for US have changed data provider(s) due to the shutdown of the [COVID Tracking Project](https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7). Tests are now from the [Department of Health & Human Services](https://healthdata.gov/dataset/covid-19-diagnostic-laboratory-testing-pcr-testing-time-series). Hospitalized and ICU are now from [Department of Health & Human Services](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state). Confirmed cases and fatalities are now from [The New York Times](https://github.com/nytimes/covid-19-data). Data at national and county level have not been affected.
+
+- 02 March 2021: Added data for Brazil (levels 2 and 3) from [this awesome repository](https://github.com/wcota/covid19br/) and vaccines from the [Ministry of Health of Brazil](https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao) 
+
 ## Historical Data
 
 The dataset includes the time series of vaccines, tests, cases, deaths, recovered, hospitalizations, intensive therapy, policy measures and more. See the [full dataset documentation](https://covid19datahub.io/articles/doc/data.html).
