@@ -5,8 +5,10 @@ HRV <- function(level, cache) {
   if(level!=2)
     return(NULL)
   
-  # download
-  x <- gov_hr(level = level, cache = cache)
+  # download (may fail due to DDOS protection by Cloudflare)
+  x <- try(gov_hr(level = level, cache = cache))
+  if(class(x)=="try-error")
+    return(NULL)
   
   # id
   if(level == 2) {
