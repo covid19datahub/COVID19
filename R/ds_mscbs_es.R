@@ -4,7 +4,7 @@ mscbs_es <- function(level, cache) {
   if(level == 2) {
     
     # download
-    url <- 'https://cnecovid.isciii.es/covid19/resources/casos_diagnostico_ccaa.csv'
+    url <- 'https://cnecovid.isciii.es/covid19/resources/casos_diag_ccaadecl.csv'
     x   <- read.csv(url, cache = cache)
     
     # format
