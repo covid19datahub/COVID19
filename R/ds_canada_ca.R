@@ -15,6 +15,7 @@ canada_ca <- function(cache,level){
     "numdeaths"  = "deaths",
     "numconf"    = "confirmed",
     "numtested"  = "tests",
+    "numtests"   = "tests2",
     "numrecover" = "recovered"
   ))
 
@@ -31,6 +32,11 @@ canada_ca <- function(cache,level){
   if(level==2)
     x <- x[x$name!="Canada",]  
 
+  # merge tests
+  idx <- which(is.na(x$tests))
+  if(length(idx))
+    x$tests[idx] <- x$tests2[idx]
+  
   # return
   return(x)
   

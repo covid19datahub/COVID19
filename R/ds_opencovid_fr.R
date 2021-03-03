@@ -7,7 +7,7 @@ opencovid_fr <- function(cache, level = 1){
   
   # drop wrong observation
   idx <- which(x$date<"2020-01-24" & x$granularite=="pays")
-  if(length(x))
+  if(length(idx))
     x <- x[-idx,]
   
   # Formatting columns

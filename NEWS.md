@@ -1,10 +1,18 @@
-# COVID19 2.3.0 (2021-03-01)
+# COVID19 2.3.0 (2021-04-01)
 
 ## Breaking Changes
 
 - Due to the incresing size of the data files, we will stop to provide the [pre-processed data](https://covid19datahub.io/articles/data.html) on 01 April 2021, so to improve the update and storage of the raw data. Please switch to the raw data if you are still using the pre-processed files.
 
-# COVID19 2.3.0 (2021-02-01)
+# COVID19 2.3.0 (2021-03-03)
+
+## Data Update
+
+- Canadian data level 2: https://health-infobase.canada.ca/covid-19/ has changed the way of reporting `tests`. This is creating a spike in the data but will reflect the change in the official data provider. See issue [#156](https://github.com/covid19datahub/COVID19/issues/156)
+
+> Starting February 1, 2021, laboratory test indicators are based on the number of laboratory tests performed and the percentage of tests positive. These data replace previous metrics based on unique individuals tested and provide a more accurate measure of test positivity and promote greater standardization in reporting across Canada. The proportion of tests positive is expected to decrease compared with previous person-based methods, as all tests will be included in the calculation, including new tests on the same person over time.
+
+# COVID19 2.3.0 (2021-03-01)
 
 ## Data Update
 
