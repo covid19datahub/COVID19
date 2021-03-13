@@ -14,8 +14,8 @@ USA <- function(level, cache){
   if(level==2){
 
     # tests, hospitalized and icu
-    h <- healthdata_gov(level = level, cache = cache)
-    h$id <- id(h$state, iso = "USA", ds = "healthdata_gov", level = level)
+    # h <- healthdata_gov(level = level, cache = cache)
+    # h$id <- id(h$state, iso = "USA", ds = "healthdata_gov", level = level)
     
     # confirmed and deaths 
     n <- nytimes_git(cache = cache, level = level)
@@ -32,7 +32,7 @@ USA <- function(level, cache){
     # merge
     key <- c("date", "id")
     x <- n[,c(key, "confirmed", "deaths")] %>%
-      dplyr::full_join(h[,c(key, "tests", "hosp", "icu")], by = key) %>%
+      # dplyr::full_join(h[,c(key, "tests", "hosp", "icu")], by = key) %>%
       dplyr::full_join(v[,c(key, "vaccines")], by = key) %>%
       dplyr::full_join(r[,c(key, "recovered", "vent")], by = key)
     
