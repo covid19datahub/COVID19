@@ -395,6 +395,7 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 ## In the News
 
+- [LexTech Institute, 03/2021](https://www.lextechinstitute.ch/covid-19-data-hub/)
 - [CScience, 02/2021](http://www.cscience.ca/2021/02/10/exploiter-les-donnees-pour-enrayer-la-pandemie/)
 - [R Consortium, 02/2021](https://www.r-consortium.org/blog/2021/02/09/covid-19-data-hub)
 - [University of Neuchâtel, 12/2020](https://www.unine.ch/unine/home/pour-les-medias/communiques-de-presse/les-donnees-de-la-covid-19-sur-u.html)
