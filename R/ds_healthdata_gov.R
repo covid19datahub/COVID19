@@ -1,7 +1,9 @@
 healthdata_gov <- function(cache, level){
 
   # hosp
-  url <- "https://healthdata.gov/node/3565481/download"
+  # TODO this code relies on the legacy API, which is soon to be retired... 
+  # For now using legacy domain will make the code work...
+  url <- "https://legacy.healthdata.gov/node/3565481/download"
   hosp <- read.csv(url, cache = cache, dec = ",")
   
   # format
