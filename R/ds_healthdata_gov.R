@@ -1,7 +1,7 @@
 healthdata_gov <- function(cache, level){
 
   # hosp: https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh
-  url <- "https://healthdata.gov/resource/g62h-syeh.csv"
+  url <- "https://healthdata.gov/api/views/g62h-syeh/rows.csv?accessType=DOWNLOAD"
   hosp <- read.csv(url, cache = cache, dec = ",")
   
   # format
@@ -14,7 +14,7 @@ healthdata_gov <- function(cache, level){
   ))
   
   # tests: https://healthdata.gov/dataset/COVID-19-Diagnostic-Laboratory-Testing-PCR-Testing/j8mb-icvb
-  url <- "https://healthdata.gov/resource/j8mb-icvb.csv"
+  url <- "https://healthdata.gov/api/views/j8mb-icvb/rows.csv?accessType=DOWNLOAD"
   tests <- read.csv(url, cache = cache)
   
   # format
