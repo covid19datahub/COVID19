@@ -148,10 +148,11 @@
     
     
 <p>The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities).</p>
-<p><strong>Pre-processed data</strong> are obtained by filling missing dates in the raw data with <code>NA</code> values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, <code>NA</code> values are replaced with the previous non-<code>NA</code> value or <code>0</code>. Due to the incresing size of the data files, we will stop to provide the pre-processed data on <strong>01 April 2021</strong>, so to improve the update and storage of the raw data. <strong>Please switch to the raw data if you are still using the pre-processed files.</strong></p>
+<p><strong>Pre-processed data</strong> are obtained by filling missing dates in the raw data with <code>NA</code> values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, <code>NA</code> values are replaced with the previous non-<code>NA</code> value or <code>0</code>. Due to the incresing size of the data files, we stopped providing the pre-processed data on <strong>01 April 2021</strong>, so to improve the update and storage of the raw data. <strong>Please switch to the raw data if you are still using the pre-processed files.</strong></p>
 <p><strong>Policies</strong> for admin areas level 2 and 3 <strong>are inherited</strong> from national-level policies by <a href="https://github.com/OxCGRT/covid-policy-tracker">Oxford Covid-19 Government Response Tracker</a> using <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md">flags</a>. National-level policies applied across the whole country (flag=1) are propagated to levels 2 and 3. <strong>Subnational policies</strong> for level 2 are available for the countries listed in the <a href="https://github.com/OxCGRT/covid-policy-tracker#subnational-data">Subnational Data section</a>. Since 2020-12-12, <strong>US policies</strong> for admin areas level 3 (counties) are inherited from the policies available for admin areas level 2 (states).</p>
 <p>The datasets include the number of people who have been <strong>vaccinated</strong> starting from 2021-01-02.</p>
-<p>The <strong>datasets</strong> are updated on an hourly basis. The workflow takes around one hour to process the data worldwide and the release takes place only when all the datasets are ready. This means there is usually between 1h and 2h lag with respect to the data provider.</p>
+<p>The <strong>datasets</strong> are updated on an hourly basis. The workflow takes around one hour to process the data worldwide and the release takes place only when all the datasets are ready. This means there is usually between 1h and 2h lag with respect to the data providers.</p>
+<p>The <strong>vintage data</strong> are generated with a delay of 48 hours to make sure all the observations are complete, and we don’t take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h).</p>
 <p>See the <a href="/articles/doc/data.html">dataset documentation</a> and <a href="/news/index.html">changelog</a>.</p>
 <div id="latest-data" class="section level2">
 <h2 class="hasAnchor">
@@ -173,102 +174,46 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://storage.covid19datahub.io/data-1.csv" class="uri">https://storage.covid19datahub.io/data-1.csv</a></td>
-<td>Pre-processed data</td>
-<td>Administrative area level 1</td>
-<td>CSV</td>
-<td><img src="https://storage.covid19datahub.io/downloads/data-1.csv.svg"></td>
-</tr>
-<tr class="even">
-<td><a href="https://storage.covid19datahub.io/data-2.csv" class="uri">https://storage.covid19datahub.io/data-2.csv</a></td>
-<td>Pre-processed data</td>
-<td>Administrative area level 2</td>
-<td>CSV</td>
-<td><img src="https://storage.covid19datahub.io/downloads/data-2.csv.svg"></td>
-</tr>
-<tr class="odd">
-<td><a href="https://storage.covid19datahub.io/data-3.csv" class="uri">https://storage.covid19datahub.io/data-3.csv</a></td>
-<td>Pre-processed data</td>
-<td>Administrative area level 3</td>
-<td>CSV</td>
-<td><img src="https://storage.covid19datahub.io/downloads/data-3.csv.svg"></td>
-</tr>
-<tr class="even">
-<td><a href="https://storage.covid19datahub.io/data-1.zip" class="uri">https://storage.covid19datahub.io/data-1.zip</a></td>
-<td>Pre-processed data</td>
-<td>Administrative area level 1</td>
-<td>ZIP</td>
-<td><img src="https://storage.covid19datahub.io/downloads/data-1.zip.svg"></td>
-</tr>
-<tr class="odd">
-<td><a href="https://storage.covid19datahub.io/data-2.zip" class="uri">https://storage.covid19datahub.io/data-2.zip</a></td>
-<td>Pre-processed data</td>
-<td>Administrative area level 2</td>
-<td>ZIP</td>
-<td><img src="https://storage.covid19datahub.io/downloads/data-2.zip.svg"></td>
-</tr>
-<tr class="even">
-<td><a href="https://storage.covid19datahub.io/data-3.zip" class="uri">https://storage.covid19datahub.io/data-3.zip</a></td>
-<td>Pre-processed data</td>
-<td>Administrative area level 3</td>
-<td>ZIP</td>
-<td><img src="https://storage.covid19datahub.io/downloads/data-3.zip.svg"></td>
-</tr>
-<tr class="odd">
-<td><a href="https://storage.covid19datahub.io/rawdata-1.csv" class="uri">https://storage.covid19datahub.io/rawdata-1.csv</a></td>
-<td>Raw data</td>
-<td>Administrative area level 1</td>
-<td>CSV</td>
-<td><img src="https://storage.covid19datahub.io/downloads/rawdata-1.csv.svg"></td>
-</tr>
-<tr class="even">
-<td><a href="https://storage.covid19datahub.io/rawdata-2.csv" class="uri">https://storage.covid19datahub.io/rawdata-2.csv</a></td>
-<td>Raw data</td>
-<td>Administrative area level 2</td>
-<td>CSV</td>
-<td><img src="https://storage.covid19datahub.io/downloads/rawdata-2.csv.svg"></td>
-</tr>
-<tr class="odd">
-<td><a href="https://storage.covid19datahub.io/rawdata-3.csv" class="uri">https://storage.covid19datahub.io/rawdata-3.csv</a></td>
-<td>Raw data</td>
-<td>Administrative area level 3</td>
-<td>CSV</td>
-<td><img src="https://storage.covid19datahub.io/downloads/rawdata-3.csv.svg"></td>
-</tr>
-<tr class="even">
 <td><a href="https://storage.covid19datahub.io/rawdata-1.zip" class="uri">https://storage.covid19datahub.io/rawdata-1.zip</a></td>
 <td>Raw data</td>
 <td>Administrative area level 1</td>
 <td>ZIP</td>
 <td><img src="https://storage.covid19datahub.io/downloads/rawdata-1.zip.svg"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="https://storage.covid19datahub.io/rawdata-2.zip" class="uri">https://storage.covid19datahub.io/rawdata-2.zip</a></td>
 <td>Raw data</td>
 <td>Administrative area level 2</td>
 <td>ZIP</td>
 <td><img src="https://storage.covid19datahub.io/downloads/rawdata-2.zip.svg"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="https://storage.covid19datahub.io/rawdata-3.zip" class="uri">https://storage.covid19datahub.io/rawdata-3.zip</a></td>
 <td>Raw data</td>
 <td>Administrative area level 3</td>
 <td>ZIP</td>
 <td><img src="https://storage.covid19datahub.io/downloads/rawdata-3.zip.svg"></td>
 </tr>
-<tr class="odd">
-<td><a href="https://storage.covid19datahub.io/data.log" class="uri">https://storage.covid19datahub.io/data.log</a></td>
-<td>Pre-processed data - Log file</td>
-<td>All levels</td>
+<tr class="even">
+<td><a href="https://storage.covid19datahub.io/rawdata-1.csv" class="uri">https://storage.covid19datahub.io/rawdata-1.csv</a></td>
+<td>Raw data</td>
+<td>Administrative area level 1</td>
 <td>CSV</td>
-<td><img src="https://storage.covid19datahub.io/downloads/data.log.svg"></td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-1.csv.svg"></td>
+</tr>
+<tr class="odd">
+<td><a href="https://storage.covid19datahub.io/rawdata-2.csv" class="uri">https://storage.covid19datahub.io/rawdata-2.csv</a></td>
+<td>Raw data</td>
+<td>Administrative area level 2</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-2.csv.svg"></td>
 </tr>
 <tr class="even">
-<td><a href="https://storage.covid19datahub.io/rawdata.log" class="uri">https://storage.covid19datahub.io/rawdata.log</a></td>
-<td>Raw data - Log file</td>
-<td>All levels</td>
+<td><a href="https://storage.covid19datahub.io/rawdata-3.csv" class="uri">https://storage.covid19datahub.io/rawdata-3.csv</a></td>
+<td>Raw data</td>
+<td>Administrative area level 3</td>
 <td>CSV</td>
-<td><img src="https://storage.covid19datahub.io/downloads/rawdata.log.svg"></td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-3.csv.svg"></td>
 </tr>
 <tr class="odd">
 <td><a href="https://storage.covid19datahub.io/src.csv" class="uri">https://storage.covid19datahub.io/src.csv</a></td>
@@ -276,6 +221,62 @@
 <td>All levels</td>
 <td>CSV</td>
 <td><img src="https://storage.covid19datahub.io/downloads/src.csv.svg"></td>
+</tr>
+<tr class="even">
+<td><del><a href="https://storage.covid19datahub.io/data-1.csv" class="uri">https://storage.covid19datahub.io/data-1.csv</a></del></td>
+<td>Pre-processed data</td>
+<td>Administrative area level 1</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-1.csv.svg"></td>
+</tr>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/data-2.csv" class="uri">https://storage.covid19datahub.io/data-2.csv</a></del></td>
+<td>Pre-processed data</td>
+<td>Administrative area level 2</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-2.csv.svg"></td>
+</tr>
+<tr class="even">
+<td><del><a href="https://storage.covid19datahub.io/data-3.csv" class="uri">https://storage.covid19datahub.io/data-3.csv</a></del></td>
+<td>Pre-processed data</td>
+<td>Administrative area level 3</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-3.csv.svg"></td>
+</tr>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/data-1.zip" class="uri">https://storage.covid19datahub.io/data-1.zip</a></del></td>
+<td>Pre-processed data</td>
+<td>Administrative area level 1</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-1.zip.svg"></td>
+</tr>
+<tr class="even">
+<td><del><a href="https://storage.covid19datahub.io/data-2.zip" class="uri">https://storage.covid19datahub.io/data-2.zip</a></del></td>
+<td>Pre-processed data</td>
+<td>Administrative area level 2</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-2.zip.svg"></td>
+</tr>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/data-3.zip" class="uri">https://storage.covid19datahub.io/data-3.zip</a></del></td>
+<td>Pre-processed data</td>
+<td>Administrative area level 3</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-3.zip.svg"></td>
+</tr>
+<tr class="even">
+<td><del><a href="https://storage.covid19datahub.io/data.log" class="uri">https://storage.covid19datahub.io/data.log</a></del></td>
+<td>Pre-processed data - Log file</td>
+<td>All levels</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data.log.svg"></td>
+</tr>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/rawdata.log" class="uri">https://storage.covid19datahub.io/rawdata.log</a></del></td>
+<td>Raw data - Log file</td>
+<td>All levels</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata.log.svg"></td>
 </tr>
 </tbody>
 </table>
