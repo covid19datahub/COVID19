@@ -9,13 +9,15 @@ vignette: >
 
 The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities). 
 
-**Pre-processed data** are obtained by filling missing dates in the raw data with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`. Due to the incresing size of the data files, we will stop to provide the pre-processed data on **01 April 2021**, so to improve the update and storage of the raw data. **Please switch to the raw data if you are still using the pre-processed files.**
+**Pre-processed data** are obtained by filling missing dates in the raw data with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`. Due to the incresing size of the data files, we stopped providing the pre-processed data on **01 April 2021**, so to improve the update and storage of the raw data. **Please switch to the raw data if you are still using the pre-processed files.**
 
 **Policies** for admin areas level 2 and 3 **are inherited** from national-level policies by [Oxford Covid-19 Government Response Tracker](https://github.com/OxCGRT/covid-policy-tracker) using [flags](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md). National-level policies applied across the whole country (flag=1) are propagated to levels 2 and 3. **Subnational policies** for level 2 are available for the countries listed in the [Subnational Data section](https://github.com/OxCGRT/covid-policy-tracker#subnational-data). Since 2020-12-12, **US policies** for admin areas level 3 (counties) are inherited from the policies available for admin areas level 2 (states).
 
 The datasets include the number of people who have been **vaccinated** starting from 2021-01-02. 
 
-The **datasets** are updated on an hourly basis. The workflow takes around one hour to process the data worldwide and the release takes place only when all the datasets are ready. This means there is usually between 1h and 2h lag with respect to the data provider. 
+The **datasets** are updated on an hourly basis. The workflow takes around one hour to process the data worldwide and the release takes place only when all the datasets are ready. This means there is usually between 1h and 2h lag with respect to the data providers. 
+
+The **vintage data** are generated with a delay of 48 hours to make sure all the observations are complete, and we don't take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h).
 
 See the [dataset documentation](/articles/doc/data.html) and [changelog](/news/index.html).
 
@@ -23,21 +25,21 @@ See the [dataset documentation](/articles/doc/data.html) and [changelog](/news/i
 
 | URL                              | Description                                                  | Granularity | Format | Downloads |
 | ----------------------------------------------- | ----------------------- | --------------------------- | --- | ---------- |
-| https://storage.covid19datahub.io/data-1.csv | Pre-processed data | Administrative area level 1 | CSV | ![](https://storage.covid19datahub.io/downloads/data-1.csv.svg) | 
-| https://storage.covid19datahub.io/data-2.csv | Pre-processed data | Administrative area level 2 | CSV | ![](https://storage.covid19datahub.io/downloads/data-2.csv.svg) |
-| https://storage.covid19datahub.io/data-3.csv | Pre-processed data | Administrative area level 3 | CSV | ![](https://storage.covid19datahub.io/downloads/data-3.csv.svg) |
-| https://storage.covid19datahub.io/data-1.zip | Pre-processed data | Administrative area level 1 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-1.zip.svg) |
-| https://storage.covid19datahub.io/data-2.zip | Pre-processed data | Administrative area level 2 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-2.zip.svg) |
-| https://storage.covid19datahub.io/data-3.zip | Pre-processed data | Administrative area level 3 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-3.zip.svg) |
-| https://storage.covid19datahub.io/rawdata-1.csv | Raw data | Administrative area level 1 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-1.csv.svg) |
-| https://storage.covid19datahub.io/rawdata-2.csv | Raw data | Administrative area level 2 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-2.csv.svg) |
-| https://storage.covid19datahub.io/rawdata-3.csv | Raw data | Administrative area level 3 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-3.csv.svg) |
 | https://storage.covid19datahub.io/rawdata-1.zip | Raw data | Administrative area level 1 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-1.zip.svg) |
 | https://storage.covid19datahub.io/rawdata-2.zip | Raw data | Administrative area level 2 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-2.zip.svg) |
 | https://storage.covid19datahub.io/rawdata-3.zip | Raw data | Administrative area level 3 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-3.zip.svg) |
-| https://storage.covid19datahub.io/data.log | Pre-processed data - Log file | All levels | CSV | ![](https://storage.covid19datahub.io/downloads/data.log.svg) |
+| https://storage.covid19datahub.io/rawdata-1.csv | Raw data | Administrative area level 1 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-1.csv.svg) |
+| https://storage.covid19datahub.io/rawdata-2.csv | Raw data | Administrative area level 2 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-2.csv.svg) |
+| https://storage.covid19datahub.io/rawdata-3.csv | Raw data | Administrative area level 3 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-3.csv.svg) |
 | https://storage.covid19datahub.io/rawdata.log | Raw data - Log file | All levels | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata.log.svg) |
 | https://storage.covid19datahub.io/src.csv | Data sources | All levels | CSV | ![](https://storage.covid19datahub.io/downloads/src.csv.svg) |
+| ~~https://storage.covid19datahub.io/data-1.csv~~ | Pre-processed data | Administrative area level 1 | CSV | ![](https://storage.covid19datahub.io/downloads/data-1.csv.svg) | 
+| ~~https://storage.covid19datahub.io/data-2.csv~~ | Pre-processed data | Administrative area level 2 | CSV | ![](https://storage.covid19datahub.io/downloads/data-2.csv.svg) |
+| ~~https://storage.covid19datahub.io/data-3.csv~~ | Pre-processed data | Administrative area level 3 | CSV | ![](https://storage.covid19datahub.io/downloads/data-3.csv.svg) |
+| ~~https://storage.covid19datahub.io/data-1.zip~~ | Pre-processed data | Administrative area level 1 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-1.zip.svg) |
+| ~~https://storage.covid19datahub.io/data-2.zip~~ | Pre-processed data | Administrative area level 2 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-2.zip.svg) |
+| ~~https://storage.covid19datahub.io/data-3.zip~~ | Pre-processed data | Administrative area level 3 | ZIP | ![](https://storage.covid19datahub.io/downloads/data-3.zip.svg) |
+| ~~https://storage.covid19datahub.io/data.log~~ | Pre-processed data - Log file | All levels | CSV | ![](https://storage.covid19datahub.io/downloads/data.log.svg) |
 
 
 ## Vintage Data
