@@ -1,8 +1,8 @@
 oppnadata_se <- function(cache, level){
   # Author: Martin Benes
 
-  #  Source: Public Health Agency, Sweden
-  # https://oppnadata.se/datamangd/#esc_entry=1424&esc_context=525
+  # Source: Public Health Agency, Sweden
+  # https://www.dataportal.se/en/datasets/525_1424/
   url <- "https://free.entryscape.com/store/360/resource/15"
   
   # number of cases, deaths, icu - whole Sweden
