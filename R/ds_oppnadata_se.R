@@ -1,41 +1,57 @@
 oppnadata_se <- function(cache, level){
-  # Author: Martin Benes
 
   # Source: Public Health Agency, Sweden
-  # https://www.dataportal.se/en/datasets/525_1424/
-  url <- "https://free.entryscape.com/store/360/resource/15"
-  
-  # number of cases, deaths, icu - whole Sweden
-  x <- read.csv(url, cache = cache)
+  # https://www.arcgis.com/home/item.html?id=b5e7488e117749c19881cce45db13f7e
+  url <- "https://www.arcgis.com/sharing/rest/content/items/b5e7488e117749c19881cce45db13f7e/data"
   
   # level
   if(level==1){
     
-    # formatting
-    x <- map_data(x, c(
-      'Kumulativa_fall'       = 'confirmed',
-      'Kumulativa_avlidna'    = 'deaths',
-      'Antal_intensivvardade' = 'icu',
-      'Statistikdatum'        = 'date'
+    # confirmed
+    confirmed <- read.excel(url, sheet = 1, cache = cache)
+    confirmed <- map_data(confirmed, c(
+      'Statistikdatum'    = 'date',
+      'Totalt_antal_fall' = 'confirmed'
     ))
+    confirmed$date <- as.Date(confirmed$date)
     
+    # deaths (remove counts for which the date is not available)
+    deaths <- read.excel(url, sheet = 2, col_types = c("date", "numeric"), cache = cache)
+    deaths <- map_data(deaths, c(
+      "Datum_avliden" = "date",
+      "Antal_avlidna" = "deaths"
+    ))
+    deaths$date <- as.Date(deaths$date)
+    deaths <- deaths[!is.na(deaths$date),]
+    
+    # icu
+    icu <- read.excel(url, sheet = 3, cache = cache)
+    colnames(icu) <- c("date", "icu")
+    icu$date <- as.Date(icu$date)
+    
+    # join and cumulate
+    x <- confirmed %>% 
+      dplyr::full_join(deaths, on = "date") %>%
+      dplyr::full_join(icu, on = "date") %>%
+      dplyr::arrange(date) %>%
+      dplyr::mutate(confirmed = cumsum(confirmed, na.rm = TRUE),
+                    deaths = cumsum(deaths, na.rm = TRUE))
+      
   }
   if(level==2){
     
-    # map_data
-    x <- x[,c(28,3:23)] 
-    colnames(x) <- map_values(colnames(x), c(
-      'Statistikdatum' = 'date'
-    ))
+    # confirmed
+    x <- read.excel(url, sheet = 1, cache = cache)
     
-    # bindings
-    date <- NULL
+    # drop national data
+    x <- x[,-2]
     
-    # sort date
-    x <- x %>%
-      dplyr::arrange(date) 
+    # date
+    colnames(x)[1] <- "date"
+    x$date <- as.Date(x$date)
     
-    # cumulate
+    # sort by date and cumulate
+    x <- x[order(x$date),]
     x[,-1] <- cumsum(x[,-1])
     
     # formatting
@@ -43,15 +59,6 @@ oppnadata_se <- function(cache, level){
     
   }
     
-  # TODO: other datasets available
-  #   * confirmed by age: https://oppnadata.se/datamangd/#esc_entry=1425&esc_context=525
-  #   * confirmed by region: https://oppnadata.se/datamangd/#esc_entry=1426&esc_context=525
-  #   * confirmed by gender: https://oppnadata.se/datamangd/#esc_entry=1427&esc_context=525
-  
-  # date
-  x$date <- as.Date(x$date, format = "%Y-%m-%d")
-  x <- x[!is.na(x$date),]
-  
   # return
   return(x)
 }
