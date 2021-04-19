@@ -14,10 +14,10 @@ RUS <- function(level, cache){
   if(level==2){
 
     # download
-    x <- covid19russia_git(cache = cache)
+    x <- minshall_git(iso = "RUS", level = level)
     
     # id
-    x$id <- id(x$state, iso = "RUS", ds = "covid19russia_git", level = level)
+    x$id <- id(x$admin2, iso = "RUS", ds = "minshall_git", level = level)
     
   }
   
