@@ -1,0 +1,71 @@
+"id","id_covid19lt_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
+"e7bd7f0f","Alytaus apskr.",2,"Alytaus apskr.",,,,132408
+"b2358634","Kauno apskr.",2,"Kauno apskr.",,,,565592
+"8edd075a","Klaipėdos apskr.",2,"Klaipedos apskr.",,,,321795
+"e6bbb951","Marijampolės apskr.",2,"Marijampoles apskr.",,,,134848
+"60d4b1af","Panevėžio apskr.",2,"Panevežio apskr.",,,,207976
+"3299f40b","Šiaulių apskr.",2,"Šiauliu apskr.",,,,259897
+"08bd7fea","Tauragės apskr.",2,"Taurages apskr.",,,,90108
+"3a6e64bf","Telšių apskr.",2,"Telšiu apskr.",,,,129342
+"e0dae29b","Utenos apskr.",2,"Utenos apskr.",,,,123450
+"e51450dd","Vilniaus apskr.",2,"Vilniaus apskr.",,,,829759
+"f4de6278","Alytaus m.",3,"Alytaus apskr.","Alytaus m.",,,49195
+"12a12ea7","Birštono",3,"Kauno apskr.","Birštono",,,4035
+"ffd5e0c3","Vilniaus m.",3,"Vilniaus apskr.","Vilniaus m.",,,569729
+"a30fd478","Druskininkų",3,"Alytaus apskr.","Druskininkų",,,19011
+"bcea3541","Marijampolės",3,"Marijampolės apskr.","Marijampolės",,,53472
+"8846eeea","Kauno m.",3,"Kauno apskr.","Kauno m.",,,293257
+"6ba6566e","Klaipėdos m.",3,"Klaipėdos apskr.","Klaipėdos m.",,,149046
+"71499bde","Neringos",3,"Klaipėdos apskr.","Neringos",,,3639
+"e4392a68","Palangos m.",3,"Klaipėdos apskr.","Palangos m.",,,16421
+"dc71aa71","Panevėžio m.",3,"Panevėžio apskr.","Panevėžio m.",,,84587
+"63b039f0","Šiaulių m.",3,"Šiaulių apskr.","Šiaulių m.",,,101862
+"e41fc84b","Visagino m.",3,"Utenos apskr.","Visagino m.",,,18121
+"94e0d1bf","Akmenės r.",3,"Šiaulių apskr.","Akmenės r.",,,18523
+"39846ce6","Alytaus r.",3,"Alytaus apskr.","Alytaus r.",,,25837
+"ee06e07e","Anykščių r.",3,"Utenos apskr.","Anykščių r.",,,22623
+"e95b483b","Biržų r.",3,"Panevėžio apskr.","Biržų r.",,,22292
+"20b4ac92","Varėnos r.",3,"Alytaus apskr.","Varėnos r.",,,20522
+"b273812a","Vilkaviškio r.",3,"Marijampolės apskr.","Vilkaviškio r.",,,34219
+"328fee5d","Vilniaus r.",3,"Vilniaus apskr.","Vilniaus r.",,,102008
+"1e1a2ebe","Elektrėnų",3,"Vilniaus apskr.","Elektrėnų",,,24103
+"7868d128","Zarasų r.",3,"Utenos apskr.","Zarasų r.",,,14635
+"867980c8","Ignalinos r.",3,"Utenos apskr.","Ignalinos r.",,,14125
+"8ff29d8f","Jonavos r.",3,"Kauno apskr.","Jonavos r.",,,40746
+"384d5b79","Joniškio r.",3,"Šiaulių apskr.","Joniškio r.",,,20343
+"661217b6","Kalvarijos",3,"Marijampolės apskr.","Kalvarijos",,,9952
+"b527dd67","Kaišiadorių r.",3,"Kauno apskr.","Kaišiadorių r.",,,29188
+"451ce074","Kauno r.",3,"Kauno apskr.","Kauno r.",,,97546
+"c7df1d03","Kėdainių r.",3,"Kauno apskr.","Kėdainių r.",,,44747
+"702872ff","Kelmės r.",3,"Šiaulių apskr.","Kelmės r.",,,24829
+"a6fc58f0","Klaipėdos r.",3,"Klaipėdos apskr.","Klaipėdos r.",,,62634
+"011ceb35","Kretingos r.",3,"Klaipėdos apskr.","Kretingos r.",,,37316
+"d6d63a02","Kupiškio r.",3,"Panevėžio apskr.","Kupiškio r.",,,16061
+"84682b18","Kazlų Rūdos",3,"Marijampolės apskr.","Kazlų Rūdos",,,11137
+"9e721fea","Lazdijų r.",3,"Alytaus apskr.","Lazdijų r.",,,17843
+"e05a0418","Mažeikių r.",3,"Telšių apskr.","Mažeikių r.",,,50782
+"393f0e81","Molėtų r.",3,"Utenos apskr.","Molėtų r.",,,16873
+"171e0d11","Pagėgių",3,"Tauragės apskr.","Pagėgių",,,7123
+"e49352f9","Pakruojo r.",3,"Šiaulių apskr.","Pakruojo r.",,,18213
+"112ba4ef","Panevėžio r.",3,"Panevėžio apskr.","Panevėžio r.",,,35188
+"25640cc9","Pasvalio r.",3,"Panevėžio apskr.","Pasvalio r.",,,22337
+"c6ae6821","Plungės r.",3,"Telšių apskr.","Plungės r.",,,32627
+"90d1277e","Prienų r.",3,"Kauno apskr.","Prienų r.",,,25465
+"49ad3564","Radviliškio r.",3,"Šiaulių apskr.","Radviliškio r.",,,34576
+"0761da2d","Raseinių r.",3,"Kauno apskr.","Raseinių r.",,,30608
+"d4700b3f","Rokiškio r.",3,"Panevėžio apskr.","Rokiškio r.",,,27511
+"d1dea381","Rietavo",3,"Telšių apskr.","Rietavo",,,7174
+"362e9e41","Skuodo r.",3,"Klaipėdos apskr.","Skuodo r.",,,15663
+"fa820ec9","Tauragės r.",3,"Tauragės apskr.","Tauragės r.",,,37322
+"43f7e5b5","Telšių r.",3,"Telšių apskr.","Telšių r.",,,38759
+"82c82f78","Trakų r.",3,"Vilniaus apskr.","Trakų r.",,,33204
+"8d64c24e","Ukmergės r.",3,"Vilniaus apskr.","Ukmergės r.",,,33049
+"21325211","Utenos r.",3,"Utenos apskr.","Utenos r.",,,37073
+"137d5d3c","Šakių r.",3,"Marijampolės apskr.","Šakių r.",,,26068
+"d93ab34b","Šalčininkų r.",3,"Vilniaus apskr.","Šalčininkų r.",,,30264
+"b3db3c52","Švenčionių r.",3,"Vilniaus apskr.","Švenčionių r.",,,22495
+"36489f75","Šilalės r.",3,"Tauragės apskr.","Šilalės r.",,,21428
+"9a88720d","Šilutės r.",3,"Klaipėdos apskr.","Šilutės r.",,,37076
+"30ebe0eb","Širvintų r.",3,"Vilniaus apskr.","Širvintų r.",,,14907
+"aeea376e","Šiaulių r.",3,"Šiaulių apskr.","Šiaulių r.",,,41551
+"ebeeaa0d","Jurbarko r.",3,"Tauragės apskr.","Jurbarko r.",,,24235
