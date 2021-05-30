@@ -7,10 +7,13 @@ gov_tw <- function(level, cache) {
   
   # map data
   x <- x[,-1]
-  colnames(x) <- c("date", "county", "gender", "imported", "age_group", "confirmed")
+  colnames(x) <- c("date", "county", "city", "gender", "imported", "age_group", "confirmed")
   
   # turn date into Date
-  x$date <- as.Date(x$date, "%Y/%m/%d")
+  if(is.character(x$date))
+    x$date <- as.Date(x$date, "%Y/%m/%d")
+  else
+    x$date <- as.Date(as.character(x$date), "%Y%m%d")
   
   # cumulative counts by date and county
   if(level == 1) {
