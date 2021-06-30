@@ -1,5 +1,10 @@
 sotho_tha <- function(level, cache) {
   
+  # check unavailable
+  w <- httr::GET("http://covid19.th-stat.com")
+  if(w$status_code == 522)
+    return(NULL)
+  
   if(level == 1) {
     
     # download
