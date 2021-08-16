@@ -2,8 +2,8 @@ LVA <- function(level, cache){
   # Author: Martin Benes
 
   # tmp debug
-  # if(level==1)
-  #   return(NULL)
+  if(level==1)
+    return(NULL)
   
   # fallback
   if(level>2)
