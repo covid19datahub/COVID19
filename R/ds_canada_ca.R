@@ -18,10 +18,13 @@ canada_ca <- function(cache,level){
     "numtests"   = "tests2",
     "numrecover" = "recovered"
   ))
-
-  x$date <- as.Date(x$date, format = "%d-%m-%Y")
   
-  # === cleaning === #
+  # formatting thousand separator
+  for(i in c("deaths", "confirmed", "tests", "tests2", "recovered"))
+    x[,i] <- as.numeric(gsub(",", "", x[,i])) 
+
+  # formatting date
+  x$date <- as.Date(x$date, format = "%d-%m-%Y")
   
   # deleting non territories
   x <- x[x$name!="Repatriated travellers",] 
