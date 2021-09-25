@@ -323,6 +323,10 @@ covid19 <- function(country = NULL,
           if(!is.null(y))
             x <- merge(x, y[,!grepl("^id\\_", colnames(y))], by = "id", all.x = TRUE)
           
+          foreign_key <- "foreign_key"
+          if(foreign_key %in% colnames(x))
+            x[[foreign_key]] <- as.character(x[[foreign_key]])
+          
           return(x)
           
         }) %>%
