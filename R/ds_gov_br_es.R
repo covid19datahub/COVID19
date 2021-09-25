@@ -10,10 +10,11 @@ gov_br_es <- function(level, cache) {
   on.exit(options(timeout), add = TRUE)
   
   # url 
-  url <- "https://bi.static.es.gov.br/covid19/MICRODADOS.csv"
+  url <- "https://bi.s3.es.gov.br/covid19/MICRODADOS.zip"
   
   # download
-  x <- read.csv(url, cache = cache, sep = ";", na.strings = "")
+  x <- read.zip(url, "MICRODADOS.csv", cache = cache, sep = ";", na.strings = "")
+  x <- x[[1]]
   
   # level
   if(level==2)
