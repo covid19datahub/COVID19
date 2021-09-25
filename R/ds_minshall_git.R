@@ -4,14 +4,20 @@ minshall_git <- function(iso, level){
   url <- 'https://somenumbers.info/covid-19/csvs/coleaned.csv.gz'
   
   # download
-  x <- suppressWarnings(readr::read_csv(url, progress = FALSE))
-  x <- x[x$Iso3c==iso,]
+  file <- tempfile()
+  download.file(url, file, quiet = TRUE)
+  x <- read.csv(file)
+  unlink(file)
+  
+  # filter
+  x <- x[which(x$Iso3c==iso),]
   
   # admin
   s <- strsplit(x$Combined_Key, split = ",\\s*")
-  x$admin1 <- sapply(s, function(x) x[3])
-  x$admin2 <- sapply(s, function(x) x[2])
-  x$admin3 <- sapply(s, function(x) x[1])
+  last <- function(x, n) {m <- length(x); ifelse(n>m, "", x[m-n+1])}
+  x$admin1 <- sapply(s, last, n = 1)
+  x$admin2 <- sapply(s, last, n = 2)
+  x$admin3 <- sapply(s, last, n = 3)
   
   # level
   if(level==1)
