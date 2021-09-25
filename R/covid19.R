@@ -338,8 +338,7 @@ covid19 <- function(country = NULL,
   rm(list=setdiff(ls(), c("x", "start", "end", "cache", "cachekey", "src", "verbose")))
   
   # subset
-  cn <- colnames(x)
-  cn <- unique(c(vars(), "key", cn[grepl("^key\\_", cn)]))
+  cn <- vars()
   x[,cn[!(cn %in% colnames(x))]] <- NA
   x <- x[,cn]
   

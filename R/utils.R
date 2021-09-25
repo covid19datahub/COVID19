@@ -109,11 +109,19 @@ vars <- function(type = NULL){
     'character' = 'administrative_area_level_3',
     'numeric'   = 'latitude',
     'numeric'   = 'longitude',
-    'numeric'   = 'population'
+    'numeric'   = 'population',
+    'character' = 'key',
+    'character' = 'key_alpha_2',
+    'integer'   = 'key_numeric',
+    'character' = 'key_google_mobility',
+    'character' = 'key_apple_mobility',
+    'character' = 'key_jhu_csse',
+    'character' = 'foreign_key',
+    'character' = 'foreign_key_type'
   )
   
   if(is.null(type))
-    return(unname(unique(c('id','date',cases,'population',measures,slow))))
+    return(unname(unique(c('id','date',cases,measures,slow))))
     
   if(type=="slow")
     return(unname(slow))

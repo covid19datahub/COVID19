@@ -72,5 +72,8 @@ The following keys allow to extend the dataset with external data.
 | `key_numeric`                                | Numeric code used in governmental data.                                            |
 | `key_google_mobility`                                | Identifier used in [Google Mobility Reports](https://www.google.com/covid19/mobility/).                                            |
 | `key_apple_mobility`                                |  Identifier used in [Apple Mobility Reports](https://www.apple.com/covid19/mobility).                                             |
+| `key_jhu_csse`                                |  Identifier used in the [JHU CSSE Unified COVID-19 Dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset).                                             |
+| `foreign_key`                                |  Standardized external identifier.                                              |
+| `foreign_key_type`                                |  Type of `foreign_key`, e.g., FIPS codes for United States or NUTS codes for Europe                                              |
 
 `r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`

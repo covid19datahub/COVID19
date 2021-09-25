@@ -1,3 +1,9 @@
+# COVID19 2.3.1 (2021-09-25)
+
+## Minor Changes
+
+- Added standardized geospatial IDs (`foreign_key` and `foreign_key_type`), e.g., FIPS codes for United States and NUTS codes for Europe.
+
 # COVID19 2.3.0 (2021-04-01)
 
 ## Breaking Changes
