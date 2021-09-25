@@ -481,21 +481,24 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
 #' }
 #' 
 #' @export
-map_values <- function(x, map){
+map_values <- function(x, map, force = FALSE){
 
   value <- tolower(x)
   from  <- tolower(names(map))
   to    <- map
 
+  if(force)
+    y <- rep(NA, length(x))
+  else 
+    y <- x
+  
   for(i in 1:length(map)){
-
     idx <- which(value==from[i])
     if(length(idx)>0)
-      x[idx] <- to[i]
-
+      y[idx] <- to[i]
   }
 
-  return(x)
+  return(y)
 
 }
 

@@ -1,129 +1,129 @@
-"id","id_pcmdpc_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_alpha_2","key_numeric","key_google_mobility","key_apple_mobility"
-"ed79e985","Abruzzo",2,"Abruzzo",,42.35122196,13.39843823,1315196,,13,"Abruzzo","Abruzzo Region"
-"4bca420b","Basilicata",2,"Basilicata",,40.63947052,15.80514834,567118,,17,"Basilicata","Basilicata Region"
-"b8a4b9d3","Calabria",2,"Calabria",,38.90597598,16.59440194,1956687,,18,"Calabria","Calabria Region"
-"29f121be","Campania",2,"Campania",,40.83956555,14.25084984,5826860,,15,"Campania","Campania Region"
-"ec763ad9","Emilia-Romagna",2,"Emilia-Romagna",,44.49436681,11.3417208,4452629,,8,"Emilia-Romagna","Emilia-Romagna Region"
-"07945170","Friuli Venezia Giulia",2,"Friuli Venezia Giulia",,45.6494354,13.76813649,1215538,,6,"Friuli-Venezia Giulia","Autonomous Region Friuli-Venezia Giulia"
-"4c0f0471","Lazio",2,"Lazio",,41.89277044,12.48366722,5896693,,12,"Lazio","Lazio Region"
-"c62d5d59","Liguria",2,"Liguria",,44.41149315,8.9326992,1556981,,7,"Liguria","Liguria Region"
-"756635d8","Lombardia",2,"Lombardia",,45.46679409,9.190347404,10036258,,3,"Lombardy","Lombardy Region"
-"b542c632","Marche",2,"Marche",,43.61675973,13.5188753,1531753,,11,"Marche","Marche Region"
-"1e1516b3","Molise",2,"Molise",,41.55774754,14.65916051,308493,,14,"Molise","Molise Region"
-"130a2ec3","P.A. Bolzano",2,"P.A. Bolzano",,46.49933453,11.35662422,527750,,4,"Trentino-South Tyrol","Autonomous Region Trentino-Alto Adige/Südtirol"
-"762e2ccf","P.A. Trento",2,"P.A. Trento",,46.06893511,11.12123097,539898,,4,"Trentino-South Tyrol","Autonomous Region Trentino-Alto Adige/Südtirol"
-"84d75779","Piemonte",2,"Piemonte",,45.0732745,7.680687483,4375865,,1,"Piedmont","Piedmont Region"
-"ed87f3fd","Puglia",2,"Puglia",,41.12559576,16.86736689,4048242,,16,"Apulia","Apulia Region"
-"fd58ab86","Sardegna",2,"Sardegna",,39.21531192,9.110616306,1648176,,20,"Sardinia","Autonomous Region Sardinia"
-"ae4c71e3","Sicilia",2,"Sicilia",,38.11569725,13.3623567,5026989,,19,"Sicily","Sicily Region"
-"f576de02","Toscana",2,"Toscana",,43.76923077,11.25588885,3736968,,9,"Tuscany","Tuscany Region"
-"ccbcc045","Umbria",2,"Umbria",,43.10675841,12.38824698,884640,,10,"Umbria","Umbria Region"
-"a8266ec6","Valle d'Aosta",2,"Valle d'Aosta",,45.73750286,7.320149366,126202,,2,"Aosta","Autonomous Region Aosta Valley"
-"3133b27c","Veneto",2,"Veneto",,45.43490485,12.33845213,4905037,,5,"Veneto","Veneto Region"
-"f3ab6e92","NA",3,"Campania","Napoli",40.83956555,14.25084984,3101002,"NA",63,,
-"3fd9a87b","CH",3,"Abruzzo","Chieti",42.35103167,14.16754574,387120,"CH",69,,
-"69846239","AQ",3,"Abruzzo","L'Aquila",42.35122196,13.39843823,300404,"AQ",66,,
-"20879554","PE",3,"Abruzzo","Pescara",42.46458398,14.21364822,319388,"PE",68,,
-"44eb5050","TE",3,"Abruzzo","Teramo",42.6589177,13.70439971,308284,"TE",67,,
-"b55bd9ba","MT",3,"Basilicata","Matera",40.66751177,16.59792442,198867,"MT",77,,
-"ad8f98a1","PZ",3,"Basilicata","Potenza",40.63947052,15.80514834,368251,"PZ",76,,
-"cc60d933","CZ",3,"Calabria","Catanzaro",38.90597598,16.59440194,360823,"CZ",79,,
-"b5bc6197","CS",3,"Calabria","Cosenza",39.29308681,16.25609692,708702,"CS",78,,
-"0a62db09","KR",3,"Calabria","Crotone",39.08036878,17.12538864,175061,"KR",101,,
-"fbd252e3","RC",3,"Calabria","Reggio di Calabria",38.10922769,15.6434527,551212,"RC",80,,
-"f263730c","VV",3,"Calabria","Vibo Valentia",38.67624147,16.10157414,160889,"VV",102,,
-"f7e0f79a","AV",3,"Campania","Avellino",40.91404699,14.79528803,421523,"AV",64,,
-"cfa13c0f","BN",3,"Campania","Benevento",41.12969987,14.78151683,279127,"BN",62,,
-"4168d4c6","CE",3,"Campania","Caserta",41.07465878,14.33240464,923445,"CE",61,,
-"0cc7028e","SA",3,"Campania","Salerno",40.67821961,14.7594026,1101763,"SA",65,,
-"b8a60c99","BO",3,"Emilia-Romagna","Bologna",44.49436681,11.3417208,1011291,"BO",37,,
-"3c1f2083","FE",3,"Emilia-Romagna","Ferrara",44.83599085,11.61868934,346975,"FE",38,,
-"d57c85b6","FC",3,"Emilia-Romagna","Forlì-Cesena",44.22268559,12.04068608,394185,"FC",40,,
-"3f3e1056","MO",3,"Emilia-Romagna","Modena",44.64600009,10.92615487,701896,"MO",36,,
-"a3541093","PR",3,"Emilia-Romagna","Parma",44.80107394,10.32834985,450256,"PR",34,,
-"c9e43061","PC",3,"Emilia-Romagna","Piacenza",45.05193462,9.692632596,286781,"PC",33,,
-"15dc33cf","RA",3,"Emilia-Romagna","Ravenna",44.41722493,12.19913936,391345,"RA",39,,
-"12b1f7d6","RE",3,"Emilia-Romagna","Reggio nell'Emilia",44.69735289,10.63007973,532575,"RE",35,,
-"85632e5e","RN",3,"Emilia-Romagna","Rimini",44.06090087,12.5656295,337325,"RN",99,,
-"c5d1f8dc","GO",3,"Friuli Venezia Giulia","Gorizia",45.94149817,13.62212502,139439,"GO",31,,
-"b7554cdc","PN",3,"Friuli Venezia Giulia","Pordenone",45.95443546,12.66002909,312080,"PN",93,,
-"b03fe501","TS",3,"Friuli Venezia Giulia","Trieste",45.6494354,13.76813649,234638,"TS",32,,
-"2af75187","UD",3,"Friuli Venezia Giulia","Udine",46.06255516,13.2348383,529381,"UD",30,,
-"bfcca544","FR",3,"Lazio","Frosinone",41.63964569,13.35117161,490632,"FR",60,,
-"ac40e8fb","LT",3,"Lazio","Latina",41.46759465,12.90368482,575577,"LT",59,,
-"1b07bbfd","RI",3,"Lazio","Rieti",42.40488444,12.86205939,156554,"RI",57,,
-"1c6a7fe4","RM",3,"Lazio","Roma",41.89277044,12.48366722,4355725,"RM",58,,
-"1c6d1220","VT",3,"Lazio","Viterbo",42.4173828,12.10473416,318205,"VT",56,,
-"250411c2","GE",3,"Liguria","Genova",44.41149314,8.9326992,844957,"GE",10,,
-"b55cb47e","IM",3,"Liguria","Imperia",43.88570648,8.027850298,214305,"IM",8,,
-"6677227c","SP",3,"Liguria","La Spezia",44.10704991,9.8281897,219909,"SP",11,,
-"8f148749","SV",3,"Liguria","Savona",44.30750461,8.481108654,277810,"SV",9,,
-"b67d84ab","BG",3,"Lombardia","Bergamo",45.69441368,9.668424528,1111035,"BG",16,,
-"aca750d6","BS",3,"Lombardia","Brescia",45.53993052,10.21910323,1262402,"BS",17,,
-"a1bd3dd8","CO",3,"Lombardia","Como",45.8099912,9.085159546,599301,"CO",13,,
-"c2bb5101","CR",3,"Lombardia","Cremona",45.13336675,10.02420865,358512,"CR",19,,
-"2f936d3c","LC",3,"Lombardia","Lecco",45.85575781,9.393392246,339384,"LC",97,,
-"26252117","LO",3,"Lombardia","Lodi",45.31440693,9.503720769,229765,"LO",98,,
-"483920c0","MN",3,"Lombardia","Mantova",45.15726772,10.79277363,411762,"MN",20,,
-"d65db563","MI",3,"Lombardia","Milano",45.46679409,9.190347404,3234658,"MI",15,,
-"418f6ceb","MB",3,"Lombardia","Monza e della Brianza",45.58439043,9.273582472,871698,"MB",108,,
-"a439d48a","PV",3,"Lombardia","Pavia",45.18509264,9.160157191,545810,"PV",18,,
-"eb7f2f89","SO",3,"Lombardia","Sondrio",46.17099261,9.87147489,181403,"SO",14,,
-"71b0f6cb","VA",3,"Lombardia","Varese",45.81701677,8.822868344,890528,"VA",12,,
-"e48c6fcc","AN",3,"Marche","Ancona",43.61675973,13.5188753,472603,"AN",42,,
-"1e8352af","AP",3,"Marche","Ascoli Piceno",42.85322304,13.57691127,208377,"AP",44,,
-"32c4a8b1","FM",3,"Marche","Fermo",43.16058534,13.71839535,174338,"FM",109,,
-"36885c7d","MC",3,"Marche","Macerata",43.30023926,13.45307182,316310,"MC",43,,
-"3d308530","PU",3,"Marche","Pesaro e Urbino",43.91014021,12.91345989,360125,"PU",41,,
-"df0c4165","CB",3,"Molise","Campobasso",41.55774754,14.65916051,223256,"CB",70,,
-"4f53891d","IS",3,"Molise","Isernia",41.58800826,14.22575407,85237,"IS",94,,
-"d57be872","BZ",3,"P.A. Bolzano","Bolzano",46.49933453,11.35662422,527750,"BZ",21,,
-"d33989d8","TN",3,"P.A. Trento","Trento",46.06893511,11.12123097,539898,"TN",22,,
-"0a820ee0","AL",3,"Piemonte","Alessandria",44.91297351,8.615401155,424174,"AL",6,,
-"19ee96b6","AT",3,"Piemonte","Asti",44.89912921,8.204142547,215884,"AT",5,,
-"51c5a9ac","BI",3,"Piemonte","Biella",45.5665112,8.054082167,177067,"BI",96,,
-"d6ba0d4e","CN",3,"Piemonte","Cuneo",44.39329625,7.551171632,588559,"CN",4,,
-"14134395","NO",3,"Piemonte","Novara",45.44588506,8.621915884,369595,"NO",3,,
-"a43eb94e","TO",3,"Piemonte","Torino",45.0732745,7.680687483,2269120,"TO",1,,
-"e8b9a771","VB",3,"Piemonte","Verbano-Cusio-Ossola",45.9214455,8.551078753,159159,"VB",103,,
-"9fbe97e7","VC",3,"Piemonte","Vercelli",45.32398135,8.423234312,172307,"VC",2,,
-"5f1e219e","BA",3,"Puglia","Bari",41.12559576,16.86736689,1257520,"BA",72,,
-"32c3c575","BT",3,"Puglia","Barletta-Andria-Trani",41.22705039,16.29520432,391224,"BT",110,,
-"dba06040","BR",3,"Puglia","Brindisi",40.63848545,17.94601575,394977,"BR",74,,
-"d21141af","FG",3,"Puglia","Foggia",41.46226865,15.54305094,625311,"FG",71,,
-"c6f0c809","LE",3,"Puglia","Lecce",40.35354285,18.1718973,798891,"LE",75,,
-"43869449","TA",3,"Puglia","Taranto",40.47354739,17.23237181,580319,"TA",73,,
-"460510df","CA",3,"Sardegna","Cagliari",39.21531192,9.110616306,431955,"CA",92,,
-"e971baef","NU",3,"Sardegna","Nuoro",40.32318834,9.330296393,210531,"NU",91,,
-"6e0e1e0d","OR",3,"Sardegna","Oristano",39.90381075,8.591183151,159218,"OR",95,,
-"ff7e73c6","SS",3,"Sardegna","Sassari",40.72667657,8.559667131,492642,"SS",90,,
-"161dd6f3","SU",3,"Sardegna","Sud Sardegna",39.16641462,8.526242676,353830,"SU",111,,
-"9d50d768","AG",3,"Sicilia","Agrigento",37.30971088,13.5845749,438276,"AG",84,,
-"38b46c62","CL",3,"Sicilia","Caltanissetta",37.49213171,14.06184973,266427,"CL",85,,
-"2bd8f434","CT",3,"Sicilia","Catania",37.50287803,15.08704691,1109888,"CT",87,,
-"80e0aac8","EN",3,"Sicilia","Enna",37.56705701,14.27909375,166259,"EN",86,,
-"dfebf948","ME",3,"Sicilia","Messina",38.19395845,15.55572302,631297,"ME",83,,
-"27ea514d","PA",3,"Sicilia","Palermo",38.11569725,13.3623567,1260193,"PA",82,,
-"fcbf96fa","RG",3,"Sicilia","Ragusa",36.92509198,14.73069891,321370,"RG",88,,
-"88794350","SR",3,"Sicilia","Siracusa",37.05991687,15.29333182,400881,"SR",89,,
-"2936b4bb","TP",3,"Sicilia","Trapani",38.01850065,12.51365684,432398,"TP",81,,
-"f08d3383","AR",3,"Toscana","Arezzo",43.46642752,11.88228844,343449,"AR",51,,
-"35a96ca8","FI",3,"Toscana","Firenze",43.76923077,11.25588885,1013260,"FI",48,,
-"a6d79405","GR",3,"Toscana","Grosseto",42.76026758,11.11356398,222175,"GR",53,,
-"cf468422","LI",3,"Toscana","Livorno",43.55234873,10.3086781,336215,"LI",49,,
-"db47d86d","LU",3,"Toscana","Lucca",43.84432283,10.50151366,389295,"LU",46,,
-"2b3f4c19","MS",3,"Toscana","Massa Carrara",44.03674425,10.14173829,195849,"MS",45,,
-"2931d97f","PI",3,"Toscana","Pisa",43.71553206,10.40127259,420752,"PI",50,,
-"4a37b5a6","PT",3,"Toscana","Pistoia",43.933465,10.91734146,291892,"PT",47,,
-"c0527c4a","PO",3,"Toscana","Prato",43.88062274,11.09703315,256071,"PO",100,,
-"021c8abc","SI",3,"Toscana","Siena",43.31816374,11.33190988,268010,"SI",52,,
-"ce89f478","PG",3,"Umbria","Perugia",43.10675841,12.38824698,657786,"PG",54,,
-"c738d597","TR",3,"Umbria","Terni",42.56071258,12.6466875,226854,"TR",55,,
-"938b5f5a","AO",3,"Valle d'Aosta","Aosta",45.73750286,7.320149366,126202,"AO",7,,
-"21af5d23","BL",3,"Veneto","Belluno",46.13837528,12.21704167,204900,"BL",25,,
-"5780a5c2","PD",3,"Veneto","Padova",45.40692987,11.87608718,936740,"PD",28,,
-"f2641ec8","RO",3,"Veneto","Rovigo",45.07107289,11.79007,236400,"RO",29,,
-"c055118e","TV",3,"Veneto","Treviso",45.66754571,12.24507363,887420,"TV",26,,
-"76dd32d2","VE",3,"Veneto","Venezia",45.43490485,12.33845213,853552,"VE",27,,
-"f50eb715","VR",3,"Veneto","Verona",45.43839046,10.99352685,922821,"VR",23,,
-"7f6b7ef9","VI",3,"Veneto","Vicenza",45.547497,11.54597109,863204,"VI",24,,
+"id","id_pcmdpc_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_alpha_2","key_numeric","key_google_mobility","key_apple_mobility","foreign_key","foreign_key_type","key_jhu_csse"
+"ed79e985","Abruzzo",2,"Abruzzo",,42.35122196,13.39843823,1315196,,13,"Abruzzo","Abruzzo Region","ITF1","NUTS","ITF1"
+"4bca420b","Basilicata",2,"Basilicata",,40.63947052,15.80514834,567118,,17,"Basilicata","Basilicata Region","ITF5","NUTS","ITF5"
+"b8a4b9d3","Calabria",2,"Calabria",,38.90597598,16.59440194,1956687,,18,"Calabria","Calabria Region","ITF6","NUTS","ITF6"
+"29f121be","Campania",2,"Campania",,40.83956555,14.25084984,5826860,,15,"Campania","Campania Region","ITF3","NUTS","ITF3"
+"ec763ad9","Emilia-Romagna",2,"Emilia-Romagna",,44.49436681,11.3417208,4452629,,8,"Emilia-Romagna","Emilia-Romagna Region","ITH5","NUTS","ITH5"
+"07945170","Friuli Venezia Giulia",2,"Friuli Venezia Giulia",,45.6494354,13.76813649,1215538,,6,"Friuli-Venezia Giulia","Autonomous Region Friuli-Venezia Giulia","ITH4","NUTS","ITH4"
+"4c0f0471","Lazio",2,"Lazio",,41.89277044,12.48366722,5896693,,12,"Lazio","Lazio Region","ITI4","NUTS","ITI4"
+"c62d5d59","Liguria",2,"Liguria",,44.41149315,8.9326992,1556981,,7,"Liguria","Liguria Region","ITC3","NUTS","ITC3"
+"756635d8","Lombardia",2,"Lombardia",,45.46679409,9.190347404,10036258,,3,"Lombardy","Lombardy Region","ITC4","NUTS","ITC4"
+"b542c632","Marche",2,"Marche",,43.61675973,13.5188753,1531753,,11,"Marche","Marche Region","ITI3","NUTS","ITI3"
+"1e1516b3","Molise",2,"Molise",,41.55774754,14.65916051,308493,,14,"Molise","Molise Region","ITF2","NUTS","ITF2"
+"130a2ec3","P.A. Bolzano",2,"P.A. Bolzano",,46.49933453,11.35662422,527750,,4,"Trentino-South Tyrol","Autonomous Region Trentino-Alto Adige/Südtirol","ITH1","NUTS","ITH1"
+"762e2ccf","P.A. Trento",2,"P.A. Trento",,46.06893511,11.12123097,539898,,4,"Trentino-South Tyrol","Autonomous Region Trentino-Alto Adige/Südtirol","ITH2","NUTS","ITH2"
+"84d75779","Piemonte",2,"Piemonte",,45.0732745,7.680687483,4375865,,1,"Piedmont","Piedmont Region","ITC1","NUTS","ITC1"
+"ed87f3fd","Puglia",2,"Puglia",,41.12559576,16.86736689,4048242,,16,"Apulia","Apulia Region","ITF4","NUTS","ITF4"
+"fd58ab86","Sardegna",2,"Sardegna",,39.21531192,9.110616306,1648176,,20,"Sardinia","Autonomous Region Sardinia","ITG2","NUTS","ITG2"
+"ae4c71e3","Sicilia",2,"Sicilia",,38.11569725,13.3623567,5026989,,19,"Sicily","Sicily Region","ITG1","NUTS","ITG1"
+"f576de02","Toscana",2,"Toscana",,43.76923077,11.25588885,3736968,,9,"Tuscany","Tuscany Region","ITI1","NUTS","ITI1"
+"ccbcc045","Umbria",2,"Umbria",,43.10675841,12.38824698,884640,,10,"Umbria","Umbria Region","ITI2","NUTS","ITI2"
+"a8266ec6","Valle d'Aosta",2,"Valle d'Aosta",,45.73750286,7.320149366,126202,,2,"Aosta","Autonomous Region Aosta Valley","ITC2","NUTS","ITC2"
+"3133b27c","Veneto",2,"Veneto",,45.43490485,12.33845213,4905037,,5,"Veneto","Veneto Region","ITH3","NUTS","ITH3"
+"f3ab6e92","NA",3,"Campania","Napoli",40.83956555,14.25084984,3101002,"NA",63,,,"ITF33","NUTS","ITF33"
+"3fd9a87b","CH",3,"Abruzzo","Chieti",42.35103167,14.16754574,387120,"CH",69,,,"ITF14","NUTS","ITF14"
+"69846239","AQ",3,"Abruzzo","L'Aquila",42.35122196,13.39843823,300404,"AQ",66,,,"ITF11","NUTS","ITF11"
+"20879554","PE",3,"Abruzzo","Pescara",42.46458398,14.21364822,319388,"PE",68,,,"ITF13","NUTS","ITF13"
+"44eb5050","TE",3,"Abruzzo","Teramo",42.6589177,13.70439971,308284,"TE",67,,,"ITF12","NUTS","ITF12"
+"b55bd9ba","MT",3,"Basilicata","Matera",40.66751177,16.59792442,198867,"MT",77,,,"ITF52","NUTS","ITF52"
+"ad8f98a1","PZ",3,"Basilicata","Potenza",40.63947052,15.80514834,368251,"PZ",76,,,"ITF51","NUTS","ITF51"
+"cc60d933","CZ",3,"Calabria","Catanzaro",38.90597598,16.59440194,360823,"CZ",79,,,"ITF63","NUTS","ITF63"
+"b5bc6197","CS",3,"Calabria","Cosenza",39.29308681,16.25609692,708702,"CS",78,,,"ITF61","NUTS","ITF61"
+"0a62db09","KR",3,"Calabria","Crotone",39.08036878,17.12538864,175061,"KR",101,,,"ITF62","NUTS","ITF62"
+"fbd252e3","RC",3,"Calabria","Reggio di Calabria",38.10922769,15.6434527,551212,"RC",80,,,"ITF65","NUTS","ITF65"
+"f263730c","VV",3,"Calabria","Vibo Valentia",38.67624147,16.10157414,160889,"VV",102,,,"ITF64","NUTS","ITF64"
+"f7e0f79a","AV",3,"Campania","Avellino",40.91404699,14.79528803,421523,"AV",64,,,"ITF34","NUTS","ITF34"
+"cfa13c0f","BN",3,"Campania","Benevento",41.12969987,14.78151683,279127,"BN",62,,,"ITF32","NUTS","ITF32"
+"4168d4c6","CE",3,"Campania","Caserta",41.07465878,14.33240464,923445,"CE",61,,,"ITF31","NUTS","ITF31"
+"0cc7028e","SA",3,"Campania","Salerno",40.67821961,14.7594026,1101763,"SA",65,,,"ITF35","NUTS","ITF35"
+"b8a60c99","BO",3,"Emilia-Romagna","Bologna",44.49436681,11.3417208,1011291,"BO",37,,,"ITH55","NUTS","ITH55"
+"3c1f2083","FE",3,"Emilia-Romagna","Ferrara",44.83599085,11.61868934,346975,"FE",38,,,"ITH56","NUTS","ITH56"
+"d57c85b6","FC",3,"Emilia-Romagna","Forlì-Cesena",44.22268559,12.04068608,394185,"FC",40,,,"ITH58","NUTS","ITH58"
+"3f3e1056","MO",3,"Emilia-Romagna","Modena",44.64600009,10.92615487,701896,"MO",36,,,"ITH54","NUTS","ITH54"
+"a3541093","PR",3,"Emilia-Romagna","Parma",44.80107394,10.32834985,450256,"PR",34,,,"ITH52","NUTS","ITH52"
+"c9e43061","PC",3,"Emilia-Romagna","Piacenza",45.05193462,9.692632596,286781,"PC",33,,,"ITH51","NUTS","ITH51"
+"15dc33cf","RA",3,"Emilia-Romagna","Ravenna",44.41722493,12.19913936,391345,"RA",39,,,"ITH57","NUTS","ITH57"
+"12b1f7d6","RE",3,"Emilia-Romagna","Reggio nell'Emilia",44.69735289,10.63007973,532575,"RE",35,,,"ITH53","NUTS","ITH53"
+"85632e5e","RN",3,"Emilia-Romagna","Rimini",44.06090087,12.5656295,337325,"RN",99,,,"ITH59","NUTS","ITH59"
+"c5d1f8dc","GO",3,"Friuli Venezia Giulia","Gorizia",45.94149817,13.62212502,139439,"GO",31,,,"ITH43","NUTS","ITH43"
+"b7554cdc","PN",3,"Friuli Venezia Giulia","Pordenone",45.95443546,12.66002909,312080,"PN",93,,,"ITH41","NUTS","ITH41"
+"b03fe501","TS",3,"Friuli Venezia Giulia","Trieste",45.6494354,13.76813649,234638,"TS",32,,,"ITH44","NUTS","ITH44"
+"2af75187","UD",3,"Friuli Venezia Giulia","Udine",46.06255516,13.2348383,529381,"UD",30,,,"ITH42","NUTS","ITH42"
+"bfcca544","FR",3,"Lazio","Frosinone",41.63964569,13.35117161,490632,"FR",60,,,"ITI45","NUTS","ITI45"
+"ac40e8fb","LT",3,"Lazio","Latina",41.46759465,12.90368482,575577,"LT",59,,,"ITI44","NUTS","ITI44"
+"1b07bbfd","RI",3,"Lazio","Rieti",42.40488444,12.86205939,156554,"RI",57,,,"ITI42","NUTS","ITI42"
+"1c6a7fe4","RM",3,"Lazio","Roma",41.89277044,12.48366722,4355725,"RM",58,,,"ITI43","NUTS","ITI43"
+"1c6d1220","VT",3,"Lazio","Viterbo",42.4173828,12.10473416,318205,"VT",56,,,"ITI41","NUTS","ITI41"
+"250411c2","GE",3,"Liguria","Genova",44.41149314,8.9326992,844957,"GE",10,,,"ITC33","NUTS","ITC33"
+"b55cb47e","IM",3,"Liguria","Imperia",43.88570648,8.027850298,214305,"IM",8,,,"ITC31","NUTS","ITC31"
+"6677227c","SP",3,"Liguria","La Spezia",44.10704991,9.8281897,219909,"SP",11,,,"ITC34","NUTS","ITC34"
+"8f148749","SV",3,"Liguria","Savona",44.30750461,8.481108654,277810,"SV",9,,,"ITC32","NUTS","ITC32"
+"b67d84ab","BG",3,"Lombardia","Bergamo",45.69441368,9.668424528,1111035,"BG",16,,,"ITC46","NUTS","ITC46"
+"aca750d6","BS",3,"Lombardia","Brescia",45.53993052,10.21910323,1262402,"BS",17,,,"ITC47","NUTS","ITC47"
+"a1bd3dd8","CO",3,"Lombardia","Como",45.8099912,9.085159546,599301,"CO",13,,,"ITC42","NUTS","ITC42"
+"c2bb5101","CR",3,"Lombardia","Cremona",45.13336675,10.02420865,358512,"CR",19,,,"ITC4A","NUTS","ITC4A"
+"2f936d3c","LC",3,"Lombardia","Lecco",45.85575781,9.393392246,339384,"LC",97,,,"ITC43","NUTS","ITC43"
+"26252117","LO",3,"Lombardia","Lodi",45.31440693,9.503720769,229765,"LO",98,,,"ITC49","NUTS","ITC49"
+"483920c0","MN",3,"Lombardia","Mantova",45.15726772,10.79277363,411762,"MN",20,,,"ITC4B","NUTS","ITC4B"
+"d65db563","MI",3,"Lombardia","Milano",45.46679409,9.190347404,3234658,"MI",15,,,"ITC4C","NUTS","ITC4C"
+"418f6ceb","MB",3,"Lombardia","Monza e della Brianza",45.58439043,9.273582472,871698,"MB",108,,,"ITC4D","NUTS","ITC4D"
+"a439d48a","PV",3,"Lombardia","Pavia",45.18509264,9.160157191,545810,"PV",18,,,"ITC48","NUTS","ITC48"
+"eb7f2f89","SO",3,"Lombardia","Sondrio",46.17099261,9.87147489,181403,"SO",14,,,"ITC44","NUTS","ITC44"
+"71b0f6cb","VA",3,"Lombardia","Varese",45.81701677,8.822868344,890528,"VA",12,,,"ITC41","NUTS","ITC41"
+"e48c6fcc","AN",3,"Marche","Ancona",43.61675973,13.5188753,472603,"AN",42,,,"ITI32","NUTS","ITI32"
+"1e8352af","AP",3,"Marche","Ascoli Piceno",42.85322304,13.57691127,208377,"AP",44,,,"ITI34","NUTS","ITI34"
+"32c4a8b1","FM",3,"Marche","Fermo",43.16058534,13.71839535,174338,"FM",109,,,"ITI35","NUTS","ITI35"
+"36885c7d","MC",3,"Marche","Macerata",43.30023926,13.45307182,316310,"MC",43,,,"ITI33","NUTS","ITI33"
+"3d308530","PU",3,"Marche","Pesaro e Urbino",43.91014021,12.91345989,360125,"PU",41,,,"ITI31","NUTS","ITI31"
+"df0c4165","CB",3,"Molise","Campobasso",41.55774754,14.65916051,223256,"CB",70,,,"ITF22","NUTS","ITF22"
+"4f53891d","IS",3,"Molise","Isernia",41.58800826,14.22575407,85237,"IS",94,,,"ITF21","NUTS","ITF21"
+"d57be872","BZ",3,"P.A. Bolzano","Bolzano",46.49933453,11.35662422,527750,"BZ",21,,,"ITH10","NUTS","ITH10"
+"d33989d8","TN",3,"P.A. Trento","Trento",46.06893511,11.12123097,539898,"TN",22,,,"ITH20","NUTS","ITH20"
+"0a820ee0","AL",3,"Piemonte","Alessandria",44.91297351,8.615401155,424174,"AL",6,,,"ITC18","NUTS","ITC18"
+"19ee96b6","AT",3,"Piemonte","Asti",44.89912921,8.204142547,215884,"AT",5,,,"ITC17","NUTS","ITC17"
+"51c5a9ac","BI",3,"Piemonte","Biella",45.5665112,8.054082167,177067,"BI",96,,,"ITC13","NUTS","ITC13"
+"d6ba0d4e","CN",3,"Piemonte","Cuneo",44.39329625,7.551171632,588559,"CN",4,,,"ITC16","NUTS","ITC16"
+"14134395","NO",3,"Piemonte","Novara",45.44588506,8.621915884,369595,"NO",3,,,"ITC15","NUTS","ITC15"
+"a43eb94e","TO",3,"Piemonte","Torino",45.0732745,7.680687483,2269120,"TO",1,,,"ITC11","NUTS","ITC11"
+"e8b9a771","VB",3,"Piemonte","Verbano-Cusio-Ossola",45.9214455,8.551078753,159159,"VB",103,,,"ITC14","NUTS","ITC14"
+"9fbe97e7","VC",3,"Piemonte","Vercelli",45.32398135,8.423234312,172307,"VC",2,,,"ITC12","NUTS","ITC12"
+"5f1e219e","BA",3,"Puglia","Bari",41.12559576,16.86736689,1257520,"BA",72,,,"ITF47","NUTS","ITF47"
+"32c3c575","BT",3,"Puglia","Barletta-Andria-Trani",41.22705039,16.29520432,391224,"BT",110,,,"ITF48","NUTS","ITF48"
+"dba06040","BR",3,"Puglia","Brindisi",40.63848545,17.94601575,394977,"BR",74,,,"ITF44","NUTS","ITF44"
+"d21141af","FG",3,"Puglia","Foggia",41.46226865,15.54305094,625311,"FG",71,,,"ITF46","NUTS","ITF46"
+"c6f0c809","LE",3,"Puglia","Lecce",40.35354285,18.1718973,798891,"LE",75,,,"ITF45","NUTS","ITF45"
+"43869449","TA",3,"Puglia","Taranto",40.47354739,17.23237181,580319,"TA",73,,,"ITF43","NUTS","ITF43"
+"460510df","CA",3,"Sardegna","Cagliari",39.21531192,9.110616306,431955,"CA",92,,,"ITG27","NUTS","ITG27"
+"e971baef","NU",3,"Sardegna","Nuoro",40.32318834,9.330296393,210531,"NU",91,,,"ITG26","NUTS","ITG26"
+"6e0e1e0d","OR",3,"Sardegna","Oristano",39.90381075,8.591183151,159218,"OR",95,,,"ITG28","NUTS","ITG28"
+"ff7e73c6","SS",3,"Sardegna","Sassari",40.72667657,8.559667131,492642,"SS",90,,,"ITG25","NUTS","ITG25"
+"161dd6f3","SU",3,"Sardegna","Sud Sardegna",39.16641462,8.526242676,353830,"SU",111,,,"ITG2Y","NUTS","ITG2Y"
+"9d50d768","AG",3,"Sicilia","Agrigento",37.30971088,13.5845749,438276,"AG",84,,,"ITG14","NUTS","ITG14"
+"38b46c62","CL",3,"Sicilia","Caltanissetta",37.49213171,14.06184973,266427,"CL",85,,,"ITG15","NUTS","ITG15"
+"2bd8f434","CT",3,"Sicilia","Catania",37.50287803,15.08704691,1109888,"CT",87,,,"ITG17","NUTS","ITG17"
+"80e0aac8","EN",3,"Sicilia","Enna",37.56705701,14.27909375,166259,"EN",86,,,"ITG16","NUTS","ITG16"
+"dfebf948","ME",3,"Sicilia","Messina",38.19395845,15.55572302,631297,"ME",83,,,"ITG13","NUTS","ITG13"
+"27ea514d","PA",3,"Sicilia","Palermo",38.11569725,13.3623567,1260193,"PA",82,,,"ITG12","NUTS","ITG12"
+"fcbf96fa","RG",3,"Sicilia","Ragusa",36.92509198,14.73069891,321370,"RG",88,,,"ITG18","NUTS","ITG18"
+"88794350","SR",3,"Sicilia","Siracusa",37.05991687,15.29333182,400881,"SR",89,,,"ITG19","NUTS","ITG19"
+"2936b4bb","TP",3,"Sicilia","Trapani",38.01850065,12.51365684,432398,"TP",81,,,"ITG11","NUTS","ITG11"
+"f08d3383","AR",3,"Toscana","Arezzo",43.46642752,11.88228844,343449,"AR",51,,,"ITI18","NUTS","ITI18"
+"35a96ca8","FI",3,"Toscana","Firenze",43.76923077,11.25588885,1013260,"FI",48,,,"ITI14","NUTS","ITI14"
+"a6d79405","GR",3,"Toscana","Grosseto",42.76026758,11.11356398,222175,"GR",53,,,"ITI1A","NUTS","ITI1A"
+"cf468422","LI",3,"Toscana","Livorno",43.55234873,10.3086781,336215,"LI",49,,,"ITI16","NUTS","ITI16"
+"db47d86d","LU",3,"Toscana","Lucca",43.84432283,10.50151366,389295,"LU",46,,,"ITI12","NUTS","ITI12"
+"2b3f4c19","MS",3,"Toscana","Massa Carrara",44.03674425,10.14173829,195849,"MS",45,,,"ITI11","NUTS","ITI11"
+"2931d97f","PI",3,"Toscana","Pisa",43.71553206,10.40127259,420752,"PI",50,,,"ITI17","NUTS","ITI17"
+"4a37b5a6","PT",3,"Toscana","Pistoia",43.933465,10.91734146,291892,"PT",47,,,"ITI13","NUTS","ITI13"
+"c0527c4a","PO",3,"Toscana","Prato",43.88062274,11.09703315,256071,"PO",100,,,"ITI15","NUTS","ITI15"
+"021c8abc","SI",3,"Toscana","Siena",43.31816374,11.33190988,268010,"SI",52,,,"ITI19","NUTS","ITI19"
+"ce89f478","PG",3,"Umbria","Perugia",43.10675841,12.38824698,657786,"PG",54,,,"ITI21","NUTS","ITI21"
+"c738d597","TR",3,"Umbria","Terni",42.56071258,12.6466875,226854,"TR",55,,,"ITI22","NUTS","ITI22"
+"938b5f5a","AO",3,"Valle d'Aosta","Aosta",45.73750286,7.320149366,126202,"AO",7,,,"ITC20","NUTS","ITC20"
+"21af5d23","BL",3,"Veneto","Belluno",46.13837528,12.21704167,204900,"BL",25,,,"ITH33","NUTS","ITH33"
+"5780a5c2","PD",3,"Veneto","Padova",45.40692987,11.87608718,936740,"PD",28,,,"ITH36","NUTS","ITH36"
+"f2641ec8","RO",3,"Veneto","Rovigo",45.07107289,11.79007,236400,"RO",29,,,"ITH37","NUTS","ITH37"
+"c055118e","TV",3,"Veneto","Treviso",45.66754571,12.24507363,887420,"TV",26,,,"ITH34","NUTS","ITH34"
+"76dd32d2","VE",3,"Veneto","Venezia",45.43490485,12.33845213,853552,"VE",27,,,"ITH35","NUTS","ITH35"
+"f50eb715","VR",3,"Veneto","Verona",45.43839046,10.99352685,922821,"VR",23,,,"ITH31","NUTS","ITH31"
+"7f6b7ef9","VI",3,"Veneto","Vicenza",45.547497,11.54597109,863204,"VI",24,,,"ITH32","NUTS","ITH32"
