@@ -10,7 +10,7 @@ CAN <- function(level, cache){
   
   # id
   if(level==2)
-    x$id <- id(x$name, iso = "CAN", ds = "canada_ca", level = level)
+    x$id <- id(x$id, iso = "CAN", ds = "canada_ca", level = level)
   
   # return
   return(x)
