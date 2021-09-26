@@ -1,104 +1,104 @@
-"id","id_gv_at","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric"
-"f0e77689",1,2,"Burgenland",,,,293433,1
-"69ee2733",2,2,"Kärnten",,,,560939,2
-"1ee917a5",3,2,"Niederösterreich",,,,1677542,3
-"808d8206",4,2,"Oberösterreich",,,,1482095,4
-"f78ab290",5,2,"Salzburg",,,,555221,5
-"6e83e32a",6,2,"Steiermark",,,,1243052,6
-"1984d3bc",7,2,"Tirol",,,,754705,7
-"893bce2d",8,2,"Vorarlberg",,,,394297,8
-"fe3cfebb",9,2,"Wien",,,,1897491,9
-"366feb51",101,3,,"Eisenstadt(Stadt)",,,14816,101
-"af66baeb",102,3,,"Rust(Stadt)",,,1980,102
-"d8618a7d",103,3,,"Eisenstadt-Umgebung",,,43236,103
-"46051fde",104,3,,"Güssing",,,25699,104
-"31022f48",105,3,,"Jennersdorf",,,17097,105
-"a80b7ef2",106,3,,"Mattersburg",,,40042,106
-"df0c4e64",107,3,,"Neusiedl am See",,,59990,107
-"4fb353f5",108,3,,"Oberpullendorf",,,37384,108
-"38b46363",109,3,,"Oberwart",,,54192,109
-"34295508",201,3,,"Klagenfurt Stadt",,,101300,201
-"ad2004b2",202,3,,"Villach Stadt",,,62882,202
-"da273424",203,3,,"Hermagor",,,18054,203
-"4443a187",204,3,,"Klagenfurt Land",,,60014,204
-"33449111",205,3,,"Sankt Veit an der Glan",,,54186,205
-"aa4dc0ab",206,3,,"Spittal an der Drau",,,75868,206
-"dd4af03d",207,3,,"Villach Land",,,64618,207
-"4df5edac",208,3,,"Völkermarkt",,,41862,208
-"3af2dd3a",209,3,,"Wolfsberg",,,52607,209
-"5a3554df",210,3,,"Feldkirchen",,,29902,210
-"35eb3f3f",301,3,,"Krems an der Donau(Stadt)",,,25036,301
-"ace26e85",302,3,,"Sankt Pölten(Stadt)",,,55514,302
-"dbe55e13",303,3,,"Waidhofen an der Ybbs(Stadt)",,,11222,303
-"4581cbb0",304,3,,"Wiener Neustadt(Stadt)",,,45823,304
-"3286fb26",305,3,,"Amstetten",,,116520,305
-"ab8faa9c",306,3,,"Baden",,,146751,306
-"dc889a0a",307,3,,"Bruck an der Leitha",,,103735,307
-"4c37879b",308,3,,"Gänserndorf",,,104782,308
-"3b30b70d",309,3,,"Gmünd",,,36553,309
-"5bf73ee8",310,3,,"Hollabrunn",,,51033,310
-"2cf00e7e",311,3,,"Horn",,,30936,311
-"b5f95fc4",312,3,,"Korneuburg",,,91254,312
-"c2fe6f52",313,3,,"Krems(Land)",,,56487,313
-"5c9afaf1",314,3,,"Lilienfeld",,,25655,314
-"2b9dca67",315,3,,"Melk",,,78191,315
-"b2949bdd",316,3,,"Mistelbach",,,75625,316
-"c593ab4b",317,3,,"Mödling",,,119115,317
-"552cb6da",318,3,,"Neunkirchen",,,86343,318
-"222b864c",319,3,,"Sankt Pölten(Land)",,,131729,319
-"70da6d2b",320,3,,"Scheibbs",,,41414,320
-"07dd5dbd",321,3,,"Tulln",,,104593,321
-"9ed40c07",322,3,,"Waidhofen an der Thaya",,,25682,322
-"e9d33c91",323,3,,"Wiener Neustadt(Land)",,,78307,323
-"00b099a4",325,3,,"Zwettl",,,41987,325
-"30a429ba",401,3,,"Linz(Stadt)",,,206595,401
-"a9ad7800",402,3,,"Steyr(Stadt)",,,38056,402
-"deaa4896",403,3,,"Wels(Stadt)",,,62470,403
-"40cedd35",404,3,,"Braunau am Inn",,,105553,404
-"37c9eda3",405,3,,"Eferding",,,33178,405
-"aec0bc19",406,3,,"Freistadt",,,66861,406
-"d9c78c8f",407,3,,"Gmunden",,,101859,407
-"4978911e",408,3,,"Grieskirchen",,,64875,408
-"3e7fa188",409,3,,"Kirchdorf an der Krems",,,57071,409
-"5eb8286d",410,3,,"Linz-Land",,,151371,410
-"29bf18fb",411,3,,"Perg",,,68968,411
-"b0b64941",412,3,,"Ried im Innkreis",,,61690,412
-"c7b179d7",413,3,,"Rohrbach",,,56545,413
-"59d5ec74",414,3,,"Schärding",,,57391,414
-"2ed2dce2",415,3,,"Steyr-Land",,,60717,415
-"b7db8d58",416,3,,"Urfahr-Umgebung",,,86005,416
-"c0dcbdce",417,3,,"Vöcklabruck",,,137297,417
-"5063a05f",418,3,,"Wels-Land",,,73777,418
-"3166438d",501,3,,"Salzburg(Stadt)",,,155021,501
-"a86f1237",502,3,,"Hallein",,,60824,502
-"df6822a1",503,3,,"Salzburg-Umgebung",,,153492,503
-"410cb702",504,3,,"Sankt Johann im Pongau",,,81194,504
-"360b8794",505,3,,"Tamsweg",,,20251,505
-"af02d62e",506,3,,"Zell am See",,,87628,506
-"3320fdd4",601,3,,"Graz(Stadt)",,,291072,601
-"dd2e9cf8",603,3,,"Deutschlandsberg",,,60867,603
-"ad446877",606,3,,"Graz-Umgebung",,,156070,606
-"5d3cfc03",610,3,,"Leibnitz",,,84756,610
-"2a3bcc95",611,3,,"Leoben",,,59700,611
-"b3329d2f",612,3,,"Liezen",,,79652,612
-"5a51381a",614,3,,"Murau",,,27543,614
-"b45f5936",616,3,,"Voitsberg",,,51044,616
-"c35869a0",617,3,,"Weiz",,,90654,617
-"7611afc0",620,3,,"Murtal",,,71698,620
-"01169f56",621,3,,"Bruck-Mürzzuschlag",,,98697,621
-"981fceec",622,3,,"Hartberg-Fürstenfeld",,,90606,622
-"ef18fe7a",623,3,,"Südoststeiermark",,,84036,623
-"32e297e3",701,3,,"Innsbruck-Stadt",,,131961,701
-"abebc659",702,3,,"Imst",,,60474,702
-"dcecf6cf",703,3,,"Innsbruck-Land",,,180453,703
-"4288636c",704,3,,"Kitzbühel",,,64168,704
-"358f53fa",705,3,,"Kufstein",,,110287,705
-"ac860240",706,3,,"Landeck",,,44386,706
-"db8132d6",707,3,,"Lienz",,,48738,707
-"4b3e2f47",708,3,,"Reutte",,,32838,708
-"3c391fd1",709,3,,"Schwaz",,,84329,709
-"39bed0de",801,3,,"Bludenz",,,64107,801
-"a0b78164",802,3,,"Bregenz",,,134987,802
-"d7b0b1f2",803,3,,"Dornbirn",,,89912,803
-"49d42451",804,3,,"Feldkirch",,,108133,804
-"4f7b8a7f",900,3,,"Wien",,,1911191,900
+"id","id_gv_at","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric","foreign_key","foreign_key_type","key"
+"f0e77689",1,2,"Burgenland",,,,293433,1,"AT11","NUTS",
+"69ee2733",2,2,"Kärnten",,,,560939,2,"AT21","NUTS",
+"1ee917a5",3,2,"Niederösterreich",,,,1677542,3,"AT12","NUTS",
+"808d8206",4,2,"Oberösterreich",,,,1482095,4,"AT31","NUTS",
+"f78ab290",5,2,"Salzburg",,,,555221,5,"AT32","NUTS",
+"6e83e32a",6,2,"Steiermark",,,,1243052,6,"AT22","NUTS",
+"1984d3bc",7,2,"Tirol",,,,754705,7,"AT33","NUTS",
+"893bce2d",8,2,"Vorarlberg",,,,394297,8,"AT34","NUTS",
+"fe3cfebb",9,2,"Wien",,,,1897491,9,"AT13","NUTS",
+"366feb51",101,3,,"Eisenstadt(Stadt)",,,14816,101,"AT112","NUTS","E"
+"af66baeb",102,3,,"Rust(Stadt)",,,1980,102,"AT112","NUTS","EU"
+"d8618a7d",103,3,,"Eisenstadt-Umgebung",,,43236,103,"AT112","NUTS","EU"
+"46051fde",104,3,,"Güssing",,,25699,104,"AT113","NUTS","GS"
+"31022f48",105,3,,"Jennersdorf",,,17097,105,"AT113","NUTS","JE"
+"a80b7ef2",106,3,,"Mattersburg",,,40042,106,"AT112","NUTS","MA"
+"df0c4e64",107,3,,"Neusiedl am See",,,59990,107,"AT112","NUTS","ND"
+"4fb353f5",108,3,,"Oberpullendorf",,,37384,108,"AT111","NUTS","OP"
+"38b46363",109,3,,"Oberwart",,,54192,109,"AT113","NUTS","OW"
+"34295508",201,3,,"Klagenfurt Stadt",,,101300,201,"AT211","NUTS","K"
+"ad2004b2",202,3,,"Villach Stadt",,,62882,202,"AT211","NUTS","VI"
+"da273424",203,3,,"Hermagor",,,18054,203,"AT212","NUTS","HE"
+"4443a187",204,3,,"Klagenfurt Land",,,60014,204,"AT211","NUTS","KL"
+"33449111",205,3,,"Sankt Veit an der Glan",,,54186,205,"AT213","NUTS","SV"
+"aa4dc0ab",206,3,,"Spittal an der Drau",,,75868,206,"AT212","NUTS","SP"
+"dd4af03d",207,3,,"Villach Land",,,64618,207,"AT211","NUTS","VL"
+"4df5edac",208,3,,"Völkermarkt",,,41862,208,"AT213","NUTS","VK"
+"3af2dd3a",209,3,,"Wolfsberg",,,52607,209,"AT213","NUTS","WO"
+"5a3554df",210,3,,"Feldkirchen",,,29902,210,"AT212","NUTS","FE"
+"35eb3f3f",301,3,,"Krems an der Donau(Stadt)",,,25036,301,"AT124","NUTS","KS"
+"ace26e85",302,3,,"Sankt Pölten(Stadt)",,,55514,302,"AT123","NUTS","P"
+"dbe55e13",303,3,,"Waidhofen an der Ybbs(Stadt)",,,11222,303,"AT121","NUTS","WY"
+"4581cbb0",304,3,,"Wiener Neustadt(Stadt)",,,45823,304,"AT122","NUTS","WN"
+"3286fb26",305,3,,"Amstetten",,,116520,305,"AT121","NUTS","AM"
+"ab8faa9c",306,3,,"Baden",,,146751,306,"AT127","NUTS","BN"
+"dc889a0a",307,3,,"Bruck an der Leitha",,,103735,307,"AT127","NUTS","BL"
+"4c37879b",308,3,,"Gänserndorf",,,104782,308,"AT125","NUTS","GF"
+"3b30b70d",309,3,,"Gmünd",,,36553,309,"AT124","NUTS","GD"
+"5bf73ee8",310,3,,"Hollabrunn",,,51033,310,"AT125","NUTS","HL"
+"2cf00e7e",311,3,,"Horn",,,30936,311,"AT124","NUTS","HO"
+"b5f95fc4",312,3,,"Korneuburg",,,91254,312,"AT126","NUTS","KO"
+"c2fe6f52",313,3,,"Krems(Land)",,,56487,313,"AT124","NUTS","KR"
+"5c9afaf1",314,3,,"Lilienfeld",,,25655,314,"AT122","NUTS","LF"
+"2b9dca67",315,3,,"Melk",,,78191,315,"AT121","NUTS","ME"
+"b2949bdd",316,3,,"Mistelbach",,,75625,316,"AT125","NUTS","MI"
+"c593ab4b",317,3,,"Mödling",,,119115,317,"AT127","NUTS","MD"
+"552cb6da",318,3,,"Neunkirchen",,,86343,318,"AT122","NUTS","NK"
+"222b864c",319,3,,"Sankt Pölten(Land)",,,131729,319,"AT123","NUTS","PL"
+"70da6d2b",320,3,,"Scheibbs",,,41414,320,"AT121","NUTS","SB"
+"07dd5dbd",321,3,,"Tulln",,,104593,321,"AT126","NUTS","TU"
+"9ed40c07",322,3,,"Waidhofen an der Thaya",,,25682,322,"AT124","NUTS","WT"
+"e9d33c91",323,3,,"Wiener Neustadt(Land)",,,78307,323,"AT122","NUTS","WB"
+"00b099a4",325,3,,"Zwettl",,,41987,325,"AT124","NUTS","ZT"
+"30a429ba",401,3,,"Linz(Stadt)",,,206595,401,"AT312","NUTS","L"
+"a9ad7800",402,3,,"Steyr(Stadt)",,,38056,402,"AT314","NUTS","SR"
+"deaa4896",403,3,,"Wels(Stadt)",,,62470,403,"AT312","NUTS","WE"
+"40cedd35",404,3,,"Braunau am Inn",,,105553,404,"AT311","NUTS","BR"
+"37c9eda3",405,3,,"Eferding",,,33178,405,"AT312","NUTS","EF"
+"aec0bc19",406,3,,"Freistadt",,,66861,406,"AT313","NUTS","FR"
+"d9c78c8f",407,3,,"Gmunden",,,101859,407,"AT315","NUTS","GM"
+"4978911e",408,3,,"Grieskirchen",,,64875,408,"AT311","NUTS","GR"
+"3e7fa188",409,3,,"Kirchdorf an der Krems",,,57071,409,"AT314","NUTS","KI"
+"5eb8286d",410,3,,"Linz-Land",,,151371,410,"AT312","NUTS","LL"
+"29bf18fb",411,3,,"Perg",,,68968,411,"AT313","NUTS","PE"
+"b0b64941",412,3,,"Ried im Innkreis",,,61690,412,"AT311","NUTS","RI"
+"c7b179d7",413,3,,"Rohrbach",,,56545,413,"AT313","NUTS","RO"
+"59d5ec74",414,3,,"Schärding",,,57391,414,"AT311","NUTS","SD"
+"2ed2dce2",415,3,,"Steyr-Land",,,60717,415,"AT314","NUTS","SE"
+"b7db8d58",416,3,,"Urfahr-Umgebung",,,86005,416,"AT313","NUTS","UU"
+"c0dcbdce",417,3,,"Vöcklabruck",,,137297,417,"AT315","NUTS","VB"
+"5063a05f",418,3,,"Wels-Land",,,73777,418,"AT312","NUTS","WL"
+"3166438d",501,3,,"Salzburg(Stadt)",,,155021,501,"AT323","NUTS","S"
+"a86f1237",502,3,,"Hallein",,,60824,502,"AT323","NUTS","HA"
+"df6822a1",503,3,,"Salzburg-Umgebung",,,153492,503,"AT323","NUTS","SL"
+"410cb702",504,3,,"Sankt Johann im Pongau",,,81194,504,"AT322","NUTS","JO"
+"360b8794",505,3,,"Tamsweg",,,20251,505,"AT321","NUTS","TA"
+"af02d62e",506,3,,"Zell am See",,,87628,506,"AT322","NUTS","ZE"
+"3320fdd4",601,3,,"Graz(Stadt)",,,291072,601,"AT221","NUTS","G"
+"dd2e9cf8",603,3,,"Deutschlandsberg",,,60867,603,"AT225","NUTS","DL"
+"ad446877",606,3,,"Graz-Umgebung",,,156070,606,"AT221","NUTS","GU"
+"5d3cfc03",610,3,,"Leibnitz",,,84756,610,"AT225","NUTS","LB"
+"2a3bcc95",611,3,,"Leoben",,,59700,611,"AT223","NUTS","LN"
+"b3329d2f",612,3,,"Liezen",,,79652,612,"AT222","NUTS","LI"
+"5a51381a",614,3,,"Murau",,,27543,614,"AT226","NUTS","MU"
+"b45f5936",616,3,,"Voitsberg",,,51044,616,"AT225","NUTS","VO"
+"c35869a0",617,3,,"Weiz",,,90654,617,"AT224","NUTS","WZ"
+"7611afc0",620,3,,"Murtal",,,71698,620,"AT226","NUTS","MU"
+"01169f56",621,3,,"Bruck-Mürzzuschlag",,,98697,621,"AT223","NUTS","BM"
+"981fceec",622,3,,"Hartberg-Fürstenfeld",,,90606,622,"AT224","NUTS","HB"
+"ef18fe7a",623,3,,"Südoststeiermark",,,84036,623,"AT224","NUTS","SO"
+"32e297e3",701,3,,"Innsbruck-Stadt",,,131961,701,"AT332","NUTS","I"
+"abebc659",702,3,,"Imst",,,60474,702,"AT334","NUTS","IM"
+"dcecf6cf",703,3,,"Innsbruck-Land",,,180453,703,"AT332","NUTS","IL"
+"4288636c",704,3,,"Kitzbühel",,,64168,704,"AT335","NUTS","KB"
+"358f53fa",705,3,,"Kufstein",,,110287,705,"AT335","NUTS","KU"
+"ac860240",706,3,,"Landeck",,,44386,706,"AT334","NUTS","LA"
+"db8132d6",707,3,,"Lienz",,,48738,707,"AT333","NUTS","LZ"
+"4b3e2f47",708,3,,"Reutte",,,32838,708,"AT331","NUTS","RE"
+"3c391fd1",709,3,,"Schwaz",,,84329,709,"AT335","NUTS","SZ"
+"39bed0de",801,3,,"Bludenz",,,64107,801,"AT341","NUTS","BZ"
+"a0b78164",802,3,,"Bregenz",,,134987,802,"AT341","NUTS","B"
+"d7b0b1f2",803,3,,"Dornbirn",,,89912,803,"AT342","NUTS","DO"
+"49d42451",804,3,,"Feldkirch",,,108133,804,"AT342","NUTS","FK"
+"4f7b8a7f",900,3,,"Wien",,,1911191,900,"AT130","NUTS","W"
