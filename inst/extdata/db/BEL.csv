@@ -1,4 +1,15 @@
-"id","id_sciensano_be","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_google_mobility","key_apple_mobility"
-"1bb2de77","Brussels",2,"The Brussels-Capital Region",,50.85,4.35,1208542,"Brussels","Brussels"
-"b1a17459","Flanders",2,"The Flemish Region",,50.85,4.35,6589069,"Flanders",
-"27e2b6a0","Wallonia",2,"The Walloon Region",,50.5,4.75,3633795,"Wallonia",
+"id","id_sciensano_be","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","foreign_key","foreign_key_type","key_google_mobility","key_apple_mobility","key_jhu_csse"
+"1bb2de77","Brussels",2,"The Brussels-Capital Region",,50.85,4.35,1208542,"BE1","NUTS","Brussels","Brussels",
+"b1a17459","Flanders",2,"The Flemish Region",,50.85,4.35,6589069,"BE2","NUTS","Flanders",,
+"27e2b6a0","Wallonia",2,"The Walloon Region",,50.5,4.75,3633795,"BE3","NUTS","Wallonia",,
+"1a7b7a6a","Brussels",3,"Brussels","Brussels",50.85,4.35,1208542,"BE10","NUTS",,,"BEBRU"
+"3e028814","Antwerpen",3,"Flanders","Antwerpen",51.22,4.4,1857986,"BE21","NUTS",,,"BEVAN"
+"602331fd","Limburg",3,"Flanders","Limburg",50.97,5.34,874048,"BE22","NUTS",,,"BEVLI"
+"7fbf9748","OostVlaanderen",3,"Flanders","OostVlaanderen",51.04,3.74,1515064,"BE23","NUTS",,,"BEVOV"
+"8b9ddc79","VlaamsBrabant",3,"Flanders","VlaamsBrabant",50.92,4.58,1146175,"BE24","NUTS",,,"BEVBR"
+"100bd334","WestVlaanderen",3,"Flanders","WestVlaanderen",51.05,3.15,1195796,"BE25","NUTS",,,"BEVWV"
+"601b6a8c","BrabantWallon",3,"Wallonia","BrabantWallon",50.4,4.35,403599,"BE31","NUTS",,,"BEWAL"
+"17b9524e","Hainaut",3,"Wallonia","Hainaut",50.53,4.06,1344241,"BE32","NUTS",,,"BEWHT"
+"5077dea8","Liège",3,"Wallonia","Liège",50.45,5.85,1106992,"BE33","NUTS",,,"BEWLG"
+"80cfc83d","Luxembourg",3,"Wallonia","Luxembourg",50.05,5.47,284638,"BE34","NUTS",,,"BEWLX"
+"ba6fcc21","Namur",3,"Wallonia","Namur",50.33,4.82,494325,"BE35","NUTS",,,"BEWNA"

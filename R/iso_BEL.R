@@ -2,7 +2,7 @@ BEL <- function(level, cache){
   # author: Elsa Burren
   
   # fallback
-  if(level > 2)
+  if(level > 3)
     return(NULL)
   
   # download
@@ -11,6 +11,8 @@ BEL <- function(level, cache){
   # id
   if(level==2)
     x$id <- id(x$REGION, iso = "BEL", ds = "sciensano_be", level = level)
+  if(level==3)
+    x$id <- id(x$PROVINCE, iso = "BEL", ds = "sciensano_be", level = level)
   
   # return
   return(x)
