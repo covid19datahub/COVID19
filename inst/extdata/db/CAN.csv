@@ -1,4 +1,5 @@
 "id","id_canada_ca","id_jhucsse_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_google_mobility","key_apple_mobility","key_alpha_2","foreign_key","foreign_key_type","key_jhu_csse","key_numeric"
+,,,,,,,,,,,,"-",,,
 "e61d6191",48,"Alberta",2,"Alberta",,53.9333,-116.5765,4413146,"Alberta","Alberta","AB",48,"FIPS","CAAB",48
 "c229681f",59,"British Columbia",2,"British Columbia",,49.2827,-123.1207,5110917,"British Columbia","British Columbia","BC",59,"FIPS","CABC",59
 "2a9fd65a",46,"Manitoba",2,"Manitoba",,53.7609,-98.8139,1377517,"Manitoba","Manitoba","MB",46,"FIPS","CAMB",46
