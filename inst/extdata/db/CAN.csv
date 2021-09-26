@@ -1,15 +1,15 @@
 "id","id_canada_ca","id_jhucsse_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_google_mobility","key_apple_mobility","key_alpha_2","foreign_key","foreign_key_type","key_jhu_csse","key_numeric"
 ,,,,,,,,,,,,"-",,,
-"e61d6191",48,"Alberta",2,"Alberta",,53.9333,-116.5765,4413146,"Alberta","Alberta","AB",48,"FIPS","CAAB",48
-"c229681f",59,"British Columbia",2,"British Columbia",,49.2827,-123.1207,5110917,"British Columbia","British Columbia","BC",59,"FIPS","CABC",59
-"2a9fd65a",46,"Manitoba",2,"Manitoba",,53.7609,-98.8139,1377517,"Manitoba","Manitoba","MB",46,"FIPS","CAMB",46
-"d177e539",13,"New Brunswick",2,"New Brunswick",,46.5653,-66.4619,779993,"New Brunswick","New Brunswick","NB",13,"FIPS","CANB",13
-"d07806cb",10,"Newfoundland and Labrador",2,"Newfoundland and Labrador",,53.1355,-57.6604,521365,"Newfoundland and Labrador","Newfoundland and Labrador","NL",10,"FIPS","CANL",10
-"eef40c88",61,"Northwest Territories",2,"Northwest Territories",,64.8255,-124.8457,44904,"Northwest Territories","Northwest Territories","NT",61,"FIPS","CANT",61
-"b91ff4d1",12,"Nova Scotia",2,"Nova Scotia",,44.682,-63.7443,977457,"Nova Scotia","Nova Scotia","NS",12,"FIPS","CANS",12
-"83fc0fa9",35,"Ontario",2,"Ontario",,51.2538,-85.3232,14711827,"Ontario","Ontario","ON",35,"FIPS","CAON",35
-"015d95fc",11,"Prince Edward Island",2,"Prince Edward Island",,46.5107,-63.4168,158158,"Prince Edward Island","Prince Edward Island","PE",11,"FIPS","CAPE",11
-"a7ce33b9",24,"Quebec",2,"Quebec",,52.9399,-73.5491,8537674,"Quebec","Quebec","QC",24,"FIPS","CAQC",24
-"e4c07903",47,"Saskatchewan",2,"Saskatchewan",,52.9399,-106.4509,1181666,"Saskatchewan","Saskatchewan","SK",47,"FIPS","CASK",47
-"38791b01",60,"Yukon",2,"Yukon",,64.2823,-135,41078,"Yukon","Yukon Territory","YT",60,"FIPS","CAYT",60
-"7fc88543",62,,2,"Nunavut",,70.2998,-83.1076,38780,"Nunavut","Nunavut","NU",62,"FIPS","CANU",62
+"e61d6191",48,"Alberta",2,"Alberta",,53.9333,-116.5765,4413146,"Alberta","Alberta","AB","48","FIPS","CAAB",48
+"c229681f",59,"British Columbia",2,"British Columbia",,49.2827,-123.1207,5110917,"British Columbia","British Columbia","BC","59","FIPS","CABC",59
+"2a9fd65a",46,"Manitoba",2,"Manitoba",,53.7609,-98.8139,1377517,"Manitoba","Manitoba","MB","46","FIPS","CAMB",46
+"d177e539",13,"New Brunswick",2,"New Brunswick",,46.5653,-66.4619,779993,"New Brunswick","New Brunswick","NB","13","FIPS","CANB",13
+"d07806cb",10,"Newfoundland and Labrador",2,"Newfoundland and Labrador",,53.1355,-57.6604,521365,"Newfoundland and Labrador","Newfoundland and Labrador","NL","10","FIPS","CANL",10
+"eef40c88",61,"Northwest Territories",2,"Northwest Territories",,64.8255,-124.8457,44904,"Northwest Territories","Northwest Territories","NT","61","FIPS","CANT",61
+"b91ff4d1",12,"Nova Scotia",2,"Nova Scotia",,44.682,-63.7443,977457,"Nova Scotia","Nova Scotia","NS","12","FIPS","CANS",12
+"83fc0fa9",35,"Ontario",2,"Ontario",,51.2538,-85.3232,14711827,"Ontario","Ontario","ON","35","FIPS","CAON",35
+"015d95fc",11,"Prince Edward Island",2,"Prince Edward Island",,46.5107,-63.4168,158158,"Prince Edward Island","Prince Edward Island","PE","11","FIPS","CAPE",11
+"a7ce33b9",24,"Quebec",2,"Quebec",,52.9399,-73.5491,8537674,"Quebec","Quebec","QC","24","FIPS","CAQC",24
+"e4c07903",47,"Saskatchewan",2,"Saskatchewan",,52.9399,-106.4509,1181666,"Saskatchewan","Saskatchewan","SK","47","FIPS","CASK",47
+"38791b01",60,"Yukon",2,"Yukon",,64.2823,-135,41078,"Yukon","Yukon Territory","YT","60","FIPS","CAYT",60
+"7fc88543",62,,2,"Nunavut",,70.2998,-83.1076,38780,"Nunavut","Nunavut","NU","62","FIPS","CANU",62
