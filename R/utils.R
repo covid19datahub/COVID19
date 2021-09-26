@@ -121,7 +121,7 @@ vars <- function(type = NULL){
   )
   
   if(is.null(type))
-    return(unname(unique(c('id','date',cases,measures,slow))))
+    return(unname(unique(c('id','date',cases,'population',measures,slow))))
     
   if(type=="slow")
     return(unname(slow))
