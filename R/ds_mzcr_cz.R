@@ -44,6 +44,7 @@ mzcr_cz <- function(level, cache){
   
   if(level == 2) {
     x <- x %>%
+      dplyr::filter(!is.na(state)) %>%
       dplyr::group_by(date,state) %>%
       dplyr::summarise(
         confirmed = sum(confirmed),
@@ -52,7 +53,7 @@ mzcr_cz <- function(level, cache){
   }
   
   if(level == 3) {
-   # nothing to do 
+    x <- x[!is.na(x$district),] 
   }
   
   # return
