@@ -98,6 +98,8 @@
 "BRA",2,"recovered","https://coronavirus.es.gov.br/painel-covid-19-es","State Government of Espírito Santo, Brazil","2020",,,,
 "BRA",2,"population","https://en.wikipedia.org/wiki/Esp%C3%ADrito_Santo","Wikipedia","2019",,,,
 "BRA",2,"population","https://www.ibge.gov.br/en/cities-and-states.html","Instituto Brasileiro de Geografia e Estatistica - IBGE","2020",,,,
+"BRA",2,"latitude","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering","2021",,,,
+"BRA",2,"longitude","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering","2021",,,,
 "BRA",3,"deaths","https://github.com/wcota/covid19br","Monitoring the number of COVID-19 cases and deaths in Brazil at municipal and federative units level","2020",,"Wesley Cota",,
 "BRA",3,"confirmed","https://github.com/wcota/covid19br","Monitoring the number of COVID-19 cases and deaths in Brazil at municipal and federative units level","2020",,"Wesley Cota",,
 "BRA",3,"vaccines","https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao","Ministry of Health of Brazil","2021",,,,
