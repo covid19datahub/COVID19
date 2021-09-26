@@ -1,3 +1,3 @@
-"id","id_jhucsse_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"792c28f2","Faroe Islands",2,"Faroe Islands",,61.8926,-6.9118,48497
-"536fac42","Greenland",2,"Greenland",,71.7069,-42.6043,56025
+"id","id_jhucsse_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_jhu_csse"
+"792c28f2","Faroe Islands",2,"Faroe Islands",,61.8926,-6.9118,48497,"DKFO"
+"536fac42","Greenland",2,"Greenland",,71.7069,-42.6043,56025,"DKGL"
