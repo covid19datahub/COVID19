@@ -5,8 +5,13 @@ LIE <- function(level, cache){
     return(NULL)
 
   # download
-  x <- openzh_git(cache = cache, id = "FL")
-
+  x <- admin_ch(id = "FL", level = 1)
+  y <- openzh_git(id = "FL", cache = cache)
+  
+  # merge
+  y <- y[,c("date", "hosp", "recovered")]
+  x <- merge(x, y, by = c("date"), all = TRUE)
+  
   # return
   return(x)
 
