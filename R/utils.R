@@ -115,9 +115,7 @@ vars <- function(type = NULL){
     'integer'   = 'key_numeric',
     'character' = 'key_google_mobility',
     'character' = 'key_apple_mobility',
-    'character' = 'key_jhu_csse',
-    'character' = 'foreign_key',
-    'character' = 'foreign_key_type'
+    'character' = 'key_jhu_csse'
   )
   
   if(is.null(type))
@@ -422,7 +420,7 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
     stop("level must be 2 or 3")
   
   id_ds <- sprintf("id_%s", ds)
-  key   <- c('id',id_ds,'administrative_area_level','administrative_area_level_2','administrative_area_level_3','latitude','longitude','population','foreign_key','foreign_key_type')
+  key   <- c('id',id_ds,'administrative_area_level','administrative_area_level_2','administrative_area_level_3','latitude','longitude','population')
   map   <- c(map, key[!(key %in% map)])
   
   x <- map_data(x, map)
