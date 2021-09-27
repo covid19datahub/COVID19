@@ -81,30 +81,38 @@ gov_uk <- function(level){
       sprintf("areaType=%s", a)
     )
     
+    # metrics
+    dose1 <- "cumPeopleVaccinatedFirstDoseByVaccinationDate"
+    dose2 <- "cumPeopleVaccinatedSecondDoseByVaccinationDate"
+    if(a %in% c("overview", "nation")){
+      dose1 <- "cumPeopleVaccinatedFirstDoseByPublishDate"
+      dose2 <- "cumPeopleVaccinatedSecondDoseByPublishDate"
+    }
+    
     # Create structure. It seems that numbers are not allowed in renaming!
     structure <- list(
       "date"       = "date",
       "type"       = "areaType",
       "name"       = "areaName",
       "code"       = "areaCode",
-      "confirmed"  = ifelse(a %in% c("overview", "nation"), "cumCasesByPublishDate", "cumCasesBySpecimenDate"),
-      "tests"      = "cumTestsByPublishDate",
-      "testsOne"   = "cumPillarOneTestsByPublishDate",
-      "testsTwo"   = "cumPillarTwoTestsByPublishDate",
-      "testsThree" = "cumPillarThreeTestsByPublishDate",
-      "testsFour"  = "cumPillarFourTestsByPublishDate",
+      "confirmed"  = "cumCasesBySpecimenDate",
+      "deaths"     = "cumDeaths28DaysByDeathDate",
+      "tests"      = "cumVirusTests",
+      "dose1"      =  dose1,
+      "dose2"      =  dose2,
       "vent"       = "covidOccupiedMVBeds",
-      "hosp"       = "hospitalCases",
-      "deaths"     = "cumDeaths28DaysByPublishDate"
+      "hosp"       = "hospitalCases"
     )
     
     x <- dplyr::bind_rows(x, get_paginated_data(filters, structure))
     
   }
   
-  # fix tests
-  if(level==2)
-    x$tests <- x$testsOne + x$testsTwo + x$testsThree 
+  # drop England (already included with regions)
+  x <- x[x$code!="E92000001",]
+  
+  # vaccines
+  x$vaccines <- rowSums(x[,c("dose1", "dose2")], na.rm = TRUE)
   
   # clean
   x <- x[!duplicated(x[,c("date","code")]),]

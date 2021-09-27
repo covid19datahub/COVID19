@@ -1,174 +1,403 @@
-"id","id_jhucsse_git","id_gov_uk","id_oxcgrt_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key","key_google_mobility","key_apple_mobility"
-"bfc9c60a","Anguilla",,,2,"Anguilla",,18.2206,-63.0686,18090,,,
-"0a3b5fa5","Bermuda",,,2,"Bermuda",,32.3078,-64.7505,63973,,,
-"0023de7a","British Virgin Islands",,,2,"British Virgin Islands",,18.4207,-64.64,29802,,,
-"c1c88c78","Cayman Islands",,,2,"Cayman Islands",,19.3133,-81.2546,64174,,,
-"16dbec58","Channel Islands",,,2,"Channel Islands",,49.3723,-2.3644,170499,,,
-"288f106c","Falkland Islands (Malvinas)",,,2,"Falkland Islands (Malvinas)",,-51.7963,-59.5236,3198,,,
-"770662fe","Gibraltar",,,2,"Gibraltar",,36.1408,-5.3536,33718,,,
-"fc9cad6b","Isle of Man",,,2,"Isle of Man",,54.2361,-4.5481,84077,,,
-"0f57ee60","Montserrat",,,2,"Montserrat",,16.7425,-62.1874,5373,,,
-"51b6c44c","Turks and Caicos Islands",,,2,"Turks and Caicos Islands",,21.694,-71.7979,37665,,,
-"d2ddf42c",,"E92000001","UK_ENG",2,"England",,52.3555,-1.1743,55980000,"E92000001",,
-"c9813b4b",,"N92000002","UK_NIR",2,"Northern Ireland",,54.7877,-6.4923,1882000,"N92000002",,
-"e309aefb",,"S92000003","UK_SCO",2,"Scotland",,56.4907,-4.2026,5454000,"S92000003",,
-"20816a54",,"W92000004","UK_WAL",2,"Wales",,52.1307,-3.7837,3136000,"W92000004",,
-"71521b16",,"E12000004",,2,"East Midlands",,52.98,-0.75,4804149,"E12000004",,
-"9f5c7a3a",,"E12000006",,2,"East of England",,52.24,0.41,6201214,"E12000006",,
-"e85b4aac",,"E12000007",,2,"London",,51.507222,-0.1275,8908081,"E12000007",,"London"
-"0138ef99",,"E12000001",,2,"North East",,55,-1.8667,2657909,"E12000001",,
-"9831be23",,"E12000002",,2,"North West",,54.0167,-2.6333,7292093,"E12000002",,"North West"
-"78e4573d",,"E12000008",,2,"South East",,51.3167,-0.5,9133625,"E12000008",,
-"0fe367ab",,"E12000009",,2,"South West",,50.96,-3.22,5599735,"E12000009",,
-"06552b80",,"E12000005",,2,"West Midlands",,52.47,-2.29,5900757,"E12000005","West Midlands",
-"ef368eb5",,"E12000003",,2,"Yorkshire and The Humber",,53.566667,-1.2,5479615,"E12000003",,
-"569cea47",,"E09000002",,3,,"Barking and Dagenham",,,,"E09000002",,
-"219bdad1",,"E09000003",,3,,"Barnet",,,,"E09000003",,
-"ee9d14ab",,"E08000016",,3,,"Barnsley",,,,"E08000016",,
-"92e2f82c",,"E06000022",,3,,"Bath and North East Somerset",,,,"E06000022","Bath and North East Somerset",
-"43c7fb48",,"E06000055",,3,,"Bedford",,,,"E06000055","Bedford",
-"bfff4f72",,"E09000004",,3,,"Bexley",,,,"E09000004",,
-"5cb916d2",,"E08000025",,3,,"Birmingham",,,,"E08000025",,
-"400173b0",,"E06000008",,3,,"Blackburn with Darwen",,,,"E06000008","Blackburn with Darwen",
-"37064326",,"E06000009",,3,,"Blackpool",,,,"E06000009","Blackpool",
-"69e2b049",,"E08000001",,3,,"Bolton",,,,"E08000001",,
-"3d7687f5",,"E06000058",,3,,"Bournemouth, Christchurch and Poole",,,,"E06000058",,
-"8c940d74",,"E06000036",,3,,"Bracknell Forest",,,,"E06000036","Bracknell Forest",
-"dbc6b230",,"E08000032",,3,,"Bradford",,,,"E08000032",,
-"c8f87fe4",,"E09000005",,3,,"Brent",,,,"E09000005",,
-"b3bf6f3c",,"E06000043",,3,,"Brighton and Hove",,,,"E06000043","Brighton and Hove",
-"e5e5c8ba",,"E06000023",,3,,"Bristol, City of",,,,"E06000023","Bristol Cty",
-"51f12e5e",,"E09000006",,3,,"Bromley",,,,"E09000006",,
-"0faeaf0a",,"E10000002",,3,,"Buckinghamshire",,,,"E10000002","Buckinghamshire",
-"f0ebe1f3",,"E08000002",,3,,"Bury",,,,"E08000002",,
-"acc182a6",,"E08000033",,3,,"Calderdale",,,,"E08000033",,
-"78a99f9c",,"E10000003",,3,,"Cambridgeshire",,,,"E10000003","Cambridgeshire",
-"26f61ec8",,"E09000007",,3,,"Camden",,,,"E09000007",,
-"daceaaf2",,"E06000056",,3,,"Central Bedfordshire",,,,"E06000056","Central Bedfordshire",
-"536a8622",,"E06000049",,3,,"Cheshire East",,,,"E06000049","Cheshire East",
-"33ad0fc7",,"E06000050",,3,,"Cheshire West and Chester",,,,"E06000050","Cheshire West and Chester",
-"cf95bbfd",,"E09000001",,3,,"City of London",,,,"E09000001",,
-"dda36eeb",,"E06000052",,3,,"Cornwall and Isles of Scilly",,,,"E06000052","Cornwall",
-"b4d2ab25",,"E06000047",,3,,"County Durham",,,,"E06000047","County Durham",
-"c5b04768",,"E08000026",,3,,"Coventry",,,,"E08000026",,
-"b6490359",,"E09000008",,3,,"Croydon",,,,"E09000008",,
-"08c36b13",,"E10000006",,3,,"Cumbria",,,,"E10000006","Cumbria",
-"3eb00f0d",,"E06000005",,3,,"Darlington",,,,"E06000005","Darlington",
-"27ab3e4c",,"E06000015",,3,,"Derby",,,,"E06000015","Derby",
-"7fc45b85",,"E10000007",,3,,"Derbyshire",,,,"E10000007","Derbyshire",
-"ef7b4614",,"E10000008",,3,,"Devon",,,,"E10000008","Devon",
-"999a243d",,"E08000017",,3,,"Doncaster",,,,"E08000017",,
-"4a71b763",,"E06000059",,3,,"Dorset",,,,"E06000059","Dorset",
-"b2b777fe",,"E08000027",,3,,"Dudley",,,,"E08000027",,
-"c14e33cf",,"E09000009",,3,,"Ealing",,,,"E09000009",,
-"20c6fa55",,"E06000011",,3,,"East Riding of Yorkshire",,,,"E06000011","East Riding of Yorkshire",
-"8fbccff1",,"E10000011",,3,,"East Sussex",,,,"E10000011","East Sussex",
-"a189ba2a",,"E09000010",,3,,"Enfield",,,,"E09000010",,
-"16b59e4b",,"E10000012",,3,,"Essex",,,,"E10000012","Essex",
-"abac46bf",,"E08000037",,3,,"Gateshead",,,,"E08000037",,
-"61b2aedd",,"E10000013",,3,,"Gloucestershire",,,,"E10000013","Gloucestershire",
-"d68e8abc",,"E09000011",,3,,"Greenwich",,,,"E09000011",,
-"4f87db06",,"E09000012",,3,,"Hackney",,,,"E09000012",,
-"a7b95eb7",,"E06000006",,3,,"Halton",,,,"E06000006",,
-"3880eb90",,"E09000013",,3,,"Hammersmith and Fulham",,,,"E09000013",,
-"ffd63b7e",,"E10000014",,3,,"Hampshire",,,,"E10000014","Hampshire",
-"a6e47e33",,"E09000014",,3,,"Haringey",,,,"E09000014",,
-"d1e34ea5",,"E09000015",,3,,"Harrow",,,,"E09000015",,
-"39ddcb14",,"E06000001",,3,,"Hartlepool",,,,"E06000001","Hartlepool",
-"48ea1f1f",,"E09000016",,3,,"Havering",,,,"E09000016",,
-"2e1d7267",,"E06000019",,3,,"Herefordshire, County of",,,,"E06000019",,
-"88d10be8",,"E10000015",,3,,"Hertfordshire",,,,"E10000015","Hertfordshire",
-"3fed2f89",,"E09000017",,3,,"Hillingdon",,,,"E09000017",,
-"af523218",,"E09000018",,3,,"Hounslow",,,,"E09000018",,
-"c3d59bb3",,"E06000046",,3,,"Isle of Wight",,,,"E06000046","Isle of Wight",
-"d855028e",,"E09000019",,3,,"Islington",,,,"E09000019",,
-"8aa4e9e9",,"E09000020",,3,,"Kensington and Chelsea",,,,"E09000020",,
-"11d85a52",,"E10000016",,3,,"Kent",,,,"E10000016","Kent",
-"57c1cac3",,"E06000010",,3,,"Kingston upon Hull, City of",,,,"E06000010","Kingston upon Hull",
-"fda3d97f",,"E09000021",,3,,"Kingston upon Thames",,,,"E09000021",,
-"32a51705",,"E08000034",,3,,"Kirklees",,,,"E08000034",,
-"70f98108",,"E08000011",,3,,"Knowsley",,,,"E08000011",,
-"64aa88c5",,"E09000022",,3,,"Lambeth",,,,"E09000022",,
-"66df6ac4",,"E10000017",,3,,"Lancashire",,,,"E10000017","Lancashire",
-"45a22793",,"E08000035",,3,,"Leeds",,,,"E08000035",,
-"bea26ff6",,"E06000016",,3,,"Leicester",,,,"E06000016","Leicester",
-"f6607755",,"E10000018",,3,,"Leicestershire",,,,"E10000018","Leicestershire",
-"13adb853",,"E09000023",,3,,"Lewisham",,,,"E09000023",,
-"816747c3",,"E10000019",,3,,"Lincolnshire",,,,"E10000019","Lincolnshire",
-"e9f0d0b2",,"E08000012",,3,,"Liverpool",,,,"E08000012",,
-"8bf9c96d",,"E06000032",,3,,"Luton",,,,"E06000032","Luton",
-"87ecd165",,"E08000003",,3,,"Manchester",,,,"E08000003",,
-"159d5cce",,"E06000035",,3,,"Medway",,,,"E06000035","Medway",
-"8dc92df0",,"E09000024",,3,,"Merton",,,,"E09000024",,
-"a0d49aae",,"E06000002",,3,,"Middlesbrough",,,,"E06000002","Middlesbrough",
-"c4b85faa",,"E06000042",,3,,"Milton Keynes",,,,"E06000042","Milton Keynes",
-"5bd4d2cb",,"E08000021",,3,,"Newcastle upon Tyne",,,,"E08000021",,
-"face1d66",,"E09000025",,3,,"Newham",,,,"E09000025",,
-"d396aca4",,"E10000020",,3,,"Norfolk",,,,"E10000020","Norfolk",
-"b9cfabef",,"E06000012",,3,,"North East Lincolnshire",,,,"E06000012","North East Lincolnshire",
-"cec89b79",,"E06000013",,3,,"North Lincolnshire",,,,"E06000013","North Lincolnshire",
-"7b815d19",,"E06000024",,3,,"North Somerset",,,,"E06000024","North Somerset",
-"c2dd8371",,"E08000022",,3,,"North Tyneside",,,,"E08000022",,
-"4a9ffd1e",,"E10000023",,3,,"North Yorkshire",,,,"E10000023","North Yorkshire",
-"a4919c32",,"E10000021",,3,,"Northamptonshire",,,,"E10000021","Northamptonshire",
-"adc99a64",,"E06000057",,3,,"Northumberland",,,,"E06000057","Northumberland",
-"591a42f1",,"E06000018",,3,,"Nottingham",,,,"E06000018","Nottingham",
-"d4fb68bd",,"E10000024",,3,,"Nottinghamshire",,,,"E10000024","Nottinghamshire",
-"198844c6",,"E08000004",,3,,"Oldham",,,,"E08000004",,
-"a3fc582b",,"E10000025",,3,,"Oxfordshire",,,,"E10000025","Oxfordshire",
-"12f098d7",,"E06000031",,3,,"Peterborough",,,,"E06000031","Peterborough",
-"958f3c35",,"E06000026",,3,,"Plymouth",,,,"E06000026","Plymouth",
-"2ddbfa9f",,"E06000044",,3,,"Portsmouth",,,,"E06000044","Portsmouth",
-"6b2c2073",,"E06000038",,3,,"Reading",,,,"E06000038","Reading",
-"63c74cdc",,"E09000026",,3,,"Redbridge",,,,"E09000026",,
-"d7d3aa38",,"E06000003",,3,,"Redcar and Cleveland",,,,"E06000003","Redcar and Cleveland",
-"14c07c4a",,"E09000027",,3,,"Richmond upon Thames",,,,"E09000027",,
-"6e8f7450",,"E08000005",,3,,"Rochdale",,,,"E08000005",,
-"092539ac",,"E08000018",,3,,"Rotherham",,,,"E08000018",,
-"c9a55f60",,"E06000017",,3,,"Rutland",,,,"E06000017","Rutland",
-"f78625ea",,"E08000006",,3,,"Salford",,,,"E08000006",,
-"22086a6f",,"E08000028",,3,,"Sandwell",,,,"E08000028",,
-"00937587",,"E08000014",,3,,"Sefton",,,,"E08000014",,
-"7e22093a",,"E08000019",,3,,"Sheffield",,,,"E08000019",,
-"44aa3f51",,"E06000051",,3,,"Shropshire",,,,"E06000051","Shropshire",
-"1c2b10e5",,"E06000039",,3,,"Slough",,,,"E06000039","Slough",
-"550f5af9",,"E08000029",,3,,"Solihull",,,,"E08000029",,
-"4df23907",,"E10000027",,3,,"Somerset",,,,"E10000027","Somerset",
-"0c866d8f",,"E06000025",,3,,"South Gloucestershire",,,,"E06000025","South Gloucestershire",
-"b5dab3e7",,"E08000023",,3,,"South Tyneside",,,,"E08000023",,
-"5adcca09",,"E06000045",,3,,"Southampton",,,,"E06000045","Southampton",
-"fcfef9fb",,"E06000033",,3,,"Southend-on-Sea",,,,"E06000033","Southend-on-Sea",
-"847f61db",,"E09000028",,3,,"Southwark",,,,"E09000028",,
-"9ef7e024",,"E08000013",,3,,"St. Helens",,,,"E08000013",,
-"dd4d2496",,"E10000028",,3,,"Staffordshire",,,,"E10000028","Staffordshire",
-"8081157c",,"E08000007",,3,,"Stockport",,,,"E08000007",,
-"49b73f9b",,"E06000004",,3,,"Stockton-on-Tees",,,,"E06000004","Stockton-on-Tees",
-"0beba996",,"E06000021",,3,,"Stoke-on-Trent",,,,"E06000021","Stoke-on-Trent",
-"aa4a1400",,"E10000029",,3,,"Suffolk",,,,"E10000029","Suffolk",
-"2bbe2644",,"E08000024",,3,,"Sunderland",,,,"E08000024",,
-"ca8d9de5",,"E10000030",,3,,"Surrey",,,,"E10000030","Surrey",
-"f378514d",,"E09000029",,3,,"Sutton",,,,"E09000029",,
-"65f7a841",,"E06000030",,3,,"Swindon",,,,"E06000030","Swindon",
-"103e08ed",,"E08000008",,3,,"Tameside",,,,"E08000008",,
-"7cec9900",,"E06000020",,3,,"Telford and Wrekin",,,,"E06000020",,
-"629a6c58",,"E06000034",,3,,"Thurrock",,,,"E06000034","Thurrock",
-"e2880ca3",,"E06000027",,3,,"Torbay",,,,"E06000027","Torbay",
-"93bfd8a8",,"E09000030",,3,,"Tower Hamlets",,,,"E09000030",,
-"6739387b",,"E08000009",,3,,"Trafford",,,,"E08000009",,
-"dcab7629",,"E08000036",,3,,"Wakefield",,,,"E08000036",,
-"35c8d31c",,"E08000030",,3,,"Walsall",,,,"E08000030",,
-"e4b8e83e",,"E09000031",,3,,"Waltham Forest",,,,"E09000031",,
-"7db1b984",,"E09000032",,3,,"Wandsworth",,,,"E09000032",,
-"d0be6e21",,"E06000007",,3,,"Warrington",,,,"E06000007","Warrington",
-"bd8aad73",,"E10000031",,3,,"Warwickshire",,,,"E10000031","Warwickshire",
-"fb933de2",,"E06000037",,3,,"West Berkshire",,,,"E06000037","West Berkshire",
-"2483fcc9",,"E10000032",,3,,"West Sussex",,,,"E10000032","West Sussex",
-"0ab68912",,"E09000033",,3,,"Westminster",,,,"E09000033",,
-"07feb19e",,"E08000010",,3,,"Wigan",,,,"E08000010",,
-"34c0cbde",,"E06000054",,3,,"Wiltshire",,,,"E06000054","Wiltshire",
-"2ab63e86",,"E06000040",,3,,"Windsor and Maidenhead",,,,"E06000040","Windsor and Maidenhead",
-"77944511",,"E08000015",,3,,"Wirral",,,,"E08000015",,
-"5db10e10",,"E06000041",,3,,"Wokingham",,,,"E06000041","Wokingham",
-"42cfe38a",,"E08000031",,3,,"Wolverhampton",,,,"E08000031",,
-"cde059fc",,"E10000034",,3,,"Worcestershire",,,,"E10000034","Worcestershire",
-"50ac0eda",,"E06000014",,3,,"York",,,,"E06000014","York",
+"id","id_jhucsse_git","id_gov_uk","id_oxcgrt_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key","key_google_mobility","key_apple_mobility","key_type","key_nuts"
+"bfc9c60a","Anguilla",,,2,"Anguilla",,18.2206,-63.0686,18090,,,,,
+"0a3b5fa5","Bermuda",,,2,"Bermuda",,32.3078,-64.7505,63973,,,,,
+"0023de7a","British Virgin Islands",,,2,"British Virgin Islands",,18.4207,-64.64,29802,,,,,
+"c1c88c78","Cayman Islands",,,2,"Cayman Islands",,19.3133,-81.2546,64174,,,,,
+"16dbec58","Channel Islands",,,2,"Channel Islands",,49.3723,-2.3644,170499,,,,,
+"288f106c","Falkland Islands (Malvinas)",,,2,"Falkland Islands (Malvinas)",,-51.7963,-59.5236,3198,,,,,
+"770662fe","Gibraltar",,,2,"Gibraltar",,36.1408,-5.3536,33718,,,,,
+"fc9cad6b","Isle of Man",,,2,"Isle of Man",,54.2361,-4.5481,84077,,,,,
+"0f57ee60","Montserrat",,,2,"Montserrat",,16.7425,-62.1874,5373,,,,,
+"51b6c44c","Turks and Caicos Islands",,,2,"Turks and Caicos Islands",,21.694,-71.7979,37665,,,,,
+"c9813b4b",,"N92000002","UK_NIR",2,"Northern Ireland",,54.7877,-6.4923,1882000,"N92000002",,,"ONS","UKN"
+"e309aefb",,"S92000003","UK_SCO",2,"Scotland",,56.4907,-4.2026,5454000,"S92000003",,,"ONS","UKM"
+"20816a54",,"W92000004","UK_WAL",2,"Wales",,52.1307,-3.7837,3136000,"W92000004",,,"ONS","UKL"
+"71521b16",,"E12000004",,2,"East Midlands",,52.98,-0.75,4804149,"E12000004",,,"ONS","UKF"
+"9f5c7a3a",,"E12000006",,2,"East of England",,52.24,0.41,6201214,"E12000006",,,"ONS","UKH"
+"e85b4aac",,"E12000007",,2,"London",,51.507222,-0.1275,8908081,"E12000007",,"London","ONS","UKI"
+"0138ef99",,"E12000001",,2,"North East",,55,-1.8667,2657909,"E12000001",,,"ONS","UKC"
+"9831be23",,"E12000002",,2,"North West",,54.0167,-2.6333,7292093,"E12000002",,"North West","ONS","UKD"
+"78e4573d",,"E12000008",,2,"South East",,51.3167,-0.5,9133625,"E12000008",,,"ONS","UKJ"
+"0fe367ab",,"E12000009",,2,"South West",,50.96,-3.22,5599735,"E12000009",,,"ONS","UKK"
+"06552b80",,"E12000005",,2,"West Midlands",,52.47,-2.29,5900757,"E12000005","West Midlands",,"ONS","UKG"
+"ef368eb5",,"E12000003",,2,"Yorkshire and The Humber",,53.566667,-1.2,5479615,"E12000003",,,"ONS","UKE"
+"39ddcb14",,"E06000001",,3,,"Hartlepool",,,93836,"E06000001","Hartlepool",,"ONS","UKC11"
+"a0d49aae",,"E06000002",,3,,"Middlesbrough",,,141285,"E06000002","Middlesbrough",,"ONS","UKC12"
+"d7d3aa38",,"E06000003",,3,,"Redcar and Cleveland",,,137228,"E06000003","Redcar and Cleveland",,"ONS","UKC12"
+"49b73f9b",,"E06000004",,3,,"Stockton-on-Tees",,,197419,"E06000004","Stockton-on-Tees",,"ONS","UKC11"
+"3eb00f0d",,"E06000005",,3,,"Darlington",,,107402,"E06000005","Darlington",,"ONS","UKC13"
+"a7b95eb7",,"E06000006",,3,,"Halton",,,129759,"E06000006",,,"ONS","UKD71"
+"d0be6e21",,"E06000007",,3,,"Warrington",,,209397,"E06000007","Warrington",,"ONS","UKD61"
+"400173b0",,"E06000008",,3,,"Blackburn with Darwen",,,150030,"E06000008","Blackburn with Darwen",,"ONS","UKD41"
+"37064326",,"E06000009",,3,,"Blackpool",,,138381,"E06000009","Blackpool",,"ONS","UKD42"
+"57c1cac3",,"E06000010",,3,,"Kingston upon Hull, City of",,,259126,"E06000010","Kingston upon Hull",,"ONS","UKE11"
+"20c6fa55",,"E06000011",,3,,"East Riding of Yorkshire",,,343201,"E06000011","East Riding of Yorkshire",,"ONS","UKE12"
+"b9cfabef",,"E06000012",,3,,"North East Lincolnshire",,,159364,"E06000012","North East Lincolnshire",,"ONS","UKE13"
+"cec89b79",,"E06000013",,3,,"North Lincolnshire",,,172748,"E06000013","North Lincolnshire",,"ONS","UKE13"
+"50ac0eda",,"E06000014",,3,,"York",,,211012,"E06000014","York",,"ONS","UKE21"
+"27ab3e4c",,"E06000015",,3,,"Derby",,,256814,"E06000015","Derby",,"ONS","UKF11"
+"bea26ff6",,"E06000016",,3,,"Leicester",,,354036,"E06000016","Leicester",,"ONS","UKF21"
+"c9a55f60",,"E06000017",,3,,"Rutland",,,40476,"E06000017","Rutland",,"ONS","UKF22"
+"591a42f1",,"E06000018",,3,,"Nottingham",,,337098,"E06000018","Nottingham",,"ONS","UKF14"
+"2e1d7267",,"E06000019",,3,,"Herefordshire, County of",,,193615,"E06000019",,,"ONS","UKG11"
+"7cec9900",,"E06000020",,3,,"Telford and Wrekin",,,181322,"E06000020",,,"ONS","UKG21"
+"0beba996",,"E06000021",,3,,"Stoke-on-Trent",,,256622,"E06000021","Stoke-on-Trent",,"ONS","UKG23"
+"92e2f82c",,"E06000022",,3,,"Bath and North East Somerset",,,196357,"E06000022","Bath and North East Somerset",,"ONS","UKK12"
+"e5e5c8ba",,"E06000023",,3,,"Bristol, City of",,,465866,"E06000023","Bristol Cty",,"ONS","UKK11"
+"7b815d19",,"E06000024",,3,,"North Somerset",,,215574,"E06000024","North Somerset",,"ONS","UKK12"
+"0c866d8f",,"E06000025",,3,,"South Gloucestershire",,,287816,"E06000025","South Gloucestershire",,"ONS","UKK12"
+"958f3c35",,"E06000026",,3,,"Plymouth",,,262839,"E06000026","Plymouth",,"ONS","UKK41"
+"e2880ca3",,"E06000027",,3,,"Torbay",,,136218,"E06000027","Torbay",,"ONS","UKK42"
+"65f7a841",,"E06000030",,3,,"Swindon",,,222881,"E06000030","Swindon",,"ONS","UKK14"
+"12f098d7",,"E06000031",,3,,"Peterborough",,,202626,"E06000031","Peterborough",,"ONS","UKH11"
+"8bf9c96d",,"E06000032",,3,,"Luton",,,213528,"E06000032","Luton",,"ONS","UKH21"
+"fcfef9fb",,"E06000033",,3,,"Southend-on-Sea",,,182773,"E06000033","Southend-on-Sea",,"ONS","UKH31"
+"629a6c58",,"E06000034",,3,,"Thurrock",,,175531,"E06000034","Thurrock",,"ONS","UKH32"
+"159d5cce",,"E06000035",,3,,"Medway",,,279142,"E06000035","Medway",,"ONS","UKJ41"
+"8c940d74",,"E06000036",,3,,"Bracknell Forest",,,124165,"E06000036","Bracknell Forest",,"ONS","UKJ11"
+"fb933de2",,"E06000037",,3,,"West Berkshire",,,158465,"E06000037","West Berkshire",,"ONS","UKJ11"
+"6b2c2073",,"E06000038",,3,,"Reading",,,160337,"E06000038","Reading",,"ONS","UKJ11"
+"1c2b10e5",,"E06000039",,3,,"Slough",,,149577,"E06000039","Slough",,"ONS","UKJ11"
+"2ab63e86",,"E06000040",,3,,"Windsor and Maidenhead",,,151273,"E06000040","Windsor and Maidenhead",,"ONS","UKJ11"
+"5db10e10",,"E06000041",,3,,"Wokingham",,,173945,"E06000041","Wokingham",,"ONS","UKJ11"
+"c4b85faa",,"E06000042",,3,,"Milton Keynes",,,270203,"E06000042","Milton Keynes",,"ONS","UKJ12"
+"b3bf6f3c",,"E06000043",,3,,"Brighton and Hove",,,291738,"E06000043","Brighton and Hove",,"ONS","UKJ21"
+"2ddbfa9f",,"E06000044",,3,,"Portsmouth",,,214692,"E06000044","Portsmouth",,"ONS","UKJ31"
+"5adcca09",,"E06000045",,3,,"Southampton",,,252872,"E06000045","Southampton",,"ONS","UKJ32"
+"c3d59bb3",,"E06000046",,3,,"Isle of Wight",,,142296,"E06000046","Isle of Wight",,"ONS","UKJ34"
+"b4d2ab25",,"E06000047",,3,,"County Durham",,,533149,"E06000047","County Durham",,"ONS","UKC14"
+"536a8622",,"E06000049",,3,,"Cheshire East",,,386667,"E06000049","Cheshire East",,"ONS","UKD62"
+"33ad0fc7",,"E06000050",,3,,"Cheshire West and Chester",,,343823,"E06000050","Cheshire West and Chester",,"ONS","UKD63"
+"44aa3f51",,"E06000051",,3,,"Shropshire",,,325415,"E06000051","Shropshire",,"ONS","UKG22"
+"dda36eeb",,"E06000052",,3,,"Cornwall and Isles of Scilly",,,575525,"E06000052","Cornwall",,"ONS","UKK30"
+"34c0cbde",,"E06000054",,3,,"Wiltshire",,,504070,"E06000054","Wiltshire",,"ONS","UKK15"
+"43c7fb48",,"E06000055",,3,,"Bedford",,,174687,"E06000055","Bedford",,"ONS","UKH24"
+"daceaaf2",,"E06000056",,3,,"Central Bedfordshire",,,294096,"E06000056","Central Bedfordshire",,"ONS","UKH25"
+"adc99a64",,"E06000057",,3,,"Northumberland",,,323820,"E06000057","Northumberland",,"ONS","UKC21"
+"3d7687f5",,"E06000058",,3,,"Bournemouth, Christchurch and Poole",,,396989,"E06000058",,,"ONS","UKK21"
+"4a71b763",,"E06000059",,3,,"Dorset",,,379791,"E06000059","Dorset",,"ONS","UKK22"
+"efc0342f",,"E07000004",,3,,"Aylesbury Vale",,,206851,"E07000004",,,"ONS","UKJ13"
+"98c704b9",,"E07000005",,3,,"Chiltern",,,96219,"E07000005",,,"ONS","UKJ13"
+"01ce5503",,"E07000006",,3,,"South Bucks",,,70473,"E07000006",,,"ONS","UKJ13"
+"76c96595",,"E07000007",,3,,"Wycombe",,,173517,"E07000007",,,"ONS","UKJ13"
+"e6767804",,"E07000008",,3,,"Cambridge",,,125063,"E07000008",,,"ONS","UKH12"
+"91714892",,"E07000009",,3,,"East Cambridgeshire",,,90172,"E07000009",,,"ONS","UKH12"
+"f1b6c177",,"E07000010",,3,,"Fenland",,,102080,"E07000010",,,"ONS","UKH12"
+"86b1f1e1",,"E07000011",,3,,"Huntingdonshire",,,178985,"E07000011",,,"ONS","UKH12"
+"1fb8a05b",,"E07000012",,3,,"South Cambridgeshire",,,160904,"E07000012",,,"ONS","UKH12"
+"33f83781",,"E07000026",,3,,"Allerdale",,,97831,"E07000026",,,"ONS","UKD11"
+"44ff0717",,"E07000027",,3,,"Barrow-in-Furness",,,66726,"E07000027",,,"ONS","UKD11"
+"d4401a86",,"E07000028",,3,,"Carlisle",,,108524,"E07000028",,,"ONS","UKD12"
+"a3472a10",,"E07000029",,3,,"Copeland",,,68041,"E07000029",,,"ONS","UKD11"
+"c380a3f5",,"E07000030",,3,,"Eden",,,53754,"E07000030",,,"ONS","UKD12"
+"b4879363",,"E07000031",,3,,"South Lakeland",,,104905,"E07000031",,,"ONS","UKD12"
+"2d8ec2d9",,"E07000032",,3,,"Amber Valley",,,128829,"E07000032",,,"ONS","UKF13"
+"5a89f24f",,"E07000033",,3,,"Bolsover",,,81305,"E07000033",,,"ONS","UKF12"
+"c4ed67ec",,"E07000034",,3,,"Chesterfield",,,104930,"E07000034",,,"ONS","UKF12"
+"b3ea577a",,"E07000035",,3,,"Derbyshire Dales",,,72422,"E07000035",,,"ONS","UKF13"
+"2ae306c0",,"E07000036",,3,,"Erewash",,,115332,"E07000036",,,"ONS","UKF13"
+"5de43656",,"E07000037",,3,,"High Peak",,,92633,"E07000037",,,"ONS","UKF13"
+"cd5b2bc7",,"E07000038",,3,,"North East Derbyshire",,,102216,"E07000038",,,"ONS","UKF12"
+"ba5c1b51",,"E07000039",,3,,"South Derbyshire",,,109516,"E07000039",,,"ONS","UKF13"
+"8cc13532",,"E07000040",,3,,"East Devon",,,148080,"E07000040",,,"ONS","UKK43"
+"fbc605a4",,"E07000041",,3,,"Exeter",,,133333,"E07000041",,,"ONS","UKK43"
+"62cf541e",,"E07000042",,3,,"Mid Devon",,,83290,"E07000042",,,"ONS","UKK43"
+"15c86488",,"E07000043",,3,,"North Devon",,,98170,"E07000043",,,"ONS","UKK43"
+"8bacf12b",,"E07000044",,3,,"South Hams",,,87946,"E07000044",,,"ONS","UKK43"
+"fcabc1bd",,"E07000045",,3,,"Teignbridge",,,135039,"E07000045",,,"ONS","UKK43"
+"65a29007",,"E07000046",,3,,"Torridge",,,68719,"E07000046",,,"ONS","UKK43"
+"12a5a091",,"E07000047",,3,,"West Devon",,,56139,"E07000047",,,"ONS","UKK43"
+"c9f06726",,"E07000061",,3,,"Eastbourne",,,103324,"E07000061",,,"ONS","UKJ22"
+"50f9369c",,"E07000062",,3,,"Hastings",,,92554,"E07000062",,,"ONS","UKJ22"
+"27fe060a",,"E07000063",,3,,"Lewes",,,103525,"E07000063",,,"ONS","UKJ22"
+"b99a93a9",,"E07000064",,3,,"Rother",,,96716,"E07000064",,,"ONS","UKJ22"
+"ce9da33f",,"E07000065",,3,,"Wealden",,,162733,"E07000065",,,"ONS","UKJ22"
+"5794f285",,"E07000066",,3,,"Basildon",,,187558,"E07000066",,,"ONS","UKH37"
+"2093c213",,"E07000067",,3,,"Braintree",,,153091,"E07000067",,,"ONS","UKH34"
+"b02cdf82",,"E07000068",,3,,"Brentwood",,,77242,"E07000068",,,"ONS","UKH36"
+"c72bef14",,"E07000069",,3,,"Castle Point",,,90524,"E07000069",,,"ONS","UKH37"
+"a7ec66f1",,"E07000070",,3,,"Chelmsford",,,179549,"E07000070",,,"ONS","UKH36"
+"d0eb5667",,"E07000071",,3,,"Colchester",,,197200,"E07000071",,,"ONS","UKH34"
+"49e207dd",,"E07000072",,3,,"Epping Forest",,,132175,"E07000072",,,"ONS","UKH35"
+"3ee5374b",,"E07000073",,3,,"Harlow",,,87280,"E07000073",,,"ONS","UKH35"
+"a081a2e8",,"E07000074",,3,,"Maldon",,,65401,"E07000074",,,"ONS","UKH36"
+"d786927e",,"E07000075",,3,,"Rochford",,,87627,"E07000075",,,"ONS","UKH37"
+"4e8fc3c4",,"E07000076",,3,,"Tendring",,,147353,"E07000076",,,"ONS","UKH34"
+"3988f352",,"E07000077",,3,,"Uttlesford",,,92759,"E07000077",,,"ONS","UKH35"
+"a937eec3",,"E07000078",,3,,"Cheltenham",,,116043,"E07000078",,,"ONS","UKK13"
+"de30de55",,"E07000079",,3,,"Cotswold",,,90264,"E07000079",,,"ONS","UKK13"
+"20747a3e",,"E07000080",,3,,"Forest of Dean",,,87107,"E07000080",,,"ONS","UKK13"
+"57734aa8",,"E07000081",,3,,"Gloucester",,,129709,"E07000081",,,"ONS","UKK13"
+"ce7a1b12",,"E07000082",,3,,"Stroud",,,120903,"E07000082",,,"ONS","UKK13"
+"b97d2b84",,"E07000083",,3,,"Tewkesbury",,,96624,"E07000083",,,"ONS","UKK13"
+"2719be27",,"E07000084",,3,,"Basingstoke and Deane",,,177760,"E07000084",,,"ONS","UKJ37"
+"501e8eb1",,"E07000085",,3,,"East Hampshire",,,123838,"E07000085",,,"ONS","UKJ36"
+"c917df0b",,"E07000086",,3,,"Eastleigh",,,135520,"E07000086",,,"ONS","UKJ35"
+"be10ef9d",,"E07000087",,3,,"Fareham",,,116338,"E07000087",,,"ONS","UKJ35"
+"2eaff20c",,"E07000088",,3,,"Gosport",,,84679,"E07000088",,,"ONS","UKJ35"
+"59a8c29a",,"E07000089",,3,,"Hart",,,97608,"E07000089",,,"ONS","UKJ37"
+"396f4b7f",,"E07000090",,3,,"Havant",,,126339,"E07000090",,,"ONS","UKJ35"
+"4e687be9",,"E07000091",,3,,"New Forest",,,179649,"E07000091",,,"ONS","UKJ36"
+"d7612a53",,"E07000092",,3,,"Rushmoor",,,94387,"E07000092",,,"ONS","UKJ37"
+"a0661ac5",,"E07000093",,3,,"Test Valley",,,127163,"E07000093",,,"ONS","UKJ36"
+"3e028f66",,"E07000094",,3,,"Winchester",,,125925,"E07000094",,,"ONS","UKJ36"
+"4905bff0",,"E07000095",,3,,"Broxbourne",,,97592,"E07000095",,,"ONS","UKH23"
+"d00cee4a",,"E07000096",,3,,"Dacorum",,,155457,"E07000096",,,"ONS","UKH23"
+"37b4c34d",,"E07000098",,3,,"Hertsmere",,,105471,"E07000098",,,"ONS","UKH23"
+"40b3f3db",,"E07000099",,3,,"North Hertfordshire",,,133463,"E07000099",,,"ONS","UKH23"
+"0761fb2d",,"E07000102",,3,,"Three Rivers",,,93966,"E07000102",,,"ONS","UKH23"
+"7066cbbb",,"E07000103",,3,,"Watford",,,96623,"E07000103",,,"ONS","UKH23"
+"99056e8e",,"E07000105",,3,,"Ashford",,,131018,"E07000105",,,"ONS","UKJ45"
+"000c3f34",,"E07000106",,3,,"Canterbury",,,166762,"E07000106",,,"ONS","UKJ44"
+"770b0fa2",,"E07000107",,3,,"Dartford",,,114051,"E07000107",,,"ONS","UKJ43"
+"e7b41233",,"E07000108",,3,,"Dover",,,118514,"E07000108",,,"ONS","UKJ44"
+"90b322a5",,"E07000109",,3,,"Gravesham",,,106890,"E07000109",,,"ONS","UKJ43"
+"f074ab40",,"E07000110",,3,,"Maidstone",,,173132,"E07000110",,,"ONS","UKJ45"
+"87739bd6",,"E07000111",,3,,"Sevenoaks",,,121387,"E07000111",,,"ONS","UKJ46"
+"1e7aca6c",,"E07000112",,3,,"Folkestone and Hythe",,,113320,"E07000112",,,"ONS","UKJ44"
+"697dfafa",,"E07000113",,3,,"Swale",,,151015,"E07000113",,,"ONS","UKJ43"
+"f7196f59",,"E07000114",,3,,"Thanet",,,141458,"E07000114",,,"ONS","UKJ44"
+"801e5fcf",,"E07000115",,3,,"Tonbridge and Malling",,,132571,"E07000115",,,"ONS","UKJ46"
+"19170e75",,"E07000116",,3,,"Tunbridge Wells",,,118939,"E07000116",,,"ONS","UKJ46"
+"6e103ee3",,"E07000117",,3,,"Burnley",,,89344,"E07000117",,,"ONS","UKD46"
+"feaf2372",,"E07000118",,3,,"Chorley",,,118870,"E07000118",,,"ONS","UKD47"
+"89a813e4",,"E07000119",,3,,"Fylde",,,81211,"E07000119",,,"ONS","UKD45"
+"db59f883",,"E07000120",,3,,"Hyndburn",,,81133,"E07000120",,,"ONS","UKD46"
+"ac5ec815",,"E07000121",,3,,"Lancaster",,,148119,"E07000121",,,"ONS","UKD44"
+"355799af",,"E07000122",,3,,"Pendle",,,92145,"E07000122",,,"ONS","UKD46"
+"4250a939",,"E07000123",,3,,"Preston",,,144147,"E07000123",,,"ONS","UKD45"
+"dc343c9a",,"E07000124",,3,,"Ribble Valley",,,62026,"E07000124",,,"ONS","UKD45"
+"ab330c0c",,"E07000125",,3,,"Rossendale",,,71432,"E07000125",,,"ONS","UKD46"
+"323a5db6",,"E07000126",,3,,"South Ribble",,,111086,"E07000126",,,"ONS","UKD45"
+"453d6d20",,"E07000127",,3,,"West Lancashire",,,114496,"E07000127",,,"ONS","UKD47"
+"d58270b1",,"E07000128",,3,,"Wyre",,,113067,"E07000128",,,"ONS","UKD44"
+"a2854027",,"E07000129",,3,,"Blaby",,,101950,"E07000129",,,"ONS","UKF22"
+"c242c9c2",,"E07000130",,3,,"Charnwood",,,188416,"E07000130",,,"ONS","UKF22"
+"b545f954",,"E07000131",,3,,"Harborough",,,95537,"E07000131",,,"ONS","UKF22"
+"2c4ca8ee",,"E07000132",,3,,"Hinckley and Bosworth",,,113666,"E07000132",,,"ONS","UKF22"
+"5b4b9878",,"E07000133",,3,,"Melton",,,51394,"E07000133",,,"ONS","UKF22"
+"c52f0ddb",,"E07000134",,3,,"North West Leicestershire",,,104809,"E07000134",,,"ONS","UKF22"
+"b2283d4d",,"E07000135",,3,,"Oadby and Wigston",,,57313,"E07000135",,,"ONS","UKF22"
+"2b216cf7",,"E07000136",,3,,"Boston",,,70837,"E07000136",,,"ONS","UKF30"
+"5c265c61",,"E07000137",,3,,"East Lindsey",,,142030,"E07000137",,,"ONS","UKF30"
+"cc9941f0",,"E07000138",,3,,"Lincoln",,,100049,"E07000138",,,"ONS","UKF30"
+"bb9e7166",,"E07000139",,3,,"North Kesteven",,,118149,"E07000139",,,"ONS","UKF30"
+"8d035f05",,"E07000140",,3,,"South Holland",,,95857,"E07000140",,,"ONS","UKF30"
+"fa046f93",,"E07000141",,3,,"South Kesteven",,,143225,"E07000141",,,"ONS","UKF30"
+"630d3e29",,"E07000142",,3,,"West Lindsey",,,96186,"E07000142",,,"ONS","UKF30"
+"140a0ebf",,"E07000143",,3,,"Breckland",,,141255,"E07000143",,,"ONS","UKH17"
+"8a6e9b1c",,"E07000144",,3,,"Broadland",,,131931,"E07000144",,,"ONS","UKH15"
+"fd69ab8a",,"E07000145",,3,,"Great Yarmouth",,,99198,"E07000145",,,"ONS","UKH15"
+"6460fa30",,"E07000146",,3,,"King's Lynn and West Norfolk",,,151245,"E07000146",,,"ONS","UKH16"
+"1367caa6",,"E07000147",,3,,"North Norfolk",,,105167,"E07000147",,,"ONS","UKH16"
+"83d8d737",,"E07000148",,3,,"Norwich",,,142177,"E07000148",,,"ONS","UKH15"
+"f4dfe7a1",,"E07000149",,3,,"South Norfolk",,,143066,"E07000149",,,"ONS","UKH17"
+"94186e44",,"E07000150",,3,,"Corby",,,73053,"E07000150",,,"ONS","UKF25"
+"e31f5ed2",,"E07000151",,3,,"Daventry",,,86951,"E07000151",,,"ONS","UKF24"
+"7a160f68",,"E07000152",,3,,"East Northamptonshire",,,95103,"E07000152",,,"ONS","UKF25"
+"0d113ffe",,"E07000153",,3,,"Kettering",,,102211,"E07000153",,,"ONS","UKF25"
+"9375aa5d",,"E07000154",,3,,"Northampton",,,224290,"E07000154",,,"ONS","UKF24"
+"e4729acb",,"E07000155",,3,,"South Northamptonshire",,,95492,"E07000155",,,"ONS","UKF24"
+"7d7bcb71",,"E07000156",,3,,"Wellingborough",,,80081,"E07000156",,,"ONS","UKF25"
+"263c6c3d",,"E07000163",,3,,"Craven",,,57338,"E07000163",,,"ONS","UKE22"
+"b858f99e",,"E07000164",,3,,"Hambleton",,,91932,"E07000164",,,"ONS","UKE22"
+"cf5fc908",,"E07000165",,3,,"Harrogate",,,161545,"E07000165",,,"ONS","UKE22"
+"565698b2",,"E07000166",,3,,"Richmondshire",,,53732,"E07000166",,,"ONS","UKE22"
+"2151a824",,"E07000167",,3,,"Ryedale",,,55629,"E07000167",,,"ONS","UKE22"
+"b1eeb5b5",,"E07000168",,3,,"Scarborough",,,108737,"E07000168",,,"ONS","UKE22"
+"c6e98523",,"E07000169",,3,,"Selby",,,91697,"E07000169",,,"ONS","UKE22"
+"a62e0cc6",,"E07000170",,3,,"Ashfield",,,128337,"E07000170",,,"ONS","UKF15"
+"d1293c50",,"E07000171",,3,,"Bassetlaw",,,118280,"E07000171",,,"ONS","UKF15"
+"48206dea",,"E07000172",,3,,"Broxtowe",,,114627,"E07000172",,,"ONS","UKF16"
+"3f275d7c",,"E07000173",,3,,"Gedling",,,118239,"E07000173",,,"ONS","UKF16"
+"a143c8df",,"E07000174",,3,,"Mansfield",,,109351,"E07000174",,,"ONS","UKF15"
+"d644f849",,"E07000175",,3,,"Newark and Sherwood",,,123127,"E07000175",,,"ONS","UKF15"
+"4f4da9f3",,"E07000176",,3,,"Rushcliffe",,,121416,"E07000176",,,"ONS","UKF16"
+"384a9965",,"E07000177",,3,,"Cherwell",,,151846,"E07000177",,,"ONS","UKJ14"
+"a8f584f4",,"E07000178",,3,,"Oxford",,,151584,"E07000178",,,"ONS","UKJ14"
+"dff2b462",,"E07000179",,3,,"South Oxfordshire",,,143782,"E07000179",,,"ONS","UKJ14"
+"21b61009",,"E07000180",,3,,"Vale of White Horse",,,137910,"E07000180",,,"ONS","UKJ14"
+"56b1209f",,"E07000181",,3,,"West Oxfordshire",,,111758,"E07000181",,,"ONS","UKJ14"
+"bfd285aa",,"E07000187",,3,,"Mendip",,,116288,"E07000187",,,"ONS","UKK23"
+"2f6d983b",,"E07000188",,3,,"Sedgemoor",,,123446,"E07000188",,,"ONS","UKK23"
+"586aa8ad",,"E07000189",,3,,"South Somerset",,,168696,"E07000189",,,"ONS","UKK23"
+"d6a34064",,"E07000192",,3,,"Cannock Chase",,,101484,"E07000192",,,"ONS","UKG24"
+"a1a470f2",,"E07000193",,3,,"East Staffordshire",,,120923,"E07000193",,,"ONS","UKG24"
+"3fc0e551",,"E07000194",,3,,"Lichfield",,,105637,"E07000194",,,"ONS","UKG24"
+"48c7d5c7",,"E07000195",,3,,"Newcastle-under-Lyme",,,129610,"E07000195",,,"ONS","UKG24"
+"d1ce847d",,"E07000196",,3,,"South Staffordshire",,,112369,"E07000196",,,"ONS","UKG24"
+"a6c9b4eb",,"E07000197",,3,,"Stafford",,,137858,"E07000197",,,"ONS","UKG24"
+"3676a97a",,"E07000198",,3,,"Staffordshire Moorlands",,,98427,"E07000198",,,"ONS","UKG24"
+"417199ec",,"E07000199",,3,,"Tamworth",,,76864,"E07000199",,,"ONS","UKG24"
+"eb292458",,"E07000200",,3,,"Babergh",,,92735,"E07000200",,,"ONS","UKH14"
+"05274574",,"E07000202",,3,,"Ipswich",,,135979,"E07000202",,,"ONS","UKH14"
+"722075e2",,"E07000203",,3,,"Mid Suffolk",,,104857,"E07000203",,,"ONS","UKH14"
+"754db1fb",,"E07000207",,3,,"Elmbridge",,,137215,"E07000207",,,"ONS","UKJ25"
+"e5f2ac6a",,"E07000208",,3,,"Epsom and Ewell",,,81003,"E07000208",,,"ONS","UKJ26"
+"92f59cfc",,"E07000209",,3,,"Guildford",,,150352,"E07000209",,,"ONS","UKJ25"
+"f2321519",,"E07000210",,3,,"Mole Valley",,,87547,"E07000210",,,"ONS","UKJ26"
+"8535258f",,"E07000211",,3,,"Reigate and Banstead",,,149243,"E07000211",,,"ONS","UKJ26"
+"1c3c7435",,"E07000212",,3,,"Runnymede",,,90327,"E07000212",,,"ONS","UKJ25"
+"6b3b44a3",,"E07000213",,3,,"Spelthorne",,,99873,"E07000213",,,"ONS","UKJ25"
+"f55fd100",,"E07000214",,3,,"Surrey Heath",,,89204,"E07000214",,,"ONS","UKJ25"
+"8258e196",,"E07000215",,3,,"Tandridge",,,88542,"E07000215",,,"ONS","UKJ26"
+"1b51b02c",,"E07000216",,3,,"Waverley",,,126556,"E07000216",,,"ONS","UKJ25"
+"6c5680ba",,"E07000217",,3,,"Woking",,,100008,"E07000217",,,"ONS","UKJ25"
+"fce99d2b",,"E07000218",,3,,"North Warwickshire",,,65452,"E07000218",,,"ONS","UKG13"
+"8beeadbd",,"E07000219",,3,,"Nuneaton and Bedworth",,,130373,"E07000219",,,"ONS","UKG13"
+"d91f46da",,"E07000220",,3,,"Rugby",,,110650,"E07000220",,,"ONS","UKG13"
+"ae18764c",,"E07000221",,3,,"Stratford-on-Avon",,,132402,"E07000221",,,"ONS","UKG13"
+"371127f6",,"E07000222",,3,,"Warwick",,,144909,"E07000222",,,"ONS","UKG13"
+"40161760",,"E07000223",,3,,"Adur",,,64187,"E07000223",,,"ONS","UKJ27"
+"de7282c3",,"E07000224",,3,,"Arun",,,161123,"E07000224",,,"ONS","UKJ27"
+"a975b255",,"E07000225",,3,,"Chichester",,,121508,"E07000225",,,"ONS","UKJ27"
+"307ce3ef",,"E07000226",,3,,"Crawley",,,112474,"E07000226",,,"ONS","UKJ28"
+"477bd379",,"E07000227",,3,,"Horsham",,,145474,"E07000227",,,"ONS","UKJ28"
+"d7c4cee8",,"E07000228",,3,,"Mid Sussex",,,152142,"E07000228",,,"ONS","UKJ28"
+"a0c3fe7e",,"E07000229",,3,,"Worthing",,,110727,"E07000229",,,"ONS","UKJ27"
+"c769b382",,"E07000234",,3,,"Bromsgrove",,,100569,"E07000234",,,"ONS","UKG12"
+"b06e8314",,"E07000235",,3,,"Malvern Hills",,,79445,"E07000235",,,"ONS","UKG12"
+"2967d2ae",,"E07000236",,3,,"Redditch",,,85568,"E07000236",,,"ONS","UKG12"
+"5e60e238",,"E07000237",,3,,"Worcester",,,100265,"E07000237",,,"ONS","UKG12"
+"cedfffa9",,"E07000238",,3,,"Wychavon",,,131084,"E07000238",,,"ONS","UKG12"
+"b9d8cf3f",,"E07000239",,3,,"Wyre Forest",,,101139,"E07000239",,,"ONS","UKG12"
+"8f45e15c",,"E07000240",,3,,"St Albans",,,149317,"E07000240",,,"ONS","UKH23"
+"f842d1ca",,"E07000241",,3,,"Welwyn Hatfield",,,123893,"E07000241",,,"ONS","UKH23"
+"614b8070",,"E07000242",,3,,"East Hertfordshire",,,151786,"E07000242",,,"ONS","UKH23"
+"164cb0e6",,"E07000243",,3,,"Stevenage",,,88104,"E07000243",,,"ONS","UKH23"
+"88282545",,"E07000244",,3,,"East Suffolk",,,250373,"E07000244",,,"ONS","UKH14"
+"ff2f15d3",,"E07000245",,3,,"West Suffolk",,,177302,"E07000245",,,"ONS","UKH14"
+"66264469",,"E07000246",,3,,"Somerset West and Taunton",,,155421,"E07000246",,,"ONS","UKK12"
+"69e2b049",,"E08000001",,3,,"Bolton",,,288248,"E08000001",,,"ONS","UKD36"
+"f0ebe1f3",,"E08000002",,3,,"Bury",,,190708,"E08000002",,,"ONS","UKD37"
+"87ecd165",,"E08000003",,3,,"Manchester",,,555741,"E08000003",,,"ONS","UKD33"
+"198844c6",,"E08000004",,3,,"Oldham",,,237628,"E08000004",,,"ONS","UKD37"
+"6e8f7450",,"E08000005",,3,,"Rochdale",,,223659,"E08000005",,,"ONS","UKD37"
+"f78625ea",,"E08000006",,3,,"Salford",,,262697,"E08000006",,,"ONS","UKD34"
+"8081157c",,"E08000007",,3,,"Stockport",,,294197,"E08000007",,,"ONS","UKD35"
+"103e08ed",,"E08000008",,3,,"Tameside",,,227117,"E08000008",,,"ONS","UKD35"
+"6739387b",,"E08000009",,3,,"Trafford",,,237579,"E08000009",,,"ONS","UKD34"
+"07feb19e",,"E08000010",,3,,"Wigan",,,330712,"E08000010",,,"ONS","UKD36"
+"70f98108",,"E08000011",,3,,"Knowsley",,,152452,"E08000011",,,"ONS","UKD71"
+"e9f0d0b2",,"E08000012",,3,,"Liverpool",,,500474,"E08000012",,,"ONS","UKD72"
+"9ef7e024",,"E08000013",,3,,"St. Helens",,,181095,"E08000013",,,"ONS","UKD71"
+"00937587",,"E08000014",,3,,"Sefton",,,275899,"E08000014",,,"ONS","UKD73"
+"77944511",,"E08000015",,3,,"Wirral",,,324336,"E08000015",,,"ONS","UKD74"
+"ee9d14ab",,"E08000016",,3,,"Barnsley",,,248071,"E08000016",,,"ONS","UKE31"
+"999a243d",,"E08000017",,3,,"Doncaster",,,312785,"E08000017",,,"ONS","UKE31"
+"092539ac",,"E08000018",,3,,"Rotherham",,,264984,"E08000018",,,"ONS","UKE31"
+"7e22093a",,"E08000019",,3,,"Sheffield",,,589214,"E08000019",,,"ONS","UKE32"
+"5bd4d2cb",,"E08000021",,3,,"Newcastle upon Tyne",,,306824,"E08000021",,,"ONS","UKC22"
+"c2dd8371",,"E08000022",,3,,"North Tyneside",,,208871,"E08000022",,,"ONS","UKC22"
+"b5dab3e7",,"E08000023",,3,,"South Tyneside",,,151133,"E08000023",,,"ONS","UKC22"
+"2bbe2644",,"E08000024",,3,,"Sunderland",,,277846,"E08000024",,,"ONS","UKC23"
+"5cb916d2",,"E08000025",,3,,"Birmingham",,,1140525,"E08000025",,,"ONS","UKG31"
+"c5b04768",,"E08000026",,3,,"Coventry",,,379387,"E08000026",,,"ONS","UKG33"
+"b2b777fe",,"E08000027",,3,,"Dudley",,,322363,"E08000027",,,"ONS","UKG36"
+"22086a6f",,"E08000028",,3,,"Sandwell",,,329042,"E08000028",,,"ONS","UKG37"
+"550f5af9",,"E08000029",,3,,"Solihull",,,217487,"E08000029",,,"ONS","UKG32"
+"35c8d31c",,"E08000030",,3,,"Walsall",,,286716,"E08000030",,,"ONS","UKG38"
+"42cfe38a",,"E08000031",,3,,"Wolverhampton",,,264407,"E08000031",,,"ONS","UKG39"
+"dbc6b230",,"E08000032",,3,,"Bradford",,,542128,"E08000032",,,"ONS","UKE41"
+"acc182a6",,"E08000033",,3,,"Calderdale",,,211439,"E08000033",,,"ONS","UKE44"
+"32a51705",,"E08000034",,3,,"Kirklees",,,441290,"E08000034",,,"ONS","UKE44"
+"45a22793",,"E08000035",,3,,"Leeds",,,798786,"E08000035",,,"ONS","UKE42"
+"dcab7629",,"E08000036",,3,,"Wakefield",,,351592,"E08000036",,,"ONS","UKE45"
+"abac46bf",,"E08000037",,3,,"Gateshead",,,201950,"E08000037",,,"ONS","UKC22"
+"569cea47",,"E09000002",,3,,"Barking and Dagenham",,,214107,"E09000002",,,"ONS","UKI52"
+"219bdad1",,"E09000003",,3,,"Barnet",,,399007,"E09000003",,,"ONS","UKI71"
+"bfff4f72",,"E09000004",,3,,"Bexley",,,249301,"E09000004",,,"ONS","UKI51"
+"c8f87fe4",,"E09000005",,3,,"Brent",,,327753,"E09000005",,,"ONS","UKI72"
+"51f12e5e",,"E09000006",,3,,"Bromley",,,332752,"E09000006",,,"ONS","UKI61"
+"26f61ec8",,"E09000007",,3,,"Camden",,,279516,"E09000007",,,"ONS","UKI31"
+"b6490359",,"E09000008",,3,,"Croydon",,,388563,"E09000008",,,"ONS","UKI62"
+"c14e33cf",,"E09000009",,3,,"Ealing",,,340341,"E09000009",,,"ONS","UKI73"
+"a189ba2a",,"E09000010",,3,,"Enfield",,,333587,"E09000010",,,"ONS","UKI54"
+"d68e8abc",,"E09000011",,3,,"Greenwich",,,289034,"E09000011",,,"ONS","UKI51"
+"4f87db06",,"E09000012",,3,,"Hackney and City of London",,,291879,"E09000012",,,"ONS","UKI41"
+"3880eb90",,"E09000013",,3,,"Hammersmith and Fulham",,,183544,"E09000013",,,"ONS","UKI33"
+"a6e47e33",,"E09000014",,3,,"Haringey",,,266357,"E09000014",,,"ONS","UKI43"
+"d1e34ea5",,"E09000015",,3,,"Harrow",,,252338,"E09000015",,,"ONS","UKI74"
+"48ea1f1f",,"E09000016",,3,,"Havering",,,260651,"E09000016",,,"ONS","UKI52"
+"3fed2f89",,"E09000017",,3,,"Hillingdon",,,309014,"E09000017",,,"ONS","UKI74"
+"af523218",,"E09000018",,3,,"Hounslow",,,271767,"E09000018",,,"ONS","UKI75"
+"d855028e",,"E09000019",,3,,"Islington",,,248115,"E09000019",,,"ONS","UKI43"
+"8aa4e9e9",,"E09000020",,3,,"Kensington and Chelsea",,,156864,"E09000020",,,"ONS","UKI33"
+"fda3d97f",,"E09000021",,3,,"Kingston upon Thames",,,179142,"E09000021",,,"ONS","UKI63"
+"64aa88c5",,"E09000022",,3,,"Lambeth",,,321813,"E09000022",,,"ONS","UKI45"
+"13adb853",,"E09000023",,3,,"Lewisham",,,305309,"E09000023",,,"ONS","UKI44"
+"8dc92df0",,"E09000024",,3,,"Merton",,,206453,"E09000024",,,"ONS","UKI63"
+"face1d66",,"E09000025",,3,,"Newham",,,355266,"E09000025",,,"ONS","UKI41"
+"63c74cdc",,"E09000026",,3,,"Redbridge",,,305658,"E09000026",,,"ONS","UKI53"
+"14c07c4a",,"E09000027",,3,,"Richmond upon Thames",,,198141,"E09000027",,,"ONS","UKI75"
+"847f61db",,"E09000028",,3,,"Southwark",,,320017,"E09000028",,,"ONS","UKI44"
+"f378514d",,"E09000029",,3,,"Sutton",,,207707,"E09000029",,,"ONS","UKI63"
+"93bfd8a8",,"E09000030",,3,,"Tower Hamlets",,,331969,"E09000030",,,"ONS","UKI42"
+"e4b8e83e",,"E09000031",,3,,"Waltham Forest",,,276940,"E09000031",,,"ONS","UKI53"
+"7db1b984",,"E09000032",,3,,"Wandsworth",,,329735,"E09000032",,,"ONS","UKI34"
+"0ab68912",,"E09000033",,3,,"Westminster",,,269848,"E09000033",,,"ONS","UKI32"
+"4dc02520",,"N09000001",,3,,"Antrim and Newtownabbey",,,143756,"N09000001",,,"ONS","UKN13"
+"d4c9749a",,"N09000002",,3,,"Armagh City, Banbridge and Craigavon",,,217232,"N09000002",,,"ONS","UKN07"
+"a3ce440c",,"N09000003",,3,,"Belfast",,,342560,"N09000003",,,"ONS","UKN06"
+"3daad1af",,"N09000004",,3,,"Causeway Coast and Glens",,,144943,"N09000004",,,"ONS","UKN12"
+"4aade139",,"N09000005",,3,,"Derry City and Strabane",,,151109,"N09000005",,,"ONS","UKN10"
+"d3a4b083",,"N09000006",,3,,"Fermanagh and Omagh",,,117337,"N09000006",,,"ONS","UKN16"
+"a4a38015",,"N09000007",,3,,"Lisburn and Castlereagh",,,146452,"N09000007",,,"ONS","UKN14"
+"341c9d84",,"N09000008",,3,,"Mid and East Antrim",,,139443,"N09000008",,,"ONS","UKN15"
+"431bad12",,"N09000009",,3,,"Mid Ulster",,,148953,"N09000009",,,"ONS","UKN11"
+"23dc24f7",,"N09000010",,3,,"Newry, Mourne and Down",,,181669,"N09000010",,,"ONS","UKN08"
+"54db1461",,"N09000011",,3,,"Ards and North Down",,,162056,"N09000011",,,"ONS","UKN09"
+"d98f107b",,"S12000005",,3,,"Clackmannanshire",,,51290,"S12000005",,,"ONS","UKM72"
+"408641c1",,"S12000006",,3,,"Dumfries and Galloway",,,148290,"S12000006",,,"ONS","UKM92"
+"a73e6cc6",,"S12000008",,3,,"East Ayrshire",,,121600,"S12000008",,,"ONS","UKM93"
+"b0fed5b5",,"S12000010",,3,,"East Lothian",,,107900,"S12000010",,,"ONS","UKM73"
+"c7f9e523",,"S12000011",,3,,"East Renfrewshire",,,96060,"S12000011",,,"ONS","UKM83"
+"29f7840f",,"S12000013",,3,,"Comhairle nan Eilean Siar",,,26500,"S12000013",,,"ONS","UKM64"
+"b79311ac",,"S12000014",,3,,"Falkirk",,,160560,"S12000014",,,"ONS","UKM76"
+"2e9a4016",,"S12000017",,3,,"Highland",,,235430,"S12000017",,,"ONS","UKM63"
+"be255d87",,"S12000018",,3,,"Inverclyde",,,77060,"S12000018",,,"ONS","UKM83"
+"c9226d11",,"S12000019",,3,,"Midlothian",,,93150,"S12000019",,,"ONS","UKM73"
+"9bd38676",,"S12000020",,3,,"Moray",,,95710,"S12000020",,,"ONS","UKM62"
+"ecd4b6e0",,"S12000021",,3,,"North Ayrshire",,,134250,"S12000021",,,"ONS","UKM93"
+"02dad7cc",,"S12000023",,3,,"Orkney Islands",,,22400,"S12000023",,,"ONS","UKM65"
+"72b02343",,"S12000026",,3,,"Scottish Borders",,,115240,"S12000026",,,"ONS","UKM91"
+"05b713d5",,"S12000027",,3,,"Shetland Islands",,,22870,"S12000027",,,"ONS","UKM66"
+"95080e44",,"S12000028",,3,,"South Ayrshire",,,112140,"S12000028",,,"ONS","UKM94"
+"e20f3ed2",,"S12000029",,3,,"South Lanarkshire",,,320820,"S12000029",,,"ONS","UKM38"
+"82c8b737",,"S12000030",,3,,"Stirling",,,94080,"S12000030",,,"ONS","UKM77"
+"1bc1e68d",,"S12000033",,3,,"Aberdeen City",,,229060,"S12000033",,,"ONS","UKM50"
+"85a5732e",,"S12000034",,3,,"Aberdeenshire",,,260780,"S12000034",,,"ONS","UKM50"
+"f2a243b8",,"S12000035",,3,,"Argyll and Bute",,,85430,"S12000035",,,"ONS","UKM81"
+"6bab1202",,"S12000036",,3,,"City of Edinburgh",,,527620,"S12000036",,,"ONS","UKM75"
+"8c133f05",,"S12000038",,3,,"Renfrewshire",,,179390,"S12000038",,,"ONS","UKM83"
+"fb140f93",,"S12000039",,3,,"West Dunbartonshire",,,88340,"S12000039",,,"ONS","UKM81"
+"cd8921f0",,"S12000040",,3,,"West Lothian",,,183820,"S12000040",,,"ONS","UKM78"
+"ba8e1166",,"S12000041",,3,,"Angus",,,115820,"S12000041",,,"ONS","UKM71"
+"238740dc",,"S12000042",,3,,"Dundee City",,,148820,"S12000042",,,"ONS","UKM71"
+"bde3d57f",,"S12000045",,3,,"East Dunbartonshire",,,108750,"S12000045",,,"ONS","UKM81"
+"53edb453",,"S12000047",,3,,"Fife",,,374130,"S12000047",,,"ONS","UKM72"
+"c352a9c2",,"S12000048",,3,,"Perth and Kinross",,,151910,"S12000048",,,"ONS","UKM77"
+"b4559954",,"S12000049",,3,,"Glasgow City",,,635640,"S12000049",,,"ONS","UKM34"
+"d49210b1",,"S12000050",,3,,"North Lanarkshire",,,341140,"S12000050",,,"ONS","UKM36"
+"bbeba1e3",,"W06000001",,3,,"Isle of Anglesey",,,70440,"W06000001",,,"ONS","UKL11"
+"22e2f059",,"W06000002",,3,,"Gwynedd",,,125171,"W06000002",,,"ONS","UKL12"
+"55e5c0cf",,"W06000003",,3,,"Conwy",,,118184,"W06000003",,,"ONS","UKL13"
+"cb81556c",,"W06000004",,3,,"Denbighshire",,,96664,"W06000004",,,"ONS","UKL13"
+"bc8665fa",,"W06000005",,3,,"Flintshire",,,156847,"W06000005",,,"ONS","UKL23"
+"258f3440",,"W06000006",,3,,"Wrexham",,,136055,"W06000006",,,"ONS","UKL23"
+"c2371947",,"W06000008",,3,,"Ceredigion",,,72895,"W06000008",,,"ONS","UKL14"
+"b53029d1",,"W06000009",,3,,"Pembrokeshire",,,126751,"W06000009",,,"ONS","UKL14"
+"d5f7a034",,"W06000010",,3,,"Carmarthenshire",,,190073,"W06000010",,,"ONS","UKL14"
+"a2f090a2",,"W06000011",,3,,"Swansea",,,246563,"W06000011",,,"ONS","UKL18"
+"3bf9c118",,"W06000012",,3,,"Neath Port Talbot",,,144386,"W06000012",,,"ONS","UKL17"
+"4cfef18e",,"W06000013",,3,,"Bridgend",,,147539,"W06000013",,,"ONS","UKL17"
+"d29a642d",,"W06000014",,3,,"Vale of Glamorgan",,,135295,"W06000014",,,"ONS","UKL22"
+"a59d54bb",,"W06000015",,3,,"Cardiff",,,369202,"W06000015",,,"ONS","UKL22"
+"3c940501",,"W06000016",,3,,"Rhondda Cynon Taf",,,241873,"W06000016",,,"ONS","UKL15"
+"db2c2806",,"W06000018",,3,,"Caerphilly",,,181731,"W06000018",,,"ONS","UKL16"
+"ac2b1890",,"W06000019",,3,,"Blaenau Gwent",,,70020,"W06000019",,,"ONS","UKL16"
+"fedaf3f7",,"W06000020",,3,,"Torfaen",,,94832,"W06000020",,,"ONS","UKL16"
+"89ddc361",,"W06000021",,3,,"Monmouthshire",,,95164,"W06000021",,,"ONS","UKL21"
+"10d492db",,"W06000022",,3,,"Newport",,,156447,"W06000022",,,"ONS","UKL21"
+"67d3a24d",,"W06000023",,3,,"Powys",,,133030,"W06000023",,,"ONS","UKL24"
+"f9b737ee",,"W06000024",,3,,"Merthyr Tydfil",,,60424,"W06000024",,,"ONS","UKL15"

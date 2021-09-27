@@ -317,6 +317,7 @@
 "GBR",2,"longitude","https://en.wikipedia.org/wiki/Countries_of_the_United_Kingdom_by_population","Wikipedia","2018",,,,
 "GBR",3,"deaths","https://coronavirus.data.gov.uk","Open Government Data, United Kingdom","2020",,,,
 "GBR",3,"confirmed","https://coronavirus.data.gov.uk","Open Government Data, United Kingdom","2020",,,,
+"GBR",3,"population","https://coronavirus.data.gov.uk/details/download","Open Government Data, United Kingdom","2021",,,,
 "GGY",1,"longitude","https://www.cia.gov/library/publications/the-world-factbook/geos/gk.html","CIA - Central Intelligence Agency","2020",,,,
 "GGY",1,"latitude","https://www.cia.gov/library/publications/the-world-factbook/geos/gk.html","CIA - Central Intelligence Agency","2020",,,,
 "GGY",1,"population","https://www.cia.gov/library/publications/the-world-factbook/geos/gk.html","CIA - Central Intelligence Agency","2020",,,,
