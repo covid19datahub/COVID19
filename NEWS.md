@@ -8,6 +8,7 @@
 
 - Added data for Belgium (level 3).
 - Change data provider for Switzerland and Liechtenstein to [Federal Office of Public Health FOPH](https://www.covid19.admin.ch) 
+- Change data provider for France to [Santé publique France](https://www.data.gouv.fr/fr/)
 
 # COVID19 2.3.0 (2021-04-01)
 
