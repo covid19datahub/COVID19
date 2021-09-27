@@ -38,32 +38,15 @@ opencovid_fr <- function(cache, level = 1){
               deaths_elderly = sum(deaths_elderly))
   
   # Switch by level
-  if(level==1){
-    
+  if(level==1)
     x <- x[x$granularite=="pays" & x$source=="ministere-sante",]  
-    
-    # Deaths + Deaths in elderly homes
-    x$deaths <- x$deaths + x$deaths_elderly 
-    
-  }
-  if(level==2){
-    
-    x  <- x[x$granularite %in% c("region", "collectivite-outremer"),]
-    
-    x1 <- x[x$source=="opencovid19-fr",]
-    x2 <- x[x$source=="agences-regionales-sante",]
-    x  <- merge(x1, x2, by = c("date", "maille_code"), all = TRUE)
-    
-  }
-  if(level==3){
-    
-    x <- x[x$granularite=="departement",]
-    
-    x1 <- x[x$source=="agences-regionales-sante",]
-    x2 <- x[x$source=="sante-publique-france-data",]
-    x  <- merge(x1, x2, by = c("date", "maille_code"), all = TRUE)
-    
-  }
+  if(level==2)
+    x <- x[x$granularite=="region" & x$source=="opencovid19-fr",]
+  if(level==3)
+    x <- x[x$granularite=="departement" & x$source=="sante-publique-france-data",] 
+
+  # Deaths + Deaths in elderly homes
+  x$deaths <- x$deaths + x$deaths_elderly 
   
   # fix date
   idx <- which(grepl("_", x$date, fixed = TRUE))
