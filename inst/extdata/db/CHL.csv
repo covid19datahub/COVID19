@@ -1,363 +1,363 @@
-"id","id_covid19chile_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_numeric"
-"d4cef17c",2,2,"Antofagasta",,,,691854,2
-"431c28f4",9,2,"Araucania",,,,1014343,9
-"f4bd35d2",15,2,"Arica y Parinacota",,,,252110,15
-"a3c9c1ea",3,2,"Atacama",,,,314709,3
-"f3d0f1cb",11,2,"Aysén",,,,107297,11
-"341b1862",8,2,"Biobío",,,,1663696,8
-"3dad5449",4,2,"Coquimbo",,,,836096,4
-"84d7c15d",10,2,"Los Lagos",,,,891440,10
-"83ba0544",14,2,"Los Ríos",,,,405835,14
-"6ad9a071",12,2,"Magallanes",,,,178362,12
-"a4a405f3",7,2,"Maule",,,,1131939,7
-"1dde90e7",13,2,"Metropolitana",,,,8125072,13
-"6db46468",16,2,"Ñuble",,,,511551,16
-"d3a33565",6,2,"O'Higgins",,,,991063,6
-"4dc7a0c6",1,2,"Tarapacá",,,,382773,1
-"4aaa64df",5,2,"Valparaíso",,,,1960170,5
-"a2b5ee49",1101,3,"Tarapaca","Iquique",,,223463,1101
-"4bd64b7c",1107,3,"Tarapaca","Alto Hospicio",,,129999,1107
-"a47e2ca2",1401,3,"Tarapaca","Pozo Almonte",,,17395,1401
-"3d777d18",1402,3,"Tarapaca","Camina",,,1375,1402
-"4a704d8e",1403,3,"Tarapaca","Colchane",,,1583,1403
-"d414d82d",1404,3,"Tarapaca","Huara",,,3000,1404
-"a313e8bb",1405,3,"Tarapaca","Pica",,,5958,1405
-"b00041a7",2101,3,"Antofagasta","Antofagasta",,,425725,2101
-"2909101d",2102,3,"Antofagasta","Mejillones",,,14776,2102
-"5e0e208b",2103,3,"Antofagasta","Sierra Gorda",,,1746,2103
-"c06ab528",2104,3,"Antofagasta","Taltal",,,13657,2104
-"b246fffe",2201,3,"Antofagasta","Calama",,,190336,2201
-"2b4fae44",2202,3,"Antofagasta","Ollague",,,287,2202
-"5c489ed2",2203,3,"Antofagasta","San Pedro de Atacama",,,10434,2203
-"b38495c9",2301,3,"Antofagasta","Tocopilla",,,28079,2301
-"2a8dc473",2302,3,"Antofagasta","Maria Elena",,,6814,2302
-"08bc26c2",3101,3,"Atacama","Copiapo",,,171766,3101
-"91b57778",3102,3,"Atacama","Caldera",,,19426,3102
-"e6b247ee",3103,3,"Atacama","Tierra Amarilla",,,14312,3103
-"0afa989b",3201,3,"Atacama","Chanaral",,,13164,3201
-"93f3c921",3202,3,"Atacama","Diego de Almagro",,,14358,3202
-"0b38f2ac",3301,3,"Atacama","Vallenar",,,57009,3301
-"9231a316",3302,3,"Atacama","Alto del Carmen",,,5729,3302
-"e5369380",3303,3,"Atacama","Freirina",,,7681,3303
-"7b520623",3304,3,"Atacama","Huasco",,,11264,3304
-"956b1e7b",4101,3,"Coquimbo","La Serena",,,249656,4101
-"0c624fc1",4102,3,"Coquimbo","Coquimbo",,,256735,4102
-"7b657f57",4103,3,"Coquimbo","Andacollo",,,11791,4103
-"e501eaf4",4104,3,"Coquimbo","La Higuera",,,4450,4104
-"9206da62",4105,3,"Coquimbo","Paiguano",,,4675,4105
-"0b0f8bd8",4106,3,"Coquimbo","Vicuna",,,29741,4106
-"972da022",4201,3,"Coquimbo","Illapel",,,32801,4201
-"0e24f198",4202,3,"Coquimbo","Canela",,,9546,4202
-"7923c10e",4203,3,"Coquimbo","Los Vilos",,,23374,4203
-"e74754ad",4204,3,"Coquimbo","Salamanca",,,29110,4204
-"96efca15",4301,3,"Coquimbo","Ovalle",,,121269,4301
-"0fe69baf",4302,3,"Coquimbo","Combarbala",,,13884,4302
-"78e1ab39",4303,3,"Coquimbo","Monte Patria",,,32527,4303
-"e6853e9a",4304,3,"Coquimbo","Punitaqui",,,12165,4304
-"91820e0c",4305,3,"Coquimbo","Rio Hurtado",,,4372,4305
-"2dd7791e",5101,3,"Valparaiso","Valparaiso",,,315732,5101
-"b4de28a4",5102,3,"Valparaiso","Casablanca",,,29170,5102
-"c3d91832",5103,3,"Valparaiso","Concon",,,45889,5103
-"5dbd8d91",5104,3,"Valparaiso","Juan Fernandez",,,1033,5104
-"2ababd07",5105,3,"Valparaiso","Puchuncavi",,,20071,5105
-"c4b4dc2b",5107,3,"Valparaiso","Quintero",,,36135,5107
-"230cf12c",5109,3,"Valparaiso","Vina del Mar",,,361371,5109
-"2f91c747",5201,3,"Valparaiso","Isla de Pascua",,,8277,5201
-"2e53ad70",5301,3,"Valparaiso","Los Andes",,,68093,5301
-"b75afcca",5302,3,"Valparaiso","Calle Larga",,,16482,5302
-"c05dcc5c",5303,3,"Valparaiso","Rinconada",,,11263,5303
-"5e3959ff",5304,3,"Valparaiso","San Esteban",,,20643,5304
-"2b1cbbf5",5401,3,"Valparaiso","La Ligua",,,37739,5401
-"b215ea4f",5402,3,"Valparaiso","Cabildo",,,20663,5402
-"c512dad9",5403,3,"Valparaiso","Papudo",,,6201,5403
-"5b764f7a",5404,3,"Valparaiso","Petorca",,,10558,5404
-"2c717fec",5405,3,"Valparaiso","Zapallar",,,7994,5405
-"2aded1c2",5501,3,"Valparaiso","Quillota",,,97572,5501
-"b3d78078",5502,3,"Valparaiso","Calera",,,53591,5502
-"c4d0b0ee",5503,3,"Valparaiso","Hijuelas",,,19099,5503
-"5ab4254d",5504,3,"Valparaiso","La Cruz",,,25321,5504
-"b4ba4461",5506,3,"Valparaiso","Nogales",,,23490,5506
-"28986f9b",5601,3,"Valparaiso","San Antonio",,,96761,5601
-"b1913e21",5602,3,"Valparaiso","Algarrobo",,,15174,5602
-"c6960eb7",5603,3,"Valparaiso","Cartagena",,,25357,5603
-"58f29b14",5604,3,"Valparaiso","El Quisco",,,17742,5604
-"2ff5ab82",5605,3,"Valparaiso","El Tabo",,,14338,5605
-"b6fcfa38",5606,3,"Valparaiso","Santo Domingo",,,11934,5606
-"295a05ac",5701,3,"Valparaiso","San Felipe",,,83494,5701
-"b0535416",5702,3,"Valparaiso","Catemu",,,15213,5702
-"c7546480",5703,3,"Valparaiso","Llaillay",,,26533,5703
-"5930f123",5704,3,"Valparaiso","Panquehue",,,7633,5704
-"2e37c1b5",5705,3,"Valparaiso","Putaendo",,,17645,5705
-"b73e900f",5706,3,"Valparaiso","Santa Maria",,,16367,5706
-"22064291",5801,3,"Valparaiso","Quilpue",,,167085,5801
-"bb0f132b",5802,3,"Valparaiso","Limache",,,49931,5802
-"cc0823bd",5803,3,"Valparaiso","Olmue",,,19266,5803
-"526cb61e",5804,3,"Valparaiso","Villa Alemana",,,139310,5804
-"3f62d6f0",6101,3,"Del Libertador General Bernardo O’Higgins","Rancagua",,,265211,6101
-"a66b874a",6102,3,"Del Libertador General Bernardo O’Higgins","Codegua",,,14096,6102
-"d16cb7dc",6103,3,"Del Libertador General Bernardo O’Higgins","Coinco",,,7831,6103
-"4f08227f",6104,3,"Del Libertador General Bernardo O’Higgins","Coltauco",,,21263,6104
-"380f12e9",6105,3,"Del Libertador General Bernardo O’Higgins","Donihue",,,22700,6105
-"a1064353",6106,3,"Del Libertador General Bernardo O’Higgins","Graneros",,,36504,6106
-"d60173c5",6107,3,"Del Libertador General Bernardo O’Higgins","Las Cabras",,,26749,6107
-"46be6e54",6108,3,"Del Libertador General Bernardo O’Higgins","Machali",,,59913,6108
-"31b95ec2",6109,3,"Del Libertador General Bernardo O’Higgins","Malloa",,,14163,6109
-"517ed727",6110,3,"Del Libertador General Bernardo O’Higgins","Mostazal",,,27462,6110
-"2679e7b1",6111,3,"Del Libertador General Bernardo O’Higgins","Olivar",,,14624,6111
-"bf70b60b",6112,3,"Del Libertador General Bernardo O’Higgins","Peumo",,,14952,6112
-"c877869d",6113,3,"Del Libertador General Bernardo O’Higgins","Pichidegua",,,20743,6113
-"5613133e",6114,3,"Del Libertador General Bernardo O’Higgins","Quinta de Tilcoco",,,13877,6114
-"211423a8",6115,3,"Del Libertador General Bernardo O’Higgins","Rengo",,,63710,6115
-"b81d7212",6116,3,"Del Libertador General Bernardo O’Higgins","Requinoa",,,30371,6116
-"cf1a4284",6117,3,"Del Libertador General Bernardo O’Higgins","San Vicente",,,50617,6117
-"3d2468a9",6201,3,"Del Libertador General Bernardo O’Higgins","Pichilemu",,,17882,6201
-"a42d3913",6202,3,"Del Libertador General Bernardo O’Higgins","La Estrella",,,3114,6202
-"d32a0985",6203,3,"Del Libertador General Bernardo O’Higgins","Litueche",,,6765,6203
-"4d4e9c26",6204,3,"Del Libertador General Bernardo O’Higgins","Marchihue",,,7632,6204
-"3a49acb0",6205,3,"Del Libertador General Bernardo O’Higgins","Navidad",,,6904,6205
-"a340fd0a",6206,3,"Del Libertador General Bernardo O’Higgins","Paredones",,,6349,6206
-"3ce6029e",6301,3,"Del Libertador General Bernardo O’Higgins","San Fernando",,,78642,6301
-"a5ef5324",6302,3,"Del Libertador General Bernardo O’Higgins","Chepica",,,15925,6302
-"d2e863b2",6303,3,"Del Libertador General Bernardo O’Higgins","Chimbarongo",,,37696,6303
-"4c8cf611",6304,3,"Del Libertador General Bernardo O’Higgins","Lolol",,,7289,6304
-"3b8bc687",6305,3,"Del Libertador General Bernardo O’Higgins","Nancagua",,,19141,6305
-"a282973d",6306,3,"Del Libertador General Bernardo O’Higgins","Palmilla",,,13299,6306
-"d585a7ab",6307,3,"Del Libertador General Bernardo O’Higgins","Peralillo",,,11848,6307
-"453aba3a",6308,3,"Del Libertador General Bernardo O’Higgins","Placilla",,,9164,6308
-"323d8aac",6309,3,"Del Libertador General Bernardo O’Higgins","Pumanque",,,3531,6309
-"52fa0349",6310,3,"Del Libertador General Bernardo O’Higgins","Santa Cruz",,,41096,6310
-"87deb195",7101,3,"Maule","Talca",,,236724,7101
-"1ed7e02f",7102,3,"Maule","Constitucion",,,50348,7102
-"69d0d0b9",7103,3,"Maule","Curepto",,,9426,7103
-"f7b4451a",7104,3,"Maule","Empedrado",,,4206,7104
-"80b3758c",7105,3,"Maule","Maule",,,60000,7105
-"19ba2436",7106,3,"Maule","Pelarco",,,9083,7106
-"6ebd14a0",7107,3,"Maule","Pencahue",,,8601,7107
-"fe020931",7108,3,"Maule","Rio Claro",,,14753,7108
-"890539a7",7109,3,"Maule","San Clemente",,,46292,7109
-"e9c2b042",7110,3,"Maule","San Rafael",,,9959,7110
-"85980fcc",7201,3,"Maule","Cauquenes",,,44143,7201
-"1c915e76",7202,3,"Maule","Chanco",,,9331,7202
-"6b966ee0",7203,3,"Maule","Pelluhue",,,8092,7203
-"845a65fb",7301,3,"Maule","Curico",,,163626,7301
-"1d533441",7302,3,"Maule","Hualane",,,10222,7302
-"6a5404d7",7303,3,"Maule","Licanten",,,6989,7303
-"f4309174",7304,3,"Maule","Molina",,,49800,7304
-"8337a1e2",7305,3,"Maule","Rauco",,,11248,7305
-"1a3ef058",7306,3,"Maule","Romeral",,,16170,7306
-"6d39c0ce",7307,3,"Maule","Sagrada Familia",,,19469,7307
-"fd86dd5f",7308,3,"Maule","Teno",,,30850,7308
-"8a81edc9",7309,3,"Maule","Vichuquen",,,4381,7309
-"8115737e",7401,3,"Maule","Linares",,,101073,7401
-"181c22c4",7402,3,"Maule","Colbun",,,22565,7402
-"6f1b1252",7403,3,"Maule","Longavi",,,32810,7403
-"f17f87f1",7404,3,"Maule","Parral",,,44544,7404
-"8678b767",7405,3,"Maule","Retiro",,,21071,7405
-"1f71e6dd",7406,3,"Maule","San Javier",,,49451,7406
-"6876d64b",7407,3,"Maule","Villa Alegre",,,17512,7407
-"f8c9cbda",7408,3,"Maule","Yerbas Buenas",,,19200,7408
-"dfbda1c3",8101,3,"Biobio","Concepcion",,,238092,8101
-"46b4f079",8102,3,"Biobio","Coronel",,,125829,8102
-"31b3c0ef",8103,3,"Biobio","Chiguayante",,,91180,8103
-"afd7554c",8104,3,"Biobio","Florida",,,11841,8104
-"d8d065da",8105,3,"Biobio","Hualqui",,,26201,8105
-"41d93460",8106,3,"Biobio","Lota",,,45750,8106
-"36de04f6",8107,3,"Biobio","Penco",,,49865,8107
-"a6611967",8108,3,"Biobio","San Pedro de la Paz",,,145906,8108
-"d16629f1",8109,3,"Biobio","Santa Juana",,,14779,8109
-"b1a1a014",8110,3,"Biobio","Talcahuano",,,158345,8110
-"c6a69082",8111,3,"Biobio","Tome",,,58729,8111
-"5fafc138",8112,3,"Biobio","Hualpen",,,97273,8112
-"ddfb1f9a",8201,3,"Biobio","Lebu",,,27100,8201
-"44f24e20",8202,3,"Biobio","Arauco",,,38679,8202
-"33f57eb6",8203,3,"Biobio","Canete",,,37003,8203
-"ad91eb15",8204,3,"Biobio","Contulmo",,,6330,8204
-"da96db83",8205,3,"Biobio","Curanilahue",,,33892,8205
-"439f8a39",8206,3,"Biobio","Los Alamos",,,22524,8206
-"3498baaf",8207,3,"Biobio","Tirua",,,11019,8207
-"dc3975ad",8301,3,"Biobio","Los Angeles",,,218515,8301
-"45302417",8302,3,"Biobio","Antuco",,,4306,8302
-"32371481",8303,3,"Biobio","Cabrero",,,30725,8303
-"ac538122",8304,3,"Biobio","Laja",,,23873,8304
-"db54b1b4",8305,3,"Biobio","Mulchen",,,31041,8305
-"425de00e",8306,3,"Biobio","Nacimiento",,,27944,8306
-"355ad098",8307,3,"Biobio","Negrete",,,10429,8307
-"a5e5cd09",8308,3,"Biobio","Quilaco",,,4179,8308
-"d2e2fd9f",8309,3,"Biobio","Quilleco",,,10032,8309
-"b225747a",8310,3,"Biobio","San Rosendo",,,3611,8310
-"c52244ec",8311,3,"Biobio","Santa Barbara",,,14592,8311
-"5c2b1556",8312,3,"Biobio","Tucapel",,,15205,8312
-"2b2c25c0",8313,3,"Biobio","Yumbel",,,22132,8313
-"b548b063",8314,3,"Biobio","Alto Biobio",,,6775,8314
-"6701c6a6",9101,3,"La Araucania","Temuco",,,302931,9101
-"fe08971c",9102,3,"La Araucania","Carahue",,,25486,9102
-"890fa78a",9103,3,"La Araucania","Cunco",,,18055,9103
-"176b3229",9104,3,"La Araucania","Curarrehue",,,7802,9104
-"606c02bf",9105,3,"La Araucania","Freire",,,25446,9105
-"f9655305",9106,3,"La Araucania","Galvarino",,,12633,9106
-"8e626393",9107,3,"La Araucania","Gorbea",,,15148,9107
-"1edd7e02",9108,3,"La Araucania","Lautaro",,,40746,9108
-"69da4e94",9109,3,"La Araucania","Loncoche",,,24739,9109
-"091dc771",9110,3,"La Araucania","Melipeuco",,,6265,9110
-"7e1af7e7",9111,3,"La Araucania","Nueva Imperial",,,33777,9111
-"e713a65d",9112,3,"La Araucania","Padre Las Casas",,,82110,9112
-"901496cb",9113,3,"La Araucania","Perquenco",,,7223,9113
-"0e700368",9114,3,"La Araucania","Pitrufquen",,,26096,9114
-"797733fe",9115,3,"La Araucania","Pucon",,,29782,9115
-"e07e6244",9116,3,"La Araucania","Saavedra",,,12793,9116
-"977952d2",9117,3,"La Araucania","Teodoro Schmidt",,,15786,9117
-"07c64f43",9118,3,"La Araucania","Tolten",,,10055,9118
-"70c17fd5",9119,3,"La Araucania","Vilcun",,,30766,9119
-"223094b2",9120,3,"La Araucania","Villarrica",,,59103,9120
-"5537a424",9121,3,"La Araucania","Cholchol",,,12341,9121
-"654778ff",9201,3,"La Araucania","Angol",,,56058,9201
-"fc4e2945",9202,3,"La Araucania","Collipulli",,,26148,9202
-"8b4919d3",9203,3,"La Araucania","Curacautin",,,18178,9203
-"152d8c70",9204,3,"La Araucania","Ercilla",,,8458,9204
-"622abce6",9205,3,"La Araucania","Lonquimay",,,11049,9205
-"fb23ed5c",9206,3,"La Araucania","Los Sauces",,,7517,9206
-"8c24ddca",9207,3,"La Araucania","Lumaco",,,10050,9207
-"1c9bc05b",9208,3,"La Araucania","Puren",,,12188,9208
-"6b9cf0cd",9209,3,"La Araucania","Renaico",,,10833,9209
-"0b5b7928",9210,3,"La Araucania","Traiguen",,,19314,9210
-"7c5c49be",9211,3,"La Araucania","Victoria",,,35467,9211
-"e7474cdb",10101,3,"Los Lagos","Puerto Montt",,,269398,10101
-"7e4e1d61",10102,3,"Los Lagos","Calbuco",,,36744,10102
-"09492df7",10103,3,"Los Lagos","Cochamo",,,4006,10103
-"972db854",10104,3,"Los Lagos","Fresia",,,12656,10104
-"e02a88c2",10105,3,"Los Lagos","Frutillar",,,20223,10105
-"7923d978",10106,3,"Los Lagos","Los Muermos",,,17817,10106
-"0e24e9ee",10107,3,"Los Lagos","Llanquihue",,,18621,10107
-"9e9bf47f",10108,3,"Los Lagos","Maullin",,,14894,10108
-"e99cc4e9",10109,3,"Los Lagos","Puerto Varas",,,48620,10109
-"e501f282",10201,3,"Los Lagos","Castro",,,47607,10201
-"7c08a338",10202,3,"Los Lagos","Ancud",,,42458,10202
-"0b0f93ae",10203,3,"Los Lagos","Chonchi",,,16013,10203
-"956b060d",10204,3,"Los Lagos","Curaco de Velez",,,4066,10204
-"e26c369b",10205,3,"Los Lagos","Dalcahue",,,15069,10205
-"7b656721",10206,3,"Los Lagos","Puqueldon",,,4201,10206
-"0c6257b7",10207,3,"Los Lagos","Queilen",,,5543,10207
-"9cdd4a26",10208,3,"Los Lagos","Quellon",,,29309,10208
-"ebda7ab0",10209,3,"Los Lagos","Quemchi",,,8783,10209
-"8b1df355",10210,3,"Los Lagos","Quinchao",,,8298,10210
-"e4c398b5",10301,3,"Los Lagos","Osorno",,,173410,10301
-"7dcac90f",10302,3,"Los Lagos","Puerto Octay",,,9192,10302
-"0acdf999",10303,3,"Los Lagos","Purranque",,,21080,10303
-"94a96c3a",10304,3,"Los Lagos","Puyehue",,,11787,10304
-"e3ae5cac",10305,3,"Los Lagos","Rio Negro",,,14275,10305
-"7aa70d16",10306,3,"Los Lagos","San Juan de la Costa",,,7639,10306
-"0da03d80",10307,3,"Los Lagos","San Pablo",,,10553,10307
-"e18c8e30",10401,3,"Los Lagos","Chaiten",,,5020,10401
-"7885df8a",10402,3,"Los Lagos","Futaleufu",,,2806,10402
-"0f82ef1c",10403,3,"Los Lagos","Hualaihue",,,9525,10403
-"91e67abf",10404,3,"Los Lagos","Palena",,,1827,10404
-"5ffb2bbe",11101,3,"Aysen","Coyhaique",,,61210,11101
-"c6f27a04",11102,3,"Aysen","Lago Verde",,,920,11102
-"5dbd95e7",11201,3,"Aysen","Aysen",,,25002,11201
-"c4b4c45d",11202,3,"Aysen","Cisnes",,,5828,11202
-"b3b3f4cb",11203,3,"Aysen","Guaitecas",,,1599,11203
-"5c7fffd0",11301,3,"Aysen","Cochrane",,,3685,11301
-"c576ae6a",11302,3,"Aysen","OHiggins",,,661,11302
-"b2719efc",11303,3,"Aysen","Tortel",,,572,11303
-"5930e955",11401,3,"Aysen","Chile Chico",,,5121,11401
-"c039b8ef",11402,3,"Aysen","Rio Ibanez",,,2699,11402
-"4d4e8450",12101,3,"Magallanes y la Antartica","Punta Arenas",,,141984,12101
-"d447d5ea",12102,3,"Magallanes y la Antartica","Laguna Blanca",,,264,12102
-"a340e57c",12103,3,"Magallanes y la Antartica","Rio Verde",,,211,12103
-"3d2470df",12104,3,"Magallanes y la Antartica","San Gregorio",,,681,12104
-"4f083a09",12201,3,"Magallanes y la Antartica","Cabo de Hornos",,,1983,12201
-"d6016bb3",12202,3,"Magallanes y la Antartica","Antartica",,,137,12202
-"4eca503e",12301,3,"Magallanes y la Antartica","Porvenir",,,7323,12301
-"d7c30184",12302,3,"Magallanes y la Antartica","Primavera",,,694,12302
-"a0c43112",12303,3,"Magallanes y la Antartica","Timaukel",,,282,12303
-"4b8546bb",12401,3,"Magallanes y la Antartica","Natales",,,23782,12401
-"d28c1701",12402,3,"Magallanes y la Antartica","Torres del Paine",,,1021,12402
-"f5f2e335",13101,3,"Metropolitana","Santiago",,,503147,13101
-"6cfbb28f",13102,3,"Metropolitana","Cerrillos",,,88956,13102
-"1bfc8219",13103,3,"Metropolitana","Cerro Navia",,,142465,13103
-"859817ba",13104,3,"Metropolitana","Conchali",,,139195,13104
-"f29f272c",13105,3,"Metropolitana","El Bosque",,,172000,13105
-"6b967696",13106,3,"Metropolitana","Estacion Central",,,206792,13106
-"1c914600",13107,3,"Metropolitana","Huechuraba",,,112528,13107
-"8c2e5b91",13108,3,"Metropolitana","Independencia",,,142065,13108
-"fb296b07",13109,3,"Metropolitana","La Cisterna",,,100434,13109
-"9beee2e2",13110,3,"Metropolitana","La Florida",,,402433,13110
-"ece9d274",13111,3,"Metropolitana","La Granja",,,122557,13111
-"75e083ce",13112,3,"Metropolitana","La Pintana",,,189335,13112
-"02e7b358",13113,3,"Metropolitana","La Reina",,,100252,13113
-"9c8326fb",13114,3,"Metropolitana","Las Condes",,,330759,13114
-"eb84166d",13115,3,"Metropolitana","Lo Barnechea",,,124076,13115
-"728d47d7",13116,3,"Metropolitana","Lo Espejo",,,103865,13116
-"058a7741",13117,3,"Metropolitana","Lo Prado",,,104403,13117
-"95356ad0",13118,3,"Metropolitana","Macul",,,134635,13118
-"e2325a46",13119,3,"Metropolitana","Maipu",,,578605,13119
-"b0c3b121",13120,3,"Metropolitana","Nunoa",,,250192,13120
-"c7c481b7",13121,3,"Metropolitana","Pedro Aguirre Cerda",,,107803,13121
-"5ecdd00d",13122,3,"Metropolitana","Penalolen",,,266798,13122
-"29cae09b",13123,3,"Metropolitana","Providencia",,,157749,13123
-"b7ae7538",13124,3,"Metropolitana","Pudahuel",,,253139,13124
-"c0a945ae",13125,3,"Metropolitana","Quilicura",,,254694,13125
-"59a01414",13126,3,"Metropolitana","Quinta Normal",,,136368,13126
-"2ea72482",13127,3,"Metropolitana","Recoleta",,,190075,13127
-"be183913",13128,3,"Metropolitana","Renca",,,160847,13128
-"c91f0985",13129,3,"Metropolitana","San Joaquin",,,103485,13129
-"a9d88060",13130,3,"Metropolitana","San Miguel",,,133059,13130
-"dedfb0f6",13131,3,"Metropolitana","San Ramon",,,86510,13131
-"47d6e14c",13132,3,"Metropolitana","Vitacura",,,96774,13132
-"f7b45d6c",13201,3,"Metropolitana","Puente Alto",,,645909,13201
-"6ebd0cd6",13202,3,"Metropolitana","Pirque",,,30433,13202
-"19ba3c40",13203,3,"Metropolitana","San Jose de Maipo",,,18644,13203
-"f676375b",13301,3,"Metropolitana","Colina",,,180353,13301
-"6f7f66e1",13302,3,"Metropolitana","Lampa",,,126898,13302
-"18785677",13303,3,"Metropolitana","Tiltil",,,21477,13303
-"f33921de",13401,3,"Metropolitana","San Bernardo",,,334836,13401
-"6a307064",13402,3,"Metropolitana","Buin",,,109641,13402
-"1d3740f2",13403,3,"Metropolitana","Calera de Tango",,,28525,13403
-"8353d551",13404,3,"Metropolitana","Paine",,,82766,13404
-"f2fb4be9",13501,3,"Metropolitana","Melipilla",,,141612,13501
-"6bf21a53",13502,3,"Metropolitana","Alhue",,,7405,13502
-"1cf52ac5",13503,3,"Metropolitana","Curacavi",,,36430,13503
-"8291bf66",13504,3,"Metropolitana","Maria Pinto",,,14926,13504
-"f5968ff0",13505,3,"Metropolitana","San Pedro",,,11953,13505
-"f0bdf5b0",13601,3,"Metropolitana","Talagante",,,81838,13601
-"69b4a40a",13602,3,"Metropolitana","El Monte",,,40014,13602
-"1eb3949c",13603,3,"Metropolitana","Isla de Maipo",,,40171,13603
-"80d7013f",13604,3,"Metropolitana","Padre Hurtado",,,74188,13604
-"f7d031a9",13605,3,"Metropolitana","Penaflor",,,101058,13605
-"6825db8c",14101,3,"Los Rios","Valdivia",,,176774,14101
-"f12c8a36",14102,3,"Los Rios","Corral",,,5447,14102
-"862bbaa0",14103,3,"Los Rios","Lanco",,,17652,14103
-"184f2f03",14104,3,"Los Rios","Los Lagos",,,20518,14104
-"6f481f95",14105,3,"Los Rios","Mafil",,,7389,14105
-"f6414e2f",14106,3,"Los Rios","Mariquina",,,23250,14106
-"81467eb9",14107,3,"Los Rios","Paillaco",,,20798,14107
-"11f96328",14108,3,"Los Rios","Panguipulli",,,35991,14108
-"6a6365d5",14201,3,"Los Rios","La Union",,,39538,14201
-"f36a346f",14202,3,"Los Rios","Futrono",,,15261,14202
-"846d04f9",14203,3,"Los Rios","Lago Ranco",,,10292,14203
-"1a09915a",14204,3,"Los Rios","Rio Bueno",,,32925,14204
-"d099bce9",15101,3,"Arica y Parinacota","Arica",,,247552,15101
-"4990ed53",15102,3,"Arica y Parinacota","Camarones",,,1233,15102
-"d2df02b0",15201,3,"Arica y Parinacota","Putre",,,2515,15201
-"4bd6530a",15202,3,"Arica y Parinacota","General Lagos",,,810,15202
-"c22c1307",16101,3,"Nuble","Chillan",,,198624,16101
-"5b2542bd",16102,3,"Nuble","Bulnes",,,22607,16102
-"2c22722b",16103,3,"Nuble","Chillan Viejo",,,33827,16103
-"b246e788",16104,3,"Nuble","El Carmen",,,12334,16104
-"c541d71e",16105,3,"Nuble","Pemuco",,,8639,16105
-"5c4886a4",16106,3,"Nuble","Pinto",,,11880,16106
-"2b4fb632",16107,3,"Nuble","Quillon",,,18777,16107
-"bbf0aba3",16108,3,"Nuble","San Ignacio",,,16624,16108
-"ccf79b35",16109,3,"Nuble","Yungay",,,18596,16109
-"c06aad5e",16201,3,"Nuble","Quirihue",,,12192,16201
-"5963fce4",16202,3,"Nuble","Cobquecura",,,5275,16202
-"2e64cc72",16203,3,"Nuble","Coelemu",,,16845,16203
-"b00059d1",16204,3,"Nuble","Ninhue",,,5414,16204
-"c7076947",16205,3,"Nuble","Portezuelo",,,4940,16205
-"5e0e38fd",16206,3,"Nuble","Ranquil",,,6261,16206
-"2909086b",16207,3,"Nuble","Treguaco",,,5696,16207
-"c1a8c769",16301,3,"Nuble","San Carlos",,,56252,16301
-"58a196d3",16302,3,"Nuble","Coihueco",,,28375,16302
-"2fa6a645",16303,3,"Nuble","Niquen",,,11567,16303
-"b1c233e6",16304,3,"Nuble","San Fabian",,,4654,16304
-"c6c50370",16305,3,"Nuble","San Nicolas",,,12172,16305
+"id","id_covid19chile_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_local","key_gadm","key_hasc","key_jhu_csse"
+"d4cef17c",2,2,"Antofagasta",,-23.4565980258363,-69.1030053355929,691854,2,"CHL.2_1","CL.AN","CLAN"
+"431c28f4",9,2,"Araucania",,-38.6956378532318,-72.2799323068626,1014343,9,"CHL.3_1","CL.AR","CLAR"
+"f4bd35d2",15,2,"Arica y Parinacota",,-18.4304578508579,-69.6221480291239,252110,15,"CHL.4_1","CL.AP","CLAP"
+"a3c9c1ea",3,2,"Atacama",,-27.3692361078544,-69.9133675831106,314709,3,"CHL.5_1","CL.AT","CLAT"
+"f3d0f1cb",11,2,"Aysén",,-46.4433980091501,-73.03667945145,107297,11,"CHL.1_1","CL.AI","CLAI"
+"341b1862",8,2,"Biobío",,-37.4840074436902,-72.4262061359367,1663696,8,"CHL.6_1","CL.BI","CLBI"
+"3dad5449",4,2,"Coquimbo",,-30.6073433065733,-70.8695129172193,836096,4,"CHL.7_1","CL.CO","CLCO"
+"84d7c15d",10,2,"Los Lagos",,-41.8895332400891,-72.6683451270094,891440,10,"CHL.9_1","CL.LL","CLLL"
+"83ba0544",14,2,"Los Ríos",,-40.0667815164566,-72.5738846720809,405835,14,"CHL.10_1","CL.LR","CLLR"
+"6ad9a071",12,2,"Magallanes",,-51.6289798094399,-72.5079025392498,178362,12,"CHL.11_1","CL.MA","CLMA"
+"a4a405f3",7,2,"Maule",,-35.5761517429943,-71.4165164370854,1131939,7,"CHL.12_1","CL.ML","CLML"
+"1dde90e7",13,2,"Metropolitana",,-33.585427701144,-70.6540342596261,8125072,13,"CHL.14_1","CL.RM","CLRM"
+"6db46468",16,2,"Ñuble",,-36.6221744702583,-71.9275928772315,511551,16,"CHL.13_1","CL.NB","CLNB"
+"d3a33565",6,2,"O'Higgins",,-34.4291318949055,-71.0650608728726,991063,6,"CHL.8_1","CL.LI","CLLI"
+"4dc7a0c6",1,2,"Tarapacá",,-20.1388905675358,-69.4063577731548,382773,1,"CHL.15_1","CL.TA","CLTA"
+"4aaa64df",5,2,"Valparaíso",,-32.7055449867148,-70.9596598562431,1960170,5,"CHL.16_1","CL.VS","CLVS"
+"a2b5ee49",1101,3,"Tarapaca","Iquique",,,223463,1101,,,
+"4bd64b7c",1107,3,"Tarapaca","Alto Hospicio",,,129999,1107,,,
+"a47e2ca2",1401,3,"Tarapaca","Pozo Almonte",,,17395,1401,,,
+"3d777d18",1402,3,"Tarapaca","Camina",,,1375,1402,,,
+"4a704d8e",1403,3,"Tarapaca","Colchane",,,1583,1403,,,
+"d414d82d",1404,3,"Tarapaca","Huara",,,3000,1404,,,
+"a313e8bb",1405,3,"Tarapaca","Pica",,,5958,1405,,,
+"b00041a7",2101,3,"Antofagasta","Antofagasta",,,425725,2101,,,
+"2909101d",2102,3,"Antofagasta","Mejillones",,,14776,2102,,,
+"5e0e208b",2103,3,"Antofagasta","Sierra Gorda",,,1746,2103,,,
+"c06ab528",2104,3,"Antofagasta","Taltal",,,13657,2104,,,
+"b246fffe",2201,3,"Antofagasta","Calama",,,190336,2201,,,
+"2b4fae44",2202,3,"Antofagasta","Ollague",,,287,2202,,,
+"5c489ed2",2203,3,"Antofagasta","San Pedro de Atacama",,,10434,2203,,,
+"b38495c9",2301,3,"Antofagasta","Tocopilla",,,28079,2301,,,
+"2a8dc473",2302,3,"Antofagasta","Maria Elena",,,6814,2302,,,
+"08bc26c2",3101,3,"Atacama","Copiapo",,,171766,3101,,,
+"91b57778",3102,3,"Atacama","Caldera",,,19426,3102,,,
+"e6b247ee",3103,3,"Atacama","Tierra Amarilla",,,14312,3103,,,
+"0afa989b",3201,3,"Atacama","Chanaral",,,13164,3201,,,
+"93f3c921",3202,3,"Atacama","Diego de Almagro",,,14358,3202,,,
+"0b38f2ac",3301,3,"Atacama","Vallenar",,,57009,3301,,,
+"9231a316",3302,3,"Atacama","Alto del Carmen",,,5729,3302,,,
+"e5369380",3303,3,"Atacama","Freirina",,,7681,3303,,,
+"7b520623",3304,3,"Atacama","Huasco",,,11264,3304,,,
+"956b1e7b",4101,3,"Coquimbo","La Serena",,,249656,4101,,,
+"0c624fc1",4102,3,"Coquimbo","Coquimbo",,,256735,4102,,,
+"7b657f57",4103,3,"Coquimbo","Andacollo",,,11791,4103,,,
+"e501eaf4",4104,3,"Coquimbo","La Higuera",,,4450,4104,,,
+"9206da62",4105,3,"Coquimbo","Paiguano",,,4675,4105,,,
+"0b0f8bd8",4106,3,"Coquimbo","Vicuna",,,29741,4106,,,
+"972da022",4201,3,"Coquimbo","Illapel",,,32801,4201,,,
+"0e24f198",4202,3,"Coquimbo","Canela",,,9546,4202,,,
+"7923c10e",4203,3,"Coquimbo","Los Vilos",,,23374,4203,,,
+"e74754ad",4204,3,"Coquimbo","Salamanca",,,29110,4204,,,
+"96efca15",4301,3,"Coquimbo","Ovalle",,,121269,4301,,,
+"0fe69baf",4302,3,"Coquimbo","Combarbala",,,13884,4302,,,
+"78e1ab39",4303,3,"Coquimbo","Monte Patria",,,32527,4303,,,
+"e6853e9a",4304,3,"Coquimbo","Punitaqui",,,12165,4304,,,
+"91820e0c",4305,3,"Coquimbo","Rio Hurtado",,,4372,4305,,,
+"2dd7791e",5101,3,"Valparaiso","Valparaiso",,,315732,5101,,,
+"b4de28a4",5102,3,"Valparaiso","Casablanca",,,29170,5102,,,
+"c3d91832",5103,3,"Valparaiso","Concon",,,45889,5103,,,
+"5dbd8d91",5104,3,"Valparaiso","Juan Fernandez",,,1033,5104,,,
+"2ababd07",5105,3,"Valparaiso","Puchuncavi",,,20071,5105,,,
+"c4b4dc2b",5107,3,"Valparaiso","Quintero",,,36135,5107,,,
+"230cf12c",5109,3,"Valparaiso","Vina del Mar",,,361371,5109,,,
+"2f91c747",5201,3,"Valparaiso","Isla de Pascua",,,8277,5201,,,
+"2e53ad70",5301,3,"Valparaiso","Los Andes",,,68093,5301,,,
+"b75afcca",5302,3,"Valparaiso","Calle Larga",,,16482,5302,,,
+"c05dcc5c",5303,3,"Valparaiso","Rinconada",,,11263,5303,,,
+"5e3959ff",5304,3,"Valparaiso","San Esteban",,,20643,5304,,,
+"2b1cbbf5",5401,3,"Valparaiso","La Ligua",,,37739,5401,,,
+"b215ea4f",5402,3,"Valparaiso","Cabildo",,,20663,5402,,,
+"c512dad9",5403,3,"Valparaiso","Papudo",,,6201,5403,,,
+"5b764f7a",5404,3,"Valparaiso","Petorca",,,10558,5404,,,
+"2c717fec",5405,3,"Valparaiso","Zapallar",,,7994,5405,,,
+"2aded1c2",5501,3,"Valparaiso","Quillota",,,97572,5501,,,
+"b3d78078",5502,3,"Valparaiso","Calera",,,53591,5502,,,
+"c4d0b0ee",5503,3,"Valparaiso","Hijuelas",,,19099,5503,,,
+"5ab4254d",5504,3,"Valparaiso","La Cruz",,,25321,5504,,,
+"b4ba4461",5506,3,"Valparaiso","Nogales",,,23490,5506,,,
+"28986f9b",5601,3,"Valparaiso","San Antonio",,,96761,5601,,,
+"b1913e21",5602,3,"Valparaiso","Algarrobo",,,15174,5602,,,
+"c6960eb7",5603,3,"Valparaiso","Cartagena",,,25357,5603,,,
+"58f29b14",5604,3,"Valparaiso","El Quisco",,,17742,5604,,,
+"2ff5ab82",5605,3,"Valparaiso","El Tabo",,,14338,5605,,,
+"b6fcfa38",5606,3,"Valparaiso","Santo Domingo",,,11934,5606,,,
+"295a05ac",5701,3,"Valparaiso","San Felipe",,,83494,5701,,,
+"b0535416",5702,3,"Valparaiso","Catemu",,,15213,5702,,,
+"c7546480",5703,3,"Valparaiso","Llaillay",,,26533,5703,,,
+"5930f123",5704,3,"Valparaiso","Panquehue",,,7633,5704,,,
+"2e37c1b5",5705,3,"Valparaiso","Putaendo",,,17645,5705,,,
+"b73e900f",5706,3,"Valparaiso","Santa Maria",,,16367,5706,,,
+"22064291",5801,3,"Valparaiso","Quilpue",,,167085,5801,,,
+"bb0f132b",5802,3,"Valparaiso","Limache",,,49931,5802,,,
+"cc0823bd",5803,3,"Valparaiso","Olmue",,,19266,5803,,,
+"526cb61e",5804,3,"Valparaiso","Villa Alemana",,,139310,5804,,,
+"3f62d6f0",6101,3,"Del Libertador General Bernardo O’Higgins","Rancagua",,,265211,6101,,,
+"a66b874a",6102,3,"Del Libertador General Bernardo O’Higgins","Codegua",,,14096,6102,,,
+"d16cb7dc",6103,3,"Del Libertador General Bernardo O’Higgins","Coinco",,,7831,6103,,,
+"4f08227f",6104,3,"Del Libertador General Bernardo O’Higgins","Coltauco",,,21263,6104,,,
+"380f12e9",6105,3,"Del Libertador General Bernardo O’Higgins","Donihue",,,22700,6105,,,
+"a1064353",6106,3,"Del Libertador General Bernardo O’Higgins","Graneros",,,36504,6106,,,
+"d60173c5",6107,3,"Del Libertador General Bernardo O’Higgins","Las Cabras",,,26749,6107,,,
+"46be6e54",6108,3,"Del Libertador General Bernardo O’Higgins","Machali",,,59913,6108,,,
+"31b95ec2",6109,3,"Del Libertador General Bernardo O’Higgins","Malloa",,,14163,6109,,,
+"517ed727",6110,3,"Del Libertador General Bernardo O’Higgins","Mostazal",,,27462,6110,,,
+"2679e7b1",6111,3,"Del Libertador General Bernardo O’Higgins","Olivar",,,14624,6111,,,
+"bf70b60b",6112,3,"Del Libertador General Bernardo O’Higgins","Peumo",,,14952,6112,,,
+"c877869d",6113,3,"Del Libertador General Bernardo O’Higgins","Pichidegua",,,20743,6113,,,
+"5613133e",6114,3,"Del Libertador General Bernardo O’Higgins","Quinta de Tilcoco",,,13877,6114,,,
+"211423a8",6115,3,"Del Libertador General Bernardo O’Higgins","Rengo",,,63710,6115,,,
+"b81d7212",6116,3,"Del Libertador General Bernardo O’Higgins","Requinoa",,,30371,6116,,,
+"cf1a4284",6117,3,"Del Libertador General Bernardo O’Higgins","San Vicente",,,50617,6117,,,
+"3d2468a9",6201,3,"Del Libertador General Bernardo O’Higgins","Pichilemu",,,17882,6201,,,
+"a42d3913",6202,3,"Del Libertador General Bernardo O’Higgins","La Estrella",,,3114,6202,,,
+"d32a0985",6203,3,"Del Libertador General Bernardo O’Higgins","Litueche",,,6765,6203,,,
+"4d4e9c26",6204,3,"Del Libertador General Bernardo O’Higgins","Marchihue",,,7632,6204,,,
+"3a49acb0",6205,3,"Del Libertador General Bernardo O’Higgins","Navidad",,,6904,6205,,,
+"a340fd0a",6206,3,"Del Libertador General Bernardo O’Higgins","Paredones",,,6349,6206,,,
+"3ce6029e",6301,3,"Del Libertador General Bernardo O’Higgins","San Fernando",,,78642,6301,,,
+"a5ef5324",6302,3,"Del Libertador General Bernardo O’Higgins","Chepica",,,15925,6302,,,
+"d2e863b2",6303,3,"Del Libertador General Bernardo O’Higgins","Chimbarongo",,,37696,6303,,,
+"4c8cf611",6304,3,"Del Libertador General Bernardo O’Higgins","Lolol",,,7289,6304,,,
+"3b8bc687",6305,3,"Del Libertador General Bernardo O’Higgins","Nancagua",,,19141,6305,,,
+"a282973d",6306,3,"Del Libertador General Bernardo O’Higgins","Palmilla",,,13299,6306,,,
+"d585a7ab",6307,3,"Del Libertador General Bernardo O’Higgins","Peralillo",,,11848,6307,,,
+"453aba3a",6308,3,"Del Libertador General Bernardo O’Higgins","Placilla",,,9164,6308,,,
+"323d8aac",6309,3,"Del Libertador General Bernardo O’Higgins","Pumanque",,,3531,6309,,,
+"52fa0349",6310,3,"Del Libertador General Bernardo O’Higgins","Santa Cruz",,,41096,6310,,,
+"87deb195",7101,3,"Maule","Talca",,,236724,7101,,,
+"1ed7e02f",7102,3,"Maule","Constitucion",,,50348,7102,,,
+"69d0d0b9",7103,3,"Maule","Curepto",,,9426,7103,,,
+"f7b4451a",7104,3,"Maule","Empedrado",,,4206,7104,,,
+"80b3758c",7105,3,"Maule","Maule",,,60000,7105,,,
+"19ba2436",7106,3,"Maule","Pelarco",,,9083,7106,,,
+"6ebd14a0",7107,3,"Maule","Pencahue",,,8601,7107,,,
+"fe020931",7108,3,"Maule","Rio Claro",,,14753,7108,,,
+"890539a7",7109,3,"Maule","San Clemente",,,46292,7109,,,
+"e9c2b042",7110,3,"Maule","San Rafael",,,9959,7110,,,
+"85980fcc",7201,3,"Maule","Cauquenes",,,44143,7201,,,
+"1c915e76",7202,3,"Maule","Chanco",,,9331,7202,,,
+"6b966ee0",7203,3,"Maule","Pelluhue",,,8092,7203,,,
+"845a65fb",7301,3,"Maule","Curico",,,163626,7301,,,
+"1d533441",7302,3,"Maule","Hualane",,,10222,7302,,,
+"6a5404d7",7303,3,"Maule","Licanten",,,6989,7303,,,
+"f4309174",7304,3,"Maule","Molina",,,49800,7304,,,
+"8337a1e2",7305,3,"Maule","Rauco",,,11248,7305,,,
+"1a3ef058",7306,3,"Maule","Romeral",,,16170,7306,,,
+"6d39c0ce",7307,3,"Maule","Sagrada Familia",,,19469,7307,,,
+"fd86dd5f",7308,3,"Maule","Teno",,,30850,7308,,,
+"8a81edc9",7309,3,"Maule","Vichuquen",,,4381,7309,,,
+"8115737e",7401,3,"Maule","Linares",,,101073,7401,,,
+"181c22c4",7402,3,"Maule","Colbun",,,22565,7402,,,
+"6f1b1252",7403,3,"Maule","Longavi",,,32810,7403,,,
+"f17f87f1",7404,3,"Maule","Parral",,,44544,7404,,,
+"8678b767",7405,3,"Maule","Retiro",,,21071,7405,,,
+"1f71e6dd",7406,3,"Maule","San Javier",,,49451,7406,,,
+"6876d64b",7407,3,"Maule","Villa Alegre",,,17512,7407,,,
+"f8c9cbda",7408,3,"Maule","Yerbas Buenas",,,19200,7408,,,
+"dfbda1c3",8101,3,"Biobio","Concepcion",,,238092,8101,,,
+"46b4f079",8102,3,"Biobio","Coronel",,,125829,8102,,,
+"31b3c0ef",8103,3,"Biobio","Chiguayante",,,91180,8103,,,
+"afd7554c",8104,3,"Biobio","Florida",,,11841,8104,,,
+"d8d065da",8105,3,"Biobio","Hualqui",,,26201,8105,,,
+"41d93460",8106,3,"Biobio","Lota",,,45750,8106,,,
+"36de04f6",8107,3,"Biobio","Penco",,,49865,8107,,,
+"a6611967",8108,3,"Biobio","San Pedro de la Paz",,,145906,8108,,,
+"d16629f1",8109,3,"Biobio","Santa Juana",,,14779,8109,,,
+"b1a1a014",8110,3,"Biobio","Talcahuano",,,158345,8110,,,
+"c6a69082",8111,3,"Biobio","Tome",,,58729,8111,,,
+"5fafc138",8112,3,"Biobio","Hualpen",,,97273,8112,,,
+"ddfb1f9a",8201,3,"Biobio","Lebu",,,27100,8201,,,
+"44f24e20",8202,3,"Biobio","Arauco",,,38679,8202,,,
+"33f57eb6",8203,3,"Biobio","Canete",,,37003,8203,,,
+"ad91eb15",8204,3,"Biobio","Contulmo",,,6330,8204,,,
+"da96db83",8205,3,"Biobio","Curanilahue",,,33892,8205,,,
+"439f8a39",8206,3,"Biobio","Los Alamos",,,22524,8206,,,
+"3498baaf",8207,3,"Biobio","Tirua",,,11019,8207,,,
+"dc3975ad",8301,3,"Biobio","Los Angeles",,,218515,8301,,,
+"45302417",8302,3,"Biobio","Antuco",,,4306,8302,,,
+"32371481",8303,3,"Biobio","Cabrero",,,30725,8303,,,
+"ac538122",8304,3,"Biobio","Laja",,,23873,8304,,,
+"db54b1b4",8305,3,"Biobio","Mulchen",,,31041,8305,,,
+"425de00e",8306,3,"Biobio","Nacimiento",,,27944,8306,,,
+"355ad098",8307,3,"Biobio","Negrete",,,10429,8307,,,
+"a5e5cd09",8308,3,"Biobio","Quilaco",,,4179,8308,,,
+"d2e2fd9f",8309,3,"Biobio","Quilleco",,,10032,8309,,,
+"b225747a",8310,3,"Biobio","San Rosendo",,,3611,8310,,,
+"c52244ec",8311,3,"Biobio","Santa Barbara",,,14592,8311,,,
+"5c2b1556",8312,3,"Biobio","Tucapel",,,15205,8312,,,
+"2b2c25c0",8313,3,"Biobio","Yumbel",,,22132,8313,,,
+"b548b063",8314,3,"Biobio","Alto Biobio",,,6775,8314,,,
+"6701c6a6",9101,3,"La Araucania","Temuco",,,302931,9101,,,
+"fe08971c",9102,3,"La Araucania","Carahue",,,25486,9102,,,
+"890fa78a",9103,3,"La Araucania","Cunco",,,18055,9103,,,
+"176b3229",9104,3,"La Araucania","Curarrehue",,,7802,9104,,,
+"606c02bf",9105,3,"La Araucania","Freire",,,25446,9105,,,
+"f9655305",9106,3,"La Araucania","Galvarino",,,12633,9106,,,
+"8e626393",9107,3,"La Araucania","Gorbea",,,15148,9107,,,
+"1edd7e02",9108,3,"La Araucania","Lautaro",,,40746,9108,,,
+"69da4e94",9109,3,"La Araucania","Loncoche",,,24739,9109,,,
+"091dc771",9110,3,"La Araucania","Melipeuco",,,6265,9110,,,
+"7e1af7e7",9111,3,"La Araucania","Nueva Imperial",,,33777,9111,,,
+"e713a65d",9112,3,"La Araucania","Padre Las Casas",,,82110,9112,,,
+"901496cb",9113,3,"La Araucania","Perquenco",,,7223,9113,,,
+"0e700368",9114,3,"La Araucania","Pitrufquen",,,26096,9114,,,
+"797733fe",9115,3,"La Araucania","Pucon",,,29782,9115,,,
+"e07e6244",9116,3,"La Araucania","Saavedra",,,12793,9116,,,
+"977952d2",9117,3,"La Araucania","Teodoro Schmidt",,,15786,9117,,,
+"07c64f43",9118,3,"La Araucania","Tolten",,,10055,9118,,,
+"70c17fd5",9119,3,"La Araucania","Vilcun",,,30766,9119,,,
+"223094b2",9120,3,"La Araucania","Villarrica",,,59103,9120,,,
+"5537a424",9121,3,"La Araucania","Cholchol",,,12341,9121,,,
+"654778ff",9201,3,"La Araucania","Angol",,,56058,9201,,,
+"fc4e2945",9202,3,"La Araucania","Collipulli",,,26148,9202,,,
+"8b4919d3",9203,3,"La Araucania","Curacautin",,,18178,9203,,,
+"152d8c70",9204,3,"La Araucania","Ercilla",,,8458,9204,,,
+"622abce6",9205,3,"La Araucania","Lonquimay",,,11049,9205,,,
+"fb23ed5c",9206,3,"La Araucania","Los Sauces",,,7517,9206,,,
+"8c24ddca",9207,3,"La Araucania","Lumaco",,,10050,9207,,,
+"1c9bc05b",9208,3,"La Araucania","Puren",,,12188,9208,,,
+"6b9cf0cd",9209,3,"La Araucania","Renaico",,,10833,9209,,,
+"0b5b7928",9210,3,"La Araucania","Traiguen",,,19314,9210,,,
+"7c5c49be",9211,3,"La Araucania","Victoria",,,35467,9211,,,
+"e7474cdb",10101,3,"Los Lagos","Puerto Montt",,,269398,10101,,,
+"7e4e1d61",10102,3,"Los Lagos","Calbuco",,,36744,10102,,,
+"09492df7",10103,3,"Los Lagos","Cochamo",,,4006,10103,,,
+"972db854",10104,3,"Los Lagos","Fresia",,,12656,10104,,,
+"e02a88c2",10105,3,"Los Lagos","Frutillar",,,20223,10105,,,
+"7923d978",10106,3,"Los Lagos","Los Muermos",,,17817,10106,,,
+"0e24e9ee",10107,3,"Los Lagos","Llanquihue",,,18621,10107,,,
+"9e9bf47f",10108,3,"Los Lagos","Maullin",,,14894,10108,,,
+"e99cc4e9",10109,3,"Los Lagos","Puerto Varas",,,48620,10109,,,
+"e501f282",10201,3,"Los Lagos","Castro",,,47607,10201,,,
+"7c08a338",10202,3,"Los Lagos","Ancud",,,42458,10202,,,
+"0b0f93ae",10203,3,"Los Lagos","Chonchi",,,16013,10203,,,
+"956b060d",10204,3,"Los Lagos","Curaco de Velez",,,4066,10204,,,
+"e26c369b",10205,3,"Los Lagos","Dalcahue",,,15069,10205,,,
+"7b656721",10206,3,"Los Lagos","Puqueldon",,,4201,10206,,,
+"0c6257b7",10207,3,"Los Lagos","Queilen",,,5543,10207,,,
+"9cdd4a26",10208,3,"Los Lagos","Quellon",,,29309,10208,,,
+"ebda7ab0",10209,3,"Los Lagos","Quemchi",,,8783,10209,,,
+"8b1df355",10210,3,"Los Lagos","Quinchao",,,8298,10210,,,
+"e4c398b5",10301,3,"Los Lagos","Osorno",,,173410,10301,,,
+"7dcac90f",10302,3,"Los Lagos","Puerto Octay",,,9192,10302,,,
+"0acdf999",10303,3,"Los Lagos","Purranque",,,21080,10303,,,
+"94a96c3a",10304,3,"Los Lagos","Puyehue",,,11787,10304,,,
+"e3ae5cac",10305,3,"Los Lagos","Rio Negro",,,14275,10305,,,
+"7aa70d16",10306,3,"Los Lagos","San Juan de la Costa",,,7639,10306,,,
+"0da03d80",10307,3,"Los Lagos","San Pablo",,,10553,10307,,,
+"e18c8e30",10401,3,"Los Lagos","Chaiten",,,5020,10401,,,
+"7885df8a",10402,3,"Los Lagos","Futaleufu",,,2806,10402,,,
+"0f82ef1c",10403,3,"Los Lagos","Hualaihue",,,9525,10403,,,
+"91e67abf",10404,3,"Los Lagos","Palena",,,1827,10404,,,
+"5ffb2bbe",11101,3,"Aysen","Coyhaique",,,61210,11101,,,
+"c6f27a04",11102,3,"Aysen","Lago Verde",,,920,11102,,,
+"5dbd95e7",11201,3,"Aysen","Aysen",,,25002,11201,,,
+"c4b4c45d",11202,3,"Aysen","Cisnes",,,5828,11202,,,
+"b3b3f4cb",11203,3,"Aysen","Guaitecas",,,1599,11203,,,
+"5c7fffd0",11301,3,"Aysen","Cochrane",,,3685,11301,,,
+"c576ae6a",11302,3,"Aysen","OHiggins",,,661,11302,,,
+"b2719efc",11303,3,"Aysen","Tortel",,,572,11303,,,
+"5930e955",11401,3,"Aysen","Chile Chico",,,5121,11401,,,
+"c039b8ef",11402,3,"Aysen","Rio Ibanez",,,2699,11402,,,
+"4d4e8450",12101,3,"Magallanes y la Antartica","Punta Arenas",,,141984,12101,,,
+"d447d5ea",12102,3,"Magallanes y la Antartica","Laguna Blanca",,,264,12102,,,
+"a340e57c",12103,3,"Magallanes y la Antartica","Rio Verde",,,211,12103,,,
+"3d2470df",12104,3,"Magallanes y la Antartica","San Gregorio",,,681,12104,,,
+"4f083a09",12201,3,"Magallanes y la Antartica","Cabo de Hornos",,,1983,12201,,,
+"d6016bb3",12202,3,"Magallanes y la Antartica","Antartica",,,137,12202,,,
+"4eca503e",12301,3,"Magallanes y la Antartica","Porvenir",,,7323,12301,,,
+"d7c30184",12302,3,"Magallanes y la Antartica","Primavera",,,694,12302,,,
+"a0c43112",12303,3,"Magallanes y la Antartica","Timaukel",,,282,12303,,,
+"4b8546bb",12401,3,"Magallanes y la Antartica","Natales",,,23782,12401,,,
+"d28c1701",12402,3,"Magallanes y la Antartica","Torres del Paine",,,1021,12402,,,
+"f5f2e335",13101,3,"Metropolitana","Santiago",,,503147,13101,,,
+"6cfbb28f",13102,3,"Metropolitana","Cerrillos",,,88956,13102,,,
+"1bfc8219",13103,3,"Metropolitana","Cerro Navia",,,142465,13103,,,
+"859817ba",13104,3,"Metropolitana","Conchali",,,139195,13104,,,
+"f29f272c",13105,3,"Metropolitana","El Bosque",,,172000,13105,,,
+"6b967696",13106,3,"Metropolitana","Estacion Central",,,206792,13106,,,
+"1c914600",13107,3,"Metropolitana","Huechuraba",,,112528,13107,,,
+"8c2e5b91",13108,3,"Metropolitana","Independencia",,,142065,13108,,,
+"fb296b07",13109,3,"Metropolitana","La Cisterna",,,100434,13109,,,
+"9beee2e2",13110,3,"Metropolitana","La Florida",,,402433,13110,,,
+"ece9d274",13111,3,"Metropolitana","La Granja",,,122557,13111,,,
+"75e083ce",13112,3,"Metropolitana","La Pintana",,,189335,13112,,,
+"02e7b358",13113,3,"Metropolitana","La Reina",,,100252,13113,,,
+"9c8326fb",13114,3,"Metropolitana","Las Condes",,,330759,13114,,,
+"eb84166d",13115,3,"Metropolitana","Lo Barnechea",,,124076,13115,,,
+"728d47d7",13116,3,"Metropolitana","Lo Espejo",,,103865,13116,,,
+"058a7741",13117,3,"Metropolitana","Lo Prado",,,104403,13117,,,
+"95356ad0",13118,3,"Metropolitana","Macul",,,134635,13118,,,
+"e2325a46",13119,3,"Metropolitana","Maipu",,,578605,13119,,,
+"b0c3b121",13120,3,"Metropolitana","Nunoa",,,250192,13120,,,
+"c7c481b7",13121,3,"Metropolitana","Pedro Aguirre Cerda",,,107803,13121,,,
+"5ecdd00d",13122,3,"Metropolitana","Penalolen",,,266798,13122,,,
+"29cae09b",13123,3,"Metropolitana","Providencia",,,157749,13123,,,
+"b7ae7538",13124,3,"Metropolitana","Pudahuel",,,253139,13124,,,
+"c0a945ae",13125,3,"Metropolitana","Quilicura",,,254694,13125,,,
+"59a01414",13126,3,"Metropolitana","Quinta Normal",,,136368,13126,,,
+"2ea72482",13127,3,"Metropolitana","Recoleta",,,190075,13127,,,
+"be183913",13128,3,"Metropolitana","Renca",,,160847,13128,,,
+"c91f0985",13129,3,"Metropolitana","San Joaquin",,,103485,13129,,,
+"a9d88060",13130,3,"Metropolitana","San Miguel",,,133059,13130,,,
+"dedfb0f6",13131,3,"Metropolitana","San Ramon",,,86510,13131,,,
+"47d6e14c",13132,3,"Metropolitana","Vitacura",,,96774,13132,,,
+"f7b45d6c",13201,3,"Metropolitana","Puente Alto",,,645909,13201,,,
+"6ebd0cd6",13202,3,"Metropolitana","Pirque",,,30433,13202,,,
+"19ba3c40",13203,3,"Metropolitana","San Jose de Maipo",,,18644,13203,,,
+"f676375b",13301,3,"Metropolitana","Colina",,,180353,13301,,,
+"6f7f66e1",13302,3,"Metropolitana","Lampa",,,126898,13302,,,
+"18785677",13303,3,"Metropolitana","Tiltil",,,21477,13303,,,
+"f33921de",13401,3,"Metropolitana","San Bernardo",,,334836,13401,,,
+"6a307064",13402,3,"Metropolitana","Buin",,,109641,13402,,,
+"1d3740f2",13403,3,"Metropolitana","Calera de Tango",,,28525,13403,,,
+"8353d551",13404,3,"Metropolitana","Paine",,,82766,13404,,,
+"f2fb4be9",13501,3,"Metropolitana","Melipilla",,,141612,13501,,,
+"6bf21a53",13502,3,"Metropolitana","Alhue",,,7405,13502,,,
+"1cf52ac5",13503,3,"Metropolitana","Curacavi",,,36430,13503,,,
+"8291bf66",13504,3,"Metropolitana","Maria Pinto",,,14926,13504,,,
+"f5968ff0",13505,3,"Metropolitana","San Pedro",,,11953,13505,,,
+"f0bdf5b0",13601,3,"Metropolitana","Talagante",,,81838,13601,,,
+"69b4a40a",13602,3,"Metropolitana","El Monte",,,40014,13602,,,
+"1eb3949c",13603,3,"Metropolitana","Isla de Maipo",,,40171,13603,,,
+"80d7013f",13604,3,"Metropolitana","Padre Hurtado",,,74188,13604,,,
+"f7d031a9",13605,3,"Metropolitana","Penaflor",,,101058,13605,,,
+"6825db8c",14101,3,"Los Rios","Valdivia",,,176774,14101,,,
+"f12c8a36",14102,3,"Los Rios","Corral",,,5447,14102,,,
+"862bbaa0",14103,3,"Los Rios","Lanco",,,17652,14103,,,
+"184f2f03",14104,3,"Los Rios","Los Lagos",,,20518,14104,,,
+"6f481f95",14105,3,"Los Rios","Mafil",,,7389,14105,,,
+"f6414e2f",14106,3,"Los Rios","Mariquina",,,23250,14106,,,
+"81467eb9",14107,3,"Los Rios","Paillaco",,,20798,14107,,,
+"11f96328",14108,3,"Los Rios","Panguipulli",,,35991,14108,,,
+"6a6365d5",14201,3,"Los Rios","La Union",,,39538,14201,,,
+"f36a346f",14202,3,"Los Rios","Futrono",,,15261,14202,,,
+"846d04f9",14203,3,"Los Rios","Lago Ranco",,,10292,14203,,,
+"1a09915a",14204,3,"Los Rios","Rio Bueno",,,32925,14204,,,
+"d099bce9",15101,3,"Arica y Parinacota","Arica",,,247552,15101,,,
+"4990ed53",15102,3,"Arica y Parinacota","Camarones",,,1233,15102,,,
+"d2df02b0",15201,3,"Arica y Parinacota","Putre",,,2515,15201,,,
+"4bd6530a",15202,3,"Arica y Parinacota","General Lagos",,,810,15202,,,
+"c22c1307",16101,3,"Nuble","Chillan",,,198624,16101,,,
+"5b2542bd",16102,3,"Nuble","Bulnes",,,22607,16102,,,
+"2c22722b",16103,3,"Nuble","Chillan Viejo",,,33827,16103,,,
+"b246e788",16104,3,"Nuble","El Carmen",,,12334,16104,,,
+"c541d71e",16105,3,"Nuble","Pemuco",,,8639,16105,,,
+"5c4886a4",16106,3,"Nuble","Pinto",,,11880,16106,,,
+"2b4fb632",16107,3,"Nuble","Quillon",,,18777,16107,,,
+"bbf0aba3",16108,3,"Nuble","San Ignacio",,,16624,16108,,,
+"ccf79b35",16109,3,"Nuble","Yungay",,,18596,16109,,,
+"c06aad5e",16201,3,"Nuble","Quirihue",,,12192,16201,,,
+"5963fce4",16202,3,"Nuble","Cobquecura",,,5275,16202,,,
+"2e64cc72",16203,3,"Nuble","Coelemu",,,16845,16203,,,
+"b00059d1",16204,3,"Nuble","Ninhue",,,5414,16204,,,
+"c7076947",16205,3,"Nuble","Portezuelo",,,4940,16205,,,
+"5e0e38fd",16206,3,"Nuble","Ranquil",,,6261,16206,,,
+"2909086b",16207,3,"Nuble","Treguaco",,,5696,16207,,,
+"c1a8c769",16301,3,"Nuble","San Carlos",,,56252,16301,,,
+"58a196d3",16302,3,"Nuble","Coihueco",,,28375,16302,,,
+"2fa6a645",16303,3,"Nuble","Niquen",,,11567,16303,,,
+"b1c233e6",16304,3,"Nuble","San Fabian",,,4654,16304,,,
+"c6c50370",16305,3,"Nuble","San Nicolas",,,12172,16305,,,
