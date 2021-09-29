@@ -1,27 +1,28 @@
-"id","id_admin_ch","id_openzh_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_alpha_2","key_google_mobility","key_apple_mobility","foreign_key","foreign_key_type"
-"28dde504","AG","AG",2,"Aargau",,47.449406,8.327495,671000,"AG","Aargau","Canton of Aargau","CH033","NUTS"
-"450001ef","AR","AR",2,"Appenzell Ausserrhoden",,47.38271,9.27186,55200,"AR","Appenzell Ausserrhoden","Canton of Appenzell Ausserrhoden","CH053","NUTS"
-"cf65c803","AI","AI",2,"Appenzell Innerrhoden",,47.328414,9.409647,16100,"AI","Appenzell Innerrhoden","Canton of Appenzell Innerrhoden","CH054","NUTS"
-"192a62ba","BS","BS",2,"Basel-Stadt",,47.558395,7.573271,193900,"BS","Basel City","Canton of Basel-Stadt","CH031","NUTS"
-"94226f4f","BL","BL",2,"Baselland",,47.482779,7.742975,287000,"BL","Basel-Landschaft","Canton of Basel-Landschaft","CH032","NUTS"
-"edfed7eb","BE","BE",2,"Bern",,46.916667,7.466667,1031100,"BE","Canton of Bern","Canton of Bern","CH021","NUTS"
-"0a419728","FR","FR",2,"Fribourg",,46.718391,7.074008,315100,"FR","Fribourg","Canton of Fribourg","CH022","NUTS"
-"908923ae","GE","GE",2,"Geneve",,46.195602,6.148113,495200,"GE","Geneva","Canton of Geneva","CH013","NUTS"
-"e9559b0a","GL","GL",2,"Glarus",,47.04057,9.068036,40300,"GL","Glarus","Canton of Glarus","CH051","NUTS"
-"135aa669","GR","GR",2,"Graubunden",,46.796756,10.305946,197900,"GR","Grisons","Canton of Graubünden","CH056","NUTS"
-"38904d87","JU","JU",2,"Jura",,47.350744,7.156107,73300,"JU","Jura","Canton of Jura","CH025","NUTS"
-"6ecaea01","LU","LU",2,"Luzern",,47.083333,8.266667,406500,"LU","Lucerne","Canton of Lucerne","CH061","NUTS"
-"414b98e7","NE","NE",2,"Neuchatel",,46.995534,6.780126,178000,"NE","Neuchâtel","Canton of Neuchâtel","CH024","NUTS"
-"b2f2e9af","NW","NW",2,"Nidwalden",,46.95805,8.36609,43000,"NW","Nidwalden","Canton of Nidwalden","CH065","NUTS"
-"abe9d8ee","OW","OW",2,"Obwalden",,46.898509,8.250681,37600,"OW","Obwalden","Canton of Obwalden","CH064","NUTS"
-"c0968846","SH","SH",2,"Schaffhausen",,47.71357,8.59167,81400,"SH","Schaffhausen","Canton of Schaffhausen","CH052","NUTS"
-"332ff90e","SZ","SZ",2,"Schwyz",,47.061787,8.756585,157300,"SZ","Schwyz","Canton of Schwyz","CH063","NUTS"
-"5ef21de5","SO","SO",2,"Solothurn",,47.206649,7.516605,271400,"SO","Solothurn","Canton of Solothurn","CH023","NUTS"
-"502995d7","SG","SG",2,"St.Gallen",,47.43162,9.39845,504700,"SG","St. Gallen","Canton of St. Gallen","CH055","NUTS"
-"1f680310","TG","TG",2,"Thurgau",,47.55993,8.8998,273800,"TG","Thurgau","Canton of Thurgau","CH057","NUTS"
-"f8d02e17","TI","TI",2,"Ticino",,46.009279,8.955576,353700,"TI","Ticino","Canton of Ticino","CH070","NUTS"
-"6baed6ba","UR","UR",2,"Uri",,46.880422,8.644409,36300,"UR","Uri","Canton of Uri","CH062","NUTS"
-"3784b5ef","VS","VS",2,"Valais",,46.209567,7.604659,341500,"VS","Valais","Canton of Valais","CH012","NUTS"
-"b4573028","VD","VD",2,"Vaud",,46.5369,6.58478,793100,"VD","Vaud","Canton of Vaud","CH011","NUTS"
-"81eb2e9e","ZG","ZG",2,"Zug",,47.157296,8.537294,125400,"ZG","Canton of Zug","Canton of Zug","CH066","NUTS"
-"1154330f","ZH","ZH",2,"Zurich",,47.451542,8.564572,1504300,"ZH","Zurich","Canton of Zürich","CH040","NUTS"
+"id","id_admin_ch","id_openzh_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
+,,,,,,,,,,"-",,,,
+"28dde504","AG","AG",2,"Aargau",,"Canton of Aargau","CHE.1_1","Aargau","CH.AG","AG","CH033",47.449406,8.327495,671000
+"450001ef","AR","AR",2,"Appenzell Ausserrhoden",,"Canton of Appenzell Ausserrhoden","CHE.2_1","Appenzell Ausserrhoden","CH.AR","AR","CH053",47.38271,9.27186,55200
+"cf65c803","AI","AI",2,"Appenzell Innerrhoden",,"Canton of Appenzell Innerrhoden","CHE.3_1","Appenzell Innerrhoden","CH.AI","AI","CH054",47.328414,9.409647,16100
+"192a62ba","BS","BS",2,"Basel-Stadt",,"Canton of Basel-Stadt","CHE.5_1","Basel City","CH.BS","BS","CH031",47.558395,7.573271,193900
+"94226f4f","BL","BL",2,"Baselland",,"Canton of Basel-Landschaft","CHE.4_1","Basel-Landschaft","CH.BL","BL","CH032",47.482779,7.742975,287000
+"edfed7eb","BE","BE",2,"Bern",,"Canton of Bern","CHE.6_1","Canton of Bern","CH.BE","BE","CH021",46.916667,7.466667,1031100
+"0a419728","FR","FR",2,"Fribourg",,"Canton of Fribourg","CHE.7_1","Fribourg","CH.FR","FR","CH022",46.718391,7.074008,315100
+"908923ae","GE","GE",2,"Geneve",,"Canton of Geneva","CHE.8_1","Geneva","CH.GE","GE","CH013",46.195602,6.148113,495200
+"e9559b0a","GL","GL",2,"Glarus",,"Canton of Glarus","CHE.9_1","Glarus","CH.GL","GL","CH051",47.04057,9.068036,40300
+"135aa669","GR","GR",2,"Graubunden",,"Canton of Graubünden","CHE.10_1","Grisons","CH.GR","GR","CH056",46.796756,10.305946,197900
+"38904d87","JU","JU",2,"Jura",,"Canton of Jura","CHE.11_1","Jura","CH.JU","JU","CH025",47.350744,7.156107,73300
+"6ecaea01","LU","LU",2,"Luzern",,"Canton of Lucerne","CHE.12_1","Lucerne","CH.LU","LU","CH061",47.083333,8.266667,406500
+"414b98e7","NE","NE",2,"Neuchatel",,"Canton of Neuchâtel","CHE.13_1","Neuchâtel","CH.NE","NE","CH024",46.995534,6.780126,178000
+"b2f2e9af","NW","NW",2,"Nidwalden",,"Canton of Nidwalden","CHE.14_1","Nidwalden","CH.NW","NW","CH065",46.95805,8.36609,43000
+"abe9d8ee","OW","OW",2,"Obwalden",,"Canton of Obwalden","CHE.15_1","Obwalden","CH.OW","OW","CH064",46.898509,8.250681,37600
+"c0968846","SH","SH",2,"Schaffhausen",,"Canton of Schaffhausen","CHE.17_1","Schaffhausen","CH.SH","SH","CH052",47.71357,8.59167,81400
+"332ff90e","SZ","SZ",2,"Schwyz",,"Canton of Schwyz","CHE.18_1","Schwyz","CH.SZ","SZ","CH063",47.061787,8.756585,157300
+"5ef21de5","SO","SO",2,"Solothurn",,"Canton of Solothurn","CHE.19_1","Solothurn","CH.SO","SO","CH023",47.206649,7.516605,271400
+"502995d7","SG","SG",2,"St.Gallen",,"Canton of St. Gallen","CHE.16_1","St. Gallen","CH.SG","SG","CH055",47.43162,9.39845,504700
+"1f680310","TG","TG",2,"Thurgau",,"Canton of Thurgau","CHE.20_1","Thurgau","CH.TG","TG","CH057",47.55993,8.8998,273800
+"f8d02e17","TI","TI",2,"Ticino",,"Canton of Ticino","CHE.21_1","Ticino","CH.TI","TI","CH070",46.009279,8.955576,353700
+"6baed6ba","UR","UR",2,"Uri",,"Canton of Uri","CHE.22_1","Uri","CH.UR","UR","CH062",46.880422,8.644409,36300
+"3784b5ef","VS","VS",2,"Valais",,"Canton of Valais","CHE.23_1","Valais","CH.VS","VS","CH012",46.209567,7.604659,341500
+"b4573028","VD","VD",2,"Vaud",,"Canton of Vaud","CHE.24_1","Vaud","CH.VD","VD","CH011",46.5369,6.58478,793100
+"81eb2e9e","ZG","ZG",2,"Zug",,"Canton of Zug","CHE.25_1","Canton of Zug","CH.ZG","ZG","CH066",47.157296,8.537294,125400
+"1154330f","ZH","ZH",2,"Zurich",,"Canton of Zürich","CHE.26_1","Zurich","CH.ZH","ZH","CH040",47.451542,8.564572,1504300
