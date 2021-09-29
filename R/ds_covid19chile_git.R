@@ -85,11 +85,13 @@ covid19chile_git <- function(level, cache) {
     
     # formatting x.icu
     x.icu <- x.icu %>% 
-      tidyr::pivot_longer(cols = -c("Region", "Codigo.region", "Poblacion"), names_to = "date", values_to = "icu")
+      dplyr::select(-c("Poblacion")) %>%
+      tidyr::pivot_longer(cols = -c("Region", "Codigo.region"), names_to = "date", values_to = "icu")
     
     # formatting tests
     x.test <- x.test %>% 
-      tidyr::pivot_longer(cols = -c("Region", "Codigo.region", "Poblacion"), names_to = "date", values_to = "tests") %>%
+      dplyr::select(-c("Poblacion")) %>%
+      tidyr::pivot_longer(cols = -c("Region", "Codigo.region"), names_to = "date", values_to = "tests") %>%
       dplyr::group_by_at("Region") %>%
       dplyr::arrange_at("date") %>%
       dplyr::mutate(tests = cumsum(tests, na.rm = TRUE))
@@ -119,23 +121,33 @@ covid19chile_git <- function(level, cache) {
     x        <- read.csv(url, cache = cache)
     x.deaths <- read.csv(url.deaths, cache = cache)
     
+    # create provincia from comuna
+    x$Codigo.provincia <- gsub("..$", "", x$Codigo.comuna)
+    x.deaths$Codigo.provincia <- gsub("..$", "", x.deaths$Codigo.comuna)
+    
     # by
-    by <- c("Region", "Codigo.region", "Comuna", "Codigo.comuna", "Poblacion")
+    drop <- c("Region", "Codigo.region", "Comuna", "Codigo.comuna", "Poblacion")
+    by <- c("Codigo.provincia")
     
     # formatting x
-    x <- x[,colnames(x)!="Tasa"] %>% 
-      tidyr::pivot_longer(cols = -dplyr::all_of(by), names_to = "date", values_to = "confirmed")
+    x <- x %>%
+      dplyr::select(-dplyr::all_of(c(drop, "Tasa"))) %>%
+      tidyr::pivot_longer(cols = -dplyr::all_of(by), names_to = "date", values_to = "confirmed") %>%
+      dplyr::group_by_at(c("date", by)) %>%
+      dplyr::summarise(confirmed = sum(confirmed))
     
     # formatting x.deaths
     x.deaths <- x.deaths %>% 
-      tidyr::pivot_longer(cols = -dplyr::all_of(by), names_to = "date", values_to = "deaths")
+      dplyr::select(-dplyr::all_of(drop)) %>%
+      tidyr::pivot_longer(cols = -dplyr::all_of(by), names_to = "date", values_to = "deaths") %>%
+      dplyr::group_by_at(c("date", by)) %>%
+      dplyr::summarise(deaths = sum(deaths))
    
     # merge
-    x <- x[,c("date", "Codigo.comuna", "confirmed")] %>%
-      merge(x.deaths, by = c("date", "Codigo.comuna"), all = TRUE)
+    x <- merge(x, x.deaths, by = c("date", by), all = TRUE)
      
     # drop total
-    x <- x[!is.na(x$Codigo.comuna),]
+    x <- x[!is.na(x[[by]]),]
     
     # date
     x$date <- as.Date(x$date, format = "X%Y.%m.%d")
