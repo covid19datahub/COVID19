@@ -156,18 +156,18 @@
 "c27a6d26",9263,3,"Bayern","SK Straubing","DEU.2.87_1",,"DE.BY.ST","DE223","09263","DE223",48.8807544792,12.5734748714,47794
 "c3b80711",9363,3,"Bayern","SK Weiden i.d.OPf.","DEU.2.92_1",,"DE.BY.WO","DE233","09363","DE233",49.6692496128,12.1545339322,42520
 "c573c5fa",9663,3,"Bayern","SK Würzburg","DEU.2.91_1",,"DE.BY.WZ","DE263","09663","DE263",49.7846554247,9.94089602932,127880
-"e740fc53",11004,3,"Berlin","SK Berlin Charlottenburg-Wilmersdorf",,,,"DE304","11004","DE304",,,342332
-"0e235966",11002,3,"Berlin","SK Berlin Friedrichshain-Kreuzberg",,,,"DE302","11002","DE302",,,289762
-"8e31399d",11011,3,"Berlin","SK Berlin Lichtenberg",,,,"DE30B","11011","DE30B",,,291452
-"f936090b",11010,3,"Berlin","SK Berlin Marzahn-Hellersdorf",,,,"DE30A","11010","DE30A",,,268548
-"972a08dc",11001,3,"Berlin","SK Berlin Mitte",,,,"DE301","11001","DE301",,,384172
-"eef6b078",11008,3,"Berlin","SK Berlin Neukölln",,,,"DE308","11008","DE308",,,329691
-"792469f0",11003,3,"Berlin","SK Berlin Pankow",,,,"DE303","11003","DE303",,,407765
-"17386827",11012,3,"Berlin","SK Berlin Reinickendorf",,,,"DE30C","11012","DE30C",,,265225
-"9047ccc5",11005,3,"Berlin","SK Berlin Spandau",,,,"DE305","11005","DE305",,,243977
-"094e9d7f",11006,3,"Berlin","SK Berlin Steglitz-Zehlendorf",,,,"DE306","11006","DE306",,,308697
-"7e49ade9",11007,3,"Berlin","SK Berlin Tempelhof-Schöneberg",,,,"DE307","11007","DE307",,,351644
-"99f180ee",11009,3,"Berlin","SK Berlin Treptow-Köpenick",,,,"DE309","11009","DE309",,,271153
+"e740fc53",11004,3,"Berlin","SK Berlin Charlottenburg-Wilmersdorf",,,,"DE304","11004","DE304",52.52,13.4,342332
+"0e235966",11002,3,"Berlin","SK Berlin Friedrichshain-Kreuzberg",,,,"DE302","11002","DE302",52.52,13.4,289762
+"8e31399d",11011,3,"Berlin","SK Berlin Lichtenberg",,,,"DE30B","11011","DE30B",52.52,13.4,291452
+"f936090b",11010,3,"Berlin","SK Berlin Marzahn-Hellersdorf",,,,"DE30A","11010","DE30A",52.52,13.4,268548
+"972a08dc",11001,3,"Berlin","SK Berlin Mitte",,,,"DE301","11001","DE301",52.52,13.4,384172
+"eef6b078",11008,3,"Berlin","SK Berlin Neukölln",,,,"DE308","11008","DE308",52.52,13.4,329691
+"792469f0",11003,3,"Berlin","SK Berlin Pankow",,,,"DE303","11003","DE303",52.52,13.4,407765
+"17386827",11012,3,"Berlin","SK Berlin Reinickendorf",,,,"DE30C","11012","DE30C",52.52,13.4,265225
+"9047ccc5",11005,3,"Berlin","SK Berlin Spandau",,,,"DE305","11005","DE305",52.52,13.4,243977
+"094e9d7f",11006,3,"Berlin","SK Berlin Steglitz-Zehlendorf",,,,"DE306","11006","DE306",52.52,13.4,308697
+"7e49ade9",11007,3,"Berlin","SK Berlin Tempelhof-Schöneberg",,,,"DE307","11007","DE307",52.52,13.4,351644
+"99f180ee",11009,3,"Berlin","SK Berlin Treptow-Köpenick",,,,"DE309","11009","DE309",52.52,13.4,271153
 "a4c23022",12060,3,"Brandenburg","LK Barnim","DEU.4.1_1",,"DE.BB.BR","DE405","12060","DE405",52.8232279789,13.7037311303,182760
 "d3c500b4",12061,3,"Brandenburg","LK Dahme-Spreewald","DEU.4.4_1",,"DE.BB.DS","DE406","12061","DE406",52.0423069298,13.8199407798,169067
 "4acc510e",12062,3,"Brandenburg","LK Elbe-Elster","DEU.4.5_1",,"DE.BB.EE","DE407","12062","DE407",51.6122710164,13.459588917,102638
@@ -233,7 +233,7 @@
 "6b040706",3455,3,"Niedersachsen","LK Friesland","DEU.9.11_1",,"DE.NI.FI","DE94A","03455","DE94A",53.510362974,7.98324746163,98460
 "6aa201f4",3151,3,"Niedersachsen","LK Gifhorn","DEU.9.12_1",,"DE.NI.GF","DE914","03151","DE914",52.5802562309,10.6041704601,175920
 "84ac60d8",3153,3,"Niedersachsen","LK Goslar","DEU.9.13_1",,"DE.NI.GS","DE916","03153","DE916",51.8746771574,10.400392667,137014
-"647989c6",3159,3,"Niedersachsen","LK Göttingen","DEU.9.14_1",,"DE.NI.GT","DE91C","03159","DE91C",,,328074
+"647989c6",3159,3,"Niedersachsen","LK Göttingen","DEU.9.14_1",,"DE.NI.GT","DE91C","03159","DE91C",51.56,10.09,328074
 "f20d56bc",3456,3,"Niedersachsen","LK Grafschaft Bentheim","DEU.9.15_1",,"DE.NI.GB","DE94B","03456","DE94B",52.4760534093,7.01985676166,136511
 "f1edee17",3252,3,"Niedersachsen","LK Hameln-Pyrmont","DEU.9.16_1",,"DE.NI.HP","DE923","03252","DE923",52.0951381895,9.38989545155,148559
 "8728b4b6",3353,3,"Niedersachsen","LK Harburg","DEU.9.17_1",,"DE.NI.HR","DE933","03353","DE933",53.3157734164,9.96273884793,252776
