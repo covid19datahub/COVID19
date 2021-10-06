@@ -1,92 +1,92 @@
-"id","id_mzcr_cz","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_google_mobility","key_apple_mobility","key_nuts","key_gadm","key_hasc"
-"674bb426","CZ031",2,"Jihočeský",,49.0933622528318,14.4392777195334,642133,"South Bohemian Region","South Bohemia Region","CZ031","CZE.1_1","CZ.CK"
-"6a56b4ec","CZ064",2,"Jihomoravský",,49.0794464314262,16.663916002828,1187667,"Moravian-Silesian Region","Moravian-Silesian Region","CZ064","CZE.2_1","CZ.BK"
-"280a22e1","CZ041",2,"Karlovarský",,50.1701364543397,12.7632128902583,294896,"Karlovy Vary Region","Karlovy Vary Region","CZ041","CZE.3_1","CZ.KK"
-"a818421a","CZ052",2,"Královéhradecký",,50.3853859540404,15.865829503254,551021,"Hradec Králové Region","Hradec Králové Region","CZ052","CZE.5_1","CZ.HK"
-"311113a0","CZ051",2,"Liberecký",,50.7014590145441,14.9929090479863,442356,"Liberec Region","Liberec Region","CZ051","CZE.6_1","CZ.LK"
-"f3b85d7b","CZ080",2,"Moravskoslezský",,49.8368324852308,17.9554335722409,1203299,"South Moravian Region","South Moravian Region","CZ080","CZE.7_1","CZ.VK"
-"03277122","CZ071",2,"Olomoucký",,49.7799965819475,17.1891637714166,632492,"Olomouc Region","Olomouc Region","CZ071","CZE.8_1","CZ.OK"
-"df1f728c","CZ053",2,"Pardubický",,49.9004342779717,16.1887043656818,520316,"Pardubice Region","Pardubice Region","CZ053","CZE.9_1","CZ.EK"
-"fe42e59c","CZ032",2,"Plzeňský",,49.5909064404684,13.2322201044451,584672,"Plzeň Region","Plzeň Region","CZ032","CZE.10_1","CZ.PK"
-"227ae632","CZ010",2,"Prague",,50.0636986041279,14.4764025063456,1308632,"Prague","Prague","CZ010","CZE.11_1","CZ.SK"
-"0957b5f1","CZ020",2,"Středočeský",,50.0001372979994,14.5519951675848,1369332,"Central Bohemian Region","Central Bohemian Region","CZ020","CZE.12_1","CZ.SK"
-"b103735b","CZ042",2,"Ústecký",,50.529610336389,13.8530494058986,820789,"Ústí nad Labem Region","Ústí nad Labem Region","CZ042","CZE.13_1","CZ.UK"
-"f432214f","CZ063",2,"Kraj Vysočina",,49.4073602935899,15.6899372262531,509274,"Vysocina Region","Vysočina Region","CZ063","CZE.4_1","CZ.JK"
-"9a2e2098","CZ072",2,"Zlínský",,49.2396537821779,17.7702183317233,582921,"Zlin Region","Zlín Region","CZ072","CZE.14_1","CZ.ZK"
-"f62d7a0b","CZ0100",3,"Hlavní mesto Praha","Praha",,,,,,"CZ0100",,
-"d36985f8","CZ020A",3,"Stredoceský kraj","Praha-západ",,,,,,"CZ020A",,
-"4a60d442","CZ020B",3,"Stredoceský kraj","Príbram",,,,,,"CZ020B",,
-"3d67e4d4","CZ020C",3,"Stredoceský kraj","Rakovník",,,,,,"CZ020C",,
-"836cf4c4","CZ0201",3,"Stredoceský kraj","Benešov",,,,,,"CZ0201",,
-"1a65a57e","CZ0202",3,"Stredoceský kraj","Beroun",,,,,,"CZ0202",,
-"6d6295e8","CZ0203",3,"Stredoceský kraj","Kladno",,,,,,"CZ0203",,
-"f306004b","CZ0204",3,"Stredoceský kraj","Kolín",,,,,,"CZ0204",,
-"840130dd","CZ0205",3,"Stredoceský kraj","Kutná Hora",,,,,,"CZ0205",,
-"1d086167","CZ0206",3,"Stredoceský kraj","Melník",,,,,,"CZ0206",,
-"6a0f51f1","CZ0207",3,"Stredoceský kraj","Mladá Boleslav",,,,,,"CZ0207",,
-"fab04c60","CZ0208",3,"Stredoceský kraj","Nymburk",,,,,,"CZ0208",,
-"8db77cf6","CZ0209",3,"Stredoceský kraj","Praha-východ",,,,,,"CZ0209",,
-"9bb5afb2","CZ0311",3,"Jihoceský kraj","Ceské Budejovice",,,,,,"CZ0311",,
-"02bcfe08","CZ0312",3,"Jihoceský kraj","Ceský Krumlov",,,,,,"CZ0312",,
-"75bbce9e","CZ0313",3,"Jihoceský kraj","Jindrichuv Hradec",,,,,,"CZ0313",,
-"ebdf5b3d","CZ0314",3,"Jihoceský kraj","Písek",,,,,,"CZ0314",,
-"9cd86bab","CZ0315",3,"Jihoceský kraj","Prachatice",,,,,,"CZ0315",,
-"05d13a11","CZ0316",3,"Jihoceský kraj","Strakonice",,,,,,"CZ0316",,
-"72d60a87","CZ0317",3,"Jihoceský kraj","Tábor",,,,,,"CZ0317",,
-"b098fc71","CZ0321",3,"Plzenský kraj","Domažlice",,,,,,"CZ0321",,
-"2991adcb","CZ0322",3,"Plzenský kraj","Klatovy",,,,,,"CZ0322",,
-"5e969d5d","CZ0323",3,"Plzenský kraj","Plzen-mesto",,,,,,"CZ0323",,
-"c0f208fe","CZ0324",3,"Plzenský kraj","Plzen-jih",,,,,,"CZ0324",,
-"b7f53868","CZ0325",3,"Plzenský kraj","Plzen-sever",,,,,,"CZ0325",,
-"2efc69d2","CZ0326",3,"Plzenský kraj","Rokycany",,,,,,"CZ0326",,
-"59fb5944","CZ0327",3,"Plzenský kraj","Tachov",,,,,,"CZ0327",,
-"9efab937","CZ0411",3,"Karlovarský kraj","Cheb",,,,,,"CZ0411",,
-"07f3e88d","CZ0412",3,"Karlovarský kraj","Karlovy Vary",,,,,,"CZ0412",,
-"70f4d81b","CZ0413",3,"Karlovarský kraj","Sokolov",,,,,,"CZ0413",,
-"b5d7eaf4","CZ0421",3,"Ústecký kraj","Decín",,,,,,"CZ0421",,
-"2cdebb4e","CZ0422",3,"Ústecký kraj","Chomutov",,,,,,"CZ0422",,
-"5bd98bd8","CZ0423",3,"Ústecký kraj","Litomerice",,,,,,"CZ0423",,
-"c5bd1e7b","CZ0424",3,"Ústecký kraj","Louny",,,,,,"CZ0424",,
-"b2ba2eed","CZ0425",3,"Ústecký kraj","Most",,,,,,"CZ0425",,
-"2bb37f57","CZ0426",3,"Ústecký kraj","Teplice",,,,,,"CZ0426",,
-"5cb44fc1","CZ0427",3,"Ústecký kraj","Ústí nad Labem",,,,,,"CZ0427",,
-"9f38d300","CZ0511",3,"Liberecký kraj","Ceská Lípa",,,,,,"CZ0511",,
-"063182ba","CZ0512",3,"Liberecký kraj","Jablonec nad Nisou",,,,,,"CZ0512",,
-"7136b22c","CZ0513",3,"Liberecký kraj","Liberec",,,,,,"CZ0513",,
-"ef52278f","CZ0514",3,"Liberecký kraj","Semily",,,,,,"CZ0514",,
-"b41580c3","CZ0521",3,"Královehradecký kraj","Hradec Králové",,,,,,"CZ0521",,
-"2d1cd179","CZ0522",3,"Královehradecký kraj","Jicín",,,,,,"CZ0522",,
-"5a1be1ef","CZ0523",3,"Královehradecký kraj","Náchod",,,,,,"CZ0523",,
-"c47f744c","CZ0524",3,"Královehradecký kraj","Rychnov nad Knežnou",,,,,,"CZ0524",,
-"b37844da","CZ0525",3,"Královehradecký kraj","Trutnov",,,,,,"CZ0525",,
-"ad0eb182","CZ0531",3,"Pardubický kraj","Chrudim",,,,,,"CZ0531",,
-"3407e038","CZ0532",3,"Pardubický kraj","Pardubice",,,,,,"CZ0532",,
-"4300d0ae","CZ0533",3,"Pardubický kraj","Svitavy",,,,,,"CZ0533",,
-"dd64450d","CZ0534",3,"Pardubický kraj","Ústí nad Orlicí",,,,,,"CZ0534",,
-"af480fdb","CZ0631",3,"kraj Vysocina","Havlíckuv Brod",,,,,,"CZ0631",,
-"36415e61","CZ0632",3,"kraj Vysocina","Jihlava",,,,,,"CZ0632",,
-"41466ef7","CZ0633",3,"kraj Vysocina","Pelhrimov",,,,,,"CZ0633",,
-"df22fb54","CZ0634",3,"kraj Vysocina","Trebíc",,,,,,"CZ0634",,
-"a825cbc2","CZ0635",3,"kraj Vysocina","Ždár nad Sázavou",,,,,,"CZ0635",,
-"e009991c","CZ0641",3,"Jihomoravský kraj","Blansko",,,,,,"CZ0641",,
-"7900c8a6","CZ0642",3,"Jihomoravský kraj","Brno-mesto",,,,,,"CZ0642",,
-"0e07f830","CZ0643",3,"Jihomoravský kraj","Brno-venkov",,,,,,"CZ0643",,
-"90636d93","CZ0644",3,"Jihomoravský kraj","Breclav",,,,,,"CZ0644",,
-"e7645d05","CZ0645",3,"Jihomoravský kraj","Hodonín",,,,,,"CZ0645",,
-"7e6d0cbf","CZ0646",3,"Jihomoravský kraj","Vyškov",,,,,,"CZ0646",,
-"096a3c29","CZ0647",3,"Jihomoravský kraj","Znojmo",,,,,,"CZ0647",,
-"9cbc076e","CZ0711",3,"Olomoucký kraj","Jeseník",,,,,,"CZ0711",,
-"05b556d4","CZ0712",3,"Olomoucký kraj","Olomouc",,,,,,"CZ0712",,
-"72b26642","CZ0713",3,"Olomoucký kraj","Prostejov",,,,,,"CZ0713",,
-"ecd6f3e1","CZ0714",3,"Olomoucký kraj","Prerov",,,,,,"CZ0714",,
-"9bd1c377","CZ0715",3,"Olomoucký kraj","Šumperk",,,,,,"CZ0715",,
-"b79154ad","CZ0721",3,"Zlínský kraj","Kromeríž",,,,,,"CZ0721",,
-"2e980517","CZ0722",3,"Zlínský kraj","Uherské Hradište",,,,,,"CZ0722",,
-"599f3581","CZ0723",3,"Zlínský kraj","Vsetín",,,,,,"CZ0723",,
-"c7fba022","CZ0724",3,"Zlínský kraj","Zlín",,,,,,"CZ0724",,
-"8efb7112","CZ0801",3,"Moravskoslezský kraj","Bruntál",,,,,,"CZ0801",,
-"17f220a8","CZ0802",3,"Moravskoslezský kraj","Frýdek-Místek",,,,,,"CZ0802",,
-"60f5103e","CZ0803",3,"Moravskoslezský kraj","Karviná",,,,,,"CZ0803",,
-"fe91859d","CZ0804",3,"Moravskoslezský kraj","Nový Jicín",,,,,,"CZ0804",,
-"8996b50b","CZ0805",3,"Moravskoslezský kraj","Opava",,,,,,"CZ0805",,
-"109fe4b1","CZ0806",3,"Moravskoslezský kraj","Ostrava-mesto",,,,,,"CZ0806",,
+"id","id_mzcr_cz","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_google_mobility","key_apple_mobility","key_nuts","key_gadm","key_hasc","key_local"
+"674bb426","CZ031",2,"Jihočeský",,49.0933622528318,14.4392777195334,642133,"South Bohemian Region","South Bohemia Region","CZ031","CZE.1_1","CZ.CK","CZ031"
+"6a56b4ec","CZ064",2,"Jihomoravský",,49.0794464314262,16.663916002828,1187667,"Moravian-Silesian Region","Moravian-Silesian Region","CZ064","CZE.2_1","CZ.BK","CZ064"
+"280a22e1","CZ041",2,"Karlovarský",,50.1701364543397,12.7632128902583,294896,"Karlovy Vary Region","Karlovy Vary Region","CZ041","CZE.3_1","CZ.KK","CZ041"
+"a818421a","CZ052",2,"Královéhradecký",,50.3853859540404,15.865829503254,551021,"Hradec Králové Region","Hradec Králové Region","CZ052","CZE.5_1","CZ.HK","CZ052"
+"311113a0","CZ051",2,"Liberecký",,50.7014590145441,14.9929090479863,442356,"Liberec Region","Liberec Region","CZ051","CZE.6_1","CZ.LK","CZ051"
+"f3b85d7b","CZ080",2,"Moravskoslezský",,49.8368324852308,17.9554335722409,1203299,"South Moravian Region","South Moravian Region","CZ080","CZE.7_1","CZ.VK","CZ080"
+"03277122","CZ071",2,"Olomoucký",,49.7799965819475,17.1891637714166,632492,"Olomouc Region","Olomouc Region","CZ071","CZE.8_1","CZ.OK","CZ071"
+"df1f728c","CZ053",2,"Pardubický",,49.9004342779717,16.1887043656818,520316,"Pardubice Region","Pardubice Region","CZ053","CZE.9_1","CZ.EK","CZ053"
+"fe42e59c","CZ032",2,"Plzeňský",,49.5909064404684,13.2322201044451,584672,"Plzeň Region","Plzeň Region","CZ032","CZE.10_1","CZ.PK","CZ032"
+"227ae632","CZ010",2,"Prague",,50.0636986041279,14.4764025063456,1308632,"Prague","Prague","CZ010","CZE.11_1","CZ.SK","CZ010"
+"0957b5f1","CZ020",2,"Středočeský",,50.0001372979994,14.5519951675848,1369332,"Central Bohemian Region","Central Bohemian Region","CZ020","CZE.12_1","CZ.SK","CZ020"
+"b103735b","CZ042",2,"Ústecký",,50.529610336389,13.8530494058986,820789,"Ústí nad Labem Region","Ústí nad Labem Region","CZ042","CZE.13_1","CZ.UK","CZ042"
+"f432214f","CZ063",2,"Kraj Vysočina",,49.4073602935899,15.6899372262531,509274,"Vysocina Region","Vysočina Region","CZ063","CZE.4_1","CZ.JK","CZ063"
+"9a2e2098","CZ072",2,"Zlínský",,49.2396537821779,17.7702183317233,582921,"Zlin Region","Zlín Region","CZ072","CZE.14_1","CZ.ZK","CZ072"
+"f62d7a0b","CZ0100",3,"Hlavní mesto Praha","Praha",,,1169106,,,,,"CZ.PM.AA","CZ0100"
+"d36985f8","CZ020A",3,"Stredoceský kraj","Praha-západ",,,83089,,,,"CZE.12.10_1","CZ.SK.PZ","CZ020A"
+"4a60d442","CZ020B",3,"Stredoceský kraj","Príbram",,,107739,,,,"CZE.12.11_1","CZ.SK.PB","CZ020B"
+"3d67e4d4","CZ020C",3,"Stredoceský kraj","Rakovník",,,54084,,,,"CZE.12.12_1","CZ.SK.RA","CZ020C"
+"836cf4c4","CZ0201",3,"Stredoceský kraj","Benešov",,,93156,,,,"CZE.12.1_1","CZ.SK.BN","CZ0201"
+"1a65a57e","CZ0202",3,"Stredoceský kraj","Beroun",,,75684,,,,"CZE.12.2_1","CZ.SK.BE","CZ0202"
+"6d6295e8","CZ0203",3,"Stredoceský kraj","Kladno",,,150198,,,,"CZE.12.3_1","CZ.SK.KL","CZ0203"
+"f306004b","CZ0204",3,"Stredoceský kraj","Kolín",,,957,,,,"CZE.12.4_1","CZ.SK.KO","CZ0204"
+"840130dd","CZ0205",3,"Stredoceský kraj","Kutná Hora",,,73628,,,,"CZE.12.5_1","CZ.SK.KH","CZ0205"
+"1d086167","CZ0206",3,"Stredoceský kraj","Melník",,,94677,,,,"CZE.12.6_1","CZ.SK.ME","CZ0206"
+"6a0f51f1","CZ0207",3,"Stredoceský kraj","Mladá Boleslav",,,114325,,,,"CZE.12.7_1","CZ.SK.MB","CZ0207"
+"fab04c60","CZ0208",3,"Stredoceský kraj","Nymburk",,,84132,,,,"CZE.12.8_1","CZ.SK.NB","CZ0208"
+"8db77cf6","CZ0209",3,"Stredoceský kraj","Praha-východ",,,96061,,,,"CZE.12.9_1","CZ.SK.PH","CZ0209"
+"9bb5afb2","CZ0311",3,"Jihoceský kraj","Ceské Budejovice",,,178201,,,,"CZE.1.1_1","CZ.CK.CB","CZ0311"
+"02bcfe08","CZ0312",3,"Jihoceský kraj","Ceský Krumlov",,,59569,,,,"CZE.1.2_1","CZ.CK.CK","CZ0312"
+"75bbce9e","CZ0313",3,"Jihoceský kraj","Jindrichuv Hradec",,,92887,,,,"CZE.1.3_1","CZ.CK.JH","CZ0313"
+"ebdf5b3d","CZ0314",3,"Jihoceský kraj","Písek",,,7055,,,,"CZE.1.4_1","CZ.CK.PI","CZ0314"
+"9cd86bab","CZ0315",3,"Jihoceský kraj","Prachatice",,,51369,,,,"CZE.1.5_1","CZ.CK.PT","CZ0315"
+"05d13a11","CZ0316",3,"Jihoceský kraj","Strakonice",,,69863,,,,"CZE.1.6_1","CZ.CK.ST","CZ0316"
+"72d60a87","CZ0317",3,"Jihoceský kraj","Tábor",,,102828,,,,"CZE.1.7_1","CZ.CK.TA","CZ0317"
+"b098fc71","CZ0321",3,"Plzenský kraj","Domažlice",,,58844,,,,"CZE.10.1_1","CZ.PK.DO","CZ0321"
+"2991adcb","CZ0322",3,"Plzenský kraj","Klatovy",,,88043,,,,"CZE.10.2_1","CZ.PK.KT","CZ0322"
+"5e969d5d","CZ0323",3,"Plzenský kraj","Plzen-mesto",,,165259,,,,"CZE.10.3_1","CZ.PK.PM","CZ0323"
+"c0f208fe","CZ0324",3,"Plzenský kraj","Plzen-jih",,,681,,,,"CZE.10.4_1","CZ.PK.PJ","CZ0324"
+"b7f53868","CZ0325",3,"Plzenský kraj","Plzen-sever",,,73215,,,,"CZE.10.5_1","CZ.PK.PS","CZ0325"
+"2efc69d2","CZ0326",3,"Plzenský kraj","Rokycany",,,45788,,,,"CZE.10.6_1","CZ.PK.RO","CZ0326"
+"59fb5944","CZ0327",3,"Plzenský kraj","Tachov",,,51439,,,,"CZE.10.7_1","CZ.PK.TC","CZ0327"
+"9efab937","CZ0411",3,"Karlovarský kraj","Cheb",,,88738,,,,"CZE.3.1_1","CZ.KK.CH","CZ0411"
+"07f3e88d","CZ0412",3,"Karlovarský kraj","Karlovy Vary",,,121998,,,,"CZE.3.2_1","CZ.KK.KV","CZ0412"
+"70f4d81b","CZ0413",3,"Karlovarský kraj","Sokolov",,,93607,,,,"CZE.3.3_1","CZ.KK.SO","CZ0413"
+"b5d7eaf4","CZ0421",3,"Ústecký kraj","Decín",,,133887,,,,"CZE.13.2_1","CZ.UK.DC","CZ0421"
+"2cdebb4e","CZ0422",3,"Ústecký kraj","Chomutov",,,124979,,,,"CZE.13.1_1","CZ.UK.CV","CZ0422"
+"5bd98bd8","CZ0423",3,"Ústecký kraj","Litomerice",,,114259,,,,"CZE.13.3_1","CZ.UK.LT","CZ0423"
+"c5bd1e7b","CZ0424",3,"Ústecký kraj","Louny",,,8602,,,,"CZE.13.4_1","CZ.UK.LN","CZ0424"
+"b2ba2eed","CZ0425",3,"Ústecký kraj","Most",,,117196,,,,"CZE.13.5_1","CZ.UK.MO","CZ0425"
+"2bb37f57","CZ0426",3,"Ústecký kraj","Teplice",,,126098,,,,"CZE.13.6_1","CZ.UK.TP","CZ0426"
+"5cb44fc1","CZ0427",3,"Ústecký kraj","Ústí nad Labem",,,11778,,,,"CZE.13.7_1","CZ.UK.UL","CZ0427"
+"9f38d300","CZ0511",3,"Liberecký kraj","Ceská Lípa",,,105669,,,,"CZE.6.1_1","CZ.LK.CL","CZ0511"
+"063182ba","CZ0512",3,"Liberecký kraj","Jablonec nad Nisou",,,88154,,,,"CZE.6.2_1","CZ.LK.JN","CZ0512"
+"7136b22c","CZ0513",3,"Liberecký kraj","Liberec",,,159006,,,,"CZE.6.3_1","CZ.LK.LB","CZ0513"
+"ef52278f","CZ0514",3,"Liberecký kraj","Semily",,,75355,,,,"CZE.6.4_1","CZ.LK.SM","CZ0514"
+"b41580c3","CZ0521",3,"Královehradecký kraj","Hradec Králové",,,160558,,,,"CZE.5.1_1","CZ.HK.HK","CZ0521"
+"2d1cd179","CZ0522",3,"Královehradecký kraj","Jicín",,,77761,,,,"CZE.5.2_1","CZ.HK.JC","CZ0522"
+"5a1be1ef","CZ0523",3,"Královehradecký kraj","Náchod",,,112714,,,,"CZE.5.3_1","CZ.HK.NA","CZ0523"
+"c47f744c","CZ0524",3,"Královehradecký kraj","Rychnov nad Knežnou",,,78914,,,,"CZE.5.4_1","CZ.HK.RK","CZ0524"
+"b37844da","CZ0525",3,"Královehradecký kraj","Trutnov",,,120777,,,,"CZE.5.5_1","CZ.HK.TU","CZ0525"
+"ad0eb182","CZ0531",3,"Pardubický kraj","Chrudim",,,10524,,,,"CZE.9.1_1","CZ.EK.CR","CZ0531"
+"3407e038","CZ0532",3,"Pardubický kraj","Pardubice",,,160987,,,,"CZE.9.2_1","CZ.EK.PU","CZ0532"
+"4300d0ae","CZ0533",3,"Pardubický kraj","Svitavy",,,102667,,,,"CZE.9.3_1","CZ.EK.SY","CZ0533"
+"dd64450d","CZ0534",3,"Pardubický kraj","Ústí nad Orlicí",,,139387,,,,"CZE.9.4_1","CZ.EK.UO","CZ0534"
+"af480fdb","CZ0631",3,"kraj Vysocina","Havlíckuv Brod",,,9504,,,,"CZE.4.1_1","CZ.JK.HB","CZ0631"
+"36415e61","CZ0632",3,"kraj Vysocina","Jihlava",,,108413,,,,"CZE.4.2_1","CZ.JK.JI","CZ0632"
+"41466ef7","CZ0633",3,"kraj Vysocina","Pelhrimov",,,72984,,,,"CZE.4.3_1","CZ.JK.PE","CZ0633"
+"df22fb54","CZ0634",3,"kraj Vysocina","Trebíc",,,117367,,,,"CZE.4.4_1","CZ.JK.TR","CZ0634"
+"a825cbc2","CZ0635",3,"kraj Vysocina","Ždár nad Sázavou",,,125407,,,,"CZE.4.5_1","CZ.JK.ZR","CZ0635"
+"e009991c","CZ0641",3,"Jihomoravský kraj","Blansko",,,107702,,,,"CZE.2.1_1","CZ.BK.BK","CZ0641"
+"7900c8a6","CZ0642",3,"Jihomoravský kraj","Brno-mesto",,,376172,,,,"CZE.2.3_1","CZ.BK.BM","CZ0642"
+"0e07f830","CZ0643",3,"Jihomoravský kraj","Brno-venkov",,,159169,,,,"CZE.2.4_1","CZ.BK.BO","CZ0643"
+"90636d93","CZ0644",3,"Jihomoravský kraj","Breclav",,,124274,,,,"CZE.2.2_1","CZ.BK.BV","CZ0644"
+"e7645d05","CZ0645",3,"Jihomoravský kraj","Hodonín",,,159886,,,,"CZE.2.5_1","CZ.BK.HO","CZ0645"
+"7e6d0cbf","CZ0646",3,"Jihomoravský kraj","Vyškov",,,86467,,,,"CZE.2.6_1","CZ.BK.VY","CZ0646"
+"096a3c29","CZ0647",3,"Jihomoravský kraj","Znojmo",,,114048,,,,"CZE.2.7_1","CZ.BK.ZN","CZ0647"
+"9cbc076e","CZ0711",3,"Olomoucký kraj","Jeseník",,,42413,,,,"CZE.8.1_1","CZ.OK.JE","CZ0711"
+"05b556d4","CZ0712",3,"Olomoucký kraj","Olomouc",,,224613,,,,"CZE.8.2_1","CZ.OK.OC","CZ0712"
+"72b26642","CZ0713",3,"Olomoucký kraj","Prostejov",,,10989,,,,"CZE.8.4_1","CZ.OK.PV","CZ0713"
+"ecd6f3e1","CZ0714",3,"Olomoucký kraj","Prerov",,,135886,,,,"CZE.8.3_1","CZ.OK.PR","CZ0714"
+"9bd1c377","CZ0715",3,"Olomoucký kraj","Šumperk",,,126567,,,,"CZE.8.5_1","CZ.OK.SU","CZ0715"
+"b79154ad","CZ0721",3,"Zlínský kraj","Kromeríž",,,108053,,,,"CZE.14.1_1","CZ.ZK.KM","CZ0721"
+"2e980517","CZ0722",3,"Zlínský kraj","Uherské Hradište",,,144517,,,,"CZE.14.2_1","CZ.ZK.UH","CZ0722"
+"599f3581","CZ0723",3,"Zlínský kraj","Vsetín",,,147064,,,,"CZE.14.3_1","CZ.ZK.VS","CZ0723"
+"c7fba022","CZ0724",3,"Zlínský kraj","Zlín",,,195376,,,,"CZE.14.4_1","CZ.ZK.ZL","CZ0724"
+"8efb7112","CZ0801",3,"Moravskoslezský kraj","Bruntál",,,105139,,,,"CZE.7.1_1","CZ.VK.BR","CZ0801"
+"17f220a8","CZ0802",3,"Moravskoslezský kraj","Frýdek-Místek",,,226818,,,,"CZE.7.2_1","CZ.VK.FM","CZ0802"
+"60f5103e","CZ0803",3,"Moravskoslezský kraj","Karviná",,,279436,,,,"CZE.7.3_1","CZ.VK.KI","CZ0803"
+"fe91859d","CZ0804",3,"Moravskoslezský kraj","Nový Jicín",,,159925,,,,"CZE.7.4_1","CZ.VK.NJ","CZ0804"
+"8996b50b","CZ0805",3,"Moravskoslezský kraj","Opava",,,181405,,,,"CZE.7.5_1","CZ.VK.OP","CZ0805"
+"109fe4b1","CZ0806",3,"Moravskoslezský kraj","Ostrava-mesto",,,316744,,,,"CZE.7.6_1","CZ.VK.OV","CZ0806"
