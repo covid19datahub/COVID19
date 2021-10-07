@@ -21,10 +21,10 @@ ssi_dk <- function(level){
   if(level == 2){
     
     dir <- tempdir()
-    files <- "Regionalt_DB/03_bekraeftede_tilfaelde_doede_indlagte_pr_dag_pr_koen.csv"
-    files <- unzip(zip, files = files, exdir = dir)
+    file <- "Regionalt_DB/03_bekraeftede_tilfaelde_doede_indlagte_pr_dag_pr_koen.csv"
+    file <- unzip(zip, files = file, exdir = dir)
     
-    x <- read.csv(files[1], sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
+    x <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
     
     x <- map_data(x, c(
       "Region" = "region",
@@ -44,6 +44,27 @@ ssi_dk <- function(level){
         deaths = cumsum(deaths),
         confirmed = cumsum(confirmed))
     
+    
+  }
+  
+  if(level == 3){
+    
+    dir <- tempdir()
+    file <- "Kommunalt_DB/07_bekraeftede_tilfaelde_pr_dag_pr_kommune.csv"
+    file <- unzip(zip, files = file, exdir = dir)
+    
+    x <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
+    
+    x <- map_data(x, c(
+      "Kommune" = "municipality",
+      "Dato" = "date",
+      "Bekræftede.tilfælde" = "confirmed"
+    )) 
+    
+    x <- x %>%
+      dplyr::group_by(municipality) %>%
+      dplyr::arrange(date) %>%
+      dplyr::mutate(confirmed = cumsum(confirmed))
     
   }
   

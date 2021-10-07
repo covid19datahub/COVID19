@@ -239,6 +239,7 @@
 "DNK",1,"longitude","https://wikipedia.org","Wikipedia","2020",,,,
 "DNK",2,"confirmed","https://covid19.ssi.dk/overvagningsdata/download-fil-med-overvaagningdata","Statens Serum Institut","2020",,,,
 "DNK",2,"deaths","https://covid19.ssi.dk/overvagningsdata/download-fil-med-overvaagningdata","Statens Serum Institut","2020",,,,
+"DNK",3,"confirmed","https://covid19.ssi.dk/overvagningsdata/download-fil-med-overvaagningdata","Statens Serum Institut","2020",,,,
 "DPC",1,"tests","https://www.wikipedia.org","Wikipedia","2020",,,,
 "DPC",1,"population","https://www.wikipedia.org","Wikipedia","2020",,,,
 "ERI",1,"population","https://en.wikipedia.org/wiki/Demographics_of_Eritrea","Wikipedia","2019",,,,
