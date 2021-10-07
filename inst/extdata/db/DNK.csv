@@ -1,6 +1,7 @@
-"id","id_ssi_dk","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"814fed25","Hovedstaden",2,"Hovedstaden",,,,
-"9995c4f9","Midtjylland",2,"Midtjylland",,,,
-"ae08d86f","Nordjylland",2,"Nordjylland",,,,
-"f36a94cd","Sjælland",2,"Sjælland",,,,
-"b9ee791f","Syddanmark",2,"Syddanmark",,,,
+"id","id_ssi_dk","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
+,,,,,,,,"-",,,,
+"814fed25","Hovedstaden",2,"Hovedstaden",,"DNK.1_1","Capital Region of Denmark","DK.HS","1084","DK01",55.8762664457592,12.3119486316782,"1631635"
+"9995c4f9","Midtjylland",2,"Midtjylland",,"DNK.2_1","Central Denmark Region","DK.MJ","1082","DK04",56.2493815244776,9.38903141053189,"1212787"
+"ae08d86f","Nordjylland",2,"Nordjylland",,"DNK.3_1","North Denmark Region","DK.ND","1081","DK05",57.2049706002423,9.66786338269064,"577278"
+"f36a94cd","Sjælland",2,"Sjælland",,"DNK.4_1","Region Zealand","DK.SL","1085","DK02",55.4597663917136,11.7226019102253,"805954"
+"b9ee791f","Syddanmark",2,"Syddanmark",,"DNK.5_1","Region of Southern Denmark","DK.SD","1083","DK03",55.4074465976576,9.05256452747664,"1183751"
