@@ -1,3 +1,6 @@
-"id","id_jhucsse_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_jhu_csse"
-"792c28f2","Faroe Islands",2,"Faroe Islands",,61.8926,-6.9118,48497,"DKFO"
-"536fac42","Greenland",2,"Greenland",,71.7069,-42.6043,56025,"DKGL"
+"id","id_ssi_dk","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
+"814fed25","Hovedstaden",2,"Hovedstaden",,,,
+"9995c4f9","Midtjylland",2,"Midtjylland",,,,
+"ae08d86f","Nordjylland",2,"Nordjylland",,,,
+"f36a94cd","Sjælland",2,"Sjælland",,,,
+"b9ee791f","Syddanmark",2,"Syddanmark",,,,
