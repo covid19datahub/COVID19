@@ -4,7 +4,7 @@
 \alias{map_values}
 \title{Map values}
 \usage{
-map_values(x, map)
+map_values(x, map, force = FALSE)
 }
 \arguments{
 \item{x}{vector.}

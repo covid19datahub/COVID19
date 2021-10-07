@@ -30,6 +30,21 @@ fix <- function(x, iso){
   
 }
 
+#' Convert identifiers
+#'
+#' Map the ids of administrative areas used by the data provider to the 
+#' identifiers used in the Data Hub.
+#' 
+#' @param x vector of identifiers used by the data source to identify administrative areas.
+#' @param iso the 3 letter ISO code of the country.
+#' @param ds the name of the data source function.
+#' @param level the level of the administrative areas.
+#' 
+#' @return converted vector of identifiers to use in the Data Hub.
+#' 
+#' @keywords internal
+#' 
+#' @export
 id <- function(x, iso, ds, level){
   
   db <- extdata("db",sprintf("%s.csv",iso))
