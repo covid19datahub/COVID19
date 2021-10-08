@@ -1,24 +1,24 @@
 "id","id_mscbs_es","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,"-",,,,
-"65d624b3","AN",2,"Andalucía",,"ESP.1_1","Andalusia","ES.AN","ESAN","01","ES61",37.54,-4.73,8427405
-"71d778fc","AR",2,"Aragón",,"ESP.2_1","Aragon","ES.AR","ESAR","02","ES24",41.6,-0.91,1320586
-"57e04631","CN",2,"Canarias",,"ESP.14_1","Canary Islands","ES.CN","ESCN","05","ES70",28.29,-16.63,2206901
-"5e560a1a","CB",2,"Cantabria",,"ESP.3_1","Cantabria","ES.CB","ESS","06","ES13",43.18,-3.99,581641
-"cee9178b","CM",2,"Castilla-La Mancha",,"ESP.4_1","Castile-La Mancha","ES.CM","ESCM","08","ES42",39.28,-3.1,2034877
-"b9ee271d","CL",2,"Castilla y León",,"ESP.5_1","Castile and León","ES.CL","ESCL","07","ES41",41.84,-4.4,2407733
-"aa82bf4b","CT",2,"Cataluña",,"ESP.6_1","Catalonia","ES.CT","ESCT","09","ES51",41.59,1.52,7566431
-"c0329fb9","CE",2,"Ceuta",,,"Ceuta","ES.CE","ESCE","18","ES63",35.89,-5.32,84829
-"29b682a1","MD",2,"Comunidad de Madrid",,"ESP.8_1","Community of Madrid","ES.MD","ESM","13","ES30",40.42,-3.7,6641649
-"9cff44c1","NC",2,"Comunidad Foral de Navarra",,"ESP.9_1","Navarre","ES.NA","ESNC","15","ES22",42.7,-1.68,649946
-"1ee4dc98","VC",2,"Comunidad Valenciana",,"ESP.10_1","Valencian Community","ES.VC","ESVC","10","ES52",39.48,-0.75,4974969
-"f56e54e6","EX",2,"Extremadura",,"ESP.11_1","Extremadura","ES.EX","ESEX","11","ES43",39.49,-6.07,1065424
-"a3339ea4","GA",2,"Galicia",,"ESP.12_1","Galicia","ES.GA","ESGA","12","ES11",42.58,-8.13,2700441
-"a4b9e290","IB",2,"Islas Baleares",,"ESP.13_1","Balearic Islands","ES.PM","ESIB","04","ES53",39.71,3,1188220
-"9a5df082","RI",2,"La Rioja",,"ESP.15_1","La Rioja","ES.LO","ESLO","17","ES23",42.29,-2.54,313571
-"276d0a93","ML",2,"Melilla",,,"Melilla","ES.ML","ESML","19","ES64",35.29,-2.94,84689
-"25639ff5","PV",2,"País Vasco",,"ESP.16_1","Basque Country","ES.PV","ESPV","16","ES21",42.99,-2.62,2177880
-"06d0486a","AS",2,"Principado de Asturias",,"ESP.17_1",,"ES.AS","ESO","03","ES12",43.36,-5.86,1022205
-"b7d21702","MC",2,"Región de Murcia",,"ESP.18_1","Region of Murcia","ES.MU","ESMU","14","ES62",37.99,-1.13,1487663
+"65d624b3","AN",2,"Andalucía",,"ESP.1_1","Andalusia","ES.AN","ESAN","01","ES61",37.4636298556002,-4.57355166789185,8427405
+"71d778fc","AR",2,"Aragón",,"ESP.2_1","Aragon","ES.AR","ESAR","02","ES24",41.5198844060164,-0.660301685652026,1320586
+"57e04631","CN",2,"Canarias",,"ESP.14_1","Canary Islands","ES.CN","ESCN","05","ES70",28.2910623981477,-16.5563100934857,2206901
+"5e560a1a","CB",2,"Cantabria",,"ESP.3_1","Cantabria","ES.CB","ESS","06","ES13",43.1963257150117,-4.03440052412469,581641
+"cee9178b","CM",2,"Castilla-La Mancha",,"ESP.4_1","Castile-La Mancha","ES.CM","ESCM","08","ES42",39.5810797744126,-3.00457709978562,2034877
+"b9ee271d","CL",2,"Castilla y León",,"ESP.5_1","Castile and León","ES.CL","ESCL","07","ES41",41.7512049888601,-4.78818518189242,2407733
+"aa82bf4b","CT",2,"Cataluña",,"ESP.6_1","Catalonia","ES.CT","ESCT","09","ES51",41.7980001846096,1.52853360082681,7566431
+"c0329fb9","CE",2,"Ceuta",,,"Ceuta","ES.CE","ESCE","18","ES63",35.8894,-5.3213,84829
+"29b682a1","MD",2,"Comunidad de Madrid",,"ESP.8_1","Community of Madrid","ES.MD","ESM","13","ES30",40.4949621629678,-3.71605677893385,6641649
+"9cff44c1","NC",2,"Comunidad Foral de Navarra",,"ESP.9_1","Navarre","ES.NA","ESNC","15","ES22",42.6675490040587,-1.64765768518745,649946
+"1ee4dc98","VC",2,"Comunidad Valenciana",,"ESP.10_1","Valencian Community","ES.VC","ESVC","10","ES52",39.390435152878,-0.543006669294982,4974969
+"f56e54e6","EX",2,"Extremadura",,"ESP.11_1","Extremadura","ES.EX","ESEX","11","ES43",39.1914093127846,-6.15069175299963,1065424
+"a3339ea4","GA",2,"Galicia",,"ESP.12_1","Galicia","ES.GA","ESGA","12","ES11",42.757078974934,-7.91038447486934,2700441
+"a4b9e290","IB",2,"Islas Baleares",,"ESP.13_1","Balearic Islands","ES.PM","ESIB","04","ES53",39.6134519232258,2.95660712641375,1188220
+"9a5df082","RI",2,"La Rioja",,"ESP.15_1","La Rioja","ES.LO","ESLO","17","ES23",42.2750754759108,-2.51717682690499,313571
+"276d0a93","ML",2,"Melilla",,,"Melilla","ES.ML","ESML","19","ES64",35.2923,-2.9381,84689
+"25639ff5","PV",2,"País Vasco",,"ESP.16_1","Basque Country","ES.PV","ESPV","16","ES21",43.0321488651959,-2.62165972680328,2177880
+"06d0486a","AS",2,"Principado de Asturias",,"ESP.17_1",,"ES.AS","ESO","03","ES12",43.2923121406387,-5.99298757925797,1022205
+"b7d21702","MC",2,"Región de Murcia",,"ESP.18_1","Region of Murcia","ES.MU","ESMU","14","ES62",38.002068807507,-1.48521865504391,1487663
 "8bd8459f","AL",3,"Andalucía","Almería",,,,,,"ES611",,,688736
 "c75f5ba0","CA",3,"Andalucía","Cádiz",,,,,,"ES612",,,1244732
 "20e776a7","CO",3,"Andalucía","Córdoba",,,,,,"ES613",,,802575
