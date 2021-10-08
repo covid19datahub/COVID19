@@ -66,11 +66,7 @@ gov_uk <- function(level){
   }
   
   # level
-  area_type <- switch (level,
-    c("overview"),
-    c("nation","region"),
-    c("ltla")
-  )
+  area_type <- switch (level, "overview", "nation", "utla")
   
   # download
   x <- NULL
@@ -107,9 +103,6 @@ gov_uk <- function(level){
     x <- dplyr::bind_rows(x, get_paginated_data(filters, structure))
     
   }
-  
-  # drop England (already included with regions)
-  x <- x[x$code!="E92000001",]
   
   # vaccines
   x$vaccines <- rowSums(x[,c("dose1", "dose2")], na.rm = TRUE)
