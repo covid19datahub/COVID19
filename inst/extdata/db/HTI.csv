@@ -1,11 +1,12 @@
-"id","id_hxlstandard_org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"64d7e6b4","Ouest",2,"Ouest",,18.539167,-72.335,4029705
-"e750c912","Artibonite",2,"Artibonite",,19.45,-72.683333,1727524
-"8cf3514c","Nord-Est",2,"Nord-Est",,19.667778,-71.839722,393967
-"a1196d69","Nord",2,"Nord",,19.757778,-72.204167,1067177
-"0a23ea88","Sud-Est",2,"Sud-Est",,18.234167,-72.534722,632601
-"be9ae627","Nippes",2,"Nippes",,18.45,-73.1,342525
-"816ca14f","Centre",2,"Centre",,19.15,-72.016667,746236
-"0a4420f3","Sud",2,"Sud",,18.2,-73.75,774976
-"7850578c","Nord-Ouest",2,"Nord-Ouest",,19.95,-72.8333,728807
-"a517ab3b","Grand Anse",2,"Grand Anse",,18.65,-74.116667,468301
+"id","id_hxlstandard_org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_hasc","key_local","latitude","longitude","population"
+,,,,,,,"-",,,
+"e750c912","Artibonite",2,"Artibonite",,"HTI.3_1","HT.AR",,19.336389545,-72.4926332414989,1727524
+"816ca14f","Centre",2,"Centre",,"HTI.1_1","HT.CE",,19.009475705,-72.0152048500853,746236
+"a517ab3b","Grand Anse",2,"Grand Anse",,"HTI.2_1","HT.GR",,18.516388895,-74.0982135194785,468301
+"be9ae627","Nippes",2,"Nippes",,"HTI.4_1","HT.NI",,18.405090335,-73.3190046442598,342525
+"a1196d69","Nord",2,"Nord",,"HTI.7_1","HT.ND",,19.56727791,-72.2176147152384,1067177
+"8cf3514c","Nord-Est",2,"Nord-Est",,"HTI.5_1","HT.NE",,19.497722625,-71.889790639496,393967
+"7850578c","Nord-Ouest",2,"Nord-Ouest",,"HTI.6_1","HT.NO",,19.787637715,-73.0986651025127,728807
+"64d7e6b4","Ouest",2,"Ouest",,"HTI.8_1","HT.OU",,18.617609025,-72.1664211698814,4029705
+"0a4420f3","Sud",2,"Sud",,"HTI.10_1","HT.SD",,18.22754383,-73.8817862910184,774976
+"0a23ea88","Sud-Est",2,"Sud-Est",,"HTI.9_1","HT.SE",,18.21786499,-72.7814959293598,632601
