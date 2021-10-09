@@ -1,116 +1,116 @@
 "id","id_gouv_fr","id_jhucsse_git","id_opencovid_fr","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,,,,"-",,,,
-"fdb631e6","84",,"REG-84",2,"Auvergne-Rhône-Alpes",,"Rhône-Alpes Region","FRA.1_1","Auvergne-Rhône-Alpes","FR.AR",,"84","FRK",45.759723,4.842223,8032377
-"9e5088d6","27",,"REG-27",2,"Bourgogne-Franche-Comté",,"Franche-Comté Region","FRA.2_1","Bourgogne-Franche-Comté","FR.BF",,"27","FRC",47.32167,5.0414,2783039
-"d67cda08","53",,"REG-53",2,"Bretagne",,"Britanny Region","FRA.3_1","Britanny","FR.BT",,"53","FRH",48,-3,3340379
-"0759d96c","24",,"REG-24",2,"Centre-Val de Loire",,,"FRA.4_1","Centre-Val de Loire","FR.CN",,"24","FRB",47.9025,1.909,2559073
-"e4ad00a7","94",,"REG-94",2,"Corse",,"Corsica Region","FRA.5_1","Corsica","FR.CE",,"94","FRM",41.92667,8.73694,344679
-"51037eea","44",,"REG-44",2,"Grand Est",,,"FRA.6_1","Grand Est","FR.AO",,"44","FRF",48.7544,5.8517,5511747
-"f7214d18","32",,"REG-32",2,"Hauts-de-France",,,"FRA.7_1","Hauts-de-France","FR.NC",,"32","FRE",50.637222,3.063333,5962662
-"5c1e7e20","11",,"REG-11",2,"Île-de-France",,"Île-de-France","FRA.8_1","Île-de-France","FR.IF",,"11","FR1",48.856667,2.351944,12278210
-"0eef9547","28",,"REG-28",2,"Normandie",,,"FRA.9_1","Normandy","FR.ND",,"28","FRD",48.88,0.17,3303500
-"0d291dbf","75",,"REG-75",2,"Nouvelle-Aquitaine",,"Aquitaine Region","FRA.10_1","Nouvelle-Aquitaine","FR.AC",,"75","FRI",44.837912,-0.579541,5999982
-"94204c05","76",,"REG-76",2,"Occitanie",,,"FRA.11_1","Occitanie","FR.LP",,"76","FRJ",43.604482,1.443962,5924858
-"a17bea9e","52",,"REG-52",2,"Pays de la Loire",,"Pays de la Loire Region","FRA.12_1","Pays de la Loire","FR.PL",,"52","FRG",47.466667,-0.833333,3801797
-"7ac99504","93",,"REG-93",2,"Provence-Alpes-Côte d'Azur",,"Provence-Alpes-Côte d'Azur Region","FRA.13_1","Provence-Alpes-Côte d'Azur","FR.PR",,"93","FRL",44,6,5055651
-"5d44c1c1","01",,"DEP-01",3,"Auvergne-Rhône-Alpes","Ain",,"FRA.1.1_1",,"FR.AR.AI",,"01","FRK21",46.0996702416826,5.34855065106502,656955
-"b34aa0ed","03",,"DEP-03",3,"Auvergne-Rhône-Alpes","Allier",,"FRA.1.2_1",,"FR.AR.AL",,"03","FRK11",46.3935684508246,3.1877746555333,331315
-"b42764f4","07",,"DEP-07",3,"Auvergne-Rhône-Alpes","Ardèche",,"FRA.1.3_1",,"FR.AR.AH",,"07","FRK22",44.7526498096257,4.42565510684301,326875
-"43323499","15",,"DEP-15",3,"Auvergne-Rhône-Alpes","Cantal",,"FRA.1.4_1",,"FR.AR.CL",,"15","FRK12",45.051154031804,2.6689982837587,142811
-"f11636e0","26",,"DEP-26",3,"Auvergne-Rhône-Alpes","Drôme",,"FRA.1.5_1",,"FR.AR.DM",,"26","FRK23",44.6791549164433,5.16351429000801,520560
-"d72665e9","43",,"DEP-43",3,"Auvergne-Rhône-Alpes","Haute-Loire",,"FRA.1.6_1",,"FR.AR.HL",,"43","FRK13",45.1281196726306,3.80626231100795,226901
-"626fa389","74",,"DEP-74",3,"Auvergne-Rhône-Alpes","Haute-Savoie",,"FRA.1.7_1",,"FR.AR.HS",,"74","FRK28",46.0530307600967,6.43651995062975,828405
-"0fb52aa6","38",,"DEP-38",3,"Auvergne-Rhône-Alpes","Isère",,"FRA.1.8_1",,"FR.AR.IS",,"38","FRK24",45.2638698268343,5.57422639644804,1264979
-"a021557f","42",,"DEP-42",3,"Auvergne-Rhône-Alpes","Loire",,"FRA.1.9_1",,"FR.AR.LR",,"42","FRK25",45.7278242277492,4.164545387127,764737
-"e510076b","63",,"DEP-63",3,"Auvergne-Rhône-Alpes","Puy-de-Dôme",,"FRA.1.10_1",,"FR.AR.PD",,"63","FRK14",45.7259490202884,3.14004247161193,660240
-"05c5ee75","69",,"DEP-69",3,"Auvergne-Rhône-Alpes","Rhône",,"FRA.1.11_1",,"FR.AR.RH",,"69","FRK26",45.8709369539183,4.64085382982988,1876051
-"fc0b362a","73",,"DEP-73",3,"Auvergne-Rhône-Alpes","Savoie",,"FRA.1.12_1",,"FR.AR.SV",,"73","FRK27",45.4776391336811,6.44548123990748,432548
-"6f72a343","21",,"DEP-21",3,"Bourgogne-Franche-Comté","Côte-d'Or",,"FRA.2.1_1",,"FR.BF.CO",,"21","FRC11",47.4261111258234,4.77257368600511,532886
-"681f675a","25",,"DEP-25",3,"Bourgogne-Franche-Comté","Doubs",,"FRA.2.2_1",,"FR.BF.DB",,"25","FRC21",47.1657985873269,6.36270767485983,539449
-"65026790","70",,"DEP-70",3,"Bourgogne-Franche-Comté","Haute-Saône",,"FRA.2.3_1",,"FR.BF.HN",,"70","FRC23",47.6411550142568,6.08711379727492,233194
-"78b21a30","39",,"DEP-39",3,"Bourgogne-Franche-Comté","Jura",,"FRA.2.4_1",,"FR.BF.JU",,"39","FRC22",46.7293254146381,5.69750696193513,257849
-"59ef8d20","58",,"DEP-58",3,"Bourgogne-Franche-Comté","Nièvre",,"FRA.2.5_1",,"FR.BF.NI",,"58","FRC12",47.1157831684034,3.50420154883156,199596
-"12055706","71",,"DEP-71",3,"Bourgogne-Franche-Comté","Saône-et-Loire",,"FRA.2.6_1",,"FR.BF.SL",,"71","FRC13",46.6448329070804,4.54282553078653,547824
-"fb814a1e","90",,"DEP-90",3,"Bourgogne-Franche-Comté","Territoire de Belfort",,"FRA.2.7_1",,"FR.BF.TB",,"90","FRC24",47.6318100691164,6.92846208686637,140145
-"9b46c3fb","89",,"DEP-89",3,"Bourgogne-Franche-Comté","Yonne",,"FRA.2.8_1",,"FR.BF.YO",,"89","FRC14",47.8404611841892,3.56316673603163,332096
-"f67bf2f9","22",,"DEP-22",3,"Bretagne","Côtes-d'Armor",,"FRA.3.1_1",,"FR.BT.CA",,"22","FRH01",48.4419235390854,-2.86452928705185,596186
-"61a92b71","29",,"DEP-29",3,"Bretagne","Finistère",,"FRA.3.2_1",,"FR.BT.FI",,"29","FRH02",48.2610505036833,-4.05898231628108,906554
-"7104561b","35",,"DEP-35",3,"Bretagne","Ille-et-Vilaine",,"FRA.3.3_1",,"FR.BT.IV",,"35","FRH03",48.1520289613379,-1.63436105614551,1082073
-"be57a027","56",,"DEP-56",3,"Bretagne","Morbihan",,"FRA.3.4_1",,"FR.BT.MB",,"56","FRH04",47.8540882001476,-2.80503454381208,755566
-"3d834824","18",,"DEP-18",3,"Centre-Val de Loire","Cher",,"FRA.4.1_1",,"FR.CN.CH",,"18","FRB01",47.0658905467715,2.49111545389597,296404
-"16ae1be7","28",,"DEP-28",3,"Centre-Val de Loire","Eure-et-Loir",,"FRA.4.2_1",,"FR.CN.EL",,"28","FRB02",48.3879865684656,1.3699760164366,429425
-"e80d07a1","36",,"DEP-36",3,"Centre-Val de Loire","Indre",,"FRA.4.4_1",,"FR.CN.IN",,"36","FRB03",46.7782820867013,1.57602715055062,217139
-"9f0a3737","37",,"DEP-37",3,"Centre-Val de Loire","Indre-et-Loire",,"FRA.4.3_1",,"FR.CN.IL",,"37","FRB04",47.2584855609124,0.691062680178231,605380
-"392804c5","41",,"DEP-41",3,"Centre-Val de Loire","Loir-et-Cher",,"FRA.4.5_1",,"FR.CN.LC",,"41","FRB05",47.6168513516992,1.42782329381344,327835
-"3e45c0dc","45",,"DEP-45",3,"Centre-Val de Loire","Loiret",,"FRA.4.6_1",,"FR.CN.LT",,"45","FRB06",47.9118861259494,2.34389523769734,682890
-"3f77d27f","2A",,"DEP-2A",3,"Corse","Corse-du-Sud",,"FRA.5.1_1",,"FR.CE.CS",,"2A","FRM01",41.8644240770754,8.98711279890956,162421
-"a67e83c5","2B",,"DEP-2B",3,"Corse","Haute-Corse",,"FRA.5.2_1",,"FR.CE.HC",,"2B","FRM02",42.3952814087445,9.20596430892694,182258
-"24987965","08",,"DEP-08",3,"Grand Est","Ardennes",,"FRA.6.1_1",,"FR.AO.AN",,"08","FRF21",49.6161138694653,4.6407029005675,265531
-"3358c016","10",,"DEP-10",3,"Grand Est","Aube",,"FRA.6.2_1",,"FR.AO.AB",,"10","FRF22",48.3045176717401,4.1612778553846,309907
-"e27dc372","67",,"DEP-67",3,"Grand Est","Bas-Rhin",,"FRA.6.3_1",,"FR.AO.BR",,"67","FRF11",48.671531423436,7.55196353644207,1132607
-"72c2dee3","68",,"DEP-68",3,"Grand Est","Haut-Rhin",,"FRA.6.4_1",,"FR.AO.HR",,"68","FRF12",47.8593193101786,7.27401762459634,763204
-"b93a643e","52",,"DEP-52",3,"Grand Est","Haute-Marne",,"FRA.6.5_1",,"FR.AO.HM",,"52","FRF24",48.1105112093425,5.22535915702794,169250
-"20333584","51",,"DEP-51",3,"Grand Est","Marne",,"FRA.6.6_1",,"FR.AO.MR",,"51","FRF23",48.9494811325421,4.23863135635155,563823
-"5059c10b","54",,"DEP-54",3,"Grand Est","Meurthe-et-Moselle",,"FRA.6.7_1",,"FR.AO.MM",,"54","FRF31",48.7880161019405,6.1626262017139,730398
-"275ef19d","55",,"DEP-55",3,"Grand Est","Meuse",,"FRA.6.8_1",,"FR.AO.MS",,"55","FRF32",48.9912978582964,5.38150386067738,181641
-"c95090b1","57",,"DEP-57",3,"Grand Est","Moselle",,"FRA.6.9_1",,"FR.AO.MO",,"57","FRF33",49.0375389685591,6.66120685984405,1035866
-"ec41f36d","88",,"DEP-88",3,"Grand Est","Vosges",,"FRA.6.10_1",,"FR.AO.VG",,"88","FRF34",48.1961853999777,6.38015906272599,359520
+"fdb631e6","84",,"REG-84",2,"Auvergne-Rhône-Alpes",,"Rhône-Alpes Region","FRA.1_1","Auvergne-Rhône-Alpes","FR.AR",,"84","FRK",45.45643425,4.80397290505759,8032377
+"9e5088d6","27",,"REG-27",2,"Bourgogne-Franche-Comté",,"Franche-Comté Region","FRA.2_1","Bourgogne-Franche-Comté","FR.BF",,"27","FRC",47.277549745,4.95167423049027,2783039
+"d67cda08","53",,"REG-53",2,"Bretagne",,"Britanny Region","FRA.3_1","Britanny","FR.BT",,"53","FRH",48.16250038,-2.68486493200874,3340379
+"0759d96c","24",,"REG-24",2,"Centre-Val de Loire",,,"FRA.4_1","Centre-Val de Loire","FR.CN",,"24","FRB",47.64399338,1.70648618570299,2559073
+"e4ad00a7","94",,"REG-94",2,"Corse",,"Corsica Region","FRA.5_1","Corsica","FR.CE",,"94","FRM",42.18847084,9.067360405,344679
+"51037eea","44",,"REG-44",2,"Grand Est",,,"FRA.6_1","Grand Est","FR.AO",,"44","FRF",48.7935276,5.75810013561601,5511747
+"f7214d18","32",,"REG-32",2,"Hauts-de-France",,,"FRA.7_1","Hauts-de-France","FR.NC",,"32","FRE",49.965654375,2.88651592952821,5962662
+"5c1e7e20","11",,"REG-11",2,"Île-de-France",,"Île-de-France","FRA.8_1","Île-de-France","FR.IF",,"11","FR1",48.675813675,2.52631346695419,12278210
+"0eef9547","28",,"REG-28",2,"Normandie",,,"FRA.9_1","Normandy","FR.ND",,"28","FRD",49.125873565,0.0262741883263812,3303500
+"0d291dbf","75",,"REG-75",2,"Nouvelle-Aquitaine",,"Aquitaine Region","FRA.10_1","Nouvelle-Aquitaine","FR.AC",,"75","FRI",44.976737975,0.104335752490236,5999982
+"94204c05","76",,"REG-76",2,"Occitanie",,,"FRA.11_1","Occitanie","FR.LP",,"76","FRJ",43.689905165,2.11708932386207,5924858
+"a17bea9e","52",,"REG-52",2,"Pays de la Loire",,"Pays de la Loire Region","FRA.12_1","Pays de la Loire","FR.PL",,"52","FRG",47.41750145,-1.12731776762949,3801797
+"7ac99504","93",,"REG-93",2,"Provence-Alpes-Côte d'Azur",,"Provence-Alpes-Côte d'Azur Region","FRA.13_1","Provence-Alpes-Côte d'Azur","FR.PR",,"93","FRL",44.07660675,6.2384828367172,5055651
+"5d44c1c1","01",,"DEP-01",3,"Auvergne-Rhône-Alpes","Ain",,"FRA.1.1_1",,"FR.AR.AI",,"01","FRK21",46.06431961,5.28457559691303,656955
+"b34aa0ed","03",,"DEP-03",3,"Auvergne-Rhône-Alpes","Allier",,"FRA.1.2_1",,"FR.AR.AL",,"03","FRK11",46.36741257,3.16385432156138,331315
+"b42764f4","07",,"DEP-07",3,"Auvergne-Rhône-Alpes","Ardèche",,"FRA.1.3_1",,"FR.AR.AH",,"07","FRK22",44.815582275,4.39933678640617,326875
+"43323499","15",,"DEP-15",3,"Auvergne-Rhône-Alpes","Cantal",,"FRA.1.4_1",,"FR.AR.CL",,"15","FRK12",45.05065918,2.70086362139396,142811
+"f11636e0","26",,"DEP-26",3,"Auvergne-Rhône-Alpes","Drôme",,"FRA.1.5_1",,"FR.AR.DM",,"26","FRK23",44.730438235,5.20427205552683,520560
+"d72665e9","43",,"DEP-43",3,"Auvergne-Rhône-Alpes","Haute-Loire",,"FRA.1.6_1",,"FR.AR.HL",,"43","FRK13",45.083488465,3.83398775192787,226901
+"626fa389","74",,"DEP-74",3,"Auvergne-Rhône-Alpes","Haute-Savoie",,"FRA.1.7_1",,"FR.AR.HS",,"74","FRK28",46.06958389,6.34812047887597,828405
+"0fb52aa6","38",,"DEP-38",3,"Auvergne-Rhône-Alpes","Isère",,"FRA.1.8_1",,"FR.AR.IS",,"38","FRK24",45.289577485,5.63529818038092,1264979
+"a021557f","42",,"DEP-42",3,"Auvergne-Rhône-Alpes","Loire",,"FRA.1.9_1",,"FR.AR.LR",,"42","FRK25",45.753450395,4.04393609800551,764737
+"e510076b","63",,"DEP-63",3,"Auvergne-Rhône-Alpes","Puy-de-Dôme",,"FRA.1.10_1",,"FR.AR.PD",,"63","FRK14",45.77293396,3.08280427120943,660240
+"05c5ee75","69",,"DEP-69",3,"Auvergne-Rhône-Alpes","Rhône",,"FRA.1.11_1",,"FR.AR.RH",,"69","FRK26",45.878448485,4.61613349573954,1876051
+"fc0b362a","73",,"DEP-73",3,"Auvergne-Rhône-Alpes","Savoie",,"FRA.1.12_1",,"FR.AR.SV",,"73","FRK27",45.49382019,6.38511237781359,432548
+"6f72a343","21",,"DEP-21",3,"Bourgogne-Franche-Comté","Côte-d'Or",,"FRA.2.1_1",,"FR.BF.CO",,"21","FRC11",47.468301775,4.75655362089946,532886
+"681f675a","25",,"DEP-25",3,"Bourgogne-Franche-Comté","Doubs",,"FRA.2.2_1",,"FR.BF.DB",,"25","FRC21",47.070640565,6.23973597410076,539449
+"65026790","70",,"DEP-70",3,"Bourgogne-Franche-Comté","Haute-Saône",,"FRA.2.3_1",,"FR.BF.HN",,"70","FRC23",47.640813825,6.09689439659212,233194
+"78b21a30","39",,"DEP-39",3,"Bourgogne-Franche-Comté","Jura",,"FRA.2.4_1",,"FR.BF.JU",,"39","FRC22",46.78174591,5.78284095143355,257849
+"59ef8d20","58",,"DEP-58",3,"Bourgogne-Franche-Comté","Nièvre",,"FRA.2.5_1",,"FR.BF.NI",,"58","FRC12",47.119939805,3.54430528602219,199596
+"12055706","71",,"DEP-71",3,"Bourgogne-Franche-Comté","Saône-et-Loire",,"FRA.2.6_1",,"FR.BF.SL",,"71","FRC13",46.6575222,4.55988996397242,547824
+"fb814a1e","90",,"DEP-90",3,"Bourgogne-Franche-Comté","Territoire de Belfort",,"FRA.2.7_1",,"FR.BF.TB",,"90","FRC24",47.628227235,6.9003504257266,140145
+"9b46c3fb","89",,"DEP-89",3,"Bourgogne-Franche-Comté","Yonne",,"FRA.2.8_1",,"FR.BF.YO",,"89","FRC14",47.85411072,3.64543590214355,332096
+"f67bf2f9","22",,"DEP-22",3,"Bretagne","Côtes-d'Armor",,"FRA.3.1_1",,"FR.BT.CA",,"22","FRH01",48.45848274,-2.75157530642793,596186
+"61a92b71","29",,"DEP-29",3,"Bretagne","Finistère",,"FRA.3.2_1",,"FR.BT.FI",,"29","FRH02",48.245897295,-3.84630648550148,906554
+"7104561b","35",,"DEP-35",3,"Bretagne","Ille-et-Vilaine",,"FRA.3.3_1",,"FR.BT.IV",,"35","FRH03",48.17528534,-1.6505700913257,1082073
+"be57a027","56",,"DEP-56",3,"Bretagne","Morbihan",,"FRA.3.4_1",,"FR.BT.MB",,"56","FRH04",47.828435895,-2.76090019877358,755566
+"3d834824","18",,"DEP-18",3,"Centre-Val de Loire","Cher",,"FRA.4.1_1",,"FR.CN.CH",,"18","FRB01",47.022212985,2.57634385361066,296404
+"16ae1be7","28",,"DEP-28",3,"Centre-Val de Loire","Eure-et-Loir",,"FRA.4.2_1",,"FR.CN.EL",,"28","FRB02",48.447309495,1.40008815081715,429425
+"e80d07a1","36",,"DEP-36",3,"Centre-Val de Loire","Indre",,"FRA.4.4_1",,"FR.CN.IN",,"36","FRB03",46.81214905,1.53692726160973,217139
+"9f0a3737","37",,"DEP-37",3,"Centre-Val de Loire","Indre-et-Loire",,"FRA.4.3_1",,"FR.CN.IL",,"37","FRB04",47.22676277,0.686270782446988,605380
+"392804c5","41",,"DEP-41",3,"Centre-Val de Loire","Loir-et-Cher",,"FRA.4.5_1",,"FR.CN.LC",,"41","FRB05",47.66059494,1.29844290151833,327835
+"3e45c0dc","45",,"DEP-45",3,"Centre-Val de Loire","Loiret",,"FRA.4.6_1",,"FR.CN.LT",,"45","FRB06",47.916046145,2.30507640284807,682890
+"3f77d27f","2A",,"DEP-2A",3,"Corse","Corse-du-Sud",,"FRA.5.1_1",,"FR.CE.CS",,"2A","FRM01",41.87254715,9.00902377827787,162421
+"a67e83c5","2B",,"DEP-2B",3,"Corse","Haute-Corse",,"FRA.5.2_1",,"FR.CE.HC",,"2B","FRM02",42.42222214,9.100417135,182258
+"24987965","08",,"DEP-08",3,"Grand Est","Ardennes",,"FRA.6.1_1",,"FR.AO.AN",,"08","FRF21",49.69741249,4.67263605031124,265531
+"3358c016","10",,"DEP-10",3,"Grand Est","Aube",,"FRA.6.2_1",,"FR.AO.AB",,"10","FRF22",48.32043457,4.19042290874949,309907
+"e27dc372","67",,"DEP-67",3,"Grand Est","Bas-Rhin",,"FRA.6.3_1",,"FR.AO.BR",,"67","FRF11",48.59625435,7.53435463630383,1132607
+"72c2dee3","68",,"DEP-68",3,"Grand Est","Haut-Rhin",,"FRA.6.4_1",,"FR.AO.HR",,"68","FRF12",47.86601639,7.2318883772498,763204
+"b93a643e","52",,"DEP-52",3,"Grand Est","Haute-Marne",,"FRA.6.5_1",,"FR.AO.HM",,"52","FRF24",48.132694245,5.25234912287383,169250
+"20333584","51",,"DEP-51",3,"Grand Est","Marne",,"FRA.6.6_1",,"FR.AO.MR",,"51","FRF23",48.962848665,4.31553796802227,563823
+"5059c10b","54",,"DEP-54",3,"Grand Est","Meurthe-et-Moselle",,"FRA.6.7_1",,"FR.AO.MM",,"54","FRF31",48.95869064,5.98560797748999,730398
+"275ef19d","55",,"DEP-55",3,"Grand Est","Meuse",,"FRA.6.8_1",,"FR.AO.MS",,"55","FRF32",49.015275955,5.42775943019827,181641
+"c95090b1","57",,"DEP-57",3,"Grand Est","Moselle",,"FRA.6.9_1",,"FR.AO.MO",,"57","FRF33",49.018951415,6.54053938739999,1035866
+"ec41f36d","88",,"DEP-88",3,"Grand Est","Vosges",,"FRA.6.10_1",,"FR.AO.VG",,"88","FRF34",48.161121365,6.38060438326933,359520
 "fac3c5c7","971","Guadeloupe","DEP-971",3,"Guadeloupe","Guadeloupe",,,,,"FRGP","971","FRY10",16.25,-61.5833,376879
 "14cda4eb","973","French Guiana","DEP-973",3,"Guyane","Guyane",,,,,"FRGF","973","FRY30",3.9339,-53.1258,290691
-"c44d907b","02",,"DEP-02",3,"Hauts-de-France","Aisne",,"FRA.7.1_1",,"FR.NC.AS",,"02","FRE21",49.5607138552163,3.55938856733026,526050
-"2ee8bdb6","59",,"DEP-59",3,"Hauts-de-France","Nord",,"FRA.7.2_1",,"FR.NC.NO",,"59","FRE11",50.4486576811434,3.21605733158685,2588988
-"7c1956d1","60",,"DEP-60",3,"Hauts-de-France","Oise",,"FRA.7.3_1",,"FR.NC.OI",,"60","FRE22",49.4101061627349,2.42463257740251,825077
-"921737fd","62",,"DEP-62",3,"Hauts-de-France","Pas-de-Calais",,"FRA.7.4_1",,"FR.NC.PC",,"62","FRE12",50.4934257982755,2.28772831721615,1452778
-"e29a7b5f","80",,"DEP-80",3,"Hauts-de-France","Somme",,"FRA.7.5_1",,"FR.NC.SO",,"80","FRE23",49.9588254806895,2.27403200918718,569769
-"8c867a88","91",,"DEP-91",3,"Île-de-France","Essonne",,"FRA.8.1_1",,"FR.IF.ES",,"91","FR104",48.5223634368413,2.24334661652886,1319401
-"158f2b32","92",,"DEP-92",3,"Île-de-France","Hauts-de-Seine",,"FRA.8.2_1",,"FR.IF.HD",,"92","FR105",48.8473116205728,2.24576276350043,1613762
-"1568931f","75",,"DEP-75",3,"Île-de-France","Paris",,"FRA.8.3_1",,"FR.IF.VP",,"75","FR101",48.856641871197,2.34232980908581,2148271
-"fb66f233","77",,"DEP-77",3,"Île-de-France","Seine-et-Marne",,"FRA.8.4_1",,"FR.IF.SE",,"77","FR102",48.6274643239581,2.93395245059687,1423607
-"62881ba4","93",,"DEP-93",3,"Île-de-France","Seine-Saint-Denis",,"FRA.8.5_1",,"FR.IF.SS",,"93","FR106",48.9175091039394,2.47795804601145,1670149
-"8bebbe91","95",,"DEP-95",3,"Île-de-France","Val-d'Oise",,"FRA.8.6_1",,"FR.IF.VO",,"95","FR108",49.0826339489467,2.13091526465285,1248354
-"fcec8e07","94",,"DEP-94",3,"Île-de-France","Val-de-Marne",,"FRA.8.7_1",,"FR.IF.VM",,"94","FR107",48.7773996872295,2.4687908873695,1406041
-"6bd9efa2","78",,"DEP-78",3,"Île-de-France","Yvelines",,"FRA.8.8_1",,"FR.IF.YV",,"78","FR103",48.8152844261902,1.84141455603556,1448625
+"c44d907b","02",,"DEP-02",3,"Hauts-de-France","Aisne",,"FRA.7.1_1",,"FR.NC.AS",,"02","FRE21",49.45055199,3.61100216135875,526050
+"2ee8bdb6","59",,"DEP-59",3,"Hauts-de-France","Nord",,"FRA.7.2_1",,"FR.NC.NO",,"59","FRE11",50.530658725,3.08570982565616,2588988
+"7c1956d1","60",,"DEP-60",3,"Hauts-de-France","Oise",,"FRA.7.3_1",,"FR.NC.OI",,"60","FRE22",49.415229795,2.40663907115787,825077
+"921737fd","62",,"DEP-62",3,"Hauts-de-France","Pas-de-Calais",,"FRA.7.4_1",,"FR.NC.PC",,"62","FRE12",50.51444435,2.23016883923078,1452778
+"e29a7b5f","80",,"DEP-80",3,"Hauts-de-France","Somme",,"FRA.7.5_1",,"FR.NC.SO",,"80","FRE23",49.97082901,2.37622601502212,569769
+"8c867a88","91",,"DEP-91",3,"Île-de-France","Essonne",,"FRA.8.1_1",,"FR.IF.ES",,"91","FR104",48.53123093,2.24040467108409,1319401
+"158f2b32","92",,"DEP-92",3,"Île-de-France","Hauts-de-Seine",,"FRA.8.2_1",,"FR.IF.HD",,"92","FR105",48.841611865,2.19933749737266,1613762
+"1568931f","75",,"DEP-75",3,"Île-de-France","Paris",,"FRA.8.3_1",,"FR.IF.VP",,"75","FR101",48.857292175,2.32011725679606,2148271
+"fb66f233","77",,"DEP-77",3,"Île-de-France","Seine-et-Marne",,"FRA.8.4_1",,"FR.IF.SE",,"77","FR102",48.618619915,3.03987360520685,1423607
+"62881ba4","93",,"DEP-93",3,"Île-de-France","Seine-Saint-Denis",,"FRA.8.5_1",,"FR.IF.SS",,"93","FR106",48.90884018,2.45340352249986,1670149
+"8bebbe91","95",,"DEP-95",3,"Île-de-France","Val-d'Oise",,"FRA.8.6_1",,"FR.IF.VO",,"95","FR108",49.073078155,2.20832172961672,1248354
+"fcec8e07","94",,"DEP-94",3,"Île-de-France","Val-de-Marne",,"FRA.8.7_1",,"FR.IF.VM",,"94","FR107",48.778265,2.45665099462962,1406041
+"6bd9efa2","78",,"DEP-78",3,"Île-de-France","Yvelines",,"FRA.8.8_1",,"FR.IF.YV",,"78","FR103",48.761941905,1.89350575216311,1448625
 "356fbbee","974","Reunion","DEP-974",3,"La Réunion","La Réunion",,,,,"FRRE","974","FRY40",-21.1351,55.2471,859959
 "63ca947d","972","Martinique","DEP-972",3,"Martinique","Martinique",,,,,"FRMQ","972","FRY20",14.6415,-61.0242,358749
 "64a75064","976","Mayotte","DEP-976",3,"Mayotte","Mayotte",,,,,"FRYT","976","FRY50",-12.8275,45.1662,279471
-"3435040f","14",,"DEP-14",3,"Normandie","Calvados",,"FRA.9.1_1",,"FR.ND.CV",,"14","FRD11",49.0993681649673,-0.363162536172919,691453
-"86110676","27",,"DEP-27",3,"Normandie","Eure",,"FRA.9.2_1",,"FR.ND.EU",,"27","FRD21",49.113694888086,0.996168798098165,600687
-"57340512","50",,"DEP-50",3,"Normandie","Manche",,"FRA.9.3_1",,"FR.ND.MH",,"50","FRD12",49.0796470518461,-1.3308274867036,490669
-"0b1e6647","61",,"DEP-61",3,"Normandie","Orne",,"FRA.9.4_1",,"FR.ND.OR",,"61","FRD13",48.622968677445,0.128014041916074,276903
-"8c61c2a5","76",,"DEP-76",3,"Normandie","Seine-Maritime",,"FRA.9.5_1",,"FR.ND.SM",,"76","FRD22",49.6546046607432,1.02648414767446,1243788
-"da3b6523","16",,"DEP-16",3,"Nouvelle-Aquitaine","Charente",,"FRA.10.2_1",,"FR.AC.CT",,"16","FRI31",45.7185964831715,0.202912872840773,348180
-"ad3c55b5","17",,"DEP-17",3,"Nouvelle-Aquitaine","Charente-Maritime",,"FRA.10.1_1",,"FR.AC.CM",,"17","FRI32",45.7722155288844,-0.651113843765754,647080
-"4a8478b2","19",,"DEP-19",3,"Nouvelle-Aquitaine","Corrèze",,"FRA.10.3_1",,"FR.AC.CZ",,"19","FRI21",45.3572841710375,1.87780822760594,240336
-"817cc26f","23",,"DEP-23",3,"Nouvelle-Aquitaine","Creuse",,"FRA.10.4_1",,"FR.AC.CR",,"23","FRI22",46.0905401699116,2.01829670992382,116270
-"1cdedf34","79",,"DEP-79",3,"Nouvelle-Aquitaine","Deux-Sèvres",,"FRA.10.5_1",,"FR.AC.DS",,"79","FRI33",46.5568897162976,-0.317892494561936,372627
-"1f1857cc","24",,"DEP-24",3,"Nouvelle-Aquitaine","Dordogne",,"FRA.10.6_1",,"FR.AC.DD",,"24","FRI11",45.1048057590475,0.741158251519886,408393
-"9867f32e","33",,"DEP-33",3,"Nouvelle-Aquitaine","Gironde",,"FRA.10.7_1",,"FR.AC.GI",,"33","FRI12",44.8235054241485,-0.575969937511406,1633440
-"7cfeeefc","87",,"DEP-87",3,"Nouvelle-Aquitaine","Haute-Vienne",,"FRA.10.8_1",,"FR.AC.HV",,"87","FRI23",45.8924088086902,1.23478309374685,370774
-"4e2f3453","40",,"DEP-40",3,"Nouvelle-Aquitaine","Landes",,"FRA.10.9_1",,"FR.AC.LD",,"40","FRI13",43.9658419255663,-0.783774022964947,411979
-"d04ba1f0","47",,"DEP-47",3,"Nouvelle-Aquitaine","Lot-et-Garonne",,"FRA.10.10_1",,"FR.AC.LG",,"47","FRI14",44.3678031617898,0.460692536201945,330336
-"7b7492c8","64",,"DEP-64",3,"Nouvelle-Aquitaine","Pyrénées-Atlantiques",,"FRA.10.11_1",,"FR.AC.PA",,"64","FRI15",43.2562272903649,-0.757682639455763,683169
-"0bf9de6a","86",,"DEP-86",3,"Nouvelle-Aquitaine","Vienne",,"FRA.10.12_1",,"FR.AC.VN",,"86","FRI34",46.5648250994827,0.459499959909686,437398
-"539f49f3","09",,"DEP-09",3,"Occitanie","Ariège",,"FRA.11.1_1",,"FR.LP.AG",,"09","FRJ21",42.9203162711858,1.50351407325217,152398
-"445ff080","11",,"DEP-11",3,"Occitanie","Aude",,"FRA.11.2_1",,"FR.LP.AD",,"11","FRJ11",43.1043869043253,2.40503110716169,372705
-"dd56a13a","12",,"DEP-12",3,"Occitanie","Aveyron",,"FRA.11.3_1",,"FR.LP.AV",,"12","FRJ22",44.2808900855277,2.67866864032518,278360
-"016ea294","30",,"DEP-30",3,"Occitanie","Gard",,"FRA.11.4_1",,"FR.LP.GA",,"30","FRJ12",43.9935299793989,4.17992216357247,748468
-"ef60c3b8","32",,"DEP-32",3,"Occitanie","Gers",,"FRA.11.5_1",,"FR.LP.GE",,"32","FRJ24",43.6928989735755,0.452893658568602,190040
-"76699202","31",,"DEP-31",3,"Occitanie","Haute-Garonne",,"FRA.11.6_1",,"FR.LP.HG",,"31","FRJ23",43.3589123162202,1.17494847701417,1400935
-"0c73a25e","65",,"DEP-65",3,"Occitanie","Hautes-Pyrénées",,"FRA.11.7_1",,"FR.LP.HP",,"65","FRJ26",43.0510071407309,0.166275410862677,226839
-"0603668d","34",,"DEP-34",3,"Occitanie","Hérault",,"FRA.11.8_1",,"FR.LP.HE",,"34","FRJ13",43.5795473295632,3.3681368682365,1176145
-"a74c9166","46",,"DEP-46",3,"Occitanie","Lot",,"FRA.11.9_1",,"FR.LP.LO",,"46","FRJ25",44.6245206641707,1.60548441492233,173166
-"40f4bc61","48",,"DEP-48",3,"Occitanie","Lozère",,"FRA.11.10_1",,"FR.LP.LZ",,"48","FRJ14",44.517555435867,3.49970125526912,76286
-"957af3e4","66",,"DEP-66",3,"Occitanie","Pyrénées-Orientales",,"FRA.11.11_1",,"FR.LP.PO",,"66","FRJ15",42.5974366374588,2.51644621581676,479000
-"959d4bc9","81",,"DEP-81",3,"Occitanie","Tarn",,"FRA.11.13_1",,"FR.LP.TA",,"81","FRJ27",43.7856325378474,2.16566489175739,387898
-"0c941a73","82",,"DEP-82",3,"Occitanie","Tarn-et-Garonne",,"FRA.11.12_1",,"FR.LP.TG",,"82","FRJ28",44.0858298701663,1.28232780053275,262618
-"4942f04a","44",,"DEP-44",3,"Pays de la Loire","Loire-Atlantique",,"FRA.12.1_1",,"FR.PL.LA",,"44","FRG01",47.3618130281256,-1.68027099731985,1437137
-"37f38cf7","49",,"DEP-49",3,"Pays de la Loire","Maine-et-Loire",,"FRA.12.2_1",,"FR.PL.ML",,"49","FRG02",47.3910484637951,-0.563933298584163,815881
-"ce3d54a8","53",,"DEP-53",3,"Pays de la Loire","Mayenne",,"FRA.12.3_1",,"FR.PL.MY",,"53","FRG03",48.1472800890907,-0.657450674465024,305365
-"8b0c06bc","72",,"DEP-72",3,"Pays de la Loire","Sarthe",,"FRA.12.4_1",,"FR.PL.ST",,"72","FRG04",47.9948078933562,0.222378887576106,560227
-"92f08fd0","85",,"DEP-85",3,"Pays de la Loire","Vendée",,"FRA.12.5_1",,"FR.PL.VD",,"85","FRG05",46.6721233217705,-1.2882424228711,683187
-"2d2e354e","04",,"DEP-04",3,"Provence-Alpes-Côte d'Azur","Alpes-de-Haute-Provence",,"FRA.13.1_1",,"FR.PR.AP",,"04","FRL01",44.108072634689,6.2478634676331,165197
-"c3205462","06",,"DEP-06",3,"Provence-Alpes-Côte d'Azur","Alpes-Maritimes",,"FRA.13.2_1",,"FR.PR.AM",,"06","FRL03",43.9393168573645,7.11696642525389,1079396
-"aa5191ac","13",,"DEP-13",3,"Provence-Alpes-Côte d'Azur","Bouches-du-Rhône",,"FRA.13.3_1",,"FR.PR.BD",,"13","FRL04",43.5432181015931,5.08604659721701,2034469
-"5a2905d8","05",,"DEP-05",3,"Provence-Alpes-Côte d'Azur","Hautes-Alpes",,"FRA.13.4_1",,"FR.PR.HA",,"05","FRL02",44.6649854577248,6.26798459202826,141756
-"7b932ae5","83",,"DEP-83",3,"Provence-Alpes-Côte d'Azur","Var",,"FRA.13.5_1",,"FR.PR.VR",,"83","FRL05",43.4433512420901,6.2440476982977,1073836
-"e5f7bf46","84",,"DEP-84",3,"Provence-Alpes-Côte d'Azur","Vaucluse",,"FRA.13.6_1",,"FR.PR.VC",,"84","FRL06",43.9940192928411,5.18516033155016,560997
+"3435040f","14",,"DEP-14",3,"Normandie","Calvados",,"FRA.9.1_1",,"FR.ND.CV",,"14","FRD11",49.091964725,-0.236202181091741,691453
+"86110676","27",,"DEP-27",3,"Normandie","Eure",,"FRA.9.2_1",,"FR.ND.EU",,"27","FRD21",49.075016025,0.964281102210861,600687
+"57340512","50",,"DEP-50",3,"Normandie","Manche",,"FRA.9.3_1",,"FR.ND.MH",,"50","FRD12",49.09332848,-1.2449037219762,490669
+"0b1e6647","61",,"DEP-61",3,"Normandie","Orne",,"FRA.9.4_1",,"FR.ND.OR",,"61","FRD13",48.580675125,0.0425518183758223,276903
+"8c61c2a5","76",,"DEP-76",3,"Normandie","Seine-Maritime",,"FRA.9.5_1",,"FR.ND.SM",,"76","FRD22",49.661729815,0.937296634786232,1243788
+"da3b6523","16",,"DEP-16",3,"Nouvelle-Aquitaine","Charente",,"FRA.10.2_1",,"FR.AC.CT",,"16","FRI31",45.664384845,0.0995102896113684,348180
+"ad3c55b5","17",,"DEP-17",3,"Nouvelle-Aquitaine","Charente-Maritime",,"FRA.10.1_1",,"FR.AC.CM",,"17","FRI32",45.730722425,-0.823749668274292,647080
+"4a8478b2","19",,"DEP-19",3,"Nouvelle-Aquitaine","Corrèze",,"FRA.10.3_1",,"FR.AC.CZ",,"19","FRI21",45.340559005,1.81909704434607,240336
+"817cc26f","23",,"DEP-23",3,"Nouvelle-Aquitaine","Creuse",,"FRA.10.4_1",,"FR.AC.CR",,"23","FRI22",46.06733131,2.04873113611554,116270
+"1cdedf34","79",,"DEP-79",3,"Nouvelle-Aquitaine","Deux-Sèvres",,"FRA.10.5_1",,"FR.AC.DS",,"79","FRI33",46.53839493,-0.29994366657767,372627
+"1f1857cc","24",,"DEP-24",3,"Nouvelle-Aquitaine","Dordogne",,"FRA.10.6_1",,"FR.AC.DD",,"24","FRI11",45.14586067,0.632940208427837,408393
+"9867f32e","33",,"DEP-33",3,"Nouvelle-Aquitaine","Gironde",,"FRA.10.7_1",,"FR.AC.GI",,"33","FRI12",44.88402748,-0.605075928973236,1633440
+"7cfeeefc","87",,"DEP-87",3,"Nouvelle-Aquitaine","Haute-Vienne",,"FRA.10.8_1",,"FR.AC.HV",,"87","FRI23",45.91948128,1.17840720785644,370774
+"4e2f3453","40",,"DEP-40",3,"Nouvelle-Aquitaine","Landes",,"FRA.10.9_1",,"FR.AC.LD",,"40","FRI13",44.009860995,-0.643360319874129,411979
+"d04ba1f0","47",,"DEP-47",3,"Nouvelle-Aquitaine","Lot-et-Garonne",,"FRA.10.10_1",,"FR.AC.LG",,"47","FRI14",44.368879315,0.453520446268824,330336
+"7b7492c8","64",,"DEP-64",3,"Nouvelle-Aquitaine","Pyrénées-Atlantiques",,"FRA.10.11_1",,"FR.AC.PA",,"64","FRI15",43.18720436,-0.728745683220623,683169
+"0bf9de6a","86",,"DEP-86",3,"Nouvelle-Aquitaine","Vienne",,"FRA.10.12_1",,"FR.AC.VN",,"86","FRI34",46.612138745,0.465414289004458,437398
+"539f49f3","09",,"DEP-09",3,"Occitanie","Ariège",,"FRA.11.1_1",,"FR.LP.AG",,"09","FRJ21",42.945600505,1.40781312035434,152398
+"445ff080","11",,"DEP-11",3,"Occitanie","Aude",,"FRA.11.2_1",,"FR.LP.AD",,"11","FRJ11",43.054445265,2.46506319676339,372705
+"dd56a13a","12",,"DEP-12",3,"Occitanie","Aveyron",,"FRA.11.3_1",,"FR.LP.AV",,"12","FRJ22",44.313179015,2.50990503086826,278360
+"016ea294","30",,"DEP-30",3,"Occitanie","Gard",,"FRA.11.4_1",,"FR.LP.GA",,"30","FRJ12",43.95960617,4.29620760034497,748468
+"ef60c3b8","32",,"DEP-32",3,"Occitanie","Gers",,"FRA.11.5_1",,"FR.LP.GE",,"32","FRJ24",43.694128035,0.408960503932088,190040
+"76699202","31",,"DEP-31",3,"Occitanie","Haute-Garonne",,"FRA.11.6_1",,"FR.LP.HG",,"31","FRJ23",43.30440903,0.971843088766389,1400935
+"0c73a25e","65",,"DEP-65",3,"Occitanie","Hautes-Pyrénées",,"FRA.11.7_1",,"FR.LP.HP",,"65","FRJ26",43.137903215,0.153174024661686,226839
+"0603668d","34",,"DEP-34",3,"Occitanie","Hérault",,"FRA.11.8_1",,"FR.LP.HE",,"34","FRJ13",43.590364455,3.35328677786289,1176145
+"a74c9166","46",,"DEP-46",3,"Occitanie","Lot",,"FRA.11.9_1",,"FR.LP.LO",,"46","FRJ25",44.622486115,1.66722567007794,173166
+"40f4bc61","48",,"DEP-48",3,"Occitanie","Lozère",,"FRA.11.10_1",,"FR.LP.LZ",,"48","FRJ14",44.545747755,3.52107688816605,76286
+"957af3e4","66",,"DEP-66",3,"Occitanie","Pyrénées-Orientales",,"FRA.11.11_1",,"FR.LP.PO",,"66","FRJ15",42.625694275,2.50635495072921,479000
+"959d4bc9","81",,"DEP-81",3,"Occitanie","Tarn",,"FRA.11.13_1",,"FR.LP.TA",,"81","FRJ27",43.791929245,2.1342970869644,387898
+"0c941a73","82",,"DEP-82",3,"Occitanie","Tarn-et-Garonne",,"FRA.11.12_1",,"FR.LP.TG",,"82","FRJ28",44.080623625,1.20499474675346,262618
+"4942f04a","44",,"DEP-44",3,"Pays de la Loire","Loire-Atlantique",,"FRA.12.1_1",,"FR.PL.LA",,"44","FRG01",47.34708214,-1.87551487319505,1437137
+"37f38cf7","49",,"DEP-49",3,"Pays de la Loire","Maine-et-Loire",,"FRA.12.2_1",,"FR.PL.ML",,"49","FRG02",47.39195824,-0.38134533406836,815881
+"ce3d54a8","53",,"DEP-53",3,"Pays de la Loire","Mayenne",,"FRA.12.3_1",,"FR.PL.MY",,"53","FRG03",48.151853565,-0.653392107546129,305365
+"8b0c06bc","72",,"DEP-72",3,"Pays de la Loire","Sarthe",,"FRA.12.4_1",,"FR.PL.ST",,"72","FRG04",48.025245665,0.251867196547554,560227
+"92f08fd0","85",,"DEP-85",3,"Pays de la Loire","Vendée",,"FRA.12.5_1",,"FR.PL.VD",,"85","FRG05",46.67569351,-1.29107881624733,683187
+"2d2e354e","04",,"DEP-04",3,"Provence-Alpes-Côte d'Azur","Alpes-de-Haute-Provence",,"FRA.13.1_1",,"FR.PR.AP",,"04","FRL01",44.164884565,6.17975634282221,165197
+"c3205462","06",,"DEP-06",3,"Provence-Alpes-Côte d'Azur","Alpes-Maritimes",,"FRA.13.2_1",,"FR.PR.AM",,"06","FRL03",43.9226017,7.2405735865333,1079396
+"aa5191ac","13",,"DEP-13",3,"Provence-Alpes-Côte d'Azur","Bouches-du-Rhône",,"FRA.13.3_1",,"FR.PR.BD",,"13","FRL04",43.538995745,5.03001426841373,2034469
+"5a2905d8","05",,"DEP-05",3,"Provence-Alpes-Côte d'Azur","Hautes-Alpes",,"FRA.13.4_1",,"FR.PR.HA",,"05","FRL02",44.658094405,6.35218603115058,141756
+"7b932ae5","83",,"DEP-83",3,"Provence-Alpes-Côte d'Azur","Var",,"FRA.13.5_1",,"FR.PR.VR",,"83","FRL05",43.416475295,6.26553668379702,1073836
+"e5f7bf46","84",,"DEP-84",3,"Provence-Alpes-Côte d'Azur","Vaucluse",,"FRA.13.6_1",,"FR.PR.VC",,"84","FRL06",43.994802475,5.18257962209786,560997
