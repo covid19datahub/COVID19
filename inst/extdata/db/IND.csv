@@ -1,38 +1,39 @@
-"id","id_covid19india_org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_alpha_2","key_google_mobility","key_apple_mobility","key_gadm"
-"73f4c613","AN",2,"Andaman And Nicobar Islands",,12.611581325,92.8316959709727,380581,"AN","Andaman and Nicobar Islands",,"IND.1_1"
-"89fbfb70","AP",2,"Andhra Pradesh",,15.88444519,79.6146289958122,49386799,"AP","Andhra Pradesh",,"IND.2_1"
-"67f59a5c","AR",2,"Arunachal Pradesh",,28.060768125,95.0222981797503,1383727,"AR","Arunachal Pradesh",,"IND.3_1"
-"10f2aaca","AS",2,"Assam",,26.056175235,90.7597780246988,31169272,"AS","Assam",,"IND.4_1"
-"4cd8c99f","BR",2,"Bihar",,25.90353966,86.1184477145589,104099452,"BR","Bihar",,"IND.5_1"
-"a8a101a4","CH",2,"Chandigarh",,30.733885765,76.7673325367554,1055450,"CH","Chandigarh",,"IND.6_1"
-"bca05deb","CT",2,"Chhattisgarh",,20.94339085,81.5022986886216,25545198,"CT","Chhattisgarh",,"IND.7_1"
-"0e833256","DN",2,"Dadra And Nagar Haveli",,20.206290245,73.0185877822113,586956,"DN","Dadra and Nagar Haveli",,"IND.8_1"
-"ee56db48","DD",2,"Damão and Diu",,20.71763992,70.943406910792,586956,"DD","Daman and Diu",,"IND.9_1"
-"e08d537a","DL",2,"Delhi",,28.645655635,77.1190042713801,16787941,"DL","Delhi","Delhi","IND.25_1"
-"b5117c04","GA",2,"Goa",,15.346665855,74.1072546992835,1458545,"GA","Goa",,"IND.10_1"
-"22c3a58c","GJ",2,"Gujarat",,22.413331985,72.0409038582624,60439692,"GJ","Gujarat",,"IND.11_1"
-"b6372115","HR",2,"Haryana",,29.29248524,76.2311143291812,25351462,"HR","Haryana",,"IND.12_1"
-"58394039","HP",2,"Himachal Pradesh",,31.821175575,77.3336126023098,6864602,"HP","Himachal Pradesh",,"IND.13_1"
-"e06aeb57","JK",2,"Jammu And Kashmir",,33.880800245,76.4769034521076,12258433,"JK","Jammu and Kashmir",,"IND.14_1"
-"7963baed","JH",2,"Jharkhand",,23.656085015,85.1634318723816,32988134,"JH","Jharkhand",,"IND.15_1"
-"19a43308","KA",2,"Karnataka",,15.01437044,75.5321516376936,61095297,"KA","Karnataka",,"IND.16_1"
-"67154fb5","KL",2,"Kerala",,10.54417038,76.4469504531905,33406061,"KL","Kerala",,"IND.17_1"
-"56e5a5cf","LA",2,"Ladakh",,34.209515,77.615112,290492,"LA",,,
-"268f5140","LD",2,"Lakshadweep",,10.81305742,73.680553435,64473,"LD","Lakshadweep",,"IND.18_1"
-"254eb47c","MP",2,"Madhya Pradesh",,23.975569725,79.389264446656,72626809,"MP","Madhya Pradesh",,"IND.19_1"
-"36222c2a","MH",2,"Maharashtra",,18.817641255,75.425005499592,112374333,"MH","Maharashtra",,"IND.20_1"
-"df41891f","MN",2,"Manipur",,24.77117157,93.8687489175199,2721756,"MN","Manipur",,"IND.21_1"
-"314fe833","ML",2,"Meghalaya",,25.53665638,91.2481627274074,2966889,"ML","Meghalaya",,"IND.22_1"
-"c59b5d62","MZ",2,"Mizoram",,23.232426645,92.8703354543623,1097206,"MZ","Mizoram",,"IND.23_1"
-"1a62bbf0","NL",2,"Nagaland",,26.125016215,94.5593246419397,1978502,"NL","Nagaland",,"IND.24_1"
-"f976b7d2","OR",2,"Orissa",,20.18319416,84.449107109626,41974218,"OR","Odisha",,"IND.26_1"
-"a3fe60c4","PY",2,"Puducherry",,10.9008255,79.7901396365283,1247953,"PY","Puducherry",,"IND.27_1"
-"299ba928","PB",2,"Punjab",,31.06123066,75.6404534105129,27743338,"PB","Punjab",,"IND.28_1"
-"15764398","RJ",2,"Rajasthan",,26.626550675,73.8205863429029,68548437,"RJ","Rajasthan",,"IND.29_1"
-"7b6a424f","SK",2,"Sikkim",,27.60680008,88.4595380922268,610577,"SK","Sikkim",,"IND.30_1"
-"44412007","TN",2,"Tamil Nadu",,10.804365635,78.3536801410259,72147030,"TN","Tamil Nadu",,"IND.31_1"
-"3d9d98a3","TG",2,"Telagana",,17.872019765,79.2988529187868,35193978,"TG","Telangana",,"IND.32_1"
-"50407c48","TR",2,"Tripura",,23.73629475,91.6559977016288,3673917,"TR","Tripura",,"IND.33_1"
-"a7552c25","UP",2,"Uttar Pradesh",,27.142825125,80.7725357075425,199812341,"UP","Uttar Pradesh",,"IND.34_1"
-"a038e83c","UT",2,"Uttaranchal",,30.094099995,79.3182370516934,10086292,"UT","Uttarakhand",,"IND.35_1"
-"66da3fef","WB",2,"West Bengal",,24.41599846,88.0500156446001,91276115,"WB","West Bengal",,"IND.36_1"
+"id","id_covid19india_org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
+,,,,,,,,,,"-",,,
+"73f4c613","AN",2,"Andaman And Nicobar Islands",,,"IND.1_1","Andaman and Nicobar Islands","IN.AN","INAN","AN",12.611581325,92.8316959709727,380581
+"89fbfb70","AP",2,"Andhra Pradesh",,,"IND.2_1","Andhra Pradesh","IN.AP","INAP","AP",15.88444519,79.6146289958122,49386799
+"67f59a5c","AR",2,"Arunachal Pradesh",,,"IND.3_1","Arunachal Pradesh","IN.AR","INAR","AR",28.060768125,95.0222981797503,1383727
+"10f2aaca","AS",2,"Assam",,,"IND.4_1","Assam","IN.AS","INAS","AS",26.056175235,90.7597780246988,31169272
+"4cd8c99f","BR",2,"Bihar",,,"IND.5_1","Bihar","IN.BR","INBR","BR",25.90353966,86.1184477145589,104099452
+"a8a101a4","CH",2,"Chandigarh",,,"IND.6_1","Chandigarh","IN.CH","INCH","CH",30.733885765,76.7673325367554,1055450
+"bca05deb","CT",2,"Chhattisgarh",,,"IND.7_1","Chhattisgarh","IN.CT","INCT","CT",20.94339085,81.5022986886216,25545198
+"0e833256","DN",2,"Dadra And Nagar Haveli",,,"IND.8_1","Dadra and Nagar Haveli","IN.DN","INDN","DN",20.206290245,73.0185877822113,586956
+"ee56db48","DD",2,"Damão and Diu",,,"IND.9_1","Daman and Diu","IN.DD",,"DD",20.71763992,70.943406910792,586956
+"e08d537a","DL",2,"Delhi",,"Delhi","IND.25_1","Delhi","IN.DL","INDL","DL",28.645655635,77.1190042713801,16787941
+"b5117c04","GA",2,"Goa",,,"IND.10_1","Goa","IN.GA","INGA","GA",15.346665855,74.1072546992835,1458545
+"22c3a58c","GJ",2,"Gujarat",,,"IND.11_1","Gujarat","IN.GJ","INGJ","GJ",22.413331985,72.0409038582624,60439692
+"b6372115","HR",2,"Haryana",,,"IND.12_1","Haryana","IN.HR","INHR","HR",29.29248524,76.2311143291812,25351462
+"58394039","HP",2,"Himachal Pradesh",,,"IND.13_1","Himachal Pradesh","IN.HP","INHP","HP",31.821175575,77.3336126023098,6864602
+"e06aeb57","JK",2,"Jammu And Kashmir",,,"IND.14_1","Jammu and Kashmir","IN.JK","INJK","JK",33.880800245,76.4769034521076,12258433
+"7963baed","JH",2,"Jharkhand",,,"IND.15_1","Jharkhand","IN.JH","INJH","JH",23.656085015,85.1634318723816,32988134
+"19a43308","KA",2,"Karnataka",,,"IND.16_1","Karnataka","IN.KA","INKA","KA",15.01437044,75.5321516376936,61095297
+"67154fb5","KL",2,"Kerala",,,"IND.17_1","Kerala","IN.KL","INKL","KL",10.54417038,76.4469504531905,33406061
+"56e5a5cf","LA",2,"Ladakh",,,,,,"INLA","LA",34.209515,77.615112,290492
+"268f5140","LD",2,"Lakshadweep",,,"IND.18_1","Lakshadweep","IN.LD","INLD","LD",10.81305742,73.680553435,64473
+"254eb47c","MP",2,"Madhya Pradesh",,,"IND.19_1","Madhya Pradesh","IN.MP","INMP","MP",23.975569725,79.389264446656,72626809
+"36222c2a","MH",2,"Maharashtra",,,"IND.20_1","Maharashtra","IN.MH","INMH","MH",18.817641255,75.425005499592,112374333
+"df41891f","MN",2,"Manipur",,,"IND.21_1","Manipur","IN.MN","INMN","MN",24.77117157,93.8687489175199,2721756
+"314fe833","ML",2,"Meghalaya",,,"IND.22_1","Meghalaya","IN.ML","INML","ML",25.53665638,91.2481627274074,2966889
+"c59b5d62","MZ",2,"Mizoram",,,"IND.23_1","Mizoram","IN.MZ","INMZ","MZ",23.232426645,92.8703354543623,1097206
+"1a62bbf0","NL",2,"Nagaland",,,"IND.24_1","Nagaland","IN.NL","INNL","NL",26.125016215,94.5593246419397,1978502
+"f976b7d2","OR",2,"Orissa",,,"IND.26_1","Odisha","IN.OR","INOR","OR",20.18319416,84.449107109626,41974218
+"a3fe60c4","PY",2,"Puducherry",,,"IND.27_1","Puducherry","IN.PY","INPY","PY",10.9008255,79.7901396365283,1247953
+"299ba928","PB",2,"Punjab",,,"IND.28_1","Punjab","IN.PB","INPB","PB",31.06123066,75.6404534105129,27743338
+"15764398","RJ",2,"Rajasthan",,,"IND.29_1","Rajasthan","IN.RJ","INRJ","RJ",26.626550675,73.8205863429029,68548437
+"7b6a424f","SK",2,"Sikkim",,,"IND.30_1","Sikkim","IN.SK","INSK","SK",27.60680008,88.4595380922268,610577
+"44412007","TN",2,"Tamil Nadu",,,"IND.31_1","Tamil Nadu","IN.TN","INTN","TN",10.804365635,78.3536801410259,72147030
+"3d9d98a3","TG",2,"Telagana",,,"IND.32_1","Telangana","IN.TG","INTG","TG",17.872019765,79.2988529187868,35193978
+"50407c48","TR",2,"Tripura",,,"IND.33_1","Tripura","IN.TR","INTR","TR",23.73629475,91.6559977016288,3673917
+"a7552c25","UP",2,"Uttar Pradesh",,,"IND.34_1","Uttar Pradesh","IN.UP","INUP","UP",27.142825125,80.7725357075425,199812341
+"a038e83c","UT",2,"Uttaranchal",,,"IND.35_1","Uttarakhand","IN.UT","INUT","UT",30.094099995,79.3182370516934,10086292
+"66da3fef","WB",2,"West Bengal",,,"IND.36_1","West Bengal","IN.WB","INWB","WB",24.41599846,88.0500156446001,91276115
