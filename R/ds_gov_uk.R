@@ -66,7 +66,7 @@ gov_uk <- function(level){
   }
   
   # level
-  area_type <- switch (level, "overview", "nation", "utla")
+  area_type <- switch (level, "overview", "nation", "ltla")
   
   # download
   x <- NULL
