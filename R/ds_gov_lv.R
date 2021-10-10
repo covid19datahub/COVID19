@@ -1,14 +1,14 @@
-gov_lv <- function(cache, level){
+gov_lv <- function(level){
   # author: Martin Benes
   
   # source: Centre for Disease Prevention and Control (CDPC), Latvia
   if(level==1)
     url <- 'https://data.gov.lv/dati/dataset/f01ada0a-2e77-4a82-8ba2-09cf0cf90db3/resource/d499d2f0-b1ea-4ba2-9600-2c701b03bd4a/download/covid_19_izmeklejumi_rezultati.csv'
-  if(level>1)
+  if(level==3)
     url <- 'https://data.gov.lv/dati/dataset/e150cc9a-27c1-4920-a6c2-d20d10469873/resource/492931dd-0012-46d7-b415-76fe0ec7c216/download/covid_19_pa_adm_terit.csv'
   
   # download
-  x <- read.csv(url, sep = ";", cache = cache, encoding = "UTF-8")
+  x <- read.csv(url, sep = ";", fileEncoding = "UTF-8-BOM")
   
   # date
   colnames(x)[1] <- "date"
@@ -31,12 +31,12 @@ gov_lv <- function(cache, level){
     
   }
   
-  if(level>1){
+  if(level==3){
     
     x <- map_data(x, c(
       'date',
       'AdministrativiTeritorialasVienibasNosaukums' = 'region',
-      'ATVK'                                        = 'region_id',
+      'ATVK'                                        = 'atvk',
       'ApstiprinataCOVID19infekcija'                = 'confirmed'
     ))
     
@@ -44,16 +44,16 @@ gov_lv <- function(cache, level){
     x$date <- as.Date(x$date, format="%Y.%m.%d.")
     
     # remove country reports from region reports
-    x <- x[which(x$region_id != 'Nav'),]
+    x <- x[which(x$atvk != 'Nav'),]
     
     # replace range
     idx <- grepl("^no 1", x = x$confirmed)
     x$confirmed[idx] <- 1 
+    x$atvk <- as.integer(x$atvk)
     x$confirmed <- as.integer(x$confirmed)
-    x$region_id <- as.integer(x$region_id)
    
     # fix
-    idx <- which(duplicated(x[,c("date","region_id")]))
+    idx <- which(duplicated(x[,c("date","atvk")]))
     if(length(idx)){
       x <- x[-idx,]
       warning("Duplicated dates in LVA")

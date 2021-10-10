@@ -1,21 +1,17 @@
 LVA <- function(level, cache){
   # Author: Martin Benes
 
-  # tmp debug
-  if(level==1)
-    return(NULL)
-  
   # fallback
-  if(level>2)
+  if(level==2)
     return(NULL)
   
   # download
-  x <- gov_lv(cache = cache, level = level)
+  x <- gov_lv(level = level)
 
-  # id  
-  if(level==2)
-    x$id <- id(x$region_id, iso = "LVA", ds = "gov_lv", level = level)
-  
+  # identifiers
+  if(level==3)
+    x$id <- id(x$atvk, iso = "LVA", ds = "gov_lv", level = level)
+
   # return
   return(x)
   
