@@ -2,7 +2,7 @@
 ,,,,,,,,"-",,,,
 "11c6eae3","Drenthe",2,"Drenthe",,"NLD.1_1","Drenthe","NLDR","PV22","NL13",52.9082489,6.6932587113071,493682
 "ec2469da","Flevoland",2,"Flevoland",,"NLD.2_1","Flevoland","NLFL","PV24","NL23",52.429815295,5.51705646067032,423021
-"62e72a01","Friesland",2,"Friesland",,"NLD.3_1","Friesland","NLFR","PV21","NL12",53.107917785,5.83760751835777,649957
+"62e72a01","Fryslân",2,"Friesland",,"NLD.3_1","Friesland","NLFR","PV21","NL12",53.107917785,5.83760751835777,649957
 "b6280528","Gelderland",2,"Gelderland",,"NLD.4_1","Gelderland","NLGE","PV25","NL22",52.127614975,6.09412654080148,2085952
 "fb7ef034","Groningen",2,"Groningen",,"NLD.5_1","Groningen","NLGR","PV20","NL11",53.15242958,6.89150029964011,585866
 "6e7f5365","Limburg",2,"Limburg",,"NLD.7_1","Limburg","NLLI","PV31","NL42",51.25547409,5.86401002426647,1117201
@@ -291,7 +291,7 @@
 "2b992cac","Rhenen",3,"Utrecht","Rhenen","NLD.11.25_1",,,"GM0340","NL310",51.9806395741739,5.55603900695411,20119
 "91e361bb","Soest",3,"Utrecht","Soest","NLD.11.26_1",,,"GM0342","NL310",52.1575475414069,5.29431378125165,46606
 "959bba7b","Stichtse Vecht",3,"Utrecht","Stichtse Vecht","NLD.11.17_1",,,"GM1904","NL310",52.2029473684524,4.99495036416238,64931
-"702ec710","Utrecht",3,"Utrecht","Utrecht","NLD.11.27_1",,,"GM0344","NL310",52.08331956758,5.09882480428798,357597
+"s225h4g2","Utrecht",3,"Utrecht","Utrecht","NLD.11.27_1",,,"GM0344","NL310",52.08331956758,5.09882480428798,357597
 "a5eaa364","Utrechtse Heuvelrug",3,"Utrecht","Utrechtse Heuvelrug","NLD.11.15_1",,,"GM1581","NL310",52.0282854341909,5.39514208791679,49580
 "2c9c6d0a","Veenendaal",3,"Utrecht","Veenendaal","NLD.11.28_1",,,"GM0345","NL310",52.0231193031867,5.55175210423242,66493
 "f23275a4","Vijfheerenlanden",3,"Utrecht","Vijfheerenlanden","NLD.11.29_1",,,"GM1961","NL310",51.9855,5.0874,56811
