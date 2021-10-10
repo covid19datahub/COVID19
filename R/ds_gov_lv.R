@@ -20,7 +20,6 @@ gov_lv <- function(level){
       'date',
       'TestuSkaits'                                 = 'tests',
       'ApstiprinataCOVID19InfekcijaSkaits'          = 'confirmed',
-      'IzarstetoPacientuSkaits'                     = 'hosp',
       'MirusoPersonuSkaits'                         = 'deaths'
     ))
 
