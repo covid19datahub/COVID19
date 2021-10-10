@@ -1,17 +1,17 @@
 "id","id_rivm_nl","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,"-",,,,
-"11c6eae3","Drenthe",2,"Drenthe",,"NLD.1_1","Drenthe","NLDR","PV22","NL13",52.9082489,6.6932587113071,490807
-"ec2469da","Flevoland",2,"Flevoland",,"NLD.2_1","Flevoland","NLFL","PV24","NL23",52.429815295,5.51705646067032,395525
-"62e72a01","Friesland",2,"Friesland",,"NLD.3_1","Friesland","NLFR","PV21","NL12",53.107917785,5.83760751835777,647214
-"b6280528","Gelderland",2,"Gelderland",,"NLD.4_1","Gelderland","NLGE","PV25","NL22",52.127614975,6.09412654080148,2010745
-"fb7ef034","Groningen",2,"Groningen",,"NLD.5_1","Groningen","NLGR","PV20","NL11",53.15242958,6.89150029964011,580875
-"6e7f5365","Limburg",2,"Limburg",,"NLD.7_1","Limburg","NLLI","PV31","NL42",51.25547409,5.86401002426647,1123075
-"f965106f","Noord-Brabant",2,"Noord-Brabant",,"NLD.8_1","North Brabant","NLNB","PV30","NL41",51.52538109,5.04215798110224,2463686
-"e7a5fd82","Noord-Holland",2,"Noord-Holland",,"NLD.9_1","North Holland","NLNH","PV27","NL32",52.56430626,4.82309560544348,2709822
-"f656f4a1","Overijssel",2,"Overijssel",,"NLD.10_1","Overijssel","NLOV","PV23","NL21",52.485109325,6.38807337239518,1137668
-"702ec710","Utrecht",2,"Utrecht",,"NLD.11_1","Utrecht","NLUT","PV26","NL31",52.119041445,5.15729063851078,1237117
-"a94d0153","Zeeland",2,"Zeeland",,"NLD.12_1","Zeeland","NLZE","PV29","NL34",51.303087235,3.89230032526643,381407
-"836fbee1","Zuid-Holland",2,"Zuid-Holland",,"NLD.14_1","South Holland","NLZH","PV28","NL33",52.01439857,4.47750516963172,3552407
+"11c6eae3","Drenthe",2,"Drenthe",,"NLD.1_1","Drenthe","NLDR","PV22","NL13",52.9082489,6.6932587113071,493682
+"ec2469da","Flevoland",2,"Flevoland",,"NLD.2_1","Flevoland","NLFL","PV24","NL23",52.429815295,5.51705646067032,423021
+"62e72a01","Friesland",2,"Friesland",,"NLD.3_1","Friesland","NLFR","PV21","NL12",53.107917785,5.83760751835777,649957
+"b6280528","Gelderland",2,"Gelderland",,"NLD.4_1","Gelderland","NLGE","PV25","NL22",52.127614975,6.09412654080148,2085952
+"fb7ef034","Groningen",2,"Groningen",,"NLD.5_1","Groningen","NLGR","PV20","NL11",53.15242958,6.89150029964011,585866
+"6e7f5365","Limburg",2,"Limburg",,"NLD.7_1","Limburg","NLLI","PV31","NL42",51.25547409,5.86401002426647,1117201
+"f965106f","Noord-Brabant",2,"Noord-Brabant",,"NLD.8_1","North Brabant","NLNB","PV30","NL41",51.52538109,5.04215798110224,2562955
+"e7a5fd82","Noord-Holland",2,"Noord-Holland",,"NLD.9_1","North Holland","NLNH","PV27","NL32",52.56430626,4.82309560544348,2879527
+"f656f4a1","Overijssel",2,"Overijssel",,"NLD.10_1","Overijssel","NLOV","PV23","NL21",52.485109325,6.38807337239518,1162406
+"702ec710","Utrecht",2,"Utrecht",,"NLD.11_1","Utrecht","NLUT","PV26","NL31",52.119041445,5.15729063851078,1354834
+"a94d0153","Zeeland",2,"Zeeland",,"NLD.12_1","Zeeland","NLZE","PV29","NL34",51.303087235,3.89230032526643,383488
+"836fbee1","Zuid-Holland",2,"Zuid-Holland",,"NLD.14_1","South Holland","NLZH","PV28","NL33",52.01439857,4.47750516963172,3708696
 "2814a7ab","Aa en Hunze",3,"Drenthe","Aa en Hunze","NLD.1.1_1",,,"GM1680","NL131",52.981338379194,6.72910814449527,25445
 "685dde11","Assen",3,"Drenthe","Assen","NLD.1.2_1",,,"GM0106","NL131",53.0004961131287,6.55053519017831,68599
 "b25c6922","Borger-Odoorn",3,"Drenthe","Borger-Odoorn","NLD.1.3_1",,,"GM1681","NL132",52.8916410404282,6.88034677257655,25559
