@@ -1,8 +1,8 @@
-rivm_nl <- function(level, cache) {
+rivm_nl <- function(level) {
   
   # download
   url <- "https://data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_per_dag.csv"
-  x   <- read.csv(url, cache = cache, sep = ";")
+  x   <- read.csv(url, sep = ";")
   
   # parse
   x <- map_data(x, c(

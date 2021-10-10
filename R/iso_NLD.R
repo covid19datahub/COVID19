@@ -1,10 +1,10 @@
-NLD <- function(level, cache) {
+NLD <- function(level, ...) {
   
   # fallback
   if(level > 3) return(NULL)
   
   # download
-  x <- rivm_nl(level, cache)
+  x <- rivm_nl(level)
   
   # id
   if(level == 2)
