@@ -1,10 +1,8 @@
 POL <- function(level, cache) {
-  # Author: Martin Benes
-  
-  # fallback
-  if(level==1 | level>3)
-    return(NULL)
-  
+
+  # no reliable source at the moment
+  return(NULL)
+
   # download
   x <- covid19poland_git(level = level, cache = cache)
   
