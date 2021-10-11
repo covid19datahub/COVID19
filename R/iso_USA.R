@@ -17,9 +17,7 @@
 #' \href{`r repo("fun_name_2")`}{Data Source Name 2} 
 #' (variables, separated, by, comma).
 #' 
-#'  
 #' @concept official
-#' 
 #' 
 USA <- function(level, cache){
   if(level>3) return(NULL)
