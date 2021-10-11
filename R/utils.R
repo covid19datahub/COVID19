@@ -1,6 +1,10 @@
 #' @importFrom dplyr %>%
 NULL
 
+repo <- function(ds){
+  sprintf("https://github.com/covid19datahub/COVID19/blob/master/R/ds_%s.R", ds)
+}
+
 cachecall <- function(fun, ...){
   
   args  <- list(...)
@@ -64,7 +68,6 @@ id <- function(x, iso, ds, level){
   
 }
 
-# convert global id in oxcgrt_id
 get_oxcgrt_id <- function(id, iso){
   
   db <- extdata("db",sprintf("%s.csv",iso))
@@ -300,6 +303,8 @@ covid19fill <- function(x, iso, level, cache, what = NULL){
 #' 
 #' }
 #' 
+#' @keywords internal
+#' 
 #' @export
 cumsum <- function(x, na.rm = TRUE){
   
@@ -332,6 +337,8 @@ cumsum <- function(x, na.rm = TRUE){
 #' 
 #' }
 #' 
+#' @keywords internal
+#' 
 #' @export
 extdata <- function(...){
   
@@ -363,6 +370,8 @@ extdata <- function(...){
 #'   year = 2020)
 #'   
 #' }
+#' 
+#' @keywords internal
 #' 
 #' @export
 add_src <- function(...){
@@ -427,6 +436,8 @@ add_src <- function(...){
 #'  "fips"  = "key_numeric"))
 #'  
 #' }
+#' 
+#' @keywords internal
 #' 
 #' @export
 add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
@@ -493,6 +504,8 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
 #' 
 #' }
 #' 
+#' @keywords internal
+#' 
 #' @export
 map_values <- function(x, map, force = FALSE){
 
@@ -536,6 +549,8 @@ map_values <- function(x, map, force = FALSE){
 #' 
 #' }
 #' 
+#' @keywords internal
+#' 
 #' @export
 map_data <- function(x, map){
   
@@ -562,6 +577,8 @@ map_data <- function(x, map){
 #' @param ... arguments passed to \code{\link[base]{merge}}
 #' 
 #' @return return value of \code{\link[base]{merge}}
+#' 
+#' @keywords internal
 #' 
 #' @export
 merge <- function(...){
@@ -605,6 +622,8 @@ merge <- function(...){
 #' 
 #' @return return value of \code{\link[utils:write.table]{write.csv}}
 #' 
+#' @keywords internal
+#' 
 #' @export
 write.csv <- function(x, file, row.names = FALSE, na = "", fileEncoding = "UTF-8", ...){
   
@@ -624,6 +643,8 @@ write.csv <- function(x, file, row.names = FALSE, na = "", fileEncoding = "UTF-8
 #' @param ... arguments passed to \code{\link[utils:write.table]{read.csv}}
 #' 
 #' @return return value of \code{\link[utils:write.table]{read.csv}}
+#' 
+#' @keywords internal
 #' 
 #' @export
 read.csv <- function(file, cache = FALSE, na.strings = "", stringsAsFactors = FALSE, encoding = "UTF-8", ...){
@@ -655,6 +676,8 @@ read.csv <- function(file, cache = FALSE, na.strings = "", stringsAsFactors = FA
 #' x   <- read.excel(url, cache = TRUE)  
 #' 
 #' }
+#' 
+#' @keywords internal
 #' 
 #' @export
 read.excel <- function(path, cache = FALSE, sheet = NA, ...) {
@@ -724,6 +747,8 @@ read.excel <- function(path, cache = FALSE, sheet = NA, ...) {
 #' 
 #' }
 #' 
+#' @keywords internal
+#' 
 #' @export
 read.zip <- function(zip, files, cache = FALSE, ...){
   
@@ -770,6 +795,8 @@ read.zip <- function(zip, files, cache = FALSE, ...){
 #' e <- err_log(x)
 #' 
 #' }
+#' 
+#' @keywords internal
 #' 
 #' @export
 err_log <- function(x){
@@ -854,6 +881,8 @@ err_log <- function(x){
 #' ds_check_format(x, level = 1)
 #' 
 #' }
+#' 
+#' @keywords internal
 #' 
 #' @export
 ds_check_format <- function(x, level, ci = 0.95, verbose = TRUE) {

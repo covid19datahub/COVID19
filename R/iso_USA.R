@@ -1,16 +1,37 @@
+#' United States
+#' 
+#' The data are available at 3 different levels of granularity:
+#' level 1 (nation), level 2 (states), and level 3 (counties).
+#' 
+#' @section Data sources:
+#' 
+#' \bold{Level 1.} 
+#' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
+#' (confirmed cases, recovered, deaths, population); 
+#' \href{`r repo("ourworldindata_org")`}{Our World in Data} 
+#' (hospitalizations, intensive care, test, vaccines).
+#' 
+#' \bold{Level 2.} 
+#' \href{`r repo("fun_name")`}{Data Source Name}
+#' (variables, separated, by, comma); 
+#' \href{`r repo("fun_name_2")`}{Data Source Name 2} 
+#' (variables, separated, by, comma).
+#' 
+#'  
+#' @concept official
+#' 
+#' 
 USA <- function(level, cache){
+  if(level>3) return(NULL)
 
-  # fallback
-  if(level>3)
-    return(NULL)
-
-  # level
   if(level==1){
     
-    # fallback to worldwide data
+    # fallback to worldwide data. 
+    # TODO: make it explicit instead of using the fallback.
     x <- NULL
     
   }
+  
   if(level==2){
 
     # tests, hospitalized and icu
@@ -37,23 +58,23 @@ USA <- function(level, cache){
       dplyr::full_join(r[,c(key, "recovered", "vent")], by = key)
     
   }
+  
   if(level==3){
     
-    # JHU
+    # confirmed and deaths
     x <- jhucsse_git(file = "US", cache = cache, level = level, country = "USA")
     x$id <- id(x$id, iso = "USA", ds = "jhucsse_git", level = level)
     
-    # NyTimes
+    # confirmed and deaths
     y <- nytimes_git(cache = cache, level = level)
     y$id <- id(y$fips, iso = "USA", ds = "nytimes_git", level = level)
     
-    # append
+    # use JHU only for FIPS not in NYTimes
     x <- x[!(x$fips %in% y$fips),]
     x <- bind_rows(x, y)
     
   }
-    
-  # return
+
   return(x)
 
 }

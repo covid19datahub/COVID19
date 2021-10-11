@@ -19,7 +19,7 @@ id(x, iso, ds, level)
 converted vector of identifiers to use in the Data Hub.
 }
 \description{
-Map the ids of administrative areas used by the data provider to the 
+Map the ids of administrative areas used by the data provider to the
 identifiers used in the Data Hub.
 }
 \keyword{internal}

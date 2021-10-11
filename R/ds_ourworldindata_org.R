@@ -1,3 +1,13 @@
+#' Our World in Data
+#' 
+#' Import worldwide confirmed cases, deaths, hospitalizations, intensive care, 
+#' tests, and vaccines at national level. 
+#' 
+#' @source
+#' https://covid.ourworldindata.org
+#' 
+#' @keywords internal
+#' 
 ourworldindata_org <- function(cache, id = NULL){
   
   url <- "https://covid.ourworldindata.org/data/owid-covid-data.csv"

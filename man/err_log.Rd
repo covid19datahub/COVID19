@@ -24,3 +24,4 @@ e <- err_log(x)
 }
 
 }
+\keyword{internal}

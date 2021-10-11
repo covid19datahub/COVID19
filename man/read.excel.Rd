@@ -30,3 +30,4 @@ x   <- read.excel(url, cache = TRUE)
 }
 
 }
+\keyword{internal}

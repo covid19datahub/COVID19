@@ -15,7 +15,7 @@ ds_check_format(x, level, ci = 0.95, verbose = TRUE)
 logical.
 }
 \description{
-Checks if the output of a data source function is correctly formatted. 
+Checks if the output of a data source function is correctly formatted.
 The function checks the FORMAT, NOT the DATA.
 Before submission, the data should be double checked by comparing with external data sources (e.g. Google search).
 }
@@ -29,3 +29,4 @@ ds_check_format(x, level = 1)
 }
 
 }
+\keyword{internal}

@@ -25,3 +25,4 @@ return value of \code{\link[utils:write.table]{write.csv}}
 \description{
 Write csv in UTF-8.
 }
+\keyword{internal}

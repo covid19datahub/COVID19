@@ -32,3 +32,4 @@ return value of \code{\link[utils:write.table]{read.csv}}
 \description{
 Reads a file in table format and creates a data frame from it, with cases corresponding to lines and variables to fields in the file.
 }
+\keyword{internal}

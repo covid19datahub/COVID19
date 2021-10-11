@@ -29,3 +29,4 @@ Add data source to the file inst/extdata/src.csv
 }
 
 }
+\keyword{internal}

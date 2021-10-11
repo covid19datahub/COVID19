@@ -29,3 +29,4 @@ cumsum(x, na.rm = TRUE)
 }
 
 }
+\keyword{internal}

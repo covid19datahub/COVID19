@@ -45,8 +45,8 @@ Grouped \code{tibble} (\code{data.frame})
 Unified datasets for a better understanding of COVID-19.
 }
 \details{
-If \code{raw=FALSE}, the raw data are cleaned by filling missing dates with \code{NA} values. 
-This ensures that all locations share the same grid of dates and no single day is skipped. 
+If \code{raw=FALSE}, the raw data are cleaned by filling missing dates with \code{NA} values.
+This ensures that all locations share the same grid of dates and no single day is skipped.
 Then, \code{NA} values are replaced with the previous non-\code{NA} value or \code{0}.
 }
 \note{
@@ -55,9 +55,9 @@ We have invested a lot of time and effort in creating \href{https://covid19datah
 \itemize{
 \item cite \href{https://doi.org/10.21105/joss.02376}{Guidotti and Ardia (2020)} when using \href{https://covid19datahub.io}{COVID-19 Data Hub}.
 \item place the URL \url{https://covid19datahub.io} in a footnote to help others find \href{https://covid19datahub.io}{COVID-19 Data Hub}.
-\item you assume full risk for the use of \href{https://covid19datahub.io}{COVID-19 Data Hub}. 
-We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. 
-However, it is free software and comes with ABSOLUTELY NO WARRANTY. 
+\item you assume full risk for the use of \href{https://covid19datahub.io}{COVID-19 Data Hub}.
+We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub.
+However, it is free software and comes with ABSOLUTELY NO WARRANTY.
 Reliance on \href{https://covid19datahub.io}{COVID-19 Data Hub} for medical guidance or use of \href{https://covid19datahub.io}{COVID-19 Data Hub} in commerce is strictly prohibited.
 }
 }
@@ -81,3 +81,4 @@ s <- attr(x, "src")
 \references{
 Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, \doi{10.21105/joss.02376}.
 }
+\keyword{internal}

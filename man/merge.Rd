@@ -16,3 +16,4 @@ return value of \code{\link[base]{merge}}
 Merge two data frames by common columns or row names, or do other versions of database join operations.
 Drop common columns of the second data.frame.
 }
+\keyword{internal}

@@ -30,3 +30,4 @@ map_data(x, c(
 }
 
 }
+\keyword{internal}

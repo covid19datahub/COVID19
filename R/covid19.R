@@ -52,6 +52,8 @@
 #' Reliance on \href{https://covid19datahub.io}{COVID-19 Data Hub} for medical guidance or use of \href{https://covid19datahub.io}{COVID-19 Data Hub} in commerce is strictly prohibited.
 #' }
 #' 
+#' @keywords internal
+#' 
 #' @export
 #'
 covid19 <- function(country = NULL,
