@@ -1,7 +1,7 @@
 PRI <- function(level, cache){
 
   # fallback
-  if(level==2 | level>3)
+  if(level>2)
     return(NULL)
 
   # level
@@ -11,10 +11,10 @@ PRI <- function(level, cache){
     x <- nytimes_git(cache = cache, level = 2, fips = 72)
     
   }
-  if(level==3){
+  if(level==2){
     
     # download
-    x <- jhucsse_git(file = "US", cache = cache, level = level, country = "PRI")
+    x <- jhucsse_git(file = "US", cache = cache, level = 3, country = "PRI")
     
     # id
     x$id <- id(x$fips, iso = "PRI", ds = "jhucsse_git", level = level)
