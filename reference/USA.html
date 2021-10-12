@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Convert identifiers — id • COVID-19 Data Hub</title>
+<title>United States — USA • COVID-19 Data Hub</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,9 +46,9 @@
 
 
 
-<meta property="og:title" content="Convert identifiers — id" />
-<meta property="og:description" content="Map the ids of administrative areas used by the data provider to the
-identifiers used in the Data Hub." />
+<meta property="og:title" content="United States — USA" />
+<meta property="og:description" content="The data are available at 3 different levels of granularity:
+level 1 (nation), level 2 (states), and level 3 (counties)." />
 <meta property="og:image" content="https://covid19datahub.io/logo.png" />
 
 
@@ -184,42 +184,34 @@ identifiers used in the Data Hub." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Convert identifiers</h1>
-    <small class="dont-index">Source: <a href='https://github.com/covid19datahub/COVID19/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
-    <div class="hidden name"><code>id.Rd</code></div>
+    <h1>United States</h1>
+    <small class="dont-index">Source: <a href='https://github.com/covid19datahub/COVID19/blob/master/R/iso_USA.R'><code>R/iso_USA.R</code></a></small>
+    <div class="hidden name"><code>USA.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Map the ids of administrative areas used by the data provider to the
-identifiers used in the Data Hub.</p>
+    <p>The data are available at 3 different levels of granularity:
+level 1 (nation), level 2 (states), and level 3 (counties).</p>
     </div>
 
-    <pre class="usage"><span class='fu'>id</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>iso</span>, <span class='va'>ds</span>, <span class='va'>level</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>USA</span><span class='op'>(</span><span class='va'>level</span>, <span class='va'>cache</span><span class='op'>)</span></pre>
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>x</th>
-      <td><p>vector of identifiers used by the data source to identify administrative areas.</p></td>
-    </tr>
-    <tr>
-      <th>iso</th>
-      <td><p>the 3 letter ISO code of the country.</p></td>
-    </tr>
-    <tr>
-      <th>ds</th>
-      <td><p>the name of the data source function.</p></td>
-    </tr>
-    <tr>
-      <th>level</th>
-      <td><p>the level of the administrative areas.</p></td>
-    </tr>
-    </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <h2 class="hasAnchor" id="data-sources"><a class="anchor" href="#data-sources"></a>Data sources</h2>
 
-    <p>converted vector of identifiers to use in the Data Hub.</p>
+    
+
+
+<p><b>Level 1.</b>
+<a href='https://github.com/covid19datahub/COVID19/blob/master/R/ds_jhucsse_git.R'>Johns Hopkins Center for Systems Science and Engineering</a>
+(confirmed cases, recovered, deaths, population);
+<a href='https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata_org.R'>Our World in Data</a>
+(hospitalizations, intensive care, test, vaccines).</p>
+<p><b>Level 2.</b>
+<a href='https://github.com/covid19datahub/COVID19/blob/master/R/ds_fun_name.R'>Data Source Name</a>
+(variables, separated, by, comma);
+<a href='https://github.com/covid19datahub/COVID19/blob/master/R/ds_fun_name_2.R'>Data Source Name 2</a>
+(variables, separated, by, comma).</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
