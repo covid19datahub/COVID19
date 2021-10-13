@@ -1,28 +1,28 @@
-"id","id_minshall_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population"
-"1833a23c","Cherkasy Oblast",2,"Cherkasy Oblast",,49.4444,32.0598,
-"621c46de","Chernihiv Oblast",2,"Chernihiv Oblast",,51.4982,31.2893,
-"82d1db41","Chernivtsi Oblast",2,"Chernivtsi Oblast",,48.2917,25.9352,
-"1f139840","Crimea Republic",2,"Crimea Republic",,45.2835,34.2008,
-"3168b751","Dnipropetrovsk Oblast",2,"Dnipropetrovsk Oblast",,48.4647,35.0462,
-"5f7158f1","Donetsk Oblast",2,"Donetsk Oblast",,48.0159,37.8028,
-"ec659fe3","Ivano-Frankivsk Oblast",2,"Ivano-Frankivsk Oblast",,48.9226,24.7111,
-"893a9216","Kharkiv Oblast",2,"Kharkiv Oblast",,49.9935,36.2304,
-"62013b61","Kherson Oblast",2,"Kherson Oblast",,46.6354,32.6169,
-"dcdc55b5","Khmelnytskyi Oblast",2,"Khmelnytskyi Oblast",,49.423,26.9871,
-"bff46897","Kiev",2,"Kiev",,50.4501,30.5234,
-"604bfe6f","Kiev Oblast",2,"Kiev Oblast",,50.053,30.7667,
-"2d16e9d7","Kirovohrad Oblast",2,"Kirovohrad Oblast",,48.5079,32.2623,
-"8d184178","Luhansk Oblast",2,"Luhansk Oblast",,48.574,39.3078,
-"79e1c29d","Lviv Oblast",2,"Lviv Oblast",,49.8397,24.0297,
-"af594831","Mykolaiv Oblast",2,"Mykolaiv Oblast",,46.975,31.9946,
-"4a86ecc0","Odessa Oblast",2,"Odessa Oblast",,46.4846,30.7326,
-"b9fc7d39","Poltava Oblast",2,"Poltava Oblast",,49.5883,34.5514,
-"d54c0720","Rivne Oblast",2,"Rivne Oblast",,50.6199,26.2516,
-"1fa2e2f1","Sevastopol",2,"Sevastopol",,44.6054,33.522,
-"2b140a33","Sumy Oblast",2,"Sumy Oblast",,50.9077,34.7981,
-"c5cc2c39","Ternopil Oblast",2,"Ternopil Oblast",,49.5535,25.5948,
-"92ce95e0","Vinnytsia Oblast",2,"Vinnytsia Oblast",,49.2331,28.4682,
-"9bb8d4d3","Volyn Oblast",2,"Volyn Oblast",,50.7472,25.3254,
-"3e25cee2","Zakarpattia Oblast",2,"Zakarpattia Oblast",,48.6208,22.2879,
-"7cde9a16","Zaporizhia Oblast",2,"Zaporizhia Oblast",,47.8388,35.1396,
-"89029519","Zhytomyr Oblast",2,"Zhytomyr Oblast",,50.2547,28.6587,
+"id","id_minshall_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key_gadm"
+"1833a23c","Cherkasy Oblast",2,"Cherkasy",,49.337007525,31.6360403713358,,"UKR.1_1"
+"621c46de","Chernihiv Oblast",2,"Chernihiv",,51.35041046,31.861756968899,,"UKR.2_1"
+"82d1db41","Chernivtsi Oblast",2,"Chernivtsi",,48.20103645,25.7730957629639,,"UKR.3_1"
+"1f139840","Crimea Republic",2,"Crimea Republic",,45.290555955,34.26958275,,"UKR.4_1"
+"3168b751","Dnipropetrovsk Oblast",2,"Dnipropetrovsk",,48.29689598,35.1863313482148,,"UKR.5_1"
+"5f7158f1","Donetsk Oblast",2,"Donetsk",,48.062837605,37.8484836124495,,"UKR.6_1"
+"ec659fe3","Ivano-Frankivsk Oblast",2,"Ivano-Frankivsk",,48.637607575,24.6770444145289,,"UKR.7_1"
+"893a9216","Kharkiv Oblast",2,"Kharkiv",,49.49019432,36.6856176953092,,"UKR.8_1"
+"62013b61","Kherson Oblast",2,"Kherson",,46.73925209,33.4823113226784,,"UKR.9_1"
+"dcdc55b5","Khmelnytskyi Oblast",2,"Khmelnytskyi",,49.5208931,26.9423809198479,,"UKR.10_1"
+"bff46897","Kiev",2,"Kiev City",,50.41329193,30.6067454819308,,"UKR.11_1"
+"604bfe6f","Kiev Oblast",2,"Kiev",,50.3540287,31.407628806693,,"UKR.12_1"
+"2d16e9d7","Kirovohrad Oblast",2,"Kirovohrad",,48.483940125,31.8346498579371,,"UKR.13_1"
+"8d184178","Luhansk Oblast",2,"Luhansk",,48.951986315,38.9068834210165,,"UKR.15_1"
+"79e1c29d","Lviv Oblast",2,"Lviv",,49.69259644,23.8913199938248,,"UKR.14_1"
+"af594831","Mykolaiv Oblast",2,"Mykolaiv",,47.41157913,31.9635359651712,,"UKR.16_1"
+"4a86ecc0","Odessa Oblast",2,"Odessa",,46.73082733,30.582051918502,,"UKR.17_1"
+"b9fc7d39","Poltava Oblast",2,"Poltava",,49.623823165,34.1095102677593,,"UKR.18_1"
+"d54c0720","Rivne Oblast",2,"Rivne",,50.9849205,26.6484443481818,,"UKR.19_1"
+"1fa2e2f1","Sevastopol",2,"Sevastopol",,44.61361122,33.6680347314715,,"UKR.20_1"
+"2b140a33","Sumy Oblast",2,"Sumy",,51.22935295,33.8669261771094,,"UKR.21_1"
+"c5cc2c39","Ternopil Oblast",2,"Ternopil",,49.39126015,25.4919301059131,,"UKR.22_1"
+"92ce95e0","Vinnytsia Oblast",2,"Vinnytsia",,48.97852325,28.54893238843,,"UKR.24_1"
+"9bb8d4d3","Volyn Oblast",2,"Volyn",,51.137931825,24.9367717298484,,"UKR.25_1"
+"3e25cee2","Zakarpattia Oblast",2,"Zakarpattia",,48.497472765,23.0281217650125,,"UKR.23_1"
+"7cde9a16","Zaporizhia Oblast",2,"Zaporizhia",,47.0953331,35.7598334542428,,"UKR.26_1"
+"89029519","Zhytomyr Oblast",2,"Zhytomyr",,50.64296532,28.3634879097196,,"UKR.27_1"
