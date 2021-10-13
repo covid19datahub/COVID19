@@ -1,10 +1,11 @@
-"id","id_covid19za_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","latitude","longitude","population","key","key_google_mobility","key_apple_mobility"
-"4a1c930e","EC",2,"Eastern Cape",,-32.853333,27.436111,6996976,"EC","Eastern Cape","Eastern Cape"
-"7c86d0a9","FS",2,"Free State",,-29.116111,26.214167,2834714,"FS","Free State","Free State"
-"fc94b052","GP",2,"Gauteng",,-26.206111,28.04,13399724,"GP","Gauteng","Gauteng"
-"8db651f9","KZN",2,"KwaZulu-Natal",,-29.601389,30.382222,11065240,"KZN","KwaZulu-Natal","KwaZulu-Natal"
-"1f606999","LP",2,"Limpopo",,-23.9125,29.455833,5799090,"LP","Limpopo","Limpopo"
-"067b58d8","MP",2,"Mpumalanga",,-25.4375,30.971944,4335964,"MP","Mpumalanga","Mpumalanga"
-"a9e84ac5","NC",2,"Northern Cape",,-28.736111,24.768889,3748435,"NC","Northern Cape","Northern Cape"
-"b3329eb8","NW",2,"North West",,-25.834167,25.611667,1193780,"NW","North West","North West"
-"32e8e3dd","WC",2,"Western Cape",,-33.924167,18.418611,6279730,"WC","Western Cape","Western Cape"
+"id","id_covid19za_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_local","latitude","longitude","population"
+,,,,,,,,"-",,,
+"4a1c930e","EC",2,"Eastern Cape",,"Eastern Cape","ZAF.1_1","Eastern Cape","EC",-32.10953522,26.5903024281711,6996976
+"7c86d0a9","FS",2,"Free State",,"Free State","ZAF.2_1","Free State","FS",-28.681405065,26.6276264987157,2834714
+"fc94b052","GP",2,"Gauteng",,"Gauteng","ZAF.3_1","Gauteng","GT",-26.017630575,28.0120171106122,13399724
+"8db651f9","KZN",2,"KwaZulu-Natal",,"KwaZulu-Natal","ZAF.4_1","KwaZulu-Natal","KZN",-28.941996575,30.4719109322936,11065240
+"1f606999","LP",2,"Limpopo",,"Limpopo","ZAF.5_1","Limpopo","LIM",-23.773815155,29.3417313899304,5799090
+"067b58d8","MP",2,"Mpumalanga",,"Mpumalanga","ZAF.6_1","Mpumalanga","MP",-25.74475479,30.1472057321668,4335964
+"b3329eb8","NW",2,"North West",,"North West","ZAF.7_1","North West","NW",-26.37113953,25.2372246753256,1193780
+"a9e84ac5","NC",2,"Northern Cape",,"Northern Cape","ZAF.8_1","Northern Cape","NC",-28.85542965,22.0210707176521,3748435
+"32e8e3dd","WC",2,"Western Cape",,"Western Cape","ZAF.9_1","Western Cape","WC",-32.632915495,22.2253349616889,6279730
