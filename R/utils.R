@@ -131,6 +131,7 @@ vars <- function(type = NULL){
     'character' = 'key',
     'character' = 'key_alpha_2',
     'integer'   = 'key_numeric',
+    'character' = 'key_local',
     'character' = 'key_google_mobility',
     'character' = 'key_apple_mobility',
     'character' = 'key_jhu_csse'
