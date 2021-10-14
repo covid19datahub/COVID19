@@ -1,21 +1,21 @@
 "id","id_gov_de","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,"-",,,,
-"50ac16c8",8,2,"Baden-Württemberg",,"DEU.1_1","Baden-Württemberg","DE.BW","DE1","08","DE1",48.64696312,9.05832336733654,11069533
-"27ab265e",9,2,"Bayern",,"DEU.2_1","Bavaria","DE.BY","DE2","09","DE2",48.918100355,12.0478298535931,1887754
-"c5b70c33",11,2,"Berlin",,"DEU.3_1","Berlin","DE.BE","DE3","11","DE3",52.508213045,13.3971290703403,3644826
-"5cbe5d89",12,2,"Brandenburg",,"DEU.4_1","Brandenburg","DE.BR","DE4","12","DE4",52.458847045,14.1594023168141,2511917
-"591a5ae3",4,2,"Bremen",,"DEU.5_1","Bremen","DE.HB","DE5","04","DE5",53.1202507,8.80732909538923,682986
-"b079ffd6",2,2,"Hamburg",,"DEU.6_1","Hamburg","DE.HH","DE6","02","DE6",53.56662369,9.94117290598373,1841179
-"b7143bcf",6,2,"Hessen",,"DEU.7_1","Hesse","DE.HE","DE7","06","DE7",50.526348115,9.01889051640201,1219823
-"2bb96d1f",13,2,"Mecklenburg-Vorpommern",,"DEU.8_1","Mecklenburg-Vorpommern","DE.MV","DE8","13","DE8",53.797361375,12.5184949977774,1609675
-"c77ecf40",3,2,"Niedersachsen",,"DEU.9_1","Lower Saxony","DE.NI","DE9","03","DE9",52.59423256,8.83787694140754,2525333
-"2e1d6a75",5,2,"Nordrhein-Westfalen",,"DEU.10_1","North Rhine-Westphalia","DE.NW","DEA","05","DEA",51.426231385,7.58029222470184,3582497
-"c0130b59",7,2,"Rheinland-Pfalz",,"DEU.11_1","Rhineland-Palatinate","DE.RP","DEB","07","DEB",49.954423905,7.27359492855909,2057952
-"b2b03ca5",10,2,"Saarland",,"DEU.12_1","Saarland","DE.SL","DEC","10","DEC",49.37578964,6.96976271225809,990509
-"b5ddf8bc",14,2,"Sachsen",,"DEU.14_1","Saxony","DE.SN","DED","14","DED",50.92827606,13.5218807498854,1043293
-"c2dac82a",15,2,"Sachsen-Anhalt",,"DEU.13_1","Saxony-Anhalt","DE.ST","DEE","15","DEE",51.990032195,11.5592040453984,2208321
-"2970ae6c",1,2,"Schleswig-Holstein",,"DEU.15_1","Schleswig-Holstein","DE.SH","DEF","01","DEF",54.208194735,9.956388475,2896712
-"5bd39990",16,2,"Thüringen",,"DEU.16_1",,"DE.TH","DEG","16","DEG",50.92678833,11.3150160438644,2143145
+"50ac16c8",8,2,"Baden-Württemberg",,"DEU.1_1","Baden-Württemberg","DE.BW","DE1","08","DE1",48.64696312,9.05832336733654,10486660
+"27ab265e",9,2,"Bayern",,"DEU.2_1","Bavaria","DE.BY","DE2","09","DE2",48.918100355,12.0478298535931,12397614
+"c5b70c33",11,2,"Berlin",,"DEU.3_1","Berlin","DE.BE","DE3","11","DE3",52.508213045,13.3971290703403,3292365
+"5cbe5d89",12,2,"Brandenburg",,"DEU.4_1","Brandenburg","DE.BR","DE4","12","DE4",52.458847045,14.1594023168141,2455780
+"591a5ae3",4,2,"Bremen",,"DEU.5_1","Bremen","DE.HB","DE5","04","DE5",53.1202507,8.80732909538923,650863
+"b079ffd6",2,2,"Hamburg",,"DEU.6_1","Hamburg","DE.HH","DE6","02","DE6",53.56662369,9.94117290598373,1706696
+"b7143bcf",6,2,"Hessen",,"DEU.7_1","Hesse","DE.HE","DE7","06","DE7",50.526348115,9.01889051640201,5971816
+"2bb96d1f",13,2,"Mecklenburg-Vorpommern",,"DEU.8_1","Mecklenburg-Vorpommern","DE.MV","DE8","13","DE8",53.797361375,12.5184949977774,1609982
+"c77ecf40",3,2,"Niedersachsen",,"DEU.9_1","Lower Saxony","DE.NI","DE9","03","DE9",52.59423256,8.83787694140754,7777992
+"2e1d6a75",5,2,"Nordrhein-Westfalen",,"DEU.10_1","North Rhine-Westphalia","DE.NW","DEA","05","DEA",51.426231385,7.58029222470184,17538251
+"c0130b59",7,2,"Rheinland-Pfalz",,"DEU.11_1","Rhineland-Palatinate","DE.RP","DEB","07","DEB",49.954423905,7.27359492855909,3989808
+"b2b03ca5",10,2,"Saarland",,"DEU.12_1","Saarland","DE.SL","DEC","10","DEC",49.37578964,6.96976271225809,999623
+"b5ddf8bc",14,2,"Sachsen",,"DEU.14_1","Saxony","DE.SN","DED","14","DED",50.92827606,13.5218807498854,4056799
+"c2dac82a",15,2,"Sachsen-Anhalt",,"DEU.13_1","Saxony-Anhalt","DE.ST","DEE","15","DEE",51.990032195,11.5592040453984,2287040
+"2970ae6c",1,2,"Schleswig-Holstein",,"DEU.15_1","Schleswig-Holstein","DE.SH","DEF","01","DEF",54.208194735,9.956388475,2800119
+"5bd39990",16,2,"Thüringen",,"DEU.16_1",,"DE.TH","DEG","16","DEG",50.92678833,11.3150160438644,2188589
 "f34416c0",8425,3,"Baden-Württemberg","LK Alb-Donau-Kreis","DEU.1.1_1",,"DE.BW.AD","DE145","08425","DE145",48.387557985,9.72862628333865,196047
 "6a4d477a",8426,3,"Baden-Württemberg","LK Biberach","DEU.1.3_1",,"DE.BW.BR","DE146","08426","DE146",48.118854525,9.72086866067296,199742
 "dea287e8",8115,3,"Baden-Württemberg","LK Böblingen","DEU.1.4_1",,"DE.BW.BL","DE112","08115","DE112",48.68330765,8.96407701020904,391640
