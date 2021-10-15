@@ -341,6 +341,10 @@
 <a href="#external-keys" class="anchor"></a>External Keys</h2>
 <p>The following keys allow to extend the dataset with external data.</p>
 <table class="table">
+<colgroup>
+<col width="44%">
+<col width="55%">
+</colgroup>
 <thead><tr class="header">
 <th>Variable</th>
 <th>Description</th>
@@ -368,7 +372,15 @@
 </tr>
 <tr class="even">
 <td><code>key_jhu_csse</code></td>
-<td>Identifier used in the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset">JHU CSSE Unified COVID-19 Dataset</a>.</td>
+<td>The identifier used in the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset">JHU CSSE Unified COVID-19 Dataset</a>. In particular, this enables to match administrative areas with the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet">Hydromet dataset</a>.</td>
+</tr>
+<tr class="odd">
+<td><code>key_nuts</code></td>
+<td>The 2021 NUTS codes for Europe, by <a href="https://ec.europa.eu/eurostat/web/nuts/nuts-maps">Eurostat</a>. This is a one-to-many relation as one NUTS code can be associated with multiple administrative areas. The lowest level used is NUTS 3. Local Administrative Units (LAU) are mapped to NUTS 3.</td>
+</tr>
+<tr class="even">
+<td><code>key_gadm</code></td>
+<td>The identifier (GID) used in the <a href="https://gadm.org/">GADM database</a> version 3.6. This is a one-to-one relation as one GID is associated with a unique administrative area. For some administrative areas, it is not possible to find the exact correspondence in the GADM database. In this cases we proceed as follows: (a) when the administrative area is the union of multiple areas in GADM, we use the GID of the area closer to the centroid; (b) when the administrative area is a subdivision not present in GADM, we create its GID by appending <code>.n_0</code> to the GID of the upper division, where <code>n</code> is a sequantial integer and <code>0</code> denotes the version number (read more about GID <a href="https://gadm.org/metadata.html">here</a>).</td>
 </tr>
 </tbody>
 </table>
