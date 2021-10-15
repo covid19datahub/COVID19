@@ -5,7 +5,7 @@ GUM <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhucsse_git(file = "US", cache = cache, level = level, country = "GUM")
+  x <- nytimes_git(cache = cache, level = level+1, fips = "66")
 
   # return
   return(x)
