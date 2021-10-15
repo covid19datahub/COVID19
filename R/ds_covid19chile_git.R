@@ -121,13 +121,9 @@ covid19chile_git <- function(level, cache) {
     x        <- read.csv(url, cache = cache)
     x.deaths <- read.csv(url.deaths, cache = cache)
     
-    # create provincia from comuna
-    x$Codigo.provincia <- gsub("..$", "", x$Codigo.comuna)
-    x.deaths$Codigo.provincia <- gsub("..$", "", x.deaths$Codigo.comuna)
-    
     # by
-    drop <- c("Region", "Codigo.region", "Comuna", "Codigo.comuna", "Poblacion")
-    by <- c("Codigo.provincia")
+    drop <- c("Region", "Codigo.region", "Comuna", "Poblacion")
+    by <- "Codigo.comuna"
     
     # formatting x
     x <- x %>%
