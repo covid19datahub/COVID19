@@ -11,7 +11,7 @@ jhunified_git <- function(iso, level){
   x <- readRDS(file)
 
   # filter
-  x <- x[which((x$ID %in% e$key_jhu_csse) & x$Age=="Total" & x$Sex=="Total"),]
+  x <- x[which((x$ID %in% e$key_jhu_csse) & x$Age=="Total" & x$Sex=="Total" & x$Cases>0),]
   
   # select data source with best data coverage
   s <- names(which.max(table(x$Source)))

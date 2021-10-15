@@ -4,25 +4,15 @@ MEX <- function(level, cache){
   if(level>2)
     return(NULL)
   
-  # level
-  if(level==1){
-   
-    # fallback to worldwide data
+  # fallback to worldwide data
+  if(level==1)
     x <- NULL
      
-  }
-  if(level==2){
-
-    # download
-    x <- minshall_git(iso = "MEX", level = level)
+  # download already with ids
+  if(level==2)
+    x <- jhunified_git(iso = "MEX", level = level)
     
-    # id
-    x$id <- id(x$admin2, iso = "MEX", ds = "minshall_git", level = level)
-    
-  }
-  
   # return
   return(x)
   
 }
-
