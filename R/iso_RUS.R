@@ -1,28 +1,18 @@
-RUS <- function(level, cache){
+RUS <- function(level, ...){
   
   # fallback
   if(level>2)
     return(NULL)
   
-  # level
-  if(level==1){
-   
-    # fallback to worldwide data
+  # fallback to worldwide data
+  if(level==1)
     x <- NULL
-     
-  }
-  if(level==2){
-
-    # download
-    x <- minshall_git(iso = "RUS", level = level)
-    
-    # id
-    x$id <- id(x$admin2, iso = "RUS", ds = "minshall_git", level = level)
-    
-  }
+  
+  # download already with ids
+  if(level==2)
+    x <- jhunified_git(iso = "RUS", level = level)
   
   # return
   return(x)
   
 }
-

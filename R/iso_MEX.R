@@ -1,4 +1,4 @@
-MEX <- function(level, cache){
+MEX <- function(level, ...){
   
   # fallback
   if(level>2)
