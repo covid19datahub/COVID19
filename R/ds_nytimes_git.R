@@ -23,8 +23,8 @@ nytimes_git <- function(cache, level, fips = NULL){
     
     x <- x[x$city!="Unknown",]
     x$fips[x$city=="New York City"] <- 36061
-    x$fips[x$city=="Kansas City"]   <- 90000
-    x$fips[x$city=="Joplin"]        <- 90001
+    x$fips[x$city=="Kansas City"]   <- 29901
+    x$fips[x$city=="Joplin"]        <- 29592
     
   }
   
@@ -33,7 +33,7 @@ nytimes_git <- function(cache, level, fips = NULL){
   
   # filter
   if(!is.null(fips))
-    x <- x[which(x$fips==fips),]
+    x <- x[which(startsWith(as.character(x$fips), fips)),]
   
   # return
   return(x) 
