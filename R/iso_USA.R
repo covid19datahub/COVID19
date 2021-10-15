@@ -59,8 +59,8 @@ USA <- function(level, cache){
   if(level==3){
     
     # confirmed and deaths
-    y <- nytimes_git(cache = cache, level = level)
-    y$id <- id(y$fips, iso = "USA", ds = "nytimes_git", level = level)
+    x <- nytimes_git(cache = cache, level = level)
+    x$id <- id(x$fips, iso = "USA", ds = "nytimes_git", level = level)
     
   }
 
