@@ -5,7 +5,7 @@ ASM <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhucsse_git(file = "US", cache = cache, level = level, country = "ASM")
+  x <- nytimes_git(cache = cache, level = level+1, fips = "60")
 
   # return
   return(x)
