@@ -1,12 +1,16 @@
 VIR <- function(level, cache){
 
   # fallback
-  if(level>1)
+  if(level>2)
     return(NULL)
 
   # download
-  x <- jhucsse_git(file = "US", cache = cache, level = level, country = "VIR")
-
+  x <- nytimes_git(cache = cache, level = level+1, fips = "78")
+  
+  # identifier
+  if(level==2)
+    x$id <- id(x$fips, iso = "VIR", ds = "nytimes_git", level = level)
+  
   # return
   return(x)
 
