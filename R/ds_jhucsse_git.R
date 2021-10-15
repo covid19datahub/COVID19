@@ -8,7 +8,7 @@
 #' 
 #' @keywords internal
 #' 
-jhucsse_git <- function(cache, file, level = 1, country = NULL){
+jhucsse_git <- function(cache, file, level = 1, country = NULL, state = NULL){
 
   # cache
   cachekey <- make.names(sprintf("jhuCSSE_%s_%s", file, level))
@@ -18,6 +18,8 @@ jhucsse_git <- function(cache, file, level = 1, country = NULL){
 
     if(!is.null(country))
       x <- x[which(x$country==country),]
+    if(!is.null(state))
+      x <- x[which(x$state==state),]
 
     return(x)
 
@@ -129,6 +131,8 @@ jhucsse_git <- function(cache, file, level = 1, country = NULL){
   # filter
   if(!is.null(country))
     x <- x[which(x$country==country),]
+  if(!is.null(state))
+    x <- x[which(x$state==state),]
 
   # return
   return(x)

@@ -7,7 +7,7 @@
 https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
 }
 \usage{
-jhucsse_git(cache, file, level = 1, country = NULL)
+jhucsse_git(cache, file, level = 1, country = NULL, state = NULL)
 }
 \description{
 Import worldwide confirmed cases, recovered, and deaths at national level.
