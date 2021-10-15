@@ -1,4 +1,4 @@
-gouv_fr <- function(level = 1){
+gouv_fr <- function(level = 1, reg = NULL, dep = NULL){
   
   # cases
   # https://www.data.gouv.fr/fr/datasets/synthese-des-indicateurs-de-suivi-de-lepidemie-covid-19/#_
@@ -130,6 +130,12 @@ gouv_fr <- function(level = 1){
   
   # convert to date
   x$date <- as.Date(x$date)
+  
+  # filter
+  if(!is.null(reg))
+    x <- x[which(x$reg==reg),]
+  if(!is.null(dep))
+    x <- x[which(x$dep==dep),]
   
   # return
   return(x)
