@@ -1,7 +1,7 @@
 #' U.S. Department of Health & Human Services
 #' 
-#' Imports hospitalization data and tests for United States at level 2 from
-#' the U.S. Department of Health & Human Services.
+#' Imports hospitalization data and tests for United States at state level 
+#' from the U.S. Department of Health & Human Services.
 #' 
 #' @source 
 #' https://healthdata.gov/browse?tags=hhs+covid-19

@@ -1,20 +1,13 @@
-BEL <- function(level, cache){
-  # author: Elsa Burren
+BEL <- function(level, ...){
+  if(level > 3) return(NULL)
   
-  # fallback
-  if(level > 3)
-    return(NULL)
+  x <- sciensano_be(level = level)
   
-  # download
-  x <- sciensano_be(cache = cache, level = level)
-  
-  # id
   if(level==2)
     x$id <- id(x$REGION, iso = "BEL", ds = "sciensano_be", level = level)
   if(level==3)
     x$id <- id(x$PROVINCE, iso = "BEL", ds = "sciensano_be", level = level)
   
-  # return
   return(x)
   
 }

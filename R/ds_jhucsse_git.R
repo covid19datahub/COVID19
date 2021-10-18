@@ -1,7 +1,7 @@
 #' Johns Hopkins Center for Systems Science and Engineering
 #' 
-#' Imports worldwide confirmed cases, recovered, and deaths at national and sub-national level 
-#' from JHU CSSE. Confirmed cases and deaths are also available at the county level for United States.
+#' Imports worldwide confirmed cases, recovered, and deaths at level 1 and 2 from JHU CSSE. 
+#' Confirmed cases and deaths are also available at level 3 for United States.
 #' 
 #' @source 
 #' https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
