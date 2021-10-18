@@ -4,10 +4,12 @@
 \alias{merge}
 \title{Merge Two Data Frames}
 \usage{
-merge(...)
+merge(..., fill = FALSE)
 }
 \arguments{
 \item{...}{arguments passed to \code{\link[base]{merge}}}
+
+\item{fill}{whether to merge non-NA values of duplicated columns}
 }
 \value{
 return value of \code{\link[base]{merge}}

@@ -1,7 +1,7 @@
 #' Johns Hopkins Center for Systems Science and Engineering
 #' 
 #' Imports worldwide confirmed cases, recovered, and deaths at national level from
-#' "Johns Hopkins Center for Systems Science and Engineering".
+#' Johns Hopkins Center for Systems Science and Engineering.
 #' Confirmed cases and deaths are also available at state and county level for United States.
 #' 
 #' @source 
@@ -128,7 +128,7 @@ jhucsse_git <- function(file, cache = TRUE, level = 1, country = NULL, state = N
     if(i==1)
       x <- xx
     else
-      x <- merge(x, xx, all = TRUE, by = c('id','date'))
+      x <- merge(x, xx, all = TRUE, fill = TRUE, by = c('id','date'))
 
   }
   

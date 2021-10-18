@@ -577,13 +577,13 @@ map_data <- function(x, map){
 #' Drop common columns of the second data.frame.
 #' 
 #' @param ... arguments passed to \code{\link[base]{merge}}
-#' 
+#' @param fill whether to merge non-NA values of duplicated columns
 #' @return return value of \code{\link[base]{merge}}
 #' 
 #' @keywords internal
 #' 
 #' @export
-merge <- function(...){
+merge <- function(..., fill = FALSE){
 
   # merge
   x   <- base::merge(..., suffixes = c('','.drop'))
@@ -594,10 +594,10 @@ merge <- function(...){
   if(length(idx)>0){
     
     # replace NA
-    for(j in idx){
+    if(fill) for(j in idx){
       dup <- gsub("\\.drop$", "", cn[j])
       i   <- is.na(x[,dup]) & !is.na(x[,j])  
-      if(all(i))
+      if(any(i))
         x[i,dup] <- x[i,j]
     }
     
