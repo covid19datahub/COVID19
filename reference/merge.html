@@ -194,7 +194,7 @@ Drop common columns of the second data.frame." />
 Drop common columns of the second data.frame.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>merge</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>merge</span><span class='op'>(</span><span class='va'>...</span>, fill <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -202,6 +202,10 @@ Drop common columns of the second data.frame.</p>
     <tr>
       <th>...</th>
       <td><p>arguments passed to <code><a href='https://rdrr.io/r/base/merge.html'>merge</a></code></p></td>
+    </tr>
+    <tr>
+      <th>fill</th>
+      <td><p>whether to merge non-NA values of duplicated columns</p></td>
     </tr>
     </table>
 

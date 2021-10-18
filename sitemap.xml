@@ -4,7 +4,88 @@
     <loc>https://covid19datahub.io/index.html</loc>
   </url>
   <url>
+    <loc>https://covid19datahub.io/reference/ABW.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/AIA.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/ASM.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/BMU.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/COK.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/CYM.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/FLK.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/FRO.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/GIB.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/GLP.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/GRL.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/GUF.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/GUM.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/IMN.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/MNP.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/MSR.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/MTQ.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/MYT.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/NCL.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/PRI.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/PYF.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/REU.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/SHN.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/TCA.html</loc>
+  </url>
+  <url>
     <loc>https://covid19datahub.io/reference/USA.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/VGB.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/VIR.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/WLF.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/add_iso.html</loc>
@@ -14,6 +95,9 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/covid19.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/covid19au_git.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/cumsum.html</loc>
