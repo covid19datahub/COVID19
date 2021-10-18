@@ -1,11 +1,11 @@
-covidtracking_com <- function(cache){
-# Author: Montemurro Paolo
+covidtracking_com <- function(level){
+  if(level!=2) return(NULL)
   
   # source
   url  <- "https://covidtracking.com/api/v1/states/daily.csv"
   
   # download
-  x   <- read.csv(url, cache = cache)
+  x   <- read.csv(url)
   
   # format 
   x <- map_data(x, c(

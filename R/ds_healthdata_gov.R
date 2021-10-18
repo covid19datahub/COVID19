@@ -1,8 +1,9 @@
-healthdata_gov <- function(cache, level){
-
+healthdata_gov <- function(level){
+  if(level != 2) return(NULL)
+  
   # hosp: https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh
   url <- "https://healthdata.gov/api/views/g62h-syeh/rows.csv?accessType=DOWNLOAD"
-  hosp <- read.csv(url, cache = cache, dec = ",")
+  hosp <- read.csv(url, dec = ",")
   
   # format
   colnames(hosp)[1] <- "state"
@@ -15,7 +16,7 @@ healthdata_gov <- function(cache, level){
   
   # tests: https://healthdata.gov/dataset/COVID-19-Diagnostic-Laboratory-Testing-PCR-Testing/j8mb-icvb
   url <- "https://healthdata.gov/api/views/j8mb-icvb/rows.csv?accessType=DOWNLOAD"
-  tests <- read.csv(url, cache = cache)
+  tests <- read.csv(url)
   
   # format
   colnames(tests)[1] <- "state"
@@ -34,6 +35,9 @@ healthdata_gov <- function(cache, level){
   # merge
   x <- tests %>% 
     dplyr::full_join(hosp, by = c("state", "date"))
+  
+  # drop Marshall Islands
+  x <- x[which(x$state != "MH"),]
   
   # date
   x$date <- as.Date(x$date)

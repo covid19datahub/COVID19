@@ -6,16 +6,33 @@
 #' 
 #' \bold{Level 1.} 
 #' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
-#' (confirmed cases, recovered, deaths, population); 
+#' (confirmed cases, recovered, deaths); 
 #' \href{`r repo("ourworldindata_org")`}{Our World in Data} 
-#' (tests, hospitalizations, vaccines).
+#' (tests, hospitalizations, vaccines);
+#' \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
+#' (population 2018).
 #' 
 #' \bold{Level 2.} 
-#' TODO
+#' \href{`r repo("nytimes_git")`}{The New York Times} 
+#' (confirmed cases, deaths);
+#' \href{`r repo("healthdata_gov")`}{U.S. Department of Health & Human Services}
+#' (tests, hospitalized patients and intensive care); 
+#' \href{`r repo("covidtracking_com")`}{The Covid Tracking Project}
+#' (patients requiring ventilation, recovered); 
+#' \href{`r repo("owidus_git")`}{Our World in Data} 
+#' (vaccines);
+#' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
+#' (population 2020). 
+#' 
+#' \bold{Level 3.} 
+#' \href{`r repo("nytimes_git")`}{The New York Times} 
+#' (confirmed cases, deaths);
+#' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
+#' (population 2020).
 #' 
 #' @source `r repo("USA")`
 #' 
-USA <- function(level, cache){
+USA <- function(level, ...){
   if(level>3) return(NULL)
 
   if(level==1){
@@ -28,19 +45,19 @@ USA <- function(level, cache){
   if(level==2){
 
     # tests, hospitalized and icu
-    h <- healthdata_gov(level = level, cache = cache)
+    h <- healthdata_gov(level = level)
     h$id <- id(h$state, iso = "USA", ds = "healthdata_gov", level = level)
     
     # confirmed and deaths 
-    n <- nytimes_git(cache = cache, level = level)
+    n <- nytimes_git(level = level)
     n$id <- id(n$fips, iso = "USA", ds = "nytimes_git", level = level)
     
     # recovered and vent
-    r <- covidtracking_com(cache = cache) 
+    r <- covidtracking_com(level = level) 
     r$id <- id(r$state, iso = "USA", ds = "covidtracking_com", level = level)
     
     # vaccines
-    v <- owidus_git(cache = cache)
+    v <- owidus_git(level = level)
     v$id <- id(v$state, iso = "USA", ds = "owidus_git", level = level)
     
     # merge
@@ -55,7 +72,7 @@ USA <- function(level, cache){
   if(level==3){
     
     # confirmed and deaths
-    x <- nytimes_git(cache = cache, level = level)
+    x <- nytimes_git(level = level)
     x$id <- id(x$fips, iso = "USA", ds = "nytimes_git", level = level)
     
   }
