@@ -1,76 +1,124 @@
-gv_at <- function(cache, level){
-  # author: Martin Benes
+#' Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
+#' 
+#' Imports confirmed cases, deaths, recovered, tests, hospitalizations, and vaccines at 
+#' levels 1 and 2 for Austria from BMSGPK. Confirmed cases, recovered, and deaths are 
+#' also available at level 3.
+#' 
+#' @source 
+#' https://www.data.gv.at/covid-19/
+#' 
+#' @keywords internal
+#' 
+gv_at <- function(level){
+  if(level>3) return(NULL)
   
-  # Source: Federal Ministery of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
-  # See also: https://github.com/covid19datahub/COVID19/issues/128
-  url.hosp <- "https://covid19-dashboard.ages.at/data/CovidFallzahlen.csv"
-  url.cases <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline.csv"
-  url.cases3 <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline_GKZ.csv"
-  
-  x.hosp <- read.csv(url.hosp, cache = cache, sep = ";")
-  colnames(x.hosp)[1] <- "date"
-  x.hosp$date <- as.Date(x.hosp$date, format = "%d.%m.%Y")
-  x.hosp <- map_data(x.hosp, c(
-    "date"         = "date",
-    "Bundesland"   = "state",
-    "BundeslandID" = "state_id",
-    "TestGesamt"   = "tests",
-    "FZHosp"       = "hosp",
-    "FZICU"        = "icu"
-  )) 
-  
-  x.cases <- read.csv(url.cases, cache = cache, sep = ";")
-  colnames(x.cases)[1] <- "date"
-  x.cases$date <- as.Date(x.cases$date, format = "%d.%m.%Y")
-  x.cases <- map_data(x.cases, c(
-    "date"             = "date",
-    "Bundesland"       = "state",
-    "BundeslandID"     = "state_id",
-    "AnzEinwohner"     = "population",
-    "AnzahlFaelleSum"  = "confirmed",
-    "AnzahlGeheiltSum" = "recovered",
-    "AnzahlTotSum"     = 'deaths'
-  ))
-  
-  x.cases3 <- read.csv(url.cases3, cache = cache, sep = ";")
-  colnames(x.cases3)[1] <- "date"
-  x.cases3$date <- as.Date(x.cases3$date, format = "%d.%m.%Y")
-  x.cases3 <- map_data(x.cases3, c(
-    "date"             = "date",
-    "Bezirk"           = "city",
-    "GKZ"              = "city_id",
-    "AnzEinwohner"     = "population",
-    "AnzahlFaelleSum"  = "confirmed",
-    "AnzahlGeheiltSum" = "recovered",
-    "AnzahlTotSum"     = 'deaths'
-  ))
-  
-  if(level==1){
-    
-    # national level data
-    x.cases <- x.cases[which(x.cases$state_id==10),]
-    x.hosp <- x.hosp[which(x.hosp$state_id==10),]
+  if(level==1 | level==2){
 
-    # merge
-    x <- dplyr::full_join(x.cases, x.hosp, by = "date") 
+    # see https://www.data.gv.at/katalog/dataset/846448a5-a26e-4297-ac08-ad7040af20f1
+    url.hosp <- "https://covid19-dashboard.ages.at/data/Hospitalisierung.csv"    
+    
+    # see https://www.data.gv.at/katalog/dataset/ef8e980b-9644-45d8-b0e9-c6aaf0eff0c0
+    url.cases <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline.csv"
+    
+    # see https://www.data.gv.at/katalog/dataset/276ffd1e-efdd-42e2-b6c9-04fb5fa2b7ea
+    url.vacc <- "https://info.gesundheitsministerium.gv.at/data/COVID19_vaccination_doses_timeline.csv"
+    
+    # import hosp
+    x.hosp <- read.csv(url.hosp, sep = ";")
+    x.hosp <- map_data(x.hosp, c(
+      "Meldedatum"   = "date",
+      "Bundesland"   = "state",
+      "BundeslandID" = "state_id",
+      "TestGesamt"   = "tests",
+      "NormalBettenBelCovid19"   = "hosp",
+      "IntensivBettenBelCovid19" = "icu"
+    )) 
+    
+    # import cases
+    x.cases <- read.csv(url.cases, sep = ";")
+    x.cases <- map_data(x.cases, c(
+      "Time"             = "date",
+      "Bundesland"       = "state",
+      "BundeslandID"     = "state_id",
+      "AnzEinwohner"     = "population",
+      "AnzahlFaelleSum"  = "confirmed",
+      "AnzahlGeheiltSum" = "recovered",
+      "AnzahlTotSum"     = 'deaths'
+    ))
+    
+    # import vaccines
+    x.vacc <- read.csv(url.vacc, sep = ";", fileEncoding = "UTF-8-BOM")
+    x.vacc <- map_data(x.vacc, c(
+      "date" = "date",
+      "state_id" = "state_id",
+      "vaccine" = "type",
+      "dose_number" = "n",
+      "doses_administered_cumulative" = "doses"
+    ))
+    
+    # format date
+    x.hosp$date <- as.Date(x.hosp$date, format = "%d.%m.%Y")
+    x.cases$date <- as.Date(x.cases$date, format = "%d.%m.%Y")
+    x.vacc$date <- as.Date(x.vacc$date, format = "%Y-%m-%d")
+    
+    # first, second, and total doses by state
+    x.vacc <- x.vacc %>%
+      dplyr::filter(state_id != 0) %>%
+      dplyr::group_by(date, state_id) %>%
+      dplyr::summarise(
+        vaccines = sum(doses),
+        vaccines_1 = sum(doses[n==1]),
+        vaccines_2 = sum(doses[n==2]))
+    
+    if(level==1){
       
-  }
-  
-  if(level == 2){
+      # national level data
+      x.cases <- x.cases[which(x.cases$state_id==10),]
+      x.hosp  <- x.hosp[which(x.hosp$state_id==10),]
+      x.vacc  <- x.vacc[which(x.vacc$state_id==10),]
+      
+      # merge
+      x <- x.cases %>%
+        dplyr::full_join(x.hosp, by = "date") %>%
+        dplyr::full_join(x.vacc, by = "date")
+      
+    }
     
-    # drop national level data
-    x.cases <- x.cases[-which(x.cases$state_id==10),]
-    x.hosp <- x.hosp[-which(x.hosp$state_id==10),]
-    
-    # merge
-    x <- dplyr::full_join(x.cases, x.hosp, by = c("date","state_id"))
+    if(level == 2){
+      
+      # drop national level data
+      x.cases <- x.cases[-which(x.cases$state_id==10),]
+      x.hosp  <- x.hosp[-which(x.hosp$state_id==10),]
+      x.vacc  <- x.vacc[-which(x.vacc$state_id==10),]
+      
+      # merge
+      x <- x.cases %>%
+        dplyr::full_join(x.hosp, by = c("date","state_id")) %>%
+        dplyr::full_join(x.vacc, by = c("date","state_id"))
+      
+    }
     
   }
   
   if(level == 3){
     
-    # nothing to do
-    x <- x.cases3
+    # see https://www.data.gv.at/katalog/dataset/4b71eb3d-7d55-4967-b80d-91a3f220b60c
+    url <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline_GKZ.csv"
+    
+    # download
+    x <- read.csv(url, sep = ";")
+    
+    # format
+    x$date <- as.Date(x$date, format = "%d.%m.%Y")
+    x <- map_data(x, c(
+      "date"             = "date",
+      "Bezirk"           = "city",
+      "GKZ"              = "city_id",
+      "AnzEinwohner"     = "population",
+      "AnzahlFaelleSum"  = "confirmed",
+      "AnzahlGeheiltSum" = "recovered",
+      "AnzahlTotSum"     = 'deaths'
+    ))
     
   }
   

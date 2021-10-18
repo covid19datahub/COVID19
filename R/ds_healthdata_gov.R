@@ -1,7 +1,17 @@
+#' U.S. Department of Health & Human Services
+#' 
+#' Imports hospitalization data and tests for United States at level 2 from
+#' the U.S. Department of Health & Human Services.
+#' 
+#' @source 
+#' https://healthdata.gov/browse?tags=hhs+covid-19
+#' 
+#' @keywords internal
+#' 
 healthdata_gov <- function(level){
-  if(level != 2) return(NULL)
+  if(level!=2) return(NULL)
   
-  # hosp: https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh
+  # see https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh
   url <- "https://healthdata.gov/api/views/g62h-syeh/rows.csv?accessType=DOWNLOAD"
   hosp <- read.csv(url, dec = ",")
   
@@ -14,7 +24,7 @@ healthdata_gov <- function(level){
     "staffed_icu_adult_patients_confirmed_and_suspected_covid" = "icu"
   ))
   
-  # tests: https://healthdata.gov/dataset/COVID-19-Diagnostic-Laboratory-Testing-PCR-Testing/j8mb-icvb
+  # see https://healthdata.gov/dataset/COVID-19-Diagnostic-Laboratory-Testing-PCR-Testing/j8mb-icvb
   url <- "https://healthdata.gov/api/views/j8mb-icvb/rows.csv?accessType=DOWNLOAD"
   tests <- read.csv(url)
   
@@ -30,7 +40,6 @@ healthdata_gov <- function(level){
   tests <- tests %>% 
     dplyr::group_by(date, state) %>%
     dplyr::summarise(tests = sum(tests))
-  
   
   # merge
   x <- tests %>% 
