@@ -1,5 +1,16 @@
+#' The New York Times 
+#' 
+#' Imports confirmed cases and deaths for United States at national, state, and county level 
+#' from The New York Times.
+#' 
+#' @source 
+#' https://github.com/nytimes/covid-19-data
+#' 
+#' @keywords internal
+#' 
 nytimes_git <- function(level, cache = FALSE, fips = NULL){
-
+  if(level>3) return(NULL)
+  
   # source
   repo <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/" 
   urls <- c("us.csv","us-states.csv","us-counties.csv")

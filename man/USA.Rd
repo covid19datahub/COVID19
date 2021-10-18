@@ -30,7 +30,7 @@ Data available at level 1 (nation), level 2 (states), and level 3 (counties).
 (tests, hospitalized patients and intensive care);
 \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_covidtracking_com.R}{The Covid Tracking Project}
 (patients requiring ventilation, recovered);
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_owidus_git.R}{Our World in Data}
+\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata_org.R}{Our World in Data}
 (vaccines);
 \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_jhucsse_git.R}{Johns Hopkins Center for Systems Science and Engineering}
 (population 2020).

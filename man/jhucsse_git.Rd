@@ -10,8 +10,7 @@ https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_c
 jhucsse_git(file, cache = TRUE, level = 1, country = NULL, state = NULL)
 }
 \description{
-Imports worldwide confirmed cases, recovered, and deaths at national level from
-Johns Hopkins Center for Systems Science and Engineering.
-Confirmed cases and deaths are also available at state and county level for United States.
+Imports worldwide confirmed cases, recovered, and deaths at national and sub-national level
+from JHU CSSE. Confirmed cases and deaths are also available at the county level for United States.
 }
 \keyword{internal}

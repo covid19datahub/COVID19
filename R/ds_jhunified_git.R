@@ -1,5 +1,16 @@
+#' Johns Hopkins Center for Systems Science and Engineering
+#' 
+#' Imports worldwide confirmed cases, recovered, deaths, tests, and hospitalizations at various 
+#' levels from the JHU CSSE Unified Dataset.
+#' 
+#' @source 
+#' https://github.com/CSSEGISandData/COVID-19_Unified-Dataset
+#' 
+#' @keywords internal
+#' 
 jhunified_git <- function(iso, level){
-
+  if(level>3) return(NULL)
+  
   # retrieve ids
   e <- extdata(sprintf("db/%s.csv", iso))
   e <- e[e$administrative_area_level==level,]

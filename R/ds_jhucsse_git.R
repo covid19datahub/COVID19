@@ -1,8 +1,7 @@
 #' Johns Hopkins Center for Systems Science and Engineering
 #' 
-#' Imports worldwide confirmed cases, recovered, and deaths at national level from
-#' Johns Hopkins Center for Systems Science and Engineering.
-#' Confirmed cases and deaths are also available at state and county level for United States.
+#' Imports worldwide confirmed cases, recovered, and deaths at national and sub-national level 
+#' from JHU CSSE. Confirmed cases and deaths are also available at the county level for United States.
 #' 
 #' @source 
 #' https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
@@ -10,7 +9,8 @@
 #' @keywords internal
 #' 
 jhucsse_git <- function(file, cache = TRUE, level = 1, country = NULL, state = NULL){
-
+  if(level>3) return(NULL)
+  
   # always cache this
   cache <- TRUE
   

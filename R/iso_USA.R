@@ -19,7 +19,7 @@
 #' (tests, hospitalized patients and intensive care); 
 #' \href{`r repo("covidtracking_com")`}{The Covid Tracking Project}
 #' (patients requiring ventilation, recovered); 
-#' \href{`r repo("owidus_git")`}{Our World in Data} 
+#' \href{`r repo("ourworldindata_org")`}{Our World in Data} 
 #' (vaccines);
 #' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
 #' (population 2020). 
@@ -61,8 +61,8 @@ USA <- function(level, ...){
     r$id <- id(r$state, iso = "USA", ds = "covidtracking_com", level = level)
     
     # vaccines
-    v <- owidus_git(level = level)
-    v$id <- id(v$state, iso = "USA", ds = "owidus_git", level = level)
+    v <- ourworldindata_org(level = level)
+    v$id <- id(v$state, iso = "USA", ds = "ourworldindata_org", level = level)
     
     # merge
     key <- c("date", "id")
