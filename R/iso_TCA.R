@@ -1,4 +1,4 @@
-#' Bermuda
+#' Turks and Caicos Islands
 #' 
 #' Data available at level 1 (nation).
 #' 
@@ -12,16 +12,16 @@
 #' \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 #' (population 2018).
 #' 
-#' @source `r repo("BMU")`
+#' @source `r repo("TCA")`
 #' 
-BMU <- function(level, ...){
+TCA <- function(level, ...){
   if(level>1) return(NULL)
   
   # confirmed, recovered, deaths
-  x1 <- jhucsse_git(file = "global", level = 2, state = "Bermuda")
+  x1 <- jhucsse_git(file = "global", level = 2, state = "Turks and Caicos Islands")
   
   # tests, hospitalizations, vaccines
-  x2 <- ourworldindata_org(id = "BMU")
+  x2 <- ourworldindata_org(id = "TCA")
   
   # merge
   x <- merge(x1, x2, by = "date", all = TRUE)

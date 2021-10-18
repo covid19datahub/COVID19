@@ -1,7 +1,6 @@
 #' United States
 #' 
-#' The data are available at 3 different levels of granularity:
-#' level 1 (nation), level 2 (states), and level 3 (counties).
+#' Data available at level 1 (nation), level 2 (states), and level 3 (counties).
 #' 
 #' @section Data sources:
 #' 
@@ -9,15 +8,12 @@
 #' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
 #' (confirmed cases, recovered, deaths, population); 
 #' \href{`r repo("ourworldindata_org")`}{Our World in Data} 
-#' (hospitalizations, intensive care, test, vaccines).
+#' (tests, hospitalizations, vaccines).
 #' 
 #' \bold{Level 2.} 
-#' \href{`r repo("fun_name")`}{Data Source Name}
-#' (variables, separated, by, comma); 
-#' \href{`r repo("fun_name_2")`}{Data Source Name 2} 
-#' (variables, separated, by, comma).
+#' TODO
 #' 
-#' @concept official
+#' @source `r repo("USA")`
 #' 
 USA <- function(level, cache){
   if(level>3) return(NULL)

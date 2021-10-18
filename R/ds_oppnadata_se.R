@@ -1,4 +1,4 @@
-oppnadata_se <- function(cache, level){
+oppnadata_se <- function(level){
 
   # Source: Public Health Agency, Sweden
   # https://www.arcgis.com/home/item.html?id=b5e7488e117749c19881cce45db13f7e
@@ -8,7 +8,7 @@ oppnadata_se <- function(cache, level){
   if(level==1){
     
     # confirmed
-    confirmed <- read.excel(url, sheet = 1, cache = cache)
+    confirmed <- read.excel(url, sheet = 1)
     confirmed <- map_data(confirmed, c(
       'Statistikdatum'    = 'date',
       'Totalt_antal_fall' = 'confirmed'
@@ -16,7 +16,7 @@ oppnadata_se <- function(cache, level){
     confirmed$date <- as.Date(confirmed$date)
     
     # deaths (remove counts for which the date is not available)
-    deaths <- read.excel(url, sheet = 2, col_types = c("date", "numeric"), cache = cache)
+    deaths <- suppressWarnings(read.excel(url, sheet = 2, col_types = c("date", "numeric")))
     deaths <- map_data(deaths, c(
       "Datum_avliden" = "date",
       "Antal_avlidna" = "deaths"
@@ -25,7 +25,7 @@ oppnadata_se <- function(cache, level){
     deaths <- deaths[!is.na(deaths$date),]
     
     # icu
-    icu <- read.excel(url, sheet = 3, cache = cache)
+    icu <- read.excel(url, sheet = 3)
     colnames(icu) <- c("date", "icu")
     icu$date <- as.Date(icu$date)
     
@@ -41,7 +41,7 @@ oppnadata_se <- function(cache, level){
   if(level==2){
     
     # confirmed
-    x <- read.excel(url, sheet = 1, cache = cache)
+    x <- read.excel(url, sheet = 1)
     
     # drop national data
     x <- x[,-2]

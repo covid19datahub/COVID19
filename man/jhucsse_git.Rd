@@ -7,10 +7,11 @@
 https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
 }
 \usage{
-jhucsse_git(cache, file, level = 1, country = NULL, state = NULL)
+jhucsse_git(file, cache = TRUE, level = 1, country = NULL, state = NULL)
 }
 \description{
-Import worldwide confirmed cases, recovered, and deaths at national level.
+Imports worldwide confirmed cases, recovered, and deaths at national level from
+"Johns Hopkins Center for Systems Science and Engineering".
 Confirmed cases and deaths are also available at state and county level for United States.
 }
 \keyword{internal}

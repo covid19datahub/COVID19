@@ -1,4 +1,4 @@
-SWE <- function(level, cache){
+SWE <- function(level, ...){
   # Author: Martin Benes
   
   # fallback
@@ -6,7 +6,7 @@ SWE <- function(level, cache){
     return(NULL)
 
   # download
-  x <- oppnadata_se(cache = cache, level = level)
+  x <- oppnadata_se(level = level)
 
   # id
   if(level==2)

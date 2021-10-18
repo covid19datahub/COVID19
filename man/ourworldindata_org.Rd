@@ -7,10 +7,10 @@
 https://covid.ourworldindata.org
 }
 \usage{
-ourworldindata_org(cache, id = NULL)
+ourworldindata_org(id = NULL)
 }
 \description{
-Import worldwide confirmed cases, deaths, hospitalizations, intensive care,
-tests, and vaccines at national level.
+Imports worldwide confirmed cases, deaths, hospitalizations, intensive care,
+tests, and vaccines at national level from "Our World in Data".
 }
 \keyword{internal}

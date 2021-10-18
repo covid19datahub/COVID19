@@ -1,6 +1,7 @@
 #' Johns Hopkins Center for Systems Science and Engineering
 #' 
-#' Import worldwide confirmed cases, recovered, and deaths at national level.
+#' Imports worldwide confirmed cases, recovered, and deaths at national level from
+#' "Johns Hopkins Center for Systems Science and Engineering".
 #' Confirmed cases and deaths are also available at state and county level for United States.
 #' 
 #' @source 
@@ -8,8 +9,11 @@
 #' 
 #' @keywords internal
 #' 
-jhucsse_git <- function(cache, file, level = 1, country = NULL, state = NULL){
+jhucsse_git <- function(file, cache = TRUE, level = 1, country = NULL, state = NULL){
 
+  # always cache this
+  cache <- TRUE
+  
   # cache
   cachekey <- make.names(sprintf("jhuCSSE_%s_%s", file, level))
   if(cache & exists(cachekey, envir = cachedata)){
@@ -92,6 +96,10 @@ jhucsse_git <- function(cache, file, level = 1, country = NULL, state = NULL){
       xx$state[idx]   <- NA
       
       idx <- which(xx$state %in% c("Recovered","Diamond Princess"))
+      if(length(idx))
+        xx  <- xx[-idx,]
+      
+      idx <- which(xx$country %in% c("Summer Olympics 2020"))
       if(length(idx))
         xx  <- xx[-idx,]
       

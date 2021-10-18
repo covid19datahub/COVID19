@@ -1,8 +1,9 @@
 #' @importFrom dplyr %>%
 NULL
 
-repo <- function(ds){
-  sprintf("https://github.com/covid19datahub/COVID19/blob/master/R/ds_%s.R", ds)
+repo <- function(x){
+  prefix <- ifelse(grepl("^[A-Z]{3}$", x), "iso", "ds")
+  sprintf("https://github.com/covid19datahub/COVID19/blob/master/R/%s_%s.R", prefix, x)
 }
 
 cachecall <- function(fun, ...){
@@ -596,7 +597,7 @@ merge <- function(...){
     for(j in idx){
       dup <- gsub("\\.drop$", "", cn[j])
       i   <- is.na(x[,dup]) & !is.na(x[,j])  
-      if(any(i))
+      if(all(i))
         x[i,dup] <- x[i,j]
     }
     

@@ -186,6 +186,7 @@ covid19 <- function(country = NULL,
       # check format
       if(!ds_check_format(y, level = level, ci = 0.85, verbose = FALSE)){
         if(debug) stop(sprintf("%s: check failed", fun))
+        else warning(sprintf("%s: check failed", fun))
         next
       }
 

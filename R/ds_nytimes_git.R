@@ -1,4 +1,4 @@
-nytimes_git <- function(cache, level, fips = NULL){
+nytimes_git <- function(level, cache = FALSE, fips = NULL){
 
   # source
   repo <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/" 
@@ -6,7 +6,7 @@ nytimes_git <- function(cache, level, fips = NULL){
   url  <- paste0(repo, urls[level])
   
   # download
-  x   <- read.csv(url, cache = cache)
+  x   <- read.csv(url)
   
   # format 
   x <- map_data(x, c(

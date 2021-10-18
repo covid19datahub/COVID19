@@ -1,17 +1,17 @@
 #' Our World in Data
 #' 
-#' Import worldwide confirmed cases, deaths, hospitalizations, intensive care, 
-#' tests, and vaccines at national level. 
+#' Imports worldwide confirmed cases, deaths, hospitalizations, intensive care,
+#' tests, and vaccines at national level from "Our World in Data". 
 #' 
 #' @source
 #' https://covid.ourworldindata.org
 #' 
 #' @keywords internal
 #' 
-ourworldindata_org <- function(cache, id = NULL){
+ourworldindata_org <- function(id = NULL){
   
   url <- "https://covid.ourworldindata.org/data/owid-covid-data.csv"
-  x   <- read.csv(url, cache = cache)
+  x   <- read.csv(url, cache = TRUE)
   
   # filter 
   x <- x[!is.na(x$iso_code),]

@@ -8,7 +8,8 @@ GBR <- function(level, cache){
   x <- gov_uk(level = level)
   
   # identifiers
-  x$id <- id(x$code, iso = "GBR", ds = "gov_uk", level = level)
+  if(level>1)
+    x$id <- id(x$code, iso = "GBR", ds = "gov_uk", level = level)
 
   # return
   return(x)
