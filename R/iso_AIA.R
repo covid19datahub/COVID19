@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("AIA")`
 #' 
+#' @concept level 1
+#' 
 AIA <- function(level, ...){
   if(level>1) return(NULL)
   

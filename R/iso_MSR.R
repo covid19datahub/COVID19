@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("MSR")`
 #' 
+#' @concept level 1
+#' 
 MSR <- function(level, ...){
   if(level>1) return(NULL)
   

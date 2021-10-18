@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("BMU")`
 #' 
+#' @concept level 1
+#' 
 BMU <- function(level, ...){
   if(level>1) return(NULL)
   

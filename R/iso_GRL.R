@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("GRL")`
 #' 
+#' @concept level 1
+#' 
 GRL <- function(level, ...){
   if(level>1) return(NULL)
   

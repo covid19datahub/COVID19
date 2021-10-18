@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("MNP")`
 #' 
+#' @concept level 1
+#' 
 MNP <- function(level, ...){
   if(level>1) return(NULL)
   

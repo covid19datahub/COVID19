@@ -32,6 +32,10 @@
 #' 
 #' @source `r repo("USA")`
 #' 
+#' @concept level 1
+#' @concept level 2
+#' @concept level 3
+#' 
 USA <- function(level, ...){
   if(level>3) return(NULL)
 

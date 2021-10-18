@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("VGB")`
 #' 
+#' @concept level 1
+#' 
 VGB <- function(level, ...){
   if(level>1) return(NULL)
   

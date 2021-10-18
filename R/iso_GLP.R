@@ -12,6 +12,8 @@
 #' 
 #' @source `r repo("GLP")`
 #' 
+#' @concept level 1
+#' 
 GLP <- function(level, ...){
   if(level>1) return(NULL)
   

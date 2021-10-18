@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("GUM")`
 #' 
+#' @concept level 1
+#' 
 GUM <- function(level, ...){
   if(level>1) return(NULL)
   

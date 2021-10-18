@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("TCA")`
 #' 
+#' @concept level 1
+#' 
 TCA <- function(level, ...){
   if(level>1) return(NULL)
   

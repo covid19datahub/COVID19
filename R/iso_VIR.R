@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("VIR")`
 #' 
+#' @concept level 1
+#' 
 VIR <- function(level, ...){
   if(level>1) return(NULL)
   

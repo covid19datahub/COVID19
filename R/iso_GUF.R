@@ -12,6 +12,8 @@
 #' 
 #' @source `r repo("GUF")`
 #' 
+#' @concept level 1
+#' 
 GUF <- function(level, ...){
   if(level>1) return(NULL)
   

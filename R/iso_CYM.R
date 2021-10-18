@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("CYM")`
 #' 
+#' @concept level 1
+#' 
 CYM <- function(level, ...){
   if(level>1) return(NULL)
   

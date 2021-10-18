@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("FLK")`
 #' 
+#' @concept level 1
+#' 
 FLK <- function(level, ...){
   if(level>1) return(NULL)
   

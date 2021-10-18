@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("SHN")`
 #' 
+#' @concept level 1
+#' 
 SHN <- function(level, ...){
   if(level>1) return(NULL)
   

@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("ASM")`
 #' 
+#' @concept level 1
+#' 
 ASM <- function(level, ...){
   if(level>1) return(NULL)
   

@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("PRI")`
 #' 
+#' @concept level 1
+#' 
 PRI <- function(level, ...){
   if(level>1) return(NULL)
   

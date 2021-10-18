@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("FRO")`
 #' 
+#' @concept level 1
+#' 
 FRO <- function(level, ...){
   if(level>1) return(NULL)
   

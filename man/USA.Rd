@@ -42,3 +42,6 @@ Data available at level 1 (nation), level 2 (states), and level 3 (counties).
 (population 2020).
 }
 
+\concept{level 1}
+\concept{level 2}
+\concept{level 3}

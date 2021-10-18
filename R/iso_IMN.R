@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("IMN")`
 #' 
+#' @concept level 1
+#' 
 IMN <- function(level, ...){
   if(level>1) return(NULL)
   

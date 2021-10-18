@@ -12,6 +12,8 @@
 #' 
 #' @source `r repo("REU")`
 #' 
+#' @concept level 1
+#' 
 REU <- function(level, ...){
   if(level>1) return(NULL)
   

@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("NCL")`
 #' 
+#' @concept level 1
+#' 
 NCL <- function(level, ...){
   if(level>1) return(NULL)
   

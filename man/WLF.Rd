@@ -24,3 +24,4 @@ Data available at level 1 (nation).
 (population 2018).
 }
 
+\concept{level 1}

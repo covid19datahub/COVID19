@@ -12,6 +12,8 @@
 #' 
 #' @source `r repo("MTQ")`
 #' 
+#' @concept level 1
+#' 
 MTQ <- function(level, ...){
   if(level>1) return(NULL)
   

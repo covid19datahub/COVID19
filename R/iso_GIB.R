@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("GIB")`
 #' 
+#' @concept level 1
+#' 
 GIB <- function(level, ...){
   if(level>1) return(NULL)
   

@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("WLF")`
 #' 
+#' @concept level 1
+#' 
 WLF <- function(level, ...){
   if(level>1) return(NULL)
   

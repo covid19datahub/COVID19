@@ -14,6 +14,8 @@
 #' 
 #' @source `r repo("COK")`
 #' 
+#' @concept level 1
+#' 
 COK <- function(level, ...){
   if(level>1) return(NULL)
   
