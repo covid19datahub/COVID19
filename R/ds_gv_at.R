@@ -1,8 +1,11 @@
 #' Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
 #' 
 #' Imports confirmed cases, deaths, recovered, tests, hospitalizations, and vaccines at 
-#' levels 1 and 2 for Austria from BMSGPK. Confirmed cases, recovered, and deaths are 
-#' also available at level 3.
+#' national and state level for Austria from BMSGPK. Confirmed cases, recovered, and deaths are 
+#' also available at the district level.
+#' 
+#' We compute vaccines_1 as the number of first doses administrated and
+#' vaccines_2 as the number of second doses administrated (fully vaccinated).
 #' 
 #' @source 
 #' https://www.data.gv.at/covid-19/

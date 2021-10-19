@@ -26,7 +26,7 @@ Download the data [here](/articles/data.html)
 | `tests`                               | Cumulative number of tests.                                 |
 | `vaccines`                               | Cumulative number of total doses administered.                                |
 | `vaccines_1`                                 | Cumulative number of people who received at least one vaccine dose.                                            |
-| `vaccines_2`                                 | Cumulative number of people who received all doses prescribed by the vaccination protocol (usually two doses).                                            |
+| `vaccines_2`                                 | Cumulative number of people who received all doses prescribed by the vaccination protocol.                                            |
 | `recovered`                           | Cumulative number of patients released from hospitals or reported recovered. |
 | `hosp`                                | Number of hospitalized patients on date.                     |
 | `icu`                                 | Number of hospitalized patients in ICUs on date.             |
