@@ -100,6 +100,9 @@
     <loc>https://covid19datahub.io/reference/covid19au_git.html</loc>
   </url>
   <url>
+    <loc>https://covid19datahub.io/reference/covidtracking_com.html</loc>
+  </url>
+  <url>
     <loc>https://covid19datahub.io/reference/cumsum.html</loc>
   </url>
   <url>
@@ -112,10 +115,19 @@
     <loc>https://covid19datahub.io/reference/extdata.html</loc>
   </url>
   <url>
+    <loc>https://covid19datahub.io/reference/gv_at.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/healthdata_gov.html</loc>
+  </url>
+  <url>
     <loc>https://covid19datahub.io/reference/id.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/jhucsse_git.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/jhunified_git.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/map_data.html</loc>
@@ -125,6 +137,9 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/merge.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/nytimes_git.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/ourworldindata_org.html</loc>
@@ -137,6 +152,9 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/read.zip.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/sciensano_be.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/write.csv.html</loc>

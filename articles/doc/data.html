@@ -182,12 +182,12 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><code>deaths</code></td>
-<td>Cumulative number of deaths.</td>
-</tr>
-<tr class="even">
 <td><code>confirmed</code></td>
 <td>Cumulative number of confirmed cases.</td>
+</tr>
+<tr class="even">
+<td><code>deaths</code></td>
+<td>Cumulative number of deaths.</td>
 </tr>
 <tr class="odd">
 <td><code>tests</code></td>
@@ -195,7 +195,15 @@
 </tr>
 <tr class="even">
 <td><code>vaccines</code></td>
-<td>Cumulative number of doses administered. This is counted as a single dose, and may not equal the total number of people vaccinated, depending on the specific dose regime (e.g. people receive multiple doses). If a person receives one dose of the vaccine, this metric goes up by 1. If they receive a second dose, it goes up by 1 again.</td>
+<td>Cumulative number of total doses administered.</td>
+</tr>
+<tr class="odd">
+<td><code>vaccines_1</code></td>
+<td>Cumulative number of people who received at least one vaccine dose.</td>
+</tr>
+<tr class="even">
+<td><code>vaccines_2</code></td>
+<td>Cumulative number of people who received all doses prescribed by the vaccination protocol (usually two doses).</td>
 </tr>
 <tr class="odd">
 <td><code>recovered</code></td>
