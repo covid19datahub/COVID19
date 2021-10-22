@@ -209,15 +209,15 @@ vars <- function(type = NULL){
     'numeric'   = 'latitude',
     'numeric'   = 'longitude',
     'numeric'   = 'population',
-    # 'character' = 'key',
-    # 'character' = 'key_alpha_2',
-    # 'integer'   = 'key_numeric',
+    'character' = 'key',
+    'character' = 'key_alpha_2',
+    'integer'   = 'key_numeric',
     'character' = 'key_local',
     'character' = 'key_google_mobility',
     'character' = 'key_apple_mobility',
-    'character' = 'key_jhu_csse',
-    'character' = 'key_nuts',
-    'character' = 'key_gadm'
+    'character' = 'key_jhu_csse'
+    # 'character' = 'key_nuts',
+    # 'character' = 'key_gadm'
   )
   
   if(is.null(type))
