@@ -10,6 +10,17 @@ To extract the data for one country, different data sources may be required. For
 - files representing a data source (prefix `ds_`)
 - files representing a country (prefix `iso_`)
 
+The R comments prefixed with `#'` are used to generate the documentation with [roxygen2](https://roxygen2.r-lib.org/). The comments prefixed with `#` are not used to generate the documentation. The package is set up to support the usage of Rmarkdown syntax in the docstring. Each documentation block (`#'`) starts uppercase and ends with a blank line. Each non-documentation comment (`#`) does not include the blank line and starts lowercase. 
+
+```R
+#' This is a documentation block
+#'
+code here...
+
+# this is a comment not used in the documentation
+code here...
+```
+
 ## `ds_` files
 
 ### Naming convention
@@ -18,7 +29,7 @@ The `ds_` files are named according to the domain of the website where the data 
 
 For GitHub repositories, we use `github.username.repository` (lowercase). Hyphens and dashes are dropped. For instance https://github.com/CSSEGISandData/COVID-19 becomes `ds_github.cssegisanddata.covid19.R`
 
-For data sharing portals, such as https://www.arcgis.com, we use the domain of the portal with the suffix corresponding to the [Alpha-2 ISO 3166-1](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) code of the country providing the data. For example, the Swedish Public Health Agency is proving the data at https://www.arcgis.com/home/item.html?id=b5e7488e117749c19881cce45db13f7e which becomes `ds_arcgis.se.R` (`SE` being the 2 letter ISO code for Sweden).
+For open data sharing portals, such as https://www.arcgis.com, we use the domain of the portal with the suffix corresponding to the [Alpha-2 ISO 3166-1](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) code of the country providing the data. For example, the Swedish Public Health Agency is proving the data at https://www.arcgis.com/home/item.html?id=b5e7488e117749c19881cce45db13f7e which becomes `ds_arcgis.se.R` (`SE` being the 2 letter ISO code for Sweden).
 
 ### Code style
 
@@ -40,8 +51,8 @@ A `ds_` file implements the R function responsible to download the data from the
 The function takes the argument `level` as input. It may implement additional arguments as well. The function starts with an `if` condition to make clear which `level` is supported. The function has the same name of the corresponding `ds_` file (without the prefix `ds_` and without the suffix `.R`). 
 
 ```R
-github.wcota.covid19br <- function(level){
-  if(level>3) return(NULL)
+github.eguidotti.covid19br <- function(level){
+  if(level!=3) return(NULL)
     
   # code here...
     
@@ -50,11 +61,70 @@ github.wcota.covid19br <- function(level){
 
 ### Documentation style
 
-TODO
+The documentation starts with the name of the data provider. The name of the data provider is:
+
+- the official name of organizations (preferably in English)
+- the name of individuals (e.g., for personal GitHub repositories)
+
+```R
+#' Wesley Cota
+#'
+github.wcota.covid19br <- function(level){
+```
+
+The description is "Data source for:" followed by the name of the country for which the data are provided. This is a comma-separated list of countries if multiple countries are supported. Use "Worldwide" if this is a worldwide data source.
+
+```R
+#' Wesley Cota
+#'
+#' Data source for: Brazil
+#'
+github.wcota.covid19br <- function(level){
+```
+
+The rest of the documentation block is generated with the function `ds_docstring` from this package (copy-paste its output in the file).
 
 ### Complete example
 
-TODO
+- File name `ds_github.wcota.covid19br.R`
+
+```R
+#' Wesley Cota
+#'
+#' Data source for: Brazil
+#'
+#' @param level 1, 2, 3
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#' - tests
+#' - total vaccine doses administered
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#' - tests
+#' - total vaccine doses administered
+#'
+#' @section Level 3:
+#' - confirmed cases
+#' - deaths
+#'
+#' @source https://github.com/wcota/covid19br
+#'
+#' @keywords internal
+#' 
+github.wcota.covid19br <- function(level){
+  if(!level %in% 1:3) return(NULL)
+
+  # code here...
+
+  return(x)  
+}
+```
 
 ## `iso_` files
 
@@ -108,17 +178,6 @@ BRA <- function(level, ...){
 
 ### Documentation style
 
-The R comments prefixed with `#'` are used to generate the documentation with [roxygen2](https://roxygen2.r-lib.org/). The comments prefixed with `#` are not used to generate the documentation. The package is set up to support the usage of Rmarkdown syntax in the docstring. Each documentation block (`#'`) ends with a blank line. Each non-documentation comment (`#`) does not include the blank line. 
-
-```R
-#' This is a documentation block
-#'
-code here...
-
-# This is a comment not used in the documentation
-code here...
-```
-
 The documentation starts with the name of the country and with the link to the file in this repository that implements the country. The link is generated with the function `repo` that takes as input the name of the function as follows:
 
 ```R
@@ -141,17 +200,13 @@ BRA <- function(level, ...){
   
   #' @concept level 1
   #' @section Data Sources:
+  #' 
   #' ## Level 1
   #' 
   if(level==1){
 ```
 
-For each data source, we report the link to the `ds_` function, the name of the data provider, and the list of variables available. The name of the data provider is:
-
-- the official name of organizations (preferably in English)
-- the name of individuals (e.g., for personal GitHub repositories)
-
-The list of variables available is generated with the function `docstring` from this package and copy-paste the output in the file.
+For each data source, we report the link to the `ds_` function, the name of the data provider, and the list of variables available. The documentation block is generated with the function `iso_docstring` from this package (copy-paste its output in the file).
 
 ```R
 #' Brazil 
@@ -167,8 +222,12 @@ BRA <- function(level, ...){
   #' 
   if(level==1){
     
-    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
-    #' confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+    #' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' total vaccine doses administered.
     #'
     x <- github.wcota.covid19br(level = level)
 ```
@@ -185,53 +244,67 @@ BRA <- function(level, ...){
 BRA <- function(level, ...){
   x <- NULL
   
-  #' @concept level 1
+  #' @concept Level 1
   #' @section Data Sources:
+  #' 
   #' ## Level 1
   #' 
   if(level==1){
     
-    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
-    #' confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+    #' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' total vaccine doses administered.
     #'
     x <- github.wcota.covid19br(level = level)
    
   }
   
-  #' @concept level 2
+  #' @concept Level 2
   #' @section Data Sources:
+  #' 
   #' ## Level 2
   #' 
   if(level==2){
     
-    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
-    #' confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+    #' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' total vaccine doses administered.
     #'
     x <- github.wcota.covid19br(level = level)
     x$id <- id(x$state, iso = "BRA", ds = "github.wcota.covid19br", level = level)
     
   }
   
-  #' @concept level 3
+  #' @concept Level 3
   #' @section Data Sources:
+  #' 
   #' ## Level 3
   #' 
   if(level==3){  
 
-    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
-    #' confirmed cases, deaths.
+    #' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases,
+    #' deaths.
     #'
     x <- github.wcota.covid19br(level = level)
     x$id <- id(x$code, iso = "BRA", ds = "github.wcota.covid19br", level = level)
     
-    #' \href{`r repo("github.eguidotti.covid19br")`}{Emanuele Guidotti}:
-    #' total vaccine doses administered, people with at least one vaccine dose, people fully vaccinated.
+    #' - \href{`r repo("github.eguidotti.covid19br")`}{Emanuele Guidotti}:
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
     #'
     v <- github.eguidotti.covid19br(level = level)
     v$id <- id(v$ibge, iso = "BRA", ds = "github.eguidotti.covid19br", level = level)
     
     # merge
-    x <- left_join(x, v, by = c("id", "date"))
+    x <- dplyr::left_join(x, v, by = c("id", "date"))
     
   }
   

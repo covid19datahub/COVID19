@@ -27,7 +27,7 @@
 #' @keywords internal
 #' 
 github.wcota.covid19br <- function(level){
-  if(level>3) return(NULL)
+  if(!level %in% 1:3) return(NULL)
   
   if(level==1 | level==2){
     
