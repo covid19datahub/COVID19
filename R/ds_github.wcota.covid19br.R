@@ -1,3 +1,31 @@
+#' Wesley Cota
+#'
+#' Data source for: Brazil
+#'
+#' @param level 1, 2, 3
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#' - tests
+#' - total vaccine doses administered
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#' - tests
+#' - total vaccine doses administered
+#'
+#' @section Level 3:
+#' - confirmed cases
+#' - deaths
+#'
+#' @source https://github.com/wcota/covid19br
+#'
+#' @keywords internal
+#' 
 github.wcota.covid19br <- function(level){
   if(level>3) return(NULL)
   

@@ -13,17 +13,14 @@ repo <- function(x){
   sprintf("https://github.com/covid19datahub/COVID19/blob/master/R/%s_%s.R", prefix, x)
 }
 
-#' Generate docstring for a data source
+#' Naming convention
 #' 
-#' @param ds the name of the ds_ R function
-#' @param name the name of the data provider
-#' @param ... arguments passed to the ds_ function
+#' @param x the return of a ds_ funtion
 #' 
 #' @keywords internal
 #' 
 #' @export
-docstring <- function(ds, name, ...){
-  x <- do.call(ds, args = list(...))
+naming <- function(x){
   n <- na.omit(map_values(colnames(x), force = TRUE, c(
     "confirmed"               = "0 confirmed cases",
     "deaths"                  = "1 deaths",
@@ -36,8 +33,57 @@ docstring <- function(ds, name, ...){
     "icu"                     = "8 intensive care",  
     "vent"                    = "9 patients requiring ventilation"
   )))
-  n <- gsub("^..", "", sort(n))
-  cat(sprintf('#\' \\href{`r repo("%s")`}{%s}:\n#\' %s.\n#\'\n', ds, name, paste(n, collapse = ", ")))
+  gsub("^..", "", sort(n))
+}
+
+#' Generate docstring to use in the ds_ files
+#' 
+#' @param ds the name of the ds_ R function
+#' @param name the name of the data provider
+#' @param desc the name(s) of the countries supported by the data provider, e.g., "United States".
+#' @param url the link to the data provider
+#' @param ... arguments passed to the ds_ function
+#' 
+#' @keywords internal
+#' 
+#' @export
+ds_docstring <- function(ds, name, desc, url, ...){
+  variables <- lapply(1:3, function(level){
+    x <- do.call(ds, args = c(list(level = level), list(...)))
+    if(is.null(x)) return(NULL)
+    naming(x)    
+  })
+  levels <- which(!sapply(variables, is.null))
+  sections <- sapply(levels, function(level){
+    v <- variables[[level]]
+    s <- paste("#' -", v, collapse = "\n")
+    sprintf("#' @section Level %s:\n%s\n", level, s)
+  })
+  sections <- paste(sections, collapse = "#'\n")
+  params <- sprintf("#' @param level %s\n", paste(levels, collapse = ", "))
+  extra <- setdiff(names(formals(ds)), "level")
+  if(length(extra)){
+    extra <- sapply(extra, function(p) sprintf("#' @param %s <INSERT DESCRIPTION HERE>\n", p))
+    params <- paste(c(params, extra), collapse = "")
+  }
+  cat(sprintf(
+    "#' %s\n#'\n#' Data source for: %s\n#'\n%s#'\n%s#'\n#' @source %s\n#'\n#' @keywords internal\n#'", 
+    name, desc, params, sections, url))
+}
+
+#' Generate docstring to use in the iso_ files
+#' 
+#' @param ds the name of the ds_ R function
+#' @param ... arguments passed to the ds_ function
+#' 
+#' @keywords internal
+#' 
+#' @export
+iso_docstring <- function(ds, ...){
+  x <- do.call(ds, args = list(...))
+  n <- naming(x)
+  t <- gsub("#' ", "", readLines(sprintf("R/ds_%s.R", ds))[1], fixed = TRUE)
+  cat(sprintf('#\' - \\href{`r repo("%s")`}{%s}:\n#\' %s.\n#\'\n', ds, t, paste(n, collapse = ",\n#' ")))
 }
 
 cachecall <- function(fun, ...){

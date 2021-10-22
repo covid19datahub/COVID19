@@ -1,3 +1,18 @@
+#' Emanuele Guidotti
+#'
+#' Data source for: Brazil
+#'
+#' @param level 3
+#'
+#' @section Level 3:
+#' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
+#'
+#' @source https://github.com/eguidotti/covid19br
+#'
+#' @keywords internal
+#'
 github.eguidotti.covid19br <- function(level){
   if(level!=3) return(NULL)
   
@@ -17,5 +32,4 @@ github.eguidotti.covid19br <- function(level){
   x$date <- as.Date(x$date)
   
   return(x)
-  
 }

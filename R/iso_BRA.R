@@ -5,50 +5,61 @@
 BRA <- function(level, ...){
   x <- NULL
   
-  #' @concept level 1
+  #' @concept Level 1
   #' @section Data Sources:
   #' 
   #' ## Level 1
   #' 
   if(level==1){
     
-    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
-    #' confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+    #' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' total vaccine doses administered.
     #'
     x <- github.wcota.covid19br(level = level)
    
   }
   
-  #' @concept level 2
+  #' @concept Level 2
   #' @section Data Sources:
   #' 
   #' ## Level 2
   #' 
   if(level==2){
     
-    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
-    #' confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+    #' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' total vaccine doses administered.
     #'
     x <- github.wcota.covid19br(level = level)
     x$id <- id(x$state, iso = "BRA", ds = "github.wcota.covid19br", level = level)
     
   }
   
-  #' @concept level 3
+  #' @concept Level 3
   #' @section Data Sources:
   #' 
   #' ## Level 3
   #' 
   if(level==3){  
 
-    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
-    #' confirmed cases, deaths.
+    #' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases,
+    #' deaths.
     #'
     x <- github.wcota.covid19br(level = level)
     x$id <- id(x$code, iso = "BRA", ds = "github.wcota.covid19br", level = level)
     
-    #' \href{`r repo("github.eguidotti.covid19br")`}{Emanuele Guidotti}:
-    #' total vaccine doses administered, people with at least one vaccine dose, people fully vaccinated.
+    #' - \href{`r repo("github.eguidotti.covid19br")`}{Emanuele Guidotti}:
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
     #'
     v <- github.eguidotti.covid19br(level = level)
     v$id <- id(v$ibge, iso = "BRA", ds = "github.eguidotti.covid19br", level = level)

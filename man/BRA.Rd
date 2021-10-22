@@ -15,29 +15,42 @@ Brazil
 \section{Data Sources}{
 
 \subsection{Level 1}{
-
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
-confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
+confirmed cases,
+deaths,
+recovered,
+tests,
+total vaccine doses administered.
+}
 }
 
 
 \subsection{Level 2}{
-
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
-confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
+confirmed cases,
+deaths,
+recovered,
+tests,
+total vaccine doses administered.
+}
 }
 
 
 \subsection{Level 3}{
-
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
-confirmed cases, deaths.
-
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.eguidotti.covid19br.R}{Emanuele Guidotti}:
-total vaccine doses administered, people with at least one vaccine dose, people fully vaccinated.
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
+confirmed cases,
+deaths.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.eguidotti.covid19br.R}{Emanuele Guidotti}:
+total vaccine doses administered,
+people with at least one vaccine dose,
+people fully vaccinated.
 }
 }
+}
 
-\concept{level 1}
-\concept{level 2}
-\concept{level 3}
+\concept{Level 1}
+\concept{Level 2}
+\concept{Level 3}
