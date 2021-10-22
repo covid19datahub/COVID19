@@ -1,10 +1,11 @@
-covid19br_git <- function(cache, level){
+github.wcota.covid19br <- function(level){
+  if(level>3) return(NULL)
   
-  if(level<=2){
+  if(level==1 | level==2){
     
     # download
     url <- "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"
-    x <- read.csv(url, cache = cache)
+    x <- read.csv(url)
     
     # formatting
     x <- map_data(x, c(
@@ -14,18 +15,24 @@ covid19br_git <- function(cache, level){
       "totalCases" = "confirmed",
       "recovered" = "recovered",
       "tests" = "tests",
-      "vaccinated" = "vaccines_1",
-      "vaccinated_second" = "vaccines_2"
+      "vaccinated" = "first",
+      "vaccinated_second" = "second",
+      "vaccinated_single" = "oneshot",
+      "vaccinated_third" = "extra"
     ))
     
     # total number of doses
-    x$vaccines <- x$vaccines_1 + x$vaccines_2
-    
+    x <- x %>%
+      dplyr::mutate(
+        vaccines = first + second + oneshot + extra,
+        vaccines_1 = first + oneshot,
+        vaccines_2 = second + oneshot)
+
     # filter
     idx <- which(x$state=="TOTAL")
     if(level==1)
       x <- x[idx,]
-    else
+    if(level==2)
       x <- x[-idx,]
     
   }
@@ -37,7 +44,7 @@ covid19br_git <- function(cache, level){
     # download  
     tmp <- tempfile()
     download.file(url, destfile=tmp, mode="wb", quiet = TRUE)
-    x <- read.csv(tmp, cache = cache)
+    x <- read.csv(tmp)
     
     # formatting
     x <- map_data(x, c(
@@ -58,4 +65,5 @@ covid19br_git <- function(cache, level){
   
   # return
   return(x)
+  
 }

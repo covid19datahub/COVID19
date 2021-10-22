@@ -1,9 +1,43 @@
 #' @importFrom dplyr %>%
 NULL
 
+#' Generate link to the GitHub repository
+#' 
+#' @param x name of the iso_ or ds_ function 
+#' 
+#' @keywords internal
+#' 
+#' @export
 repo <- function(x){
   prefix <- ifelse(grepl("^[A-Z]{3}$", x), "iso", "ds")
   sprintf("https://github.com/covid19datahub/COVID19/blob/master/R/%s_%s.R", prefix, x)
+}
+
+#' Generate docstring for a data source
+#' 
+#' @param ds the name of the ds_ R function
+#' @param name the name of the data provider
+#' @param ... arguments passed to the ds_ function
+#' 
+#' @keywords internal
+#' 
+#' @export
+docstring <- function(ds, name, ...){
+  x <- do.call(ds, args = list(...))
+  n <- na.omit(map_values(colnames(x), force = TRUE, c(
+    "confirmed"               = "0 confirmed cases",
+    "deaths"                  = "1 deaths",
+    "recovered"               = "2 recovered",
+    "tests"                   = "3 tests",
+    "vaccines"                = "4 total vaccine doses administered",  
+    "people_vaccinated"       = "5 people with at least one vaccine dose", 
+    "people_fully_vaccinated" = "6 people fully vaccinated", 
+    "hosp"                    = "7 hospitalizations",  
+    "icu"                     = "8 intensive care",  
+    "vent"                    = "9 patients requiring ventilation"
+  )))
+  n <- gsub("^..", "", sort(n))
+  cat(sprintf('#\' \\href{`r repo("%s")`}{%s}:\n#\' %s.\n#\'\n', ds, name, paste(n, collapse = ", ")))
 }
 
 cachecall <- function(fun, ...){

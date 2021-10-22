@@ -1,31 +1,59 @@
-BRA <- function(level, cache) {
+#' Brazil 
+#'
+#' @source \url{`r repo("BRA")`}
+#' 
+BRA <- function(level, ...){
+  x <- NULL
   
-  x <- covid19br_git(level = level, cache = cache)
-  
-  if(level==2)
-    x$id <- id(x$state, iso = "BRA", ds = "covid19br_git", level = level)
-  
-  if(level==3){  
+  #' @concept level 1
+  #' @section Data Sources:
+  #' ## Level 1
+  #' 
+  if(level==1){
     
-    # Espirito Santo (additional data for tests and recovered)
-    # Check agreement with https://coronavirus.es.gov.br/painel-covid-19-es
-    # y <- gov_br_es(level = level, cache = cache)
-    # y$id <- id(y$Municipio, iso = "BRA", ds = "gov_br_es", level = level)
-
-    # vaccines
-    v <- gov_br(level = level, cache = cache)
-    v$id <- id(v$city, iso = "BRA", ds = "gov_br", level = level)
+    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+    #'
+    x <- github.wcota.covid19br(level = level)
+   
+  }
+  
+  #' @concept level 2
+  #' @section Data Sources:
+  #' ## Level 2
+  #' 
+  if(level==2){
     
-    # merge
-    x$id <- id(x$code, iso = "BRA", ds = "covid19br_git", level = level)
-    x <- x %>%
-      # dplyr::filter(state != "ES") %>%
-      # dplyr::bind_rows(y) %>%
-      dplyr::left_join(v, by = c("id", "date"))
+    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases, deaths, recovered, tests, total vaccine doses administered.
+    #'
+    x <- github.wcota.covid19br(level = level)
+    x$id <- id(x$state, iso = "BRA", ds = "github.wcota.covid19br", level = level)
     
   }
   
-  # return
-  return(x)
+  #' @concept level 3
+  #' @section Data Sources:
+  #' ## Level 3
+  #' 
+  if(level==3){  
+
+    #' \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
+    #' confirmed cases, deaths.
+    #'
+    x <- github.wcota.covid19br(level = level)
+    x$id <- id(x$code, iso = "BRA", ds = "github.wcota.covid19br", level = level)
+    
+    #' \href{`r repo("github.eguidotti.covid19br")`}{Emanuele Guidotti}:
+    #' total vaccine doses administered, people with at least one vaccine dose, people fully vaccinated.
+    #'
+    v <- github.eguidotti.covid19br(level = level)
+    v$id <- id(v$ibge, iso = "BRA", ds = "github.eguidotti.covid19br", level = level)
+    
+    # merge
+    x <- dplyr::left_join(x, v, by = c("id", "date"))
+    
+  }
   
+  return(x)
 }

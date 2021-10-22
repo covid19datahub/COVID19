@@ -1,19 +1,15 @@
-gov_br_es <- function(level, cache) {
+gov_br_es <- function(level) {
   
   # This panel is provided by the State Government of Espírito Santo – Brazil,
   # since the beginning of march. It is updated daily and provides data about the
   # disease spread in all 78 state counties.
   # https://coronavirus.es.gov.br/painel-covid-19-es
   
-  # temporarily increase timeout for large file download
-  timeout <- options(timeout = 600)
-  on.exit(options(timeout), add = TRUE)
-  
   # url 
   url <- "https://bi.s3.es.gov.br/covid19/MICRODADOS.zip"
   
   # download
-  x <- read.zip(url, "MICRODADOS.csv", cache = cache, sep = ";", na.strings = "")
+  x <- read.zip(url, "MICRODADOS.csv", sep = ";", na.strings = "")
   x <- x[[1]]
   
   # level
