@@ -231,7 +231,7 @@ BRA <- function(level, ...){
     v$id <- id(v$ibge, iso = "BRA", ds = "github.eguidotti.covid19br", level = level)
     
     # merge
-    x <- dplyr::left_join(x, v, by = c("id", "date"))
+    x <- left_join(x, v, by = c("id", "date"))
     
   }
   
