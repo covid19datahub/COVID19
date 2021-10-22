@@ -7,6 +7,7 @@ BRA <- function(level, ...){
   
   #' @concept level 1
   #' @section Data Sources:
+  #' 
   #' ## Level 1
   #' 
   if(level==1){
@@ -20,6 +21,7 @@ BRA <- function(level, ...){
   
   #' @concept level 2
   #' @section Data Sources:
+  #' 
   #' ## Level 2
   #' 
   if(level==2){
@@ -34,6 +36,7 @@ BRA <- function(level, ...){
   
   #' @concept level 3
   #' @section Data Sources:
+  #' 
   #' ## Level 3
   #' 
   if(level==3){  

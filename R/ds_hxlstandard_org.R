@@ -33,6 +33,9 @@ hxlstandard_org <- function(cache){
   x$confirmed <- as.numeric(gsub(",", "", x$confirmed))
   x$deaths    <- as.numeric(gsub(",", "", x$deaths))
   
+  # fix duplicates
+  x <- distinct(x, state, date, .keep_all = TRUE)
+  
   # return
   return(x)
   
