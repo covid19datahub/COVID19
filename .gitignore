@@ -47,4 +47,4 @@ LICENSE
 /docs
 inst/doc
 *.log
-vignettes/iso/*.Rmd
+vignettes
