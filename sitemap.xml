@@ -115,16 +115,22 @@
     <loc>https://covid19datahub.io/reference/cumsum.html</loc>
   </url>
   <url>
-    <loc>https://covid19datahub.io/reference/docstring.html</loc>
+    <loc>https://covid19datahub.io/reference/ds_check_format.html</loc>
   </url>
   <url>
-    <loc>https://covid19datahub.io/reference/ds_check_format.html</loc>
+    <loc>https://covid19datahub.io/reference/ds_docstring.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/err_log.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/extdata.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/github.eguidotti.covid19br.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/github.wcota.covid19br.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/gv_at.html</loc>
@@ -134,6 +140,9 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/id.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/iso_docstring.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/jhucsse_git.html</loc>
@@ -149,6 +158,9 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/merge.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/naming.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/nytimes_git.html</loc>
