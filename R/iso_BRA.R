@@ -9,6 +9,7 @@ BRA <- function(level, ...){
   #' @section Data Sources:
   #' 
   #' ## Level 1
+  #' `r docstring("BRA", 1)`
   #' 
   if(level==1){
     
@@ -27,6 +28,7 @@ BRA <- function(level, ...){
   #' @section Data Sources:
   #' 
   #' ## Level 2
+  #' `r docstring("BRA", 2)`
   #' 
   if(level==2){
     
@@ -46,6 +48,7 @@ BRA <- function(level, ...){
   #' @section Data Sources:
   #' 
   #' ## Level 3
+  #' `r docstring("BRA", 3)`
   #' 
   if(level==3){  
 

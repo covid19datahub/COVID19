@@ -188,7 +188,7 @@ The documentation starts with the name of the country and with the link to the f
 BRA <- function(level, ...){
 ```
 
-For each level we create a new @concept and a new subsection in the "Data Sources" @section.
+For each level we create a new @concept and a new subsection in the "Data Sources" @section. The `docstring` function automatically generates the documentation for the providers of population data.
 
 ```R
 #' Brazil 
@@ -202,7 +202,8 @@ BRA <- function(level, ...){
   #' @section Data Sources:
   #' 
   #' ## Level 1
-  #' 
+  #' `r docstring("BRA", 1)`
+  #'  
   if(level==1){
 ```
 
@@ -218,8 +219,10 @@ BRA <- function(level, ...){
   
   #' @concept level 1
   #' @section Data Sources:
+  #'
   #' ## Level 1
-  #' 
+  #' `r docstring("BRA", 1)`
+  #'
   if(level==1){
     
     #' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:
@@ -248,6 +251,7 @@ BRA <- function(level, ...){
   #' @section Data Sources:
   #' 
   #' ## Level 1
+  #' `r docstring("BRA", 1)`
   #' 
   if(level==1){
     
@@ -266,6 +270,7 @@ BRA <- function(level, ...){
   #' @section Data Sources:
   #' 
   #' ## Level 2
+  #' `r docstring("BRA", 2)`
   #' 
   if(level==2){
     
@@ -285,6 +290,7 @@ BRA <- function(level, ...){
   #' @section Data Sources:
   #' 
   #' ## Level 3
+  #' `r docstring("BRA", 3)`
   #' 
   if(level==3){  
 

@@ -4,7 +4,7 @@
 \alias{ASM}
 \title{American Samoa}
 \source{
-https://github.com/covid19datahub/COVID19/blob/master/R/iso_ASM.R
+https://github.com/covid19datahub/COVID19/blob/ecd767de59e578b710fad26a770344becce606fc/R/iso_ASM.R
 }
 \usage{
 ASM(level, ...)
@@ -16,9 +16,9 @@ Data available at level 1 (nation).
 
 
 \bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_nytimes_git.R}{The New York Times}
+\href{https://github.com/covid19datahub/COVID19/blob/ecd767de59e578b710fad26a770344becce606fc/R/ds_nytimes_git.R}{The New York Times}
 (confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata_org.R}{Our World in Data}
+\href{https://github.com/covid19datahub/COVID19/blob/ecd767de59e578b710fad26a770344becce606fc/R/ds_ourworldindata_org.R}{Our World in Data}
 (tests, hospitalizations, vaccines);
 \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 (population 2018).

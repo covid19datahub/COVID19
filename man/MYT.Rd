@@ -4,7 +4,7 @@
 \alias{MYT}
 \title{Mayotte}
 \source{
-https://github.com/covid19datahub/COVID19/blob/master/R/iso_MYT.R
+https://github.com/covid19datahub/COVID19/blob/ecd767de59e578b710fad26a770344becce606fc/R/iso_MYT.R
 }
 \usage{
 MYT(level, ...)
@@ -16,7 +16,7 @@ Data available at level 1 (nation).
 
 
 \bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gouv_fr.R}{Santé publique France}
+\href{https://github.com/covid19datahub/COVID19/blob/ecd767de59e578b710fad26a770344becce606fc/R/ds_gouv_fr.R}{Santé publique France}
 (confirmed cases, deaths, tests, hospitalizations, vaccines);
 \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 (population 2018).

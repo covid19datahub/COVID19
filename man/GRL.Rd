@@ -4,7 +4,7 @@
 \alias{GRL}
 \title{Greenland}
 \source{
-https://github.com/covid19datahub/COVID19/blob/master/R/iso_GRL.R
+https://github.com/covid19datahub/COVID19/blob/ecd767de59e578b710fad26a770344becce606fc/R/iso_GRL.R
 }
 \usage{
 GRL(level, ...)
@@ -16,9 +16,9 @@ Data available at level 1 (nation).
 
 
 \bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_jhucsse_git.R}{Johns Hopkins Center for Systems Science and Engineering}
+\href{https://github.com/covid19datahub/COVID19/blob/ecd767de59e578b710fad26a770344becce606fc/R/ds_jhucsse_git.R}{Johns Hopkins Center for Systems Science and Engineering}
 (confirmed cases, recovered, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata_org.R}{Our World in Data}
+\href{https://github.com/covid19datahub/COVID19/blob/ecd767de59e578b710fad26a770344becce606fc/R/ds_ourworldindata_org.R}{Our World in Data}
 (tests, hospitalizations, vaccines);
 \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 (population 2018).

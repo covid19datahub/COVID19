@@ -1,16 +1,25 @@
 #' @importFrom dplyr %>%
 NULL
 
-#' Generate link to the GitHub repository
+#' Generate permalink to the file at the GitHub repository
 #' 
-#' @param x name of the iso_ or ds_ function 
+#' @param x name of the iso_ or ds_ function, or name of the .csv file
 #' 
 #' @keywords internal
 #' 
 #' @export
-repo <- function(x){
-  prefix <- ifelse(grepl("^[A-Z]{3}$", x), "iso", "ds")
-  sprintf("https://github.com/covid19datahub/COVID19/blob/master/R/%s_%s.R", prefix, x)
+repo <- function(x, csv = FALSE){
+  master <- "https://github.com/covid19datahub/COVID19/blob/master" 
+  if(csv){
+    url <- sprintf("%s/inst/extdata/db/%s.csv", master, x)
+  }
+  else{
+    prefix <- ifelse(grepl("^[A-Z]{3}$", x), "iso", "ds")
+    url <- sprintf("%s/R/%s_%s.R", master, prefix, x)
+  }
+  rvest::read_html(url) %>%
+    rvest::html_nodes("clipboard-copy[aria-label='Copy permalink'][data-toggle-for='blob-more-options-details']") %>% 
+    rvest::html_attr('value')
 }
 
 #' Naming convention
@@ -84,6 +93,29 @@ iso_docstring <- function(ds, ...){
   n <- naming(x)
   t <- gsub("#' ", "", readLines(sprintf("R/ds_%s.R", ds))[1], fixed = TRUE)
   cat(sprintf('#\' - \\href{`r repo("%s")`}{%s}:\n#\' %s.\n#\'\n', ds, t, paste(n, collapse = ",\n#' ")))
+}
+
+#' Generate docstring to use in the iso_ files to list the population data source
+#' 
+#' @param iso the ISO code of the country
+#' @param level 1, 2, 3
+#' 
+#' @keywords internal
+#' 
+#' @export
+docstring <- function(iso, level){
+  if(level==1){
+    x <- extdata("db/ISO.csv") %>% dplyr::filter(id==iso)
+    url <- repo("ISO", csv = TRUE)
+  }
+  else{
+    x <- extdata(sprintf("db/%s.csv", iso))
+    url <- repo(iso, csv = TRUE)
+  }
+  ds <- na.omit(unique(x$population_data_source[x$administrative_area_level==level]))
+  if(length(ds)==0) return(NULL)
+  ds <- sprintf("\\href{%s}{%s}", url, ds)  
+  sprintf(" - %s: population.", paste(ds, collapse = ", "))
 }
 
 cachecall <- function(fun, ...){

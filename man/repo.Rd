@@ -2,14 +2,14 @@
 % Please edit documentation in R/utils.R
 \name{repo}
 \alias{repo}
-\title{Generate link to the GitHub repository}
+\title{Generate permalink to the file at the GitHub repository}
 \usage{
-repo(x)
+repo(x, csv = FALSE)
 }
 \arguments{
-\item{x}{name of the iso_ or ds_ function}
+\item{x}{name of the iso_ or ds_ function, or name of the .csv file}
 }
 \description{
-Generate link to the GitHub repository
+Generate permalink to the file at the GitHub repository
 }
 \keyword{internal}
