@@ -7,76 +7,15 @@
 \url{https://covid19datahub.io}
 }
 \usage{
-covid19(
-  country = NULL,
-  level = 1,
-  start = "2019-01-01",
-  end = Sys.Date(),
-  raw = TRUE,
-  vintage = FALSE,
-  verbose = TRUE,
-  cache = TRUE,
-  debug = FALSE
-)
+covid19(country = NULL, level = 1)
 }
 \arguments{
 \item{country}{vector of country names or \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes} (alpha-2, alpha-3 or numeric).}
 
 \item{level}{integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.}
-
-\item{start}{the start date of the period of interest.}
-
-\item{end}{the end date of the period of interest.}
-
-\item{raw}{logical. Skip data cleaning? Default \code{TRUE}. See details.}
-
-\item{vintage}{logical. Retrieve the snapshot of the dataset that was generated at the \code{end} date instead of using the latest version. Default \code{FALSE}.}
-
-\item{verbose}{logical. Print data sources? Default \code{TRUE}.}
-
-\item{cache}{logical. Memory caching? Significantly improves performance on successive calls. Default \code{TRUE}.}
-
-\item{debug}{logical. Warnings and stop on failure? Default \code{FALSE}.}
-}
-\value{
-Grouped \code{tibble} (\code{data.frame})
 }
 \description{
-Unified datasets for a better understanding of COVID-19.
-}
-\details{
-If \code{raw=FALSE}, the raw data are cleaned by filling missing dates with \code{NA} values.
-This ensures that all locations share the same grid of dates and no single day is skipped.
-Then, \code{NA} values are replaced with the previous non-\code{NA} value or \code{0}.
-}
-\note{
-We have invested a lot of time and effort in creating \href{https://covid19datahub.io}{COVID-19 Data Hub}, please:
-
-\itemize{
-\item cite \href{https://doi.org/10.21105/joss.02376}{Guidotti and Ardia (2020)} when using \href{https://covid19datahub.io}{COVID-19 Data Hub}.
-\item place the URL \url{https://covid19datahub.io} in a footnote to help others find \href{https://covid19datahub.io}{COVID-19 Data Hub}.
-\item you assume full risk for the use of \href{https://covid19datahub.io}{COVID-19 Data Hub}.
-We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub.
-However, it is free software and comes with ABSOLUTELY NO WARRANTY.
-Reliance on \href{https://covid19datahub.io}{COVID-19 Data Hub} for medical guidance or use of \href{https://covid19datahub.io}{COVID-19 Data Hub} in commerce is strictly prohibited.
-}
-}
-\examples{
-\dontrun{
-
-# Worldwide data by country
-x <- covid19()
-
-# Worldwide data by state
-x <- covid19(level = 2)
-
-# Specific country data by city
-x <- covid19(c("Italy","US"), level = 3)
-
-# Data sources
-s <- attr(x, "src")
-}
-
+COVID-19 Data Hub
 }
 \references{
 Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, \doi{10.21105/joss.02376}.

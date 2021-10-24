@@ -32,8 +32,8 @@ ourworldindata_org <- function(level = 1, id = NULL){
       'total_deaths'            = 'deaths',
       'total_tests'             = 'tests',
       'total_vaccinations'      = 'vaccines',
-      'people_vaccinated'       = 'vaccines_1',
-      'people_fully_vaccinated' = 'vaccines_2',
+      'people_vaccinated'       = 'people_vaccinated',
+      'people_fully_vaccinated' = 'people_fully_vaccinated',
       'icu_patients'            = 'icu',
       'hosp_patients'           = 'hosp'
     ))
@@ -51,8 +51,8 @@ ourworldindata_org <- function(level = 1, id = NULL){
       'date',
       'location'                = 'state',
       'total_vaccinations'      = 'vaccines',
-      'people_vaccinated'       = 'vaccines_1',
-      'people_fully_vaccinated' = 'vaccines_2'
+      'people_vaccinated'       = 'people_vaccinated',
+      'people_fully_vaccinated' = 'people_fully_vaccinated'
     ))
     
     # filter

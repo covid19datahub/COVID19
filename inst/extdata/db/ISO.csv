@@ -1,4 +1,4 @@
-"id","id_jhucsse_git","administrative_area_level","administrative_area_level_1","iso_alpha_3","iso_alpha_2","iso_numeric","currency","latitude","longitude","population","key_apple_mobility","key_google_mobility","key_jhu_csse","key_gadm","population_data_source","population_data_source_url"
+"id","id_jhucsse_git","administrative_area_level","administrative_area_level_1","iso_alpha_3","iso_alpha_2","iso_numeric","iso_currency","latitude","longitude","population","key_apple_mobility","key_google_mobility","key_jhu_csse","key_gadm","population_data_source","population_data_source_url"
 "CAC",,1,"Costa Atlantica","CAC",,,,,,623,,,,,,
 "GPC","Grand Princess",1,"Grand Princess","GPC",,,,,,3533,,,,,,
 "MSZ","MS Zaandam",1,"MS Zaandam","MSZ",,,,,,1829,,,,,,
@@ -98,7 +98,7 @@
 "LIE","Liechtenstein",1,"Liechtenstein","LIE","LI",438,"CHF",47.14,9.55,37910,,"LI","LI","LIE","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "RUS","Russia",1,"Russia","RUS","RU",643,"RUB",60,100,144478050,"Russia","RU","RU","RUS","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "SLE","Sierra Leone",1,"Sierra Leone","SLE","SL",694,"SLL",8.460555,-11.779889,7650154,,"SL","SL","SLE","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"USA","US",1,"United States","USA","US",840,"USN",38,-97,326687501,"United States","US","US","USA","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"USA","US",1,"United States","USA","US",840,"USD",38,-97,326687501,"United States","US","US","USA","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "BWA","Botswana",1,"Botswana","BWA","BW",72,"BWP",-22.3285,24.6849,2254126,,"BW","BW","BWA","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "MMR","Burma",1,"Myanmar","MMR","MM",104,"MMK",21.9162,95.956,53708395,,"MM","MM","MMR","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "MWI","Malawi",1,"Malawi","MWI","MW",454,"MWK",-13.254308,34.301525,18143315,,"MW","MW","MWI","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
