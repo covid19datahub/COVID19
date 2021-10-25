@@ -5,7 +5,7 @@ DPC <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhucsse_git(file = "global", cache = cache, level = level, country = "Diamond Princess")
+  x <- github.cssegisanddata.covid19(file = "global", cache = cache, level = level, country = "Diamond Princess")
 
   # wikipedia data
   x <- fix(x, iso = "DPC")

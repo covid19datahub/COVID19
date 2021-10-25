@@ -14,9 +14,6 @@
 #' 
 covid19 <- function(country = NULL, level = 1){
   
-  # remove this when v3.0 is ready
-  cache <- TRUE
-  
   # fallback
   if(!(level %in% 1:3))
     stop("Valid options for 'level' are:
@@ -43,7 +40,7 @@ covid19 <- function(country = NULL, level = 1){
   db <- db[!is.na(db$id),]
   
   # world
-  w <- try(cachecall("world", level = level, cache = cache))
+  w <- try(cachecall("world", level = level))
   if("try-error" %in% class(w)){
     stop("WORLD: try-error")
     w <- NULL
@@ -62,7 +59,7 @@ covid19 <- function(country = NULL, level = 1){
   for(fun in country) if(exists(fun, envir = asNamespace("COVID19"), mode = "function", inherits = FALSE)) {
     
     # try 
-    y <- try(do.call(fun, args = list(level = level, cache = cache)))
+    y <- try(do.call(fun, args = list(level = level)))
     
     # skip on NULL
     if(is.null(y))
@@ -164,21 +161,21 @@ covid19 <- function(country = NULL, level = 1){
 }
 
 # remove as v3.0 is ready
-world <- function(level, cache){
+world <- function(level){
   
   if(level>1) return(NULL)
   
   # download
-  x <- jhucsse_git(file = "global", cache = cache, level = level)
+  x <- github.cssegisanddata.covid19(file = "global", level = level)
   
   # iso
-  x$iso_alpha_3 <- id(x$country, iso = "ISO", ds = "jhucsse_git", level = 1)
+  x$iso_alpha_3 <- id(x$country, iso = "ISO", ds = "github.cssegisanddata.covid19", level = 1)
   
   # id
   x$id <- x$iso_alpha_3
   
   # tests
-  o <- ourworldindata_org()  
+  o <- ourworldindata.org()  
   x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
   
   # return
@@ -529,10 +526,10 @@ extdata <- function(...){
 #' \dontrun{
 #' 
 #' # download data
-#' x <- COVID19:::jhucsse_git(file = "US", cache = TRUE, level = 3, country = "USA")
+#' x <- COVID19:::github.cssegisanddata.covid19(file = "US", cache = TRUE, level = 3, country = "USA")
 #' 
 #' # add iso
-#' csv <- add_iso(x, iso = "USA", ds = "jhucsse_git", level = 3, map = c(
+#' csv <- add_iso(x, iso = "USA", ds = "github.cssegisanddata.covid19", level = 3, map = c(
 #'  "id"    = "id", 
 #'  "state" = "administrative_area_level_2", 
 #'  "city"  = "administrative_area_level_3",

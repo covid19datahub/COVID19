@@ -29,10 +29,10 @@ Add new country in the inst/extdata/db/ folder
 \dontrun{
 
 # download data
-x <- COVID19:::jhucsse_git(file = "US", cache = TRUE, level = 3, country = "USA")
+x <- COVID19:::github.cssegisanddata.covid19(file = "US", cache = TRUE, level = 3, country = "USA")
 
 # add iso
-csv <- add_iso(x, iso = "USA", ds = "jhucsse_git", level = 3, map = c(
+csv <- add_iso(x, iso = "USA", ds = "github.cssegisanddata.covid19", level = 3, map = c(
  "id"    = "id", 
  "state" = "administrative_area_level_2", 
  "city"  = "administrative_area_level_3",

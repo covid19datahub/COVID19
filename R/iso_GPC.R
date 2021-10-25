@@ -5,7 +5,7 @@ GPC <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhucsse_git(file = "global", cache = cache, level = level, country = "Grand Princess")
+  x <- github.cssegisanddata.covid19(file = "global", cache = cache, level = level, country = "Grand Princess")
 
   # return
   return(x)

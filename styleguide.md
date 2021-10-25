@@ -134,10 +134,10 @@ The `iso_` files are named according to the [Alpha-3 ISO 3166-1](https://en.wiki
 
 ### Code style
 
-An `iso_` file implements the R function responsible to aggregate all the data sources for the country. The function is named with the three letter ISO code of the country. The function takes the argument `level` in input as well as `...` for backward compatibility. For example, for Brazil we have:
+An `iso_` file implements the R function responsible to aggregate all the data sources for the country. The function is named with the three letter ISO code of the country. The function takes the argument `level` in input. For example, for Brazil we have:
 
 ```R
-BRA <- function(level, ...){
+BRA <- function(level){
   # code here...   
 }
 ```
@@ -145,7 +145,7 @@ BRA <- function(level, ...){
 The function defines the internal variable `x` that represents the output of the function. This is the very first line of code in the body of the function. The very last line of code returns `x`. 
 
 ```R
-BRA <- function(level, ...){
+BRA <- function(level){
   x <- NULL
   
   # code here...   
@@ -157,7 +157,7 @@ BRA <- function(level, ...){
 Internally, the code is split by `level`, with no white spaces in the `if` condition and one blank line among different lines. Not all the 3 levels are required.
 
 ```R
-BRA <- function(level, ...){
+BRA <- function(level){
   x <- NULL
   
   if(level==1){
@@ -185,7 +185,7 @@ The documentation starts with the name of the country and with the link to the f
 #'
 #' @source \url{`r repo("BRA")`}
 #' 
-BRA <- function(level, ...){
+BRA <- function(level){
 ```
 
 For each level we create a new @concept and a new subsection in the "Data Sources" @section. The `docstring` function automatically generates the documentation for the providers of population data.
@@ -195,7 +195,7 @@ For each level we create a new @concept and a new subsection in the "Data Source
 #'
 #' @source \url{`r repo("BRA")`}
 #' 
-BRA <- function(level, ...){
+BRA <- function(level){
   x <- NULL
   
   #' @concept level 1
@@ -214,7 +214,7 @@ For each data source, we report the link to the `ds_` function, the name of the 
 #'
 #' @source \url{`r repo("BRA")`}
 #' 
-BRA <- function(level, ...){
+BRA <- function(level){
   x <- NULL
   
   #' @concept level 1
@@ -244,7 +244,7 @@ BRA <- function(level, ...){
 #'
 #' @source \url{`r repo("BRA")`}
 #' 
-BRA <- function(level, ...){
+BRA <- function(level){
   x <- NULL
   
   #' @concept Level 1

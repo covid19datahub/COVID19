@@ -1,34 +1,34 @@
 #' Johns Hopkins Center for Systems Science and Engineering
+#'
+#' Data source for: Worldwide
+#'
+#' @param level 1, 2, or 3 (U.S only)
+#' @param file one of "global" for worldwide data or "US" for U.S. data
+#' @param country filter by name of country
+#' @param state filter by name of state
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#' - recovered
 #' 
-#' Imports worldwide confirmed cases, recovered, and deaths at level 1 and 2 from JHU CSSE. 
-#' Confirmed cases and deaths are also available at level 3 for United States.
-#' 
-#' @source 
-#' https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
-#' 
+#' @section Level 3:
+#' - confirmed cases (U.S. only)
+#' - deaths (U.S. only)
+#'
+#' @source https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
+#'
 #' @keywords internal
 #' 
-jhucsse_git <- function(file, cache = TRUE, level = 1, country = NULL, state = NULL){
-  if(level>3) return(NULL)
+github.cssegisanddata.covid19 <- function(level = 1, file = "global", country = NULL, state = NULL){
+  if(file=="US" & !level %in% 1:3) return(NULL)
+  if(file=="global" & !level %in% 1:2) return(NULL)
   
-  # always cache this
-  cache <- TRUE
-  
-  # cache
-  cachekey <- make.names(sprintf("jhuCSSE_%s_%s", file, level))
-  if(cache & exists(cachekey, envir = cachedata)){
-
-    x <- get(cachekey, envir = cachedata)
-
-    if(!is.null(country))
-      x <- x[which(x$country==country),]
-    if(!is.null(state))
-      x <- x[which(x$state==state),]
-
-    return(x)
-
-  }
-
   # source
   repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/"
 
@@ -49,7 +49,7 @@ jhucsse_git <- function(file, cache = TRUE, level = 1, country = NULL, state = N
 
     # download
     url <- sprintf("%s/csse_covid_19_time_series/%s", repo, urls[i])
-    xx  <- read.csv(url, cache = cache)
+    xx  <- read.csv(url, cache = level!=3)
 
     if(class(xx)=="try-error")
       next
@@ -132,17 +132,11 @@ jhucsse_git <- function(file, cache = TRUE, level = 1, country = NULL, state = N
 
   }
   
-  # cache
-  if(cache)
-    assign(cachekey, x, envir = cachedata)
-
   # filter
   if(!is.null(country))
     x <- x[which(x$country==country),]
   if(!is.null(state))
     x <- x[which(x$state==state),]
 
-  # return
   return(x)
-
 }

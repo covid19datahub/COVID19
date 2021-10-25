@@ -1,16 +1,29 @@
 #' Our World in Data
-#' 
-#' Imports worldwide confirmed cases, deaths, hospitalizations,
-#' tests, and vaccines at national level from Our World in Data. 
-#' Vaccination data are also available at state level for U.S.
-#' 
-#' @source
-#' https://covid.ourworldindata.org
-#' 
+#'
+#' Data source for: Worldwide
+#'
+#' @param level 1, 2
+#' @param id filter by ISO code if level=1 or by name of state if level=2
+#'
+#' @section Level 1:
+#' - tests
+#' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
+#' - hospitalizations
+#' - intensive care
+#'
+#' @section Level 2:
+#' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
+#'
+#' @source https://covid.ourworldindata.org
+#'
 #' @keywords internal
-#' 
-ourworldindata_org <- function(level = 1, id = NULL){
-  if(level>2) return(NULL)
+#'
+ourworldindata.org <- function(level = 1, id = NULL){
+  if(!level %in% 1:2) return(NULL)
   
   if(level==1){
     
@@ -18,8 +31,10 @@ ourworldindata_org <- function(level = 1, id = NULL){
     url <- "https://covid.ourworldindata.org/data/owid-covid-data.csv"
     x   <- read.csv(url, cache = TRUE)
     
-    # filter 
+    # keep only countries 
     x <- x[!is.na(x$iso_code),]
+    
+    # filter by id 
     if(!is.null(id))
       x <- x[x$iso_code %in% id,]
     
@@ -28,8 +43,6 @@ ourworldindata_org <- function(level = 1, id = NULL){
       'date',
       'iso_code'                = 'iso_alpha_3',
       'location'                = 'country',
-      'total_cases'             = 'confirmed',
-      'total_deaths'            = 'deaths',
       'total_tests'             = 'tests',
       'total_vaccinations'      = 'vaccines',
       'people_vaccinated'       = 'people_vaccinated',
@@ -55,10 +68,11 @@ ourworldindata_org <- function(level = 1, id = NULL){
       'people_fully_vaccinated' = 'people_fully_vaccinated'
     ))
     
-    # filter
+    # filter by id
     if(!is.null(id)){
       x <- x[which(x$state %in% id),]
     }
+    # drop states that should not be in level 2
     else{
       x <- x[which(!x$state %in% c(
         "Bureau of Prisons", "Dept of Defense", "Federated States of Micronesia", 
@@ -71,8 +85,6 @@ ourworldindata_org <- function(level = 1, id = NULL){
   # date
   x$date <- as.Date(x$date)
   
-  # return
   return(x)
-  
 }
 

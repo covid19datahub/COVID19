@@ -2,7 +2,7 @@
 #'
 #' @source \url{`r repo("ISO")`}
 #' 
-ISO <- function(level, ...){
+ISO <- function(level){
   x <- NULL
   
   #' @concept Level 1

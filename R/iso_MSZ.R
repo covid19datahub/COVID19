@@ -5,7 +5,7 @@ MSZ <- function(level, cache){
     return(NULL)
 
   # download
-  x <- jhucsse_git(file = "global", cache = cache, level = level, country = "MS Zaandam")
+  x <- github.cssegisanddata.covid19(file = "global", cache = cache, level = level, country = "MS Zaandam")
 
   # return
   return(x)

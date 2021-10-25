@@ -18,7 +18,7 @@ Data available at level 1 (nation).
 \bold{Level 1.}
 \href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_nytimes_git.R}{The New York Times}
 (confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_ourworldindata_org.R}{Our World in Data}
+\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_ourworldindata.org.R}{Our World in Data}
 (tests, hospitalizations, vaccines);
 \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 (population 2018).

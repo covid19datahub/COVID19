@@ -1,4 +1,4 @@
-"id","id_github.oxcgrt.covidpolicytracker","id_jhucsse_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
+"id","id_github.oxcgrt.covidpolicytracker","id_github.cssegisanddata.covid19","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
 ,,,,,,,,,"-",,,
 "c3fec6fd","CHN_AH","Anhui",2,"Anhui",,"CHN.1_1","CN.AH","CNAH",,32.025060655,117.151493905892,63240000
 "967418fc","CHN_BJ","Beijing",2,"Beijing",,"CHN.2_1","CN.BJ","CNBJ",,40.250894545,116.62399869567,21540000

@@ -5,9 +5,9 @@
 #' @section Data sources:
 #' 
 #' \bold{Level 1.} 
-#' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
+#' \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}
 #' (confirmed cases, recovered, deaths); 
-#' \href{`r repo("ourworldindata_org")`}{Our World in Data} 
+#' \href{`r repo("ourworldindata.org")`}{Our World in Data} 
 #' (tests, hospitalizations, vaccines);
 #' \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 #' (population 2018).
@@ -19,15 +19,15 @@
 #' (tests, hospitalized patients and intensive care); 
 #' \href{`r repo("covidtracking_com")`}{The Covid Tracking Project}
 #' (patients requiring ventilation, recovered); 
-#' \href{`r repo("ourworldindata_org")`}{Our World in Data} 
+#' \href{`r repo("ourworldindata.org")`}{Our World in Data} 
 #' (vaccines);
-#' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
+#' \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}
 #' (population 2020). 
 #' 
 #' \bold{Level 3.} 
 #' \href{`r repo("nytimes_git")`}{The New York Times} 
 #' (confirmed cases, deaths);
-#' \href{`r repo("jhucsse_git")`}{Johns Hopkins Center for Systems Science and Engineering}
+#' \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}
 #' (population 2020).
 #' 
 #' @source `r repo("USA")`
@@ -61,8 +61,8 @@ USA <- function(level, ...){
     r$id <- id(r$state, iso = "USA", ds = "covidtracking_com", level = level)
     
     # vaccines
-    v <- ourworldindata_org(level = level)
-    v$id <- id(v$state, iso = "USA", ds = "ourworldindata_org", level = level)
+    v <- ourworldindata.org(level = level)
+    v$id <- id(v$state, iso = "USA", ds = "ourworldindata.org", level = level)
     
     # merge
     key <- c("date", "id")

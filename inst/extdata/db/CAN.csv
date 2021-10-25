@@ -1,4 +1,4 @@
-"id","id_canada_ca","id_github.oxcgrt.covidpolicytracker","id_jhucsse_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
+"id","id_canada_ca","id_github.oxcgrt.covidpolicytracker","id_github.cssegisanddata.covid19","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
 ,,,,,,,,,,,,"-",,,
 "e61d6191",48,"CAN_AB","Alberta",2,"Alberta",,"Alberta","CAN.1_1","Alberta","CA.AB","CAAB","48",54.500614165,-115.002841913571,4413146
 "c229681f",59,"CAN_BC","British Columbia",2,"British Columbia",,"British Columbia","CAN.2_1","British Columbia","CA.BC","CABC","59",54.499851225,-124.993505972093,5110917
