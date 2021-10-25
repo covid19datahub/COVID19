@@ -1,15 +1,28 @@
-#' The New York Times 
-#' 
-#' Imports confirmed cases and deaths for United States at national, state, and county level 
-#' from The New York Times.
-#' 
-#' @source 
-#' https://github.com/nytimes/covid-19-data
-#' 
+#' The New York Times
+#'
+#' Data source for: United States
+#'
+#' @param level 1, 2, 3
+#' @param fips filter by FIPS code
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#'
+#' @section Level 3:
+#' - confirmed cases
+#' - deaths
+#'
+#' @source https://github.com/nytimes/covid-19-data
+#'
 #' @keywords internal
-#' 
-nytimes_git <- function(level, cache = FALSE, fips = NULL){
-  if(level>3) return(NULL)
+#'
+github.nytimes.covid19data <- function(level, fips = NULL){
+  if(!level %in% 1:3) return(NULL)
   
   # source
   repo <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/" 
@@ -31,24 +44,20 @@ nytimes_git <- function(level, cache = FALSE, fips = NULL){
 
   # clean
   if(level==3){
-    
     x <- x[x$city!="Unknown",]
     x$fips[x$city=="New York City"] <- 36061
     x$fips[x$city=="Kansas City"]   <- 29901
     x$fips[x$city=="Joplin"]        <- 29592
-    
   }
   
   # date
   x$date <- as.Date(x$date, format = "%Y-%m-%d")
   
-  # filter
+  # filter by FIPS code
   if(!is.null(fips))
     x <- x[which(startsWith(as.character(x$fips), fips)),]
   
-  # return
   return(x) 
-  
 }
 
 

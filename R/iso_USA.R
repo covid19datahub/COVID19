@@ -13,7 +13,7 @@
 #' (population 2018).
 #' 
 #' \bold{Level 2.} 
-#' \href{`r repo("nytimes_git")`}{The New York Times} 
+#' \href{`r repo("github.nytimes.covid19data")`}{The New York Times} 
 #' (confirmed cases, deaths);
 #' \href{`r repo("healthdata_gov")`}{U.S. Department of Health & Human Services}
 #' (tests, hospitalized patients and intensive care); 
@@ -25,7 +25,7 @@
 #' (population 2020). 
 #' 
 #' \bold{Level 3.} 
-#' \href{`r repo("nytimes_git")`}{The New York Times} 
+#' \href{`r repo("github.nytimes.covid19data")`}{The New York Times} 
 #' (confirmed cases, deaths);
 #' \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}
 #' (population 2020).
@@ -53,8 +53,8 @@ USA <- function(level, ...){
     h$id <- id(h$state, iso = "USA", ds = "healthdata_gov", level = level)
     
     # confirmed and deaths 
-    n <- nytimes_git(level = level)
-    n$id <- id(n$fips, iso = "USA", ds = "nytimes_git", level = level)
+    n <- github.nytimes.covid19data(level = level)
+    n$id <- id(n$fips, iso = "USA", ds = "github.nytimes.covid19data", level = level)
     
     # recovered and vent
     r <- covidtracking_com(level = level) 
@@ -76,8 +76,8 @@ USA <- function(level, ...){
   if(level==3){
     
     # confirmed and deaths
-    x <- nytimes_git(level = level)
-    x$id <- id(x$fips, iso = "USA", ds = "nytimes_git", level = level)
+    x <- github.nytimes.covid19data(level = level)
+    x$id <- id(x$fips, iso = "USA", ds = "github.nytimes.covid19data", level = level)
     
   }
 

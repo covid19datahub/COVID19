@@ -4,7 +4,7 @@
 \alias{PYF}
 \title{French Polynesia}
 \source{
-https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/iso_PYF.R
+https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/iso_PYF.R
 }
 \usage{
 PYF(level, ...)
@@ -16,9 +16,9 @@ Data available at level 1 (nation).
 
 
 \bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
 (confirmed cases, recovered, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_ourworldindata.org.R}{Our World in Data}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_ourworldindata.org.R}{Our World in Data}
 (tests, hospitalizations, vaccines);
 \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 (population 2018).

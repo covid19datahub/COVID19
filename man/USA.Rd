@@ -4,7 +4,7 @@
 \alias{USA}
 \title{United States}
 \source{
-https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/iso_USA.R
+https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/iso_USA.R
 }
 \usage{
 USA(level, ...)
@@ -16,29 +16,29 @@ Data available at level 1 (nation), level 2 (states), and level 3 (counties).
 
 
 \bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
 (confirmed cases, recovered, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_ourworldindata.org.R}{Our World in Data}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_ourworldindata.org.R}{Our World in Data}
 (tests, hospitalizations, vaccines);
 \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 (population 2018).
 
 \bold{Level 2.}
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_nytimes_git.R}{The New York Times}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.nytimes.covid19data.R}{The New York Times}
 (confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_healthdata_gov.R}{U.S. Department of Health & Human Services}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_healthdata_gov.R}{U.S. Department of Health & Human Services}
 (tests, hospitalized patients and intensive care);
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_covidtracking_com.R}{The Covid Tracking Project}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_covidtracking_com.R}{The Covid Tracking Project}
 (patients requiring ventilation, recovered);
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_ourworldindata.org.R}{Our World in Data}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_ourworldindata.org.R}{Our World in Data}
 (vaccines);
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
 (population 2020).
 
 \bold{Level 3.}
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_nytimes_git.R}{The New York Times}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.nytimes.covid19data.R}{The New York Times}
 (confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/70dcf69d4e62adebd67e985664a1d170c48b1796/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
+\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
 (population 2020).
 }
 

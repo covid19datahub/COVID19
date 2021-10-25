@@ -5,7 +5,7 @@
 #' @section Data sources:
 #' 
 #' \bold{Level 1.}
-#' \href{`r repo("nytimes_git")`}{The New York Times}
+#' \href{`r repo("github.nytimes.covid19data")`}{The New York Times}
 #' (confirmed cases, deaths); 
 #' \href{`r repo("ourworldindata.org")`}{Our World in Data} 
 #' (tests, hospitalizations, vaccines);
@@ -20,7 +20,7 @@ MNP <- function(level, ...){
   if(level>1) return(NULL)
   
   # confirmed and deaths
-  x1 <- nytimes_git(level = 2, fips = "69")
+  x1 <- github.nytimes.covid19data(level = 2, fips = "69")
   
   # tests, hospitalizations, vaccines
   x2 <- ourworldindata.org(id = "MNP")

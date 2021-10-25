@@ -1,4 +1,4 @@
-"id","id_covidtracking_com","id_healthdata_gov","id_github.cssegisanddata.covid19","id_nytimes_git","id_ourworldindata.org","id_github.oxcgrt.covidpolicytracker","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","latitude","longitude","population"
+"id","id_covidtracking_com","id_healthdata_gov","id_github.cssegisanddata.covid19","id_github.nytimes.covid19data","id_ourworldindata.org","id_github.oxcgrt.covidpolicytracker","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","latitude","longitude","population"
 ,,,,,,,,,,,,,,"-",,,
 "50a7f84e","AL","AL",,1,"Alabama","US_AL",2,"Alabama",,"Alabama","USA.1_1","Alabama","US01","01",32.615686415,-86.7325950053083,4903185
 "cec36ded","AK","AK",,2,"Alaska","US_AK",2,"Alaska",,"Alaska","USA.2_1","Alaska","US02","02",63.04973984,-152.036095522913,731545
