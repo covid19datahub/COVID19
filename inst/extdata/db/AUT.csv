@@ -1,4 +1,4 @@
-"id","id_gv_at","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
+"id","id_gv.at","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,"-",,,,
 "f0e77689",1,2,"Burgenland",,"AUT.1_1","Burgenland","AT.BU","1","AT11",47.47706604,16.4829431780637,293433
 "69ee2733",2,2,"Kärnten",,"AUT.2_1","Carinthia","AT.KA","2","AT21",46.75179291,13.9353850806805,560939

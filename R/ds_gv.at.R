@@ -1,19 +1,42 @@
-#' Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria (BMSGPK)
-#' 
-#' Imports confirmed cases, deaths, recovered, tests, hospitalizations, and vaccines at 
-#' national and state level for Austria from BMSGPK. Confirmed cases, recovered, and deaths are 
-#' also available at the district level.
-#' 
-#' We compute vaccines_1 as the number of first doses administrated and
-#' vaccines_2 as the number of second doses administrated (fully vaccinated).
-#' 
-#' @source 
-#' https://www.data.gv.at/covid-19/
-#' 
+#' Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria
+#'
+#' Data source for: Austria
+#'
+#' @param level 1, 2, 3
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#' - tests
+#' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
+#' - hospitalizations
+#' - intensive care
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#' - tests
+#' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
+#' - hospitalizations
+#' - intensive care
+#'
+#' @section Level 3:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#'
+#' @source https://www.data.gv.at/covid-19/
+#'
 #' @keywords internal
-#' 
-gv_at <- function(level){
-  if(level>3) return(NULL)
+#'
+gv.at <- function(level){
+  if(!level %in% 1:3) return(NULL)
   
   if(level==1 | level==2){
 
@@ -66,12 +89,12 @@ gv_at <- function(level){
     
     # first, second, and total doses by state
     x.vacc <- x.vacc %>%
-      dplyr::filter(state_id != 0) %>%
-      dplyr::group_by(date, state_id) %>%
-      dplyr::summarise(
+      filter(state_id != 0) %>%
+      group_by(date, state_id) %>%
+      summarise(
         vaccines = sum(doses),
-        vaccines_1 = sum(doses[n==1]),
-        vaccines_2 = sum(doses[n==2]))
+        people_vaccinated = sum(doses[n==1]),
+        people_fully_vaccinated = sum(doses[(n==1 & type=="Janssen") | (n==2 & type!="Janssen")]))
     
     if(level==1){
       
@@ -82,8 +105,8 @@ gv_at <- function(level){
       
       # merge
       x <- x.cases %>%
-        dplyr::full_join(x.hosp, by = "date") %>%
-        dplyr::full_join(x.vacc, by = "date")
+        full_join(x.hosp, by = "date") %>%
+        full_join(x.vacc, by = "date")
       
     }
     
@@ -96,8 +119,8 @@ gv_at <- function(level){
       
       # merge
       x <- x.cases %>%
-        dplyr::full_join(x.hosp, by = c("date","state_id")) %>%
-        dplyr::full_join(x.vacc, by = c("date","state_id"))
+        full_join(x.hosp, by = c("date","state_id")) %>%
+        full_join(x.vacc, by = c("date","state_id"))
       
     }
     
@@ -112,9 +135,8 @@ gv_at <- function(level){
     x <- read.csv(url, sep = ";")
     
     # format
-    x$date <- as.Date(x$date, format = "%d.%m.%Y")
     x <- map_data(x, c(
-      "date"             = "date",
+      "Time"             = "date",
       "Bezirk"           = "city",
       "GKZ"              = "city_id",
       "AnzEinwohner"     = "population",
@@ -123,10 +145,10 @@ gv_at <- function(level){
       "AnzahlTotSum"     = 'deaths'
     ))
     
+    # convert date
+    x$date <- as.Date(x$date, format = "%d.%m.%Y")
+    
   }
   
-  # return
   return(x)
-  
 }
-
