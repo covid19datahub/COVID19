@@ -12,10 +12,15 @@
 github.oxcgrt.covidpolicytracker <- function(level){
   if(!level %in% 1:3) return(NULL)
   
-  # download
+  # download"BRA" "CAN" "CHN" "GBR" "USA"
   url <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
   x   <- read.csv(url, cache = TRUE)
 
+  # issue a warning if new sub-national data are available
+  codes <- unique(x$CountryCode[!is.na(x$RegionCode)])
+  new <- setdiff(codes, c("BRA", "CAN", "CHN", "GBR", "USA"))
+  if(length(new)>0) warning(sprintf("OxCGRT: New sub-national level are available: %s", new))
+  
   # C8, H2, H3, H7 have no binary flag for geographic scope
   # -> they do not vary within the country 
   # -> set flag=1 (general policy)
