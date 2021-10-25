@@ -1,4 +1,4 @@
-"id","id_admin_ch","id_openzh_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
+"id","id_admin.ch","id_github.openzh.covid19","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,,"-",,,,
 "28dde504","AG","AG",2,"Aargau",,"Canton of Aargau","CHE.1_1","Aargau","CH.AG","AG","CH033",47.38207817,8.21456306226833,671000
 "450001ef","AR","AR",2,"Appenzell Ausserrhoden",,"Canton of Appenzell Ausserrhoden","CHE.2_1","Appenzell Ausserrhoden","CH.AR","AR","CH053",47.359020235,9.27961843142229,55200

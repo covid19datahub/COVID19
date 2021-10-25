@@ -30,7 +30,7 @@ BEL <- function(level){
     #' recovered.
     #'
     x2 <- github.cssegisanddata.covid19(country = "Belgium") %>%
-      select(date, recovered)
+      select(-one_of("confirmed", "deaths"))
     
     # merge
     x <- full_join(x1, x2, by = "date")

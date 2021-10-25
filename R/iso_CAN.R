@@ -20,7 +20,7 @@ CAN <- function(level){
     #' tests.
     #'
     x1 <- canada.ca(level = level) %>%
-      select(-one_of('vaccines', 'people_vaccinated', "people_fully_vaccinated"))
+      select(-one_of("vaccines", "people_vaccinated", "people_fully_vaccinated"))
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' total vaccine doses administered,
@@ -30,7 +30,7 @@ CAN <- function(level){
     #' intensive care.
     #'
     x2 <- ourworldindata.org(id = "CAN") %>%
-      select(-tests)
+      select(-one_of("tests"))
     
     # merge
     x <- full_join(x1, x2, by = "date")

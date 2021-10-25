@@ -5,8 +5,8 @@ LIE <- function(level, cache){
     return(NULL)
 
   # download
-  x <- admin_ch(id = "FL", level = 1)
-  y <- openzh_git(id = "FL", cache = cache)
+  x <- admin.ch(id = "FL", level = 1)
+  y <- github.openzh.covid19(id = "FL", cache = cache)
   
   # merge
   y <- y[,c("date", "hosp", "recovered")]
