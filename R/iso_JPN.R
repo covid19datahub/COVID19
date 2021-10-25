@@ -8,16 +8,16 @@ JPN <- function(level, cache){
   if(level==1){
   
     # download
-    x <- covid19jp_git(cache = cache, level = level)
+    x <- github.swsoyee.2019ncovjapan(cache = cache, level = level)
     
   }
   if(level==2){
     
     # download
-    x <- covid19jp_git(cache = cache, level = level)
+    x <- github.swsoyee.2019ncovjapan(cache = cache, level = level)
     
     # id
-    x$id <- id(x$jis_code, iso = "JPN", ds = "covid19jp_git", level = level)
+    x$id <- id(x$jis_code, iso = "JPN", ds = "github.swsoyee.2019ncovjapan", level = level)
     
   }
 

@@ -1,4 +1,4 @@
-"id","id_covid19jp_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
+"id","id_github.swsoyee.2019ncovjapan","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
 ,,,,,,,,"-",,,
 "e31eeb0f",23,2,"Aichi",,"JPN.1_1","JP.AI","JP23","23",35.000278475,137.278300379274,7552873
 "c7c3abfd",5,2,"Akita",,"JPN.2_1","JP.AK","JP05","05",39.68981743,140.439437637234,965968
