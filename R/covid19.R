@@ -1001,16 +1001,16 @@ ds_check_format <- function(x, level, ci = 0.95) {
     status <- status & check(ci < mean(x$vent <= x$icu | x$icu == 0, na.rm = T),
                              "vent > icu")
   
-  # TODO: checks with output
-  # ...
-  
-  # check ascending
+  # check cumulative/non-cumulative
   y <- x %>%
     
     dplyr::mutate(
       deaths    = if("deaths" %in% cols) deaths else 0,
       confirmed = if("confirmed" %in% cols) confirmed else 0,
       tests     = if("tests" %in% cols) tests else 0,
+      vaccines  = if("vaccines" %in% cols) vaccines else 0,
+      people_vaccinated       = if("people_vaccinated" %in% cols) people_vaccinated else 0,
+      people_fully_vaccinated = if("people_fully_vaccinated" %in% cols) people_fully_vaccinated else 0,
       recovered = if("recovered" %in% cols) recovered else 0,
       hosp      = if("hosp" %in% cols) hosp else 0,
       vent      = if("vent" %in% cols) vent else 0,
@@ -1024,6 +1024,9 @@ ds_check_format <- function(x, level, ci = 0.95) {
       d_deaths_nonneg    = ci < mean(diff(deaths)    >= 0, na.rm = T),
       d_confirmed_nonneg = ci < mean(diff(confirmed) >= 0, na.rm = T),
       d_tests_nonneg     = ci < mean(diff(tests)     >= 0, na.rm = T),
+      d_vaccines_nonneg  = ci < mean(diff(vaccines)     >= 0, na.rm = T),
+      d_people_vaccinated_nonneg       = ci < mean(diff(people_vaccinated)     >= 0, na.rm = T),
+      d_people_fully_vaccinated_nonneg = ci < mean(diff(people_fully_vaccinated)     >= 0, na.rm = T),
       d_recovered_nonneg = ci < mean(diff(recovered) >= 0, na.rm = T),
       d_hosp_anyneg      = all(hosp==0, na.rm = T) | any(diff(hosp) < 0, na.rm = T),
       d_vent_anyneg      = all(vent==0, na.rm = T) | any(diff(vent) < 0, na.rm = T),
@@ -1038,18 +1041,32 @@ ds_check_format <- function(x, level, ci = 0.95) {
   # tests not descending
   status <- status & check(y$d_tests_nonneg,
                            "are you sure 'tests' are cumulative counts?")
+  
+  # vaccines not descending
+  status <- status & check(y$d_vaccines_nonneg,
+                           "are you sure 'vaccines' are cumulative counts?")
+  
+  # people_vaccinated not descending
+  status <- status & check(y$d_people_vaccinated_nonneg,
+                           "are you sure 'people_vaccinated' are cumulative counts?")
+  
+  # people_fully_vaccinated not descending
+  status <- status & check(y$d_people_fully_vaccinated_nonneg,
+                           "are you sure 'people_fully_vaccinated' are cumulative counts?")
+  
   # recovered not descending
   status <- status & check(y$d_recovered_nonneg,
                            "are you sure 'recovered' are cumulative counts?")
-  # # hosp not cumulative (any descending)
-  # status <- status & check(y$d_hosp_anyneg,
-  #                          "are you sure 'hosp' are NOT cumulative counts?")
-  # # vent not cumulative (any descending)
-  # status <- status & check(y$d_vent_anyneg,
-  #                          "are you sure 'vent' are NOT cumulative counts?")
-  # # icu not cumulative (any descending)
-  # status <- status & check(y$d_icu_anyneg,
-  #                          "are you sure 'icu' are NOT cumulative counts?")
+  
+  # hosp not cumulative (any descending)
+  status <- status & check(y$d_hosp_anyneg,
+                           "are you sure 'hosp' are NOT cumulative counts?")
+  # vent not cumulative (any descending)
+  status <- status & check(y$d_vent_anyneg,
+                           "are you sure 'vent' are NOT cumulative counts?")
+  # icu not cumulative (any descending)
+  status <- status & check(y$d_icu_anyneg,
+                           "are you sure 'icu' are NOT cumulative counts?")
   
   # return
   return(status)
