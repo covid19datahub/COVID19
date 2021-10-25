@@ -1,8 +1,9 @@
 "id","id_sciensano.be","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,"-",,,,
 "1bb2de77","Brussels",2,"Bruxelles",,"Brussels","BEL.1_1","Brussels",,,"BE1",50.83866501,4.36682673564255,1208542
+"vd0neba8","Ostbelgien",2,"Ostbelgien",,,"BEL.3.2_0","Ostbelgien",,,"BE336",50.6292,6.0337,77949
 "b1a17459","Flanders",2,"Vlaanderen",,,"BEL.2_1","Flanders",,,"BE2",51.09333229,4.18082694851182,6589069
-"27e2b6a0","Wallonia",2,"Wallonie",,,"BEL.3_1","Wallonia",,,"BE3",50.153081895,5.41806775206372,3633795
+"27e2b6a0","Wallonia",2,"Wallonie",,,"BEL.3.1_0","Wallonia",,,"BE3",50.153081895,5.41806775206372,3633795
 "1a7b7a6a","Brussels",3,"Bruxelles","Bruxelles",,"BEL.1.1_1",,"BEBRU",,"BE10",50.83866501,4.36682673564255,1208542
 "3e028814","Antwerpen",3,"Vlaanderen","Antwerpen",,"BEL.2.1_1",,"BEVAN",,"BE21",51.252593995,4.76433117351619,1857986
 "602331fd","Limburg",3,"Vlaanderen","Limburg",,"BEL.2.2_1",,"BEVLI",,"BE22",50.994646075,5.43898830304919,874048
