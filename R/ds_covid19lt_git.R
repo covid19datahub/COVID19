@@ -19,13 +19,14 @@ covid19lt_git <- function(level, cache) {
             "recovered"    = "recovered",
             "vaccinated_1" = "vaccines_1",
             "vaccinated_2" = "vaccines_2",
+            "vaccinated_3" = "vaccines_3",
             "icu"          = "icu",
             "ventilated"   = "vent",
             "hospitalized" = "hosp"
         ))
         
         # total doses
-        x$vaccines <- x$vaccines_1 + x$vaccines_2
+        x$vaccines <- x$vaccines_1 + x$vaccines_2 + x$vaccines_3
         
     }
     if(level >= 2){
@@ -45,11 +46,12 @@ covid19lt_git <- function(level, cache) {
             "recovered"    = "recovered",
             "vaccinated_1" = "vaccines_1",
             "vaccinated_2" = "vaccines_2",
+            "vaccinated_3" = "vaccines_3",
             "population"   = "population"
         ))
         
         # total doses
-        x$vaccines <- x$vaccines_1 + x$vaccines_2
+        x$vaccines <- x$vaccines_1 + x$vaccines_2 + x$vaccines_3
         
     }
     
