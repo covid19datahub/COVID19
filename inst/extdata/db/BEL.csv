@@ -1,4 +1,4 @@
-"id","id_sciensano_be","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
+"id","id_sciensano.be","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,"-",,,,
 "1bb2de77","Brussels",2,"Bruxelles",,"Brussels","BEL.1_1","Brussels",,,"BE1",50.83866501,4.36682673564255,1208542
 "b1a17459","Flanders",2,"Vlaanderen",,,"BEL.2_1","Flanders",,,"BE2",51.09333229,4.18082694851182,6589069
