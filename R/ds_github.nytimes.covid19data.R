@@ -59,5 +59,3 @@ github.nytimes.covid19data <- function(level, fips = NULL){
   
   return(x) 
 }
-
-

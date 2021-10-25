@@ -1,4 +1,4 @@
-"id","id_covid19au_git","id_github.cssegisanddata.covid19","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
+"id","id_github.m3it.covid19data","id_github.cssegisanddata.covid19","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
 ,,,,,,,,,,,"-",,,
 "f42f23e3","Australian Capital Territory","Australian Capital Territory",2,"Australian Capital Territory",,"Australian Capital Territory","AUS.2_1","Australian Capital Territory","AU.AC","AUACT","8",-35.52241325,148.956342562477,428060
 "5c4dd6e0","New South Wales","New South Wales",2,"New South Wales",,"New South Wales","AUS.5_1","New South Wales","AU.NS","AUNSW","1",-32.83105087,146.452446107272,8117976

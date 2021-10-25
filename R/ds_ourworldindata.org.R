@@ -87,4 +87,3 @@ ourworldindata.org <- function(level = 1, id = NULL){
   
   return(x)
 }
-
