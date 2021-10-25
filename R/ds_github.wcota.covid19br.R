@@ -52,9 +52,9 @@ github.wcota.covid19br <- function(level){
     # total number of doses
     x <- x %>%
       dplyr::mutate(
-        vaccines = first + second + oneshot + extra,
-        vaccines_1 = first + oneshot,
-        vaccines_2 = second + oneshot)
+        vaccines = first + replace_na(second, 0) + replace_na(oneshot, 0) + replace_na(extra, 0),
+        people_vaccinated = first + replace_na(oneshot, 0),
+        people_fully_vaccinated = second + replace_na(oneshot, 0))
 
     # filter
     idx <- which(x$state=="TOTAL")
@@ -91,7 +91,5 @@ github.wcota.covid19br <- function(level){
   # date
   x$date <- as.Date(x$date)
   
-  # return
   return(x)
-  
 }
