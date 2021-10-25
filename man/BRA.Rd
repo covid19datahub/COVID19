@@ -4,7 +4,7 @@
 \alias{BRA}
 \title{Brazil}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/iso_BRA.R}
+\url{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/iso_BRA.R}
 }
 \usage{
 BRA(level, ...)
@@ -16,8 +16,8 @@ Brazil
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
 confirmed cases,
 deaths,
 recovered,
@@ -29,8 +29,8 @@ total vaccine doses administered.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/inst/extdata/db/BRA.csv}{Instituto Brasileiro de Geografia e Estatistica (2020)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/inst/extdata/db/BRA.csv}{Instituto Brasileiro de Geografia e Estatistica (2020)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
 confirmed cases,
 deaths,
 recovered,
@@ -42,11 +42,11 @@ total vaccine doses administered.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/inst/extdata/db/BRA.csv}{Wesley Cota (2020)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/inst/extdata/db/BRA.csv}{Wesley Cota (2020)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
 confirmed cases,
 deaths.
-\item \href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_github.eguidotti.covid19br.R}{Emanuele Guidotti}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_github.eguidotti.covid19br.R}{Emanuele Guidotti}:
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated.

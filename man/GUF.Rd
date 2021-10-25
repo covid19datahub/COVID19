@@ -4,7 +4,7 @@
 \alias{GUF}
 \title{French Guiana}
 \source{
-https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/iso_GUF.R
+https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/iso_GUF.R
 }
 \usage{
 GUF(level, ...)
@@ -16,7 +16,7 @@ Data available at level 1 (nation).
 
 
 \bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/6482ecb1ca3fb0611afe24428190df415f41446e/R/ds_gouv_fr.R}{Santé publique France}
+\href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_gouv_fr.R}{Santé publique France}
 (confirmed cases, deaths, tests, hospitalizations, vaccines);
 \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 (population 2018).
