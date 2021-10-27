@@ -1,18 +1,77 @@
-CHL <- function(level, cache) {
+#' Chile
+#'
+#' @source \url{`r repo("CHL")`}
+#' 
+CHL <- function(level){
+  x <- NULL
   
-  # fallback
-  if(level > 3) 
-    return(NULL)
+  #' @concept Level 1
+  #' @section Data Sources:
+  #' 
+  #' ## Level 1
+  #' `r docstring("CHL", 1)`
+  #' 
+  if(level==1){
+    
+    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated,
+    #' hospitalizations,
+    #' intensive care,
+    #' patients requiring ventilation.
+    #'
+    x <- github.minciencia.datoscovid19(level = level)
+    
+  }
   
-  # download
-  x <- covid19chile_git(level = level, cache = cache)
+  #' @concept Level 2
+  #' @section Data Sources:
+  #' 
+  #' ## Level 2
+  #' `r docstring("CHL", 2)`
+  #' 
+  if(level==2){
+    
+    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated,
+    #' intensive care.
+    #'
+    x <- github.minciencia.datoscovid19(level = level)
+    x$id <- id(x$region, iso = "CHL", ds = "github.minciencia.datoscovid19", level = level)
+    
+  }
   
-  # id
-  if(level == 2)
-    x$id <- id(x$Codigo.region, iso = "CHL", ds = "covid19chile_git", level = level)
-  if(level == 3)
-    x$id <- id(x$Codigo.comuna, iso = "CHL", ds = "covid19chile_git", level = level)
+  #' @concept Level 3
+  #' @section Data Sources:
+  #' 
+  #' ## Level 3
+  #' `r docstring("CHL", 3)`
+  #' 
+  if(level==3){  
+    
+    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+    #' confirmed cases,
+    #' deaths,
+    #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
+    #'
+    x <- github.minciencia.datoscovid19(level = level)
+    x$id <- id(x$municipality, iso = "CHL", ds = "github.minciencia.datoscovid19", level = level)
+    
+  }
   
-  # return
   return(x)
 }

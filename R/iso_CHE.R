@@ -29,7 +29,7 @@ CHE <- function(level){
     #' recovered.
     #'
     x2 <- github.cssegisanddata.covid19(country = "Switzerland") %>% 
-      select(-one_of("confirmed", "deaths"))
+      select(-c("confirmed", "deaths"))
     
     # merge 
     x <- full_join(x1, x2, by = "date")
@@ -62,7 +62,7 @@ CHE <- function(level){
     #' patients requiring ventilation.
     #'
     x2 <- github.openzh.covid19(state = "CH", level = level) %>% 
-      select(-one_of("confirmed", "deaths", "tests", "hosp", "icu")) %>%
+      select(-c("confirmed", "deaths", "tests", "hosp", "icu")) %>%
       mutate(id = id(code, iso = "CHE", ds = "github.openzh.covid19", level = level))
     
     # merge
