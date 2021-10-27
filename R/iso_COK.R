@@ -1,33 +1,39 @@
 #' Cook Islands
+#'
+#' @source \url{`r repo("COK")`}
 #' 
-#' Data available at level 1 (nation).
-#' 
-#' @section Data sources:
-#' 
-#' \bold{Level 1.}
-#' \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}
-#' (confirmed cases, recovered, deaths); 
-#' \href{`r repo("ourworldindata.org")`}{Our World in Data} 
-#' (tests, hospitalizations, vaccines);
-#' \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
-#' (population 2018).
-#' 
-#' @source `r repo("COK")`
-#' 
-#' @concept level 1
-#' 
-COK <- function(level, ...){
-  if(level>1) return(NULL)
+COK <- function(level){
+  x <- NULL
   
-  # confirmed, recovered, deaths
-  x1 <- github.cssegisanddata.covid19(file = "global", level = 2, state = "Cook Islands")
-  
-  # tests, hospitalizations, vaccines
-  x2 <- ourworldindata.org(id = "COK")
-  
-  # merge
-  x <- merge(x1, x2, by = "date", all = TRUE)
+  #' @concept Level 1
+  #' @section Data Sources:
+  #' 
+  #' ## Level 1
+  #' `r docstring("COK", 1)`
+  #' 
+  if(level==1){
+    
+    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered.
+    #'
+    x1 <- github.cssegisanddata.covid19(state = "Cook Islands", level = 2)
+    
+    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
+    #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated,
+    #' hospitalizations,
+    #' intensive care.
+    #'
+    x2 <- ourworldindata.org(id = "COK")
+    
+    # merge
+    x <- full_join(x1, x2, by = "date")
+    
+  }
   
   return(x)
-  
 }
