@@ -1,10 +1,34 @@
-gov_de <- function(cache, level){
-
-  # url
-  url <- "https://www.arcgis.com/sharing/rest/content/items/f10774f1c63e40168479a1feb6c7ca74/data"
+#' Robert Koch Institute
+#'
+#' Data source for: Germany
+#'
+#' @param level 1, 2, 3
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#'
+#' @section Level 3:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#'
+#' @source https://www.arcgis.com/home/item.html?id=f10774f1c63e40168479a1feb6c7ca74
+#'
+#' @keywords internal
+#'
+arcgis.de <- function(level){
+  if(!level %in% 1:3) return(NULL)
   
   # download
-  x <- read.csv(url, cache = cache)
+  url <- "https://www.arcgis.com/sharing/rest/content/items/f10774f1c63e40168479a1feb6c7ca74/data"
+  x <- data.table::fread(url)
   
   # format
   x <- map_data(x, c(
@@ -47,33 +71,27 @@ gov_de <- function(cache, level){
   # 
   # (Abbreviated case/death/recovery as cdr)
   x <- x %>%
-    
-    dplyr::mutate(
+    # drop negative counts
+    mutate(
       confirmed = replace(confirmed, confirmed < 0, 0),
       deaths    = replace(deaths, deaths < 0, 0),
-      recovered = replace(recovered, recovered < 0, 0)
-    ) %>%
-    
-    dplyr::group_by_at(c('date', by)) %>%
-  
-    dplyr::summarise(
+      recovered = replace(recovered, recovered < 0, 0)) %>%
+    # group by date and admin area
+    group_by_at(c('date', by)) %>%
+    # compute total counts
+    summarise(
       confirmed = sum(confirmed),
       deaths    = sum(deaths),
-      recovered = sum(recovered),
-      .groups   = 'keep'
-    ) %>%
-    
-    dplyr::group_by_at(by) %>%
-    
-    dplyr::arrange(date) %>%
-    
-    dplyr::mutate(
-      confirmed = cumsum(confirmed, na.rm = TRUE),
-      deaths    = cumsum(deaths, na.rm = TRUE),
-      recovered = cumsum(recovered, na.rm = TRUE)
-    )
+      recovered = sum(recovered)) %>%
+    # group by admin area
+    group_by_at(by) %>%
+    # sort by date
+    arrange(date) %>%
+    # cumulate
+    mutate(
+      confirmed = cumsum(confirmed),
+      deaths    = cumsum(deaths),
+      recovered = cumsum(recovered))
   
-  # return
   return(x) 
-
 }
