@@ -1,4 +1,4 @@
-"id","id_gouv_fr","id_opencovid_fr","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
+"id","id_gouv.fr","id_opencovid_fr","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,,,"-",,,,
 "fdb631e6","84","REG-84",2,"Auvergne-Rhône-Alpes",,"Rhône-Alpes Region","FRA.1_1","Auvergne-Rhône-Alpes","FR.AR",,"84","FRK",45.45643425,4.80397290505759,8032377
 "9e5088d6","27","REG-27",2,"Bourgogne-Franche-Comté",,"Franche-Comté Region","FRA.2_1","Bourgogne-Franche-Comté","FR.BF",,"27","FRC",47.277549745,4.95167423049027,2783039
