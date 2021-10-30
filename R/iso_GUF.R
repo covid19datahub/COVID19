@@ -1,25 +1,31 @@
 #' French Guiana
+#'
+#' @source \url{`r repo("GUF")`}
 #' 
-#' Data available at level 1 (nation).
-#' 
-#' @section Data sources:
-#' 
-#' \bold{Level 1.}
-#' \href{`r repo("gouv.fr")`}{Santé publique France}
-#' (confirmed cases, deaths, tests, hospitalizations, vaccines); 
-#' \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
-#' (population 2018).
-#' 
-#' @source `r repo("GUF")`
-#' 
-#' @concept level 1
-#' 
-GUF <- function(level, ...){
-  if(level>1) return(NULL)
+GUF <- function(level){
+  x <- NULL
   
-  # confirmed, deaths, tests, hospitalizations, vaccines
-  x <- gouv.fr(level = 3, dep = "973")  
+  #' @concept Level 1
+  #' @section Data Sources:
+  #' 
+  #' ## Level 1
+  #' `r docstring("GUF", 1)`
+  #' 
+  if(level==1){
+    
+    #' - \href{`r repo("gouv.fr")`}{Santé Publique France}:
+    #' confirmed cases,
+    #' deaths,
+    #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated,
+    #' hospitalizations,
+    #' intensive care.
+    #'
+    x <- gouv.fr(dep = "973", level = 3)
+    
+  }
   
   return(x)
-  
 }
