@@ -28,7 +28,7 @@ GLP <- function(level){
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' recovered.
     #'
-    x2 <- github.cssegisanddata.covid19(country = "Guadeloupe") %>%
+    x2 <- github.cssegisanddata.covid19(country = "Guadeloupe", level = 2) %>%
       select(-c("confirmed", "deaths"))
     
     # merge
