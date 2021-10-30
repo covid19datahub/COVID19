@@ -1,4 +1,4 @@
-"id","id_mscbs_es","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
+"id","id_isciii.es","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,"-",,,,
 "65d624b3","AN",2,"Andalucía",,"ESP.1_1","Andalusia","ES.AN","ESAN","01","ES61",37.364515305,-4.54243389082257,8427405
 "71d778fc","AR",2,"Aragón",,"ESP.2_1","Aragon","ES.AR","ESAR","02","ES24",41.38541603,-0.839715375341938,1320586
@@ -65,7 +65,7 @@
 "41083735","PO",3,"Galicia","Pontevedra","ESP.12.4_1",,"ES.GA.PV",,"36","ES114",42.364723205,-8.53421602734543,954877
 "af065619","PM",3,"Islas Baleares","Baleares","ESP.13.1_1",,"ES.PM.BL",,"07","ES532",39.613332745,2.88000059,1100503
 "a77f6a68","LO",3,"La Rioja","La Rioja","ESP.15.1_1",,"ES.LO.LR",,"26","ES230",42.284181595,-2.48298330903961,321173
-"5eb1b237","ME",3,"Melilla","Melilla","ESP.7.2_1",,"ES.ML.ME",,"52","ES640",35.30152893,-2.95040840631618,78476
+"5eb1b237","ML",3,"Melilla","Melilla","ESP.7.2_1",,"ES.ML.ME",,"52","ES640",35.30152893,-2.95040840631618,78476
 "fe313586","VI",3,"País Vasco","Álava","ESP.16.1_1",,"ES.PV.AA",,"01","ES211",42.84442329,-2.68209936715302,320778
 "7e2438b9","SS",3,"País Vasco","Guipúzcoa","ESP.16.2_1",,"ES.PV.GP",,"20","ES212",43.144805905,-2.20418521365678,708425
 "d09fe2d3","BI",3,"País Vasco","Vizcaya","ESP.16.3_1",,"ES.PV.VZ",,"48","ES213",43.238744735,-2.85200409578912,1156190
