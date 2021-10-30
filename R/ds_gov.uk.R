@@ -1,4 +1,44 @@
-gov_uk <- function(level){
+#' UK Health Security Agency
+#'
+#' Data source for: United Kingdom
+#'
+#' @param level 1, 2, 3
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#' - tests
+#' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
+#' - hospitalizations
+#' - patients requiring ventilation
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#' - tests
+#' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
+#' - hospitalizations
+#' - patients requiring ventilation
+#' 
+#' @section Level 3:
+#' - confirmed cases
+#' - deaths
+#' - tests
+#' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
+#' - hospitalizations
+#' - patients requiring ventilation
+#'
+#' @source https://coronavirus.data.gov.uk
+#'
+#' @keywords internal
+#'
+gov.uk <- function(level){
   
   # Extracts paginated data by requesting all of the pages
   # and combining the results.
@@ -72,12 +112,12 @@ gov_uk <- function(level){
   x <- NULL
   for(a in area_type){
     
-    # Create filters:
+    # create filters
     filters <- c(
       sprintf("areaType=%s", a)
     )
     
-    # metrics
+    # vaccination metrics
     dose1 <- "cumPeopleVaccinatedFirstDoseByVaccinationDate"
     dose2 <- "cumPeopleVaccinatedSecondDoseByVaccinationDate"
     if(a %in% c("overview", "nation")){
@@ -85,7 +125,7 @@ gov_uk <- function(level){
       dose2 <- "cumPeopleVaccinatedSecondDoseByPublishDate"
     }
     
-    # Create structure. It seems that numbers are not allowed in renaming!
+    # create structure
     structure <- list(
       "date"       = "date",
       "type"       = "areaType",
@@ -94,18 +134,17 @@ gov_uk <- function(level){
       "confirmed"  = "cumCasesBySpecimenDate",
       "deaths"     = "cumDeaths28DaysByDeathDate",
       "tests"      = "cumVirusTests",
-      "dose1"      =  dose1,
-      "dose2"      =  dose2,
       "vent"       = "covidOccupiedMVBeds",
-      "hosp"       = "hospitalCases"
+      "hosp"       = "hospitalCases",
+      "vaccines"   = "cumVaccinesGivenByPublishDate",
+      "people_vaccinated" =  dose1,
+      "people_fully_vaccinated" =  dose2
     )
     
+    # download data
     x <- dplyr::bind_rows(x, get_paginated_data(filters, structure))
     
   }
-  
-  # vaccines
-  x$vaccines <- rowSums(x[,c("dose1", "dose2")], na.rm = TRUE)
   
   # clean
   x <- x[!duplicated(x[,c("date","code")]),]
@@ -113,9 +152,5 @@ gov_uk <- function(level){
   # date
   x$date <- as.Date(x$date)
   
-  # return
   return(x) 
-  
 }
-
-
