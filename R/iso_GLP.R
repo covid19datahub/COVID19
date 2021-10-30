@@ -23,16 +23,7 @@ GLP <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x1 <- gouv.fr(dep = "971", level = 3)
-    
-    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
-    #' recovered.
-    #'
-    x2 <- github.cssegisanddata.covid19(country = "Guadeloupe", level = 2) %>%
-      select(-c("confirmed", "deaths"))
-    
-    # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- gouv.fr(dep = "971", level = 3)
     
   }
   

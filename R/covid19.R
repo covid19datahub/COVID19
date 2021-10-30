@@ -40,11 +40,12 @@ covid19 <- function(country = NULL, level = 1){
   db <- db[!is.na(db$id),]
   
   # world
-  w <- try(cachecall("world", level = level))
-  if("try-error" %in% class(w)){
-    stop("WORLD: try-error")
-    w <- NULL
-  }
+  w <- NULL
+  # w <- try(cachecall("world", level = level))
+  # if("try-error" %in% class(w)){
+  #   stop("WORLD: try-error")
+  #   w <- NULL
+  # }
   
   if(!is.null(w)){
     if(!ds_check_format(w, level = level, ci = 0.85)){
