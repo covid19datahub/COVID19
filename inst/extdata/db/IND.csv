@@ -1,4 +1,4 @@
-"id","id_covid19india_org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
+"id","id_covid19india.org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
 ,,,,,,,,,,"-",,,
 "73f4c613","AN",2,"Andaman And Nicobar Islands",,,"IND.1_1","Andaman and Nicobar Islands","IN.AN","INAN","AN",12.611581325,92.8316959709727,380581
 "89fbfb70","AP",2,"Andhra Pradesh",,,"IND.2_1","Andhra Pradesh","IN.AP","INAP","AP",15.88444519,79.6146289958122,49386799
