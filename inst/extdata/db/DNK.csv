@@ -1,4 +1,4 @@
-"id","id_ssi_dk","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
+"id","id_ssi.dk","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,"-",,,,
 "814fed25","Hovedstaden",2,"Hovedstaden",,"DNK.1_1","Capital Region of Denmark","DK.HS","1084","DK01",55.8617878,12.3136134266885,1631635
 "9995c4f9","Midtjylland",2,"Midtjylland",,"DNK.2_1","Central Denmark Region","DK.MJ","1082","DK04",56.23555565,9.234443665,1212787
@@ -10,6 +10,7 @@
 "e2f91a8d","151",3,"Hovedstaden","Ballerup","DNK.1.3_1",,"DK.HS.BA","151","DK012",55.7306346893311,12.3649432507305,46759
 "ee421cb5","400",3,"Hovedstaden","Bornholm","DNK.1.4_1",,"DK.HS.BO","400","DK014",55.1431941986085,14.9227781295777,43347
 "0cf77ba1","153",3,"Hovedstaden","Brøndby","DNK.1.5_1",,"DK.HS.BR","153","DK012",55.6375827789307,12.4059004141025,34513
+"hv63evc2","411",3,"Hovedstaden","Christiansø","DNK.1.6_1",,"DK.HS.CH","411","DK014",55.3199310302735,15.1883335113526,98
 "e594de94","155",3,"Hovedstaden","Dragør","DNK.1.7_1",,"DK.HS.DR","155","DK011",55.5816669464113,12.63812812074,13156
 "8ea3a503","240",3,"Hovedstaden","Egedal","DNK.1.8_1",,"DK.HS.EG","240","DK013",55.7608089447022,12.2144602699797,39267
 "f3d45146","210",3,"Hovedstaden","Fredensborg","DNK.1.9_1",,"DK.HS.FN","210","DK013",55.9507732391358,12.4428002478063,39187
