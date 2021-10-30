@@ -319,17 +319,6 @@ cachecall <- function(fun, ...){
   
 }
 
-fix <- function(x, iso){
-  
-  x$date <- as.character(x$date)
-  x <- x %>% dplyr::bind_rows(extdata("fix",sprintf("%s.csv",iso)))
-  x <- x[!duplicated(x$date, fromLast = TRUE),]
-  x$date <- as.Date(x$date)
-  
-  return(x)
-  
-}
-
 #' Convert identifiers
 #'
 #' Map the ids of administrative areas used by the data provider to the 
