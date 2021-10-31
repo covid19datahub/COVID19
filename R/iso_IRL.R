@@ -29,8 +29,7 @@ IRL <- function(level){
     #' recovered.
     #'
     x2 <- github.cssegisanddata.covid19(country = "Ireland") %>%
-      select(-c("confirmed", "deaths")) %>%
-      filter(date <= "2020-06-24")
+      select(-c("confirmed", "deaths"))
     
     # merge
     x <- full_join(x1, x2, by = "date")
