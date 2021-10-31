@@ -4,7 +4,7 @@
 \alias{AUT}
 \title{Austria}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/iso_AUT.R}
+\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_AUT.R}
 }
 \usage{
 AUT(level)
@@ -16,8 +16,8 @@ Austria
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
 confirmed cases,
 deaths,
 recovered,
@@ -33,7 +33,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
 confirmed cases,
 deaths,
 recovered,
@@ -49,7 +49,7 @@ intensive care.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
 confirmed cases,
 deaths,
 recovered.

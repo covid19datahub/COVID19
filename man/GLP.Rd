@@ -4,22 +4,30 @@
 \alias{GLP}
 \title{Guadeloupe}
 \source{
-https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/iso_GLP.R
+\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_GLP.R}
 }
 \usage{
-GLP(level, ...)
+GLP(level)
 }
 \description{
-Data available at level 1 (nation).
+Guadeloupe
 }
-\section{Data sources}{
+\section{Data Sources}{
 
-
-\bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_gouv.fr.R}{Santé publique France}
-(confirmed cases, deaths, tests, hospitalizations, vaccines);
-\href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
-(population 2018).
+\subsection{Level 1}{
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_gouv.fr.R}{Santé Publique France}:
+confirmed cases,
+deaths,
+tests,
+total vaccine doses administered,
+people with at least one vaccine dose,
+people fully vaccinated,
+hospitalizations,
+intensive care.
+}
+}
 }
 
-\concept{level 1}
+\concept{Level 1}

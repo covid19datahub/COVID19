@@ -4,24 +4,31 @@
 \alias{GUM}
 \title{Guam}
 \source{
-https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/iso_GUM.R
+\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_GUM.R}
 }
 \usage{
-GUM(level, ...)
+GUM(level)
 }
 \description{
-Data available at level 1 (nation).
+Guam
 }
-\section{Data sources}{
+\section{Data Sources}{
 
-
-\bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_github.nytimes.covid19data.R}{The New York Times}
-(confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_ourworldindata.org.R}{Our World in Data}
-(tests, hospitalizations, vaccines);
-\href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
-(population 2018).
+\subsection{Level 1}{
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.nytimes.covid19data.R}{The New York Times}:
+confirmed cases,
+deaths.
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_ourworldindata.org.R}{Our World in Data}:
+tests,
+total vaccine doses administered,
+people with at least one vaccine dose,
+people fully vaccinated,
+hospitalizations,
+intensive care.
+}
+}
 }
 
-\concept{level 1}
+\concept{Level 1}

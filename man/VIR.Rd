@@ -4,7 +4,7 @@
 \alias{VIR}
 \title{Virgin Islands, U.S.}
 \source{
-https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/iso_VIR.R
+https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_VIR.R
 }
 \usage{
 VIR(level, ...)
@@ -16,9 +16,9 @@ Data available at level 1 (nation).
 
 
 \bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_github.nytimes.covid19data.R}{The New York Times}
+\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.nytimes.covid19data.R}{The New York Times}
 (confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_ourworldindata.org.R}{Our World in Data}
+\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_ourworldindata.org.R}{Our World in Data}
 (tests, hospitalizations, vaccines);
 \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
 (population 2018).

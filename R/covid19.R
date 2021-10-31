@@ -196,6 +196,7 @@ repo <- function(x, csv = FALSE){
     prefix <- ifelse(grepl("^[A-Z]{3}$", x), "iso", "ds")
     url <- sprintf("%s/R/%s_%s.R", master, prefix, x)
   }
+  Sys.sleep(runif(1))
   rvest::read_html(url) %>%
     rvest::html_nodes("clipboard-copy[aria-label='Copy permalink'][data-toggle-for='blob-more-options-details']") %>% 
     rvest::html_attr('value')

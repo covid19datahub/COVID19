@@ -4,7 +4,7 @@
 \alias{AUS}
 \title{Australia}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/iso_AUS.R}
+\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_AUS.R}
 }
 \usage{
 AUS(level)
@@ -16,8 +16,8 @@ Australia
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_github.m3it.covid19data.R}{Matt Bolton}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.m3it.covid19data.R}{Matt Bolton}:
 confirmed cases,
 deaths,
 recovered,
@@ -34,7 +34,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/10eca84e95eb6e62d36b801bfb08b59de7e6c080/R/ds_github.m3it.covid19data.R}{Matt Bolton}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.m3it.covid19data.R}{Matt Bolton}:
 confirmed cases,
 deaths,
 recovered,
