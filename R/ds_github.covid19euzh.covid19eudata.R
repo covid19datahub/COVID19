@@ -1,14 +1,24 @@
-covid19pl_git <- function(level){
-
-  # This source is broken.
-  # See https://github.com/covid19-eu-zh/covid19-eu-data/issues/64
-  
-  # check
-  if(level!=2)
-    return(NULL)
+#' COVID-19 European Chinese Channel
+#'
+#' Data source for: Poland
+#'
+#' @param level 2
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#' - tests
+#'
+#' @source https://github.com/covid19-eu-zh/covid19-eu-data
+#'
+#' @keywords internal
+#'
+github.covid19euzh.covid19eudata <- function(level){
+  if(level!=2) return(NULL)
   
   # download
-  x <- read.csv("https://raw.githubusercontent.com/covid19-eu-zh/covid19-eu-data/master/dataset/covid-19-pl.csv")
+  url <- "https://raw.githubusercontent.com/covid19-eu-zh/covid19-eu-data/master/dataset/covid-19-pl.csv"
+  x <- read.csv(url)
 
   # clean
   x$nuts_2 <- gsub("warmi.*sko-mazurskie", "warminsko-mazurskie", x$nuts_2)
@@ -26,6 +36,9 @@ covid19pl_git <- function(level){
     "deaths" = "deaths",
     "tests" = "tests"
   ))
+  
+  # remove broken nuts
+  x <- x[which(!is.na(x$nuts) & !startsWith(x$nuts, "https://")),]
   
   # date
   x$date <- as.Date(x$date, format = "%Y-%m-%d")
