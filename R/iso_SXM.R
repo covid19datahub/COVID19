@@ -1,9 +1,39 @@
-SXM <- function(level, ...){
+#' Sint Maarten
+#'
+#' @source \url{`r repo("SXM")`}
+#' 
+SXM <- function(level){
+  x <- NULL
   
-  if(level>1) return(NULL)
-  
-  x <- github.cssegisanddata.covid19(file = "global", cache = TRUE, level = 2, state = "Sint Maarten")
+  #' @concept Level 1
+  #' @section Data Sources:
+  #' 
+  #' ## Level 1
+  #' `r docstring("SXM", 1)`
+  #' 
+  if(level==1){
+    
+    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered.
+    #'
+    x1 <- github.cssegisanddata.covid19(state = "Sint Maarten", level = 2)
+    
+    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
+    #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated,
+    #' hospitalizations,
+    #' intensive care.
+    #'
+    x2 <- ourworldindata.org(id = "SXM")
+    
+    # merge
+    x <- full_join(x1, x2, by = "date")
+    
+  }
   
   return(x)
-  
 }
