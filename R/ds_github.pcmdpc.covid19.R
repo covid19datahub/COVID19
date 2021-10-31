@@ -1,17 +1,35 @@
 #' Ministero della Salute
-#' 
-#' Imports confirmed cases, deaths, recovered, tests, hospitalizations and 
-#' intensive care from the Italian Ministry of Health. The data are available
-#' at national and regional level. Only confirmed cases are available at province 
-#' level.
-#' 
-#' @source 
-#' https://github.com/pcm-dpc/COVID-19
+#'
+#' Data source for: Italy
+#'
+#' @param level 1, 2, 3
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#' - tests
+#' - hospitalizations
+#' - intensive care
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#' - recovered
+#' - tests
+#' - hospitalizations
+#' - intensive care
+#'
+#' @section Level 3:
+#' - confirmed cases
+#'
+#' @source https://github.com/pcm-dpc/COVID-19
 #' 
 #' @keywords internal
-#' 
-pcmdpc_git <- function(level){
-
+#'
+github.pcmdpc.covid19 <- function(level){
+  if(!level %in% 1:3) return(NULL)
+                             
   # source
   repo <- "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/"
   urls <- c(
@@ -49,7 +67,5 @@ pcmdpc_git <- function(level){
     'terapia_intensiva'       = 'icu' 
   ))
   
-  # return
   return(x)
-  
 }

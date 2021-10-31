@@ -1,4 +1,4 @@
-"id","id_ceeds_git","id_covid19vaccini_git","id_pcmdpc_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
+"id","id_ceeds_git","id_github.italia.covid19opendatavaccini","id_github.pcmdpc.covid19","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,,,"-",,,,
 "ed79e985",,"ITF1","Abruzzo",2,"Abruzzo",,"Abruzzo Region","ITA.1_1","Abruzzo","ITF1","13","ITF1",42.658334735,13.6997140475971,1315196
 "4bca420b",,"ITF5","Basilicata",2,"Basilicata",,"Basilicata Region","ITA.3_1","Basilicata","ITF5","17","ITF5",40.517780305,15.822553842525,567118

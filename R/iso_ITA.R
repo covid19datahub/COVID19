@@ -1,51 +1,87 @@
-ITA <- function(level, ...){
-  if(level>3) return(NULL)
-
+#' Italy
+#'
+#' @source \url{`r repo("ITA")`}
+#' 
+ITA <- function(level){
+  x <- NULL
+  
+  #' @concept Level 1
+  #' @section Data Sources:
+  #' 
+  #' ## Level 1
+  #' `r docstring("ITA", 1)`
+  #' 
   if(level==1){
-
-    # confirmed cases, deaths, recovered, tests, hospitalizations
-    x <- pcmdpc_git(level = level)
     
-    # vaccines  
-    y <- covid19vaccini_git(level = level)
+    #' - \href{`r repo("github.pcmdpc.covid19")`}{Ministero della Salute}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' hospitalizations,
+    #' intensive care.
+    #'
+    x1 <- github.pcmdpc.covid19(level = level)
+    
+    #' - \href{`r repo("github.italia.covid19opendatavaccini")`}{Commissario straordinario per l'emergenza Covid-19, Presidenza del Consiglio dei Ministri}:
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
+    #'
+    x2 <- github.italia.covid19opendatavaccini(level = level)
     
     # merge
-    x <- merge(x, y, by = "date", all = TRUE)
+    x <- full_join(x1, x2, by = "date")
     
   }
   
+  #' @concept Level 2
+  #' @section Data Sources:
+  #' 
+  #' ## Level 2
+  #' `r docstring("ITA", 2)`
+  #' 
   if(level==2){
     
-    # confirmed cases, deaths, recovered, tests, hospitalizations
-    x <- pcmdpc_git(level = level)
-    x$id <- id(x$state, iso = "ITA", ds = "pcmdpc_git", level = level)
+    #' - \href{`r repo("github.pcmdpc.covid19")`}{Ministero della Salute}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests,
+    #' hospitalizations,
+    #' intensive care.
+    #'
+    x1 <- github.pcmdpc.covid19(level = level)
+    x1$id <- id(x1$state, iso = "ITA", ds = "github.pcmdpc.covid19", level = level)
     
-    # vaccines  
-    y <- covid19vaccini_git(level = level)
-    y$id <- id(y$state, iso = "ITA", ds = "covid19vaccini_git", level = level)
+    #' - \href{`r repo("github.italia.covid19opendatavaccini")`}{Commissario straordinario per l'emergenza Covid-19, Presidenza del Consiglio dei Ministri}:
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
+    #'
+    x2 <- github.italia.covid19opendatavaccini(level = level)
+    x2$id <- id(x2$state, iso = "ITA", ds = "github.italia.covid19opendatavaccini", level = level)
     
     # merge
-    x <- merge(x, y, by = c("id", "date"), all = TRUE)
+    x <- merge(x1, x2, by = c("id", "date"))
     
   }
-  if(level==3){
+  
+  #' @concept Level 3
+  #' @section Data Sources:
+  #' 
+  #' ## Level 3
+  #' `r docstring("ITA", 3)`
+  #' 
+  if(level==3){  
     
-    # confirmed cases
-    x <- pcmdpc_git(level = level)
-    x$id <- id(x$city, iso = "ITA", ds = "pcmdpc_git", level = level)
-    
-    # Remove this until the issue if fixed:
-    # https://github.com/CEEDS-DEMM/COVID-Pro-Dataset/issues/6
-    #
-    # # deaths
-    # y <- ceeds_git(level = level) 
-    # y$id <- id(y$city_code, iso = "ITA", ds = "ceeds_git", level = level)
-    # 
-    # # merge
-    # x <- merge(x, y, by = c("id", "date"), all = TRUE)
+    #' - \href{`r repo("github.pcmdpc.covid19")`}{Ministero della Salute}:
+    #' confirmed cases.
+    #'
+    x <- github.pcmdpc.covid19(level = level)
+    x$id <- id(x$city, iso = "ITA", ds = "github.pcmdpc.covid19", level = level)
     
   }
   
   return(x)
-
 }

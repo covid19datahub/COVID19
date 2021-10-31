@@ -886,8 +886,8 @@ read.zip <- function(zip, files, cache = FALSE, ...){
 #' @examples 
 #' \dontrun{
 #' 
-#' # check format of the 'pcmdpc_git' data source
-#' x <- COVID19:::pcmdpc_git(cache = FALSE, level = 1)
+#' # check format of the 'github.pcmdpc.covid19' data source
+#' x <- COVID19:::github.pcmdpc.covid19(cache = FALSE, level = 1)
 #' ds_check_format(x, level = 1)
 #' 
 #' }
