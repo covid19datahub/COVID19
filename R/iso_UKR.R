@@ -10,7 +10,7 @@ UKR <- function(level, ...){
   
   # download already with ids
   if(level==2)
-    x <- jhunified_git(iso = "UKR", level = level)
+    x <- github.cssegisanddata.covid19unified(iso = "UKR", level = level)
   
   # return
   return(x)

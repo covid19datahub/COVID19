@@ -10,7 +10,7 @@ RUS <- function(level, ...){
   
   # download already with ids
   if(level==2)
-    x <- jhunified_git(iso = "RUS", level = level)
+    x <- github.cssegisanddata.covid19unified(iso = "RUS", level = level)
   
   # return
   return(x)

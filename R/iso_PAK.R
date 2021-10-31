@@ -10,7 +10,7 @@ PAK <- function(level, ...){
   
   # download already with ids
   if(level==2)
-    x <- jhunified_git(iso = "PAK", level = level)
+    x <- github.cssegisanddata.covid19unified(iso = "PAK", level = level)
   
   # return
   return(x)
