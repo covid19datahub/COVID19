@@ -42,9 +42,6 @@ github.swsoyee.2019ncovjapan <- function(level, id = NULL) {
   idx <- which(x$date=="2020-05-10" & x$administrative_area_level_2=="Costa Atlantica")
   x$tests[idx] <- 623
   
-  # convert to date
-  x$date <- as.Date(x$date)
-  
   # filter by level
   x <- x[x$administrative_area_level == level,]
   
@@ -55,5 +52,11 @@ github.swsoyee.2019ncovjapan <- function(level, id = NULL) {
   else if(level==1)
     x <- x[is.na(x$administrative_area_level_2),]
     
+  # convert to date
+  x$date <- as.Date(x$date)
+  
+  # drop zero values in today's data
+  x <- x[x$date<Sys.Date(),]
+  
   return(x)
 }
