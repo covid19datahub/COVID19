@@ -1,4 +1,4 @@
-"id","id_gov_lv","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population"
+"id","id_gov.lv","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,"-",,,,
 "6553bcae",640600,3,"Kurzeme","Aizputes novads","LVA.1.2.1_0",,"0640600","LV003",56.716667,21.6,4073
 "62787685",624200,3,"Kurzeme","Alsungas novads","LVA.1.1.1_0",,"0624200","LV003",56.981667,21.566944,1289
