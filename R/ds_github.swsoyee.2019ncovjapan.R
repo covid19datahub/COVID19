@@ -38,7 +38,7 @@ github.swsoyee.2019ncovjapan <- function(level, id = NULL) {
   if("severe" %in% colnames(x))
     x$icu <- x$severe
   
-  # fix value for Costa Atlantica on
+  # fix value for Costa Atlantica
   idx <- which(x$date=="2020-05-10" & x$administrative_area_level_2=="Costa Atlantica")
   x$tests[idx] <- 623
   
