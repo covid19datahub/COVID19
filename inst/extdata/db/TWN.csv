@@ -1,4 +1,4 @@
-"id","id_gov_tw","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_local","latitude","longitude","population"
+"id","id_gov.tw","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_local","latitude","longitude","population"
 ,,,,,,"-",,,
 "ae932284","彰化縣",2,"Changhua",,"TWN.7.1_1",,23.989444732666,120.498424015052,1287100
 "5372c81d","嘉義市",2,"Chiayi City",,"TWN.7.2_1",,23.4755983352661,120.454863265121,270254
