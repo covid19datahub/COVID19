@@ -1,6 +1,23 @@
-go_th <- function(level){
-  
-  # see https://data.go.th/en/dataset/covid-19-daily
+#' Department of Disease Control, Thailand Ministry of Public Health
+#'
+#' Data source for: Thailand
+#'
+#' @param level 1, 2
+#'
+#' @section Level 1:
+#' - confirmed cases
+#' - deaths
+#'
+#' @section Level 2:
+#' - confirmed cases
+#' - deaths
+#'
+#' @source https://data.go.th/en/dataset/covid-19-daily
+#'
+#' @keywords internal
+#'
+go.th <- function(level){
+  if(!level %in% 1:2) return(NULL)  
   
   # link to waves 1-2 ad 3
   if(level == 1){
@@ -12,11 +29,11 @@ go_th <- function(level){
     w2 <- "https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-by-provinces"
   }
   
-  # download
+  # download waves
   x1 <- jsonlite::fromJSON(w1, flatten=TRUE)
   x2 <- jsonlite::fromJSON(w2, flatten=TRUE)
   
-  # merge and format
+  # merge waves and format
   x <- dplyr::bind_rows(x1, x2) %>%
     map_data(c(
       "txn_date" = "date",
@@ -25,10 +42,13 @@ go_th <- function(level){
       "total_death" = "deaths"
     ))
   
-  # date
+  # drop unassigned
+  if(level==2){
+    x <- filter(x, province!="ไม่ระบุ")
+  }
+  
+  # convert date
   x$date <- as.Date(x$date)
   
-  # return
   return(x)
-  
 }
