@@ -1,7 +1,6 @@
 "id","id_github.cssegisanddata.covid19","administrative_area_level","administrative_area_level_1","iso_alpha_3","iso_alpha_2","iso_numeric","iso_currency","latitude","longitude","population","key_apple_mobility","key_google_mobility","key_jhu_csse","key_gadm","population_data_source","population_data_source_url"
 "CAC",,1,"Costa Atlantica",,,,,,,623,,,,,,
 "GPC","Grand Princess",1,"Grand Princess",,,,,,,3533,,,,,,
-"MSZ","MS Zaandam",1,"MS Zaandam",,,,,,,1829,,,,,,
 "DPC","Diamond Princess",1,"Diamond Princess",,,,,,,3711,,,,,,
 "AIA","Anguilla",1,"Anguilla","AIA","AI",660,"XCD",18.25,-63.1666667,18090,,"AI",,"AIA","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "ALA","Aland Islands",1,"Aland Islands","ALA","AX",248,"AX",60.116667,19.9,29884,,"AX",,"ALA","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"

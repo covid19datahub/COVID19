@@ -139,7 +139,7 @@ github.cssegisanddata.covid19 <- function(level = 1, file = "global", country = 
     x <- x[which(x$state==state),]
 
   # remove constant cumulative counts
-  cols <- intersect(colnames(x), c("confirmed", "deaths", "recovered"))
+  cols <- intersect(colnames(x), "recovered")
   clean <- function(x) replace(x, c(NA, diff(x))==0, NA)
   x <- x %>% 
     group_by(id) %>%
