@@ -72,18 +72,18 @@ covid19 <- function(country = NULL, level = 1){
       next
     }
     
-    # clean
-    y <- y[,intersect(colnames(y), c('id','date',vars('fast')))]
+    # subset
+    y <- y[,intersect(colnames(y), c('id', 'date', vars('cases')))]
+    
+    # add iso as id for level 1
+    if(level==1)
+      y$id <- fun
     
     # check format
     if(!ds_check_format(y, level = level, ci = 0.85)){
       warning(sprintf("%s: check failed", fun))
       next
     }
-    
-    # add iso as id for level 1
-    if(level==1)
-      y$id <- fun
     
     # remove when v3.0 is ready
     y$iso_alpha_3 <- fun
@@ -117,13 +117,9 @@ covid19 <- function(country = NULL, level = 1){
   x <- left_join(x, o, by = c('date','id_oxcgrt'))
   
   # subset
-  key <- c('id','date',vars('fast'))
+  key <- c('id', 'date', vars('cases'), vars('measures'))
   x[,key[!(key %in% colnames(x))]] <- NA
   x <- x[,key]
-  
-  # 0 to NA
-  for(i in c('hosp','vent','icu'))
-    x[[i]] <- dplyr::na_if(x[[i]], 0)
   
   # check 
   if(length(which(idx <- is.na(x$date))))
@@ -134,7 +130,7 @@ covid19 <- function(country = NULL, level = 1){
     stop(sprintf("multiple dates per id: %s", paste0(unique(x$id[idx]), collapse = ", ")))
   
   # merge top level data
-  x <- left_join(x, db[,intersect(colnames(db), c("id", vars("slow")))], by = "id")
+  x <- left_join(x, db[,intersect(colnames(db), c("id", vars("admin")))], by = "id")
   
   # subset
   cn <- vars()
@@ -356,15 +352,17 @@ id <- function(x, iso, ds, level){
 
 vars <- function(type = NULL){
   
-  cases <- c(
-    
+  cum <- c(
     'numeric' = 'confirmed',
     'numeric' = 'deaths',
     'numeric' = 'recovered',
     'numeric' = 'tests',
     'numeric' = 'vaccines',
     'numeric' = 'people_vaccinated',
-    'numeric' = 'people_fully_vaccinated',
+    'numeric' = 'people_fully_vaccinated'
+  )
+  
+  spot <- c(
     'numeric' = 'hosp',
     'numeric' = 'icu',
     'numeric' = 'vent'
@@ -391,9 +389,7 @@ vars <- function(type = NULL){
     'numeric' = 'economic_support_index'
   )
   
-  fast <- c(cases, measures)
-  
-  slow <- c(
+  admin <- c(
     'character' = 'iso_alpha_3',
     'character' = 'iso_alpha_2',
     'integer'   = 'iso_numeric',
@@ -414,18 +410,24 @@ vars <- function(type = NULL){
   )
   
   if(is.null(type))
-    return(unname(unique(c('id','date',cases,'population',measures,slow))))
+    return(unname(unique(c('id', 'date', cum, spot, 'population', measures, admin))))
   
-  if(type=="slow")
-    return(unname(slow))
+  if(type=="cum")
+    return(unname(cum))
   
-  if(type=="fast")
-    return(unname(fast))
+  if(type=="spot")
+    return(unname(spot))
   
-  if(type=="test")
-    return(unname(unique(c('id','date',cases,slow))))
+  if(type=="measures")
+    return(unname(measures))
+    
+  if(type=="admin")
+    return(unname(admin))
   
-  all <- c(fast, slow)
+  if(type=="cases")
+    return(unname(c(cum, spot)))
+  
+  all <- c(cum, spot, measures, admin)
   all <- all[which(names(all)==type)]
   return(unname(all))
   
@@ -907,7 +909,7 @@ ds_check_format <- function(x, level, ci = 0.95) {
   }
   
   # fallback
-  if(!any(vars("fast") %in% colnames(x))){
+  if(!any(vars("cases") %in% colnames(x))){
     warning("no valid column detected. Please rename the columns according to the documentation available at https://covid19datahub.io/articles/doc/data.html")
     return(FALSE)
   }
