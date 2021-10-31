@@ -1,4 +1,4 @@
-"id","id_dssg_pt","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population"
+"id","id_github.dssgpt.covid19ptdata","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,"-",,,,
 "259c4386","PT20",2,"Açores",,"PRT.2_1","Azores",,"PT20",37.80757713,-25.4735232659185,246000
 "006a9877","PT18",2,"Alentejo",,"PRT.8_1",,,"PT18",38.49178,-8.021543,733000
