@@ -1,4 +1,4 @@
-"id","id_covid19lt_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population"
+"id","id_github.mpiktas.covid19lt","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,"-",,,,
 "e7bd7f0f","Alytaus apskr.",2,"Alytaus",,"LTU.1_1","Alytus County",,"LT021",54.230503085,24.0663368102004,132408
 "b2358634","Kauno apskr.",2,"Kauno",,"LTU.2_1","Kaunas County",,"LT022",55.016893385,24.0646994958279,565592

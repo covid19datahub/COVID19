@@ -55,8 +55,5 @@ github.swsoyee.2019ncovjapan <- function(level, id = NULL) {
   # convert to date
   x$date <- as.Date(x$date)
   
-  # drop zero values in today's data
-  x <- x[x$date<Sys.Date(),]
-  
   return(x)
 }
