@@ -1,4 +1,4 @@
-"id","id_oppnadata_se","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
+"id","id_arcgis.se","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,"-",,,,
 "d46c7fb5","Blekinge",2,"Blekinge",,"Blekinge County","SWE.1_1","Blekinge County","SEK",,"SE221",56.243473055,15.2273649960401,151436
 "45f678d9","Dalarna",2,"Dalarna",,"Dalarna County","SWE.2_1","Dalarna County","SEW",,"SE312",61.05875206,14.2128084429543,275711
