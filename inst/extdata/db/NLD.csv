@@ -1,4 +1,4 @@
-"id","id_rivm_nl","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
+"id","id_rivm.nl","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,"-",,,,
 "11c6eae3","Drenthe",2,"Drenthe",,"NLD.1_1","Drenthe","NLDR","PV22","NL13",52.9082489,6.6932587113071,493682
 "ec2469da","Flevoland",2,"Flevoland",,"NLD.2_1","Flevoland","NLFL","PV24","NL23",52.429815295,5.51705646067032,423021
