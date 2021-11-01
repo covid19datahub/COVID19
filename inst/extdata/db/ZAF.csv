@@ -1,4 +1,4 @@
-"id","id_covid19za_git","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_local","latitude","longitude","population"
+"id","id_github.dsfsi.covid19za","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_local","latitude","longitude","population"
 ,,,,,,,,"-",,,
 "4a1c930e","EC",2,"Eastern Cape",,"Eastern Cape","ZAF.1_1","Eastern Cape","EC",-32.10953522,26.5903024281711,6996976
 "7c86d0a9","FS",2,"Free State",,"Free State","ZAF.2_1","Free State","FS",-28.681405065,26.6276264987157,2834714
