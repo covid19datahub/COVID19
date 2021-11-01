@@ -26,9 +26,9 @@ Data available at level 1 (nation), level 2 (states), and level 3 (counties).
 \bold{Level 2.}
 \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.nytimes.covid19data.R}{The New York Times}
 (confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_healthdata_gov.R}{U.S. Department of Health & Human Services}
+\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_healthdata.gov.R}{U.S. Department of Health & Human Services}
 (tests, hospitalized patients and intensive care);
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_covidtracking_com.R}{The Covid Tracking Project}
+\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_covidtracking.com.R}{The Covid Tracking Project}
 (patients requiring ventilation, recovered);
 \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_ourworldindata.org.R}{Our World in Data}
 (vaccines);

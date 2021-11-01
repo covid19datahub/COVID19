@@ -1,86 +1,127 @@
 #' United States
+#'
+#' @source \url{`r repo("USA")`}
 #' 
-#' Data available at level 1 (nation), level 2 (states), and level 3 (counties).
-#' 
-#' @section Data sources:
-#' 
-#' \bold{Level 1.} 
-#' \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}
-#' (confirmed cases, recovered, deaths); 
-#' \href{`r repo("ourworldindata.org")`}{Our World in Data} 
-#' (tests, hospitalizations, vaccines);
-#' \href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
-#' (population 2018).
-#' 
-#' \bold{Level 2.} 
-#' \href{`r repo("github.nytimes.covid19data")`}{The New York Times} 
-#' (confirmed cases, deaths);
-#' \href{`r repo("healthdata_gov")`}{U.S. Department of Health & Human Services}
-#' (tests, hospitalized patients and intensive care); 
-#' \href{`r repo("covidtracking_com")`}{The Covid Tracking Project}
-#' (patients requiring ventilation, recovered); 
-#' \href{`r repo("ourworldindata.org")`}{Our World in Data} 
-#' (vaccines);
-#' \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}
-#' (population 2020). 
-#' 
-#' \bold{Level 3.} 
-#' \href{`r repo("github.nytimes.covid19data")`}{The New York Times} 
-#' (confirmed cases, deaths);
-#' \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}
-#' (population 2020).
-#' 
-#' @source `r repo("USA")`
-#' 
-#' @concept level 1
-#' @concept level 2
-#' @concept level 3
-#' 
-USA <- function(level, ...){
-  if(level>3) return(NULL)
-
+USA <- function(level){
+  x <- NULL
+  
+  #' @concept Level 1
+  #' @section Data Sources:
+  #' 
+  #' ## Level 1
+  #' `r docstring("USA", 1)`
+  #' 
   if(level==1){
     
-    # fallback to worldwide data. 
-    x <- NULL
+    #' - \href{`r repo("github.nytimes.covid19data")`}{The New York Times}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x1 <- github.nytimes.covid19data(level = level)
     
-  }
-  
-  if(level==2){
-
-    # tests, hospitalized and icu
-    h <- healthdata_gov(level = level)
-    h$id <- id(h$state, iso = "USA", ds = "healthdata_gov", level = level)
+    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' recovered.
+    #'
+    x2 <- github.cssegisanddata.covid19(country = "United States") %>%
+      select(-c("confirmed", "deaths"))
     
-    # confirmed and deaths 
-    n <- github.nytimes.covid19data(level = level)
-    n$id <- id(n$fips, iso = "USA", ds = "github.nytimes.covid19data", level = level)
+    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
+    #' tests,
+    #' hospitalizations,
+    #' intensive care.
+    #'
+    x3 <- ourworldindata.org(id = "USA") %>%
+      select(-c("vaccines", "people_vaccinated", "people_fully_vaccinated"))
     
-    # recovered and vent
-    r <- covidtracking_com(level = level) 
-    r$id <- id(r$state, iso = "USA", ds = "covidtracking_com", level = level)
-    
-    # vaccines
-    v <- ourworldindata.org(level = level)
-    v$id <- id(v$state, iso = "USA", ds = "ourworldindata.org", level = level)
+    #' - \href{`r repo("cdc.gov")`}{Centers for Disease Control and Prevention}:
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
+    #'
+    x4 <- cdc.gov(level = level)
     
     # merge
-    key <- c("date", "id")
-    x <- n[,c(key, "confirmed", "deaths")] %>%
-      dplyr::full_join(h[,c(key, "tests", "hosp", "icu")], by = key) %>%
-      dplyr::full_join(v[,c(key, "vaccines")], by = key) %>%
-      dplyr::full_join(r[,c(key, "recovered", "vent")], by = key)
+    x <- x1 %>%
+      full_join(x2, by = "date") %>%
+      full_join(x3, by = "date") %>%
+      full_join(x4, by = "date")
     
   }
   
-  if(level==3){
+  #' @concept Level 2
+  #' @section Data Sources:
+  #' 
+  #' ## Level 2
+  #' `r docstring("USA", 2)`
+  #' 
+  if(level==2){
+
+    #' - \href{`r repo("github.nytimes.covid19data")`}{The New York Times}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x1 <- github.nytimes.covid19data(level = level)
+    x1$id <- id(x1$fips, iso = "USA", ds = "github.nytimes.covid19data", level = level)
     
-    # confirmed and deaths
-    x <- github.nytimes.covid19data(level = level)
-    x$id <- id(x$fips, iso = "USA", ds = "github.nytimes.covid19data", level = level)
+    #' - \href{`r repo("healthdata.gov")`}{U.S. Department of Health & Human Services}:
+    #' tests,
+    #' hospitalizations,
+    #' intensive care.
+    #'
+    x2 <- healthdata.gov(level = level)
+    x2$id <- id(x2$state, iso = "USA", ds = "healthdata.gov", level = level)
+    
+    #' - \href{`r repo("covidtracking.com")`}{The COVID Tracking Project}:
+    #' recovered,
+    #' patients requiring ventilation.
+    #'
+    x3 <- covidtracking.com(level = level) %>%
+      select(-c("confirmed", "deaths", "tests", "hosp", "icu")) %>%
+      mutate(id = id(state, iso = "USA", ds = "covidtracking.com", level = level))
+
+    #' - \href{`r repo("cdc.gov")`}{Centers for Disease Control and Prevention}:
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
+    #'
+    x4 <- cdc.gov(level = level)
+    x4$id <- id(x4$state, iso = "USA", ds = "cdc.gov", level = level)
+    
+    # merge
+    x <- x1 %>%
+      full_join(x2, by = c("id", "date")) %>%
+      full_join(x3, by = c("id", "date")) %>%
+      full_join(x4, by = c("id", "date"))
     
   }
-
+  
+  #' @concept Level 3
+  #' @section Data Sources:
+  #' 
+  #' ## Level 3
+  #' `r docstring("USA", 3)`
+  #' 
+  if(level==3){  
+    
+    #' - \href{`r repo("github.nytimes.covid19data")`}{The New York Times}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x1 <- github.nytimes.covid19data(level = level)
+    x1$id <- id(x1$fips, iso = "USA", ds = "github.nytimes.covid19data", level = level)
+    
+    #' - \href{`r repo("cdc.gov")`}{Centers for Disease Control and Prevention}:
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
+    #'
+    x2 <- cdc.gov(level = level)
+    x2$id <- id(x2$fips, iso = "USA", ds = "cdc.gov", level = level)
+    
+    # merge
+    x <- full_join(x1, x2, by = c("id", "date"))
+    
+  }
+  
   return(x)
-
 }
