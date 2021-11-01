@@ -49,6 +49,7 @@ MEX <- function(level){
     #' recovered.
     #'
     x <- github.cssegisanddata.covid19unified(iso = "MEX", level = level)
+    x$id <- id(x$id, iso = "MEX", ds = "github.cssegisanddata.covid19unified", level = level)
     
   }
   

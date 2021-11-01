@@ -49,6 +49,7 @@ UKR <- function(level){
     #' recovered.
     #'
     x <- github.cssegisanddata.covid19unified(iso = "UKR", level = level)
+    x$id <- id(x$id, iso = "UKR", ds = "github.cssegisanddata.covid19unified", level = level)
     
   }
   

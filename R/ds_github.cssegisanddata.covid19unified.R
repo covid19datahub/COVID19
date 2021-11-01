@@ -39,14 +39,11 @@
 github.cssegisanddata.covid19unified <- function(level, iso){
   if(!level %in% 1:3) return(NULL)
   
-  # generate JHU id
-  if(level==1){
-    e <- data.frame(key_jhu_csse = iso)
-  }
-  # retrieve JHU ids
-  else{
-    e <- extdata(sprintf("db/%s.csv", iso))
-    e <- e[e$administrative_area_level==level,]
+  # JHU ids
+  ids <- iso
+  if(level!=1){
+    db <- extdata(sprintf("db/%s.csv", iso))
+    ids <- db$id_github.cssegisanddata.covid19unified[db$administrative_area_level==level]
   }
   
   # download
@@ -56,7 +53,7 @@ github.cssegisanddata.covid19unified <- function(level, iso){
   x <- readRDS(file)
 
   # filter
-  x <- x[which((x$ID %in% e$key_jhu_csse) & x$Age=="Total" & x$Sex=="Total" & x$Cases>0),]
+  x <- x[which((x$ID %in% ids) & x$Age=="Total" & x$Sex=="Total" & x$Cases>0),]
   
   # select data source with best data coverage
   s <- names(which.max(table(x$Source)))
@@ -80,13 +77,6 @@ github.cssegisanddata.covid19unified <- function(level, iso){
   
   # date
   x$date <- as.Date(x$date)
-  
-  # map ids
-  if(level==2 | level==3){
-    map <- e$id
-    names(map) <- e$key_jhu_csse
-    x$id <- map_values(x$id, map, force = TRUE)
-  }
-  
+
   return(x)
 }

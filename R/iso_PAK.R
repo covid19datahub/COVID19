@@ -49,6 +49,7 @@ PAK <- function(level){
     #' recovered.
     #'
     x <- github.cssegisanddata.covid19unified(iso = "PAK", level = level)
+    x$id <- id(x$id, iso = "PAK", ds = "github.cssegisanddata.covid19unified", level = level)
     
   }
   
