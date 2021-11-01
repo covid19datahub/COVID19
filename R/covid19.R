@@ -147,7 +147,7 @@ covid19 <- function(country = NULL, level = 1){
   
 }
 
-#' Generate permalink to the file at the GitHub repository
+#' Generate link to the file at the GitHub repository
 #' 
 #' @param x name of the iso_ or ds_ function, or name of the .csv file
 #' 
@@ -163,10 +163,7 @@ repo <- function(x, csv = FALSE){
     prefix <- ifelse(grepl("^[A-Z]{3}$", x), "iso", "ds")
     url <- sprintf("%s/R/%s_%s.R", master, prefix, x)
   }
-  Sys.sleep(runif(1))
-  rvest::read_html(url) %>%
-    rvest::html_nodes("clipboard-copy[aria-label='Copy permalink'][data-toggle-for='blob-more-options-details']") %>% 
-    rvest::html_attr('value')
+  return(url)
 }
 
 #' Naming convention

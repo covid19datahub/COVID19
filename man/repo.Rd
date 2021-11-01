@@ -2,7 +2,7 @@
 % Please edit documentation in R/covid19.R
 \name{repo}
 \alias{repo}
-\title{Generate permalink to the file at the GitHub repository}
+\title{Generate link to the file at the GitHub repository}
 \usage{
 repo(x, csv = FALSE)
 }
@@ -10,6 +10,6 @@ repo(x, csv = FALSE)
 \item{x}{name of the iso_ or ds_ function, or name of the .csv file}
 }
 \description{
-Generate permalink to the file at the GitHub repository
+Generate link to the file at the GitHub repository
 }
 \keyword{internal}

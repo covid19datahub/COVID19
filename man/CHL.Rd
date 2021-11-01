@@ -4,7 +4,7 @@
 \alias{CHL}
 \title{Chile}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_CHL.R}
+\url{https://github.com/covid19datahub/COVID19/blob/master/R/iso_CHL.R}
 }
 \usage{
 CHL(level)
@@ -16,8 +16,8 @@ Chile
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
 confirmed cases,
 deaths,
 recovered,
@@ -34,7 +34,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
 confirmed cases,
 deaths,
 recovered,
@@ -49,7 +49,7 @@ intensive care.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
 confirmed cases,
 deaths,
 tests,

@@ -4,7 +4,7 @@
 \alias{CHN}
 \title{China}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_CHN.R}
+\url{https://github.com/covid19datahub/COVID19/blob/master/R/iso_CHN.R}
 }
 \usage{
 CHN(level)
@@ -16,11 +16,11 @@ China
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_who.int.R}{World Health Organization}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_who.int.R}{World Health Organization}:
 confirmed cases,
 deaths.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_ourworldindata.org.R}{Our World in Data}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata.org.R}{Our World in Data}:
 tests,
 total vaccine doses administered,
 people with at least one vaccine dose,

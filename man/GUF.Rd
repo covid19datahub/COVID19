@@ -4,7 +4,7 @@
 \alias{GUF}
 \title{French Guiana}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_GUF.R}
+\url{https://github.com/covid19datahub/COVID19/blob/master/R/iso_GUF.R}
 }
 \usage{
 GUF(level)
@@ -16,8 +16,8 @@ French Guiana
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gouv.fr.R}{Santé Publique France}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gouv.fr.R}{Santé Publique France}:
 confirmed cases,
 deaths,
 tests,

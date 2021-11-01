@@ -4,7 +4,7 @@
 \alias{NOR}
 \title{Norway}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_NOR.R}
+\url{https://github.com/covid19datahub/COVID19/blob/master/R/iso_NOR.R}
 }
 \usage{
 NOR(level)
@@ -16,12 +16,12 @@ Norway
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
 confirmed cases,
 deaths,
 recovered.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_ourworldindata.org.R}{Our World in Data}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata.org.R}{Our World in Data}:
 tests,
 total vaccine doses administered,
 people with at least one vaccine dose,

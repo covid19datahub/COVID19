@@ -4,7 +4,7 @@
 \alias{PER}
 \title{Peru}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_PER.R}
+\url{https://github.com/covid19datahub/COVID19/blob/master/R/iso_PER.R}
 }
 \usage{
 PER(level)
@@ -16,8 +16,8 @@ Peru
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.jmcastagnetto.covid19perudata.R}{Jesus M. Castagnetto}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.jmcastagnetto.covid19perudata.R}{Jesus M. Castagnetto}:
 confirmed cases,
 deaths,
 recovered,
@@ -25,7 +25,7 @@ tests,
 hospitalizations,
 intensive care,
 patients requiring ventilation.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gob.pe.R}{Ministerio de Salud}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gob.pe.R}{Ministerio de Salud}:
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated.
@@ -35,12 +35,12 @@ people fully vaccinated.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.jmcastagnetto.covid19perudata.R}{Jesus M. Castagnetto}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.jmcastagnetto.covid19perudata.R}{Jesus M. Castagnetto}:
 confirmed cases,
 deaths,
 recovered,
 tests.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gob.pe.R}{Ministerio de Salud}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gob.pe.R}{Ministerio de Salud}:
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated.

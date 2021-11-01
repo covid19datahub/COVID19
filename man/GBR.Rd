@@ -4,7 +4,7 @@
 \alias{GBR}
 \title{United Kingdom}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_GBR.R}
+\url{https://github.com/covid19datahub/COVID19/blob/master/R/iso_GBR.R}
 }
 \usage{
 GBR(level)
@@ -16,8 +16,8 @@ United Kingdom
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gov.uk.R}{UK Health Security Agency}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.uk.R}{UK Health Security Agency}:
 confirmed cases,
 deaths,
 tests,
@@ -32,7 +32,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gov.uk.R}{UK Health Security Agency}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.uk.R}{UK Health Security Agency}:
 confirmed cases,
 deaths,
 tests,
@@ -47,7 +47,7 @@ patients requiring ventilation.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gov.uk.R}{UK Health Security Agency}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.uk.R}{UK Health Security Agency}:
 confirmed cases,
 deaths,
 tests,

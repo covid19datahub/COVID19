@@ -4,7 +4,7 @@
 \alias{PRT}
 \title{Portugal}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_PRT.R}
+\url{https://github.com/covid19datahub/COVID19/blob/master/R/iso_PRT.R}
 }
 \usage{
 PRT(level)
@@ -16,14 +16,14 @@ Portugal
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.dssgpt.covid19ptdata.R}{Data Science for Social Good Portugal}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.dssgpt.covid19ptdata.R}{Data Science for Social Good Portugal}:
 confirmed cases,
 deaths,
 recovered,
 hospitalizations,
 intensive care.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_ourworldindata.org.R}{Our World in Data}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata.org.R}{Our World in Data}:
 tests,
 total vaccine doses administered,
 people with at least one vaccine dose,
@@ -34,7 +34,7 @@ people fully vaccinated.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.dssgpt.covid19ptdata.R}{Data Science for Social Good Portugal}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.dssgpt.covid19ptdata.R}{Data Science for Social Good Portugal}:
 confirmed cases,
 deaths.
 }
