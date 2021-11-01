@@ -4,7 +4,7 @@
 \alias{GPC}
 \title{Cruise Ship Grand Princess}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_GPC.R}
+\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_GPC.R}
 }
 \usage{
 GPC(level)
@@ -16,7 +16,7 @@ Cruise Ship Grand Princess
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
 confirmed cases,
 deaths,
 recovered.

@@ -9,9 +9,23 @@ https://covidtracking.com/data/api
 \usage{
 covidtracking.com(level)
 }
-\description{
-Imports confirmed cases, deaths, recovered, tests, and hospitalization data for U.S. states from
-The COVID Tracking Project. The Project has ended all data collection as of March 7, 2021.
-The existing API will continue to work until May 2021, but will only include data up to March 7, 2021.
+\arguments{
+\item{level}{2}
 }
+\description{
+Data source for: United States
+}
+\section{Level 2}{
+
+\itemize{
+\item confirmed cases
+\item deaths
+\item recovered
+\item tests
+\item hospitalizations
+\item intensive care
+\item patients requiring ventilation
+}
+}
+
 \keyword{internal}

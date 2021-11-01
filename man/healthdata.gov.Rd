@@ -9,8 +9,19 @@ https://healthdata.gov/browse?tags=hhs+covid-19
 \usage{
 healthdata.gov(level)
 }
-\description{
-Imports hospitalization data and tests for United States at state level
-from the U.S. Department of Health & Human Services.
+\arguments{
+\item{level}{2}
 }
+\description{
+Data source for: United States
+}
+\section{Level 2}{
+
+\itemize{
+\item tests
+\item hospitalizations
+\item intensive care
+}
+}
+
 \keyword{internal}

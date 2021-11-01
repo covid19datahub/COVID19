@@ -4,7 +4,7 @@
 \alias{CHL}
 \title{Chile}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_CHL.R}
+\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_CHL.R}
 }
 \usage{
 CHL(level)
@@ -16,8 +16,8 @@ Chile
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
 confirmed cases,
 deaths,
 recovered,
@@ -34,7 +34,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
 confirmed cases,
 deaths,
 recovered,
@@ -49,7 +49,7 @@ intensive care.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
 confirmed cases,
 deaths,
 tests,

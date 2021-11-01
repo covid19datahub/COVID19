@@ -9,8 +9,17 @@ https://github.com/CEEDS-DEMM/COVID-Pro-Dataset
 \usage{
 github.ceedsdemm.covidprodataset(level)
 }
-\description{
-Imports Italian deaths at the province level from the Centre of Excellence
-in Economics and Data Science, University of Milan.
+\arguments{
+\item{level}{3}
 }
+\description{
+Data source for: Italy
+}
+\section{Level 3}{
+
+\itemize{
+\item deaths
+}
+}
+
 \keyword{internal}

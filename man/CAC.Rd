@@ -4,7 +4,7 @@
 \alias{CAC}
 \title{Cruise Ship Costa Atlantica}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_CAC.R}
+\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_CAC.R}
 }
 \usage{
 CAC(level)
@@ -16,7 +16,7 @@ Cruise Ship Costa Atlantica
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.swsoyee.2019ncovjapan.R}{Su Wei}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.swsoyee.2019ncovjapan.R}{Su Wei}:
 confirmed cases,
 deaths,
 recovered,

@@ -4,7 +4,7 @@
 \alias{MYT}
 \title{Mayotte}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_MYT.R}
+\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_MYT.R}
 }
 \usage{
 MYT(level)
@@ -16,8 +16,8 @@ Mayotte
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_gouv.fr.R}{Santé Publique France}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_gouv.fr.R}{Santé Publique France}:
 confirmed cases,
 deaths,
 tests,

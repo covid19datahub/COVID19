@@ -4,44 +4,69 @@
 \alias{USA}
 \title{United States}
 \source{
-https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_USA.R
+\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_USA.R}
 }
 \usage{
-USA(level, ...)
+USA(level)
 }
 \description{
-Data available at level 1 (nation), level 2 (states), and level 3 (counties).
+United States
 }
-\section{Data sources}{
+\section{Data Sources}{
 
-
-\bold{Level 1.}
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
-(confirmed cases, recovered, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_ourworldindata.org.R}{Our World in Data}
-(tests, hospitalizations, vaccines);
-\href{https://data.worldbank.org/indicator/SP.POP.TOTL}{World Bank Open Data}
-(population 2018).
-
-\bold{Level 2.}
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.nytimes.covid19data.R}{The New York Times}
-(confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_healthdata.gov.R}{U.S. Department of Health & Human Services}
-(tests, hospitalized patients and intensive care);
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_covidtracking.com.R}{The Covid Tracking Project}
-(patients requiring ventilation, recovered);
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_ourworldindata.org.R}{Our World in Data}
-(vaccines);
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
-(population 2020).
-
-\bold{Level 3.}
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.nytimes.covid19data.R}{The New York Times}
-(confirmed cases, deaths);
-\href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}
-(population 2020).
+\subsection{Level 1}{
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.nytimes.covid19data.R}{The New York Times}:
+confirmed cases,
+deaths.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
+recovered.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_ourworldindata.org.R}{Our World in Data}:
+tests,
+hospitalizations,
+intensive care.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_cdc.gov.R}{Centers for Disease Control and Prevention}:
+total vaccine doses administered,
+people with at least one vaccine dose,
+people fully vaccinated.
+}
 }
 
-\concept{level 1}
-\concept{level 2}
-\concept{level 3}
+
+\subsection{Level 2}{
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.nytimes.covid19data.R}{The New York Times}:
+confirmed cases,
+deaths.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_healthdata.gov.R}{U.S. Department of Health & Human Services}:
+tests,
+hospitalizations,
+intensive care.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_covidtracking.com.R}{The COVID Tracking Project}:
+recovered,
+patients requiring ventilation.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_cdc.gov.R}{Centers for Disease Control and Prevention}:
+total vaccine doses administered,
+people with at least one vaccine dose,
+people fully vaccinated.
+}
+}
+
+
+\subsection{Level 3}{
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.nytimes.covid19data.R}{The New York Times}:
+confirmed cases,
+deaths.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_cdc.gov.R}{Centers for Disease Control and Prevention}:
+total vaccine doses administered,
+people with at least one vaccine dose,
+people fully vaccinated.
+}
+}
+}
+
+\concept{Level 1}
+\concept{Level 2}
+\concept{Level 3}

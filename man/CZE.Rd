@@ -4,7 +4,7 @@
 \alias{CZE}
 \title{Czech Republic}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/iso_CZE.R}
+\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_CZE.R}
 }
 \usage{
 CZE(level)
@@ -16,8 +16,8 @@ Czech Republic
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
 confirmed cases,
 deaths,
 recovered,
@@ -34,7 +34,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
 confirmed cases,
 deaths,
 recovered,
@@ -48,7 +48,7 @@ people fully vaccinated.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/1ebc0827a18cfb34aacd502a84b53140d2c52054/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
 confirmed cases,
 deaths,
 recovered,
