@@ -86,5 +86,8 @@ gov.tw <- function(level) {
     
   }
     
+  # fix date
+  x <- x[x$date<=Sys.Date(),]
+  
   return(x)
 }

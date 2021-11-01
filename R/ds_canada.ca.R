@@ -60,7 +60,7 @@ canada.ca <- function(level){
   # download people vaccinated
   # see https://health-infobase.canada.ca/covid-19/vaccination-coverage/
   url <- "https://health-infobase.canada.ca/src/data/covidLive/vaccination-coverage-map.csv"
-  x3 <- read.csv(url)
+  x3 <- read.csv(url, fileEncoding = "UTF-8-BOM")
   
   # format
   x3 <- map_data(x3, c(

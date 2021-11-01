@@ -37,7 +37,7 @@ gov.si <- function(level){
   
   # clean date
   x$date <- as.Date(suppressWarnings(as.numeric(x$date)), origin = "1899-12-30")   
-  x <- x[!is.na(d),]
+  x <- x[!is.na(x$date),]
   
   return(x)
 }

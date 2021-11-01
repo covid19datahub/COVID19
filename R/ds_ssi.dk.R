@@ -30,8 +30,7 @@ ssi.dk <- function(level){
     html <- httr::GET(webpage)
     data <- httr::content(html)
     data <- as.character(data)
-    url <- paste0(baseurl, "-", format(Sys.Date()-2, "%d%m%Y"))
-    pattern <- paste0(url, "[-a-z0-9]*")
+    pattern <- paste0(baseurl, "-\\d{8}[-a-z0-9]*")
     m <- regexpr(pattern, data, ignore.case = TRUE)
     regmatches(data, m)
   }

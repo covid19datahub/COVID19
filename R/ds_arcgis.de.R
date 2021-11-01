@@ -28,7 +28,7 @@ arcgis.de <- function(level){
   
   # download
   url <- "https://www.arcgis.com/sharing/rest/content/items/f10774f1c63e40168479a1feb6c7ca74/data"
-  x <- data.table::fread(url)
+  x <- data.table::fread(url, showProgress = FALSE)
   
   # format
   x <- map_data(x, c(
