@@ -17,7 +17,7 @@ Chile
 \subsection{Level 1}{
 \itemize{
 \item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
 confirmed cases,
 deaths,
 recovered,
@@ -34,7 +34,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
 confirmed cases,
 deaths,
 recovered,
@@ -49,7 +49,7 @@ intensive care.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.minciencia.datoscovid19.R}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
 confirmed cases,
 deaths,
 tests,

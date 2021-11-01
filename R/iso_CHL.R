@@ -13,7 +13,7 @@ CHL <- function(level){
   #' 
   if(level==1){
     
-    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
     #' confirmed cases,
     #' deaths,
     #' recovered,
@@ -37,7 +37,7 @@ CHL <- function(level){
   #' 
   if(level==2){
     
-    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
     #' confirmed cases,
     #' deaths,
     #' recovered,
@@ -60,7 +60,7 @@ CHL <- function(level){
   #' 
   if(level==3){  
     
-    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, TecnologÃ­a, Conocimiento, e InnovaciÃ³n}:
+    #' - \href{`r repo("github.minciencia.datoscovid19")`}{Ministerio de Ciencia, Tecnología, Conocimiento, e Innovación}:
     #' confirmed cases,
     #' deaths,
     #' tests,
