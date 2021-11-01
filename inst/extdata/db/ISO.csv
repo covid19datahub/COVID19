@@ -3,35 +3,35 @@
 "GPC","Grand Princess",1,"Grand Princess",,,,,,,3533,,,,,,
 "DPC","Diamond Princess",1,"Diamond Princess",,,,,,,3711,,,,,,
 "AIA","Anguilla",1,"Anguilla","AIA","AI",660,"XCD",18.25,-63.1666667,18090,,"AI",,"AIA","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"ALA","Aland Islands",1,"Aland Islands","ALA","AX",248,"AX",60.116667,19.9,29884,,"AX",,"ALA","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"ANT","Netherlands Antilles",1,"Netherlands Antilles","ANT","AN",530,"ANG",12.226079,-69.0600891,304759,,"AN",,"ANT","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"ATA","Antarctica",1,"Antarctica","ATA","AQ",10,"AAD",-90,0,,,"AQ",,"ATA",,
-"ATF","French Southern Territories",1,"French Southern Territories","ATF","TF",260,"EUR",,,,,"TF",,"ATF",,
-"BLM","Saint Barthélemy",1,"Saint Barthélemy","BLM","BL",652,"BL",18.5,-63.416666,7122,,"BL",,"BLM","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"BVT","Bouvet Island",1,"Bouvet Island","BVT","BV",74,"NOK",-54.4333333,3.4,,,"BV",,"BVT",,
-"CCK","Cocos (Keeling) Islands",1,"Cocos (Keeling) Islands","CCK","CC",166,"AUD",-12.5,96.833333,596,,"CC",,"CCK","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"ALA",,1,"Aland Islands","ALA","AX",248,"AX",60.116667,19.9,29884,,"AX",,"ALA","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"ANT",,1,"Netherlands Antilles","ANT","AN",530,"ANG",12.226079,-69.0600891,304759,,"AN",,"ANT","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"ATA",,1,"Antarctica","ATA","AQ",10,"AAD",-90,0,,,"AQ",,"ATA",,
+"ATF",,1,"French Southern Territories","ATF","TF",260,"EUR",,,,,"TF",,"ATF",,
+"BLM",,1,"Saint Barthélemy","BLM","BL",652,"BL",18.5,-63.416666,7122,,"BL",,"BLM","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"BVT",,1,"Bouvet Island","BVT","BV",74,"NOK",-54.4333333,3.4,,,"BV",,"BVT",,
+"CCK",,1,"Cocos (Keeling) Islands","CCK","CC",166,"AUD",-12.5,96.833333,596,,"CC",,"CCK","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "COK","Cook Islands",1,"Cook Islands","COK","CK",184,"NZD",-21.2333333,-159.7666667,8574,,"CK",,"COK","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"CXR","Christmas Island",1,"Christmas Island","CXR","CX",162,"AUD",-10.5,105.6666667,2205,,"CX",,"CXR","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"CXR",,1,"Christmas Island","CXR","CX",162,"AUD",-10.5,105.6666667,2205,,"CX",,"CXR","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "FLK","Falkland Islands (Malvinas)",1,"Falkland Islands (Malvinas)","FLK","FK",238,"FKP",-51.75,-59,3198,,"FK",,"FLK","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "GGY","Guernsey",1,"Guernsey","GGY","GG",831,"GG",49.4666667,-2.5833333,67052,,"GG",,"GGY","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "GLP","Guadeloupe",1,"Guadeloupe","GLP","GP",312,"EUR",16.9959717,-62.0676422,395700,,"GP",,"GLP","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "GUF","French Guiana",1,"French Guiana","GUF","GF",254,"EUR",4,-53,290691,,"GF",,"GUF","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"HMD","Heard Island and McDonald Islands",1,"Heard Island and McDonald Islands","HMD","HM",334,"AUD",-53.1,73.516667,,,"HM",,"HMD",,
-"IOT","British Indian Ocean Territory",1,"British Indian Ocean Territory","IOT","IO",86,"USD",-6,71.5,,,"IO",,"IOT",,
+"HMD",,1,"Heard Island and McDonald Islands","HMD","HM",334,"AUD",-53.1,73.516667,,,"HM",,"HMD",,
+"IOT",,1,"British Indian Ocean Territory","IOT","IO",86,"USD",-6,71.5,,,"IO",,"IOT",,
 "JEY","Jersey",1,"Jersey","JEY","JE",832,"JE",49.25,-2.1666666,101073,,"JE",,"JEY","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "MSR","Montserrat",1,"Montserrat","MSR","MS",500,"XCD",16.75,-62.2,5373,,"MS",,"MSR","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "MTQ","Martinique",1,"Martinique","MTQ","MQ",474,"EUR",14.666667,-61,376480,,"MQ",,"MTQ","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "MYT","Mayotte",1,"Mayotte","MYT","YT",175,"EUR",-12.77889,45.23151,256518,,"YT",,"MYT","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"NFK","Norfolk Island",1,"Norfolk Island","NFK","NF",574,"AUD",-29.0333,167.95,1748,,"NF",,"NFK","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"NFK",,1,"Norfolk Island","NFK","NF",574,"AUD",-29.0333,167.95,1748,,"NF",,"NFK","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "NIU","Niue",1,"Niue","NIU","NU",570,"NZD",-19.0333333,-169.866666,2000,,"NU",,"NIU","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "PCN","Pitcairn",1,"Pitcairn","PCN","PN",612,"NZD",-25.0666667,-130.1,50,,"PN",,"PCN","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "REU","Réunion",1,"Réunion","REU","RE",638,"EUR",-21.114444,55.5325,859959,,"RE",,"REU","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"SGS","South Georgia and the South Sandwich Islands",1,"South Georgia and the South Sandwich Islands","SGS","GS",239,"FKP",-54.5,-37,,,"GS",,"SGS",,
+"SGS",,1,"South Georgia and the South Sandwich Islands","SGS","GS",239,"FKP",-54.5,-37,,,"GS",,"SGS",,
 "SHN","Saint Helena, Ascension and Tristan da Cunha",1,"Saint Helena, Ascension and Tristan da Cunha","SHN","SH",654,"SHP",,,,,"SH",,"SHN",,
-"SJM","Svalbard and Jan Mayen",1,"Svalbard and Jan Mayen","SJM","SJ",744,"NOK",78,20,2926,,"SJ",,"SJM","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"SPM","Saint Pierre and Miquelon",1,"Saint Pierre and Miquelon","SPM","PM",666,"EUR",46.8333333,-56.333333,5347,,"PM",,"SPM","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"SJM",,1,"Svalbard and Jan Mayen","SJM","SJ",744,"NOK",78,20,2926,,"SJ",,"SJM","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"SPM",,1,"Saint Pierre and Miquelon","SPM","PM",666,"EUR",46.8333333,-56.333333,5347,,"PM",,"SPM","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "TKL","Tokelau",1,"Tokelau","TKL","TK",772,"NZD",-9,-172,1647,,"TK",,"TKL","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"UMI","United States Minor Outlying Islands",1,"United States Minor Outlying Islands","UMI","UM",581,"USD",,,,,"UM",,"UMI",,
+"UMI",,1,"United States Minor Outlying Islands","UMI","UM",581,"USD",,,,,"UM",,"UMI",,
 "VAT","Holy See",1,"Holy See","VAT","VA",336,"EUR",41.9,12.45,1000,,"VA","VA","VAT","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "WLF","Wallis and Futuna",1,"Wallis and Futuna","WLF","WF",876,"XPF",-13.3,-176.2,15854,,"WF",,"WLF","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "BMU","Bermuda",1,"Bermuda","BMU","BM",60,"BMD",32.3333333,-64.75,63973,,"BM",,"BMU","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
@@ -40,13 +40,13 @@
 "GIB","Gibraltar",1,"Gibraltar","GIB","GI",292,"GIP",36.1333333,-5.35,33718,,"GI",,"GIB","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "GRL","Greenland",1,"Greenland","GRL","GL",304,"DKK",,,56025,,"GL",,"GRL","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "IMN","Isle of Man",1,"Isle of Man","IMN","IM",833,"IM",54.25,-4.5,84077,"Isle of Man","IM",,"IMN","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"MAF","Saint Martin (French part)",1,"Saint Martin (French part)","MAF","MF",663,"MF",18.0833333,-63.95,37264,,"MF",,"MAF","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"MAF",,1,"Saint Martin (French part)","MAF","MF",663,"MF",18.0833333,-63.95,37264,,"MF",,"MAF","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "RKS","Kosovo",1,"Kosovo","RKS","XK",,"XK",42.602636,20.902977,1932774,,"XK","XK","RKS","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "TWN","Taiwan*",1,"Taiwan","TWN","TW",158,"TWD",23.5,121,23603049,"Taiwan","TW","TW","TWN","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "VGB","British Virgin Islands",1,"Virgin Islands, British","VGB","VG",92,"USD",,,29802,,"VG",,"VGB","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "ABW","Aruba",1,"Aruba","ABW","AW",533,"AWG",12.5,-69.96,105845,,"AW",,"ABW","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "ASM","American Samoa",1,"American Samoa","ASM","AS",16,"USD",-14.333333,-170,55465,,"AS",,"ASM","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"ESH","Western Sahara",1,"Western Sahara","ESH","EH",732,"MAD",24.2155,-12.8858,652271,,"EH","EH","ESH","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"ESH",,1,"Western Sahara","ESH","EH",732,"MAD",24.2155,-12.8858,652271,,"EH","EH","ESH","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "MNP","Northern Mariana Islands",1,"Northern Mariana Islands","MNP","MP",580,"USD",15.2,145.75,56882,,"MP",,"MNP","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "NCL","New Caledonia",1,"New Caledonia","NCL","NC",540,"XPF",-21.5,165.5,284060,,"NC",,"NCL","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "PYF","French Polynesia",1,"French Polynesia","PYF","PF",258,"XPF",-15,-140,277679,,"PF",,"PYF","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
@@ -56,7 +56,7 @@
 "HKG","Hong Kong",1,"Hong Kong","HKG","HK",344,"HKD",22.25,114.166666,7451000,"Hong Kong","HK",,"HKG","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "MAC","Macao",1,"Macao","MAC","MO",446,"MOP",22.166666,113.55,631636,"Macao","MO",,"MAC","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "PRI","Puerto Rico",1,"Puerto Rico","PRI","PR",630,"USD",18.25,-66.5,3195153,"Puerto Rico","PR",,"PRI","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
-"PRK","Korea, Democratic People's Republic of",1,"Korea, Democratic People's Republic of","PRK","KP",408,"KPW",40,127,25549819,,"KP",,"PRK","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
+"PRK",,1,"Korea, Democratic People's Republic of","PRK","KP",408,"KPW",40,127,25549819,,"KP",,"PRK","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "PSE","West Bank and Gaza",1,"Palestine","PSE","PS",275,"ILS",,,4569087,,"PS","PS","PSE","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "SYR","Syria",1,"Syria","SYR","SY",760,"SYP",35,38,16906283,,"SY","SY","SYR","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"
 "LBY","Libya",1,"Libya","LBY","LY",434,"LYD",25,17,6678567,,"LY","LY","LBY","World Bank Open Data (2018)","https://data.worldbank.org/indicator/SP.POP.TOTL"

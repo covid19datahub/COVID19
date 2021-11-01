@@ -133,6 +133,10 @@ covid19 <- function(country = NULL, level = 1){
   if(length(idx <- which(duplicated(x[,c("id", "date")]))))
     stop(sprintf("multiple dates per id: %s", paste0(unique(x$id[idx]), collapse = ", ")))
   
+  # check date range
+  if(any(x$date<"2020-01-01" | x$date>Sys.Date()))
+    stop("Some dates are out of range")
+  
   # check duplicated names
   idx <- which(duplicated(x[,c('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3')]))
   if(length(idx))
