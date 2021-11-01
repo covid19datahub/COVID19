@@ -113,13 +113,17 @@ github.cssegisanddata.covid19 <- function(level = 1, file = "global", country = 
       }
         
     }
+    
+    # filter
+    if(!is.null(country))
+      xx <- xx[which(xx$country==country),]
+    if(!is.null(state))
+      xx <- xx[which(xx$state==state),]
 
     # pivot
-    by <- c('id','country','state','city','lat','lng','fips','pop')
-    cn <- colnames(xx)
-    by <- by[by %in% cn]
-    cn <- (cn %in% by) | !is.na(as.Date(cn, format = "X%m.%d.%y"))
-    xx <- xx[,cn] %>% tidyr::pivot_longer(cols = -by, values_to = names(urls[i]), names_to = "date")
+    xx <- xx %>%
+      pivot_longer(cols = starts_with("X", ignore.case = FALSE), values_to = names(urls[i]), names_to = "date") %>%
+      select(c("id", "date", names(urls[i])))
     
     # date
     xx$date <- as.Date(xx$date, format = "X%m.%d.%y")
@@ -128,16 +132,10 @@ github.cssegisanddata.covid19 <- function(level = 1, file = "global", country = 
     if(i==1)
       x <- xx
     else
-      x <- merge(x, xx, all = TRUE, fill = TRUE, by = c('id','date'))
-
+      x <- full_join(x, xx, by = c('id', 'date'))
+    
   }
   
-  # filter
-  if(!is.null(country))
-    x <- x[which(x$country==country),]
-  if(!is.null(state))
-    x <- x[which(x$state==state),]
-
   # remove constant cumulative counts
   cols <- intersect(colnames(x), "recovered")
   clean <- function(x) replace(x, c(NA, diff(x))==0, NA)

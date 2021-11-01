@@ -32,31 +32,18 @@ covid19 <- function(country = NULL, level = 1){
       mutate_if(is.integer, as.character) %>%
       mutate(iso_alpha_3 = i)
   })) 
+  
   # add level 1 data
   cols <- c("iso_alpha_3", "iso_alpha_2", "iso_numeric", "iso_currency", "administrative_area_level_1")
   db <- left_join(db, iso[,cols], by = "iso_alpha_3")
   db <- bind_rows(db, iso)
+  
   # drop missing id
   db <- db[!is.na(db$id),]
   
-  # world
-  w <- NULL
-  # w <- try(cachecall("world", level = level))
-  # if("try-error" %in% class(w)){
-  #   stop("WORLD: try-error")
-  #   w <- NULL
-  # }
-  
-  if(!is.null(w)){
-    if(!ds_check_format(w, level = level, ci = 0.85)){
-      stop("WORLD: check failed")
-      w <- NULL
-    }
-  }
-  
-  # loop
+  # download data
   x <- data.frame()
-  if(is.null(country)) country <- iso$iso_alpha_3
+  if(is.null(country)) country <- iso$id
   for(fun in country) if(exists(fun, envir = asNamespace("COVID19"), mode = "function", inherits = FALSE)) {
     
     # try 
@@ -66,7 +53,7 @@ covid19 <- function(country = NULL, level = 1){
     if(is.null(y))
       next
     
-    # check try-error
+    # check error
     if("try-error" %in% class(y)){
       warning(sprintf("%s: try-error", fun))
       next
@@ -75,7 +62,10 @@ covid19 <- function(country = NULL, level = 1){
     # subset
     y <- y[,intersect(colnames(y), c('id', 'date', vars('cases')))]
     
-    # add iso as id for level 1
+    # add country code
+    y$iso_alpha_3 <- fun
+
+    # add id for level 1    
     if(level==1)
       y$id <- fun
     
@@ -85,21 +75,17 @@ covid19 <- function(country = NULL, level = 1){
       next
     }
     
-    # remove when v3.0 is ready
-    y$iso_alpha_3 <- fun
-    
     # add data
     x <- bind_rows(x, y)
     
   }
   
-  # fallback (delete with v3.0)
-  if(!is.null(w)){
-    x <- bind_rows(x, w[which(!(w$iso_alpha_3 %in% x$iso_alpha_3) & w$iso_alpha_3 %in% country),])
-  }
-
   # filter
   x <- x[!is.na(x$id),]
+  
+  # check empty
+  if(!nrow(x))
+    return(NULL)
   
   # policy measures
   o <- github.oxcgrt.covidpolicytracker(level = level)
@@ -109,30 +95,22 @@ covid19 <- function(country = NULL, level = 1){
   names(map) <- db$id
   x$id_oxcgrt <- map[x$id]
   
-  # fallback to country id when missing
+  # fallback to country when id is missing
   idx <- which(is.na(x$id_oxcgrt))
   x$id_oxcgrt[idx] <- x$iso_alpha_3[idx]
   
-  # merge
+  # merge policy measures
   x <- left_join(x, o, by = c('date','id_oxcgrt'))
   
-  # subset
+  # fill missing columns and subset
   key <- c('id', 'date', vars('cases'), vars('measures'))
   x[,key[!(key %in% colnames(x))]] <- NA
   x <- x[,key]
   
-  # check 
-  if(length(which(idx <- is.na(x$date))))
-    stop(sprintf("column 'date' contains NA values: %s", paste0(unique(x$id[idx]), collapse = ", ")))
-  
-  # check
-  if(length(idx <- which(duplicated(x[,c("id", "date")]))))
-    stop(sprintf("multiple dates per id: %s", paste0(unique(x$id[idx]), collapse = ", ")))
-  
   # merge top level data
   x <- left_join(x, db[,intersect(colnames(db), c("id", vars("admin")))], by = "id")
   
-  # subset
+  # fill missing columns and subset
   cn <- vars()
   x[,cn[!(cn %in% colnames(x))]] <- NA
   x <- x[,cn]
@@ -147,36 +125,21 @@ covid19 <- function(country = NULL, level = 1){
   # order by id and date
   x <- arrange(x, id, date)
   
-  # check
+  # check missing dates
+  if(length(which(idx <- is.na(x$date))))
+    stop(sprintf("column 'date' contains NA values: %s", paste0(unique(x$id[idx]), collapse = ", ")))
+  
+  # check duplicated dates
+  if(length(idx <- which(duplicated(x[,c("id", "date")]))))
+    stop(sprintf("multiple dates per id: %s", paste0(unique(x$id[idx]), collapse = ", ")))
+  
+  # check duplicated names
   idx <- which(duplicated(x[,c('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3')]))
   if(length(idx))
-    warning(sprintf("the tuple ('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3') is not unique: %s", paste(unique(x$id[idx]), collapse = ", ")))
+    stop(sprintf("the tuple ('date','administrative_area_level_1','administrative_area_level_2','administrative_area_level_3') is not unique: %s", paste(unique(x$id[idx]), collapse = ", ")))
   
   # return
   x
-  
-}
-
-# remove as v3.0 is ready
-world <- function(level){
-  
-  if(level>1) return(NULL)
-  
-  # download
-  x <- github.cssegisanddata.covid19(file = "global", level = level)
-  
-  # iso
-  x$iso_alpha_3 <- id(x$country, iso = "ISO", ds = "github.cssegisanddata.covid19", level = 1)
-  
-  # id
-  x$id <- x$iso_alpha_3
-  
-  # tests
-  o <- ourworldindata.org()  
-  x <- merge(x, o, by = c('date','iso_alpha_3'), all.x = TRUE)
-  
-  # return
-  return(x)
   
 }
 
@@ -444,17 +407,6 @@ vars <- function(type = NULL){
 #' @details 
 #' If \code{na.rm=TRUE}, then \code{NA} are treated as \code{0} when computing the cumulative sum.
 #' 
-#' @examples 
-#' \dontrun{
-#' 
-#' x <- mtcars[1:5,]
-#' x[2,] <- NA
-#' 
-#' cumsum(x)
-#' cumsum(x, na.rm = TRUE)
-#' 
-#' }
-#' 
 #' @keywords internal
 #' 
 #' @export
@@ -481,14 +433,6 @@ cumsum <- function(x, na.rm = TRUE){
 #' 
 #' @return \code{data.frame}
 #' 
-#' @examples 
-#' \dontrun{
-#' 
-#' # read file inst/extdata/db/ISO.csv
-#' x <- extdata("db","ISO.csv")
-#' 
-#' }
-#' 
 #' @keywords internal
 #' 
 #' @export
@@ -514,24 +458,6 @@ extdata <- function(...){
 #' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
 #' 
 #' @return \code{data.frame}
-#' 
-#' @examples 
-#' \dontrun{
-#' 
-#' # download data
-#' x <- COVID19:::github.cssegisanddata.covid19(file = "US", cache = TRUE, level = 3, country = "USA")
-#' 
-#' # add iso
-#' csv <- add_iso(x, iso = "USA", ds = "github.cssegisanddata.covid19", level = 3, map = c(
-#'  "id"    = "id", 
-#'  "state" = "administrative_area_level_2", 
-#'  "city"  = "administrative_area_level_3",
-#'  "pop"   = "population",
-#'  "lat"   = "latitude",
-#'  "lng"   = "longitude",
-#'  "fips"  = "key_numeric"))
-#'  
-#' }
 #' 
 #' @keywords internal
 #' 
@@ -589,17 +515,6 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
 #' 
 #' @return \code{vector}.
 #' 
-#' @examples 
-#' \dontrun{
-#' 
-#' x <- c('red','green','red','blue')
-#' 
-#' map_values(x, map = c(
-#' 'red' = 'yellow', 
-#' 'blue' = 'orange'))
-#' 
-#' }
-#' 
 #' @keywords internal
 #' 
 #' @export
@@ -633,18 +548,6 @@ map_values <- function(x, map, force = FALSE){
 #' 
 #' @return \code{data.frame}
 #' 
-#' @examples 
-#' \dontrun{
-#' 
-#' x <- mtcars
-#' 
-#' map_data(x, c(
-#' 'cyl' = 'Cylinders',
-#' 'hp'  = 'Gross horsepower'
-#' ))
-#' 
-#' }
-#' 
 #' @keywords internal
 #' 
 #' @export
@@ -661,46 +564,6 @@ map_data <- function(x, map){
   x <- x[,intersect(cn, colnames(x)), drop = FALSE]
   colnames(x) <- map_values(colnames(x), map)
   
-  return(x)
-  
-}
-
-#' Merge Two Data Frames
-#' 
-#' Merge two data frames by common columns or row names, or do other versions of database join operations.
-#' Drop common columns of the second data.frame.
-#' 
-#' @param ... arguments passed to \code{\link[base]{merge}}
-#' @param fill whether to merge non-NA values of duplicated columns
-#' @return return value of \code{\link[base]{merge}}
-#' 
-#' @keywords internal
-#' 
-#' @export
-merge <- function(..., fill = FALSE){
-  
-  # merge
-  x   <- base::merge(..., suffixes = c('','.drop'))
-  cn  <- colnames(x)
-  
-  # check duplicates
-  idx <- which(endsWith(cn, '.drop'))
-  if(length(idx)>0){
-    
-    # replace NA
-    if(fill) for(j in idx){
-      dup <- gsub("\\.drop$", "", cn[j])
-      i   <- is.na(x[,dup]) & !is.na(x[,j])  
-      if(any(i))
-        x[i,dup] <- x[i,j]
-    }
-    
-    # drop duplicates
-    x <- x[,-idx]
-    
-  }
-  
-  # return
   return(x)
   
 }
@@ -831,18 +694,6 @@ read.excel <- function(path, cache = FALSE, sheet = NA, ...) {
 #' 
 #' @return list of \code{data.frames}
 #' 
-#' @examples 
-#' \dontrun{
-#' 
-#' url <- "https://info.gesundheitsministerium.at/data/data.zip"
-#' 
-#' x   <- read.zip(url, cache = TRUE, sep = ";", files = c(
-#' "confirmed" = "Epikurve.csv",
-#' "deaths"    = "TodesfaelleTimeline.csv",
-#' "recovered" = "GenesenTimeline.csv"))
-#' 
-#' }
-#' 
 #' @keywords internal
 #' 
 #' @export
@@ -885,15 +736,6 @@ read.zip <- function(zip, files, cache = FALSE, ...){
 #' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
 #' 
 #' @return logical. 
-#' 
-#' @examples 
-#' \dontrun{
-#' 
-#' # check format of the 'github.pcmdpc.covid19' data source
-#' x <- COVID19:::github.pcmdpc.covid19(cache = FALSE, level = 1)
-#' ds_check_format(x, level = 1)
-#' 
-#' }
 #' 
 #' @keywords internal
 #' 

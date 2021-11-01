@@ -33,7 +33,7 @@ LIE <- function(level){
       select(-c("confirmed", "deaths", "tests", "hosp", "icu"))
     
     # merge
-    x <- merge(x1, x2, by = "date")
+    x <- full_join(x1, x2, by = "date")
     
   }
   

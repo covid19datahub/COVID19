@@ -32,13 +32,14 @@ github.italia.covid19opendatavaccini <- function(level){
     "prima_dose" = "first",
     "seconda_dose" = "second",
     "pregressa_infezione" = "oneshot",
-    "dose_aggiuntiva" = "extra"
+    "dose_aggiuntiva" = "extra",
+    "dose_booster" = "booster"
   ))
   
   # people vaccinated and total doses
   x <- x %>%
     dplyr::mutate(
-      vaccines = first + second + oneshot + extra,
+      vaccines = first + second + oneshot + extra + booster,
       people_vaccinated = first + oneshot,
       people_fully_vaccinated = second + oneshot)
   

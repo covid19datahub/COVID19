@@ -63,7 +63,7 @@ ITA <- function(level){
     x2$id <- id(x2$state, iso = "ITA", ds = "github.italia.covid19opendatavaccini", level = level)
     
     # merge
-    x <- merge(x1, x2, by = c("id", "date"))
+    x <- full_join(x1, x2, by = c("id", "date"))
     
   }
   
