@@ -21,17 +21,4 @@ list of \code{data.frames}
 \description{
 Reads files from a zip folder.
 }
-\examples{
-\dontrun{
-
-url <- "https://info.gesundheitsministerium.at/data/data.zip"
-
-x   <- read.zip(url, cache = TRUE, sep = ";", files = c(
-"confirmed" = "Epikurve.csv",
-"deaths"    = "TodesfaelleTimeline.csv",
-"recovered" = "GenesenTimeline.csv"))
-
-}
-
-}
 \keyword{internal}

@@ -4,7 +4,7 @@
 \alias{BEL}
 \title{Belgium}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_BEL.R}
+\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_BEL.R}
 }
 \usage{
 BEL(level)
@@ -16,8 +16,8 @@ Belgium
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_sciensano.be.R}{Sciensano, the Belgian Institute for Health}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_sciensano.be.R}{Sciensano, the Belgian Institute for Health}:
 confirmed cases,
 deaths,
 tests,
@@ -27,7 +27,7 @@ people fully vaccinated,
 hospitalizations,
 intensive care,
 patients requiring ventilation.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
 recovered.
 }
 }
@@ -35,7 +35,7 @@ recovered.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_sciensano.be.R}{Sciensano, the Belgian Institute for Health}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_sciensano.be.R}{Sciensano, the Belgian Institute for Health}:
 confirmed cases,
 deaths,
 tests,
@@ -51,7 +51,7 @@ patients requiring ventilation.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_sciensano.be.R}{Sciensano, the Belgian Institute for Health}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_sciensano.be.R}{Sciensano, the Belgian Institute for Health}:
 confirmed cases,
 tests,
 total vaccine doses administered,

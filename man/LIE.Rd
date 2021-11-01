@@ -4,7 +4,7 @@
 \alias{LIE}
 \title{Liechtenstein}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_LIE.R}
+\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_LIE.R}
 }
 \usage{
 LIE(level)
@@ -16,8 +16,8 @@ Liechtenstein
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_admin.ch.R}{Federal Office of Public Health}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_admin.ch.R}{Federal Office of Public Health}:
 confirmed cases,
 deaths,
 tests,
@@ -26,7 +26,7 @@ people with at least one vaccine dose,
 people fully vaccinated,
 hospitalizations,
 intensive care.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.openzh.covid19.R}{Specialist Unit for Open Government Data Canton of Zurich}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.openzh.covid19.R}{Specialist Unit for Open Government Data Canton of Zurich}:
 recovered,
 patients requiring ventilation.
 }

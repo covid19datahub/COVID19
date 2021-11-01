@@ -4,7 +4,7 @@
 \alias{COL}
 \title{Colombia}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_COL.R}
+\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_COL.R}
 }
 \usage{
 COL(level)
@@ -16,13 +16,13 @@ Colombia
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_gov.co.R}{Instituto Nacional de Salud}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gov.co.R}{Instituto Nacional de Salud}:
 confirmed cases,
 deaths,
 recovered,
 tests.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_ourworldindata.org.R}{Our World in Data}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_ourworldindata.org.R}{Our World in Data}:
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated,
@@ -34,7 +34,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_gov.co.R}{Instituto Nacional de Salud}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gov.co.R}{Instituto Nacional de Salud}:
 confirmed cases,
 deaths,
 recovered,
@@ -45,7 +45,7 @@ tests.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_gov.co.R}{Instituto Nacional de Salud}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_gov.co.R}{Instituto Nacional de Salud}:
 confirmed cases,
 deaths,
 recovered,

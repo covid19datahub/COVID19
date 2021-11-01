@@ -19,14 +19,4 @@ Checks if the output of a data source function is correctly formatted.
 The function checks the FORMAT, NOT the DATA.
 Before submission, the data should be double checked by comparing with external data sources (e.g. Google search).
 }
-\examples{
-\dontrun{
-
-# check format of the 'github.pcmdpc.covid19' data source
-x <- COVID19:::github.pcmdpc.covid19(cache = FALSE, level = 1)
-ds_check_format(x, level = 1)
-
-}
-
-}
 \keyword{internal}

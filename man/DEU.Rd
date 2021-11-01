@@ -4,7 +4,7 @@
 \alias{DEU}
 \title{Germany}
 \source{
-\url{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/iso_DEU.R}
+\url{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/iso_DEU.R}
 }
 \usage{
 DEU(level)
@@ -16,16 +16,16 @@ Germany
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_arcgis.de.R}{Robert Koch Institute}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_arcgis.de.R}{Robert Koch Institute}:
 confirmed cases,
 deaths,
 recovered.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_impfdashboard.de.R}{Robert Koch Institute and the Federal Ministry of Health}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_impfdashboard.de.R}{Robert Koch Institute and the Federal Ministry of Health}:
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_ourworldindata.org.R}{Our World in Data}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_ourworldindata.org.R}{Our World in Data}:
 tests,
 hospitalizations,
 intensive care.
@@ -35,11 +35,11 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_arcgis.de.R}{Robert Koch Institute}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_arcgis.de.R}{Robert Koch Institute}:
 confirmed cases,
 deaths,
 recovered.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.robertkochinstitut.covid19impfungenindeutschland.R}{Robert Koch Institut}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.robertkochinstitut.covid19impfungenindeutschland.R}{Robert Koch Institut}:
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated.
@@ -49,11 +49,11 @@ people fully vaccinated.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_arcgis.de.R}{Robert Koch Institute}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_arcgis.de.R}{Robert Koch Institute}:
 confirmed cases,
 deaths,
 recovered.
-\item \href{https://github.com/covid19datahub/COVID19/blob/ba52b2c666648c8a84f5ad3af3f5236924545608/R/ds_github.robertkochinstitut.covid19impfungenindeutschland.R}{Robert Koch Institut}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/db2d6d3b0348d924f0771baebf6d102b37eece28/R/ds_github.robertkochinstitut.covid19impfungenindeutschland.R}{Robert Koch Institut}:
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated.

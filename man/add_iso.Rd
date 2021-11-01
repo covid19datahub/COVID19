@@ -25,23 +25,4 @@ add_iso(x, iso, ds, level, map = c("id"), append = TRUE)
 \description{
 Add new country in the inst/extdata/db/ folder
 }
-\examples{
-\dontrun{
-
-# download data
-x <- COVID19:::github.cssegisanddata.covid19(file = "US", cache = TRUE, level = 3, country = "USA")
-
-# add iso
-csv <- add_iso(x, iso = "USA", ds = "github.cssegisanddata.covid19", level = 3, map = c(
- "id"    = "id", 
- "state" = "administrative_area_level_2", 
- "city"  = "administrative_area_level_3",
- "pop"   = "population",
- "lat"   = "latitude",
- "lng"   = "longitude",
- "fips"  = "key_numeric"))
- 
-}
-
-}
 \keyword{internal}

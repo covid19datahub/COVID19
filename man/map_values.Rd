@@ -17,16 +17,4 @@ map_values(x, map, force = FALSE)
 \description{
 Map values of a vector.
 }
-\examples{
-\dontrun{
-
-x <- c('red','green','red','blue')
-
-map_values(x, map = c(
-'red' = 'yellow', 
-'blue' = 'orange'))
-
-}
-
-}
 \keyword{internal}

@@ -17,16 +17,4 @@ Returns a numeric object whose elements are the cumulative sums of the elements 
 \details{
 If \code{na.rm=TRUE}, then \code{NA} are treated as \code{0} when computing the cumulative sum.
 }
-\examples{
-\dontrun{
-
-x <- mtcars[1:5,]
-x[2,] <- NA
-
-cumsum(x)
-cumsum(x, na.rm = TRUE)
-
-}
-
-}
 \keyword{internal}

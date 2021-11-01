@@ -17,17 +17,4 @@ map_data(x, map)
 \description{
 Subset a \code{data.frame} and change column names.
 }
-\examples{
-\dontrun{
-
-x <- mtcars
-
-map_data(x, c(
-'cyl' = 'Cylinders',
-'hp'  = 'Gross horsepower'
-))
-
-}
-
-}
 \keyword{internal}

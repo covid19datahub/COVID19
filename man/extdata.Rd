@@ -15,13 +15,4 @@ extdata(...)
 \description{
 Read files in the inst/extdata/ folder.
 }
-\examples{
-\dontrun{
-
-# read file inst/extdata/db/ISO.csv
-x <- extdata("db","ISO.csv")
-
-}
-
-}
 \keyword{internal}
