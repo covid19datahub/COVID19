@@ -1,7 +1,7 @@
 Package: COVID19
 Type: Package
 Title: COVID-19 Data Hub
-Version: 2.3.0
+Version: 3.0.0
 Authors@R: c(
     person(given = "Emanuele", family = "Guidotti", email = "emanuele.guidotti@unine.ch", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8961-6623")),
     person(given = "David", family = "Ardia", role = c("ctb"), comment = c(ORCID = "0000-0003-2823-782X"))
