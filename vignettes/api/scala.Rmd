@@ -7,14 +7,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-[![DOI](https://joss.theoj.org/papers/10.21105/joss.02376/status.svg)](https://doi.org/10.21105/joss.02376)
-
-__GitHub__: https://github.com/covid19datahub/Scala
-
-## Import Data from the Hub
-
-Download the data from the [here](/articles/data.html).
-
 For Scala you can use following singleton object `Fetcher`. It uses components `java.net.URL` from Java Platform SE and `scala.io.Source` from Scala Standard Library.
 
 The same problem as in Python example occurs here, header `User-Agent` needs to be present, see [similar issue in Java](https://stackoverflow.com/questions/13670692/403-forbidden-with-java-but-not-web-browser).
@@ -25,8 +17,8 @@ The same problem as in Python example occurs here, header `User-Agent` needs to 
 object COVID19Datahub {
   // method to fetch data
   def fetch(): (List[Array[String]],Array[String]) = {
-    // download
-    val url  = new java.net.URL("https://storage.covid19datahub.io/data-1.csv")
+    // replace <level> with 1, 2, or 3
+    val url  = new java.net.URL("https://storage.covid19datahub.io/rawdata-<level>.csv")
     val conn = url.openConnection
     conn.setRequestProperty("User-Agent","Mozilla/5.0")
     

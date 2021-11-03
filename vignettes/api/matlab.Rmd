@@ -7,20 +7,11 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-[![DOI](https://joss.theoj.org/papers/10.21105/joss.02376/status.svg)](https://doi.org/10.21105/joss.02376)
-
-__GitHub__: https://github.com/covid19datahub/MATLAB
-
-## Import Data from the Hub
-
-Download the data from the [here](/articles/data.html).
-
 In MATLAB, you can fetch the data simply by
 
-
 ```matlab
-% download
-data = urlread("https://storage.covid19datahub.io/data-1.csv");
+% replace <level> with 1, 2, or 3
+data = urlread("https://storage.covid19datahub.io/rawdata-<level>.csv");
 
 % save to tempfile
 csv_file_name = tempname;

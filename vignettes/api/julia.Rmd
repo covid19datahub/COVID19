@@ -7,14 +7,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-[![DOI](https://joss.theoj.org/papers/10.21105/joss.02376/status.svg)](https://doi.org/10.21105/joss.02376)
-
-__GitHub__: https://github.com/covid19datahub/Julia
-
-## Import Data from the Hub
-
-Download the data from the [here](/articles/data.html).
-
 For parsing csv Julia [CSV](https://juliadata.github.io/CSV.jl/stable/) is used. Install it by typing into Julia console
 
 ```julia
@@ -26,8 +18,8 @@ Once installed, fetch the data with
 
 ```julia
 using CSV
-# download
-url = "https://storage.covid19datahub.io/data-1.csv"
+# replace <level> with 1, 2, or 3
+url = "https://storage.covid19datahub.io/rawdata-<level>.csv"
 data = CSV.read(download(url))
 ```
 

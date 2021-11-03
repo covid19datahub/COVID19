@@ -7,14 +7,6 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-[![DOI](https://joss.theoj.org/papers/10.21105/joss.02376/status.svg)](https://doi.org/10.21105/joss.02376)
-
-__GitHub__: https://github.com/covid19datahub/node
-
-## Import Data from the Hub
-
-Download the data from the [here](/articles/data.html).
-
 Libraries [axios](https://www.npmjs.com/package/axios) (for online data fetching) and [csv-parse](https://www.npmjs.com/package/csv-parse) (for csv parsing). Install them by
 
 ```bash
@@ -28,8 +20,8 @@ const axios = require('axios');
 const parse = require('csv-parse/lib/sync')
 
 const dataCOVID19 = async () => {
-    // download
-    let resp = await axios.get('https://storage.covid19datahub.io/data-1.csv')
+    // replace <level> with 1, 2, or 3
+    let resp = await axios.get('https://storage.covid19datahub.io/rawdata-<level>.csv')
     let data = unescape(resp.data)
     // parse
     return parse(data, {

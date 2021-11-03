@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Documentation</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+<script>// Hide empty <a> tag within highlighted CodeBlock for screen reader accessibility (see https://github.com/jgm/pandoc/issues/6352#issuecomment-626106786) -->
+// v0.0.1
+// Written by JooYoung Seo (jooyoung@psu.edu) and Atsushi Yasumoto on June 1st, 2020.
+
+document.addEventListener('DOMContentLoaded', function() {
+  const codeList = document.getElementsByClassName("sourceCode");
+  for (var i = 0; i < codeList.length; i++) {
+    var linkList = codeList[i].getElementsByTagName('a');
+    for (var j = 0; j < linkList.length; j++) {
+      if (linkList[j].innerHTML === "") {
+        linkList[j].setAttribute('aria-hidden', 'true');
+      }
+    }
+  }
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Documentation</h1>
+
+
+
+<blockquote>
+<p>All the datasets at the <a href="/articles/data.html">download page</a> share the same structure. They are provided in the tidy data format described below.</p>
+</blockquote>
+<div id="identifiers" class="section level2">
+<h2>Identifiers</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>id</code></td>
+<td>Unique identifier for the administrative area.</td>
+</tr>
+<tr class="even">
+<td><code>date</code></td>
+<td>Observation date in the format YYYY-MM-DD.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="epidemiological-variables" class="section level2">
+<h2>Epidemiological variables</h2>
+<table>
+<colgroup>
+<col width="44%"></col>
+<col width="55%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>confirmed</code></td>
+<td>Cumulative number of confirmed cases.</td>
+</tr>
+<tr class="even">
+<td><code>deaths</code></td>
+<td>Cumulative number of deaths.</td>
+</tr>
+<tr class="odd">
+<td><code>tests</code></td>
+<td>Cumulative number of tests.</td>
+</tr>
+<tr class="even">
+<td><code>vaccines</code></td>
+<td>Cumulative number of total doses administered.</td>
+</tr>
+<tr class="odd">
+<td><code>people_vaccinated</code></td>
+<td>Cumulative number of people who received at least one vaccine dose.</td>
+</tr>
+<tr class="even">
+<td><code>people_fully_vaccinated</code></td>
+<td>Cumulative number of people who received all doses prescribed by the vaccination protocol.</td>
+</tr>
+<tr class="odd">
+<td><code>recovered</code></td>
+<td>Cumulative number of patients released from hospitals or reported recovered.</td>
+</tr>
+<tr class="even">
+<td><code>hosp</code></td>
+<td>Number of hospitalized patients on date.</td>
+</tr>
+<tr class="odd">
+<td><code>icu</code></td>
+<td>Number of hospitalized patients in intensive therapy on date.</td>
+</tr>
+<tr class="even">
+<td><code>vent</code></td>
+<td>Number of patients requiring invasive ventilation on date.</td>
+</tr>
+<tr class="odd">
+<td><code>population</code></td>
+<td>Total population.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="policy-measures" class="section level2">
+<h2>Policy measures</h2>
+<p>Policy measures are provided by <a href="https://github.com/OxCGRT/covid-policy-tracker">Oxford Covid-19 Government Response Tracker</a>. From the <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md">documentation</a>: “Policies often vary by region within countries. The Tracker codes the most stringent government policy that is in place in a country/territory, as represented by the highest ordinal value. Sometimes the most stringent policy in a country/territory will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area, the Tracker uses a binary flag variable to denote this limited scope. The indicators have a flag for whether they are”targeted&quot; to a specific geographical region (flag=0) or whether they are a “general” policy that is applied across the whole country/territory (flag=1).&quot;</p>
+<p>COVID-19 Data Hub uses these flags and indicators as follows:</p>
+<ul>
+<li>General policies (flag=1) are encoded with a positive value.</li>
+<li>Targeted policies (flag=0) are encoded with a negative value.</li>
+<li>Missing flags are treated as flag=0 (targeted policy) to represent the fact that the policy may vary within the country.</li>
+<li>All the policies for a country are used also for its sub-national areas (levels 2 and 3), unless <a href="https://github.com/OxCGRT/covid-policy-tracker#subnational-data">sub-national policies</a> are directly available.</li>
+<li>When data on <a href="https://github.com/OxCGRT/covid-policy-tracker#subnational-data">sub-national policies</a> are available (level 2), policies at level 3 are inherited from the policies at level 2.</li>
+</ul>
+<p>In short: positive integers identify policies applied to the entire administrative area. Negative integers identify policies that may not represent the real status of the given area.</p>
+<table>
+<colgroup>
+<col width="44%"></col>
+<col width="55%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>school_closing</code></td>
+<td>0 - no measures <br /> 1 - recommend closing or all schools open with alterations resulting in significant differences compared to non-Covid-19 operations <br /> 2 - require closing (only some levels or categories, eg just high school, or just public schools) <br /> 3 - require closing all levels</td>
+</tr>
+<tr class="even">
+<td><code>workplace_closing</code></td>
+<td>0 - no measures <br /> 1 - recommend closing (or recommend work from home) or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operation <br /> 2 - require closing (or work from home) for some sectors or categories of workers <br /> 3 - require closing (or work from home) for all-but-essential workplaces (eg grocery stores, doctors)</td>
+</tr>
+<tr class="odd">
+<td><code>cancel_events</code></td>
+<td>0 - no measures <br /> 1 - recommend cancelling <br /> 2 - require cancelling</td>
+</tr>
+<tr class="even">
+<td><code>gatherings_restrictions</code></td>
+<td>0 - no restrictions <br /> 1 - restrictions on very large gatherings (the limit is above 1000 people) <br /> 2 - restrictions on gatherings between 101-1000 people <br /> 3 - restrictions on gatherings between 11-100 people <br /> 4 - restrictions on gatherings of 10 people or less</td>
+</tr>
+<tr class="odd">
+<td><code>transport_closing</code></td>
+<td>0 - no measures <br /> 1 - recommend closing (or significantly reduce volume/route/means of transport available) <br /> 2 - require closing (or prohibit most citizens from using it)</td>
+</tr>
+<tr class="even">
+<td><code>stay_home_restrictions</code></td>
+<td>0 - no measures <br /> 1 - recommend not leaving house <br /> 2 - require not leaving house with exceptions for daily exercise, grocery shopping, and ‘essential’ trips <br /> 3 - require not leaving house with minimal exceptions (eg allowed to leave once a week, or only one person can leave at a time, etc)</td>
+</tr>
+<tr class="odd">
+<td><code>internal_movement_restrictions</code></td>
+<td>0 - no measures <br /> 1 - recommend not to travel between regions/cities <br /> 2 - internal movement restrictions in place</td>
+</tr>
+<tr class="even">
+<td><code>international_movement_restrictions</code></td>
+<td>0 - no restrictions <br /> 1 - screening arrivals <br /> 2 - quarantine arrivals from some or all regions <br /> 3 - ban arrivals from some regions <br /> 4 - ban on all regions or total border closure</td>
+</tr>
+<tr class="odd">
+<td><code>information_campaigns</code></td>
+<td>0 - no Covid-19 public information campaign <br /> 1 - public officials urging caution about Covid-19 <br /> 2- coordinated public information campaign (eg across traditional and social media)</td>
+</tr>
+<tr class="even">
+<td><code>testing_policy</code></td>
+<td>0 - no testing policy <br /> 1 - only those who both (a) have symptoms AND (b) meet specific criteria (eg key workers, admitted to hospital, came into contact with a known case, returned from overseas) <br /> 2 - testing of anyone showing Covid-19 symptoms <br /> 3 - open public testing (eg “drive through” testing available to asymptomatic people)</td>
+</tr>
+<tr class="odd">
+<td><code>contact_tracing</code></td>
+<td>0 - no contact tracing <br /> 1 - limited contact tracing; not done for all cases <br /> 2 - comprehensive contact tracing; done for all identified cases</td>
+</tr>
+<tr class="even">
+<td><code>facial_coverings</code></td>
+<td>0 - No policy <br /> 1 - Recommended <br /> 2 - Required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br /> 3 - Required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br /> 4 - Required outside the home at all times regardless of location or presence of other people</td>
+</tr>
+<tr class="odd">
+<td><code>vaccination_policy</code></td>
+<td>0 - No availability <br /> 1 - Availability for ONE of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br /> 2 - Availability for TWO of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br /> 3 - Availability for ALL of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br /> 4 - Availability for all three plus partial additional availability (select broad groups/ages) <br /> 5 - Universal availability</td>
+</tr>
+<tr class="even">
+<td><code>elderly_people_protection</code></td>
+<td>0 - no measures <br /> 1 - Recommended isolation, hygiene, and visitor restriction measures in LTCFs and/or elderly people to stay at home <br /> 2 - Narrow restrictions for isolation, hygiene in LTCFs, some limitations on external visitors and/or restrictions protecting elderly people at home <br /> 3 - Extensive restrictions for isolation and hygiene in LTCFs, all non-essential external visitors prohibited, and/or all elderly people required to stay at home and not leave the home with minimal exceptions, and receive no external visitors</td>
+</tr>
+</tbody>
+</table>
+<p>Oxford Covid-19 Government Response Tracker calculates several indices to give an overall impression of government activity, as described <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md">here</a>. COVID-19 Data Hub propagates the index value from upper level areas to lower level areas as described above for individual policy measures. When the index is not provided directly for the given area and it is inherited from an upper level area, we place a minus sign in front of the value of the index.</p>
+<table>
+<colgroup>
+<col width="44%"></col>
+<col width="55%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>government_response_index</code></td>
+<td>The index records how the response of governments has varied over all indicators in the <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md">OxCGRT database</a>, becoming stronger or weaker over the course of the outbreak.</td>
+</tr>
+<tr class="even">
+<td><code>stringency_index</code></td>
+<td>The index records the strictness of ‘lockdown style’ policies that primarily restrict people’s behaviour.</td>
+</tr>
+<tr class="odd">
+<td><code>containment_health_index</code></td>
+<td>The index combines ‘lockdown’ restrictions and closures with measures such as testing policy and contact tracing, short term investment in healthcare, as well investments in vaccines.</td>
+</tr>
+<tr class="even">
+<td><code>economic_support_index</code></td>
+<td>The index records measures such as income support and debt relief.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="coordinates" class="section level2">
+<h2>Coordinates</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>latitude</code></td>
+<td>Latitude.</td>
+</tr>
+<tr class="even">
+<td><code>longitude</code></td>
+<td>Longitude.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="administrative-area" class="section level2">
+<h2>Administrative area</h2>
+<table>
+<colgroup>
+<col width="44%"></col>
+<col width="55%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>administrative_area_level</code></td>
+<td>Administrative area level. The data are available at different levels of granularity: admin area level 1 (administrative area of top level, usually countries), admin area level 2 (usually states, regions, cantons), admin area level 3 (usually cities, municipalities).</td>
+</tr>
+<tr class="even">
+<td><code>administrative_area_level_1</code></td>
+<td>Administrative area of top level.</td>
+</tr>
+<tr class="odd">
+<td><code>administrative_area_level_2</code></td>
+<td>Administrative area of a lower level, usually states, regions or cantons.</td>
+</tr>
+<tr class="even">
+<td><code>administrative_area_level_3</code></td>
+<td>Administrative are of a lower level, usually cities or municipalities.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="iso-codes" class="section level2">
+<h2>ISO codes</h2>
+<table>
+<colgroup>
+<col width="44%"></col>
+<col width="55%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>iso_alpha_3</code></td>
+<td>3-letter code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">ISO 3166-1 Alpha-3</a>.</td>
+</tr>
+<tr class="even">
+<td><code>iso_alpha_2</code></td>
+<td>2-letter code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">ISO 3166-1 Alpha-2</a>.</td>
+</tr>
+<tr class="odd">
+<td><code>iso_numeric</code></td>
+<td>Numeric code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">ISO 3166-1 Numeric</a>.</td>
+</tr>
+<tr class="even">
+<td><code>iso_currency</code></td>
+<td>3-letter code of the currency used in the country according to the standard <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="external-keys" class="section level2">
+<h2>External Keys</h2>
+<table>
+<colgroup>
+<col width="44%"></col>
+<col width="55%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>key_local</code></td>
+<td>The administrative area identifier used by the local authorities, usually the national institue of statistics or local equivalent. E.g., <code>key_local</code> are FIPS codes for United States, IBGE codes for Brazil, ISTAT codes for Italy, etc.</td>
+</tr>
+<tr class="even">
+<td><code>key_google_mobility</code></td>
+<td>The administrative area identifier identifier used in <a href="https://www.google.com/covid19/mobility/">Google Mobility Reports</a>.</td>
+</tr>
+<tr class="odd">
+<td><code>key_apple_mobility</code></td>
+<td>The administrative area identifier identifier used in <a href="https://www.apple.com/covid19/mobility">Apple Mobility Reports</a>.</td>
+</tr>
+<tr class="even">
+<td><code>key_jhu_csse</code></td>
+<td>The administrative area identifier identifier used in the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset">JHU CSSE Unified COVID-19 Dataset</a>. In particular, this enables to match administrative areas with the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet">Hydromet dataset</a>.</td>
+</tr>
+<tr class="odd">
+<td><code>key_nuts</code></td>
+<td>The 2021 NUTS codes for Europe, by <a href="https://ec.europa.eu/eurostat/web/nuts/nuts-maps">Eurostat</a>. This is a one-to-many relation as one NUTS code can be associated with multiple administrative areas. The lowest level used is NUTS 3. Local Administrative Units (LAU) are mapped to NUTS 3.</td>
+</tr>
+<tr class="even">
+<td><code>key_gadm</code></td>
+<td>The identifier (GID) used in the <a href="https://gadm.org/">GADM database</a> version 3.6. This is a one-to-one relation as one GID is associated with a unique administrative area. For some administrative areas, it is not possible to find the exact correspondence in the GADM database. In this cases we proceed as follows: (a) when the administrative area is the union of multiple areas in GADM, we use the GID of the area closer to the centroid; (b) when the administrative area is a subdivision not present in GADM, we create its GID by appending <code>.n_0</code> to the GID of the upper division, where <code>n</code> is a sequantial integer and <code>0</code> denotes the version number (read more about GID <a href="https://gadm.org/metadata.html">here</a>).</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="terms-of-use" class="section level2">
+<h2>Terms of Use</h2>
+<blockquote>
+<p>We have invested a lot of time and effort in creating <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>, please:</p>
+</blockquote>
+<ul>
+<li>cite <a href="https://doi.org/10.21105/joss.02376">Guidotti and Ardia (2020)</a> when using <a href="https://covid19datahub.io">COVID-19 Data Hub</a>.</li>
+<li>place the URL <a href="https://covid19datahub.io" class="uri">https://covid19datahub.io</a> in a footnote to help others find <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>.</li>
+<li>you assume full risk for the use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>. We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. However, it is free software and comes with ABSOLUTELY NO WARRANTY. Reliance on <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> for medical guidance or use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> in commerce is strictly prohibited.</li>
+</ul>
+<p>The output data files are published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC license</a>. All data is subject to the terms of agreement individual to each data source, refer to the <a href="/reference/">sources of data</a> for more details. All other code and assets are published under the <a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> license.</p>
+</div>
+<div id="cite-as" class="section level2">
+<h2>Cite as</h2>
+<blockquote>
+<p><em>Guidotti, E., Ardia, D., (2020), “COVID-19 Data Hub”, Journal of Open Source Software 5(51):2376, doi: <a href="https://doi.org/10.21105/joss.02376">10.21105/joss.02376</a>.</em></p>
+</blockquote>
+<p>A BibTeX entry for LaTeX users is:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1"></a>@Article{,</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    title = {COVID-19 Data Hub},</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    year = {2020},</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    doi = {10.21105/joss.02376},</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    author = {Emanuele Guidotti and David Ardia},</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    journal = {Journal of Open Source Software},</span>
+<span id="cb1-7"><a href="#cb1-7"></a>    volume = {5},</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    number = {51},</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    pages = {2376}</span>
+<span id="cb1-10"><a href="#cb1-10"></a>}</span></code></pre></div>
+</div>
+<div id="comments" class="section level2">
+<h2>Comments</h2>
+<div class="utterances">
+
+</div>
+<script src="https://utteranc.es/client.js" repo="covid19datahub/COVID19" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+</script>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

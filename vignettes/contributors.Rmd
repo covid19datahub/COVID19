@@ -7,7 +7,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-The following people are gratefully acknowledged for taking part in the data collection as a joint effort against COVID-19. The names are in alphabetical order, to view individual contributions click [here](https://github.com/covid19datahub/COVID19/graphs/contributors).
+The following people are gratefully acknowledged for taking part in the data collection. The names are in alphabetical order, to view individual contributions click [here](https://github.com/covid19datahub/COVID19/graphs/contributors).
 
 - [Baby Rijin](https://github.com/rijinbaby)
 - [Benes Martin](https://github.com/martinbenes1996)
@@ -25,7 +25,5 @@ The following people are gratefully acknowledged for taking part in the data col
 - [Pengatkundil Muhammed](https://github.com/muhammedseehan-commits)
 - [Rosca Robert](https://github.com/RobertRosca)
 - [Yuan Zhou](https://github.com/yuanzhouIR)
-
-__Want to contribute?__ Join us on [Slack](https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw) and get started on [GitHub](https://github.com/covid19datahub/COVID19/)
 
 `r gsub("^# ", "## ", readr::read_file('../LICENSE.md'))`

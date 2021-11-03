@@ -1,80 +1,115 @@
 ---
-title: "Dataset Documentation"
+title: "Documentation"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Dataset Documentation}
+  %\VignetteIndexEntry{Documentation}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
-Download the data [here](/articles/data.html)
+> All the datasets at the [download page](/articles/data.html) share the same structure. They are provided in tidy data format: a table consisting of rows and columns. Each row represents an observation for a geographical entity at a given point in time. The columns are documented below.  
 
 ## Identifiers
 
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
-| `id`                                  | Unique identifier.                                         |
-| `date`                                | Observation date.                                            |
+| `id`                                  | Unique identifier for the geographical entity.                                         |
+| `date`                                | Observation date in the format YYYY-MM-DD.                                            |
 
 
-## COVID-19 variables
+## Epidemiological variables
 
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
 | `confirmed`                           | Cumulative number of confirmed cases.                       |
 | `deaths`                              | Cumulative number of deaths.                                |
+| `recovered`                           | Cumulative number of patients released from hospitals or reported recovered. |
 | `tests`                               | Cumulative number of tests.                                 |
 | `vaccines`                               | Cumulative number of total doses administered.                                |
-| `vaccines_1`                                 | Cumulative number of people who received at least one vaccine dose.                                            |
-| `vaccines_2`                                 | Cumulative number of people who received all doses prescribed by the vaccination protocol.                                            |
-| `recovered`                           | Cumulative number of patients released from hospitals or reported recovered. |
+| `people_vaccinated`                                 | Cumulative number of people who received at least one vaccine dose.                                            |
+| `people_fully_vaccinated`                                 | Cumulative number of people who received all doses prescribed by the vaccination protocol.                                            |
 | `hosp`                                | Number of hospitalized patients on date.                     |
-| `icu`                                 | Number of hospitalized patients in ICUs on date.             |
+| `icu`                                 | Number of hospitalized patients in intensive therapy on date.             |
 | `vent`                                | Number of patients requiring invasive ventilation on date.   |
 | `population`                                 | Total population.                                            |
 
 
 ## Policy measures
 
+Policy measures are provided by [Oxford Covid-19 Government Response Tracker](https://github.com/OxCGRT/covid-policy-tracker). From the [documentation](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md): "Policies often vary by region within countries. The Tracker codes the most stringent government policy that is in place in a country/territory, as represented by the highest ordinal value. Sometimes the most stringent policy in a country/territory will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area, the Tracker uses a binary flag variable to denote this limited scope. The indicators have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country/territory (flag=1)."
+
+COVID-19 Data Hub uses these flags and indicators as follows:
+
+- General policies (flag=1) are encoded with a positive value.
+- Targeted policies (flag=0) are encoded with a negative value.
+- Missing flags are treated as flag=0 (targeted policy) to represent the fact that the policy may vary within the country.
+- All the policies for a country are used also for its sub-national areas (levels 2 and 3), unless [sub-national policies](https://github.com/OxCGRT/covid-policy-tracker#subnational-data) are directly available.
+- When data on [sub-national policies](https://github.com/OxCGRT/covid-policy-tracker#subnational-data) are available (level 2), policies at level 3 are inherited from the policies at level 2.
+
+In short: positive integers identify policies applied to the entire administrative area. Negative integers are used to identify policies that represent a best guess of the policy in force, but may not represent the real status of the given area. The user can decide whether to drop the negative values or to convert them into positive integers.
+
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
-| `school_closing`                      | 0: No measures - 1: Recommend closing - 2: Require closing (only some levels or categories, eg just high school, or just public schools - 3: Require closing all levels. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `workplace_closing`                   | 0: No measures - 1: Recommend closing (or work from home) - 2: require closing for some sectors or categories of workers - 3: require closing (or work from home) all-but-essential workplaces (eg grocery stores, doctors). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `cancel_events`                       | 0: No measures - 1: Recommend cancelling - 2: Require cancelling. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `gatherings_restrictions`             | 0: No restrictions - 1: Restrictions on very large gatherings (the limit is above 1000 people) - 2: Restrictions on gatherings between 100-1000 people - 3: Restrictions on gatherings between 10-100 people - 4: Restrictions on gatherings of less than 10 people. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `transport_closing`                   | 0: No measures - 1: Recommend closing (or significantly reduce volume/route/means of transport available) - 2: Require closing (or prohibit most citizens from using it). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `stay_home_restrictions`              | 0: No measures - 1: recommend not leaving house - 2: require not leaving house with exceptions for daily exercise, grocery shopping, and "essential" trips - 3: Require not leaving house with minimal exceptions (e.g. allowed to leave only once every few days, or only one person can leave at a time, etc.). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `internal_movement_restrictions`      | 0: No measures - 1: Recommend closing (or significantly reduce volume/route/means of transport) - 2: Require closing (or prohibit most people from using it). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `international_movement_restrictions` | 0: No measures - 1: Screening - 2: Quarantine arrivals from high-risk regions - 3: Ban on high-risk regions - 4: Total border closure. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `information_campaigns`               | 0: No COVID-19 public information campaign - 1: public officials urging caution about COVID-19 - 2: coordinated public information campaign (e.g. across traditional and social media). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `testing_policy`                      | 0: No testing policy - 1: Only those who both (a) have symptoms AND (b) meet specific criteria (eg key workers, admitted to hospital, came into contact with a known case, returned from overseas) - 2: testing of anyone showing COVID-19 symptoms - 3: open public testing (eg  "drive through" testing available to asymptomatic people). [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `contact_tracing`                     | 0: No contact tracing - 1: Limited contact tracing, not done for all cases - 2: Comprehensive contact tracing, done for all cases. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
-| `stringency_index`                    | Stringency of governmental responses. [More details](https://www.bsg.ox.ac.uk/sites/default/files/2020-04/BSG-WP-2020-032-v5.0.pdf) |
+| `school_closing`                      | 0 - no measures <br/> 1 - recommend closing or all schools open with alterations resulting in significant differences compared to non-Covid-19 operations <br/> 2 - require closing (only some levels or categories, eg just high school, or just public schools) <br/> 3 - require closing all levels |
+| `workplace_closing`                   | 0 - no measures <br/> 1 - recommend closing (or recommend work from home) or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operation <br/> 2 - require closing (or work from home) for some sectors or categories of workers <br/> 3 - require closing (or work from home) for all-but-essential workplaces (eg grocery stores, doctors) |
+| `cancel_events`                       | 0 - no measures <br/> 1 - recommend cancelling <br/> 2 - require cancelling |
+| `gatherings_restrictions`             | 0 - no restrictions <br/> 1 - restrictions on very large gatherings (the limit is above 1000 people) <br/> 2 - restrictions on gatherings between 101-1000 people <br/> 3 - restrictions on gatherings between 11-100 people <br/> 4 - restrictions on gatherings of 10 people or less |
+| `transport_closing`                   | 0 - no measures <br/> 1 - recommend closing (or significantly reduce volume/route/means of transport available) <br/> 2 - require closing (or prohibit most citizens from using it) |
+| `stay_home_restrictions`              | 0 - no measures <br/> 1 - recommend not leaving house <br/> 2 - require not leaving house with exceptions for daily exercise, grocery shopping, and 'essential' trips <br/> 3 - require not leaving house with minimal exceptions (eg allowed to leave once a week, or only one person can leave at a time, etc) |
+| `internal_movement_restrictions`      | 0 - no measures <br/> 1 - recommend not to travel between regions/cities <br/> 2 - internal movement restrictions in place |
+| `international_movement_restrictions` | 0 - no restrictions <br/> 1 - screening arrivals <br/> 2 - quarantine arrivals from some or all regions <br/> 3 - ban arrivals from some regions <br/> 4 - ban on all regions or total border closure |
+| `information_campaigns`               | 0 - no Covid-19 public information campaign <br/> 1 - public officials urging caution about Covid-19 <br/> 2- coordinated public information campaign (eg across traditional and social media) |
+| `testing_policy`                      | 0 - no testing policy <br/> 1 - only those who both (a) have symptoms AND (b) meet specific criteria (eg key workers, admitted to hospital, came into contact with a known case, returned from overseas) <br/> 2 - testing of anyone showing Covid-19 symptoms <br/> 3 - open public testing (eg "drive through" testing available to asymptomatic people) |
+| `contact_tracing`                     | 0 - no contact tracing <br/> 1 - limited contact tracing; not done for all cases <br/> 2 - comprehensive contact tracing; done for all identified cases |
+| `facial_coverings`                    | 0 - No policy <br/> 1 - Recommended <br/> 2 - Required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br/> 3 - Required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br/> 4 - Required outside the home at all times regardless of location or presence of other people |
+| `vaccination_policy`                  | 0 - No availability <br/> 1 - Availability for ONE of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/> 2 - Availability for TWO of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/> 3 - Availability for ALL of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/> 4 - Availability for all three plus partial additional availability (select broad groups/ages) <br/> 5 - Universal availability |
+| `elderly_people_protection`           | 0 - no measures <br/> 1 - Recommended isolation, hygiene, and visitor restriction measures in LTCFs and/or elderly people to stay at home <br/> 2 - Narrow restrictions for isolation, hygiene in LTCFs, some limitations on external visitors and/or restrictions protecting elderly people at home <br/> 3 - Extensive restrictions for isolation and hygiene in LTCFs, all non-essential external visitors prohibited, and/or all elderly people required to stay at home and not leave the home with minimal exceptions, and receive no external visitors |
+
+Oxford Covid-19 Government Response Tracker calculates several indices to give an overall impression of government activity, as described [here](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md). COVID-19 Data Hub propagates the index value from upper level areas to lower level areas as described above for individual policy measures. When the index is not provided directly for the given area and it is inherited from an upper level area, we place a minus sign in front of the value of the index. The user can decide whether to drop the negative values or to convert them into positive numbers.
+
+| Variable                              | Description                                                  |
+| ----------------------------------------------- | ----------------------------------------------------------- |
+| `government_response_index`           | The index records how the response of governments has varied over all indicators in the [OxCGRT database](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md), becoming stronger or weaker over the course of the outbreak. |
+| `stringency_index`                    | The index records the strictness of ‘lockdown style’ policies that primarily restrict people’s behaviour. |
+| `containment_health_index`            | The index combines ‘lockdown’ restrictions and closures with measures such as testing policy and contact tracing, short term investment in healthcare, as well investments in vaccines. |
+| `economic_support_index`              | The index records measures such as income support and debt relief. |
 
 
-## Geographic information
+## Administrative areas
+
+| Variable                              | Description                                                  |
+| ----------------------------------------------- | ----------------------------------------------------------- |
+| `administrative_area_level`                             | Level of the administrative area: `1` for countries; `2` for states, regions, cantons, or local equivalent; `3` for cities, municipalities, or local equivalent.                            |
+| `administrative_area_level_1`                             | Name of the administrative area of level 1.                            |
+| `administrative_area_level_2`                               | Name of the administrative area of level 2. |
+| `administrative_area_level_3`                                | Name of the administrative area of level 3. |
+
+## Coordinates
+
+Latitude and longitude are computed using [`st_point_on_surface`](https://r-spatial.github.io/sf/reference/geos_unary.html), which guarantees to return a point on the surface of the administrative area.
 
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
 | `latitude`                                 | Latitude.                                                    |
 | `longitude`                                 | Longitude.                                                   |
-| `administrative_area_level`                             | Administrative area level.                            |
-| `administrative_area_level_1`                             | Administrative area of top level.                            |
-| `administrative_area_level_2`                               | Administrative area of a lower level, usually states, regions or cantons. |
-| `administrative_area_level_3`                                | Administrative are of a lower level, usually cities or municipalities. |
 
-## External Keys
-
-The following keys allow to extend the dataset with external data.
+## ISO codes
 
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
-| `key`                                  | Identifier used in governmental data.                                         |
-| `key_alpha_2`                                | Two-letter code used in governmental data.                                         |
-| `key_numeric`                                | Numeric code used in governmental data.                                            |
-| `key_google_mobility`                                | Identifier used in [Google Mobility Reports](https://www.google.com/covid19/mobility/).                                            |
-| `key_apple_mobility`                                |  Identifier used in [Apple Mobility Reports](https://www.apple.com/covid19/mobility).                                             |
-| `key_jhu_csse`                                |  The identifier used in the [JHU CSSE Unified COVID-19 Dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset). In particular, this enables to match administrative areas with the [Hydromet dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet).                                             |
+| `iso_alpha_3`                                 | 3-letter code of the country according to the standard [ISO 3166-1 Alpha-3](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                    |
+| `iso_alpha_2`                                 | 2-letter code of the country according to the standard [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                   |
+| `iso_numeric`                                 | Numeric code of the country according to the standard [ISO 3166-1 Numeric](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).                                                     |
+| `iso_currency`                                 | 3-letter code of the currency used in the country according to the standard [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).                                                   |
+
+## External Keys
+
+| Variable                              | Description                                                  |
+| ----------------------------------------------- | ----------------------------------------------------------- |
+| `key_local`                                  | The administrative area identifier used by the local authorities, usually the national institue of statistics or local equivalent. E.g., `key_local` are FIPS codes for United States, IBGE codes for Brazil, ISTAT codes for Italy, etc.                                         |
+| `key_google_mobility`                                | The administrative area identifier identifier used in [Google Mobility Reports](https://www.google.com/covid19/mobility/).                                            |
+| `key_apple_mobility`                                |  The administrative area identifier identifier used in [Apple Mobility Reports](https://www.apple.com/covid19/mobility).                                             |
+| `key_jhu_csse`                                |  The administrative area identifier identifier used in the [JHU CSSE Unified COVID-19 Dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset). In particular, this enables to match administrative areas with the [Hydromet dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet).                                             |
 | `key_nuts`                                |  The 2021 NUTS codes for Europe, by [Eurostat](https://ec.europa.eu/eurostat/web/nuts/nuts-maps). This is a one-to-many relation as one NUTS code can be associated with multiple administrative areas. The lowest level used is NUTS 3. Local Administrative Units (LAU) are mapped to NUTS 3.                                              |
 | `key_gadm`                                |  The identifier (GID) used in the [GADM database](https://gadm.org/) version 3.6. This is a one-to-one relation as one GID is associated with a unique administrative area. For some administrative areas, it is not possible to find the exact correspondence in the GADM database. In this cases we proceed as follows: (a) when the administrative area is the union of multiple areas in GADM, we use the GID of the area closer to the centroid; (b) when the administrative area is a subdivision not present in GADM, we create its GID by appending `.n_0` to the GID of the upper division, where `n` is a sequantial integer and `0` denotes the version number (read more about GID [here](https://gadm.org/metadata.html)). |
 

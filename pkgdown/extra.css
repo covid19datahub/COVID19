@@ -1,0 +1,4 @@
+.template-reference-topic #source, .template-reference-topic #source + p,
+.template-news h1 small {
+	display: none;
+}

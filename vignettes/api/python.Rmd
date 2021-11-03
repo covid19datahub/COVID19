@@ -7,11 +7,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-[![](https://img.shields.io/pypi/v/covid19dh.svg?color=brightgreen)](https://pypi.org/pypi/covid19dh/) [![](https://img.shields.io/pypi/dm/covid19dh.svg?color=blue)](https://pypi.org/pypi/covid19dh/) [![DOI](https://joss.theoj.org/papers/10.21105/joss.02376/status.svg)](https://doi.org/10.21105/joss.02376)
-
-__GitHub__: https://github.com/covid19datahub/Python
-
-__PyPI__: https://pypi.org/project/covid19dh/
+[![](https://img.shields.io/pypi/v/covid19dh.svg?color=brightgreen)](https://pypi.org/pypi/covid19dh/) [![](https://img.shields.io/pypi/dm/covid19dh.svg?color=blue)](https://pypi.org/pypi/covid19dh/) [![](https://img.shields.io/github/stars/covid19datahub/python?style=social)](https://github.com/covid19datahub/python)
 
 ## Setup and usage
 
@@ -136,7 +132,11 @@ x, src = covid19("USA")
 print(src)
 ```
 
+## Star the repo
 
+Help our package grow: star the repo! 
 
+<a class="github-button" href="https://github.com/covid19datahub/python" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star covid19datahub/python on GitHub">Star</a>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 `r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`
