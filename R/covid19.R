@@ -32,14 +32,18 @@ covid19 <- function(country = NULL, level = 1){
       mutate_if(is.integer, as.character) %>%
       mutate(iso_alpha_3 = i)
   })) 
+
+  # drop missing id
+  db <- db[!is.na(db$id),]
   
   # add level 1 data
   cols <- c("iso_alpha_3", "iso_alpha_2", "iso_numeric", "iso_currency", "administrative_area_level_1")
   db <- left_join(db, iso[,cols], by = "iso_alpha_3")
   db <- bind_rows(db, iso)
-  
-  # drop missing id
-  db <- db[!is.na(db$id),]
+
+  # check duplicated ids
+  if(length(idx <- which(duplicated(db$id))))
+    stop(sprintf("Duplicated ids in CSV files: %s", paste(db$id[idx], collapse = ", ")))
   
   # download data
   x <- data.frame()
@@ -478,7 +482,7 @@ add_iso <- function(x, iso, ds, level, map = c("id"), append = TRUE){
     stop("specify the 'id' column using the 'map' argument, eg. map = c('column' = 'id')")
   
   x[[id_ds]] <- x$id 
-  x$id       <- sapply(x$id, FUN = function(x) digest::digest(c(iso, x), algo = 'crc32'))
+  x$id <- sapply(x$id, FUN = function(x) digest::digest(c(iso, x), algo = 'crc32'))
   
   x[,key[!(key %in% colnames(x))]] <- NA
   x$administrative_area_level      <- level
