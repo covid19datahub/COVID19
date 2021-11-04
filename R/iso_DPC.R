@@ -32,7 +32,7 @@ DPC <- function(level){
       # for each date
       group_by(date) %>%
       # take last non-NA element
-      summarise_all(function(x) last(na.omit(x)))
+      summarise_all(function(x) ifelse(is.na(x[2]), x[1], x[2]))
 
   }
   

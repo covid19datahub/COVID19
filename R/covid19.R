@@ -1,6 +1,6 @@
 #' COVID-19 Data Hub
 #'
-#' @param country vector of country names or \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes} (alpha-2, alpha-3 or numeric).
+#' @param country vector of 3-letter ISO codes for countries.
 #' @param level integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.
 #'
 #' @source \url{https://covid19datahub.io}
@@ -43,7 +43,7 @@ covid19 <- function(country = NULL, level = 1){
   
   # download data
   x <- data.frame()
-  if(is.null(country)) country <- iso$id
+  if(is.null(country)) country <- iso$id_covid19datahub.io
   for(fun in country) if(exists(fun, envir = asNamespace("COVID19"), mode = "function", inherits = FALSE)) {
     
     # try 
@@ -67,7 +67,7 @@ covid19 <- function(country = NULL, level = 1){
 
     # add id for level 1    
     if(level==1)
-      y$id <- fun
+      y$id <- iso$id[which(iso$id_covid19datahub.io==fun)]
     
     # check format
     if(!ds_check_format(y, level = level, ci = 0.85)){
