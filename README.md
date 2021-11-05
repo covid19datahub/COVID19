@@ -29,14 +29,14 @@ The data are updated on an hourly basis. [Read more](https://covid19datahub.io/a
 ## Exciting news!
 Version 3.0 of the Data Hub will be released soon! This includes a new set of identifiers to enable geospatial analysis by linking to the [GADM database](https://gadm.org/). [NUTS codes](https://ec.europa.eu/eurostat/web/nuts/nuts-maps) for Europe are also included. Data on the first and second doses of vaccines will be included as well. The data coverage for `population` has been significantly extended. What this means for you:
 
-- if you are not using the columns `key`, `key_alpha_2`, and `key_numeric` of the dataset (see [here](https://covid19datahub.io/articles/doc/data.html)), nothing changes for you. 
+- if you are not using the columns `key`, `key_alpha_2`, and `key_numeric` of the dataset (see [here](https://covid19datahub.io/articles/docs.html)), nothing changes for you. 
 - if you are using some of the columns above (e.g., FIPS codes for US), please use the new column `key_local`. This contains the main identifier used by the local authorities (usually the national institute of statistics) regardless of its type (e.g., numeric, 2 character code, other). For a short period  of time (starting 14 October 2021), both the previous keys and the new `key_local` are made available to help the transition.
 - if you are accessing the columns by position (not recommended!) you may experience shifts in the column index.
 - for any question, please open an [issue](https://github.com/covid19datahub/COVID19/issues)
 
 ## Historical Data
 
-The dataset includes the time series of vaccines, tests, cases, deaths, recovered, hospitalizations, intensive therapy, policy measures and more. See the [full dataset documentation](https://covid19datahub.io/articles/doc/data.html).
+The dataset includes the time series of vaccines, tests, cases, deaths, recovered, hospitalizations, intensive therapy, policy measures and more. See the [full dataset documentation](https://covid19datahub.io/articles/docs.html).
 
 ## Administrative Areas
 

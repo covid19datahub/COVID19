@@ -11,23 +11,23 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 ## Download the data
 
-All the data are provided at our [download page](/articles/data.html).
+All the data are provided at the [download centre](/articles/data.html).
 
-## Variables
+## Unified dataset
 
-Our dataset includes an extensive list of [COVID-19 epidemiological variables](/articles/doc/data.html#epidemiological-variables), several [policy measures](/articles/doc/data.html#policy-measures) by Oxford's government response tracker, and a set of [external keys](/articles/doc/data.html#external-keys) to match the data with [Google](https://www.google.com/covid19/mobility/) and [Apple](https://www.apple.com/covid19/mobility) mobility reports, with the [Hydromet dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet), and with spatial databases such as [Eurostat](https://ec.europa.eu/eurostat/web/nuts/nuts-maps) for Europe or [GADM](https://gadm.org/) worldwide.
+The dataset includes an extensive list of [epidemiological variables](/articles/docs.html#epidemiological-variables), several [policy measures](/articles/docs.html#policy-measures) by Oxford's government response tracker, and a set of [external keys](/articles/docs.html#external-keys) to match the data with [Google](https://www.google.com/covid19/mobility/) and [Apple](https://www.apple.com/covid19/mobility) mobility reports, with the [Hydromet dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet), and with spatial databases such as [Eurostat](https://ec.europa.eu/eurostat/web/nuts/nuts-maps) for Europe or [GADM](https://gadm.org/) worldwide.
 
 ## Software packages
 
-We release [R](/articles/api/r.html) and [Python](/articles/api/python.html) packages to simplify the interaction with the Data Hub. Moreover, it is possible to import the data in any software by reading our [CSV files](/articles/data.html). See e.g., the instructions for [MATLAB](/articles/api/matlab.html), [Julia](/articles/api/julia.html), [Node.js](/articles/api/node.html), [Scala](/articles/api/scala.html), and [Excel](/articles/api/excel.html).
+We release [R](/articles/api/r.html) and [Python](/articles/api/python.html) packages to simplify the interaction with the Data Hub. In general, it is possible to import the data in any software by reading the CSV files provided at the [download centre](/articles/data.html).
 
 ## Data transparency
 
-Our data acquisition pipeline is 100% open source. All the code used to generate the data files can be found at our [GitHub repository](https://github.com/covid19datahub/COVID19/). In principle, one can use the function `covid19` from the repository to generate the same data we provide at the [download page](/articles/data.html#latest-data). However, this takes between 1-2 hours, so that downloading the pre-computed files is typically more convenient. [Here](/reference/index.html) we provide the full list of data sources from which the data are pulled from. Each source is linked to the file we use to import the data in the Hub. We hope this promotes bug reports, transparency, and trust. 
+The data acquisition pipeline is 100% open source. All the code used to generate the data files can be found at our [GitHub repository](https://github.com/covid19datahub/COVID19/). In principle, one can use the function `covid19` from the repository to generate the same data we provide at the [download centre](/articles/data.html#latest-data). However, this takes between 1-2 hours, so that downloading the pre-computed files is typically more convenient. [Here](/reference/index.html) we provide the full list of data sources from which the data are pulled from.
 
 ## Research reproducibility
 
-COVID-19 Data Hub is built by researchers for researchers. We provide [vintage data](/articles/data.html#vintage-data) to simplify reproducibility of academic research. These are immutable screenshots of the data taken each day. As most governments are updating the data retroactively, we recommend to use the vintage data in publication and to put the corresponding link in a footnote. We gratefully acknowledge financial support by the [R Consortium](https://www.r-consortium.org/blog/2020/12/14/r-consortium-providing-financial-support-to-covid-19-data-hub-platform) in maintaining the vintage data.
+As most governments are updating the data retroactively, we provide [vintage data](/articles/data.html#vintage-data) to simplify reproducibility of academic research. These are immutable snapshots of the data taken each day. We gratefully acknowledge financial support by the [R Consortium](https://www.r-consortium.org/blog/2020/12/14/r-consortium-providing-financial-support-to-covid-19-data-hub-platform) in maintaining the vintage data.
 
 ## Academic publications
 

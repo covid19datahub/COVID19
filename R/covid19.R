@@ -758,7 +758,7 @@ ds_check_format <- function(x, level, ci = 0.95) {
   
   # fallback
   if(!any(vars("cases") %in% colnames(x))){
-    warning("no valid column detected. Please rename the columns according to the documentation available at https://covid19datahub.io/articles/doc/data.html")
+    warning("no valid column detected. Please rename the columns according to the documentation available at https://covid19datahub.io/articles/docs.html")
     return(FALSE)
   }
   

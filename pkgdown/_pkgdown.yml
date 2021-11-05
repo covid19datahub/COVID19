@@ -7,6 +7,9 @@ template:
   params: 
     ganalytics: UA-163902432-1
     bootswatch: lumen
+    docsearch:
+      api_key: 4bb0f6b3d3527adec5f3b2193346004a
+      index_name: covid19datahub
 
 authors: 
   David Ardia: 
@@ -21,17 +24,18 @@ home:
 reference:
   - title: Data Sources
     desc: >
+        This page lists all the countries that we currently support, together with the granularity of the data.
         Click on a country to visualize the data sources for that country. 
         Each source is linked to the file at our [GitHub repository](https://github.com/covid19datahub/COVID19/) that is used to import the data.
         If you find some issues with the data, please [report a bug](https://github.com/covid19datahub/COVID19/issues). 
         Suggestions about where to find data that we do not currently provide are also very welcome!
-  - subtitle: Level 1
+  - subtitle: "Level 1: country-level data"
     contents:
     - has_concept("Level 1")
-  - subtitle: Level 2
+  - subtitle: "Level 2: state-level data"
     contents:
     - has_concept("Level 2")
-  - subtitle: Level 3
+  - subtitle: "Level 3: city-level data"
     contents:
     - has_concept("Level 3")
 
@@ -46,28 +50,16 @@ navbar:
         - text: Download
           href: articles/data.html
         - text: Documentation
-          href: articles/doc/data.html
+          href: articles/docs.html
         - text: Data sources
           href: reference/index.html
     software:
       text: Software
       menu:
         - text: R
-          href: articles/api/r.html
+          href: articles/r.html
         - text: Python
-          href: articles/api/python.html
-        - text: Other
-          menu:
-            - text: Node.js
-              href: articles/api/node.html
-            - text: Julia
-              href: articles/api/julia.html
-            - text: MATLAB
-              href: articles/api/matlab.html
-            - text: Scala
-              href: articles/api/scala.html
-            - text: Excel
-              href: articles/api/excel.html
+          href: articles/python.html
     papers:
       text: Papers
       menu:

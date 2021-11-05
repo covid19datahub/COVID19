@@ -14,6 +14,6 @@ github.oxcgrt.covidpolicytracker(level)
 }
 \description{
 Data source for: Worldwide
-Documentation: https://covid19datahub.io/articles/doc/data.html#policy-measures
+Documentation: https://covid19datahub.io/articles/docs.html#policy-measures
 }
 \keyword{internal}

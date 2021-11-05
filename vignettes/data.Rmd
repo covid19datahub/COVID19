@@ -1,8 +1,8 @@
 ---
-title: "Download"
+title: "Download Centre"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Download}
+  %\VignetteIndexEntry{Download Centre}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -10,63 +10,75 @@ vignette: >
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.bootstrap4.min.css" />
 
+> Download the data as a SQLite database or as CSV files.
+
 ## Latest data
 
 The latest data are updated on an hourly basis. 
-The data sources used are listed [here](/reference/index.html).
-The documentation of the data files is available [here](/articles/doc/data.html).
-It is possible to download the latest data in several ways.
+They can be dowloaded in several ways:
+
+- all-in-one (SQLite)
+- by level (CSV)
+- by country (CSV)
+- by location (CSV)
 
 ### Download all-in-one
 
-Download all the data at once as a single [SQLite](https://sqlite.org/) database file. The database contains a single table named `covid19datahub`. The file is compressed. When decompressed, the database size is around 2GB.
+Download all the data at once as a compressed [SQLite](https://sqlite.org/) database file. The database contains two tables:
 
-| URL                              | Description                                                  | Granularity | Format | Downloads |
-| ----------------------------------------------- | ----------------------- | --------------------------- | --- | ---------- |
-| https://storage.covid19datahub.io/rawdata.db.gz | Full database | All administrative area levels | SQLite | ![](https://storage.covid19datahub.io/downloads/rawdata.db.gz.svg) |
+- table `location`: contains information about the geographical entities
+- table `timeseries`: contains the time-series of epidemiological variables and policy measures for each location
+
+The two tables can be joined on the column `id`. Read more in the [documentation](/articles/docs.html).
+
+| URL | Description | Format | Downloads |
+|-------------------------------------------------------|----------------------------------------|--------------------------|------------------|
+| https://storage.covid19datahub.io/latest.db.gz | Full database. Contains all the data. | [GZIP](https://storage.covid19datahub.io/latest.db.gz) | ![](https://storage.covid19datahub.io/downloads/latest.db.gz.svg) |
 
 
 ### Download by level
 
-Download worldwide data at 3 different levels of granularity. Available in compressed (ZIP) and uncompressed (CSV) format.
+Download worldwide data at 3 different levels of granularity: country-level data (level `1`), state-level data (level `2`), and city-level data (level `3`).
 
-| URL                              | Description                                                  | Granularity | Format | Downloads |
-| ----------------------------------------------- | ----------------------- | --------------------------- | --- | ---------- |
-| https://storage.covid19datahub.io/rawdata-1.zip | Country-level data | Administrative area level 1 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-1.zip.svg) |
-| https://storage.covid19datahub.io/rawdata-1.csv | Country-level data | Administrative area level 1 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-1.csv.svg) |
-| https://storage.covid19datahub.io/rawdata-2.zip | State-level data | Administrative area level 2 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-2.zip.svg) |
-| https://storage.covid19datahub.io/rawdata-2.csv | State-level data | Administrative area level 2 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-2.csv.svg) |
-| https://storage.covid19datahub.io/rawdata-3.zip | Municipality-level data | Administrative area level 3 | ZIP | ![](https://storage.covid19datahub.io/downloads/rawdata-3.zip.svg) |
-| https://storage.covid19datahub.io/rawdata-3.csv | Municipality-level data | Administrative area level 3 | CSV | ![](https://storage.covid19datahub.io/downloads/rawdata-3.csv.svg) |
+| URL | Description | Format | Downloads |
+|-------------------------------------------------------|----------------------------------------|--------------------------|------------------|
+| https://storage.covid19datahub.io/level/1.csv | Worldwide country-level data. | [CSV](https://storage.covid19datahub.io/level/1.csv) -- [ZIP](https://storage.covid19datahub.io/level/1.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/1.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/1.svg) |
+| https://storage.covid19datahub.io/level/2.csv | Worldwide state-level data. | [CSV](https://storage.covid19datahub.io/level/2.csv) -- [ZIP](https://storage.covid19datahub.io/level/2.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/2.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/2.svg) |
+| https://storage.covid19datahub.io/level/3.csv | Worldwide city-level data. | [CSV](https://storage.covid19datahub.io/level/3.csv) -- [ZIP](https://storage.covid19datahub.io/level/3.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/3.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/3.svg) |
+
 
 **For developers.** The endpoint to download data by level is:
 
-- `https://storage.covid19datahub.io/rawdata-<level>.<ext>`
+- `https://storage.covid19datahub.io/level/<level>.<ext>`
 
 where:
 
 - `<level>` is equal to `1`, `2`, or `3`
-- `<ext>` is one of `csv` for the uncompressed files, or `zip` for the compressed files
+- `<ext>` is one of: `csv` for the uncompressed file; `csv.zip` for the ZIP file; `csv.gz` for the GZIP file
 
 ### Download by country
 
 ```{r, include=FALSE}
 select_country <- function(){
-  lookup <- read.csv("https://storage.covid19datahub.io/country/lookup.csv", fileEncoding = "UTF-8")
-  options <- paste(sprintf('<option value="%s">%s</option>', lookup$id, lookup$name), collapse = "\n")
-  sprintf('<select class="selectize" placeholder="Select a country" onchange="downloadCountry(this.value)"><option disabled selected value></option>\n%s\n</select>', options)
+  country <- read.csv("https://storage.covid19datahub.io/country/index.csv", fileEncoding = "UTF-8")
+  options <- paste(sprintf('<option value="%s">%s</option>', country$iso_alpha_3, country$name), collapse = "\n")
+  sprintf('<select class="selectize" placeholder="Select a country" onchange="downloadTable(this, \'country\')"><option disabled selected value></option>\n%s\n</select>', options)
 }
 ```
 
 ```{r, include=FALSE}
-select_place <- function(){
-  lookup <- read.csv("https://storage.covid19datahub.io/place/lookup.csv", fileEncoding = "UTF-8")
-  options <- paste(sprintf('<option value="%s">%s</option>', lookup$id, lookup$name), collapse = "\n")
-  sprintf('<select class="selectize" placeholder="Select a place" onchange="downloadPlace(this.value)"><option disabled selected value></option>\n%s\n</select>', options)
+select_location <- function(){
+  location <- read.csv("https://storage.covid19datahub.io/location/index.csv", fileEncoding = "UTF-8")
+  location$name <- gsub("^(, )*", "", paste(sep = ", ",
+    location$administrative_area_level_3,
+    location$administrative_area_level_2,
+    location$administrative_area_level_1))
+  options <- paste(sprintf('<option value="%s">%s</option>', location$id, location$name), collapse = "\n")
+  sprintf('<select class="selectize" placeholder="Select a location" onchange="downloadTable(this, \'location\')"><option disabled selected value></option>\n%s\n</select>', options)
 }
 ```
 
-Download the data for all the administrative areas within one country. Select the country and click on the link that appears.
+Download the data for all the administrative divisions within one country.
 
 `r select_country()`
 
@@ -79,77 +91,69 @@ Download the data for all the administrative areas within one country. Select th
 where:
 
 - `id` is the 3-letter ISO code of the country
-- `ext` is one of `csv` for the uncompressed format, or `csv.gz` for the compressed format
+- `<ext>` is one of: `csv` for the uncompressed file; `csv.zip` for the ZIP file; `csv.gz` for the GZIP file
 
-The lookup table containing the mapping between `id`s and countries is available at https://storage.covid19datahub.io/country/lookup.csv 
+The lookup table mapping countries to `id`s is available at `https://storage.covid19datahub.io/country/index.<ext>`
 
-### Download by place
+### Download by location
 
-Download the data for one geographical entity. Select the place and click on the link that appears.
+Download the data for one single location.
 
-`r select_place()`
+`r select_location()`
 
-<div id="download-place"></div>
+<div id="download-location"></div>
 
-**For developers.** The endpoint to download data by place is:
+**For developers.** The endpoint to download data by location is:
 
-- `https://storage.covid19datahub.io/place/<id>.<ext>`
+- `https://storage.covid19datahub.io/location/<id>.<ext>`
 
 where:
 
-- `id` is the hash code identifying a place
-- `ext` is one of `csv` for the uncompressed format, or `csv.gz` for the compressed format
+- `id` is the hash code identifying a location
+- `<ext>` is one of: `csv` for the uncompressed file; `csv.zip` for the ZIP file; `csv.gz` for the GZIP file
 
-The lookup table containing the mapping between `id`s and places is available at https://storage.covid19datahub.io/place/lookup.csv 
+The lookup table mapping locations to `id`s is available at `https://storage.covid19datahub.io/location/index.<ext>`
 
 
 ## Vintage data
 
-Vintage data are immutable screenshots of the data taken each day. 
-The vintage data are generated with a delay of 48 hours to make sure all the observations are complete, and we don't take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h). This means that e.g., a vintage file for 1st November is actually generated on 3rd November, and the data between the 1st and 3rd November are filtered out. 
-The data sources used at a given point in time are reported in the corresponding pdf file. 
-It is possible to download the vintage data as a ZIP archive or as a SQLite database file.
+Vintage data are immutable snapshots of the data taken each day. The vintage file on date `YYYY-MM-DD` contains the data that were available on that day.
 
 ```{r, include=FALSE}
-tab <- function(start, end, sqlite){
+tab <- function(start, end, version){
   dates <- seq(as.Date(end), as.Date(start), by = -1)
-  if(!sqlite){
-    tab <- sprintf("| https://storage.covid19datahub.io/%s.zip | Included in the zip folder | %s | ZIP | <img src=\"https://storage.covid19datahub.io/downloads/%s.zip.svg\" onerror=\"this.src='https://img.shields.io/badge/downloads-0-blue'\"/> |", dates, dates, dates)    
+  head <- "| URL | Data Sources | Snapshot Date | Downloads | \n |-------------------------------------------------------|----------------------------------------|--------------------------|------------------|"
+  if(version<3){
+    tab <- sprintf("| https://storage.covid19datahub.io/%s.zip | Included in the zip folder | %s | <img src=\"https://storage.covid19datahub.io/downloads/%s.zip.svg\" onerror=\"this.src='https://img.shields.io/badge/downloads-0-blue'\"/> |", dates, dates, dates)    
   }
   else{
-      tab <- sprintf("| https://storage.covid19datahub.io/%s.zip | [Download PDF](https://storage.covid19datahub.io/%s.pdf) | %s | ZIP | <img src=\"https://storage.covid19datahub.io/downloads/%s.zip.svg\" onerror=\"this.src='https://img.shields.io/badge/downloads-0-blue'\"/> | \n | https://storage.covid19datahub.io/%s.db.gz | [Download PDF](https://storage.covid19datahub.io/%s.pdf) | %s | SQLite | <img src=\"https://storage.covid19datahub.io/downloads/%s.db.gz.svg\" onerror=\"this.src='https://img.shields.io/badge/downloads-0-blue'\"/> |", dates, dates, dates, dates, dates, dates, dates, dates)
+      tab <- sprintf("| https://storage.covid19datahub.io/%s.db.gz | [Download PDF](https://storage.covid19datahub.io/%s.pdf) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | %s | <img src=\"https://storage.covid19datahub.io/downloads/%s.db.gz.svg\" onerror=\"this.src='https://img.shields.io/badge/downloads-0-blue'\"/> |", dates, dates, dates, dates, dates, dates, dates, dates)
   }
-  paste0(tab, collapse = "\n")  
+  paste(head, paste0(tab, collapse = "\n"), sep = '\n')
 }
 ```
 
-| URL | Data Sources | Date | Format | Downloads |
-| ----------------------------------------------- | --------------------------- | ----------------------- | --- | ---------- |
-`r tab(start = "2021-11-01", end = Sys.Date()-2, sqlite = TRUE)`
+`r tab(start = "2021-11-04", end = Sys.Date()-1, version = 3)`
 
-Version 3 is now live! This is a major update, [see the changelog](/news/index.html).
+Version 3 is now live. This is a major update. The vintage data are now shipped in SQLite databases and the vintage data sources are reported in the corresponding PDF files. 
 
-| URL | Data Sources | Date | Format | Downloads |
-| ----------------------------------------------- | --------------------------- | ----------------------- | --- | ---------- |
-`r tab(start = "2021-04-11", end = "2021-10-31", sqlite = FALSE)`
+The vintage data are now generated on the same date of the data snapshot. Before 4 November 2021, the vintage data were generated with a delay of 48 hours to make sure all the observations are complete, and we don't take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h). This means that e.g., a vintage file for 1st November was actually generated on 3rd November, and the data between the 1st and 3rd November were filtered out.
+
+[See the changelog](/news/index.html) for further information on this update.
+
+`r tab(start = "2021-04-11", end = "2021-11-03", version = 2)`
 
 Due to the incresing size of the data files, we stopped providing the pre-processed data on 10 April 2021, so to improve the update and storage of the raw data. **Please switch to the raw data if you are still using the pre-processed files.**
-Pre-processed data are obtained by filling missing dates in the raw data with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`. 
+Pre-processed data fill missing dates in the raw data with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`. 
 
-| URL | Data Sources | Date | Format | Downloads |
-| ----------------------------------------------- | --------------------------- | ----------------------- | --- | ---------- |
-`r tab(start = "2020-12-30", end = "2021-04-10", sqlite = FALSE)`
+`r tab(start = "2020-12-30", end = "2021-04-10", version = 2)`
 
-Since 2021-12-30, the datasets include the columns `vaccines` as described [here](/articles/doc/data.html#epidemiological-variables). 
+Since 2021-12-30, the datasets include the columns `vaccines` as described [here](/articles/docs.html#epidemiological-variables). 
 
-| URL | Data Sources | Date | Format | Downloads |
-| ----------------------------------------------- | --------------------------- | ----------------------- | --- | ---------- |
-`r tab(start = "2020-12-12", end = "2020-12-29", sqlite = FALSE)`
+`r tab(start = "2020-12-12", end = "2020-12-29", version = 2)`
 
-Since 2020-12-12, policies for admin areas level 3 are inherited from the policies available for admin areas level 2 as described [here](/articles/doc/data.html#policy-measures).
+Since 2020-12-12, policies for admin areas level 3 are inherited from the policies available for admin areas level 2 as described [here](/articles/docs.html#policy-measures).
 
-| URL | Data Sources | Date | Format | Downloads |
-| ----------------------------------------------- | --------------------------- | ----------------------- | --- | ---------- |
-`r tab(start = "2020-04-14", end = "2020-12-11", sqlite = FALSE)`
+`r tab(start = "2020-04-14", end = "2020-12-11", version = 2)`
 
 `r gsub("^# ", "## ", readr::read_file('../LICENSE.md'))`

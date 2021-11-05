@@ -7,7 +7,9 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-> All the datasets at the [download page](/articles/data.html) share the same structure. They are provided in tidy data format: a table consisting of rows and columns. Each row represents an observation for a geographical entity at a given point in time. The columns are documented below.  
+> All the CSV files at the [download centre](/articles/data.html) share the same structure: a table consisting of rows and columns. Each row represents an observation for a geographical entity at a given point in time. The columns are documented below. 
+
+> The [SQLite database](/articles/data.html#download-all-in-one-1) contains two tables: the table `location` where each row represents a geographical entity, and the table `timeseries` with the time-series observations for each location. The two tables can be joined on the column `id`. The columns are consistent with the CSV files and are documented below.
 
 ## Identifiers
 
@@ -46,7 +48,7 @@ COVID-19 Data Hub uses these flags and indicators as follows:
 - All the policies for a country are used also for its sub-national areas (levels 2 and 3), unless [sub-national policies](https://github.com/OxCGRT/covid-policy-tracker#subnational-data) are directly available.
 - When data on [sub-national policies](https://github.com/OxCGRT/covid-policy-tracker#subnational-data) are available (level 2), policies at level 3 are inherited from the policies at level 2.
 
-In short: positive integers identify policies applied to the entire administrative area. Negative integers are used to identify policies that represent a best guess of the policy in force, but may not represent the real status of the given area. The user can decide whether to drop the negative values or to convert them into positive integers.
+In short: positive integers identify policies applied to the entire administrative area. Negative integers are used to identify policies that represent a best guess of the policy in force, but may not represent the real status of the given area. **The negative sign is used solely to distinguish the two cases, it should not be treated as a real negative value.**
 
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
@@ -65,7 +67,7 @@ In short: positive integers identify policies applied to the entire administrati
 | `vaccination_policy`                  | 0 - No availability <br/> 1 - Availability for ONE of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/> 2 - Availability for TWO of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/> 3 - Availability for ALL of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/> 4 - Availability for all three plus partial additional availability (select broad groups/ages) <br/> 5 - Universal availability |
 | `elderly_people_protection`           | 0 - no measures <br/> 1 - Recommended isolation, hygiene, and visitor restriction measures in LTCFs and/or elderly people to stay at home <br/> 2 - Narrow restrictions for isolation, hygiene in LTCFs, some limitations on external visitors and/or restrictions protecting elderly people at home <br/> 3 - Extensive restrictions for isolation and hygiene in LTCFs, all non-essential external visitors prohibited, and/or all elderly people required to stay at home and not leave the home with minimal exceptions, and receive no external visitors |
 
-Oxford Covid-19 Government Response Tracker calculates several indices to give an overall impression of government activity, as described [here](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md). COVID-19 Data Hub propagates the index value from upper level areas to lower level areas as described above for individual policy measures. When the index is not provided directly for the given area and it is inherited from an upper level area, we place a minus sign in front of the value of the index. The user can decide whether to drop the negative values or to convert them into positive numbers.
+Oxford Covid-19 Government Response Tracker calculates several indices to give an overall impression of government activity, as described [here](https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md). COVID-19 Data Hub propagates the index value from upper level areas to lower level areas as described above for individual policy measures. When the index is not provided directly for the given area and it is inherited from an upper level area, we place a minus sign in front of the value of the index. **The negative sign is used solely to distinguish the two cases, it should not be treated as a real negative value.**
 
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
@@ -114,4 +116,4 @@ Latitude and longitude are computed using [`st_point_on_surface`](https://r-spat
 | `key_gadm`                                |  The identifier (GID) used in the [GADM database](https://gadm.org/) version 3.6. This is a one-to-one relation as one GID is associated with a unique administrative area. For some administrative areas, it is not possible to find the exact correspondence in the GADM database. In this cases we proceed as follows: (a) when the administrative area is the union of multiple areas in GADM, we use the GID of the area closer to the centroid; (b) when the administrative area is a subdivision not present in GADM, we create its GID by appending `.n_0` to the GID of the upper division, where `n` is a sequantial integer and `0` denotes the version number (read more about GID [here](https://gadm.org/metadata.html)). |
 
 
-`r gsub("^# ", "## ", readr::read_file('../../LICENSE.md'))`
+`r gsub("^# ", "## ", readr::read_file('../LICENSE.md'))`

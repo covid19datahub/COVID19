@@ -1,7 +1,7 @@
 #' Oxford Covid-19 Government Response Tracker
 #'
 #' Data source for: Worldwide
-#' Documentation: https://covid19datahub.io/articles/doc/data.html#policy-measures
+#' Documentation: https://covid19datahub.io/articles/docs.html#policy-measures
 #'
 #' @param level 1, 2, 3
 #'
