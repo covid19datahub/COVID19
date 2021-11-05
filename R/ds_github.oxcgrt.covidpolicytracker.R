@@ -63,7 +63,7 @@ github.oxcgrt.covidpolicytracker <- function(level){
     "H8_Protection.of.elderly.people"         = "elderly_people_protection",
     "H8_Flag"                                 = "elderly_people_protection_flag",
     "GovernmentResponseIndex"                 = "government_response_index",
-    "StringencyIndexForDisplay"               = "stringency_index",
+    "StringencyIndex"                         = "stringency_index",
     "ContainmentHealthIndex"                  = "containment_health_index",
     "EconomicSupportIndex"                    = "economic_support_index"))
   
