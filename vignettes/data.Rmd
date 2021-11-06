@@ -86,14 +86,14 @@ Download the data for all the administrative divisions within one country.
 
 **For developers.** The endpoint to download data by country is:
 
-- `https://storage.covid19datahub.io/country/<id>.<ext>`
+- `https://storage.covid19datahub.io/country/<iso>.<ext>`
 
 where:
 
-- `id` is the 3-letter ISO code of the country
+- `iso` is the 3-letter ISO code of the country
 - `<ext>` is one of: `csv` for the uncompressed file; `csv.zip` for the ZIP file; `csv.gz` for the GZIP file
 
-The lookup table mapping countries to `id`s is available at `https://storage.covid19datahub.io/country/index.<ext>`
+The lookup table mapping countries to `iso` codes is available at `https://storage.covid19datahub.io/country/index.<ext>`
 
 ### Download by location
 
