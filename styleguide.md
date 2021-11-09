@@ -320,4 +320,4 @@ BRA <- function(level){
 
 ## Acknowledgements
 
-We thank @EstellaD for inspiring and contributing this style guide.
+We thank [@EstellaD](https://github.com/EstellaD) for inspiring and contributing this style guide.
