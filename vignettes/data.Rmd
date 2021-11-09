@@ -133,6 +133,7 @@ tab <- function(start, end, version){
 }
 ```
 
+<!--
 `r tab(start = "2021-11-04", end = Sys.Date()-1, version = 3)`
 
 Version 3 is now live. This is a major update. The vintage data are now shipped in SQLite databases and the vintage data sources are reported in the corresponding PDF files. 
@@ -140,8 +141,9 @@ Version 3 is now live. This is a major update. The vintage data are now shipped 
 The vintage data are now generated on the same date of the data snapshot. Before 4 November 2021, the vintage data were generated with a delay of 48 hours to make sure all the observations are complete, and we don't take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h). This means that e.g., a vintage file for 1st November was actually generated on 3rd November, and the data between the 1st and 3rd November were filtered out.
 
 [See the changelog](/news/index.html) for further information on this update.
+-->
 
-`r tab(start = "2021-04-11", end = "2021-11-03", version = 2)`
+`r tab(start = "2021-04-11", end = Sys.Date()-2, version = 2)`
 
 Due to the incresing size of the data files, we stopped providing the pre-processed data on 10 April 2021, so to improve the update and storage of the raw data. **Please switch to the raw data if you are still using the pre-processed files.**
 Pre-processed data fill missing dates in the raw data with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`. 

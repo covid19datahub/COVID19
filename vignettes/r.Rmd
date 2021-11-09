@@ -9,6 +9,8 @@ vignette: >
 
 [![](https://www.r-pkg.org/badges/version/COVID19)](https://cran.r-project.org/package=COVID19) [![](https://cranlogs.r-pkg.org/badges/last-month/COVID19)](https://cran.r-project.org/package=COVID19) [![](https://img.shields.io/github/stars/covid19datahub/R?style=social)](https://github.com/covid19datahub/R)
 
+> IMPORTANT: this package will be upgraded to Version 3.0.0 between 15-19 November 2021.
+
 ## Quickstart
 
 ```R

@@ -1,6 +1,6 @@
 # COVID19 v3.0.0
 
-Version 3 represents a major update of COVID-19 Data Hub.
+Version 3 is a major update of COVID-19 Data Hub.
 
 ## Data Update
 
@@ -8,12 +8,14 @@ Version 3 represents a major update of COVID-19 Data Hub.
 - added the number of people who are fully vaccinated according to the vaccination protocol
 - added the data on population for all the administrative areas that we provide (more than 12,000)
 - added the latest policy measures by Oxford Covid-19 Government Response Tracker
+- added google and apple mobility identifiers for 3000+ administrative areas
 - added a new set of identifiers to enable geospatial analysis by linking to NUTS codes for Europe or to the GADM database worldwide
 - to compute coordinates, the centroid is replaced by [`st_point_on_surface`](https://r-spatial.github.io/sf/reference/geos_unary.html), which guarantees to return a point on the surface of the administrative area
 
 ## Breaking changes
 
 - the `id` for level 1 has been replaced with a 8-alphanumeric hash code for consistency with levels 2 and 3 
+- the column `key_google_mobility` now matches the Google `place_id`
 - the columns `key`, `key_alpha_2`, and `key_numeric` are replaced by `key_local`; containing the administrative area identifier used by the local authorities regardless of its type, e.g., numeric, 2-alpha code, etc. Codes such as FIPS now include leading zeros
 - the column `currency` is renamed in `iso_currency`
 - vintage data are now shipped in SQLite databases instead of ZIP folders
