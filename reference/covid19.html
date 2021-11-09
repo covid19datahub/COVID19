@@ -19,7 +19,7 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/lumen/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
@@ -44,10 +44,18 @@
 <script src="../pkgdown.js"></script>
 
 
+<!-- docsearch -->
+<script src="../docsearch.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link href="../docsearch.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
+
+  <link href="../extra.css" rel="stylesheet">
+  <script src="../extra.js"></script>
 
 <meta property="og:title" content="COVID-19 Data Hub — covid19" />
-<meta property="og:description" content="Unified datasets for a better understanding of COVID-19." />
+<meta property="og:description" content="COVID-19 Data Hub" />
 <meta property="og:image" content="https://covid19datahub.io/logo.png" />
 
 
@@ -90,7 +98,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">3.0.0</span>
       </span>
     </div>
 
@@ -113,54 +121,45 @@
       <a href="../articles/data.html">Download</a>
     </li>
     <li>
-      <a href="../articles/doc/data.html">Documentation</a>
+      <a href="../articles/docs.html">Documentation</a>
     </li>
     <li>
-      <a href="../articles/usage.html">Use Cases</a>
-    </li>
-    <li>
-      <a href="../news/index.html">Changelog</a>
+      <a href="../reference/index.html">Data sources</a>
     </li>
   </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Contributors
+    Software
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://github.com/covid19datahub/COVID19/">GitHub</a>
+      <a href="../articles/r.html">R</a>
     </li>
     <li>
-      <a href="../reference/index.html">Documentation</a>
+      <a href="../articles/python.html">Python</a>
     </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/contributors.html">Acknowledgments</a>
+      <a href="https://doi.org/10.21105/joss.02376">COVID-19 Data Hub</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="../articles/api/r.html">R</a>
+  <a href="../articles/contributors.html">Contributors</a>
 </li>
 <li>
-  <a href="../articles/api/python.html">Python</a>
-</li>
-<li>
-  <a href="../articles/api/matlab.html">MATLAB</a>
-</li>
-<li>
-  <a href="../articles/api/julia.html">Julia</a>
-</li>
-<li>
-  <a href="../articles/api/node.html">Node.js</a>
-</li>
-<li>
-  <a href="../articles/api/scala.html">Scala</a>
-</li>
-<li>
-  <a href="../articles/api/excel.html">Excel</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -171,6 +170,12 @@
   </a>
 </li>
       </ul>
+      
+      <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control" name="search-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+        </div>
+      </form>
       
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -189,20 +194,10 @@
     </div>
 
     <div class="ref-description">
-    <p>Unified datasets for a better understanding of COVID-19.</p>
+    <p>COVID-19 Data Hub</p>
     </div>
 
-    <pre class="usage"><span class='fu'>covid19</span><span class='op'>(</span>
-  country <span class='op'>=</span> <span class='cn'>NULL</span>,
-  level <span class='op'>=</span> <span class='fl'>1</span>,
-  start <span class='op'>=</span> <span class='st'>"2019-01-01"</span>,
-  end <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.Date</a></span><span class='op'>(</span><span class='op'>)</span>,
-  raw <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  vintage <span class='op'>=</span> <span class='cn'>FALSE</span>,
-  verbose <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  cache <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  debug <span class='op'>=</span> <span class='cn'>FALSE</span>
-<span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>covid19</span><span class='op'>(</span>country <span class='op'>=</span> <span class='cn'>NULL</span>, level <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -215,81 +210,16 @@
       <th>level</th>
       <td><p>integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.</p></td>
     </tr>
-    <tr>
-      <th>start</th>
-      <td><p>the start date of the period of interest.</p></td>
-    </tr>
-    <tr>
-      <th>end</th>
-      <td><p>the end date of the period of interest.</p></td>
-    </tr>
-    <tr>
-      <th>raw</th>
-      <td><p>logical. Skip data cleaning? Default <code>TRUE</code>. See details.</p></td>
-    </tr>
-    <tr>
-      <th>vintage</th>
-      <td><p>logical. Retrieve the snapshot of the dataset that was generated at the <code>end</code> date instead of using the latest version. Default <code>FALSE</code>.</p></td>
-    </tr>
-    <tr>
-      <th>verbose</th>
-      <td><p>logical. Print data sources? Default <code>TRUE</code>.</p></td>
-    </tr>
-    <tr>
-      <th>cache</th>
-      <td><p>logical. Memory caching? Significantly improves performance on successive calls. Default <code>TRUE</code>.</p></td>
-    </tr>
-    <tr>
-      <th>debug</th>
-      <td><p>logical. Warnings and stop on failure? Default <code>FALSE</code>.</p></td>
-    </tr>
     </table>
 
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p><a href='https://covid19datahub.io'>https://covid19datahub.io</a></p>
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>Grouped <code>tibble</code> (<code>data.frame</code>)</p>
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
-
-    <p>If <code>raw=FALSE</code>, the raw data are cleaned by filling missing dates with <code>NA</code> values.
-This ensures that all locations share the same grid of dates and no single day is skipped.
-Then, <code>NA</code> values are replaced with the previous non-<code>NA</code> value or <code>0</code>.</p>
-    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
-
-    <p>We have invested a lot of time and effort in creating <a href='https://covid19datahub.io'>COVID-19 Data Hub</a>, please:</p>
-<ul>
-<li><p>cite <a href='https://doi.org/10.21105/joss.02376'>Guidotti and Ardia (2020)</a> when using <a href='https://covid19datahub.io'>COVID-19 Data Hub</a>.</p></li>
-<li><p>place the URL <a href='https://covid19datahub.io'>https://covid19datahub.io</a> in a footnote to help others find <a href='https://covid19datahub.io'>COVID-19 Data Hub</a>.</p></li>
-<li><p>you assume full risk for the use of <a href='https://covid19datahub.io'>COVID-19 Data Hub</a>.
-We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub.
-However, it is free software and comes with ABSOLUTELY NO WARRANTY.
-Reliance on <a href='https://covid19datahub.io'>COVID-19 Data Hub</a> for medical guidance or use of <a href='https://covid19datahub.io'>COVID-19 Data Hub</a> in commerce is strictly prohibited.</p></li>
-</ul>
-
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: <a href='https://doi.org/10.21105/joss.02376'>10.21105/joss.02376</a>
 .</p>
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
-
-<span class='co'># Worldwide data by country</span>
-<span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'>covid19</span><span class='op'>(</span><span class='op'>)</span>
-
-<span class='co'># Worldwide data by state</span>
-<span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'>covid19</span><span class='op'>(</span>level <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span>
-
-<span class='co'># Specific country data by city</span>
-<span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fu'>covid19</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Italy"</span>,<span class='st'>"US"</span><span class='op'>)</span>, level <span class='op'>=</span> <span class='fl'>3</span><span class='op'>)</span>
-
-<span class='co'># Data sources</span>
-<span class='va'>s</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/attr.html'>attr</a></span><span class='op'>(</span><span class='va'>x</span>, <span class='st'>"src"</span><span class='op'>)</span>
-<span class='op'>}</span>
-
-</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -312,6 +242,23 @@ Reliance on <a href='https://covid19datahub.io'>COVID-19 Data Hub</a> for medica
    </div>
 
   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script>
+<script>
+  docsearch({
+    
+    
+    apiKey: '4bb0f6b3d3527adec5f3b2193346004a',
+    indexName: 'covid19datahub',
+    inputSelector: 'input#search-input.form-control',
+    transformData: function(hits) {
+      return hits.map(function (hit) {
+        hit.url = updateHitURL(hit);
+        return hit;
+      });
+    }
+  });
+</script>
+
 
 
   </body>

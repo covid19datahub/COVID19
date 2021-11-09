@@ -19,7 +19,7 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/lumen/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
@@ -44,7 +44,15 @@
 <script src="../pkgdown.js"></script>
 
 
+<!-- docsearch -->
+<script src="../docsearch.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link href="../docsearch.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
+
+  <link href="../extra.css" rel="stylesheet">
+  <script src="../extra.js"></script>
 
 <meta property="og:title" content="Articles" />
 <meta property="og:image" content="https://covid19datahub.io/logo.png" />
@@ -89,7 +97,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">3.0.0</span>
       </span>
     </div>
 
@@ -112,54 +120,45 @@
       <a href="../articles/data.html">Download</a>
     </li>
     <li>
-      <a href="../articles/doc/data.html">Documentation</a>
+      <a href="../articles/docs.html">Documentation</a>
     </li>
     <li>
-      <a href="../articles/usage.html">Use Cases</a>
-    </li>
-    <li>
-      <a href="../news/index.html">Changelog</a>
+      <a href="../reference/index.html">Data sources</a>
     </li>
   </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Contributors
+    Software
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://github.com/covid19datahub/COVID19/">GitHub</a>
+      <a href="../articles/r.html">R</a>
     </li>
     <li>
-      <a href="../reference/index.html">Documentation</a>
+      <a href="../articles/python.html">Python</a>
     </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/contributors.html">Acknowledgments</a>
+      <a href="https://doi.org/10.21105/joss.02376">COVID-19 Data Hub</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="../articles/api/r.html">R</a>
+  <a href="../articles/contributors.html">Contributors</a>
 </li>
 <li>
-  <a href="../articles/api/python.html">Python</a>
-</li>
-<li>
-  <a href="../articles/api/matlab.html">MATLAB</a>
-</li>
-<li>
-  <a href="../articles/api/julia.html">Julia</a>
-</li>
-<li>
-  <a href="../articles/api/node.html">Node.js</a>
-</li>
-<li>
-  <a href="../articles/api/scala.html">Scala</a>
-</li>
-<li>
-  <a href="../articles/api/excel.html">Excel</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -170,6 +169,12 @@
   </a>
 </li>
       </ul>
+      
+      <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control" name="search-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+        </div>
+      </form>
       
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -190,425 +195,15 @@
       <p class="section-desc"></p>
 
       <dl>
-        <dt><a href="api/excel.html">Excel</a></dt>
-        <dd></dt>
-        <dt><a href="api/julia.html">Julia</a></dt>
-        <dd></dt>
-        <dt><a href="api/matlab.html">MATLAB</a></dt>
-        <dd></dt>
-        <dt><a href="api/node.html">Node.js</a></dt>
-        <dd></dt>
-        <dt><a href="api/python.html">Python</a></dt>
-        <dd></dt>
-        <dt><a href="api/r.html">R</a></dt>
-        <dd></dt>
-        <dt><a href="api/scala.html">Scala</a></dt>
-        <dd></dt>
         <dt><a href="contributors.html">Contributors</a></dt>
         <dd></dt>
-        <dt><a href="data.html">Dataset</a></dt>
+        <dt><a href="data.html">Download Centre</a></dt>
         <dd></dt>
-        <dt><a href="doc/data.html">Dataset Documentation</a></dt>
+        <dt><a href="docs.html">Documentation</a></dt>
         <dd></dt>
-        <dt><a href="iso/AFG.html">Afghanistan</a></dt>
+        <dt><a href="python.html">Python</a></dt>
         <dd></dt>
-        <dt><a href="iso/AGO.html">Angola</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ALB.html">Albania</a></dt>
-        <dd></dt>
-        <dt><a href="iso/AND.html">Andorra</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ARE.html">United Arab Emirates</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ARG.html">Argentina</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ARM.html">Armenia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ASM.html">American Samoa</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ATG.html">Antigua and Barbuda</a></dt>
-        <dd></dt>
-        <dt><a href="iso/AUS.html">Australia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/AUT.html">Austria</a></dt>
-        <dd></dt>
-        <dt><a href="iso/AZE.html">Azerbaijan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BDI.html">Burundi</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BEL.html">Belgium</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BEN.html">Benin</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BFA.html">Burkina Faso</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BGD.html">Bangladesh</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BGR.html">Bulgaria</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BHR.html">Bahrain</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BHS.html">Bahamas</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BIH.html">Bosnia and Herzegovina</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BLR.html">Belarus</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BLZ.html">Belize</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BMU.html">Bermuda</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BOL.html">Bolivia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BRA.html">Brazil</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BRB.html">Barbados</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BRN.html">Brunei</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BTN.html">Bhutan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/BWA.html">Botswana</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CAC.html">Costa Atlantica</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CAF.html">Central African Republic</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CAN.html">Canada</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CHE.html">Switzerland</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CHL.html">Chile</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CHN.html">China</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CIV.html">Cote d'Ivoire</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CMR.html">Cameroon</a></dt>
-        <dd></dt>
-        <dt><a href="iso/COD.html">Congo, the Democratic Republic of the</a></dt>
-        <dd></dt>
-        <dt><a href="iso/COG.html">Congo</a></dt>
-        <dd></dt>
-        <dt><a href="iso/COL.html">Colombia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/COM.html">Comoros</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CPV.html">Cape Verde</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CRI.html">Costa Rica</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CUB.html">Cuba</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CYP.html">Cyprus</a></dt>
-        <dd></dt>
-        <dt><a href="iso/CZE.html">Czech Republic</a></dt>
-        <dd></dt>
-        <dt><a href="iso/DEU.html">Germany</a></dt>
-        <dd></dt>
-        <dt><a href="iso/DJI.html">Djibouti</a></dt>
-        <dd></dt>
-        <dt><a href="iso/DMA.html">Dominica</a></dt>
-        <dd></dt>
-        <dt><a href="iso/DNK.html">Denmark</a></dt>
-        <dd></dt>
-        <dt><a href="iso/DOM.html">Dominican Republic</a></dt>
-        <dd></dt>
-        <dt><a href="iso/DPC.html">Diamond Princess</a></dt>
-        <dd></dt>
-        <dt><a href="iso/DZA.html">Algeria</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ECU.html">Ecuador</a></dt>
-        <dd></dt>
-        <dt><a href="iso/EGY.html">Egypt</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ERI.html">Eritrea</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ESP.html">Spain</a></dt>
-        <dd></dt>
-        <dt><a href="iso/EST.html">Estonia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ETH.html">Ethiopia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/FIN.html">Finland</a></dt>
-        <dd></dt>
-        <dt><a href="iso/FJI.html">Fiji</a></dt>
-        <dd></dt>
-        <dt><a href="iso/FRA.html">France</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GAB.html">Gabon</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GBR.html">United Kingdom</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GEO.html">Georgia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GHA.html">Ghana</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GIN.html">Guinea</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GMB.html">Gambia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GNB.html">Guinea-Bissau</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GNQ.html">Equatorial Guinea</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GPC.html">Grand Princess</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GRC.html">Greece</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GRD.html">Grenada</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GTM.html">Guatemala</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GUM.html">Guam</a></dt>
-        <dd></dt>
-        <dt><a href="iso/GUY.html">Guyana</a></dt>
-        <dd></dt>
-        <dt><a href="iso/HND.html">Honduras</a></dt>
-        <dd></dt>
-        <dt><a href="iso/HRV.html">Croatia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/HTI.html">Haiti</a></dt>
-        <dd></dt>
-        <dt><a href="iso/HUN.html">Hungary</a></dt>
-        <dd></dt>
-        <dt><a href="iso/IDN.html">Indonesia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/IND.html">India</a></dt>
-        <dd></dt>
-        <dt><a href="iso/IRL.html">Ireland</a></dt>
-        <dd></dt>
-        <dt><a href="iso/IRN.html">Iran</a></dt>
-        <dd></dt>
-        <dt><a href="iso/IRQ.html">Iraq</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ISL.html">Iceland</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ISR.html">Israel</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ITA.html">Italy</a></dt>
-        <dd></dt>
-        <dt><a href="iso/JAM.html">Jamaica</a></dt>
-        <dd></dt>
-        <dt><a href="iso/JOR.html">Jordan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/JPN.html">Japan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/KAZ.html">Kazakhstan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/KEN.html">Kenya</a></dt>
-        <dd></dt>
-        <dt><a href="iso/KGZ.html">Kyrgyzstan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/KHM.html">Cambodia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/KNA.html">Saint Kitts and Nevis</a></dt>
-        <dd></dt>
-        <dt><a href="iso/KOR.html">Korea, South</a></dt>
-        <dd></dt>
-        <dt><a href="iso/KWT.html">Kuwait</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LAO.html">Laos</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LBN.html">Lebanon</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LBR.html">Liberia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LBY.html">Libya</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LCA.html">Saint Lucia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LIE.html">Liechtenstein</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LKA.html">Sri Lanka</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LSO.html">Lesotho</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LTU.html">Lithuania</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LUX.html">Luxembourg</a></dt>
-        <dd></dt>
-        <dt><a href="iso/LVA.html">Latvia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MAR.html">Morocco</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MCO.html">Monaco</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MDA.html">Moldova</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MDG.html">Madagascar</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MDV.html">Maldives</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MEX.html">Mexico</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MHL.html">Marshall Islands</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MKD.html">North Macedonia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MLI.html">Mali</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MLT.html">Malta</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MMR.html">Myanmar</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MNE.html">Montenegro</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MNG.html">Mongolia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MNP.html">Northern Mariana Islands</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MOZ.html">Mozambique</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MRT.html">Mauritania</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MSZ.html">MS Zaandam</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MUS.html">Mauritius</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MWI.html">Malawi</a></dt>
-        <dd></dt>
-        <dt><a href="iso/MYS.html">Malaysia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/NAM.html">Namibia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/NER.html">Niger</a></dt>
-        <dd></dt>
-        <dt><a href="iso/NGA.html">Nigeria</a></dt>
-        <dd></dt>
-        <dt><a href="iso/NIC.html">Nicaragua</a></dt>
-        <dd></dt>
-        <dt><a href="iso/NLD.html">Netherlands</a></dt>
-        <dd></dt>
-        <dt><a href="iso/NOR.html">Norway</a></dt>
-        <dd></dt>
-        <dt><a href="iso/NPL.html">Nepal</a></dt>
-        <dd></dt>
-        <dt><a href="iso/NZL.html">New Zealand</a></dt>
-        <dd></dt>
-        <dt><a href="iso/OMN.html">Oman</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PAK.html">Pakistan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PAN.html">Panama</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PER.html">Peru</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PHL.html">Philippines</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PNG.html">Papua New Guinea</a></dt>
-        <dd></dt>
-        <dt><a href="iso/POL.html">Poland</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PRI.html">Puerto Rico</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PRT.html">Portugal</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PRY.html">Paraguay</a></dt>
-        <dd></dt>
-        <dt><a href="iso/PSE.html">Palestine</a></dt>
-        <dd></dt>
-        <dt><a href="iso/QAT.html">Qatar</a></dt>
-        <dd></dt>
-        <dt><a href="iso/RKS.html">Kosovo</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ROU.html">Romania</a></dt>
-        <dd></dt>
-        <dt><a href="iso/RUS.html">Russia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/RWA.html">Rwanda</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SAU.html">Saudi Arabia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SDN.html">Sudan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SEN.html">Senegal</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SGP.html">Singapore</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SLB.html">Solomon Islands</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SLE.html">Sierra Leone</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SLV.html">El Salvador</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SMR.html">San Marino</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SOM.html">Somalia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SRB.html">Serbia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SSD.html">South Sudan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/STP.html">Sao Tome and Principe</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SUR.html">Suriname</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SVK.html">Slovakia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SVN.html">Slovenia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SWE.html">Sweden</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SWZ.html">Swaziland</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SYC.html">Seychelles</a></dt>
-        <dd></dt>
-        <dt><a href="iso/SYR.html">Syria</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TCD.html">Chad</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TGO.html">Togo</a></dt>
-        <dd></dt>
-        <dt><a href="iso/THA.html">Thailand</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TJK.html">Tajikistan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TLS.html">Timor-Leste</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TTO.html">Trinidad and Tobago</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TUN.html">Tunisia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TUR.html">Turkey</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TWN.html">Taiwan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/TZA.html">Tanzania</a></dt>
-        <dd></dt>
-        <dt><a href="iso/UGA.html">Uganda</a></dt>
-        <dd></dt>
-        <dt><a href="iso/UKR.html">Ukraine</a></dt>
-        <dd></dt>
-        <dt><a href="iso/URY.html">Uruguay</a></dt>
-        <dd></dt>
-        <dt><a href="iso/USA.html">United States</a></dt>
-        <dd></dt>
-        <dt><a href="iso/UZB.html">Uzbekistan</a></dt>
-        <dd></dt>
-        <dt><a href="iso/VAT.html">Holy See</a></dt>
-        <dd></dt>
-        <dt><a href="iso/VCT.html">Saint Vincent and the Grenadines</a></dt>
-        <dd></dt>
-        <dt><a href="iso/VEN.html">Venezuela</a></dt>
-        <dd></dt>
-        <dt><a href="iso/VIR.html">Virgin Islands, U.S.</a></dt>
-        <dd></dt>
-        <dt><a href="iso/VNM.html">Vietnam</a></dt>
-        <dd></dt>
-        <dt><a href="iso/VUT.html">Vanuatu</a></dt>
-        <dd></dt>
-        <dt><a href="iso/WSM.html">Samoa</a></dt>
-        <dd></dt>
-        <dt><a href="iso/YEM.html">Yemen</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ZAF.html">South Africa</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ZMB.html">Zambia</a></dt>
-        <dd></dt>
-        <dt><a href="iso/ZWE.html">Zimbabwe</a></dt>
-        <dd></dt>
-        <dt><a href="usage.html">Use Cases</a></dt>
+        <dt><a href="r.html">R</a></dt>
         <dd></dt>
       </dl>
     </div>
@@ -629,6 +224,23 @@
    </div>
 
   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script>
+<script>
+  docsearch({
+    
+    
+    apiKey: '4bb0f6b3d3527adec5f3b2193346004a',
+    indexName: 'covid19datahub',
+    inputSelector: 'input#search-input.form-control',
+    transformData: function(hits) {
+      return hits.map(function (hit) {
+        hit.url = updateHitURL(hit);
+        return hit;
+      });
+    }
+  });
+</script>
+
 
 
   </body>

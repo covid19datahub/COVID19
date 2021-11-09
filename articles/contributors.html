@@ -12,12 +12,15 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/lumen/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Contributors">
+<script src="../pkgdown.js"></script><!-- docsearch --><script src="../docsearch.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous">
+<link href="../docsearch.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script><link href="../extra.css" rel="stylesheet">
+<script src="../extra.js"></script><meta property="og:title" content="Contributors">
 <meta property="og:description" content="COVID19">
 <meta property="og:image" content="https://covid19datahub.io/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -44,7 +47,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">3.0.0</span>
       </span>
     </div>
 
@@ -67,54 +70,45 @@
       <a href="../articles/data.html">Download</a>
     </li>
     <li>
-      <a href="../articles/doc/data.html">Documentation</a>
+      <a href="../articles/docs.html">Documentation</a>
     </li>
     <li>
-      <a href="../articles/usage.html">Use Cases</a>
-    </li>
-    <li>
-      <a href="../news/index.html">Changelog</a>
+      <a href="../reference/index.html">Data sources</a>
     </li>
   </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Contributors
+    Software
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="https://github.com/covid19datahub/COVID19/">GitHub</a>
+      <a href="../articles/r.html">R</a>
     </li>
     <li>
-      <a href="../reference/index.html">Documentation</a>
+      <a href="../articles/python.html">Python</a>
     </li>
-    <li>
-      <a href="../articles/contributors.html">Acknowledgments</a>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="https://doi.org/10.21105/joss.02376">COVID-19 Data Hub</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="../articles/api/r.html">R</a>
+  <a href="../articles/contributors.html">Contributors</a>
 </li>
 <li>
-  <a href="../articles/api/python.html">Python</a>
-</li>
-<li>
-  <a href="../articles/api/matlab.html">MATLAB</a>
-</li>
-<li>
-  <a href="../articles/api/julia.html">Julia</a>
-</li>
-<li>
-  <a href="../articles/api/node.html">Node.js</a>
-</li>
-<li>
-  <a href="../articles/api/scala.html">Scala</a>
-</li>
-<li>
-  <a href="../articles/api/excel.html">Excel</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -125,7 +119,13 @@
   </a>
 </li>
       </ul>
+<form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control" name="search-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
 </div>
+      </form>
+      
+    </div>
 <!--/.nav-collapse -->
   </div>
 <!--/.container -->
@@ -147,7 +147,7 @@
 
     
     
-<p>The following people are gratefully acknowledged for taking part in the data collection as a joint effort against COVID-19. The names are in alphabetical order, to view individual contributions click <a href="https://github.com/covid19datahub/COVID19/graphs/contributors">here</a>.</p>
+<p>The following people are gratefully acknowledged for taking part in the data collection. The names are in alphabetical order, to view individual contributions click <a href="https://github.com/covid19datahub/COVID19/graphs/contributors">here</a>.</p>
 <ul>
 <li><a href="https://github.com/rijinbaby">Baby Rijin</a></li>
 <li><a href="https://github.com/martinbenes1996">Benes Martin</a></li>
@@ -166,17 +166,36 @@
 <li><a href="https://github.com/RobertRosca">Rosca Robert</a></li>
 <li><a href="https://github.com/yuanzhouIR">Yuan Zhou</a></li>
 </ul>
-<p><strong>Want to contribute?</strong> Join us on <a href="https://join.slack.com/t/covid19datahub/shared_invite/zt-e921sryd-Sb97p~skvovQM6NuXFUNCw">Slack</a> and get started on <a href="https://github.com/covid19datahub/COVID19/">GitHub</a></p>
 <div id="terms-of-use" class="section level2">
 <h2 class="hasAnchor">
-<a href="#terms-of-use" class="anchor"></a>Terms of Use</h2>
+<a href="#terms-of-use" class="anchor"></a>Terms of use</h2>
+<blockquote>
 <p>We have invested a lot of time and effort in creating <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>, please:</p>
+</blockquote>
 <ul>
 <li>cite <a href="https://doi.org/10.21105/joss.02376">Guidotti and Ardia (2020)</a> when using <a href="https://covid19datahub.io">COVID-19 Data Hub</a>.</li>
 <li>place the URL <a href="https://covid19datahub.io" class="uri">https://covid19datahub.io</a> in a footnote to help others find <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>.</li>
 <li>you assume full risk for the use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>. We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. However, it is free software and comes with ABSOLUTELY NO WARRANTY. Reliance on <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> for medical guidance or use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> in commerce is strictly prohibited.</li>
 </ul>
-<p><strong>License</strong>: <a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a>.</p>
+<p>The output data files are published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC license</a>. All data is subject to the terms of agreement individual to each data source, refer to the <a href="/reference/">sources of data</a> for more details. All other code and assets are published under the <a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> license.</p>
+</div>
+<div id="cite-as" class="section level2">
+<h2 class="hasAnchor">
+<a href="#cite-as" class="anchor"></a>Cite as</h2>
+<blockquote>
+<p><em>Guidotti, E., Ardia, D., (2020), “COVID-19 Data Hub”, Journal of Open Source Software 5(51):2376, doi: <a href="https://doi.org/10.21105/joss.02376">10.21105/joss.02376</a>.</em></p>
+</blockquote>
+<p>A BibTeX entry for LaTeX users is:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1"></a>@Article{,</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    title = {COVID-19 Data Hub},</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    year = {2020},</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    doi = {10.21105/joss.02376},</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    author = {Emanuele Guidotti and David Ardia},</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    journal = {Journal of Open Source Software},</span>
+<span id="cb1-7"><a href="#cb1-7"></a>    volume = {5},</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    number = {51},</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    pages = {2376}</span>
+<span id="cb1-10"><a href="#cb1-10"></a>}</span></code></pre></div>
 </div>
 <div id="comments" class="section level2">
 <h2 class="hasAnchor">
@@ -211,7 +230,20 @@
 </div>
 
   
-
-
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script><script>
+  docsearch({
+    
+    
+    apiKey: '4bb0f6b3d3527adec5f3b2193346004a',
+    indexName: 'covid19datahub',
+    inputSelector: 'input#search-input.form-control',
+    transformData: function(hits) {
+      return hits.map(function (hit) {
+        hit.url = updateHitURL(hit);
+        return hit;
+      });
+    }
+  });
+</script>
+</body>
 </html>

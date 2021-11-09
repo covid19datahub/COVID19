@@ -19,7 +19,7 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/lumen/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
@@ -44,7 +44,15 @@
 <script src="../pkgdown.js"></script>
 
 
+<!-- docsearch -->
+<script src="../docsearch.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link href="../docsearch.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
+
+  <link href="../extra.css" rel="stylesheet">
+  <script src="../extra.js"></script>
 
 <meta property="og:title" content="Changelog" />
 <meta property="og:image" content="https://covid19datahub.io/logo.png" />
@@ -89,7 +97,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">3.0.0</span>
       </span>
     </div>
 
@@ -112,54 +120,45 @@
       <a href="../articles/data.html">Download</a>
     </li>
     <li>
-      <a href="../articles/doc/data.html">Documentation</a>
+      <a href="../articles/docs.html">Documentation</a>
     </li>
     <li>
-      <a href="../articles/usage.html">Use Cases</a>
-    </li>
-    <li>
-      <a href="../news/index.html">Changelog</a>
+      <a href="../reference/index.html">Data sources</a>
     </li>
   </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Contributors
+    Software
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://github.com/covid19datahub/COVID19/">GitHub</a>
+      <a href="../articles/r.html">R</a>
     </li>
     <li>
-      <a href="../reference/index.html">Documentation</a>
+      <a href="../articles/python.html">Python</a>
     </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="../articles/contributors.html">Acknowledgments</a>
+      <a href="https://doi.org/10.21105/joss.02376">COVID-19 Data Hub</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="../articles/api/r.html">R</a>
+  <a href="../articles/contributors.html">Contributors</a>
 </li>
 <li>
-  <a href="../articles/api/python.html">Python</a>
-</li>
-<li>
-  <a href="../articles/api/matlab.html">MATLAB</a>
-</li>
-<li>
-  <a href="../articles/api/julia.html">Julia</a>
-</li>
-<li>
-  <a href="../articles/api/node.html">Node.js</a>
-</li>
-<li>
-  <a href="../articles/api/scala.html">Scala</a>
-</li>
-<li>
-  <a href="../articles/api/excel.html">Excel</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -170,6 +169,12 @@
   </a>
 </li>
       </ul>
+      
+      <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control" name="search-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+        </div>
+      </form>
       
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -186,264 +191,186 @@
       <small>Source: <a href='https://github.com/covid19datahub/COVID19/blob/master/NEWS.md'><code>NEWS.md</code></a></small>
     </div>
 
-    <div id="covid19-231-2021-09-25" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.1">
-<a href="#covid19-231-2021-09-25" class="anchor"></a>COVID19 2.3.1 (2021-09-25)<small> 2020-10-12 </small>
+    <div id="covid19-v300" class="section level1">
+<h1 class="page-header" data-toc-text="3.0.0">
+<a href="#covid19-v300" class="anchor"></a>COVID19 v3.0.0<small> Unreleased </small>
 </h1>
-<div id="minor-changes" class="section level2">
-<h2 class="hasAnchor">
-<a href="#minor-changes" class="anchor"></a>Minor Changes</h2>
-<ul>
-<li>Added standardized geospatial IDs (<code>foreign_key</code> and <code>foreign_key_type</code>), e.g., FIPS codes for United States and NUTS codes for Europe.</li>
-</ul>
-</div>
+<p>Version 3 is a major update of COVID-19 Data Hub.</p>
 <div id="data-update" class="section level2">
 <h2 class="hasAnchor">
 <a href="#data-update" class="anchor"></a>Data Update</h2>
 <ul>
-<li>Added data for Belgium (level 3).</li>
-<li>Change data provider for Switzerland and Liechtenstein to <a href="https://www.covid19.admin.ch">Federal Office of Public Health FOPH</a>
-</li>
-<li>Change data provider for France to <a href="https://www.data.gouv.fr/fr/">Santé publique France</a>
-</li>
+<li>added the data on the number of people who have received at least one vaccine dose</li>
+<li>added the number of people who are fully vaccinated according to the vaccination protocol</li>
+<li>added the data on population for all the administrative areas that we provide (more than 12,000)</li>
+<li>added the latest policy measures by Oxford Covid-19 Government Response Tracker</li>
+<li>added google and apple mobility identifiers for 3000+ administrative areas</li>
+<li>added a new set of identifiers to enable geospatial analysis by linking to NUTS codes for Europe or to the GADM database worldwide</li>
+<li>to compute coordinates, the centroid is replaced by <a href="https://r-spatial.github.io/sf/reference/geos_unary.html"><code>st_point_on_surface</code></a>, which guarantees to return a point on the surface of the administrative area</li>
 </ul>
 </div>
-</div>
-    <div id="covid19-230-2021-04-01" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2021-04-01" class="anchor"></a>COVID19 2.3.0 (2021-04-01)<small> 2020-08-28 </small>
-</h1>
 <div id="breaking-changes" class="section level2">
 <h2 class="hasAnchor">
-<a href="#breaking-changes" class="anchor"></a>Breaking Changes</h2>
+<a href="#breaking-changes" class="anchor"></a>Breaking changes</h2>
 <ul>
-<li>Due to the incresing size of the data files, we will stop to provide the <a href="https://covid19datahub.io/articles/data.html">pre-processed data</a> on 01 April 2021, so to improve the update and storage of the raw data. Please switch to the raw data if you are still using the pre-processed files.</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2021-03-03" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2021-03-03" class="anchor"></a>COVID19 2.3.0 (2021-03-03)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-1" class="anchor"></a>Data Update</h2>
-<ul>
-<li>Canadian data level 2: <a href="https://health-infobase.canada.ca/covid-19/" class="uri">https://health-infobase.canada.ca/covid-19/</a> has changed the way of reporting <code>tests</code>. This is creating a spike in the data but will reflect the change in the official data provider. See issue <a href="https://github.com/covid19datahub/COVID19/issues/156"><a href='https://github.com/covid19datahub/COVID19/issues/156'>#156</a></a>
+<li>the <code>id</code> for level 1 has been replaced with a 8-alphanumeric hash code for consistency with levels 2 and 3</li>
+<li>the column <code>key_google_mobility</code> now matches the Google <code>place_id</code>
 </li>
-</ul>
-<blockquote>
-<p>Starting February 1, 2021, laboratory test indicators are based on the number of laboratory tests performed and the percentage of tests positive. These data replace previous metrics based on unique individuals tested and provide a more accurate measure of test positivity and promote greater standardization in reporting across Canada. The proportion of tests positive is expected to decrease compared with previous person-based methods, as all tests will be included in the calculation, including new tests on the same person over time.</p>
-</blockquote>
-</div>
-</div>
-    <div id="covid19-230-2021-03-01" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2021-03-01" class="anchor"></a>COVID19 2.3.0 (2021-03-01)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-2" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-2" class="anchor"></a>Data Update</h2>
-<ul>
-<li><p>State-level data for US have changed data provider(s) due to the shutdown of the <a href="https://covidtracking.com/analysis-updates/covid-tracking-project-end-march-7">COVID Tracking Project</a>. Tests are now from the <a href="https://healthdata.gov/dataset/covid-19-diagnostic-laboratory-testing-pcr-testing-time-series">Department of Health &amp; Human Services</a>. Hospitalized and ICU are now from <a href="https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state">Department of Health &amp; Human Services</a>. Confirmed cases and fatalities are now from <a href="https://github.com/nytimes/covid-19-data">The New York Times</a>. Data at national and county level have not been affected.</p></li>
-<li><p>Added data for Brazil (levels 2 and 3) from <a href="https://github.com/wcota/covid19br/">this awesome repository</a> and vaccines from the <a href="https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao">Ministry of Health of Brazil</a></p></li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2021-01-02" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2021-01-02" class="anchor"></a>COVID19 2.3.0 (2021-01-02)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-3" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-3" class="anchor"></a>Data Update</h2>
-<ul>
-<li>Added number of people who have been <strong>vaccinated</strong> for level 1. Data pulled from <a href="https://ourworldindata.org/covid-vaccinations">Our World in Data</a>.</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2020-12-12" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-12-12" class="anchor"></a>COVID19 2.3.0 (2020-12-12)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-4" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-4" class="anchor"></a>Data Update</h2>
-<ul>
-<li>
-<strong>US policies</strong> for admin areas level 3 (counties) are now inherited from the policies available for admin areas level 2 (states) instead of level 1 (nation).</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2020-11-30" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-11-30" class="anchor"></a>COVID19 2.3.0 (2020-11-30)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-5" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-5" class="anchor"></a>Data Update</h2>
-<ul>
-<li>
-<strong>Colombia data</strong>. Fixed <code>deaths</code> and <code>confirmed</code> according to <a href="https://coronaviruscolombia.gov.co" class="uri">https://coronaviruscolombia.gov.co</a> Added <code>tests</code> for level 1 and 2</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2020-10-30" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-10-30" class="anchor"></a>COVID19 2.3.0 (2020-10-30)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-6" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-6" class="anchor"></a>Data Update</h2>
-<ul>
-<li>
-<strong>Austria data</strong>. Added support for level 2 and 3 from the <a href="https://covid19-dashboard.ages.at/dashboard.html">Federal Ministry of Social Affairs, Health, Care and Consumer Protection</a>
+<li>the columns <code>key</code>, <code>key_alpha_2</code>, and <code>key_numeric</code> are replaced by <code>key_local</code>; containing the administrative area identifier used by the local authorities regardless of its type, e.g., numeric, 2-alpha code, etc. Codes such as FIPS now include leading zeros</li>
+<li>the column <code>currency</code> is renamed in <code>iso_currency</code>
+</li>
+<li>vintage data are now shipped in SQLite databases instead of ZIP folders</li>
+<li>vintage data sources are now reported in PDF files, instead of <code>src.csv</code>
 </li>
 </ul>
 </div>
-</div>
-    <div id="covid19-230-2020-10-28" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-10-28" class="anchor"></a>COVID19 2.3.0 (2020-10-28)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-7" class="section level2">
+<div id="website-and-documentation" class="section level2">
 <h2 class="hasAnchor">
-<a href="#data-update-7" class="anchor"></a>Data Update</h2>
+<a href="#website-and-documentation" class="anchor"></a>Website and documentation</h2>
 <ul>
-<li>
-<strong>Policy measures</strong>. Added support for level 2 policies by <a href="https://github.com/OxCGRT/covid-policy-tracker">Oxford Covid-19 Government Response Tracker</a>. Enhanced policy inheritance by using <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md">OxCGRT flags</a> to distinguish policies that are “targeted” to a specific geographical region (flag=0) or “general” policies that are applied across the whole country (flag=1). Only “general” policies are propagated to levels 2 and 3.</li>
+<li>new website with interactive visualization of the data and data sources</li>
+<li>improved documentation</li>
 </ul>
 </div>
-</div>
-    <div id="covid19-230-2020-10-27" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-10-27" class="anchor"></a>COVID19 2.3.0 (2020-10-27)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-8" class="section level2">
+<div id="new-urls" class="section level2">
 <h2 class="hasAnchor">
-<a href="#data-update-8" class="anchor"></a>Data Update</h2>
-<ul>
-<li>
-<strong>Netherlands data</strong> all levels. Change data provider from <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE</a> to <a href="https://data.rivm.nl/covid-19/">National Institute for Public Health and the Environment of Netherlands</a>. Affected variables: <code>confirmed</code>, <code>deaths</code>, <code>hosp</code>.</li>
-</ul>
+<a href="#new-urls" class="anchor"></a>New URLs</h2>
+<p>A new set of <a href="/articles/data.html">endpoints</a> is available to download the data in several ways. The following files will continue to be updated for backward compatibility, but it is strongly recommended to switch to the new URLs:</p>
+<table>
+<colgroup>
+<col width="37%">
+<col width="35%">
+<col width="11%">
+<col width="6%">
+<col width="8%">
+</colgroup>
+<thead><tr class="header">
+<th>Old URL</th>
+<th>New URL</th>
+<th>Description</th>
+<th>Format</th>
+<th>Downloads</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://storage.covid19datahub.io/rawdata-1.csv" class="uri">https://storage.covid19datahub.io/rawdata-1.csv</a></td>
+<td><a href="https://storage.covid19datahub.io/level/1.csv" class="uri">https://storage.covid19datahub.io/level/1.csv</a></td>
+<td>Worldwide country-level data</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-1.csv.svg"></td>
+</tr>
+<tr class="even">
+<td><a href="https://storage.covid19datahub.io/rawdata-1.zip" class="uri">https://storage.covid19datahub.io/rawdata-1.zip</a></td>
+<td><a href="https://storage.covid19datahub.io/level/1.csv.zip" class="uri">https://storage.covid19datahub.io/level/1.csv.zip</a></td>
+<td>Worldwide country-level data</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-1.zip.svg"></td>
+</tr>
+<tr class="odd">
+<td><a href="https://storage.covid19datahub.io/rawdata-2.csv" class="uri">https://storage.covid19datahub.io/rawdata-2.csv</a></td>
+<td><a href="https://storage.covid19datahub.io/level/2.csv" class="uri">https://storage.covid19datahub.io/level/2.csv</a></td>
+<td>Worldwide state-level data</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-2.csv.svg"></td>
+</tr>
+<tr class="even">
+<td><a href="https://storage.covid19datahub.io/rawdata-2.zip" class="uri">https://storage.covid19datahub.io/rawdata-2.zip</a></td>
+<td><a href="https://storage.covid19datahub.io/level/2.csv.zip" class="uri">https://storage.covid19datahub.io/level/2.csv.zip</a></td>
+<td>Worldwide state-level data</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-2.zip.svg"></td>
+</tr>
+<tr class="odd">
+<td><a href="https://storage.covid19datahub.io/rawdata-3.csv" class="uri">https://storage.covid19datahub.io/rawdata-3.csv</a></td>
+<td><a href="https://storage.covid19datahub.io/level/3.csv" class="uri">https://storage.covid19datahub.io/level/3.csv</a></td>
+<td>Worldwide city-level data</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-3.csv.svg"></td>
+</tr>
+<tr class="even">
+<td><a href="https://storage.covid19datahub.io/rawdata-3.zip" class="uri">https://storage.covid19datahub.io/rawdata-3.zip</a></td>
+<td><a href="https://storage.covid19datahub.io/level/3.csv.zip" class="uri">https://storage.covid19datahub.io/level/3.csv.zip</a></td>
+<td>Worldwide city-level data</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata-3.zip.svg"></td>
+</tr>
+</tbody>
+</table>
 </div>
-</div>
-    <div id="covid19-230-2020-10-12" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-10-12" class="anchor"></a>COVID19 2.3.0 (2020-10-12)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-9" class="section level2">
+<div id="deprecated-files" class="section level2">
 <h2 class="hasAnchor">
-<a href="#data-update-9" class="anchor"></a>Data Update</h2>
-<ul>
-<li>
-<strong>Swiss data</strong> level 1. Change data provider from <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE</a> to <a href="https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international.html">Federal Office of Public Health FOPH</a>. Affected variables: <code>confirmed</code>, <code>deaths</code>, <code>hosp</code>.</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2020-09-20" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-09-20" class="anchor"></a>COVID19 2.3.0 (2020-09-20)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-10" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-10" class="anchor"></a>Data Update</h2>
-<ul>
-<li>
-<p>Added data for:</p>
-<ul>
-<li>Chile: level 1, 2, and 3 (<code>confirmed</code>, <code>tests</code>, <code>deaths</code>, <code>recovered</code>, <code>hosp</code>, <code>icu</code>, <code>population</code>)</li>
-<li>Taiwan: level 1 and 2 (<code>confirmed</code>, <code>latitude</code>, <code>longitude</code>, <code>population</code>)</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2020-09-20-1" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-09-20-1" class="anchor"></a>COVID19 2.3.0 (2020-09-20)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-11" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-11" class="anchor"></a>Data Update</h2>
-<ul>
-<li>
-<p>Added data for:</p>
-<ul>
-<li>Thailand: level 1 and 2 (<code>confirmed</code>, <code>deaths</code>, <code>recovered</code>, <code>hosp</code>)</li>
-<li>Ireland: level 1 and 2 (<code>tests</code>, <code>confirmed</code>, <code>deaths</code>, <code>hosp</code>, <code>icu</code>)</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2020-09-05" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-09-05" class="anchor"></a>COVID19 2.3.0 (2020-09-05)<small> 2020-08-28 </small>
-</h1>
-<div id="data-update-12" class="section level2">
-<h2 class="hasAnchor">
-<a href="#data-update-12" class="anchor"></a>Data Update</h2>
-<ul>
-<li>
-<p>Added data for:</p>
-<ul>
-<li>Poland: level 2 and 3 (<code>deaths</code>)</li>
-<li>Croatia: level 2 (<code>confirmed</code>, <code>deaths</code>)</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-230-2020-08-28" class="section level1">
-<h1 class="page-header" data-toc-text="2.3.0">
-<a href="#covid19-230-2020-08-28" class="anchor"></a>COVID19 2.3.0 (2020-08-28)<small> 2020-08-28 </small>
-</h1>
-<div id="minor-changes-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#minor-changes-1" class="anchor"></a>Minor changes</h2>
-<ul>
-<li>
-<strong>R and Python</strong> packages now return raw data by default.</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-220-2020-08-17" class="section level1">
-<h1 class="page-header" data-toc-text="2.2.0">
-<a href="#covid19-220-2020-08-17" class="anchor"></a>COVID19 2.2.0 (2020-08-17)<small> 2020-07-13 </small>
-</h1>
-<div id="minor-changes-2" class="section level2">
-<h2 class="hasAnchor">
-<a href="#minor-changes-2" class="anchor"></a>Minor changes</h2>
-<ul>
-<li>
-<strong>UK data</strong> (all levels). Change the access to <a href="https://coronavirus.data.gov.uk" class="uri">https://coronavirus.data.gov.uk</a> from the <a href="https://coronavirus.data.gov.uk/about-data">legacy CSV downloads</a> to the new <a href="https://coronavirus.data.gov.uk/developers-guide">API</a>.</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-220-2020-07-17" class="section level1">
-<h1 class="page-header" data-toc-text="2.2.0">
-<a href="#covid19-220-2020-07-17" class="anchor"></a>COVID19 2.2.0 (2020-07-17)<small> 2020-07-13 </small>
-</h1>
-<div id="major-changes" class="section level2">
-<h2 class="hasAnchor">
-<a href="#major-changes" class="anchor"></a>Major changes</h2>
-<ul>
-<li>drop <code>severe</code> cases (equivalent to <code>icu</code>)</li>
-</ul>
-</div>
-</div>
-    <div id="covid19-200-2020-06-21" class="section level1">
-<h1 class="page-header" data-toc-text="2.0.0">
-<a href="#covid19-200-2020-06-21" class="anchor"></a>COVID19 2.0.0 (2020-06-21)<small> 2020-05-18 </small>
-</h1>
-<div id="major-changes-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#major-changes-1" class="anchor"></a>Major changes</h2>
-<ul>
-<li>
-<strong>US data</strong> level 3 (counties). Change data provider from <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE</a> to <a href="https://github.com/nytimes/covid-19-data">New York Times</a>. Only minor counties not provided by <a href="https://github.com/nytimes/covid-19-data">New York Times</a> are still from <a href="https://github.com/CSSEGISandData/COVID-19">JHU CSSE</a>.</li>
-</ul>
+<a href="#deprecated-files" class="anchor"></a>Deprecated files</h2>
+<p>The following files have been deprecated and are no longer maintained.</p>
+<table>
+<colgroup>
+<col width="43%">
+<col width="39%">
+<col width="7%">
+<col width="10%">
+</colgroup>
+<thead><tr class="header">
+<th>URL</th>
+<th>Description</th>
+<th>Format</th>
+<th>Downloads</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/data-1.csv" class="uri">https://storage.covid19datahub.io/data-1.csv</a></del></td>
+<td>Pre-processed worldwide country-level data</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-1.csv.svg"></td>
+</tr>
+<tr class="even">
+<td><del><a href="https://storage.covid19datahub.io/data-2.csv" class="uri">https://storage.covid19datahub.io/data-2.csv</a></del></td>
+<td>Pre-processed worldwide state-level data</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-2.csv.svg"></td>
+</tr>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/data-3.csv" class="uri">https://storage.covid19datahub.io/data-3.csv</a></del></td>
+<td>Pre-processed worldwide city-level data</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-3.csv.svg"></td>
+</tr>
+<tr class="even">
+<td><del><a href="https://storage.covid19datahub.io/data-1.zip" class="uri">https://storage.covid19datahub.io/data-1.zip</a></del></td>
+<td>Pre-processed worldwide country-level data</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-1.zip.svg"></td>
+</tr>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/data-2.zip" class="uri">https://storage.covid19datahub.io/data-2.zip</a></del></td>
+<td>Pre-processed worldwide state-level data</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-2.zip.svg"></td>
+</tr>
+<tr class="even">
+<td><del><a href="https://storage.covid19datahub.io/data-3.zip" class="uri">https://storage.covid19datahub.io/data-3.zip</a></del></td>
+<td>Pre-processed worldwide city-level data</td>
+<td>ZIP</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data-3.zip.svg"></td>
+</tr>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/data.log" class="uri">https://storage.covid19datahub.io/data.log</a></del></td>
+<td>Log file</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/data.log.svg"></td>
+</tr>
+<tr class="even">
+<td><del><a href="https://storage.covid19datahub.io/rawdata.log" class="uri">https://storage.covid19datahub.io/rawdata.log</a></del></td>
+<td>Log file</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/rawdata.log.svg"></td>
+</tr>
+<tr class="odd">
+<td><del><a href="https://storage.covid19datahub.io/src.csv" class="uri">https://storage.covid19datahub.io/src.csv</a></del></td>
+<td>Data sources</td>
+<td>CSV</td>
+<td><img src="https://storage.covid19datahub.io/downloads/src.csv.svg"></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
   </div>
@@ -470,6 +397,23 @@
    </div>
 
   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script>
+<script>
+  docsearch({
+    
+    
+    apiKey: '4bb0f6b3d3527adec5f3b2193346004a',
+    indexName: 'covid19datahub',
+    inputSelector: 'input#search-input.form-control',
+    transformData: function(hits) {
+      return hits.map(function (hit) {
+        hit.url = updateHitURL(hit);
+        return hit;
+      });
+    }
+  });
+</script>
+
 
 
   </body>

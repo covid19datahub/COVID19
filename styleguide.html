@@ -19,7 +19,7 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/lumen/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
@@ -44,7 +44,15 @@
 <script src="pkgdown.js"></script>
 
 
+<!-- docsearch -->
+<script src="docsearch.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link href="docsearch.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
+
+  <link href="extra.css" rel="stylesheet">
+  <script src="extra.js"></script>
 
 <meta property="og:title" content="Style Guide" />
 <meta property="og:image" content="https://covid19datahub.io/logo.png" />
@@ -89,7 +97,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">3.0.0</span>
       </span>
     </div>
 
@@ -112,54 +120,45 @@
       <a href="articles/data.html">Download</a>
     </li>
     <li>
-      <a href="articles/doc/data.html">Documentation</a>
+      <a href="articles/docs.html">Documentation</a>
     </li>
     <li>
-      <a href="articles/usage.html">Use Cases</a>
-    </li>
-    <li>
-      <a href="news/index.html">Changelog</a>
+      <a href="reference/index.html">Data sources</a>
     </li>
   </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Contributors
+    Software
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://github.com/covid19datahub/COVID19/">GitHub</a>
+      <a href="articles/r.html">R</a>
     </li>
     <li>
-      <a href="reference/index.html">Documentation</a>
+      <a href="articles/python.html">Python</a>
     </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="articles/contributors.html">Acknowledgments</a>
+      <a href="https://doi.org/10.21105/joss.02376">COVID-19 Data Hub</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="articles/api/r.html">R</a>
+  <a href="articles/contributors.html">Contributors</a>
 </li>
 <li>
-  <a href="articles/api/python.html">Python</a>
-</li>
-<li>
-  <a href="articles/api/matlab.html">MATLAB</a>
-</li>
-<li>
-  <a href="articles/api/julia.html">Julia</a>
-</li>
-<li>
-  <a href="articles/api/node.html">Node.js</a>
-</li>
-<li>
-  <a href="articles/api/scala.html">Scala</a>
-</li>
-<li>
-  <a href="articles/api/excel.html">Excel</a>
+  <a href="news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -170,6 +169,12 @@
   </a>
 </li>
       </ul>
+      
+      <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control" name="search-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+        </div>
+      </form>
       
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -335,7 +340,7 @@
 <span class="co">#' @keywords internal</span>
 <span class="co">#' </span>
 <span class="va">github.wcota.covid19br</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
-  <span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="va">level</span> <span class="op">%in%</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span>
+  <span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="va">level</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span>
 
   <span class="co"># code here...</span>
 
@@ -354,14 +359,14 @@
 <div id="code-style-1" class="section level3">
 <h3 class="hasAnchor">
 <a href="#code-style-1" class="anchor"></a>Code style</h3>
-<p>An <code>iso_</code> file implements the R function responsible to aggregate all the data sources for the country. The function is named with the three letter ISO code of the country. The function takes the argument <code>level</code> in input as well as <code>...</code> for backward compatibility. For example, for Brazil we have:</p>
+<p>An <code>iso_</code> file implements the R function responsible to aggregate all the data sources for the country. The function is named with the three letter ISO code of the country. The function takes the argument <code>level</code> in input. For example, for Brazil we have:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span>, <span class="va">...</span><span class="op">)</span><span class="op">{</span>
+<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
   <span class="co"># code here...   </span>
 <span class="op">}</span></code></pre></div>
 <p>The function defines the internal variable <code>x</code> that represents the output of the function. This is the very first line of code in the body of the function. The very last line of code returns <code>x</code>.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span>, <span class="va">...</span><span class="op">)</span><span class="op">{</span>
+<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
   <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span>
   
   <span class="co"># code here...   </span>
@@ -370,7 +375,7 @@
 <span class="op">}</span></code></pre></div>
 <p>Internally, the code is split by <code>level</code>, with no white spaces in the <code>if</code> condition and one blank line among different lines. Not all the 3 levels are required.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span>, <span class="va">...</span><span class="op">)</span><span class="op">{</span>
+<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
   <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span>
   
   <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">1</span><span class="op">)</span><span class="op">{</span>
@@ -396,43 +401,46 @@
 <span id="cb9-2"><a href="#cb9-2"></a><span class="co">#'</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a><span class="co">#' @source \url{`r repo("BRA")`}</span></span>
 <span id="cb9-4"><a href="#cb9-4"></a><span class="co">#' </span></span>
-<span id="cb9-5"><a href="#cb9-5"></a>BRA &lt;-<span class="st"> </span><span class="cf">function</span>(level, ...){</span></code></pre></div>
-<p>For each level we create a new @concept and a new subsection in the “Data Sources” @section.</p>
+<span id="cb9-5"><a href="#cb9-5"></a>BRA &lt;-<span class="st"> </span><span class="cf">function</span>(level){</span></code></pre></div>
+<p>For each level we create a new @concept and a new subsection in the “Data Sources” @section. The <code>docstring</code> function automatically generates the documentation for the providers of population data.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="co">#' Brazil </span></span>
 <span id="cb10-2"><a href="#cb10-2"></a><span class="co">#'</span></span>
 <span id="cb10-3"><a href="#cb10-3"></a><span class="co">#' @source \url{`r repo("BRA")`}</span></span>
 <span id="cb10-4"><a href="#cb10-4"></a><span class="co">#' </span></span>
-<span id="cb10-5"><a href="#cb10-5"></a>BRA &lt;-<span class="st"> </span><span class="cf">function</span>(level, ...){</span>
+<span id="cb10-5"><a href="#cb10-5"></a>BRA &lt;-<span class="st"> </span><span class="cf">function</span>(level){</span>
 <span id="cb10-6"><a href="#cb10-6"></a>  x &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
 <span id="cb10-7"><a href="#cb10-7"></a>  </span>
 <span id="cb10-8"><a href="#cb10-8"></a>  <span class="co">#' @concept level 1</span></span>
 <span id="cb10-9"><a href="#cb10-9"></a>  <span class="co">#' @section Data Sources:</span></span>
 <span id="cb10-10"><a href="#cb10-10"></a>  <span class="co">#' </span></span>
 <span id="cb10-11"><a href="#cb10-11"></a>  <span class="co">#' ## Level 1</span></span>
-<span id="cb10-12"><a href="#cb10-12"></a>  <span class="co">#' </span></span>
-<span id="cb10-13"><a href="#cb10-13"></a>  <span class="cf">if</span>(level<span class="op">==</span><span class="dv">1</span>){</span></code></pre></div>
+<span id="cb10-12"><a href="#cb10-12"></a>  <span class="co">#' `r docstring("BRA", 1)`</span></span>
+<span id="cb10-13"><a href="#cb10-13"></a>  <span class="co">#'  </span></span>
+<span id="cb10-14"><a href="#cb10-14"></a>  <span class="cf">if</span>(level<span class="op">==</span><span class="dv">1</span>){</span></code></pre></div>
 <p>For each data source, we report the link to the <code>ds_</code> function, the name of the data provider, and the list of variables available. The documentation block is generated with the function <code>iso_docstring</code> from this package (copy-paste its output in the file).</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="co">#' Brazil </span></span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="co">#'</span></span>
 <span id="cb11-3"><a href="#cb11-3"></a><span class="co">#' @source \url{`r repo("BRA")`}</span></span>
 <span id="cb11-4"><a href="#cb11-4"></a><span class="co">#' </span></span>
-<span id="cb11-5"><a href="#cb11-5"></a>BRA &lt;-<span class="st"> </span><span class="cf">function</span>(level, ...){</span>
+<span id="cb11-5"><a href="#cb11-5"></a>BRA &lt;-<span class="st"> </span><span class="cf">function</span>(level){</span>
 <span id="cb11-6"><a href="#cb11-6"></a>  x &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
 <span id="cb11-7"><a href="#cb11-7"></a>  </span>
 <span id="cb11-8"><a href="#cb11-8"></a>  <span class="co">#' @concept level 1</span></span>
 <span id="cb11-9"><a href="#cb11-9"></a>  <span class="co">#' @section Data Sources:</span></span>
-<span id="cb11-10"><a href="#cb11-10"></a>  <span class="co">#' ## Level 1</span></span>
-<span id="cb11-11"><a href="#cb11-11"></a>  <span class="co">#' </span></span>
-<span id="cb11-12"><a href="#cb11-12"></a>  <span class="cf">if</span>(level<span class="op">==</span><span class="dv">1</span>){</span>
-<span id="cb11-13"><a href="#cb11-13"></a>    </span>
-<span id="cb11-14"><a href="#cb11-14"></a>    <span class="co">#' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:</span></span>
-<span id="cb11-15"><a href="#cb11-15"></a>    <span class="co">#' confirmed cases,</span></span>
-<span id="cb11-16"><a href="#cb11-16"></a>    <span class="co">#' deaths,</span></span>
-<span id="cb11-17"><a href="#cb11-17"></a>    <span class="co">#' recovered,</span></span>
-<span id="cb11-18"><a href="#cb11-18"></a>    <span class="co">#' tests,</span></span>
-<span id="cb11-19"><a href="#cb11-19"></a>    <span class="co">#' total vaccine doses administered.</span></span>
-<span id="cb11-20"><a href="#cb11-20"></a>    <span class="co">#'</span></span>
-<span id="cb11-21"><a href="#cb11-21"></a>    x &lt;-<span class="st"> </span><span class="kw">github.wcota.covid19br</span>(<span class="dt">level =</span> level)</span></code></pre></div>
+<span id="cb11-10"><a href="#cb11-10"></a>  <span class="co">#'</span></span>
+<span id="cb11-11"><a href="#cb11-11"></a>  <span class="co">#' ## Level 1</span></span>
+<span id="cb11-12"><a href="#cb11-12"></a>  <span class="co">#' `r docstring("BRA", 1)`</span></span>
+<span id="cb11-13"><a href="#cb11-13"></a>  <span class="co">#'</span></span>
+<span id="cb11-14"><a href="#cb11-14"></a>  <span class="cf">if</span>(level<span class="op">==</span><span class="dv">1</span>){</span>
+<span id="cb11-15"><a href="#cb11-15"></a>    </span>
+<span id="cb11-16"><a href="#cb11-16"></a>    <span class="co">#' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:</span></span>
+<span id="cb11-17"><a href="#cb11-17"></a>    <span class="co">#' confirmed cases,</span></span>
+<span id="cb11-18"><a href="#cb11-18"></a>    <span class="co">#' deaths,</span></span>
+<span id="cb11-19"><a href="#cb11-19"></a>    <span class="co">#' recovered,</span></span>
+<span id="cb11-20"><a href="#cb11-20"></a>    <span class="co">#' tests,</span></span>
+<span id="cb11-21"><a href="#cb11-21"></a>    <span class="co">#' total vaccine doses administered.</span></span>
+<span id="cb11-22"><a href="#cb11-22"></a>    <span class="co">#'</span></span>
+<span id="cb11-23"><a href="#cb11-23"></a>    x &lt;-<span class="st"> </span><span class="kw">github.wcota.covid19br</span>(<span class="dt">level =</span> level)</span></code></pre></div>
 </div>
 <div id="complete-example-1" class="section level3">
 <h3 class="hasAnchor">
@@ -446,13 +454,14 @@
 <span class="co">#'</span>
 <span class="co">#' @source \url{`r repo("BRA")`}</span>
 <span class="co">#' </span>
-<span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span>, <span class="va">...</span><span class="op">)</span><span class="op">{</span>
+<span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
   <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span>
   
   <span class="co">#' @concept Level 1</span>
   <span class="co">#' @section Data Sources:</span>
   <span class="co">#' </span>
   <span class="co">#' ## Level 1</span>
+  <span class="co">#' `r docstring("BRA", 1)`</span>
   <span class="co">#' </span>
   <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">1</span><span class="op">)</span><span class="op">{</span>
     
@@ -471,6 +480,7 @@
   <span class="co">#' @section Data Sources:</span>
   <span class="co">#' </span>
   <span class="co">#' ## Level 2</span>
+  <span class="co">#' `r docstring("BRA", 2)`</span>
   <span class="co">#' </span>
   <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">2</span><span class="op">)</span><span class="op">{</span>
     
@@ -490,6 +500,7 @@
   <span class="co">#' @section Data Sources:</span>
   <span class="co">#' </span>
   <span class="co">#' ## Level 3</span>
+  <span class="co">#' `r docstring("BRA", 3)`</span>
   <span class="co">#' </span>
   <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">3</span><span class="op">)</span><span class="op">{</span>  
 
@@ -544,6 +555,23 @@
    </div>
 
   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script>
+<script>
+  docsearch({
+    
+    
+    apiKey: '4bb0f6b3d3527adec5f3b2193346004a',
+    indexName: 'covid19datahub',
+    inputSelector: 'input#search-input.form-control',
+    transformData: function(hits) {
+      return hits.map(function (hit) {
+        hit.url = updateHitURL(hit);
+        return hit;
+      });
+    }
+  });
+</script>
+
 
 
   </body>

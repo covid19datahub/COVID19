@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Terms of Use • COVID-19 Data Hub</title>
+<title>Terms of use • COVID-19 Data Hub</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -19,7 +19,7 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/lumen/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
@@ -44,9 +44,17 @@
 <script src="pkgdown.js"></script>
 
 
+<!-- docsearch -->
+<script src="docsearch.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.3/docsearch.min.css" integrity="sha256-QOSRU/ra9ActyXkIBbiIB144aDBdtvXBcNc3OTNuX/Q=" crossorigin="anonymous" />
+<link href="docsearch.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
 
 
-<meta property="og:title" content="Terms of Use" />
+  <link href="extra.css" rel="stylesheet">
+  <script src="extra.js"></script>
+
+<meta property="og:title" content="Terms of use" />
 <meta property="og:image" content="https://covid19datahub.io/logo.png" />
 
 
@@ -89,7 +97,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">2.3.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">3.0.0</span>
       </span>
     </div>
 
@@ -112,54 +120,45 @@
       <a href="articles/data.html">Download</a>
     </li>
     <li>
-      <a href="articles/doc/data.html">Documentation</a>
+      <a href="articles/docs.html">Documentation</a>
     </li>
     <li>
-      <a href="articles/usage.html">Use Cases</a>
-    </li>
-    <li>
-      <a href="news/index.html">Changelog</a>
+      <a href="reference/index.html">Data sources</a>
     </li>
   </ul>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Contributors
+    Software
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="https://github.com/covid19datahub/COVID19/">GitHub</a>
+      <a href="articles/r.html">R</a>
     </li>
     <li>
-      <a href="reference/index.html">Documentation</a>
+      <a href="articles/python.html">Python</a>
     </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="articles/contributors.html">Acknowledgments</a>
+      <a href="https://doi.org/10.21105/joss.02376">COVID-19 Data Hub</a>
     </li>
   </ul>
 </li>
 <li>
-  <a href="articles/api/r.html">R</a>
+  <a href="articles/contributors.html">Contributors</a>
 </li>
 <li>
-  <a href="articles/api/python.html">Python</a>
-</li>
-<li>
-  <a href="articles/api/matlab.html">MATLAB</a>
-</li>
-<li>
-  <a href="articles/api/julia.html">Julia</a>
-</li>
-<li>
-  <a href="articles/api/node.html">Node.js</a>
-</li>
-<li>
-  <a href="articles/api/scala.html">Scala</a>
-</li>
-<li>
-  <a href="articles/api/excel.html">Excel</a>
+  <a href="news/index.html">Changelog</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -170,6 +169,12 @@
   </a>
 </li>
       </ul>
+      
+      <form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
+        <div class="form-group">
+          <input type="search" class="form-control" name="search-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off">
+        </div>
+      </form>
       
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -182,18 +187,38 @@
 <div class="row">
   <div class="contents col-md-9">
     <div class="page-header">
-      <h1>Terms of Use</h1>
+      <h1>Terms of use</h1>
     </div>
 
 <div id="terms-of-use" class="section level1">
 
+<blockquote>
 <p>We have invested a lot of time and effort in creating <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>, please:</p>
+</blockquote>
 <ul>
 <li>cite <a href="https://doi.org/10.21105/joss.02376">Guidotti and Ardia (2020)</a> when using <a href="https://covid19datahub.io">COVID-19 Data Hub</a>.</li>
 <li>place the URL <a href="https://covid19datahub.io" class="uri">https://covid19datahub.io</a> in a footnote to help others find <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>.</li>
 <li>you assume full risk for the use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>. We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. However, it is free software and comes with ABSOLUTELY NO WARRANTY. Reliance on <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> for medical guidance or use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> in commerce is strictly prohibited.</li>
 </ul>
-<p><strong>License</strong>: <a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a>.</p>
+<p>The output data files are published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC license</a>. All data is subject to the terms of agreement individual to each data source, refer to the <a href="/reference/">sources of data</a> for more details. All other code and assets are published under the <a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> license.</p>
+<div id="cite-as" class="section level2">
+<h2 class="hasAnchor">
+<a href="#cite-as" class="anchor"></a>Cite as</h2>
+<blockquote>
+<p><em>Guidotti, E., Ardia, D., (2020), “COVID-19 Data Hub”, Journal of Open Source Software 5(51):2376, doi: <a href="https://doi.org/10.21105/joss.02376">10.21105/joss.02376</a>.</em></p>
+</blockquote>
+<p>A BibTeX entry for LaTeX users is:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1"></a>@Article{,</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    title = {COVID-19 Data Hub},</span>
+<span id="cb1-3"><a href="#cb1-3"></a>    year = {2020},</span>
+<span id="cb1-4"><a href="#cb1-4"></a>    doi = {10.21105/joss.02376},</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    author = {Emanuele Guidotti and David Ardia},</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    journal = {Journal of Open Source Software},</span>
+<span id="cb1-7"><a href="#cb1-7"></a>    volume = {5},</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    number = {51},</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    pages = {2376}</span>
+<span id="cb1-10"><a href="#cb1-10"></a>}</span></code></pre></div>
+</div>
 <div id="comments" class="section level2">
 <h2 class="hasAnchor">
 <a href="#comments" class="anchor"></a>Comments</h2>
@@ -229,6 +254,23 @@
    </div>
 
   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script>
+<script>
+  docsearch({
+    
+    
+    apiKey: '4bb0f6b3d3527adec5f3b2193346004a',
+    indexName: 'covid19datahub',
+    inputSelector: 'input#search-input.form-control',
+    transformData: function(hits) {
+      return hits.map(function (hit) {
+        hit.url = updateHitURL(hit);
+        return hit;
+      });
+    }
+  });
+</script>
+
 
 
   </body>
