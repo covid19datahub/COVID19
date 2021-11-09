@@ -30,6 +30,10 @@ The dataset also includes [policy measures](https://covid19datahub.io/articles/d
 
 All the data are available to download at the [download centre](https://covid19datahub.io/articles/data.html)
 
+## Interactive visualization
+
+Interactive visualization of the latest data is available [here](https://datawrapper.dwcdn.net/3dO9Z/)
+
 ## How it works
 
 COVID-19 Data Hub is developed around 2 concepts: 
@@ -60,7 +64,7 @@ By using COVID-19 Data Hub, you agree to our [terms of use](https://covid19datah
 
 ## Cite as
 
-We have invested a lot of time and effort in creating [COVID-19 Data Hub](https://covid19datahub.io), please agree to the [Terms of Use](https://covid19datahub.io/LICENSE.html) and cite the following reference when using it:
+We have invested a lot of time and effort in creating [COVID-19 Data Hub](https://covid19datahub.io), please cite the following reference when using it:
 
 *Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: [10.21105/joss.02376](https://doi.org/10.21105/joss.02376).*
 
