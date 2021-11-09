@@ -1,6 +1,6 @@
 <a href="https://covid19datahub.io"><img src="https://storage.covid19datahub.io/logo.svg" align="right" height="128"/></a>
 
-# COVID-19 Data Hub [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fcovid19datahub%2FCOVID19%2F)](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fcovid19datahub%2FCOVID19%2F)
+# COVID-19 Data Hub [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fcovid19datahub%2FCOVID19%2F)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcovid19datahub%2FCOVID19)
 
 [![](https://storage.covid19datahub.io/downloads/total.svg)](https://covid19datahub.io/articles/data.html) [![DOI](https://joss.theoj.org/papers/10.21105/joss.02376/status.svg)](https://doi.org/10.21105/joss.02376) [![eRum2020::CovidR](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300)](https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html)
 
