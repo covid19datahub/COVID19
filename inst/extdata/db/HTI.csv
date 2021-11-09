@@ -1,12 +1,12 @@
-"id","id_humdata.org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_hasc","key_local","latitude","longitude","population"
-,,,,,,,"-",,,
-"e750c912","artibonite",2,"Artibonite",,"HTI.3_1","HT.AR",,19.336389545,-72.4926332414989,1727524
-"816ca14f","centre",2,"Centre",,"HTI.1_1","HT.CE",,19.009475705,-72.0152048500853,746236
-"a517ab3b","grandanse",2,"Grand Anse",,"HTI.2_1","HT.GR",,18.516388895,-74.0982135194785,468301
-"be9ae627","nippes",2,"Nippes",,"HTI.4_1","HT.NI",,18.405090335,-73.3190046442598,342525
-"a1196d69","nord",2,"Nord",,"HTI.7_1","HT.ND",,19.56727791,-72.2176147152384,1067177
-"8cf3514c","nord-est",2,"Nord-Est",,"HTI.5_1","HT.NE",,19.497722625,-71.889790639496,393967
-"7850578c","nord-ouest",2,"Nord-Ouest",,"HTI.6_1","HT.NO",,19.787637715,-73.0986651025127,728807
-"64d7e6b4","ouest",2,"Ouest",,"HTI.8_1","HT.OU",,18.617609025,-72.1664211698814,4029705
-"0a4420f3","sud",2,"Sud",,"HTI.10_1","HT.SD",,18.22754383,-73.8817862910184,774976
-"0a23ea88","sud-est",2,"Sud-Est",,"HTI.9_1","HT.SE",,18.21786499,-72.7814959293598,632601
+"id","id_humdata.org","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_local","latitude","longitude","population"
+,,,,,,,,"-",,,
+"e750c912","artibonite",2,"Artibonite",,"HTI.3_1","ChIJVcUt-o73to4REwd4nnQdFWY","HT.AR",,19.336389545,-72.4926332414989,1727524
+"816ca14f","centre",2,"Centre",,"HTI.1_1","ChIJu2Zd54Mzt44R8UGZNXfc5eQ","HT.CE",,19.009475705,-72.0152048500853,746236
+"a517ab3b","grandanse",2,"Grand Anse",,"HTI.2_1",,"HT.GR",,18.516388895,-74.0982135194785,468301
+"be9ae627","nippes",2,"Nippes",,"HTI.4_1",,"HT.NI",,18.405090335,-73.3190046442598,342525
+"a1196d69","nord",2,"Nord",,"HTI.7_1","ChIJs8fY3gLHto4RE_Or3ZYIAEs","HT.ND",,19.56727791,-72.2176147152384,1067177
+"8cf3514c","nord-est",2,"Nord-Est",,"HTI.5_1","ChIJAxiDkiQlsY4R_DIgGcTFBPE","HT.NE",,19.497722625,-71.889790639496,393967
+"7850578c","nord-ouest",2,"Nord-Ouest",,"HTI.6_1","ChIJDz6EaOphto4RW89-GB7XZi8","HT.NO",,19.787637715,-73.0986651025127,728807
+"64d7e6b4","ouest",2,"Ouest",,"HTI.8_1","ChIJkao-UFfduY4R9GOpH9gyDRY","HT.OU",,18.617609025,-72.1664211698814,4029705
+"0a4420f3","sud",2,"Sud",,"HTI.10_1","ChIJdQey26mex44RdC41WGddg9U","HT.SD",,18.22754383,-73.8817862910184,774976
+"0a23ea88","sud-est",2,"Sud-Est",,"HTI.9_1","ChIJw2-UIJCwuY4RCea_ntvfuMs","HT.SE",,18.21786499,-72.7814959293598,632601

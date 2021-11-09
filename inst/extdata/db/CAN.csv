@@ -1,15 +1,15 @@
 "id","id_canada.ca","id_github.oxcgrt.covidpolicytracker","id_github.cssegisanddata.covid19","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
 ,,,,,,,,,,,,"-",,,
-"e61d6191",48,"CAN_AB","Alberta",2,"Alberta",,"Alberta","CAN.1_1","Alberta","CA.AB","CAAB","48",54.500614165,-115.002841913571,4413146
-"c229681f",59,"CAN_BC","British Columbia",2,"British Columbia",,"British Columbia","CAN.2_1","British Columbia","CA.BC","CABC","59",54.499851225,-124.993505972093,5110917
-"2a9fd65a",46,"CAN_MB","Manitoba",2,"Manitoba",,"Manitoba","CAN.3_1","Manitoba","CA.MB","CAMB","46",54.51034355,-97.2122071670366,1377517
-"d177e539",13,"CAN_NB","New Brunswick",2,"New Brunswick",,"New Brunswick","CAN.4_1","New Brunswick","CA.NB","CANB","13",46.551244735,-66.4119697945007,779993
-"d07806cb",10,"CAN_NL","Newfoundland and Labrador",2,"Newfoundland and Labrador",,"Newfoundland and Labrador","CAN.5_1","Newfoundland and Labrador","CA.NF","CANL","10",49.12055397,-56.6925764086932,521365
-"eef40c88",61,"CAN_NT","Northwest Territories",2,"Northwest Territories",,"Northwest Territories","CAN.6_1","Northwest Territories","CA.NT","CANT","61",65.28036499,-121.562220197077,44904
-"b91ff4d1",12,"CAN_NS","Nova Scotia",2,"Nova Scotia",,"Nova Scotia","CAN.7_1","Nova Scotia","CA.NS","CANS","12",44.72702217,-64.6029486035047,977457
-"7fc88543",62,"CAN_NU",,2,"Nunavut",,"Nunavut","CAN.8_1","Nunavut","CA.NU","CANU","62",66.001041415,-100.263618086458,38780
-"83fc0fa9",35,"CAN_ON","Ontario",2,"Ontario",,"Ontario","CAN.9_1","Ontario","CA.ON","CAON","35",49.269155505,-87.1664636098697,14711827
-"015d95fc",11,"CAN_PE","Prince Edward Island",2,"Prince Edward Island",,"Prince Edward Island","CAN.10_1","Prince Edward Island","CA.PE","CAPE","11",46.50383568,-63.6155835564572,158158
-"a7ce33b9",24,"CAN_QC","Quebec",2,"Quebec",,"Quebec","CAN.11_1","Quebec","CA.QC","CAQC","24",53.88904572,-73.2889372815601,8537674
-"e4c07903",47,"CAN_SK","Saskatchewan",2,"Saskatchewan",,"Saskatchewan","CAN.12_1","Saskatchewan","CA.SK","CASK","47",54.500038145,-105.927063327975,1181666
-"38791b01",60,"CAN_YT","Yukon",2,"Yukon",,"Yukon Territory","CAN.13_1","Yukon","CA.YT","CAYT","60",64.81945038,-136.804578702117,41078
+"e61d6191",48,"CAN_AB","Alberta",2,"Alberta",,"Alberta","CAN.1_1","ChIJtRkkqIKyCVMRno6bQJpHqbA","CA.AB","CAAB","48",54.500614165,-115.002841913571,4413146
+"c229681f",59,"CAN_BC","British Columbia",2,"British Columbia",,"British Columbia","CAN.2_1","ChIJr2prqsdmelMR-fHnN-lBG4g","CA.BC","CABC","59",54.499851225,-124.993505972093,5110917
+"2a9fd65a",46,"CAN_MB","Manitoba",2,"Manitoba",,"Manitoba","CAN.3_1","ChIJE7XnRW_gbVIRaMfBq_JVDxw","CA.MB","CAMB","46",54.51034355,-97.2122071670366,1377517
+"d177e539",13,"CAN_NB","New Brunswick",2,"New Brunswick",,"New Brunswick","CAN.4_1","ChIJzQ41MtD9o0wRzAVoAlrJbeY","CA.NB","CANB","13",46.551244735,-66.4119697945007,779993
+"d07806cb",10,"CAN_NL","Newfoundland and Labrador",2,"Newfoundland and Labrador",,"Newfoundland and Labrador","CAN.5_1","ChIJD_AvfcKjDEsRqDl21bOd7GQ","CA.NF","CANL","10",49.12055397,-56.6925764086932,521365
+"eef40c88",61,"CAN_NT","Northwest Territories",2,"Northwest Territories",,"Northwest Territories","CAN.6_1","ChIJDcHTs_Q4EVERjVnGRNguMhk","CA.NT","CANT","61",65.28036499,-121.562220197077,44904
+"b91ff4d1",12,"CAN_NS","Nova Scotia",2,"Nova Scotia",,"Nova Scotia","CAN.7_1","ChIJRc8Y3pgSWUsRQAnP-B5YAgE","CA.NS","CANS","12",44.72702217,-64.6029486035047,977457
+"7fc88543",62,"CAN_NU",,2,"Nunavut",,"Nunavut","CAN.8_1","ChIJ7aUkKkkjCE0RtqnxTwVx0_8","CA.NU","CANU","62",66.001041415,-100.263618086458,38780
+"83fc0fa9",35,"CAN_ON","Ontario",2,"Ontario",,"Ontario","CAN.9_1","ChIJrxNRX7IFzkwRCR5iKVZC-HA","CA.ON","CAON","35",49.269155505,-87.1664636098697,14711827
+"015d95fc",11,"CAN_PE","Prince Edward Island",2,"Prince Edward Island",,"Prince Edward Island","CAN.10_1","ChIJxYN_1N1SXksRhmaS9NXWaKk","CA.PE","CAPE","11",46.50383568,-63.6155835564572,158158
+"a7ce33b9",24,"CAN_QC","Quebec",2,"Quebec",,"Quebec","CAN.11_1","ChIJoajRnzS1WEwRIABNrq0MBAE","CA.QC","CAQC","24",53.88904572,-73.2889372815601,8537674
+"e4c07903",47,"CAN_SK","Saskatchewan",2,"Saskatchewan",,"Saskatchewan","CAN.12_1","ChIJL3ZlI7Fx-FIRK-HCklcrNBU","CA.SK","CASK","47",54.500038145,-105.927063327975,1181666
+"38791b01",60,"CAN_YT","Yukon",2,"Yukon",,"Yukon Territory","CAN.13_1","ChIJiYtStJiBF1ER6pbMYdWcFC4","CA.YT","CAYT","60",64.81945038,-136.804578702117,41078

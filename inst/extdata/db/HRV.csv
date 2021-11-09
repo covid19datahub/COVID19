@@ -1,23 +1,23 @@
 "id","id_koronavirus.hr","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,"-",,,,
-"c354d4f8","Bjelovarsko-bilogorska",2,"Bjelovarsko-bilogorska",,"HRV.1_1","Bjelovar-Bilogora County","HR.BB","HR047","HR021",45.77810097,16.8789791402413,105554
-"7a3200f1","Brodsko-posavska",2,"Brodsko-posavska",,"HRV.2_1","Brod-Posavina County","HR.SP","HR04A","HR024",45.221538545,18.1373798031841,136429
-"8c15423f","Dubrovačko-neretvanska",2,"Dubrovacko-neretvanska",,"HRV.3_1","Dubrovnik-Neretva County","HR.DN","HR037","HR037",42.94382858,16.912769434961,122449
-"2a3771cd","Grad Zagreb",2,"Grad Zagreb",,"HRV.4_1","City of Zagreb","HR.GZ","HR041","HR050",45.724666595,15.980132998222,809235
-"fb1272a9","Istarska",2,"Istarska",,"HRV.5_1","Istria County","HR.IS","HR036","HR036",45.1358223,13.91222191,209955
-"0a58f47e","Karlovačka",2,"Karlovacka",,"HRV.6_1","Karlovac County","HR.KA","HR04D","HR027",45.34426689,15.477263537739,114804
-"2d5ab5d4","Koprivničko-križevačka",2,"Koprivnicko-križevacka",,"HRV.7_1","Koprivnica-Križevci County","HR.KK","HR045","HR063",46.11669159,16.768601958158,105886
-"c43910e1","Krapinsko-zagorska",2,"Krapinsko-zagorska županija",,"HRV.8_1","Krapina-Zagorje County","HR.KZ","HR043","HR064",46.092697145,15.9195681129296,124407
-"fc7fb6b0","Ličko-senjska",2,"Licko-senjska",,"HRV.9_1","Lika-Senj County","HR.LS","HR032","HR032",44.69152832,15.4411203004029,44346
-"b453e46e","Međimurska",2,"Medimurska",,"HRV.10_1","Međimurje County","HR.ME","HR046","HR061",46.418376925,16.4873753785698,109130
-"e33b514b","Osječko-baranjska",2,"Osjecko-baranjska",,"HRV.11_1","Osijek-Baranja County","HR.OB","HR04B","HR025",45.56395531,18.4368295633064,270877
-"24ecf9ff","Požeško-slavonska",2,"Požeško-slavonska",,"HRV.12_1","Požega-Slavonia County","HR.PS","HR049","HR023",45.38304329,17.7515678216975,65614
-"6576e70a","Primorsko-goranska",2,"Primorsko-goranska",,"HRV.13_1","Primorje-Gorski Kotar County","HR.PG","HR031","HR031",45.358488085,14.7019836005973,281945
-"151c1385","Šibensko-kninska",2,"Šibensko-kninska",,"HRV.14_1","Šibenik-Knin County","HR.SB","HR034","HR034",43.850305555,15.9903456152642,98899
-"7d5fc4e8","Sisačko-moslavačka",2,"Sisacko-moslavacka",,"HRV.15_1","Sisak-Moslavina County","HR.SM","HR04E","HR028",45.341674805,16.4744146824541,144599
-"621b2313","Splitsko-dalmatinska",2,"Splitsko-dalmatinska",,"HRV.16_1","Split-Dalmatia County","HR.SD","HR035","HR035",43.53305626,16.7962684305109,448153
-"5a5d8542","Varaždinska",2,"Varaždinska",,"HRV.17_1","Varaždin County","HR.VA","HR044","HR062",46.21356583,16.4343400345287,165885
-"53ebc969","Virovitičko-podravska",2,"Viroviticko-podravska",,"HRV.18_1","Virovitica-Podravina County","HR.VP","HR048","HR022",45.735933305,17.6380210553126,72843
-"943c61dd","Vukovarsko-srijemska",2,"Vukovarsko-srijemska",,"HRV.19_1","Vukovar-Srijem County","HR.VS","HR04C","HR026",45.176971435,18.8412954932987,149489
-"8b788626","Zadarska",2,"Zadarska",,"HRV.20_1","Zadar County","HR.ZD","HR033","HR033",44.18305969,15.3346944252332,168055
-"b33e2077","Zagrebačka",2,"Zagrebacka",,"HRV.21_1","Zagreb County","HR.ZG","HR042","HR065",45.7527256,15.5574923858788,309611
+"c354d4f8","Bjelovarsko-bilogorska",2,"Bjelovarsko-bilogorska",,"HRV.1_1","ChIJH9UfuVWxZ0cRgLQrhlCtAAM","HR.BB","HR047","HR021",45.77810097,16.8789791402413,105554
+"7a3200f1","Brodsko-posavska",2,"Brodsko-posavska",,"HRV.2_1","ChIJU2fhnTGWXUcR0LQrhlCtAAM","HR.SP","HR04A","HR024",45.221538545,18.1373798031841,136429
+"8c15423f","Dubrovačko-neretvanska",2,"Dubrovacko-neretvanska",,"HRV.3_1","ChIJm75pQHO2SxMRQLUrhlCtAAM","HR.DN","HR037","HR037",42.94382858,16.912769434961,122449
+"2a3771cd","Grad Zagreb",2,"Grad Zagreb",,"HRV.4_1","ChIJdSl48D3WZUcRYLUrhlCtAAM","HR.GZ","HR041","HR050",45.724666595,15.980132998222,809235
+"fb1272a9","Istarska",2,"Istarska",,"HRV.5_1","ChIJq2fmnSmxfEcRMLUrhlCtAAM","HR.IS","HR036","HR036",45.1358223,13.91222191,209955
+"0a58f47e","Karlovačka",2,"Karlovacka",,"HRV.6_1","ChIJxWnA7B0SZEcRULQrhlCtAAM","HR.KA","HR04D","HR027",45.34426689,15.477263537739,114804
+"2d5ab5d4","Koprivničko-križevačka",2,"Koprivnicko-križevacka",,"HRV.7_1","ChIJn5-3YNYlZkcRcLQrhlCtAAM","HR.KK","HR045","HR063",46.11669159,16.768601958158,105886
+"c43910e1","Krapinsko-zagorska",2,"Krapinsko-zagorska županija",,"HRV.8_1","ChIJCeYzNirpZUcRMLQrhlCtAAM","HR.KZ","HR043","HR064",46.092697145,15.9195681129296,124407
+"fc7fb6b0","Ličko-senjska",2,"Licko-senjska",,"HRV.9_1","ChIJl4jQ8frXY0cRoLQrhlCtAAM","HR.LS","HR032","HR032",44.69152832,15.4411203004029,44346
+"b453e46e","Međimurska",2,"Medimurska",,"HRV.10_1","ChIJr3LZtraxaEcRULUrhlCtAAM","HR.ME","HR046","HR061",46.418376925,16.4873753785698,109130
+"e33b514b","Osječko-baranjska",2,"Osjecko-baranjska",,"HRV.11_1","ChIJu1vQGT0eXUcR8LQrhlCtAAM","HR.OB","HR04B","HR025",45.56395531,18.4368295633064,270877
+"24ecf9ff","Požeško-slavonska",2,"Požeško-slavonska",,"HRV.12_1","ChIJw71yz1GHXUcRwLQrhlCtAAM","HR.PS","HR049","HR023",45.38304329,17.7515678216975,65614
+"6576e70a","Primorsko-goranska",2,"Primorsko-goranska",,"HRV.13_1","ChIJq__QoTFxY0cRkLQrhlCtAAM","HR.PG","HR031","HR031",45.358488085,14.7019836005973,281945
+"151c1385","Šibensko-kninska",2,"Šibensko-kninska",,"HRV.14_1","ChIJyazZSX4rNRMRALUrhlCtAAM","HR.SB","HR034","HR034",43.850305555,15.9903456152642,98899
+"7d5fc4e8","Sisačko-moslavačka",2,"Sisacko-moslavacka",,"HRV.15_1","ChIJy8MorGrnZkcRQLQrhlCtAAM","HR.SM","HR04E","HR028",45.341674805,16.4744146824541,144599
+"621b2313","Splitsko-dalmatinska",2,"Splitsko-dalmatinska",,"HRV.16_1","ChIJ2WylVSZhNRMRILUrhlCtAAM","HR.SD","HR035","HR035",43.53305626,16.7962684305109,448153
+"5a5d8542","Varaždinska",2,"Varaždinska",,"HRV.17_1","ChIJT2DcICcBZkcRYLQrhlCtAAM","HR.VA","HR044","HR062",46.21356583,16.4343400345287,165885
+"53ebc969","Virovitičko-podravska",2,"Viroviticko-podravska",,"HRV.18_1","ChIJcQeW2fKMZ0cRsLQrhlCtAAM","HR.VP","HR048","HR022",45.735933305,17.6380210553126,72843
+"943c61dd","Vukovarsko-srijemska",2,"Vukovarsko-srijemska",,"HRV.19_1","ChIJCXUtzGB8XEcRELUrhlCtAAM","HR.VS","HR04C","HR026",45.176971435,18.8412954932987,149489
+"8b788626","Zadarska",2,"Zadarska",,"HRV.20_1","ChIJAbEBKibsYUcR4LQrhlCtAAM","HR.ZD","HR033","HR033",44.18305969,15.3346944252332,168055
+"b33e2077","Zagrebačka",2,"Zagrebacka",,"HRV.21_1","ChIJe_jnWFN_ZkcRILQrhlCtAAM","HR.ZG","HR042","HR065",45.7527256,15.5574923858788,309611

@@ -1,10 +1,10 @@
 "id","id_github.m3it.covid19data","id_github.cssegisanddata.covid19","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
 ,,,,,,,,,,,"-",,,
-"f42f23e3","Australian Capital Territory","Australian Capital Territory",2,"Australian Capital Territory",,"Australian Capital Territory","AUS.2_1","Australian Capital Territory","AU.AC","AUACT","8",-35.52241325,148.956342562477,428060
-"5c4dd6e0","New South Wales","New South Wales",2,"New South Wales",,"New South Wales","AUS.5_1","New South Wales","AU.NS","AUNSW","1",-32.83105087,146.452446107272,8117976
-"a079fdb2","Northern Territory","Northern Territory",2,"Northern Territory",,"Northern Territory","AUS.6_1","Northern Territory","AU.NT","AUNT","7",-18.401641845,133.500849643058,245562
-"36068882","Queensland","Queensland",2,"Queensland",,"Queensland","AUS.7_1","Queensland","AU.QL","AUQLD","3",-19.930473325,143.048305824921,5115451
-"165128d0","South Australia","South Australia",2,"South Australia",,"South Australia","AUS.8_1","South Australia","AU.SA","AUSA","4",-32.02882385,136.948451830708,1756494
-"86525f8e","Tasmania","Tasmania",2,"Tasmania",,"Tasmania","AUS.9_1","Tasmania","AU.TS","AUTAS","6",-42.142349245,146.672408326577,535500
-"6c5dccdb","Victoria","Victoria",2,"Victoria",,"Victoria","AUS.10_1","Victoria","AU.VI","AUVIC","2",-36.55857086,144.549669702199,6629870
-"1f999f12","Western Australia","Western Australia",2,"Western Australia",,"Western Australia","AUS.11_1","Western Australia","AU.WA","AUWA","5",-24.43881607,121.2021408075,2630557
+"f42f23e3","Australian Capital Territory","Australian Capital Territory",2,"Australian Capital Territory",,"Australian Capital Territory","AUS.2_1","ChIJSxCboN9MFmsRA3huXDhEWOc","AU.AC","AUACT","8",-35.52241325,148.956342562477,428060
+"5c4dd6e0","New South Wales","New South Wales",2,"New South Wales",,"New South Wales","AUS.5_1","ChIJDUte93TLDWsRLZ_EIhGvgBc","AU.NS","AUNSW","1",-32.83105087,146.452446107272,8117976
+"a079fdb2","Northern Territory","Northern Territory",2,"Northern Territory",,"Northern Territory","AUS.6_1","ChIJDxnz5sJyUSsRdScAAAAAAAA","AU.NT","AUNT","7",-18.401641845,133.500849643058,245562
+"36068882","Queensland","Queensland",2,"Queensland",,"Queensland","AUS.7_1","ChIJ_dxieiTf1GsRmb4SdiLQ8vU","AU.QL","AUQLD","3",-19.930473325,143.048305824921,5115451
+"165128d0","South Australia","South Australia",2,"South Australia",,"South Australia","AUS.8_1","ChIJ88foW55Yp2oR2ND6PZl5fts","AU.SA","AUSA","4",-32.02882385,136.948451830708,1756494
+"86525f8e","Tasmania","Tasmania",2,"Tasmania",,"Tasmania","AUS.9_1","ChIJz_o0fifteqoRZEBAKd2ljyo","AU.TS","AUTAS","6",-42.142349245,146.672408326577,535500
+"6c5dccdb","Victoria","Victoria",2,"Victoria",,"Victoria","AUS.10_1","ChIJT5UYfksx1GoRNJWCvuL8Tlo","AU.VI","AUVIC","2",-36.55857086,144.549669702199,6629870
+"1f999f12","Western Australia","Western Australia",2,"Western Australia",,"Western Australia","AUS.11_1","ChIJ0YTziS4qOSoRmaMAMt9KDm4","AU.WA","AUWA","5",-24.43881607,121.2021408075,2630557

@@ -1,23 +1,23 @@
 "id","id_arcgis.se","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
 ,,,,,,,,,"-",,,,
-"d46c7fb5","Blekinge",2,"Blekinge",,"Blekinge County","SWE.1_1","Blekinge County","SEK",,"SE221",56.243473055,15.2273649960401,151436
-"45f678d9","Dalarna",2,"Dalarna",,"Dalarna County","SWE.2_1","Dalarna County","SEW",,"SE312",61.05875206,14.2128084429543,275711
-"d1f2852e","Gävleborg",2,"Gävleborg",,"Gävleborg County","SWE.3_1","Gavleborg County","SEX",,"SE313",61.258392335,16.3726542991675,275653
-"82e4ee0c","Gotland",2,"Gotland",,"Gotland County","SWE.4_1","Gotland County","SEI",,"SE214",57.417222975,18.537534715,57297
-"1e3623d6","Halland",2,"Halland",,"Halland County","SWE.5_1","Halland County","SEN",,"SE231",56.95422363,13.0268285697556,288859
-"f7f0a869","Jämtland_Härjedalen",2,"Jämtland",,"Jämtland County","SWE.6_1","Jamtland County","SEZ",,"SE322",63.33733368,14.1154542129561,127020
-"1fd600c8","Jönköping",2,"Jönköping",,"Jönköping County","SWE.7_1","Jonkoping County","SEF",,"SE211",57.526851655,14.64893881545,331539
-"0d9b81b2","Kalmar",2,"Kalmar",,"Kalmar County","SWE.8_1","Kalmar County","SEH",,"SE213",57.21236038,15.9996031561732,233776
-"a7771a6b","Kronoberg",2,"Kronoberg",,"Kronoberg County","SWE.9_1","Kronoberg County","SEG",,"SE212",56.792158125,14.4136907785326,179635
-"5d5b4f9e","Norrbotten",2,"Norrbotten",,"Norrbotten County","SWE.10_1","Norrbotten County","SEBD",,"SE332",67.058662415,20.0345605732214,251886
-"f44d4296","Örebro",2,"Örebro",,"Örebro County","SWE.11_1","Örebro County","SET",,"SE124",59.37217331,14.991595646579,275030
-"fd655365","Östergötland",2,"Östergötland",,"Östergötland County","SWE.12_1","Östergötland County","SEE",,"SE123",58.35277748,15.5784976035381,417966
-"862f4b30","Skåne",2,"Skåne",,"Skåne County","SWE.13_1","Skåne County","SEM",,"SE224",55.929861065,13.559166905,1184500
-"805d2749","Sörmland",2,"Södermanland",,"Södermanland County","SWE.14_1","Södermanland County","SED",,"SE122",59.06777,16.5161177694256,263099
-"69a0f5e8","Stockholm",2,"Stockholm",,"Stockholm County","SWE.15_1","Stockholm County","SEAB",,"SE110",59.475278855,17.9494117652676,1918104
-"3f83a4a1","Uppsala",2,"Uppsala",,"Uppsala County","SWE.16_1","Uppsala County","SEC",,"SE121",60.01865578,17.8109151424017,319925
-"22745cb1","Värmland",2,"Värmland",,"Värmland County","SWE.17_1","Varmland County","SES",,"SE311",59.887094495,13.2428321024765,273489
-"c55c84c6","Västerbotten",2,"Västerbotten",,"Västerbotten County","SWE.18_1","Västerbotten County","SEAC",,"SE331",64.8833313,18.0306662706164,257581
-"784f2d1c","Västernorrland",2,"Västernorrland",,"Västernorrland County","SWE.19_1","Västernorrland County","SEY",,"SE321",63.074739455,17.6450098139141,243978
-"886c061e","Västmanland",2,"Västmanland",,"Västmanland County","SWE.20_1","Västmanland County","SEU",,"SE125",59.742420195,16.1513121129252,248489
-"f49b4e52","Västra_Götaland",2,"Västra Götaland",,"Västra Götaland County","SWE.21_1","Västra Götaland County","SEO",,"SE232",58.196943285,13.1420120385432,1538284
+"d46c7fb5","Blekinge",2,"Blekinge",,"Blekinge County","SWE.1_1","ChIJU7cBB4IgVEYRxeATdpMgZIY","SEK",,"SE221",56.243473055,15.2273649960401,151436
+"45f678d9","Dalarna",2,"Dalarna",,"Dalarna County","SWE.2_1","ChIJp9hqlA_ZZ0YRkIqM3gZFAwM","SEW",,"SE312",61.05875206,14.2128084429543,275711
+"d1f2852e","Gävleborg",2,"Gävleborg",,"Gävleborg County","SWE.3_1","ChIJ39j0ZoXGYEYRC49P1AV6Cxg","SEX",,"SE313",61.258392335,16.3726542991675,275653
+"82e4ee0c","Gotland",2,"Gotland",,"Gotland County","SWE.4_1","ChIJiyZCHCEC90YRYIvkQfP-AAM","SEI",,"SE214",57.417222975,18.537534715,57297
+"1e3623d6","Halland",2,"Halland",,"Halland County","SWE.5_1","ChIJK_ODRKHoT0YRS8g5yI8zSmo","SEN",,"SE231",56.95422363,13.0268285697556,288859
+"f7f0a869","Jämtland_Härjedalen",2,"Jämtland",,"Jämtland County","SWE.6_1","ChIJkTD51Ea4b0YRd2z75PmgOZI","SEZ",,"SE322",63.33733368,14.1154542129561,127020
+"1fd600c8","Jönköping",2,"Jönköping",,"Jönköping County","SWE.7_1","ChIJ3wdvqJ6nUEYRMIsOKXiQAQM","SEF",,"SE211",57.526851655,14.64893881545,331539
+"0d9b81b2","Kalmar",2,"Kalmar",,"Kalmar County","SWE.8_1","ChIJT1xycijvV0YREIvkQfP-AAM","SEH",,"SE213",57.21236038,15.9996031561732,233776
+"a7771a6b","Kronoberg",2,"Kronoberg",,"Kronoberg County","SWE.9_1","ChIJb-eYz5YjV0YReztcl6qBpPA","SEG",,"SE212",56.792158125,14.4136907785326,179635
+"5d5b4f9e","Norrbotten",2,"Norrbotten",,"Norrbotten County","SWE.10_1","ChIJ9eaY2YKJ4UQREOGMe_KiB3I","SEBD",,"SE332",67.058662415,20.0345605732214,251886
+"f44d4296","Örebro",2,"Örebro",,"Örebro County","SWE.11_1","ChIJI4RyRY7ORUYRrX-3JHQ_fn4","SET",,"SE124",59.37217331,14.991595646579,275030
+"fd655365","Östergötland",2,"Östergötland",,"Östergötland County","SWE.12_1","ChIJ027DEINYWEYR3CQ8UjRByE0","SEE",,"SE123",58.35277748,15.5784976035381,417966
+"862f4b30","Skåne",2,"Skåne",,"Skåne County","SWE.13_1","ChIJP1A75D94TUYR4fC34heiR70","SEM",,"SE224",55.929861065,13.559166905,1184500
+"805d2749","Sörmland",2,"Södermanland",,"Södermanland County","SWE.14_1","ChIJp2liQzTYXkYR8IrkQfP-AAM","SED",,"SE122",59.06777,16.5161177694256,263099
+"69a0f5e8","Stockholm",2,"Stockholm",,"Stockholm County","SWE.15_1","ChIJPauYNIoH2EUR-vzAobVCa7M","SEAB",,"SE110",59.475278855,17.9494117652676,1918104
+"3f83a4a1","Uppsala",2,"Uppsala",,"Uppsala County","SWE.16_1","ChIJ7zcyuFgQXkYRoceQrKI9PuQ","SEC",,"SE121",60.01865578,17.8109151424017,319925
+"22745cb1","Värmland",2,"Värmland",,"Värmland County","SWE.17_1","ChIJh53Ud3ASQ0YRSVFDogtl63k","SES",,"SE311",59.887094495,13.2428321024765,273489
+"c55c84c6","Västerbotten",2,"Västerbotten",,"Västerbotten County","SWE.18_1","ChIJMwbPXVNAeUYRD9qCNYa3TQs","SEAC",,"SE331",64.8833313,18.0306662706164,257581
+"784f2d1c","Västernorrland",2,"Västernorrland",,"Västernorrland County","SWE.19_1","ChIJ1Y-qVKfZZEYRcIqM3gZFAwM","SEY",,"SE321",63.074739455,17.6450098139141,243978
+"886c061e","Västmanland",2,"Västmanland",,"Västmanland County","SWE.20_1","ChIJzRXH8jBhXkYRl-My_cp5cHk","SEU",,"SE125",59.742420195,16.1513121129252,248489
+"f49b4e52","Västra_Götaland",2,"Västra Götaland",,"Västra Götaland County","SWE.21_1","ChIJlRL-UXszRUYRcIsOKXiQAQM","SEO",,"SE232",58.196943285,13.1420120385432,1538284
