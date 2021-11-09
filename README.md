@@ -24,7 +24,7 @@ This repository aggregates COVID-19 data at a fine-grained spatial resolution fr
 | `vent`                    | Number of patients requiring invasive ventilation on date.   |
 | `population`              | Total population.                                            |
 
-The dataset also includes [policy measures](/articles/docs.html#policy-measures) by Oxford's government response tracker, and a set of [keys](/articles/docs.html#external-keys) to match the data with [Google](https://www.google.com/covid19/mobility/) and [Apple](https://www.apple.com/covid19/mobility) mobility reports, with the [Hydromet dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet), and with spatial databases such as [Eurostat](https://ec.europa.eu/eurostat/web/nuts/nuts-maps) for Europe or [GADM](https://gadm.org/) worldwide.
+The dataset also includes [policy measures](https://covid19datahub.io/articles/docs.html#policy-measures) by Oxford's government response tracker, and a set of [keys](https://covid19datahub.io/articles/docs.html#external-keys) to match the data with [Google](https://www.google.com/covid19/mobility/) and [Apple](https://www.apple.com/covid19/mobility) mobility reports, with the [Hydromet dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet), and with spatial databases such as [Eurostat](https://ec.europa.eu/eurostat/web/nuts/nuts-maps) for Europe or [GADM](https://gadm.org/) worldwide.
 
 ## Download the data
 
