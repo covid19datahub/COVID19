@@ -19,7 +19,7 @@ gov.si <- function(level){
   if(level!=1) return(NULL)
   
   # download
-  url <- 'https://www.gov.si/assets/vlada/Koronavirus-podatki/en/EN_Covid-19-all-data.xlsx'
+  url <- 'https://www.gov.si/assets/vlada/Koronavirus-podatki/EN_Covid-19-all-data-v2.xlsx'
   x <- read.excel(url, sheet = 1)
   
   # format
@@ -31,9 +31,6 @@ gov.si <- function(level){
     'All persons in intensive care on certain day' = 'icu',
     'Deaths (all)'                                 = 'deaths'
   ))
-  
-  # clean deaths
-  x$deaths <- as.numeric(gsub("\\*$", "", x$deaths))
   
   # clean date
   x$date <- as.Date(suppressWarnings(as.numeric(x$date)), origin = "1899-12-30")   
