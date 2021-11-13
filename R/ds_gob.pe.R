@@ -31,8 +31,9 @@ gob.pe <- function(level){
   url <- "https://cloud.minsa.gob.pe/s/To2QtqoNjKqobfw/download"
   download.file(url, zip, mode = "wb", quiet = TRUE)
   
-  # unzip and read
+  # unzip, read, and delete
   x <- data.table::fread(cmd = sprintf("7za x -so %s", zip), showProgress = FALSE)
+  unlink(zip)
   
   # format
   x <- map_data(x, c(

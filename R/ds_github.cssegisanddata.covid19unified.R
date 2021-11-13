@@ -51,7 +51,8 @@ github.cssegisanddata.covid19unified <- function(level, iso){
   file <- tempfile()
   download.file(url, file, mode = "wb", quiet = TRUE)
   x <- readRDS(file)
-
+  unlink(file)
+  
   # filter
   x <- x[which((x$ID %in% ids) & x$Age=="Total" & x$Sex=="Total" & x$Cases>0),]
   

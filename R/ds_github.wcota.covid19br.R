@@ -73,6 +73,7 @@ github.wcota.covid19br <- function(level){
     tmp <- tempfile()
     download.file(url, destfile=tmp, mode="wb", quiet = TRUE)
     x <- read.csv(tmp)
+    unlink(tmp)
     
     # formatting
     x <- map_data(x, c(
