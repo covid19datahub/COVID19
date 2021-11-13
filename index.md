@@ -23,7 +23,7 @@ We release [R](/articles/api/r.html) and [Python](/articles/api/python.html) pac
 
 ## Data transparency
 
-The data acquisition pipeline is 100% open source. All the code used to generate the data files can be found at our [GitHub repository](https://github.com/covid19datahub/COVID19/). In principle, one can use the function `covid19` from the repository to generate the same data we provide at the [download centre](/articles/data.html#latest-data). However, this takes between 1-2 hours, so that downloading the pre-computed files is typically more convenient. [Here](/reference/index.html) we provide the full list of data sources from which the data are pulled from.
+The data acquisition pipeline is open source. All the code used to generate the data files can be found at our [GitHub repository](https://github.com/covid19datahub/COVID19/). In principle, one can use the function `covid19` from the repository to generate the same data we provide at the [download centre](/articles/data.html#latest-data). However, this takes between 1-2 hours, so that downloading the pre-computed files is typically more convenient. [Here](/reference/index.html) we provide the full list of data sources from which the data are pulled.
 
 ## Research reproducibility
 
