@@ -42,9 +42,9 @@ Download worldwide data at 3 different levels of granularity: country-level data
 
 | URL | Description | Format | Downloads |
 |-------------------------------------------------------|----------------------------------------|--------------------------|------------------|
-| https://storage.covid19datahub.io/level/1.csv | Worldwide country-level data. | [CSV](https://storage.covid19datahub.io/level/1.csv) -- [ZIP](https://storage.covid19datahub.io/level/1.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/1.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/1.svg) |
-| https://storage.covid19datahub.io/level/2.csv | Worldwide state-level data. | [CSV](https://storage.covid19datahub.io/level/2.csv) -- [ZIP](https://storage.covid19datahub.io/level/2.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/2.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/2.svg) |
-| https://storage.covid19datahub.io/level/3.csv | Worldwide city-level data. | [CSV](https://storage.covid19datahub.io/level/3.csv) -- [ZIP](https://storage.covid19datahub.io/level/3.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/3.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/3.svg) |
+| https://storage.covid19datahub.io/level/1.csv.zip | Worldwide country-level data. | [CSV](https://storage.covid19datahub.io/level/1.csv) -- [ZIP](https://storage.covid19datahub.io/level/1.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/1.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/1.svg) |
+| https://storage.covid19datahub.io/level/2.csv.zip | Worldwide state-level data. | [CSV](https://storage.covid19datahub.io/level/2.csv) -- [ZIP](https://storage.covid19datahub.io/level/2.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/2.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/2.svg) |
+| https://storage.covid19datahub.io/level/3.csv.zip | Worldwide city-level data. | [CSV](https://storage.covid19datahub.io/level/3.csv) -- [ZIP](https://storage.covid19datahub.io/level/3.csv.zip) -- [GZIP](https://storage.covid19datahub.io/level/3.csv.gz) | ![](https://storage.covid19datahub.io/downloads/level/3.svg) |
 
 
 **For developers.** The endpoint to download data by level is:
@@ -133,17 +133,15 @@ tab <- function(start, end, version){
 }
 ```
 
-<!--
-`r tab(start = "2021-11-04", end = Sys.Date()-1, version = 3)`
+`r tab(start = "2021-11-15", end = Sys.Date()-1, version = 3)`
 
 Version 3 is now live. This is a major update. The vintage data are now shipped in SQLite databases and the vintage data sources are reported in the corresponding PDF files. 
 
-The vintage data are now generated on the same date of the data snapshot. Before 4 November 2021, the vintage data were generated with a delay of 48 hours to make sure all the observations are complete, and we don't take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h). This means that e.g., a vintage file for 1st November was actually generated on 3rd November, and the data between the 1st and 3rd November were filtered out.
+The vintage data are now generated on the same date of the data snapshot. Before 14 November 2021, the vintage data were generated with a delay of 48 hours to make sure all the observations are complete, and we don't take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h). This means that e.g., a vintage file for 1st November was actually generated on 3rd November, and the data between the 1st and 3rd November were filtered out.
 
 [See the changelog](/news/index.html) for further information on this update.
--->
 
-`r tab(start = "2021-04-11", end = Sys.Date()-2, version = 2)`
+`r tab(start = "2021-04-11", end = "2021-11-14", version = 2)`
 
 Due to the incresing size of the data files, we stopped providing the pre-processed data on 10 April 2021, so to improve the update and storage of the raw data. **Please switch to the raw data if you are still using the pre-processed files.**
 Pre-processed data fill missing dates in the raw data with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`. 
