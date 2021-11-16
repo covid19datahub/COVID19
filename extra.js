@@ -3,7 +3,7 @@ function downloadTable(el, slug) {
 	var id = el.value;
 	var name = $(el).text();
 	if(id){
-		var url = "https://storage.covid19datahub.io/"+slug+"/"+id+".csv";
+		var url = "https://storage.covid19datahub.io/"+slug+"/"+id+".csv.zip";
 		html = 
 		"<table class=\"table\">" +
 			"<colgroup>" +
