@@ -13664,13 +13664,22 @@
 <th>Snapshot Date</th>
 <th>Downloads</th>
 </tr></thead>
-<tbody><tr class="odd">
+<tbody>
+<tr class="odd">
+<td><a href="https://storage.covid19datahub.io/2021-11-16.db.gz" class="uri">https://storage.covid19datahub.io/2021-11-16.db.gz</a></td>
+<td>
+<a href="https://storage.covid19datahub.io/2021-11-16.pdf">Download PDF</a>            </td>
+<td>2021-11-16</td>
+<td><img src="https://storage.covid19datahub.io/downloads/2021-11-16.db.gz.svg" onerror="this.src='https://img.shields.io/badge/downloads-0-blue'"></td>
+</tr>
+<tr class="even">
 <td><a href="https://storage.covid19datahub.io/2021-11-15.db.gz" class="uri">https://storage.covid19datahub.io/2021-11-15.db.gz</a></td>
 <td>
 <a href="https://storage.covid19datahub.io/2021-11-15.pdf">Download PDF</a>            </td>
 <td>2021-11-15</td>
 <td><img src="https://storage.covid19datahub.io/downloads/2021-11-15.db.gz.svg" onerror="this.src='https://img.shields.io/badge/downloads-0-blue'"></td>
-</tr></tbody>
+</tr>
+</tbody>
 </table>
 <p>Version 3 is now live. This is a major update. The vintage data are now shipped in SQLite databases and the vintage data sources are reported in the corresponding PDF files.</p>
 <p>The vintage data are now generated on the same date of the data snapshot. Before 14 November 2021, the vintage data were generated with a delay of 48 hours to make sure all the observations are complete, and we don’t take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h). This means that e.g., a vintage file for 1st November was actually generated on 3rd November, and the data between the 1st and 3rd November were filtered out. This is no longer the case.</p>
