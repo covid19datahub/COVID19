@@ -6,8 +6,6 @@
 
 This repository aggregates COVID-19 data at a fine-grained spatial resolution from [several sources](https://covid19datahub.io/reference/index.html) and makes them available in the form of ready-to-use CSV files available at https://covid19datahub.io
 
-**IMPORTANT**: Version 3.0 of COVID-19 Data Hub will replace the current `rawdata` datasets on Monday 15 November. This new version comes with many more features and a few breaking changes. Please [see the changelog](https://covid19datahub.io/news/index.html).
-
 ## What's included
 
 | Variable                  | Description                                                  |
