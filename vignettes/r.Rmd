@@ -9,90 +9,114 @@ vignette: >
 
 [![](https://www.r-pkg.org/badges/version/COVID19)](https://cran.r-project.org/package=COVID19) [![](https://cranlogs.r-pkg.org/badges/last-month/COVID19)](https://cran.r-project.org/package=COVID19) [![](https://img.shields.io/github/stars/covid19datahub/R?style=social)](https://github.com/covid19datahub/R)
 
-> IMPORTANT: this package will be upgraded to Version 3.0.0 between 15-19 November 2021.
+> The stable release of this package is hosted on [CRAN](https://cran.r-project.org/package=COVID19). The development version is available at [Github](https://github.com/covid19datahub/R).
 
 ## Quickstart
 
-```R
-# install the package
-install.packages("COVID19")
+Install the package:
 
-# load the package
+```R
+install.packages("COVID19")
+```
+
+Load the package
+
+```R
 library("COVID19")
 ```
 
-## Download the data
+## Usage
 
-See the full documentation by typing `?covid19`
+The only function in the package is `covid19()`. 
 
-```r
-# Worldwide data by country
+By default, the function downloads worldwide data by country:
+
+```R
 x <- covid19()
+```
 
-# Worldwide data by state
+### Level
+
+The argument `level` specifies the granularity of the data:
+
+- 1: country-level data
+- 2: state-level data
+- 3: lower-level data
+
+Download worldwide data by state:
+
+```R
 x <- covid19(level = 2)
-
-# Specific country data by city
-x <- covid19(c("Italy","US"), level = 3)
 ```
 
-## Raw data
+### Country
 
-Logical. Skip data cleaning? Default `True`. If `raw=False`, the raw data are cleaned by filling missing dates with `NA` values. This ensures that all locations share the same grid of dates and no single day is skipped. Then, `NA` values are replaced with the previous non-`NA` value or `0`.  
+The argument `country` filters the data by country. This is a vector of country names or [ISO codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes) (ISO 3166-1 Alpha-2 code, Alpha-3 code, or numeric code). 
 
-```r
-x <- covid19(raw = FALSE)
-```
-
-## Vintage
-
-Logical. Retrieve the snapshot of the dataset that was generated at the `end` date instead of using the latest version. Default `FALSE`.
-
-To fetch e.g. US data that were accessible on *22th April 2020* type
-
-```r
-x <- covid19("USA", end = "2020-04-22", vintage = TRUE)
-```
-
-The vintage data are collected at the end of the day, but published with approximately 48 hour delay, once the day is completed in all the timezones.
-
-
-## Merge with World Bank Open Data
-
-The dataset can be extended with [World Bank Open Data](https://data.worldbank.org/) via the argument `wb`, a character vector of indicator codes. The codes can be found by inspecting the corresponding URL. For example, the code of the GDP indicator available at https://data.worldbank.org/indicator/NY.GDP.MKTP.CD is `NY.GDP.MKTP.CD`. 
+Download data for Italy and Unites States at county/province level:
 
 ```R
-wb <- c("gdp" = "NY.GDP.MKTP.CD", "hosp_beds" = "SH.MED.BEDS.ZS")
-x  <- covid19(wb = wb)
+x <- covid19(country = c("Italy", "US"), level = 3)
 ```
 
-## Merge with Google Mobility Reports
+### Time range
 
-The dataset can be extended with [Google Mobility Reports](https://www.google.com/covid19/mobility/) via the argument `gmr`, the url to the Google CSV file. At the time of writing, the CSV is available at:
+The arguments `start` and `end` specify the period of interest. The data are subsetted to match this time range.
+
+Download national-level data for United States from 01 October 2021 to 01 November 2021:
 
 ```R
-gmr <- "https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv"
-x   <- covid19(gmr = gmr)
+x <- covid19("US", start = "2021-10-01", end = "2021-11-01")
 ```
 
-## Merge with Apple Mobility Reports
+### Vintage
 
-The dataset can be extended with [Apple Mobility Reports](https://www.apple.com/covid19/mobility) via the argument `amr`, the url to the Apple CSV file. At the time of writing, the CSV is available at:
+The parameter `vintage` allows to retrieve the snapshot of the dataset that was available on the given date. This typically differs from subsetting the latest data, as most governments are updating the data retroactively. Available since 14 April, 2020.
+
+Retrieve the data that were available on 15 May, 2020:
 
 ```R
-amr <- "https://covid19-static.cdn-apple.com/covid19-mobility-data/"
-amr <- paste0(amr, "2015HotfixDev10/v3/en-us/applemobilitytrends-2020-08-24.csv")
-x   <- covid19(amr = amr)
+x <- covid19(vintage = "2020-05-15")
 ```
 
-## Data sources
+### Download folder
 
-Data sources are stored in the `src` attribute.
+The argument `dir` specifies the folder where the data files are to be downloaded. By default this is a temporary folder. 
+
+Download the files in the folder `data`:
 
 ```R
-s <- covid19cite(x)
-View(s)
+dir.create("data")
+x <- covid19(dir = "data")
 ```
+
+### World Bank Open Data
+
+Country-level covariates by [World Bank Open Data](https://data.worldbank.org/) can be added via the argument `wb`. This is a character vector of indicator codes to download. The codes can be found by inspecting the corresponding URL. For example, the code of the indicator "Hospital beds (per 1,000 people)" available at https://data.worldbank.org/indicator/SH.MED.BEDS.ZS is `SH.MED.BEDS.ZS`. The indicators are typically available at a yearly frequency. This function returns the latest data available between the `start` and the `end` date. See the table at the bottom of [this page](https://datatopics.worldbank.org/universal-health-coverage/coronavirus/) for suggested indicators. Example using GDP and number of hospital beds:
+
+```R
+x <- covid19(wb = c("gdp" = "NY.GDP.MKTP.CD", "hosp_beds" = "SH.MED.BEDS.ZS"))
+```
+
+### Google Mobility Reports
+
+Mobility data by [Google Mobility Reports](https://www.google.com/covid19/mobility/) can be added via the argument `gmr`. This is the link to the Google "CSV by geographic area" ZIP folder. At the time of writing, the link is https://www.gstatic.com/covid19/mobility/Region_Mobility_Report_CSVs.zip. As the link has been stable since the beginning of the pandemic, the function accepts `gmr=TRUE` to automatically use this link.
+
+```R
+x <- covid19(gmr = TRUE)
+```
+
+### Apple Mobility Reports
+
+Mobility data by [Apple Mobility Reports](https://covid19.apple.com/mobility) can be added via the argument `amr`. This is the link to the Apple "All CSV data" file. This link is changing constantly. Consider downloading the data file from the website first, and then set `amr="path/to/file.csv"`.
+
+```R
+x <- covid19(amr = "path/to/file.csv")
+```
+
+## Reference manual
+
+- https://cran.r-project.org/package=COVID19/COVID19.pdf
 
 ## Star the repo
 
