@@ -21,6 +21,8 @@ vignette: >
 
 ## Epidemiological variables
 
+Confirmed cases, deaths, recovered, tests, and vaccination data are cumulative counts. When computing daily counts, you may end up with negative numbers. This is a known issue due to decreasing cumulative counts in the original data provider. COVID-19 Data Hub applies no cleaning procedure for this kind of issues, which are typically due to changes in the data collection methodology. Refer to the [data sources](/reference/index.html) to identify the original providers and obtain more information about the data. If the provider corrects the data retroactively, the changes are reflected in this dataset.
+
 | Variable                              | Description                                                  |
 | ----------------------------------------------- | ----------------------------------------------------------- |
 | `confirmed`                           | Cumulative number of confirmed cases.                       |
