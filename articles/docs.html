@@ -35,6 +35,8 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -47,73 +49,15 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">3.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">3.0.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-<li>
-  <a href="../index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Data
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="../articles/data.html">Download</a>
-    </li>
-    <li>
-      <a href="../articles/docs.html">Documentation</a>
-    </li>
-    <li>
-      <a href="../reference/index.html">Data sources</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Software
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="../articles/r.html">R</a>
-    </li>
-    <li>
-      <a href="../articles/python.html">Python</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Papers
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-<li>
-      <a href="https://doi.org/10.21105/joss.02376">COVID-19 Data Hub</a>
-    </li>
-  </ul>
-</li>
-<li>
-  <a href="../articles/contributors.html">Contributors</a>
-</li>
-<li>
-  <a href="../news/index.html">Changelog</a>
-</li>
-      </ul>
+      <ul class="nav navbar-nav"></ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/covid19datahub/COVID19/">
+  <a href="https://github.com/covid19datahub/COVID19/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -140,7 +84,7 @@
       <h1 data-toc-skip>Documentation</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/covid19datahub/COVID19/blob/master/vignettes/docs.Rmd"><code>vignettes/docs.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/covid19datahub/COVID19/blob/HEAD/vignettes/docs.Rmd" class="external-link"><code>vignettes/docs.Rmd</code></a></small>
       <div class="hidden name"><code>docs.Rmd</code></div>
 
     </div>
@@ -153,9 +97,9 @@
 <blockquote>
 <p>The <a href="/articles/data.html#download-all-in-one-1">SQLite database</a> contains two tables: the table <code>location</code> where each row represents a geographical entity, and the table <code>timeseries</code> with the time-series observations for each location. The two tables can be joined on the column <code>id</code>. The columns are consistent with the CSV files and are documented below.</p>
 </blockquote>
-<div id="identifiers" class="section level2">
-<h2 class="hasAnchor">
-<a href="#identifiers" class="anchor"></a>Identifiers</h2>
+<div class="section level2">
+<h2 id="identifiers">Identifiers<a class="anchor" aria-label="anchor" href="#identifiers"></a>
+</h2>
 <table class="table">
 <thead><tr class="header">
 <th>Variable</th>
@@ -173,9 +117,9 @@
 </tbody>
 </table>
 </div>
-<div id="epidemiological-variables" class="section level2">
-<h2 class="hasAnchor">
-<a href="#epidemiological-variables" class="anchor"></a>Epidemiological variables</h2>
+<div class="section level2">
+<h2 id="epidemiological-variables">Epidemiological variables<a class="anchor" aria-label="anchor" href="#epidemiological-variables"></a>
+</h2>
 <p>Confirmed cases, deaths, recovered, tests, and vaccination data are cumulative counts. When computing daily counts, you may end up with negative numbers. This is a known issue due to decreasing cumulative counts in the original data provider. COVID-19 Data Hub applies no cleaning procedure for this kind of issues, which are typically due to changes in the data collection methodology. Refer to the <a href="/reference/index.html">data sources</a> to identify the original providers and obtain more information about the data. If the provider corrects the data retroactively, the changes are reflected in this dataset.</p>
 <table class="table">
 <colgroup>
@@ -234,17 +178,17 @@
 </tbody>
 </table>
 </div>
-<div id="policy-measures" class="section level2">
-<h2 class="hasAnchor">
-<a href="#policy-measures" class="anchor"></a>Policy measures</h2>
-<p>Policy measures are provided by <a href="https://github.com/OxCGRT/covid-policy-tracker">Oxford Covid-19 Government Response Tracker</a>. From the <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md">documentation</a>: “Policies often vary by region within countries. The Tracker codes the most stringent government policy that is in place in a country/territory, as represented by the highest ordinal value. Sometimes the most stringent policy in a country/territory will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area, the Tracker uses a binary flag variable to denote this limited scope. The indicators have a flag for whether they are”targeted" to a specific geographical region (flag=0) or whether they are a “general” policy that is applied across the whole country/territory (flag=1)."</p>
+<div class="section level2">
+<h2 id="policy-measures">Policy measures<a class="anchor" aria-label="anchor" href="#policy-measures"></a>
+</h2>
+<p>Policy measures are provided by <a href="https://github.com/OxCGRT/covid-policy-tracker" class="external-link">Oxford Covid-19 Government Response Tracker</a>. From the <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/codebook.md" class="external-link">documentation</a>: “Policies often vary by region within countries. The Tracker codes the most stringent government policy that is in place in a country/territory, as represented by the highest ordinal value. Sometimes the most stringent policy in a country/territory will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area, the Tracker uses a binary flag variable to denote this limited scope. The indicators have a flag for whether they are”targeted" to a specific geographical region (flag=0) or whether they are a “general” policy that is applied across the whole country/territory (flag=1)."</p>
 <p>COVID-19 Data Hub uses these flags and indicators as follows:</p>
 <ul>
 <li>General policies (flag=1) are encoded with a positive value.</li>
 <li>Targeted policies (flag=0) are encoded with a negative value.</li>
 <li>Missing flags are treated as flag=0 (targeted policy) to represent the fact that the policy may vary within the country.</li>
-<li>All the policies for a country are used also for its sub-national areas (levels 2 and 3), unless <a href="https://github.com/OxCGRT/covid-policy-tracker#subnational-data">sub-national policies</a> are directly available.</li>
-<li>When data on <a href="https://github.com/OxCGRT/covid-policy-tracker#subnational-data">sub-national policies</a> are available (level 2), policies at level 3 are inherited from the policies at level 2.</li>
+<li>All the policies for a country are used also for its sub-national areas (levels 2 and 3), unless <a href="https://github.com/OxCGRT/covid-policy-tracker#subnational-data" class="external-link">sub-national policies</a> are directly available.</li>
+<li>When data on <a href="https://github.com/OxCGRT/covid-policy-tracker#subnational-data" class="external-link">sub-national policies</a> are available (level 2), policies at level 3 are inherited from the policies at level 2.</li>
 </ul>
 <p>In short: positive integers identify policies applied to the entire administrative area. Negative integers are used to identify policies that represent a best guess of the policy in force, but may not represent the real status of the given area. <strong>The negative sign is used solely to distinguish the two cases, it should not be treated as a real negative value.</strong></p>
 <table class="table">
@@ -315,7 +259,7 @@
 </tr>
 </tbody>
 </table>
-<p>Oxford Covid-19 Government Response Tracker calculates several indices to give an overall impression of government activity, as described <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md">here</a>. COVID-19 Data Hub propagates the index value from upper level areas to lower level areas as described above for individual policy measures. When the index is not provided directly for the given area and it is inherited from an upper level area, we place a minus sign in front of the value of the index. <strong>The negative sign is used solely to distinguish the two cases, it should not be treated as a real negative value.</strong></p>
+<p>Oxford Covid-19 Government Response Tracker calculates several indices to give an overall impression of government activity, as described <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md" class="external-link">here</a>. COVID-19 Data Hub propagates the index value from upper level areas to lower level areas as described above for individual policy measures. When the index is not provided directly for the given area and it is inherited from an upper level area, we place a minus sign in front of the value of the index. <strong>The negative sign is used solely to distinguish the two cases, it should not be treated as a real negative value.</strong></p>
 <table class="table">
 <colgroup>
 <col width="44%">
@@ -328,7 +272,7 @@
 <tbody>
 <tr class="odd">
 <td><code>government_response_index</code></td>
-<td>The index records how the response of governments has varied over all indicators in the <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md">OxCGRT database</a>, becoming stronger or weaker over the course of the outbreak.</td>
+<td>The index records how the response of governments has varied over all indicators in the <a href="https://github.com/OxCGRT/covid-policy-tracker/blob/master/documentation/index_methodology.md" class="external-link">OxCGRT database</a>, becoming stronger or weaker over the course of the outbreak.</td>
 </tr>
 <tr class="even">
 <td><code>stringency_index</code></td>
@@ -345,9 +289,9 @@
 </tbody>
 </table>
 </div>
-<div id="administrative-areas" class="section level2">
-<h2 class="hasAnchor">
-<a href="#administrative-areas" class="anchor"></a>Administrative areas</h2>
+<div class="section level2">
+<h2 id="administrative-areas">Administrative areas<a class="anchor" aria-label="anchor" href="#administrative-areas"></a>
+</h2>
 <table class="table">
 <colgroup>
 <col width="44%">
@@ -377,10 +321,10 @@
 </tbody>
 </table>
 </div>
-<div id="coordinates" class="section level2">
-<h2 class="hasAnchor">
-<a href="#coordinates" class="anchor"></a>Coordinates</h2>
-<p>Latitude and longitude are computed using <a href="https://r-spatial.github.io/sf/reference/geos_unary.html"><code>st_point_on_surface</code></a>, which guarantees to return a point on the surface of the administrative area.</p>
+<div class="section level2">
+<h2 id="coordinates">Coordinates<a class="anchor" aria-label="anchor" href="#coordinates"></a>
+</h2>
+<p>Latitude and longitude are computed using <a href="https://r-spatial.github.io/sf/reference/geos_unary.html" class="external-link"><code>st_point_on_surface</code></a>, which guarantees to return a point on the surface of the administrative area.</p>
 <table class="table">
 <thead><tr class="header">
 <th>Variable</th>
@@ -398,9 +342,9 @@
 </tbody>
 </table>
 </div>
-<div id="iso-codes" class="section level2">
-<h2 class="hasAnchor">
-<a href="#iso-codes" class="anchor"></a>ISO codes</h2>
+<div class="section level2">
+<h2 id="iso-codes">ISO codes<a class="anchor" aria-label="anchor" href="#iso-codes"></a>
+</h2>
 <table class="table">
 <colgroup>
 <col width="44%">
@@ -413,26 +357,26 @@
 <tbody>
 <tr class="odd">
 <td><code>iso_alpha_3</code></td>
-<td>3-letter code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">ISO 3166-1 Alpha-3</a>.</td>
+<td>3-letter code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes" class="external-link">ISO 3166-1 Alpha-3</a>.</td>
 </tr>
 <tr class="even">
 <td><code>iso_alpha_2</code></td>
-<td>2-letter code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">ISO 3166-1 Alpha-2</a>.</td>
+<td>2-letter code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes" class="external-link">ISO 3166-1 Alpha-2</a>.</td>
 </tr>
 <tr class="odd">
 <td><code>iso_numeric</code></td>
-<td>Numeric code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">ISO 3166-1 Numeric</a>.</td>
+<td>Numeric code of the country according to the standard <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes" class="external-link">ISO 3166-1 Numeric</a>.</td>
 </tr>
 <tr class="even">
 <td><code>iso_currency</code></td>
-<td>3-letter code of the currency used in the country according to the standard <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a>.</td>
+<td>3-letter code of the currency used in the country according to the standard <a href="https://en.wikipedia.org/wiki/ISO_4217" class="external-link">ISO 4217</a>.</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="external-keys" class="section level2">
-<h2 class="hasAnchor">
-<a href="#external-keys" class="anchor"></a>External Keys</h2>
+<div class="section level2">
+<h2 id="external-keys">External Keys<a class="anchor" aria-label="anchor" href="#external-keys"></a>
+</h2>
 <table class="table">
 <colgroup>
 <col width="44%">
@@ -449,45 +393,45 @@
 </tr>
 <tr class="even">
 <td><code>key_google_mobility</code></td>
-<td>The <code>place_id</code> used in <a href="https://www.google.com/covid19/mobility/">Google Mobility Reports</a>. The identifier also allows to interact with the <a href="https://developers.google.com/maps/documentation/places/web-service/place-id">Google Places and Google Maps API</a>.</td>
+<td>The <code>place_id</code> used in <a href="https://www.google.com/covid19/mobility/" class="external-link">Google Mobility Reports</a>. The identifier also allows to interact with the <a href="https://developers.google.com/maps/documentation/places/web-service/place-id" class="external-link">Google Places and Google Maps API</a>.</td>
 </tr>
 <tr class="odd">
 <td><code>key_apple_mobility</code></td>
-<td>The administrative area identifier identifier used in <a href="https://www.apple.com/covid19/mobility">Apple Mobility Reports</a>. This is constructed by concatenating <code>region</code> and, when not null, <code>sub-region</code> in Apple Mobility Reports: i.e., <code>&lt;region&gt;, &lt;sub-region&gt;</code>.</td>
+<td>The administrative area identifier identifier used in <a href="https://www.apple.com/covid19/mobility" class="external-link">Apple Mobility Reports</a>. This is constructed by concatenating <code>region</code> and, when not null, <code>sub-region</code> in Apple Mobility Reports: i.e., <code>&lt;region&gt;, &lt;sub-region&gt;</code>.</td>
 </tr>
 <tr class="even">
 <td><code>key_jhu_csse</code></td>
-<td>The administrative area identifier identifier used in the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset">JHU CSSE Unified COVID-19 Dataset</a>. In particular, this enables to match administrative areas with the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet">Hydromet dataset</a>.</td>
+<td>The administrative area identifier identifier used in the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset" class="external-link">JHU CSSE Unified COVID-19 Dataset</a>. In particular, this enables to match administrative areas with the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet" class="external-link">Hydromet dataset</a>.</td>
 </tr>
 <tr class="odd">
 <td><code>key_nuts</code></td>
-<td>The 2021 NUTS codes for Europe, by <a href="https://ec.europa.eu/eurostat/web/nuts/nuts-maps">Eurostat</a>. This is a one-to-many relation as one NUTS code can be associated with multiple administrative areas. The lowest level used is NUTS 3. Local Administrative Units (LAU) are mapped to NUTS 3.</td>
+<td>The 2021 NUTS codes for Europe, by <a href="https://ec.europa.eu/eurostat/web/nuts/nuts-maps" class="external-link">Eurostat</a>. This is a one-to-many relation as one NUTS code can be associated with multiple administrative areas. The lowest level used is NUTS 3. Local Administrative Units (LAU) are mapped to NUTS 3.</td>
 </tr>
 <tr class="even">
 <td><code>key_gadm</code></td>
-<td>The identifier (GID) used in the <a href="https://gadm.org/">GADM database</a> version 3.6. This is a one-to-one relation as one GID is associated with a unique administrative area. For some administrative areas, it is not possible to find the exact correspondence in the GADM database. In this cases we proceed as follows: (a) when the administrative area is the union of multiple areas in GADM, we use the GID of the area closer to the centroid; (b) when the administrative area is a subdivision not present in GADM, we create its GID by appending <code>.n_0</code> to the GID of the upper division, where <code>n</code> is a sequantial integer and <code>0</code> denotes the version number (read more about GID <a href="https://gadm.org/metadata.html">here</a>).</td>
+<td>The identifier (GID) used in the <a href="https://gadm.org/" class="external-link">GADM database</a> version 3.6. This is a one-to-one relation as one GID is associated with a unique administrative area. For some administrative areas, it is not possible to find the exact correspondence in the GADM database. In this cases we proceed as follows: (a) when the administrative area is the union of multiple areas in GADM, we use the GID of the area closer to the centroid; (b) when the administrative area is a subdivision not present in GADM, we create its GID by appending <code>.n_0</code> to the GID of the upper division, where <code>n</code> is a sequantial integer and <code>0</code> denotes the version number (read more about GID <a href="https://gadm.org/metadata.html" class="external-link">here</a>).</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="terms-of-use" class="section level2">
-<h2 class="hasAnchor">
-<a href="#terms-of-use" class="anchor"></a>Terms of use</h2>
+<div class="section level2">
+<h2 id="terms-of-use">Terms of use<a class="anchor" aria-label="anchor" href="#terms-of-use"></a>
+</h2>
 <blockquote>
 <p>We have invested a lot of time and effort in creating <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>, please:</p>
 </blockquote>
 <ul>
-<li>cite <a href="https://doi.org/10.21105/joss.02376">Guidotti and Ardia (2020)</a> when using <a href="https://covid19datahub.io">COVID-19 Data Hub</a>.</li>
+<li>cite <a href="https://doi.org/10.21105/joss.02376" class="external-link">Guidotti and Ardia (2020)</a> when using <a href="https://covid19datahub.io">COVID-19 Data Hub</a>.</li>
 <li>place the URL <a href="https://covid19datahub.io" class="uri">https://covid19datahub.io</a> in a footnote to help others find <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>.</li>
 <li>you assume full risk for the use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>. We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. However, it is free software and comes with ABSOLUTELY NO WARRANTY. Reliance on <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> for medical guidance or use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> in commerce is strictly prohibited.</li>
 </ul>
-<p>The output data files are published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC license</a>. All data is subject to the terms of agreement individual to each data source, refer to the <a href="/reference/">sources of data</a> for more details. All other code and assets are published under the <a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> license.</p>
+<p>The output data files are published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" class="external-link">CC BY-NC license</a>. All data is subject to the terms of agreement individual to each data source, refer to the <a href="/reference/">sources of data</a> for more details. All other code and assets are published under the <a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a> license.</p>
 </div>
-<div id="cite-as" class="section level2">
-<h2 class="hasAnchor">
-<a href="#cite-as" class="anchor"></a>Cite as</h2>
+<div class="section level2">
+<h2 id="cite-as">Cite as<a class="anchor" aria-label="anchor" href="#cite-as"></a>
+</h2>
 <blockquote>
-<p><em>Guidotti, E., Ardia, D., (2020), “COVID-19 Data Hub”, Journal of Open Source Software 5(51):2376, doi: <a href="https://doi.org/10.21105/joss.02376">10.21105/joss.02376</a>.</em></p>
+<p><em>Guidotti, E., Ardia, D., (2020), “COVID-19 Data Hub”, Journal of Open Source Software 5(51):2376, doi: <a href="https://doi.org/10.21105/joss.02376" class="external-link">10.21105/joss.02376</a>.</em></p>
 </blockquote>
 <p>A BibTeX entry for LaTeX users is:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1"></a>@Article{,</span>
@@ -501,9 +445,9 @@
 <span id="cb1-9"><a href="#cb1-9"></a>    pages = {2376}</span>
 <span id="cb1-10"><a href="#cb1-10"></a>}</span></code></pre></div>
 </div>
-<div id="comments" class="section level2">
-<h2 class="hasAnchor">
-<a href="#comments" class="anchor"></a>Comments</h2>
+<div class="section level2">
+<h2 id="comments">Comments<a class="anchor" aria-label="anchor" href="#comments"></a>
+</h2>
 <div class="utterances">
 
 </div>
@@ -523,11 +467,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by <a href="https://guidotti.dev">Emanuele Guidotti</a>.</p>
+  <p></p>
+<p>Developed by <a href="https://guidotti.dev" class="external-link">Emanuele Guidotti</a>.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p>
 </div>
 
       </footer>
