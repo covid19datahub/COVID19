@@ -4,7 +4,6 @@ url: "https://covid19datahub.io"
 title: "COVID-19 Data Hub"
 
 template: 
-  bootstrap: 5
   params: 
     ganalytics: UA-163902432-1
     bootswatch: lumen

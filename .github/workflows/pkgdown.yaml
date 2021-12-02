@@ -57,7 +57,7 @@ jobs:
         run: |
           install.packages("DT")
           install.packages("remotes")
-          install.packages("pkgdown")
+          install.packages("https://cran.r-project.org/src/contrib/Archive/pkgdown/pkgdown_1.6.1.tar.gz", repos=NULL, type="source")
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
 
