@@ -34,7 +34,9 @@ function downloadTable(el, slug) {
 }
 
 $(function () {
-  $(".selectize").selectize({
-	  sortField: "text",
-  });
+	if ( $.isFunction($.fn.selectize) ) {
+		$(".selectize").selectize({
+			sortField: "text",
+		});
+	}
 });
