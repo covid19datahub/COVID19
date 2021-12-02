@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://covid19datahub.io/404.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/articles/contributors.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/articles/data.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/articles/docs.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/articles/python.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/articles/r.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/authors.html</loc>
-  </url>
-  <url>
     <loc>https://covid19datahub.io/index.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/pull_request_template.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/ABW.html</loc>
@@ -892,9 +856,6 @@
     <loc>https://covid19datahub.io/reference/impfdashboard.de.html</loc>
   </url>
   <url>
-    <loc>https://covid19datahub.io/reference/index.html</loc>
-  </url>
-  <url>
     <loc>https://covid19datahub.io/reference/isciii.es.html</loc>
   </url>
   <url>
@@ -949,6 +910,18 @@
     <loc>https://covid19datahub.io/reference/write.csv.html</loc>
   </url>
   <url>
-    <loc>https://covid19datahub.io/styleguide.html</loc>
+    <loc>https://covid19datahub.io/articles/contributors.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/articles/data.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/articles/docs.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/articles/python.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/articles/r.html</loc>
   </url>
 </urlset>
