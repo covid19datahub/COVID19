@@ -125,6 +125,12 @@ gov.uk <- function(level){
       dose2 <- "cumPeopleVaccinatedSecondDoseByPublishDate"
     }
     
+    # tests metrics
+    tests <- "cumVirusTestsBySpecimenDate"
+    if(a == "overview"){
+      tests <- "cumVirusTestsByPublishDate"
+    }
+    
     # create structure
     structure <- list(
       "date"       = "date",
@@ -133,12 +139,12 @@ gov.uk <- function(level){
       "code"       = "areaCode",
       "confirmed"  = "cumCasesBySpecimenDate",
       "deaths"     = "cumDeaths28DaysByDeathDate",
-      "tests"      = "cumVirusTests",
+      "tests"      =  tests,
       "vent"       = "covidOccupiedMVBeds",
       "hosp"       = "hospitalCases",
       "vaccines"   = "cumVaccinesGivenByPublishDate",
-      "people_vaccinated" =  dose1,
-      "people_fully_vaccinated" =  dose2
+      "people_vaccinated" = dose1,
+      "people_fully_vaccinated" = dose2
     )
     
     # download data
