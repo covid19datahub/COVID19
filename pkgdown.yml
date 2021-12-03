@@ -1,5 +1,5 @@
 pandoc: 2.7.3
-pkgdown: 1.6.1
+pkgdown: 2.0.1
 pkgdown_sha: ~
 articles:
   contributors: contributors.html
@@ -7,7 +7,7 @@ articles:
   docs: docs.html
   python: python.html
   r: r.html
-last_built: 2021-12-02T13:00Z
+last_built: 2021-12-03T15:28Z
 urls:
   reference: https://covid19datahub.io/reference
   article: https://covid19datahub.io/articles
