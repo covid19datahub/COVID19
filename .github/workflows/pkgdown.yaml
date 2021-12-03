@@ -40,25 +40,11 @@ jobs:
       - name: Install HarfBuzz
         run: sudo apt-get install -y libharfbuzz-dev
 
-      - name: Query dependencies
-        run: |
-          install.packages('remotes')
-          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
-        shell: Rscript {0}
-
-      - name: Cache R packages
-        uses: actions/cache@v1
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ubuntu-r-4.0-1-${{ hashFiles('.github/depends.Rds') }}
-          restore-keys: ubuntu-r-4.0-1-
-
       - name: Install dependencies
         run: |
           install.packages("DT")
           install.packages("remotes")
-          install.packages("pkgdown")
-          remotes::install_deps(dependencies = TRUE)
+          install.packages("https://cran.r-project.org/src/contrib/Archive/pkgdown/pkgdown_1.6.1.tar.gz", repos=NULL, type="source")
         shell: Rscript {0}
 
       - name: Install package
