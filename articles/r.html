@@ -35,8 +35,6 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
-
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -49,15 +47,73 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">COVID-19 Data Hub</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">3.0.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">3.0.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav"></ul>
+      <ul class="nav navbar-nav">
+<li>
+  <a href="../index.html">
+    <span class="fas fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Data
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="../articles/data.html">Download</a>
+    </li>
+    <li>
+      <a href="../articles/docs.html">Documentation</a>
+    </li>
+    <li>
+      <a href="../reference/index.html">Data sources</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Software
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="../articles/r.html">R</a>
+    </li>
+    <li>
+      <a href="../articles/python.html">Python</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Papers
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="https://doi.org/10.21105/joss.02376">COVID-19 Data Hub</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="../articles/contributors.html">Contributors</a>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
+      </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/covid19datahub/COVID19/" class="external-link">
+  <a href="https://github.com/covid19datahub/COVID19/">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -84,37 +140,37 @@
       <h1 data-toc-skip>R</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/covid19datahub/COVID19/blob/HEAD/vignettes/r.Rmd" class="external-link"><code>vignettes/r.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/covid19datahub/COVID19/blob/master/vignettes/r.Rmd"><code>vignettes/r.Rmd</code></a></small>
       <div class="hidden name"><code>r.Rmd</code></div>
 
     </div>
 
     
     
-<p><a href="https://cran.r-project.org/package=COVID19" class="external-link"><img src="https://www.r-pkg.org/badges/version/COVID19"></a> <a href="https://cran.r-project.org/package=COVID19" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/last-month/COVID19"></a> <a href="https://github.com/covid19datahub/R" class="external-link"><img src="https://img.shields.io/github/stars/covid19datahub/R?style=social"></a></p>
+<p><a href="https://cran.r-project.org/package=COVID19"><img src="https://www.r-pkg.org/badges/version/COVID19"></a> <a href="https://cran.r-project.org/package=COVID19"><img src="https://cranlogs.r-pkg.org/badges/last-month/COVID19"></a> <a href="https://github.com/covid19datahub/R"><img src="https://img.shields.io/github/stars/covid19datahub/R?style=social"></a></p>
 <blockquote>
-<p>The stable release of this package is hosted on <a href="https://cran.r-project.org/package=COVID19" class="external-link">CRAN</a>. The development version is available at <a href="https://github.com/covid19datahub/R" class="external-link">Github</a>.</p>
+<p>The stable release of this package is hosted on <a href="https://cran.r-project.org/package=COVID19">CRAN</a>. The development version is available at <a href="https://github.com/covid19datahub/R">Github</a>.</p>
 </blockquote>
-<div class="section level2">
-<h2 id="quickstart">Quickstart<a class="anchor" aria-label="anchor" href="#quickstart"></a>
-</h2>
+<div id="quickstart" class="section level2">
+<h2 class="hasAnchor">
+<a href="#quickstart" class="anchor"></a>Quickstart</h2>
 <p>Install the package:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"COVID19"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"COVID19"</span><span class="op">)</span></code></pre></div>
 <p>Load the package</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://covid19datahub.io">"COVID19"</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://covid19datahub.io">"COVID19"</a></span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
-</h2>
+<div id="usage" class="section level2">
+<h2 class="hasAnchor">
+<a href="#usage" class="anchor"></a>Usage</h2>
 <p>The only function in the package is <code><a href="../reference/covid19.html">covid19()</a></code>.</p>
 <p>By default, the function downloads worldwide data by country:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
-<div class="section level3">
-<h3 id="level">Level<a class="anchor" aria-label="anchor" href="#level"></a>
-</h3>
+<div id="level" class="section level3">
+<h3 class="hasAnchor">
+<a href="#level" class="anchor"></a>Level</h3>
 <p>The argument <code>level</code> specifies the granularity of the data:</p>
 <ul>
 <li>1: country-level data</li>
@@ -125,93 +181,93 @@
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>level <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level3">
-<h3 id="country">Country<a class="anchor" aria-label="anchor" href="#country"></a>
-</h3>
-<p>The argument <code>country</code> filters the data by country. This is a vector of country names or <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes" class="external-link">ISO codes</a> (ISO 3166-1 Alpha-2 code, Alpha-3 code, or numeric code).</p>
+<div id="country" class="section level3">
+<h3 class="hasAnchor">
+<a href="#country" class="anchor"></a>Country</h3>
+<p>The argument <code>country</code> filters the data by country. This is a vector of country names or <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">ISO codes</a> (ISO 3166-1 Alpha-2 code, Alpha-3 code, or numeric code).</p>
 <p>Download data for Italy and Unites States at county/province level:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>country <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Italy"</span>, <span class="st">"US"</span><span class="op">)</span>, level <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>country <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Italy"</span>, <span class="st">"US"</span><span class="op">)</span>, level <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level3">
-<h3 id="time-range">Time range<a class="anchor" aria-label="anchor" href="#time-range"></a>
-</h3>
+<div id="time-range" class="section level3">
+<h3 class="hasAnchor">
+<a href="#time-range" class="anchor"></a>Time range</h3>
 <p>The arguments <code>start</code> and <code>end</code> specify the period of interest. The data are subsetted to match this time range.</p>
 <p>Download national-level data for United States from 01 October 2021 to 01 November 2021:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span><span class="st">"US"</span>, start <span class="op">=</span> <span class="st">"2021-10-01"</span>, end <span class="op">=</span> <span class="st">"2021-11-01"</span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level3">
-<h3 id="vintage">Vintage<a class="anchor" aria-label="anchor" href="#vintage"></a>
-</h3>
+<div id="vintage" class="section level3">
+<h3 class="hasAnchor">
+<a href="#vintage" class="anchor"></a>Vintage</h3>
 <p>The parameter <code>vintage</code> allows to retrieve the snapshot of the dataset that was available on the given date. This typically differs from subsetting the latest data, as most governments are updating the data retroactively. Available since 14 April, 2020.</p>
 <p>Retrieve the data that were available on 15 May, 2020:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>vintage <span class="op">=</span> <span class="st">"2020-05-15"</span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level3">
-<h3 id="download-folder">Download folder<a class="anchor" aria-label="anchor" href="#download-folder"></a>
-</h3>
+<div id="download-folder" class="section level3">
+<h3 class="hasAnchor">
+<a href="#download-folder" class="anchor"></a>Download folder</h3>
 <p>The argument <code>dir</code> specifies the folder where the data files are to be downloaded. By default this is a temporary folder.</p>
 <p>Download the files in the folder <code>data</code>:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/files2.html" class="external-link">dir.create</a></span><span class="op">(</span><span class="st">"data"</span><span class="op">)</span>
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span><span class="op">(</span><span class="st">"data"</span><span class="op">)</span>
 <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>dir <span class="op">=</span> <span class="st">"data"</span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level3">
-<h3 id="world-bank-open-data">World Bank Open Data<a class="anchor" aria-label="anchor" href="#world-bank-open-data"></a>
-</h3>
-<p>Country-level covariates by <a href="https://data.worldbank.org/" class="external-link">World Bank Open Data</a> can be added via the argument <code>wb</code>. This is a character vector of indicator codes to download. The codes can be found by inspecting the corresponding URL. For example, the code of the indicator “Hospital beds (per 1,000 people)” available at <a href="https://data.worldbank.org/indicator/SH.MED.BEDS.ZS" class="external-link uri">https://data.worldbank.org/indicator/SH.MED.BEDS.ZS</a> is <code>SH.MED.BEDS.ZS</code>. The indicators are typically available at a yearly frequency. This function returns the latest data available between the <code>start</code> and the <code>end</code> date. See the table at the bottom of <a href="https://datatopics.worldbank.org/universal-health-coverage/coronavirus/" class="external-link">this page</a> for suggested indicators. Example using GDP and number of hospital beds:</p>
+<div id="world-bank-open-data" class="section level3">
+<h3 class="hasAnchor">
+<a href="#world-bank-open-data" class="anchor"></a>World Bank Open Data</h3>
+<p>Country-level covariates by <a href="https://data.worldbank.org/">World Bank Open Data</a> can be added via the argument <code>wb</code>. This is a character vector of indicator codes to download. The codes can be found by inspecting the corresponding URL. For example, the code of the indicator “Hospital beds (per 1,000 people)” available at <a href="https://data.worldbank.org/indicator/SH.MED.BEDS.ZS" class="uri">https://data.worldbank.org/indicator/SH.MED.BEDS.ZS</a> is <code>SH.MED.BEDS.ZS</code>. The indicators are typically available at a yearly frequency. This function returns the latest data available between the <code>start</code> and the <code>end</code> date. See the table at the bottom of <a href="https://datatopics.worldbank.org/universal-health-coverage/coronavirus/">this page</a> for suggested indicators. Example using GDP and number of hospital beds:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>wb <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"gdp"</span> <span class="op">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="op">=</span> <span class="st">"SH.MED.BEDS.ZS"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>wb <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"gdp"</span> <span class="op">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="op">=</span> <span class="st">"SH.MED.BEDS.ZS"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level3">
-<h3 id="google-mobility-reports">Google Mobility Reports<a class="anchor" aria-label="anchor" href="#google-mobility-reports"></a>
-</h3>
-<p>Mobility data by <a href="https://www.google.com/covid19/mobility/" class="external-link">Google Mobility Reports</a> can be added via the argument <code>gmr</code>. This is the link to the Google “CSV by geographic area” ZIP folder. At the time of writing, the link is <a href="https://www.gstatic.com/covid19/mobility/Region_Mobility_Report_CSVs.zip" class="external-link uri">https://www.gstatic.com/covid19/mobility/Region_Mobility_Report_CSVs.zip</a>. As the link has been stable since the beginning of the pandemic, the function accepts <code>gmr=TRUE</code> to automatically use this link.</p>
+<div id="google-mobility-reports" class="section level3">
+<h3 class="hasAnchor">
+<a href="#google-mobility-reports" class="anchor"></a>Google Mobility Reports</h3>
+<p>Mobility data by <a href="https://www.google.com/covid19/mobility/">Google Mobility Reports</a> can be added via the argument <code>gmr</code>. This is the link to the Google “CSV by geographic area” ZIP folder. At the time of writing, the link is <a href="https://www.gstatic.com/covid19/mobility/Region_Mobility_Report_CSVs.zip" class="uri">https://www.gstatic.com/covid19/mobility/Region_Mobility_Report_CSVs.zip</a>. As the link has been stable since the beginning of the pandemic, the function accepts <code>gmr=TRUE</code> to automatically use this link.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>gmr <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level3">
-<h3 id="apple-mobility-reports">Apple Mobility Reports<a class="anchor" aria-label="anchor" href="#apple-mobility-reports"></a>
-</h3>
-<p>Mobility data by <a href="https://covid19.apple.com/mobility" class="external-link">Apple Mobility Reports</a> can be added via the argument <code>amr</code>. This is the link to the Apple “All CSV data” file. This link is changing constantly. Consider downloading the data file from the website first, and then set <code>amr="path/to/file.csv"</code>.</p>
+<div id="apple-mobility-reports" class="section level3">
+<h3 class="hasAnchor">
+<a href="#apple-mobility-reports" class="anchor"></a>Apple Mobility Reports</h3>
+<p>Mobility data by <a href="https://covid19.apple.com/mobility">Apple Mobility Reports</a> can be added via the argument <code>amr</code>. This is the link to the Apple “All CSV data” file. This link is changing constantly. Consider downloading the data file from the website first, and then set <code>amr="path/to/file.csv"</code>.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>amr <span class="op">=</span> <span class="st">"path/to/file.csv"</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
-<div class="section level2">
-<h2 id="reference-manual">Reference manual<a class="anchor" aria-label="anchor" href="#reference-manual"></a>
-</h2>
+<div id="reference-manual" class="section level2">
+<h2 class="hasAnchor">
+<a href="#reference-manual" class="anchor"></a>Reference manual</h2>
 <ul>
-<li><a href="https://cran.r-project.org/package=COVID19/COVID19.pdf" class="external-link uri">https://cran.r-project.org/package=COVID19/COVID19.pdf</a></li>
+<li><a href="https://cran.r-project.org/package=COVID19/COVID19.pdf" class="uri">https://cran.r-project.org/package=COVID19/COVID19.pdf</a></li>
 </ul>
 </div>
-<div class="section level2">
-<h2 id="star-the-repo">Star the repo<a class="anchor" aria-label="anchor" href="#star-the-repo"></a>
-</h2>
+<div id="star-the-repo" class="section level2">
+<h2 class="hasAnchor">
+<a href="#star-the-repo" class="anchor"></a>Star the repo</h2>
 <p>Help our package grow: star the repo!</p>
-<a class="external-link github-button" href="https://github.com/covid19datahub/R" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star covid19datahub/R on GitHub">Star</a>
+<a class="github-button" href="https://github.com/covid19datahub/R" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star covid19datahub/R on GitHub">Star</a>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 </div>
-<div class="section level2">
-<h2 id="terms-of-use">Terms of use<a class="anchor" aria-label="anchor" href="#terms-of-use"></a>
-</h2>
+<div id="terms-of-use" class="section level2">
+<h2 class="hasAnchor">
+<a href="#terms-of-use" class="anchor"></a>Terms of use</h2>
 <blockquote>
 <p>We have invested a lot of time and effort in creating <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>, please:</p>
 </blockquote>
 <ul>
-<li>cite <a href="https://doi.org/10.21105/joss.02376" class="external-link">Guidotti and Ardia (2020)</a> when using <a href="https://covid19datahub.io">COVID-19 Data Hub</a>.</li>
+<li>cite <a href="https://doi.org/10.21105/joss.02376">Guidotti and Ardia (2020)</a> when using <a href="https://covid19datahub.io">COVID-19 Data Hub</a>.</li>
 <li>place the URL <a href="https://covid19datahub.io" class="uri">https://covid19datahub.io</a> in a footnote to help others find <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>.</li>
 <li>you assume full risk for the use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a>. We try our best to guarantee the data quality and consistency and the continuous filling of the Data Hub. However, it is free software and comes with ABSOLUTELY NO WARRANTY. Reliance on <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> for medical guidance or use of <a href="https://covid19datahub.io/">COVID-19 Data Hub</a> in commerce is strictly prohibited.</li>
 </ul>
-<p>The output data files are published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" class="external-link">CC BY-NC license</a>. All data is subject to the terms of agreement individual to each data source, refer to the <a href="/reference/">sources of data</a> for more details. All other code and assets are published under the <a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a> license.</p>
+<p>The output data files are published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC license</a>. All data is subject to the terms of agreement individual to each data source, refer to the <a href="/reference/">sources of data</a> for more details. All other code and assets are published under the <a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a> license.</p>
 </div>
-<div class="section level2">
-<h2 id="cite-as">Cite as<a class="anchor" aria-label="anchor" href="#cite-as"></a>
-</h2>
+<div id="cite-as" class="section level2">
+<h2 class="hasAnchor">
+<a href="#cite-as" class="anchor"></a>Cite as</h2>
 <blockquote>
-<p><em>Guidotti, E., Ardia, D., (2020), “COVID-19 Data Hub”, Journal of Open Source Software 5(51):2376, doi: <a href="https://doi.org/10.21105/joss.02376" class="external-link">10.21105/joss.02376</a>.</em></p>
+<p><em>Guidotti, E., Ardia, D., (2020), “COVID-19 Data Hub”, Journal of Open Source Software 5(51):2376, doi: <a href="https://doi.org/10.21105/joss.02376">10.21105/joss.02376</a>.</em></p>
 </blockquote>
 <p>A BibTeX entry for LaTeX users is:</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb12-1"><a href="#cb12-1"></a>@Article{,</span>
@@ -225,9 +281,9 @@
 <span id="cb12-9"><a href="#cb12-9"></a>    pages = {2376}</span>
 <span id="cb12-10"><a href="#cb12-10"></a>}</span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="comments">Comments<a class="anchor" aria-label="anchor" href="#comments"></a>
-</h2>
+<div id="comments" class="section level2">
+<h2 class="hasAnchor">
+<a href="#comments" class="anchor"></a>Comments</h2>
 <div class="utterances">
 
 </div>
@@ -247,13 +303,11 @@
 
 
       <footer><div class="copyright">
-  <p></p>
-<p>Developed by <a href="https://guidotti.dev" class="external-link">Emanuele Guidotti</a>.</p>
+  <p>Developed by <a href="https://guidotti.dev">Emanuele Guidotti</a>.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
