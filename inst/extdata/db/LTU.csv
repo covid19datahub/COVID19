@@ -1,72 +1,72 @@
-"id","id_github.mpiktas.covid19lt","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_local","key_nuts","latitude","longitude","population"
-,,,,,,"-",,,,
-"e7bd7f0f","Alytaus apskr.",2,"Alytaus",,"LTU.1_1",,"LT021",54.230503085,24.0663368102004,132408
-"b2358634","Kauno apskr.",2,"Kauno",,"LTU.2_1",,"LT022",55.016893385,24.0646994958279,565592
-"8edd075a","Klaipėdos apskr.",2,"Klaipedos",,"LTU.3_1",,"LT023",55.70510292,21.441004365471,321795
-"e6bbb951","Marijampolės apskr.",2,"Marijampoles",,"LTU.4_1",,"LT024",54.68228912,23.2026914111374,134848
-"60d4b1af","Panevėžio apskr.",2,"Panevežio",,"LTU.5_1",,"LT025",55.92048645,25.0482357420178,207976
-"3299f40b","Šiaulių apskr.",2,"Šiauliu",,"LTU.6_1",,"LT026",55.937934875,23.3957097534249,259897
-"08bd7fea","Tauragės apskr.",2,"Taurages",,"LTU.7_1",,"LT027",55.36522865,22.412932761911,90108
-"3a6e64bf","Telšių apskr.",2,"Telšiu",,"LTU.8_1",,"LT028",56.0107975,22.1442838106656,129342
-"e0dae29b","Utenos apskr.",2,"Utenos",,"LTU.9_1",,"LT029",55.48779297,25.6559893944106,123450
-"e51450dd","Vilniaus apskr.",2,"Vilniaus",,"LTU.10_1",,"LT011",54.8300972,25.2415711614125,829759
-"f4de6278","Alytaus m.",3,"Alytaus","Alytaus m.","LTU.1.1.1_0",,"LT021",54.3698940277099,23.9915083973352,49195
-"39846ce6","Alytaus r.",3,"Alytaus","Alytaus r.","LTU.1.1.2_0",,"LT021",54.3698940277099,23.9915083973352,25837
-"a30fd478","Druskininkų",3,"Alytaus","Druskininkų","LTU.1.2_1",,"LT021",54.0057563781739,23.9863208683244,19011
-"9e721fea","Lazdijų r.",3,"Alytaus","Lazdijų r.","LTU.1.3_1",,"LT021",54.1627407073975,23.7293090925646,17843
-"20b4ac92","Varėnos r.",3,"Alytaus","Varėnos r.","LTU.1.4_1",,"LT021",54.1753978729248,24.4369859861531,20522
-"12a12ea7","Birštono",3,"Kauno","Birštono","LTU.2.1_1",,"LT022",54.6143302917481,24.0352201993256,4035
-"8ff29d8f","Jonavos r.",3,"Kauno","Jonavos r.","LTU.2.2_1",,"LT022",55.1285781860352,24.3042499483331,40746
-"b527dd67","Kaišiadorių r.",3,"Kauno","Kaišiadorių r.","LTU.2.3_1",,"LT022",54.8399715423584,24.4720345615741,29188
-"8846eeea","Kauno m.",3,"Kauno","Kauno m.","LTU.2.4.1_0",,"LT022",54.9700374603272,23.7504746692609,293257
-"451ce074","Kauno r.",3,"Kauno","Kauno r.","LTU.2.4.2_0",,"LT022",54.9700374603272,23.7504746692609,97546
-"c7df1d03","Kėdainių r.",3,"Kauno","Kėdainių r.","LTU.2.5_1",,"LT022",55.34645652771,24.0040649146359,44747
-"90d1277e","Prienų r.",3,"Kauno","Prienų r.","LTU.2.6_1",,"LT022",54.6427593231202,24.0459393289404,25465
-"0761da2d","Raseinių r.",3,"Kauno","Raseinių r.","LTU.2.7_1",,"LT022",55.3777561187744,23.2042921466552,30608
-"6ba6566e","Klaipėdos m.",3,"Klaipedos","Klaipėdos m.","LTU.3.1.1_0",,"LT023",55.6727523803711,21.4678574110333,149046
-"a6fc58f0","Klaipėdos r.",3,"Klaipedos","Klaipėdos r.","LTU.3.1.2_0",,"LT023",55.6727523803711,21.4678574110333,62634
-"011ceb35","Kretingos r.",3,"Klaipedos","Kretingos r.","LTU.3.2_1",,"LT023",55.9645195007325,21.367452210198,37316
-"71499bde","Neringos",3,"Klaipedos","Neringos","LTU.3.3_1",,"LT023",55.4977779388428,21.1011209487916,3639
-"e4392a68","Palangos m.",3,"Klaipedos","Palangos m.","LTU.3.4_1",,"LT023",55.9629154205322,21.0999700249962,16421
-"9a88720d","Šilutės r.",3,"Klaipedos","Šilutės r.","LTU.3.5_1",,"LT023",55.2972221374512,21.5984311114864,37076
-"362e9e41","Skuodo r.",3,"Klaipedos","Skuodo r.","LTU.3.6_1",,"LT023",56.2255229949951,21.6838011357093,15663
-"661217b6","Kalvarijos",3,"Marijampoles","Kalvarijos","LTU.4.1.1_0",,"LT024",54.5793476104737,23.450174657389,9952
-"84682b18","Kazlų Rūdos",3,"Marijampoles","Kazlų Rūdos","LTU.4.1.2_0",,"LT024",54.5793476104737,23.450174657389,11137
-"bcea3541","Marijampolės",3,"Marijampoles","Marijampolės","LTU.4.1.3_0",,"LT024",54.5793476104737,23.450174657389,53472
-"137d5d3c","Šakių r.",3,"Marijampoles","Šakių r.","LTU.4.2_1",,"LT024",54.9242000579834,23.1284016774103,26068
-"b273812a","Vilkaviškio r.",3,"Marijampoles","Vilkaviškio r.","LTU.4.3_1",,"LT024",54.5793476104737,22.9425357742033,34219
-"e95b483b","Biržų r.",3,"Panevežio","Biržų r.","LTU.5.1_1",,"LT025",56.1793670654298,24.8253866581207,22292
-"d6d63a02","Kupiškio r.",3,"Panevežio","Kupiškio r.","LTU.5.2_1",,"LT025",55.8700351715089,25.037069861664,16061
-"dc71aa71","Panevėžio m.",3,"Panevežio","Panevėžio m.","LTU.5.3.1_0",,"LT025",55.6658649444581,24.336187894247,84587
-"112ba4ef","Panevėžio r.",3,"Panevežio","Panevėžio r.","LTU.5.3.2_0",,"LT025",55.6658649444581,24.336187894247,35188
-"25640cc9","Pasvalio r.",3,"Panevežio","Pasvalio r.","LTU.5.4_1",,"LT025",56.0694904327393,24.3821161490747,22337
-"d4700b3f","Rokiškio r.",3,"Panevežio","Rokiškio r.","LTU.5.5_1",,"LT025",55.95188331604,25.6914903151786,27511
-"94e0d1bf","Akmenės r.",3,"Šiauliu","Akmenės r.","LTU.6.1_1",,"LT026",56.2430686950685,22.7960679841022,18523
-"384d5b79","Joniškio r.",3,"Šiauliu","Joniškio r.","LTU.6.2_1",,"LT026",56.2223167419434,23.4938083483687,20343
-"702872ff","Kelmės r.",3,"Šiauliu","Kelmės r.","LTU.6.3_1",,"LT026",55.6830425262452,22.878935618202,24829
-"e49352f9","Pakruojo r.",3,"Šiauliu","Pakruojo r.","LTU.6.4_1",,"LT026",56.0746326446534,23.8507755836663,18213
-"49ad3564","Radviliškio r.",3,"Šiauliu","Radviliškio r.","LTU.6.5_1",,"LT026",55.6933994293214,23.6371972672645,34576
-"63b039f0","Šiaulių m.",3,"Šiauliu","Šiaulių m.","LTU.6.6.1_0",,"LT026",55.9703960418702,23.069209418463,101862
-"aeea376e","Šiaulių r.",3,"Šiauliu","Šiaulių r.","LTU.6.6.2_0",,"LT026",55.9703960418702,23.069209418463,41551
-"ebeeaa0d","Jurbarko r.",3,"Taurages","Jurbarko r.","LTU.7.1_1",,"LT027",55.2220935821534,22.9631408584816,24235
-"171e0d11","Pagėgių",3,"Taurages","Pagėgių","LTU.7.3.1_0",,"LT027",55.3105373382569,22.2319504672043,7123
-"36489f75","Šilalės r.",3,"Taurages","Šilalės r.","LTU.7.2_1",,"LT027",55.5220336914063,22.212392373077,21428
-"fa820ec9","Tauragės r.",3,"Taurages","Tauragės r.","LTU.7.3.2_0",,"LT027",55.3105373382569,22.2319504672043,37322
-"e05a0418","Mažeikių r.",3,"Telšiu","Mažeikių r.","LTU.8.1_1",,"LT028",56.2569236755371,22.2471185405858,50782
-"c6ae6821","Plungės r.",3,"Telšiu","Plungės r.","LTU.8.2.1_0",,"LT028",55.8718795776368,21.884337096267,32627
-"d1dea381","Rietavo",3,"Telšiu","Rietavo","LTU.8.2.2_0",,"LT028",55.8718795776368,21.884337096267,7174
-"43f7e5b5","Telšių r.",3,"Telšiu","Telšių r.","LTU.8.3_1",,"LT028",55.9094486236573,22.4230328539158,38759
-"ee06e07e","Anykščių r.",3,"Utenos","Anykščių r.","LTU.9.1_1",,"LT029",55.542688369751,25.0501500490537,22623
-"867980c8","Ignalinos r.",3,"Utenos","Ignalinos r.","LTU.9.2.1_0",,"LT029",55.4180908203125,26.3186345603016,14125
-"393f0e81","Molėtų r.",3,"Utenos","Molėtų r.","LTU.9.3_1",,"LT029",55.23508644104,25.4367030038039,16873
-"21325211","Utenos r.",3,"Utenos","Utenos r.","LTU.9.4_1",,"LT029",55.5109558105469,25.7021273017117,37073
-"e41fc84b","Visagino m.",3,"Utenos","Visagino m.","LTU.9.2.2_0",,"LT029",55.4180908203125,26.3186345603016,18121
-"7868d128","Zarasų r.",3,"Utenos","Zarasų r.","LTU.9.5_1",,"LT029",55.7262382507325,26.0421798499548,14635
-"1e1a2ebe","Elektrėnų",3,"Vilniaus","Elektrėnų","LTU.10.4.1_0",,"LT011",54.6469535827637,24.765235750991,24103
-"d93ab34b","Šalčininkų r.",3,"Vilniaus","Šalčininkų r.","LTU.10.1_1",,"LT011",54.3291015625001,25.2484055396534,30264
-"30ebe0eb","Širvintų r.",3,"Vilniaus","Širvintų r.","LTU.10.2_1",,"LT011",55.0247879028321,24.8854430339982,14907
-"b3db3c52","Švenčionių r.",3,"Vilniaus","Švenčionių r.","LTU.10.3_1",,"LT011",55.0739727020264,26.0260447100229,22495
-"82c82f78","Trakų r.",3,"Vilniaus","Trakų r.","LTU.10.4.2_0",,"LT011",54.6469535827637,24.765235750991,33204
-"8d64c24e","Ukmergės r.",3,"Vilniaus","Ukmergės r.","LTU.10.5_1",,"LT011",55.3102149963379,24.7392858421961,33049
-"ffd5e0c3","Vilniaus m.",3,"Vilniaus","Vilniaus m.","LTU.10.6.1_0",,"LT011",54.7679042816163,25.3672938184536,569729
-"328fee5d","Vilniaus r.",3,"Vilniaus","Vilniaus r.","LTU.10.6.2_0",,"LT011",54.7679042816163,25.3672938184536,102008
+"id","id_github.mpiktas.covid19lt","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_local","key_nuts","latitude","longitude","population","population_data_source","population_data_source_url"
+,,,,,,"-",,,,,,
+"e7bd7f0f","Alytaus apskr.",2,"Alytaus",,"LTU.1_1",,"LT021",54.230503085,24.0663368102004,132408,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"b2358634","Kauno apskr.",2,"Kauno",,"LTU.2_1",,"LT022",55.016893385,24.0646994958279,565592,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"8edd075a","Klaipėdos apskr.",2,"Klaipedos",,"LTU.3_1",,"LT023",55.70510292,21.441004365471,321795,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"e6bbb951","Marijampolės apskr.",2,"Marijampoles",,"LTU.4_1",,"LT024",54.68228912,23.2026914111374,134848,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"60d4b1af","Panevėžio apskr.",2,"Panevežio",,"LTU.5_1",,"LT025",55.92048645,25.0482357420178,207976,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"3299f40b","Šiaulių apskr.",2,"Šiauliu",,"LTU.6_1",,"LT026",55.937934875,23.3957097534249,259897,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"08bd7fea","Tauragės apskr.",2,"Taurages",,"LTU.7_1",,"LT027",55.36522865,22.412932761911,90108,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"3a6e64bf","Telšių apskr.",2,"Telšiu",,"LTU.8_1",,"LT028",56.0107975,22.1442838106656,129342,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"e0dae29b","Utenos apskr.",2,"Utenos",,"LTU.9_1",,"LT029",55.48779297,25.6559893944106,123450,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"e51450dd","Vilniaus apskr.",2,"Vilniaus",,"LTU.10_1",,"LT011",54.8300972,25.2415711614125,829759,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"f4de6278","Alytaus m.",3,"Alytaus","Alytaus m.","LTU.1.1.1_0",,"LT021",54.3698940277099,23.9915083973352,49195,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"39846ce6","Alytaus r.",3,"Alytaus","Alytaus r.","LTU.1.1.2_0",,"LT021",54.3698940277099,23.9915083973352,25837,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"a30fd478","Druskininkų",3,"Alytaus","Druskininkų","LTU.1.2_1",,"LT021",54.0057563781739,23.9863208683244,19011,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"9e721fea","Lazdijų r.",3,"Alytaus","Lazdijų r.","LTU.1.3_1",,"LT021",54.1627407073975,23.7293090925646,17843,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"20b4ac92","Varėnos r.",3,"Alytaus","Varėnos r.","LTU.1.4_1",,"LT021",54.1753978729248,24.4369859861531,20522,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"12a12ea7","Birštono",3,"Kauno","Birštono","LTU.2.1_1",,"LT022",54.6143302917481,24.0352201993256,4035,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"8ff29d8f","Jonavos r.",3,"Kauno","Jonavos r.","LTU.2.2_1",,"LT022",55.1285781860352,24.3042499483331,40746,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"b527dd67","Kaišiadorių r.",3,"Kauno","Kaišiadorių r.","LTU.2.3_1",,"LT022",54.8399715423584,24.4720345615741,29188,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"8846eeea","Kauno m.",3,"Kauno","Kauno m.","LTU.2.4.1_0",,"LT022",54.9700374603272,23.7504746692609,293257,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"451ce074","Kauno r.",3,"Kauno","Kauno r.","LTU.2.4.2_0",,"LT022",54.9700374603272,23.7504746692609,97546,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"c7df1d03","Kėdainių r.",3,"Kauno","Kėdainių r.","LTU.2.5_1",,"LT022",55.34645652771,24.0040649146359,44747,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"90d1277e","Prienų r.",3,"Kauno","Prienų r.","LTU.2.6_1",,"LT022",54.6427593231202,24.0459393289404,25465,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"0761da2d","Raseinių r.",3,"Kauno","Raseinių r.","LTU.2.7_1",,"LT022",55.3777561187744,23.2042921466552,30608,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"6ba6566e","Klaipėdos m.",3,"Klaipedos","Klaipėdos m.","LTU.3.1.1_0",,"LT023",55.6727523803711,21.4678574110333,149046,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"a6fc58f0","Klaipėdos r.",3,"Klaipedos","Klaipėdos r.","LTU.3.1.2_0",,"LT023",55.6727523803711,21.4678574110333,62634,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"011ceb35","Kretingos r.",3,"Klaipedos","Kretingos r.","LTU.3.2_1",,"LT023",55.9645195007325,21.367452210198,37316,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"71499bde","Neringos",3,"Klaipedos","Neringos","LTU.3.3_1",,"LT023",55.4977779388428,21.1011209487916,3639,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"e4392a68","Palangos m.",3,"Klaipedos","Palangos m.","LTU.3.4_1",,"LT023",55.9629154205322,21.0999700249962,16421,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"9a88720d","Šilutės r.",3,"Klaipedos","Šilutės r.","LTU.3.5_1",,"LT023",55.2972221374512,21.5984311114864,37076,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"362e9e41","Skuodo r.",3,"Klaipedos","Skuodo r.","LTU.3.6_1",,"LT023",56.2255229949951,21.6838011357093,15663,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"661217b6","Kalvarijos",3,"Marijampoles","Kalvarijos","LTU.4.1.1_0",,"LT024",54.5793476104737,23.450174657389,9952,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"84682b18","Kazlų Rūdos",3,"Marijampoles","Kazlų Rūdos","LTU.4.1.2_0",,"LT024",54.5793476104737,23.450174657389,11137,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"bcea3541","Marijampolės",3,"Marijampoles","Marijampolės","LTU.4.1.3_0",,"LT024",54.5793476104737,23.450174657389,53472,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"137d5d3c","Šakių r.",3,"Marijampoles","Šakių r.","LTU.4.2_1",,"LT024",54.9242000579834,23.1284016774103,26068,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"b273812a","Vilkaviškio r.",3,"Marijampoles","Vilkaviškio r.","LTU.4.3_1",,"LT024",54.5793476104737,22.9425357742033,34219,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"e95b483b","Biržų r.",3,"Panevežio","Biržų r.","LTU.5.1_1",,"LT025",56.1793670654298,24.8253866581207,22292,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"d6d63a02","Kupiškio r.",3,"Panevežio","Kupiškio r.","LTU.5.2_1",,"LT025",55.8700351715089,25.037069861664,16061,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"dc71aa71","Panevėžio m.",3,"Panevežio","Panevėžio m.","LTU.5.3.1_0",,"LT025",55.6658649444581,24.336187894247,84587,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"112ba4ef","Panevėžio r.",3,"Panevežio","Panevėžio r.","LTU.5.3.2_0",,"LT025",55.6658649444581,24.336187894247,35188,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"25640cc9","Pasvalio r.",3,"Panevežio","Pasvalio r.","LTU.5.4_1",,"LT025",56.0694904327393,24.3821161490747,22337,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"d4700b3f","Rokiškio r.",3,"Panevežio","Rokiškio r.","LTU.5.5_1",,"LT025",55.95188331604,25.6914903151786,27511,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"94e0d1bf","Akmenės r.",3,"Šiauliu","Akmenės r.","LTU.6.1_1",,"LT026",56.2430686950685,22.7960679841022,18523,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"384d5b79","Joniškio r.",3,"Šiauliu","Joniškio r.","LTU.6.2_1",,"LT026",56.2223167419434,23.4938083483687,20343,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"702872ff","Kelmės r.",3,"Šiauliu","Kelmės r.","LTU.6.3_1",,"LT026",55.6830425262452,22.878935618202,24829,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"e49352f9","Pakruojo r.",3,"Šiauliu","Pakruojo r.","LTU.6.4_1",,"LT026",56.0746326446534,23.8507755836663,18213,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"49ad3564","Radviliškio r.",3,"Šiauliu","Radviliškio r.","LTU.6.5_1",,"LT026",55.6933994293214,23.6371972672645,34576,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"63b039f0","Šiaulių m.",3,"Šiauliu","Šiaulių m.","LTU.6.6.1_0",,"LT026",55.9703960418702,23.069209418463,101862,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"aeea376e","Šiaulių r.",3,"Šiauliu","Šiaulių r.","LTU.6.6.2_0",,"LT026",55.9703960418702,23.069209418463,41551,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"ebeeaa0d","Jurbarko r.",3,"Taurages","Jurbarko r.","LTU.7.1_1",,"LT027",55.2220935821534,22.9631408584816,24235,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"171e0d11","Pagėgių",3,"Taurages","Pagėgių","LTU.7.3.1_0",,"LT027",55.3105373382569,22.2319504672043,7123,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"36489f75","Šilalės r.",3,"Taurages","Šilalės r.","LTU.7.2_1",,"LT027",55.5220336914063,22.212392373077,21428,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"fa820ec9","Tauragės r.",3,"Taurages","Tauragės r.","LTU.7.3.2_0",,"LT027",55.3105373382569,22.2319504672043,37322,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"e05a0418","Mažeikių r.",3,"Telšiu","Mažeikių r.","LTU.8.1_1",,"LT028",56.2569236755371,22.2471185405858,50782,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"c6ae6821","Plungės r.",3,"Telšiu","Plungės r.","LTU.8.2.1_0",,"LT028",55.8718795776368,21.884337096267,32627,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"d1dea381","Rietavo",3,"Telšiu","Rietavo","LTU.8.2.2_0",,"LT028",55.8718795776368,21.884337096267,7174,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"43f7e5b5","Telšių r.",3,"Telšiu","Telšių r.","LTU.8.3_1",,"LT028",55.9094486236573,22.4230328539158,38759,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"ee06e07e","Anykščių r.",3,"Utenos","Anykščių r.","LTU.9.1_1",,"LT029",55.542688369751,25.0501500490537,22623,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"867980c8","Ignalinos r.",3,"Utenos","Ignalinos r.","LTU.9.2.1_0",,"LT029",55.4180908203125,26.3186345603016,14125,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"393f0e81","Molėtų r.",3,"Utenos","Molėtų r.","LTU.9.3_1",,"LT029",55.23508644104,25.4367030038039,16873,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"21325211","Utenos r.",3,"Utenos","Utenos r.","LTU.9.4_1",,"LT029",55.5109558105469,25.7021273017117,37073,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"e41fc84b","Visagino m.",3,"Utenos","Visagino m.","LTU.9.2.2_0",,"LT029",55.4180908203125,26.3186345603016,18121,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"7868d128","Zarasų r.",3,"Utenos","Zarasų r.","LTU.9.5_1",,"LT029",55.7262382507325,26.0421798499548,14635,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"1e1a2ebe","Elektrėnų",3,"Vilniaus","Elektrėnų","LTU.10.4.1_0",,"LT011",54.6469535827637,24.765235750991,24103,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"d93ab34b","Šalčininkų r.",3,"Vilniaus","Šalčininkų r.","LTU.10.1_1",,"LT011",54.3291015625001,25.2484055396534,30264,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"30ebe0eb","Širvintų r.",3,"Vilniaus","Širvintų r.","LTU.10.2_1",,"LT011",55.0247879028321,24.8854430339982,14907,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"b3db3c52","Švenčionių r.",3,"Vilniaus","Švenčionių r.","LTU.10.3_1",,"LT011",55.0739727020264,26.0260447100229,22495,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"82c82f78","Trakų r.",3,"Vilniaus","Trakų r.","LTU.10.4.2_0",,"LT011",54.6469535827637,24.765235750991,33204,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"8d64c24e","Ukmergės r.",3,"Vilniaus","Ukmergės r.","LTU.10.5_1",,"LT011",55.3102149963379,24.7392858421961,33049,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"ffd5e0c3","Vilniaus m.",3,"Vilniaus","Vilniaus m.","LTU.10.6.1_0",,"LT011",54.7679042816163,25.3672938184536,569729,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"
+"328fee5d","Vilniaus r.",3,"Vilniaus","Vilniaus r.","LTU.10.6.2_0",,"LT011",54.7679042816163,25.3672938184536,102008,"Vaidotas Zemlys-Balevicius (2020)","https://github.com/mpiktas/covid19lt"

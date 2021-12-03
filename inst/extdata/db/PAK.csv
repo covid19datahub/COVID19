@@ -1,9 +1,9 @@
-"id","id_github.cssegisanddata.covid19unified","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_jhu_csse","key_local","latitude","longitude","population"
-,,,,,,,,"-",,,
-"6759ffbc","PKJK",2,"Azad Jammu and Kashmir",,"PAK.1_1","ChIJk7BQ_z9a4DgRQl3JyvZBKyw","PKJK",,33.964946745,73.8845818296135,4045366
-"dad861df","PKBA",2,"Balochistan",,"PAK.2_1","ChIJ-2KAIReaMjkRssYQf8eDtJE","PKBA",,28.493040085,65.6950828084984,12344408
-"84e5f75a","PKGB",2,"Gilgit-Baltistan",,"PAK.6_1","ChIJtYAth63X5TgRKPCFl01igpg","PKGB",,35.80554581,74.8530162496693,1013584
-"28530f42","PKIS",2,"Islamabad",,"PAK.4_1","ChIJHWyVfKG_3zgRkqcUZrwNOLY","PKIS",,33.648406985,72.9084850089836,2006572
-"04ed6560","PKKP",2,"Khyber Pakhtunkhwa",,"PAK.5_1","ChIJm2fuN8mu3jgRcad6v070EZY","PKKP",,34.078395845,72.4471759505805,30523371
-"48449849","PKPB",2,"Punjab",,"PAK.7_1","ChIJy5pBdImU3zgRoOxO0hgwnjo","PKPB",,30.863492965,72.315069579151,110012442
-"c5600790","PKSD",2,"Sindh",,"PAK.8_1","ChIJK5TBa2vATDkRLeiLx6lWIC4","PKSD",,26.180321695,68.7692864434365,47886051
+"id","id_github.cssegisanddata.covid19unified","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_jhu_csse","key_local","latitude","longitude","population","population_data_source","population_data_source_url"
+,,,,,,,,"-",,,,,
+"6759ffbc","PKJK",2,"Azad Jammu and Kashmir",,"PAK.1_1","ChIJk7BQ_z9a4DgRQl3JyvZBKyw","PKJK",,33.964946745,73.8845818296135,4045366,"Johns Hopkins Center for Systems Science and Engineering","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset"
+"dad861df","PKBA",2,"Balochistan",,"PAK.2_1","ChIJ-2KAIReaMjkRssYQf8eDtJE","PKBA",,28.493040085,65.6950828084984,12344408,"Johns Hopkins Center for Systems Science and Engineering","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset"
+"84e5f75a","PKGB",2,"Gilgit-Baltistan",,"PAK.6_1","ChIJtYAth63X5TgRKPCFl01igpg","PKGB",,35.80554581,74.8530162496693,1013584,"Johns Hopkins Center for Systems Science and Engineering","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset"
+"28530f42","PKIS",2,"Islamabad",,"PAK.4_1","ChIJHWyVfKG_3zgRkqcUZrwNOLY","PKIS",,33.648406985,72.9084850089836,2006572,"Johns Hopkins Center for Systems Science and Engineering","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset"
+"04ed6560","PKKP",2,"Khyber Pakhtunkhwa",,"PAK.5_1","ChIJm2fuN8mu3jgRcad6v070EZY","PKKP",,34.078395845,72.4471759505805,30523371,"Johns Hopkins Center for Systems Science and Engineering","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset"
+"48449849","PKPB",2,"Punjab",,"PAK.7_1","ChIJy5pBdImU3zgRoOxO0hgwnjo","PKPB",,30.863492965,72.315069579151,110012442,"Johns Hopkins Center for Systems Science and Engineering","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset"
+"c5600790","PKSD",2,"Sindh",,"PAK.8_1","ChIJK5TBa2vATDkRLeiLx6lWIC4","PKSD",,26.180321695,68.7692864434365,47886051,"Johns Hopkins Center for Systems Science and Engineering","https://github.com/CSSEGISandData/COVID-19_Unified-Dataset"

@@ -1,106 +1,106 @@
-"id","id_ssi.dk","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population"
-,,,,,,,,,"-",,,,
-"814fed25","Hovedstaden",2,"Hovedstaden",,"Capital Region of Denmark","DNK.1_1","ChIJb8pj4aWGU0YRUFSorMmvAAM","DK.HS","1084","DK01",55.8617878,12.3136134266885,1631635
-"9995c4f9","Midtjylland",2,"Midtjylland",,"Central Denmark Region","DNK.2_1","ChIJdQCVe2YPTEYRMFSorMmvAAM","DK.MJ","1082","DK04",56.23555565,9.234443665,1212787
-"ae08d86f","Nordjylland",2,"Nordjylland",,"North Denmark Region","DNK.3_1","ChIJdaEzlL4lSUYRIFSorMmvAAM","DK.ND","1081","DK05",56.81472206,9.726666455,577278
-"f36a94cd","Sjælland",2,"Sjælland",,"Region Zealand","DNK.4_1","ChIJpZIzniqWUkYRYFSorMmvAAM","DK.SL","1085","DK02",55.48643303,11.68638897,805954
-"b9ee791f","Syddanmark",2,"Syddanmark",,"Region of Southern Denmark","DNK.5_1","ChIJF0eXAaulTEYRQFSorMmvAAM","DK.SD","1083","DK03",55.37763786,9.13333225,1183751
-"ceb98d57","165",3,"Hovedstaden","Albertslund",,"DNK.1.1_1","ChIJ6dCdMa5QUkYRpqn2xh7ekGc","DK.HS.AB","165","DK012",55.6760139465332,12.3513170468112,28146
-"9dc85091","201",3,"Hovedstaden","Allerød",,"DNK.1.2_1","ChIJO3l7jq5GUkYRTq6vfkjKV8I","DK.HS.AL","201","DK013",55.8561363220215,12.3385524995382,23458
-"e2f91a8d","151",3,"Hovedstaden","Ballerup",,"DNK.1.3_1","ChIJ-VzY_JJaUkYRUZT2NxFqGfw","DK.HS.BA","151","DK012",55.7306346893311,12.3649432507305,46759
-"ee421cb5","400",3,"Hovedstaden","Bornholm",,"DNK.1.4_1","ChIJpXIRKfCaVEYRk-nGgDOOT7Q","DK.HS.BO","400","DK014",55.1431941986085,14.9227781295777,43347
-"0cf77ba1","153",3,"Hovedstaden","Brøndby",,"DNK.1.5_1","ChIJ87zxB91WUkYR3qDUhbd8vKk","DK.HS.BR","153","DK012",55.6375827789307,12.4059004141025,34513
-"hv63evc2","411",3,"Hovedstaden","Christiansø",,"DNK.1.6_1",,"DK.HS.CH","411","DK014",55.3199310302735,15.1883335113526,98
-"e594de94","155",3,"Hovedstaden","Dragør",,"DNK.1.7_1","ChIJjdb4F9CqU0YRbWEzwNB-KMA","DK.HS.DR","155","DK011",55.5816669464113,12.63812812074,13156
-"8ea3a503","240",3,"Hovedstaden","Egedal",,"DNK.1.8_1","ChIJt1t_hrBcUkYRfFA31Q3zP5A","DK.HS.EG","240","DK013",55.7608089447022,12.2144602699797,39267
-"f3d45146","210",3,"Hovedstaden","Fredensborg",,"DNK.1.9_1","ChIJHepDRO84UkYRwcdNu55ILEU","DK.HS.FN","210","DK013",55.9507732391358,12.4428002478063,39187
-"12818ef9","147",3,"Hovedstaden","Frederiksberg",,"DNK.1.10_1","ChIJvYLDJLZTUkYRehIVc-5UWCs","DK.HS.FB","147","DK011",55.6823787689209,12.5237218401718,91886
-"97b89442","250",3,"Hovedstaden","Frederikssund",,"DNK.1.11_1","ChIJHRDU5eBoUkYRjbxsQ2z6plU","DK.HS.FS","250","DK013",55.8341674804688,12.1319655282158,42957
-"394b6517","190",3,"Hovedstaden","Furesø",,"DNK.1.12_1","ChIJSQ0NTnZFUkYRToRdwNx6Npo","DK.HS.FU","190","DK013",55.8018302917481,12.3745699476132,37311
-"0b9abfb8","157",3,"Hovedstaden","Gentofte",,"DNK.1.13_1","ChIJFSn_7ulNUkYRj7LZg5inAXc","DK.HS.GE","157","DK012",55.7504768371583,12.5468347036586,68991
-"ec2292bf","159",3,"Hovedstaden","Gladsaxe",,"DNK.1.14_1","ChIJj_LEZdZRUkYRCnZ7zYkfiaY","DK.HS.GX","159","DK012",55.7457847595216,12.4756351992828,62007
-"c9d4494e","161",3,"Hovedstaden","Glostrup",,"DNK.1.15_1","ChIJDzQ9ScdQUkYRZatjKtHyAQw","DK.HS.GP","161","DK012",55.6834964752198,12.4127679748956,20785
-"a58ef6c0","270",3,"Hovedstaden","Gribskov",,"DNK.1.16_1","ChIJLaBIsl5BUkYRYoiKy9A6ijY","DK.HS.GR","270","DK013",56.0488548278809,12.2223563512403,40409
-"bc95c781","260",3,"Hovedstaden","Halsnæs",,"DNK.1.17_1","ChIJuUWS13oSUkYRcdIiGVXk9gw","DK.HS.FH","260","DK013",55.9548320770264,11.8974995613099,30253
-"6db0c4e5","217",3,"Hovedstaden","Helsingør",,"DNK.1.18_1","ChIJKcRf10k6UkYRwZomCtYI3hU","DK.HS.HG","217","DK013",56.0372219085695,12.5101846475658,61295
-"27da2862","163",3,"Hovedstaden","Herlev",,"DNK.1.19_1","ChIJC726yjVQUkYRC77AmTuluyI","DK.HS.HV","163","DK012",55.7335758209229,12.4293102593012,27166
-"8a08e9e2","219",3,"Hovedstaden","Hillerød",,"DNK.1.20_1","ChIJPYFGBvQ_UkYRWshnOMUADh4","DK.HS.HI","219","DK013",55.9247474670411,12.2304836793405,44520
-"c70fc17c","169",3,"Hovedstaden","Høje Tåstrup",,"DNK.1.21_1","ChIJhTLMixRZUkYR6k3Tdgn-bMw","DK.HS.HT","169","DK012",55.6554393768311,12.2443134492947,45553
-"41f0533f","223",3,"Hovedstaden","Hørsholm",,"DNK.1.22_1","ChIJt0XEwIxIUkYRaHYXBAbOuN0","DK.HS.HO","223","DK013",55.8848609924316,12.4764795155869,24292
-"20b7ec7b","167",3,"Hovedstaden","Hvidovre",,"DNK.1.23_1","ChIJD85uuSFUUkYRGk87mF6q1VY","DK.HS.HD","167","DK012",55.6333160400391,12.4671073267602,49863
-"b95905ec","183",3,"Hovedstaden","Ishøj",,"DNK.1.24_1","ChIJRXHn2DpYUkYRIZgYrenc7HY","DK.HS.IS","183","DK012",55.6154022216796,12.3390980398134,20668
-"9f8eeec8","101",3,"Hovedstaden","København","Copenhagen, Capital Region of Denmark","DNK.1.25_1","ChIJiflw5SJTUkYRQk2g-SoIpbQ","DK.HS.KO","101","DK011",55.6568050384522,12.6002769470215,502362
-"3ec11923","173",3,"Hovedstaden","Lyngby-Taarbæk",,"DNK.1.26_1","ChIJjfhslPROUkYRBhCnb0ZT2eg","DK.HS.LT","173","DK012",55.7848167419435,12.5051764118724,51611
-"d7a2bc16","175",3,"Hovedstaden","Rødovre",,"DNK.1.27_1","ChIJyUT7ixNRUkYRlxXxTt4kCXk","DK.HS.RO","175","DK012",55.6907863616944,12.4481357058058,36312
-"c1e233c4","230",3,"Hovedstaden","Rudersdal",,"DNK.1.28_1","ChIJ1eSfrhxPUkYRMSh0xHd6uHM","DK.HS.RU","230","DK013",55.8373603820801,12.4840495210784,53621
-"503aa0d9","185",3,"Hovedstaden","Tårnby",,"DNK.1.29_1","ChIJ6XObK3CrU0YR0MGAm8-V43o","DK.HS.TA","185","DK011",55.609525680542,12.5949993133545,39582
-"be34c1f5","187",3,"Hovedstaden","Vallensbæk",,"DNK.1.30_1","ChIJa_eJ0GpXUkYRwwb1sANvJkM","DK.HS.VA","187","DK012",55.6333484649658,12.3696034928035,12260
-"e674663f","751",3,"Midtjylland","Århus",,"DNK.2.1_1","ChIJqdQeVLlMTEYRXbXPMBJmWA4","DK.MJ.AR","751","DK042",56.1627788543701,10.0999940268752,294954
-"f51f93ad","710",3,"Midtjylland","Favrskov",,"DNK.2.2_1","ChIJ-_GCUMcPTEYRnLutuJcZ2XA","DK.MJ.FA","710","DK042",56.3213939666749,9.92907955324885,43739
-"533da05f","766",3,"Midtjylland","Hedensted",,"DNK.2.3_1","ChIJr-uL_jKITEYRxDvMTmNcyvA","DK.MJ.HD","766","DK042",55.7967891693116,9.78126194923257,43560
-"0ed5a93d","657",3,"Midtjylland","Herning",,"DNK.2.4_1","ChIJT3DfGsSwS0YRk9Kz9Fr6khs","DK.MJ.HG","657","DK041",56.1466026306153,8.85969798397125,82935
-"cc9b5fcb","661",3,"Midtjylland","Holstebro",,"DNK.2.5_1","ChIJAQaa1uQzSkYRk0gIaF3cNCo","DK.MJ.HB","661","DK041",56.3942394256592,8.70936922695179,56204
-"84b70d15","615",3,"Midtjylland","Horsens",,"DNK.2.6_1","ChIJ2VPwvhtyTEYRq3Vj98e9idA","DK.MJ.HS","615","DK042",55.9382762908936,9.77000899851019,76612
-"7810f39c","756",3,"Midtjylland","Ikast-Brande",,"DNK.2.7_1","ChIJFaMRFfmQS0YRdzeGc-E1ces","DK.MJ.IB","756","DK041",56.0525131225586,9.26183993316382,39371
-"cbf69bd2","665",3,"Midtjylland","Lemvig",,"DNK.2.8_1","ChIJ2Ra-4JIjSkYRTlx2eig9dtY","DK.MJ.LE","665","DK041",56.5263900756836,8.3033693000489,22760
-"7260374f","707",3,"Midtjylland","Norddjurs",,"DNK.2.9_1","ChIJl2viORh-TkYRpZIQ5XJu0ig","DK.MJ.NO","707","DK042",56.450834274292,10.6088382267759,38352
-"405655cd","727",3,"Midtjylland","Odder",,"DNK.2.10_1","ChIJ3S9ehOBaTEYRgoHivqSGufk","DK.MJ.OD","727","DK042",55.9309787750245,10.1428123507218,21133
-"c729f12f","730",3,"Midtjylland","Randers",,"DNK.2.11_1","ChIJCWPhB60CTEYRoZ71M7nVfr0","DK.MJ.RA","730","DK042",56.5363883972169,10.0021311686093,91961
-"ba5e056a","760",3,"Midtjylland","Ringkøbing-Skjern",,"DNK.2.12_1","ChIJ4wgA5Z5TSkYR2SRl0NL-9vY","DK.MJ.RS","760","DK041",56.0175781250001,8.55172395316155,57818
-"ff6f577e","741",3,"Midtjylland","Samsø",,"DNK.2.13_1",,"DK.MJ.SA","741","DK042",55.8833332061768,10.6122221946717,4125
-"886867e8","740",3,"Midtjylland","Silkeborg",,"DNK.2.14_1","ChIJgwU-A12LS0YRKBpgZIWl8Wc","DK.MJ.SI","740","DK042",56.1844310760498,9.61101017257043,84167
-"610bc2dd","746",3,"Midtjylland","Skanderborg",,"DNK.2.15_1","ChIJDSpJrSdyTEYROSsTfT0_GvM","DK.MJ.SD","746","DK042",56.0850429534912,9.85315397535195,54153
-"da998c8f","779",3,"Midtjylland","Skive",,"DNK.2.16_1","ChIJcQHR7wvTS0YRcPTJfs3PrII","DK.MJ.SV","779","DK041",56.6399688720704,8.91777849197399,48368
-"d5806e8a","671",3,"Midtjylland","Struer",,"DNK.2.17_1","ChIJazdB6U8pSkYRdro9lJBt8iQ","DK.MJ.ST","671","DK041",56.6328487396241,8.53999996185306,22752
-"056707d9","706",3,"Midtjylland","Syddjurs",,"DNK.2.18_1","ChIJad-7GdLMTUYRnbtlOHG7MTE","DK.MJ.SY","706","DK042",56.2711696624756,10.6622219085694,40196
-"4ac12933","791",3,"Midtjylland","Viborg",,"DNK.2.19_1","ChIJ06icNHnbS0YR1Ba5USGmY4c","DK.MJ.VI","791","DK041",56.4522113800049,9.38335718271058,89645
-"ed282102","851",3,"Nordjylland","Aalborg",,"DNK.3.1_1","ChIJPWUQiZPvS0YR_eGH08ZIdvY","DK.ND.AA","851","DK050",57.1083412170411,10.0192313273661,192353
-"fe43d490","810",3,"Nordjylland","Brønderslev",,"DNK.3.2_1","ChIJTwZkIvAYSUYR6FAI8rhiF6k","DK.ND.BD","810","DK050",57.20365524292,10.1955393381036,35320
-"674a852a","813",3,"Nordjylland","Frederikshavn",,"DNK.3.3_1","ChIJm459rPc7T0YRctQpIsmYdg8","DK.ND.FR","813","DK050",57.4612483978272,10.4513091739855,63799
-"b1024257","860",3,"Nordjylland","Hjørring",,"DNK.3.4_1","ChIJlY35gbSiSEYR1uV8KLVKleo","DK.ND.HJ","860","DK050",57.4626388549805,10.0732564022666,67816
-"fae89871","849",3,"Nordjylland","Jammerbugt",,"DNK.3.5_1","ChIJTwZkIvAYSUYRRqBbyNbriXs","DK.ND.JA","849","DK050",57.178888320923,9.66132821361851,38884
-"a50473dc","825",3,"Nordjylland","Læsø",,"DNK.3.6_1",,"DK.ND.LA","825","DK050",57.2694454193115,10.9908332824707,2145
-"6a5785e0","846",3,"Nordjylland","Mariagerfjord",,"DNK.3.7_1","ChIJTeaaIYVNSUYRbsYVbHd7m_I","DK.ND.MF","846","DK050",56.7056598663331,9.92055678569685,42121
-"3a4c6591","773",3,"Nordjylland","Morsø",,"DNK.3.8_1","ChIJvy0-iGGbSUYR3p-lXdTHvK0","DK.ND.MO","773","DK050",56.8261108398438,8.72861099243173,22479
-"833420d5","840",3,"Nordjylland","Rebild",,"DNK.3.9_1","ChIJkayx6lNLSUYRqCWPTp7BVCY","DK.ND.RE","840","DK050",56.8094997406007,10.0063886098001,28356
-"bab9bd47","787",3,"Nordjylland","Thisted",,"DNK.3.10_1","ChIJKYaY13OZSUYRH9a_07b1gnE","DK.ND.TH","787","DK050",56.9144458770753,8.4833340644837,46158
-"d56e8753","820",3,"Nordjylland","Vesthimmerland",,"DNK.3.11_1","ChIJ_3qpqMxDSUYR-9IWi2Ydm58","DK.ND.VE","820","DK050",56.8244667053223,9.40515647778752,37840
-"d93b68b2","320",3,"Sjælland","Faxe",,"DNK.4.1_1","ChIJRX2M7HfpUkYRNoP4MzJUMbk","DK.SL.FA","320","DK022",55.2679615020752,12.0959642966037,34313
-"0eb1c5f8","253",3,"Sjælland","Greve",,"DNK.4.2_1","ChIJcWUlXND3UkYRdQho8DhCx1Y","DK.SL.GR","253","DK021",55.5877780914308,12.2376851358964,47671
-"4d2f39c2","376",3,"Sjælland","Guldborgsund",,"DNK.4.3_1","ChIJV-OBxOkwrUcRU7G9rZO7fUQ","DK.SL.GU","376","DK022",54.7729167938233,11.6970438308117,63533
-"1b759e44","316",3,"Sjælland","Holbæk",,"DNK.4.4_1","ChIJ9bBaQ3aAUkYRhJV85z8AZgA","DK.SL.HO","316","DK022",55.652910232544,11.5701435046634,66611
-"3058cd87","326",3,"Sjælland","Kalundborg",,"DNK.4.5_1","ChIJazsI3vIKTUYRNSGXELGpgdY","DK.SL.KA","326","DK022",55.6077747344971,11.2630751676119,48697
-"ee642ce6","259",3,"Sjælland","Køge",,"DNK.4.6_1","ChIJXT38bcd6U0YR3jUrOm3xskQ","DK.SL.KO","259","DK021",55.4523601531983,12.0682027856447,54926
-"967afe75","350",3,"Sjælland","Lejre",,"DNK.4.7_1","ChIJV8R5Y_yFUkYRx--qnj9vESM","DK.SL.LE","350","DK021",55.6361885070801,11.8978458987513,25971
-"bd57adb6","360",3,"Sjælland","Lolland",,"DNK.4.8_1","ChIJjUk1G-ZQrUcRAL9VDqe2Ryc","DK.SL.LO","360","DK022",54.7771034240723,11.2684945312581,49469
-"a44c9cf7","370",3,"Sjælland","Næstved",,"DNK.4.9_1","ChIJs-XR8qe-UkYRbWARmW_u5Nk","DK.SL.NA","370","DK022",55.2615394592285,11.7086962640156,78446
-"026eaf05","306",3,"Sjælland","Odsherred",,"DNK.4.10_1","ChIJxWfc7n-hTUYRzGOzBA2AIkQ","DK.SL.OD","306","DK022",55.8720149993897,11.6069445610047,32739
-"a0e7d016","329",3,"Sjælland","Ringsted",,"DNK.4.11_1","ChIJVfOhLiGOUkYR8iNjS6_vO2w","DK.SL.RI","329","DK022",55.4592971801758,11.8128439997817,30830
-"ccff330e","265",3,"Sjælland","Roskilde",,"DNK.4.12_1","ChIJzwP_wNxfUkYR5GwPwu7WOoc","DK.SL.RO","265","DK021",55.6475315093995,12.0812386122635,79441
-"c02059f3","330",3,"Sjælland","Slagelse",,"DNK.4.13_1","ChIJv_d-PDZeTUYRvsldSiMOXb8","DK.SL.SL","330","DK022",55.3497219085693,11.3020056362966,76185
-"c5497f25","269",3,"Sjælland","Solrød",,"DNK.4.14_1","ChIJJU0iRoz2UkYRyz5IboI6co0","DK.SL.SD","269","DK021",55.5366268157959,12.1688074310349,20703
-"8f61cf34","340",3,"Sjælland","Sorø",,"DNK.4.15_1","ChIJE9YQttqcUkYRRMMlliUGQlg","DK.SL.SO","340","DK022",55.4771251678467,11.5541100163614,28336
-"2943fcc6","336",3,"Sjælland","Stevns",,"DNK.4.16_1","ChIJs4qOHTvkUkYRHUt9L3DDHE0","DK.SL.ST","336","DK022",55.331392288208,12.3444158247631,21776
-"3acfb179","390",3,"Sjælland","Vordingborg",,"DNK.4.17_1","ChIJufSlAbXRUkYRUya-P52yWaM","DK.SL.VO","390","DK022",54.9697208404542,12.3847222328186,46307
-"2759fc8a","580",3,"Syddanmark","Aabenraa",,"DNK.5.1_1","ChIJuetkrQFXs0cRptdoq33ZXVw","DK.SD.AA","580","DK032",54.9906196594239,9.35367018187079,60151
-"d18ec6d0","492",3,"Syddanmark","Ærø",,"DNK.5.2_1",,"DK.SD.AE","492","DK031",54.8938884735108,10.3238902091981,6939
-"dc747e37","420",3,"Syddanmark","Assens",,"DNK.5.3_1","ChIJ5RYEED7FTEYRxUdjUmqOKlQ","DK.SD.AS","420","DK031",55.2966651916504,10.0835311478431,41201
-"c4ad2541","530",3,"Syddanmark","Billund",,"DNK.5.4_1","ChIJx78AANUMS0YRRZpiWRaduEE","DK.SD.BI","530","DK032",55.7455062866212,8.98995937498495,26076
-"cedde192","561",3,"Syddanmark","Esbjerg",,"DNK.5.5_1","ChIJ-aPYQ5LbTEYRr2mLxY5QIUw","DK.SD.ES","561","DK032",55.4088344573975,8.74728203722266,114698
-"c56f4f76","430",3,"Syddanmark","Faaborg-Midtfyn",,"DNK.5.6_1","ChIJqyqfxWXDTEYRQCjHMJvasj4","DK.SD.FM","430","DK031",55.2000942230226,10.4273890662527,51144
-"20d380be","563",3,"Syddanmark","Fanø",,"DNK.5.7_1",,"DK.SD.FA","563","DK032",55.4028644561768,8.42722129821786,3151
-"73a25d78","607",3,"Syddanmark","Fredericia",,"DNK.5.8_1","ChIJ49WbyX2aTEYRO4XhD71izog","DK.SD.FR","607","DK032",55.568193435669,9.66922858711943,49147
-"f69b47c3","510",3,"Syddanmark","Haderslev",,"DNK.5.9_1","ChIJ_yGl69qpTEYRcmXyn1TTsHw","DK.SD.HA","510","DK032",55.2543048858643,9.32620656228601,56399
-"8a2ed9b1","440",3,"Syddanmark","Kerteminde",,"DNK.5.10_1","ChIJyYAtrIsZTUYRehX3ryp7dr8","DK.SD.KE","440","DK031",55.4722557067871,10.6300002254852,23071
-"a8f79acf","621",3,"Syddanmark","Kolding",,"DNK.5.11_1","ChIJcydl4RCgTEYRq2Z8Xzgi9pw","DK.SD.KO","621","DK032",55.4691677093507,9.4682671965178,86049
-"c895f791","482",3,"Syddanmark","Langeland",,"DNK.5.12_1","ChIJ-5__Gcm1skcRGSe-DWiojkI","DK.SD.LA","482","DK031",54.9424991607667,10.7772212028505,14223
-"f7592df4","410",3,"Syddanmark","Middelfart",,"DNK.5.13_1","ChIJQZhMduO_TEYR77Do4_W99nI","DK.SD.MI","410","DK031",55.4472217559814,9.93763283746949,36113
-"269b96bd","480",3,"Syddanmark","Nordfyn",,"DNK.5.14_1","ChIJs4Si0z7kTEYR7nehR7TpHUA","DK.SD.BO","480","DK031",55.5142326354981,10.236733892903,28655
-"9335e8f0","450",3,"Syddanmark","Nyborg",,"DNK.5.15_1","ChIJkUyFWbs-TUYR9td_JRRHIYA","DK.SD.NY","450","DK031",55.2986869812012,10.6842402767731,31009
-"cf1f8ba5","461",3,"Syddanmark","Odense",,"DNK.5.16_1","ChIJwSSXQjXZTEYRByAj2dD1f7c","DK.SD.OD","461","DK031",55.3846435546876,10.3536283550382,185871
-"8becb386","540",3,"Syddanmark","Sønderborg",,"DNK.5.17_1","ChIJT6EZxFM2s0cRNjXNMMe5zwI","DK.SD.SO","540","DK032",54.97194480896,9.92472219467169,76459
-"d8df32d6","479",3,"Syddanmark","Svendborg",,"DNK.5.18_1","ChIJcRH6dW8zTUYRnz0GshoswVo","DK.SD.SV","479","DK031",55.1234722137452,10.594814336958,58354
-"92f782c7","550",3,"Syddanmark","Tønder",,"DNK.5.19_1","ChIJc31eoKW2tEcRvtpCT1xOoh8","DK.SD.TO","550","DK032",55.0630607604981,8.88924929609276,41140
-"39c8b1ff","573",3,"Syddanmark","Varde",,"DNK.5.20_1","ChIJhxswtXwbS0YRSLUzbEZX1bY","DK.SD.VA","573","DK032",55.6637516021729,8.51115942430921,50094
-"d0ab14ca","575",3,"Syddanmark","Vejen",,"DNK.5.21_1","ChIJT-oCRbdDS0YRpylHQnGL-yk","DK.SD.VN","575","DK032",55.4570484161378,9.0305740565444,41350
-"c6eb9b18","630",3,"Syddanmark","Vejle",,"DNK.5.22_1","ChIJiWKHBiB8S0YRoAlwe4zayog","DK.SD.VL","630","DK032",55.7624111175537,9.35239885022548,102446
+"id","id_ssi.dk","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_local","key_nuts","latitude","longitude","population","population_data_source","population_data_source_url"
+,,,,,,,,,"-",,,,,,
+"814fed25","Hovedstaden",2,"Hovedstaden",,"Capital Region of Denmark","DNK.1_1","ChIJb8pj4aWGU0YRUFSorMmvAAM","DK.HS","1084","DK01",55.8617878,12.3136134266885,1631635,"Statoids (2005)","http://www.statoids.com/udk.html"
+"9995c4f9","Midtjylland",2,"Midtjylland",,"Central Denmark Region","DNK.2_1","ChIJdQCVe2YPTEYRMFSorMmvAAM","DK.MJ","1082","DK04",56.23555565,9.234443665,1212787,"Statoids (2005)","http://www.statoids.com/udk.html"
+"ae08d86f","Nordjylland",2,"Nordjylland",,"North Denmark Region","DNK.3_1","ChIJdaEzlL4lSUYRIFSorMmvAAM","DK.ND","1081","DK05",56.81472206,9.726666455,577278,"Statoids (2005)","http://www.statoids.com/udk.html"
+"f36a94cd","Sjælland",2,"Sjælland",,"Region Zealand","DNK.4_1","ChIJpZIzniqWUkYRYFSorMmvAAM","DK.SL","1085","DK02",55.48643303,11.68638897,805954,"Statoids (2005)","http://www.statoids.com/udk.html"
+"b9ee791f","Syddanmark",2,"Syddanmark",,"Region of Southern Denmark","DNK.5_1","ChIJF0eXAaulTEYRQFSorMmvAAM","DK.SD","1083","DK03",55.37763786,9.13333225,1183751,"Statoids (2005)","http://www.statoids.com/udk.html"
+"ceb98d57","165",3,"Hovedstaden","Albertslund",,"DNK.1.1_1","ChIJ6dCdMa5QUkYRpqn2xh7ekGc","DK.HS.AB","165","DK012",55.6760139465332,12.3513170468112,28146,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"9dc85091","201",3,"Hovedstaden","Allerød",,"DNK.1.2_1","ChIJO3l7jq5GUkYRTq6vfkjKV8I","DK.HS.AL","201","DK013",55.8561363220215,12.3385524995382,23458,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"e2f91a8d","151",3,"Hovedstaden","Ballerup",,"DNK.1.3_1","ChIJ-VzY_JJaUkYRUZT2NxFqGfw","DK.HS.BA","151","DK012",55.7306346893311,12.3649432507305,46759,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"ee421cb5","400",3,"Hovedstaden","Bornholm",,"DNK.1.4_1","ChIJpXIRKfCaVEYRk-nGgDOOT7Q","DK.HS.BO","400","DK014",55.1431941986085,14.9227781295777,43347,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"0cf77ba1","153",3,"Hovedstaden","Brøndby",,"DNK.1.5_1","ChIJ87zxB91WUkYR3qDUhbd8vKk","DK.HS.BR","153","DK012",55.6375827789307,12.4059004141025,34513,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"hv63evc2","411",3,"Hovedstaden","Christiansø",,"DNK.1.6_1",,"DK.HS.CH","411","DK014",55.3199310302735,15.1883335113526,98,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"e594de94","155",3,"Hovedstaden","Dragør",,"DNK.1.7_1","ChIJjdb4F9CqU0YRbWEzwNB-KMA","DK.HS.DR","155","DK011",55.5816669464113,12.63812812074,13156,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"8ea3a503","240",3,"Hovedstaden","Egedal",,"DNK.1.8_1","ChIJt1t_hrBcUkYRfFA31Q3zP5A","DK.HS.EG","240","DK013",55.7608089447022,12.2144602699797,39267,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"f3d45146","210",3,"Hovedstaden","Fredensborg",,"DNK.1.9_1","ChIJHepDRO84UkYRwcdNu55ILEU","DK.HS.FN","210","DK013",55.9507732391358,12.4428002478063,39187,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"12818ef9","147",3,"Hovedstaden","Frederiksberg",,"DNK.1.10_1","ChIJvYLDJLZTUkYRehIVc-5UWCs","DK.HS.FB","147","DK011",55.6823787689209,12.5237218401718,91886,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"97b89442","250",3,"Hovedstaden","Frederikssund",,"DNK.1.11_1","ChIJHRDU5eBoUkYRjbxsQ2z6plU","DK.HS.FS","250","DK013",55.8341674804688,12.1319655282158,42957,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"394b6517","190",3,"Hovedstaden","Furesø",,"DNK.1.12_1","ChIJSQ0NTnZFUkYRToRdwNx6Npo","DK.HS.FU","190","DK013",55.8018302917481,12.3745699476132,37311,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"0b9abfb8","157",3,"Hovedstaden","Gentofte",,"DNK.1.13_1","ChIJFSn_7ulNUkYRj7LZg5inAXc","DK.HS.GE","157","DK012",55.7504768371583,12.5468347036586,68991,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"ec2292bf","159",3,"Hovedstaden","Gladsaxe",,"DNK.1.14_1","ChIJj_LEZdZRUkYRCnZ7zYkfiaY","DK.HS.GX","159","DK012",55.7457847595216,12.4756351992828,62007,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c9d4494e","161",3,"Hovedstaden","Glostrup",,"DNK.1.15_1","ChIJDzQ9ScdQUkYRZatjKtHyAQw","DK.HS.GP","161","DK012",55.6834964752198,12.4127679748956,20785,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"a58ef6c0","270",3,"Hovedstaden","Gribskov",,"DNK.1.16_1","ChIJLaBIsl5BUkYRYoiKy9A6ijY","DK.HS.GR","270","DK013",56.0488548278809,12.2223563512403,40409,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"bc95c781","260",3,"Hovedstaden","Halsnæs",,"DNK.1.17_1","ChIJuUWS13oSUkYRcdIiGVXk9gw","DK.HS.FH","260","DK013",55.9548320770264,11.8974995613099,30253,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"6db0c4e5","217",3,"Hovedstaden","Helsingør",,"DNK.1.18_1","ChIJKcRf10k6UkYRwZomCtYI3hU","DK.HS.HG","217","DK013",56.0372219085695,12.5101846475658,61295,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"27da2862","163",3,"Hovedstaden","Herlev",,"DNK.1.19_1","ChIJC726yjVQUkYRC77AmTuluyI","DK.HS.HV","163","DK012",55.7335758209229,12.4293102593012,27166,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"8a08e9e2","219",3,"Hovedstaden","Hillerød",,"DNK.1.20_1","ChIJPYFGBvQ_UkYRWshnOMUADh4","DK.HS.HI","219","DK013",55.9247474670411,12.2304836793405,44520,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c70fc17c","169",3,"Hovedstaden","Høje Tåstrup",,"DNK.1.21_1","ChIJhTLMixRZUkYR6k3Tdgn-bMw","DK.HS.HT","169","DK012",55.6554393768311,12.2443134492947,45553,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"41f0533f","223",3,"Hovedstaden","Hørsholm",,"DNK.1.22_1","ChIJt0XEwIxIUkYRaHYXBAbOuN0","DK.HS.HO","223","DK013",55.8848609924316,12.4764795155869,24292,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"20b7ec7b","167",3,"Hovedstaden","Hvidovre",,"DNK.1.23_1","ChIJD85uuSFUUkYRGk87mF6q1VY","DK.HS.HD","167","DK012",55.6333160400391,12.4671073267602,49863,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"b95905ec","183",3,"Hovedstaden","Ishøj",,"DNK.1.24_1","ChIJRXHn2DpYUkYRIZgYrenc7HY","DK.HS.IS","183","DK012",55.6154022216796,12.3390980398134,20668,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"9f8eeec8","101",3,"Hovedstaden","København","Copenhagen, Capital Region of Denmark","DNK.1.25_1","ChIJiflw5SJTUkYRQk2g-SoIpbQ","DK.HS.KO","101","DK011",55.6568050384522,12.6002769470215,502362,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"3ec11923","173",3,"Hovedstaden","Lyngby-Taarbæk",,"DNK.1.26_1","ChIJjfhslPROUkYRBhCnb0ZT2eg","DK.HS.LT","173","DK012",55.7848167419435,12.5051764118724,51611,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"d7a2bc16","175",3,"Hovedstaden","Rødovre",,"DNK.1.27_1","ChIJyUT7ixNRUkYRlxXxTt4kCXk","DK.HS.RO","175","DK012",55.6907863616944,12.4481357058058,36312,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c1e233c4","230",3,"Hovedstaden","Rudersdal",,"DNK.1.28_1","ChIJ1eSfrhxPUkYRMSh0xHd6uHM","DK.HS.RU","230","DK013",55.8373603820801,12.4840495210784,53621,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"503aa0d9","185",3,"Hovedstaden","Tårnby",,"DNK.1.29_1","ChIJ6XObK3CrU0YR0MGAm8-V43o","DK.HS.TA","185","DK011",55.609525680542,12.5949993133545,39582,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"be34c1f5","187",3,"Hovedstaden","Vallensbæk",,"DNK.1.30_1","ChIJa_eJ0GpXUkYRwwb1sANvJkM","DK.HS.VA","187","DK012",55.6333484649658,12.3696034928035,12260,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"e674663f","751",3,"Midtjylland","Århus",,"DNK.2.1_1","ChIJqdQeVLlMTEYRXbXPMBJmWA4","DK.MJ.AR","751","DK042",56.1627788543701,10.0999940268752,294954,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"f51f93ad","710",3,"Midtjylland","Favrskov",,"DNK.2.2_1","ChIJ-_GCUMcPTEYRnLutuJcZ2XA","DK.MJ.FA","710","DK042",56.3213939666749,9.92907955324885,43739,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"533da05f","766",3,"Midtjylland","Hedensted",,"DNK.2.3_1","ChIJr-uL_jKITEYRxDvMTmNcyvA","DK.MJ.HD","766","DK042",55.7967891693116,9.78126194923257,43560,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"0ed5a93d","657",3,"Midtjylland","Herning",,"DNK.2.4_1","ChIJT3DfGsSwS0YRk9Kz9Fr6khs","DK.MJ.HG","657","DK041",56.1466026306153,8.85969798397125,82935,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"cc9b5fcb","661",3,"Midtjylland","Holstebro",,"DNK.2.5_1","ChIJAQaa1uQzSkYRk0gIaF3cNCo","DK.MJ.HB","661","DK041",56.3942394256592,8.70936922695179,56204,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"84b70d15","615",3,"Midtjylland","Horsens",,"DNK.2.6_1","ChIJ2VPwvhtyTEYRq3Vj98e9idA","DK.MJ.HS","615","DK042",55.9382762908936,9.77000899851019,76612,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"7810f39c","756",3,"Midtjylland","Ikast-Brande",,"DNK.2.7_1","ChIJFaMRFfmQS0YRdzeGc-E1ces","DK.MJ.IB","756","DK041",56.0525131225586,9.26183993316382,39371,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"cbf69bd2","665",3,"Midtjylland","Lemvig",,"DNK.2.8_1","ChIJ2Ra-4JIjSkYRTlx2eig9dtY","DK.MJ.LE","665","DK041",56.5263900756836,8.3033693000489,22760,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"7260374f","707",3,"Midtjylland","Norddjurs",,"DNK.2.9_1","ChIJl2viORh-TkYRpZIQ5XJu0ig","DK.MJ.NO","707","DK042",56.450834274292,10.6088382267759,38352,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"405655cd","727",3,"Midtjylland","Odder",,"DNK.2.10_1","ChIJ3S9ehOBaTEYRgoHivqSGufk","DK.MJ.OD","727","DK042",55.9309787750245,10.1428123507218,21133,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c729f12f","730",3,"Midtjylland","Randers",,"DNK.2.11_1","ChIJCWPhB60CTEYRoZ71M7nVfr0","DK.MJ.RA","730","DK042",56.5363883972169,10.0021311686093,91961,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"ba5e056a","760",3,"Midtjylland","Ringkøbing-Skjern",,"DNK.2.12_1","ChIJ4wgA5Z5TSkYR2SRl0NL-9vY","DK.MJ.RS","760","DK041",56.0175781250001,8.55172395316155,57818,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"ff6f577e","741",3,"Midtjylland","Samsø",,"DNK.2.13_1",,"DK.MJ.SA","741","DK042",55.8833332061768,10.6122221946717,4125,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"886867e8","740",3,"Midtjylland","Silkeborg",,"DNK.2.14_1","ChIJgwU-A12LS0YRKBpgZIWl8Wc","DK.MJ.SI","740","DK042",56.1844310760498,9.61101017257043,84167,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"610bc2dd","746",3,"Midtjylland","Skanderborg",,"DNK.2.15_1","ChIJDSpJrSdyTEYROSsTfT0_GvM","DK.MJ.SD","746","DK042",56.0850429534912,9.85315397535195,54153,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"da998c8f","779",3,"Midtjylland","Skive",,"DNK.2.16_1","ChIJcQHR7wvTS0YRcPTJfs3PrII","DK.MJ.SV","779","DK041",56.6399688720704,8.91777849197399,48368,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"d5806e8a","671",3,"Midtjylland","Struer",,"DNK.2.17_1","ChIJazdB6U8pSkYRdro9lJBt8iQ","DK.MJ.ST","671","DK041",56.6328487396241,8.53999996185306,22752,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"056707d9","706",3,"Midtjylland","Syddjurs",,"DNK.2.18_1","ChIJad-7GdLMTUYRnbtlOHG7MTE","DK.MJ.SY","706","DK042",56.2711696624756,10.6622219085694,40196,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"4ac12933","791",3,"Midtjylland","Viborg",,"DNK.2.19_1","ChIJ06icNHnbS0YR1Ba5USGmY4c","DK.MJ.VI","791","DK041",56.4522113800049,9.38335718271058,89645,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"ed282102","851",3,"Nordjylland","Aalborg",,"DNK.3.1_1","ChIJPWUQiZPvS0YR_eGH08ZIdvY","DK.ND.AA","851","DK050",57.1083412170411,10.0192313273661,192353,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"fe43d490","810",3,"Nordjylland","Brønderslev",,"DNK.3.2_1","ChIJTwZkIvAYSUYR6FAI8rhiF6k","DK.ND.BD","810","DK050",57.20365524292,10.1955393381036,35320,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"674a852a","813",3,"Nordjylland","Frederikshavn",,"DNK.3.3_1","ChIJm459rPc7T0YRctQpIsmYdg8","DK.ND.FR","813","DK050",57.4612483978272,10.4513091739855,63799,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"b1024257","860",3,"Nordjylland","Hjørring",,"DNK.3.4_1","ChIJlY35gbSiSEYR1uV8KLVKleo","DK.ND.HJ","860","DK050",57.4626388549805,10.0732564022666,67816,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"fae89871","849",3,"Nordjylland","Jammerbugt",,"DNK.3.5_1","ChIJTwZkIvAYSUYRRqBbyNbriXs","DK.ND.JA","849","DK050",57.178888320923,9.66132821361851,38884,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"a50473dc","825",3,"Nordjylland","Læsø",,"DNK.3.6_1",,"DK.ND.LA","825","DK050",57.2694454193115,10.9908332824707,2145,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"6a5785e0","846",3,"Nordjylland","Mariagerfjord",,"DNK.3.7_1","ChIJTeaaIYVNSUYRbsYVbHd7m_I","DK.ND.MF","846","DK050",56.7056598663331,9.92055678569685,42121,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"3a4c6591","773",3,"Nordjylland","Morsø",,"DNK.3.8_1","ChIJvy0-iGGbSUYR3p-lXdTHvK0","DK.ND.MO","773","DK050",56.8261108398438,8.72861099243173,22479,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"833420d5","840",3,"Nordjylland","Rebild",,"DNK.3.9_1","ChIJkayx6lNLSUYRqCWPTp7BVCY","DK.ND.RE","840","DK050",56.8094997406007,10.0063886098001,28356,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"bab9bd47","787",3,"Nordjylland","Thisted",,"DNK.3.10_1","ChIJKYaY13OZSUYRH9a_07b1gnE","DK.ND.TH","787","DK050",56.9144458770753,8.4833340644837,46158,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"d56e8753","820",3,"Nordjylland","Vesthimmerland",,"DNK.3.11_1","ChIJ_3qpqMxDSUYR-9IWi2Ydm58","DK.ND.VE","820","DK050",56.8244667053223,9.40515647778752,37840,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"d93b68b2","320",3,"Sjælland","Faxe",,"DNK.4.1_1","ChIJRX2M7HfpUkYRNoP4MzJUMbk","DK.SL.FA","320","DK022",55.2679615020752,12.0959642966037,34313,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"0eb1c5f8","253",3,"Sjælland","Greve",,"DNK.4.2_1","ChIJcWUlXND3UkYRdQho8DhCx1Y","DK.SL.GR","253","DK021",55.5877780914308,12.2376851358964,47671,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"4d2f39c2","376",3,"Sjælland","Guldborgsund",,"DNK.4.3_1","ChIJV-OBxOkwrUcRU7G9rZO7fUQ","DK.SL.GU","376","DK022",54.7729167938233,11.6970438308117,63533,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"1b759e44","316",3,"Sjælland","Holbæk",,"DNK.4.4_1","ChIJ9bBaQ3aAUkYRhJV85z8AZgA","DK.SL.HO","316","DK022",55.652910232544,11.5701435046634,66611,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"3058cd87","326",3,"Sjælland","Kalundborg",,"DNK.4.5_1","ChIJazsI3vIKTUYRNSGXELGpgdY","DK.SL.KA","326","DK022",55.6077747344971,11.2630751676119,48697,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"ee642ce6","259",3,"Sjælland","Køge",,"DNK.4.6_1","ChIJXT38bcd6U0YR3jUrOm3xskQ","DK.SL.KO","259","DK021",55.4523601531983,12.0682027856447,54926,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"967afe75","350",3,"Sjælland","Lejre",,"DNK.4.7_1","ChIJV8R5Y_yFUkYRx--qnj9vESM","DK.SL.LE","350","DK021",55.6361885070801,11.8978458987513,25971,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"bd57adb6","360",3,"Sjælland","Lolland",,"DNK.4.8_1","ChIJjUk1G-ZQrUcRAL9VDqe2Ryc","DK.SL.LO","360","DK022",54.7771034240723,11.2684945312581,49469,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"a44c9cf7","370",3,"Sjælland","Næstved",,"DNK.4.9_1","ChIJs-XR8qe-UkYRbWARmW_u5Nk","DK.SL.NA","370","DK022",55.2615394592285,11.7086962640156,78446,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"026eaf05","306",3,"Sjælland","Odsherred",,"DNK.4.10_1","ChIJxWfc7n-hTUYRzGOzBA2AIkQ","DK.SL.OD","306","DK022",55.8720149993897,11.6069445610047,32739,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"a0e7d016","329",3,"Sjælland","Ringsted",,"DNK.4.11_1","ChIJVfOhLiGOUkYR8iNjS6_vO2w","DK.SL.RI","329","DK022",55.4592971801758,11.8128439997817,30830,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"ccff330e","265",3,"Sjælland","Roskilde",,"DNK.4.12_1","ChIJzwP_wNxfUkYR5GwPwu7WOoc","DK.SL.RO","265","DK021",55.6475315093995,12.0812386122635,79441,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c02059f3","330",3,"Sjælland","Slagelse",,"DNK.4.13_1","ChIJv_d-PDZeTUYRvsldSiMOXb8","DK.SL.SL","330","DK022",55.3497219085693,11.3020056362966,76185,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c5497f25","269",3,"Sjælland","Solrød",,"DNK.4.14_1","ChIJJU0iRoz2UkYRyz5IboI6co0","DK.SL.SD","269","DK021",55.5366268157959,12.1688074310349,20703,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"8f61cf34","340",3,"Sjælland","Sorø",,"DNK.4.15_1","ChIJE9YQttqcUkYRRMMlliUGQlg","DK.SL.SO","340","DK022",55.4771251678467,11.5541100163614,28336,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"2943fcc6","336",3,"Sjælland","Stevns",,"DNK.4.16_1","ChIJs4qOHTvkUkYRHUt9L3DDHE0","DK.SL.ST","336","DK022",55.331392288208,12.3444158247631,21776,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"3acfb179","390",3,"Sjælland","Vordingborg",,"DNK.4.17_1","ChIJufSlAbXRUkYRUya-P52yWaM","DK.SL.VO","390","DK022",54.9697208404542,12.3847222328186,46307,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"2759fc8a","580",3,"Syddanmark","Aabenraa",,"DNK.5.1_1","ChIJuetkrQFXs0cRptdoq33ZXVw","DK.SD.AA","580","DK032",54.9906196594239,9.35367018187079,60151,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"d18ec6d0","492",3,"Syddanmark","Ærø",,"DNK.5.2_1",,"DK.SD.AE","492","DK031",54.8938884735108,10.3238902091981,6939,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"dc747e37","420",3,"Syddanmark","Assens",,"DNK.5.3_1","ChIJ5RYEED7FTEYRxUdjUmqOKlQ","DK.SD.AS","420","DK031",55.2966651916504,10.0835311478431,41201,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c4ad2541","530",3,"Syddanmark","Billund",,"DNK.5.4_1","ChIJx78AANUMS0YRRZpiWRaduEE","DK.SD.BI","530","DK032",55.7455062866212,8.98995937498495,26076,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"cedde192","561",3,"Syddanmark","Esbjerg",,"DNK.5.5_1","ChIJ-aPYQ5LbTEYRr2mLxY5QIUw","DK.SD.ES","561","DK032",55.4088344573975,8.74728203722266,114698,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c56f4f76","430",3,"Syddanmark","Faaborg-Midtfyn",,"DNK.5.6_1","ChIJqyqfxWXDTEYRQCjHMJvasj4","DK.SD.FM","430","DK031",55.2000942230226,10.4273890662527,51144,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"20d380be","563",3,"Syddanmark","Fanø",,"DNK.5.7_1",,"DK.SD.FA","563","DK032",55.4028644561768,8.42722129821786,3151,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"73a25d78","607",3,"Syddanmark","Fredericia",,"DNK.5.8_1","ChIJ49WbyX2aTEYRO4XhD71izog","DK.SD.FR","607","DK032",55.568193435669,9.66922858711943,49147,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"f69b47c3","510",3,"Syddanmark","Haderslev",,"DNK.5.9_1","ChIJ_yGl69qpTEYRcmXyn1TTsHw","DK.SD.HA","510","DK032",55.2543048858643,9.32620656228601,56399,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"8a2ed9b1","440",3,"Syddanmark","Kerteminde",,"DNK.5.10_1","ChIJyYAtrIsZTUYRehX3ryp7dr8","DK.SD.KE","440","DK031",55.4722557067871,10.6300002254852,23071,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"a8f79acf","621",3,"Syddanmark","Kolding",,"DNK.5.11_1","ChIJcydl4RCgTEYRq2Z8Xzgi9pw","DK.SD.KO","621","DK032",55.4691677093507,9.4682671965178,86049,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c895f791","482",3,"Syddanmark","Langeland",,"DNK.5.12_1","ChIJ-5__Gcm1skcRGSe-DWiojkI","DK.SD.LA","482","DK031",54.9424991607667,10.7772212028505,14223,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"f7592df4","410",3,"Syddanmark","Middelfart",,"DNK.5.13_1","ChIJQZhMduO_TEYR77Do4_W99nI","DK.SD.MI","410","DK031",55.4472217559814,9.93763283746949,36113,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"269b96bd","480",3,"Syddanmark","Nordfyn",,"DNK.5.14_1","ChIJs4Si0z7kTEYR7nehR7TpHUA","DK.SD.BO","480","DK031",55.5142326354981,10.236733892903,28655,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"9335e8f0","450",3,"Syddanmark","Nyborg",,"DNK.5.15_1","ChIJkUyFWbs-TUYR9td_JRRHIYA","DK.SD.NY","450","DK031",55.2986869812012,10.6842402767731,31009,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"cf1f8ba5","461",3,"Syddanmark","Odense",,"DNK.5.16_1","ChIJwSSXQjXZTEYRByAj2dD1f7c","DK.SD.OD","461","DK031",55.3846435546876,10.3536283550382,185871,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"8becb386","540",3,"Syddanmark","Sønderborg",,"DNK.5.17_1","ChIJT6EZxFM2s0cRNjXNMMe5zwI","DK.SD.SO","540","DK032",54.97194480896,9.92472219467169,76459,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"d8df32d6","479",3,"Syddanmark","Svendborg",,"DNK.5.18_1","ChIJcRH6dW8zTUYRnz0GshoswVo","DK.SD.SV","479","DK031",55.1234722137452,10.594814336958,58354,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"92f782c7","550",3,"Syddanmark","Tønder",,"DNK.5.19_1","ChIJc31eoKW2tEcRvtpCT1xOoh8","DK.SD.TO","550","DK032",55.0630607604981,8.88924929609276,41140,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"39c8b1ff","573",3,"Syddanmark","Varde",,"DNK.5.20_1","ChIJhxswtXwbS0YRSLUzbEZX1bY","DK.SD.VA","573","DK032",55.6637516021729,8.51115942430921,50094,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"d0ab14ca","575",3,"Syddanmark","Vejen",,"DNK.5.21_1","ChIJT-oCRbdDS0YRpylHQnGL-yk","DK.SD.VN","575","DK032",55.4570484161378,9.0305740565444,41350,"Statoids (2005)","http://www.statoids.com/ydk.html"
+"c6eb9b18","630",3,"Syddanmark","Vejle",,"DNK.5.22_1","ChIJiWKHBiB8S0YRoAlwe4zayog","DK.SD.VL","630","DK032",55.7624111175537,9.35239885022548,102446,"Statoids (2005)","http://www.statoids.com/ydk.html"

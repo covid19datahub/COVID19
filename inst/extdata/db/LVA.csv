@@ -1,121 +1,121 @@
-"id","id_gov.lv","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population"
-,,,,,,,"-",,,,
-"6553bcae",640600,3,"Kurzeme","Aizputes novads","LVA.1.2.1_0",,"0640600","LV003",56.716667,21.6,4073
-"62787685",624200,3,"Kurzeme","Alsungas novads","LVA.1.1.1_0",,"0624200","LV003",56.981667,21.566944,1289
-"285eed48",840601,3,"Kurzeme","Brocenu novads","LVA.1.3.1_0",,"0840601","LV003",56.7333,22.65,5634
-"a838d668",885100,3,"Kurzeme","Dundagas novads","LVA.1.4.1_0",,"0885100","LV003",57.516667,22.35,3641
-"18caa132",640801,3,"Kurzeme","Durbes novads","LVA.1.2.2_0",,"0640801","LV003",56.6167,21.3667,2626
-"d962a779",641000,3,"Kurzeme","Grobinas novads","LVA.1.2.3_0","ChIJT8Zmekyq-kYRoP_yaM3PAAM","0641000","LV003",56.5667,21.1,8394
-"ed1ae1d2",620200,3,"Kurzeme","Kuldigas novads","LVA.1.1.2_0","ChIJiXwf29Xc70YR6ybmN2i8sC4","0620200","LV003",56.9667,21.9667,22313
-"3b7b8a74",170000,3,"Kurzeme","Liepaja","LVA.1.2.4_0","ChIJNWS6eNKn-kYRMP3yaM3PAAM","0170000","LV003",56.511667,21.013889,68945
-"077e0866",887600,3,"Kurzeme","Mersraga novads","LVA.1.4.2_0",,"0887600","LV003",57.333333,23.116667,1439
-"f3d8c32a",647900,3,"Kurzeme","Nicas novads","LVA.1.2.5_0",,"0647900","LV003",56.345833,21.064444,3152
-"a96c3f33",641401,3,"Kurzeme","Pavilostas novads","LVA.1.2.6_0",,"0641401","LV003",56.883333,21.166667,2532
-"ddefdbcb",641600,3,"Kurzeme","Priekules novads","LVA.1.2.7_0",,"0641600","LV003",56.45,21.583333,5067
-"2ed1ea4d",888301,3,"Kurzeme","Rojas novads","LVA.1.4.3_0",,"0888301","LV003",57.5,22.8,3427
-"a2a12a18",648500,3,"Kurzeme","Rucavas novads","LVA.1.2.8_0",,"0648500","LV003",56.159167,21.161944,1478
-"58507502",840200,3,"Kurzeme","Saldus novads","LVA.1.3.2_0","ChIJgS6cntmZ70YReWYLQs93atU","0840200","LV003",56.666667,22.5,22006
-"55a686b7",621200,3,"Kurzeme","Skrundas novads","LVA.1.1.3_0",,"0621200","LV003",56.666667,22,4661
-"9da09803",880200,3,"Kurzeme","Talsu novads","LVA.1.4.4_0","ChIJ84un2X8-7kYR0GqX0A2vNmA","0880200","LV003",57.25,22.6,27730
-"1e9031cf",649300,3,"Kurzeme","Vainodes novads","LVA.1.2.9_0",,"0649300","LV003",56.418472,21.852308,2285
-"bdeff8da",270000,3,"Kurzeme","Ventspils","LVA.1.5.1_0","ChIJ2UhCZpbI8UYRxC6oJkf7jUw","0270000","LV003",57.3937,21.5647,34377
-"56fc4ba6",980200,3,"Kurzeme","Ventspils novads","LVA.1.5.2_0","ChIJM2P3qWfR8UYR9WWjzbapqVk","0980200","LV003",57.383333,21.55,10925
-"197a4fd2",604300,3,"Latgale","Aglonas novads","LVA.2.5.1_0",,"0604300","LV005",56.126111,27.014167,3191
-"7c888325",384400,3,"Latgale","Baltinavas novads","LVA.2.1.1_0",,"0384400","LV005",56.95,27.65,1387
-"f76768c0",380200,3,"Latgale","Balvu novads","LVA.2.1.2_0","ChIJ56N2q8biwUYRUP3yaM3PAAM","0380200","LV005",57.133333,27.25,11977
-"539ab153",684901,3,"Latgale","Ciblas novads","LVA.2.4.1_0",,"0684901","LV005",56.55,27.883333,2429
-"2ce201b9",601000,3,"Latgale","Dagdas novads","LVA.2.3.1_0",,"0601000","LV005",56.1,27.6167,6777
-"f40320e1",50000,3,"Latgale","Daugavpils","LVA.2.2.1_0","ChIJ28kB_zCUwkYRgPzyaM3PAAM","0050000","LV005",55.883333,26.533333,82604
-"2f92b579",440200,3,"Latgale","Daugavpils novads","LVA.2.2.2_0","ChIJY59FZ2eXwkYRcPzyaM3PAAM","0440200","LV005",55.883333,26.7,20149
-"55020039",440801,3,"Latgale","Ilukstes novads","LVA.2.2.3_0",,"0440801","LV005",55.9833,26.3,6615
-"1c924a78",681000,3,"Latgale","Karsavas novads","LVA.2.4.2_0",,"0681000","LV005",56.784162,27.688798,5278
-"79d4d39e",600202,3,"Latgale","Kraslavas novads","LVA.2.3.2_0","ChIJcY2GDNb9wkYRIP_yaM3PAAM","0600202","LV005",55.9,27.1667,14155
-"1c7dc344",761201,3,"Latgale","Livanu novads","LVA.2.5.2_0",,"0761201","LV005",56.366667,26.183333,10832
-"a7aaf973",680200,3,"Latgale","Ludzas novads","LVA.2.4.3_0",,"0680200","LV005",56.55,27.716667,12196
-"3dc8f59b",760202,3,"Latgale","Preilu novads","LVA.2.5.3_0","ChIJaWT1x4F8wkYRAAHzaM3PAAM","0760202","LV005",56.3,26.716667,9231
-"32af0d7a",210000,3,"Latgale","Rezekne","LVA.2.6.1_0","ChIJu_1xQ_oVwkYRkP3yaM3PAAM","0210000","LV005",56.509313,27.337589,35568
-"6cf62ad6",780200,3,"Latgale","Rezeknes novads","LVA.2.6.2_0","ChIJvQ6eAV8UwkYRgP3yaM3PAAM","0780200","LV005",56.512716,27.342739,24687
-"f76fa15c",766300,3,"Latgale","Riebinu novads","LVA.2.5.4_0",,"0766300","LV005",56.341406,26.801119,4625
-"6fff46fc",387500,3,"Latgale","Rugaju novads","LVA.2.1.3_0",,"0387500","LV005",57.000939,27.129692,2108
-"e9ad83a4",701800,3,"Latgale","Varaklanu novads","LVA.2.6.3_0",,"0701800","LV008",56.6,26.75,3056
-"db8f55f2",769101,3,"Latgale","Varkavas novads","LVA.2.5.5_0",,"0769101","LV005",56.196506,26.523628,1824
-"48d2a779",381600,3,"Latgale","Vilakas novads","LVA.2.1.4_0",,"0381600","LV005",57.166667,27.666667,4596
-"d9ddc865",781800,3,"Latgale","Vilanu novads","LVA.2.6.4_0",,"0781800","LV005",56.666667,26.916667,5522
-"65862b56",681801,3,"Latgale","Zilupes novads","LVA.2.4.4_0",,"0681801","LV005",56.3873,28.1212,2647
-"263f3827",804400,3,"Riga","Adažu novads","LVA.3.3.1_0","ChIJaY5J1d217kYR0AHzaM3PAAM","0804400","LV007",57.066667,24.333333,11391
-"a3a2f419",661000,3,"Riga","Alojas novads","LVA.3.1.1_0","ChIJF2WH5Qtt7EYREADzaM3PAAM","0661000","LV007",57.766667,24.866667,4630
-"2ee7ab74",804900,3,"Riga","Babites novads","LVA.3.3.2_0","ChIJ7YQ2x_Le7kYR4AHzaM3PAAM","0804900","LV007",56.95,23.95,10704
-"aad97b1e",800600,3,"Riga","Baldones novads","LVA.3.3.3_0","ChIJnUb2EL4p6UYRYAHzaM3PAAM","0800600","LV007",56.733333,24.383333,5468
-"9a0e23f0",805200,3,"Riga","Carnikavas novads","LVA.3.3.4_0","ChIJQ-_d0PG37kYR8AHzaM3PAAM","0805200","LV007",57.116667,24.266667,8738
-"53144e0c",905100,3,"Riga","Engures novads","LVA.3.4.1_0","ChIJaZaZz2f37kYR4ALzaM3PAAM","0905100","LV007",56.955,23.338056,7054
-"8b3f5870",806000,3,"Riga","Garkalnes novads","LVA.3.3.5_0","ChIJK6-k1anL7kYRAALzaM3PAAM","0806000","LV007",57.04751,24.420417,8557
-"ae0f6f0b",740600,3,"Riga","Ikškiles novads","LVA.3.3.6_0","ChIJexGGLhAw6UYR0ADzaM3PAAM","0740600","LV007",56.8167,24.4833,9708
-"18fb3171",801800,3,"Riga","Incukalna novads","LVA.3.3.7_0","ChIJA7z-5pBL6UYRwAHzaM3PAAM","0801800","LV007",57.083333,24.683333,7640
-"579932be",905700,3,"Riga","Jaunpils novads","LVA.3.4.2_0",,"0905700","LV007",56.733325,23.017556,2178
-"cefb2cb4",130000,3,"Riga","Jurmala","LVA.3.3.8_0","ChIJ1wAzb4fd7kYRaZBkQ8e5IAo","0130000","LV007",56.966667,23.75,49325
-"a9375794",901201,3,"Riga","Kandavas novads","LVA.3.4.3_0",,"0901201","LV007",57.041333,22.772996,7664
-"6539444a",741001,3,"Riga","Keguma novads","LVA.3.2.1_0","ChIJS9lvm-Qh6UYR4ADzaM3PAAM","0741001","LV007",56.733333,24.7,5344
-"a0475614",800800,3,"Riga","Kekavas novads","LVA.3.3.9_0","ChIJ7evHmlgr6UYRcAHzaM3PAAM","0800800","LV007",56.866667,24.116667,23698
-"84ee63ff",806900,3,"Riga","Krimuldas novads","LVA.3.3.10_0","ChIJZbqinJ1T6UYREALzaM3PAAM","0806900","LV007",57.214638,24.770692,4858
-"6230ec96",741401,3,"Riga","Lielvardes novads","LVA.3.2.2_0","ChIJtY0Mjw0Z6UYR8ADzaM3PAAM","0741401","LV007",56.7225,24.805,9643
-"189a4712",660200,3,"Riga","Limbažu novads","LVA.3.1.2_0","ChIJH-ONfQEE7EYRAADzaM3PAAM","0660200","LV007",57.516667,24.716667,16301
-"348a97c9",807400,3,"Riga","Malpils novads","LVA.3.3.11_0",,"0807400","LV007",57.010556,24.959722,3350
-"370e43a7",807600,3,"Riga","Marupes novads","LVA.3.3.12_0","ChIJrwZxoATa7kYRMALzaM3PAAM","0807600","LV007",56.906878,24.058336,20007
-"4708a6fb",740202,3,"Riga","Ogres novads","LVA.3.2.3_0","ChIJtfi6GykU6UYRwADzaM3PAAM","0740202","LV007",56.8461,25.0525,32997
-"16e860c9",801000,3,"Riga","Olaines novads","LVA.3.3.13_0","ChIJRZ4K7OEp70YRgAHzaM3PAAM","0801000","LV007",56.787222,23.941944,10840
-"01838621",10000,3,"Riga","Riga","LVA.3.3.14_0","ChIJ7T0H5bDP7kYRRazILQ-36rQ","0010000","LV006",56.948889,24.106389,632614
-"6ce9879f",808400,3,"Riga","Ropažu novads","LVA.3.3.15_0","ChIJ5anCoIU26UYRQALzaM3PAAM","0808400","LV007",56.971817,24.631764,6834
-"a4ab5cc5",661400,3,"Riga","Salacgrivas novads","LVA.3.1.3_0","ChIJg3b_VqoX7EYRIADzaM3PAAM","0661400","LV007",57.7681,24.3631,7228
-"156cb4a7",801200,3,"Riga","Salaspils novads","LVA.3.3.16_0","ChIJwTYJVmgt6UYRkAHzaM3PAAM","0801200","LV007",56.851667,24.350556,22659
-"11e1c815",801400,3,"Riga","Saulkrastu novads","LVA.3.3.17_0","ChIJeyAZjNiv7kYRoAHzaM3PAAM","0801400","LV007",57.25,24.416667,6532
-"d0d89c48",809200,3,"Riga","Sejas novads","LVA.3.3.18_0",,"0809200","LV007",57.152778,24.644444,2128
-"65622ced",801601,3,"Riga","Siguldas novads","LVA.3.3.19_0","ChIJkXWrnpFF6UYRsAHzaM3PAAM","0801601","LV007",57.15,24.866667,17761
-"d7d13494",809600,3,"Riga","Stopinu novads","LVA.3.3.20_0","ChIJdSH2xUnN7kYRYALzaM3PAAM","0809600","LV007",56.933333,24.283333,10845
-"668c0067",900200,3,"Riga","Tukuma novads","LVA.3.4.4_0","ChIJsQViO0n-7kYRwALzaM3PAAM","0900200","LV007",56.966667,23.15,27848
-"4857d6a1",360200,3,"Vidzeme","Aluksnes novads","LVA.4.1.1_0","ChIJ38YpX9Np6kYRMPzyaM3PAAM","0360200","LV008",57.416667,27.05,14153
-"5e7c25f3",424701,3,"Vidzeme","Amatas novads","LVA.4.2.1_0",,"0424701","LV008",57.2,25.15,4983
-"45c05377",360800,3,"Vidzeme","Apes novads","LVA.4.1.2_0",,"0360800","LV008",57.533333,26.683333,3295
-"6065a07b",964700,3,"Vidzeme","Beverinas novads","LVA.4.6.1_0",,"0964700","LV008",57.5,25.45,2949
-"015a43b1",967101,3,"Vidzeme","Burtnieku novads","LVA.4.6.2_0","ChIJRSQdQvWM60YRcAPzaM3PAAM","0967101","LV008",57.694722,25.275,7485
-"a0d240d9",420200,3,"Vidzeme","Cesu novads","LVA.4.2.2_0","ChIJk_kkTxxg6UYR0P3yaM3PAAM","0420200","LV008",57.2667,25.3833,16372
-"5111e4c1",700800,3,"Vidzeme","Cesvaines novads","LVA.4.4.1_0",,"0700800","LV008",56.9706,26.3054,2339
-"6e1787a0",705500,3,"Vidzeme","Erglu novads","LVA.4.4.2_0",,"0705500","LV008",56.8975,25.6375,2689
-"114ec01c",500200,3,"Vidzeme","Gulbenes novads","LVA.4.3.1_0","ChIJNwMAATIj6kYRoPzyaM3PAAM","0500200","LV008",57.181944,26.763889,20079
-"91c77200",425700,3,"Vidzeme","Jaunpiebalgas novads","LVA.4.2.3_0",,"0425700","LV008",57.176667,26.035278,2019
-"e9ccf5c7",960200,3,"Vidzeme","Kocenu novads","LVA.4.6.3_0","ChIJf5Eg6c7w60YRMAPzaM3PAAM","0960200","LV008",57.520188,25.338191,5832
-"186e27bc",421200,3,"Vidzeme","Ligatnes novads","LVA.4.2.4_0",,"0421200","LV008",57.233333,25.05,1008
-"e0b77ac0",701400,3,"Vidzeme","Lubanas novads","LVA.4.4.3_0",,"0701400","LV008",56.9,26.716667,2226
-"5c866117",700200,3,"Vidzeme","Madonas novads","LVA.4.4.4_0","ChIJxz3NtByT6UYRyVYQ5PVr8tU","0700200","LV008",56.85,26.216667,22261
-"52f446cc",961000,3,"Vidzeme","Mazsalacas novads","LVA.4.6.4_0",,"0961000","LV008",57.866667,25.05,2932
-"75d9a749",967300,3,"Vidzeme","Naukšenu novads","LVA.4.6.5_0",,"0967300","LV008",57.883611,25.452778,1701
-"384a6ee5",427500,3,"Vidzeme","Pargaujas novads","LVA.4.2.5_0",,"0427500","LV008",57.370911,25.030775,3623
-"3cc71257",427300,3,"Vidzeme","Priekulu novads","LVA.4.2.6_0","ChIJ8ZHRylPn60YREP7yaM3PAAM","0427300","LV008",57.314167,25.359722,7607
-"3bceba8b",427700,3,"Vidzeme","Raunas novads","LVA.4.2.7_0",,"0427700","LV008",57.332222,25.609722,3023
-"56793a7e",961600,3,"Vidzeme","Rujienas novads","LVA.4.6.6_0",,"0961600","LV008",57.883333,25.333333,4917
-"2cb9691e",941600,3,"Vidzeme","Smiltenes novads","LVA.4.5.1_0","ChIJ0bo4kCzJ60YREAPzaM3PAAM","0941600","LV008",57.423,25.9003,12015
-"26274414",941800,3,"Vidzeme","Strencu novads","LVA.4.5.2_0",,"0941800","LV008",57.616667,25.683333,2915
-"930ca6a7",940200,3,"Vidzeme","Valkas novads","LVA.4.5.3_0",,"0940200","LV008",57.7729106,26.0160341,7692
-"c72fabba",250000,3,"Vidzeme","Valmiera","LVA.4.6.7_0","ChIJD0I_WrSL60YRIP7yaM3PAAM","0250000","LV008",57.5411,25.4275,23125
-"dc186564",429300,3,"Vidzeme","Vecpiebalgas novads","LVA.4.2.8_0",,"0429300","LV008",57.061944,25.810833,3543
-"bdd77061",320200,3,"Zemgale","Aizkraukles novads","LVA.5.1.1_0","ChIJC_rQKDwE6UYR0PzyaM3PAAM","0320200","LV009",56.604167,25.253889,8036
-"9399b06a",560800,3,"Zemgale","Aknistes novads","LVA.5.4.1_0",,"0560800","LV009",56.160556,25.798056,2492
-"58c563cf",460800,3,"Zemgale","Auces novads","LVA.5.3.1_0",,"0460800","LV009",56.45,22.883333,6153
-"da1213b9",400200,3,"Zemgale","Bauskas novads","LVA.5.2.1_0","ChIJ63DqssHG6EYRMeF2FoJmtOI","0400200","LV009",56.4167,24.2833,22784
-"5552e619",460200,3,"Zemgale","Dobeles novads","LVA.5.3.2_0","ChIJYTM24UoS70YRcP7yaM3PAAM","0460200","LV009",56.65,23.2333,19517
-"fbf430d7",406400,3,"Zemgale","Iecavas novads","LVA.5.2.2_0","ChIJyyzFgt7T6EYRoP3yaM3PAAM","0406400","LV009",56.5833,24.1833,8359
-"06efc36a",321000,3,"Zemgale","Jaunjelgavas novads","LVA.5.1.2_0",,"0321000","LV009",56.514806,25.30426,5140
-"b43b7fd4",110000,3,"Zemgale","Jekabpils","LVA.5.4.2_0","ChIJV08sdk3L6UYRwPzyaM3PAAM","0110000","LV009",56.5,25.85,22076
-"9e0e35bc",560200,3,"Zemgale","Jekabpils novads","LVA.5.4.3_0","ChIJA6LdYk8y6EYR0P7yaM3PAAM","0560200","LV009",56.495443,25.868549,4293
-"31f3cde0",90000,3,"Zemgale","Jelgava","LVA.5.5.1_0","ChIJjxbtbksl70YRsPzyaM3PAAM","0090000","LV009",56.65,23.712778,55972
-"e4ce66dc",540200,3,"Zemgale","Jelgavas novads","LVA.5.5.2_0","ChIJAZwgiUAw70YRNWNx08m9U44","0540200","LV009",56.652608,23.722659,22011
-"9afa91e4",326100,3,"Zemgale","Kokneses novads","LVA.5.1.3_0",,"0326100","LV009",56.65,25.4333,5013
-"b7308581",566900,3,"Zemgale","Krustpils novads","LVA.5.4.4_0",,"0566900","LV009",56.544167,26.096111,5496
-"2246f681",327100,3,"Zemgale","Neretas novads","LVA.5.1.4_0",,"0327100","LV009",56.204444,25.307778,3376
-"b069cb7d",546701,3,"Zemgale","Ozolnieku novads","LVA.5.5.3_0","ChIJfffcNd4t70YRwP7yaM3PAAM","0546701","LV009",56.690831,23.787931,9969
-"01e66bb6",321400,3,"Zemgale","Plavinu novads","LVA.5.4.5_0",,"0321400","LV009",56.6,25.716667,4904
-"410ee9eb",407700,3,"Zemgale","Rundales novads","LVA.5.2.3_0",,"0407700","LV009",56.42,24.009722,3356
-"5d71dfb8",568700,3,"Zemgale","Salas novads","LVA.5.4.6_0",,"0568700","LV009",56.504164,25.762239,3332
-"7863588e",328200,3,"Zemgale","Skriveru novads","LVA.5.1.5_0",,"0328200","LV009",56.646667,25.122222,3339
-"9cb32117",468900,3,"Zemgale","Tervetes novads","LVA.5.3.3_0",,"0468900","LV009",56.450981,23.349453,3339
-"a2554ab6",409500,3,"Zemgale","Vecumnieku novads","LVA.5.2.4_0",,"0409500","LV009",56.606389,24.522222,7807
-"2b25d70f",561800,3,"Zemgale","Viesites novads","LVA.5.4.7_0",,"0561800","LV009",56.35,25.55,3567
+"id","id_gov.lv","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population","population_data_source","population_data_source_url"
+,,,,,,,"-",,,,,,
+"6553bcae",640600,3,"Kurzeme","Aizputes novads","LVA.1.2.1_0",,"0640600","LV003",56.716667,21.6,4073,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"62787685",624200,3,"Kurzeme","Alsungas novads","LVA.1.1.1_0",,"0624200","LV003",56.981667,21.566944,1289,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"285eed48",840601,3,"Kurzeme","Brocenu novads","LVA.1.3.1_0",,"0840601","LV003",56.7333,22.65,5634,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a838d668",885100,3,"Kurzeme","Dundagas novads","LVA.1.4.1_0",,"0885100","LV003",57.516667,22.35,3641,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"18caa132",640801,3,"Kurzeme","Durbes novads","LVA.1.2.2_0",,"0640801","LV003",56.6167,21.3667,2626,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"d962a779",641000,3,"Kurzeme","Grobinas novads","LVA.1.2.3_0","ChIJT8Zmekyq-kYRoP_yaM3PAAM","0641000","LV003",56.5667,21.1,8394,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"ed1ae1d2",620200,3,"Kurzeme","Kuldigas novads","LVA.1.1.2_0","ChIJiXwf29Xc70YR6ybmN2i8sC4","0620200","LV003",56.9667,21.9667,22313,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"3b7b8a74",170000,3,"Kurzeme","Liepaja","LVA.1.2.4_0","ChIJNWS6eNKn-kYRMP3yaM3PAAM","0170000","LV003",56.511667,21.013889,68945,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"077e0866",887600,3,"Kurzeme","Mersraga novads","LVA.1.4.2_0",,"0887600","LV003",57.333333,23.116667,1439,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"f3d8c32a",647900,3,"Kurzeme","Nicas novads","LVA.1.2.5_0",,"0647900","LV003",56.345833,21.064444,3152,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a96c3f33",641401,3,"Kurzeme","Pavilostas novads","LVA.1.2.6_0",,"0641401","LV003",56.883333,21.166667,2532,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"ddefdbcb",641600,3,"Kurzeme","Priekules novads","LVA.1.2.7_0",,"0641600","LV003",56.45,21.583333,5067,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"2ed1ea4d",888301,3,"Kurzeme","Rojas novads","LVA.1.4.3_0",,"0888301","LV003",57.5,22.8,3427,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a2a12a18",648500,3,"Kurzeme","Rucavas novads","LVA.1.2.8_0",,"0648500","LV003",56.159167,21.161944,1478,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"58507502",840200,3,"Kurzeme","Saldus novads","LVA.1.3.2_0","ChIJgS6cntmZ70YReWYLQs93atU","0840200","LV003",56.666667,22.5,22006,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"55a686b7",621200,3,"Kurzeme","Skrundas novads","LVA.1.1.3_0",,"0621200","LV003",56.666667,22,4661,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"9da09803",880200,3,"Kurzeme","Talsu novads","LVA.1.4.4_0","ChIJ84un2X8-7kYR0GqX0A2vNmA","0880200","LV003",57.25,22.6,27730,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"1e9031cf",649300,3,"Kurzeme","Vainodes novads","LVA.1.2.9_0",,"0649300","LV003",56.418472,21.852308,2285,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"bdeff8da",270000,3,"Kurzeme","Ventspils","LVA.1.5.1_0","ChIJ2UhCZpbI8UYRxC6oJkf7jUw","0270000","LV003",57.3937,21.5647,34377,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"56fc4ba6",980200,3,"Kurzeme","Ventspils novads","LVA.1.5.2_0","ChIJM2P3qWfR8UYR9WWjzbapqVk","0980200","LV003",57.383333,21.55,10925,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"197a4fd2",604300,3,"Latgale","Aglonas novads","LVA.2.5.1_0",,"0604300","LV005",56.126111,27.014167,3191,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"7c888325",384400,3,"Latgale","Baltinavas novads","LVA.2.1.1_0",,"0384400","LV005",56.95,27.65,1387,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"f76768c0",380200,3,"Latgale","Balvu novads","LVA.2.1.2_0","ChIJ56N2q8biwUYRUP3yaM3PAAM","0380200","LV005",57.133333,27.25,11977,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"539ab153",684901,3,"Latgale","Ciblas novads","LVA.2.4.1_0",,"0684901","LV005",56.55,27.883333,2429,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"2ce201b9",601000,3,"Latgale","Dagdas novads","LVA.2.3.1_0",,"0601000","LV005",56.1,27.6167,6777,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"f40320e1",50000,3,"Latgale","Daugavpils","LVA.2.2.1_0","ChIJ28kB_zCUwkYRgPzyaM3PAAM","0050000","LV005",55.883333,26.533333,82604,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"2f92b579",440200,3,"Latgale","Daugavpils novads","LVA.2.2.2_0","ChIJY59FZ2eXwkYRcPzyaM3PAAM","0440200","LV005",55.883333,26.7,20149,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"55020039",440801,3,"Latgale","Ilukstes novads","LVA.2.2.3_0",,"0440801","LV005",55.9833,26.3,6615,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"1c924a78",681000,3,"Latgale","Karsavas novads","LVA.2.4.2_0",,"0681000","LV005",56.784162,27.688798,5278,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"79d4d39e",600202,3,"Latgale","Kraslavas novads","LVA.2.3.2_0","ChIJcY2GDNb9wkYRIP_yaM3PAAM","0600202","LV005",55.9,27.1667,14155,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"1c7dc344",761201,3,"Latgale","Livanu novads","LVA.2.5.2_0",,"0761201","LV005",56.366667,26.183333,10832,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a7aaf973",680200,3,"Latgale","Ludzas novads","LVA.2.4.3_0",,"0680200","LV005",56.55,27.716667,12196,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"3dc8f59b",760202,3,"Latgale","Preilu novads","LVA.2.5.3_0","ChIJaWT1x4F8wkYRAAHzaM3PAAM","0760202","LV005",56.3,26.716667,9231,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"32af0d7a",210000,3,"Latgale","Rezekne","LVA.2.6.1_0","ChIJu_1xQ_oVwkYRkP3yaM3PAAM","0210000","LV005",56.509313,27.337589,35568,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"6cf62ad6",780200,3,"Latgale","Rezeknes novads","LVA.2.6.2_0","ChIJvQ6eAV8UwkYRgP3yaM3PAAM","0780200","LV005",56.512716,27.342739,24687,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"f76fa15c",766300,3,"Latgale","Riebinu novads","LVA.2.5.4_0",,"0766300","LV005",56.341406,26.801119,4625,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"6fff46fc",387500,3,"Latgale","Rugaju novads","LVA.2.1.3_0",,"0387500","LV005",57.000939,27.129692,2108,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"e9ad83a4",701800,3,"Latgale","Varaklanu novads","LVA.2.6.3_0",,"0701800","LV008",56.6,26.75,3056,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"db8f55f2",769101,3,"Latgale","Varkavas novads","LVA.2.5.5_0",,"0769101","LV005",56.196506,26.523628,1824,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"48d2a779",381600,3,"Latgale","Vilakas novads","LVA.2.1.4_0",,"0381600","LV005",57.166667,27.666667,4596,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"d9ddc865",781800,3,"Latgale","Vilanu novads","LVA.2.6.4_0",,"0781800","LV005",56.666667,26.916667,5522,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"65862b56",681801,3,"Latgale","Zilupes novads","LVA.2.4.4_0",,"0681801","LV005",56.3873,28.1212,2647,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"263f3827",804400,3,"Riga","Adažu novads","LVA.3.3.1_0","ChIJaY5J1d217kYR0AHzaM3PAAM","0804400","LV007",57.066667,24.333333,11391,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a3a2f419",661000,3,"Riga","Alojas novads","LVA.3.1.1_0","ChIJF2WH5Qtt7EYREADzaM3PAAM","0661000","LV007",57.766667,24.866667,4630,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"2ee7ab74",804900,3,"Riga","Babites novads","LVA.3.3.2_0","ChIJ7YQ2x_Le7kYR4AHzaM3PAAM","0804900","LV007",56.95,23.95,10704,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"aad97b1e",800600,3,"Riga","Baldones novads","LVA.3.3.3_0","ChIJnUb2EL4p6UYRYAHzaM3PAAM","0800600","LV007",56.733333,24.383333,5468,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"9a0e23f0",805200,3,"Riga","Carnikavas novads","LVA.3.3.4_0","ChIJQ-_d0PG37kYR8AHzaM3PAAM","0805200","LV007",57.116667,24.266667,8738,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"53144e0c",905100,3,"Riga","Engures novads","LVA.3.4.1_0","ChIJaZaZz2f37kYR4ALzaM3PAAM","0905100","LV007",56.955,23.338056,7054,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"8b3f5870",806000,3,"Riga","Garkalnes novads","LVA.3.3.5_0","ChIJK6-k1anL7kYRAALzaM3PAAM","0806000","LV007",57.04751,24.420417,8557,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"ae0f6f0b",740600,3,"Riga","Ikškiles novads","LVA.3.3.6_0","ChIJexGGLhAw6UYR0ADzaM3PAAM","0740600","LV007",56.8167,24.4833,9708,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"18fb3171",801800,3,"Riga","Incukalna novads","LVA.3.3.7_0","ChIJA7z-5pBL6UYRwAHzaM3PAAM","0801800","LV007",57.083333,24.683333,7640,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"579932be",905700,3,"Riga","Jaunpils novads","LVA.3.4.2_0",,"0905700","LV007",56.733325,23.017556,2178,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"cefb2cb4",130000,3,"Riga","Jurmala","LVA.3.3.8_0","ChIJ1wAzb4fd7kYRaZBkQ8e5IAo","0130000","LV007",56.966667,23.75,49325,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a9375794",901201,3,"Riga","Kandavas novads","LVA.3.4.3_0",,"0901201","LV007",57.041333,22.772996,7664,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"6539444a",741001,3,"Riga","Keguma novads","LVA.3.2.1_0","ChIJS9lvm-Qh6UYR4ADzaM3PAAM","0741001","LV007",56.733333,24.7,5344,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a0475614",800800,3,"Riga","Kekavas novads","LVA.3.3.9_0","ChIJ7evHmlgr6UYRcAHzaM3PAAM","0800800","LV007",56.866667,24.116667,23698,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"84ee63ff",806900,3,"Riga","Krimuldas novads","LVA.3.3.10_0","ChIJZbqinJ1T6UYREALzaM3PAAM","0806900","LV007",57.214638,24.770692,4858,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"6230ec96",741401,3,"Riga","Lielvardes novads","LVA.3.2.2_0","ChIJtY0Mjw0Z6UYR8ADzaM3PAAM","0741401","LV007",56.7225,24.805,9643,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"189a4712",660200,3,"Riga","Limbažu novads","LVA.3.1.2_0","ChIJH-ONfQEE7EYRAADzaM3PAAM","0660200","LV007",57.516667,24.716667,16301,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"348a97c9",807400,3,"Riga","Malpils novads","LVA.3.3.11_0",,"0807400","LV007",57.010556,24.959722,3350,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"370e43a7",807600,3,"Riga","Marupes novads","LVA.3.3.12_0","ChIJrwZxoATa7kYRMALzaM3PAAM","0807600","LV007",56.906878,24.058336,20007,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"4708a6fb",740202,3,"Riga","Ogres novads","LVA.3.2.3_0","ChIJtfi6GykU6UYRwADzaM3PAAM","0740202","LV007",56.8461,25.0525,32997,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"16e860c9",801000,3,"Riga","Olaines novads","LVA.3.3.13_0","ChIJRZ4K7OEp70YRgAHzaM3PAAM","0801000","LV007",56.787222,23.941944,10840,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"01838621",10000,3,"Riga","Riga","LVA.3.3.14_0","ChIJ7T0H5bDP7kYRRazILQ-36rQ","0010000","LV006",56.948889,24.106389,632614,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"6ce9879f",808400,3,"Riga","Ropažu novads","LVA.3.3.15_0","ChIJ5anCoIU26UYRQALzaM3PAAM","0808400","LV007",56.971817,24.631764,6834,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a4ab5cc5",661400,3,"Riga","Salacgrivas novads","LVA.3.1.3_0","ChIJg3b_VqoX7EYRIADzaM3PAAM","0661400","LV007",57.7681,24.3631,7228,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"156cb4a7",801200,3,"Riga","Salaspils novads","LVA.3.3.16_0","ChIJwTYJVmgt6UYRkAHzaM3PAAM","0801200","LV007",56.851667,24.350556,22659,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"11e1c815",801400,3,"Riga","Saulkrastu novads","LVA.3.3.17_0","ChIJeyAZjNiv7kYRoAHzaM3PAAM","0801400","LV007",57.25,24.416667,6532,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"d0d89c48",809200,3,"Riga","Sejas novads","LVA.3.3.18_0",,"0809200","LV007",57.152778,24.644444,2128,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"65622ced",801601,3,"Riga","Siguldas novads","LVA.3.3.19_0","ChIJkXWrnpFF6UYRsAHzaM3PAAM","0801601","LV007",57.15,24.866667,17761,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"d7d13494",809600,3,"Riga","Stopinu novads","LVA.3.3.20_0","ChIJdSH2xUnN7kYRYALzaM3PAAM","0809600","LV007",56.933333,24.283333,10845,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"668c0067",900200,3,"Riga","Tukuma novads","LVA.3.4.4_0","ChIJsQViO0n-7kYRwALzaM3PAAM","0900200","LV007",56.966667,23.15,27848,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"4857d6a1",360200,3,"Vidzeme","Aluksnes novads","LVA.4.1.1_0","ChIJ38YpX9Np6kYRMPzyaM3PAAM","0360200","LV008",57.416667,27.05,14153,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"5e7c25f3",424701,3,"Vidzeme","Amatas novads","LVA.4.2.1_0",,"0424701","LV008",57.2,25.15,4983,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"45c05377",360800,3,"Vidzeme","Apes novads","LVA.4.1.2_0",,"0360800","LV008",57.533333,26.683333,3295,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"6065a07b",964700,3,"Vidzeme","Beverinas novads","LVA.4.6.1_0",,"0964700","LV008",57.5,25.45,2949,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"015a43b1",967101,3,"Vidzeme","Burtnieku novads","LVA.4.6.2_0","ChIJRSQdQvWM60YRcAPzaM3PAAM","0967101","LV008",57.694722,25.275,7485,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a0d240d9",420200,3,"Vidzeme","Cesu novads","LVA.4.2.2_0","ChIJk_kkTxxg6UYR0P3yaM3PAAM","0420200","LV008",57.2667,25.3833,16372,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"5111e4c1",700800,3,"Vidzeme","Cesvaines novads","LVA.4.4.1_0",,"0700800","LV008",56.9706,26.3054,2339,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"6e1787a0",705500,3,"Vidzeme","Erglu novads","LVA.4.4.2_0",,"0705500","LV008",56.8975,25.6375,2689,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"114ec01c",500200,3,"Vidzeme","Gulbenes novads","LVA.4.3.1_0","ChIJNwMAATIj6kYRoPzyaM3PAAM","0500200","LV008",57.181944,26.763889,20079,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"91c77200",425700,3,"Vidzeme","Jaunpiebalgas novads","LVA.4.2.3_0",,"0425700","LV008",57.176667,26.035278,2019,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"e9ccf5c7",960200,3,"Vidzeme","Kocenu novads","LVA.4.6.3_0","ChIJf5Eg6c7w60YRMAPzaM3PAAM","0960200","LV008",57.520188,25.338191,5832,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"186e27bc",421200,3,"Vidzeme","Ligatnes novads","LVA.4.2.4_0",,"0421200","LV008",57.233333,25.05,1008,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"e0b77ac0",701400,3,"Vidzeme","Lubanas novads","LVA.4.4.3_0",,"0701400","LV008",56.9,26.716667,2226,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"5c866117",700200,3,"Vidzeme","Madonas novads","LVA.4.4.4_0","ChIJxz3NtByT6UYRyVYQ5PVr8tU","0700200","LV008",56.85,26.216667,22261,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"52f446cc",961000,3,"Vidzeme","Mazsalacas novads","LVA.4.6.4_0",,"0961000","LV008",57.866667,25.05,2932,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"75d9a749",967300,3,"Vidzeme","Naukšenu novads","LVA.4.6.5_0",,"0967300","LV008",57.883611,25.452778,1701,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"384a6ee5",427500,3,"Vidzeme","Pargaujas novads","LVA.4.2.5_0",,"0427500","LV008",57.370911,25.030775,3623,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"3cc71257",427300,3,"Vidzeme","Priekulu novads","LVA.4.2.6_0","ChIJ8ZHRylPn60YREP7yaM3PAAM","0427300","LV008",57.314167,25.359722,7607,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"3bceba8b",427700,3,"Vidzeme","Raunas novads","LVA.4.2.7_0",,"0427700","LV008",57.332222,25.609722,3023,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"56793a7e",961600,3,"Vidzeme","Rujienas novads","LVA.4.6.6_0",,"0961600","LV008",57.883333,25.333333,4917,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"2cb9691e",941600,3,"Vidzeme","Smiltenes novads","LVA.4.5.1_0","ChIJ0bo4kCzJ60YREAPzaM3PAAM","0941600","LV008",57.423,25.9003,12015,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"26274414",941800,3,"Vidzeme","Strencu novads","LVA.4.5.2_0",,"0941800","LV008",57.616667,25.683333,2915,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"930ca6a7",940200,3,"Vidzeme","Valkas novads","LVA.4.5.3_0",,"0940200","LV008",57.7729106,26.0160341,7692,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"c72fabba",250000,3,"Vidzeme","Valmiera","LVA.4.6.7_0","ChIJD0I_WrSL60YRIP7yaM3PAAM","0250000","LV008",57.5411,25.4275,23125,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"dc186564",429300,3,"Vidzeme","Vecpiebalgas novads","LVA.4.2.8_0",,"0429300","LV008",57.061944,25.810833,3543,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"bdd77061",320200,3,"Zemgale","Aizkraukles novads","LVA.5.1.1_0","ChIJC_rQKDwE6UYR0PzyaM3PAAM","0320200","LV009",56.604167,25.253889,8036,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"9399b06a",560800,3,"Zemgale","Aknistes novads","LVA.5.4.1_0",,"0560800","LV009",56.160556,25.798056,2492,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"58c563cf",460800,3,"Zemgale","Auces novads","LVA.5.3.1_0",,"0460800","LV009",56.45,22.883333,6153,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"da1213b9",400200,3,"Zemgale","Bauskas novads","LVA.5.2.1_0","ChIJ63DqssHG6EYRMeF2FoJmtOI","0400200","LV009",56.4167,24.2833,22784,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"5552e619",460200,3,"Zemgale","Dobeles novads","LVA.5.3.2_0","ChIJYTM24UoS70YRcP7yaM3PAAM","0460200","LV009",56.65,23.2333,19517,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"fbf430d7",406400,3,"Zemgale","Iecavas novads","LVA.5.2.2_0","ChIJyyzFgt7T6EYRoP3yaM3PAAM","0406400","LV009",56.5833,24.1833,8359,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"06efc36a",321000,3,"Zemgale","Jaunjelgavas novads","LVA.5.1.2_0",,"0321000","LV009",56.514806,25.30426,5140,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"b43b7fd4",110000,3,"Zemgale","Jekabpils","LVA.5.4.2_0","ChIJV08sdk3L6UYRwPzyaM3PAAM","0110000","LV009",56.5,25.85,22076,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"9e0e35bc",560200,3,"Zemgale","Jekabpils novads","LVA.5.4.3_0","ChIJA6LdYk8y6EYR0P7yaM3PAAM","0560200","LV009",56.495443,25.868549,4293,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"31f3cde0",90000,3,"Zemgale","Jelgava","LVA.5.5.1_0","ChIJjxbtbksl70YRsPzyaM3PAAM","0090000","LV009",56.65,23.712778,55972,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"e4ce66dc",540200,3,"Zemgale","Jelgavas novads","LVA.5.5.2_0","ChIJAZwgiUAw70YRNWNx08m9U44","0540200","LV009",56.652608,23.722659,22011,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"9afa91e4",326100,3,"Zemgale","Kokneses novads","LVA.5.1.3_0",,"0326100","LV009",56.65,25.4333,5013,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"b7308581",566900,3,"Zemgale","Krustpils novads","LVA.5.4.4_0",,"0566900","LV009",56.544167,26.096111,5496,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"2246f681",327100,3,"Zemgale","Neretas novads","LVA.5.1.4_0",,"0327100","LV009",56.204444,25.307778,3376,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"b069cb7d",546701,3,"Zemgale","Ozolnieku novads","LVA.5.5.3_0","ChIJfffcNd4t70YRwP7yaM3PAAM","0546701","LV009",56.690831,23.787931,9969,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"01e66bb6",321400,3,"Zemgale","Plavinu novads","LVA.5.4.5_0",,"0321400","LV009",56.6,25.716667,4904,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"410ee9eb",407700,3,"Zemgale","Rundales novads","LVA.5.2.3_0",,"0407700","LV009",56.42,24.009722,3356,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"5d71dfb8",568700,3,"Zemgale","Salas novads","LVA.5.4.6_0",,"0568700","LV009",56.504164,25.762239,3332,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"7863588e",328200,3,"Zemgale","Skriveru novads","LVA.5.1.5_0",,"0328200","LV009",56.646667,25.122222,3339,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"9cb32117",468900,3,"Zemgale","Tervetes novads","LVA.5.3.3_0",,"0468900","LV009",56.450981,23.349453,3339,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"a2554ab6",409500,3,"Zemgale","Vecumnieku novads","LVA.5.2.4_0",,"0409500","LV009",56.606389,24.522222,7807,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"
+"2b25d70f",561800,3,"Zemgale","Viesites novads","LVA.5.4.7_0",,"0561800","LV009",56.35,25.55,3567,"Oficiālās statistikas portāls (2019)","https://data.stat.gov.lv/pxweb/en/OSP_PUB/START__POP__IR__IRD/IRD060/"

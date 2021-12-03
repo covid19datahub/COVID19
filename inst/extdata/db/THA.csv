@@ -1,79 +1,79 @@
-"id","id_go.th","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_local","latitude","longitude","population"
-,,,,,,,"-",,,
-"65254d79","อำนาจเจริญ",2,"Amnat Charoen",,"Amnat Charoen Province","THA.1_1","37",15.908945085,104.730609022451,283732
-"ec644437","อ่างทอง",2,"Ang Thong",,"Ang Thong Province","THA.2_1","15",14.618255615,100.353729582696,254292
-"eaf6ef3e","กรุงเทพมหานคร",2,"Bangkok",,"Bangkok","THA.3_1","10",13.72371626,100.603503271283,8305218
-"19e9965c","บึงกาฬ",2,"Bueng Kan",,"Bueng Kan Province","THA.4_1","38",18.10705566,103.704676556213,362754
-"c84ed26d","บุรีรัมย์",2,"Buri Ram",,"Buri Ram Province","THA.5_1","31",14.961830615,103.065677421309,1274921
-"83b3335b","ฉะเชิงเทรา",2,"Chachoengsao",,"Chachoengsao Province","THA.6_1","24",13.576500895,101.564268900379,715603
-"cef35d83","ชัยนาท",2,"Chai Nat",,"Chai Nat Province","THA.7_1","18",15.159755705,100.038590183212,305587
-"58191b0a","ชัยภูมิ",2,"Chaiyaphum",,"Chaiyaphum Province","THA.8_1","36",16.021924975,101.842337613214,963907
-"173887d6","จันทบุรี",2,"Chanthaburi",,"Chanthaburi Province","THA.9_1","22",12.82004118,102.176153971009,485611
-"3eb69991","เชียงใหม่",2,"Chiang Mai",,"Chiang Mai Province","THA.10_1","50",18.708271025,98.72501873968,1737041
-"dc8d1ce8","เชียงราย",2,"Chiang Rai",,"Chiang Rai Province","THA.11_1","57",19.73073578,99.8848304886179,1172928
-"95661035","ชลบุรี",2,"Chon Buri",,"Chon Buri Province","THA.12_1","20",13.096529005,101.226436527181,1555358
-"700c0c15","ชุมพร",2,"Chumphon",,"Chumphon Province","THA.13_1","86",10.316940785,99.0356917504186,467801
-"a25f44d1","กาฬสินธุ์",2,"Kalasin",,"Kalasin Province","THA.14_1","46",16.639864925,103.685787415205,824538
-"cf280913","กำแพงเพชร",2,"Kamphaeng Phet",,"Kamphaeng Phet Province","THA.15_1","62",16.382061005,99.5113442596645,797391
-"d2782c40","กาญจนบุรี",2,"Kanchanaburi",,"Kanchanaburi Province","THA.16_1","71",14.692010405,99.0775125497602,801519
-"af15703f","ขอนแก่น",2,"Khon Kaen",,"Khon Kaen Province","THA.17_1","40",16.359140395,102.679125788123,1741980
-"5b042aea","กระบี่",2,"Krabi",,"Krabi Province","THA.18_1","81",8.16685057,99.0212020660024,362203
-"c6166769","ลำปาง",2,"Lampang",,"Lampang Province","THA.19_1","52",18.31083012,99.5268925265779,743143
-"b920f2ac","ลำพูน",2,"Lamphun",,"Lamphun Province","THA.20_1","51",18.06552029,98.9410745125774,412741
-"fa353b66","เลย",2,"Loei",,"Loei Province","THA.21_1","42",17.48425102,101.644848045172,546028
-"ec035efe","ลพบุรี",2,"Lop Buri",,"Lop Buri Province","THA.22_1","16",15.116841315,100.942443640411,769925
-"981016e2","แม่ฮ่องสอน",2,"Mae Hong Son",,"Mae Hong Son Province","THA.23_1","58",18.7238512,97.9313149299914,209153
-"dee199d6","มหาสารคาม",2,"Maha Sarakham",,"Maha Sarakham Province","THA.24_1","44",16.02332115,103.180173422371,827639
-"d1bc47cb","มุกดาหาร",2,"Mukdahan",,"Mukdahan Province","THA.25_1","49",16.54398537,104.482448130175,357339
-"6c3d711c","นครนายก",2,"Nakhon Nayok",,"Nakhon Nayok Province","THA.26_1","26",14.235105515,101.163736726894,246868
-"a69601e8","นครปฐม",2,"Nakhon Pathom",,"Nakhon Pathom Province","THA.27_1","73",13.92753029,100.097617917624,943892
-"89a661c5","นครพนม",2,"Nakhon Phanom",,"Nakhon Phanom Province","THA.28_1","48",17.40478134,104.601900745352,583726
-"265c5a21","นครราชสีมา",2,"Nakhon Ratchasima",,"Nakhon Ratchasima Province","THA.29_1","30",14.96294069,102.07216460275,2525975
-"a0c08a90","นครสวรรค์",2,"Nakhon Sawan",,"Nakhon Sawan Province","THA.30_1","60",15.624799725,100.382304150435,992749
-"86e9d769","นครศรีธรรมราช",2,"Nakhon Si Thammarat",,"Nakhon Si Thammarat Province","THA.31_1","80",8.57927036,99.7188152350827,1450466
-"e0f4533d","น่าน",2,"Nan",,"Nan Province","THA.32_1","55",18.821559905,100.795544324176,452814
-"012af312","นราธิวาส",2,"Narathiwat",,"Narathiwat Province","THA.33_1","96",6.186445,101.73183575466,670002
-"2546c8b6","หนองบัวลำภู",2,"Nong Bua Lam Phu",,"Nong Bua Lam Phu Province","THA.34_1","39",17.22139454,102.308051530652,485974
-"386e4d5a","หนองคาย",2,"Nong Khai",,"Nong Khai Province","THA.35_1","43",17.946799275,103.121630574456,458772
-"92dffdff","นนทบุรี",2,"Nonthaburi",,"Nonthaburi Province","THA.36_1","12",13.96322012,100.384127023799,1334083
-"1d375278","ปทุมธานี",2,"Pathum Thani",,"Pathum Thani Province","THA.37_1","13",14.09393549,100.628758262537,1327147
-"28f6b671","ปัตตานี",2,"Pattani",,"Pattani Province","THA.38_1","94",6.75062203,101.321823708907,609015
-"136bdfd2","พังงา",2,"Phangnga",,"Phang-nga Province","THA.39_1","82",8.73915863,98.4187931685927,258535
-"6ff659c0","พัทลุง",2,"Phatthalung",,"Phatthalung Province","THA.40_1","93",7.491511105,100.051674891752,480976
-"6248d5f0","พะเยา",2,"Phayao",,"Phayao Province","THA.41_1","56",19.268546105,100.15608027677,41738
-"3005bb50","เพชรบูรณ์",2,"Phetchabun",,"Phetchabun Province","THA.42_1","67",16.22494888,101.036566843982,940076
-"583ca60d","เพชรบุรี",2,"Phetchaburi",,"Phetchaburi Province","THA.43_1","76",12.94158983,99.6025428471301,472589
-"0b8e34fe","พิจิตร",2,"Phichit",,"Phichit Province","THA.44_1","66",16.278190615,100.346709709851,548242
-"4cdbb7de","พิษณุโลก",2,"Phitsanulok",,"Phitsanulok Province","THA.45_1","65",17.024300575,100.543523126256,912827
-"533b46e9","พระนครศรีอยุธยา",2,"Phra Nakhon Si Ayutthaya",,"Phra Nakhon Si Ayutthaya Province","THA.46_1","14",14.3916564,100.537043980195,870671
-"46a9c5c2","แพร่",2,"Phrae",,"Phrae Province","THA.47_1","54",18.26870537,100.171446004245,427398
-"bdf0d134","ภูเก็ต",2,"Phuket",,"Phuket Province","THA.48_1","83",7.97898555,98.33548546,525709
-"a0985d67","ปราจีนบุรี",2,"Prachin Buri",,"Prachin Buri Province","THA.49_1","25",14.02125597,101.57424696609,546996
-"eeb82e80","ประจวบคีรีขันธ์",2,"Prachuap Khiri Khan",,"Prachuap Khiri Khan Province","THA.50_1","77",11.803724765,99.7244675096964,467466
-"12215557","ระนอง",2,"Ranong",,"Ranong Province","THA.51_1","85",10.04495525,98.7669541394924,249017
-"64c33df1","ราชบุรี",2,"Ratchaburi",,"Ratchaburi Province","THA.52_1","70",13.54791498,99.6169831713808,796748
-"b845a4ff","ระยอง",2,"Rayong",,"Rayong Province","THA.53_1","21",12.872940065,101.44863102548,821072
-"e35ededf","ร้อยเอ็ด",2,"Roi Et",,"Roi Et Province","THA.54_1","45",15.937180045,103.759332080084,1084985
-"ed84d6d6","สระแก้ว",2,"Sa Kaeo",,"Sa Kaeo Province","THA.55_1","27",13.71563673,102.279677403942,555961
-"c89d8360","สกลนคร",2,"Sakon Nakhon",,"Sakon Nakhon Province","THA.56_1","47",17.429456715,103.661088838735,94181
-"91743ea5","สมุทรปราการ",2,"Samut Prakan",,"Samut Prakan Province","THA.57_1","11",13.59808588,100.762572404657,1828694
-"b02a4dd0","สมุทรสาคร",2,"Samut Sakhon",,"Samut Sakhon Province","THA.58_1","74",13.5791111,100.212851978774,887191
-"6e027052","สมุทรสงคราม",2,"Samut Songkhram",,"Samut Songkhram Province","THA.59_1","75",13.37956476,99.9271805344535,185564
-"cfe9842a","สระบุรี",2,"Saraburi",,"Saraburi Province","THA.60_1","19",14.64371109,100.901249086981,717054
-"51fd6c10","สตูล",2,"Satun",,"Satun Province","THA.61_1","91",6.767661095,100.027373957367,274863
-"197a4e42","ศรีสะเกษ",2,"Si Sa Ket",,"Si Sa Ket Province","THA.62_1","33",14.954468725,104.327949265065,1055980
-"7e843dbc","สิงห์บุรี",2,"Sing Buri",,"Sing Buri Province","THA.63_1","17",14.910660265,100.309235215685,199982
-"e945e206","สงขลา",2,"Songkhla",,"Songkhla Province","THA.64_1","90",7.113058565,100.366106731896,1481021
-"fd70baa1","สุโขทัย",2,"Sukhothai",,"Sukhothai Province","THA.65_1","64",17.25030422,99.7104060531203,629707
-"a3db2b27","สุพรรณบุรี",2,"Suphan Buri",,"Suphan Buri Province","THA.66_1","72",14.569625375,100.013734079803,845561
-"15ff78a2","สุราษฎร์ธานี",2,"Surat Thani",,"Surat Thani Province","THA.67_1","84",9.017766,99.1139440797727,1009351
-"f077d283","สุรินทร์",2,"Surin",,"Surin Province","THA.68_1","32",14.903591155,103.667568179907,1122900
-"6cd096c5","ตาก",2,"Tak",,"Tak Province","THA.69_1","63",16.522780415,98.8912749718059,526382
-"13624cc6","ตรัง",2,"Trang",,"Trang Province","THA.70_1","92",7.54099989,99.5784761609688,598877
-"8569a2f6","ตราด",2,"Trat",,"Trat Province","THA.71_1","23",12.200800895,102.4195971475,247876
-"3d4a9c32","อุบลราชธานี",2,"Ubon Ratchathani",,"Ubon Ratchathani Province","THA.72_1","34",15.152111055,105.105126621219,1746790
-"fbf42d5e","อุดรธานี",2,"Udon Thani",,"Udon Thani Province","THA.73_1","41",17.441490175,102.834075583592,1288365
-"bf64fa29","อุทัยธานี",2,"Uthai Thani",,"Uthai Thani Province","THA.74_1","61",15.36686945,99.5609888880751,297493
-"4ccd9884","อุตรดิตถ์",2,"Uttaradit",,"Uttaradit Province","THA.75_1","53",17.771154405,100.462037226084,438578
-"46b3573f","ยะลา",2,"Yala",,"Yala Province","THA.76_1","95",6.14949441,101.236396910454,433167
-"0042529a","ยโสธร",2,"Yasothon",,"Yasothon Province","THA.77_1","35",15.8180151,104.275452488023,487976
+"id","id_go.th","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_local","latitude","longitude","population","population_data_source","population_data_source_url"
+,,,,,,,"-",,,,,
+"65254d79","อำนาจเจริญ",2,"Amnat Charoen",,"Amnat Charoen Province","THA.1_1","37",15.908945085,104.730609022451,283732,"Statoids (2010)","http://www.statoids.com/uth.html"
+"ec644437","อ่างทอง",2,"Ang Thong",,"Ang Thong Province","THA.2_1","15",14.618255615,100.353729582696,254292,"Statoids (2010)","http://www.statoids.com/uth.html"
+"eaf6ef3e","กรุงเทพมหานคร",2,"Bangkok",,"Bangkok","THA.3_1","10",13.72371626,100.603503271283,8305218,"Statoids (2010)","http://www.statoids.com/uth.html"
+"19e9965c","บึงกาฬ",2,"Bueng Kan",,"Bueng Kan Province","THA.4_1","38",18.10705566,103.704676556213,362754,"Statoids (2010)","http://www.statoids.com/uth.html"
+"c84ed26d","บุรีรัมย์",2,"Buri Ram",,"Buri Ram Province","THA.5_1","31",14.961830615,103.065677421309,1274921,"Statoids (2010)","http://www.statoids.com/uth.html"
+"83b3335b","ฉะเชิงเทรา",2,"Chachoengsao",,"Chachoengsao Province","THA.6_1","24",13.576500895,101.564268900379,715603,"Statoids (2010)","http://www.statoids.com/uth.html"
+"cef35d83","ชัยนาท",2,"Chai Nat",,"Chai Nat Province","THA.7_1","18",15.159755705,100.038590183212,305587,"Statoids (2010)","http://www.statoids.com/uth.html"
+"58191b0a","ชัยภูมิ",2,"Chaiyaphum",,"Chaiyaphum Province","THA.8_1","36",16.021924975,101.842337613214,963907,"Statoids (2010)","http://www.statoids.com/uth.html"
+"173887d6","จันทบุรี",2,"Chanthaburi",,"Chanthaburi Province","THA.9_1","22",12.82004118,102.176153971009,485611,"Statoids (2010)","http://www.statoids.com/uth.html"
+"3eb69991","เชียงใหม่",2,"Chiang Mai",,"Chiang Mai Province","THA.10_1","50",18.708271025,98.72501873968,1737041,"Statoids (2010)","http://www.statoids.com/uth.html"
+"dc8d1ce8","เชียงราย",2,"Chiang Rai",,"Chiang Rai Province","THA.11_1","57",19.73073578,99.8848304886179,1172928,"Statoids (2010)","http://www.statoids.com/uth.html"
+"95661035","ชลบุรี",2,"Chon Buri",,"Chon Buri Province","THA.12_1","20",13.096529005,101.226436527181,1555358,"Statoids (2010)","http://www.statoids.com/uth.html"
+"700c0c15","ชุมพร",2,"Chumphon",,"Chumphon Province","THA.13_1","86",10.316940785,99.0356917504186,467801,"Statoids (2010)","http://www.statoids.com/uth.html"
+"a25f44d1","กาฬสินธุ์",2,"Kalasin",,"Kalasin Province","THA.14_1","46",16.639864925,103.685787415205,824538,"Statoids (2010)","http://www.statoids.com/uth.html"
+"cf280913","กำแพงเพชร",2,"Kamphaeng Phet",,"Kamphaeng Phet Province","THA.15_1","62",16.382061005,99.5113442596645,797391,"Statoids (2010)","http://www.statoids.com/uth.html"
+"d2782c40","กาญจนบุรี",2,"Kanchanaburi",,"Kanchanaburi Province","THA.16_1","71",14.692010405,99.0775125497602,801519,"Statoids (2010)","http://www.statoids.com/uth.html"
+"af15703f","ขอนแก่น",2,"Khon Kaen",,"Khon Kaen Province","THA.17_1","40",16.359140395,102.679125788123,1741980,"Statoids (2010)","http://www.statoids.com/uth.html"
+"5b042aea","กระบี่",2,"Krabi",,"Krabi Province","THA.18_1","81",8.16685057,99.0212020660024,362203,"Statoids (2010)","http://www.statoids.com/uth.html"
+"c6166769","ลำปาง",2,"Lampang",,"Lampang Province","THA.19_1","52",18.31083012,99.5268925265779,743143,"Statoids (2010)","http://www.statoids.com/uth.html"
+"b920f2ac","ลำพูน",2,"Lamphun",,"Lamphun Province","THA.20_1","51",18.06552029,98.9410745125774,412741,"Statoids (2010)","http://www.statoids.com/uth.html"
+"fa353b66","เลย",2,"Loei",,"Loei Province","THA.21_1","42",17.48425102,101.644848045172,546028,"Statoids (2010)","http://www.statoids.com/uth.html"
+"ec035efe","ลพบุรี",2,"Lop Buri",,"Lop Buri Province","THA.22_1","16",15.116841315,100.942443640411,769925,"Statoids (2010)","http://www.statoids.com/uth.html"
+"981016e2","แม่ฮ่องสอน",2,"Mae Hong Son",,"Mae Hong Son Province","THA.23_1","58",18.7238512,97.9313149299914,209153,"Statoids (2010)","http://www.statoids.com/uth.html"
+"dee199d6","มหาสารคาม",2,"Maha Sarakham",,"Maha Sarakham Province","THA.24_1","44",16.02332115,103.180173422371,827639,"Statoids (2010)","http://www.statoids.com/uth.html"
+"d1bc47cb","มุกดาหาร",2,"Mukdahan",,"Mukdahan Province","THA.25_1","49",16.54398537,104.482448130175,357339,"Statoids (2010)","http://www.statoids.com/uth.html"
+"6c3d711c","นครนายก",2,"Nakhon Nayok",,"Nakhon Nayok Province","THA.26_1","26",14.235105515,101.163736726894,246868,"Statoids (2010)","http://www.statoids.com/uth.html"
+"a69601e8","นครปฐม",2,"Nakhon Pathom",,"Nakhon Pathom Province","THA.27_1","73",13.92753029,100.097617917624,943892,"Statoids (2010)","http://www.statoids.com/uth.html"
+"89a661c5","นครพนม",2,"Nakhon Phanom",,"Nakhon Phanom Province","THA.28_1","48",17.40478134,104.601900745352,583726,"Statoids (2010)","http://www.statoids.com/uth.html"
+"265c5a21","นครราชสีมา",2,"Nakhon Ratchasima",,"Nakhon Ratchasima Province","THA.29_1","30",14.96294069,102.07216460275,2525975,"Statoids (2010)","http://www.statoids.com/uth.html"
+"a0c08a90","นครสวรรค์",2,"Nakhon Sawan",,"Nakhon Sawan Province","THA.30_1","60",15.624799725,100.382304150435,992749,"Statoids (2010)","http://www.statoids.com/uth.html"
+"86e9d769","นครศรีธรรมราช",2,"Nakhon Si Thammarat",,"Nakhon Si Thammarat Province","THA.31_1","80",8.57927036,99.7188152350827,1450466,"Statoids (2010)","http://www.statoids.com/uth.html"
+"e0f4533d","น่าน",2,"Nan",,"Nan Province","THA.32_1","55",18.821559905,100.795544324176,452814,"Statoids (2010)","http://www.statoids.com/uth.html"
+"012af312","นราธิวาส",2,"Narathiwat",,"Narathiwat Province","THA.33_1","96",6.186445,101.73183575466,670002,"Statoids (2010)","http://www.statoids.com/uth.html"
+"2546c8b6","หนองบัวลำภู",2,"Nong Bua Lam Phu",,"Nong Bua Lam Phu Province","THA.34_1","39",17.22139454,102.308051530652,485974,"Statoids (2010)","http://www.statoids.com/uth.html"
+"386e4d5a","หนองคาย",2,"Nong Khai",,"Nong Khai Province","THA.35_1","43",17.946799275,103.121630574456,458772,"Statoids (2010)","http://www.statoids.com/uth.html"
+"92dffdff","นนทบุรี",2,"Nonthaburi",,"Nonthaburi Province","THA.36_1","12",13.96322012,100.384127023799,1334083,"Statoids (2010)","http://www.statoids.com/uth.html"
+"1d375278","ปทุมธานี",2,"Pathum Thani",,"Pathum Thani Province","THA.37_1","13",14.09393549,100.628758262537,1327147,"Statoids (2010)","http://www.statoids.com/uth.html"
+"28f6b671","ปัตตานี",2,"Pattani",,"Pattani Province","THA.38_1","94",6.75062203,101.321823708907,609015,"Statoids (2010)","http://www.statoids.com/uth.html"
+"136bdfd2","พังงา",2,"Phangnga",,"Phang-nga Province","THA.39_1","82",8.73915863,98.4187931685927,258535,"Statoids (2010)","http://www.statoids.com/uth.html"
+"6ff659c0","พัทลุง",2,"Phatthalung",,"Phatthalung Province","THA.40_1","93",7.491511105,100.051674891752,480976,"Statoids (2010)","http://www.statoids.com/uth.html"
+"6248d5f0","พะเยา",2,"Phayao",,"Phayao Province","THA.41_1","56",19.268546105,100.15608027677,41738,"Statoids (2010)","http://www.statoids.com/uth.html"
+"3005bb50","เพชรบูรณ์",2,"Phetchabun",,"Phetchabun Province","THA.42_1","67",16.22494888,101.036566843982,940076,"Statoids (2010)","http://www.statoids.com/uth.html"
+"583ca60d","เพชรบุรี",2,"Phetchaburi",,"Phetchaburi Province","THA.43_1","76",12.94158983,99.6025428471301,472589,"Statoids (2010)","http://www.statoids.com/uth.html"
+"0b8e34fe","พิจิตร",2,"Phichit",,"Phichit Province","THA.44_1","66",16.278190615,100.346709709851,548242,"Statoids (2010)","http://www.statoids.com/uth.html"
+"4cdbb7de","พิษณุโลก",2,"Phitsanulok",,"Phitsanulok Province","THA.45_1","65",17.024300575,100.543523126256,912827,"Statoids (2010)","http://www.statoids.com/uth.html"
+"533b46e9","พระนครศรีอยุธยา",2,"Phra Nakhon Si Ayutthaya",,"Phra Nakhon Si Ayutthaya Province","THA.46_1","14",14.3916564,100.537043980195,870671,"Statoids (2010)","http://www.statoids.com/uth.html"
+"46a9c5c2","แพร่",2,"Phrae",,"Phrae Province","THA.47_1","54",18.26870537,100.171446004245,427398,"Statoids (2010)","http://www.statoids.com/uth.html"
+"bdf0d134","ภูเก็ต",2,"Phuket",,"Phuket Province","THA.48_1","83",7.97898555,98.33548546,525709,"Statoids (2010)","http://www.statoids.com/uth.html"
+"a0985d67","ปราจีนบุรี",2,"Prachin Buri",,"Prachin Buri Province","THA.49_1","25",14.02125597,101.57424696609,546996,"Statoids (2010)","http://www.statoids.com/uth.html"
+"eeb82e80","ประจวบคีรีขันธ์",2,"Prachuap Khiri Khan",,"Prachuap Khiri Khan Province","THA.50_1","77",11.803724765,99.7244675096964,467466,"Statoids (2010)","http://www.statoids.com/uth.html"
+"12215557","ระนอง",2,"Ranong",,"Ranong Province","THA.51_1","85",10.04495525,98.7669541394924,249017,"Statoids (2010)","http://www.statoids.com/uth.html"
+"64c33df1","ราชบุรี",2,"Ratchaburi",,"Ratchaburi Province","THA.52_1","70",13.54791498,99.6169831713808,796748,"Statoids (2010)","http://www.statoids.com/uth.html"
+"b845a4ff","ระยอง",2,"Rayong",,"Rayong Province","THA.53_1","21",12.872940065,101.44863102548,821072,"Statoids (2010)","http://www.statoids.com/uth.html"
+"e35ededf","ร้อยเอ็ด",2,"Roi Et",,"Roi Et Province","THA.54_1","45",15.937180045,103.759332080084,1084985,"Statoids (2010)","http://www.statoids.com/uth.html"
+"ed84d6d6","สระแก้ว",2,"Sa Kaeo",,"Sa Kaeo Province","THA.55_1","27",13.71563673,102.279677403942,555961,"Statoids (2010)","http://www.statoids.com/uth.html"
+"c89d8360","สกลนคร",2,"Sakon Nakhon",,"Sakon Nakhon Province","THA.56_1","47",17.429456715,103.661088838735,94181,"Statoids (2010)","http://www.statoids.com/uth.html"
+"91743ea5","สมุทรปราการ",2,"Samut Prakan",,"Samut Prakan Province","THA.57_1","11",13.59808588,100.762572404657,1828694,"Statoids (2010)","http://www.statoids.com/uth.html"
+"b02a4dd0","สมุทรสาคร",2,"Samut Sakhon",,"Samut Sakhon Province","THA.58_1","74",13.5791111,100.212851978774,887191,"Statoids (2010)","http://www.statoids.com/uth.html"
+"6e027052","สมุทรสงคราม",2,"Samut Songkhram",,"Samut Songkhram Province","THA.59_1","75",13.37956476,99.9271805344535,185564,"Statoids (2010)","http://www.statoids.com/uth.html"
+"cfe9842a","สระบุรี",2,"Saraburi",,"Saraburi Province","THA.60_1","19",14.64371109,100.901249086981,717054,"Statoids (2010)","http://www.statoids.com/uth.html"
+"51fd6c10","สตูล",2,"Satun",,"Satun Province","THA.61_1","91",6.767661095,100.027373957367,274863,"Statoids (2010)","http://www.statoids.com/uth.html"
+"197a4e42","ศรีสะเกษ",2,"Si Sa Ket",,"Si Sa Ket Province","THA.62_1","33",14.954468725,104.327949265065,1055980,"Statoids (2010)","http://www.statoids.com/uth.html"
+"7e843dbc","สิงห์บุรี",2,"Sing Buri",,"Sing Buri Province","THA.63_1","17",14.910660265,100.309235215685,199982,"Statoids (2010)","http://www.statoids.com/uth.html"
+"e945e206","สงขลา",2,"Songkhla",,"Songkhla Province","THA.64_1","90",7.113058565,100.366106731896,1481021,"Statoids (2010)","http://www.statoids.com/uth.html"
+"fd70baa1","สุโขทัย",2,"Sukhothai",,"Sukhothai Province","THA.65_1","64",17.25030422,99.7104060531203,629707,"Statoids (2010)","http://www.statoids.com/uth.html"
+"a3db2b27","สุพรรณบุรี",2,"Suphan Buri",,"Suphan Buri Province","THA.66_1","72",14.569625375,100.013734079803,845561,"Statoids (2010)","http://www.statoids.com/uth.html"
+"15ff78a2","สุราษฎร์ธานี",2,"Surat Thani",,"Surat Thani Province","THA.67_1","84",9.017766,99.1139440797727,1009351,"Statoids (2010)","http://www.statoids.com/uth.html"
+"f077d283","สุรินทร์",2,"Surin",,"Surin Province","THA.68_1","32",14.903591155,103.667568179907,1122900,"Statoids (2010)","http://www.statoids.com/uth.html"
+"6cd096c5","ตาก",2,"Tak",,"Tak Province","THA.69_1","63",16.522780415,98.8912749718059,526382,"Statoids (2010)","http://www.statoids.com/uth.html"
+"13624cc6","ตรัง",2,"Trang",,"Trang Province","THA.70_1","92",7.54099989,99.5784761609688,598877,"Statoids (2010)","http://www.statoids.com/uth.html"
+"8569a2f6","ตราด",2,"Trat",,"Trat Province","THA.71_1","23",12.200800895,102.4195971475,247876,"Statoids (2010)","http://www.statoids.com/uth.html"
+"3d4a9c32","อุบลราชธานี",2,"Ubon Ratchathani",,"Ubon Ratchathani Province","THA.72_1","34",15.152111055,105.105126621219,1746790,"Statoids (2010)","http://www.statoids.com/uth.html"
+"fbf42d5e","อุดรธานี",2,"Udon Thani",,"Udon Thani Province","THA.73_1","41",17.441490175,102.834075583592,1288365,"Statoids (2010)","http://www.statoids.com/uth.html"
+"bf64fa29","อุทัยธานี",2,"Uthai Thani",,"Uthai Thani Province","THA.74_1","61",15.36686945,99.5609888880751,297493,"Statoids (2010)","http://www.statoids.com/uth.html"
+"4ccd9884","อุตรดิตถ์",2,"Uttaradit",,"Uttaradit Province","THA.75_1","53",17.771154405,100.462037226084,438578,"Statoids (2010)","http://www.statoids.com/uth.html"
+"46b3573f","ยะลา",2,"Yala",,"Yala Province","THA.76_1","95",6.14949441,101.236396910454,433167,"Statoids (2010)","http://www.statoids.com/uth.html"
+"0042529a","ยโสธร",2,"Yasothon",,"Yasothon Province","THA.77_1","35",15.8180151,104.275452488023,487976,"Statoids (2010)","http://www.statoids.com/uth.html"
