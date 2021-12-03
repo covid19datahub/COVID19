@@ -1,73 +1,73 @@
-"id","id_isciii.es","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population"
-,,,,,,,,,,"-",,,,
-"65d624b3","AN",2,"Andalucía",,"Andalusia","ESP.1_1","ChIJRcWdz7HZEQ0RD_Pxd01lycE","ES.AN","ESAN","01","ES61",37.364515305,-4.54243389082257,8427405
-"71d778fc","AR",2,"Aragón",,"Aragon","ESP.2_1","ChIJ-W5lP-4UWQ0RWP14-ZVCICA","ES.AR","ESAR","02","ES24",41.38541603,-0.839715375341938,1320586
-"57e04631","CN",2,"Canarias",,"Canary Islands","ESP.14_1","ChIJY1N174aqQQwRwMhLvvNAAwE","ES.CN","ESCN","05","ES70",28.293611525,-16.621944425,2206901
-"5e560a1a","CB",2,"Cantabria",,"Cantabria","ESP.3_1","ChIJy78OCdsgSQ0R0MjJc4L1BAE","ES.CB","ESS","06","ES13",43.136398315,-4.2634701153849,581641
-"cee9178b","CM",2,"Castilla-La Mancha",,"Castile-La Mancha","ESP.4_1","ChIJK6f5rcBfZg0R0rZyF5O64Ts","ES.CM","ESCM","08","ES42",39.67591095,-3.2724759911364,2034877
-"b9ee271d","CL",2,"Castilla y León",,"Castile and Leon","ESP.5_1","ChIJ95OAA5CaNw0RpVYFgwZ7npY","ES.CL","ESCL","07","ES41",41.6606102,-4.07943516696784,2407733
-"aa82bf4b","CT",2,"Cataluña",,"Catalonia","ESP.6_1","ChIJ8_UwhdxbpBIRUMijIeD6AAE","ES.CT","ESCT","09","ES51",41.692222595,1.58426121434448,7566431
-"c0329fb9","CE",2,"Ceuta",,"Ceuta",,"ChIJN4t3-cajDA0RNeZ62srbpWo","ES.CE","ESCE","18","ES63",35.8894,-5.3213,84829
-"29b682a1","MD",2,"Comunidad de Madrid",,"Community of Madrid","ESP.8_1","ChIJuTPgQHqBQQ0RgMhLvvNAAwE","ES.MD","ESM","13","ES30",40.52218628,-3.7688478017641,6641649
-"9cff44c1","NC",2,"Comunidad Foral de Navarra",,"Navarre","ESP.9_1","ChIJhVbJl_eSUA0RDop817cZqx0","ES.NA","ESNC","15","ES22",42.61185074,-1.83932841968019,649946
-"1ee4dc98","VC",2,"Comunidad Valenciana",,"Valencian Community","ESP.10_1","ChIJDTGOzUD8XQ0RXQsxGLjLQF8","ES.VC","ESVC","10","ES52",39.31649208,-0.74904190256317,4974969
-"f56e54e6","EX",2,"Extremadura",,"Extremadura","ESP.11_1","ChIJly2BrUTKFQ0RMMifjP1jBAE","ES.EX","ESEX","11","ES43",39.213920595,-5.97284863055711,1065424
-"a3339ea4","GA",2,"Galicia",,"Galicia","ESP.12_1","ChIJaxUIiYZ8Lg0RQpaMEzB5rOE","ES.GA","ESGA","12","ES11",42.7994442,-7.88358179794721,2700441
-"a4b9e290","IB",2,"Islas Baleares",,"Balearic Islands","ESP.13_1","ChIJV2Jp3FqSlxIRFU2l-yEDh_8","ES.PM","ESIB","04","ES53",39.613332745,2.88000059,1188220
-"9a5df082","RI",2,"La Rioja",,"La Rioja","ESP.15_1","ChIJu9z3TpJLRQ0Rjimbpl76f3g","ES.LO","ESLO","17","ES23",42.284181595,-2.48298330903961,313571
-"276d0a93","ML",2,"Melilla",,"Melilla",,"ChIJ15UT1nAFdw0RXoC3ZazsjF8","ES.ML","ESML","19","ES64",35.2923,-2.9381,84689
-"25639ff5","PV",2,"País Vasco",,"Basque Country","ESP.16_1","ChIJb6xU497RTw0RPL3jSqEwgjA","ES.PV","ESPV","16","ES21",42.96565056,-2.56413946192968,2177880
-"06d0486a","AS",2,"Principado de Asturias",,"Asturias","ESP.17_1","ChIJnbCeYPqMNg0ROp7GfSvztfg","ES.AS","ESO","03","ES12",43.27359009,-5.85352989311643,1022205
-"b7d21702","MC",2,"Región de Murcia",,"Region of Murcia","ESP.18_1","ChIJza6U13waYw0RIthUR_UzzhQ","ES.MU","ESMU","14","ES62",38.06281662,-1.6713370655604,1487663
-"8bd8459f","AL",3,"Andalucía","Almería",,"ESP.1.1_1","ChIJZQoW955UZQ0RcMl1pXjSAwM","ES.AN.AM",,"04","ES611",37.298334125,-2.18880902485867,688736
-"c75f5ba0","CA",3,"Andalucía","Cádiz",,"ESP.1.2_1","ChIJaxjPWk6qDQ0R4MmfjP1jBAM","ES.AN.CD",,"11","ES612",36.526109695,-5.9006728027725,1244732
-"20e776a7","CO",3,"Andalucía","Córdoba",,"ESP.1.3_1","ChIJm30-GKPebA0REMp1pXjSAwM","ES.AN.CO",,"14","ES613",37.955841065,-4.84669929091188,802575
-"278ddf7a","GR",3,"Andalucía","Granada",,"ESP.1.4_1","ChIJuexUhnolbg0RUMp1pXjSAwM","ES.AN.GD",,"18","ES614",37.389226915,-3.23894225520062,922100
-"3b66ee57","H",3,"Andalucía","Huelva",,"ESP.1.5_1","ChIJiYiy9MW-EQ0RgMqfjP1jBAM","ES.AN.HL",,"21","ES615",37.50259018,-6.92319106363443,519895
-"d5688f7b","J",3,"Andalucía","Jaén",,"ESP.1.6_1","ChIJxaS9-r71bg0RoMp1pXjSAwM","ES.AN.JA",,"23","ES616",37.95560074,-3.49285914866068,667484
-"59dc762e","MA",3,"Andalucía","Málaga",,"ESP.1.7_1","ChIJUyii_DXqcg0RAMt1pXjSAwM","ES.AN.MG",,"29","ES617",36.79245758,-4.54506053424198,1594808
-"8af08de8","SE",3,"Andalucía","Sevilla","Seville, Andalusia","ESP.1.8_1","ChIJadFr4dryEg0RwMufjP1jBAM","ES.AN.SV",,"41","ES618",37.518878935,-5.65046422868604,1930941
-"3e715616","HU",3,"Aragón","Huesca",,"ESP.2.1_1","ChIJtwOaTjZxWA0RkMrNCGWMAQM","ES.AR.HS",,"22","ES241",42.13632965,-0.0289939936755321,225962
-"c5b11b2f","TE",3,"Aragón","Teruel",,"ESP.2.2_1","ChIJnUpflihYXg0R8MvNCGWMAQM","ES.AR.TE",,"44","ES242",40.601350785,-0.922689148281921,143162
-"c8df9f1f","Z",3,"Aragón","Zaragoza",,"ESP.2.3_1","ChIJe4uZsFkLWQ0RUMzNCGWMAQM","ES.AR.ZG",,"50","ES243",41.839660645,-1.1697710126096,975385
-"4d3dff88","GC",3,"Canarias","Las Palmas",,"ESP.14.1_1","ChIJvy1D_6YfRwwRYMtLvvNAAwM","ES.CN.LP",,"35","ES705",27.958055495,-15.605971815,1087225
-"5cb84a95","TF",3,"Canarias","Santa Cruz de Tenerife",,"ESP.14.2_1","ChIJLc1e8Zj5agwRkMtLvvNAAwM","ES.CN.SC",,"38","ES709",28.293611525,-16.621944425,995429
-"b10327bb","S",3,"Cantabria","Cantabria",,"ESP.3.1_1",,"ES.CB.CN",,"39","ES130",43.136398315,-4.2634701153849,592542
-"6c606898","AB",3,"Castilla-La Mancha","Albacete",,"ESP.4.1_1","ChIJ0XrEWB18Zg0RUMlLvvNAAwM","ES.CM.AB",,"02","ES421",38.72314644,-1.95495963824726,401580
-"43e11a7e","CR",3,"Castilla-La Mancha","Ciudad Real",,"ESP.4.2_1","ChIJ6_wEDsndaw0RAMpLvvNAAwM","ES.CM.CR",,"13","ES422",38.95852089,-3.88316941255103,526628
-"dd858fdd","CU",3,"Castilla-La Mancha","Cuenca",,"ESP.4.3_1","ChIJPaBPpUf1Zw0RMMpLvvNAAwM","ES.CM.CU",,"16","ES423",39.94250488,-2.15317178074457,215165
-"b9e94ad9","GU",3,"Castilla-La Mancha","Guadalajara",,"ESP.4.4_1","ChIJl9C4p3cuQw0RYMpLvvNAAwM","ES.CM.GJ",,"19","ES424",40.74032974,-2.50566865441632,257442
-"2564f231","TO",3,"Castilla-La Mancha","Toledo",,"ESP.4.5_1","ChIJYWSMQ3lxag0RAMxLvvNAAwM","ES.CM.TD",,"45","ES425",39.78814697,-4.10342860755406,705516
-"76babce5","AV",3,"Castilla y León","Ávila",,"ESP.5.1_1","ChIJj6yPsjuEQA0RgMnzWgeHBQM","ES.CL.AV",,"05","ES411",40.6245327,-4.83463425023909,171647
-"c49ebe9c","BU",3,"Castilla y León","Burgos",,"ESP.5.2_1","ChIJ9ZsJuUntRQ0RwMnzWgeHBQM","ES.CL.BU",,"09","ES412",42.32509041,-3.67722301281548,372538
-"47aa8376","LE",3,"Castilla y León","León",,"ESP.5.3_1","ChIJU7YQYQduNw0RsMrzWgeHBQM","ES.CL.LN",,"24","ES413",42.634120945,-5.9712726685575,493312
-"280a7601","P",3,"Castilla y León","Palencia",,"ESP.5.4_1","ChIJJTy9az_URw0RUMvzWgeHBQM","ES.CL.PL",,"34","ES414",42.407125475,-4.62107691058294,170513
-"8d9d49f1","SA",3,"Castilla y León","Salamanca",,"ESP.5.5_1","ChIJF53SGUzqPg0RgMvzWgeHBQM","ES.CL.SL",,"37","ES415",40.76654625,-6.0214339910501,350018
-"64feecc4","SG",3,"Castilla y León","Segovia",,"ESP.5.6_1","ChIJr5ElYupOQQ0RsMvzWgeHBQM","ES.CL.SG",,"40","ES416",41.108983995,-4.18249434983643,163171
-"6a2564f6","SO",3,"Castilla y León","Soria",,"ESP.5.7_1","ChIJo_8KEwbHRA0R0MvzWgeHBQM","ES.CL.SR",,"42","ES417",41.60160065,-2.72177718386103,94610
-"f0eabdb4","VA",3,"Castilla y León","Valladolid",,"ESP.5.8_1","ChIJd2P6Oh5zRw0RIMzzWgeHBQM","ES.CL.VD",,"47","ES418",41.70434761,-4.69719325032447,532765
-"5c5ff2b8","ZA",3,"Castilla y León","Zamora",,"ESP.5.9_1","ChIJJZxKNg10OQ0RQMzzWgeHBQM","ES.CL.ZM",,"49","ES419",41.686182025,-5.94287596028114,191613
-"dbb30749","B",3,"Cataluña","Barcelona","Barcelona, Catalonia","ESP.6.1_1","ChIJZb1_yQvmpBIRsMmjIeD6AAM","ES.CT.BR",,"08","ES511",41.758371355,2.03121085693148,5522565
-"ade81696","GI",3,"Cataluña","Gerona",,"ESP.6.2_1","ChIJRRrTHsPNuhIRQMqjIeD6AAM","ES.CT.GN",,"17","ES512",42.0729332,2.8369903097463,751806
-"3c0b2a4e","L",3,"Cataluña","Lérida",,"ESP.6.3_1","ChIJJQQpq4R6phIRwMqjIeD6AAM","ES.CT.LD",,"25","ES513",42.07079506,1.18130636956914,438428
-"2f67b218","T",3,"Cataluña","Tarragona",,"ESP.6.4_1","ChIJ7TlkZl9HoRIR4MujIeD6AAM","ES.CT.TG",,"43","ES514",41.052778245,0.625843598754586,807044
-"6713d049","CE",3,"Ceuta","Ceuta",,"ESP.7.1_1",,"ES.CE.CE",,"51","ES630",35.89638901,-5.35890504429124,82376
-"4b0c1ad8","M",3,"Comunidad de Madrid","Madrid","Madrid, Community of Madrid","ESP.8.1_1",,"ES.MD.MD",,"28","ES300",40.52218628,-3.7688478017641,6421874
-"72f125ed","NA",3,"Comunidad Foral de Navarra","Navarra",,"ESP.9.1_1",,"ES.NA.NV",,"31","ES220",42.61185074,-1.83932841968019,640129
-"42ba56f3","A",3,"Comunidad Valenciana","Alicante",,"ESP.10.1_1","ChIJfdrHtbc5Yg0RYMkh126vAgM","ES.VC.AN",,"03","ES521",38.365463255,-0.749053866422099,1852166
-"34e62ae8","CS",3,"Comunidad Valenciana","Castellón",,"ESP.10.2_1","ChIJd-4zz4vzXw0R8Mkh126vAgM","ES.VC.CS",,"12","ES522",40.25243759,-0.0610496799156628,594423
-"c169d334","V",3,"Comunidad Valenciana","Valencia","Valencia, Valencian Community","ESP.10.3_1","ChIJRchn1xjlYA0REMwh126vAgM","ES.VC.VN",,"46","ES523",39.33421326,-0.797216604871963,2563342
-"de446ae1","BA",3,"Extremadura","Badajoz",,"ESP.11.1_1","ChIJ28y339ptFA0RkMmfjP1jBAM","ES.EX.BD",,"06","ES431",38.696458815,-6.22106823922444,691799
-"29513a8c","CC",3,"Extremadura","Cáceres",,"ESP.11.2_1","ChIJEz0HKNv5FQ0R0MmfjP1jBAM","ES.EX.CC",,"10","ES432",39.75937462,-6.13814600971611,412701
-"acb437df","C",3,"Galicia","La Coruña",,"ESP.12.1_1","ChIJGQVeRvRfLg0RIMrJc4L1BAM","ES.GA.AC",,"15","ES111",43.15250015,-8.58065116425466,1141286
-"5a1d9312","LU",3,"Galicia","Lugo",,"ESP.12.2_1","ChIJU82ZLkW2MQ0R4MrJc4L1BAM","ES.GA.LG",,"27","ES112",43.03963089,-7.45636099500634,348067
-"ef545572","OR",3,"Galicia","Orense",,"ESP.12.3_1","ChIJ3VJ27lykOg0RMMvJc4L1BAM","ES.GA.OR",,"32","ES113",42.19283867,-7.53721935985567,328697
-"41083735","PO",3,"Galicia","Pontevedra",,"ESP.12.4_1","ChIJIVLRnnmDLw0RcMvJc4L1BAM","ES.GA.PV",,"36","ES114",42.364723205,-8.53421602734543,954877
-"af065619","PM",3,"Islas Baleares","Baleares",,"ESP.13.1_1",,"ES.PM.BL",,"07","ES532",39.613332745,2.88000059,1100503
-"a77f6a68","LO",3,"La Rioja","La Rioja",,"ESP.15.1_1",,"ES.LO.LR",,"26","ES230",42.284181595,-2.48298330903961,321173
-"5eb1b237","ML",3,"Melilla","Melilla",,"ESP.7.2_1",,"ES.ML.ME",,"52","ES640",35.30152893,-2.95040840631618,78476
-"fe313586","VI",3,"País Vasco","Álava",,"ESP.16.1_1","ChIJMzKUYhbATw0RQMnJc4L1BAM","ES.PV.AA",,"01","ES211",42.84442329,-2.68209936715302,320778
-"7e2438b9","SS",3,"País Vasco","Guipúzcoa",,"ESP.16.2_1","ChIJzcnkHDg1UA0RcMrJc4L1BAM","ES.PV.GP",,"20","ES212",43.144805905,-2.20418521365678,708425
-"d09fe2d3","BI",3,"País Vasco","Vizcaya",,"ESP.16.3_1","ChIJzxBUoQZOTg0RMMzJc4L1BAM","ES.PV.VZ",,"48","ES213",43.238744735,-2.85200409578912,1156190
-"a5027bf4","O",3,"Principado de Asturias","Asturias",,"ESP.17.1_1",,"ES.AS.AS",,"33","ES120",43.27359009,-5.85352989311643,1075183
-"4306a253","MU",3,"Región de Murcia","Murcia",,"ESP.18.1_1",,"ES.MU.MR",,"30","ES620",38.06281662,-1.6713370655604,1462128
+"id","id_isciii.es","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","key_nuts","latitude","longitude","population","population_data_source_url","population_data_source"
+,,,,,,,,,,"-",,,,,,
+"65d624b3","AN",2,"Andalucía",,"Andalusia","ESP.1_1","ChIJRcWdz7HZEQ0RD_Pxd01lycE","ES.AN","ESAN","01","ES61",37.364515305,-4.54243389082257,8427405,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"71d778fc","AR",2,"Aragón",,"Aragon","ESP.2_1","ChIJ-W5lP-4UWQ0RWP14-ZVCICA","ES.AR","ESAR","02","ES24",41.38541603,-0.839715375341938,1320586,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"57e04631","CN",2,"Canarias",,"Canary Islands","ESP.14_1","ChIJY1N174aqQQwRwMhLvvNAAwE","ES.CN","ESCN","05","ES70",28.293611525,-16.621944425,2206901,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"5e560a1a","CB",2,"Cantabria",,"Cantabria","ESP.3_1","ChIJy78OCdsgSQ0R0MjJc4L1BAE","ES.CB","ESS","06","ES13",43.136398315,-4.2634701153849,581641,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"cee9178b","CM",2,"Castilla-La Mancha",,"Castile-La Mancha","ESP.4_1","ChIJK6f5rcBfZg0R0rZyF5O64Ts","ES.CM","ESCM","08","ES42",39.67591095,-3.2724759911364,2034877,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"b9ee271d","CL",2,"Castilla y León",,"Castile and Leon","ESP.5_1","ChIJ95OAA5CaNw0RpVYFgwZ7npY","ES.CL","ESCL","07","ES41",41.6606102,-4.07943516696784,2407733,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"aa82bf4b","CT",2,"Cataluña",,"Catalonia","ESP.6_1","ChIJ8_UwhdxbpBIRUMijIeD6AAE","ES.CT","ESCT","09","ES51",41.692222595,1.58426121434448,7566431,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"c0329fb9","CE",2,"Ceuta",,"Ceuta",,"ChIJN4t3-cajDA0RNeZ62srbpWo","ES.CE","ESCE","18","ES63",35.8894,-5.3213,84829,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"29b682a1","MD",2,"Comunidad de Madrid",,"Community of Madrid","ESP.8_1","ChIJuTPgQHqBQQ0RgMhLvvNAAwE","ES.MD","ESM","13","ES30",40.52218628,-3.7688478017641,6641649,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"9cff44c1","NC",2,"Comunidad Foral de Navarra",,"Navarre","ESP.9_1","ChIJhVbJl_eSUA0RDop817cZqx0","ES.NA","ESNC","15","ES22",42.61185074,-1.83932841968019,649946,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"1ee4dc98","VC",2,"Comunidad Valenciana",,"Valencian Community","ESP.10_1","ChIJDTGOzUD8XQ0RXQsxGLjLQF8","ES.VC","ESVC","10","ES52",39.31649208,-0.74904190256317,4974969,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"f56e54e6","EX",2,"Extremadura",,"Extremadura","ESP.11_1","ChIJly2BrUTKFQ0RMMifjP1jBAE","ES.EX","ESEX","11","ES43",39.213920595,-5.97284863055711,1065424,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"a3339ea4","GA",2,"Galicia",,"Galicia","ESP.12_1","ChIJaxUIiYZ8Lg0RQpaMEzB5rOE","ES.GA","ESGA","12","ES11",42.7994442,-7.88358179794721,2700441,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"a4b9e290","IB",2,"Islas Baleares",,"Balearic Islands","ESP.13_1","ChIJV2Jp3FqSlxIRFU2l-yEDh_8","ES.PM","ESIB","04","ES53",39.613332745,2.88000059,1188220,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"9a5df082","RI",2,"La Rioja",,"La Rioja","ESP.15_1","ChIJu9z3TpJLRQ0Rjimbpl76f3g","ES.LO","ESLO","17","ES23",42.284181595,-2.48298330903961,313571,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"276d0a93","ML",2,"Melilla",,"Melilla",,"ChIJ15UT1nAFdw0RXoC3ZazsjF8","ES.ML","ESML","19","ES64",35.2923,-2.9381,84689,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"25639ff5","PV",2,"País Vasco",,"Basque Country","ESP.16_1","ChIJb6xU497RTw0RPL3jSqEwgjA","ES.PV","ESPV","16","ES21",42.96565056,-2.56413946192968,2177880,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"06d0486a","AS",2,"Principado de Asturias",,"Asturias","ESP.17_1","ChIJnbCeYPqMNg0ROp7GfSvztfg","ES.AS","ESO","03","ES12",43.27359009,-5.85352989311643,1022205,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"b7d21702","MC",2,"Región de Murcia",,"Region of Murcia","ESP.18_1","ChIJza6U13waYw0RIthUR_UzzhQ","ES.MU","ESMU","14","ES62",38.06281662,-1.6713370655604,1487663,"https://github.com/CSSEGISandData/COVID-19_Unified-Dataset","Johns Hopkins Center for Systems Science and Engineering (2021)"
+"8bd8459f","AL",3,"Andalucía","Almería",,"ESP.1.1_1","ChIJZQoW955UZQ0RcMl1pXjSAwM","ES.AN.AM",,"04","ES611",37.298334125,-2.18880902485867,688736,"http://www.statoids.com/yes.html","Statoids (2011)"
+"c75f5ba0","CA",3,"Andalucía","Cádiz",,"ESP.1.2_1","ChIJaxjPWk6qDQ0R4MmfjP1jBAM","ES.AN.CD",,"11","ES612",36.526109695,-5.9006728027725,1244732,"http://www.statoids.com/yes.html","Statoids (2011)"
+"20e776a7","CO",3,"Andalucía","Córdoba",,"ESP.1.3_1","ChIJm30-GKPebA0REMp1pXjSAwM","ES.AN.CO",,"14","ES613",37.955841065,-4.84669929091188,802575,"http://www.statoids.com/yes.html","Statoids (2011)"
+"278ddf7a","GR",3,"Andalucía","Granada",,"ESP.1.4_1","ChIJuexUhnolbg0RUMp1pXjSAwM","ES.AN.GD",,"18","ES614",37.389226915,-3.23894225520062,922100,"http://www.statoids.com/yes.html","Statoids (2011)"
+"3b66ee57","H",3,"Andalucía","Huelva",,"ESP.1.5_1","ChIJiYiy9MW-EQ0RgMqfjP1jBAM","ES.AN.HL",,"21","ES615",37.50259018,-6.92319106363443,519895,"http://www.statoids.com/yes.html","Statoids (2011)"
+"d5688f7b","J",3,"Andalucía","Jaén",,"ESP.1.6_1","ChIJxaS9-r71bg0RoMp1pXjSAwM","ES.AN.JA",,"23","ES616",37.95560074,-3.49285914866068,667484,"http://www.statoids.com/yes.html","Statoids (2011)"
+"59dc762e","MA",3,"Andalucía","Málaga",,"ESP.1.7_1","ChIJUyii_DXqcg0RAMt1pXjSAwM","ES.AN.MG",,"29","ES617",36.79245758,-4.54506053424198,1594808,"http://www.statoids.com/yes.html","Statoids (2011)"
+"8af08de8","SE",3,"Andalucía","Sevilla","Seville, Andalusia","ESP.1.8_1","ChIJadFr4dryEg0RwMufjP1jBAM","ES.AN.SV",,"41","ES618",37.518878935,-5.65046422868604,1930941,"http://www.statoids.com/yes.html","Statoids (2011)"
+"3e715616","HU",3,"Aragón","Huesca",,"ESP.2.1_1","ChIJtwOaTjZxWA0RkMrNCGWMAQM","ES.AR.HS",,"22","ES241",42.13632965,-0.0289939936755321,225962,"http://www.statoids.com/yes.html","Statoids (2011)"
+"c5b11b2f","TE",3,"Aragón","Teruel",,"ESP.2.2_1","ChIJnUpflihYXg0R8MvNCGWMAQM","ES.AR.TE",,"44","ES242",40.601350785,-0.922689148281921,143162,"http://www.statoids.com/yes.html","Statoids (2011)"
+"c8df9f1f","Z",3,"Aragón","Zaragoza",,"ESP.2.3_1","ChIJe4uZsFkLWQ0RUMzNCGWMAQM","ES.AR.ZG",,"50","ES243",41.839660645,-1.1697710126096,975385,"http://www.statoids.com/yes.html","Statoids (2011)"
+"4d3dff88","GC",3,"Canarias","Las Palmas",,"ESP.14.1_1","ChIJvy1D_6YfRwwRYMtLvvNAAwM","ES.CN.LP",,"35","ES705",27.958055495,-15.605971815,1087225,"http://www.statoids.com/yes.html","Statoids (2011)"
+"5cb84a95","TF",3,"Canarias","Santa Cruz de Tenerife",,"ESP.14.2_1","ChIJLc1e8Zj5agwRkMtLvvNAAwM","ES.CN.SC",,"38","ES709",28.293611525,-16.621944425,995429,"http://www.statoids.com/yes.html","Statoids (2011)"
+"b10327bb","S",3,"Cantabria","Cantabria",,"ESP.3.1_1",,"ES.CB.CN",,"39","ES130",43.136398315,-4.2634701153849,592542,"http://www.statoids.com/yes.html","Statoids (2011)"
+"6c606898","AB",3,"Castilla-La Mancha","Albacete",,"ESP.4.1_1","ChIJ0XrEWB18Zg0RUMlLvvNAAwM","ES.CM.AB",,"02","ES421",38.72314644,-1.95495963824726,401580,"http://www.statoids.com/yes.html","Statoids (2011)"
+"43e11a7e","CR",3,"Castilla-La Mancha","Ciudad Real",,"ESP.4.2_1","ChIJ6_wEDsndaw0RAMpLvvNAAwM","ES.CM.CR",,"13","ES422",38.95852089,-3.88316941255103,526628,"http://www.statoids.com/yes.html","Statoids (2011)"
+"dd858fdd","CU",3,"Castilla-La Mancha","Cuenca",,"ESP.4.3_1","ChIJPaBPpUf1Zw0RMMpLvvNAAwM","ES.CM.CU",,"16","ES423",39.94250488,-2.15317178074457,215165,"http://www.statoids.com/yes.html","Statoids (2011)"
+"b9e94ad9","GU",3,"Castilla-La Mancha","Guadalajara",,"ESP.4.4_1","ChIJl9C4p3cuQw0RYMpLvvNAAwM","ES.CM.GJ",,"19","ES424",40.74032974,-2.50566865441632,257442,"http://www.statoids.com/yes.html","Statoids (2011)"
+"2564f231","TO",3,"Castilla-La Mancha","Toledo",,"ESP.4.5_1","ChIJYWSMQ3lxag0RAMxLvvNAAwM","ES.CM.TD",,"45","ES425",39.78814697,-4.10342860755406,705516,"http://www.statoids.com/yes.html","Statoids (2011)"
+"76babce5","AV",3,"Castilla y León","Ávila",,"ESP.5.1_1","ChIJj6yPsjuEQA0RgMnzWgeHBQM","ES.CL.AV",,"05","ES411",40.6245327,-4.83463425023909,171647,"http://www.statoids.com/yes.html","Statoids (2011)"
+"c49ebe9c","BU",3,"Castilla y León","Burgos",,"ESP.5.2_1","ChIJ9ZsJuUntRQ0RwMnzWgeHBQM","ES.CL.BU",,"09","ES412",42.32509041,-3.67722301281548,372538,"http://www.statoids.com/yes.html","Statoids (2011)"
+"47aa8376","LE",3,"Castilla y León","León",,"ESP.5.3_1","ChIJU7YQYQduNw0RsMrzWgeHBQM","ES.CL.LN",,"24","ES413",42.634120945,-5.9712726685575,493312,"http://www.statoids.com/yes.html","Statoids (2011)"
+"280a7601","P",3,"Castilla y León","Palencia",,"ESP.5.4_1","ChIJJTy9az_URw0RUMvzWgeHBQM","ES.CL.PL",,"34","ES414",42.407125475,-4.62107691058294,170513,"http://www.statoids.com/yes.html","Statoids (2011)"
+"8d9d49f1","SA",3,"Castilla y León","Salamanca",,"ESP.5.5_1","ChIJF53SGUzqPg0RgMvzWgeHBQM","ES.CL.SL",,"37","ES415",40.76654625,-6.0214339910501,350018,"http://www.statoids.com/yes.html","Statoids (2011)"
+"64feecc4","SG",3,"Castilla y León","Segovia",,"ESP.5.6_1","ChIJr5ElYupOQQ0RsMvzWgeHBQM","ES.CL.SG",,"40","ES416",41.108983995,-4.18249434983643,163171,"http://www.statoids.com/yes.html","Statoids (2011)"
+"6a2564f6","SO",3,"Castilla y León","Soria",,"ESP.5.7_1","ChIJo_8KEwbHRA0R0MvzWgeHBQM","ES.CL.SR",,"42","ES417",41.60160065,-2.72177718386103,94610,"http://www.statoids.com/yes.html","Statoids (2011)"
+"f0eabdb4","VA",3,"Castilla y León","Valladolid",,"ESP.5.8_1","ChIJd2P6Oh5zRw0RIMzzWgeHBQM","ES.CL.VD",,"47","ES418",41.70434761,-4.69719325032447,532765,"http://www.statoids.com/yes.html","Statoids (2011)"
+"5c5ff2b8","ZA",3,"Castilla y León","Zamora",,"ESP.5.9_1","ChIJJZxKNg10OQ0RQMzzWgeHBQM","ES.CL.ZM",,"49","ES419",41.686182025,-5.94287596028114,191613,"http://www.statoids.com/yes.html","Statoids (2011)"
+"dbb30749","B",3,"Cataluña","Barcelona","Barcelona, Catalonia","ESP.6.1_1","ChIJZb1_yQvmpBIRsMmjIeD6AAM","ES.CT.BR",,"08","ES511",41.758371355,2.03121085693148,5522565,"http://www.statoids.com/yes.html","Statoids (2011)"
+"ade81696","GI",3,"Cataluña","Gerona",,"ESP.6.2_1","ChIJRRrTHsPNuhIRQMqjIeD6AAM","ES.CT.GN",,"17","ES512",42.0729332,2.8369903097463,751806,"http://www.statoids.com/yes.html","Statoids (2011)"
+"3c0b2a4e","L",3,"Cataluña","Lérida",,"ESP.6.3_1","ChIJJQQpq4R6phIRwMqjIeD6AAM","ES.CT.LD",,"25","ES513",42.07079506,1.18130636956914,438428,"http://www.statoids.com/yes.html","Statoids (2011)"
+"2f67b218","T",3,"Cataluña","Tarragona",,"ESP.6.4_1","ChIJ7TlkZl9HoRIR4MujIeD6AAM","ES.CT.TG",,"43","ES514",41.052778245,0.625843598754586,807044,"http://www.statoids.com/yes.html","Statoids (2011)"
+"6713d049","CE",3,"Ceuta","Ceuta",,"ESP.7.1_1",,"ES.CE.CE",,"51","ES630",35.89638901,-5.35890504429124,82376,"http://www.statoids.com/yes.html","Statoids (2011)"
+"4b0c1ad8","M",3,"Comunidad de Madrid","Madrid","Madrid, Community of Madrid","ESP.8.1_1",,"ES.MD.MD",,"28","ES300",40.52218628,-3.7688478017641,6421874,"http://www.statoids.com/yes.html","Statoids (2011)"
+"72f125ed","NA",3,"Comunidad Foral de Navarra","Navarra",,"ESP.9.1_1",,"ES.NA.NV",,"31","ES220",42.61185074,-1.83932841968019,640129,"http://www.statoids.com/yes.html","Statoids (2011)"
+"42ba56f3","A",3,"Comunidad Valenciana","Alicante",,"ESP.10.1_1","ChIJfdrHtbc5Yg0RYMkh126vAgM","ES.VC.AN",,"03","ES521",38.365463255,-0.749053866422099,1852166,"http://www.statoids.com/yes.html","Statoids (2011)"
+"34e62ae8","CS",3,"Comunidad Valenciana","Castellón",,"ESP.10.2_1","ChIJd-4zz4vzXw0R8Mkh126vAgM","ES.VC.CS",,"12","ES522",40.25243759,-0.0610496799156628,594423,"http://www.statoids.com/yes.html","Statoids (2011)"
+"c169d334","V",3,"Comunidad Valenciana","Valencia","Valencia, Valencian Community","ESP.10.3_1","ChIJRchn1xjlYA0REMwh126vAgM","ES.VC.VN",,"46","ES523",39.33421326,-0.797216604871963,2563342,"http://www.statoids.com/yes.html","Statoids (2011)"
+"de446ae1","BA",3,"Extremadura","Badajoz",,"ESP.11.1_1","ChIJ28y339ptFA0RkMmfjP1jBAM","ES.EX.BD",,"06","ES431",38.696458815,-6.22106823922444,691799,"http://www.statoids.com/yes.html","Statoids (2011)"
+"29513a8c","CC",3,"Extremadura","Cáceres",,"ESP.11.2_1","ChIJEz0HKNv5FQ0R0MmfjP1jBAM","ES.EX.CC",,"10","ES432",39.75937462,-6.13814600971611,412701,"http://www.statoids.com/yes.html","Statoids (2011)"
+"acb437df","C",3,"Galicia","La Coruña",,"ESP.12.1_1","ChIJGQVeRvRfLg0RIMrJc4L1BAM","ES.GA.AC",,"15","ES111",43.15250015,-8.58065116425466,1141286,"http://www.statoids.com/yes.html","Statoids (2011)"
+"5a1d9312","LU",3,"Galicia","Lugo",,"ESP.12.2_1","ChIJU82ZLkW2MQ0R4MrJc4L1BAM","ES.GA.LG",,"27","ES112",43.03963089,-7.45636099500634,348067,"http://www.statoids.com/yes.html","Statoids (2011)"
+"ef545572","OR",3,"Galicia","Orense",,"ESP.12.3_1","ChIJ3VJ27lykOg0RMMvJc4L1BAM","ES.GA.OR",,"32","ES113",42.19283867,-7.53721935985567,328697,"http://www.statoids.com/yes.html","Statoids (2011)"
+"41083735","PO",3,"Galicia","Pontevedra",,"ESP.12.4_1","ChIJIVLRnnmDLw0RcMvJc4L1BAM","ES.GA.PV",,"36","ES114",42.364723205,-8.53421602734543,954877,"http://www.statoids.com/yes.html","Statoids (2011)"
+"af065619","PM",3,"Islas Baleares","Baleares",,"ESP.13.1_1",,"ES.PM.BL",,"07","ES532",39.613332745,2.88000059,1100503,"http://www.statoids.com/yes.html","Statoids (2011)"
+"a77f6a68","LO",3,"La Rioja","La Rioja",,"ESP.15.1_1",,"ES.LO.LR",,"26","ES230",42.284181595,-2.48298330903961,321173,"http://www.statoids.com/yes.html","Statoids (2011)"
+"5eb1b237","ML",3,"Melilla","Melilla",,"ESP.7.2_1",,"ES.ML.ME",,"52","ES640",35.30152893,-2.95040840631618,78476,"http://www.statoids.com/yes.html","Statoids (2011)"
+"fe313586","VI",3,"País Vasco","Álava",,"ESP.16.1_1","ChIJMzKUYhbATw0RQMnJc4L1BAM","ES.PV.AA",,"01","ES211",42.84442329,-2.68209936715302,320778,"http://www.statoids.com/yes.html","Statoids (2011)"
+"7e2438b9","SS",3,"País Vasco","Guipúzcoa",,"ESP.16.2_1","ChIJzcnkHDg1UA0RcMrJc4L1BAM","ES.PV.GP",,"20","ES212",43.144805905,-2.20418521365678,708425,"http://www.statoids.com/yes.html","Statoids (2011)"
+"d09fe2d3","BI",3,"País Vasco","Vizcaya",,"ESP.16.3_1","ChIJzxBUoQZOTg0RMMzJc4L1BAM","ES.PV.VZ",,"48","ES213",43.238744735,-2.85200409578912,1156190,"http://www.statoids.com/yes.html","Statoids (2011)"
+"a5027bf4","O",3,"Principado de Asturias","Asturias",,"ESP.17.1_1",,"ES.AS.AS",,"33","ES120",43.27359009,-5.85352989311643,1075183,"http://www.statoids.com/yes.html","Statoids (2011)"
+"4306a253","MU",3,"Región de Murcia","Murcia",,"ESP.18.1_1",,"ES.MU.MR",,"30","ES620",38.06281662,-1.6713370655604,1462128,"http://www.statoids.com/yes.html","Statoids (2011)"

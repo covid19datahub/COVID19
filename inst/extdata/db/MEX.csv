@@ -1,34 +1,34 @@
-"id","id_github.cssegisanddata.covid19unified","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population"
-,,,,,,,,,,"-",,,
-"ba3b7ceb","MXAGU",2,"Aguascalientes",,"Aguascalientes","MEX.1_1","ChIJuRMJdqXmKYQRHxX0saYvLmY","MX.AG","MXAGU",,22.02451515,-102.352498704299,1184996
-"8793d473","MXBCN",2,"Baja California",,"Baja California","MEX.3_1","ChIJ0913qAxw14ARjt4YA5_9pPw","MX.BN","MXBCN",,30.29873848,-115.231039828398,3155070
-"ea85b662","MXBCS",2,"Baja California Sur",,"Baja California Sur","MEX.2_1","ChIJyR6itTnTr4YRGFmnqTqz33E","MX.BS","MXBCS",,25.41166687,-111.54264069,637026
-"ee432a59","MXCAM",2,"Campeche",,"Campeche","MEX.4_1","ChIJFeLHS0LD6IURw_yqe4z3i-Y","MX.CM","MXCAM",,19.31277752,-89.9061079819996,822441
-"03951aea","MXCHP",2,"Chiapas",,"Chiapas","MEX.5_1","ChIJZ85Xl7REjYURFdYZRoIzAM8","MX.CP","MXCHP",,16.253345485,-92.2853122840702,4796580
-"91828d91","MXCHH",2,"Chihuahua",,"Chihuahua","MEX.6_1","ChIJCaSRhS91loYRB36nQFPig5s","MX.CH","MXCHH",,28.68692112,-106.104726913856,3406465
-"3aea930e","MXCMX",2,"Ciudad de Mexico",,"Mexico City","MEX.9_1","ChIJJyk1sTYAzoURW4rR6E6e_d4","MX.DF","MXCMX",,19.2837801,-99.1103533854938,8851080
-"a7a19e68","MXCOA",2,"Coahuila",,"Coahuila","MEX.7_1","ChIJKR6Opr1yiIYROXrNFNeaAGQ","MX.CA","MXCOA",,27.202111245,-102.406088705927,2748391
-"fe648ce5","MXCOL",2,"Colima",,"Colima","MEX.8_1","ChIJ6yVw_g0yJYQRCmlXH5dAHiw","MX.CL","MXCOL",,19.13000107,-104.006671853096,650555
-"3aa9e601","MXDUR",2,"Durango",,"Durango","MEX.10_1","ChIJSUVzr8GpkIYRsgjjq0HifSk","MX.DU","MXDUR",,24.569360735,-104.677776285558,1632934
-"945becaf","MXGUA",2,"Guanajuato",,"Guanajuato","MEX.11_1","ChIJf3-bUI9bK4QRoEO-gRmmjuc","MX.GJ","MXGUA",,20.88313484,-101.291427291999,5486372
-"f6b04d22","MXGRO",2,"Guerrero",,"Guerrero","MEX.12_1","ChIJPyAn81hly4UROst3QpsiNzE","MX.GR","MXGRO",,17.68819332,-99.9849855144817,3388768
-"6539f8d9","MXHID",2,"Hidalgo",,"Hidalgo","MEX.13_1","ChIJ5y_OIgQK0YURG3hAeb_FUoE","MX.HI","MXHID",,20.482379915,-99.1729290137591,2665018
-"982729fa","MXJAL",2,"Jalisco",,"Jalisco","MEX.14_1","ChIJb05i1OtAH4QRU0obWqOw_qA","MX.JA","MXJAL",,20.812438965,-103.198272654935,7350682
-"289e3575","MXMEX",2,"Mexico",,"State of Mexico","MEX.15_1","ChIJOwrrwJKJzYURV6jFn775_sI","MX.MX","MXMEX",,19.324000355,-99.7783316359216,15175862
-"a98ea3d5","MXMIC",2,"Michoacan",,"Michoacán","MEX.16_1","ChIJt1yzHj5fKoQR1OBL8wxlxzs","MX.MC","MXMIC",,19.14700699,-101.66535595725,4351037
-"5d421751","MXMOR",2,"Morelos",,"Morelos","MEX.17_1","ChIJR_72Ja7fzYURD91poSWCX5c","MX.MR","MXMOR",,18.71176529,-99.0508460164843,1777227
-"709476a5","MXNAY",2,"Nayarit",,"Nayarit","MEX.18_1","ChIJR9s-5pyoIIQROdKUhqL1yMI","MX.NA","MXNAY",,21.81222248,-104.837829873072,1084979
-"c467de55","MXNLE",2,"Nuevo Leon",,"Nuevo León","MEX.19_1","ChIJXbClooSVYoYRxrtsw0L0HXA","MX.NL","MXNLE",,25.474061015,-99.4862481351824,4653458
-"797d4e01","MXOAX",2,"Oaxaca",,"Oaxaca","MEX.20_1","ChIJUVwOOk_YwIURyQvZPUMMxkQ","MX.OA","MXOAX",,17.145264625,-96.0089496917339,3801962
-"3930e2d9","MXPUE",2,"Puebla",,"Puebla (state)","MEX.21_1","ChIJZafA3bCMz4URrSAC1luuXOI","MX.PU","MXPUE",,19.38235569,-97.3618220118968,5779829
-"31e83875","MXQUE",2,"Queretaro",,"Querétaro","MEX.22_1","ChIJX3BEYdFE04URu2lIpMSxRpE","MX.QE","MXQUE",,20.80926514,-100.04105926111,1827937
-"9914239e","MXROO",2,"Quintana Roo",,"Quintana Roo","MEX.23_1","ChIJlSbD6vD8T48RnI1MSCrF8MQ","MX.QR","MXROO",,19.728333475,-88.4958613137262,1325578
-"a9fae5da","MXSLP",2,"San Luis Potosi",,"San Luis Potosí","MEX.24_1","ChIJefusBQCiKoQRXkEExEGyIOY","MX.SL","MXSLP",,22.86902523,-101.155966019981,2585518
-"65318f43","MXSIN",2,"Sinaloa",,"Sinaloa","MEX.25_1","ChIJWUmnKJRTn4YR71--DXbfe5w","MX.SI","MXSIN",,24.756388665,-107.470518398699,2767761
-"9e6c34d9","MXSON",2,"Sonora",,"Sonora","MEX.26_1","ChIJD9JN52kpmIYRdOO7_Br_Vs0","MX.SO","MXSON",,29.39833355,-110.456739996987,2662480
-"d54258e7","MXTAB",2,"Tabasco",,"Tabasco","MEX.27_1","ChIJT8t4j1_77YURRGuG2RHLJtQ","MX.TB","MXTAB",,17.952049255,-92.5649118997666,2238603
-"3b918e89","MXTAM",2,"Tamaulipas",,"Tamaulipas","MEX.28_1","ChIJWSQe265TeYYRJRnoNVqfhTM","MX.TM","MXTAM",,24.93251419,-98.4060557031599,3268554
-"fbb672be","MXTLA",2,"Tlaxcala",,"Tlaxcala","MEX.29_1","ChIJE2EAHD_Zz4UR4L181Friujg","MX.TL","MXTLA",,19.450846675,-98.0546297672568,1169936
-"cbbcc80b","MXVER",2,"Veracruz",,"Veracruz","MEX.30_1","ChIJbVJUr9BVw4URs7kQZwp_dy0","MX.VE","MXVER",,19.80402756,-96.8405514016656,7643194
-"51cc148b","MXYUC",2,"Yucatan",,"Yucatán","MEX.31_1","ChIJ7QTWqvgPVI8RCj0IMXUhzMw","MX.YU","MXYUC",,20.63473892,-89.0366132001852,1955577
-"6e919b0d","MXZAC",2,"Zacatecas",,"Zacatecas","MEX.32_1","ChIJb_7JfqDRgYYRmG0lXv0tHxw","MX.ZA","MXZAC",,23.07436085,-103.178399184043,1490668
+"id","id_github.cssegisanddata.covid19unified","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_hasc","key_jhu_csse","key_local","latitude","longitude","population","population_data_source_url","population_data_source"
+,,,,,,,,,,"-",,,,,
+"ba3b7ceb","MXAGU",2,"Aguascalientes",,"Aguascalientes","MEX.1_1","ChIJuRMJdqXmKYQRHxX0saYvLmY","MX.AG","MXAGU",,22.02451515,-102.352498704299,1184996,"http://www.statoids.com/umx.html","Statoids (2010)"
+"8793d473","MXBCN",2,"Baja California",,"Baja California","MEX.3_1","ChIJ0913qAxw14ARjt4YA5_9pPw","MX.BN","MXBCN",,30.29873848,-115.231039828398,3155070,"http://www.statoids.com/umx.html","Statoids (2010)"
+"ea85b662","MXBCS",2,"Baja California Sur",,"Baja California Sur","MEX.2_1","ChIJyR6itTnTr4YRGFmnqTqz33E","MX.BS","MXBCS",,25.41166687,-111.54264069,637026,"http://www.statoids.com/umx.html","Statoids (2010)"
+"ee432a59","MXCAM",2,"Campeche",,"Campeche","MEX.4_1","ChIJFeLHS0LD6IURw_yqe4z3i-Y","MX.CM","MXCAM",,19.31277752,-89.9061079819996,822441,"http://www.statoids.com/umx.html","Statoids (2010)"
+"03951aea","MXCHP",2,"Chiapas",,"Chiapas","MEX.5_1","ChIJZ85Xl7REjYURFdYZRoIzAM8","MX.CP","MXCHP",,16.253345485,-92.2853122840702,4796580,"http://www.statoids.com/umx.html","Statoids (2010)"
+"91828d91","MXCHH",2,"Chihuahua",,"Chihuahua","MEX.6_1","ChIJCaSRhS91loYRB36nQFPig5s","MX.CH","MXCHH",,28.68692112,-106.104726913856,3406465,"http://www.statoids.com/umx.html","Statoids (2010)"
+"3aea930e","MXCMX",2,"Ciudad de Mexico",,"Mexico City","MEX.9_1","ChIJJyk1sTYAzoURW4rR6E6e_d4","MX.DF","MXCMX",,19.2837801,-99.1103533854938,8851080,"http://www.statoids.com/umx.html","Statoids (2010)"
+"a7a19e68","MXCOA",2,"Coahuila",,"Coahuila","MEX.7_1","ChIJKR6Opr1yiIYROXrNFNeaAGQ","MX.CA","MXCOA",,27.202111245,-102.406088705927,2748391,"http://www.statoids.com/umx.html","Statoids (2010)"
+"fe648ce5","MXCOL",2,"Colima",,"Colima","MEX.8_1","ChIJ6yVw_g0yJYQRCmlXH5dAHiw","MX.CL","MXCOL",,19.13000107,-104.006671853096,650555,"http://www.statoids.com/umx.html","Statoids (2010)"
+"3aa9e601","MXDUR",2,"Durango",,"Durango","MEX.10_1","ChIJSUVzr8GpkIYRsgjjq0HifSk","MX.DU","MXDUR",,24.569360735,-104.677776285558,1632934,"http://www.statoids.com/umx.html","Statoids (2010)"
+"945becaf","MXGUA",2,"Guanajuato",,"Guanajuato","MEX.11_1","ChIJf3-bUI9bK4QRoEO-gRmmjuc","MX.GJ","MXGUA",,20.88313484,-101.291427291999,5486372,"http://www.statoids.com/umx.html","Statoids (2010)"
+"f6b04d22","MXGRO",2,"Guerrero",,"Guerrero","MEX.12_1","ChIJPyAn81hly4UROst3QpsiNzE","MX.GR","MXGRO",,17.68819332,-99.9849855144817,3388768,"http://www.statoids.com/umx.html","Statoids (2010)"
+"6539f8d9","MXHID",2,"Hidalgo",,"Hidalgo","MEX.13_1","ChIJ5y_OIgQK0YURG3hAeb_FUoE","MX.HI","MXHID",,20.482379915,-99.1729290137591,2665018,"http://www.statoids.com/umx.html","Statoids (2010)"
+"982729fa","MXJAL",2,"Jalisco",,"Jalisco","MEX.14_1","ChIJb05i1OtAH4QRU0obWqOw_qA","MX.JA","MXJAL",,20.812438965,-103.198272654935,7350682,"http://www.statoids.com/umx.html","Statoids (2010)"
+"289e3575","MXMEX",2,"Mexico",,"State of Mexico","MEX.15_1","ChIJOwrrwJKJzYURV6jFn775_sI","MX.MX","MXMEX",,19.324000355,-99.7783316359216,15175862,"http://www.statoids.com/umx.html","Statoids (2010)"
+"a98ea3d5","MXMIC",2,"Michoacan",,"Michoacán","MEX.16_1","ChIJt1yzHj5fKoQR1OBL8wxlxzs","MX.MC","MXMIC",,19.14700699,-101.66535595725,4351037,"http://www.statoids.com/umx.html","Statoids (2010)"
+"5d421751","MXMOR",2,"Morelos",,"Morelos","MEX.17_1","ChIJR_72Ja7fzYURD91poSWCX5c","MX.MR","MXMOR",,18.71176529,-99.0508460164843,1777227,"http://www.statoids.com/umx.html","Statoids (2010)"
+"709476a5","MXNAY",2,"Nayarit",,"Nayarit","MEX.18_1","ChIJR9s-5pyoIIQROdKUhqL1yMI","MX.NA","MXNAY",,21.81222248,-104.837829873072,1084979,"http://www.statoids.com/umx.html","Statoids (2010)"
+"c467de55","MXNLE",2,"Nuevo Leon",,"Nuevo León","MEX.19_1","ChIJXbClooSVYoYRxrtsw0L0HXA","MX.NL","MXNLE",,25.474061015,-99.4862481351824,4653458,"http://www.statoids.com/umx.html","Statoids (2010)"
+"797d4e01","MXOAX",2,"Oaxaca",,"Oaxaca","MEX.20_1","ChIJUVwOOk_YwIURyQvZPUMMxkQ","MX.OA","MXOAX",,17.145264625,-96.0089496917339,3801962,"http://www.statoids.com/umx.html","Statoids (2010)"
+"3930e2d9","MXPUE",2,"Puebla",,"Puebla (state)","MEX.21_1","ChIJZafA3bCMz4URrSAC1luuXOI","MX.PU","MXPUE",,19.38235569,-97.3618220118968,5779829,"http://www.statoids.com/umx.html","Statoids (2010)"
+"31e83875","MXQUE",2,"Queretaro",,"Querétaro","MEX.22_1","ChIJX3BEYdFE04URu2lIpMSxRpE","MX.QE","MXQUE",,20.80926514,-100.04105926111,1827937,"http://www.statoids.com/umx.html","Statoids (2010)"
+"9914239e","MXROO",2,"Quintana Roo",,"Quintana Roo","MEX.23_1","ChIJlSbD6vD8T48RnI1MSCrF8MQ","MX.QR","MXROO",,19.728333475,-88.4958613137262,1325578,"http://www.statoids.com/umx.html","Statoids (2010)"
+"a9fae5da","MXSLP",2,"San Luis Potosi",,"San Luis Potosí","MEX.24_1","ChIJefusBQCiKoQRXkEExEGyIOY","MX.SL","MXSLP",,22.86902523,-101.155966019981,2585518,"http://www.statoids.com/umx.html","Statoids (2010)"
+"65318f43","MXSIN",2,"Sinaloa",,"Sinaloa","MEX.25_1","ChIJWUmnKJRTn4YR71--DXbfe5w","MX.SI","MXSIN",,24.756388665,-107.470518398699,2767761,"http://www.statoids.com/umx.html","Statoids (2010)"
+"9e6c34d9","MXSON",2,"Sonora",,"Sonora","MEX.26_1","ChIJD9JN52kpmIYRdOO7_Br_Vs0","MX.SO","MXSON",,29.39833355,-110.456739996987,2662480,"http://www.statoids.com/umx.html","Statoids (2010)"
+"d54258e7","MXTAB",2,"Tabasco",,"Tabasco","MEX.27_1","ChIJT8t4j1_77YURRGuG2RHLJtQ","MX.TB","MXTAB",,17.952049255,-92.5649118997666,2238603,"http://www.statoids.com/umx.html","Statoids (2010)"
+"3b918e89","MXTAM",2,"Tamaulipas",,"Tamaulipas","MEX.28_1","ChIJWSQe265TeYYRJRnoNVqfhTM","MX.TM","MXTAM",,24.93251419,-98.4060557031599,3268554,"http://www.statoids.com/umx.html","Statoids (2010)"
+"fbb672be","MXTLA",2,"Tlaxcala",,"Tlaxcala","MEX.29_1","ChIJE2EAHD_Zz4UR4L181Friujg","MX.TL","MXTLA",,19.450846675,-98.0546297672568,1169936,"http://www.statoids.com/umx.html","Statoids (2010)"
+"cbbcc80b","MXVER",2,"Veracruz",,"Veracruz","MEX.30_1","ChIJbVJUr9BVw4URs7kQZwp_dy0","MX.VE","MXVER",,19.80402756,-96.8405514016656,7643194,"http://www.statoids.com/umx.html","Statoids (2010)"
+"51cc148b","MXYUC",2,"Yucatan",,"Yucatán","MEX.31_1","ChIJ7QTWqvgPVI8RCj0IMXUhzMw","MX.YU","MXYUC",,20.63473892,-89.0366132001852,1955577,"http://www.statoids.com/umx.html","Statoids (2010)"
+"6e919b0d","MXZAC",2,"Zacatecas",,"Zacatecas","MEX.32_1","ChIJb_7JfqDRgYYRmG0lXv0tHxw","MX.ZA","MXZAC",,23.07436085,-103.178399184043,1490668,"http://www.statoids.com/umx.html","Statoids (2010)"

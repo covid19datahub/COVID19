@@ -1,9 +1,9 @@
-"id","id_github.dssgpt.covid19ptdata","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population"
-,,,,,,,,"-",,,,
-"259c4386","PT20",2,"Açores",,,"PRT.2_1","ChIJBTvkER5_RgsRHQzOS2cbkeI",,"PT20",37.80757713,-25.4735232659185,246000
-"006a9877","PT18",2,"Alentejo",,,"PRT.8_1","ChIJp4xxnIZ0Gg0ReFUhsBqUOiA",,"PT18",38.49178,-8.021543,733000
-"7edbe4ca","PT15",2,"Algarve",,,"PRT.9_1","ChIJ78_RVe5UBQ0RRQ6REi5l4oA",,"PT15",37.255174635,-8.14991364061722,441000
-"e7d2b570","PT16",2,"Centro",,,"PRT.6_1","ChIJXWZ7D3pmIg0RhcUriIRC71Q",,"PT16",39.97743,-7.905126,2264000
-"90d585e6","PT17",2,"Lisboa",,"Lisbon","PRT.12_1","ChIJWxIr4ajVGA0RwCyQ5L3rAAM",,"PT17",38.62758,-8.842985,2809000
-"3c8772c7","PT30",2,"Madeira",,,"PRT.13_1","ChIJ7y75-KDpXwwRb166dGfldww",,"PT30",32.75158882,-16.9818614622634,259000
-"79b620d3","PT11",2,"Norte",,,"PRT.19_1","ChIJadR08PpkJA0RPnb8Lg60iNo",,"PT11",41.45368,-7.539949,3622000
+"id","id_github.dssgpt.covid19ptdata","administrative_area_level","administrative_area_level_2","administrative_area_level_3","key_apple_mobility","key_gadm","key_google_mobility","key_local","key_nuts","latitude","longitude","population","population_data_source_url","population_data_source"
+,,,,,,,,"-",,,,,,
+"259c4386","PT20",2,"Açores",,,"PRT.2_1","ChIJBTvkER5_RgsRHQzOS2cbkeI",,"PT20",37.80757713,-25.4735232659185,246000,"https://www.portugalglobal.pt/EN/InvestInPortugal/RegionsofPortugal/Pages/TheRegionsofPortugal.aspx","AICEP Portugal Global (2014)"
+"006a9877","PT18",2,"Alentejo",,,"PRT.8_1","ChIJp4xxnIZ0Gg0ReFUhsBqUOiA",,"PT18",38.49178,-8.021543,733000,"https://www.portugalglobal.pt/EN/InvestInPortugal/RegionsofPortugal/Pages/TheRegionsofPortugal.aspx","AICEP Portugal Global (2014)"
+"7edbe4ca","PT15",2,"Algarve",,,"PRT.9_1","ChIJ78_RVe5UBQ0RRQ6REi5l4oA",,"PT15",37.255174635,-8.14991364061722,441000,"https://www.portugalglobal.pt/EN/InvestInPortugal/RegionsofPortugal/Pages/TheRegionsofPortugal.aspx","AICEP Portugal Global (2014)"
+"e7d2b570","PT16",2,"Centro",,,"PRT.6_1","ChIJXWZ7D3pmIg0RhcUriIRC71Q",,"PT16",39.97743,-7.905126,2264000,"https://www.portugalglobal.pt/EN/InvestInPortugal/RegionsofPortugal/Pages/TheRegionsofPortugal.aspx","AICEP Portugal Global (2014)"
+"90d585e6","PT17",2,"Lisboa",,"Lisbon","PRT.12_1","ChIJWxIr4ajVGA0RwCyQ5L3rAAM",,"PT17",38.62758,-8.842985,2809000,"https://www.portugalglobal.pt/EN/InvestInPortugal/RegionsofPortugal/Pages/TheRegionsofPortugal.aspx","AICEP Portugal Global (2014)"
+"3c8772c7","PT30",2,"Madeira",,,"PRT.13_1","ChIJ7y75-KDpXwwRb166dGfldww",,"PT30",32.75158882,-16.9818614622634,259000,"https://www.portugalglobal.pt/EN/InvestInPortugal/RegionsofPortugal/Pages/TheRegionsofPortugal.aspx","AICEP Portugal Global (2014)"
+"79b620d3","PT11",2,"Norte",,,"PRT.19_1","ChIJadR08PpkJA0RPnb8Lg60iNo",,"PT11",41.45368,-7.539949,3622000,"https://www.portugalglobal.pt/EN/InvestInPortugal/RegionsofPortugal/Pages/TheRegionsofPortugal.aspx","AICEP Portugal Global (2014)"
