@@ -33,6 +33,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/NLD.csv}{Statistics Netherlands (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_rivm.nl.R}{National Institute for Public Health and the Environment}:
 confirmed cases,
 deaths.
@@ -42,6 +43,7 @@ deaths.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/NLD.csv}{Statistics Netherlands (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_rivm.nl.R}{National Institute for Public Health and the Environment}:
 confirmed cases,
 deaths.

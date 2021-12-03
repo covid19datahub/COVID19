@@ -34,6 +34,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/CAN.csv}{Canada's National Statistical Agency (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_canada.ca.R}{Public Health Agency of Canada}:
 confirmed cases,
 deaths,

@@ -34,6 +34,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/IND.csv}{Wikipedia (2013)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_covid19india.org.R}{COVID-19 India API}:
 confirmed cases,
 deaths,

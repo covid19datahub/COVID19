@@ -10,7 +10,7 @@
 covid19(country = NULL, level = 1)
 }
 \arguments{
-\item{country}{vector of country names or \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{ISO codes} (alpha-2, alpha-3 or numeric).}
+\item{country}{vector of 3-letter ISO codes for countries.}
 
 \item{level}{integer. Granularity level. 1: country-level data. 2: state-level data. 3: city-level data.}
 }

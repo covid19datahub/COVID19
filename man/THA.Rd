@@ -35,6 +35,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/THA.csv}{Statoids (2010)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_go.th.R}{Department of Disease Control, Thailand Ministry of Public Health}:
 confirmed cases,
 deaths.

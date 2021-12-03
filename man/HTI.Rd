@@ -34,6 +34,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/HTI.csv}{Wikipedia (2015)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_humdata.org.R}{Ministry of Public Health and Population of Haiti}:
 confirmed cases,
 deaths.

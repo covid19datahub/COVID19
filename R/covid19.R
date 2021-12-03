@@ -253,7 +253,7 @@ iso_docstring <- function(ds, ...){
 #' @export
 docstring <- function(iso, level){
   if(level==1){
-    x <- extdata("db/ISO.csv") %>% dplyr::filter(id==iso)
+    x <- extdata("db/ISO.csv") %>% dplyr::filter(id_covid19datahub.io==iso)
     url <- repo("ISO", csv = TRUE)
   }
   else{

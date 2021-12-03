@@ -34,6 +34,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/LTU.csv}{Vaidotas Zemlys-Balevicius (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.mpiktas.covid19lt.R}{Vaidotas Zemlys-Balevicius}:
 confirmed cases,
 deaths,
@@ -48,6 +49,7 @@ people fully vaccinated.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/LTU.csv}{Vaidotas Zemlys-Balevicius (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.mpiktas.covid19lt.R}{Vaidotas Zemlys-Balevicius}:
 confirmed cases,
 deaths,

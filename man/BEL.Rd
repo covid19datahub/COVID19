@@ -35,6 +35,7 @@ recovered.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/BEL.csv}{Statbel, Belgium in Figures (2019)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_sciensano.be.R}{Sciensano, the Belgian Institute for Health}:
 confirmed cases,
 deaths,
@@ -51,6 +52,7 @@ patients requiring ventilation.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/BEL.csv}{Johns Hopkins Center for Systems Science and Engineering (2021)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_sciensano.be.R}{Sciensano, the Belgian Institute for Health}:
 confirmed cases,
 tests,

@@ -35,6 +35,7 @@ people fully vaccinated.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/PER.csv}{COVID-19 Peru Data Repository (2019)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.jmcastagnetto.covid19perudata.R}{Jesus M. Castagnetto}:
 confirmed cases,
 deaths,

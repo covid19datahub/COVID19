@@ -34,6 +34,7 @@ people fully vaccinated.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ITA.csv}{Istituto Nazionale di Statistica, Italia (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.pcmdpc.covid19.R}{Ministero della Salute}:
 confirmed cases,
 deaths,
@@ -51,6 +52,7 @@ people fully vaccinated.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ITA.csv}{Istituto Nazionale di Statistica, Italia (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.pcmdpc.covid19.R}{Ministero della Salute}:
 confirmed cases.
 }
