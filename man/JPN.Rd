@@ -16,7 +16,6 @@ Japan
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{Japan COVID-19 Bulletin Board (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.swsoyee.2019ncovjapan.R}{Su Wei}:
 confirmed cases,
 deaths,
@@ -35,7 +34,6 @@ people fully vaccinated.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/JPN.csv}{Japan COVID-19 Bulletin Board (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.swsoyee.2019ncovjapan.R}{Su Wei}:
 confirmed cases,
 deaths,

@@ -16,7 +16,6 @@ Czech Republic
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
 confirmed cases,
 deaths,
@@ -34,7 +33,6 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/CZE.csv}{Czech Statistical Office (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
 confirmed cases,
 deaths,
@@ -49,7 +47,6 @@ people fully vaccinated.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/CZE.csv}{Statoids (2011)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_mzcr.cz.R}{Ministry of Health of the Czech Republic}:
 confirmed cases,
 deaths,

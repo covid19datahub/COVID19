@@ -16,7 +16,6 @@ Switzerland
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{Swiss Federal Statistical Office (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_admin.ch.R}{Federal Office of Public Health}:
 confirmed cases,
 deaths,
@@ -34,7 +33,6 @@ recovered.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/CHE.csv}{Swiss Federal Statistical Office (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_admin.ch.R}{Federal Office of Public Health}:
 confirmed cases,
 deaths,

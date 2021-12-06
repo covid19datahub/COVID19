@@ -16,7 +16,6 @@ Spain
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
 confirmed cases,
 deaths,
@@ -34,7 +33,6 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ESP.csv}{Johns Hopkins Center for Systems Science and Engineering (2021)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_isciii.es.R}{Centro Nacional de Epidemiología}:
 confirmed cases.
 }
@@ -43,7 +41,6 @@ confirmed cases.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ESP.csv}{Statoids (2011)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_isciii.es.R}{Centro Nacional de Epidemiología}:
 confirmed cases,
 deaths,

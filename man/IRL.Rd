@@ -16,7 +16,6 @@ Ireland
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_geohive.ie.R}{Health Protection Surveillance Centre (HPSC) and Health Service Executive (HSE)}:
 confirmed cases,
 deaths,
@@ -34,7 +33,6 @@ recovered.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/IRL.csv}{Ireland Health Protection Surveillance Centre (HPSC) and Health Service Executive (HSE) (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_geohive.ie.R}{Health Protection Surveillance Centre (HPSC) and Health Service Executive (HSE)}:
 confirmed cases,
 deaths,

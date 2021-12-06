@@ -16,7 +16,6 @@ India
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
 confirmed cases,
 deaths,
@@ -34,7 +33,6 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/IND.csv}{Wikipedia (2013)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_covid19india.org.R}{COVID-19 India API}:
 confirmed cases,
 deaths,

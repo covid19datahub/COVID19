@@ -16,7 +16,6 @@ United States
 
 \subsection{Level 1}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{Johns Hopkins Center for Systems Science and Engineering (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.nytimes.covid19data.R}{The New York Times}:
 confirmed cases,
 deaths.
@@ -36,7 +35,6 @@ people fully vaccinated.
 
 \subsection{Level 2}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/USA.csv}{Johns Hopkins Center for Systems Science and Engineering (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.nytimes.covid19data.R}{The New York Times}:
 confirmed cases,
 deaths.
@@ -57,7 +55,6 @@ people fully vaccinated.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/USA.csv}{Johns Hopkins Center for Systems Science and Engineering (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.nytimes.covid19data.R}{The New York Times}:
 confirmed cases,
 deaths.
