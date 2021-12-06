@@ -35,7 +35,7 @@ intensive care.
 
 \subsection{Level 3}{
 \itemize{
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/LVA.csv}{Oficiālās statistikas portāls (2019)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/LVA.csv}{Oficialas statistikas portals (2019)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.lv.R}{Center for Disease Prevention and Control}:
 confirmed cases.
 }
