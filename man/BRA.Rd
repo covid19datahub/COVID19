@@ -16,6 +16,7 @@ Brazil
 
 \subsection{Level 1}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
 confirmed cases,
 deaths,
@@ -28,6 +29,7 @@ total vaccine doses administered.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/BRA.csv}{Instituto Brasileiro de Geografia e Estatistica - IBGE (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
 confirmed cases,
 deaths,
@@ -40,6 +42,7 @@ total vaccine doses administered.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/BRA.csv}{Wesley Cota (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
 confirmed cases,
 deaths.

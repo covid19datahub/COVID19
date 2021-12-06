@@ -16,6 +16,7 @@ Denmark
 
 \subsection{Level 1}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
 confirmed cases,
 deaths,
@@ -33,6 +34,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/DNK.csv}{Statoids (2005)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ssi.dk.R}{Statens Serum Institut}:
 confirmed cases,
 deaths,
@@ -46,6 +48,7 @@ hospitalizations.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/DNK.csv}{Statoids (2005)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ssi.dk.R}{Statens Serum Institut}:
 confirmed cases,
 tests,

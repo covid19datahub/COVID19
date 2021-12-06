@@ -16,6 +16,7 @@ China
 
 \subsection{Level 1}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_who.int.R}{World Health Organization}:
 confirmed cases,
 deaths.

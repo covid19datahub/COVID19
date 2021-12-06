@@ -16,6 +16,7 @@ Australia
 
 \subsection{Level 1}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.m3it.covid19data.R}{Matt Bolton}:
 confirmed cases,
 deaths,
@@ -33,6 +34,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/AUS.csv}{Australian Bureau of Statistics (2019)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.m3it.covid19data.R}{Matt Bolton}:
 confirmed cases,
 deaths,

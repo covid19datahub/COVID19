@@ -16,6 +16,7 @@ Austria
 
 \subsection{Level 1}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
 confirmed cases,
 deaths,
@@ -32,6 +33,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/AUT.csv}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
 confirmed cases,
 deaths,
@@ -48,6 +50,7 @@ intensive care.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/AUT.csv}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gv.at.R}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
 confirmed cases,
 deaths,

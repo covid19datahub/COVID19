@@ -16,6 +16,7 @@ Taiwan
 
 \subsection{Level 1}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{CIA - Central Intelligence Agency (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.tw.R}{Ministry of Health and Welfare of Taiwan}:
 confirmed cases,
 tests.
@@ -34,6 +35,7 @@ intensive care.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/TWN.csv}{City populations worldwide (2016)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.tw.R}{Ministry of Health and Welfare of Taiwan}:
 confirmed cases.
 }

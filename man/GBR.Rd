@@ -16,6 +16,7 @@ United Kingdom
 
 \subsection{Level 1}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.uk.R}{UK Health Security Agency}:
 confirmed cases,
 deaths,
@@ -31,6 +32,7 @@ patients requiring ventilation.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/GBR.csv}{Office for National Statistics (2021)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.uk.R}{UK Health Security Agency}:
 confirmed cases,
 deaths,
@@ -46,6 +48,7 @@ patients requiring ventilation.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/GBR.csv}{Office for National Statistics (2021)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.uk.R}{UK Health Security Agency}:
 confirmed cases,
 deaths,
