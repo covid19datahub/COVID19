@@ -16,6 +16,7 @@ France
 
 \subsection{Level 1}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gouv.fr.R}{Santé Publique France}:
 confirmed cases,
 deaths,
@@ -33,6 +34,7 @@ recovered.
 
 \subsection{Level 2}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/FRA.csv}{Santé publique France (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gouv.fr.R}{Santé Publique France}:
 confirmed cases,
 deaths,
@@ -48,6 +50,7 @@ intensive care.
 
 \subsection{Level 3}{
 \itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/FRA.csv}{Santé publique France (2020)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gouv.fr.R}{Santé Publique France}:
 confirmed cases,
 deaths,
