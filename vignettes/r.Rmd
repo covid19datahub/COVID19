@@ -108,10 +108,10 @@ x <- covid19(gmr = TRUE)
 
 ### Apple Mobility Reports
 
-Mobility data by [Apple Mobility Reports](https://covid19.apple.com/mobility) can be added via the argument `amr`. This is the link to the Apple "All CSV data" file. This link is changing constantly. Consider downloading the data file from the website first, and then set `amr="path/to/file.csv"`.
+Mobility data by [Apple Mobility Reports](https://covid19.apple.com/mobility) can be added via the argument `amr`. This is the link to the Apple "All CSV data" file. This link is changing constantly. Consider downloading the data file from the website first, and then set `amr="path/to/file.csv"`. Since v3.0.1 of the package, if `amr=TRUE` is provided, the function tries to detect the latest URL from [this endpoint](https://covid19-static.cdn-apple.com/covid19-mobility-data/current/v3/index.json). 
 
 ```R
-x <- covid19(amr = "path/to/file.csv")
+x <- covid19(amr = TRUE)
 ```
 
 ## Reference manual
