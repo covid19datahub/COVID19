@@ -231,9 +231,9 @@
 <div id="apple-mobility-reports" class="section level3">
 <h3 class="hasAnchor">
 <a href="#apple-mobility-reports" class="anchor"></a>Apple Mobility Reports</h3>
-<p>Mobility data by <a href="https://covid19.apple.com/mobility">Apple Mobility Reports</a> can be added via the argument <code>amr</code>. This is the link to the Apple “All CSV data” file. This link is changing constantly. Consider downloading the data file from the website first, and then set <code>amr="path/to/file.csv"</code>.</p>
+<p>Mobility data by <a href="https://covid19.apple.com/mobility">Apple Mobility Reports</a> can be added via the argument <code>amr</code>. This is the link to the Apple “All CSV data” file. This link is changing constantly. Consider downloading the data file from the website first, and then set <code>amr="path/to/file.csv"</code>. Since v3.0.1 of the package, if <code>amr=TRUE</code> is provided, the function tries to detect the latest URL from <a href="https://covid19-static.cdn-apple.com/covid19-mobility-data/current/v3/index.json">this endpoint</a>.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>amr <span class="op">=</span> <span class="st">"path/to/file.csv"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>amr <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
 <div id="reference-manual" class="section level2">
