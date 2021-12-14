@@ -3,7 +3,7 @@ function downloadTable(el, slug) {
 	var id = el.value;
 	var name = $(el).text();
 	if(id){
-		var url = "https://storage.covid19datahub.io/"+slug+"/"+id+".csv.zip";
+		var url = "https://storage.covid19datahub.io/"+slug+"/"+id+".csv";
 		html = 
 		"<table class=\"table\">" +
 			"<colgroup>" +
@@ -22,7 +22,7 @@ function downloadTable(el, slug) {
 			"</thead>" +
 			"<tbody>" +
 				"<tr>" +
-					"<td><a href='"+url+"'>"+url+"</a></td>" +
+					"<td><a href='"+url+".zip'>"+url+".zip</a></td>" +
 					"<td>"+name+"</td>" +
 					"<td><a href='"+url+"'>CSV</a> – <a href='"+url+".zip'>ZIP</a> – <a href='"+url+".gz'>GZIP</a></td>" +
 					"<td><img src=\"https://storage.covid19datahub.io/downloads/"+slug+"/"+id+".svg\" onerror=\"this.src='https://img.shields.io/badge/downloads-0-blue'\"/></td>" +
