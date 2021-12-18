@@ -82,9 +82,6 @@ github.jmcastagnetto.covid19perudata <- function(level) {
         # select national level cases
         x.cases <- x.cases[is.na(x.cases$id),]
         
-        # fix duplicated dates
-        x.cases <- x.cases[!duplicated(x.cases$date),]
-        
         # merge
         x <- x.cases %>%
             full_join(x.hosp, by = "date") %>%
