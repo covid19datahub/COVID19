@@ -35,5 +35,24 @@ AFG <- function(level){
     
   }
   
+  #' @concept Level 2
+  #' @section Data Sources:
+  #' 
+  #' ## Level 2
+  #' `r docstring("AFG", 2)`
+  #' 
+  if(level==2){
+    
+    #' - \href{`r repo("humdata.af")`}{Afghanistan Ministry of Health}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered,
+    #' tests.
+    #'
+    x <- humdata.af(level = level)
+    x$id <- id(x$state, iso = "AFG", ds = "humdata.af", level = level)
+    
+  }
+  
   return(x)
 }

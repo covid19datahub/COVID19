@@ -137,7 +137,8 @@ format <- function(x){
     "id","latitude","longitude","population", "administrative_area_level", 
     "administrative_area_level_2", "administrative_area_level_3",
     "key_local", "key_hasc", "key_gadm", "key_nuts", 
-    "key_google_mobility", "key_apple_mobility", "key_jhu_csse")) 
+    "key_google_mobility", "key_apple_mobility", "key_jhu_csse",
+    "population_data_source", "population_data_source_url")) 
     | startsWith(colnames(x), "id_"))){
     stop("Some colnames are not allowed")
   }
@@ -158,100 +159,58 @@ format <- function(x){
   return(x)
 }
 
-jhu <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19_Unified-Dataset/master/COVID-19_LUT.csv")
+fillx <- function(x, y, id.x, id.y, var.x, var.y, level){
+  map <- y[[var.y]]
+  names(map) <- y[[id.y]]
+  idx <- which(x$administrative_area_level==level)
+  if(is.null(x[[var.x]])) x[[var.x]] <- NA
+  x[[var.x]][idx] <- map_values(x[[id.x]][idx], map, force = TRUE)
+  return(x)
+}
 
-iso <- "NLD"
+# CSV
+iso <- "AFG"
 x <- extdata(sprintf("db/%s.csv", iso))
-g <- readGADM(iso = iso, level = 3)
 
 # GADM
-map <- g$GID_2
-names(map) <- g$NAME_2
-idx <- which(x$administrative_area_level == 2)
-x$population[idx] <- map_values(x$key_local[idx], map, force = TRUE)
+g <- readGADM(iso = iso, level = 2)
+View(g)
 
+x <- fillx(x = x, y = g, level = 2,
+           id.x = "key_gadm", id.y = "GID_1", 
+           var.x = "key_hasc", var.y = "HASC_1")
+
+# population
+file <- file.choose()
+p <- read.csv(file, sep = "\t")
+p$Population <- as.integer(gsub(",", "", p$Population))
+
+x <- fillx(x = x, y = p, level = 2,
+           id.x = "key_hasc", id.y = "HASC", 
+           var.x = "population", var.y = "Population")
+
+x$population_data_source <- "Statoids (2006)"
+x$population_data_source_url <- "http://www.statoids.com/uaf.html"
+
+# Apple mobility
+a <- fread("inst/extdata/apple.csv")
+a$key <- paste(a$region, a$`sub-region`, sep = ", ")
+View(a)
+
+# Google mobility
+g <- fread("inst/extdata/google.csv")
+View(g[g$country_region_code=="IT",])
 
 # JHU CSSE
+jhu <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19_Unified-Dataset/master/COVID-19_LUT.csv")
 j <- jhu[jhu$ISO1_3C==iso,]
-map <- j$ID
-names(map) <- j$Admin1
-idx <- which(x$administrative_area_level==2)
-x$key_jhu_csse[idx] <- map_values(x$administrative_area_level_2[idx], map, force = TRUE)
+View(j)
 
+# x <- fillNUTS(x, admin_level = 3, nuts_level = 3)
+# x <- fillGADM(x, admin_level = 3, iso = iso)
+# x <- fillLevel2(x)
+# x <- fillGoogle(x)
 
-x <- fillNUTS(x, admin_level = 3, nuts_level = 3)
-x <- fillGADM(x, admin_level = 3, iso = iso)
-x <- fillLevel2(x)
-x <- fillGoogle(x)
 x <- format(x)
-
 fwrite(x, file = sprintf("inst/extdata/db/%s.csv", iso), quote = TRUE)
-
-
-
-# df <- j
-# idx <- which(is.na(x$key_jhu_csse) & x$administrative_area_level==3)
-# for(i in idx){
-#   d <- distm(x[i,c("longitude","latitude")], df[,c("Longitude","Latitude")], fun = distHaversine)
-#   k <- which.min(d)
-#   print(min(d)/1000)
-#   yn <- readline(sprintf("Match '%s' with '%s'? [y/n]", df$NameID[k], x$administrative_area_level_3[i]))
-#   if(yn=="y"){
-#     x$key_jhu_csse[i] <- df$ID[k]
-#   }
-# }
-
-# gg <- j
-# for(i in 1:nrow(gg)){
-#   p <- gg[i,]
-#   idx <- which(is.na(x$id_gov_br_es) & x$administrative_area_level==3 & x$administrative_area_level_2=="Espirito Santo")
-#   d <- distm(x[idx,c("longitude","latitude")], c(p$longitude, p$latitude), fun = distHaversine)
-#   id <- idx[which.min(d)]
-#   print(min(d)/1000)
-#   yn <- readline(sprintf("Match '%s' with '%s'? [y/n]", p$administrative_area_level_3, x$administrative_area_level_3[id]))
-#   if(yn=="y"){
-#     x$id_gov_br_es[id] <- p$id_gov_br_es
-#   }
-# }
-
-# gg <- g[!g$GID_3 %in% x$key_gadm,]
-# for(i in 1:nrow(gg)){
-#   p <- gg[i,]
-#   idx <- which(is.na(x$key_gadm) & x$administrative_area_level==3)
-#   d <- stringdist::stringdist(tolower(p$NAME_3), tolower(x$administrative_area_level_3[idx]), method = "jaccard")
-#   if(sum(d==min(d)) == 1){
-#     id <- idx[which.min(d)]
-#     yn <- readline(sprintf("Match '%s' with '%s'? [y/n]", x$administrative_area_level_3[id], p$NAME_3))
-#     if(yn=="y"){
-#       x$key_gadm[id] <- p$GID_3
-#     }
-#   }
-# }
-
-# df <- data.frame(geo_nuts)
-# df <- df[df$CNTR_CODE=="UK",]
-# idx <- which(is.na(x$key_nuts) & x$administrative_area_level==3)
-# for(i in idx){
-#   d <- stringdist::stringdist(x$administrative_area_level_3[i], df$NUTS_NAME, method = "jaccard")
-#   if(sum(d==min(d)) == 1){
-#     id <- which.min(d)
-#     yn <- readline(sprintf("Match '%s' with '%s'? [y/n]", df$NUTS_NAME[id], x$administrative_area_level_3[i]))
-#     if(yn=="y"){
-#       x$key_nuts[i] <- df$NUTS_ID[id]
-#     }
-#   }
-# }
-
-# idx <- which(is.na(x$key_gadm) & x$administrative_area_level==3)
-# for(i in idx){
-#   p <- g[!g$GID_2 %in% x$key_gadm,]
-#   d <- stringdist::stringdist(tolower(p$NAME_2), tolower(x$administrative_area_level_3[i]), method = "jaccard")
-#   if(sum(d==min(d, na.rm = TRUE), na.rm = TRUE) == 1){
-#     id <- which.min(d)
-#     yn <- readline(sprintf("Match '%s' with '%s'? [y/n]", x$administrative_area_level_3[i], p$NAME_2[id]))
-#     if(yn=="y"){
-#       x$key_gadm[i] <- p$GID_2[id]
-#     }
-#   }
-# }
 
