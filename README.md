@@ -6,23 +6,29 @@
 
 This repository aggregates COVID-19 data at a fine-grained spatial resolution from [several sources](https://covid19datahub.io/reference/index.html) and makes them available in the form of ready-to-use CSV files available at https://covid19datahub.io
 
-## What's included
-
 | Variable                  | Description                                                  |
 | ------------------------- | ------------------------------------------------------------ |
-| `confirmed`               | Cumulative number of confirmed cases.                        |
-| `deaths`                  | Cumulative number of deaths.                                 |
-| `recovered`               | Cumulative number of patients released from hospitals or reported recovered. |
-| `tests`                   | Cumulative number of tests.                                  |
-| `vaccines`                | Cumulative number of total doses administered.               |
-| `people_vaccinated`       | Cumulative number of people who received at least one vaccine dose. |
-| `people_fully_vaccinated` | Cumulative number of people who received all doses prescribed by the vaccination protocol. |
-| `hosp`                    | Number of hospitalized patients on date.                     |
-| `icu`                     | Number of hospitalized patients in intensive therapy on date. |
-| `vent`                    | Number of patients requiring invasive ventilation on date.   |
-| `population`              | Total population.                                            |
+| `confirmed`               | Cumulative number of confirmed cases                         |
+| `deaths`                  | Cumulative number of deaths                                  |
+| `recovered`               | Cumulative number of patients released from hospitals or reported recovered |
+| `tests`                   | Cumulative number of tests                                   |
+| `vaccines`                | Cumulative number of total doses administered                |
+| `people_vaccinated`       | Cumulative number of people who received at least one vaccine dose |
+| `people_fully_vaccinated` | Cumulative number of people who received all doses prescribed by the vaccination protocol |
+| `hosp`                    | Number of hospitalized patients on date                      |
+| `icu`                     | Number of hospitalized patients in intensive therapy on date |
+| `vent`                    | Number of patients requiring invasive ventilation on date    |
+| `population`              | Total population                                             |
 
 The dataset also includes [policy measures](https://covid19datahub.io/articles/docs.html#policy-measures) by Oxford's government response tracker, and a set of [keys](https://covid19datahub.io/articles/docs.html#external-keys) to match the data with [Google](https://www.google.com/covid19/mobility/) and [Apple](https://www.apple.com/covid19/mobility) mobility reports, with the [Hydromet dataset](https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet), and with spatial databases such as [Eurostat](https://ec.europa.eu/eurostat/web/nuts/nuts-maps) for Europe or [GADM](https://gadm.org/) worldwide.
+
+## Administrative divisions
+
+The data are provided at 3 different levels of granularity:
+
+- level 1: national-level data (e.g., countries)
+- level 2: sub-national data (e.g., regions/states)
+- level 3: lower-level data (e.g., municipalities/counties)
 
 ## Download the data
 
@@ -39,7 +45,7 @@ COVID-19 Data Hub is developed around 2 concepts:
 - data sources
 - countries  
 
-To extract the data for one country, different data sources may be required. For this reason, it is important to keep the two concepts distinct. The code in the [R folder](https://github.com/covid19datahub/COVID19/tree/master/R) is organized in two main types of files:
+To extract the data for one country, different data sources may be required. For this reason, the code in the [R folder](https://github.com/covid19datahub/COVID19/tree/master/R) is organized in two main types of files:
 
 - files representing a data source (prefix `ds_`)
 - files representing a country (prefix `iso_`)
