@@ -573,6 +573,48 @@ map_data <- function(x, map){
   
 }
 
+#' Decreasing counts
+#'
+#' Check which elements in a numeric vector are decreasing with respect to the previous elements
+#'
+#' @param x numeric vector
+#' @param k vector of lags (e.g., \code{k=1:7} returns \code{TRUE} if an element is decreasing with respect to any of the previous 7 elements)
+#' @param strict logical indicating whether only strictly decreasing counts should be considered
+#'
+#' @return \code{logical} indicating decreasing elements
+#' 
+#' @keywords internal
+#' 
+#' @export
+decreasing <- function(x, k = 1, strict = TRUE){
+  if(strict)
+    apply(sapply(k, function(k) c(rep(FALSE, k), diff(x, lag = k)<0)), 1, any)
+  else
+    apply(sapply(k, function(k) c(rep(FALSE, k), diff(x, lag = k)<=0)), 1, any)
+}
+
+#' Drop decreasing counts
+#' 
+#' @param x \code{data.frame} containing the column \code{date}
+#' @param by vector to group by
+#' @param cols vector of columns to clean
+#' @param k vector of lags (e.g., \code{k=1:7} removes values that are decreasing with respect to any of the previous 7 values)
+#' @param strict logical indicating whether only strictly decreasing counts should be dropped
+#' 
+#' @return \code{x} where decreasing counts are replaced with \code{NA} 
+#' 
+#' @keywords internal
+#' 
+#' @export
+drop_decreasing <- function(x, by, cols, k, strict){
+  x %>%
+    group_by_at(by) %>%
+    arrange(date) %>%
+    mutate(across(all_of(cols), function(x){
+      replace(x, decreasing(x, k = k, strict = strict), NA)
+    }))
+}
+
 #' Data Output
 #' 
 #' Write csv in UTF-8.
