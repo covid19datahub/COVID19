@@ -43,12 +43,12 @@ HTI <- function(level){
   #' 
   if(level==2){
     
-    #' - \href{`r repo("humdata.org")`}{Ministry of Public Health and Population of Haiti}:
+    #' - \href{`r repo("humdata.ht")`}{Ministry of Public Health and Population of Haiti}:
     #' confirmed cases,
     #' deaths.
     #'
-    x <- humdata.org(level = level)
-    x$id <- id(x$state, iso = "HTI", ds = "humdata.org", level = level)
+    x <- humdata.ht(level = level)
+    x$id <- id(x$state, iso = "HTI", ds = "humdata.ht", level = level)
     
   }
   

@@ -12,7 +12,7 @@
 #'
 #' @keywords internal
 #'
-humdata.org <- function(level){
+humdata.ht <- function(level){
   if(level!=2) return(NULL)
 
   # download
