@@ -41,6 +41,7 @@
 #' @keywords internal
 #'
 gouv.fr <- function(level = 1, reg = NULL, dep = NULL){
+  if(!level %in% 1:3) return(NULL)
   
   if(level==1){
     
