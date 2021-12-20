@@ -4,7 +4,15 @@
 \alias{read.zip}
 \title{Data Input (zip)}
 \usage{
-read.zip(zip, files, cache = FALSE, ...)
+read.zip(
+  zip,
+  files,
+  cache = FALSE,
+  fread = FALSE,
+  xsv = FALSE,
+  method = "auto",
+  ...
+)
 }
 \arguments{
 \item{zip}{path (url) to the zip folder.}
@@ -13,10 +21,16 @@ read.zip(zip, files, cache = FALSE, ...)
 
 \item{cache}{logical. Memory caching? Default \code{FALSE}.}
 
+\item{fread}{logical indicating whether \code{\link[data.table]{fread}} should be used}
+
+\item{xsv}{logical indicating whether \code{\link{xsv}} should be used. If \code{TRUE}, the argument \code{select} must be specified}
+
+\item{method}{the download method passed to \code{\link[utils]{download.file}}}
+
 \item{...}{arguments passed to \code{\link{read.csv}} or \code{\link{read.excel}}.}
 }
 \value{
-list of \code{data.frames}
+list of data frames
 }
 \description{
 Reads files from a zip folder.

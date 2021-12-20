@@ -30,6 +30,19 @@ hospitalizations,
 intensive care.
 }
 }
+
+
+\subsection{Level 2}{
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/AFG.csv}{Ministry of Public Health Afghanistan (2020)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_humdata.af.R}{Afghanistan Ministry of Health}:
+confirmed cases,
+deaths,
+recovered,
+tests.
+}
+}
 }
 
 \concept{Level 1}
+\concept{Level 2}

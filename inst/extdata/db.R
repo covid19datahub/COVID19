@@ -169,11 +169,11 @@ fillx <- function(x, y, id.x, id.y, var.x, var.y, level){
 }
 
 # CSV
-iso <- "AFG"
+iso <- "ARG"
 x <- extdata(sprintf("db/%s.csv", iso))
 
 # GADM
-g <- readGADM(iso = iso, level = 2)
+g <- readGADM(iso = iso, level = 3)
 View(g)
 
 x <- fillx(x = x, y = g, level = 2,

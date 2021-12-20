@@ -730,6 +730,24 @@ read.excel <- function(path, cache = FALSE, sheet = NA, ...) {
   
 }
 
+#' Data Input (csv)
+#' 
+#' Reads specific columns of a csv file by using the xsv command line utility
+#' https://github.com/BurntSushi/xsv
+#' 
+#' @param file the path to the csv file
+#' @param select character vector of column names to extract
+#' @param ... additional arguments passed to \code{\link[data.table]{fread}}
+#' 
+#' @return data.table
+#' 
+#' @keywords internal
+#' 
+#' @export
+read.xsv <- function(file, select, ...){
+  data.table::fread(cmd = sprintf("xsv select %s %s", paste0(select, collapse = ","), file), showProgress = FALSE, ...)
+}
+
 #' Data Input (zip)
 #' 
 #' Reads files from a zip folder.
@@ -737,30 +755,44 @@ read.excel <- function(path, cache = FALSE, sheet = NA, ...) {
 #' @param zip path (url) to the zip folder.
 #' @param files vector of filenames to read inside the zip folder.
 #' @param cache logical. Memory caching? Default \code{FALSE}.
+#' @param fread logical indicating whether \code{\link[data.table]{fread}} should be used
+#' @param xsv logical indicating whether \code{\link{xsv}} should be used. If \code{TRUE}, the argument \code{select} must be specified
+#' @param method the download method passed to \code{\link[utils]{download.file}}
 #' @param ... arguments passed to \code{\link{read.csv}} or \code{\link{read.excel}}.
 #' 
-#' @return list of \code{data.frames}
+#' @return list of data frames
 #' 
 #' @keywords internal
 #' 
 #' @export
-read.zip <- function(zip, files, cache = FALSE, ...){
+read.zip <- function(zip, files, cache = FALSE, fread = FALSE, xsv = FALSE, method = "auto", ...){
   
   read.zip <- function(zip, files, ...){
     
     temp <- tempfile()
-    utils::download.file(zip, temp, quiet = TRUE)  
+    utils::download.file(zip, temp, method = method, quiet = TRUE)
     
-    lapply(files, function(file){
-      
+    if(fread | xsv){
+      exdir <- tempdir()
+      unzip(temp, exdir = exdir, files = files, unzip = "unzip", junkpaths = TRUE)
+    }
+    
+    x <- lapply(files, function(file){
       if(grepl("\\.xlsx?$", file))
-        x <- readxl::read_excel(unz(temp, file), ...)
+        readxl::read_excel(unz(temp, file), ...)
+      else if(xsv)
+        read.xsv(sprintf("%s/%s", exdir, file), ...)
+      else if(fread)
+        data.table::fread(sprintf("%s/%s", exdir, file), showProgress = FALSE, ...)
       else
-        x <- read.csv(unz(temp, file), cache = FALSE, ...)
-      
-      return(x)
-      
+        read.csv(unz(temp, file), cache = FALSE, ...)  
     })
+    
+    unlink(temp)
+    if(fread | xsv) for(file in files) 
+      unlink(sprintf("%s/%s", exdir, file))
+    
+    return(x)
     
   }
   
