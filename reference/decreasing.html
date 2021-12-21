@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Haiti — HTI • COVID-19 Data Hub</title>
+<title>Decreasing counts — decreasing • COVID-19 Data Hub</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -54,8 +54,8 @@
   <link href="../extra.css" rel="stylesheet">
   <script src="../extra.js"></script>
 
-<meta property="og:title" content="Haiti — HTI" />
-<meta property="og:description" content="Haiti" />
+<meta property="og:title" content="Decreasing counts — decreasing" />
+<meta property="og:description" content="Check which elements in a numeric vector are decreasing with respect to the previous elements" />
 <meta property="og:image" content="https://covid19datahub.io/logo.png" />
 
 
@@ -188,54 +188,37 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Haiti</h1>
-    <small class="dont-index">Source: <a href='https://github.com/covid19datahub/COVID19/blob/master/R/iso_HTI.R'><code>R/iso_HTI.R</code></a></small>
-    <div class="hidden name"><code>HTI.Rd</code></div>
+    <h1>Decreasing counts</h1>
+    <small class="dont-index">Source: <a href='https://github.com/covid19datahub/COVID19/blob/master/R/covid19.R'><code>R/covid19.R</code></a></small>
+    <div class="hidden name"><code>decreasing.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Haiti</p>
+    <p>Check which elements in a numeric vector are decreasing with respect to the previous elements</p>
     </div>
 
-    <pre class="usage"><span class='fu'>HTI</span><span class='op'>(</span><span class='va'>level</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>decreasing</span><span class='op'>(</span><span class='va'>x</span>, k <span class='op'>=</span> <span class='fl'>1</span>, strict <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>numeric vector</p></td>
+    </tr>
+    <tr>
+      <th>k</th>
+      <td><p>vector of lags (e.g., <code>k=1:7</code> returns <code>TRUE</code> if an element is decreasing with respect to any of the previous 7 elements)</p></td>
+    </tr>
+    <tr>
+      <th>strict</th>
+      <td><p>logical indicating whether only strictly decreasing counts should be considered</p></td>
+    </tr>
+    </table>
 
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p><a href='https://github.com/covid19datahub/COVID19/blob/master/R/iso_HTI.R'>https://github.com/covid19datahub/COVID19/blob/master/R/iso_HTI.R</a></p>
-    <h2 class="hasAnchor" id="data-sources"><a class="anchor" href="#data-sources"></a>Data Sources</h2>
-
-    
-
-<h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>Level 1</h3>
-
-<ul>
-<li><p><a href='https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv'>World Bank Open Data (2018)</a>: population.</p></li>
-<li><p><a href='https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.cssegisanddata.covid19.R'>Johns Hopkins Center for Systems Science and Engineering</a>:
-confirmed cases,
-deaths,
-recovered.</p></li>
-<li><p><a href='https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata.org.R'>Our World in Data</a>:
-tests,
-total vaccine doses administered,
-people with at least one vaccine dose,
-people fully vaccinated,
-hospitalizations,
-intensive care.</p></li>
-</ul>
-
-
-
-<h3 class='hasAnchor' id='arguments'><a class='anchor' href='#arguments'></a>Level 2</h3>
-
-<ul>
-<li><p><a href='https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/HTI.csv'>Wikipedia (2015)</a>: population.</p></li>
-<li><p><a href='https://github.com/covid19datahub/COVID19/blob/master/R/ds_humdata.ht.R'>Ministry of Public Health and Population of Haiti</a>:
-confirmed cases,
-deaths.</p></li>
-</ul>
-
-
+    <p><code>logical</code> indicating decreasing elements</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

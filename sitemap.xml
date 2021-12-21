@@ -742,7 +742,13 @@
     <loc>https://covid19datahub.io/reference/cumsum.html</loc>
   </url>
   <url>
+    <loc>https://covid19datahub.io/reference/decreasing.html</loc>
+  </url>
+  <url>
     <loc>https://covid19datahub.io/reference/docstring.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/drop_decreasing.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/ds_check_format.html</loc>
@@ -820,6 +826,9 @@
     <loc>https://covid19datahub.io/reference/go.th.html</loc>
   </url>
   <url>
+    <loc>https://covid19datahub.io/reference/gob.ar.html</loc>
+  </url>
+  <url>
     <loc>https://covid19datahub.io/reference/gob.pe.html</loc>
   </url>
   <url>
@@ -847,7 +856,10 @@
     <loc>https://covid19datahub.io/reference/healthdata.gov.html</loc>
   </url>
   <url>
-    <loc>https://covid19datahub.io/reference/humdata.org.html</loc>
+    <loc>https://covid19datahub.io/reference/humdata.af.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/humdata.ht.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/id.html</loc>
@@ -884,6 +896,9 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/read.excel.html</loc>
+  </url>
+  <url>
+    <loc>https://covid19datahub.io/reference/read.xsv.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/read.zip.html</loc>
