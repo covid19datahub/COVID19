@@ -164,5 +164,17 @@ gob.ar <- function(level){
            people_vaccinated = replace(people_vaccinated, date>max(x.vacc$date), NA),
            people_fully_vaccinated = replace(people_fully_vaccinated, date>max(x.vacc$date), NA))
   
+  # drop unassigned by level
+  if(level==2){
+    x <- x %>% 
+      filter(prov!="99" & prov!="00") %>%
+      mutate(prov = as.integer(prov))
+  }
+  if(level==3){
+    x <- x %>% 
+      filter(!startsWith(dep, "99") & !endsWith(dep, "999") & !startsWith(dep, "00") & !endsWith(dep, "000")) %>%
+      mutate(dep = as.integer(dep))
+  }
+  
   return(x)
 }

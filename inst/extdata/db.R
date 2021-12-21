@@ -162,7 +162,7 @@ format <- function(x){
 fillx <- function(x, y, id.x, id.y, var.x, var.y, level){
   map <- y[[var.y]]
   names(map) <- y[[id.y]]
-  idx <- which(x$administrative_area_level==level)
+  idx <- which(x$administrative_area_level==level & is.na(x[[var.x]]))
   if(is.null(x[[var.x]])) x[[var.x]] <- NA
   x[[var.x]][idx] <- map_values(x[[id.x]][idx], map, force = TRUE)
   return(x)
@@ -176,9 +176,14 @@ x <- extdata(sprintf("db/%s.csv", iso))
 g <- readGADM(iso = iso, level = 3)
 View(g)
 
-x <- fillx(x = x, y = g, level = 2,
-           id.x = "key_gadm", id.y = "GID_1", 
-           var.x = "key_hasc", var.y = "HASC_1")
+
+x <- fillx(x = x, y = g, level = 3,
+           id.x = "key", id.y = "key", 
+           var.x = "key_gadm", var.y = "GID_2")
+
+x <- fillx(x = x, y = g, level = 3,
+           id.x = "key_gadm", id.y = "GID_2", 
+           var.x = "longitude", var.y = "longitude")
 
 # population
 file <- file.choose()
@@ -193,13 +198,24 @@ x$population_data_source <- "Statoids (2006)"
 x$population_data_source_url <- "http://www.statoids.com/uaf.html"
 
 # Apple mobility
-a <- fread("inst/extdata/apple.csv")
-a$key <- paste(a$region, a$`sub-region`, sep = ", ")
+a <- fread("inst/extdata/apple.csv", header = TRUE)[,1:6]
+a$key <- gsub(", $", "", paste(a$region, a$`sub-region`, sep = ", "))
 View(a)
 
 # Google mobility
-g <- fread("inst/extdata/google.csv")
-View(g[g$country_region_code=="IT",])
+g <- fread("inst/extdata/google.csv", encoding = "UTF-8", na.strings = "")[,1:8]
+g <- g[g$country_region_code=="AR",]
+g <- g[!duplicated(g),]
+View(g)
+
+g <- g[is.na(g$sub_region_2),]
+
+g$sub_region_1 <- trimws(gsub(" Province$", "", g$sub_region_1))
+
+x <- fillx(x = x, y = g, level = 2,
+           id.x = "administrative_area_level_2", id.y = "sub_region_1", 
+           var.x = "key_google_mobility", var.y = "place_id")
+
 
 # JHU CSSE
 jhu <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19_Unified-Dataset/master/COVID-19_LUT.csv")
