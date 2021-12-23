@@ -30,6 +30,36 @@ hospitalizations,
 intensive care.
 }
 }
+
+
+\subsection{Level 2}{
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ARG.csv}{Statoids (2010)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gob.ar.R}{Argentine Ministry of Health}:
+\item confirmed cases
+\item deaths
+\item tests
+\item total vaccine doses administered
+\item people with at least one vaccine dose
+\item people fully vaccinated
+}
+}
+
+
+\subsection{Level 3}{
+\itemize{
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ARG.csv}{Statoids (2010)}, \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ARG.csv}{Wikipedia (2010)}: population.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gob.ar.R}{Argentine Ministry of Health}:
+\item confirmed cases
+\item deaths
+\item tests
+\item total vaccine doses administered
+\item people with at least one vaccine dose
+\item people fully vaccinated
+}
+}
 }
 
 \concept{Level 1}
+\concept{Level 2}
+\concept{Level 3}

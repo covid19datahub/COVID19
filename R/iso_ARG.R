@@ -35,5 +35,47 @@ ARG <- function(level){
     
   }
   
+  #' @concept Level 2
+  #' @section Data Sources:
+  #' 
+  #' ## Level 2
+  #' `r docstring("ARG", 2)`
+  #' 
+  if(level==2){
+   
+    #' - \href{`r repo("gob.ar")`}{Argentine Ministry of Health}:
+    #' - confirmed cases
+    #' - deaths
+    #' - tests
+    #' - total vaccine doses administered
+    #' - people with at least one vaccine dose
+    #' - people fully vaccinated
+    #'
+    x <- gob.ar(level = level)
+    x$id <- id(x$prov, iso = "ARG", ds = "gob.ar", level = level)
+    
+  }
+  
+  #' @concept Level 3
+  #' @section Data Sources:
+  #' 
+  #' ## Level 3
+  #' `r docstring("ARG", 3)`
+  #' 
+  if(level==3){
+    
+    #' - \href{`r repo("gob.ar")`}{Argentine Ministry of Health}:
+    #' - confirmed cases
+    #' - deaths
+    #' - tests
+    #' - total vaccine doses administered
+    #' - people with at least one vaccine dose
+    #' - people fully vaccinated
+    #'
+    x <- gob.ar(level = level)
+    x$id <- id(x$dep, iso = "ARG", ds = "gob.ar", level = level)
+    
+  }
+  
   return(x)
 }
