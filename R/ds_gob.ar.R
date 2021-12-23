@@ -93,6 +93,7 @@ gob.ar <- function(level){
     "fecha" = "date",
     "codigo_indec_provincia" = "prov",
     "codigo_indec_departamento" = "dep",
+    "positivos" = "confirmed",
     "total" = "tests"
   ))
   
@@ -103,10 +104,12 @@ gob.ar <- function(level){
   # compute tests
   x.tests <- x.tests %>%
     group_by_at(c("date", by)) %>%
-    summarise(tests = sum(tests)) %>%
+    summarise(tests = sum(tests),
+              confirmed = sum(confirmed)) %>%
     group_by_at(by) %>%
     arrange(date) %>%
-    mutate(tests = cumsum(tests))
+    mutate(tests = cumsum(tests),
+           confirmed = cumsum(confirmed))
   
   # download vaccines
   # see https://datos.gob.ar/dataset/salud-vacunas-contra-covid-19-dosis-aplicadas-republica-argentina---registro-desagregado
@@ -139,10 +142,22 @@ gob.ar <- function(level){
            people_fully_vaccinated = cumsum(people_fully_vaccinated))
   
   # merge
-  x <- x.confirmed %>%
-    full_join(x.deaths, by = c("date", by)) %>%
+  x <- x.deaths %>%
     full_join(x.tests, by = c("date", by)) %>%
-    full_join(x.vacc, by = c("date", by)) %>%
+    full_join(x.vacc, by = c("date", by))
+  
+  # confirmed tests are reported by testing location, confirmed cases by residence.
+  # we need confirmed tests to be compatible with the number of tests at level 3.
+  # for levels 1 and 2, it doesn't make much difference and we can use confirmed cases that have a longer history.
+  # if level!=3 use confirmed cases instead of confirmed tests.
+  if(level!=3){
+    x <- x %>%
+      select(-confirmed) %>%
+      full_join(x.confirmed, by = c("date", by))
+  }
+  
+  # convert date and sanitize
+  x <- x %>%
     mutate(date = as.Date(date)) %>%
     filter(!is.na(date) & date>="2020-01-01")
 
@@ -153,7 +168,7 @@ gob.ar <- function(level){
     # sort by date
     arrange(date) %>%
     # fill with previous value
-    fill(confirmed, deaths, vaccines, people_vaccinated, people_fully_vaccinated) %>%
+    fill(confirmed, deaths, tests, vaccines, people_vaccinated, people_fully_vaccinated) %>%
     # ungroup
     ungroup() %>%
     # set to missing if date greater than the corresponding max date
@@ -164,12 +179,14 @@ gob.ar <- function(level){
            people_vaccinated = replace(people_vaccinated, date>max(x.vacc$date), NA),
            people_fully_vaccinated = replace(people_fully_vaccinated, date>max(x.vacc$date), NA))
   
-  # drop unassigned by level
+  # drop unassigned provinces
   if(level==2){
     x <- x %>% 
       filter(prov!="99" & prov!="00") %>%
       mutate(prov = as.integer(prov))
   }
+  
+  # drop unassigned departments
   if(level==3){
     x <- x %>% 
       filter(!startsWith(dep, "99") & !endsWith(dep, "999") & !startsWith(dep, "00") & !endsWith(dep, "000")) %>%
