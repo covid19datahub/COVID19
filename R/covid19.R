@@ -887,20 +887,29 @@ ds_check_format <- function(x, level, ci = 0.8) {
     }
   }
   
-  # returns fraction of dx<=dy
-  lessthan <- function(x, y) mean(diff(x) <= diff(y), na.rm = TRUE)
-  
   # deaths <= confirmed
   if("confirmed" %in% cols & "deaths" %in% cols)
-    status <- status & check(ci < lessthan(x$deaths, x$confirmed), "deaths > confirmed")
+    status <- status & check(ci < mean(x$deaths <= x$confirmed, na.rm = TRUE), "deaths > confirmed")
   
   # confirmed <= tests
   if("confirmed" %in% cols & "tests" %in% cols) 
-    status <- status & check(ci < lessthan(x$confirmed, x$tests), "confirmed > tests")
+    status <- status & check(ci < mean(diff(x$confirmed) <= diff(x$tests), na.rm = TRUE), "confirmed > tests")
   
   # recovered <= confirmed
   if("recovered" %in% cols & "confirmed" %in% cols)
-    status <- status & check(ci < lessthan(x$recovered, x$confirmed), "recovered > confirmed")
+    status <- status & check(ci < mean(x$recovered <= x$confirmed, na.rm = TRUE), "recovered > confirmed")
+  
+  # people_vaccinated <= vaccines 
+  if("vaccines" %in% cols & "people_vaccinated" %in% cols)
+    status <- status & check(ci < mean(x$people_vaccinated <= x$vaccines, na.rm = TRUE), "people_vaccinated > vaccines")
+  
+  # people_fully_vaccinated <= vaccines
+  if("vaccines" %in% cols & "people_fully_vaccinated" %in% cols)
+    status <- status & check(ci < mean(x$people_fully_vaccinated <= x$vaccines, na.rm = TRUE), "people_fully_vaccinated > vaccines")
+  
+  # people_fully_vaccinated <= people_vaccinated
+  if("people_vaccinated" %in% cols & "people_fully_vaccinated" %in% cols)
+    status <- status & check(ci < mean(x$people_fully_vaccinated <= x$people_vaccinated, na.rm = TRUE), "people_fully_vaccinated > people_vaccinated")
   
   # icu <= hosp
   if("icu" %in% cols & "hosp" %in% cols)
