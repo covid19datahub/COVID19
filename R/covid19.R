@@ -45,6 +45,10 @@ covid19 <- function(country = NULL, level = 1){
   if(length(idx <- which(duplicated(db$id))))
     stop(sprintf("Duplicated ids in CSV files: %s", paste(db$id[idx], collapse = ", ")))
   
+  # check google key
+  if(length(idx <- which(!is.na(db$key_google_mobility) & nchar(db$key_google_mobility)!=27)))
+    stop(sprintf("Google mobility key not of 27 characters: %s", paste(db$id[idx], collapse = ", ")))
+  
   # download data
   x <- data.frame()
   if(is.null(country)) country <- iso$id_covid19datahub.io
