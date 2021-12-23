@@ -153,7 +153,7 @@ gob.ar <- function(level){
     # sort by date
     arrange(date) %>%
     # fill with previous value
-    fill(confirmed, deaths, tests, vaccines, people_vaccinated, people_fully_vaccinated) %>%
+    fill(confirmed, deaths, vaccines, people_vaccinated, people_fully_vaccinated) %>%
     # ungroup
     ungroup() %>%
     # set to missing if date greater than the corresponding max date

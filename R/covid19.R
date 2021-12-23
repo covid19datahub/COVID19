@@ -78,7 +78,7 @@ covid19 <- function(country = NULL, level = 1){
       y$id <- iso$id[which(iso$id_covid19datahub.io==fun)]
     
     # check format
-    if(!ds_check_format(y, level = level, ci = 0.85)){
+    if(!ds_check_format(y, level = level)){
       warning(sprintf("%s: check failed", fun))
       next
     }
@@ -823,7 +823,7 @@ read.zip <- function(zip, files, cache = FALSE, fread = FALSE, xsv = FALSE, meth
 #' @keywords internal
 #' 
 #' @export
-ds_check_format <- function(x, level, ci = 0.95) {
+ds_check_format <- function(x, level, ci = 0.8) {
   
   check <- function(c, message) {
     c <- mean(c, na.rm = TRUE) > ci
@@ -887,34 +887,32 @@ ds_check_format <- function(x, level, ci = 0.95) {
     }
   }
   
+  # returns fraction of dx<=dy
+  lessthan <- function(x, y) mean(diff(x) <= diff(y), na.rm = TRUE)
+  
   # deaths <= confirmed
   if("confirmed" %in% cols & "deaths" %in% cols)
-    status <- status & check(ci < mean(x$deaths <= x$confirmed | x$confirmed == 0, na.rm = T),
-                             "deaths > confirmed")
+    status <- status & check(ci < lessthan(x$deaths, x$confirmed), "deaths > confirmed")
+  
   # confirmed <= tests
   if("confirmed" %in% cols & "tests" %in% cols) 
-    status <- status & check(ci < mean(x$confirmed <= x$tests | x$tests == 0, na.rm = T),
-                             "confirmed > tests")
+    status <- status & check(ci < lessthan(x$confirmed, x$tests), "confirmed > tests")
+  
   # recovered <= confirmed
   if("recovered" %in% cols & "confirmed" %in% cols)
-    status <- status & check(ci < mean(x$recovered <= x$confirmed | x$confirmed == 0, na.rm = T),
-                             "recovered > confirmed")
-  # hosp <= confirmed
-  if("hosp" %in% cols & "confirmed" %in% cols)
-    status <- status & check(ci < mean(x$hosp <= x$confirmed | x$confirmed == 0, na.rm = T),
-                             "hosp > confirmed")
+    status <- status & check(ci < lessthan(x$recovered, x$confirmed), "recovered > confirmed")
+  
   # icu <= hosp
   if("icu" %in% cols & "hosp" %in% cols)
-    status <- status & check(ci < mean(x$icu <= x$hosp | x$hosp == 0, na.rm = T),
-                             "icu > hosp")
+    status <- status & check(ci < mean(x$icu <= x$hosp, na.rm = TRUE), "icu > hosp")
+  
   # vent <= confirmed
   if("vent" %in% cols & "confirmed" %in% cols)
-    status <- status & check(ci < mean(x$vent <= x$confirmed | x$confirmed == 0, na.rm = T),
-                             "vent > confirmed")
+    status <- status & check(ci < mean(x$vent <= x$confirmed, na.rm = TRUE), "vent > confirmed")
+  
   # vent <= icu
   if("vent" %in% cols & "icu" %in% cols)
-    status <- status & check(ci < mean(x$vent <= x$icu | x$icu == 0, na.rm = T),
-                             "vent > icu")
+    status <- status & check(ci < mean(x$vent <= x$icu, na.rm = TRUE), "vent > icu")
   
   # check cumulative/non-cumulative
   y <- x %>%
