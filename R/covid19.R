@@ -891,10 +891,6 @@ ds_check_format <- function(x, level, ci = 0.8) {
   if("confirmed" %in% cols & "deaths" %in% cols)
     status <- status & check(ci < mean(x$deaths <= x$confirmed, na.rm = TRUE), "deaths > confirmed")
   
-  # confirmed <= tests
-  if("confirmed" %in% cols & "tests" %in% cols) 
-    status <- status & check(ci < mean(diff(x$confirmed) <= diff(x$tests), na.rm = TRUE), "confirmed > tests")
-  
   # recovered <= confirmed
   if("recovered" %in% cols & "confirmed" %in% cols)
     status <- status & check(ci < mean(x$recovered <= x$confirmed, na.rm = TRUE), "recovered > confirmed")
@@ -943,6 +939,7 @@ ds_check_format <- function(x, level, ci = 0.8) {
     
     # detect negative derivation
     dplyr::summarise(
+      d_confirmed_tests  = ci < mean(diff(confirmed) <= diff(tests), na.rm = T),
       d_deaths_nonneg    = ci < mean(diff(deaths)    >= 0, na.rm = T),
       d_confirmed_nonneg = ci < mean(diff(confirmed) >= 0, na.rm = T),
       d_tests_nonneg     = ci < mean(diff(tests)     >= 0, na.rm = T),
@@ -953,6 +950,9 @@ ds_check_format <- function(x, level, ci = 0.8) {
       d_hosp_anyneg      = all(hosp==0, na.rm = T) | any(diff(hosp) < 0, na.rm = T),
       d_vent_anyneg      = all(vent==0, na.rm = T) | any(diff(vent) < 0, na.rm = T),
       d_icu_anyneg       = all(icu==0, na.rm = T)  | any(diff(icu)  < 0, na.rm = T) )
+  
+  # daily confirmed <= daily tests
+  status <- status & check(y$d_confirmed_tests, "confirmed > tests")
   
   # deaths not descending
   status <- status & check(y$d_deaths_nonneg,
