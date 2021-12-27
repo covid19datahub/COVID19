@@ -890,6 +890,10 @@ ds_check_format <- function(x, level, ci = 0.8) {
   # deaths <= confirmed
   if("confirmed" %in% cols & "deaths" %in% cols)
     status <- status & check(ci < mean(x$deaths <= x$confirmed, na.rm = TRUE), "deaths > confirmed")
+
+  # confirmed <= tests
+  if("confirmed" %in% cols & "tests" %in% cols)
+    status <- status & check(ci < mean(x$confirmed <= x$tests, na.rm = TRUE), "confirmed > tests")
   
   # recovered <= confirmed
   if("recovered" %in% cols & "confirmed" %in% cols)
@@ -952,7 +956,7 @@ ds_check_format <- function(x, level, ci = 0.8) {
       d_icu_anyneg       = all(icu==0, na.rm = T)  | any(diff(icu)  < 0, na.rm = T) )
   
   # daily confirmed <= daily tests
-  status <- status & check(y$d_confirmed_tests, "confirmed > tests")
+  # status <- status & check(y$d_confirmed_tests, "confirmed > tests")
   
   # deaths not descending
   status <- status & check(y$d_deaths_nonneg,
