@@ -80,7 +80,7 @@ covid19 <- function(country = NULL, level = 1){
     # check format
     if(!ds_check_format(y, level = level)){
       warning(sprintf("%s: check failed", fun))
-      next
+      # next
     }
     
     # add data
