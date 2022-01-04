@@ -50,5 +50,9 @@ go.th <- function(level){
   # convert date
   x$date <- as.Date(x$date)
   
+  # fix duplicates
+  cols <- intersect(colnames(x), c("date","province"))
+  x <- x[!duplicated(x[,cols]),]
+  
   return(x)
 }
