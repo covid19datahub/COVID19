@@ -15,7 +15,7 @@ vignette: >
 ## Latest data
 
 The latest data are updated on an hourly basis. 
-They can be dowloaded in several ways:
+You can dowload them in several ways:
 
 - all-in-one (SQLite)
 - by level (CSV)
