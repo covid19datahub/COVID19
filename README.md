@@ -56,7 +56,7 @@ The code is run continuously on a dedicated Linux server to crunch the data from
 
 ## Contribute
 
-If you find some issues with the data, please [report a bug](https://github.com/covid19datahub/COVID19/issues). Suggestions about where to find data that we do not currently provide are also very welcome! Help our project grow: star the repo!
+If you find some issues with the data, please [report a bug](https://github.com/covid19datahub/COVID19/issues). Suggestions about where to find data that we do not currently provide are also very [welcome](https://github.com/covid19datahub/COVID19/issues/179)! Help our project grow: star the repo!
 
 ## Academic publications
 
