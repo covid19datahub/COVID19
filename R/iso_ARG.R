@@ -44,12 +44,12 @@ ARG <- function(level){
   if(level==2){
    
     #' - \href{`r repo("gob.ar")`}{Argentine Ministry of Health}:
-    #' - confirmed cases
-    #' - deaths
-    #' - tests
-    #' - total vaccine doses administered
-    #' - people with at least one vaccine dose
-    #' - people fully vaccinated
+    #' confirmed cases,
+    #' deaths,
+    #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
     #'
     x <- gob.ar(level = level)
     x$id <- id(x$prov, iso = "ARG", ds = "gob.ar", level = level)
@@ -65,12 +65,12 @@ ARG <- function(level){
   if(level==3){
     
     #' - \href{`r repo("gob.ar")`}{Argentine Ministry of Health}:
-    #' - confirmed cases
-    #' - deaths
-    #' - tests
-    #' - total vaccine doses administered
-    #' - people with at least one vaccine dose
-    #' - people fully vaccinated
+    #' confirmed cases,
+    #' deaths,
+    #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated.
     #'
     x <- gob.ar(level = level)
     x$id <- id(x$dep, iso = "ARG", ds = "gob.ar", level = level)

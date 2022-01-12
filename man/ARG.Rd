@@ -36,12 +36,12 @@ intensive care.
 \itemize{
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ARG.csv}{Statoids (2010)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gob.ar.R}{Argentine Ministry of Health}:
-\item confirmed cases
-\item deaths
-\item tests
-\item total vaccine doses administered
-\item people with at least one vaccine dose
-\item people fully vaccinated
+confirmed cases,
+deaths,
+tests,
+total vaccine doses administered,
+people with at least one vaccine dose,
+people fully vaccinated.
 }
 }
 
@@ -50,12 +50,12 @@ intensive care.
 \itemize{
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ARG.csv}{Statoids (2010)}, \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ARG.csv}{Wikipedia (2010)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gob.ar.R}{Argentine Ministry of Health}:
-\item confirmed cases
-\item deaths
-\item tests
-\item total vaccine doses administered
-\item people with at least one vaccine dose
-\item people fully vaccinated
+confirmed cases,
+deaths,
+tests,
+total vaccine doses administered,
+people with at least one vaccine dose,
+people fully vaccinated.
 }
 }
 }
