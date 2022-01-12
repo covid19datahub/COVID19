@@ -32,11 +32,11 @@ The data are provided at 3 different levels of granularity:
 
 ## Download the data
 
-All the data are available to download at the [download centre](https://covid19datahub.io/articles/data.html)
+All the data are available to download at the [download centre](https://covid19datahub.io/articles/data.html).
 
 ## Interactive visualization
 
-Interactive visualization of the latest data is available [here](https://datawrapper.dwcdn.net/3dO9Z/)
+Interactive visualization of the latest data is available [here](https://datawrapper.dwcdn.net/3dO9Z/).
 
 ## How it works
 
