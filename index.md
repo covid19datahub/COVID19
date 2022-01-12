@@ -51,7 +51,7 @@ See the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15
 
 ## Contribute
 
-If you find some issues with the data, please report a bug at our [GitHub repository](https://github.com/covid19datahub/COVID19/issues). Suggestions about where to find data that we do not currently provide are also very welcome! Help our project grow: star the repo! 
+If you find some issues with the data, please report a bug at our [GitHub repository](https://github.com/covid19datahub/COVID19/issues). Suggestions about where to find data that we do not currently provide are also very [welcome](https://github.com/covid19datahub/COVID19/issues/179)! Help our project grow: star the repo! 
 
 <a class="github-button" href="https://github.com/covid19datahub/COVID19" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star covid19datahub/COVID19 on GitHub">Star</a>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
