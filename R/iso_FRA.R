@@ -14,7 +14,6 @@ FRA <- function(level){
   if(level==1){
     
     #' - \href{`r repo("gouv.fr")`}{Santé Publique France}:
-    #' confirmed cases,
     #' deaths,
     #' tests,
     #' total vaccine doses administered,
@@ -26,10 +25,11 @@ FRA <- function(level){
     x1 <- gouv.fr(level = level)
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' confirmed cases,
     #' recovered.
     #'
     x2 <- github.cssegisanddata.covid19(country = "France") %>%
-      select(-c("confirmed", "deaths"))
+      select(-c("deaths"))
     
     # merge
     x <- full_join(x1, x2, by = "date")

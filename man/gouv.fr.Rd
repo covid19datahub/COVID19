@@ -22,7 +22,6 @@ Data source for: France and overseas territories
 \section{Level 1}{
 
 \itemize{
-\item confirmed cases
 \item deaths
 \item tests
 \item total vaccine doses administered

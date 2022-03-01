@@ -7,7 +7,6 @@
 #' @param dep filter by department code
 #'
 #' @section Level 1:
-#' - confirmed cases
 #' - deaths
 #' - tests
 #' - total vaccine doses administered
@@ -55,8 +54,7 @@ gouv.fr <- function(level = 1, reg = NULL, dep = NULL){
       "date" = "date",
       "hosp" = "hosp",
       "rea" = "icu",
-      "dc_tot" = "deaths",
-      "conf" = "confirmed"
+      "dc_tot" = "deaths"
     ))
     
     # download tests

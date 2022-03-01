@@ -1,7 +1,5 @@
 # COVID19 v3.0.0
 
-Version 3 is a major update of COVID-19 Data Hub.
-
 ## Data Update
 
 - added the data on the number of people who have received at least one vaccine dose
