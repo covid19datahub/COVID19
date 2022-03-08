@@ -137,7 +137,7 @@ tab <- function(start, end, version){
 
 Version 3 is now live. This is a major update. The vintage data are now shipped in SQLite databases and the vintage data sources are reported in the corresponding PDF files. 
 
-The vintage data are now generated on the same date of the data snapshot. Before 14 November 2021, the vintage data were generated with a delay of 48 hours to make sure all the observations are complete, and we don't take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h). This means that e.g., a vintage file for 1st November was actually generated on 3rd November, and the data between the 1st and 3rd November were filtered out. This is no longer the case.
+The vintage data are now generated on the same date of the data snapshot. Before 14 November 2021, the vintage data were generated with a delay of 48 hours to make sure all the observations are complete, and we don't take snapshots of yet-not-complete data. Infact, there is a natural delay in reporting the data to the local authorities (+24h) and different time zones worldwide (+24h). This means that e.g., a vintage file for 1st November was actually generated on 3rd November, and the data between the 1st and 3rd November were filtered out. In other words, the vintage datasets before 14 November 2021 are affected by a look-ahead bias of 2 days. This is no longer the case after 14 November 2021.
 
 [See the changelog](/news/index.html) for further information on this update.
 
