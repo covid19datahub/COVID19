@@ -97,7 +97,7 @@ The lookup table mapping countries to `iso` codes is available at `https://stora
 
 ### Download by location
 
-Download the data for one single location.
+Download the data by single location.
 
 `r select_location()`
 
@@ -117,7 +117,7 @@ The lookup table mapping locations to `id`s is available at `https://storage.cov
 
 ## Vintage data
 
-Vintage data are immutable snapshots of the data taken each day. The vintage file on date `YYYY-MM-DD` contains the data that were available on that day.
+Vintage data are immutable snapshots of the data taken each day. The vintage file on date `YYYY-MM-DD` contains the data that were available on that day. Typically, the data available on day $T$ include the counts up to day $T-1$ due to natural delays in reporting the data to the local authorities and different time zones worldwide.
 
 ```{r, include=FALSE}
 tab <- function(start, end, version){
