@@ -9,8 +9,6 @@ vignette: >
 
 [![](https://img.shields.io/pypi/v/covid19dh.svg?color=brightgreen)](https://pypi.org/pypi/covid19dh/) [![](https://img.shields.io/pypi/dm/covid19dh.svg?color=blue)](https://pypi.org/pypi/covid19dh/) [![](https://img.shields.io/github/stars/covid19datahub/python?style=social)](https://github.com/covid19datahub/python)
 
-> IMPORTANT: this package will be updated to Version 3.0.0 in the following weeks.
-
 ## Setup and usage
 
 Install from [pip](https://pypi.org/project/covid19dh/) with
