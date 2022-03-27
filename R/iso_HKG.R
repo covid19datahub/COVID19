@@ -18,7 +18,7 @@ HKG <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(country = "Hong Kong")
+    x1 <- github.cssegisanddata.covid19(country = "China", state = "Hong Kong", level = 2)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
