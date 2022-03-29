@@ -15,7 +15,7 @@ The output data files are published under the [CC BY license](https://creativeco
 A BibTeX entry for LaTeX users is:
 
 ```latex
-@Article{,
+@Article{guidotti2020,
     title = {COVID-19 Data Hub},
     year = {2020},
     doi = {10.21105/joss.02376},
@@ -24,6 +24,25 @@ A BibTeX entry for LaTeX users is:
     volume = {5},
     number = {51},
     pages = {2376}
+}
+```
+
+The implementation details and the latest version of the data are described in:
+
+*Guidotti, E., (2022), "A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution", Sci Data 9, 112, doi: [10.1038/s41597-022-01245-1](https://doi.org/10.1038/s41597-022-01245-1)*
+
+A BibTeX entry for LaTeX users is:
+
+```latex
+@Article{guidotti2022,
+    title = {A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution},
+    year = {2022},
+    doi = {10.1038/s41597-022-01245-1},
+    author = {Emanuele Guidotti},
+    journal = {Scientific Data},
+    volume = {9},
+    number = {1},
+    pages = {112}
 }
 ```
 

@@ -65,6 +65,8 @@ navbar:
       menu:
         - text: COVID-19 Data Hub
           href: https://doi.org/10.21105/joss.02376
+        - text: A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution
+          href: https://doi.org/10.1038/s41597-022-01245-1
     contributors:
       text: Contributors
       href: articles/contributors.html

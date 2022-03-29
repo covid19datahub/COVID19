@@ -87,7 +87,7 @@ A BibTeX entry for LaTeX users is:
 }
 ```
 
-The implementation details and the latest version of the data is described in:
+The implementation details and the latest version of the data are described in:
 
 *Guidotti, E., (2022), "A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution", Sci Data 9, 112, doi: [10.1038/s41597-022-01245-1](https://doi.org/10.1038/s41597-022-01245-1)*
 

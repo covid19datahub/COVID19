@@ -7,7 +7,9 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Can
 
 > The goal of COVID-19 Data Hub is to provide the research community with a [unified dataset](/articles/data.html) by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.
 
+<!--
 <iframe title="COVID-19 Data Hub" aria-label="Map" id="datawrapper-chart-3dO9Z" src="https://datawrapper.dwcdn.net/3dO9Z/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="424"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+-->
 
 ## Download the data
 
@@ -32,6 +34,10 @@ As most governments are updating the data retroactively, we provide [vintage dat
 ## Academic publications
 
 See the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use COVID-19 Data Hub.
+
+## Latest news
+
+- 29/03/2022: The implementation details and the latest version of the data are described in *"A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution"*, Scientific Data (Nature). Read more: [https://doi.org/10.1038/s41597-022-01245-1](https://doi.org/10.1038/s41597-022-01245-1)
 
 ## In the news
 
