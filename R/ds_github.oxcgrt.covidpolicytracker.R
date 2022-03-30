@@ -18,7 +18,7 @@ github.oxcgrt.covidpolicytracker <- function(level){
 
   # issue a warning if new sub-national data are available
   codes <- unique(x$CountryCode[!is.na(x$RegionCode)])
-  new <- setdiff(codes, c("BRA", "CAN", "CHN", "GBR", "USA"))
+  new <- setdiff(codes, c("AUS", "BRA", "CAN", "CHN", "GBR", "IND", "USA"))
   if(length(new)>0) warning(sprintf("OxCGRT: New sub-national level are available: %s", new))
   
   # C8, H2, H3, H7 have no binary flag for geographic scope

@@ -162,14 +162,14 @@ format <- function(x){
 fillx <- function(x, y, id.x, id.y, var.x, var.y, level){
   map <- y[[var.y]]
   names(map) <- y[[id.y]]
-  idx <- which(x$administrative_area_level==level & is.na(x[[var.x]]))
   if(is.null(x[[var.x]])) x[[var.x]] <- NA
+  idx <- which(x$administrative_area_level==level & is.na(x[[var.x]]))
   x[[var.x]][idx] <- map_values(x[[id.x]][idx], map, force = TRUE)
   return(x)
 }
 
 # CSV
-iso <- "ARG"
+iso <- "AUS"
 x <- extdata(sprintf("db/%s.csv", iso))
 
 # GADM
@@ -221,6 +221,17 @@ x <- fillx(x = x, y = g, level = 2,
 jhu <- read.csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19_Unified-Dataset/master/COVID-19_LUT.csv")
 j <- jhu[jhu$ISO1_3C==iso,]
 View(j)
+
+# OxCGRT
+o <- read.csv("https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv")
+o <- o[o$CountryCode==iso, 1:4]
+o <- o[!duplicated(o) & !is.na(o$RegionCode),]
+
+x <- fillx(x = x, y = o, level = 2,
+           id.x = "administrative_area_level_2", id.y = "RegionName", 
+           var.x = "id_github.oxcgrt.covidpolicytracker", var.y = "RegionCode")
+
+
 
 # x <- fillNUTS(x, admin_level = 3, nuts_level = 3)
 # x <- fillGADM(x, admin_level = 3, iso = iso)
