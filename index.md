@@ -37,7 +37,7 @@ See the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15
 
 ## Latest news
 
-- 29/03/2022: The implementation details and the latest version of the data are described in *"A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution"*, Scientific Data (Nature). Read more: [https://doi.org/10.1038/s41597-022-01245-1](https://doi.org/10.1038/s41597-022-01245-1)
+- 29/03/2022: The implementation details and the latest version of the data are described in *"A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution"*, Scientific Data (Nature). Read here: [https://doi.org/10.1038/s41597-022-01245-1](https://doi.org/10.1038/s41597-022-01245-1)
 
 ## In the news
 
