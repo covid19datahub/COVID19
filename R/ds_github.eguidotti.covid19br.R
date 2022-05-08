@@ -9,15 +9,15 @@
 #' - people with at least one vaccine dose
 #' - people fully vaccinated
 #'
-#' @source https://github.com/eguidotti/covid19br
+#' @source https://github.com/covid19datahub/covid19br
 #'
 #' @keywords internal
 #'
-github.eguidotti.covid19br <- function(level){
+github.covid19datahub.covid19br <- function(level){
   if(level!=3) return(NULL)
   
   # download
-  url <- "https://raw.githubusercontent.com/eguidotti/covid19br/main/data.csv.gz"
+  url <- "https://raw.githubusercontent.com/covid19datahub/covid19br/main/data.csv.gz"
   x <- data.table::fread(url, encoding = "UTF-8", showProgress = FALSE)
   
   # format

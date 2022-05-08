@@ -59,13 +59,13 @@ BRA <- function(level, ...){
     x <- github.wcota.covid19br(level = level)
     x$id <- id(x$code, iso = "BRA", ds = "github.wcota.covid19br", level = level)
     
-    #' - \href{`r repo("github.eguidotti.covid19br")`}{Emanuele Guidotti}:
+    #' - \href{`r repo("github.covid19datahub.covid19br")`}{Emanuele Guidotti}:
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    v <- github.eguidotti.covid19br(level = level)
-    v$id <- id(v$ibge, iso = "BRA", ds = "github.eguidotti.covid19br", level = level)
+    v <- github.covid19datahub.covid19br(level = level)
+    v$id <- id(v$ibge, iso = "BRA", ds = "github.covid19datahub.covid19br", level = level)
     
     # merge
     x <- full_join(x, v, by = c("id", "date"))
