@@ -65,27 +65,41 @@ github.wcota.covid19br <- function(level){
     
   }
   else {
+
+    # urls
+    urls <- sprintf(
+      "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-cities-time%s.csv.gz",
+      c('', paste0('_', 2020:2030))
+    )
     
-    # url
-    url <- "https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-cities-time.csv.gz"
+    # filter by urls that actually exist
+    urls <- urls[!sapply(urls, httr::http_error)]
     
-    # download  
-    tmp <- tempfile()
-    download.file(url, destfile=tmp, mode="wb", quiet = TRUE)
-    x <- read.csv(tmp)
-    unlink(tmp)
+    # process data by year
+    x <- lapply(urls, function(url){
+
+      # download  
+      tmp <- tempfile()
+      download.file(url, destfile=tmp, mode="wb", quiet = TRUE)
+      x <- read.csv(tmp)
+      unlink(tmp)
+      
+      # formatting
+      x <- map_data(x, c(
+        "date" = "date",
+        "ibgeID" = "code",
+        "state" = "state",
+        "deaths" = "deaths",
+        "totalCases" = "confirmed"
+      ))
+      
+      # filter cities
+      x <- x[nchar(x$code)==7,]
+      
+    })
     
-    # formatting
-    x <- map_data(x, c(
-      "date" = "date",
-      "ibgeID" = "code",
-      "state" = "state",
-      "deaths" = "deaths",
-      "totalCases" = "confirmed"
-    ))
-    
-    # filter cities
-    x <- x[nchar(x$code)==7,]
+    # merge all years together
+    x <- do.call(rbind, x)
     
   }
   

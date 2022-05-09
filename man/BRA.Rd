@@ -46,7 +46,7 @@ total vaccine doses administered.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.wcota.covid19br.R}{Wesley Cota}:
 confirmed cases,
 deaths.
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.eguidotti.covid19br.R}{Emanuele Guidotti}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.covid19datahub.covid19br.R}{Emanuele Guidotti}:
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated.
