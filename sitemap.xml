@@ -766,6 +766,9 @@
     <loc>https://covid19datahub.io/reference/github.ceedsdemm.covidprodataset.html</loc>
   </url>
   <url>
+    <loc>https://covid19datahub.io/reference/github.covid19datahub.covid19br.html</loc>
+  </url>
+  <url>
     <loc>https://covid19datahub.io/reference/github.covid19euzh.covid19eudata.html</loc>
   </url>
   <url>
@@ -779,9 +782,6 @@
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/github.dssgpt.covid19ptdata.html</loc>
-  </url>
-  <url>
-    <loc>https://covid19datahub.io/reference/github.eguidotti.covid19br.html</loc>
   </url>
   <url>
     <loc>https://covid19datahub.io/reference/github.italia.covid19opendatavaccini.html</loc>
