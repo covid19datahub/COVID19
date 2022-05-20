@@ -58,9 +58,9 @@ gouv.fr <- function(level = 1, reg = NULL, dep = NULL){
     ))
     
     # download tests
-    # see https://www.data.gouv.fr/fr/datasets/capacite-analytique-de-tests-virologiques-dans-le-cadre-de-lepidemie-covid-19/
-    url.tests <- "https://www.data.gouv.fr/fr/datasets/r/21ff3134-c37c-41ef-bb3d-fbea5f6d4a28"
-    x.tests <- read.csv(url.tests, sep = ";")
+    # see https://www.data.gouv.fr/fr/datasets/donnees-de-laboratoires-pour-le-depistage-a-compter-du-18-05-2022-si-dep/
+    url.tests <- "https://www.data.gouv.fr/fr/datasets/r/d349accb-56ef-4b53-b218-46c2a7f902e0"
+    x.tests <- read.csv(url.tests, sep = ";", dec = ",")
     
     # format tests
     x.tests <- map_data(x.tests, c(
@@ -70,6 +70,8 @@ gouv.fr <- function(level = 1, reg = NULL, dep = NULL){
     
     # cumulate tests
     x.tests <- x.tests %>%
+      group_by(date) %>%
+      summarise(tests = as.integer(sum(tests))) %>%
       arrange(date) %>%
       mutate(tests = cumsum(tests))
     
@@ -145,9 +147,9 @@ gouv.fr <- function(level = 1, reg = NULL, dep = NULL){
       dplyr::mutate(confirmed = cumsum(confirmed))
     
     # download tests
-    # see https://www.data.gouv.fr/fr/datasets/capacite-analytique-de-tests-virologiques-dans-le-cadre-de-lepidemie-covid-19/
-    url.tests <- "https://www.data.gouv.fr/fr/datasets/r/0c230dc3-2d51-4f17-be97-aa9938564b39"
-    x.tests <- read.csv(url.tests, sep = ";")
+    # see https://www.data.gouv.fr/fr/datasets/donnees-de-laboratoires-pour-le-depistage-a-compter-du-18-05-2022-si-dep/
+    url.tests <- "https://www.data.gouv.fr/fr/datasets/r/8b382611-4b86-41ff-9e58-9ee638a6d564"
+    x.tests <- read.csv(url.tests, sep = ";", dec = ",")
     
     # format tests
     x.tests <- map_data(x.tests, c(
@@ -158,9 +160,11 @@ gouv.fr <- function(level = 1, reg = NULL, dep = NULL){
     
     # cumulate tests
     x.tests <- x.tests %>% 
-      dplyr::group_by(reg) %>%
-      dplyr::arrange(date) %>%
-      dplyr::mutate(tests = cumsum(tests))
+      group_by(reg, date) %>%
+      summarise(tests = as.integer(sum(tests))) %>%
+      group_by(reg) %>%
+      arrange(date) %>%
+      mutate(tests = cumsum(tests))
     
     # download people vaccinated
     # see https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/
@@ -224,9 +228,9 @@ gouv.fr <- function(level = 1, reg = NULL, dep = NULL){
       dplyr::mutate(confirmed = cumsum(confirmed))
     
     # download tests
-    # see https://www.data.gouv.fr/fr/datasets/capacite-analytique-de-tests-virologiques-dans-le-cadre-de-lepidemie-covid-19/
-    url.tests <- "https://www.data.gouv.fr/fr/datasets/r/44b46964-8583-4f18-b93f-80fefcbf3b74"
-    x.tests <- read.csv(url.tests, sep = ";")
+    # see https://www.data.gouv.fr/fr/datasets/donnees-de-laboratoires-pour-le-depistage-a-compter-du-18-05-2022-si-dep/
+    url.tests <- "https://www.data.gouv.fr/fr/datasets/r/674bddab-6d61-4e59-b0bd-0be535490db0"
+    x.tests <- read.csv(url.tests, sep = ";", dec = ",")
     
     # format tests
     x.tests <- map_data(x.tests, c(
@@ -237,9 +241,11 @@ gouv.fr <- function(level = 1, reg = NULL, dep = NULL){
     
     # cumulate tests
     x.tests <- x.tests %>% 
-      dplyr::group_by(dep) %>%
-      dplyr::arrange(date) %>%
-      dplyr::mutate(tests = cumsum(tests))
+      group_by(dep, date) %>%
+      summarise(tests = as.integer(sum(tests))) %>%
+      group_by(dep) %>%
+      arrange(date) %>%
+      mutate(tests = cumsum(tests))
     
     # download people vaccinated
     # see https://www.data.gouv.fr/fr/datasets/donnees-relatives-aux-personnes-vaccinees-contre-la-covid-19-1/
