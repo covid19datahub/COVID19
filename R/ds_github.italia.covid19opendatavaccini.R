@@ -27,19 +27,21 @@ github.italia.covid19opendatavaccini <- function(level){
   
   # format
   x <- map_data(x, c(
-    "data_somministrazione" = "date",
-    "fornitore" = "type",
-    "codice_NUTS2" = "state",
-    "prima_dose" = "first",
-    "seconda_dose" = "second",
-    "pregressa_infezione" = "oneshot",
-    "dose_addizionale_booster" = "extra"
+    "data" = "date",
+    "forn" = "type",
+    "N2" = "state",
+    "d1" = "first",
+    "d2" = "second",
+    "dpi" = "oneshot",
+    "db1" = "extra_1",
+    "dbi" = "extra_2",
+    "db2" = "extra_3"
   ))
   
   # people vaccinated and total doses
   x <- x %>%
     dplyr::mutate(
-      vaccines = first + second + oneshot + extra,
+      vaccines = first + second + oneshot + extra_1 + extra_2 + extra_3,
       people_vaccinated = first + oneshot,
       people_fully_vaccinated = second + oneshot + first*(type=="Janssen"))
   
