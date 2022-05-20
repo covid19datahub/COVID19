@@ -64,7 +64,8 @@ ssi.dk <- function(level){
       "Region" = "region",
       "Prøvetagningsdato" = "date",
       "Døde" = "deaths",
-      "Bekræftede.tilfælde" = "confirmed"
+      "Bekræftede.tilfælde" = "confirmed",
+      "Bekræftede.tilfælde.i.alt" = "confirmed"
     ))
     
     # cases
@@ -95,6 +96,8 @@ ssi.dk <- function(level){
       "Dato" = "date",
       "Indlagte" = "hosp"
     ))
+    # drop duplicated entry: Syddanmark 2021-10-26
+    x.hosp <- x.hosp[!duplicated(x.hosp),]
      
     # read tests
     file <- "Regionalt_DB/16_pcr_og_antigen_test_pr_region.csv"
@@ -132,48 +135,24 @@ ssi.dk <- function(level){
       mutate(tests = cumsum(tests))
       
     # read people vaccinated
-    file <- "Vaccine_DB/FoersteVacc_region_dag.csv"
+    file <- "Vaccine_DB/Vaccine_dato_region.csv"
     file <- unzip(zip.vacc, files = file, exdir = dir)
-    x.vacc.1 <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
+    x.vacc <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
     
     # format people vaccinated
-    x.vacc.1 <- map_data(x.vacc.1, c(
-      "Første.vacc..dato" = "date",
-      "Regionsnavn" = "region",
-      "Antal.første.vacc." = "people_vaccinated"
+    x.vacc <- map_data(x.vacc, c(
+      "Dato" = "date",
+      "Region" = "region",
+      "Samlet.antal.1..stik" = "people_vaccinated",
+      "Samlet.antal.2..stik" = "people_fully_vaccinated"
     ))
-    
-    # people vaccinated
-    x.vacc.1 <- x.vacc.1 %>%
-      group_by(region) %>%
-      arrange(date) %>%
-      mutate(people_vaccinated = cumsum(people_vaccinated))
-    
-    # read people fully vaccinated
-    file <- "Vaccine_DB/FaerdigVacc_region_dag.csv"
-    file <- unzip(zip.vacc, files = file, exdir = dir)
-    x.vacc.2 <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
-    
-    # format people fully vaccinated
-    x.vacc.2 <- map_data(x.vacc.2, c(
-      "Faerdigvacc..dato" = "date",
-      "Regionsnavn" = "region",
-      "Antal.faerdigvacc." = "people_fully_vaccinated"
-    ))
-    
-    # people fully vaccinated
-    x.vacc.2 <- x.vacc.2 %>%
-      group_by(region) %>%
-      arrange(date) %>%
-      mutate(people_fully_vaccinated = cumsum(people_fully_vaccinated))
     
     # merge
     by <- c("region", "date")
     x <- x.cases %>%
       full_join(x.hosp, by = by) %>%
       full_join(x.tests, by = by) %>%
-      full_join(x.vacc.1, by = by) %>%
-      full_join(x.vacc.2, by = by)
+      full_join(x.vacc, by = by)
 
   }
   
@@ -189,7 +168,8 @@ ssi.dk <- function(level){
       "Kommune" = "code",
       "Kommunenavn" = "name",
       "Dato" = "date",
-      "Bekræftede.tilfælde" = "confirmed"
+      "Bekræftede.tilfælde" = "confirmed",
+      "Bekræftede.tilfælde.i.alt" = "confirmed"
     )) 
     
     # cases
@@ -212,6 +192,11 @@ ssi.dk <- function(level){
       "Metode" = "type",
       "Prøver" = "tests"
     ))
+    
+    # map
+    idx <- which(!duplicated(x.tests$code))
+    map <- x.tests$code[idx]
+    names(map) <- x.tests$name[idx]
     
     # tests
     x.tests <- x.tests %>%
@@ -236,49 +221,24 @@ ssi.dk <- function(level){
       mutate(tests = cumsum(tests))
     
     # read people vaccinated
-    file <- "Vaccine_DB/FoersteVacc_kommune_dag.csv"
+    file <- "Vaccine_DB/Vaccine_dato_kommune.csv"
     file <- unzip(zip.vacc, files = file, exdir = dir)
-    x.vacc.1 <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
+    x.vacc <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
     
     # format people vaccinated
-    x.vacc.1 <- map_data(x.vacc.1, c(
-      "Første.vacc..dato" = "date",
-      "kommunenavn" = "name",
-      "c_kom_num" = "code",
-      "Antal.første.vacc." = "people_vaccinated"
+    x.vacc <- map_data(x.vacc, c(
+      "Dato" = "date",
+      "Kommune" = "name",
+      "Samlet.antal.1..stik" = "people_vaccinated",
+      "Samlet.antal.2..stik" = "people_fully_vaccinated"
     ))
-    
-    # people vaccinated
-    x.vacc.1 <- x.vacc.1 %>%
-      group_by(code) %>%
-      arrange(date) %>%
-      mutate(people_vaccinated = cumsum(people_vaccinated))
-    
-    # read people fully vaccinated
-    file <- "Vaccine_DB/FaerdigVacc_kommune_dag.csv"
-    file <- unzip(zip.vacc, files = file, exdir = dir)
-    x.vacc.2 <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
-    
-    # format people fully vaccinated
-    x.vacc.2 <- map_data(x.vacc.2, c(
-      "Faerdigvacc..dato" = "date",
-      "kommunenavn" = "name",
-      "c_kom_num" = "code",
-      "Antal.faerdigvacc." = "people_fully_vaccinated"
-    ))
-    
-    # people fully vaccinated
-    x.vacc.2 <- x.vacc.2 %>%
-      group_by(code) %>%
-      arrange(date) %>%
-      mutate(people_fully_vaccinated = cumsum(people_fully_vaccinated))
+    x.vacc$code <- as.integer(map_values(x.vacc$name, map = map))
     
     # merge
     by <- c("code", "date")
     x <- x.cases %>%
       full_join(x.tests, by = by) %>%
-      full_join(x.vacc.1, by = by) %>%
-      full_join(x.vacc.2, by = by) 
+      full_join(x.vacc, by = by) 
     
   }
   
