@@ -220,7 +220,7 @@ sciensano.be <- function(level){
     # - E for extra dose of vaccine administered since the 9th of September 2021
     # We use A+C to compute people_vaccinated and B+C to compute people_fully_vaccinated.
     # See https://epistat.sciensano.be/COVID19BE_codebook.pdf
-    vaccines <- x$VACC_MUNI_CUM %>%
+    vaccines <- bind_rows(x$VACC_MUNI_CUM_1, x$VACC_MUNI_CUM_2) %>%
       filter(CUMUL!="<10") %>%
       mutate(
         NIS5 = as.character(NIS5),
