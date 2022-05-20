@@ -56,6 +56,8 @@ canada.ca <- function(level){
     "report_date" = "date",
     "numtotal_all_administered" = "vaccines"
   ))
+  # sanitize vaccines
+  x2$vaccines <- suppressWarnings(as.integer(x2$vaccines))
   
   # download people vaccinated
   # see https://health-infobase.canada.ca/covid-19/vaccination-coverage/
