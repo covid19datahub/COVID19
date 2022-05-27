@@ -523,7 +523,7 @@
     <span class="va">v</span><span class="op">$</span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/id.html">id</a></span><span class="op">(</span><span class="va">v</span><span class="op">$</span><span class="va">ibge</span>, iso <span class="op">=</span> <span class="st">"BRA"</span>, ds <span class="op">=</span> <span class="st">"github.eguidotti.covid19br"</span>, level <span class="op">=</span> <span class="va">level</span><span class="op">)</span>
     
     <span class="co"># merge</span>
-    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/dplyr/man/mutate-joins.html">left_join</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">v</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"id"</span>, <span class="st">"date"</span><span class="op">)</span><span class="op">)</span>
+    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">left_join</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">v</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"id"</span>, <span class="st">"date"</span><span class="op">)</span><span class="op">)</span>
     
   <span class="op">}</span>
   
