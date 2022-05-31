@@ -62,7 +62,6 @@ people fully vaccinated.
 confirmed cases,
 deaths.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_cdc.gov.R}{Centers for Disease Control and Prevention}:
-total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated.
 }

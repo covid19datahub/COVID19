@@ -26,11 +26,18 @@ github.nytimes.covid19data <- function(level, fips = NULL){
   
   # source
   repo <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/" 
-  urls <- c("us.csv","us-states.csv","us-counties.csv")
-  url  <- paste0(repo, urls[level])
+  files <- list(
+    '1' = "us.csv", 
+    '2' = "us-states.csv", 
+    '3' = sprintf("us-counties-%s.csv", 2020:as.integer(format(Sys.Date(), "%Y")))
+  )
+  
+  # build url
+  urls  <- paste0(repo, files[[as.character(level)]])
   
   # download
-  x   <- read.csv(url)
+  x <- lapply(urls, read.csv)
+  x <- do.call(rbind, x)
   
   # format 
   x <- map_data(x, c(

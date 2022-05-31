@@ -111,7 +111,6 @@ USA <- function(level){
     x1$id <- id(x1$fips, iso = "USA", ds = "github.nytimes.covid19data", level = level)
     
     #' - \href{`r repo("cdc.gov")`}{Centers for Disease Control and Prevention}:
-    #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
