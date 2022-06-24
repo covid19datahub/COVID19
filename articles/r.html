@@ -159,10 +159,10 @@
 <a href="#quickstart" class="anchor"></a>Quickstart</h2>
 <p>Install the package:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"COVID19"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"COVID19"</span><span class="op">)</span></span></code></pre></div>
 <p>Load the package</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://covid19datahub.io">"COVID19"</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://covid19datahub.io">"COVID19"</a></span><span class="op">)</span></span></code></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -170,7 +170,7 @@
 <p>The only function in the package is <code><a href="../reference/covid19.html">covid19()</a></code>.</p>
 <p>By default, the function downloads worldwide data by country:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <div id="level" class="section level3">
 <h3 class="hasAnchor">
 <a href="#level" class="anchor"></a>Level</h3>
@@ -182,7 +182,7 @@
 </ul>
 <p>Download worldwide data by state:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>level <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>level <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div id="country" class="section level3">
 <h3 class="hasAnchor">
@@ -190,7 +190,7 @@
 <p>The argument <code>country</code> filters the data by country. This is a vector of country names or <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes">ISO codes</a> (ISO 3166-1 Alpha-2 code, Alpha-3 code, or numeric code).</p>
 <p>Download data for Italy and Unites States at county/province level:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>country <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Italy"</span>, <span class="st">"US"</span><span class="op">)</span>, level <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>country <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Italy"</span>, <span class="st">"US"</span><span class="op">)</span>, level <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div id="time-range" class="section level3">
 <h3 class="hasAnchor">
@@ -198,7 +198,7 @@
 <p>The arguments <code>start</code> and <code>end</code> specify the period of interest. The data are subsetted to match this time range.</p>
 <p>Download national-level data for United States from 01 October 2021 to 01 November 2021:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span><span class="st">"US"</span>, start <span class="op">=</span> <span class="st">"2021-10-01"</span>, end <span class="op">=</span> <span class="st">"2021-11-01"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span><span class="st">"US"</span>, start <span class="op">=</span> <span class="st">"2021-10-01"</span>, end <span class="op">=</span> <span class="st">"2021-11-01"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div id="vintage" class="section level3">
 <h3 class="hasAnchor">
@@ -206,7 +206,7 @@
 <p>The parameter <code>vintage</code> allows to retrieve the snapshot of the dataset that was available on the given date. This typically differs from subsetting the latest data, as most governments are updating the data retroactively. Available since 14 April, 2020.</p>
 <p>Retrieve the data that were available on 15 May, 2020:</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>vintage <span class="op">=</span> <span class="st">"2020-05-15"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>vintage <span class="op">=</span> <span class="st">"2020-05-15"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div id="download-folder" class="section level3">
 <h3 class="hasAnchor">
@@ -214,29 +214,29 @@
 <p>The argument <code>dir</code> specifies the folder where the data files are to be downloaded. By default this is a temporary folder.</p>
 <p>Download the files in the folder <code>data</code>:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span><span class="op">(</span><span class="st">"data"</span><span class="op">)</span>
-<span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>dir <span class="op">=</span> <span class="st">"data"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/files2.html">dir.create</a></span><span class="op">(</span><span class="st">"data"</span><span class="op">)</span></span>
+<span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>dir <span class="op">=</span> <span class="st">"data"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div id="world-bank-open-data" class="section level3">
 <h3 class="hasAnchor">
 <a href="#world-bank-open-data" class="anchor"></a>World Bank Open Data</h3>
 <p>Country-level covariates by <a href="https://data.worldbank.org/">World Bank Open Data</a> can be added via the argument <code>wb</code>. This is a character vector of indicator codes to download. The codes can be found by inspecting the corresponding URL. For example, the code of the indicator “Hospital beds (per 1,000 people)” available at <a href="https://data.worldbank.org/indicator/SH.MED.BEDS.ZS" class="uri">https://data.worldbank.org/indicator/SH.MED.BEDS.ZS</a> is <code>SH.MED.BEDS.ZS</code>. The indicators are typically available at a yearly frequency. This function returns the latest data available between the <code>start</code> and the <code>end</code> date. See the table at the bottom of <a href="https://datatopics.worldbank.org/universal-health-coverage/coronavirus/">this page</a> for suggested indicators. Example using GDP and number of hospital beds:</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>wb <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"gdp"</span> <span class="op">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="op">=</span> <span class="st">"SH.MED.BEDS.ZS"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>wb <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"gdp"</span> <span class="op">=</span> <span class="st">"NY.GDP.MKTP.CD"</span>, <span class="st">"hosp_beds"</span> <span class="op">=</span> <span class="st">"SH.MED.BEDS.ZS"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div id="google-mobility-reports" class="section level3">
 <h3 class="hasAnchor">
 <a href="#google-mobility-reports" class="anchor"></a>Google Mobility Reports</h3>
 <p>Mobility data by <a href="https://www.google.com/covid19/mobility/">Google Mobility Reports</a> can be added via the argument <code>gmr</code>. This is the link to the Google “CSV by geographic area” ZIP folder. At the time of writing, the link is <a href="https://www.gstatic.com/covid19/mobility/Region_Mobility_Report_CSVs.zip" class="uri">https://www.gstatic.com/covid19/mobility/Region_Mobility_Report_CSVs.zip</a>. As the link has been stable since the beginning of the pandemic, the function accepts <code>gmr=TRUE</code> to automatically use this link.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>gmr <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>gmr <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div id="apple-mobility-reports" class="section level3">
 <h3 class="hasAnchor">
 <a href="#apple-mobility-reports" class="anchor"></a>Apple Mobility Reports</h3>
 <p>Mobility data by <a href="https://covid19.apple.com/mobility">Apple Mobility Reports</a> can be added via the argument <code>amr</code>. This is the link to the Apple “All CSV data” file. This link is changing constantly. Consider downloading the data file from the website first, and then set <code>amr="path/to/file.csv"</code>. Since v3.0.1 of the package, if <code>amr=TRUE</code> is provided, the function tries to detect the latest URL from <a href="https://covid19-static.cdn-apple.com/covid19-mobility-data/current/v3/index.json">this endpoint</a>.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>amr <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/covid19.html">covid19</a></span><span class="op">(</span>amr <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
 <div id="reference-manual" class="section level2">

@@ -280,12 +280,12 @@
 </table>
 <p>The function takes the argument <code>level</code> as input. It may implement additional arguments as well. The function starts with an <code>if</code> condition to make clear which <code>level</code> is supported. The function has the same name of the corresponding <code>ds_</code> file (without the prefix <code>ds_</code> and without the suffix <code>.R</code>).</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">github.eguidotti.covid19br</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
-  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">!=</span><span class="fl">3</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span>
-    
-  <span class="co"># code here...</span>
-    
-<span class="op">}</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">github.eguidotti.covid19br</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">!=</span><span class="fl">3</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span></span>
+<span>    </span>
+<span>  <span class="co"># code here...</span></span>
+<span>    </span>
+<span><span class="op">}</span></span></code></pre></div>
 </div>
 <div id="documentation-style" class="section level3">
 <h3 class="hasAnchor">
@@ -314,41 +314,41 @@
 </li>
 </ul>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">#' Wesley Cota</span>
-<span class="co">#'</span>
-<span class="co">#' Data source for: Brazil</span>
-<span class="co">#'</span>
-<span class="co">#' @param level 1, 2, 3</span>
-<span class="co">#'</span>
-<span class="co">#' @section Level 1:</span>
-<span class="co">#' - confirmed cases</span>
-<span class="co">#' - deaths</span>
-<span class="co">#' - recovered</span>
-<span class="co">#' - tests</span>
-<span class="co">#' - total vaccine doses administered</span>
-<span class="co">#'</span>
-<span class="co">#' @section Level 2:</span>
-<span class="co">#' - confirmed cases</span>
-<span class="co">#' - deaths</span>
-<span class="co">#' - recovered</span>
-<span class="co">#' - tests</span>
-<span class="co">#' - total vaccine doses administered</span>
-<span class="co">#'</span>
-<span class="co">#' @section Level 3:</span>
-<span class="co">#' - confirmed cases</span>
-<span class="co">#' - deaths</span>
-<span class="co">#'</span>
-<span class="co">#' @source https://github.com/wcota/covid19br</span>
-<span class="co">#'</span>
-<span class="co">#' @keywords internal</span>
-<span class="co">#' </span>
-<span class="va">github.wcota.covid19br</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
-  <span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="va">level</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span>
-
-  <span class="co"># code here...</span>
-
-  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>  
-<span class="op">}</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co">#' Wesley Cota</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' Data source for: Brazil</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @param level 1, 2, 3</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @section Level 1:</span></span>
+<span><span class="co">#' - confirmed cases</span></span>
+<span><span class="co">#' - deaths</span></span>
+<span><span class="co">#' - recovered</span></span>
+<span><span class="co">#' - tests</span></span>
+<span><span class="co">#' - total vaccine doses administered</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @section Level 2:</span></span>
+<span><span class="co">#' - confirmed cases</span></span>
+<span><span class="co">#' - deaths</span></span>
+<span><span class="co">#' - recovered</span></span>
+<span><span class="co">#' - tests</span></span>
+<span><span class="co">#' - total vaccine doses administered</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @section Level 3:</span></span>
+<span><span class="co">#' - confirmed cases</span></span>
+<span><span class="co">#' - deaths</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @source https://github.com/wcota/covid19br</span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @keywords internal</span></span>
+<span><span class="co">#' </span></span>
+<span><span class="va">github.wcota.covid19br</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="va">level</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span></span>
+<span></span>
+<span>  <span class="co"># code here...</span></span>
+<span></span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>  </span>
+<span><span class="op">}</span></span></code></pre></div>
 </div>
 </div>
 <div id="iso_-files" class="section level2">
@@ -364,37 +364,37 @@
 <a href="#code-style-1" class="anchor"></a>Code style</h3>
 <p>An <code>iso_</code> file implements the R function responsible to aggregate all the data sources for the country. The function is named with the three letter ISO code of the country. The function takes the argument <code>level</code> in input. For example, for Brazil we have:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
-  <span class="co"># code here...   </span>
-<span class="op">}</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="co"># code here...   </span></span>
+<span><span class="op">}</span></span></code></pre></div>
 <p>The function defines the internal variable <code>x</code> that represents the output of the function. This is the very first line of code in the body of the function. The very last line of code returns <code>x</code>.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
-  <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span>
-  
-  <span class="co"># code here...   </span>
-  
-  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
-<span class="op">}</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span></span>
+<span>  </span>
+<span>  <span class="co"># code here...   </span></span>
+<span>  </span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre></div>
 <p>Internally, the code is split by <code>level</code>, with no white spaces in the <code>if</code> condition and one blank line among different lines. Not all the 3 levels are required.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
-  <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span>
-  
-  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">1</span><span class="op">)</span><span class="op">{</span>
-      
-    <span class="co"># code here...         </span>
-      
-  <span class="op">}</span>
-
-  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">2</span><span class="op">)</span><span class="op">{</span>
-      
-    <span class="co"># code here...         </span>
-      
-  <span class="op">}</span>
-    
-  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
-<span class="op">}</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span></span>
+<span>  </span>
+<span>  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">1</span><span class="op">)</span><span class="op">{</span></span>
+<span>      </span>
+<span>    <span class="co"># code here...         </span></span>
+<span>      </span>
+<span>  <span class="op">}</span></span>
+<span></span>
+<span>  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">2</span><span class="op">)</span><span class="op">{</span></span>
+<span>      </span>
+<span>    <span class="co"># code here...         </span></span>
+<span>      </span>
+<span>  <span class="op">}</span></span>
+<span>    </span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre></div>
 </div>
 <div id="documentation-style-1" class="section level3">
 <h3 class="hasAnchor">
@@ -453,82 +453,82 @@
 </li>
 </ul>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">#' Brazil </span>
-<span class="co">#'</span>
-<span class="co">#' @source \url{`r repo("BRA")`}</span>
-<span class="co">#' </span>
-<span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span>
-  <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span>
-  
-  <span class="co">#' @concept Level 1</span>
-  <span class="co">#' @section Data Sources:</span>
-  <span class="co">#' </span>
-  <span class="co">#' ## Level 1</span>
-  <span class="co">#' `r docstring("BRA", 1)`</span>
-  <span class="co">#' </span>
-  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">1</span><span class="op">)</span><span class="op">{</span>
-    
-    <span class="co">#' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:</span>
-    <span class="co">#' confirmed cases,</span>
-    <span class="co">#' deaths,</span>
-    <span class="co">#' recovered,</span>
-    <span class="co">#' tests,</span>
-    <span class="co">#' total vaccine doses administered.</span>
-    <span class="co">#'</span>
-    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/github.wcota.covid19br.html">github.wcota.covid19br</a></span><span class="op">(</span>level <span class="op">=</span> <span class="va">level</span><span class="op">)</span>
-   
-  <span class="op">}</span>
-  
-  <span class="co">#' @concept Level 2</span>
-  <span class="co">#' @section Data Sources:</span>
-  <span class="co">#' </span>
-  <span class="co">#' ## Level 2</span>
-  <span class="co">#' `r docstring("BRA", 2)`</span>
-  <span class="co">#' </span>
-  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">2</span><span class="op">)</span><span class="op">{</span>
-    
-    <span class="co">#' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:</span>
-    <span class="co">#' confirmed cases,</span>
-    <span class="co">#' deaths,</span>
-    <span class="co">#' recovered,</span>
-    <span class="co">#' tests,</span>
-    <span class="co">#' total vaccine doses administered.</span>
-    <span class="co">#'</span>
-    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/github.wcota.covid19br.html">github.wcota.covid19br</a></span><span class="op">(</span>level <span class="op">=</span> <span class="va">level</span><span class="op">)</span>
-    <span class="va">x</span><span class="op">$</span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/id.html">id</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">state</span>, iso <span class="op">=</span> <span class="st">"BRA"</span>, ds <span class="op">=</span> <span class="st">"github.wcota.covid19br"</span>, level <span class="op">=</span> <span class="va">level</span><span class="op">)</span>
-    
-  <span class="op">}</span>
-  
-  <span class="co">#' @concept Level 3</span>
-  <span class="co">#' @section Data Sources:</span>
-  <span class="co">#' </span>
-  <span class="co">#' ## Level 3</span>
-  <span class="co">#' `r docstring("BRA", 3)`</span>
-  <span class="co">#' </span>
-  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">3</span><span class="op">)</span><span class="op">{</span>  
-
-    <span class="co">#' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:</span>
-    <span class="co">#' confirmed cases,</span>
-    <span class="co">#' deaths.</span>
-    <span class="co">#'</span>
-    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/github.wcota.covid19br.html">github.wcota.covid19br</a></span><span class="op">(</span>level <span class="op">=</span> <span class="va">level</span><span class="op">)</span>
-    <span class="va">x</span><span class="op">$</span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/id.html">id</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">code</span>, iso <span class="op">=</span> <span class="st">"BRA"</span>, ds <span class="op">=</span> <span class="st">"github.wcota.covid19br"</span>, level <span class="op">=</span> <span class="va">level</span><span class="op">)</span>
-    
-    <span class="co">#' - \href{`r repo("github.eguidotti.covid19br")`}{Emanuele Guidotti}:</span>
-    <span class="co">#' total vaccine doses administered,</span>
-    <span class="co">#' people with at least one vaccine dose,</span>
-    <span class="co">#' people fully vaccinated.</span>
-    <span class="co">#'</span>
-    <span class="va">v</span> <span class="op">&lt;-</span> <span class="fu">github.eguidotti.covid19br</span><span class="op">(</span>level <span class="op">=</span> <span class="va">level</span><span class="op">)</span>
-    <span class="va">v</span><span class="op">$</span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/id.html">id</a></span><span class="op">(</span><span class="va">v</span><span class="op">$</span><span class="va">ibge</span>, iso <span class="op">=</span> <span class="st">"BRA"</span>, ds <span class="op">=</span> <span class="st">"github.eguidotti.covid19br"</span>, level <span class="op">=</span> <span class="va">level</span><span class="op">)</span>
-    
-    <span class="co"># merge</span>
-    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">left_join</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">v</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"id"</span>, <span class="st">"date"</span><span class="op">)</span><span class="op">)</span>
-    
-  <span class="op">}</span>
-  
-  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span>
-<span class="op">}</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co">#' Brazil </span></span>
+<span><span class="co">#'</span></span>
+<span><span class="co">#' @source \url{`r repo("BRA")`}</span></span>
+<span><span class="co">#' </span></span>
+<span><span class="va">BRA</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">level</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="va">x</span> <span class="op">&lt;-</span> <span class="cn">NULL</span></span>
+<span>  </span>
+<span>  <span class="co">#' @concept Level 1</span></span>
+<span>  <span class="co">#' @section Data Sources:</span></span>
+<span>  <span class="co">#' </span></span>
+<span>  <span class="co">#' ## Level 1</span></span>
+<span>  <span class="co">#' `r docstring("BRA", 1)`</span></span>
+<span>  <span class="co">#' </span></span>
+<span>  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">1</span><span class="op">)</span><span class="op">{</span></span>
+<span>    </span>
+<span>    <span class="co">#' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:</span></span>
+<span>    <span class="co">#' confirmed cases,</span></span>
+<span>    <span class="co">#' deaths,</span></span>
+<span>    <span class="co">#' recovered,</span></span>
+<span>    <span class="co">#' tests,</span></span>
+<span>    <span class="co">#' total vaccine doses administered.</span></span>
+<span>    <span class="co">#'</span></span>
+<span>    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/github.wcota.covid19br.html">github.wcota.covid19br</a></span><span class="op">(</span>level <span class="op">=</span> <span class="va">level</span><span class="op">)</span></span>
+<span>   </span>
+<span>  <span class="op">}</span></span>
+<span>  </span>
+<span>  <span class="co">#' @concept Level 2</span></span>
+<span>  <span class="co">#' @section Data Sources:</span></span>
+<span>  <span class="co">#' </span></span>
+<span>  <span class="co">#' ## Level 2</span></span>
+<span>  <span class="co">#' `r docstring("BRA", 2)`</span></span>
+<span>  <span class="co">#' </span></span>
+<span>  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">2</span><span class="op">)</span><span class="op">{</span></span>
+<span>    </span>
+<span>    <span class="co">#' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:</span></span>
+<span>    <span class="co">#' confirmed cases,</span></span>
+<span>    <span class="co">#' deaths,</span></span>
+<span>    <span class="co">#' recovered,</span></span>
+<span>    <span class="co">#' tests,</span></span>
+<span>    <span class="co">#' total vaccine doses administered.</span></span>
+<span>    <span class="co">#'</span></span>
+<span>    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/github.wcota.covid19br.html">github.wcota.covid19br</a></span><span class="op">(</span>level <span class="op">=</span> <span class="va">level</span><span class="op">)</span></span>
+<span>    <span class="va">x</span><span class="op">$</span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/id.html">id</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">state</span>, iso <span class="op">=</span> <span class="st">"BRA"</span>, ds <span class="op">=</span> <span class="st">"github.wcota.covid19br"</span>, level <span class="op">=</span> <span class="va">level</span><span class="op">)</span></span>
+<span>    </span>
+<span>  <span class="op">}</span></span>
+<span>  </span>
+<span>  <span class="co">#' @concept Level 3</span></span>
+<span>  <span class="co">#' @section Data Sources:</span></span>
+<span>  <span class="co">#' </span></span>
+<span>  <span class="co">#' ## Level 3</span></span>
+<span>  <span class="co">#' `r docstring("BRA", 3)`</span></span>
+<span>  <span class="co">#' </span></span>
+<span>  <span class="kw">if</span><span class="op">(</span><span class="va">level</span><span class="op">==</span><span class="fl">3</span><span class="op">)</span><span class="op">{</span>  </span>
+<span></span>
+<span>    <span class="co">#' - \href{`r repo("github.wcota.covid19br")`}{Wesley Cota}:</span></span>
+<span>    <span class="co">#' confirmed cases,</span></span>
+<span>    <span class="co">#' deaths.</span></span>
+<span>    <span class="co">#'</span></span>
+<span>    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/github.wcota.covid19br.html">github.wcota.covid19br</a></span><span class="op">(</span>level <span class="op">=</span> <span class="va">level</span><span class="op">)</span></span>
+<span>    <span class="va">x</span><span class="op">$</span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/id.html">id</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">code</span>, iso <span class="op">=</span> <span class="st">"BRA"</span>, ds <span class="op">=</span> <span class="st">"github.wcota.covid19br"</span>, level <span class="op">=</span> <span class="va">level</span><span class="op">)</span></span>
+<span>    </span>
+<span>    <span class="co">#' - \href{`r repo("github.eguidotti.covid19br")`}{Emanuele Guidotti}:</span></span>
+<span>    <span class="co">#' total vaccine doses administered,</span></span>
+<span>    <span class="co">#' people with at least one vaccine dose,</span></span>
+<span>    <span class="co">#' people fully vaccinated.</span></span>
+<span>    <span class="co">#'</span></span>
+<span>    <span class="va">v</span> <span class="op">&lt;-</span> <span class="fu">github.eguidotti.covid19br</span><span class="op">(</span>level <span class="op">=</span> <span class="va">level</span><span class="op">)</span></span>
+<span>    <span class="va">v</span><span class="op">$</span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/id.html">id</a></span><span class="op">(</span><span class="va">v</span><span class="op">$</span><span class="va">ibge</span>, iso <span class="op">=</span> <span class="st">"BRA"</span>, ds <span class="op">=</span> <span class="st">"github.eguidotti.covid19br"</span>, level <span class="op">=</span> <span class="va">level</span><span class="op">)</span></span>
+<span>    </span>
+<span>    <span class="co"># merge</span></span>
+<span>    <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">left_join</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">v</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"id"</span>, <span class="st">"date"</span><span class="op">)</span><span class="op">)</span></span>
+<span>    </span>
+<span>  <span class="op">}</span></span>
+<span>  </span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/function.html">return</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre></div>
 </div>
 </div>
 <div id="acknowledgements" class="section level2">
