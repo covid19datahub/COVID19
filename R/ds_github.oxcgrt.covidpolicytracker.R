@@ -13,7 +13,7 @@ github.oxcgrt.covidpolicytracker <- function(level){
   if(!level %in% 1:3) return(NULL)
   
   # download"BRA" "CAN" "CHN" "GBR" "USA"
-  url <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
+  url <- "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker-legacy/main/legacy_data_202207/OxCGRT_latest.csv"
   x   <- read.csv(url, cache = TRUE)
 
   # issue a warning if new sub-national data are available
