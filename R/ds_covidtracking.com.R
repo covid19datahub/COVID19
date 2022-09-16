@@ -21,7 +21,7 @@ covidtracking.com <- function(level){
   if(level!=2) return(NULL)
   
   # download
-  url <- "https://covidtracking.com/api/v1/states/daily.csv"
+  url <- "https://covidtracking.com/data/download/all-states-history.csv"
   x   <- read.csv(url)
   
   # format 
@@ -39,7 +39,7 @@ covidtracking.com <- function(level){
   ))
 
   # date
-  x$date <- as.Date(as.character(x$date), format = "%Y%m%d")
+  x$date <- as.Date(as.character(x$date), format = "%Y-%m-%d")
   
   return(x) 
 }

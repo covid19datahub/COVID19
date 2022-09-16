@@ -49,7 +49,7 @@ cdc.gov <- function(level){
     if(level==1)
       x <- filter(x, state=="US")
     if(level==2)
-      x <- filter(x, !is.na(state) & !state %in% c("US", "FM", "RP", "MH"))
+      x <- filter(x, !is.na(state) & !state %in% c("US", "PW", "FM", "RP", "MH"))
     
     # convert date
     x$date <- as.Date(x$date, format = "%m/%d/%Y")
