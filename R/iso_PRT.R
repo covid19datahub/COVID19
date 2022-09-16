@@ -13,14 +13,19 @@ PRT <- function(level){
   #' 
   if(level==1){
     
-    #' - \href{`r repo("github.dssgpt.covid19ptdata")`}{Data Science for Social Good Portugal}:
+    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' confirmed cases,
     #' deaths,
-    #' recovered,
+    #' recovered.
+    #'
+    x1 <- github.cssegisanddata.covid19(level = level, country = "Portugal")
+    
+    #' - \href{`r repo("github.dssgpt.covid19ptdata")`}{Data Science for Social Good Portugal}:
     #' hospitalizations,
     #' intensive care.
     #'
-    x1 <- github.dssgpt.covid19ptdata(level = level)
+    x2 <- github.dssgpt.covid19ptdata(level = level) %>%
+      select(-c("confirmed", "deaths", "recovered"))
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
@@ -28,12 +33,14 @@ PRT <- function(level){
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    x2 <- ourworldindata.org(id = "PRT") %>%
+    x3 <- ourworldindata.org(id = "PRT") %>%
       select(-c("hosp", "icu"))
     
     # merge
-    x <- full_join(x1, x2, by = "date")
-    
+    x <- x1 %>%
+      full_join(x2, by = "date") %>%
+      full_join(x3, by = "date")
+      
   }
   
   #' @concept Level 2

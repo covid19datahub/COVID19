@@ -17,10 +17,11 @@ Portugal
 \subsection{Level 1}{
 \itemize{
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.dssgpt.covid19ptdata.R}{Data Science for Social Good Portugal}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
 confirmed cases,
 deaths,
-recovered,
+recovered.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.dssgpt.covid19ptdata.R}{Data Science for Social Good Portugal}:
 hospitalizations,
 intensive care.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata.org.R}{Our World in Data}:
