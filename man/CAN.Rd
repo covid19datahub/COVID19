@@ -20,7 +20,6 @@ Canada
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_canada.ca.R}{Public Health Agency of Canada}:
 confirmed cases,
 deaths,
-recovered,
 tests.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata.org.R}{Our World in Data}:
 total vaccine doses administered,
@@ -38,7 +37,6 @@ intensive care.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_canada.ca.R}{Public Health Agency of Canada}:
 confirmed cases,
 deaths,
-recovered,
 tests,
 total vaccine doses administered,
 people with at least one vaccine dose,

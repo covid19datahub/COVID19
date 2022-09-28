@@ -20,7 +20,6 @@ Data source for: Canada
 \itemize{
 \item confirmed cases
 \item deaths
-\item recovered
 \item tests
 \item total vaccine doses administered
 \item people with at least one vaccine dose
@@ -33,7 +32,6 @@ Data source for: Canada
 \itemize{
 \item confirmed cases
 \item deaths
-\item recovered
 \item tests
 \item total vaccine doses administered
 \item people with at least one vaccine dose

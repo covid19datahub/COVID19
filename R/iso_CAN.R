@@ -16,7 +16,6 @@ CAN <- function(level){
     #' - \href{`r repo("canada.ca")`}{Public Health Agency of Canada}:
     #' confirmed cases,
     #' deaths,
-    #' recovered,
     #' tests.
     #'
     x1 <- canada.ca(level = level) %>%
@@ -48,7 +47,6 @@ CAN <- function(level){
     #' - \href{`r repo("canada.ca")`}{Public Health Agency of Canada}:
     #' confirmed cases,
     #' deaths,
-    #' recovered,
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,

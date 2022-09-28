@@ -7,7 +7,6 @@
 #' @section Level 1:
 #' - confirmed cases
 #' - deaths
-#' - recovered
 #' - tests
 #' - total vaccine doses administered
 #' - people with at least one vaccine dose
@@ -16,7 +15,6 @@
 #' @section Level 2:
 #' - confirmed cases
 #' - deaths
-#' - recovered
 #' - tests
 #' - total vaccine doses administered
 #' - people with at least one vaccine dose
@@ -40,9 +38,7 @@ canada.ca <- function(level){
     "pruid"      = "id",
     "prname"     = "name",
     "numdeaths"  = "deaths",
-    "numconf"    = "confirmed",
-    "numtests"   = "tests",
-    "numrecover" = "recovered"
+    "totalcases" = "confirmed"
   ))
   
   # download total vaccine doses
@@ -56,7 +52,8 @@ canada.ca <- function(level){
     "report_date" = "date",
     "numtotal_all_administered" = "vaccines"
   ))
-  # sanitize vaccines
+  
+  # sanitize
   x2$vaccines <- suppressWarnings(as.integer(x2$vaccines))
   
   # download people vaccinated
@@ -72,11 +69,23 @@ canada.ca <- function(level){
     "numtotal_fully" = "people_fully_vaccinated"
   ))
 
+  # download tests
+  url <- "https://health-infobase.canada.ca/src/data/covidLive/covid19-epiSummary-labIndicators.csv"
+  x4 <- read.csv(url, fileEncoding = "UTF-8-BOM")
+  
+  # format
+  x4 <- map_data(x4, c(
+    "pruid" = "id",
+    "date" = "date",
+    "numtests_total" = "tests"
+  ))
+  
   # merge
   by <- c("id", "date")
   x <- x1 %>%
     full_join(x2, by = by) %>%
-    full_join(x3, by = by)
+    full_join(x3, by = by) %>%
+    full_join(x4, by = by)
 
   # remove non-geographic entity
   x <- x[which(x$id!=99),] 
