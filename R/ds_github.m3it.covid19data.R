@@ -37,7 +37,7 @@ github.m3it.covid19data <- function(level) {
 
   # download
   url <- "https://raw.githubusercontent.com/M3IT/COVID-19_Data/master/Data/COVID19_Data_Hub.csv"
-  x <- read.csv(url, na.strings = c("NA",""))
+  x <- read.csv(url, na.strings = c("0", "NA", ""))
 
   # format date
   x$date <- as.Date(x$date)
