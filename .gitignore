@@ -49,3 +49,4 @@ inst/doc
 *.log
 /inst/extdata/apple.csv
 /inst/extdata/google.csv
+.DS_Store
