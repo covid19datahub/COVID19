@@ -21,14 +21,14 @@ ABW <- function(level){
     x1 <- github.cssegisanddata.covid19(state = "Aruba", level = 2)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated,
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "ABW")
+    x2 <- ourworldindata.org(id = "ABW") %>%
+      select(-c("tests"))
     
     # merge
     x <- full_join(x1, x2, by = "date")

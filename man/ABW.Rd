@@ -22,7 +22,6 @@ confirmed cases,
 deaths,
 recovered.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata.org.R}{Our World in Data}:
-tests,
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated,
