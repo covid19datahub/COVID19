@@ -46,8 +46,8 @@ gv.at <- function(level){
     # see https://www.data.gv.at/katalog/dataset/ef8e980b-9644-45d8-b0e9-c6aaf0eff0c0
     url.cases <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline.csv"
     
-    # see https://www.data.gv.at/katalog/dataset/276ffd1e-efdd-42e2-b6c9-04fb5fa2b7ea
-    url.vacc <- "https://info.gesundheitsministerium.gv.at/data/COVID19_vaccination_doses_timeline.csv"
+    # see https://www.data.gv.at/katalog/dataset/85d040af-e09a-4401-8d67-8cee3e41fcaa
+    url.vacc <- "https://info.gesundheitsministerium.gv.at/data/COVID19_vaccination_doses_timeline_v202206.csv"
     
     # import hosp
     x.hosp <- read.csv(url.hosp, sep = ";")
@@ -78,8 +78,8 @@ gv.at <- function(level){
       "date" = "date",
       "state_id" = "state_id",
       "vaccine" = "type",
-      "dose_number" = "n",
-      "doses_administered_cumulative" = "doses"
+      "dose_number" = "dose",
+      "doses_administered_cumulative" = "n"
     ))
     
     # format date
@@ -92,9 +92,10 @@ gv.at <- function(level){
       filter(state_id != 0) %>%
       group_by(date, state_id) %>%
       summarise(
-        vaccines = sum(doses),
-        people_vaccinated = sum(doses[n==1]),
-        people_fully_vaccinated = sum(doses[(n==1 & type=="Janssen") | (n==2 & type!="Janssen")]))
+        vaccines = sum(n),
+        people_vaccinated = sum(n[dose == "1"]),
+        people_fully_vaccinated = sum(n[dose == "2" | (dose == "1" & type == "Janssen")])) %>%
+      mutate(people_fully_vaccinated = pmin(people_fully_vaccinated, people_vaccinated))
     
     if(level==1){
       
