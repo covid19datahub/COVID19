@@ -21,14 +21,14 @@ COM <- function(level){
     x1 <- github.cssegisanddata.covid19(country = "Comoros")
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated,
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "COM")
+    x2 <- ourworldindata.org(id = "COM") %>%
+      select(-c("tests"))
     
     # merge
     x <- full_join(x1, x2, by = "date")
