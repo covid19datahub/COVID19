@@ -14,8 +14,6 @@ GBR <- function(level){
   if(level==1){
     
     #' - \href{`r repo("gov.uk")`}{UK Health Security Agency}:
-    #' confirmed cases,
-    #' deaths,
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
@@ -23,7 +21,18 @@ GBR <- function(level){
     #' hospitalizations,
     #' patients requiring ventilation.
     #'
-    x <- gov.uk(level = level)
+    x1 <- gov.uk(level = level) %>%
+      select(-c("confirmed", "deaths"))
+    
+    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' confirmed cases,
+    #' deaths,
+    #' recovered.
+    #'
+    x2 <- github.cssegisanddata.covid19(country = "United Kingdom")
+    
+    # merge
+    x <- full_join(x1, x2, by = "date")
     
   }
   

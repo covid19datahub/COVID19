@@ -18,14 +18,16 @@ United Kingdom
 \itemize{
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{World Bank Open Data (2018)}: population.
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_gov.uk.R}{UK Health Security Agency}:
-confirmed cases,
-deaths,
 tests,
 total vaccine doses administered,
 people with at least one vaccine dose,
 people fully vaccinated,
 hospitalizations,
 patients requiring ventilation.
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.cssegisanddata.covid19.R}{Johns Hopkins Center for Systems Science and Engineering}:
+confirmed cases,
+deaths,
+recovered.
 }
 }
 
