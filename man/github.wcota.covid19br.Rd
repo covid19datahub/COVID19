@@ -23,6 +23,8 @@ Data source for: Brazil
 \item recovered
 \item tests
 \item total vaccine doses administered
+\item people with at least one vaccine dose
+\item people fully vaccinated
 }
 }
 
@@ -34,6 +36,8 @@ Data source for: Brazil
 \item recovered
 \item tests
 \item total vaccine doses administered
+\item people with at least one vaccine dose
+\item people fully vaccinated
 }
 }
 

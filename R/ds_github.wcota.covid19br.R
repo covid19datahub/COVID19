@@ -10,6 +10,8 @@
 #' - recovered
 #' - tests
 #' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
 #'
 #' @section Level 2:
 #' - confirmed cases
@@ -17,6 +19,8 @@
 #' - recovered
 #' - tests
 #' - total vaccine doses administered
+#' - people with at least one vaccine dose
+#' - people fully vaccinated
 #'
 #' @section Level 3:
 #' - confirmed cases
