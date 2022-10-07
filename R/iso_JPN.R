@@ -13,16 +13,15 @@ JPN <- function(level){
   #' 
   if(level==1){
     
-    #' - \href{`r repo("github.swsoyee.2019ncovjapan")`}{Su Wei}:
+    #' - \href{`r repo("toyokeizai.net")`}{Toyo Keizai}:
     #' confirmed cases,
     #' deaths,
     #' recovered,
     #' tests,
     #' hospitalizations,
-    #' intensive care,
-    #' patients requiring ventilation.
+    #' intensive care.
     #'
-    x1 <- github.swsoyee.2019ncovjapan(level = level)
+    x1 <- toyokeizai.net(level = level)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' total vaccine doses administered,
@@ -45,17 +44,16 @@ JPN <- function(level){
   #' 
   if(level==2){
     
-    #' - \href{`r repo("github.swsoyee.2019ncovjapan")`}{Su Wei}:
+    #' - \href{`r repo("toyokeizai.net")`}{Toyo Keizai}:
     #' confirmed cases,
     #' deaths,
     #' recovered,
     #' tests,
     #' hospitalizations,
-    #' intensive care,
-    #' patients requiring ventilation.
+    #' intensive care.
     #'
-    x <- github.swsoyee.2019ncovjapan(level = level)
-    x$id <- id(x$jis_code, iso = "JPN", ds = "github.swsoyee.2019ncovjapan", level = level)
+    x <- toyokeizai.net(level = level)
+    x$id <- id(x$prefecture, iso = "JPN", ds = "toyokeizai.net", level = level)
     
   }
   
