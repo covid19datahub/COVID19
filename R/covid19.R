@@ -951,9 +951,9 @@ ds_check_format <- function(x, level, ci = 0.8) {
       d_people_vaccinated_nonneg       = ci < mean(diff(people_vaccinated)     >= 0, na.rm = T),
       d_people_fully_vaccinated_nonneg = ci < mean(diff(people_fully_vaccinated)     >= 0, na.rm = T),
       d_recovered_nonneg = ci < mean(diff(recovered) >= 0, na.rm = T),
-      d_hosp_anyneg      = all(hosp==0, na.rm = T) | any(diff(hosp) < 0, na.rm = T),
-      d_vent_anyneg      = all(vent==0, na.rm = T) | any(diff(vent) < 0, na.rm = T),
-      d_icu_anyneg       = all(icu==0, na.rm = T)  | any(diff(icu)  < 0, na.rm = T) )
+      d_hosp_anyneg      = all(diff(hosp)==0, na.rm = T) | any(diff(hosp) < 0, na.rm = T),
+      d_vent_anyneg      = all(diff(vent)==0, na.rm = T) | any(diff(vent) < 0, na.rm = T),
+      d_icu_anyneg       = all(diff(icu)==0, na.rm = T)  | any(diff(icu)  < 0, na.rm = T) )
   
   # daily confirmed <= daily tests
   # status <- status & check(y$d_confirmed_tests, "confirmed > tests")
