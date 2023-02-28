@@ -60,10 +60,6 @@ If you find some issues with the data, please [report a bug](https://github.com/
 
 The first version of the project is described in *"COVID-19 Data Hub"*, [Journal of Open Source Software, 2020](https://doi.org/10.21105/joss.02376). The implementation details and the latest version of the data are described in *"A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution"*, [Scientific Data, Nature, 2022](https://doi.org/10.1038/s41597-022-01245-1). You can browse the publications that use COVID-19 Data Hub [here](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) and [here](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3406901022968697451). Please [cite](/authors.html) our paper(s) when using COVID-19 Data Hub.
 
-## Terms of use
-
-By using COVID-19 Data Hub, you agree to our [terms of use](https://covid19datahub.io/LICENSE.html).
-
 ## Cite as
 
 We have invested a lot of time and effort in creating [COVID-19 Data Hub](https://covid19datahub.io), please cite the following when using it:
@@ -103,6 +99,10 @@ A BibTeX entry for LaTeX users is:
     pages = {112}
 }
 ```
+
+## Terms of use
+
+By using COVID-19 Data Hub, you agree to our [terms of use](https://covid19datahub.io/LICENSE.html).
 
 ## Supported by 
 
