@@ -997,3 +997,24 @@ ds_check_format <- function(x, level, ci = 0.8) {
   # return
   return(status)
 }
+
+#' ISO week to date
+#' 
+#' Converts ISO week (e.g., 202009) to date (e.g. 2020-02-24)
+#' 
+#' @param isoweeks vector of isoweeks in the format YYYYMM.
+#' @param day integer between 1 (Mondays) and 7 (Sundays). 
+#' 
+#' @return Date. 
+#' 
+#' @keywords internal
+#' 
+#' @export
+isoweek2date <- function(isoweeks, day){
+  
+  year <- as.integer(isoweeks / 100)
+  week <- isoweeks - year * 100
+  
+  return(MMWRweek::MMWRweek2Date(year, week) + day)
+  
+}

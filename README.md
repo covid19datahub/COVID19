@@ -2,7 +2,9 @@
 
 # COVID-19 Data Hub [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fcovid19datahub%2FCOVID19%2F)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcovid19datahub%2FCOVID19)
 
-[![](https://storage.covid19datahub.io/downloads/total.svg)](https://covid19datahub.io/articles/data.html) [![DOI](https://joss.theoj.org/papers/10.21105/joss.02376/status.svg)](https://doi.org/10.21105/joss.02376) [![eRum2020::CovidR](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300)](https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html)
+[![](https://storage.covid19datahub.io/downloads/total.svg)](https://covid19datahub.io/articles/data.html)  [![eRum2020::CovidR](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300)](https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html)
+
+> The repository is being actively maintained and it will be for the whole 2023 thanks to the support of the [R Consortium](https://www.r-consortium.org).
 
 This repository aggregates COVID-19 data at a fine-grained spatial resolution from [several sources](https://covid19datahub.io/reference/index.html) and makes them available in the form of ready-to-use CSV files available at https://covid19datahub.io
 
@@ -34,10 +36,6 @@ The data are provided at 3 different levels of granularity:
 
 All the data are available to download at the [download centre](https://covid19datahub.io/articles/data.html).
 
-## Interactive visualization
-
-Interactive visualization of the latest data is available [here](https://datawrapper.dwcdn.net/3dO9Z/).
-
 ## How it works
 
 COVID-19 Data Hub is developed around 2 concepts: 
@@ -56,11 +54,11 @@ The code is run continuously on a dedicated Linux server to crunch the data from
 
 ## Contribute
 
-If you find some issues with the data, please [report a bug](https://github.com/covid19datahub/COVID19/issues). Suggestions about where to find data that we do not currently provide are also very [welcome](https://github.com/covid19datahub/COVID19/issues/179)! Help our project grow: star the repo!
+If you find some issues with the data, please [report a bug](https://github.com/covid19datahub/COVID19/issues).
 
 ## Academic publications
 
-See the [publications](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) that use COVID-19 Data Hub.
+The first version of the project is described in *"COVID-19 Data Hub"*, [Journal of Open Source Software, 2020](https://doi.org/10.21105/joss.02376). The implementation details and the latest version of the data are described in *"A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution"*, [Scientific Data, Nature, 2022](https://doi.org/10.1038/s41597-022-01245-1). You can browse the publications that use COVID-19 Data Hub [here](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1585537563493742217) and [here](https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3406901022968697451). Please [cite](/authors.html) our paper(s) when using COVID-19 Data Hub.
 
 ## Terms of use
 
@@ -68,7 +66,7 @@ By using COVID-19 Data Hub, you agree to our [terms of use](https://covid19datah
 
 ## Cite as
 
-We have invested a lot of time and effort in creating [COVID-19 Data Hub](https://covid19datahub.io), please cite the following reference when using it:
+We have invested a lot of time and effort in creating [COVID-19 Data Hub](https://covid19datahub.io), please cite the following when using it:
 
 *Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: [10.21105/joss.02376](https://doi.org/10.21105/joss.02376).*
 

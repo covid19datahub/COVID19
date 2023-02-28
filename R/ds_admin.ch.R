@@ -69,6 +69,15 @@ admin.ch <- function(level, state = NULL) {
         "sumTotal"  = "confirmed"
     ))
     
+    # confirmed weekly
+    x <- read.csv(csv$weekly$default$cases, na.strings = "NA")
+    confirmed_w <- map_data(x, c(
+      "datum"     = "date",
+      "geoRegion" = "code",
+      "sumTotal"  = "confirmed"
+    ))
+    confirmed_w$date <- as.character(isoweek2date(confirmed_w$date, 7))
+
     # deaths
     x <- read.csv(csv$daily$death, na.strings = "NA")
     deaths <- map_data(x, c(
@@ -77,13 +86,23 @@ admin.ch <- function(level, state = NULL) {
         "sumTotal"  = "deaths"
     ))
     
-    # tests
-    x <- read.csv(csv$daily$test, na.strings = "NA")
-    tests <- map_data(x, c(
-        "datum"     = "date",
-        "geoRegion" = "code",
-        "sumTotal"  = "tests"
+    # deaths weekly
+    x <- read.csv(csv$weekly$default$death, na.strings = "NA")
+    deaths_w <- map_data(x, c(
+      "datum"     = "date",
+      "geoRegion" = "code",
+      "sumTotal"  = "deaths"
     ))
+    deaths_w$date <- as.character(isoweek2date(deaths_w$date, 7))
+    
+    # tests weekly
+    x <- read.csv(csv$weekly$default$test, na.strings = "NA")
+    tests_w <- map_data(x, c(
+      "datum"     = "date",
+      "geoRegion" = "code",
+      "sumTotal"  = "tests"
+    ))
+    tests_w$date <- as.character(isoweek2date(tests_w$date, 7))
     
     # hosp
     x <- read.csv(csv$daily$hospCapacity, na.strings = "NA")
@@ -97,12 +116,18 @@ admin.ch <- function(level, state = NULL) {
     
     # merge 
     by <- c("code", "date")
-    x <- confirmed %>%
-        full_join(vaccines, by = by) %>%
+    x <- vaccines %>%
         full_join(vaccinated, by = by) %>%
-        full_join(deaths, by = by) %>%
-        full_join(tests, by = by) %>%
-        full_join(hosp, by = by)
+        full_join(hosp, by = by) %>%
+        full_join(tests_w, by = by) %>%
+        full_join(bind_rows(
+          confirmed, 
+          confirmed_w[confirmed_w$date > max(confirmed$date),]
+        ), by = by) %>%
+        full_join(bind_rows(
+          deaths, 
+          deaths_w[deaths_w$date > max(deaths$date),]
+        ), by = by)
 
     # clean code
     x <- x[!is.na(x$code),]
@@ -113,7 +138,12 @@ admin.ch <- function(level, state = NULL) {
     }
     # select only Swiss cantons
     else{
-        x <- x[!(x$code %in% c("CH", "FL", "CHFL", "all", "neighboring_chfl", "unknown")),]
+        x <- x[x$code %in% c(
+          "AG", "AI", "AR", "BE", "BL", "BS", "FR", "GE",
+          "GL", "GR", "JU", "LU", "NE", "NW", "OW", "SG",
+          "SH", "SO", "SZ", "TG", "TI", "UR", "VD", "VS",
+          "ZG", "ZH"
+        ),]
     }
     
     # convert date
