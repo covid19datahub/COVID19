@@ -143,15 +143,19 @@
 
 <div id="covid-19-data-hub-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#covid-19-data-hub-" class="anchor"></a>COVID-19 Data Hub <img src="reference/figures/logo.png" width="200" align="right">
+<a href="#covid-19-data-hub-" class="anchor"></a>COVID-19 Data Hub
+<img src="reference/figures/logo.png" width="200" align="right">
 </h1></div>
-<p>Funded by the Institute for Data Valorization <a href="https://ivado.ca/en/">IVADO</a>, Canada.</p>
+<p>Funded by the Institute for Data Valorization <a href="https://ivado.ca/en/">IVADO</a>, Canada. The project is being
+actively maintained and it will be for the whole 2023 thanks to the
+support of the <a href="https://www.r-consortium.org">R
+Consortium</a>.</p>
 <blockquote>
-<p>The goal of COVID-19 Data Hub is to provide the research community with a <a href="/articles/data.html">unified dataset</a> by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.</p>
+<p>The goal of COVID-19 Data Hub is to provide the research community
+with a <a href="/articles/data.html">unified dataset</a> by collecting
+worldwide fine-grained case data, merged with exogenous variables
+helpful for a better understanding of COVID-19.</p>
 </blockquote>
-<!--
-<iframe title="COVID-19 Data Hub" aria-label="Map" id="datawrapper-chart-3dO9Z" src="https://datawrapper.dwcdn.net/3dO9Z/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="424"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
--->
 <div id="download-the-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#download-the-data" class="anchor"></a>Download the data</h2>
@@ -160,59 +164,79 @@
 <div id="unified-dataset" class="section level2">
 <h2 class="hasAnchor">
 <a href="#unified-dataset" class="anchor"></a>Unified dataset</h2>
-<p>The dataset includes an extensive list of <a href="/articles/docs.html#epidemiological-variables">epidemiological variables</a>, several <a href="/articles/docs.html#policy-measures">policy measures</a> by Oxford’s government response tracker, and a set of <a href="/articles/docs.html#external-keys">external keys</a> to match the data with <a href="https://www.google.com/covid19/mobility/">Google</a> and <a href="https://www.apple.com/covid19/mobility">Apple</a> mobility reports, with the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet">Hydromet dataset</a>, and with spatial databases such as <a href="https://ec.europa.eu/eurostat/web/nuts/nuts-maps">Eurostat</a> for Europe or <a href="https://gadm.org/">GADM</a> worldwide.</p>
+<p>The dataset includes an extensive list of <a href="/articles/docs.html#epidemiological-variables">epidemiological
+variables</a>, several <a href="/articles/docs.html#policy-measures">policy measures</a> by
+Oxford’s government response tracker, and a set of <a href="/articles/docs.html#external-keys">external keys</a> to match the
+data with <a href="https://www.google.com/covid19/mobility/">Google</a>
+and <a href="https://www.apple.com/covid19/mobility">Apple</a> mobility
+reports, with the <a href="https://github.com/CSSEGISandData/COVID-19_Unified-Dataset/tree/master/Hydromet">Hydromet
+dataset</a>, and with spatial databases such as <a href="https://ec.europa.eu/eurostat/web/nuts/nuts-maps">Eurostat</a> for
+Europe or <a href="https://gadm.org/">GADM</a> worldwide.</p>
 </div>
 <div id="software-packages" class="section level2">
 <h2 class="hasAnchor">
 <a href="#software-packages" class="anchor"></a>Software packages</h2>
-<p>We release <a href="/articles/api/r.html">R</a> and <a href="/articles/api/python.html">Python</a> packages to simplify the interaction with the Data Hub. In general, it is possible to import the data in any software by reading the CSV files provided at the <a href="/articles/data.html">download centre</a>.</p>
+<p>The <a href="/articles/api/r.html">R</a> and <a href="/articles/api/python.html">Python</a> packages simplify the
+interaction with the Data Hub. In general, it is possible to import the
+data in any software by reading the CSV files provided at the <a href="/articles/data.html">download centre</a>.</p>
 </div>
 <div id="data-transparency" class="section level2">
 <h2 class="hasAnchor">
 <a href="#data-transparency" class="anchor"></a>Data transparency</h2>
-<p>The data acquisition pipeline is open source. All the code used to generate the data files can be found at our <a href="https://github.com/covid19datahub/COVID19/">GitHub repository</a>. In principle, one can use the function <code>covid19</code> from the repository to generate the same data we provide at the <a href="/articles/data.html#latest-data">download centre</a>. However, this takes between 1-2 hours, so that downloading the pre-computed files is typically more convenient. <a href="/reference/index.html">Here</a> we provide the full list of data sources from which the data are pulled.</p>
+<p>The data acquisition pipeline is open source. All the code used to
+generate the data files can be found at our <a href="https://github.com/covid19datahub/COVID19/">GitHub repository</a>.
+In principle, one can use the function <code>covid19</code> from the
+repository to generate the same data available at the <a href="/articles/data.html#latest-data">download centre</a>. However,
+this takes between 1-2 hours, so that downloading the pre-computed files
+is typically more convenient. The full list of data sources where the
+data are pulled from is available <a href="/reference/index.html">here</a>.</p>
 </div>
 <div id="research-reproducibility" class="section level2">
 <h2 class="hasAnchor">
 <a href="#research-reproducibility" class="anchor"></a>Research reproducibility</h2>
-<p>As most governments are updating the data retroactively, we provide <a href="/articles/data.html#vintage-data">vintage data</a> to simplify reproducibility of academic research. These are immutable snapshots of the data taken each day. We gratefully acknowledge financial support by the <a href="https://www.r-consortium.org/blog/2020/12/14/r-consortium-providing-financial-support-to-covid-19-data-hub-platform">R Consortium</a> in maintaining the vintage data.</p>
+<p>As most governments are updating the data retroactively, we provide
+<a href="/articles/data.html#vintage-data">vintage data</a> to simplify
+reproducibility of academic research. These are immutable snapshots of
+the data taken each day. We gratefully acknowledge financial support by
+the <a href="https://www.r-consortium.org/blog/2020/12/14/r-consortium-providing-financial-support-to-covid-19-data-hub-platform">R
+Consortium</a> in maintaining the vintage data.</p>
 </div>
 <div id="academic-publications" class="section level2">
 <h2 class="hasAnchor">
 <a href="#academic-publications" class="anchor"></a>Academic publications</h2>
-<p>See the <a href="https://scholar.google.com/scholar?oi=bibs&amp;hl=en&amp;cites=1585537563493742217">publications</a> that use COVID-19 Data Hub.</p>
-</div>
-<div id="latest-news" class="section level2">
-<h2 class="hasAnchor">
-<a href="#latest-news" class="anchor"></a>Latest news</h2>
-<ul>
-<li>29/03/2022: The implementation details and the latest version of the data are described in <em>“A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution”</em>, Scientific Data (Nature). Read here: <a href="https://doi.org/10.1038/s41597-022-01245-1">https://doi.org/10.1038/s41597-022-01245-1</a>
-</li>
-</ul>
-</div>
-<div id="in-the-news" class="section level2">
-<h2 class="hasAnchor">
-<a href="#in-the-news" class="anchor"></a>In the news</h2>
-<ul>
-<li><a href="https://www.lextechinstitute.ch/covid-19-data-hub/">LexTech Institute, 03/2021</a></li>
-<li><a href="http://www.cscience.ca/2021/02/10/exploiter-les-donnees-pour-enrayer-la-pandemie/">CScience, 02/2021</a></li>
-<li><a href="https://www.r-consortium.org/blog/2021/02/09/covid-19-data-hub">R Consortium, 02/2021</a></li>
-<li><a href="https://www.unine.ch/unine/home/pour-les-medias/communiques-de-presse/les-donnees-de-la-covid-19-sur-u.html">University of Neuchâtel, 12/2020</a></li>
-<li><a href="https://quartierlibre.ca/regrouper-les-donnees-mondiales-sur-la-covid-19/">Quartier L!bre, 11/2020</a></li>
-<li><a href="https://www.hec.ca/en/research/take-a-closer-look/reliable-unified-data.html">HEC Montréal, 09/2020</a></li>
-<li><a href="https://ssc.ca/en/publications/ssc-liaison/vol-34-3-june-2020/news-hec-montreal">Statistical Society of Canada, 06/2020</a></li>
-<li><a href="https://ivado.ca/en/covid-19/#phares">Institute for Data Valorization, 06/2020</a></li>
-<li><a href="https://milano-r.github.io/erum2020-covidr-contest/index.html">Winner of the eRum2020 CovidR contest, 06/2020</a></li>
-<li><a href="https://dse.cdl.unimi.it/en/avviso/notice-detail/covid-data-analysis">Data Science and Economics, University of Milano, 06/2020</a></li>
-<li><a href="https://rviews.rstudio.com/2020/06/03/more-select-covid-19-resources/">More Select COVID-19 Resources, 06/2020</a></li>
-<li><a href="https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f">Top 50 R resources on Novel COVID-19 Coronavirus, 03/2020</a></li>
-<li><a href="https://rviews.rstudio.com/2020/04/27/march-2020-top-40-new-cran-packages/">“Top 40” New CRAN Packages, 03/2020</a></li>
-</ul>
+<p>The first version of the project is described in <em>“COVID-19 Data
+Hub”</em>, <a href="https://doi.org/10.21105/joss.02376">Journal of Open
+Source Software, 2020</a>. The implementation details and the latest
+version of the data are described in <em>“A worldwide epidemiological
+database for COVID-19 at fine-grained spatial resolution”</em>, <a href="https://doi.org/10.1038/s41597-022-01245-1">Scientific Data,
+Nature, 2022</a>. You can browse the publications that use COVID-19 Data
+Hub <a href="https://scholar.google.com/scholar?oi=bibs&amp;hl=en&amp;cites=1585537563493742217">here</a>
+and <a href="https://scholar.google.com/scholar?oi=bibs&amp;hl=en&amp;cites=3406901022968697451">here</a>.
+Please <a href="/authors.html">cite</a> our paper(s) when using COVID-19
+Data Hub.</p>
+<!--
+## In the news
+
+- [LexTech Institute, 03/2021](https://www.lextechinstitute.ch/covid-19-data-hub/)
+- [CScience, 02/2021](http://www.cscience.ca/2021/02/10/exploiter-les-donnees-pour-enrayer-la-pandemie/)
+- [R Consortium, 02/2021](https://www.r-consortium.org/blog/2021/02/09/covid-19-data-hub)
+- [University of Neuchâtel, 12/2020](https://www.unine.ch/unine/home/pour-les-medias/communiques-de-presse/les-donnees-de-la-covid-19-sur-u.html)
+- [Quartier L!bre, 11/2020](https://quartierlibre.ca/regrouper-les-donnees-mondiales-sur-la-covid-19/)
+- [HEC Montréal, 09/2020](https://www.hec.ca/en/research/take-a-closer-look/reliable-unified-data.html) 
+- [Statistical Society of Canada, 06/2020](https://ssc.ca/en/publications/ssc-liaison/vol-34-3-june-2020/news-hec-montreal)
+- [Institute for Data Valorization, 06/2020](<https://ivado.ca/en/covid-19/#phares>)
+- [Winner of the eRum2020 CovidR contest, 06/2020](<https://milano-r.github.io/erum2020-covidr-contest/index.html>)
+- [Data Science and Economics, University of Milano, 06/2020](<https://dse.cdl.unimi.it/en/avviso/notice-detail/covid-data-analysis>)
+- [More Select COVID-19 Resources, 06/2020](https://rviews.rstudio.com/2020/06/03/more-select-covid-19-resources/)
+- [Top 50 R resources on Novel COVID-19 Coronavirus, 03/2020](<https://towardsdatascience.com/top-5-r-resources-on-covid-19-coronavirus-1d4c8df6d85f>)
+- ["Top 40" New CRAN Packages, 03/2020](<https://rviews.rstudio.com/2020/04/27/march-2020-top-40-new-cran-packages/>)
+-->
 </div>
 <div id="contribute" class="section level2">
 <h2 class="hasAnchor">
 <a href="#contribute" class="anchor"></a>Contribute</h2>
-<p>If you find some issues with the data, please report a bug at our <a href="https://github.com/covid19datahub/COVID19/issues">GitHub repository</a>. Suggestions about where to find data that we do not currently provide are also very <a href="https://github.com/covid19datahub/COVID19/issues/179">welcome</a>! Help our project grow: star the repo!</p>
+<p>If you find some issues with the data, please report a bug at our <a href="https://github.com/covid19datahub/COVID19/issues">GitHub
+repository</a>.</p>
 <a class="github-button" href="https://github.com/covid19datahub/COVID19" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star covid19datahub/COVID19 on GitHub">Star</a>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 </div>
@@ -224,8 +248,15 @@
 <div id="authors" class="section level2">
 <h2 class="hasAnchor">
 <a href="#authors" class="anchor"></a>Authors</h2>
-<p>The project was initiated via the <a href="https://CRAN.R-project.org/package=COVID19">R package COVID19</a> developed by <a href="https://guidotti.dev/">Emanuele Guidotti</a> (University of Neuchâtel), leveraged by <a href="https://ardiad.github.io/">David Ardia</a> (HEC Montréal) via the funding by <a href="https://ivado.ca/en/">IVADO</a>, enhanced by an awesome <a href="/articles/contributors.html">open source community</a>, and it is maintained by <a href="https://guidotti.dev/">Emanuele Guidotti</a>.</p>
-<p>Logo courtesy of <a href="http://www.garysandoz.ch/index.html">Gary Sandoz</a> and <a href="https://www.talk-to-me.ch/">Talk-to-Me</a>.</p>
+<p>The project was initiated via the <a href="https://CRAN.R-project.org/package=COVID19">R package COVID19</a>
+developed by <a href="https://guidotti.dev/">Emanuele Guidotti</a>
+(University of Neuchâtel), leveraged by <a href="https://ardiad.github.io/">David Ardia</a> (HEC Montréal) via the
+funding by <a href="https://ivado.ca/en/">IVADO</a>, enhanced by an
+awesome <a href="/articles/contributors.html">open source community</a>,
+and it is maintained by <a href="https://guidotti.dev/">Emanuele
+Guidotti</a>.</p>
+<p>Logo courtesy of <a href="http://www.garysandoz.ch/index.html">Gary
+Sandoz</a> and <a href="https://www.talk-to-me.ch/">Talk-to-Me</a>.</p>
 </div>
 <div id="supported-by" class="section level2">
 <h2 class="hasAnchor">
@@ -274,7 +305,6 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://covid19datahub.io/articles/data.html"><img src="https://storage.covid19datahub.io/downloads/total.svg"></a></li>
-<li><a href="https://doi.org/10.21105/joss.02376"><img src="https://joss.theoj.org/papers/10.21105/joss.02376/status.svg" alt="DOI"></a></li>
 <li><a href="https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html"><img src="https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300" alt="eRum2020::CovidR"></a></li>
 </ul>
 </div>
