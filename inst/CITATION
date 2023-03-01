@@ -4,10 +4,11 @@ bibentry(
 	year=2020,
 	DOI="10.21105/joss.02376", 
 	author=as.person("Emanuele Guidotti [aut], David Ardia [aut]"),
-        journal="Journal of Open Source Software",
-        volume="5",
-        number="51",
-        pages="2376",
+  journal="Journal of Open Source Software",
+  volume="5",
+  number="51",
+  pages="2376",
+  header="We have invested a lot of time and effort in creating COVID-19 Data Hub, please cite the following when using it:",
 	textVersion='Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: 10.21105/joss.02376'
 )
 
@@ -17,9 +18,10 @@ bibentry(
 	year=2022,
 	DOI="10.1038/s41597-022-01245-1", 
 	author=as.person("Emanuele Guidotti [aut]"),
-        journal="Scientific Data",
-        volume="9",
-        number="1",
-        pages="112",
+  journal="Scientific Data",
+  volume="9",
+  number="1",
+  pages="112",
+  header="The implementation details and the latest version of the data are described in:",
 	textVersion='Guidotti, E., (2022), "A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution", Sci Data 9(1):112, doi: 10.1038/s41597-022-01245-1'
 )
