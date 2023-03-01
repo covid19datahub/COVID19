@@ -699,7 +699,7 @@ read.excel <- function(path, cache = FALSE, sheet = NA, ...) {
     utils::download.file(path, destfile = tmp, mode = "wb", quiet = TRUE)
     
     # sheet not given - all sheets
-    if(is.na(sheet)) {
+    if(all(is.na(sheet))) {
       
       sheets <- readxl::excel_sheets(path = tmp)
       
@@ -707,7 +707,14 @@ read.excel <- function(path, cache = FALSE, sheet = NA, ...) {
       names(x) <- sheets
       
     } 
-    # sheet given
+    # multiple sheets
+    else if (length(sheet) > 1){
+
+      x <- lapply(sheet, function(X) readxl::read_excel(path = tmp, sheet = X))
+      names(x) <- sheet
+
+    }
+    # single sheet
     else {
       
       x <- readxl::read_excel(path = tmp, sheet = sheet, ...)

@@ -45,7 +45,10 @@ sciensano.be <- function(level){
   
   # download
   url <- "https://epistat.sciensano.be/Data/COVID19BE.xlsx"
-  x   <- read.excel(url)  
+  x   <- read.excel(url, sheet = c(
+    "CASES_AGESEX", "CASES_MUNI_CUM", "HOSP", "MORT", "TESTS",         
+    "VACC", "VACC_MUNI_CUM_1", "VACC_MUNI_CUM_2", "VACC_MUNI_CUM_3"       
+  ))  
   
   # convert date in all the excel sheets
   x <- lapply(x, function(x){
@@ -220,7 +223,7 @@ sciensano.be <- function(level){
     # - E for extra dose of vaccine administered since the 9th of September 2021
     # We use A+C to compute people_vaccinated and B+C to compute people_fully_vaccinated.
     # See https://epistat.sciensano.be/COVID19BE_codebook.pdf
-    vaccines <- bind_rows(x$VACC_MUNI_CUM_1, x$VACC_MUNI_CUM_2) %>%
+    vaccines <- bind_rows(x$VACC_MUNI_CUM_1, x$VACC_MUNI_CUM_2, x$VACC_MUNI_CUM_3) %>%
       filter(CUMUL!="<10") %>%
       mutate(
         NIS5 = as.character(NIS5),
