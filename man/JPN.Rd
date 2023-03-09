@@ -17,17 +17,16 @@ Japan
 \subsection{Level 1}{
 \itemize{
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/ISO.csv}{Japan COVID-19 Bulletin Board (2020)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_toyokeizai.net.R}{Toyo Keizai}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.lisphilar.covid19sir.R}{Hirokazu Takaya}:
 confirmed cases,
 deaths,
 recovered,
 tests,
-hospitalizations,
-intensive care.
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_ourworldindata.org.R}{Our World in Data}:
 total vaccine doses administered,
 people with at least one vaccine dose,
-people fully vaccinated.
+people fully vaccinated,
+hospitalizations,
+intensive care.
 }
 }
 
@@ -35,7 +34,7 @@ people fully vaccinated.
 \subsection{Level 2}{
 \itemize{
 \item \href{https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/db/JPN.csv}{Japan COVID-19 Bulletin Board (2020)}: population.
-\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_toyokeizai.net.R}{Toyo Keizai}:
+\item \href{https://github.com/covid19datahub/COVID19/blob/master/R/ds_github.lisphilar.covid19sir.R}{Hirokazu Takaya}:
 confirmed cases,
 deaths,
 recovered,

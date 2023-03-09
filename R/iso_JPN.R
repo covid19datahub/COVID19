@@ -13,26 +13,18 @@ JPN <- function(level){
   #' 
   if(level==1){
     
-    #' - \href{`r repo("toyokeizai.net")`}{Toyo Keizai}:
+    #' - \href{`r repo("github.lisphilar.covid19sir")`}{Hirokazu Takaya}:
     #' confirmed cases,
     #' deaths,
     #' recovered,
     #' tests,
+    #' total vaccine doses administered,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated,
     #' hospitalizations,
     #' intensive care.
     #'
-    x1 <- toyokeizai.net(level = level)
-    
-    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' total vaccine doses administered,
-    #' people with at least one vaccine dose,
-    #' people fully vaccinated.
-    #'
-    x2 <- ourworldindata.org(id = "JPN") %>%
-      select(-c("tests", "hosp", "icu"))
-    
-    # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- github.lisphilar.covid19sir(level = level)
     
   }
   
@@ -44,7 +36,7 @@ JPN <- function(level){
   #' 
   if(level==2){
     
-    #' - \href{`r repo("toyokeizai.net")`}{Toyo Keizai}:
+    #' - \href{`r repo("github.lisphilar.covid19sir")`}{Hirokazu Takaya}:
     #' confirmed cases,
     #' deaths,
     #' recovered,
@@ -52,8 +44,8 @@ JPN <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x <- toyokeizai.net(level = level)
-    x$id <- id(x$prefecture, iso = "JPN", ds = "toyokeizai.net", level = level)
+    x <- github.lisphilar.covid19sir(level = level)
+    x$id <- id(x$prefecture, iso = "JPN", ds = "github.lisphilar.covid19sir", level = level)
     
   }
   
