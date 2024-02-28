@@ -157,12 +157,12 @@
 <a href="#setup-and-usage" class="anchor"></a>Setup and usage</h2>
 <p>Install from <a href="https://pypi.org/project/covid19dh/">pip</a>
 with</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pip install covid19dh</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>pip install covid19dh</span></code></pre></div>
 <p>Importing the main function <code><a href="../reference/covid19.html">covid19()</a></code></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19() </span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>x, src <span class="op">=</span> covid19() </span></code></pre></div>
 <p>Package is regularly updated. Update with</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--upgrade</span> covid19dh</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">--upgrade</span> covid19dh</span></code></pre></div>
 </div>
 <div id="return-values" class="section level2">
 <h2 class="hasAnchor">
@@ -179,12 +179,12 @@ the data and * references to the data sources.</p>
 <p>List of country names (case-insensitive) or ISO codes (alpha-2,
 alpha-3 or numeric). The list of ISO codes can be found <a href="https://github.com/covid19datahub/COVID19/blob/master/inst/extdata/src.csv">here</a>.</p>
 <p>Fetching data from a particular country:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>) <span class="co"># Unites States</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>) <span class="co"># Unites States</span></span></code></pre></div>
 <p>Specify multiple countries at the same time:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19([<span class="st">"ESP"</span>,<span class="st">"PT"</span>,<span class="st">"andorra"</span>,<span class="dv">250</span>])</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>x, src <span class="op">=</span> covid19([<span class="st">"ESP"</span>,<span class="st">"PT"</span>,<span class="st">"andorra"</span>,<span class="dv">250</span>])</span></code></pre></div>
 <p>If <code>country</code> is omitted, the whole dataset is
 returned:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19()</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>x, src <span class="op">=</span> covid19()</span></code></pre></div>
 </div>
 <div id="raw-data" class="section level3">
 <h3 class="hasAnchor">
@@ -195,7 +195,7 @@ dates with <code>NaN</code> values. This ensures that all locations
 share the same grid of dates and no single day is skipped. Then,
 <code>NaN</code> values are replaced with the previous
 non-<code>NaN</code> value or <code>0</code>.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19(raw <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>x, src <span class="op">=</span> covid19(raw <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
 </div>
 <div id="date-filter" class="section level3">
 <h3 class="hasAnchor">
@@ -203,8 +203,8 @@ non-<code>NaN</code> value or <code>0</code>.</p>
 <p>Date can be specified with <code>datetime.datetime</code>,
 <code>datetime.date</code> or as a <code>str</code> in format
 <code>YYYY-mm-dd</code>.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"SWE"</span>, start <span class="op">=</span> datetime(<span class="dv">2020</span>,<span class="dv">4</span>,<span class="dv">1</span>), end <span class="op">=</span> <span class="st">"2020-05-01"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"SWE"</span>, start <span class="op">=</span> datetime(<span class="dv">2020</span>,<span class="dv">4</span>,<span class="dv">1</span>), end <span class="op">=</span> <span class="st">"2020-05-01"</span>)</span></code></pre></div>
 </div>
 <div id="level" class="section level3">
 <h3 class="hasAnchor">
@@ -215,8 +215,8 @@ non-<code>NaN</code> value or <code>0</code>.</p>
 <li>State, region or canton level</li>
 <li>City or municipality level</li>
 </ol>
-<div class="sourceCode" id="cb9"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> date</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>, level <span class="op">=</span> <span class="dv">2</span>, start <span class="op">=</span> date(<span class="dv">2020</span>,<span class="dv">5</span>,<span class="dv">1</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> date</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>, level <span class="op">=</span> <span class="dv">2</span>, start <span class="op">=</span> date(<span class="dv">2020</span>,<span class="dv">5</span>,<span class="dv">1</span>))</span></code></pre></div>
 </div>
 <div id="cache" class="section level3">
 <h3 class="hasAnchor">
@@ -224,7 +224,7 @@ non-<code>NaN</code> value or <code>0</code>.</p>
 <p>Logical. Memory caching? Significantly improves performance on
 successive calls. By default, using the cached data is enabled.</p>
 <p>Caching can be disabled (e.g. for long running programs) by:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"FRA"</span>, cache <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"FRA"</span>, cache <span class="op">=</span> <span class="va">False</span>)</span></code></pre></div>
 </div>
 <div id="vintage" class="section level3">
 <h3 class="hasAnchor">
@@ -234,22 +234,22 @@ the <code>end</code> date instead of using the latest version. Default
 <code>False</code>.</p>
 <p>To fetch e.g. US data that were accessible on <em>22th April
 2020</em> type</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"US"</span>, end <span class="op">=</span> <span class="st">"2020-04-22"</span>, vintage <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"US"</span>, end <span class="op">=</span> <span class="st">"2020-04-22"</span>, vintage <span class="op">=</span> <span class="va">True</span>)</span></code></pre></div>
 <p>The vintage data are collected at the end of the day, but published
 with approximately 48 hour delay, once the day is completed in all the
 timezones.</p>
 <p>Hence if <code>vintage = True</code>, but <code>end</code> is not
 set, warning is raised and <code>None</code> is returned.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>, vintage <span class="op">=</span> <span class="va">True</span>) <span class="co"># too early to get today's vintage</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>, vintage <span class="op">=</span> <span class="va">True</span>) <span class="co"># too early to get today's vintage</span></span></code></pre></div>
 <pre><code>UserWarning: vintage data not available yet</code></pre>
 </div>
 <div id="citations" class="section level3">
 <h3 class="hasAnchor">
 <a href="#citations" class="anchor"></a>Citations</h3>
 <p>The data sources are returned as second value.</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(src)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode py"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="im">from</span> covid19dh <span class="im">import</span> covid19</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>x, src <span class="op">=</span> covid19(<span class="st">"USA"</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a><span class="bu">print</span>(src)</span></code></pre></div>
 </div>
 </div>
 <div id="star-the-repo" class="section level2">
@@ -286,16 +286,16 @@ All other code and assets are published under the <a href="https://www.r-project
 Open Source Software 5(51):2376, doi: <a href="https://doi.org/10.21105/joss.02376">10.21105/joss.02376</a>.</em></p>
 </blockquote>
 <p>A BibTeX entry for LaTeX users is:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>@Article{guidotti2020,</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    title = {COVID-19 Data Hub},</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    year = {2020},</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    doi = {10.21105/joss.02376},</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    author = {Emanuele Guidotti and David Ardia},</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    journal = {Journal of Open Source Software},</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    volume = {5},</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    number = {51},</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    pages = {2376}</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>@Article{guidotti2020,</span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>    title = {COVID-19 Data Hub},</span>
+<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>    year = {2020},</span>
+<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>    doi = {10.21105/joss.02376},</span>
+<span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a>    author = {Emanuele Guidotti and David Ardia},</span>
+<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a>    journal = {Journal of Open Source Software},</span>
+<span id="cb15-7"><a href="#cb15-7" tabindex="-1"></a>    volume = {5},</span>
+<span id="cb15-8"><a href="#cb15-8" tabindex="-1"></a>    number = {51},</span>
+<span id="cb15-9"><a href="#cb15-9" tabindex="-1"></a>    pages = {2376}</span>
+<span id="cb15-10"><a href="#cb15-10" tabindex="-1"></a>}</span></code></pre></div>
 <p>The implementation details and the latest version of the data are
 described in:</p>
 <blockquote>
@@ -303,16 +303,16 @@ described in:</p>
 COVID-19 at fine-grained spatial resolution”, Sci Data 9(1):112, doi: <a href="https://doi.org/10.1038/s41597-022-01245-1">10.1038/s41597-022-01245-1</a></em></p>
 </blockquote>
 <p>A BibTeX entry for LaTeX users is:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>@Article{guidotti2022,</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    title = {A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution},</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    year = {2022},</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    doi = {10.1038/s41597-022-01245-1},</span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    author = {Emanuele Guidotti},</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    journal = {Scientific Data},</span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    volume = {9},</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    number = {1},</span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    pages = {112}</span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode latex"><code class="sourceCode latex"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>@Article{guidotti2022,</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>    title = {A worldwide epidemiological database for COVID-19 at fine-grained spatial resolution},</span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>    year = {2022},</span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a>    doi = {10.1038/s41597-022-01245-1},</span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a>    author = {Emanuele Guidotti},</span>
+<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a>    journal = {Scientific Data},</span>
+<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>    volume = {9},</span>
+<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a>    number = {1},</span>
+<span id="cb16-9"><a href="#cb16-9" tabindex="-1"></a>    pages = {112}</span>
+<span id="cb16-10"><a href="#cb16-10" tabindex="-1"></a>}</span></code></pre></div>
 </div>
 <div id="comments" class="section level2">
 <h2 class="hasAnchor">
