@@ -134,7 +134,7 @@ tab <- function(start, end, version){
 }
 ```
 
-`r tab(start = "2023-03-01", end = Sys.Date()-1, version = 3)`
+`r tab(start = "2023-03-01", end = "2024-10-18", version = 3)`
 
 Tests for Switzerland are now retrieved from the file [COVID19Test_geoRegion_w](https://opendata.swiss/en/dataset/covid-19-schweiz/resource/d0222de9-00c3-4266-a53a-c00e459aeef6). Before this update, `tests` for Switzerland were significantly lower, because only tests performed in hospitals were counted.
 
