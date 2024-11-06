@@ -1,11 +1,12 @@
 [![](https://storage.covid19datahub.io/downloads/total.svg)](https://covid19datahub.io/articles/data.html)
-[![eRum2020::CovidR](https://badgen.net/https/runkit.io/erum2020-covidr/badge/branches/master/covid19datahub?cache=300)](https://milano-r.github.io/erum2020-covidr-contest/covid19datahub.html) 
 
 # COVID-19 Data Hub <img src="man/figures/logo.png" width="200" align="right" />
 
-Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/), Canada. The project is being actively maintained and it will be for the whole 2023 thanks to the support of the [R Consortium](https://www.r-consortium.org).
+Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/) in 2020. Supported by the [R Consortium](https://www.r-consortium.org) from 2021 to 2024. Funded by the University of Lugano [USI](https://www.usi.ch/en) in 2025.
 
 > The goal of COVID-19 Data Hub is to provide the research community with a [unified dataset](/articles/data.html) by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.
+
+**JOB OFFER (published November 5, 2024):** Hiring a research assistant with a Master's or higher degree to work on the COVID-19 Data Hub, starting ASAP! The position is funded by the University of Lugano, Switzerland. Possibility to work partially or fully remotely. Read more [here](https://content.usi.ch/sites/default/files/storage/attachments/ifin/ifin-research-assistant-open-research-data.pdf).
 
 ## Download the data
 
