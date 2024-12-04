@@ -6,8 +6,6 @@
 
 > Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/) in 2020. Supported by the [R Consortium](https://www.r-consortium.org) from 2021 to 2024. Funded by the University of Lugano [USI](https://www.usi.ch/en) in 2025.
 
-**JOB OFFER (published November 5, 2024):** Hiring a research assistant with a Master's or higher degree to work on the COVID-19 Data Hub, starting ASAP! The position is funded by the University of Lugano, Switzerland. Possibility to work partially or fully remotely. Read more [here](https://content.usi.ch/sites/default/files/storage/attachments/ifin/ifin-research-assistant-open-research-data.pdf).
-
 This repository aggregates COVID-19 data at a fine-grained spatial resolution from [several sources](https://covid19datahub.io/reference/index.html) and makes them available in the form of ready-to-use CSV files available at https://covid19datahub.io
 
 | Variable                  | Description                                                  |
