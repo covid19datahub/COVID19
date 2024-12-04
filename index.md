@@ -6,8 +6,6 @@ Funded by the Institute for Data Valorization [IVADO](https://ivado.ca/en/) in 2
 
 > The goal of COVID-19 Data Hub is to provide the research community with a [unified dataset](/articles/data.html) by collecting worldwide fine-grained case data, merged with exogenous variables helpful for a better understanding of COVID-19.
 
-**JOB OFFER (published November 5, 2024):** Hiring a research assistant with a Master's or higher degree to work on the COVID-19 Data Hub, starting ASAP! The position is funded by the University of Lugano, Switzerland. Possibility to work partially or fully remotely. Read more [here](https://content.usi.ch/sites/default/files/storage/attachments/ifin/ifin-research-assistant-open-research-data.pdf).
-
 ## Download the data
 
 All the data are provided at the [download centre](/articles/data.html).
