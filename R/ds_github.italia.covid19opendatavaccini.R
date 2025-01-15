@@ -22,22 +22,15 @@ github.italia.covid19opendatavaccini <- function(level){
   if(!level %in% 1:2) return(NULL)
   
   # download
-  urls <- c("https://github.com/italia/covid19-opendata-vaccini/raw/refs/heads/master/dati/somministrazioni-vaccini-latest-2020.csv",
-            "https://github.com/italia/covid19-opendata-vaccini/raw/refs/heads/master/dati/somministrazioni-vaccini-latest-2021.csv",
-            "https://github.com/italia/covid19-opendata-vaccini/raw/refs/heads/master/dati/somministrazioni-vaccini-latest-2022.csv",
-            "https://github.com/italia/covid19-opendata-vaccini/raw/refs/heads/master/dati/somministrazioni-vaccini-latest-2023.csv",
+  urls <- c("https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-2020.csv",
+            "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-2021.csv",
+            "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-2022.csv",
+            "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-2023.csv",
             "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-campagna-2023-2024.csv",
             "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-campagna-2024-2025.csv"
   )
-
-  x <- do.call(rbind, {
-    all_cols <- unique(unlist(lapply(urls, function(url) names(read.csv(url)))))
-    lapply(urls, function(url) {
-      df <- read.csv(url)
-      df[setdiff(all_cols, names(df))] <- NA
-      df[all_cols]
-    })
-  })
+  
+  x <- dplyr::bind_rows(lapply(urls, read.csv))
   
   # format
   x <- map_data(x, c(
@@ -63,8 +56,8 @@ github.italia.covid19opendatavaccini <- function(level){
             coalesce(extra_2, 0) + 
             coalesce(extra_3, 0) + 
             coalesce(unsp_dose, 0),
-      people_vaccinated = first + oneshot,
-      people_fully_vaccinated = second + oneshot + first*(type=="Janssen"))
+          people_vaccinated = first + oneshot,
+          people_fully_vaccinated = second + oneshot + first*(type=="Janssen"))
   
   if(level==1){
     
