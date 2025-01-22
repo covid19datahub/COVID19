@@ -58,8 +58,15 @@ admin.ch <- function(level, state = NULL) {
     vaccinated <- vaccinated %>%
         filter(age=="total_population") %>%
         pivot_wider(id_cols = c("code", "date"), names_from = "type", values_from = "total") %>%
-        rename(people_vaccinated = COVID19AtLeastOneDosePersons, 
-               people_fully_vaccinated = COVID19FullyVaccPersons)
+        rename(people_vaccinated = COVID19AtLeastOneDosePersons)
+    
+    # people fully vaccinated
+    past_data <- read.csv("https://storage.covid19datahub.io/country/CHE.csv")
+    fully_vaccinated <- past_data %>%
+      mutate(
+        code = ifelse(is.na(key_local) & administrative_area_level == 1, "CH", key_local)) %>%
+      select(date, code, people_fully_vaccinated)
+              
     
     # confirmed
     x <- read.csv(csv$daily$cases, na.strings = "NA")
@@ -118,6 +125,7 @@ admin.ch <- function(level, state = NULL) {
     by <- c("code", "date")
     x <- vaccines %>%
         full_join(vaccinated, by = by) %>%
+        full_join(fully_vaccinated, by = by) %>%
         full_join(hosp, by = by) %>%
         full_join(tests_w, by = by) %>%
         full_join(bind_rows(

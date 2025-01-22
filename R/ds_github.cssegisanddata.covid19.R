@@ -55,8 +55,9 @@ github.cssegisanddata.covid19 <- function(level = 1, file = "global", country = 
       next
 
     # NA
-    xx <- dplyr::na_if(xx,  0)
-    xx <- dplyr::na_if(xx, -1)
+    xx <- xx %>%
+      mutate(across(where(is.numeric), ~ na_if(., 0))) %>%
+      mutate(across(where(is.numeric), ~ na_if(., -1)))
     
     # formatting
     colnames(xx) <- gsub(pattern = "\\_$", replacement = "", x = colnames(xx))
