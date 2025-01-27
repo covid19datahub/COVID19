@@ -46,15 +46,16 @@ compare_data <- function(current, past, cols_compare, level = 1, region = NA) {
     
     # Plot the comparison
     plot_comp <- ggplot(merged, aes(x = date)) +
-      geom_point(aes(y = .data[[paste0(col, "_current")]], color = "Current"), size = 2, na.rm = TRUE) +
-      geom_point(aes(y = .data[[paste0(col, "_past")]], color = "Past"), size = 2, na.rm = TRUE) +
-      geom_line(aes(y = .data[[paste0(col, "_current")]], color = "Current"), size = 1, na.rm = TRUE) + 
-      geom_line(aes(y = .data[[paste0(col, "_past")]], color = "Past"), size = 1, alpha = 0.3, na.rm = TRUE) +
+      geom_point(aes(y = .data[[paste0(col, "_current")]], color = "Current"), size = 0.25, na.rm = TRUE) +
+      geom_point(aes(y = .data[[paste0(col, "_past")]], color = "Past"), size = 0.25, na.rm = TRUE) +
+      geom_line(aes(y = .data[[paste0(col, "_current")]], color = "Current"), size = 0.17, na.rm = TRUE) + 
+      geom_line(aes(y = .data[[paste0(col, "_past")]], color = "Past"), size = 0.2, alpha = 0.2, na.rm = TRUE) +
       scale_y_continuous(labels = comma) +
-      labs(title = paste("Comparison of", col, "for level", level, 
+      scale_color_manual(values = c("Current" = "darkorange", "Past" = "blue")) +
+      labs(title = paste("Comparison of cumulative numbers of the", col, "for level", level, 
                          if (!is.na(region)) paste("region:", region) else ""), 
            x = "Date",
-           y = col,
+           y = paste("Number of cumulative ", col, "cases"),
            color = "Dataset") +
       theme_minimal() +
       theme(panel.background = element_rect(fill = "white", color = NA),
@@ -63,28 +64,9 @@ compare_data <- function(current, past, cols_compare, level = 1, region = NA) {
     
     plots_comp[[col]] <- plot_comp
     
-    # Plot the differences over time
-    plot_diff <- ggplot(merged, aes(x = date)) +
-      geom_line(aes(y = c(NA, diff(.data[[paste0(col, "_current")]])), color = "Current"), size = 2, na.rm = TRUE) +
-      geom_line(aes(y = c(NA, diff(.data[[paste0(col, "_past")]])), color = "Past"), size = 1, na.rm = TRUE) +
-      scale_y_continuous(labels = comma) +
-      labs(
-        title = paste("Daily differences for", col, "in level", level, 
-                      if (!is.na(region)) paste("region:", region) else ""),
-        x = "Date",
-        y = paste("Difference in", col),
-        color = "Dataset"
-      ) +
-      theme_minimal() +
-      theme(panel.background = element_rect(fill = "white", color = NA),
-            plot.background = element_rect(fill = "white", color = NA), 
-            legend.position = "bottom")
-    
-    plots_diff[[col]] <- plot_diff
   }
   return(list(
     comparison_results = comparison_results,
-    difference_plots = plots_diff,
     comparison_plots = plots_comp
   ))
 }
@@ -93,30 +75,23 @@ compare_data <- function(current, past, cols_compare, level = 1, region = NA) {
 columns <- c("confirmed", "deaths", "recovered", "tests", "vaccines",
   "people_vaccinated", "people_fully_vaccinated", "hosp", "icu")
 
-# past_data <- read.csv("https://storage.covid19datahub.io/country/CHE.csv")
-# current <- covid19("CHE", 2)
-# result <- compare_data(current, past_data, columns, 2, "Basel-Stadt")
+past_data <- read.csv("https://storage.covid19datahub.io/country/CHE.csv")
+current <- covid19("CHE", 1)
+result <- compare_data(current, past_data, columns)
 
 # SAVE
-folder <- "...."
+folder <- "..."
 
 if (!dir.exists(folder)) {
   dir.create(folder)
 }
 
-for (col in names(result[["difference_plots"]])) {
-  ggsave(
-    filename = paste0(folder, "/difference_plot_", col, ".png"),
-    plot = result[["difference_plots"]][[col]],
-    width = 8, height = 6, dpi = 300
-  )
-}
 
 # Save all comparison plots
 for (col in names(result[["comparison_plots"]])) {
   ggsave(
     filename = paste0(folder, "/comparison_plot_", col, ".png"),
     plot = result[["comparison_plots"]][[col]],
-    width = 8, height = 6, dpi = 300
+    width = 12, height = 6, dpi = 300
   )
 }
