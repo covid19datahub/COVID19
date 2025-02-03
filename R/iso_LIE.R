@@ -30,7 +30,7 @@ LIE <- function(level){
     #' patients requiring ventilation.
     #'
     x2 <- github.openzh.covid19(state = "FL", level = 1) %>%
-      select(-c("confirmed", "deaths", "tests", "hosp", "icu"))
+      select(-c("confirmed", "deaths", "tests", "icu"))
     
     # merge
     x <- full_join(x1, x2, by = "date")
