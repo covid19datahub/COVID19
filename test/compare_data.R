@@ -1,86 +1,95 @@
 library(scales)
 library(ggplot2)
 library(dplyr)
+library(patchwork)
+compare <- function(id, variables, data_updated, data_reference){
+  #' @id id of the geographical unit
+  #' @variables variables to compare
+  #' @data_updated updated data
+  #' @data_reference benchmark data
+  #' 
+  #' @return One plot and table for each variable
+  #' 
 
-compare_data <- function(current, past, cols_compare, level = 1, region = NA) {
-  comparison_results <- list()
-  plots_diff <- list()
-  plots_comp <- list()
+  tables <- list()
+  plots <- list()
   
-  # Filter data based on level and region
-  if (level == 1) {
-    # National level
-    current <- current %>% filter(administrative_area_level == 1)
-    past <- past %>% filter(administrative_area_level == 1)
-  } else if (level == 2) {
-    # Regional level
-    current <- current %>% filter(administrative_area_level == 2)
-    past <- past %>% filter(administrative_area_level == 2)
-    
-    if (!is.na(region)) {
-      current <- current %>% filter(administrative_area_level_2 == region)
-      past <- past %>% filter(administrative_area_level_2 == region)
-    }
-  } else if (level == 3) {
-    # Provincial level
-    current <- current %>% filter(administrative_area_level == 3)
-    past <- past %>% filter(administrative_area_level == 3)
-    
-    if (!is.na(region)) {
-      current <- current %>% filter(administrative_area_level_3 == region)
-      past <- past %>% filter(administrative_area_level_3 == region)
-    }
-  }
+  data_updated <- data_updated[which(data_updated$id == id),]
+  data_reference <- data_reference[which(data_reference$id == id),]
   
-  for (col in cols_compare) {
-    merged <- merge(current[, c("id", "date", col)], 
-                    past[, c("id", "date", col)], 
-                    by = c("id", "date"), 
-                    all = TRUE, 
-                    suffixes = c("_current", "_past"))
+  merged <- merge(
+    data_updated[, c("id", "date", variables)], 
+                  data_reference[, c("id", "date", variables)], 
+                  by = c("id", "date"), 
+                  all = TRUE, 
+                  suffixes = c("_updated", "_reference")
+                  )
     
-    # Calculate the difference
-    merged$difference <- merged[[paste0(col, "_current")]] - merged[[paste0(col, "_past")]]
+  for (variable in variables) {
+    variable_updated <- paste0(variable, "_updated")
+    variable_reference <- paste0(variable, "_reference")
+    table <- merged[, c("date", variable_updated, variable_reference)]
+    table$difference <- table[[variable_updated]] - table[[variable_reference]]
+    tables[[variable]] <- table
     
-    comparison_results[[col]] <- merged
+    melted <- table[,1:3]
+    colnames(melted) <- c("DATE", "Updated", "Reference")
+    melted <- pivot_longer(melted, cols = c("Updated", "Reference"), names_to = "NAME", values_to = "VALUE")
     
-    # Plot the comparison
-    plot_comp <- ggplot(merged, aes(x = date)) +
-      geom_point(aes(y = .data[[paste0(col, "_current")]], color = "Current"), size = 0.25, na.rm = TRUE) +
-      geom_point(aes(y = .data[[paste0(col, "_past")]], color = "Past"), size = 0.25, na.rm = TRUE) +
-      geom_line(aes(y = .data[[paste0(col, "_current")]], color = "Current"), size = 0.17, na.rm = TRUE) + 
-      geom_line(aes(y = .data[[paste0(col, "_past")]], color = "Past"), size = 0.2, alpha = 0.2, na.rm = TRUE) +
+    fig1 <- ggplot(melted, aes(x = DATE, y = VALUE, color = NAME)) +
+      geom_point(size = 0.25, na.rm = TRUE) +
+      geom_line(linewidth = 0.25, na.rm = TRUE) +
       scale_y_continuous(labels = comma) +
-      scale_color_manual(values = c("Current" = "darkorange", "Past" = "blue")) +
-      labs(title = paste("Comparison of cumulative numbers of the", col, "for level", level, 
-                         if (!is.na(region)) paste("region:", region) else ""), 
-           x = "Date",
-           y = paste("Number of cumulative ", col, "cases"),
-           color = "Dataset") +
+      labs(title = variable, x = "Date", y = "Count", color = "Dataset") +
       theme_minimal() +
       theme(panel.background = element_rect(fill = "white", color = NA),
             plot.background = element_rect(fill = "white", color = NA), 
             legend.position = "bottom")
     
-    plots_comp[[col]] <- plot_comp
+    natable <- table[,1:3]
+    colnames(natable) <- c("DATE", "Updated", "Reference")
+    natable$NADIFF <- is.na(natable[["Updated"]]) - is.na(natable[["Reference"]])
+    fig2 <- ggplot(natable, aes(x = DATE, y = NADIFF)) +
+      geom_point(size = 0.25, na.rm = TRUE) +
+      labs(title = variable, x = "Date", y = "Count", color = "Dataset") +
+      theme_minimal() +
+      ylim(c(-1, 1)) +
+      theme(panel.background = element_rect(fill = "white", color = NA),
+            plot.background = element_rect(fill = "white", color = NA), 
+            legend.position = "bottom")
+
+    combined_plot <- fig1 / fig2 + plot_layout(ncol = 1, heights = c(2, 1))
     
+    plots[[variable]] <- combined_plot
   }
+  
   return(list(
-    comparison_results = comparison_results,
-    comparison_plots = plots_comp
+    "tables" = tables, "plots" = plots
   ))
 }
 
+# Parameters
+iso <- "CHE"
+id <- "ef51ecaa"
+root <- "test"
+variables <- c(
+  "confirmed", 
+  "deaths", 
+  "recovered", 
+  "tests", 
+  "vaccines",
+  "people_vaccinated", 
+  "people_fully_vaccinated", 
+  "hosp", 
+  "icu"
+)
 
-columns <- c("confirmed", "deaths", "recovered", "tests", "vaccines",
-  "people_vaccinated", "people_fully_vaccinated", "hosp", "icu")
-
-past_data <- read.csv("https://storage.covid19datahub.io/country/CHE.csv")
-current <- covid19("CHE", 1)
-result <- compare_data(current, past_data, columns)
+data_reference <- read.csv(sprintf("https://storage.covid19datahub.io/country/%s.csv",iso))
+data_updated <- covid19(iso, 1)
+result <- compare(id, variables, data_updated, data_reference)
 
 # SAVE
-folder <- "..."
+folder <- paste0(root, '/fig/', id)
 
 if (!dir.exists(folder)) {
   dir.create(folder)
@@ -88,7 +97,7 @@ if (!dir.exists(folder)) {
 
 
 # Save all comparison plots
-for (col in names(result[["comparison_plots"]])) {
+for (variables in names(result[["plots"]])) {
   ggsave(
     filename = paste0(folder, "/comparison_plot_", col, ".png"),
     plot = result[["comparison_plots"]][[col]],
