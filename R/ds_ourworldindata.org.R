@@ -6,6 +6,8 @@
 #' @param id filter by ISO code if level=1 or by name of state if level=2
 #'
 #' @section Level 1:
+#' - confirmed cases,
+#' - deaths,
 #' - tests
 #' - total vaccine doses administered
 #' - people with at least one vaccine dose
@@ -43,6 +45,8 @@ ourworldindata.org <- function(level = 1, id = NULL){
       'date',
       'iso_code'                = 'iso_alpha_3',
       'location'                = 'country',
+      'total_cases'             = 'confirmed',
+      'total_deaths'            = 'deaths',
       'total_tests'             = 'tests',
       'total_vaccinations'      = 'vaccines',
       'people_vaccinated'       = 'people_vaccinated',

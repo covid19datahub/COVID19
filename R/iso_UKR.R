@@ -14,13 +14,14 @@ UKR <- function(level){
   if(level==1){
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
-    #' confirmed cases,
-    #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(country = "Ukraine")
+    x1 <- github.cssegisanddata.covid19(country = "Ukraine") %>% 
+      select(-c("confirmed", "deaths"))
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
+    #' confirmed cases,
+    #' deaths,
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
