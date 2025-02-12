@@ -17,24 +17,32 @@ who.int <- function(level = 1, id = NULL){
   if(level!=1) return(NULL)
   
   # download
-  url <- "https://covid19.who.int/WHO-COVID-19-global-data.csv"
-  x <- read.csv(url, fileEncoding = "UTF-8-BOM")
+  url <- "https://srhdpeuwpubsa.blob.core.windows.net/whdh/COVID/WHO-COVID-19-global-daily-data.csv"
+  who_data <- read.csv(url, stringsAsFactors = FALSE)
   
   # formatting
-  x <- map_data(x, c(
+  who_data <- map_data(who_data, c(
     'Date_reported'     = 'date',
-    'Country_code'      = 'id',
+    'Country_code'      = 'country_id',
     'Country'           = 'country',
     'Cumulative_cases'  = 'confirmed',
-    'Cumulative_deaths' = 'deaths'
+    'Cumulative_deaths' = 'deaths',
+    'New_cases'         = 'new_cases',
+    'New_deaths'        = 'new_deaths'
   ))
   
   # date
-  x$date <- as.Date(x$date, format = "%Y-%m-%d")
+  who_data$date <- as.Date(who_data$date, format = "%Y-%m-%d")
 
   # filter
-  if(!is.null(id))
-    x <- x[which(x$id==id),]
+  who_data <- who_data %>%
+    filter(country_id == id) %>%
+    mutate(
+      confirmed = if_else(!is.na(new_cases), confirmed, NA_integer_),
+      deaths = if_else(!is.na(new_deaths), deaths, NA_integer_)
+    ) %>%
+    filter(!is.na(confirmed) | !is.na(deaths)) %>% 
+    select(date, country_id, confirmed, deaths)
   
-  return(x)
+  return(who_data)
 }
