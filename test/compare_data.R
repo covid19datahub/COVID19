@@ -11,6 +11,7 @@ compare <- function(id, variables, data_updated, data_reference){
   #' @return One plot and table for each variable
   #' 
 
+  natables <- list()
   tables <- list()
   plots <- list()
   
@@ -48,6 +49,9 @@ compare <- function(id, variables, data_updated, data_reference){
     
     natable <- table[,1:3]
     colnames(natable) <- c("DATE", "Updated", "Reference")
+    natable <- natable[order(natable$DATE, decreasing = FALSE),]
+    natable$Updated[which(c(NA, diff(natable$Updated)) == 0)] <- NA
+    natable$Reference[which(c(NA, diff(natable$Reference)) == 0)] <- NA
     natable$NADIFF <- is.na(natable[["Updated"]]) - is.na(natable[["Reference"]])
     fig2 <- ggplot(natable, aes(x = DATE, y = NADIFF)) +
       geom_point(size = 0.25, na.rm = TRUE) +
@@ -60,17 +64,18 @@ compare <- function(id, variables, data_updated, data_reference){
 
     combined_plot <- fig1 / fig2 + plot_layout(ncol = 1, heights = c(2, 1))
     
+    natables[[variable]] <- natable
     plots[[variable]] <- combined_plot
   }
   
   return(list(
-    "tables" = tables, "plots" = plots
+    "natables" = natables, "tables" = tables, "plots" = plots
   ))
 }
 
 # Parameters
-iso <- "CHE"
-id <- "ef51ecaa"
+iso <- "ABW"
+id <- "e583a106"
 root <- "test"
 variables <- c(
   "confirmed", 
@@ -96,11 +101,11 @@ if (!dir.exists(folder)) {
 }
 
 
-# Save all comparison plots
+# Save all plots
 for (variables in names(result[["plots"]])) {
   ggsave(
-    filename = paste0(folder, "/comparison_plot_", col, ".png"),
-    plot = result[["comparison_plots"]][[col]],
+    filename = paste0(folder, paste0(iso, "_", variables, ".png")),
+    plot = result[["plots"]][[variables]],
     width = 12, height = 6, dpi = 300
   )
 }
