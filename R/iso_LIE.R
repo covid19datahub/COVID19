@@ -20,17 +20,17 @@ LIE <- function(level){
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated,
-    #' hospitalizations,
     #' intensive care.
     #'
     x1 <- admin.ch(state = "FL", level = 1)
     
     #' - \href{`r repo("github.openzh.covid19")`}{Specialist Unit for Open Government Data Canton of Zurich}:
     #' recovered,
+    #' hospitalizations,
     #' patients requiring ventilation.
     #'
     x2 <- github.openzh.covid19(state = "FL", level = 1) %>%
-      select(-c("confirmed", "deaths", "tests", "hosp", "icu"))
+      select(-c("confirmed", "deaths", "tests", "icu"))
     
     # merge
     x <- full_join(x1, x2, by = "date")

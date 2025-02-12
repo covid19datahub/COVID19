@@ -58,8 +58,20 @@ admin.ch <- function(level, state = NULL) {
     vaccinated <- vaccinated %>%
         filter(age=="total_population") %>%
         pivot_wider(id_cols = c("code", "date"), names_from = "type", values_from = "total") %>%
-        rename(people_vaccinated = COVID19AtLeastOneDosePersons, 
-               people_fully_vaccinated = COVID19FullyVaccPersons)
+        rename(people_vaccinated = COVID19AtLeastOneDosePersons)
+
+    # people fully vaccinated
+    urls <- c("CH" = "https://storage.covid19datahub.io/country/CHE.csv",
+              "FL" = "https://storage.covid19datahub.io/country/LIE.csv")
+    labels <- c("CH" = "CH", "FL" = "LIE")
+    
+    past_data <- read.csv(urls[state])
+    fully_vaccinated <- past_data %>%
+      mutate(
+        code = ifelse(is.na(key_local) & administrative_area_level == 1, state, key_local)
+      ) %>%
+      select(date, code, people_fully_vaccinated)
+              
     
     # confirmed
     x <- read.csv(csv$daily$cases, na.strings = "NA")
@@ -114,10 +126,15 @@ admin.ch <- function(level, state = NULL) {
         "ICU_Covid19Patients"    = "icu"
     ))
     
+    if (state == "FL") {
+      hosp$hosp <- NULL
+    }
+    
     # merge 
     by <- c("code", "date")
     x <- vaccines %>%
         full_join(vaccinated, by = by) %>%
+        full_join(fully_vaccinated, by = by) %>%
         full_join(hosp, by = by) %>%
         full_join(tests_w, by = by) %>%
         full_join(bind_rows(

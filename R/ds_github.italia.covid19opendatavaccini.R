@@ -22,8 +22,15 @@ github.italia.covid19opendatavaccini <- function(level){
   if(!level %in% 1:2) return(NULL)
   
   # download
-  url <- "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/somministrazioni-vaccini-latest.csv"
-  x <- read.csv(url)
+  urls <- c("https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-2020.csv",
+            "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-2021.csv",
+            "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-2022.csv",
+            "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-2023.csv",
+            "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-campagna-2023-2024.csv",
+            "https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/refs/heads/master/dati/somministrazioni-vaccini-latest-campagna-2024-2025.csv"
+  )
+  
+  x <- dplyr::bind_rows(lapply(urls, read.csv))
   
   # format
   x <- map_data(x, c(
@@ -34,15 +41,23 @@ github.italia.covid19opendatavaccini <- function(level){
     "d2" = "second",
     "dpi" = "oneshot",
     "db1" = "extra_1",
-    "db2" = "extra_2"
+    "db2" = "extra_2",
+    "db3" = "extra_3",
+    "d" = "unsp_dose"
   ))
   
   # people vaccinated and total doses
   x <- x %>%
     dplyr::mutate(
-      vaccines = first + second + oneshot + extra_1 + extra_2,
-      people_vaccinated = first + oneshot,
-      people_fully_vaccinated = second + oneshot + first*(type=="Janssen"))
+          vaccines = coalesce(first, 0) + 
+            coalesce(second, 0) + 
+            coalesce(oneshot, 0) + 
+            coalesce(extra_1, 0) + 
+            coalesce(extra_2, 0) + 
+            coalesce(extra_3, 0) + 
+            coalesce(unsp_dose, 0),
+          people_vaccinated = first + oneshot,
+          people_fully_vaccinated = second + oneshot + first*(type=="Janssen"))
   
   if(level==1){
     
