@@ -41,7 +41,7 @@ compare <- function(id, variables, data_updated, data_reference){
       geom_point(size = 0.25, na.rm = TRUE) +
       geom_line(linewidth = 0.25, na.rm = TRUE) +
       scale_y_continuous(labels = comma) +
-      labs(title = variable, x = "Date", y = "Count", color = "Dataset") +
+      labs(title = paste0(variable, " id ", id), x = "Date", y = "Count", color = "Dataset") +
       theme_minimal() +
       theme(panel.background = element_rect(fill = "white", color = NA),
             plot.background = element_rect(fill = "white", color = NA), 
@@ -74,8 +74,9 @@ compare <- function(id, variables, data_updated, data_reference){
 }
 
 # Parameters
-iso <- "ABW"
-id <- "e583a106"
+iso <- "AFG"
+id <- "05761064"
+level <- 2
 root <- "test"
 variables <- c(
   "confirmed", 
@@ -90,7 +91,7 @@ variables <- c(
 )
 
 data_reference <- read.csv(sprintf("https://storage.covid19datahub.io/country/%s.csv",iso))
-data_updated <- covid19(iso, 1)
+data_updated <- covid19(iso, level)
 result <- compare(id, variables, data_updated, data_reference)
 
 # SAVE
