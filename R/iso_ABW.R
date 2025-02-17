@@ -19,7 +19,6 @@ ABW <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Netherlands", state = "Aruba", level = 2)
-    x1$deaths[x1$date == "2022-04-20"] <- NA # removing an anomalous value
     x1 <- x1[x1$date <= "2023-03-10",]
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
@@ -30,14 +29,14 @@ ABW <- function(level){
     x2 <- x2[x2$date > "2023-03-10",]
 
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
+    #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated,
     #' hospitalizations,
     #' intensive care.
     #'
-    x3 <- ourworldindata.org(id = "ABW") %>%
-      select(-c("confirmed", "deaths", "tests"))
+    x3 <- ourworldindata.org(id = "ABW")
     
     # merge
     x <- bind_rows(x1, x2) %>%
