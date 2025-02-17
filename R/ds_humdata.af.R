@@ -53,9 +53,5 @@ humdata.af <- function(level){
       # convert to date
       date = as.Date(date, format = "%Y-%m-%d"))
   
-  # remove decreasing cumulative counts
-  # the data are not clean and these issues are most likely manual entry mistakes
-  x <- drop_decreasing(x, by = "state", cols = c("confirmed", "deaths", "recovered", "tests"), k = 1:7, strict = FALSE)
-  
   return(x)
 }
