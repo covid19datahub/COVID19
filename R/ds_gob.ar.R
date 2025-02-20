@@ -2,15 +2,7 @@
 #'
 #' Data source for: Argentina
 #'
-#' @param level 1, 2, 3
-#'
-#' @section Level 1:
-#' - confirmed cases
-#' - deaths
-#' - tests
-#' - total vaccine doses administered
-#' - people with at least one vaccine dose
-#' - people fully vaccinated
+#' @param level 2, 3
 #'
 #' @section Level 2:
 #' - confirmed cases
@@ -33,11 +25,9 @@
 #' @keywords internal
 #'
 gob.ar <- function(level){
-  if(!level %in% 1:3) return(NULL)
+  if(!level %in% 2:3) return(NULL)
   
   # group by level
-  if(level==1)
-    by <- NULL
   if(level==2)
     by <- "prov"
   if(level==3)
@@ -148,7 +138,7 @@ gob.ar <- function(level){
   
   # confirmed tests are reported by testing location, confirmed cases by residence.
   # we need confirmed tests to be compatible with the number of tests at level 3.
-  # for levels 1 and 2, it doesn't make much difference and we can use confirmed cases that have a longer history.
+  # for level 2, it doesn't make much difference and we can use confirmed cases that have a longer history.
   # if level!=3 use confirmed cases instead of confirmed tests.
   if(level!=3){
     x <- x %>%
