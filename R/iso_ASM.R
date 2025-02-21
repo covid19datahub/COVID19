@@ -13,21 +13,18 @@ ASM <- function(level){
   #' 
   if(level==1){
     
-    #' - \href{`r repo("github.nytimes.covid19data")`}{The New York Times}:
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
     #'
-    x1 <- github.nytimes.covid19data(level = 2, fips = "60")
+    x1 <- who.int(level = 1, id = "AS")
     
-    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
+    #' - \href{`r repo("sprep.org")`}{Secretariat of the Pacific Regional Environment Programme}:
     #' total vaccine doses administered,
-    #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people vaccinated,
+    #' people fully vaccinated.
     #'
-    x2 <- ourworldindata.org(id = "ASM")
+    x2 <- sprep.org(id = "AS")
     
     # merge
     x <- full_join(x1, x2, by = "date")
