@@ -31,15 +31,14 @@ sprep.org <- function(level = 1, id = NULL){
   # filter
   vac_data <- filter(vac_data, iso_code == id)
   
-  # pivot
   vac_data <- vac_data %>%
-    pivot_wider(names_from = type, values_from = total, values_fn = list(total = ~ .[!is.na(.)][1])) %>%
-    rename(
-      vaccines = `Total doses administered`,
-      people_vaccinated = `1st dose administered`,
-      people_fully_vaccinated = `2nd dose administered`
-    ) %>%
-    select(date, iso_code, country, vaccines, people_vaccinated, people_fully_vaccinated)
+    group_by(date, iso_code) %>%
+    summarise(
+      vaccines = total[type == "Total doses administered"],
+      people_vaccinated = total[type == "1st dose administered"],
+      people_fully_vaccinated = total[type == "2nd dose administered"],
+      .groups = "drop"
+    )
   
   # date 
   vac_data$date <- as.Date(vac_data$date, format = "%Y-%m-%d")
