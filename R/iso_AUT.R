@@ -24,8 +24,18 @@ AUT <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x <- gv.at(level = level)
+    x1 <- gv.at(level = level)
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x2 <- who.int(level = 1, id = "AT")
+    x2 <- x2[x2$date > "2023-05-01",] 
+    
+    x <- full_join(x1, x2, by = "date") %>%
+      mutate(confirmed = coalesce(confirmed.x, confirmed.y),
+             deaths = coalesce(deaths.x, deaths.y)) 
   }
   
   #' @concept Level 2

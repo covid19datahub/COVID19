@@ -37,40 +37,51 @@
 #'
 gv.at <- function(level){
   if(!level %in% 1:3) return(NULL)
-  
-  if(level==1 | level==2){
-
-    # see https://www.data.gv.at/katalog/dataset/846448a5-a26e-4297-ac08-ad7040af20f1
-    url.hosp <- "https://covid19-dashboard.ages.at/data/Hospitalisierung.csv"    
     
-    # see https://www.data.gv.at/katalog/dataset/ef8e980b-9644-45d8-b0e9-c6aaf0eff0c0
-    url.cases <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline.csv"
+#   if(level==1 | level==2){
+
+#     # see https://www.data.gv.at/katalog/dataset/846448a5-a26e-4297-ac08-ad7040af20f1
+#     url.hosp <- "https://covid19-dashboard.ages.at/data/Hospitalisierung.csv"    
+#     
+#     # see https://www.data.gv.at/katalog/dataset/ef8e980b-9644-45d8-b0e9-c6aaf0eff0c0
+#     url.cases <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline.csv"
+
+    # Derived from datasets above
+    url.hist <- "https://storage.covid19datahub.io/country/AUT.csv"
     
     # see https://www.data.gv.at/katalog/dataset/85d040af-e09a-4401-8d67-8cee3e41fcaa
     url.vacc <- "https://info.gesundheitsministerium.gv.at/data/COVID19_vaccination_doses_timeline_v202206.csv"
+
+#     # import hosp
+#     x.hosp <- read.csv(url.hosp, sep = ";")
+#     x.hosp <- map_data(x.hosp, c(
+#       "Meldedatum"   = "date",
+#       "Bundesland"   = "state",
+#       "BundeslandID" = "state_id",
+#       "TestGesamt"   = "tests",
+#       "NormalBettenBelCovid19"   = "hosp",
+#       "IntensivBettenBelCovid19" = "icu"
+#     )) 
+#     
+#     # import cases
+#     x.cases <- read.csv(url.cases, sep = ";")
+#     x.cases <- map_data(x.cases, c(
+#       "Time"             = "date",
+#       "Bundesland"       = "state",
+#       "BundeslandID"     = "state_id",
+#       "AnzEinwohner"     = "population",
+#       "AnzahlFaelleSum"  = "confirmed",
+#       "AnzahlGeheiltSum" = "recovered",
+#       "AnzahlTotSum"     = 'deaths'
+#     ))
     
-    # import hosp
-    x.hosp <- read.csv(url.hosp, sep = ";")
-    x.hosp <- map_data(x.hosp, c(
-      "Meldedatum"   = "date",
-      "Bundesland"   = "state",
-      "BundeslandID" = "state_id",
-      "TestGesamt"   = "tests",
-      "NormalBettenBelCovid19"   = "hosp",
-      "IntensivBettenBelCovid19" = "icu"
-    )) 
+    # import historical data
+    hist_data <- read.csv(url.hist)
     
-    # import cases
-    x.cases <- read.csv(url.cases, sep = ";")
-    x.cases <- map_data(x.cases, c(
-      "Time"             = "date",
-      "Bundesland"       = "state",
-      "BundeslandID"     = "state_id",
-      "AnzEinwohner"     = "population",
-      "AnzahlFaelleSum"  = "confirmed",
-      "AnzahlGeheiltSum" = "recovered",
-      "AnzahlTotSum"     = 'deaths'
-    ))
+    # filter
+    hist_data <- hist_data %>% 
+      select(c("date","confirmed","deaths", "recovered", "icu", "hosp", "tests", 
+               "administrative_area_level", "key_local"))
     
     # import vaccines
     x.vacc <- read.csv(url.vacc, sep = ";", fileEncoding = "UTF-8-BOM")
@@ -82,11 +93,13 @@ gv.at <- function(level){
       "doses_administered_cumulative" = "n"
     ))
     
-    # format date
-    x.hosp$date <- as.Date(x.hosp$date, format = "%d.%m.%Y")
-    x.cases$date <- as.Date(x.cases$date, format = "%d.%m.%Y")
-    x.vacc$date <- as.Date(x.vacc$date, format = "%Y-%m-%d")
+     # format date
+#     x.hosp$date <- as.Date(x.hosp$date, format = "%d.%m.%Y")
+#     x.cases$date <- as.Date(x.cases$date, format = "%d.%m.%Y")
     
+      hist_data$date <- as.Date(hist_data$date, format = "%Y-%m-%d")
+      x.vacc$date <- as.Date(x.vacc$date, format = "%Y-%m-%d")
+#     
     # first, second, and total doses by state
     x.vacc <- x.vacc %>%
       filter(state_id != 0) %>%
@@ -96,60 +109,77 @@ gv.at <- function(level){
         people_vaccinated = sum(n[dose == "1"]),
         people_fully_vaccinated = sum(n[dose == "2" | (dose == "1" & type == "Janssen")])) %>%
       mutate(people_fully_vaccinated = pmin(people_fully_vaccinated, people_vaccinated))
-    
+
     if(level==1){
-      
+#       
       # national level data
-      x.cases <- x.cases[which(x.cases$state_id==10),]
-      x.hosp  <- x.hosp[which(x.hosp$state_id==10),]
-      x.vacc  <- x.vacc[which(x.vacc$state_id==10),]
+      # x.cases <- x.cases[which(x.cases$state_id==10),]
+      # x.hosp  <- x.hosp[which(x.hosp$state_id==10),]
       
+      hist_data <- hist_data %>%
+        filter(administrative_area_level == 1)
+      x.vacc  <- x.vacc[which(x.vacc$state_id==10),]
+#       
       # merge
-      x <- x.cases %>%
-        full_join(x.hosp, by = "date") %>%
+#       x <- x.cases %>%
+#         full_join(x.hosp, by = "date") %>%
+#         full_join(x.vacc, by = "date")
+
+      x <- hist_data %>%
         full_join(x.vacc, by = "date")
       
+#       
     }
-    
+
     if(level == 2){
-      
+
       # drop national level data
-      x.cases <- x.cases[-which(x.cases$state_id==10),]
-      x.hosp  <- x.hosp[-which(x.hosp$state_id==10),]
+#       x.cases <- x.cases[-which(x.cases$state_id==10),]
+#       x.hosp  <- x.hosp[-which(x.hosp$state_id==10),]
+      
+      hist_data <- hist_data %>%
+        filter(administrative_area_level == 2)
       x.vacc  <- x.vacc[-which(x.vacc$state_id==10),]
       
-      # merge
-      x <- x.cases %>%
-        full_join(x.hosp, by = c("date","state_id")) %>%
-        full_join(x.vacc, by = c("date","state_id"))
+       # merge
+#       x <- x.cases %>%
+#         full_join(x.hosp, by = c("date","state_id")) %>%
+#         full_join(x.vacc, by = c("date","state_id"))
       
+      x <- x.vacc %>%
+        full_join(hist_data, by = c("date", "state_id" = "key_local"))
     }
-    
-  }
-  
+#     
+#   }
+#   
   if(level == 3){
     
-    # see https://www.data.gv.at/katalog/dataset/4b71eb3d-7d55-4967-b80d-91a3f220b60c
-    url <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline_GKZ.csv"
-    
-    # download
-    x <- read.csv(url, sep = ";")
-    
-    # format
-    x <- map_data(x, c(
-      "Time"             = "date",
-      "Bezirk"           = "city",
-      "GKZ"              = "city_id",
-      "AnzEinwohner"     = "population",
-      "AnzahlFaelleSum"  = "confirmed",
-      "AnzahlGeheiltSum" = "recovered",
-      "AnzahlTotSum"     = 'deaths'
-    ))
-    
-    # convert date
-    x$date <- as.Date(x$date, format = "%d.%m.%Y")
-    
+    # sub-national level data
+    x <- hist_data %>%
+      filter(administrative_area_level == 3) %>%
+      rename(city_id = key_local)
+
+#     # see https://www.data.gv.at/katalog/dataset/4b71eb3d-7d55-4967-b80d-91a3f220b60c
+#     url <- "https://covid19-dashboard.ages.at/data/CovidFaelle_Timeline_GKZ.csv"
+#     
+#     # download
+#     x <- read.csv(url, sep = ";")
+#     
+#     # format
+#     x <- map_data(x, c(
+#       "Time"             = "date",
+#       "Bezirk"           = "city",
+#       "GKZ"              = "city_id",
+#       "AnzEinwohner"     = "population",
+#       "AnzahlFaelleSum"  = "confirmed",
+#       "AnzahlGeheiltSum" = "recovered",
+#       "AnzahlTotSum"     = 'deaths'
+#     ))
+#     
+#     # convert date
+#     x$date <- as.Date(x$date, format = "%d.%m.%Y")
+#     
   }
-  
+
   return(x)
 }
