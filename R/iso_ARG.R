@@ -20,27 +20,33 @@ ARG <- function(level){
     #'
     x1 <- github.cssegisanddata.covid19(country = "Argentina")
     x1 <- x1[x1$date <= "2023-03-10",]
-    
+
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
     #'
     x2 <- who.int(level = 1, id = "AR")
     x2 <- x2[x2$date > "2023-03-10",]
-    
+
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
-    #' total vaccine doses administered,
-    #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
     #' intensive care.
     #'
-    x3 <- ourworldindata.org(id = "ARG")
+    x3 <- ourworldindata.org(id = "ARG") %>% 
+      select(c("date", "tests", "icu"))
+    
+    #' - \href{`r repo("gob.ar")`}{Argentine Ministry of Health}:
+    #' - total vaccine doses administered
+    #' - people with at least one vaccine dose
+    #' - people fully vaccinated
+    #' 
+    x4 <- gob.ar(level = level) %>% 
+      select(c("date", "vaccines", "people_vaccinated", "people_fully_vaccinated"))
     
     # merge
     x <- bind_rows(x1, x2) %>%
-      full_join(x3, by = "date")
+      full_join(x3, by = "date") %>% 
+      full_join(x4, by = "date")
     
   }
   
