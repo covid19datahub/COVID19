@@ -18,8 +18,19 @@ BGR <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(country = "Bulgaria")
+    x1 <- github.cssegisanddata.covid19(country = "Bulgaria")  
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x2 <- who.int(level = 1, id = "BG") %>% 
+      filter(date > "2023-03-09")
+    
+    #' Due to changes in the original file,  
+    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
+    #' now provides historical data, which was previously sourced from:  
+    #'  
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
@@ -28,10 +39,16 @@ BGR <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "BGR")
+    x3 <- covid19datahub.io(iso = "BGR", level) %>% 
+      filter(date <= "2022-11-13") %>%
+      select(date, vaccines, people_vaccinated, people_fully_vaccinated, hosp, icu)
+    
+    x4 <- ourworldindata.org(id = "BGR")  %>% 
+      filter(date >"2022-11-13")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>% 
+      full_join(bind_rows(x3, x4), by = "date")
     
   }
   
