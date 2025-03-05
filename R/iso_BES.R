@@ -18,7 +18,7 @@ BES <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(state = "Bonaire, Sint Eustatius and Saba", level = 2)
+    x1 <- github.cssegisanddata.covid19(country = "Netherlands", state = "Bonaire, Sint Eustatius and Saba", level = 2)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
