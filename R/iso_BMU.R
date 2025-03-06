@@ -19,6 +19,12 @@ BMU <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(state = "Bermuda", level = 2)
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x2 <- who.int(level = 1, id = "BM") %>% 
+      filter(date > "2023-03-09")
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' total vaccine doses administered,
@@ -27,11 +33,11 @@ BMU <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "BMU") %>%
-      select(-c("tests"))
+    x3 <- ourworldindata.org(id = "BMU")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date")
     
   }
   
