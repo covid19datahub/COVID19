@@ -20,6 +20,13 @@ BIH <- function(level){
     #'
     x1 <- github.cssegisanddata.covid19(country = "Bosnia and Herzegovina")
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x2 <- who.int(level = 1, id = "BA") %>% 
+      filter(date > "2023-03-09")
+    
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
@@ -28,10 +35,11 @@ BIH <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "BIH")
+    x3 <- ourworldindata.org(id = "BIH")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date")
     
   }
   
