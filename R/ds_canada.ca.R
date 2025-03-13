@@ -39,7 +39,8 @@ canada.ca <- function(level){
     "prname"     = "name",
     "numdeaths"  = "deaths",
     "totalcases" = "confirmed"
-  ))
+  )) %>% 
+    mutate(confirmed = as.integer(confirmed))
   
   # download total vaccine doses
   # see https://health-infobase.canada.ca/covid-19/vaccine-administration/
@@ -89,13 +90,14 @@ canada.ca <- function(level){
 
   # remove non-geographic entity
   x <- x[which(x$id!=99),] 
-  
+
   # fill with daily series before June 2022
-  x <- bind_rows(extdata("ds/CAN.csv"), x) %>%
+  ext_data <- read.csv("inst/extdata/ds/CAN.csv")
+  
+  x <- bind_rows(ext_data, x) %>%
     # for each id and date
     group_by(id, date) %>%
-    # take last non-NA element
-    summarise_all(function(x) ifelse(is.na(x[2]), x[1], x[2]))
+    summarise(across(everything(), ~ coalesce(.x[2], .x[1])))
   
   # filter by level (id=1 -> Canada)
   if(level==1)
