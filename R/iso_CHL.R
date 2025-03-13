@@ -25,8 +25,17 @@ CHL <- function(level){
     #' intensive care,
     #' patients requiring ventilation.
     #'
-    x <- github.minciencia.datoscovid19(level = level)
+    x1 <- github.minciencia.datoscovid19(level = level)
+    x1 <- x1[x1$date <= "2023-08-31",]
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases.
+    #' deaths.
+    x2 <- who.int(level = 1, id = "CL")
+    x2 <- x2[x2$date > "2023-08-31",]
+    
+    # merge
+    x <- bind_rows(x1, x2)
   }
   
   #' @concept Level 2
