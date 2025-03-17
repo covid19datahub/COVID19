@@ -59,7 +59,7 @@ admin.ch <- function(level, state = NULL) {
         filter(age=="total_population") %>%
         pivot_wider(id_cols = c("code", "date"), names_from = "type", values_from = "total") %>%
         rename(people_vaccinated = COVID19AtLeastOneDosePersons)
-              # people_fully_vaccinated = COVID19FullyVaccPersons)
+
 
     # confirmed
     x <- read.csv(csv$daily$cases, na.strings = "NA")
@@ -118,7 +118,6 @@ admin.ch <- function(level, state = NULL) {
     by <- c("code", "date")
     x <- vaccines %>%
         full_join(vaccinated, by = by) %>%
-      # full_join(fully_vaccinated, by = by) %>%
         full_join(hosp, by = by) %>%
         full_join(tests_w, by = by) %>%
         full_join(bind_rows(
