@@ -18,7 +18,7 @@ CUW <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(state = "Curacao", level = 2)
+    x1 <- github.cssegisanddata.covid19(country = "Netherlands", state = "Curacao", level = 2)
     x1 <- x1[x1$date <= "2023-03-10",]
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
