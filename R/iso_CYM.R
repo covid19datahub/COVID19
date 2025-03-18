@@ -18,7 +18,7 @@ CYM <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(state = "Cayman Islands", level = 2)
+    x1 <- github.cssegisanddata.covid19(country = "United Kingdom", state = "Cayman Islands", level = 2)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' total vaccine doses administered,
