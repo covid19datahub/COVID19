@@ -22,9 +22,9 @@
 #'
 #' @keywords internal
 #'
-ssi.dk <- function(level){
+ssi.dk <- function(level) {
   if(!level %in% 2:3) return(NULL)
-  
+
   # function to scrape the url of the latest data file
   get_url <- function(webpage, baseurl){
     html <- httr::GET(webpage)
@@ -35,16 +35,9 @@ ssi.dk <- function(level){
     regmatches(data, m)
   }
   
-  # download cases
-  webpage <- "https://covid19.ssi.dk/overvagningsdata/download-fil-med-overvaagningdata"
-  baseurl <- "https://files.ssi.dk/covid19/overvagning/dashboard/overvaagningsdata-dashboard-covid19"
-  zip.cases <- tempfile()
-  url <- get_url(webpage = webpage, baseurl = baseurl)
-  download.file(url, zip.cases, quiet = TRUE, mode = "wb")  
-
   # download vaccines  
   webpage <- "https://covid19.ssi.dk/overvagningsdata/download-fil-med-vaccinationsdata"
-  baseurl <- "https://files.ssi.dk/covid19/vaccinationsdata/zipfil/vaccinationsdata-dashboard-covid19"
+  baseurl <- "https://files.ssi.dk/covid19/overvagning/zipfil/vaccinationsdata-dashboard-covid19"
   zip.vacc <- tempfile()
   url <- get_url(webpage = webpage, baseurl = baseurl)
   download.file(url, zip.vacc, quiet = TRUE, mode = "wb")  
@@ -52,19 +45,24 @@ ssi.dk <- function(level){
   # temp dir to unzip
   dir <- tempdir()
   
-  if(level==2){
-    
+    if(level==2) {
+    # download cases
+    webpage <- "https://covid19.ssi.dk/overvagningsdata/download-fil-med-overvaagningdata"
+    baseurl <- "https://files.ssi.dk/covid19/overvagning/dashboard/overvaagningsdata-dashboard-covid19"
+    zip.cases <- tempfile()
+    url <- get_url(webpage = webpage, baseurl = baseurl)
+    download.file(url, zip.cases, quiet = TRUE, mode = "wb")  
+  
     # read cases and deaths
     file <- "Regionalt_DB/03_bekraeftede_tilfaelde_doede_indlagte_pr_dag_pr_koen.csv"
     file <- unzip(zip.cases, files = file, exdir = dir)
     x.cases <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
-
+  
     # format cases
     x.cases <- map_data(x.cases, c(
       "Region" = "region",
       "Prøvetagningsdato" = "date",
       "Døde" = "deaths",
-      "Bekræftede.tilfælde" = "confirmed",
       "Bekræftede.tilfælde.i.alt" = "confirmed"
     ))
     
@@ -86,7 +84,7 @@ ssi.dk <- function(level){
         confirmed = cumsum(confirmed))
     
     # read hosp
-    file <- "Regionalt_DB/15_indlagte_pr_region_pr_dag.csv"
+    file <- "Regionalt_DB/27_indl_kategori_dag_region.csv"
     file <- unzip(zip.cases, files = file, exdir = dir)
     x.hosp <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
     
@@ -94,11 +92,16 @@ ssi.dk <- function(level){
     x.hosp <- map_data(x.hosp, c(
       "Region" = "region",
       "Dato" = "date",
-      "Indlagte" = "hosp"
+      "Kategori" = "type",
+      "Antal.borgere" = "hosp"
     ))
-    # drop duplicated entry: Syddanmark 2021-10-26
-    x.hosp <- x.hosp[!duplicated(x.hosp),]
-     
+    
+    x.hosp <- x.hosp %>% 
+      filter(!is.na(region)) %>% 
+      filter(type != "Indlæggelse pga. andre forhold end covid-19") %>%  
+      group_by(date, region) %>%
+      summarize(hosp = sum(hosp))
+    
     # read tests
     file <- "Regionalt_DB/16_pcr_og_antigen_test_pr_region.csv"
     file <- unzip(zip.cases, files = file, exdir = dir)
@@ -153,68 +156,60 @@ ssi.dk <- function(level){
       full_join(x.hosp, by = by) %>%
       full_join(x.tests, by = by) %>%
       full_join(x.vacc, by = by)
-
   }
   
   if(level==3){
+    # download cases
+    webpage <- "https://covid19.ssi.dk/overvagningsdata/download-fil-med-overvaagningdata"
+    baseurl <- "https://files.ssi.dk/covid19/overvagning/data/overvaagningsdata-covid19"
+    zip.cases <- tempfile()
+    url <- get_url(webpage = webpage, baseurl = baseurl)
+    download.file(url, zip.cases, quiet = TRUE, mode = "wb")  
+    
     
     # read cases
-    file <- "Kommunalt_DB/07_bekraeftede_tilfaelde_pr_dag_pr_kommune.csv"
+    file <- "Municipality_cases_time_series.csv"
     file <- unzip(zip.cases, files = file, exdir = dir)
-    x.cases <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
+    x.cases <- read.csv(file, sep = ";", fileEncoding = "UTF-8", encoding = "ANSI")
     
     # format cases
-    x.cases <- map_data(x.cases, c(
-      "Kommune" = "code",
-      "Kommunenavn" = "name",
-      "Dato" = "date",
-      "Bekræftede.tilfælde" = "confirmed",
-      "Bekræftede.tilfælde.i.alt" = "confirmed"
-    )) 
+    x.cases <- x.cases %>%
+      rename(date = SampleDate) %>%
+      pivot_longer(
+        cols = -date,
+        names_to = "name",
+        values_to = "confirmed"
+      ) %>% 
+      filter(name != "NA.")
     
     # cases
     x.cases <- x.cases %>%
-      filter(!is.na(code)) %>%
-      group_by(code) %>%
+      group_by(name, date) %>%
+      summarize(confirmed = sum(confirmed)) %>% 
       arrange(date) %>%
       mutate(confirmed = cumsum(confirmed))
     
     # read tests
-    file <- "Kommunalt_DB/12_pcr_og_antigen_test_pr_kommune.csv"
+    file <- "Municipality_tested_persons_time_series.csv"
     file <- unzip(zip.cases, files = file, exdir = dir)
-    x.tests <- read.csv(file, sep = ";", fileEncoding = "Latin1", encoding = "ANSI")
-    
+    x.tests <- read.csv(file, sep = ";", fileEncoding = "UTF-8", encoding = "ANSI")
+
     # format tests
-    x.tests <- map_data(x.tests, c(
-      "Uge" = "epiweek",
-      "Kommune.kode" = "code",
-      "Kommunenavn" = "name",
-      "Metode" = "type",
-      "Prøver" = "tests"
-    ))
-    
-    # map
-    idx <- which(!duplicated(x.tests$code))
-    map <- x.tests$code[idx]
-    names(map) <- x.tests$name[idx]
-    
-    # tests
     x.tests <- x.tests %>%
-      # drop missing municipality and keep only PCR tests
-      # only PCR tests are counted as confirmed cases
-      # see https://covid19.ssi.dk/overvagningsdata/konfirmatorisk-pcr-test
-      filter(!is.na(code) & !is.na(name) & type=="PCR") %>%
-      # convert epiweek to date
-      mutate(
-        YEAR = as.integer(substr(epiweek, 0, 4)),
-        WEEK = as.integer(substr(epiweek, 7, 9)),
-        date = as.character(MMWRweek::MMWRweek2Date(YEAR, WEEK)+7)) %>%
-      # for each date and municipality
-      group_by(date, code) %>%
+      rename(date = PrDate_adjusted) %>%
+      pivot_longer(
+        cols = -date,
+        names_to = "name",
+        values_to = "tests"
+      ) %>% 
+      filter(name != "NA.")
+    
+    x.tests <- x.tests %>%
+      group_by(date, name) %>%
       # compute total counts
       summarize(tests = sum(tests)) %>%
       # group by municipality
-      group_by(code) %>%
+      group_by(name) %>%
       # sort by date
       arrange(date) %>%
       # cumulate
@@ -229,10 +224,38 @@ ssi.dk <- function(level){
     x.vacc <- map_data(x.vacc, c(
       "Dato" = "date",
       "Kommune" = "name",
+      "Kommunekode" = "code", 
       "Samlet.antal.1..stik" = "people_vaccinated",
       "Samlet.antal.2..stik" = "people_fully_vaccinated"
     ))
-    x.vacc$code <- as.integer(map_values(x.vacc$name, map = map))
+  
+    # standardize municipality names across datasets  
+    name_map <- c(
+      "Aarhus" = "Århus",
+      "Copenhagen" = "København", 
+      "Høje.Taastrup" = "Høje Tåstrup",
+      "Vesthimmerlands" = "Vesthimmerland",
+      "Faaborg.Midtfyn" = "Faaborg-Midtfyn",
+      "Ikast.Brande" = "Ikast-Brande",
+      "Lyngby.Taarbæk" = "Lyngby-Taarbæk",
+      "Nordfyns" = "Nordfyn",
+      "Ringkøbing.Skjern" = "Ringkøbing-Skjern"
+    )
+    
+    x.cases$name <- ifelse(x.cases$name %in% names(name_map), name_map[x.cases$name], x.cases$name)
+    x.tests$name <- ifelse(x.tests$name %in% names(name_map), name_map[x.tests$name], x.tests$name)
+    x.vacc$name <- ifelse(x.vacc$name %in% names(name_map), name_map[x.vacc$name], x.vacc$name)
+    
+    x <- full_join(x.cases, x.tests, by = c("date", "name"))
+    
+    # map codes from x.vacc
+    idx <- which(!duplicated(x.vacc$code)) 
+    map <- setNames(x.vacc$code[idx], x.vacc$name[idx])
+
+    x.tests$code <- ifelse(x.tests$name == "Christiansø", 411, 
+                           as.integer(map[x.tests$name]))
+    x.cases$code <- ifelse(x.cases$name == "Christiansø", 411, 
+                           as.integer(map[x.tests$name]))
     
     # merge
     by <- c("code", "date")
