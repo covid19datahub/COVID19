@@ -39,8 +39,8 @@ canada.ca <- function(level){
     "prname"     = "name",
     "numdeaths"  = "deaths",
     "totalcases" = "confirmed"
-  )) %>% 
-    mutate(confirmed = as.integer(confirmed))
+  )) %>%
+    mutate(confirmed = as.integer(ifelse(grepl("^[0-9]+$", confirmed), confirmed, NA)))
   
   # download total vaccine doses
   # see https://health-infobase.canada.ca/covid-19/vaccine-administration/
@@ -92,7 +92,7 @@ canada.ca <- function(level){
   x <- x[which(x$id!=99),] 
 
   # fill with daily series before June 2022
-  ext_data <- read.csv("inst/extdata/ds/CAN.csv")
+  ext_data <- extdata("ds/CAN.csv")
   
   x <- bind_rows(ext_data, x) %>%
     # for each id and date
