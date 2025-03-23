@@ -19,6 +19,13 @@ ESP <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Spain")
+    x1 <- x1[x1$date <= "2023-03-10",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    x2 <- who.int(level = 1, id = "ES")
+    x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
@@ -28,10 +35,11 @@ ESP <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "ESP")
+    x3 <- ourworldindata.org(id = "ESP")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date")
     
   }
   
@@ -58,16 +66,18 @@ ESP <- function(level){
   #' `r docstring("ESP", 3)`
   #' 
   if(level==3){  
-    
+    #' Due to changes in the original file,  
+    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
+    #' now provides historical data, which was previously sourced from:  
+    #'  
     #' - \href{`r repo("isciii.es")`}{Centro Nacional de Epidemiología}:
     #' confirmed cases,
     #' deaths,
     #' hospitalizations,
     #' intensive care.
     #'
-    x <- isciii.es(level = level)
-    x$id <- id(x$district, iso = "ESP", ds = "isciii.es", level = level)
-    
+    x <- covid19datahub.io(iso = "ESP", level) %>% 
+      select(id, date, confirmed, deaths, hosp, icu)
   }
   
   return(x)
