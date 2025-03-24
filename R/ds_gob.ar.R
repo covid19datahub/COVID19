@@ -159,8 +159,15 @@ gob.ar <- function(level){
     # fill with previous value
     fill(confirmed, deaths, tests, vaccines, people_vaccinated, people_fully_vaccinated) %>%
     # ungroup
-    ungroup()
-    
+    ungroup() %>%
+    # set to missing if date greater than the corresponding max date
+    mutate(confirmed = replace(confirmed, date>max(x.confirmed$date), NA),
+           deaths = replace(deaths, date>max(x.deaths$date), NA),
+           tests = replace(tests, date>max(x.tests$date), NA),
+           vaccines = replace(vaccines, date>max(x.vacc$date), NA),
+           people_vaccinated = replace(people_vaccinated, date>max(x.vacc$date), NA),
+           people_fully_vaccinated = replace(people_fully_vaccinated, date>max(x.vacc$date), NA))
+  
   # drop unassigned provinces
   if(level==2){
     x <- x %>% 
