@@ -105,12 +105,10 @@ gob.ar <- function(level){
   x.tests <- x.tests %>%
     filter(date>="2020-01-01") %>% 
     group_by_at(c("date", by)) %>%
-    summarise(tests = sum(tests),
-              confirmed = sum(confirmed)) %>%
+    summarise(tests = sum(tests)) %>%
     group_by_at(by) %>%
     arrange(date) %>%
-    mutate(tests = cumsum(tests),
-           confirmed = cumsum(confirmed))
+    mutate(tests = cumsum(tests))
   
   # download vaccines
   # see https://datos.gob.ar/dataset/salud-vacunas-contra-covid-19-dosis-aplicadas-republica-argentina---registro-desagregado
@@ -144,9 +142,9 @@ gob.ar <- function(level){
   
   # merge
   x <- x.deaths %>%
+    full_join(x.confirmed, by = c("date", by)) %>%
     full_join(x.tests, by = c("date", by)) %>%
     full_join(x.vacc, by = c("date", by))
-  
   
   # convert date and sanitize
   x <- x %>%
@@ -161,15 +159,8 @@ gob.ar <- function(level){
     # fill with previous value
     fill(confirmed, deaths, tests, vaccines, people_vaccinated, people_fully_vaccinated) %>%
     # ungroup
-    ungroup() %>%
-    # set to missing if date greater than the corresponding max date
-    mutate(confirmed = replace(confirmed, date>max(x.confirmed$date), NA),
-           deaths = replace(deaths, date>max(x.deaths$date), NA),
-           tests = replace(tests, date>max(x.tests$date), NA),
-           vaccines = replace(vaccines, date>max(x.vacc$date), NA),
-           people_vaccinated = replace(people_vaccinated, date>max(x.vacc$date), NA),
-           people_fully_vaccinated = replace(people_fully_vaccinated, date>max(x.vacc$date), NA))
-  
+    ungroup()
+    
   # drop unassigned provinces
   if(level==2){
     x <- x %>% 
