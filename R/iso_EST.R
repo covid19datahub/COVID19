@@ -19,7 +19,18 @@ EST <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Estonia")
+    x1 <- x1[x1$date <= "2023-03-10",]
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    x2 <- who.int(level = 1, id = "EE")
+    x2 <- x2[x2$date > "2023-03-10",]
+    
+    #' Due to changes in the original file,  
+    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
+    #' now provides historical data, which was previously sourced from:  
+    #'  
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
@@ -28,12 +39,17 @@ EST <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "EST")
+    x3 <- covid19datahub.io(iso = "EST", level) %>% 
+      select(date, icu)
+      
+    x4 <- ourworldindata.org(id = "EST")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
-    
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date") %>% 
+      full_join(x4, by = "date") %>% 
+      mutate(icu = ifelse(date >= "2022-10-09", icu.y, icu.x))
   }
-  
+
   return(x)
 }
