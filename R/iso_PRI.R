@@ -18,14 +18,23 @@ PRI <- function(level){
     #' deaths.
     #'
     x1 <- github.nytimes.covid19data(fips = "72", level = 2)
+    x1 <- x1[x1$date <= "2023-03-24",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x2 <- who.int(level = 1, id = "PR")
+    x2 <- x2[x2$date > "2023-03-24",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests.
-    x2 <- ourworldindata.org(id = "PRI") %>% 
+    x3 <- ourworldindata.org(id = "PRI") %>% 
       select(date, tests)
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date")
     
   }
   
