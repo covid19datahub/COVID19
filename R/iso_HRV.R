@@ -12,26 +12,38 @@ HRV <- function(level){
   #' `r docstring("HRV", 1)`
   #' 
   if(level==1){
-    
+    #' Due to changes in the original file,  
+    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
+    #' now provides historical data, which was previously sourced from:  
+    #'  
     #' - \href{`r repo("koronavirus.hr")`}{Croatian Institute of Public Health}:
     #' confirmed cases,
     #' deaths,
     #' recovered.
     #'
-    x1 <- koronavirus.hr(level = level)
+    x1 <- covid19datahub.io(iso = "HRV", level) %>% 
+      select(date, confirmed, deaths, recovered)
+    x1 <- x1[x1$date <= "2023-11-27",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x2 <- who.int(level = 1, id = "HR")
+    x2 <- x2[x2$date > "2023-11-27",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' hospitalizations.
     #'
-    x2 <- ourworldindata.org(id = "HRV")
+    x3 <- ourworldindata.org(id = "HRV")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date")
     
   }
   
@@ -42,15 +54,18 @@ HRV <- function(level){
   #' `r docstring("HRV", 2)`
   #' 
   if(level==2){
-    
+    #' Due to changes in the original file,  
+    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
+    #' now provides historical data, which was previously sourced from:  
+    #' 
     #' - \href{`r repo("koronavirus.hr")`}{Croatian Institute of Public Health}:
     #' confirmed cases,
     #' deaths,
     #' recovered.
     #'
-    x <- koronavirus.hr(level = level)
-    x$id <- id(x$region, iso = "HRV", ds = "koronavirus.hr", level = level)
-    
+    x <- covid19datahub.io(iso = "HRV", level) %>% 
+      select(id, date, confirmed, deaths, recovered)
+   
   }
   
   return(x)
