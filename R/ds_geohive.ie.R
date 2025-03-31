@@ -16,8 +16,6 @@
 #'
 #' @section Level 2:
 #' - confirmed cases
-#' - deaths
-#' - recovered
 #'
 #' @source https://covid-19.geohive.ie/search
 #'
@@ -129,9 +127,7 @@ geohive.ie <- function(level) {
       "Lat"                     = "latitude",
       "Long"                    = "longitude",
       "TimeStamp"               = "date",
-      "ConfirmedCovidCases"     = "confirmed",
-      "ConfirmedCovidDeaths"    = "deaths", 
-      "ConfirmedCovidRecovered" = "recovered"
+      "ConfirmedCovidCases"     = "confirmed"
     ))
     
     # convert date

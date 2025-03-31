@@ -25,14 +25,23 @@ IRL <- function(level){
     #'
     x1 <- geohive.ie(level = level)
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    x2 <- who.int(level = 1, id = "IE")
+    x2 <- x2[x2$date > "2023-11-14",]
+    
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' recovered.
     #'
-    x2 <- github.cssegisanddata.covid19(country = "Ireland") %>%
+    x3 <- github.cssegisanddata.covid19(country = "Ireland") %>%
       select(-c("confirmed", "deaths"))
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- full_join(x1, x2, by = "date") %>% 
+      full_join(x3, by = "date") %>% 
+      mutate(confirmed = coalesce(confirmed.x, confirmed.y),
+             deaths = coalesce(deaths.x, deaths.y))
     
   }
   
@@ -45,10 +54,7 @@ IRL <- function(level){
   if(level==2){
     
     #' - \href{`r repo("geohive.ie")`}{Health Protection Surveillance Centre (HPSC) and Health Service Executive (HSE)}:
-    #' confirmed cases,
-    #' deaths,
-    #' recovered.
-    #'
+    #' confirmed cases.
     x <- geohive.ie(level = level)
     x$id <- id(x$county_id, iso = "IRL", ds = "geohive.ie", level = level)
     
