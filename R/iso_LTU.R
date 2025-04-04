@@ -12,7 +12,10 @@ LTU <- function(level){
   #' `r docstring("LTU", 1)`
   #' 
   if(level==1){
-    
+    #' Due to changes in the original file,  
+    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
+    #' now provides historical data, which was previously sourced from:  
+    #'  
     #' - \href{`r repo("github.mpiktas.covid19lt")`}{Vaidotas Zemlys-Balevicius}:
     #' confirmed cases,
     #' deaths,
@@ -25,8 +28,14 @@ LTU <- function(level){
     #' intensive care,
     #' patients requiring ventilation.
     #'
-    x <- github.mpiktas.covid19lt(level = level)
+    x1 <- github.mpiktas.covid19lt(level = level) %>% 
+      filter(date <= "2025-01-14")
     
+    x2 <- covid19datahub.io(iso = "LTU", level) %>% 
+      select(date, recovered)
+    
+    # merge
+    x <- full_join(x1, x2, by = "date")
   }
   
   #' @concept Level 2
@@ -36,7 +45,10 @@ LTU <- function(level){
   #' `r docstring("LTU", 2)`
   #' 
   if(level==2){
-    
+    #' Due to changes in the original file,  
+    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
+    #' now provides historical data, which was previously sourced from:  
+    #'  
     #' - \href{`r repo("github.mpiktas.covid19lt")`}{Vaidotas Zemlys-Balevicius}:
     #' confirmed cases,
     #' deaths,
@@ -46,8 +58,14 @@ LTU <- function(level){
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    x <- github.mpiktas.covid19lt(level = level)
-    x$id <- id(x$admin2, iso = "LTU", ds = "github.mpiktas.covid19lt", level = level)
+    x1 <- github.mpiktas.covid19lt(level = level)
+    x1$id <- id(x1$admin2, iso = "LTU", ds = "github.mpiktas.covid19lt", level = level)
+    
+    x2 <- covid19datahub.io(iso = "LTU", level) %>% 
+      select(id, date, recovered)
+    
+    # merge
+    x <- full_join(x1, x2, by = c("date", "id"))
     
   }
   
@@ -58,7 +76,10 @@ LTU <- function(level){
   #' `r docstring("LTU", 3)`
   #' 
   if(level==3){  
-    
+    #' Due to changes in the original file,  
+    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
+    #' now provides historical data, which was previously sourced from:  
+    #'  
     #' - \href{`r repo("github.mpiktas.covid19lt")`}{Vaidotas Zemlys-Balevicius}:
     #' confirmed cases,
     #' deaths,
@@ -68,9 +89,14 @@ LTU <- function(level){
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    x <- github.mpiktas.covid19lt(level = level)
-    x$id <- id(x$admin3, iso = "LTU", ds = "github.mpiktas.covid19lt", level = level)
+    x1 <- github.mpiktas.covid19lt(level = level)
+    x1$id <- id(x1$admin3, iso = "LTU", ds = "github.mpiktas.covid19lt", level = level)
     
+    x2 <- covid19datahub.io(iso = "LTU", level) %>% 
+      select(id, date, recovered)
+    
+    # merge
+    x <- full_join(x1, x2, by = c("date", "id"))
   }
   
   return(x)
