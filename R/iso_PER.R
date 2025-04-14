@@ -24,15 +24,22 @@ PER <- function(level){
     #'
     x1 <- github.jmcastagnetto.covid19perudata(level = level)
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    x2 <- who.int(level = 1, id = "PE")
+    x2 <- x2[x2$date > "2022-04-05",]
+    
     #' - \href{`r repo("gob.pe")`}{Ministerio de Salud}:
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    x2 <- gob.pe(level = level)
+    x3 <- gob.pe(level = level)
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>% 
+      full_join(x3, by = "date")
     
   }
   
@@ -51,7 +58,7 @@ PER <- function(level){
     #' tests.
     #'
     x1 <- github.jmcastagnetto.covid19perudata(level = level)
-    x1$id <- id(x1$id, iso = "PER", ds = "github.jmcastagnetto.covid19perudata", level = level)
+    x1$id <- id(x1$region, iso = "PER", ds = "github.jmcastagnetto.covid19perudata", level = level)
     
     #' - \href{`r repo("gob.pe")`}{Ministerio de Salud}:
     #' total vaccine doses administered,
