@@ -23,18 +23,19 @@ TWN <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x2 <- github.cssegisanddata.covid19(country = "Taiwan*") %>%
-      select(-c("confirmed"))
+    
+    # use vintage data because daily data disappeared from github.cssegisanddata.covid19
+    # and test file from gov.tw is no longer available
+    x2 <- covid19datahub.io(iso = "TWN", level) %>% 
+      select(date, deaths, recovered, tests)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x3 <- ourworldindata.org(id = "TWN") %>%
-      select(-c("tests"))
+      select(-c("tests", "hosp", "icu"))
     
     # merge
     x <- x1 %>%
