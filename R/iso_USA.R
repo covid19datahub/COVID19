@@ -19,18 +19,12 @@ USA <- function(level){
     #'
     x1 <- github.nytimes.covid19data(level = level)
     
-    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
-    #' recovered.
-    #'
-    x2 <- github.cssegisanddata.covid19(country = "United States") %>%
-      select(-c("confirmed", "deaths"))
-    
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' hospitalizations,
     #' intensive care.
     #'
-    x3 <- ourworldindata.org(id = "USA") %>%
+    x2 <- ourworldindata.org(id = "USA") %>%
       select(-c("vaccines", "people_vaccinated", "people_fully_vaccinated"))
     
     #' - \href{`r repo("cdc.gov")`}{Centers for Disease Control and Prevention}:
@@ -38,13 +32,12 @@ USA <- function(level){
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    x4 <- cdc.gov(level = level)
+    x3 <- cdc.gov(level = level)
     
     # merge
     x <- x1 %>%
       full_join(x2, by = "date") %>%
-      full_join(x3, by = "date") %>%
-      full_join(x4, by = "date")
+      full_join(x3, by = "date")
     
   }
   
