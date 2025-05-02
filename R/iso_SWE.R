@@ -57,8 +57,9 @@ SWE <- function(level){
     #' - \href{`r repo("arcgis.se")`}{Public Health Agency of Sweden}:
     #' confirmed cases.
     #'
+    
     # use vintage data because arcgis.se restricted access to the data (not available)
-    x1 <- covid19datahub.io(iso = "SWE", level) %>% 
+    x <- covid19datahub.io(iso = "SWE", level) %>% 
       select(id, date, confirmed)
     
   }
