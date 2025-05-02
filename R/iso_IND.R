@@ -22,7 +22,7 @@ IND <- function(level){
     x1 <- x1[x1$date <= "2023-03-10",]
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
-    #' confirmed cases.
+    #' confirmed cases,
     #' deaths.
     x2 <- who.int(level = 1, id = "IN")
     x2 <- x2[x2$date > "2023-03-10",]
@@ -48,10 +48,7 @@ IND <- function(level){
   #' `r docstring("IND", 2)`
   #' 
   if(level==2){
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
+    
     #' - \href{`r repo("covid19india.org")`}{COVID-19 India API}:
     #' confirmed cases,
     #' deaths,
@@ -61,6 +58,8 @@ IND <- function(level){
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
+    
+    # use vintage data because files form covid19india.org are not available
     x <- covid19datahub.io(iso = "IND", level)
     
   }

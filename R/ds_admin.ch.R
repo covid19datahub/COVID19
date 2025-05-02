@@ -11,7 +11,6 @@
 #' - tests
 #' - total vaccine doses administered
 #' - people with at least one vaccine dose
-#' - people fully vaccinated
 #' - hospitalizations
 #' - intensive care
 #'
@@ -21,7 +20,6 @@
 #' - tests
 #' - total vaccine doses administered
 #' - people with at least one vaccine dose
-#' - people fully vaccinated
 #' - hospitalizations
 #' - intensive care
 #'

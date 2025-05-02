@@ -291,11 +291,14 @@ github.minciencia.datoscovid19 <- function(level) {
         people_fully_vaccinated = cumsum(second + oneshot),
         # compute daily positive
         pos_new = pmax(0, c(NA, diff(pos_tot))),
+        # 7-day moving average
         ma7 = sapply(1:n(), function(i) {
           if (i < 7) return(NA)
           mean(pos_new[max(1, i-6):i], na.rm = TRUE)
         }),
+        # compute total tests per day
         tests = ma7 / positivity,
+        # compute cumulative sum
         tests = as.integer(cumsum(tests)),
         tests = replace(tests, is.na(confirmed) | confirmed > tests, NA)
         )

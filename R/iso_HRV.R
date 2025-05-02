@@ -12,15 +12,14 @@ HRV <- function(level){
   #' `r docstring("HRV", 1)`
   #' 
   if(level==1){
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
+    
     #' - \href{`r repo("koronavirus.hr")`}{Croatian Institute of Public Health}:
     #' confirmed cases,
     #' deaths,
     #' recovered.
     #'
+    
+    # use vintage data because files form koronavirus.hr are not available
     x1 <- covid19datahub.io(iso = "HRV", level) %>% 
       select(date, confirmed, deaths, recovered)
     x1 <- x1[x1$date <= "2023-11-27",]
@@ -54,15 +53,14 @@ HRV <- function(level){
   #' `r docstring("HRV", 2)`
   #' 
   if(level==2){
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #' 
+   
     #' - \href{`r repo("koronavirus.hr")`}{Croatian Institute of Public Health}:
     #' confirmed cases,
     #' deaths,
     #' recovered.
     #'
+    
+    # use vintage data because files form koronavirus.hr are not available
     x <- covid19datahub.io(iso = "HRV", level) %>% 
       select(id, date, confirmed, deaths, recovered)
    

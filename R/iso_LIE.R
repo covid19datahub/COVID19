@@ -12,10 +12,7 @@ LIE <- function(level){
   #' `r docstring("LIE", 1)`
   #' 
   if(level==1){
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
+
     #' - \href{`r repo("admin.ch")`}{Federal Office of Public Health}:
     #' confirmed cases,
     #' deaths,
@@ -27,8 +24,8 @@ LIE <- function(level){
     x1 <- admin.ch(state = "FL", level = 1) %>% 
       select(-hosp)
     
-    #' people fully vaccinated.
-    #' 
+    # use vintage data because the type "COVID19FullyVaccPersons" 
+    # in the vacc file from admin.ch is no longer available
     x2 <- covid19datahub.io(iso = "LIE", level) %>% 
       select(date, people_fully_vaccinated)
     
@@ -36,7 +33,7 @@ LIE <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x3 <- who.int(level = 1, id = "LI") %>% 
+    x3 <- who.int(level = level, id = "LI") %>% 
       filter(date > "2023-11-28")
     
     #' - \href{`r repo("github.openzh.covid19")`}{Specialist Unit for Open Government Data Canton of Zurich}:

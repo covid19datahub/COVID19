@@ -24,7 +24,7 @@ BLZ <- function(level){
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases.
     #'
-    x2 <- who.int(level = 1, id = "BZ") %>% 
+    x2 <- who.int(level, id = "BZ") %>% 
       select(-deaths)
     x2 <- x2[x2$date > "2023-03-10",]
     
@@ -32,9 +32,7 @@ BLZ <- function(level){
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x3 <- ourworldindata.org(id = "BLZ")
     

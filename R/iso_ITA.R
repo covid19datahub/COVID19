@@ -22,28 +22,25 @@ ITA <- function(level){
     #' intensive care.
     #'
     x1 <- github.pcmdpc.covid19(level = level)
-    
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
+   
     #' - \href{`r repo("github.italia.covid19opendatavaccini")`}{Commissario straordinario per l'emergenza Covid-19, Presidenza del Consiglio dei Ministri}:
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    x2 <- covid19datahub.io(iso = "ITA", level) %>% 
+    x2 <- github.italia.covid19opendatavaccini(level = level)
+    
+    # use vintage data because as of this date github.italia.covid19opendatavaccini stopped specifying the dose type 
+    # a new variable "d"-unspecified was introduced
+    x3 <- covid19datahub.io(iso = "ITA", level) %>% 
       select(date, people_vaccinated, people_fully_vaccinated) %>% 
       filter(date >= "2023-09-11")
-    
-    x3 <- github.italia.covid19opendatavaccini(level = level)
     
     # merge
     x <- full_join(x1, x2, by = "date") %>% 
       full_join(x3, by = "date") %>% 
-      mutate(people_vaccinated = coalesce(people_vaccinated.x, people_vaccinated.y),
-             people_fully_vaccinated = coalesce(people_fully_vaccinated.x, people_fully_vaccinated.y))
-    
+      mutate(people_vaccinated = coalesce(people_vaccinated.y, people_vaccinated.x),
+             people_fully_vaccinated = coalesce(people_fully_vaccinated.y, people_fully_vaccinated.x))
   }
   
   #' @concept Level 2
@@ -65,30 +62,26 @@ ITA <- function(level){
     x1 <- github.pcmdpc.covid19(level = level)
     x1$id <- id(x1$state, iso = "ITA", ds = "github.pcmdpc.covid19", level = level)
     
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
     #' - \href{`r repo("github.italia.covid19opendatavaccini")`}{Commissario straordinario per l'emergenza Covid-19, Presidenza del Consiglio dei Ministri}:
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
+    #' 
+    x2 <- github.italia.covid19opendatavaccini(level = level)
+    x2$id <- id(x2$state, iso = "ITA", ds = "github.italia.covid19opendatavaccini", level = level)
     
-    x2 <- covid19datahub.io(iso = "ITA", level) %>% 
+    # use vintage data because as of this date github.italia.covid19opendatavaccini stopped specifying the dose type 
+    # a new variable "d"-unspecified was introduced
+    x3 <- covid19datahub.io(iso = "ITA", level) %>% 
       select(date, id, vaccines, people_vaccinated, people_fully_vaccinated) %>% 
       filter(date >= "2023-09-11")
-    
-    x3 <- github.italia.covid19opendatavaccini(level = level)
-    x3$id <- id(x3$state, iso = "ITA", ds = "github.italia.covid19opendatavaccini", level = level)
     
     # merge
     x <- full_join(x1, x2, by = c("date", "id")) %>% 
       full_join(x3, by = c("date", "id")) %>% 
-      mutate(vaccines = coalesce(vaccines.x, vaccines.y), 
-             people_vaccinated = coalesce(people_vaccinated.x, people_vaccinated.y),
-             people_fully_vaccinated = coalesce(people_fully_vaccinated.x, people_fully_vaccinated.y))
-    
-    
+      mutate(vaccines = coalesce(vaccines.y, vaccines.x), 
+             people_vaccinated = coalesce(people_vaccinated.y, people_vaccinated.x),
+             people_fully_vaccinated = coalesce(people_fully_vaccinated.y, people_fully_vaccinated.x))
   }
   
   #' @concept Level 3

@@ -26,7 +26,7 @@ BRA <- function(level, ...){
     #' confirmed cases,
     #' deaths.
     #'
-    x2 <- who.int(level = 1, id = "BR")
+    x2 <- who.int(level, id = "BR")
     x2 <- x2[x2$date > "2023-03-31",]
     
     # merge

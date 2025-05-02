@@ -13,11 +13,11 @@
 #' - confirmed cases
 #' - deaths
 #' - recovered
-#' - tests
 #' 
 #' @section Level 3:
 #' - confirmed cases
 #' - deaths
+#' - recovered
 #'
 #' @source https://www.datos.gov.co/browse?category=Salud+y+Protecci%C3%B3n+Social&q=covid&sortBy=relevance
 #'
@@ -25,7 +25,7 @@
 #'
 gov.co <- function(level){
   if(!level %in% 1:3) return(NULL)
-  options(timeout = 280)  
+ 
   # confirmed, recovered, deaths
   # the number of rows in this file matches the number of confirmed cases reported by other sources (e.g. JHU)
   # this file can be aggregated to compute confirmed, recovered, and deaths at all levels
@@ -78,9 +78,9 @@ gov.co <- function(level){
         mutate(n = cumsum(n)) %>%
         pivot_wider(id_cols = c("date", "state_code"), names_from = "type", values_from = "n")
       
-      # map code to state as used in the PCR and antigen datasets      
-      db <- system.file("extdata", "db/COL.csv", package = "COVID19")
-      db <- read.csv(db, encoding = "UTF-8")
+      # map code to state       
+      db <- extdata("db/COL.csv")
+      
       idx <- which(db$administrative_area_level==2)
       map <- db$id_gov.co[idx]
       names(map) <- as.integer(db$key_local[idx])

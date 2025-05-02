@@ -22,7 +22,7 @@ CYP <- function(level){
     x1 <- x1[x1$date <= "2023-03-10",]
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
-    #' confirmed cases.
+    #' confirmed cases,
     #' deaths.
     x2 <- who.int(level = 1, id = "CY")
     x2 <- x2[x2$date > "2023-03-10",]

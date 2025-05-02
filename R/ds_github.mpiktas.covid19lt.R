@@ -69,7 +69,7 @@ github.mpiktas.covid19lt <- function(level) {
         # total vaccine doses
         x$vaccines <- x$dose_1 + x$dose_2 + x$dose_3
         
-        # sanitizing
+        # set 0 as missing values
         x <- x %>% 
           mutate(across(where(is.numeric), ~ ifelse(. == 0, NA, .)))
     }
@@ -89,7 +89,6 @@ github.mpiktas.covid19lt <- function(level) {
             "confirmed"              = "confirmed",
             "tests"                  = "tests",
             "deaths_1"               = "deaths",
-            "recovered"              = "recovered",
             "vaccinated_1"           = "dose_1",
             "vaccinated_2"           = "dose_2",
             "vaccinated_3"           = "dose_3",
@@ -102,7 +101,7 @@ github.mpiktas.covid19lt <- function(level) {
         # total vaccine doses
         x$vaccines <- x$dose_1 + x$dose_2 + x$dose_3
         
-        # sanitizing
+        # set 0 as missing values
         x <- x %>% 
           mutate(across(where(is.numeric), ~ ifelse(. == 0, NA, .)))
     }

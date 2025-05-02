@@ -14,7 +14,7 @@ BDI <- function(level){
   if(level==1){
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
-    #' recovered
+    #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Burundi") %>% 
       select(-c("confirmed", "deaths"))
@@ -23,15 +23,13 @@ BDI <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x2 <- who.int(level = 1, id = "BI")
+    x2 <- who.int(level, id = "BI")
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x3 <- ourworldindata.org(id = "BDI")
     

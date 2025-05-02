@@ -25,13 +25,9 @@ BGR <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x2 <- who.int(level = 1, id = "BG")
+    x2 <- who.int(level, id = "BG")
     x2 <- x2[x2$date > "2023-03-10",]
     
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
@@ -40,12 +36,13 @@ BGR <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x3 <- covid19datahub.io(iso = "BGR", level) %>% 
+    x3 <- ourworldindata.org(id = "BGR")  %>% 
+      filter(date >"2022-11-13")
+    
+    # use vintage data because some daily data from ourworldindata.org is no longer available 
+    x4 <- covid19datahub.io(iso = "BGR", level) %>% 
       filter(date <= "2022-11-13") %>%
       select(date,tests, vaccines, people_vaccinated, people_fully_vaccinated, hosp, icu)
-    
-    x4 <- ourworldindata.org(id = "BGR")  %>% 
-      filter(date >"2022-11-13")
     
     # merge
     x <- bind_rows(x1, x2) %>% 

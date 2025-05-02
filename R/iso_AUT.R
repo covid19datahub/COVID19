@@ -12,11 +12,7 @@ AUT <- function(level){
   #' `r docstring("AUT", 1)`
   #' 
   if(level==1){
-    
-    #' As the original files are no longer available,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub} 
-    #' now provides historical data, which was previously sourced from:
-    #' 
+
     #' - \href{`r repo("gv.at")`}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
     #' confirmed cases,
     #' deaths,
@@ -28,18 +24,20 @@ AUT <- function(level){
     #' hospitalizations,
     #' intensive care.
     #' 
+    
+    # use vintage data because most of the files form gv.at are not available
     x1 <- covid19datahub.io(iso = "AUT", level)
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
     #'
-    x2 <- who.int(level = 1, id = "AT")
+    x2 <- who.int(level, id = "AT")
     x2 <- x2[x2$date > "2023-04-30",] 
-
-    x <- full_join(x1, x2, by = "date") %>%
-      mutate(confirmed = coalesce(confirmed.x, confirmed.y),
-             deaths = coalesce(deaths.x, deaths.y))
+    
+    # merge
+    x <- bind_rows(x1, x2)
+    
   }
   
   #' @concept Level 2
@@ -49,11 +47,7 @@ AUT <- function(level){
   #' `r docstring("AUT", 2)`
   #' 
   if(level==2){
-    
-    #' As the original files are no longer available,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub} 
-    #' now provides historical data, which was previously sourced from:
-    #' 
+
     #' - \href{`r repo("gv.at")`}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
     #' confirmed cases,
     #' deaths,
@@ -65,6 +59,8 @@ AUT <- function(level){
     #' hospitalizations,
     #' intensive care.
     #' 
+    
+    # use vintage data because most of the files form gv.at are not available
     x <- covid19datahub.io(iso = "AUT", level)
     
   }
@@ -76,17 +72,16 @@ AUT <- function(level){
   #' `r docstring("AUT", 3)`
   #' 
   if(level==3){  
-    
-    #' As the original files are no longer available,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub} 
-    #' now provides historical data, which was previously sourced from:
-    #' 
+
     #' - \href{`r repo("gv.at")`}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
     #' confirmed cases,
     #' deaths,
     #' recovered.
     #'
+    
+    # use vintage data because most of the files form gv.at are not available 
     x <- covid19datahub.io(iso = "AUT", level)
+    
   }
   
   return(x)

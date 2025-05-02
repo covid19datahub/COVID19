@@ -22,15 +22,12 @@ DNK <- function(level){
     x1 <- x1[x1$date <= "2023-03-10",]
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
-    #' confirmed cases.
+    #' confirmed cases,
     #' deaths.
-    x2 <- who.int(level = 1, id = "DK")
+    #' 
+    x2 <- who.int(level, id = "DK")
     x2 <- x2[x2$date > "2023-03-10",]
     
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
@@ -42,9 +39,9 @@ DNK <- function(level){
     x3 <- ourworldindata.org(id = "DNK") %>% 
       select(date, tests, hosp, icu)
     
+    # use vintage data because some daily data from ourworldindata.org is no longer available
     x4 <- covid19datahub.io(iso = "DNK", level) %>% 
       select(date, vaccines, people_vaccinated, people_fully_vaccinated)
-    
    
     # merge
     x <- bind_rows(x1, x2) %>%

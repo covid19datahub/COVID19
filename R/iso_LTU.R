@@ -12,10 +12,7 @@ LTU <- function(level){
   #' `r docstring("LTU", 1)`
   #' 
   if(level==1){
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
+    
     #' - \href{`r repo("github.mpiktas.covid19lt")`}{Vaidotas Zemlys-Balevicius}:
     #' confirmed cases,
     #' deaths,
@@ -28,9 +25,9 @@ LTU <- function(level){
     #' intensive care,
     #' patients requiring ventilation.
     #'
-    x1 <- github.mpiktas.covid19lt(level = level) %>% 
-      filter(date <= "2025-01-14")
+    x1 <- github.mpiktas.covid19lt(level = level)
     
+    # use vintage data because recovered disappeared from github.mpiktas.covid19lt
     x2 <- covid19datahub.io(iso = "LTU", level) %>% 
       select(date, recovered)
     
@@ -45,10 +42,7 @@ LTU <- function(level){
   #' `r docstring("LTU", 2)`
   #' 
   if(level==2){
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
+    
     #' - \href{`r repo("github.mpiktas.covid19lt")`}{Vaidotas Zemlys-Balevicius}:
     #' confirmed cases,
     #' deaths,
@@ -61,6 +55,7 @@ LTU <- function(level){
     x1 <- github.mpiktas.covid19lt(level = level)
     x1$id <- id(x1$admin2, iso = "LTU", ds = "github.mpiktas.covid19lt", level = level)
     
+    # use vintage data because recovered disappeared from github.mpiktas.covid19lt
     x2 <- covid19datahub.io(iso = "LTU", level) %>% 
       select(id, date, recovered)
     
@@ -76,10 +71,7 @@ LTU <- function(level){
   #' `r docstring("LTU", 3)`
   #' 
   if(level==3){  
-    #' Due to changes in the original file,  
-    #' - \href{`r repo("covid19datahub.io")`}{COVID-19 Data Hub}  
-    #' now provides historical data, which was previously sourced from:  
-    #'  
+ 
     #' - \href{`r repo("github.mpiktas.covid19lt")`}{Vaidotas Zemlys-Balevicius}:
     #' confirmed cases,
     #' deaths,
@@ -92,6 +84,7 @@ LTU <- function(level){
     x1 <- github.mpiktas.covid19lt(level = level)
     x1$id <- id(x1$admin3, iso = "LTU", ds = "github.mpiktas.covid19lt", level = level)
     
+    # use vintage data because recovered disappeared from github.mpiktas.covid19lt
     x2 <- covid19datahub.io(iso = "LTU", level) %>% 
       select(id, date, recovered)
     

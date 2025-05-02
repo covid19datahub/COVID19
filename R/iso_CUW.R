@@ -24,15 +24,13 @@ CUW <- function(level){
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases.
     #' deaths.
-    x2 <- who.int(level = 1, id = "CW")
+    x2 <- who.int(level, id = "CW")
     x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x3 <- ourworldindata.org(id = "CUW") %>%
       select(-c("tests"))
