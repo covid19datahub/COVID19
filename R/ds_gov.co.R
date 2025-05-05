@@ -50,6 +50,10 @@ gov.co <- function(level){
     mutate(date = as.Date(date)) %>%
     # keep only valid dates
     filter(!is.na(date)) %>%
+    # fix state codes
+    mutate(state_code = ifelse(state_code == 8001, 8, state_code)) %>%
+    mutate(state_code = ifelse(state_code == 13001, 13, state_code)) %>%
+    mutate(state_code = ifelse(state_code == 47001, 47, state_code)) %>%
     # group by city, date, and type of metrics
     group_by(state_code, city_code, date, type) %>%
     # compute the counts for each metric
@@ -70,7 +74,6 @@ gov.co <- function(level){
     if(level==2){
       # confirmed, recovered, deaths
       x <- x.cases %>%
-        filter(!state_code %in% c(13001, 8001, 47001)) %>%
         group_by(date, state_code, type) %>%
         summarise(n = sum(n)) %>%
         group_by(type, state_code) %>%
