@@ -16,7 +16,10 @@ LVA <- function(level){
     #' - \href{`r repo("gov.lv")`}{Center for Disease Prevention and Control}:
     #' confirmed cases,
     #' deaths,
-    #' tests.
+    #' tests,
+    #' hospitalizations,
+    #' intensive care,
+    #' patients requiring ventilation.
     #'
     x1 <- gov.lv(level = level)
     
@@ -25,7 +28,7 @@ LVA <- function(level){
     #'
     x2 <- github.cssegisanddata.covid19(country = "Latvia") %>%
       select(-c("confirmed", "deaths"))
-          
+    
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
@@ -34,12 +37,24 @@ LVA <- function(level){
     #' intensive care.
     #'
     x3 <- ourworldindata.org(id = "LVA") %>%
-      select(-c("tests"))
+      select(-c("tests", "hosp"))
     
+    # use vintage data because hosp data disappeared from ourworldindata.org
+    x4 <- covid19datahub.io(iso = "LVA", level) %>% 
+      select(date, hosp)
+
     # merge
-    x <- x1 %>% 
-      full_join(x2, by = "date") %>%
-      full_join(x3, by = "date")
+    hosp_data <- bind_rows(
+      full_join(
+        filter(x3, date < "2022-02-01") %>% select(date, icu),
+        filter(x4, date < "2022-02-01") %>% select(date, hosp),
+        by = "date"),
+      filter(x1, date >= "2022-02-01") %>% select(date, hosp, icu))
+      
+    x <- full_join(x1, x2, by = "date") %>%
+      full_join(x3, by = "date") %>% 
+      select(-icu.x, -icu.y, - hosp) %>% 
+      full_join(hosp_data, by = "date")
     
   }
   
@@ -56,7 +71,6 @@ LVA <- function(level){
     #'
     x <- gov.lv(level = level)
     x$id <- id(x$atvk, iso = "LVA", ds = "gov.lv", level = level)
-    
   }
   
   return(x)
