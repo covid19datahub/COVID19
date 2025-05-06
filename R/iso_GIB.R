@@ -18,20 +18,27 @@ GIB <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(state = "Gibraltar", level = 2)
+    x1 <- github.cssegisanddata.covid19(country = "United Kingdom", state = "Gibraltar", level = 2)
+    x1 <- x1[x1$date <= "2023-03-10",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x2 <- who.int(level, id = "GI")
+    x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
-    x2 <- ourworldindata.org(id = "GIB")
+    x3 <- ourworldindata.org(id = "GIB")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date")
     
   }
   
