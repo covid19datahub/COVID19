@@ -21,12 +21,9 @@ PSE <- function(level){
     x1 <- github.cssegisanddata.covid19(country = "West Bank and Gaza")
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x2 <- ourworldindata.org(id = "PSE")
     
