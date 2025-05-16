@@ -18,8 +18,18 @@ RKS <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x <- github.cssegisanddata.covid19(country = "Kosovo")
+    x1 <- github.cssegisanddata.covid19(country = "Kosovo")
+    x1 <- x1[x1$date <= "2023-03-10",]
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x2 <- who.int(level, id = "XK") 
+    x2 <- x2[x2$date > "2023-03-10",]
+    
+    # merge
+    x <- bind_rows(x1, x2)
   }
   
   return(x)
