@@ -19,6 +19,14 @@ SVK <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Slovakia")
+    x1 <- x1[x1$date <= "2023-03-10",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' deaths.
+    #' 
+    x2 <- who.int(level, id = "SK") %>% 
+      select(-confirmed)
+    x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
@@ -28,10 +36,11 @@ SVK <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "SVK")
+    x3 <- ourworldindata.org(id = "SVK")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date")
     
   }
   
