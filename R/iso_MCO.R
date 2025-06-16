@@ -23,6 +23,7 @@ MCO <- function(level){
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases.
+    #' 
     x2 <- who.int(level, id = "MC") %>% 
       select(-deaths)
     x2 <- x2[x2$date > "2023-03-10",]

@@ -28,7 +28,6 @@ GGY <- function(level){
     
     # merge
     x <-  full_join(x1, x2, by = "date")
-     
     
   }
   

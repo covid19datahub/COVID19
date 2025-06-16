@@ -32,7 +32,7 @@ AGO <- function(level){
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated..
+    #' people fully vaccinated.
     #'
     x3 <- ourworldindata.org(id = "AGO")
     

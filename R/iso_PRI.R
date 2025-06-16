@@ -24,11 +24,12 @@ PRI <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x2 <- who.int(level = 1, id = "PR")
+    x2 <- who.int(level = level, id = "PR")
     x2 <- x2[x2$date > "2023-03-24",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests.
+    #' 
     x3 <- ourworldindata.org(id = "PRI") %>% 
       select(date, tests)
     

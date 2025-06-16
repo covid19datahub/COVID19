@@ -28,7 +28,8 @@ IRL <- function(level){
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
-    x2 <- who.int(level = 1, id = "IE")
+    #' 
+    x2 <- who.int(level, id = "IE")
     x2 <- x2[x2$date > "2023-11-14",]
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:

@@ -27,6 +27,7 @@ AZE <- function(level){
     #'
     x2 <- who.int(level, id = "AZ")
     x2 <- x2[x2$date > "2023-03-10",]
+    
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,

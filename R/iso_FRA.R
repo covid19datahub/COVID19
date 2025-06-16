@@ -35,7 +35,8 @@ FRA <- function(level){
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
-    x3 <- who.int(level = 1, id = "FR")
+    #' 
+    x3 <- who.int(level, id = "FR")
     x3 <- x3[x3$date > "2023-03-10",]
     
     # merge

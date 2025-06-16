@@ -17,7 +17,7 @@ MNP <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x1 <- who.int(level = 1, id = "MP")
+    x1 <- who.int(level = level, id = "MP")
     
     #' - \href{`r repo("sprep.org")`}{Secretariat of the Pacific Regional Environment Programme}:
     #' total vaccine doses administered,

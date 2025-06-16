@@ -24,6 +24,7 @@ MDA <- function(level){
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
+    #' 
     x2 <- who.int(level, id = "MD") 
     x2 <- x2[x2$date > "2023-03-10",]
     

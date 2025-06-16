@@ -17,7 +17,7 @@ GUM <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x1 <- who.int(level = 1, id = "GU")
+    x1 <- who.int(level, id = "GU")
     
     #' - \href{`r repo("sprep.org")`}{Secretariat of the Pacific Regional Environment Programme}:
     #' total vaccine doses administered,
@@ -29,6 +29,7 @@ GUM <- function(level){
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests.
+    #' 
     x3 <- ourworldindata.org(id = "GUM") %>% 
       select(date, tests)
     

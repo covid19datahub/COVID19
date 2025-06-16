@@ -27,7 +27,8 @@ PER <- function(level){
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
-    x2 <- who.int(level = 1, id = "PE")
+    #' 
+    x2 <- who.int(level = level, id = "PE")
     x2 <- x2[x2$date > "2022-04-05",]
     
     #' - \href{`r repo("gob.pe")`}{Ministerio de Salud}:

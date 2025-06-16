@@ -28,7 +28,7 @@ HRV <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x2 <- who.int(level = 1, id = "HR")
+    x2 <- who.int(level, id = "HR")
     x2 <- x2[x2$date > "2023-11-27",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:

@@ -25,7 +25,7 @@ PAK <- function(level){
     #' confirmed cases,
     #' deaths.
     #' 
-    x2 <- who.int(level = 1, id = "PK")
+    x2 <- who.int(level = level, id = "PK")
     x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:

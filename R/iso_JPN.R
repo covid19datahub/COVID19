@@ -30,11 +30,13 @@ JPN <- function(level){
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
+    #' 
     x2 <- who.int(level = level, id = "JP") %>% 
       filter(date > "2023-05-08")
     
-    #merge 
+    # merge 
     x <- bind_rows(x1, x2)
+    
   }
   
   #' @concept Level 2

@@ -27,10 +27,10 @@ CHL <- function(level){
     #'
     x1 <- github.minciencia.datoscovid19(level = level)
 
-    
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
+    #' 
     x2 <- who.int(level, id = "CL")
     x2 <- x2[x2$date > "2023-08-31",]
     
