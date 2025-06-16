@@ -29,12 +29,12 @@ STP <- function(level){
     x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
+    #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    x3 <- ourworldindata.org(id = "STP") %>%
-      select(-c("tests"))
+    x3 <- ourworldindata.org(id = "STP")
     
     # merge
     x <- bind_rows(x1, x2) %>%

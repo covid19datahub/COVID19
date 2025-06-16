@@ -15,10 +15,10 @@ NIC <- function(level){
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' confirmed cases,
-    #' deaths.
+    #' deaths,
+    #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(country = "Nicaragua") %>%
-      select(-c("recovered"))
+    x1 <- github.cssegisanddata.covid19(country = "Nicaragua")
     x1 <- x1[x1$date <= "2023-03-10",]
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
