@@ -28,7 +28,7 @@ CHE <- function(level){
     # use vintage data because the type "COVID19FullyVaccPersons" 
     # in the vacc file from admin.ch is no longer available
     x2 <- covid19datahub.io(iso = "CHE", level) %>% 
-      select(date, people_fully_vaccinated)
+      select(c("date", "people_fully_vaccinated"))
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
