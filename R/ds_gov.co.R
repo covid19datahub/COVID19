@@ -72,6 +72,7 @@ gov.co <- function(level){
     }
   
     if(level==2){
+      
       # confirmed, recovered, deaths
       x <- x.cases %>%
         group_by(date, state_code, type) %>%
@@ -80,18 +81,10 @@ gov.co <- function(level){
         arrange(date) %>%
         mutate(n = cumsum(n)) %>%
         pivot_wider(id_cols = c("date", "state_code"), names_from = "type", values_from = "n")
-      
-      # map code to state       
-      db <- extdata("db/COL.csv")
-      
-      idx <- which(db$administrative_area_level==2)
-      map <- db$id_gov.co[idx]
-      names(map) <- as.integer(db$key_local[idx])
-      x$state <- map_values(x$state_code, map = map)
-    
-  }
+    }
   
   if(level==3){
+    
     # confirmed, recovered, deaths
     x <- x.cases %>%
       group_by(type, city_code) %>%

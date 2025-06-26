@@ -48,7 +48,7 @@ COL <- function(level){
     #' tests.
     #'
     x1 <- gov.co(level = level)
-    x1$id <- id(x1$state, iso = "COL", ds = "gov.co", level = level)
+    x1$id <- id(x1$state_code, iso = "COL", ds = "gov.co", level = level)
     
     # use vintage data because gov.co file with antigen tests is empty
     x2 <- covid19datahub.io(iso = "COL", level) %>% 
