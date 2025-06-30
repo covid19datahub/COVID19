@@ -44,6 +44,7 @@ jobs:
         run: |
           install.packages("DT")
           install.packages("remotes")
+          remotes::install_version("systemfonts", version = "1.1.0")
           remotes::install_version("pkgdown", version = "1.6.1")
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
