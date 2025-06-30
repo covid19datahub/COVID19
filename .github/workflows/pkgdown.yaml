@@ -40,11 +40,13 @@ jobs:
       - name: Install HarfBuzz
         run: sudo apt-get install -y libharfbuzz-dev
 
+      - name: Install libfontconfig1
+        run: sudo apt-get install -y libfontconfig1-dev
+
       - name: Install dependencies
         run: |
           install.packages("DT")
           install.packages("remotes")
-          remotes::install_version("systemfonts", version = "1.1.0")
           remotes::install_version("pkgdown", version = "1.6.1")
           remotes::install_deps(dependencies = TRUE)
         shell: Rscript {0}
