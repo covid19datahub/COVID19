@@ -112,6 +112,7 @@ By using COVID-19 Data Hub, you agree to our [terms of use](https://covid19datah
 <img height="96" src="man/figures/hec-montreal.jpg" alt="HEC Montréal" style="display:inline-block;margin-right:8px" />
 <img height="96" src="man/figures/hackzurich.jpeg" alt="Hack Zurich" style="display:inline-block;margin-right:8px" />
 <img height="96" src="man/figures/unimi.jpg" alt="Università degli Studi di Milano" style="display:inline-block;margin-right:8px" />
+<img height="96" src="man/figures/usi.png" alt="University of Lugano" style="display:inline-block;margin-right:8px" />
 </div>
 
 

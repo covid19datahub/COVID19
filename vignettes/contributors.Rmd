@@ -7,6 +7,11 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
+Special mention:
+
+- [Martin Benes](https://www.linkedin.com/in/martinbenes1996/) is the author of the [`covid19dh`](https://pypi.org/project/covid19dh/) Python package.
+- [Viktoriia Tantsiura](https://www.linkedin.com/in/viktan/) was responsible for updating all the data pipelines in 2025.
+
 The following people are gratefully acknowledged for taking part in the data collection. The names are in alphabetical order, to view individual contributions click [here](https://github.com/covid19datahub/COVID19/graphs/contributors).
 
 - [Baby Rijin](https://github.com/rijinbaby)
