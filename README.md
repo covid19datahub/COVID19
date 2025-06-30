@@ -102,7 +102,7 @@ A BibTeX entry for LaTeX users is:
 
 ## Terms of use
 
-By using COVID-19 Data Hub, you agree to our [terms of use](https://covid19datahub.io/LICENSE.html).
+By using COVID-19 Data Hub, you agree to our [terms of use](https://covid19datahub.io/LICENSE.html). 
 
 ## Supported by 
 
