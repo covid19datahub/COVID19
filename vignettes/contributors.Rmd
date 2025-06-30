@@ -30,6 +30,7 @@ The following people are gratefully acknowledged for taking part in the data col
 - [Montemurro Paolo](https://github.com/montemurroPaolo)
 - [Pengatkundil Muhammed](https://github.com/muhammedseehan-commits)
 - [Rosca Robert](https://github.com/RobertRosca)
+- [Tantsiura Viktoriia](https://github.com/ViktoriiaTan)
 - [Yuan Zhou](https://github.com/yuanzhouIR)
 
 `r gsub("^# ", "## ", readr::read_file('../LICENSE.md'))`
