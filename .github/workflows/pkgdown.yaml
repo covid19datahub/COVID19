@@ -40,8 +40,8 @@ jobs:
       - name: Install HarfBuzz
         run: sudo apt-get install -y libharfbuzz-dev
 
-      - name: Install libfontconfig1
-        run: sudo apt-get install -y libfontconfig1-dev
+      - name: Install additional libs
+        run: sudo apt-get install -y libfontconfig1-dev libtiff-dev
 
       - name: Install dependencies
         run: |
