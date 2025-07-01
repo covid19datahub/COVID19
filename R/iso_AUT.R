@@ -27,6 +27,9 @@ AUT <- function(level){
     
     # use vintage data because most of the files form gv.at are not available
     x1 <- covid19datahub.io(iso = "AUT", level)
+    x1 <- x1[x1$date <= "2023-04-30",]
+    # fix vintage hosp by summing previous hosp (normal wards) with icu
+    x1$hosp <- x1$hosp + x1$icu
     
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
@@ -62,6 +65,8 @@ AUT <- function(level){
     
     # use vintage data because most of the files form gv.at are not available
     x <- covid19datahub.io(iso = "AUT", level)
+    # fix vintage hosp by summing previous hosp (normal wards) with icu
+    x$hosp <- x$hosp + x$icu
     
   }
   
