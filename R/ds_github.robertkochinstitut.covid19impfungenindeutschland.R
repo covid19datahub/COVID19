@@ -121,15 +121,13 @@ github.robertkochinstitut.covid19impfungenindeutschland <- function(level){
     x.vacc  <- x.vacc %>%
       # remove undefined region
       filter(id_state!=17) %>%
-      # create oneshot column
-      mutate(is_oneshot = type=="Janssen") %>%
       # for each date and region
       group_by(date, id_state) %>%
       # compute total doses and people vaccinated
       summarise(
         vaccines = sum(n),
         people_vaccinated = sum(n[dose==1]),
-        people_fully_vaccinated = sum(n[(dose==1 & is_oneshot) | (dose==2 & !is_oneshot)])) %>%
+        people_fully_vaccinated = sum(n[dose==2])) %>%
       # group by region
       group_by(id_state) %>%
       # sort by date
