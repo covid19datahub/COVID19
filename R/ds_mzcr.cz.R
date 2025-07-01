@@ -45,19 +45,11 @@ mzcr.cz <- function(level){
   # format
   x.vacc <- map_data(x.vacc, c(
     "datum" = "date",
-    "vakcina" = "type",
     "kraj_nuts_kod" = "nuts",
-    "prvnich_davek" = "first",
-    "druhych_davek" = "second"
+    "prvnich_davek" = "people_vaccinated",
+    "druhych_davek" = "people_fully_vaccinated",
+    "celkem_davek" = "vaccines"
   ))
-  
-  # compute total doses and people vaccinated  
-  x.vacc <- x.vacc %>%
-    mutate(
-      is_oneshot = type=="COVID-19 Vaccine Janssen",
-      vaccines = first + second,
-      people_vaccinated = first,
-      people_fully_vaccinated = first*is_oneshot + second*(!is_oneshot))
   
   if(level==1){
     
