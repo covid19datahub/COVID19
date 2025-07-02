@@ -13,40 +13,34 @@ DNK <- function(level){
   #' 
   if(level==1){
     
-    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' - \href{`r repo("ssi.dk")`}{Statens Serum Institut}:
     #' confirmed cases,
     #' deaths,
+    #' tests,
+    #' people with at least one vaccine dose,
+    #' people fully vaccinated,
+    #' hospitalizations.
+    #'
+    x1 <- ssi.dk(level = level)
+    
+    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(country = "Denmark")
-    x1 <- x1[x1$date <= "2023-03-10",]
-    
+    x2 <- github.cssegisanddata.covid19(country = "Denmark") %>%
+      select(date, recovered) %>%
+      filter(date <= "2023-10-24")
+
     #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
     #' 
-    x2 <- who.int(level, id = "DK")
-    x2 <- x2[x2$date > "2023-03-10",]
+    x3 <- who.int(level, id = "DK")
+    x3 <- x3[x3$date > "2023-10-24",]
     
-    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
-    #' total vaccine doses administered,
-    #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
-    #'
-    x3 <- ourworldindata.org(id = "DNK") %>% 
-      select(date, tests, hosp, icu)
-    
-    # use vintage data because some daily data from ourworldindata.org is no longer available
-    x4 <- covid19datahub.io(iso = "DNK", level) %>% 
-      select(date, vaccines, people_vaccinated, people_fully_vaccinated)
-   
     # merge
-    x <- bind_rows(x1, x2) %>%
-      full_join(x3, by = "date") %>% 
-      full_join(x4, by = "date")
+    x <- full_join(x1, x2, by = "date") %>%
+      bind_rows(x3)
+    
   }
   
   #' @concept Level 2
@@ -56,6 +50,7 @@ DNK <- function(level){
   #' `r docstring("DNK", 2)`
   #' 
   if(level==2){
+    
     #' - \href{`r repo("ssi.dk")`}{Statens Serum Institut}:
     #' confirmed cases,
     #' deaths,
