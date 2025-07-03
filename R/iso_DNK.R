@@ -17,6 +17,7 @@ DNK <- function(level){
     #' confirmed cases,
     #' deaths,
     #' tests,
+    #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated,
     #' hospitalizations.
