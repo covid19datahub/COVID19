@@ -24,31 +24,13 @@ gov.tw <- function(level) {
   
   # format cases
   x <- x[,-1]
-  colnames(x) <- c("date", "county", "city", "gender", "imported", "age_group", "confirmed")
+  colnames(x) <- c("date", "county", "city", "gender", "imported", "age_group", "confirmed",
+                   "county_code", "city_code")
   
   # convert date
-  x$date <- as.Date(x$date, "%Y/%m/%d")
+  x$date <- as.Date(x$date)
 
   if(level == 1) {
-    
-    # download tests
-    # see https://data.gov.tw/dataset/120451
-    url.tests <- "https://od.cdc.gov.tw/eic/covid19/covid19_tw_specimen.csv"
-    x.tests   <- read.csv(url.tests, encoding = "UTF-8")
-    
-    # format tests
-    colnames(x.tests) <- c("date", "notification", "home quarantine", "monitoring", "total")
-    x.tests <- x.tests %>%
-      # convert date
-      mutate(date  = as.Date(date, "%Y/%m/%d")) %>%
-      # sort by date
-      arrange(date) %>%
-      # cumulate
-      mutate(tests = cumsum(total)) %>%
-      # subset
-      select(date, tests) %>%
-      # drop missing values
-      filter(!is.na(tests))
     
     # cases
     x <- x %>% 
@@ -60,9 +42,6 @@ gov.tw <- function(level) {
       arrange(date) %>%
       # cumulate
       mutate(confirmed = cumsum(confirmed))
-      
-    # merge
-    x <- full_join(x, x.tests, by = "date")
     
   }
   
@@ -73,7 +52,7 @@ gov.tw <- function(level) {
 
     # cases
     x <- x %>% 
-      # for each date and countr
+      # for each date and county
       group_by(date, county) %>%
       # compute total counts
       summarise(confirmed = sum(confirmed)) %>%

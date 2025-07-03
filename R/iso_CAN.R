@@ -12,15 +12,16 @@ CAN <- function(level){
   #' `r docstring("CAN", 1)`
   #' 
   if(level==1){
-    
+
     #' - \href{`r repo("canada.ca")`}{Public Health Agency of Canada}:
     #' confirmed cases,
     #' deaths,
+    #' recovered,
     #' tests.
     #'
     x1 <- canada.ca(level = level) %>%
       select(-c("vaccines", "people_vaccinated", "people_fully_vaccinated"))
-    
+
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
@@ -30,7 +31,7 @@ CAN <- function(level){
     #'
     x2 <- ourworldindata.org(id = "CAN") %>%
       select(-c("tests"))
-    
+
     # merge
     x <- full_join(x1, x2, by = "date")
     

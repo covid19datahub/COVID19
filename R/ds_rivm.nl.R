@@ -24,7 +24,7 @@ rivm.nl <- function(level) {
   if(!level %in% 1:3) return(NULL)
 
   # download
-  url <- "https://data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_per_dag.csv"
+  url <- "https://data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_cumulatief.csv"
   x   <- read.csv(url, sep = ";")
   
   # format
@@ -36,10 +36,15 @@ rivm.nl <- function(level) {
     "Total_reported"      = "confirmed",
     "Deceased"            = "deaths")) 
   
+  # set placeholder value of 9999 as NA
+  x <- x %>%
+    mutate(deaths = ifelse(deaths == 9999, NA, deaths)) 
+  
   # sanitize
   x$date <- as.Date(x$date)
   x$province <- trimws(x$province)
-  x$municipality <- trimws(x$municipality)
+  x$province[x$province == "Friesland"] <- "Fryslân"
+  x$municipality <- trimws(x$municipality) 
   
   # group by
   if(level == 1){
@@ -61,15 +66,7 @@ rivm.nl <- function(level) {
     # compute total counts
     dplyr::summarise(
       confirmed = sum(confirmed),
-      deaths    = sum(deaths)) %>%
-    # group by area
-    dplyr::group_by_at(by[-1]) %>%
-    # sort by date
-    dplyr::arrange(date) %>%
-    # cumulate
-    dplyr::mutate(
-      confirmed = cumsum(confirmed),
-      deaths    = cumsum(deaths))
+      deaths    = sum(deaths))
   
   return(x)
 }

@@ -17,7 +17,18 @@ SWE <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x1 <- arcgis.se(level = level)
+    
+    # use vintage data because arcgis.se restricted access to the data (not available)
+    x1 <- covid19datahub.io(iso = "SWE", level) %>% 
+      select(date, confirmed, deaths) %>% 
+     filter(date <= "2023-03-22")
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x2 <- who.int(level, id = "SE") %>% 
+      filter(date > "2023-03-22")
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
@@ -27,10 +38,11 @@ SWE <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "SWE")
+    x3 <- ourworldindata.org(id = "SWE")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>% 
+      full_join(x3, by = "date")
     
   }
   
@@ -45,8 +57,10 @@ SWE <- function(level){
     #' - \href{`r repo("arcgis.se")`}{Public Health Agency of Sweden}:
     #' confirmed cases.
     #'
-    x <- arcgis.se(level = level)
-    x$id <- id(x$state, iso = "SWE", ds = "arcgis.se", level = level) 
+    
+    # use vintage data because arcgis.se restricted access to the data (not available)
+    x <- covid19datahub.io(iso = "SWE", level) %>% 
+      select(id, date, confirmed)
     
   }
   

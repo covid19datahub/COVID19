@@ -44,13 +44,20 @@ sciensano.be <- function(level){
   if(!level %in% 1:3) return(NULL)
   
   # download
-  url <- "https://epistat.sciensano.be/Data/COVID19BE.xlsx"
-  x   <- read.excel(url, sheet = c(
-    "CASES_AGESEX", "CASES_MUNI_CUM", "HOSP", "MORT", "TESTS",         
-    "VACC", "VACC_MUNI_CUM_1", "VACC_MUNI_CUM_2", "VACC_MUNI_CUM_3"       
-  ))  
+  # see https://epistat.sciensano.be/covid/
+  urls <- c(
+    cases      = "https://epistat.sciensano.be/Data/COVID19BE_CASES_AGESEX.csv",
+    mort       = "https://epistat.sciensano.be/Data/COVID19BE_MORT.csv",
+    tests      = "https://epistat.sciensano.be/Data/COVID19BE_tests.csv", 
+    vacc       = "https://epistat.sciensano.be/Data/COVID19BE_VACC.csv", 
+    cases_muni = "https://epistat.sciensano.be/Data/COVID19BE_CASES_MUNI.csv", 
+    vacc_muni  = "https://epistat.sciensano.be/data/COVID19BE_VACC_MUNI_CUM.csv",
+    hosp       = "https://epistat.sciensano.be/Data/COVID19BE_HOSP.csv"
+  )
+
+  x <- lapply(urls, read.csv)
   
-  # convert date in all the excel sheets
+  # convert date 
   x <- lapply(x, function(x){
     if("DATE" %in% colnames(x)){
       x$date <- as.Date(x$DATE)
@@ -65,29 +72,30 @@ sciensano.be <- function(level){
   if(level==1){
     
     # confirmed
-    confirmed <- x$CASES_AGESEX %>% 
+    confirmed <- x[["cases"]] %>% 
       group_by(date) %>% 
       summarise(confirmed = sum(CASES)) %>%
       arrange(date) %>%
       mutate(confirmed = cumsum(confirmed))
     
     # hosp
-    hosp <- x$HOSP %>%
+    hosp <- x[["hosp"]] %>%
       group_by(date) %>%
       summarise(
-        hosp = sum(TOTAL_IN),
-        icu  = sum(TOTAL_IN_ICU),
-        vent = sum(TOTAL_IN_RESP))
+        hosp = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN))),
+        icu = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN_ICU))),
+        vent = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN_RESP)))
+      )
     
     # deaths
-    deaths <- x$MORT %>%
+    deaths <- x[["mort"]] %>%
       group_by(date) %>%
       summarise(deaths = sum(DEATHS)) %>%
       arrange(date) %>%
       mutate(deaths = cumsum(deaths))
     
     # tests 
-    tests <- x$TESTS %>%
+    tests <- x[["tests"]] %>%
       group_by(date) %>%
       summarise(tests = sum(TESTS_ALL)) %>%
       arrange(date) %>%
@@ -99,7 +107,8 @@ sciensano.be <- function(level){
     # - E for extra dose of vaccine administered since the 9th of September 2021
     # We use A+C to compute people_vaccinated and B+C to compute people_fully_vaccinated.
     # See https://epistat.sciensano.be/COVID19BE_codebook.pdf
-    vaccines <- x$VACC %>%
+    
+    vaccines <- x[["vacc"]] %>%
       group_by(date) %>%
       summarise(
         vaccines = sum(COUNT),
@@ -123,7 +132,7 @@ sciensano.be <- function(level){
   if(level==2){
     
     # confirmed
-    confirmed <- x$CASES_AGESEX %>%
+    confirmed <- x[["cases"]] %>%
       filter(!is.na(REGION)) %>%
       group_by(date, REGION) %>% 
       summarise(confirmed = sum(CASES)) %>%
@@ -132,16 +141,17 @@ sciensano.be <- function(level){
       mutate(confirmed = cumsum(confirmed))
     
     # hosp
-    hosp <- x$HOSP %>%
+    hosp <- x[["hosp"]] %>%
       filter(!is.na(REGION)) %>%
       group_by(date, REGION) %>%
       summarise(
-        hosp = sum(TOTAL_IN),
-        icu  = sum(TOTAL_IN_ICU),
-        vent = sum(TOTAL_IN_RESP))
+      hosp = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN))),
+      icu = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN_ICU))),
+      vent = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN_RESP)))
+      )
     
     # deaths
-    deaths <- x$MORT %>%
+    deaths <- x[["mort"]] %>%
       filter(!is.na(REGION)) %>%
       group_by(date, REGION) %>%
       summarise(deaths = sum(DEATHS)) %>%
@@ -150,7 +160,7 @@ sciensano.be <- function(level){
       mutate(deaths = cumsum(deaths))
     
     # tests
-    tests <- x$TESTS %>%
+    tests <- x[["tests"]] %>%
       filter(!is.na(REGION)) %>%
       group_by(date, REGION) %>%
       summarise(tests = sum(TESTS_ALL)) %>%
@@ -164,7 +174,7 @@ sciensano.be <- function(level){
     # - E for extra dose of vaccine administered since the 9th of September 2021
     # We use A+C to compute people_vaccinated and B+C to compute people_fully_vaccinated.
     # See https://epistat.sciensano.be/COVID19BE_codebook.pdf
-    vaccines <- x$VACC %>%
+    vaccines <- x[["vacc"]] %>%
       filter(!is.na(REGION)) %>%
       group_by(date, REGION) %>%
       summarise(
@@ -191,7 +201,7 @@ sciensano.be <- function(level){
   if(level==3){
     
     # confirmed
-    confirmed <- x$CASES_AGESEX %>%
+    confirmed <- x[["cases"]] %>%
       filter(!is.na(REGION) & !is.na(PROVINCE)) %>%
       group_by(date, REGION, PROVINCE) %>% 
       summarise(confirmed = sum(CASES)) %>%
@@ -200,16 +210,17 @@ sciensano.be <- function(level){
       mutate(confirmed = cumsum(confirmed))
     
     # hosp
-    hosp <- x$HOSP %>%
+    hosp <- x[["hosp"]] %>%
       filter(!is.na(REGION) & !is.na(PROVINCE)) %>%
       group_by(date, REGION, PROVINCE) %>%
       summarise(
-        hosp = sum(TOTAL_IN),
-        icu  = sum(TOTAL_IN_ICU),
-        vent = sum(TOTAL_IN_RESP))
+        hosp = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN))),
+        icu = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN_ICU))),
+        vent = sum(as.numeric(gsub("[^0-9.-]", "", TOTAL_IN_RESP)))
+      )
     
     # tests
-    tests <- x$TESTS %>%
+    tests <- x[["tests"]] %>%
       filter(!is.na(REGION) & !is.na(PROVINCE)) %>%
       group_by(date, REGION, PROVINCE) %>%
       summarise(tests = sum(TESTS_ALL)) %>%
@@ -223,7 +234,8 @@ sciensano.be <- function(level){
     # - E for extra dose of vaccine administered since the 9th of September 2021
     # We use A+C to compute people_vaccinated and B+C to compute people_fully_vaccinated.
     # See https://epistat.sciensano.be/COVID19BE_codebook.pdf
-    vaccines <- bind_rows(x$VACC_MUNI_CUM_1, x$VACC_MUNI_CUM_2, x$VACC_MUNI_CUM_3) %>%
+  
+    vaccines <- x[["vacc_muni"]] %>%
       filter(CUMUL!="<10") %>%
       mutate(
         NIS5 = as.character(NIS5),
@@ -233,7 +245,15 @@ sciensano.be <- function(level){
         YEAR = as.integer(paste0("20", substr(YEAR_WEEK, 0, 2))),
         WEEK = as.integer(substr(YEAR_WEEK, 4, 6)),
         date = MMWRweek::MMWRweek2Date(YEAR, WEEK)+7) %>%
-      left_join(x$CASES_MUNI_CUM, by = "NIS5") %>%
+      left_join(x[["cases_muni"]] %>%
+          select(NIS5, REGION, PROVINCE) %>%
+          group_by(NIS5) %>%
+          summarise(
+            REGION = first(REGION),
+            PROVINCE = first(PROVINCE),
+            .groups = 'drop'
+          ), 
+        by = "NIS5") %>%
       filter(!is.na(REGION) & !is.na(PROVINCE)) %>%
       group_by(date, REGION, PROVINCE) %>%
       summarise(

@@ -19,19 +19,32 @@ OMN <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Oman")
+    x1 <- x1[x1$date <= "2023-03-10",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases.
+    #' 
+    x2 <- who.int(level, id = "OM") %>% 
+      select(-deaths)
+    x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
-    x2 <- ourworldindata.org(id = "OMN")
+    x3 <- ourworldindata.org(id = "OMN") %>% 
+      select(-people_vaccinated)
+    
+    # use vintage data because part of people_vaccinated data from ourworldindata.org is no longer available
+    x4 <- covid19datahub.io(iso = "OMN", level) %>% 
+      select(date, people_vaccinated)
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date") %>% 
+      full_join(x4, by = "date")
     
   }
   

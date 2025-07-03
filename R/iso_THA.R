@@ -12,12 +12,12 @@ THA <- function(level){
   #' `r docstring("THA", 1)`
   #' 
   if(level==1){
-    
-    #' - \href{`r repo("go.th")`}{Department of Disease Control, Thailand Ministry of Public Health}:
+
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
     #' deaths.
-    #'
-    x1 <- go.th(level = level)
+    #' 
+    x1 <- who.int(level, id = "TH")
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' recovered.
@@ -29,15 +29,12 @@ THA <- function(level){
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x3 <- ourworldindata.org(id = "THA")
     
     # merge
-    x <- x1 %>%
-      full_join(x2, by = "date") %>%
+    x <- full_join(x1, x2, by = "date") %>%
       full_join(x3, by = "date")
     
   }
@@ -54,9 +51,16 @@ THA <- function(level){
     #' confirmed cases,
     #' deaths.
     #'
-    x <- go.th(level = level)
-    x$id <- id(x$province, iso = "THA", ds = "go.th", level = level)
+    x1 <- go.th(level = level) %>% 
+      filter(date >= "2022-09-20") # last day of vintage data
+    x1$id <- id(x1$province, iso = "THA", ds = "go.th", level = level) 
     
+    # use vintage data because daily data was removed from updated go.th 
+    x2 <- covid19datahub.io(iso = "THA", level) %>% 
+      select(id, date, confirmed, deaths)
+    
+    # merge
+    x <- bind_rows(x1, x2)
   }
   
   return(x)

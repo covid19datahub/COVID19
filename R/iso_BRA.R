@@ -20,8 +20,17 @@ BRA <- function(level, ...){
     #' tests,
     #' total vaccine doses administered.
     #'
-    x <- github.wcota.covid19br(level = level)
-   
+    x1 <- github.wcota.covid19br(level = level)
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #'
+    x2 <- who.int(level, id = "BR")
+    x2 <- x2[x2$date > "2023-03-31",]
+    
+    # merge
+    x <- bind_rows(x1, x2)
   }
   
   #' @concept Level 2

@@ -56,9 +56,10 @@ gv.at <- function(level){
       "Bundesland"   = "state",
       "BundeslandID" = "state_id",
       "TestGesamt"   = "tests",
-      "NormalBettenBelCovid19"   = "hosp",
+      "NormalBettenBelCovid19"   = "normal",
       "IntensivBettenBelCovid19" = "icu"
     )) 
+    x.hosp$hosp <- x.hosp$normal + x.hosp$icu
     
     # import cases
     x.cases <- read.csv(url.cases, sep = ";")

@@ -19,6 +19,14 @@ ISL <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Iceland")
+    x1 <- x1[x1$date <= "2023-03-10",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases.
+    #' 
+    x2 <- who.int(level, id = "IS") %>% 
+      select(-deaths)
+    x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
@@ -28,10 +36,17 @@ ISL <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "ISL")
+    x3 <- ourworldindata.org(id = "ISL") %>% 
+      select(-hosp, -icu)
+    
+    # use vintage data because hosp, icu  data from ourworldindata.org are no longer available
+    x4 <- covid19datahub.io(iso = "ISL", level) %>% 
+      select(date, hosp, icu)
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date") %>%
+      full_join(x4, by = "date")
     
   }
   

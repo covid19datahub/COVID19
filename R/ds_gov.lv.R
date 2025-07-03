@@ -8,6 +8,9 @@
 #' - confirmed cases
 #' - deaths
 #' - tests
+#' - hospitalizations
+#' - intensive care
+#' - patients requiring ventilation
 #'
 #' @section Level 3:
 #' - confirmed cases
@@ -23,7 +26,7 @@ gov.lv <- function(level){
     
     # cases
     # see https://data.gov.lv/dati/eng/dataset/covid-19
-    url <- 'https://data.gov.lv/dati/dataset/f01ada0a-2e77-4a82-8ba2-09cf0cf90db3/resource/d499d2f0-b1ea-4ba2-9600-2c701b03bd4a/download/covid_19_izmeklejumi_rezultati.csv'
+    url <- 'https://data.gov.lv/dati/dataset/f01ada0a-2e77-4a82-8ba2-09cf0cf90db3/resource/b3d80efc-8ff8-4ddb-a42c-9438a6a2455c/download/covid_19_izmeklejumi_rezultati.csv'
     x <- read.csv(url, sep = ";")
     
     # format cases
@@ -41,7 +44,31 @@ gov.lv <- function(level){
     
     # convert date
     x$date <- as.Date(x$date, format="%Y.%m.%d.")
+   
+    # hosp
+    url_hosp <- "https://data.gov.lv/dati/dataset/cbd91f16-0d67-465b-b89b-d315c9358c77/resource/b5530ed7-fdd2-475f-a953-e267d0c10755/download/covidpatients.csv"
+    x.hosp <- read.csv(url_hosp, sep = ";")
     
+    x.hosp <- map_data(x.hosp, c(
+      'Datums' = "date",
+      'Kopā' = 'hosp',
+      'Smaga.slimības.gaita' = 'icu',
+      't.sk..Invazīva.MPV' = 'vent'
+    ))
+    
+    # convert date
+    x.hosp$date <- as.Date(x.hosp$date)
+    
+    # sum
+    x.hosp <- x.hosp %>%
+      group_by(date) %>%
+      summarise(hosp = sum(hosp, na.rm = TRUE),
+                vent = sum(vent, na.rm = TRUE),
+                icu = sum(icu, na.rm = TRUE))
+    
+    # merge
+    x <- full_join(x, x.hosp, by = "date")
+
   }
   
   if(level==3){

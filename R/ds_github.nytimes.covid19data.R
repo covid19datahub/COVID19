@@ -29,7 +29,7 @@ github.nytimes.covid19data <- function(level, fips = NULL){
   files <- list(
     '1' = "us.csv", 
     '2' = "us-states.csv", 
-    '3' = sprintf("us-counties-%s.csv", 2020:as.integer(format(Sys.Date(), "%Y")))
+    '3' = sprintf("us-counties-%s.csv", 2020:2023)
   )
   
   # build url

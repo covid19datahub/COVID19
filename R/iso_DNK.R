@@ -13,26 +13,35 @@ DNK <- function(level){
   #' 
   if(level==1){
     
-    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' - \href{`r repo("ssi.dk")`}{Statens Serum Institut}:
     #' confirmed cases,
     #' deaths,
-    #' recovered.
-    #'
-    x1 <- github.cssegisanddata.covid19(country = "Denmark")
-    
-    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' hospitalizations.
     #'
-    x2 <- ourworldindata.org(id = "DNK")
-   
+    x1 <- ssi.dk(level = level)
+    
+    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' recovered.
+    #'
+    x2 <- github.cssegisanddata.covid19(country = "Denmark") %>%
+      select(date, recovered) %>%
+      filter(date <= "2023-10-24")
+
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x3 <- who.int(level, id = "DK")
+    x3 <- x3[x3$date > "2023-10-24",]
+    
     # merge
-    x <- full_join(x1, x2, by = "date")
-     
+    x <- full_join(x1, x2, by = "date") %>%
+      bind_rows(x3)
+    
   }
   
   #' @concept Level 2
@@ -53,7 +62,7 @@ DNK <- function(level){
     #'
     x <- ssi.dk(level = level)
     x$id <- id(x$region, iso = "DNK", ds = "ssi.dk", level = level)
-    
+
   }
   
   #' @concept Level 3

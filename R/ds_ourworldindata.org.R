@@ -82,6 +82,14 @@ ourworldindata.org <- function(level = 1, id = NULL){
     
   }
   
+  # remove duplicated dates
+  if (any(duplicated(x$date))) {
+    x <- x %>%
+      group_by(date) %>%
+      arrange(desc(rowSums(!is.na(.)))) %>%
+      filter(row_number() == 1)
+  }
+  
   # date
   x$date <- as.Date(x$date)
   

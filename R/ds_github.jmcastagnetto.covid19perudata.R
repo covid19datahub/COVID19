@@ -80,7 +80,10 @@ github.jmcastagnetto.covid19perudata <- function(level) {
         x.icu$date <- as.Date(x.icu$date)
         
         # select national level cases
-        x.cases <- x.cases[is.na(x.cases$id),]
+        x.cases <- x.cases[is.na(x.cases$region),]
+        
+        # set to NA: invalid cumulative value
+        x.cases$deaths[x.cases$date == "2022-04-01"]  <- NA
         
         # merge
         x <- x.cases %>%
@@ -94,9 +97,9 @@ github.jmcastagnetto.covid19perudata <- function(level) {
         # cases
         x <- x.cases %>%
             # drop national level cases
-            filter(!is.na(id)) %>%
+            filter(!is.na(region)) %>%
             # group by date and region
-            dplyr::group_by(date, id) %>%
+            dplyr::group_by(date, region) %>%
             # compute total counts
             dplyr::summarise(
                 confirmed = sum(confirmed),

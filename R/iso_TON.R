@@ -12,21 +12,17 @@ TON <- function(level){
   #' `r docstring("TON", 1)`
   #' 
   if(level==1){
-    
-    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
-    #' deaths,
-    #' recovered.
-    #'
-    x1 <- github.cssegisanddata.covid19(country = "Tonga")
+    #' deaths.
+    #' 
+    x1 <- who.int(level, id = "TO")
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x2 <- ourworldindata.org(id = "TON")
     

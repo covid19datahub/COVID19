@@ -13,22 +13,18 @@ FSM <- function(level){
   #' 
   if(level==1){
     
-    #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
     #' confirmed cases,
-    #' deaths,
-    #' recovered.
-    #'
-    x1 <- github.cssegisanddata.covid19(country = "Micronesia")
-    
-    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
+    #' deaths.
+    #' 
+    x1 <- who.int(level, id = "FM")
+
+    #' - \href{`r repo("sprep.org")`}{Secretariat of the Pacific Regional Environment Programme}:
     #' total vaccine doses administered,
-    #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people vaccinated,
+    #' people fully vaccinated.
     #'
-    x2 <- ourworldindata.org(id = "FSM")
+    x2 <- sprep.org(id = "FM")
     
     # merge
     x <- full_join(x1, x2, by = "date")

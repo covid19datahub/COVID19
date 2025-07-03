@@ -30,10 +30,18 @@ FRA <- function(level){
     #' recovered.
     #'
     x2 <- github.cssegisanddata.covid19(country = "France")
+    x2 <- x2[x2$date <= "2023-03-10",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x3 <- who.int(level, id = "FR")
+    x3 <- x3[x3$date > "2023-03-10",]
     
     # merge
-    x <- full_join(x1, x2, by = "date")
-    
+    x <- bind_rows(x2, x3) %>%
+      full_join(x1, by = "date")
   }
   
   #' @concept Level 2

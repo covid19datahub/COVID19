@@ -15,24 +15,10 @@ VAT <- function(level){
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' confirmed cases,
-    #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(country = "Holy See")
-    
-    #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
-    #' total vaccine doses administered,
-    #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
-    #'
-    x2 <- ourworldindata.org(id = "VAT")
-    
-    # merge
-    x <- full_join(x1, x2, by = "date")
-    
+    x <- github.cssegisanddata.covid19(country = "Holy See")
+
   }
   
   return(x)

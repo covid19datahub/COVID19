@@ -27,12 +27,22 @@ gob.pe <- function(level){
   if(!level %in% 1:3) return(NULL)
   
   # download vaccines
+  options(timeout = 600)  
   zip <- tempfile()
-  url <- "https://cloud.minsa.gob.pe/s/To2QtqoNjKqobfw/download"
+  outdir <- tempdir()
+  
+  url <- "https://files.minsa.gob.pe/s/J8C75Y55nkFazWF/download"
   download.file(url, zip, mode = "wb", quiet = TRUE)
   
   # unzip, read, and delete
-  x <- data.table::fread(cmd = sprintf("7za x -so %s", zip), showProgress = FALSE)
+  unzip(zip, exdir = outdir)
+  
+  inner_file <- list.files(outdir, pattern = "vacunas_covid\\.7z$", full.names = TRUE, recursive = TRUE)[1]
+
+  system(sprintf("7za x %s -o%s -y", shQuote(inner_file), shQuote(outdir)))
+
+  x <- data.table::fread(file.path(outdir, "vacunas_covid.csv"), showProgress = FALSE)
+
   unlink(zip)
   
   # format
@@ -69,7 +79,11 @@ gob.pe <- function(level){
       vaccines = cumsum(vaccines),
       people_vaccinated = cumsum(people_vaccinated),
       people_fully_vaccinated = cumsum(people_fully_vaccinated))
-    
+  
+  # remove rows with empty department 
+  if ("department" %in% colnames(x)) x <- x[x$department != "", ]
+  
+  
   # convert date
   x$date <- as.Date(as.character(x$date), format = "%Y%m%d")
   

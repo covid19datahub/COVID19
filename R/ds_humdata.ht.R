@@ -16,15 +16,15 @@ humdata.ht <- function(level){
   if(level!=2) return(NULL)
 
   # download
-  url <- "https://proxy.hxlstandard.org/data/738954/download/haiti-covid-19-subnational-data.csv"
-  x   <- read.csv(url)
+  url <- "https://docs.google.com/spreadsheets/d/e/2PACX-1vTqVOxCSrhEiZ_CRME3Xqhu_DWZv74FvrvOr77rIXOlorClEi0huwVKxXXcVr2hn8pml82tlwmf59UX/pub?output=xlsx"
+  x <- read.excel(url, sheet = 1)
   
   # formatting 
   x <- map_data(x[-1,], c(
     'Département'       = 'state',
     'Date'              = 'date',
-    'Cumulative.cases'  = 'confirmed',
-    'Cumulative.Deaths' = 'deaths'
+    'Cumulative cases'  = 'confirmed',
+    'Cumulative Deaths' = 'deaths'
   ))
   
   # sanitize
@@ -37,11 +37,17 @@ humdata.ht <- function(level){
       state = replace(state, state=="quest", "ouest"),
       # convert to integers
       confirmed = as.integer(gsub(",", "", confirmed)),
-      deaths =  as.integer(gsub(",", "", deaths)),
-      # convert to date
-      date = as.Date(date, format = "%d-%m-%Y")) %>%
+      deaths =  as.integer(gsub(",", "", deaths))) %>%
     # drop duplicates
     distinct(state, date, .keep_all = TRUE)
+  
+  # convert to date
+  x$date <- as.Date(
+    ifelse(
+      grepl("^[0-9]+(\\.0)?$", x$date),
+      as.numeric(x$date) + as.numeric(as.Date("1899-12-30")),
+      as.numeric(as.Date(x$date, "%d-%m-%Y"))),
+    origin = "1970-01-01")
   
   return(x)
 }

@@ -7,6 +7,7 @@
 #' @section Level 1:
 #' - confirmed cases
 #' - deaths
+#' - recovered
 #' - tests
 #' - total vaccine doses administered
 #' - people with at least one vaccine dose
@@ -15,6 +16,7 @@
 #' @section Level 2:
 #' - confirmed cases
 #' - deaths
+#' - recovered
 #' - tests
 #' - total vaccine doses administered
 #' - people with at least one vaccine dose
@@ -30,7 +32,7 @@ canada.ca <- function(level){
   # download cases
   # see https://health-infobase.canada.ca/covid-19/
   url <- "https://health-infobase.canada.ca/src/data/covidLive/covid19-download.csv"
-  x1 <- read.csv(url)
+  x1 <- read.csv(url, na.strings = c("", "-"))
   
   # format
   x1 <- map_data(x1, c(
@@ -40,6 +42,10 @@ canada.ca <- function(level){
     "numdeaths"  = "deaths",
     "totalcases" = "confirmed"
   ))
+  
+  # use vintage data because they are daily instead of weekly
+  x1 <- bind_rows(extdata("ds/CAN.csv"), x1)
+  x1 <- x1[!duplicated(x1[,c("id", "date")]),]
   
   # download total vaccine doses
   # see https://health-infobase.canada.ca/covid-19/vaccine-administration/
@@ -54,7 +60,8 @@ canada.ca <- function(level){
   ))
   
   # sanitize
-  x2$vaccines <- suppressWarnings(as.integer(x2$vaccines))
+  x2 <- x2[!duplicated(x2),]
+  x2$vaccines <- as.integer(x2$vaccines)
   
   # download people vaccinated
   # see https://health-infobase.canada.ca/covid-19/vaccination-coverage/
@@ -89,14 +96,7 @@ canada.ca <- function(level){
 
   # remove non-geographic entity
   x <- x[which(x$id!=99),] 
-  
-  # fill with daily series before June 2022
-  x <- bind_rows(extdata("ds/CAN.csv"), x) %>%
-    # for each id and date
-    group_by(id, date) %>%
-    # take last non-NA element
-    summarise_all(function(x) ifelse(is.na(x[2]), x[1], x[2]))
-  
+
   # filter by level (id=1 -> Canada)
   if(level==1)
     x <- x[x$id==1,]   

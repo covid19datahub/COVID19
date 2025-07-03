@@ -21,18 +21,30 @@ GBR <- function(level){
     #' hospitalizations,
     #' patients requiring ventilation.
     #'
-    x1 <- gov.uk(level = level) %>%
-      select(-c("confirmed", "deaths"))
+    
+    # use vintage data because previous file is not available
+    # new gov.uk file only covers England from 2024 onwards
+    x1 <- covid19datahub.io(iso = "GBR", level) %>% 
+      select(-confirmed, -deaths, -recovered)
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' confirmed cases,
     #' deaths,
     #' recovered.
     #'
-    x2 <- github.cssegisanddata.covid19(country = "United Kingdom")
+    x2 <- github.cssegisanddata.covid19(country = "United Kingdom") %>% 
+      filter(date <= "2023-03-10")
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x3 <- who.int(level = 1, id = "GB") %>% 
+      filter(date > "2023-03-10")
+
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x2, x3) %>%
+      full_join(x1, by = "date")
     
   }
   
@@ -54,8 +66,10 @@ GBR <- function(level){
     #' hospitalizations,
     #' patients requiring ventilation.
     #'
-    x <- gov.uk(level = level)
-    x$id <- id(x$code, iso = "GBR", ds = "gov.uk", level = level)
+    
+    # use vintage data because previous file is not available
+    # new gov.uk file doesn't not cover the individual nations of the UK
+    x <- covid19datahub.io(iso = "GBR", level)
     
   }
   
@@ -73,12 +87,12 @@ GBR <- function(level){
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' patients requiring ventilation.
+    #' people fully vaccinated.
     #'
-    x <- gov.uk(level = level)
-    x$id <- id(x$code, iso = "GBR", ds = "gov.uk", level = level)
+    
+    # use vintage data because previous file is not available
+    # new gov.uk file includes different local administrative areas
+    x <- covid19datahub.io(iso = "GBR", level)
     
   }
   

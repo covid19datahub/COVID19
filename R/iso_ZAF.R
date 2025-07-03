@@ -21,6 +21,13 @@ ZAF <- function(level){
     x1 <- github.dsfsi.covid19za(level = level) %>%
       select(-c("tests"))
     
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x2 <- who.int(level, id = "ZA") %>% 
+      filter(date > "2022-07-25")
+    
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
@@ -29,10 +36,11 @@ ZAF <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "ZAF")    
+    x3 <- ourworldindata.org(id = "ZAF")    
     
     # merge 
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>% 
+      full_join(x3, by = "date")
     
   }
   

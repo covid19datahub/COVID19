@@ -14,24 +14,28 @@ LSO <- function(level){
   if(level==1){
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
-    #' confirmed cases,
-    #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(country = "Lesotho")
+    x1 <- github.cssegisanddata.covid19(country = "Lesotho") %>% 
+      select(-confirmed, -deaths)
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x2 <- who.int(level, id = "LS")
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
-    x2 <- ourworldindata.org(id = "LSO")
+    x3 <- ourworldindata.org(id = "LSO")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- full_join(x1, x2, by = "date") %>%
+      full_join(x3, by = "date")
     
   }
   

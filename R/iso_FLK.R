@@ -15,18 +15,14 @@ FLK <- function(level){
     
     #' - \href{`r repo("github.cssegisanddata.covid19")`}{Johns Hopkins Center for Systems Science and Engineering}:
     #' confirmed cases,
-    #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(state = "Falkland Islands (Malvinas)", level = 2)
+    x1 <- github.cssegisanddata.covid19(country = "United Kingdom", state = "Falkland Islands (Malvinas)", level = 2)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x2 <- ourworldindata.org(id = "FLK")
     
