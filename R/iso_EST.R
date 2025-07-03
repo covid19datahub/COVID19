@@ -28,6 +28,10 @@ EST <- function(level){
     x2 <- who.int(level, id = "EE")
     x2 <- x2[x2$date > "2023-03-10",]
     
+    # use vintage data because some icu daily data from ourworldindata.org is no longer available 
+    x3 <- covid19datahub.io(iso = "EST", level) %>% 
+      select(date, icu)
+    
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
@@ -36,10 +40,6 @@ EST <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x3 <- covid19datahub.io(iso = "EST", level) %>% 
-      select(date, icu)
-    
-    # use vintage data because some icu daily data from ourworldindata.org is no longer available 
     x4 <- ourworldindata.org(id = "EST")
     
     # merge
