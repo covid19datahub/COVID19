@@ -12,7 +12,7 @@ AUT <- function(level){
   #' `r docstring("AUT", 1)`
   #' 
   if(level==1){
-    
+
     #' - \href{`r repo("gv.at")`}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
     #' confirmed cases,
     #' deaths,
@@ -23,8 +23,23 @@ AUT <- function(level){
     #' people fully vaccinated,
     #' hospitalizations,
     #' intensive care.
+    #' 
+    
+    # use vintage data because most of the files form gv.at are not available
+    x1 <- covid19datahub.io(iso = "AUT", level)
+    x1 <- x1[x1$date <= "2023-04-30",]
+    # fix vintage hosp by summing previous hosp (normal wards) with icu
+    x1$hosp <- x1$hosp + x1$icu
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
     #'
-    x <- gv.at(level = level)
+    x2 <- who.int(level, id = "AT")
+    x2 <- x2[x2$date > "2023-04-30",] 
+    
+    # merge
+    x <- bind_rows(x1, x2)
     
   }
   
@@ -35,7 +50,7 @@ AUT <- function(level){
   #' `r docstring("AUT", 2)`
   #' 
   if(level==2){
-    
+
     #' - \href{`r repo("gv.at")`}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
     #' confirmed cases,
     #' deaths,
@@ -46,9 +61,12 @@ AUT <- function(level){
     #' people fully vaccinated,
     #' hospitalizations,
     #' intensive care.
-    #'
-    x <- gv.at(level = level)
-    x$id <- id(x$state_id, iso = "AUT", ds = "gv.at", level = level)
+    #' 
+    
+    # use vintage data because most of the files form gv.at are not available
+    x <- covid19datahub.io(iso = "AUT", level)
+    # fix vintage hosp by summing previous hosp (normal wards) with icu
+    x$hosp <- x$hosp + x$icu
     
   }
   
@@ -59,14 +77,15 @@ AUT <- function(level){
   #' `r docstring("AUT", 3)`
   #' 
   if(level==3){  
-    
+
     #' - \href{`r repo("gv.at")`}{Federal Ministry of Social Affairs, Health, Care and Consumer Protection, Austria}:
     #' confirmed cases,
     #' deaths,
     #' recovered.
     #'
-    x <- gv.at(level = level)
-    x$id <- id(x$city_id, iso = "AUT", ds = "gv.at", level = level)
+    
+    # use vintage data because most of the files form gv.at are not available 
+    x <- covid19datahub.io(iso = "AUT", level)
     
   }
   

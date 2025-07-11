@@ -28,7 +28,6 @@ covidtracking.com <- function(level){
   x <- map_data(x, c(
     'date',
     'state',
-    'fips',
     'positive'              = 'confirmed',
     'death'                 = 'deaths',
     'totalTestResults'      = 'tests',

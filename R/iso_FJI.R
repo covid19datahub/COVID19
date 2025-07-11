@@ -19,6 +19,14 @@ FJI <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Fiji")
+    x1 <- x1[x1$date <= "2023-03-10",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x2 <- who.int(level, id = "FJ")
+    x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
@@ -28,10 +36,11 @@ FJI <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "FJI")
+    x3 <- ourworldindata.org(id = "FJI")
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date")
     
   }
   

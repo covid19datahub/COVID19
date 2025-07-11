@@ -18,15 +18,13 @@ AIA <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(state = "Anguilla", level = 2)
+    x1 <- github.cssegisanddata.covid19(country = "United Kingdom", state = "Anguilla", level = 2)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x2 <- ourworldindata.org(id = "AIA")
     

@@ -18,15 +18,12 @@ IMN <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(state = "Isle of Man", level = 2)
+    x1 <- github.cssegisanddata.covid19(country = "United Kingdom", state = "Isle of Man", level = 2)
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
-    #' tests,
     #' total vaccine doses administered,
     #' people with at least one vaccine dose,
-    #' people fully vaccinated,
-    #' hospitalizations,
-    #' intensive care.
+    #' people fully vaccinated.
     #'
     x2 <- ourworldindata.org(id = "IMN")
     

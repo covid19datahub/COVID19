@@ -19,6 +19,14 @@ SGP <- function(level){
     #' recovered.
     #'
     x1 <- github.cssegisanddata.covid19(country = "Singapore")
+    x1 <- x1[x1$date <= "2023-03-10",]
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x2 <- who.int(level, id = "SG")
+    x2 <- x2[x2$date > "2023-03-10",]
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
     #' tests,
@@ -28,10 +36,17 @@ SGP <- function(level){
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- ourworldindata.org(id = "SGP")
+    x3 <- ourworldindata.org(id = "SGP")%>% 
+      select(-tests, -hosp, -icu)
+    
+    # use vintage data because test, hosp, icu data from ourworldindata.org are no longer available
+    x4 <- covid19datahub.io(iso = "SGP", level) %>% 
+      select(date, tests, hosp, icu)
     
     # merge
-    x <- full_join(x1, x2, by = "date")
+    x <- bind_rows(x1, x2) %>%
+      full_join(x3, by = "date") %>% 
+      full_join(x4, by = "date")
     
   }
   

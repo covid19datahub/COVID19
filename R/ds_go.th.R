@@ -19,40 +19,47 @@
 go.th <- function(level){
   if(!level %in% 1:2) return(NULL)  
   
-  # link to waves 1-2 ad 3
-  if(level == 1){
-    w1 <- "https://covid19.ddc.moph.go.th/api/Cases/round-1to2-all"
-    w2 <- "https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-all" 
-  }
-  if(level == 2){
-    w1 <- "https://covid19.ddc.moph.go.th/api/Cases/round-1to2-by-provinces"
-    w2 <- "https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-by-provinces"
-  }
-  
   # download waves
-  x1 <- jsonlite::fromJSON(w1, flatten=TRUE)
-  x2 <- jsonlite::fromJSON(w2, flatten=TRUE)
+  if(level == 1){
+    x1 <- jsonlite::fromJSON("https://covid19.ddc.moph.go.th/api/Cases/round-1to2-all", flatten=TRUE)
+    x2 <- jsonlite::fromJSON("https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-all", flatten=TRUE)
+  }
   
+  if(level == 2){
+    x1 <- jsonlite::fromJSON("https://covid19.ddc.moph.go.th/api/Cases/round-1to2-by-provinces", flatten=TRUE)
+    x2 <- jsonlite::fromJSON("https://covid19.ddc.moph.go.th/api/Cases/timeline-cases-by-provinces", flatten=TRUE)
+   
+    # extract data from list
+    if (is.list(x1)) x1 <- x1$data
+  }
+
   # merge waves and format
   x <- dplyr::bind_rows(x1, x2) %>%
     map_data(c(
-      "txn_date" = "date",
+      "year",
+      "weeknum",
+      "update_date",
       "province" = "province",
       "total_case" = "confirmed",
       "total_death" = "deaths"
-    ))
+    )) 
   
-  # drop unassigned
-  if(level==2){
-    x <- filter(x, province!="ไม่ระบุ")
+  # create date 
+  x$date <- ISOweek::ISOweek2date(paste0(x$year, "-W", sprintf("%02d", x$weeknum), "-7"))
+  
+  # filter
+  x <- x %>% 
+    arrange(desc(update_date))
+  
+  if ("province" %in% names(x)) {
+    x <- x %>% distinct(province, date, .keep_all = TRUE)
+  } else {
+    x <- x %>% distinct(date, .keep_all = TRUE)
   }
   
-  # convert date
-  x$date <- as.Date(x$date)
-  
-  # fix duplicates
-  cols <- intersect(colnames(x), c("date","province"))
-  x <- x[!duplicated(x[,cols]),]
+  # drop unassigned and whole country data
+  if(level==2) 
+    x <- x[!(x$province %in% c("ทั้งประเทศ", "ไม่ระบุ")), ]
   
   return(x)
 }

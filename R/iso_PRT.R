@@ -18,13 +18,26 @@ PRT <- function(level){
     #' deaths,
     #' recovered.
     #'
-    x1 <- github.cssegisanddata.covid19(level = level, country = "Portugal")
+    x1 <- github.cssegisanddata.covid19(level = level, country = "Portugal") %>% 
+      select(-recovered)
+    x1 <- x1[x1$date <= "2023-03-10",]
+    
+    # use vintage data because half of recovered data disappeared from github.cssegisanddata.covid19
+    x2 <- covid19datahub.io(iso = "PRT", level) %>% 
+      select(date, recovered)
+    
+    #' - \href{`r repo("who.int")`}{World Health Organization}:
+    #' confirmed cases,
+    #' deaths.
+    #' 
+    x3 <- who.int(level, id = "PT")
+    x3 <- x3[x3$date > "2023-03-10",]
     
     #' - \href{`r repo("github.dssgpt.covid19ptdata")`}{Data Science for Social Good Portugal}:
     #' hospitalizations,
     #' intensive care.
     #'
-    x2 <- github.dssgpt.covid19ptdata(level = level) %>%
+    x4 <- github.dssgpt.covid19ptdata(level = level) %>%
       select(-c("confirmed", "deaths", "recovered"))
     
     #' - \href{`r repo("ourworldindata.org")`}{Our World in Data}:
@@ -33,13 +46,14 @@ PRT <- function(level){
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
-    x3 <- ourworldindata.org(id = "PRT") %>%
+    x5 <- ourworldindata.org(id = "PRT") %>%
       select(-c("hosp", "icu"))
     
     # merge
-    x <- x1 %>%
+    x <- bind_rows(x1, x3) %>%
       full_join(x2, by = "date") %>%
-      full_join(x3, by = "date")
+      full_join(x4, by = "date") %>%
+      full_join(x5, by = "date")
       
   }
   

@@ -40,52 +40,56 @@
 #'
 github.minciencia.datoscovid19 <- function(level) {
   if(!level %in% 1:3) return(NULL)
-  
-  if(level==1 | level==2){
     
-    # confirmed, deaths, and recovered at regional and national level
-    url.cases <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto3/TotalesPorRegion_std.csv"
-    x.cases <- read.csv(url.cases)
-    # format
-    x.cases <- map_data(x.cases, c(
-      "Region"    = "region",
-      "Fecha"     = "date",
-      "Categoria" = "type",
-      "Total"     = "n"
-    ))
-    # pivot
-    x.cases <- x.cases %>%
-      mutate(type = map_values(type, force = TRUE, map = c(
-        "Casos acumulados" = "confirmed",
-        "Fallecidos totales" = "deaths",
-        "Casos confirmados recuperados" = "recovered"))) %>%
-      filter(!is.na(type)) %>%
-      pivot_wider(id_cols = c("region", "date"), names_from = "type", values_from = "n")
+    file <- tempfile(fileext = ".zip")
+    download.file("https://api.observa.minciencia.gob.cl/api/datosabiertos/download/?uuid=e26a2360-6447-47bc-8535-9b443fdff6e1&filename=datos-covid-19.zip", 
+                  file, mode = "wb", quiet = TRUE)
     
+    unzip_dir <- tempdir()
+    unzip(file, exdir = unzip_dir)
+    unlink(file) 
     
-    # vaccination data at national and regional level
-    url.vacc  <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto76/vacunacion_std.csv"
-    x.vacc  <- read.csv(url.vacc)
-    # format
-    x.vacc <- map_data(x.vacc, c(
-      "Region"   = "region",
-      "Fecha"    = "date",
-      "Dosis"    = "type",
-      "Cantidad" = "n"
-    ))
-    # compute people vaccinated
-    x.vacc <- x.vacc %>%
-      group_by(region, date) %>%
-      summarise(
-        vaccines = sum(n),
-        people_vaccinated = sum(n[type %in% c("Primera", "Unica")]),
-        people_fully_vaccinated = sum(n[type %in% c("Segunda", "Unica")]))
+    if(level==1 | level==2){
+      
+      # confirmed, deaths, and recovered at regional and national level
+      x.cases <- read.csv(file.path(unzip_dir, "datos-covid-19/producto3/TotalesPorRegion_std.csv"))
+      # format
+      x.cases <- map_data(x.cases, c(
+        "Region"    = "region",
+        "Fecha"     = "date",
+        "Categoria" = "type",
+        "Total"     = "n"
+      ))
+      # pivot
+      x.cases <- x.cases %>%
+        mutate(type = map_values(type, force = TRUE, map = c(
+          "Casos acumulados" = "confirmed",
+          "Fallecidos totales" = "deaths",
+          "Casos confirmados recuperados" = "recovered"))) %>%
+        filter(!is.na(type)) %>%
+        pivot_wider(id_cols = c("region", "date"), names_from = "type", values_from = "n")
+      
+      # vaccination data at national and regional level
+      x.vacc <- read.csv(file.path(unzip_dir, "datos-covid-19/producto76/vacunacion_std.csv"))
+      # format
+      x.vacc <- map_data(x.vacc, c(
+        "Region"   = "region",
+        "Fecha"    = "date",
+        "Dosis"    = "type",
+        "Cantidad" = "n"
+      ))
+      # compute people vaccinated
+      x.vacc <- x.vacc %>%
+        group_by(region, date) %>%
+        summarise(
+          vaccines = sum(n),
+          people_vaccinated = sum(n[type %in% c("Primera", "Unica")]),
+          people_fully_vaccinated = sum(n[type %in% c("Segunda", "Unica")]))
     
     if(level==1){
       
       # hospitalization data at national level
-      url.hosp  <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto24/CamasHospital_Diario_std.csv"
-      x.hosp  <- read.csv(url.hosp)
+      x.hosp <- read.csv(file.path(unzip_dir, "datos-covid-19/producto24/CamasHospital_Diario_std.csv"))
       # format      
       x.hosp <- map_data(x.hosp, c(
         "fecha" = "date",
@@ -100,8 +104,7 @@ github.minciencia.datoscovid19 <- function(level) {
           icu = sum(n[type %in% c("UTI", "UCI")]))
       
       # this file contains data on patients requiring ventilation at national level
-      url.vent  <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto30/PacientesVMI_std.csv"
-      x.vent  <- read.csv(url.vent)
+      x.vent <- read.csv(file.path(unzip_dir, "datos-covid-19/producto30/PacientesVMI_std.csv"))
       # format
       x.vent <- map_data(x.vent, c(
         "Fecha" = "date",
@@ -110,12 +113,11 @@ github.minciencia.datoscovid19 <- function(level) {
       ))
       # extract patients requiring ventilation
       x.vent <- x.vent %>%
-        group_by(date) %>%
-        summarise(vent = n[type=="Pacientes VMI"])
+        filter(type == "Pacientes VMI") %>%
+        mutate(vent = n)
       
       # this file contains the total tests at national level
-      url.tests <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto17/PCREstablecimiento_std.csv"
-      x.tests <- read.csv(url.tests)
+      x.tests <- read.csv(file.path(unzip_dir, "datos-covid-19/producto17/PCREstablecimiento_std.csv"))
       # format
       x.tests <- map_data(x.tests, c(
         "fecha" = "date",
@@ -124,8 +126,8 @@ github.minciencia.datoscovid19 <- function(level) {
       ))
       # extract the total number of tests performed 
       x.tests <- x.tests %>%
-        group_by(date) %>%
-        summarise(tests = n[type=="Total realizados"])
+        filter(type == "Total realizados") %>%
+        mutate(tests = n)
       
       # extract national cases and vaccination data
       x.cases <- filter(x.cases, region=="Total")
@@ -144,8 +146,7 @@ github.minciencia.datoscovid19 <- function(level) {
     if(level==2){
       
       # data on realized tests at regional level
-      url.tests <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto7/PCR_std.csv"
-      x.tests <- read.csv(url.tests)
+      x.tests <- read.csv(file.path(unzip_dir,  "datos-covid-19/producto7/PCR_std.csv"))
       # format
       x.tests <- map_data(x.tests, c(
         "fecha" = "date",
@@ -159,8 +160,7 @@ github.minciencia.datoscovid19 <- function(level) {
         mutate(tests = cumsum(n))
       
       # intensive care at regional level
-      url.icu  <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto8/UCI_std.csv"
-      x.icu <- read.csv(url.icu)
+      x.icu <- read.csv(file.path(unzip_dir,  "datos-covid-19/producto8/UCI_std.csv"))
       # format
       x.icu <- map_data(x.icu, c(
         "fecha" = "date",
@@ -184,124 +184,126 @@ github.minciencia.datoscovid19 <- function(level) {
   }
   
   if(level == 3) {
-    
-    # url
-    url.pos    <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto55/Positividad_por_comuna.csv"
-    url.cases  <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto1/Covid-19_std.csv"
-    url.deaths <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto38/CasosFallecidosPorComuna_std.csv"
-    url.vacc.0 <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto80/vacunacion_comuna_UnicaDosis_std.csv"
-    url.vacc.1 <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto80/vacunacion_comuna_1eraDosis_std.csv"
-    url.vacc.2 <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto80/vacunacion_comuna_2daDosis_std.csv"
-    url.vacc.3 <- "https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto80/vacunacion_comuna_Refuerzo_std.csv"
-    
+
     # download
-    x.pos    <- read.csv(url.pos)
-    x.cases  <- read.csv(url.cases)
-    x.deaths <- read.csv(url.deaths)
-    x.vacc.0 <- read.csv(url.vacc.0)
-    x.vacc.1 <- read.csv(url.vacc.1)
-    x.vacc.2 <- read.csv(url.vacc.2)
-    x.vacc.3 <- read.csv(url.vacc.3)
+    x.tests  <-  read.csv(file.path(unzip_dir,  "datos-covid-19/producto68/tasa_test_semanal_comunal.csv"))
+    x.cases  <-  read.csv(file.path(unzip_dir,  "datos-covid-19/producto1/Covid-19_std.csv"))
+    x.deaths <-  read.csv(file.path(unzip_dir,  "datos-covid-19/producto38/CasosFallecidosPorComuna_std.csv"))
+    x.vacc.0 <-  read.csv(file.path(unzip_dir,  "datos-covid-19/producto80/vacunacion_comuna_UnicaDosis_std.csv"))
+    x.vacc.1 <-  read.csv(file.path(unzip_dir,  "datos-covid-19/producto80/vacunacion_comuna_1eraDosis_std.csv"))
+    x.vacc.2 <-  read.csv(file.path(unzip_dir,  "datos-covid-19/producto80/vacunacion_comuna_2daDosis_std.csv"))
+    x.vacc.3 <-  read.csv(file.path(unzip_dir,  "datos-covid-19/producto80/vacunacion_comuna_Refuerzo_std.csv"))
+    x.vacc.4 <-  read.csv(file.path(unzip_dir,  "datos-covid-19/producto80/vacunacion_comuna_4taDosis_std.csv"))
     
-    # format positivity rate
-    x.pos <- map_data(x.pos, c(
+    # population
+    x.pop <- extdata("db/CHL.csv") %>%
+      filter(administrative_area_level == 3) %>%
+      mutate(municipality = as.integer(id_github.minciencia.datoscovid19))
+    
+    # format tests
+    x.tests <- map_data(x.tests, c(
       "Codigo.comuna" = "municipality",
       "fecha" = "date",
-      "positividad" = "positivity"
-    ))
+      "tasatest" = "tasatest"
+    )) %>%
+      left_join(x.pop, by = "municipality") %>%
+      mutate(
+        date = as.Date(date),
+        tests = as.integer(tasatest / 1000 * population)
+      )
     
     # format cases
     x.cases <- map_data(x.cases, c(
       "Codigo.comuna" = "municipality",
       "Fecha" = "date",
       "Casos.confirmados" = "confirmed"
-    ))
+    )) %>%
+      mutate(date = as.Date(date, format = "%d-%m-%Y"))
     
     # format deaths
     x.deaths <- map_data(x.deaths, c(
       "Codigo.comuna" = "municipality",
       "Fecha" = "date",
       "Casos.fallecidos" = "deaths"
-    ))
+    )) %>%
+      mutate(date = as.Date(date))
     
     # format one shot vaccine dose
     x.vacc.0 <- map_data(x.vacc.0, c(
       "Fecha" = "date",
       "Codigo.comuna" = "municipality",
       "Unica.Dosis" = "oneshot"
-    ))
+    )) %>%
+      mutate(date = as.Date(date))
     
     # format first vaccine dose
     x.vacc.1 <- map_data(x.vacc.1, c(
       "Fecha" = "date",
       "Codigo.comuna" = "municipality",
       "Primera.Dosis" = "first"
-    ))
+    )) %>%
+      mutate(date = as.Date(date))
     
     # format second vaccine dose
     x.vacc.2 <- map_data(x.vacc.2, c(
       "Fecha" = "date",
       "Codigo.comuna" = "municipality",
       "Segunda.Dosis" = "second"
-    ))
+    )) %>%
+      mutate(date = as.Date(date))
     
     # format extra vaccine dose
     x.vacc.3 <- map_data(x.vacc.3, c(
       "Fecha" = "date",
       "Codigo.comuna" = "municipality",
-      "Dosis.Refuerzo" = "extra"
-    ))
+      "Dosis.Refuerzo" = "third"
+    )) %>%
+      mutate(date = as.Date(date))
+    
+    # format additional vaccine dose
+    x.vacc.4 <- map_data(x.vacc.4, c(
+      "Fecha" = "date",
+      "Codigo.comuna" = "municipality",
+      "Cuarta.Dosis" = "fourth"
+    )) %>%
+      mutate(date = as.Date(date))
     
     # drop non-geographical entities
-    x.pos    <- filter(x.pos,    !is.na(municipality))
+    x.tests  <- filter(x.tests,  !is.na(municipality))
     x.cases  <- filter(x.cases,  !is.na(municipality))
     x.deaths <- filter(x.deaths, !is.na(municipality))
     x.vacc.0 <- filter(x.vacc.0, !is.na(municipality))
     x.vacc.1 <- filter(x.vacc.1, !is.na(municipality))
     x.vacc.2 <- filter(x.vacc.2, !is.na(municipality))
     x.vacc.3 <- filter(x.vacc.3, !is.na(municipality))
+    x.vacc.4 <- filter(x.vacc.4, !is.na(municipality))
     
     # merge
     by <- c("date", "municipality")
     x <- x.cases %>%
-      full_join(x.pos,    by = by) %>%
+      full_join(x.tests,  by = by) %>%
       full_join(x.deaths, by = by) %>%
       full_join(x.vacc.0, by = by) %>%
       full_join(x.vacc.1, by = by) %>%
       full_join(x.vacc.2, by = by) %>%
-      full_join(x.vacc.3, by = by) 
+      full_join(x.vacc.3, by = by) %>%
+      full_join(x.vacc.4, by = by)
     
     # vaccines and tests
     x <- x %>%
-      mutate(
-        # total positive cases = confirmed cases
-        pos_tot = confirmed,
-        # drop negative and unfeasible values of positivity rate
-        positivity = replace(positivity, positivity < 1e-4, NA)) %>%
-      # for each municipality
       group_by(municipality) %>%
-      # order by date
       arrange(date) %>%
-      # replace missing positives with the previous value
-      fill(pos_tot) %>%
       mutate(
-        # compute vaccines and people vaccinated
-        vaccines = cumsum(first + second + oneshot + extra),
-        people_vaccinated = cumsum(first + oneshot),
-        people_fully_vaccinated = cumsum(second + oneshot),
-        # compute new positive
-        pos_new = pmax(0, c(NA, diff(pos_tot))),
-        # compute new tests
-        tests_new = pos_new/positivity,
-        # cumulate tests
-        tests = as.integer(cumsum(tests_new)),
-        # drop tests when confirmed is missing or it is greater than tests
-        tests = replace(tests, is.na(confirmed) | confirmed>tests, NA))
-    
+        vaccines = cumsum(oneshot + first + second + third + fourth),
+        people_vaccinated = cumsum(oneshot + first),
+        people_fully_vaccinated = cumsum(oneshot + second),
+        tests = cumsum(tests)
+      )
+      
   }
   
   # convert date
   x$date <- as.Date(x$date)
-  
+    
   return(x)
 }
