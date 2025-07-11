@@ -85,14 +85,17 @@ GBR <- function(level){
     #' confirmed cases,
     #' deaths,
     #' tests,
-    #' total vaccine doses administered,
     #' people with at least one vaccine dose,
     #' people fully vaccinated.
     #'
     
     # use vintage data because previous file is not available
     # new gov.uk file includes different local administrative areas
-    x <- covid19datahub.io(iso = "GBR", level)
+    x <- covid19datahub.io(iso = "GBR", level) %>%
+      # drop vaccines because they seem wrong and they have also been 
+      # removed from the archive data at
+      # https://ukhsa-dashboard.data.gov.uk/covid-19-archive-data-download
+      select(-vaccines)
     
   }
   
